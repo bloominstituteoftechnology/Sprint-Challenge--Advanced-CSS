@@ -154,7 +154,8 @@ body {
   font-size: 62.5%;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   color: white;
 }
@@ -163,17 +164,29 @@ body {
   height: 100px;
   margin-bottom: 20px;
   display: flex;
+  font-size: 1rem;
 }
 .container header nav {
   width: 80%;
   height: 100%;
   background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .container header .logo {
   width: 20%;
   height: 100%;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .container .content {
   margin-top: 20px;
@@ -183,6 +196,7 @@ body {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+  font-size: 1rem;
 }
 .container .content .boxes {
   width: 45%;
@@ -191,9 +205,17 @@ body {
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .container footer {
   width: 100%;
   height: 50px;
   background: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
