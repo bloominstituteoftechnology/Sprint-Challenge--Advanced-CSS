@@ -211,6 +211,11 @@ table {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  .container .content {
+    height: 860px;
+  }
+}
 .container .content .boxes {
   width: 45%;
   height: 200px;
@@ -221,6 +226,12 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .container .content .boxes {
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1100px) {
   .container .content .box1 {

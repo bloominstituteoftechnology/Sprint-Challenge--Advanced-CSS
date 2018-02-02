@@ -44,6 +44,9 @@
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-evenly;
+		@media @tablet {
+			height: 860px;
+		}
 		.boxes {
 			width: 45%;
 			height: 200px;
@@ -52,6 +55,10 @@
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
+			@media @tablet {
+				width: 100%;
+				flex-wrap: wrap;
+			}
 		}
 		.box1 {
 			// style this at the right time!
