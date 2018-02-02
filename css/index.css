@@ -199,4 +199,15 @@ header .logo,
 .content .boxes,
 footer {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  /* * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`. */
+}
+header .logo {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  /* * Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%) */
 }
