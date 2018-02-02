@@ -14,6 +14,10 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+	flex-flow: row nowrap;
+	@media @phone {
+		flex-flow: column-reverse;
+	}
 	nav {
 		width: 80%;
 		height: 100%;
@@ -25,6 +29,8 @@ header {
 		}
 		@media @phone {
 			background-color: @phone-color;
+			height: 50%;
+			width: 100%;
 		}
 	}
 	.logo {
@@ -35,6 +41,9 @@ header {
 		.border-radius(50%);
 		@media @tablet {
 			background-color: @tablet-color;
+		}
+		@media @phone {
+			align-self: flex-start;
 		}
 	}
 }
@@ -47,6 +56,9 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+	@media @tablet {
+		flex-flow: column nowrap;
+	}
 	.boxes {
 		width: 45%;
 		height: 200px;
@@ -60,22 +72,32 @@ header {
 		@media @laptop {
 			background-color: @laptop-color;
 		}
+		@media @tablet {
+			width: 100%;
+		}
 		@media @phone {
 			background-color: @phone-color;
 		}
 	}
 	
 	.box2 {
-		// style this at the right time!
+		@media @tablet {
+			width: 100%;
+		}
 	}
 	
 	.box3 {
-		// style this at the right time!
+		@media @tablet {
+			width: 100%;
+		}
 	}
 	
 	.box4 {
 		@media @laptop {
 			background-color: @laptop-color;
+		}
+		@media @tablet {
+			width: 100%;
 		}
 		@media @phone {
 			background-color: @phone-color;

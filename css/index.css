@@ -165,6 +165,12 @@ header {
   height: 100px;
   margin-bottom: 20px;
   display: flex;
+  flex-flow: row nowrap;
+}
+@media (max-width: 400px) {
+  header {
+    flex-flow: column-reverse;
+  }
 }
 header nav {
   width: 80%;
@@ -184,6 +190,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background-color: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -203,6 +211,11 @@ header .logo {
     background-color: purple;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    align-self: flex-start;
+  }
+}
 .content {
   margin-top: 20px;
   width: 100%;
@@ -211,6 +224,11 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-flow: column nowrap;
+  }
 }
 .content .boxes {
   width: 45%;
@@ -228,14 +246,34 @@ header .logo {
     background-color: green;
   }
 }
+@media (max-width: 768px) {
+  .content .box1 {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .content .box1 {
     background-color: orange;
   }
 }
+@media (max-width: 768px) {
+  .content .box2 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    width: 100%;
+  }
+}
 @media (max-width: 1100px) {
   .content .box4 {
     background-color: green;
+  }
+}
+@media (max-width: 768px) {
+  .content .box4 {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
