@@ -164,7 +164,7 @@ header {
 }
 @media (max-width: 400px) {
   header {
-    flex-flow: column;
+    flex-flow: column-reverse;
   }
 }
 header nav {
