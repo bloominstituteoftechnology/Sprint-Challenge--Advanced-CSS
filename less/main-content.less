@@ -25,6 +25,12 @@ header nav {
 	margin-right: 2%;
 	font-size: 1rem;
 	.center-content;
+	@media @tablet {
+	 background-color: green;
+	@media @phone {
+		background-color: orange;
+	   } 
+	}
 
 }
 
@@ -34,8 +40,12 @@ header .logo {
 	background: @primary-color;
 	font-size: 1rem;
 	.center-content;
-	.border-radius(50%)
-}
+	.border-radius(50%); 
+	@media @tablet {
+		background-color: purple;
+	   }
+	}
+
 
 .content {
 	margin-top: 20px;
@@ -51,7 +61,6 @@ header .logo {
 	width: 45%;
 	height: 200px;
 	background: @primary-color;
-	color: white;
 	margin-bottom: 20px;
 	display: flex;
 	font-size: 1rem;
@@ -60,17 +69,35 @@ header .logo {
 
 .content .box1 {
 	// style this at the right time!
-}
+	@media @tablet {
+		background-color: green; }
+		@media @phone {
+			background-color: orange;
+		   } 
+		}
+	
 
 .content .box2 {
+	@media @tablet {
+		background-color: purple;
+	   }
 	// style this at the right time!
 }
 
 .content .box3 {
+	@media @tablet {
+		background-color: purple;
+	   }
 	// style this at the right time!
 }
 
 .content .box4 {
+	@media @tablet {
+		background-color: green;
+		@media @phone { 
+			background-color: orange;
+		   } 
+	   }
 	// style this at the right time!
 }
 
@@ -79,8 +106,9 @@ footer {
 	height: 50px;
 	background: @primary-color;
 	font-size: 1rem;
-	.center-content 
-}
-
+	.center-content; } 
+	@media @phone { 
+		background-color: orange;
+	}
 //Use the mixin ".center-content" to center the text in nav, .logo, .boxes, and the footer.
 //Use the mixin ".border-radius" to make the .logo an oval shape (hint: 50%)////

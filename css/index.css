@@ -173,6 +173,16 @@ header nav {
   align-items: center;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  header nav {
+    background-color: green;
+  }
+}
+@media (max-width: 768px) and (max-width: 400px) {
+  header nav {
+    background-color: orange;
+  }
+}
 header .logo {
   width: 20%;
   height: 100%;
@@ -185,6 +195,11 @@ header .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background-color: purple;
+  }
 }
 .content {
   margin-top: 20px;
@@ -199,13 +214,42 @@ header .logo {
   width: 45%;
   height: 200px;
   background: black;
-  color: white;
   margin-bottom: 20px;
   font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .content .box1 {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .box1 {
+    background-color: orange;
+  }
+}
+@media (max-width: 768px) {
+  .content .box2 {
+    background-color: purple;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    background-color: purple;
+  }
+}
+@media (max-width: 768px) {
+  .content .box4 {
+    background-color: green;
+  }
+}
+@media (max-width: 768px) and (max-width: 400px) {
+  .content .box4 {
+    background-color: orange;
+  }
 }
 footer {
   width: 100%;
@@ -216,6 +260,9 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+@media (max-width: 400px) {
+  background-color: orange;
 }
 container {
   font-size: 1rem;
