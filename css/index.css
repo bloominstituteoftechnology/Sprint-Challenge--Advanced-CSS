@@ -148,7 +148,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 1.6rem;
 }
 .container {
   width: 900px;
@@ -167,11 +167,19 @@ table {
   height: 100%;
   background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
 .container header .logo {
   width: 20%;
   height: 100%;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
 .container .content {
   margin-top: 20px;
@@ -189,9 +197,16 @@ table {
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
 .container footer {
   width: 100%;
   height: 50px;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
