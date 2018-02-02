@@ -15,6 +15,10 @@ header {
 	display: flex;
 
 	nav {
+		@media @laptop {
+			background-color: green;
+		}
+		
 		width: 80%;
 		height: 100%;
 		background: @primary-color;
@@ -49,24 +53,29 @@ header {
 	     margin-bottom: 20px;
 		 display: flex;
 		 .center-content;
+	}
 		 
-		.box1 {
-			// style this at the right time!
+	.box1 {
+		@media @laptop {
+		  background-color: green;
+			}
 		}
 		
-		.box2 {
+	.box2 {
 			// style this at the right time!
-		}
+	}
 		
-		.box3 {
+	.box3 {
 			// style this at the right time!
-		}
+	}
 		
-	    .box4 {
-			// style this at the right time!
+	.box4 {
+		@media @laptop {
+			background-color: green;
 		}
 	}
 }
+
 
 footer {
 	width: 100%;
