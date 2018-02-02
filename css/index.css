@@ -242,6 +242,16 @@ table {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 1100px) {
+  .container .content {
+    height: 630px;
+  }
+}
+@media (max-width: 768px) {
+  .container .content {
+    height: 850px;
+  }
+}
 .container .content .boxes {
   width: 45%;
   height: 200px;
