@@ -1,6 +1,6 @@
 # Assessing Your Preprocessor and Responsive Design Learning
 
-* The objective of this challenge is test your knoweldge on all of the topics surrounding preprocessing (LESS) and responsive web design you learned this week.
+* The objective of this challenge is test your knowledge on all of the topics surrounding preprocessing (LESS) and responsive web design you learned this week.
 * Answers to your written questions will be recorded in _Answers.md_
 * This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the LESS Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
 * **Just a friendly Reminder** Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation.
@@ -22,7 +22,7 @@
 
 ## Get LESS up and running
 1. Be sure LESS is installed globally
-2. If you haven't already, install a less watch compiler globablly by running: `npm install -g less-watch-compiler`
+2. If you haven't already, install a less watch compiler globally by running: `npm install -g less-watch-compiler`
 1. Once that is install you should be able to run `less-watch-compiler less css index.less`
 
 **If you get user permission errors,** re-run the command with: `sudo` in front of it.
@@ -45,6 +45,6 @@
 * Make the logo move to the top of navigation on phone using flexbox.
 
 **Super Stretch Goal**
-* Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above. 
+* Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above.
 
 ### Remember you can use any resources you want to solve these problems, but avoid copying/pasting solutions you've previously written. Also if you don't finish all of the challenges, that's fine! Just do what you can and submit your challenges in the end! HAVE FUN!
