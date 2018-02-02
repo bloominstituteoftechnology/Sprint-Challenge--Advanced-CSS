@@ -148,11 +148,14 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+html {
+  font-size: 10px;
 }
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 800px;
   margin: 0 auto;
   color: white;
 }
@@ -170,17 +173,32 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  header nav {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: orange;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: purple;
+  background: black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background: purple;
+  }
 }
 .content {
   margin-top: 20px;
@@ -200,19 +218,37 @@ header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
-.content .box1 {
-  background-color: green;
+@media (max-width: 1100px) {
+  .content .box1 {
+    background: green;
+  }
 }
-.content .box2 {
-  background: purple;
+@media (max-width: 400px) {
+  .content .box1 {
+    background: orange;
+  }
 }
-.content .box3 {
-  background: purple;
+@media (max-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
 }
-.content .box4 {
-  background: orange;
+@media (max-width: 768px) {
+  .content .box3 {
+    background: purple;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box4 {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .box4 {
+    background: orange;
+  }
 }
 footer {
   width: 100%;
@@ -221,5 +257,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+@media (max-width: 400px) {
+  footer {
+    background: orange;
+  }
 }
