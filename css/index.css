@@ -247,7 +247,7 @@ html {
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (min-width: 0px) {
   .container .content {
