@@ -16,6 +16,9 @@ header {
 		height: 100%;
 		background: @primary-color;
 		margin-right: 2%;
+		@media @laptop {
+			background-color: green;
+		}
 	}
 	.logo {
 		.center-content;
@@ -44,7 +47,9 @@ header {
 		.center-content;
 	}
 	.box1 {
-		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
 	}
 	.box2 {
 		// style this at the right time!
@@ -53,7 +58,9 @@ header {
 		// style this at the right time!
 	}
 	.box4 {
-		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
 	}
 }
 
