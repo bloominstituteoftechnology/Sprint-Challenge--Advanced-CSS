@@ -10,6 +10,10 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+	@media @phone {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 	nav {
 		.center-content;
 		width: 80%;
@@ -21,6 +25,8 @@ header {
 		}
 		@media @phone {
 			background-color: orange;
+			height: 50px;
+			width: 100%;
 		}
 	}
 	.logo {
