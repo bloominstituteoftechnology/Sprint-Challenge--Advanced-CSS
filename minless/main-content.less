@@ -29,16 +29,18 @@
         .logo {
             width: 20%;
             height: 100%;
-            background: @primary-color;
+            flex-direction: column-reverse;
             .center-content;
             .border-radius(50%);
-
+            background-color:purple;
             @media @mintab {
-                background-color:purple;
+                flex-direction: row;
+                
             }
         } //logo
-        @media @minfone {
-            flex-direction: column-reverse;
+        @media @mintab {
+            flex-direction: row;
+            background: @primary-color;
         }
         
     } //header

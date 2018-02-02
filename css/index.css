@@ -187,7 +187,7 @@ table {
 .container header .logo {
   width: 20%;
   height: 100%;
-  background: black;
+  flex-direction: column-reverse;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,15 +195,17 @@ table {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  background-color: purple;
 }
 @media (min-width: 768px) {
   .container header .logo {
-    background-color: purple;
+    flex-direction: row;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) {
   .container header {
-    flex-direction: column-reverse;
+    flex-direction: row;
+    background: black;
   }
 }
 .container .content {
