@@ -158,25 +158,6 @@ html {
   max-width: 900px;
   margin: 0 auto;
   color: white;
-  background: orange;
-  /* @media @phone {
-		background: orange;
-	} */
-}
-@media (min-width: 400px) {
-  .container {
-    background: purple;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    background: green;
-  }
-}
-@media (min-width: 1100px) {
-  .container {
-    background: white;
-  }
 }
 header {
   width: 100%;
@@ -204,7 +185,6 @@ header nav {
 		height: 100%; */
   width: 100%;
   height: 50%;
-  background: black;
   margin-right: 2%;
   display: flex;
   justify-content: center;
@@ -225,11 +205,13 @@ header .logo {
 		}
 		margin-bottom: 0; */
   margin-bottom: 20px;
-  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 @media (min-width: 400px) {
   header .logo {
@@ -261,7 +243,6 @@ header .logo {
 		width: 45%; */
   width: 100%;
   height: 200px;
-  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
@@ -277,9 +258,59 @@ header .logo {
 footer {
   width: 100%;
   height: 50px;
-  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+/*	nav, footer, logo, .boxes {
+	background: @primary-color;
+}
+@media @laptop {
+	nav, .box1, .box4 {
+		background: green;
+	}
+}
+@media @tablet {
+	.logo, .box2, .box3 {
+		background: purple;
+	}
+}
+@media @phone {
+	nav, footer, .box1, .box4 {
+		background: orange;
+	}
+} */
+nav,
+footer,
+.box1,
+.box4 {
+  background: orange;
+}
+.logo,
+.box2,
+.box3 {
+  background: purple;
+}
+@media (min-width: 400px) {
+  nav,
+  footer {
+    background: black;
+  }
+  .box1,
+  .box4 {
+    background: green;
+  }
+}
+@media (min-width: 768px) {
+  .logo,
+  .box2,
+  .box3 {
+    background: black;
+  }
+}
+@media (min-width: 1100px) {
+  .boxes {
+    background: black;
+  }
 }
