@@ -22,6 +22,14 @@ header {
 		margin-right: 2%;
 		font-size: 1.5rem;
 		.center-content();
+
+		@media @laptop {
+			background: @laptop-bg;
+		}
+
+		@media @phone {
+			background: @phone-bg;
+		}
 	}
 
 	.logo {
@@ -31,6 +39,10 @@ header {
 		font-size: 1.5rem;
 		.center-content();
 		.border-radius(50%);
+
+		@media @tablet {
+			background: @tablet-bg;
+		}
 	}
 }
 
@@ -55,19 +67,33 @@ header {
 	}
 
 	.box1 {
-		// style this at the right time!
+		@media @laptop {
+			background: @laptop-bg;
+		}
+		@media @phone {
+			background: @phone-bg;
+		}
 	}
 
 	.box2 {
-		// style this at the right time!
+		@media @tablet {
+			background: @tablet-bg;
+		}
 	}
 
 	.box3 {
-		// style this at the right time!
+		@media @tablet {
+			background: @tablet-bg;
+		}
 	}
 
 	.box4 {
-		// style this at the right time!
+		@media @laptop {
+			background: @laptop-bg;
+		}
+		@media @phone {
+			background: @phone-bg;
+		}
 	}
 	
 }
@@ -78,4 +104,8 @@ footer {
 	background: @tertiary-color;
 	font-size: 1.5rem;
 	.center-content();
+
+	@media @phone {
+		background: @phone-bg;
+	}
 }
