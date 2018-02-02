@@ -16,7 +16,7 @@ header {
 
 	nav {
 		@media @laptop {
-			background-color: green;
+			background: green;
 		}
 		
 		width: 80%;
@@ -27,6 +27,9 @@ header {
 	}
 
 	.logo {
+		@media @tablet {
+			background: purple;
+		}
 		width: 20%;
 		height: 100%;
 		background: @primary-color;
@@ -57,21 +60,25 @@ header {
 		 
 	.box1 {
 		@media @laptop {
-		  background-color: green;
+		  background: green;
 			}
 		}
 		
 	.box2 {
-			// style this at the right time!
+		@media @tablet {
+			background: purple;
+		}
 	}
 		
 	.box3 {
-			// style this at the right time!
+		@media @tablet {
+			background: purple;
+		}
 	}
 		
 	.box4 {
 		@media @laptop {
-			background-color: green;
+			background: green;
 		}
 	}
 }
