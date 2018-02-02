@@ -16,6 +16,11 @@
 		margin-bottom: 20px;
 		display: flex;
 
+		@media @phone {
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+
 		nav {
 			width: 80%;
 			height: 100%;
@@ -30,6 +35,11 @@
 
 			@media @phone {
 				background: @phoneBackgroundColor;
+
+				width: 100%;
+				height: 50%;
+
+				margin: 0;
 			}
 		}
 
