@@ -21,6 +21,10 @@ html {
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content;
+
+			@media @laptop {
+				background: green;
+			}
 		}
 		.logo {
 			width: 20%;
@@ -50,20 +54,29 @@ html {
 			.center-content;
 		}
 	
-		.content .box1 {
-			// style this at the right time!
+		.box1 {
+			@media @laptop {
+				background: green;
+			}
 		}
 	
-		.content .box2 {
-			// style this at the right time!
+		.box2 {
+			@media @tablet {
+				background: purple;
+			}
+		}
+
+	
+		.box3 {
+			@media @tablet {
+				background: purple;
+			}
 		}
 	
-		.content .box3 {
-			// style this at the right time!
-		}
-	
-		.content .box4 {
-			// style this at the right time!
+		.box4 {
+			@media @laptop {
+				background: green;
+			}
 		}
 	} // .content
 
