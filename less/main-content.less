@@ -8,6 +8,10 @@ html {
 	margin: 0 auto;
 	color: @secondary-color;
 	// font-size: 1.6rem;
+	@media @tablet {
+		display: flex;
+		flex-direction: column;
+	}
 
 	header {
 		width: 100%;
@@ -47,6 +51,11 @@ html {
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-evenly;
+
+		@media @tablet {
+			flex-direction: column;
+			height: auto;
+		}
 	
 		.boxes {
 			width: 45%;
@@ -56,6 +65,10 @@ html {
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
+			
+			@media @tablet {
+				width: 100%;
+			}
 		}
 	
 		.box1 {
@@ -91,18 +104,18 @@ html {
 			}
 		}
 	} // .content
-
-	footer {
-		width: 100%;
-		height: 50px;
-		background: @primary-color;
-		.center-content;
-		
-		@media @phone {
-				background: orange;
-			}
-	} // footer
 } // container
+
+footer {
+	width: 100%;
+	height: 50px;
+	background: @primary-color;
+	.center-content;
+	
+	@media @phone {
+			background: orange;
+		}
+} // footer
 
 
 
