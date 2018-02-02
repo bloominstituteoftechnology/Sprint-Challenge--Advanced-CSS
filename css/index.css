@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -148,7 +148,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .container {
   width: 900px;
@@ -164,13 +164,13 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
 }
 .content {
   margin-top: 20px;
@@ -184,13 +184,13 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
 }
 footer {
   width: 100%;
-  height: 50px;
-  background: gray;
+  height: 5rem;
+  background: black;
 }
