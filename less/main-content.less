@@ -17,6 +17,14 @@ header {
 		background: @primary-color;
 		margin-right: 2%;
 		.center-content;
+
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: orange;
+		}
 	}
 
   .logo {
@@ -25,6 +33,10 @@ header {
 		background: @primary-color;
 		.center-content;
 		.border-radius(50%);
+
+		@media @tablet {
+			background: purple;
+		}
 	}
 
 }
@@ -50,18 +62,38 @@ header {
 
 	.box1 {
 		// style this at the right time!
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: orange;
+		}
 	}
 	
 	.box2 {
 		// style this at the right time!
+		@media @tablet {
+			background: purple;
+		}
 	}
 	
 	.box3 {
 		// style this at the right time!
+		@media @tablet {
+			background: purple;
+		}
 	}
 	
 	.box4 {
 		// style this at the right time!
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: orange;
+		}
 	}
 }
 
@@ -70,4 +102,8 @@ footer {
 	height: 5rem;
 	background: @primary-color;
 	.center-content;
+
+	@media @phone {
+		background: orange;
+	}
 }
