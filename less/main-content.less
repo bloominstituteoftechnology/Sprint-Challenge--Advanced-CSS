@@ -1,5 +1,6 @@
 .container {
-	width: 900px;
+	max-width: 900px;
+  width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -9,19 +10,29 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
-
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+  nav {
+    width: 80%;
+    height: 100%;
+    background: @primary-color;
+    margin-right: 2%;
+    .center-content;
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+    }
+  }
+  .logo {
+    width: 20%;
+    height: 100%;
+    background: @primary-color;
+    .center-content;
+    .border-radius(50%);
+    @media @tablet {
+      background: purple;
+    }
+  }
 }
 
 .content {
@@ -32,35 +43,49 @@ header .logo {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
-
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
+  .boxes {
+    width: 45%;
+    height: 200px;
+    background: @primary-color;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    .center-content;
+  }
+  .box1 {
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+    }
+  }
+  .box2 {
+    @media @tablet {
+      background: purple;
+    }
+  }
+  .box3 {
+    @media @tablet {
+      background: purple;
+    }
+  }
+  .box4 {
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+    }
+  }
 }
 
 footer {
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
+  .center-content;
+  @media @phone {
+    background: orange;
+  }
 }
