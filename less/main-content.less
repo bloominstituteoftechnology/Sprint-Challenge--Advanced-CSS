@@ -10,6 +10,11 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+
+	@media @phone {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 
 	nav {
@@ -26,6 +31,8 @@ header {
 		
 		@media @phone {
 			background: orange;
+			width: 100%;
+			height: 50%;
 		}
 }
 
@@ -51,6 +58,14 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+
+	@media @tablet {
+		height: 860px;
+	}
+
+	@media @phone {
+		height: 860px;
+	}
 }
 
 	.boxes {
@@ -70,8 +85,13 @@ header {
 				background: green;
 			}
 
+			@media @tablet {
+				width: 100%;
+			}
+
 			@media @phone {
 				background: orange;
+				width: 100%;
 			}
 }
 
@@ -79,14 +99,24 @@ header {
 	// style this at the right time!
 			@media @tablet {
 				background: purple;
-	}
+				width: 100%;
+			}
+
+			@media @phone {
+				width: 100%;
+			}
 }
 
 		.box3 {
 	// style this at the right time!
 			@media @tablet {
 				background: purple;
-	}
+				width: 100%;
+			}
+
+			@media @phone {
+				width: 100%;
+			}
 }
 
 		.box4 {
@@ -95,8 +125,13 @@ header {
 				background: green;
 			}
 
+			@media @tablet {
+				width: 100%;
+			}
+
 			@media @phone {
 				background: orange;
+				width: 100%;
 			}
 }
 
