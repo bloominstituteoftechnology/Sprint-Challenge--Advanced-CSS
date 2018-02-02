@@ -3,7 +3,8 @@ html {
 }
 
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	font-size: 1.5rem;
     color: @secondary-color;
@@ -21,6 +22,12 @@ header {
 		background: @sprint-color;
 		margin-right: 2%;
 		.center-content;
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
+		}
 	}
 
 	.logo {
@@ -29,6 +36,9 @@ header {
 		background: @sprint-color;
 		.center-content;
 		.border-radius(50%);
+		@media @tablet {
+			background: purple;
+		}
 	}
 
 }
@@ -50,21 +60,35 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content;
+	}
 
-		.box1 {
-			// style this at the right time!
+	.box1 {
+		@media @laptop {
+			background: green;
 		}
-	
-		.box2 {
-			// style this at the right time!
+		@media @phone {
+			background: orange;
 		}
-	
-		.box3 {
-			// style this at the right time!
+	}
+
+	.box2 {
+		@media @tablet {
+			background: purple;
 		}
-	
-		.box4 {
-			// style this at the right time!
+	}
+
+	.box3 {
+		@media @tablet {
+			background: purple;
+		}
+	}
+
+	.box4 {
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
 		}
 	}
 }
@@ -75,4 +99,9 @@ footer {
 	height: 50px;
 	background: @sprint-color;
 	.center-content;
+	@media @phone {
+		background: orange;
+	}
 }
+
+
