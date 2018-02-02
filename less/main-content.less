@@ -7,13 +7,6 @@ html, body {
     font-size: 62.5%; // to set 1 rem =~ 10px
 }
 
-h1, h2, h3, h4, h5 {
-    letter-spacing: 1px;
-	margin-bottom: 10px;
-	font-size: 1.6rem;
-}
-
-
 .container {
 	width: 100%;
 	max-width: 900px;
@@ -49,13 +42,13 @@ header {
 	} // nav
 	
 	.logo {
+		background-color: purple;
 		.border-radius(50%);
 		height: 100%;
 		width: 20%;
-		background: @primary-color;
+		.center-content;
 		@media @tablet {
-			// background-color: purple;
-			.center-content;
+			background: @primary-color;
 		}
 		@media @laptop {
 		}
@@ -69,8 +62,8 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-	height: auto;
-	@media @tablet {
+	height: 900px;
+	@media @phone {
 		height: 420px;
 	}
 	
@@ -82,39 +75,45 @@ header {
 		display: flex;
 		.center-content;
 		background: @primary-color;
-		@media @tablet {
+		@media @phone {
 			width: 45%;
 		}
-		@media @laptop {
-		}
+		// @media @laptop {
+		// }
 	} 
 		
 	.box1 {
-		// background-color: orange;
-		// @media @tablet {
-		// 	background-color: green;
-		// }
+		background-color: orange;
+		@media @tablet {
+			background-color: green;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
 	}
 	
 	.box2 {
-		// @media @tablet {
-		// 	background-color: purple;
-		// }
+		background-color: purple;
+		@media @tablet {
+			background-color: @primary-color;
+		}
 	}
 	
 	.box3 {
-		// @media @tablet {
-		// 	background-color: purple;
-		// }
+		background-color: purple;
+		@media @tablet {
+			background-color: @primary-color;
+		}
 	}
 	
 	.box4 {
-		// @media @laptop {
-		// 	background-color: green;
-		// }
-		// @media @phone {
-		// 	background-color: orange;
-		// }
+		background-color: orange;
+		@media @tablet {
+			background-color: green;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
 	}
 } // .content
 

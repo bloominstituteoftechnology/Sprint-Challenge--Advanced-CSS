@@ -158,15 +158,6 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  font-size: 1.6rem;
-}
 .container {
   width: 100%;
   max-width: 900px;
@@ -209,19 +200,20 @@ header nav {
   }
 }
 header .logo {
+  background-color: purple;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   height: 100%;
   width: 20%;
-  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
 }
 @media (min-width: 768px) {
   header .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
+    background: black;
   }
 }
 .content {
@@ -231,9 +223,9 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
-  height: auto;
+  height: 900px;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .content {
     height: 420px;
   }
@@ -249,9 +241,51 @@ header .logo {
   font-size: 1.6rem;
   background: black;
 }
-@media (min-width: 768px) {
+@media (min-width: 400px) {
   .content .boxes {
     width: 45%;
+  }
+}
+.content .box1 {
+  background-color: orange;
+}
+@media (min-width: 768px) {
+  .content .box1 {
+    background-color: green;
+  }
+}
+@media (min-width: 1100px) {
+  .content .box1 {
+    background: black;
+  }
+}
+.content .box2 {
+  background-color: purple;
+}
+@media (min-width: 768px) {
+  .content .box2 {
+    background-color: black;
+  }
+}
+.content .box3 {
+  background-color: purple;
+}
+@media (min-width: 768px) {
+  .content .box3 {
+    background-color: black;
+  }
+}
+.content .box4 {
+  background-color: orange;
+}
+@media (min-width: 768px) {
+  .content .box4 {
+    background-color: green;
+  }
+}
+@media (min-width: 1100px) {
+  .content .box4 {
+    background: black;
   }
 }
 footer {
