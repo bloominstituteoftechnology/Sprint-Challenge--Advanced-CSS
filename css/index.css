@@ -208,6 +208,11 @@ html {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  .container .content {
+    height: auto;
+  }
+}
 .container .content .boxes {
   width: 45%;
   height: 200px;
@@ -218,6 +223,11 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .container .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .container .content .box1 {

@@ -47,15 +47,21 @@ html {
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-evenly;
+		@media @tablet {
+			height: auto;
+		}
 
 		.boxes {
 			width: 45%;
 			height: 200px;
 			background: @third-color;
-			color: white;
+			color: @secondary-color;
 			margin-bottom: 20px;
 			display: flex;
-			.center-content
+			.center-content;
+			@media @tablet {
+				width: 100%;
+			}
 		}
 
 		.box1 {
