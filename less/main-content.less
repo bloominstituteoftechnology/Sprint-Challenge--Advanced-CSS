@@ -43,6 +43,10 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+	@media @tablet {
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
 	.boxes {
 		width: 45%;
 		height: 200px;
@@ -56,6 +60,9 @@ header {
 		@media @laptop {
 			background-color: green;
 		}
+		@media @tablet {
+			width: 100%;
+		}
 		@media @phone {
 			background-color: orange;
 		}
@@ -63,16 +70,21 @@ header {
 	.box2 {
 		@media @tablet {
 			background-color: purple;
+			width: 100%;
 		}
 	}
 	.box3 {
 		@media @tablet {
 			background-color: purple;
+			width: 100%;
 		}
 	}
 	.box4 {
 		@media @laptop {
 			background-color: green;
+		}
+		@media @tablet {
+			width: 100%;
 		}
 		@media @phone {
 			background-color: orange;
