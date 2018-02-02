@@ -162,6 +162,11 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-direction: column;
+  }
+}
 header nav {
   width: 80%;
   height: 100%;
@@ -180,6 +185,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -197,6 +204,12 @@ header .logo {
 @media (max-width: 768px) {
   header .logo {
     background: purple;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    order: -1;
+    align-self: center;
   }
 }
 .content {
