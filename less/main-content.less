@@ -1,7 +1,7 @@
 
 .container {
 	width: 100%;
-	max-width: 1250px;
+	max-width: 900px;
 	margin: 0 auto;
 	font-size:1.6rem;
 	color: @secondary-color;
@@ -24,7 +24,10 @@ header {
 			background: green;
 		}
 		@media @phone{
+			order:top;
 			background:orange;
+			height:50%;
+			width:100%;
 		}
 	}
 	.logo{
@@ -35,6 +38,10 @@ header {
 		background: @primary-color;
 		@media @tablet {
 			background: purple;
+			
+		}
+		@media @phone{
+			order:1;
 		}
 	}
 }
@@ -50,6 +57,12 @@ header {
 	color: white;
 	margin-bottom: 20px;
 	display: flex;
+	@media @tablet{
+	width:100%;
+	}
+	@media @phone{
+	width:100%;
+	}
 }
 }
 .content .box1 {
