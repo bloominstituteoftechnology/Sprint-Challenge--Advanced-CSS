@@ -11,24 +11,22 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
-
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-		@media @phone {
-			background-color: orange;
-		}
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-	.center-content;
-	.border-radius(50%);
+	.logo {
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+		.center-content;
+		.border-radius(50%);
+	}
+	nav {
+		width: 80%;
+		height: 100%;
+		background: @primary-color;
+		margin-right: 2%;
+			@media @phone {
+				background-color: orange;
+			}
+	}
 }
 
 .content {
@@ -41,47 +39,57 @@ header .logo {
 	justify-content: space-evenly;
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-	.center-content;
+.content {
+	 .boxes {
+		 width: 45%;
+		 height: 200px;
+		 background: @primary-color;
+		 color: white;
+		 margin-bottom: 20px;
+		 display: flex;
+		 .center-content;
+	 }
 }
 
-.content .box1 {
-	// style this at the right time!
-	@media @laptop {
-		background-color: green;
-	}
-	@media @phone {
-		background-color: orange;
-	}
-}
-
-.content .box2 {
-	// style this at the right time!
-	@media @tablet {
-		background-color: purple;
+.content {
+	.box1 {
+		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
+		@media @phone {
+			background-color: orange;
+		}
 	}
 }
 
-.content .box3 {
-	// style this at the right time!
-	@media @tablet {
-		background-color: purple;
+.content {
+	.box2 {
+		// style this at the right time!
+		@media @tablet {
+			background-color: purple;
+		}
 	}
 }
 
-.content .box4 {
-	// style this at the right time!
-	@media @laptop {
-		background-color: green;
+.content {
+	.box3 {
+		// style this at the right time!
+		@media @tablet {
+			background-color: purple;
+		}
 	}
-	@media @phone {
-		background-color: orange;
+}
+
+.content {
+	.box4 {
+		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
+		@media @phone {
+			background-color: orange;
+		}
 	}
 }
 
