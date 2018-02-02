@@ -164,13 +164,13 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
 }
 .content {
   margin-top: 20px;
@@ -184,7 +184,7 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
@@ -192,5 +192,5 @@ header .logo {
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
 }
