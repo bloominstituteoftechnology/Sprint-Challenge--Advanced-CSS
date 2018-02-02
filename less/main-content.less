@@ -1,66 +1,285 @@
-.container {
-	width: 900px;
-	margin: 0 auto;
-	color: @secondary-color;
+html {
+	font-size: 62.5%;
 }
 
-header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-}
+body {
+	font-size: 62.5%;
+	
+	.container {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		color: @secondary-color;
+			
+			header {
+				width: 100%;
+				height: 100px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-flow: row wrap-reverse;
+				justify-content: center;
+				@media @tablet {
+					justify-content: flex-start;
+					flex-flow: row nowrap;
+				}
+				@media @laptop {
+					justify-content: flex-start;
+					flex-flow: row nowrap;
+				}
+			
+				
+				nav {
+					width: 100%;
+					height: 50%;
+					background: @phone-color;
+					margin-right: 2%;
+					font-size: 1.6rem;
+					.center-content;
+					@media @tablet {
+						width: 80%;
+						height: 100%;
+						background: @laptop-color;
+					}
+					@media @laptop {
+						width: 80%;
+						height: 100%;
+						background: @laptop-color;
+					}
+				}
+				
+				.logo {
+					width: 20%;
+					height: 50%;
+					background: @primary-color;
+					font-size: 1.6rem;
+					.center-content;
+					.border-radius;
+					@media @tablet {
+						background: @tablet-color;
+						height: 100%;
+					}
+					@media @laptop {
+						background: @primary-color;
+						height: 100%;
+					}
+				}
+			} // header
+			
+		
+		.content {
+				margin-top: 20px;
+				width: 100%;
+				height: 860px;
+				margin-bottom: 20px;
+				display: flex;
+				flex-flow: wrap;
+				justify-content: space-evenly;
+				@media @tablet {
+					height: auto; // or 860px
+				}
+				@media @laptop {
+					height: 420px;
+				}
+				
+				.boxes {
+					width: 90%;
+					height: 200px;
+					background: @primary-color;
+					color: white;
+					margin-bottom: 20px;
+					display: flex;
+					font-size: 1.6rem;
+					.center-content;
+					@media @tablet {
+						width: 90%;
+					}
+					@media @laptop {
+						width: 45%;
+						height: 200px;
+					}
+				} // boxes
+					
+				.box1 {
+					background: @phone-color;
+						@media @tablet {
+							background: @laptop-color;
+						}
+						@media @laptop {
+							background: @laptop-color;
+						}
+				}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+				.box2 {
+						background: @tablet-color;
+						@media @laptop {
+							background: @primary-color;
+						}
+				}
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+				.box3 {
+					background: @tablet-color;
+						@media @laptop {
+							background: @primary-color;
+						}
+				}
 
-.content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
+				.box4 {
+					background: @phone-color;
+						@media @tablet {
+							background: @laptop-color;
+						}
+				}
+				
+		} // content
+		
+		footer {
+			width: 100%;
+			height: 50px;
+			background: @phone-color;
+			font-size: 1.6rem;
+			.center-content;
+			@media @tablet {
+				background: @primary-color;
+			}
+		}
+		
+	} // container
+} // body
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
 
-.content .box1 {
-	// style this at the right time!
-}
 
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
-
-footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
-}
+  //  //             This is before super stretch:
+// html {
+// 	font-size: 62.5%;
+// }
+// 
+// body {
+// 	font-size: 62.5%;
+// 
+// 	.container {
+// 		width: 100%;
+// 		max-width: 900px;
+// 		margin: 0 auto;
+// 		color: @secondary-color;
+// 
+// 		header {
+// 			width: 100%;
+// 			height: 100px;
+// 			margin-bottom: 20px;
+// 			display: flex;
+// 			@media @phone  {
+// 				flex-flow: row wrap-reverse;
+// 				justify-content: center; //changed
+// 			}
+// 
+// 			nav {
+// 				width: 80%;
+// 				height: 100%;
+// 				background: @primary-color;
+// 				margin-right: 2%;
+// 				font-size: 1.6rem;
+// 				.center-content;
+// 				@media @laptop {
+// 					background: @laptop-color;
+// 				}
+// 				@media @phone {
+// 					background: @phone-color;
+// 					width: 100%;
+// 					height: 50%;
+// 				}
+// 			}
+// 
+// 			.logo {
+// 				width: 20%;
+// 				height: 100%;
+// 				background: @primary-color;
+// 				font-size: 1.6rem;
+// 				.center-content;
+// 				.border-radius;
+// 				@media @tablet {
+// 					background: @tablet-color;
+// 				}
+// 				@media @phone {
+// 					height: 50%;
+// 				}
+// 			}
+// 
+// 		} // header
+// 
+// 		.content {
+// 				margin-top: 20px;
+// 				width: 100%;
+// 				height: 420px;
+// 				margin-bottom: 20px;
+// 				display: flex;
+// 				flex-flow: wrap;
+// 				justify-content: space-evenly;
+// 				@media @tablet {
+// 					height: auto; // or 860px
+// 				}
+// 				@media @phone {
+// 					height: 860px; // or auto;=
+// 				}
+// 
+// 				.boxes {
+// 					width: 45%;
+// 					height: 200px;
+// 					background: @primary-color;
+// 					color: white;
+// 					margin-bottom: 20px;
+// 					display: flex;
+// 					font-size: 1.6rem;
+// 					.center-content;
+// 					@media @tablet {
+// 						width: 90%;
+// 					}
+// 					@media @phone {
+// 						width: 90%;
+// 					}
+// 				} // boxes
+// 
+// 				.box1 {
+// 						@media @laptop {
+// 							background: @laptop-color;
+// 						}
+// 						@media @phone {
+// 							background: @phone-color;
+// 						}
+// 				}
+// 
+// 				.box2 {
+// 						@media @tablet {
+// 							background: @tablet-color;
+// 						}
+// 				}
+// 
+// 				.box3 {
+// 						@media @tablet {
+// 							background: @tablet-color;
+// 						}
+// 				}
+// 
+// 				.box4 {
+// 						@media @laptop {
+// 							background: @laptop-color;
+// 						}
+// 						@media @phone {
+// 							background: @phone-color;
+// 						}
+// 				}
+// 
+// 		} // content
+// 
+// 		footer {
+// 			width: 100%;
+// 			height: 50px;
+// 			background: @primary-color;
+// 			font-size: 1.6rem;
+// 			.center-content;
+// 			@media @phone {
+// 				background: @phone-color;
+// 			}
+// 		}
+// 
+// 	} // container
+// } // body
