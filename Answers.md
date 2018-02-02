@@ -1,0 +1,5 @@
+1. A preprocessor allows us to structure our css like javascript and also assign/use variables and functions. It then uses a compiler to translate it into basic css.
+2. npm install -g less
+3. We have used tons of mixins this week including .opacity, .transition, .skew, and even a button mixin that we created to make buttons. Mixins allow us to make code cleaner and more reusable.
+4. A fixed layout website will not adjust to different viewports, it will just add scroll bars. Adaptive website will adjust at specific breakpoints (i.e. 1100px, 768x, 400px) to make the site more responsive. A fluis website will adjust to it's viewports at all times, allowing more responsiveness. 
+5. Max-width allows us to make a break point at which a element will stop growing so that it will not skew on a larger viewport. You may want a container or picture to take up 100% width on a small view port but only 800px on a larger view port, max-width is what would allow that to happen. Max-width is also used for media queries in a desktop down design.
