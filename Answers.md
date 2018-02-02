@@ -1,5 +1,7 @@
 1. If you had to teach someone with basic CSS knowledge what a preprocessor was, how would you describe it?
-    It keeps you form having to write the same complex styles over and over again.So say you wanted to have a style for a button that you wanted to use for multiple buttons. You can write that style once as a mixin and then output it by that mixin name with no copy/pasting.
+
+    It keeps you from having to write the same complex styles over and over again. So say you wanted to have a style for a button that you used for multiple buttons. You can write that style once as a mixin and then output it by that mixin name with no copy/pasting.
+
 2. What is the command in node package manager (npm) to install LESS globally on your computer?
 
     npm install -g less
@@ -22,11 +24,11 @@
 
 4. What is the difference between fixed layout, adaptive layout, and fluid layout?
 
-    Fixed layout is a set layout width regarless of screen size. 
+    Fixed layout is a set layout width regardless of screen size. 
     
-    Adaptive layout responds to screen sizes, but not ina  fluid way. It will jump from breakpoint to breakpoint.  
+    Adaptive layout responds to screen sizes, but not in a  fluid way. It will jump from breakpoint to breakpoint.  
 
-    Fluid layout may have a max width, but will expand and contract based on the screen size and not necessarily at break points.
+    Fluid layout may have a max-width, but will expand and contract based on the screen size and not necessarily at break points.
 
 5. Why do we need to use the CSS property max-width in a responsive website?
 
