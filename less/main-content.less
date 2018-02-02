@@ -1,66 +1,107 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
+	min-width: 300px;
 	margin: 0 auto;
-	color: @secondary-color;
-}
-
-header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
-
-.content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
-
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
-
-footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+	color: @min-white;
+	header {
+		width: 100%;
+		height: 100px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		@media @tablet {
+			flex-direction: row;
+		}
+		nav {
+			background-color: @min-orange;
+			width: 100%;
+			height: 50%;
+			margin-right: 0;
+			.center-content;
+			@media @tablet {
+				height: 100%;
+				margin-right: 2%;				
+				background-color: @min-green;
+			}
+			@media @desktop {				
+				background-color: @min-black;
+			}
+		}
+		.logo {
+			width: 20%;
+			height: 50%;			
+			background-color: @min-purple;
+			.center-content;
+			.border-radius(50%);
+			@media @tablet {
+				height: 100%;
+			}
+			@media @laptop {
+				background-color: @min-black;
+			}			
+		}
+	}
+	.content {
+		margin-top: 20px;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 20px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+		.boxes {
+			width: 100%;
+			height: 200px;
+			color: @min-white;
+			margin-bottom: 20px;
+			display: flex;
+			.center-content;
+			@media @laptop {
+				width: 45%;
+			}
+		}
+		.box1 {
+			background-color: @min-orange;			
+			@media @tablet {
+				background-color: @min-green;
+			}
+			@media @desktop {
+				background-color: @min-black;
+			}
+		}
+		
+		.box2 {
+			background-color: @min-purple;			
+			@media @laptop {
+				background-color: @min-black;
+			}	
+		}
+		
+		.box3 {
+			background-color: @min-purple;
+			@media @laptop {
+				background-color: @min-black;
+			}	
+		}
+		
+		.box4 {
+			background-color: @min-orange;		
+			@media @tablet {
+				background-color: @min-green;
+			}
+			@media @desktop {
+				background-color: @min-black;
+			}
+		}
+		}// content
+	footer {
+		width: 100%;
+		height: 50px;
+		background-color: @min-orange;	
+		.center-content;
+		@media @tablet {
+			background-color: @min-black;
+		}
+	}
 }
