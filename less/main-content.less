@@ -7,62 +7,68 @@ html {
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	@media @tablet {
-		display: flex;
-		flex-direction: column;
-	}
+	display: flex;
+	flex-direction: column;
 
 	header {
 		width: 100%;
 		height: 100px;
 		margin-bottom: 20px;
 		display: flex;
+		flex-direction: column-reverse;
 
-		@media @phone {
-			flex-direction: column-reverse;
+		@media @tablet {
+			flex-direction: row;
 		}
 	
 		nav {
 			width: 80%;
-			height: 100%;
-			background: @primary-color;
+			height: 50%;
+			background: orange;
 			margin-right: 2%;
 			.center-content;
 
-			@media @laptop {
+			@media @tablet {
+				height: 100%;
 				background: green;
 			}
 
-			@media @phone {
-				background: orange;
-				height: 50%;
+			@media @desktop {
+				background: @primary-color;
 			}
-		}
+		} // nav
+		
 		.logo {
 			width: 20%;
 			height: 100%;
-			background: @primary-color;
+			background: purple;
 			.center-content;
 			.border-radius(50%);
+
+			@media @laptop {
+				background: black;
+			}
 		}
 	} // header
 
 	.content {
 		margin-top: 20px;
 		width: 100%;
-		height: 420px;
+		height: auto;
 		margin-bottom: 20px;
 		display: flex;
 		flex-flow: wrap;
+		flex-direction: column;
 		justify-content: space-evenly;
 
-		@media @tablet {
-			flex-direction: column;
-			height: auto;
+		@media @laptop {
+			flex-direction: row;
+			height: 420px;
 		}
 	
 		.boxes {
-			width: 45%;
+			// width: 45%;
+			width: 100%;
 			height: 200px;
 			background: @primary-color;
 			color: white;
@@ -70,41 +76,48 @@ html {
 			display: flex;
 			.center-content;
 			
-			@media @tablet {
-				width: 100%;
+			@media @laptop {
+				width: 45%;
 			}
 		}
 	
 		.box1 {
-			@media @laptop {
+			background: orange;
+
+			@media @tablet {
 				background: green;
 			}
 			
-			@media @phone {
-				background: orange;
+			@media @desktop {
+				background: black;
 			}
 		}
 	
 		.box2 {
-			@media @tablet {
-				background: purple;
+			background: purple;
+
+			@media @laptop {
+				background: @primary-color;
 			}
 		}
-
 	
 		.box3 {
-			@media @tablet {
-				background: purple;
-			}
+			background: purple;
+
+			@media @laptop {
+				background: @primary-color;
+			} 
 		}
 	
 		.box4 {
-			@media @laptop {
+			background: orange;
+
+			@media @tablet {
 				background: green;
 			}
-			
-			@media @phone {
-				background: orange;
+
+			@media @desktop {
+				background: black;
 			}
 		}
 	} // .content
@@ -113,12 +126,12 @@ html {
 footer {
 	width: 100%;
 	height: 50px;
-	background: @primary-color;
+	background: orange;
 	.center-content;
 	
-	@media @phone {
-			background: orange;
-		}
+	@media @tablet {
+		background: @primary-color;
+	}
 } // footer
 
 
