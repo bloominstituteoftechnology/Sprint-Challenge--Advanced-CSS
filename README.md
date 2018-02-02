@@ -10,11 +10,26 @@
 ## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
 
 1. If you had to teach someone with basic CSS knowledge what a preprocessor was, how would you describe it?
+
+  ##A preprocessor is a pretty awesome tool that enables you to cut down on your code by doing some of the work for you. It allows for nesting, and variables, and some logic that make for well designed code. It then compiles that information and outputs a standard css document that can be used for your web designs. It's awesome!
+
 2. What is the command in node package manager (npm) to install LESS globally on your computer?
+
+  #npm install -g less
+
 3. Please provide an example of a mixin you have used in a project this week.
+
+  #We used a mixin called .skew() which allowd us to alter an image by passing two arguments. 
+
 4. What is the difference between fixed layout, adaptive layout, and fluid layout?
+
+  #A fixed layout will not adjust based on the screen size. 
+  #An adaptive layout will readjust based on certain "break points."
+  #A fluid layout is the coolest. It will adapt in harmony with the changing size of a screen.
+
 5. Why do we need to use the CSS property max-width in a responsive website?
 
+  #We use max-width to prevent the elements from stretching outside of their containers. 
 
 ## Initializing Project
 * Fork / Clone this project into a directory on your machine.
@@ -29,6 +44,7 @@
 
 ## Complete these tasks
 * Make every gray background turn black using one variable.
+  #Done
 * Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
 * Nest every LESS selector appropriately
 * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
