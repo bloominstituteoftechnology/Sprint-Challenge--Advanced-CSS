@@ -4,7 +4,7 @@
 	color: @secondary-color;
 	font-size: 62.5%;
 	width: 100%;
-	max-width: 900px;
+	max-width: 900px;		
 
 	header {
 		width: 100%;
@@ -14,6 +14,9 @@
 		@media @phone {
 			flex-direction: column-reverse;
 		}
+		@media @tablet {
+			flex-direction: row;
+		}
 
 		nav {
 			width: 80%;
@@ -21,12 +24,15 @@
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content();
-			@media @laptop {
-				background: green;
-			}
 			@media @phone {
 				background: orange;
 				width: 100%;
+			}
+			@media @tablet {
+				background: green;
+			}
+			@media @desktop {
+				background: black;
 			}
 		}
 
@@ -37,11 +43,12 @@
 			background: @primary-color;
 			.center-content();
 			.border-radius(50%);
-			@media @tablet {
-				background: purple;
-			}
 			@media @phone {
 				margin: 0 auto;
+				background: purple;
+			}
+			@media @laptop {
+				background: black;
 			}
 		}
 	}
@@ -62,62 +69,65 @@
 			margin-bottom: 20px;
 			display: flex;
 			.center-content();
+
+			@media @desktop {
+				background: black !important;
+			}
 		}
 
 		.box1 {
 			// style this at the right time!
-			@media @laptop {
-				background: green;
-			}
-
-			@media @tablet {
-				width: 100%;
-			}
-
 			@media @phone {
 				background: orange;
 				width: 100%;
+			}
+			@media @tablet {
+				width: 100%;
+				background: green;
+			}
+
+			@media @laptop {
+				width: 45%;
 			}
 		}
 
 		.box2 {
 			// style this at the right time!
-			@media @tablet {
-				background: purple;
-				width: 100%;
-			}
-			
+
 			@media @phone {
 				width: 100%;
-			
+				background: purple;
+			}
+			@media @laptop {
+				background: black;
+				width: 45%;
 			}
 		}
 
 		.box3 {
 			// style this at the right time!
-			@media @tablet {
-				background: purple;
-				width: 100%;
-			}
-			
 			@media @phone {
 				width: 100%;
+				background: purple;
+			}
+			@media @laptop {
+				width: 45%;
+				background: black;
 			}
 		}
 
 		.box4 {
 			// style this at the right time!
-			@media @laptop {
-				background: green;
-			}
-
-			@media @tablet {
-				width: 100%;
-			}
-
 			@media @phone {
 				background: orange;
 				width: 100%;
+			}
+			@media @tablet {
+				width: 100%;
+				background: green;
+			}
+			@media @laptop {
+				width: 45%;
 			}
 		}
 	}
@@ -129,6 +139,9 @@
 		.center-content();
 		@media @phone {
 			background: orange;
+		}
+		@media @tablet {
+			background: black;
 		}
 	}
 }
