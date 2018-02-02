@@ -34,3 +34,5 @@
 5. Why do we need to use the CSS property max-width in a responsive website?
 
 + The max-width property is used in responsive website design because when a breakpoint is hit, the website needs to fill the screen of the new dimensions. This allows it adjust fully to the new dimensions of whatever screen size.
+
+Done - moving on to stretch assignment
