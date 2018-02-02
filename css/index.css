@@ -152,7 +152,7 @@ table {
 }
 .container {
   width: 100%;
-  max-width: 1250px;
+  max-width: 900px;
   margin: 0 auto;
   font-size: 1.6rem;
   color: white;
@@ -180,7 +180,10 @@ header nav {
 }
 @media (max-width: 400px) {
   header nav {
+    order: top;
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -200,6 +203,11 @@ header .logo {
     background: purple;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    order: 1;
+  }
+}
 .content {
   display: flex;
   flex-flow: wrap;
@@ -212,6 +220,16 @@ header .logo {
   color: white;
   margin-bottom: 20px;
   display: flex;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 .content .box1 {
   display: flex;
