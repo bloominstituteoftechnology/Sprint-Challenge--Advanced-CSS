@@ -178,6 +178,9 @@ header nav {
   margin-right: 2%;
 }
 header .logo {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
