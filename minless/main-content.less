@@ -1,0 +1,113 @@
+.container {
+    width:100%;
+    min-width: 400px;
+    max-width:900px;
+    margin: 0 auto;
+    color: @secondary-color;
+    font-size: 62.5%;
+    header {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+        display: flex;
+
+        nav {
+            width: 80%;
+            height: 100%;
+            background: @primary-color;
+            margin-right: 2%;
+            .center-content;
+            
+            @media @minfone {
+                background: orange;
+            }
+            @media @mintop {
+                background-color: green;
+            }
+        } //nav
+
+        .logo {
+            width: 20%;
+            height: 100%;
+            flex-direction: column-reverse;
+            .center-content;
+            .border-radius(50%);
+            background-color:purple;
+            @media @mintab {
+                flex-direction: row;
+                
+            }
+        } //logo
+        @media @mintab {
+            flex-direction: row;
+            background: @primary-color;
+        }
+        
+    } //header
+
+    .content {
+        margin-top: 20px;
+        width: 100%;
+        height: 420px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+        
+        .boxes {
+            width: 45%;
+            height: 200px;
+            background: @primary-color;
+            color: white;
+            margin-bottom: 20px;
+            display: flex;
+            .center-content;
+            
+        } //boxes
+
+        .box1 {
+            
+            @media @minfone {
+                background: orange;
+            }
+            @media @mintop {
+                background-color: green;
+            }
+        }
+        .box2 {
+            
+            @media @mintab {
+                background-color:purple;
+            }
+        }
+
+        .box3 {
+            
+            @media @mintab {
+                background-color:purple;
+            }
+        }
+
+        .box4 {
+            @media @minfone {
+                background: orange;
+            }
+            @media @mintop {
+                background-color: green;
+            }
+        }
+
+    } //content
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background: @primary-color;
+        .center-content;
+        @media @minfone {
+            background: orange;
+            }
+    }//footer
+
+} //container
+
