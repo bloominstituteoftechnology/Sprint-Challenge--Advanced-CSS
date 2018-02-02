@@ -1,14 +1,19 @@
-@laptop: ~"(max-width: 1100px)";
-@tablet: ~"(max-width: 768px)";
-@phone: ~"(max-width: 400px)";
+// escapes
 
-//colors
-@primary-color: #000000;
-@secondary-color: white;
+@tablet: ~"(min-width: 400px)";
+@laptop: ~"(min-width: 768px)";
+@desktop: ~"(min-width: 1100px)";
+
+// colors
+
+@min-purple: purple;
+@min-orange: orange;
+@min-green: green;
+@min-black: black;
+@min-white: white; 
 
 // Mixins
 
-// example: .center-content;
 .center-content {
   display: flex;
   justify-content: center;
@@ -16,7 +21,6 @@
   font-size: 2rem;
 }
 
-// example: .border-radius(10px);
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
