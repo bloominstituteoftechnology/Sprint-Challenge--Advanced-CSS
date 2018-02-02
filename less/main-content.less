@@ -6,6 +6,10 @@
 }
 
 header {
+	@media @phone {
+		flex-wrap: wrap;
+		height: 100%;
+	}
 	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
@@ -17,6 +21,8 @@ header {
 		}
 		@media @phone {
 			background: orange;
+			height: 50px;
+			width: 100%;
 		}
 		width: 80%;
 		height: 100%;
@@ -29,6 +35,9 @@ header {
 		@media @tablet {
 			background: purple;
 		}
+		@media @phone {
+			order: -1;
+		}
 		width: 20%;
 		height: 100%;
 		background: @primary-color;
@@ -38,6 +47,9 @@ header {
 }
 
 .content {
+	@media @tablet {
+		height: 100%;
+	}
 	margin-top: 20px;
 	width: 100%;
 	height: 420px;
@@ -60,6 +72,9 @@ header {
 		@media @laptop {
 			background: green;
 		}
+		@media @tablet {
+			width: 100%;
+		}
 		@media @phone {
 			background: orange;
 		}
@@ -68,18 +83,23 @@ header {
 	.box2 {
 		@media @tablet {
 			background: purple;
+			width: 100%;
 		}
 	}
 
 	.box3 {
 		@media @tablet {
 			background: purple;
+			width: 100%;
 		}
 	}
 
 	.box4 {
 		@media @laptop {
 			background: green;
+		}
+		@media @tablet {
+			width: 100%;
 		}
 		@media @phone {
 			background: orange;
