@@ -1,7 +1,9 @@
 .container {
-	width: 900px;
+	max-width: 1100px;
+	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
+	font-size: 2rem;
 }
 
 header {
@@ -9,58 +11,141 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
+	flex-direction: column-reverse;
+	align-items: center;
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	@media @tablet {
+		flex-direction: row;
+		align-content: space-between;
+	}
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+	@media @laptop {
+		flex-direction: row;
+        align-content: space-between
+	}
+
+	.logo {
+		
+		@media @laptop {
+			background: @primary-color;
+		}
+
+		@media @tablet {
+			background: purple;
+		}
+
+		
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+		.center-content;
+		.border-radius(50%);
+	} 
+
+	nav {
+		
+		@media @laptop {
+			background: green;
+			width: 80%;
+		    height: 100%;
+		    margin-right: 2%;
+		    .center-content;
+		}
+		
+		background: orange;
+			height: 50px;
+			width: 100%;
+			.center-content;
+	}
 }
 
 .content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
 	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+
+	@media @tablet {
+		height: 900px;
+	}
+
+	@media @laptop {
+		margin-top: 20px;
+	    width: 100%;
+	    height: 900px;
+	    margin-bottom: 20px;
+		flex-flow: wrap;
+	    justify-content: space-evenly;
+	}
+
+	.boxes {
+	     width: 100%;
+	     height: 200px;
+	     background: @primary-color;
+	     color: white;
+	     margin-bottom: 20px;
+		 display: flex;
+		 .center-content;
+
+		 @media @laptop {
+			 width: 45%;
+			 height: 200px;
+		 }
+	}
+		 
+	.box1 {
+		@media @laptop {
+		    background: green;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+		background: orange;
+		width: 100%;
+	}
+		
+	.box2 {
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
+		width: 100%;
+	}
+		
+	.box3 {
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
+		width: 100%
+
+	}
+		
+	.box4 {
+		@media @laptop {
+			background: green;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+		width: 100%;
+		background: orange;
+	}
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
 
 footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+	@media @laptop {
+	   width: 100%;
+	   height: 50px;
+	   background: @primary-color;
+
+	}
+	background: orange;
+	.center-content;
 }
