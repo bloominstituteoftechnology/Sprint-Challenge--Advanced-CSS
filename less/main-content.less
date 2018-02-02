@@ -3,7 +3,8 @@ html {
 }
 
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
 	font-size: 1.6rem;
@@ -21,6 +22,14 @@ header {
 		background: @primary-color;
 		margin-right: 2%;
 		.center-content;
+
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: @phone-color;
+		}
 	}
 
 	.logo {
@@ -28,7 +37,11 @@ header {
 		height: 100%;
 		background: @primary-color;
 		.center-content;
-		.border-radius(50%;)
+		.border-radius(50%);
+
+		@media @tablet {
+			background: @tablet-color;
+		}
 	}
 }
 
@@ -49,23 +62,38 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content;
+
+		.box1 {
+			@media @laptop {
+				background: @laptop-color;
+			}
+
+			@media @phone {
+				background: @phone-color;
+			}
+		}
+
+		.box2 {
+			@media @tablet {
+				background: @tablet-color;
+			}
+		}
+
+		.box3 {
+			@media @tablet {
+				background: @tablet-color;
+			}
+		}
+
+		.box4 {
+			@media @laptop {
+				background: @laptop-color;
+			}
+			@media @phone {
+				background: @phone-color;
+			}
+		}
 	}
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
 }
 
 footer {
@@ -73,4 +101,8 @@ footer {
 	height: 50px;
 	background: @primary-color;
 	.center-content;
+
+	@media @phone {
+		background: @phone-color;
+	}
 }
