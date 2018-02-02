@@ -1,7 +1,25 @@
+html {
+	font-size: 10px;
+}
+
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
+	background: orange;
+	/* @media @phone {
+		background: orange;
+	} */
+	@media @tablet {
+		background: purple;
+	}
+	@media @laptop {
+		background: green;
+	}
+	@media @desktop {
+		background: @secondary-color;
+	}
 }
 
 header {
@@ -9,58 +27,111 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	// if max-width styling:
+	/* @media @phone {
+		flex-direction: column-reverse;
+	}
+	flex-direction: row; */
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+	// if min-width styling:
+	@media @tablet {
+		flex-direction: row;
+	}
+	flex-direction: column-reverse;
+	align-items: center;
+	
+	nav {
+		// if max-width styling:
+		/* @media @phone {
+			width: 100%
+			height: 50%;
+		}
+		width: 80%;
+		height: 100%; */
+
+
+		// if min-width styling:
+		@media @tablet {
+			width: 80%;
+			height: 100%;
+		}
+		width: 100%;
+		height: 50%;
+
+		background: @primary-color;
+		margin-right: 2%;
+		.center-content();
+	}
+
+	.logo {
+		width: 20%;
+		height: 100%;
+		
+		// if max-width styling 
+		/* @media @phone {
+			margin-bottom: 20px;
+		}
+		margin-bottom: 0; */
+
+		// if min-width styling
+		@media @tablet {
+			margin-bottom: 0;
+		}
+		margin-bottom: 20px;
+		
+		background: @primary-color;
+		.center-content();
+	}
 }
 
 .content {
 	margin-top: 20px;
 	width: 100%;
-	height: 420px;
+	
+	// if max-width styling:
+	/* @media @tablet {
+		height: 860px;
+	}
+	height: 420px; */
+	
+	// if min-width styling:
+	@media @laptop {
+		height: 420px;
+	}
+	height: 860px;
+
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+	.boxes {
+		// if max-width styling:
+		/* @media @tablet {
+			width: 100%;
+		} 
+		width: 45%; */
 
-.content .box1 {
-	// style this at the right time!
-}
+		// if min-width styling:
+		width: 100%;
+		@media @laptop {
+			width: 45%;
+		}
 
-.content .box2 {
-	// style this at the right time!
-}
+		height: 200px;
+		background: @primary-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content();
 
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
+	}
 }
 
 footer {
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
+	.center-content();
 }
