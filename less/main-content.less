@@ -15,6 +15,10 @@ header {
 	margin-bottom: 20px;
 	display: flex;
 
+	@media @phone {
+		flex-direction: column-reverse;
+	}
+
 	nav {
 		width: 80%;
 		height: 100%;
@@ -28,6 +32,8 @@ header {
 
 		@media @phone {
 			background: @tango;
+			height: 50%;
+			width: 100%;
 		}
 	}
 
@@ -40,6 +46,10 @@ header {
 
 		@media @tablet {
 			background: @seance;
+		}
+
+		@media @phone {
+			align-self: center;
 		}
 	}
 }//header
@@ -55,6 +65,13 @@ header {
 	flex-flow: wrap;
 	justify-content: space-evenly;
 
+	@media @tablet {
+		height: 100%
+	}
+
+	@media @phone {
+		height: 100%;
+	}
 
 	.boxes {
 		width: 45%;
@@ -71,20 +88,35 @@ header {
 			background: @goblin;
 		}
 
+		@media @tablet {
+			width: 100%;
+		}
+
 		@media @phone {
 			background: @tango;
+			width: 100%;
 		}
 	}
 
 	.box2 {
 		@media @tablet {
 		background: @seance;
+		width: 100%;
+		}
+
+		@media @phone {
+			width: 100%;
 		}
 	}
 
 	.box3 {
 		@media @tablet {
 			background: @seance;
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 100%;
 		}
 	}
 
@@ -93,8 +125,13 @@ header {
 			background: @goblin;
 		}
 
+		@media @tablet {
+			width: 100%;
+		}
+
 		@media @phone {
 			background: @tango;
+			width: 100%;
 		}
 	}
 } //content

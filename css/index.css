@@ -166,6 +166,11 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
 header nav {
   width: 80%;
   height: 100%;
@@ -184,6 +189,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background: #EC7522;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -203,6 +210,11 @@ header .logo {
     background: #591A8E;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    align-self: center;
+  }
+}
 .content {
   margin-top: 20px;
   width: 100%;
@@ -211,6 +223,16 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .content {
+    height: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    height: 100%;
+  }
 }
 .content .boxes {
   width: 45%;
@@ -228,19 +250,37 @@ header .logo {
     background: #2C6D35;
   }
 }
+@media (max-width: 768px) {
+  .content .box1 {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .content .box1 {
     background: #EC7522;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .content .box2 {
     background: #591A8E;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .box2 {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .content .box3 {
     background: #591A8E;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .box3 {
+    width: 100%;
   }
 }
 @media (max-width: 1100px) {
@@ -248,9 +288,15 @@ header .logo {
     background: #2C6D35;
   }
 }
+@media (max-width: 768px) {
+  .content .box4 {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .content .box4 {
     background: #EC7522;
+    width: 100%;
   }
 }
 footer {
