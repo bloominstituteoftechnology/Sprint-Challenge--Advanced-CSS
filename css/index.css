@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -129,21 +129,6 @@ table {
 * {
   box-sizing: border-box;
 }
-/*
-
-	Example usage:
-
-	.some-element {
-		@media @tablet {
-			width: 100%;
-		}
-
-		@media @phone {
-			width: 50%;
-		}
-	}
-
-*/
 .center-content {
   display: flex;
   justify-content: center;
@@ -151,7 +136,6 @@ table {
   font-size: 20px;
 }
 .container {
-  width: 100%;
   margin: 0 auto;
   color: white;
 }
@@ -182,7 +166,7 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
   display: flex;
   justify-content: center;
@@ -196,18 +180,19 @@ header nav {
 }
 @media (max-width: 768px) {
   header nav {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 400px) {
   header nav {
-    background: purple;
+    background: orange;
   }
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,17 +203,17 @@ header .logo {
 }
 @media (max-width: 1100px) {
   header .logo {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 768px) {
   header .logo {
-    background: blueviolet;
+    background: purple;
   }
 }
 @media (max-width: 400px) {
   header .logo {
-    background: gray;
+    background: black;
   }
 }
 .content {
@@ -243,10 +228,14 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
+  font-size: 1rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 @media (max-width: 1100px) {
   .content .box1 {
@@ -255,7 +244,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   .content .box1 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 400px) {
@@ -265,7 +254,7 @@ header .logo {
 }
 @media (max-width: 1100px) {
   .content .box2 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 768px) {
@@ -275,12 +264,12 @@ header .logo {
 }
 @media (max-width: 400px) {
   .content .box2 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 1100px) {
   .content .box3 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 768px) {
@@ -290,7 +279,7 @@ header .logo {
 }
 @media (max-width: 400px) {
   .content .box3 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 1100px) {
@@ -300,7 +289,7 @@ header .logo {
 }
 @media (max-width: 768px) {
   .content .box4 {
-    background: gray;
+    background: black;
   }
 }
 @media (max-width: 400px) {
@@ -311,20 +300,21 @@ header .logo {
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  font-size: 1rem;
 }
 @media (max-width: 1100px) {
-  footer .box4 {
-    background: gray;
+  footer {
+    background: black;
   }
 }
 @media (max-width: 768px) {
-  footer .box4 {
-    background: gray;
+  footer {
+    background: black;
   }
 }
 @media (max-width: 400px) {
-  footer .box4 {
+  footer {
     background: orange;
   }
 }

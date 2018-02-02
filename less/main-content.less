@@ -1,5 +1,4 @@
 .container {
-	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
 	@media @laptop {
@@ -36,14 +35,15 @@ header {
 		background: @primary-color;
 	}
 	@media @phone {
-		background: purple;
+		background: orange;
 	}
-	}
+}
 
 	.logo {
 	width: 20%;
 	height: 100%;
 	background: @primary-color;
+	font-size: 1rem;
 	.center-content;
 	.border-radius(50%);
 
@@ -51,7 +51,7 @@ header {
 		background: @primary-color;
 	}
 	@media @tablet {
-		background: blueviolet;
+		background: purple;
 	}
 	@media @phone {
 		background: @primary-color;
@@ -77,6 +77,8 @@ header {
 	color: white;
 	margin-bottom: 20px;
 	display: flex;
+	font-size: 1rem;
+	.center-content;
 	}
 	.box1 {
 		@media @laptop {
@@ -128,8 +130,7 @@ footer {
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
-
-	.box4 {
+	font-size: 1rem;
 		@media @laptop {
 			background: @primary-color;
 		}
@@ -140,4 +141,3 @@ footer {
 			background: orange;
 		}
 	}
-}
