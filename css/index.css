@@ -171,6 +171,11 @@ html {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  .container header {
+    flex-direction: column-reverse;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
@@ -189,6 +194,7 @@ html {
 @media (max-width: 400px) {
   .container header nav {
     background: orange;
+    height: 50%;
   }
 }
 .container header .logo {

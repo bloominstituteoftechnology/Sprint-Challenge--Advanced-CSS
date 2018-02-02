@@ -7,7 +7,6 @@ html {
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	// font-size: 1.6rem;
 	@media @tablet {
 		display: flex;
 		flex-direction: column;
@@ -18,6 +17,10 @@ html {
 		height: 100px;
 		margin-bottom: 20px;
 		display: flex;
+
+		@media @phone {
+			flex-direction: column-reverse;
+		}
 	
 		nav {
 			width: 80%;
@@ -32,6 +35,7 @@ html {
 
 			@media @phone {
 				background: orange;
+				height: 50%;
 			}
 		}
 		.logo {
