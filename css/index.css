@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -151,26 +151,86 @@ table {
   font-size: 20px;
 }
 .container {
-  width: 900px;
   margin: 0 auto;
   color: white;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 header {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   display: flex;
+  font-size: 1rem;
 }
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  header nav {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    background: black;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: orange;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 1100px) {
+  header .logo {
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    background: black;
+  }
 }
 .content {
   margin-top: 20px;
@@ -184,13 +244,97 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
+  font-size: 1rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  .content .box1 {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  .content .box1 {
+    background: black;
+  }
+}
+@media (max-width: 400px) {
+  .content .box1 {
+    background: orange;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box2 {
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  .content .box2 {
+    background: black;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box3 {
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  .content .box3 {
+    background: black;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box4 {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  .content .box4 {
+    background: black;
+  }
+}
+@media (max-width: 400px) {
+  .content .box4 {
+    background: orange;
+  }
 }
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  footer {
+    background: black;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    background: black;
+  }
+}
+@media (max-width: 400px) {
+  footer {
+    background: orange;
+  }
 }
