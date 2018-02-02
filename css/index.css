@@ -178,6 +178,11 @@ table {
     background-color: green;
   }
 }
+@media (max-width: 400px) {
+  .container header nav {
+    background: orange;
+  }
+}
 .container header .logo {
   width: 20%;
   height: 100%;
@@ -189,6 +194,11 @@ table {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .container header .logo {
+    background-color: purple;
+  }
 }
 .container .content {
   margin-top: 20px;
@@ -215,9 +225,29 @@ table {
     background: green;
   }
 }
+@media (max-width: 400px) {
+  .container .content .box1 {
+    background: orange;
+  }
+}
+@media (max-width: 768px) {
+  .container .content .box2 {
+    background-color: purple;
+  }
+}
+@media (max-width: 768px) {
+  .container .content .box3 {
+    background-color: purple;
+  }
+}
 @media (max-width: 1100px) {
   .container .content .box4 {
     background: green;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .box4 {
+    background: orange;
   }
 }
 .container footer {
