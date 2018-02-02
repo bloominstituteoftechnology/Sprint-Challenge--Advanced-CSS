@@ -11,6 +11,9 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+	@media @phone {
+		flex-wrap: wrap-reverse
+	}
 	.logo {
 		width: 20%;
 		height: 100%;
@@ -25,6 +28,8 @@ header {
 		margin-right: 2%;
 			@media @phone {
 				background-color: orange;
+				height: 50%;
+				width: 100%;
 			}
 	}
 }
@@ -48,6 +53,9 @@ header {
 		 margin-bottom: 20px;
 		 display: flex;
 		 .center-content;
+		 @media @tablet {
+			 width: 100%;
+		 }
 	 }
 }
 

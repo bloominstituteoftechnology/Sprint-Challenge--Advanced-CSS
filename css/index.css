@@ -163,6 +163,11 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-wrap: wrap-reverse;
+  }
+}
 header .logo {
   width: 20%;
   height: 100%;
@@ -184,6 +189,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background-color: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 .content {
@@ -205,6 +212,11 @@ header nav {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .content .box1 {
