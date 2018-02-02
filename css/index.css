@@ -161,6 +161,11 @@ header {
   margin-bottom: 2rem;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
 header nav {
   display: flex;
   justify-content: center;
@@ -179,6 +184,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background-color: #F19A3E;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -198,6 +205,11 @@ header .logo {
     background-color: #B388EB;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    width: 100%;
+  }
+}
 .content {
   margin-top: 2rem;
   width: 100%;
@@ -206,6 +218,12 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .content {
+    height: auto;
+    margin-botton: 0;
+  }
 }
 .content .boxes {
   justify-content: center;
@@ -217,6 +235,11 @@ header .logo {
   color: white;
   margin-bottom: 2rem;
   display: flex;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .content .box1 {
@@ -256,6 +279,11 @@ footer {
   width: 100%;
   height: 50px;
   background: black;
+}
+@media (max-width: 768px) {
+  footer {
+    align-self: flex-end;
+  }
 }
 @media (max-width: 400px) {
   footer {

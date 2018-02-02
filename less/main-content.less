@@ -9,6 +9,9 @@ header {
 	height: 100px;
 	margin-bottom: 2rem;
 	display: flex;
+	@media @phone {
+		flex-direction: column-reverse;
+	}
 	
 	nav {
 		@media @laptop {
@@ -16,6 +19,8 @@ header {
 		}
 		@media @phone {
 			background-color: @orange;
+			height: 50%;
+			width: 100%;
 		}
 		.center-content;
 		width: 80%;
@@ -29,6 +34,9 @@ header {
 		.border-radius(50%);
 		@media @tablet {
 			background-color: @purple;
+		}
+		@media @phone {
+			width: 100%;
 		}
 		width: 20%;
 		height: 100%;
@@ -44,6 +52,11 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+
+	@media @tablet {
+		height: auto;
+		margin-botton: 0;
+	}
 	
 	.boxes {
 		.center-content;
@@ -53,6 +66,9 @@ header {
 		color: white;
 		margin-bottom: 2rem;
 		display: flex;
+		@media @tablet {
+			width: 100%;
+		}
 	}
 
 	.box1 {
@@ -88,10 +104,15 @@ header {
 	
 footer {
 	.center-content;
+	@media @tablet {
+		align-self: flex-end;
+	}
 	@media @phone {
 		background-color: @orange;
+		
 	}
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
+	
 }
