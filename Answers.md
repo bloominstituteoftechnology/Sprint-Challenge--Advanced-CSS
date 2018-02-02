@@ -16,5 +16,7 @@
 ```
 4. What is the difference between fixed layout, adaptive layout, and fluid layout?
 * Fixed layout has a wrapper that has a fixed width and the elements within either have a percent or fixed width. The main thing is the wrapper element is set to not change or move.
-* Adaptive layout 
+* Adaptive layout adjust to the size of specified viewports.
+* Fluid layout the majority of the components inside have percentage widths, and thus adjust to the user’s screen resolution.
 5. Why do we need to use the CSS property max-width in a responsive website?
+* Using max-width will cause an element to not go below a certain width.
