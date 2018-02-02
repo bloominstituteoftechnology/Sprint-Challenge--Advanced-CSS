@@ -148,31 +148,66 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
-.container {
-  width: 900px;
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 62.5%;
+}
+body .container {
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
-header {
+body .container header {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   display: flex;
 }
-header nav {
+body .container header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-header .logo {
+@media (max-width: 1100px) {
+  body .container header nav {
+    background: green;
+  }
+}
+@media (max-width: 401px) {
+  body .container header nav {
+    background: orange;
+  }
+}
+body .container header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
-.content {
+@media (max-width: 768px) {
+  body .container header .logo {
+    background: purple;
+  }
+}
+body .container .content {
   margin-top: 20px;
   width: 100%;
   height: 420px;
@@ -181,16 +216,60 @@ header .logo {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
-.content .boxes {
+body .container .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
+  font-size: 1.6rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-footer {
+@media (max-width: 1100px) {
+  body .container .content .box1 {
+    background: green;
+  }
+}
+@media (max-width: 401px) {
+  body .container .content .box1 {
+    background: orange;
+  }
+}
+@media (max-width: 768px) {
+  body .container .content .box2 {
+    background: purple;
+  }
+}
+@media (max-width: 768px) {
+  body .container .content .box3 {
+    background: purple;
+  }
+}
+@media (max-width: 1100px) {
+  body .container .content .box4 {
+    background: green;
+  }
+}
+@media (max-width: 401px) {
+  body .container .content .box4 {
+    background: orange;
+  }
+}
+body .container footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 401px) {
+  body .container footer {
+    background: orange;
+  }
 }
