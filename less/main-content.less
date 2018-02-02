@@ -10,6 +10,13 @@
 		margin-bottom: 20px;
 		display: flex;
 		
+		@media @phone {
+			flex-direction: column;
+			.center-content();
+		}
+
+
+		
 		nav {
 			width: 80%;
 			height: 100%;
@@ -22,7 +29,10 @@
 			}
 
 			@media @phone {
+				width: 100%;
+				height: 50%;
 				background-color: orange;
+				order: 1;
 			}
 		}
 
@@ -35,6 +45,10 @@
 
 			@media @tablet {
 				background-color: purple
+			}
+
+			@media @phone {
+				order: 0;
 			}
 		}
 	}
@@ -60,32 +74,46 @@
 		.box1 {
 			@media @laptop {
 				background-color: green;
+				width: 100%;
 			}
 			
 			@media @phone {
 				background-color: orange;
+				width: 100%;
 			}
 		}
 			
 		.box2 {
 			@media @tablet {
-				background-color: purple
+				background-color: purple;
+				width: 100%;
+			}
+
+			@media @phone {
+				width: 100%;
 			}
 		}
 			
 		.box3 {
 			@media @tablet {
-				background-color: purple
+				background-color: purple;
+				width: 100%;
+			}
+
+			@media @phone {
+				width: 100%;
 			}
 		}
 			
 		.box4 {
 			@media @laptop {
 				background-color: green;
+				width: 100%;
 			}
 
 			@media @phone {
 				background-color: orange;
+				width: 100%;
 			}
 		}
 		
