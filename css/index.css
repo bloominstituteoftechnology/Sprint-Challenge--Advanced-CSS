@@ -177,6 +177,11 @@ header nav {
     background: green;
   }
 }
+@media (max-width: 400px) {
+  header nav {
+    background: orange;
+  }
+}
 header .logo {
   width: 20%;
   height: 100%;
@@ -219,6 +224,11 @@ header .logo {
     background: green;
   }
 }
+@media (max-width: 400px) {
+  .content .box1 {
+    background: orange;
+  }
+}
 @media (max-width: 768px) {
   .content .box2 {
     background: purple;
@@ -234,6 +244,11 @@ header .logo {
     background: green;
   }
 }
+@media (max-width: 400px) {
+  .content .box4 {
+    background: orange;
+  }
+}
 footer {
   width: 100%;
   height: 50px;
@@ -242,4 +257,9 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 400px) {
+  footer {
+    background: orange;
+  }
 }

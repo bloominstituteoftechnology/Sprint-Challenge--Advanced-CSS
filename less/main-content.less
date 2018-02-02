@@ -21,6 +21,10 @@ header {
 		@media @laptop {
 			background: green;
 		}
+
+		@media @phone {
+			background: orange;
+		}
 	}
 
 	.logo {
@@ -53,14 +57,27 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content;
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 100%;
+		}
 		
 	}
 
 	.box1 {
 	// style this at the right time!
-	@media @laptop {
-		background: green;
-	}
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: orange;
+		}
+
+
 	}
 
 	.box2 {
@@ -82,6 +99,10 @@ header {
 		@media @laptop {
 			background: green;
 		}
+
+		@media @phone {
+			background: orange;
+		}
 	}
 }//content
 
@@ -90,4 +111,8 @@ footer {
 	height: 50px;
 	background: @primary-color;
 	.center-content;
+
+	@media @phone {
+		background: orange;
+	}
 }
