@@ -238,7 +238,7 @@ html {
     height: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .container .content {
     height: auto;
   }
