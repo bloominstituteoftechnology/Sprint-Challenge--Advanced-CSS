@@ -150,8 +150,13 @@ table {
   align-items: center;
   font-size: 20px;
 }
+html,
+body {
+  font-size: 62.5%;
+}
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
@@ -160,37 +165,121 @@ header {
   height: 100px;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  flex-flow: column-reverse;
+}
+@media (min-width: 1100px) {
+  header {
+    flex-flow: row;
+  }
 }
 header nav {
-  width: 80%;
-  height: 100%;
-  background: gray;
-  margin-right: 2%;
+  width: 100%;
+  height: 50%;
+  background: orange;
+  margin-right: 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (min-width: 1100px) {
+  header nav {
+    background: green;
+    width: 80%;
+    height: 100%;
+    margin-right: 2%;
+  }
 }
 header .logo {
   width: 20%;
+  max-width: 100px;
   height: 100%;
-  background: gray;
+  background: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (min-width: 768px) {
+  header .logo {
+    background: purple;
+  }
 }
 .content {
   margin-top: 20px;
   width: 100%;
-  height: 420px;
+  height: 460px;
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+@media (min-width: 1100px) {
+  .content {
+    height: 420px;
+  }
 }
 .content .boxes {
-  width: 45%;
-  height: 200px;
-  background: gray;
+  width: 100%;
+  height: 100px;
+  background: black;
   color: white;
   margin-bottom: 20px;
+  flex-flow: column;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (min-width: 1100px) {
+  .content .boxes {
+    flex-flow: row;
+    width: 45%;
+    height: 200px;
+  }
+}
+.content .box1 {
+  background: orange;
+}
+@media (min-width: 1100px) {
+  .content .box1 {
+    background: green;
+  }
+}
+@media (min-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box3 {
+    background: purple;
+  }
+}
+.content .box4 {
+  background: orange;
+}
+@media (min-width: 1100px) {
+  .content .box4 {
+    background: green;
+  }
 }
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: orange;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }

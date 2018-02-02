@@ -1,5 +1,10 @@
+html, body {
+    font-size: 62.5%; // 16px into a base of 10px
+}
+
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -9,58 +14,108 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
+	.center-content();
+	flex-flow: column-reverse;
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	@media @laptop {
+		flex-flow: row;
+	}
+	
+	nav {
+		width: 100%;
+		height: 50%;
+		background: @phone-bg;
+		margin-right: 0;
+		font-size: 1.5rem;
+		.center-content();
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+		@media @laptop {
+			background: @laptop-bg;
+			width: 80%;
+			height: 100%;
+			margin-right: 2%;
+		}
+	}
+
+	.logo {
+		width: 20%;
+		max-width: 100px;
+		height: 100%;
+		background: @tertiary-color;
+		font-size: 1.5rem;
+		.center-content();
+		.border-radius(50%);
+
+		@media @tablet {
+			background: @tablet-bg;
+		}
+	}
 }
 
 .content {
 	margin-top: 20px;
 	width: 100%;
-	height: 420px;
+	height: 460px;
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
+	font-size: 1.5rem;
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+	@media @laptop {
+		height: 420px;
+	}
 
-.content .box1 {
-	// style this at the right time!
-}
+	.boxes {
+		width: 100%;
+		height: 100px;
+		background: @tertiary-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		flex-flow: column;
+		.center-content();
 
-.content .box2 {
-	// style this at the right time!
-}
+		@media @laptop {
+			flex-flow: row;
+			width: 45%;
+			height: 200px;
+		}
+	}
 
-.content .box3 {
-	// style this at the right time!
-}
+	.box1 {
+		background: @phone-bg;
+		
+		@media @laptop {
+			background: @laptop-bg;
+		}
+	}
 
-.content .box4 {
-	// style this at the right time!
+	.box2 {
+		@media @tablet {
+			background: @tablet-bg;
+		}
+	}
+
+	.box3 {
+		@media @tablet {
+			background: @tablet-bg;
+		}
+	}
+
+	.box4 {
+		background: @phone-bg;
+
+		@media @laptop {
+			background: @laptop-bg;
+		}
+	}	
 }
 
 footer {
 	width: 100%;
 	height: 50px;
-	background: @primary-color;
+	background: @phone-bg;
+	font-size: 1.5rem;
+	.center-content();
 }
