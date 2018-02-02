@@ -28,8 +28,8 @@
 **If you get user permission errors,** re-run the command with: `sudo` in front of it.
 
 ## Complete these tasks
-* Make every gray background turn black using one variable.
-* Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
+* Make every gray background turn black using one variable. **Complete**
+* Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base. **Complete**
 * Nest every LESS selector appropriately
 * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
 * Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%)
