@@ -16,6 +16,12 @@
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content;
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				background: orange;
+			}
 		}
 		.logo {
 			width: 100px;
@@ -24,6 +30,9 @@
 			font-size: 2rem;
 			.center-content;
 			.border-radius(50%);
+			@media @tablet {
+				background: purple;
+			}
 		}
 	} // header
 	.content {
@@ -46,15 +55,33 @@
 		}
 		.box1 {
 			// style this at the right time!
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				background: orange;
+			}
 		}
 		.box2 {
 			// style this at the right time!
+			@media @tablet {
+				background: purple;
+			}
 		}
 		.box3 {
 			// style this at the right time!
+			@media @tablet {
+				background: purple;
+			}
 		}
 		.box4 {
 			// style this at the right time!
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				background: orange;
+			}
 		}
 	} // content class
 	footer {
@@ -63,5 +90,8 @@
 		background: @primary-color;
 		font-size: 2rem;
 		.center-content;
+		@media @phone {
+			background: orange;
+		}
 	} // footer
 } // container
