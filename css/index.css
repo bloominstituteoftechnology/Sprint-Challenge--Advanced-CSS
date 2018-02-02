@@ -222,7 +222,7 @@ html {
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .container .content {
