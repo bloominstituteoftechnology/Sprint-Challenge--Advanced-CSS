@@ -3,7 +3,6 @@
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	font-size: 1.6rem;
 }
 
 header {
@@ -19,6 +18,9 @@ header {
 		background: @primary-color;
 		margin-right: 2%;
 		.center-content;
+		@media @laptop {
+			background: green;
+		}
 	}
 
 	.logo {
@@ -27,6 +29,9 @@ header {
 	background: @primary-color;
 	.center-content;
 	.border-radius(50%);
+		@media @tablet {
+			background: purple;
+		}
 	}
 } //header
 
@@ -53,18 +58,30 @@ header {
 
 	.box1 {
 	// style this at the right time!
+	@media @laptop {
+		background: green;
+	}
 	}
 
 	.box2 {
 	// style this at the right time!
+		@media @tablet {
+			background: purple;
+		}
 	}
 
 	.box3 {
 	// style this at the right time!
+		@media @tablet {
+			background: purple;
+			}
 	}
 
 	.box4 {
 	// style this at the right time!
+		@media @laptop {
+			background: green;
+		}
 	}
 }//content
 
