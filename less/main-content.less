@@ -1,66 +1,162 @@
+html {
+	font-size: 62.5%;
+}
+
 .container {
-	width: 900px;
+	max-width: 900px;
+	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
-}
 
-header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-}
+	header {
+		width: 100%;
+		height: 100px;
+		margin-bottom: 20px;
+		display: flex;
+		@media @phone {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media @tablet {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+		nav {
+			width: 80%;
+			height: 100%;
+			background: @third-color;
+			margin-right: 2%;
+			.center-content;
+			@media @phone {
+				background: @orange-color;
+				width: 100%;
+				height: 50%;
+				margin-right: 0;
+				order: 2;
+			}
+			@media @tablet {
+				background: @green-color;
+				width: 80%;
+				height: 100%;
+				margin-right: 2%;
+				order: 1;
+			}
+			@media @desktop {
+				background: @third-color;
+			}
+		}
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+		.logo {
+			width: 20%;
+			height: 100%;
+			background: @third-color;
+			.border-radius(50%);
+			.center-content;
+			@media @phone {
+				background: @purple-color;
+				height: 50%;
+				order: 1;
+			}
+			@media @tablet {
+				height: 100%;
+				order: 2;
+			}
+			@media @laptop {
+				background: @third-color;
+			}
+		}
+	} // header
 
-.content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
+	.content {
+		margin-top: 20px;
+		width: 100%;
+		height: 420px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-around;
+		@media @phone {
+			height: auto
+		}
+		@media @laptop {
+			height: 420px;
+		}
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+		.boxes {
+			width: 45%;
+			height: 200px;
+			background: @third-color;
+			color: @secondary-color;
+			margin-bottom: 20px;
+			display: flex;
+			.center-content;
+			@media @phone {
+				width: 100%;
+			}
+			@media @laptop {
+				width: 45%;
+			}
+		}
 
-.content .box1 {
-	// style this at the right time!
-}
+		.box1 {
+			// style this at the right time!
+			@media @phone {
+				background: @orange-color;
+			}
+			@media @tablet {
+				background: @green-color;
+			}
+			@media @desktop {
+				background: @third-color;
+			}
+		}
 
-.content .box2 {
-	// style this at the right time!
-}
+		.box2 {
+			// style this at the right time!
+			@media @phone {
+				background: @purple-color;
+			}
+			@media @laptop {
+				background: @third-color;
+			}
+		}
 
-.content .box3 {
-	// style this at the right time!
-}
+		.box3 {
+			// style this at the right time!
+			@media @phone {
+				background: @purple-color;
+			}
+			@media @laptop {
+				background: @third-color;
+			}
+		}
 
-.content .box4 {
-	// style this at the right time!
-}
+		.box4 {
+			// style this at the right time!
+			@media @phone {
+				background: @orange-color;
+			}
+			@media @tablet {
+				background: @green-color;
+			}
+			@media @desktop {
+				background: @third-color;
+			}
+		}
+	}
 
-footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+	footer {
+		width: 100%;
+		height: 50px;
+		background: @third-color;
+		.center-content;
+		@media @phone {
+			background: @orange-color;
+		}
+		@media @tablet {
+			background: @third-color;
+		}
+	}
+
 }
