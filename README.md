@@ -35,8 +35,9 @@
 * Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%) <!-- DONE -->
 * Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width. <!-- Attempted and I think done correctly. Not sure what the max-width should be so placed it to 1100px. -->
 * Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
-* Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;
-* Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange;
+<!-- Nav works, .box1 and .box4 do not. -->
+* Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple; <!-- .logo works, .box2 and .box3 do not. -->
+* Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange; <!-- Nav and footer work, .box1 and .box4 do not. -->
 * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
 
 **Stretch Goal**
