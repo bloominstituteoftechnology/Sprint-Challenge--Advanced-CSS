@@ -176,6 +176,16 @@ header nav {
   align-items: center;
   font-size: 2.0rem;
 }
+@media (max-width: 1100px) {
+  header nav {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background-color: orange;
+  }
+}
 header .logo {
   width: 20%;
   height: 100%;
@@ -187,6 +197,11 @@ header .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background-color: purple;
+  }
 }
 .content {
   margin-top: 20px;
@@ -208,6 +223,26 @@ header .logo {
   align-items: center;
   font-size: 2.0rem;
 }
+@media (max-width: 1100px) {
+  .content .boxes .box1 {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes .box1 {
+    background-color: orange;
+  }
+}
+@media (max-width: 1100px) {
+  .content .boxes .box4 {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes .box4 {
+    background-color: orange;
+  }
+}
 footer {
   width: 100%;
   height: 50px;
@@ -216,4 +251,9 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2.0rem;
+}
+@media (max-width: 400px) {
+  footer {
+    background-color: orange;
+  }
 }

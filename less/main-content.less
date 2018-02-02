@@ -20,6 +20,12 @@ header {
 		background: @primary-color;
 		margin-right: 2%;
 		.center-content();
+		@media @laptop {
+			background-color: @laptop-color;
+		}
+		@media @phone {
+			background-color: @phone-color;
+		}
 	}
 	.logo {
 		width: 20%;
@@ -27,6 +33,9 @@ header {
 		background: @primary-color;
 		.center-content();
 		.border-radius(50%);
+		@media @tablet {
+			background-color: @tablet-color;
+		}
 	}
 }
 
@@ -47,7 +56,12 @@ header {
 		display: flex;
 		.center-content();
 		.box1 {
-			// style this at the right time!
+			@media @laptop {
+				background-color: @laptop-color;
+			}
+			@media @phone {
+				background-color: @phone-color;
+			}
 		}
 		
 		.box2 {
@@ -59,7 +73,12 @@ header {
 		}
 		
 		.box4 {
-			// style this at the right time!
+			@media @laptop {
+				background-color: @laptop-color;
+			}
+			@media @phone {
+				background-color: @phone-color;
+			}
 		}
 	}
 }
@@ -69,4 +88,7 @@ footer {
 	height: 50px;
 	background: @primary-color;
 	.center-content();
+	@media @phone {
+		background-color: @phone-color;
+	}
 }
