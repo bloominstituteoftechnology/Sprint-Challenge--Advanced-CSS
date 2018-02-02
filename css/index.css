@@ -165,6 +165,18 @@ table {
     background: orange !important;
   }
 }
+@media (max-width: 768px), (max-width: 400px) {
+  .collapsing-boxes {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .phone-nav {
+    height: 50%;
+    width: 100%;
+  }
+}
 body {
   font-size: 62.5%;
 }
@@ -192,6 +204,12 @@ header nav {
   height: 100%;
   background: black;
   margin-right: 2%;
+}
+@media (max-width: 400px) {
+  header nav {
+    height: 50%;
+    width: 100%;
+  }
 }
 @media (max-width: 400px) {
   header nav {
@@ -250,14 +268,38 @@ header .logo {
     background: green;
   }
 }
+@media (max-width: 768px), (max-width: 400px) {
+  .content .box1 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
+@media (max-width: 768px), (max-width: 400px) {
+  .content .box2 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .content .box2 {
     background: purple;
   }
 }
+@media (max-width: 768px), (max-width: 400px) {
+  .content .box3 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .content .box3 {
     background: purple;
+  }
+}
+@media (max-width: 768px), (max-width: 400px) {
+  .content .box4 {
+    border-collapse: collapse;
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
