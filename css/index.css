@@ -224,6 +224,18 @@ header .logo {
   align-items: center;
   font-size: 2rem;
 }
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 1100px) {
   .content .box1 {
     background: green;
