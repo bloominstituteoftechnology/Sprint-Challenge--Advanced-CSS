@@ -1,7 +1,12 @@
+html {
+	font-size: 10px;
+}
+
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
-	color: @secondary-color;
+	color: @secondary-color;	
 }
 
 header {
@@ -9,58 +14,152 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	// if max-width:
+	/* @media @phone {
+		flex-direction: column-reverse;
+	}
+	flex-direction: row; */
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+	// if min-width:
+	@media @tablet {
+		flex-direction: row;
+	}
+	flex-direction: column-reverse;
+	align-items: center;
+	
+	nav {
+		// if max-width:
+		/* @media @phone {
+			width: 100%
+			height: 50%;
+		}
+		width: 80%;
+		height: 100%; */
+
+
+		// if min-width:
+		@media @tablet {
+			width: 80%;
+			height: 100%;
+		}
+		width: 100%;
+		height: 50%;
+		margin-right: 2%;
+		.center-content();
+	}
+
+	.logo {
+		width: 20%;
+		height: 100%;
+		
+		// if max-width:
+		/* @media @phone {
+			margin-bottom: 20px;
+		}
+		margin-bottom: 0; */
+
+		// if min-width:
+		@media @tablet {
+			margin-bottom: 0;
+		}
+		margin-bottom: 20px;
+		
+		.center-content();
+		.border-radius(50%);
+	}
 }
 
 .content {
 	margin-top: 20px;
 	width: 100%;
-	height: 420px;
+	
+	// if max-width:
+	/* @media @tablet {
+		height: 860px;
+	}
+	height: 420px; */
+	
+	// if min-width:
+	@media @laptop {
+		height: 420px;
+	}
+	height: 860px;
+
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+	.boxes {
+		// if max-width:
+		/* @media @tablet {
+			width: 100%;
+		} 
+		width: 45%; */
 
-.content .box1 {
-	// style this at the right time!
-}
+		// if min-width:
+		width: 100%;
+		@media @laptop {
+			width: 45%;
+		}
 
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
+		height: 200px;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content();
+	}	
 }
 
 footer {
 	width: 100%;
 	height: 50px;
+	.center-content();
+}
+
+// if max-width:
+/*	nav, footer, logo, .boxes {
 	background: @primary-color;
+}
+@media @laptop {
+	nav, .box1, .box4 {
+		background: green;
+	}
+}
+@media @tablet {
+	.logo, .box2, .box3 {
+		background: purple;
+	}
+}
+@media @phone {
+	nav, footer, .box1, .box4 {
+		background: orange;
+	}
+} */
+
+//if min-width:
+nav, footer, .box1, .box4 {
+	background: orange;
+}
+.logo, .box2, .box3 {
+	background: purple;
+}
+@media @tablet {
+	nav, footer {
+		background: @primary-color;
+	}
+	.box1, .box4 {
+		background: green;
+	}
+}
+@media @laptop {
+	.logo, .box2, .box3 {
+		background: @primary-color;
+	}
+}
+@media @desktop {
+	.boxes {
+		background: @primary-color;
+	}
 }
