@@ -1,4 +1,4 @@
-# Assessing your Responsive Design && LESS Fu
+# Assessing Your Responsive Design & LESS Learning
 
 * The objective of this challenge is test your knoweldge on all of the topics surrounding LESS and Responsive Web Design you learned this week.
 * Answers to your written questions will be recorded in _Answers.md_
@@ -31,12 +31,12 @@
 * Make every gray background turn black using one variable.
 * Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
 * Nest every LESS selector appropriately
-* Use the mixin ".center-content" to center the text in navigation, logo, boxes 1-4, and the footer.
+* Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
 * Use the mixin ".border-radius" to make the logo an oval shape (hint: 50%)
 * Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width.
-* Use the escaped media query variable for laptops(1100px) and update `.navigation`, `.box1` and `.box4` to have a background color of green;
+* Use the escaped media query variable for laptops(1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
 * Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;
-* Use the escaped media query variable for phone sizes (400px), and update `.navigation`, `.footer`, `.box1`, and `.box4` to have a background color of orange;
+* Use the escaped media query variable for phone sizes (400px), and update `nav`, `.footer`, `.box1`, and `.box4` to have a background color of orange;
 * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
 
 **Stretch Goal**
