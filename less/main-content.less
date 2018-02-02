@@ -3,7 +3,8 @@ html, body {
 }
 
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -19,12 +20,27 @@ header {
 		height: 100%;
 		background: @black;
 		margin-right: 2%;
+		.center-content;
+
+		@media @laptop {
+			background: @goblin;
+		}
+
+		@media @phone {
+			background: @tango;
+		}
 	}
 
 	.logo {
 		width: 20%;
 		height: 100%;
 		background: @black;
+		.center-content;
+		.border-radius(50%);
+
+		@media @tablet {
+			background: @seance;
+		}
 	}
 }//header
 
@@ -47,23 +63,40 @@ header {
 		color: white;
 		margin-bottom: 20px;
 		display: flex;
+		.center-content;
+	}
 
-		.box1 {
-			// style this at the right time!
+	.box1 {
+		@media @laptop {
+			background: @goblin;
 		}
 
-		.box2 {
-			// style this at the right time!
+		@media @phone {
+			background: @tango;
+		}
+	}
+
+	.box2 {
+		@media @tablet {
+		background: @seance;
+		}
+	}
+
+	.box3 {
+		@media @tablet {
+			background: @seance;
+		}
+	}
+
+	.box4 {
+		@media @laptop {
+			background: @goblin;
 		}
 
-		.box3 {
-			// style this at the right time!
+		@media @phone {
+			background: @tango;
 		}
-
-		.box4 {
-			// style this at the right time!
-		}
-	} //boxes
+	}
 } //content
 
 
@@ -71,4 +104,9 @@ footer {
 	width: 100%;
 	height: 50px;
 	background: @black;
+	.center-content;
+
+	@media @phone {
+		background: @tango;
+	}
 }

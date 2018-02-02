@@ -155,7 +155,8 @@ body {
   font-size: 62.5%;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
@@ -170,11 +171,37 @@ header nav {
   height: 100%;
   background: #000000;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  header nav {
+    background: #2C6D35;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: #EC7522;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
   background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background: #591A8E;
+  }
 }
 .content {
   margin-top: 20px;
@@ -192,9 +219,51 @@ header .logo {
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  .content .box1 {
+    background: #2C6D35;
+  }
+}
+@media (max-width: 400px) {
+  .content .box1 {
+    background: #EC7522;
+  }
+}
+@media (max-width: 768px) {
+  .content .box2 {
+    background: #591A8E;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    background: #591A8E;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box4 {
+    background: #2C6D35;
+  }
+}
+@media (max-width: 400px) {
+  .content .box4 {
+    background: #EC7522;
+  }
 }
 footer {
   width: 100%;
   height: 50px;
   background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 400px) {
+  footer {
+    background: #EC7522;
+  }
 }
