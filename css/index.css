@@ -166,6 +166,11 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
 header nav {
   width: 80%;
   height: 100%;
@@ -184,6 +189,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -212,6 +219,20 @@ header .logo {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
 .content .boxes {
   width: 45%;
   height: 200px;
@@ -222,6 +243,16 @@ header .logo {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .content .box1 {
