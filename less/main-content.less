@@ -3,11 +3,6 @@
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	@media @tablet {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
 }
 
 header {
@@ -16,10 +11,13 @@ header {
 	margin-bottom: 20px;
 	display: flex;
 	@media @phone {
-		display: flex;
 		flex-direction: column;
 		.center-content;
 	}
+	@media @tablet {
+		flex-direction: row;
+	}
+
 
 
 	nav {
@@ -28,15 +26,29 @@ header {
 		background: @primary-color;
 		margin-right: 2%;
 		.center-content;
-		@media @laptop {
-			background: green;
-		}
-
 		@media @phone {
 			background: orange;
 			order: 1;
 			width: 100%;
 		}
+
+		@media @tablet {
+			width: 80%;
+			height: 100%;
+			background: @primary-color;
+			margin-right: 2%;
+			.center-content;
+			order: 0;
+		}
+
+		@media @laptop {
+			background: green;
+		}
+
+		@media @desktop {
+			background: @primary-color;
+		}
+
 	}
 
 	.logo {
@@ -45,13 +57,19 @@ header {
 	background: @primary-color;
 	.center-content;
 	.border-radius(50%);
-		@media @tablet {
-			background: purple;
-		}
-
 		@media @phone {
 			order: 0;
 		}
+		@media @tablet {
+			background: purple;
+			order: 1;
+		}
+
+		@media @laptop {
+			background: @primary-color;
+		}
+
+		
 	}
 } //header
 
@@ -63,13 +81,17 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+		@media @phone {
+			height: auto;
+		}
 		@media @tablet {
 			height: auto;
 		}
 
-		@media @phone {
-			height: auto;
+		@media @laptop {
+			height: 420px;
 		}
+		
 
 	.boxes {
 		width: 45%;
@@ -79,52 +101,92 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content;
+		@media @phone {
+			width: 100%;
+		}
 		@media @tablet {
 			width: 100%;
 		}
 
-		@media @phone {
-			width: 100%;
+		@media @laptop {
+			width: 45%;
 		}
+
+		
 		
 	}
 
 	.box1 {
 	// style this at the right time!
+		@media @phone {
+			background: orange;
+		}
+
+		@media @tablet {
+			background: @primary-color;
+		}
+
 		@media @laptop {
 			background: green;
 		}
 
-		@media @phone {
-			background: orange;
+		@media @desktop {
+			background: @primary-color;
 		}
+
+
+
+		
 
 
 	}
 
 	.box2 {
 	// style this at the right time!
+		@media @phone {
+			background: @primary-color;
+		}
 		@media @tablet {
 			background: purple;
+		}
+
+		@media @laptop {
+			background: @primary-color;
 		}
 	}
 
 	.box3 {
 	// style this at the right time!
+		@media @phone {
+			background: @primary-color;
+		}
 		@media @tablet {
 			background: purple;
 			}
+		@media @laptop {
+			background: @primary-color;
+		}
 	}
 
 	.box4 {
 	// style this at the right time!
+		@media @phone {
+			background: orange;
+		} 
+
+		@media @tablet {
+			background: @primary-color;
+		}
 		@media @laptop {
 			background: green;
 		}
 
-		@media @phone {
-			background: orange;
+		@media @desktop {
+			background: @primary-color;
 		}
+	
+
+		
 	}
 }//content
 
@@ -134,14 +196,11 @@ footer {
 	background: @primary-color;
 	.center-content;
 
-	@media @tablet {
-		align-self: flex-end;
-		
-	}
-
 	@media @phone {
-		order: 6;
 		background: orange;
+	}
+	@media @tablet {
+		background: @primary-color;
 	}
 
 }
