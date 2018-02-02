@@ -167,17 +167,25 @@ body .container header {
   height: 100px;
   margin-bottom: 20px;
   display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: center;
 }
-@media (max-width: 401px) {
+@media (min-width: 768px) {
   body .container header {
-    flex-flow: row wrap-reverse;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+  }
+}
+@media (min-width: 1100px) {
+  body .container header {
+    justify-content: flex-start;
+    flex-flow: row nowrap;
   }
 }
 body .container header nav {
-  width: 80%;
-  height: 100%;
-  background: black;
+  width: 100%;
+  height: 50%;
+  background: orange;
   margin-right: 2%;
   font-size: 1.6rem;
   display: flex;
@@ -185,21 +193,23 @@ body .container header nav {
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 1100px) {
+@media (min-width: 768px) {
   body .container header nav {
+    width: 80%;
+    height: 100%;
     background: green;
   }
 }
-@media (max-width: 401px) {
+@media (min-width: 1100px) {
   body .container header nav {
-    background: orange;
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 100%;
+    background: green;
   }
 }
 body .container header .logo {
   width: 20%;
-  height: 100%;
+  height: 50%;
   background: black;
   font-size: 1.6rem;
   display: flex;
@@ -210,37 +220,39 @@ body .container header .logo {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body .container header .logo {
     background: purple;
+    height: 100%;
   }
 }
-@media (max-width: 401px) {
+@media (min-width: 1100px) {
   body .container header .logo {
-    height: 50%;
+    background: black;
+    height: 100%;
   }
 }
 body .container .content {
   margin-top: 20px;
   width: 100%;
-  height: 420px;
+  height: 860px;
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body .container .content {
     height: auto;
   }
 }
-@media (max-width: 401px) {
+@media (min-width: 1100px) {
   body .container .content {
-    height: 860px;
+    height: 420px;
   }
 }
 body .container .content .boxes {
-  width: 45%;
+  width: 90%;
   height: 200px;
   background: black;
   color: white;
@@ -251,58 +263,66 @@ body .container .content .boxes {
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body .container .content .boxes {
     width: 90%;
   }
 }
-@media (max-width: 401px) {
+@media (min-width: 1100px) {
   body .container .content .boxes {
-    width: 90%;
+    width: 45%;
+    height: 200px;
   }
 }
-@media (max-width: 1100px) {
+body .container .content .box1 {
+  background: orange;
+}
+@media (min-width: 768px) {
   body .container .content .box1 {
     background: green;
   }
 }
-@media (max-width: 401px) {
+@media (min-width: 1100px) {
   body .container .content .box1 {
-    background: orange;
+    background: green;
   }
 }
-@media (max-width: 768px) {
+body .container .content .box2 {
+  background: purple;
+}
+@media (min-width: 1100px) {
   body .container .content .box2 {
-    background: purple;
+    background: black;
   }
 }
-@media (max-width: 768px) {
+body .container .content .box3 {
+  background: purple;
+}
+@media (min-width: 1100px) {
   body .container .content .box3 {
-    background: purple;
+    background: black;
   }
 }
-@media (max-width: 1100px) {
+body .container .content .box4 {
+  background: orange;
+}
+@media (min-width: 768px) {
   body .container .content .box4 {
     background: green;
-  }
-}
-@media (max-width: 401px) {
-  body .container .content .box4 {
-    background: orange;
   }
 }
 body .container footer {
   width: 100%;
   height: 50px;
-  background: black;
+  background: orange;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 401px) {
+@media (min-width: 768px) {
   body .container footer {
-    background: orange;
+    background: black;
   }
 }
