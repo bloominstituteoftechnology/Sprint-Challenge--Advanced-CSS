@@ -1,7 +1,7 @@
 @maxWidth: 900px;
-@laptopBackgroundColor: green;
-@tabletBackgroundColor: purple;
-@phoneBackgroundColor: orange;
+@laptopBackgroundColorMinWidth: green;
+@phoneBackgroundColor1-MinWidth: orange;
+@phoneBackgroundColor2-MinWidth: purple;
 
 .container {
 	max-width: @maxWidth;
@@ -16,44 +16,53 @@
 		margin-bottom: 20px;
 		display: flex;
 
-		@media @phone {
-			flex-direction: column-reverse;
-			align-items: center;
-		}
+		flex-direction: column-reverse;
+		align-items: center;
+
+		// @media @phoneMinWidth {
+		// 	display: flex;
+		// 	flex-direction: row;
+		// 	align-items: initial;
+
+		// 	// width: 100%;
+		// 	margin-bottom: 20px;
+		// 	display: flex;
+		// }
 
 		nav {
-			width: 80%;
-			height: 100%;
-			background: @primary-color;
-			margin-right: 2%;
+			width: 100%;
+			height: 50%;
+			background: @phoneBackgroundColor1-MinWidth;
 
 			.center-content;
 
-			@media @laptop {
-				background: @laptopBackgroundColor;
-			}
+			// margin-right: 2%;
 
-			@media @phone {
-				background: @phoneBackgroundColor;
+			// @media @laptop {
+			// 	background: @laptopBackgroundColorMinWidth;
+			// }
 
-				width: 100%;
-				height: 50%;
+			// @media @phone {
+			// 	background: @phoneBackgroundColor1-MinWidth;
 
-				margin: 0;
-			}
+			// 	width: 100%;
+			// 	height: 50%;
+
+			// 	margin: 0;
+			// }
 		}
 
 		.logo {
 			width: 20%;
 			height: 100%;
-			background: @primary-color;
+			background: @phoneBackgroundColor2-MinWidth;
 
 			.center-content;
 			.border-radius(50%);
 
-			@media @tablet {
-				background: @tabletBackgroundColor;
-			}
+			// @media @tablet {
+			// 	background: @phoneBackgroundColor2-MinWidth;
+			// }
 		}
 	} // header
 
@@ -61,7 +70,7 @@
 		margin-top: 20px;
 		width: 100%;
 		height: 420px;
-		margin-bottom: 20px;
+		// margin-bottom: 20px;
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-evenly;
@@ -89,11 +98,11 @@
 			//
 
 			@media @laptop {
-				background: @laptopBackgroundColor;
+				background: @laptopBackgroundColorMinWidth;
 			}
 
 			@media @phone {
-				background: @phoneBackgroundColor;
+				background: @phoneBackgroundColor1-MinWidth;
 			}
 		}
 
@@ -101,7 +110,7 @@
 			//
 
 			@media @tablet {
-				background: @tabletBackgroundColor;
+				background: @phoneBackgroundColor2-MinWidth;
 			}
 		}
 
@@ -109,7 +118,7 @@
 			//
 
 			@media @tablet {
-				background: @tabletBackgroundColor;
+				background: @phoneBackgroundColor2-MinWidth;
 			}
 		}
 
@@ -117,11 +126,11 @@
 			//
 
 			@media @laptop {
-				background: @laptopBackgroundColor;
+				background: @laptopBackgroundColorMinWidth;
 			}
 
 			@media @phone {
-				background: @phoneBackgroundColor;
+				background: @phoneBackgroundColor1-MinWidth;
 			}
 		}
 	} // .content
@@ -134,7 +143,7 @@
 		.center-content;
 
 		@media @phone {
-			background: @phoneBackgroundColor;
+			background: @phoneBackgroundColor1-MinWidth;
 		}
 	} // footer
 } // container
