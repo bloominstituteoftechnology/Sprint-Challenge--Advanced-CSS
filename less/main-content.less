@@ -16,6 +16,10 @@ body {
 			height: 100px;
 			margin-bottom: 20px;
 			display: flex;
+			@media @phone  {
+				flex-flow: row wrap-reverse;
+				justify-content: center; //changed
+			}
 			
 			nav {
 				width: 80%;
@@ -29,6 +33,8 @@ body {
 				}
 				@media @phone {
 					background: @phone-color;
+					width: 100%;
+					height: 50%;
 				}
 			}
 			
@@ -42,6 +48,9 @@ body {
 				@media @tablet {
 					background: @tablet-color;
 				}
+				@media @phone {
+					height: 50%;
+				}
 			}
 			
 		} // header
@@ -54,6 +63,12 @@ body {
 				display: flex;
 				flex-flow: wrap;
 				justify-content: space-evenly;
+				@media @tablet {
+					height: auto; // or 860px
+				}
+				@media @phone {
+					height: 860px; // or auto;=
+				}
 				
 				.boxes {
 					width: 45%;
@@ -64,37 +79,44 @@ body {
 					display: flex;
 					font-size: 1.6rem;
 					.center-content;
+					@media @tablet {
+						width: 90%;
+					}
+					@media @phone {
+						width: 90%;
+					}
 				} // boxes
 					
-					.box1 {
+				.box1 {
 						@media @laptop {
 							background: @laptop-color;
 						}
 						@media @phone {
 							background: @phone-color;
 						}
-					}
+				}
 
-					.box2 {
+				.box2 {
 						@media @tablet {
 							background: @tablet-color;
 						}
-					}
+				}
 
-					.box3 {
+				.box3 {
 						@media @tablet {
 							background: @tablet-color;
 						}
-					}
+				}
 
-					.box4 {
+				.box4 {
 						@media @laptop {
 							background: @laptop-color;
 						}
 						@media @phone {
 							background: @phone-color;
 						}
-					}
+				}
+				
 		} // content
 		
 		footer {

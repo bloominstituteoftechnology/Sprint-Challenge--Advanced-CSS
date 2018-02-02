@@ -168,6 +168,12 @@ body .container header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 401px) {
+  body .container header {
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+  }
+}
 body .container header nav {
   width: 80%;
   height: 100%;
@@ -187,6 +193,8 @@ body .container header nav {
 @media (max-width: 401px) {
   body .container header nav {
     background: orange;
+    width: 100%;
+    height: 50%;
   }
 }
 body .container header .logo {
@@ -207,6 +215,11 @@ body .container header .logo {
     background: purple;
   }
 }
+@media (max-width: 401px) {
+  body .container header .logo {
+    height: 50%;
+  }
+}
 body .container .content {
   margin-top: 20px;
   width: 100%;
@@ -215,6 +228,16 @@ body .container .content {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  body .container .content {
+    height: auto;
+  }
+}
+@media (max-width: 401px) {
+  body .container .content {
+    height: 860px;
+  }
 }
 body .container .content .boxes {
   width: 45%;
@@ -227,6 +250,16 @@ body .container .content .boxes {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  body .container .content .boxes {
+    width: 90%;
+  }
+}
+@media (max-width: 401px) {
+  body .container .content .boxes {
+    width: 90%;
+  }
 }
 @media (max-width: 1100px) {
   body .container .content .box1 {
