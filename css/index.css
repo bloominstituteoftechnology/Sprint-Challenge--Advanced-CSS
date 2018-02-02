@@ -148,49 +148,179 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 .container {
   width: 900px;
   margin: 0 auto;
   color: white;
+  font-size: 62.5%;
+  width: 100%;
+  max-width: 900px;
 }
-header {
+.container header {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   display: flex;
 }
-header nav {
+@media (min-width: 100px) {
+  .container header {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 400px) {
+  .container header {
+    flex-direction: row;
+  }
+}
+.container header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
 }
-header .logo {
+@media (min-width: 100px) {
+  .container header nav {
+    background: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .container header nav {
+    background: green;
+  }
+}
+@media (min-width: 1100px) {
+  .container header nav {
+    background: black;
+  }
+}
+.container header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
-.content {
+@media (min-width: 100px) {
+  .container header .logo {
+    margin: 0 auto;
+    background: purple;
+  }
+}
+@media (min-width: 768px) {
+  .container header .logo {
+    background: black;
+  }
+}
+.container .content {
   margin-top: 20px;
   width: 100%;
-  height: 420px;
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
 }
-.content .boxes {
+.container .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
 }
-footer {
+@media (min-width: 1100px) {
+  .container .content .boxes {
+    background: black !important;
+  }
+}
+@media (min-width: 100px) {
+  .container .content .box1 {
+    background: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .container .content .box1 {
+    width: 100%;
+    background: green;
+  }
+}
+@media (min-width: 768px) {
+  .container .content .box1 {
+    width: 45%;
+  }
+}
+@media (min-width: 100px) {
+  .container .content .box2 {
+    width: 100%;
+    background: purple;
+  }
+}
+@media (min-width: 768px) {
+  .container .content .box2 {
+    background: black;
+    width: 45%;
+  }
+}
+@media (min-width: 100px) {
+  .container .content .box3 {
+    width: 100%;
+    background: purple;
+  }
+}
+@media (min-width: 768px) {
+  .container .content .box3 {
+    width: 45%;
+    background: black;
+  }
+}
+@media (min-width: 100px) {
+  .container .content .box4 {
+    background: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .container .content .box4 {
+    width: 100%;
+    background: green;
+  }
+}
+@media (min-width: 768px) {
+  .container .content .box4 {
+    width: 45%;
+  }
+}
+.container footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+}
+@media (min-width: 100px) {
+  .container footer {
+    background: orange;
+  }
+}
+@media (min-width: 400px) {
+  .container footer {
+    background: black;
+  }
 }
