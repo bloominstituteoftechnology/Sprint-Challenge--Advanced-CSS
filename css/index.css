@@ -176,13 +176,12 @@ header {
 header nav {
   width: 100%;
   height: 50%;
-  background: black;
+  background: orange;
   margin-right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  background: orange;
 }
 @media (min-width: 400px) {
   header nav {
@@ -199,7 +198,7 @@ header nav {
 header .logo {
   width: 20%;
   height: 100%;
-  background: black;
+  background: purple;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,11 +206,6 @@ header .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-}
-@media (min-width: 400px) {
-  header .logo {
-    background: purple;
-  }
 }
 @media (min-width: 768px) {
   header .logo {
