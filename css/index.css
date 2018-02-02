@@ -156,11 +156,22 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-direction: column-reverse;
+  }
+}
 header nav {
   width: 80%;
   height: 100%;
   background: black;
   margin-right: 2%;
+}
+@media (max-width: 400px) {
+  header nav {
+    width: 100%;
+    height: 50%;
+  }
 }
 @media (max-width: 1100px) {
   header nav {
@@ -190,6 +201,11 @@ header .logo {
     background-color: purple;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    margin: 20px auto;
+  }
+}
 .content {
   margin-top: 20px;
   width: 100%;
@@ -206,6 +222,11 @@ header .logo {
   color: white;
   margin-bottom: 20px;
   display: flex;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .content .box1 {

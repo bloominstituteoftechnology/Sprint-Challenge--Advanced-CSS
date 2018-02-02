@@ -9,14 +9,21 @@ header {
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
-    display: flex;
+	display: flex;
+	@media @phone {
+		flex-direction: column-reverse;
+	}
 }
 
 header nav {
     width: 80%;
     height: 100%;
     background: @primary-color;
-    margin-right: 2%;
+	margin-right: 2%;
+	@media @phone {
+		width: 100%;
+		height:50%;
+	}
     @media @laptop {
         background-color: green;
     }
@@ -35,7 +42,10 @@ header .logo {
     .border-radius(50%);
     @media @tablet {
         background-color: purple;
-    }
+	}
+	@media @phone {
+		margin: 20px auto;
+	}
 }
 
 .content {
@@ -55,7 +65,10 @@ header .logo {
         background: @primary-color;
         color: white;
         margin-bottom: 20px;
-        display: flex;
+		display: flex;
+		@media @tablet {
+			width: 100%;
+		}
     }
     .box1 {
         @media @laptop {
