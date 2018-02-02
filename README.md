@@ -23,7 +23,7 @@
 ## Get LESS up and running
 1. Be sure LESS is installed globally
 2. If you haven't already, install a less watch compiler globally by running: `npm install -g less-watch-compiler`
-1. Once that is install you should be able to run `less-watch-compiler less css index.less`
+1. Once that is installed you should be able to run `less-watch-compiler less css index.less`
 
 **If you get user permission errors,** re-run the command with: `sudo` in front of it.
 
