@@ -13,6 +13,9 @@ html {
 		height: 100px;
 		margin-bottom: 20px;
 		display: flex;
+		@media @phone {
+			flex-wrap: wrap;
+		}
 
 		nav {
 			width: 80%;
@@ -25,6 +28,9 @@ html {
 			}
 			@media @phone {
 				background: @orange-color;
+				width: 100%;
+				height: 50%;
+				margin-right: 0;
 			}
 		}
 
