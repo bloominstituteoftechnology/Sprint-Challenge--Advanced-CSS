@@ -10,6 +10,12 @@
 		margin-bottom: 20px;
 		display: flex;
 		font-size: 3.5rem;
+		@media @phone {
+			flex-wrap: wrap-reverse;
+			justify-content: space-around;
+			// flex-direction: column-reverse;
+			margin-bottom: 0;
+		}
 		nav {
 			width: 80%;
 			height: 100%;
@@ -21,6 +27,9 @@
 			}
 			@media @phone {
 				background: orange;
+				width: 100%;
+				height: 100px * 0.5;
+				margin-right: 0%;
 			}
 		}
 		.logo {
@@ -32,6 +41,12 @@
 			.border-radius(50%);
 			@media @tablet {
 				background: purple;
+			}
+			@media @phone {
+				width: 100px * 0.5;
+				height: 100px / 2;
+				font-size: 1rem;
+				//margin-top: 2rem;
 			}
 		}
 	} // header

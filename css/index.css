@@ -164,6 +164,13 @@ table {
   display: flex;
   font-size: 3.5rem;
 }
+@media (max-width: 400px) {
+  .container header {
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
@@ -182,6 +189,9 @@ table {
 @media (max-width: 400px) {
   .container header nav {
     background: orange;
+    width: 100%;
+    height: 50px;
+    margin-right: 0%;
   }
 }
 .container header .logo {
@@ -199,6 +209,13 @@ table {
 @media (max-width: 768px) {
   .container header .logo {
     background: purple;
+  }
+}
+@media (max-width: 400px) {
+  .container header .logo {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
   }
 }
 .container .content {
