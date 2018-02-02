@@ -1,5 +1,5 @@
 .container {
-	width: 900px;
+	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -11,6 +11,10 @@ header {
 	display: flex;
 	
 	nav {
+		@media @laptop{
+			background-color: @green;
+		}
+		.center-content;
 		width: 80%;
 		height: 100%;
 		background: @primary-color;
@@ -18,6 +22,8 @@ header {
 	}
 	
 	.logo {
+		.center-content;
+		.border-radius(50%);
 		width: 20%;
 		height: 100%;
 		background: @primary-color;
@@ -34,6 +40,7 @@ header {
 	justify-content: space-evenly;
 	
 	.boxes {
+		.center-content;
 		width: 45%;
 		height: 200px;
 		background: @primary-color;
@@ -41,9 +48,11 @@ header {
 		margin-bottom: 2rem;
 		display: flex;
 	}
-	
+
 	.box1 {
-		// style this at the right time!
+		@media @laptop{
+			background-color: @green;
+		}
 	}
 	
 	.box2 {
@@ -55,11 +64,14 @@ header {
 	}
 	
 	.box4 {
-		// style this at the right time!
+		@media @laptop {
+			background-color: @green;
+		}
 	}
 }
 	
 footer {
+	.center-content;
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
