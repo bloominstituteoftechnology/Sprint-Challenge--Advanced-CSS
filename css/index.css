@@ -151,14 +151,11 @@ table {
   font-size: 20px;
 }
 .container {
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   color: white;
   font-size: 1rem;
-}
-@media (max-width: 1100px) {
-  .container {
-    width: 100%;
-  }
 }
 header {
   width: 100%;
@@ -228,19 +225,37 @@ header .logo {
     background: green;
   }
 }
+@media (max-width: 768px) {
+  .content .box1 {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .content .box1 {
     background: orange;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .content .box2 {
     background: purple;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .box2 {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   .content .box3 {
     background: purple;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .box3 {
+    width: 100%;
   }
 }
 @media (max-width: 1100px) {
@@ -248,9 +263,15 @@ header .logo {
     background: green;
   }
 }
+@media (max-width: 768px) {
+  .content .box4 {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .content .box4 {
     background: orange;
+    width: 100%;
   }
 }
 footer {

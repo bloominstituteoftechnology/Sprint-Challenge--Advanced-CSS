@@ -1,8 +1,6 @@
 .container {
-	@media @laptop {
-		width: 100%;
-	} 
-	
+	max-width: 1100px;
+	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
 	font-size: 1rem;
@@ -64,22 +62,34 @@ header {
 		 
 	.box1 {
 		@media @laptop {
-		  background: green;
-			}
-			@media @phone {
-				background: orange;
-			}
+		    background: green;
 		}
+		@media @tablet {
+			width: 100%;
+		}
+		@media @phone {
+		    background: orange;
+		    width: 100%;
+		}
+	}
 		
 	.box2 {
 		@media @tablet {
 			background: purple;
+			width: 100%;
+		}
+		@media @phone {
+			width: 100%;
 		}
 	}
 		
 	.box3 {
 		@media @tablet {
 			background: purple;
+			width: 100%;
+		}
+		@media @phone {
+			width: 100%;
 		}
 	}
 		
@@ -87,8 +97,12 @@ header {
 		@media @laptop {
 			background: green;
 		}
+		@media @tablet {
+			width: 100%;
+		}
 		@media @phone {
 			background: orange;
+			width: 100%;
 		}
 	}
 }
