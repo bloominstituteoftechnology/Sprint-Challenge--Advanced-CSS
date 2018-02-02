@@ -148,10 +148,15 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2.0rem;
+}
+html,
+body {
+  font-size: 62.5%;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
@@ -161,16 +166,71 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (min-width: 0px) {
+  header {
+    flex-flow: column-reverse;
+  }
+}
+@media (min-width: 400px) {
+  header {
+    flex-flow: row nowrap;
+  }
+}
 header nav {
-  width: 80%;
-  height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+}
+@media (min-width: 0px) {
+  header nav {
+    background-color: orange;
+    height: 50%;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  header nav {
+    background-color: black;
+    height: 100%;
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  header nav {
+    background-color: green;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (min-width: 0px) {
+  header .logo {
+    background-color: black;
+    align-self: flex-start;
+  }
+}
+@media (min-width: 400px) {
+  header .logo {
+    background-color: purple;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  header .logo {
+    background-color: black;
+  }
 }
 .content {
   margin-top: 20px;
@@ -178,19 +238,112 @@ header .logo {
   height: 420px;
   margin-bottom: 20px;
   display: flex;
-  flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (min-width: 0px) {
+  .content {
+    flex-flow: column nowrap;
+  }
+}
+@media (min-width: 768px) {
+  .content {
+    flex-flow: wrap;
+  }
+}
 .content .boxes {
-  width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+}
+@media (min-width: 0px) {
+  .content .box1 {
+    background-color: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box1 {
+    background-color: black;
+  }
+}
+@media (min-width: 768px) {
+  .content .box1 {
+    background-color: green;
+    width: 45%;
+  }
+}
+@media (min-width: 0px) {
+  .content .box2 {
+    background-color: black;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box2 {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box2 {
+    background-color: black;
+    width: 45%;
+  }
+}
+@media (min-width: 0px) {
+  .content .box3 {
+    background-color: black;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box3 {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box3 {
+    background-color: black;
+    width: 45%;
+  }
+}
+@media (min-width: 0px) {
+  .content .box4 {
+    background-color: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box4 {
+    background-color: black;
+  }
+}
+@media (min-width: 768px) {
+  .content .box4 {
+    background-color: green;
+    width: 45%;
+  }
 }
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.0rem;
+}
+@media (min-width: 0px) {
+  footer {
+    background-color: orange;
+  }
+}
+@media (min-width: 400px) {
+  footer {
+    background-color: black;
+  }
 }

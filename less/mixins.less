@@ -14,14 +14,20 @@
 	}
 
 */
+// @laptop: ~"(max-width: 1100px)";
+// @tablet: ~"(max-width: 768px)";
+// @phone: ~"(max-width: 400px)";
 
-@phone: ~"(max-width: 400px)";
-@tablet: ~"(max-width: 768px)";
-@laptop: ~"(max-width: 1100px)";
+@phone: ~"(min-width: 0px)";
+@tablet: ~"(min-width: 400px)";
+@laptop: ~"(min-width: 768px)";
 
 //colors
-@primary-color: gray;
+@primary-color: black;
 @secondary-color: white;
+@laptop-color: green;
+@tablet-color: purple;
+@phone-color: orange;
 
 // Mixins
 
@@ -30,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2.0rem;
 }
 
 // example: .border-radius(10px);
