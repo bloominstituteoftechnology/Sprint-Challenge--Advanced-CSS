@@ -37,7 +37,7 @@
 * Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green; **Complete**
 * Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple; **Complete**
 * Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange; **Complete**
-* Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
+* Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request **Complete**
 
 **Stretch Goal**
 * Collapse boxes 1-4 to full width on tablet and phone.
