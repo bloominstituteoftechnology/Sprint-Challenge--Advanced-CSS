@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 /*
 
 	Example usage:
@@ -148,31 +151,75 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
-header {
+.container header {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   display: flex;
 }
-header nav {
+@media (max-width: 400px) {
+  .container header {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
+.container header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-header .logo {
+@media (max-width: 1100px) {
+  .container header nav {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  .container header nav {
+    width: 100%;
+    height: 50%;
+    background-color: orange;
+    order: 1;
+  }
+}
+.container header .logo {
+  -webkit-border-radius: 9rem;
+  -moz-border-radius: 9rem;
+  border-radius: 9rem;
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-.content {
+@media (max-width: 768px) {
+  .container header .logo {
+    background-color: purple;
+  }
+}
+@media (max-width: 400px) {
+  .container header .logo {
+    order: 0;
+  }
+}
+.container .content {
   margin-top: 20px;
   width: 100%;
   height: 420px;
@@ -181,16 +228,90 @@ header .logo {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
-.content .boxes {
+@media (max-width: 1100px) {
+  .container .content {
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .container .content {
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .container .content {
+    height: auto;
+  }
+}
+.container .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-footer {
+@media (max-width: 1100px) {
+  .container .content .box1 {
+    background-color: green;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .box1 {
+    background-color: orange;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container .content .box2 {
+    background-color: purple;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .box2 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container .content .box3 {
+    background-color: purple;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .box3 {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .container .content .box4 {
+    background-color: green;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .box4 {
+    background-color: orange;
+    width: 100%;
+  }
+}
+.container footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 400px) {
+  .container footer {
+    background-color: orange;
+    height: auto;
+  }
 }
