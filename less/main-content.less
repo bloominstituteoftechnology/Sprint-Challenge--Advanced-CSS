@@ -7,6 +7,10 @@
 	//task2
 	font-size: @basefont * 1.6;
 
+	//task6
+	width: 100%;
+	max-width: 880px;
+
 	header {
 		width: 100%;
 		height: 100px;
@@ -24,6 +28,16 @@
 
 			//task4
 			.center-content;
+
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
+
+			//task9
+			@media @phone {
+				background: @web-orange;
+			}
 		}
 	
 		.logo {
@@ -39,6 +53,11 @@
 
 			//task5
 			.border-radius;
+
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
 		}
 	}
 	
@@ -68,18 +87,44 @@
 	
 		.box1 {
 			// style this at the right time!
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
+
+			//task9
+			@media @phone {
+				background: @web-orange;
+			}
 		}
 	
 		.box2 {
 			// style this at the right time!
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
 		}
 	
 		.box3 {
 			// style this at the right time!
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
 		}
 	
 		.box4 {
 			// style this at the right time!
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
+
+			//task9
+			@media @phone {
+				background: @web-orange;
+			}
 		}
 	}
 	
@@ -93,5 +138,10 @@
 
 		//task4
 		.center-content;
+
+		//task9
+		@media @phone {
+			background: @web-orange;
+		}
 	}
 }
