@@ -222,6 +222,11 @@ header .logo {
   flex-flow: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 400px) {
+  .content {
+    height: 850px;
+  }
+}
 .content .boxes {
   width: 45%;
   height: 200px;
