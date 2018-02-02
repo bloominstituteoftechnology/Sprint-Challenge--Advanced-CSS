@@ -194,3 +194,9 @@ footer {
   height: 50px;
   background: gray;
 }
+header nav,
+header .logo,
+.content .boxes,
+footer {
+  background-color: black;
+}
