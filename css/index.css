@@ -214,6 +214,9 @@ html {
   width: 20%;
   height: 100%;
   background: black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,9 +338,6 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
 }
 @media (min-width: 0px) {
   .container footer {
