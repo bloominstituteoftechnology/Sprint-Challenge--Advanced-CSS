@@ -1,5 +1,6 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 880px;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -9,58 +10,127 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	@media @phone {
+		flex-direction: column;
+	}
+	
+	nav {
+		width: 80%;
+		height: 100%;
+		background: @primary-color;
+		margin-right: 2%;
+		.center-content;
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+		@media @laptop {
+			background: green;
+		}
+
+		@media @phone {
+			background: orange;
+			height: 50%;
+			width: 100%;
+		}
+	}
+
+  .logo {
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+		.center-content;
+		.border-radius(50%);
+
+		@media @tablet {
+			background: purple;
+		}
+		
+		@media @phone {
+			order: -1;
+			align-self: center;
+		}
+	}
+
 }
 
 .content {
 	margin-top: 20px;
 	width: 100%;
-	height: 420px;
+	height: auto;
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+	.boxes {
+		width: 45%;
+		height: 200px;
+		background: @primary-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content;
 
-.content .box1 {
-	// style this at the right time!
-}
+		@media @tablet {
+			height: 150px;
+		}
+	}
 
-.content .box2 {
-	// style this at the right time!
-}
+	.box1 {
+		// style this at the right time!
+		@media @laptop {
+			background: green;
+		}
 
-.content .box3 {
-	// style this at the right time!
-}
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
 
-.content .box4 {
-	// style this at the right time!
+		@media @phone {
+			background: orange;
+		}
+	}
+	
+	.box2 {
+		// style this at the right time!
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+	}
+	
+	.box3 {
+		// style this at the right time!
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+	}
+	
+	.box4 {
+		// style this at the right time!
+		@media @laptop {
+			background: green;
+		}
+
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+
+		@media @phone {
+			background: orange;
+		}
+	}
 }
 
 footer {
 	width: 100%;
-	height: 50px;
+	height: 5rem;
 	background: @primary-color;
+	.center-content;
+
+	@media @phone {
+		background: orange;
+	}
 }
