@@ -5,7 +5,7 @@ html {
 .container {
 	width: 900px;
 	margin: 0 auto;
-	font-size: 2rem;
+	font-size: 1.5rem;
     color: @secondary-color;
 }
 
@@ -14,19 +14,22 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @sprint-color;
-	margin-right: 2%;
-}
+	nav {
+		width: 80%;
+		height: 100%;
+		background: @sprint-color;
+		margin-right: 2%;
+		.center-content
+	}
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @sprint-color;
+	.logo {
+		width: 20%;
+		height: 100%;
+		background: @sprint-color;
+		.center-content
+	}
+
 }
 
 .content {
@@ -37,35 +40,38 @@ header .logo {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+
+	.boxes {
+		width: 45%;
+		height: 200px;
+		background: @sprint-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content
+	}
+
+	.box1 {
+		// style this at the right time!
+	}
+
+	.box2 {
+		// style this at the right time!
+	}
+
+	.box3 {
+		// style this at the right time!
+	}
+
+	.box4 {
+		// style this at the right time!
+	}
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @sprint-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
 
 footer {
 	width: 100%;
 	height: 50px;
 	background: @sprint-color;
+	.center-content
 }
