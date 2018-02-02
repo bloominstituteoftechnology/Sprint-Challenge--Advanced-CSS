@@ -43,6 +43,9 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+	@media @tablet {
+		flex-flow: column;
+	}
 	.boxes {
 		width: 45%;
 		height: 200px;
@@ -51,6 +54,9 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content();
+		@media @tablet {
+			width: 100%;
+		}
 	} // .boxes
 	.box1 {
 		// style this at the right time!
