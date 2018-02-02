@@ -22,15 +22,35 @@
 //colors
 @primary-color: gray;
 @secondary-color: white;
+@black-background : rgba(0, 0, 0, 0.842);
 
 // Mixins
+.gradiants {
+	background-image: -webkit-linear-gradient(90deg, #ED4264, #FFEDBC);
+	background-image: -moz-linear-gradient(90deg, #ED4264, #FFEDBC);
+	background-image: -o-linear-gradient(90deg, #ED4264, #FFEDBC);
+}
+
+/*****flip need another div to act normally******/
+.flip {
+	transform: rotateY(180deg);
+	transition: 0.10s;
+	transform-style: preserve-3d; 
+}
+
+.nav-expand {
+	transition: all 0.3s ease-in-out;
+}
+.expand {
+	height: 110%;
+}
 
 // example: .center-content;
 .center-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 // example: .border-radius(10px);
@@ -38,4 +58,6 @@
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid rgb(255, 255, 255);
 }
