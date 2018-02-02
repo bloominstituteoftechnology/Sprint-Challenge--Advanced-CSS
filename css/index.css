@@ -165,16 +165,18 @@ header {
   height: 100px;
   margin-bottom: 20px;
   display: flex;
-  flex-flow: row nowrap;
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   header {
     flex-flow: column-reverse;
   }
 }
+@media (min-width: 768px) {
+  header {
+    flex-flow: row nowrap;
+  }
+}
 header nav {
-  width: 80%;
-  height: 100%;
   background: black;
   margin-right: 2%;
   display: flex;
@@ -182,21 +184,23 @@ header nav {
   align-items: center;
   font-size: 2.0rem;
 }
-@media (max-width: 1100px) {
-  header nav {
-    background-color: green;
-  }
-}
-@media (max-width: 768px) {
-  header nav {
-    background-color: black;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   header nav {
     background-color: orange;
     height: 50%;
     width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  header nav {
+    background-color: black;
+    height: 100%;
+    width: 80%;
+  }
+}
+@media (min-width: 768px) {
+  header nav {
+    background-color: green;
   }
 }
 header .logo {
@@ -211,15 +215,21 @@ header .logo {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
-  header .logo {
-    background-color: purple;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   header .logo {
     background-color: black;
     align-self: flex-start;
+  }
+}
+@media (min-width: 400px) {
+  header .logo {
+    background-color: purple;
+    align-self: flex-end;
+  }
+}
+@media (min-width: 768px) {
+  header .logo {
+    background-color: black;
   }
 }
 .content {
@@ -228,16 +238,19 @@ header .logo {
   height: 420px;
   margin-bottom: 20px;
   display: flex;
-  flex-flow: wrap;
   justify-content: space-evenly;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px) {
   .content {
     flex-flow: column nowrap;
   }
 }
+@media (min-width: 768px) {
+  .content {
+    flex-flow: wrap;
+  }
+}
 .content .boxes {
-  width: 45%;
   height: 200px;
   background: black;
   color: white;
@@ -247,58 +260,72 @@ header .logo {
   align-items: center;
   font-size: 2.0rem;
 }
-@media (max-width: 1100px) {
-  .content .box1 {
-    background-color: green;
-  }
-}
-@media (max-width: 768px) {
-  .content .box1 {
-    background-color: black;
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   .content .box1 {
     background-color: orange;
-  }
-}
-@media (max-width: 768px) {
-  .content .box2 {
-    background-color: purple;
     width: 100%;
   }
 }
-@media (max-width: 400px) {
-  .content .box2 {
+@media (min-width: 400px) {
+  .content .box1 {
     background-color: black;
   }
 }
-@media (max-width: 768px) {
-  .content .box3 {
-    background-color: purple;
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .content .box3 {
-    background-color: black;
-  }
-}
-@media (max-width: 1100px) {
-  .content .box4 {
+@media (min-width: 768px) {
+  .content .box1 {
     background-color: green;
+    width: 45%;
   }
 }
-@media (max-width: 768px) {
-  .content .box4 {
+@media (min-width: 0px) {
+  .content .box2 {
     background-color: black;
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
+  .content .box2 {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box2 {
+    background-color: black;
+    width: 45%;
+  }
+}
+@media (min-width: 0px) {
+  .content .box3 {
+    background-color: black;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box3 {
+    background-color: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box3 {
+    background-color: black;
+    width: 45%;
+  }
+}
+@media (min-width: 0px) {
   .content .box4 {
     background-color: orange;
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .content .box4 {
+    background-color: black;
+  }
+}
+@media (min-width: 768px) {
+  .content .box4 {
+    background-color: green;
+    width: 45%;
   }
 }
 footer {
@@ -310,8 +337,13 @@ footer {
   align-items: center;
   font-size: 2.0rem;
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   footer {
     background-color: orange;
+  }
+}
+@media (min-width: 400px) {
+  footer {
+    background-color: black;
   }
 }
