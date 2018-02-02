@@ -1,5 +1,7 @@
 .container {
-	width: 900px;
+	font-size: 62.5%;
+	max-width: 1100px;
+	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -9,22 +11,49 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+
+	nav {
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
+		}
+		.center-content;
+
+		width: 80%;
+		height: 100%;
+		background: @primary-color;
+		margin-right: 2%;
+	}
+
+	.logo {
+		.border-radius(50%);
+		.center-content;
+		@media @tablet {
+			background: purple;
+		}
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+	}
 }
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+// header nav {
+// 	width: 80%;
+// 	height: 100%;
+// 	background: @primary-color;
+// 	margin-right: 2%;
+// }
+// 
+// header .logo {
+// 	width: 20%;
+// 	height: 100%;
+// 	background: @primary-color;
+// }
 
 .content {
+	font-size: 1rem;
 	margin-top: 20px;
 	width: 100%;
 	height: 420px;
@@ -32,34 +61,77 @@ header .logo {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+
+	.boxes {
+		width: 45%;
+		height: 200px;
+		background: @primary-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+	}
+
+	.box1 {
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
+		}
+	}
+
+	.box2 {
+		@media @tablet {
+			background: purple;
+		}
+	}
+
+	.box3 {
+		@media @tablet {
+			background: purple;
+		}
+	}
+
+	.box4 {
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
+		}
+	}
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+// .content .boxes {
+// 	width: 45%;
+// 	height: 200px;
+// 	background: @primary-color;
+// 	color: white;
+// 	margin-bottom: 20px;
+// 	display: flex;
+// }
+// 
+// .content .box1 {
+// 	// style this at the right time!
+// }
 
-.content .box1 {
-	// style this at the right time!
-}
+// .content .box2 {
+// 	// style this at the right time!
+// }
 
-.content .box2 {
-	// style this at the right time!
-}
+// .content .box3 {
+// 	// style this at the right time!
+// }
 
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
+// .content .box4 {
+// 	// style this at the right time!
+// }
 
 footer {
+	font-size: 1rem;
+	@media @phone {
+		background: orange;
+	}
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
