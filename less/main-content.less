@@ -1,30 +1,55 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
 }
 
 header {
+	@media @phone {
+		flex-wrap: wrap;
+		height: 100%;
+	}
 	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	nav {
+		@media @laptop {
+			background: green;
+		}
+		@media @phone {
+			background: orange;
+			height: 50px;
+			width: 100%;
+		}
+		width: 80%;
+		height: 100%;
+		background: @primary-color;
+		margin-right: 2%;
+		.center-content
+	}
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+	.logo {
+		@media @tablet {
+			background: purple;
+		}
+		@media @phone {
+			order: -1;
+		}
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+		.center-content;
+		.border-radius(50%);
+	}
 }
 
 .content {
+	@media @tablet {
+		height: 100%;
+	}
 	margin-top: 20px;
 	width: 100%;
 	height: 420px;
@@ -32,35 +57,63 @@ header .logo {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+	.boxes {
+		width: 45%;
+		height: 200px;
+		background: @primary-color;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content
+	}
 
-.content .box1 {
-	// style this at the right time!
-}
+	.box1 {
+		@media @laptop {
+			background: green;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+		@media @phone {
+			background: orange;
+		}
+	}
 
-.content .box2 {
-	// style this at the right time!
-}
+	.box2 {
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+	}
 
-.content .box3 {
-	// style this at the right time!
-}
+	.box3 {
+		@media @tablet {
+			background: purple;
+			width: 100%;
+		}
+	}
 
-.content .box4 {
-	// style this at the right time!
+	.box4 {
+		@media @laptop {
+			background: green;
+		}
+		@media @tablet {
+			width: 100%;
+		}
+		@media @phone {
+			background: orange;
+		}
+	}
+
 }
 
 footer {
+	@media @phone {
+		background: orange;
+	}
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
+	.center-content
 }
