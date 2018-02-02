@@ -5,114 +5,111 @@
 }
 
 header {
+	@media @tablet {
+		flex-direction: row;
+	}
 	width: 100%;
 	height: 100px;
 	margin-bottom: 2rem;
 	display: flex;
-	@media @phone {
-		flex-direction: column-reverse;
-	}
+	flex-direction: column-reverse;
 	
 	nav {
-		@media @laptop {
+		@media @tablet {
 			background-color: @green;
+			height: 100%;
+			width: 80%;
 		}
-		@media @phone {
-			background-color: @orange;
-			height: 50%;
-			width: 100%;
+		@media @desktop {
+			background-color: @primary-color;
 		}
+		background-color: @orange;
+		height: 50%;
+		width: 100%;
 		.center-content;
-		width: 80%;
-		height: 100%;
-		background: @primary-color;
 		margin-right: 2%;
 	}
 	
 	.logo {
+		@media @tablet {
+			width: 20%;
+		}
+		@media @laptop {
+			background-color: @primary-color;
+		}
 		.center-content;
 		.border-radius(50%);
-		@media @tablet {
-			background-color: @purple;
-		}
-		@media @phone {
-			width: 100%;
-		}
-		width: 20%;
+		width: 100%;
 		height: 100%;
-		background: @primary-color;
+		background-color: @purple;
 	}
 }
 
-.content {
-	margin-top: 2rem;
+.content {	
+	margin-bottom: 0;
 	width: 100%;
-	height: 420px;
+	// height: 420px;
+	height: auto;
 	margin-bottom: 2rem;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
 
-	@media @tablet {
-		height: auto;
-		margin-botton: 0;
-	}
 	
 	.boxes {
+		@media @laptop {
+			width: 45%;
+		}
 		.center-content;
-		width: 45%;
+		width: 100%;
 		height: 200px;
 		background: @primary-color;
 		color: white;
 		margin-bottom: 2rem;
 		display: flex;
-		@media @tablet {
-			width: 100%;
-		}
 	}
 
 	.box1 {
-		@media @laptop {
+		@media @tablet {
 			background-color: @green;
 		}
-		@media @phone {
-			background-color: @orange;
-		}
+		@media @desktop {
+			background-color: @primary-color;
+		}		
+		background-color: @orange;
 	}
 	
 	.box2 {
-		@media @tablet {
-			background-color: @purple;
+		@media @laptop {
+			background-color: @primary-color;
 		}
+		background-color: @purple;
 	}
 	
 	.box3 {
-		@media @tablet {
-			background-color: @purple;
+		@media @laptop {
+			background-color: @primary-color;
 		}
+		background-color: @purple;
 	}
 	
 	.box4 {
-		@media @laptop {
+		@media @tablet {
 			background-color: @green;
 		}
-		@media @phone {
-			background-color: @orange;
-		}
+		@media @desktop {
+			background-color: @primary-color;
+		}		
+		background-color: @orange;
 	}
 }
 	
 footer {
-	.center-content;
 	@media @tablet {
-		align-self: flex-end;
+		background-color: @primary-color;
 	}
-	@media @phone {
-		background-color: @orange;
-		
-	}
+	.center-content;
+	background-color: @orange;
 	width: 100%;
 	height: 50px;
-	background: @primary-color;
-	
 }
