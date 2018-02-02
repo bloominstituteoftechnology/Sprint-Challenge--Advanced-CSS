@@ -32,11 +32,11 @@
 * Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
 * Nest every LESS selector appropriately
 * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
-* Use the mixin ".border-radius" to make the logo an oval shape (hint: 50%)
+* Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%)
 * Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width.
-* Use the escaped media query variable for laptops(1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
+* Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
 * Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;
-* Use the escaped media query variable for phone sizes (400px), and update `nav`, `.footer`, `.box1`, and `.box4` to have a background color of orange;
+* Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange;
 * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
 
 **Stretch Goal**
