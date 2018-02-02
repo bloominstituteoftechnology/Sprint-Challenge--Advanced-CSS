@@ -12,6 +12,10 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+
+	@media @phone {
+		flex-direction: column-reverse;
+	}
 	nav{
 		.center-content;
 		width:80%;
