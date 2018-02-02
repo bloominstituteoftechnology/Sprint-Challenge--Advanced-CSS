@@ -150,6 +150,11 @@ html {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  .container header {
+    flex-wrap: wrap;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
@@ -168,6 +173,9 @@ html {
 @media (max-width: 400px) {
   .container header nav {
     background-color: orange;
+    width: 100%;
+    height: 50px;
+    margin-right: 0;
   }
 }
 .container header .logo {
