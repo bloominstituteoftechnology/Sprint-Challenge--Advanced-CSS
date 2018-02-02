@@ -39,3 +39,21 @@
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
 }
+
+.for-laptops {
+	@media @laptop {
+		background: green;
+	}
+}
+
+.for-tablets {
+	@media @tablet {
+		background: purple;
+	}
+}
+
+.for-phones {
+	@media @phone {
+		background: orange !important;
+	}
+}
