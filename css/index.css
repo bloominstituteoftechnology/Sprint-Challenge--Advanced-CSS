@@ -148,12 +148,14 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .container {
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   color: white;
+  font-size: 62.5%;
 }
 header {
   width: 100%;
@@ -164,13 +166,39 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  header nav {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: orange;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background: purple;
+  }
 }
 .content {
   margin-top: 20px;
@@ -184,13 +212,73 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: black;
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  .content .box1 {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .box1 {
+    background: orange;
+  }
+}
+@media (max-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    background: purple;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box4 {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  .content .box4 {
+    background: orange;
+  }
 }
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media (max-width: 400px) {
+  footer {
+    background: orange;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    background-color: aqua;
+    margin-left: 10px;
+  }
+}
+@media (max-width:768px) {
+  .container {
+    background-color: blueviolet;
+    margin-left: 10px;
+  }
+}
+@media (max-width:1100px) {
+  .container {
+    background-color: red;
+    margin-left: 10px;
+  }
 }
