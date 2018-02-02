@@ -258,12 +258,37 @@ body .container footer {
 }
 @media (max-width: 1100px) {
   nav {
-    background: green;
+    background-color: green !important;
   }
   .box1 {
-    background: green;
+    background-color: green !important;
   }
   .box4 {
-    background: green;
+    background-color: green !important;
+  }
+}
+@media (max-width: 768px) {
+  .logo {
+    background-color: purple !important;
+  }
+  .box2 {
+    background-color: purple !important;
+  }
+  .box3 {
+    background-color: purple !important;
+  }
+}
+@media (max-width: 400px) {
+  nav {
+    background-color: orange !important;
+  }
+  .box1 {
+    background-color: orange !important;
+  }
+  .box4 {
+    background-color: orange !important;
+  }
+  footer {
+    background-color: orange !important;
   }
 }

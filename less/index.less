@@ -21,6 +21,7 @@
 
 // **Super Stretch Goal**
 // * Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above. 
+
 @primary-color: black;
 
 html, body {
@@ -64,15 +65,47 @@ html, body {
 
 @media @laptop { // (1100px) update `nav`, `.box1` and `.box4` to have a background color of green
   nav {
-    background: green;
+    background-color: green !important;
   }
 
   .box1 {
-    background: green;
+    background-color: green !important;
   }
 
   .box4 {
-    background: green;
+    background-color: green !important;
+  }
+}
+
+@media @tablet { // (768px) update `.logo`, `.box2` and `.box3` to have a background color of purple;
+  .logo {
+    background-color: purple !important;
+  }
+
+  .box2 {
+    background-color: purple !important;
+  }
+
+  .box3 {
+    background-color: purple !important;
+  }
+}
+
+@media @phone { // (400px) update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange
+  nav {
+    background-color: orange !important;
+  }
+  
+  .box1 {
+    background-color: orange !important;
+  }
+
+  .box4 {
+    background-color: orange !important;
+  }
+
+  footer {
+    background-color: orange !important;
   }
 }
 
