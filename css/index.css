@@ -141,6 +141,7 @@ html {
 .container {
   width: 100%;
   max-width: 900px;
+  min-width: 300px;
   margin: 0 auto;
   color: white;
 }
@@ -152,7 +153,7 @@ html {
 }
 @media (max-width: 400px) {
   .container header {
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
 }
 .container header nav {
@@ -190,6 +191,11 @@ html {
 @media (max-width: 768px) {
   .container header .logo {
     background-color: purple;
+  }
+}
+@media (max-width: 400px) {
+  .container header .logo {
+    height: 50px;
   }
 }
 .container .content {

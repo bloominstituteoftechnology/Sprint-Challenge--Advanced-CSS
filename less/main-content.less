@@ -1,6 +1,7 @@
 .container {
 	width: 100%;
 	max-width: 900px;
+	min-width: 300px;
 	margin: 0 auto;
 	color: @secondary-color;
 	header {
@@ -9,7 +10,7 @@
 		margin-bottom: 20px;
 		display: flex;
 		@media @phone {
-			flex-wrap: wrap;
+			flex-direction: column-reverse;
 		}
 		nav {
 			width: 80%;
@@ -34,6 +35,9 @@
 			.center-content;
 			@media @tablet {
 				background-color: purple;
+			}
+			@media @phone {
+				height: 50px;
 			}			
 		}
 	}
