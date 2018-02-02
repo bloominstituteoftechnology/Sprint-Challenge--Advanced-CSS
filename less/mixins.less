@@ -1,0 +1,41 @@
+
+/*
+
+	Example usage:
+
+	.some-element {
+		@media @tablet {
+			width: 100%;
+		}
+
+		@media @phone {
+			width: 50%;
+		}
+	}
+
+*/
+
+@phone: ~"(max-width: 400px)";
+@tablet: ~"(max-width: 768px)";
+@laptop: ~"(max-width: 1100px)";
+
+//colors
+@primary-color: gray;
+@secondary-color: white;
+
+// Mixins
+
+// example: .center-content;
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+// example: .border-radius(10px);
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+}
