@@ -1,66 +1,121 @@
+@primary-color: black;
+
 .container {
-	width: 900px;
-	margin: 0 auto;
-	color: @secondary-color;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: @secondary-color;
+  font-size: 1rem;
 }
 
 header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-}
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  @media @phone {
+    flex-direction: column-reverse;
+  }
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+  nav {
+    width: 80%;
+    height: 100%;
+    background: @primary-color;
+    margin-right: 2%;
+    .center-content;
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+      height: 50%;
+      width: 100%;
+    }
+  }
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+  .logo {
+    width: 20%;
+    height: 100%;
+    background: @primary-color;
+    .center-content;
+    .border-radius(50%);
+    @media @tablet {
+      background: purple;
+    }
+    @media @phone {
+      align-self: center;
+      width: 50%;
+    }
+  }
+}// header
 
 .content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
+  margin-top: 20px;
+  width: 100%;
+  height: 420px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  @media @phone {
+    height: 850px;
+  }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+  .boxes {
+    width: 45%;
+    height: 200px;
+    background: @primary-color;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    .center-content;
+    @media @tablet {
+      width: 100%;
+    }
+    @media @phone {
+      width: 100%;
+    }
+  }
 
-.content .box1 {
-	// style this at the right time!
-}
+  .box1 {
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+    }
+  }
 
-.content .box2 {
-	// style this at the right time!
-}
+  .box2 {
+    @media @tablet {
+      background: purple;
+    }
+  }
 
-.content .box3 {
-	// style this at the right time!
-}
+  .box3 {
+    @media @tablet {
+      background: purple;
+    }
+  }
 
-.content .box4 {
-	// style this at the right time!
-}
+  .box4 {
+    @media @laptop {
+      background: green;
+    }
+    @media @phone {
+      background: orange;
+    }
+  }
+
+}// content
+
 
 footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+  width: 100%;
+  height: 50px;
+  background: @primary-color;
+  .center-content;
+  @media @phone {
+    background: orange;
+  }
 }
