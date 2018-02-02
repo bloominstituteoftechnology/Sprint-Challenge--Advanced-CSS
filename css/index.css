@@ -183,11 +183,15 @@ header nav {
 @media (min-width: 100px) {
   header nav {
     background: orange;
+    width: 100%;
+    height: 50%;
   }
 }
 @media (min-width: 1000px) {
   header nav {
     background: green;
+    width: 80%;
+    height: 100%;
   }
 }
 header .logo {
