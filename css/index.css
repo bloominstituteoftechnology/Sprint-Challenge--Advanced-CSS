@@ -145,7 +145,8 @@ table {
 
 */
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
@@ -161,10 +162,33 @@ header nav {
   background: black;
   margin-right: 2%;
 }
+@media (max-width: 1100px) {
+  header nav {
+    background-color: green;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    background-color: purple;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background-color: orange;
+  }
+}
 header .logo {
   width: 20%;
   height: 100%;
   background: black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  header .logo {
+    background-color: purple;
+  }
 }
 .content {
   margin-top: 20px;
@@ -182,54 +206,6 @@ header .logo {
   color: white;
   margin-bottom: 20px;
   display: flex;
-}
-footer {
-  width: 100%;
-  height: 50px;
-  background: black;
-}
-html,
-body {
-  font-size: 62.5%;
-  height: 100%;
-}
-.container {
-  width: 100%;
-  max-width: 960px;
-}
-nav,
-.logo,
-.content .boxes,
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-}
-header .logo {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-@media (max-width: 768px) {
-  header .logo {
-    background-color: purple;
-  }
-}
-@media (max-width: 1100px) {
-  header nav {
-    background-color: green;
-  }
-}
-@media (max-width: 768px) {
-  header nav {
-    background-color: purple;
-  }
-}
-@media (max-width: 400px) {
-  header nav {
-    background-color: orange;
-  }
 }
 @media (max-width: 1100px) {
   .content .box1 {
@@ -261,8 +237,27 @@ header .logo {
     background-color: orange;
   }
 }
+footer {
+  width: 100%;
+  height: 50px;
+  background: black;
+}
 @media (max-width: 400px) {
   footer {
     background-color: orange;
   }
+}
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+}
+nav,
+.logo,
+.content .boxes,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
