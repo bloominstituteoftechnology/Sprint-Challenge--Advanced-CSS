@@ -150,6 +150,10 @@ table {
   align-items: center;
   font-size: 20px;
 }
+html,
+body {
+  font-size: 62.5%;
+}
 .container {
   width: 900px;
   margin: 0 auto;
@@ -164,13 +168,13 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: #000000;
   margin-right: 2%;
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: gray;
+  background: #000000;
 }
 .content {
   margin-top: 20px;
@@ -184,7 +188,7 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: gray;
+  background: #000000;
   color: white;
   margin-bottom: 20px;
   display: flex;
@@ -192,5 +196,5 @@ header .logo {
 footer {
   width: 100%;
   height: 50px;
-  background: gray;
+  background: #000000;
 }
