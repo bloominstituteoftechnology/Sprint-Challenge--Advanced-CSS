@@ -1,6 +1,6 @@
 1. Preprocessors is a must have tool for css development that helps achieve writing reusable, maintainable and extensible codes, increasing productivity and decreasing the code in a project.
 
-2. "npm i less-watch-compile" in terminal
+2. "npm i g" in terminal
 
 3. I used .opacity to give a slight blur. The color was red but the opacity made the image look a little pink.
 
