@@ -40,11 +40,11 @@
 * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request **Complete**
 
 **Stretch Goal**
-* Collapse boxes 1-4 to full width on tablet and phone.
-* Decrease the navigation box to half of it's current height on phone and make it full width.
-* Make the logo move to the top of navigation on phone using flexbox.
+* Collapse boxes 1-4 to full width on tablet and phone. **Complete**
+* Decrease the navigation box to half of it's current height on phone and make it full width. **Complete**
+* Make the logo move to the top of navigation on phone using flexbox. **Complete**
 
 **Super Stretch Goal**
-* Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above.
+* Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above. **Incomplete**
 
 ### Remember you can use any resources you want to solve these problems, but avoid copying/pasting solutions you've previously written. Also if you don't finish all of the challenges, that's fine! Just do what you can and submit your challenges in the end! HAVE FUN!
