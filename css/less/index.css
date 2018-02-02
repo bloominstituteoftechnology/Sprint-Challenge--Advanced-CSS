@@ -151,7 +151,8 @@ table {
   font-size: 2rem;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
 }
