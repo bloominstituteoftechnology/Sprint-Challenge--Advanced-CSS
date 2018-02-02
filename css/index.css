@@ -151,9 +151,27 @@ table {
   font-size: 20px;
 }
 .container {
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
   color: white;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 401px;
+  }
 }
 header {
   width: 100%;
@@ -166,11 +184,52 @@ header nav {
   height: 100%;
   background: gray;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (max-width: 1100px) {
+  header nav {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    background: gray;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: purple;
+  }
 }
 header .logo {
   width: 20%;
   height: 100%;
   background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media (max-width: 1100px) {
+  header .logo {
+    background: gray;
+  }
+}
+@media (max-width: 768px) {
+  header .logo {
+    background: blueviolet;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    background: gray;
+  }
 }
 .content {
   margin-top: 20px;
@@ -189,8 +248,83 @@ header .logo {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 1100px) {
+  .content .box1 {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  .content .box1 {
+    background: gray;
+  }
+}
+@media (max-width: 400px) {
+  .content .box1 {
+    background: orange;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box2 {
+    background: gray;
+  }
+}
+@media (max-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  .content .box2 {
+    background: gray;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box3 {
+    background: gray;
+  }
+}
+@media (max-width: 768px) {
+  .content .box3 {
+    background: purple;
+  }
+}
+@media (max-width: 400px) {
+  .content .box3 {
+    background: gray;
+  }
+}
+@media (max-width: 1100px) {
+  .content .box4 {
+    background: green;
+  }
+}
+@media (max-width: 768px) {
+  .content .box4 {
+    background: gray;
+  }
+}
+@media (max-width: 400px) {
+  .content .box4 {
+    background: orange;
+  }
+}
 footer {
   width: 100%;
   height: 50px;
   background: gray;
+}
+@media (max-width: 1100px) {
+  footer .box4 {
+    background: gray;
+  }
+}
+@media (max-width: 768px) {
+  footer .box4 {
+    background: gray;
+  }
+}
+@media (max-width: 400px) {
+  footer .box4 {
+    background: orange;
+  }
 }
