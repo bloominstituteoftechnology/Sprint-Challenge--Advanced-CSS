@@ -15,6 +15,14 @@ header {
 	margin-bottom: 20px;
 	display: flex;
 	.center-content();
+
+	@media @phone {
+		flex-flow: column-reverse;
+	}
+
+	@media @laptop {
+		flex-flow: row;
+	}
 	
 	nav {
 		width: 80%;
@@ -28,19 +36,20 @@ header {
 			background: @phone-bg;
 			width: 100%;
 			height: 50%;
+			margin: 0;
 		}
 
 		@media @laptop {
 			background: @laptop-bg;
 			width: 80%;
 			height: 100%;
+			margin-right: 2%;
 		}
 	}
 
 	.logo {
-		min-width: 100px;
+		width: 20%;
 		max-width: 100px;
-		min-height: 100px;
 		height: 100%;
 		background: @tertiary-color;
 		font-size: 1.5rem;
@@ -117,8 +126,7 @@ header {
 		@media @laptop {
 			background: @laptop-bg;
 		}
-	}
-	
+	}	
 }
 
 footer {
