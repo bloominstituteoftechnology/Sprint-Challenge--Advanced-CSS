@@ -197,7 +197,7 @@ header nav {
   align-items: center;
   font-size: 20px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   header nav {
     background: green;
   }
@@ -229,7 +229,7 @@ header nav {
   align-items: center;
   font-size: 20px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .content .box1 {
     background: green;
   }
@@ -267,7 +267,7 @@ header nav {
     width: 100%;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .content .box4 {
     background: green;
   }
