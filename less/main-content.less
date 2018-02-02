@@ -1,8 +1,8 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	font-size: 1.6rem;
 	
 	header {
 		width: 100%;
@@ -16,13 +16,26 @@
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content();
+
+			@media @laptop {
+				background-color: green;
+			}
+
+			@media @phone {
+				background-color: orange;
+			}
 		}
 
 		.logo {
+			.border-radius(9rem);
 			width: 20%;
 			height: 100%;
 			background: @primary-color;
 			.center-content();
+
+			@media @tablet {
+				background-color: purple
+			}
 		}
 	}
 	.content {
@@ -45,19 +58,35 @@
 		}
 
 		.box1 {
-			// style this at the right time!
+			@media @laptop {
+				background-color: green;
+			}
+			
+			@media @phone {
+				background-color: orange;
+			}
 		}
 			
 		.box2 {
-			// style this at the right time!
+			@media @tablet {
+				background-color: purple
+			}
 		}
 			
 		.box3 {
-			// style this at the right time!
+			@media @tablet {
+				background-color: purple
+			}
 		}
 			
 		.box4 {
-			// style this at the right time!
+			@media @laptop {
+				background-color: green;
+			}
+
+			@media @phone {
+				background-color: orange;
+			}
 		}
 		
 	}
@@ -66,5 +95,9 @@
 		height: 50px;
 		background: @primary-color;
 		.center-content();
+
+		@media @phone {
+			background-color: orange;
+		}
 	}
 }
