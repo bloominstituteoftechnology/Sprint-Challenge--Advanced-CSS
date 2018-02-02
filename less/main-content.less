@@ -1,5 +1,6 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 1100px;
 	margin: 0 auto;
 	color: @secondary-color;
 }
@@ -14,14 +15,17 @@ header {
 header nav {
 	width: 80%;
 	height: 100%;
-	background: @primary-color;
+	background: @primary-color;				
 	margin-right: 2%;
+	.center-content();
 }
 
 header .logo {
 	width: 20%;
 	height: 100%;
-	background: @primary-color;
+	background: purple;
+	border-radius: 50%;
+	.center-content();
 }
 
 .content {
@@ -41,26 +45,34 @@ header .logo {
 	color: white;
 	margin-bottom: 20px;
 	display: flex;
+  .center-content();
 }
 
 .content .box1 {
+				 background-color: green;			
+      }
 	// style this at the right time!
-}
 
 .content .box2 {
+   background: purple;
 	// style this at the right time!
 }
 
+
 .content .box3 {
+	 background: purple;
 	// style this at the right time!
 }
 
 .content .box4 {
+      background: orange;
 	// style this at the right time!
 }
 
-footer {
-	width: 100%;
+footer  {
+  width: 100%;
 	height: 50px;
 	background: @primary-color;
+	display: flex;
+	.center-content();				 
 }
