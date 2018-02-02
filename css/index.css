@@ -152,9 +152,12 @@ table {
 }
 .container {
   width: 90%;
+  height: auto;
   max-width: 900px;
   margin: 0 auto;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .container header {
   width: 100%;
@@ -174,7 +177,7 @@ table {
   }
 }
 .container header nav {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background: black;
   margin-right: 2%;
@@ -190,6 +193,8 @@ table {
 }
 @media (max-width: 400px) {
   .container header nav {
+    height: 50%;
+    width: 100%;
     background: orange;
   }
 }
@@ -218,7 +223,7 @@ table {
 .container .content {
   margin-top: 20px;
   width: 100%;
-  height: 420px;
+  height: auto;
   margin-bottom: 20px;
   display: flex;
   flex-flow: wrap;
@@ -235,6 +240,12 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .container .content .boxes {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .container .content .box1 {
@@ -275,6 +286,7 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  align-self: flex-end;
 }
 @media (max-width: 400px) {
   .container footer {

@@ -1,8 +1,11 @@
 .container {
 	width: 90%;
+	height: auto;
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
+	display: flex;
+	flex-direction: column;
 
 	header {
 		width: 100%;
@@ -18,7 +21,7 @@
 		}
 
 		nav {
-			width: 80%;
+			width: 100%;
 			height: 100%;
 			background: @new-color;
 			margin-right: 2%;
@@ -28,6 +31,8 @@
 				background: green;
 			}
 			@media @phone {
+				height: 50%;
+				width: 100%;
 				background: orange;
 			}
 		}
@@ -51,7 +56,7 @@
 	.content {
 		margin-top: 20px;
 		width: 100%;
-		height: 420px;
+		height: auto;
 		margin-bottom: 20px;
 		display: flex;
 		flex-flow: wrap;
@@ -67,7 +72,10 @@
 			font-size: 1rem;
 			.center-content;
 
-
+			@media @tablet {
+				flex-direction: column;
+				width: 100%;
+			}
 			@media @phone {
 			}
 		}
@@ -106,7 +114,7 @@
 		background: @new-color;
 		font-size: 1rem;
 		.center-content;
-
+		align-self: flex-end;
 		@media @phone {
 			background: orange;
 		}
