@@ -131,17 +131,17 @@ table {
 }
 /*
 
-	Example usage:
+    Example usage:
 
-	.some-element {
-		@media @tablet {
-			width: 100%;
-		}
+    .some-element {
+        @media @tablet {
+            width: 100%;
+        }
 
-		@media @phone {
-			width: 50%;
-		}
-	}
+        @media @phone {
+            width: 50%;
+        }
+    }
 
 */
 .center-content {
@@ -152,6 +152,7 @@ table {
 }
 .container {
   width: 100%;
+  min-width: 400px;
   max-width: 900px;
   margin: 0 auto;
   color: white;
@@ -173,16 +174,14 @@ table {
   align-items: center;
   font-size: 1.6rem;
 }
-@media (max-width: 1100px) {
-  .container header nav {
-    background-color: green;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .container header nav {
     background: orange;
-    height: 50%;
-    width: 100%;
+  }
+}
+@media (min-width: 1100px) {
+  .container header nav {
+    background-color: green;
   }
 }
 .container header .logo {
@@ -197,12 +196,12 @@ table {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container header .logo {
     background-color: purple;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .container header {
     flex-direction: column-reverse;
   }
@@ -227,46 +226,34 @@ table {
   align-items: center;
   font-size: 1.6rem;
 }
-@media (max-width: 768px) {
-  .container .content .boxes {
-    display: block;
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .container .content .boxes {
-    display: block;
-    width: 100%;
-  }
-}
-@media (max-width: 1100px) {
-  .container .content .box1 {
-    background: green;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .container .content .box1 {
     background: orange;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 1100px) {
+  .container .content .box1 {
+    background-color: green;
+  }
+}
+@media (min-width: 768px) {
   .container .content .box2 {
     background-color: purple;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .container .content .box3 {
     background-color: purple;
   }
 }
-@media (max-width: 1100px) {
-  .container .content .box4 {
-    background: green;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .container .content .box4 {
     background: orange;
+  }
+}
+@media (min-width: 1100px) {
+  .container .content .box4 {
+    background-color: green;
   }
 }
 .container footer {
@@ -277,4 +264,9 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+}
+@media (min-width: 400px) {
+  .container footer {
+    background: orange;
+  }
 }

@@ -33,7 +33,7 @@
 * Nest every LESS selector appropriately
 * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
 * Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%)
-* Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width.
+* Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width
 * Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
 
 * Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;

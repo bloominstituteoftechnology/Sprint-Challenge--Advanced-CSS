@@ -76,10 +76,10 @@
 
 		.box1 {
 			@media @laptop {
-			 background: green;	
+			 background-color: green;	
 			}
 			@media @phone {
-				background: orange;
+				background-color: orange;
 			}
 		}
 		.box2 {
@@ -96,10 +96,10 @@
 
 		.box4 {
 			@media @laptop {
-				background: green;
+				background-color: green;
 			}
 			@media @phone {
-				background: orange;
+				background-color: orange;
 			}
 		}
 
@@ -110,6 +110,9 @@
 		height: 50px;
 		background: @primary-color;
 		.center-content;
+		@media @phone {
+			background-color: orange;
+			}
 	}//footer
 
 } //container
