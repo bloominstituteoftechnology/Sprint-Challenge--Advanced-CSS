@@ -150,7 +150,7 @@ table {
   align-items: center;
   font-size: 2rem;
 }
-body {
+html {
   font-size: 62.5%;
 }
 .container {
