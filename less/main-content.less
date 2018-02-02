@@ -3,6 +3,11 @@
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
+	@media @tablet {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
 }
 
 header {
@@ -10,6 +15,11 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+	@media @phone {
+		display: flex;
+		flex-direction: column;
+		.center-content;
+	}
 
 
 	nav {
@@ -24,6 +34,8 @@ header {
 
 		@media @phone {
 			background: orange;
+			order: 1;
+			width: 100%;
 		}
 	}
 
@@ -36,6 +48,10 @@ header {
 		@media @tablet {
 			background: purple;
 		}
+
+		@media @phone {
+			order: 0;
+		}
 	}
 } //header
 
@@ -47,7 +63,13 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+		@media @tablet {
+			height: auto;
+		}
 
+		@media @phone {
+			height: auto;
+		}
 
 	.boxes {
 		width: 45%;
@@ -112,7 +134,14 @@ footer {
 	background: @primary-color;
 	.center-content;
 
+	@media @tablet {
+		align-self: flex-end;
+		
+	}
+
 	@media @phone {
+		order: 6;
 		background: orange;
 	}
+
 }
