@@ -1,50 +1,122 @@
 .container {
-	width: 900px;
+	width: 90%;
+	height: auto;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-}
-
-header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
 	display: flex;
-}
+	flex-direction: column;
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	header {
+		width: 100%;
+		height: 100px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		font-size: 1rem;
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+		@media @phone {
+			flex-direction: column;
+			.center-content;
+		}
 
-.content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
+		nav {
+			width: 100%;
+			height: 100%;
+			background: @new-color;
+			margin-right: 2%;
+			.center-content;
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				height: 50%;
+				width: 100%;
+				background: orange;
+			}
+		}
 
-.content .box1 {
-	// style this at the right time!
+		.logo {
+			width: 20%;
+			height: 100%;
+			background: @new-color;
+			.center-content;
+			.border-radius(50%;);
+
+			@media @tablet {
+				background: purple;
+			}
+			@media @phone {
+				order: -1;
+			}
+		}
+	}
+
+	.content {
+		margin-top: 20px;
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+
+		.boxes {
+			width: 45%;
+			height: 200px;
+			background: @new-color;
+			color: @secondary-color;
+			margin-bottom: 20px;
+			display: flex;
+			font-size: 1rem;
+			.center-content;
+
+			@media @tablet {
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+
+		.box1 {
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				background: orange;
+			}
+		}
+		.box2 {
+			@media @tablet {
+				background: purple;
+			}
+		}
+		.box3 {
+			@media @tablet {
+				background: purple;
+			}
+		}
+		.box4 {
+			@media @laptop {
+				background: green;
+			}
+			@media @phone {
+				background: orange;
+			}
+		}
+	}
+
+	footer {
+		width: 100%;
+		height: 50px;
+		background: @new-color;
+		font-size: 1rem;
+		.center-content;
+		align-self: flex-end;
+		@media @phone {
+			background: orange;
+		}
+	}
 }
 
 .content .box2 {
@@ -59,8 +131,3 @@ header .logo {
 	// style this at the right time!
 }
 
-footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
-}
