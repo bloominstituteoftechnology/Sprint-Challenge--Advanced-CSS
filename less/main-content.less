@@ -17,6 +17,10 @@ html {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+		@media @tablet {
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+		}
 
 		nav {
 			width: 80%;
@@ -24,15 +28,22 @@ html {
 			background: @third-color;
 			margin-right: 2%;
 			.center-content;
-			@media @laptop {
-				background: @green-color;
-			}
 			@media @phone {
 				background: @orange-color;
 				width: 100%;
 				height: 50%;
 				margin-right: 0;
 				order: 2;
+			}
+			@media @tablet {
+				background: @green-color;
+				width: 80%;
+				height: 100%;
+				margin-right: 2%;
+				order: 1;
+			}
+			@media @desktop {
+				background: @third-color;
 			}
 		}
 
@@ -41,15 +52,20 @@ html {
 			height: 100%;
 			background: @third-color;
 			.center-content;
-			@media @tablet {
-				background: @purple-color;
-			}
 			@media @phone {
+				background: @purple-color;
 				height: 50%;
 				order: 1;
 			}
+			@media @tablet {
+				height: 100%;
+				order: 2;
+			}
+			@media @laptop {
+				background: @third-color;
+			}
 		}
-	}
+	} // header
 
 	.content {
 		margin-top: 20px;
@@ -59,8 +75,11 @@ html {
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-between;
-		@media @tablet {
-			height: auto;
+		@media @phone {
+			height: auto
+		}
+		@media @laptop {
+			height: 420px;
 		}
 
 		.boxes {
@@ -71,42 +90,57 @@ html {
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
-			@media @tablet {
+			@media @phone {
 				width: 100%;
+			}
+			@media @laptop {
+				width: 45%;
 			}
 		}
 
 		.box1 {
 			// style this at the right time!
-			@media @laptop {
-				background: @green-color;
-			}
 			@media @phone {
 				background: @orange-color;
+			}
+			@media @tablet {
+				background: @green-color;
+			}
+			@media @desktop {
+				background: @third-color;
 			}
 		}
 
 		.box2 {
 			// style this at the right time!
-			@media @tablet {
+			@media @phone {
 				background: @purple-color;
+			}
+			@media @laptop {
+				background: @third-color;
 			}
 		}
 
 		.box3 {
 			// style this at the right time!
-			@media @tablet {
+			@media @phone {
 				background: @purple-color;
+			}
+			@media @laptop {
+				background: @third-color;
 			}
 		}
 
 		.box4 {
 			// style this at the right time!
-			@media @laptop {
-				background: @green-color;
-			}
 			@media @phone {
 				background: @orange-color;
+			}
+			@media @tablet {
+				background: @green-color;
+			}
+			@media @desktop {
+				background: @third-color;
 			}
 		}
 	}
@@ -119,6 +153,9 @@ html {
 		.border-radius(50%);
 		@media @phone {
 			background: @orange-color;
+		}
+		@media @tablet {
+			background: @third-color;
 		}
 	}
 

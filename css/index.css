@@ -165,10 +165,16 @@ html {
   margin-bottom: 20px;
   display: flex;
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   .container header {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (min-width: 400px) {
+  .container header {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 .container header nav {
@@ -181,18 +187,27 @@ html {
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 1100px) {
-  .container header nav {
-    background: green;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   .container header nav {
     background: orange;
     width: 100%;
     height: 50%;
     margin-right: 0;
     order: 2;
+  }
+}
+@media (min-width: 400px) {
+  .container header nav {
+    background: green;
+    width: 80%;
+    height: 100%;
+    margin-right: 2%;
+    order: 1;
+  }
+}
+@media (min-width: 1100px) {
+  .container header nav {
+    background: black;
   }
 }
 .container header .logo {
@@ -204,15 +219,22 @@ html {
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px) {
   .container header .logo {
     background: purple;
-  }
-}
-@media (max-width: 400px) {
-  .container header .logo {
     height: 50%;
     order: 1;
+  }
+}
+@media (min-width: 400px) {
+  .container header .logo {
+    height: 100%;
+    order: 2;
+  }
+}
+@media (min-width: 768px) {
+  .container header .logo {
+    background: black;
   }
 }
 .container .content {
@@ -224,9 +246,14 @@ html {
   flex-flow: wrap;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px) {
   .container .content {
     height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container .content {
+    height: 420px;
   }
 }
 .container .content .boxes {
@@ -240,39 +267,64 @@ html {
   align-items: center;
   font-size: 2rem;
 }
-@media (max-width: 768px) {
+@media (min-width: 0px) {
   .container .content .boxes {
     width: 100%;
   }
 }
-@media (max-width: 1100px) {
-  .container .content .box1 {
-    background: green;
+@media (min-width: 768px) {
+  .container .content .boxes {
+    width: 45%;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   .container .content .box1 {
     background: orange;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 400px) {
+  .container .content .box1 {
+    background: green;
+  }
+}
+@media (min-width: 1100px) {
+  .container .content .box1 {
+    background: black;
+  }
+}
+@media (min-width: 0px) {
   .container .content .box2 {
     background: purple;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .container .content .box2 {
+    background: black;
+  }
+}
+@media (min-width: 0px) {
   .container .content .box3 {
     background: purple;
   }
 }
-@media (max-width: 1100px) {
+@media (min-width: 768px) {
+  .container .content .box3 {
+    background: black;
+  }
+}
+@media (min-width: 0px) {
+  .container .content .box4 {
+    background: orange;
+  }
+}
+@media (min-width: 400px) {
   .container .content .box4 {
     background: green;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 1100px) {
   .container .content .box4 {
-    background: orange;
+    background: black;
   }
 }
 .container footer {
@@ -287,8 +339,13 @@ html {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-@media (max-width: 400px) {
+@media (min-width: 0px) {
   .container footer {
     background: orange;
+  }
+}
+@media (min-width: 400px) {
+  .container footer {
+    background: black;
   }
 }
