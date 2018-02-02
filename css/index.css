@@ -181,6 +181,8 @@ table {
 @media (max-width: 400px) {
   .container header nav {
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 .container header .logo {
@@ -198,6 +200,11 @@ table {
 @media (max-width: 768px) {
   .container header .logo {
     background-color: purple;
+  }
+}
+@media (max-width: 400px) {
+  .container header {
+    flex-direction: column-reverse;
   }
 }
 .container .content {
