@@ -15,9 +15,9 @@
 
 */
 
-@phone: ~"(max-width: 400px)";
-@tablet: ~"(max-width: 768px)";
-@laptop: ~"(max-width: 1600px)";
+@phone: ~"(min-width: 320px)";
+@tablet: ~"(min-width: 768px)";
+@laptop: ~"(min-width: 1100px)";
 
 //colors
 @primary-color: #1B1404;
@@ -25,12 +25,16 @@
 
 // Mixins
 
+html {
+	font-size: 62.5%;
+}
+
 // example: .center-content;
 .center-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 // example: .border-radius(10px);

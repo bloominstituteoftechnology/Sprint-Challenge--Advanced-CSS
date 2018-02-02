@@ -3,7 +3,7 @@
 	width: 100%;
 	margin: 0 auto;
 	color: @secondary-color;
-	font-size: 1rem;
+	font-size: 2rem;
 }
 
 header {
@@ -11,17 +11,30 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
 
-	@media @phone {
-		flex-direction: column-reverse;
-		align-items: center;
-		justify-content: space-evenly;
+	@media @tablet {
+		flex-direction: row;
+		align-content: space-between;
+	}
+
+	@media @laptop {
+		flex-direction: row;
+        align-content: space-between
 	}
 
 	.logo {
+		
+		@media @laptop {
+			background: @primary-color;
+		}
+
 		@media @tablet {
 			background: purple;
 		}
+
+		
 		width: 20%;
 		height: 100%;
 		background: @primary-color;
@@ -30,41 +43,53 @@ header {
 	} 
 
 	nav {
+		
 		@media @laptop {
 			background: green;
-		}
-
-		@media @phone {
-			background: orange;
-			height: 50px;
-			width: 100%;
+			width: 80%;
+		    height: 100%;
+		    margin-right: 2%;
+		    .center-content;
 		}
 		
-		width: 80%;
-		height: 100%;
-		background: @primary-color;
-		margin-right: 2%;
-		.center-content;
+		background: orange;
+			height: 50px;
+			width: 100%;
+			.center-content;
 	}
 }
 
 .content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
 	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+
+	@media @tablet {
+		height: 900px;
+	}
+
+	@media @laptop {
+		margin-top: 20px;
+	    width: 100%;
+	    height: 900px;
+	    margin-bottom: 20px;
+		flex-flow: wrap;
+	    justify-content: space-evenly;
+	}
 
 	.boxes {
-	     width: 45%;
+	     width: 100%;
 	     height: 200px;
 	     background: @primary-color;
 	     color: white;
 	     margin-bottom: 20px;
 		 display: flex;
 		 .center-content;
+
+		 @media @laptop {
+			 width: 45%;
+			 height: 200px;
+		 }
 	}
 		 
 	.box1 {
@@ -74,10 +99,8 @@ header {
 		@media @tablet {
 			width: 100%;
 		}
-		@media @phone {
-		    background: orange;
-		    width: 100%;
-		}
+		background: orange;
+		width: 100%;
 	}
 		
 	.box2 {
@@ -85,9 +108,10 @@ header {
 			background: purple;
 			width: 100%;
 		}
-		@media @phone {
-			width: 100%;
+		@media @laptop {
+			background: @primary-color;
 		}
+		width: 100%;
 	}
 		
 	.box3 {
@@ -95,9 +119,11 @@ header {
 			background: purple;
 			width: 100%;
 		}
-		@media @phone {
-			width: 100%;
+		@media @laptop {
+			background: @primary-color;
 		}
+		width: 100%
+
 	}
 		
 	.box4 {
@@ -107,21 +133,19 @@ header {
 		@media @tablet {
 			width: 100%;
 		}
-		@media @phone {
-			background: orange;
-			width: 100%;
-		}
+		width: 100%;
+		background: orange;
 	}
 }
 
 
 footer {
-	@media @phone {
-		background: orange;
-	}
+	@media @laptop {
+	   width: 100%;
+	   height: 50px;
+	   background: @primary-color;
 
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+	}
+	background: orange;
 	.center-content;
 }
