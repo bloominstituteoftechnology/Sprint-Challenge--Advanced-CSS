@@ -20,11 +20,11 @@ A CSS preprocessor is the Grammerly (online proofreader) for your coding.
 ```
 4. What is the difference between fixed layout, adaptive layout, and fluid layout?
 
-Fixed layout - *has pixels and a set length.*
+**Fixed layout** - *has pixels and a set length.*
 
-Adaptive layout - *has a maximum set length (max-width) but takes over a 100% of that space.*
+**Adaptive layout** - *has a maximum set length (max-width) but takes over a 100% of that space.*
 
-Fluid layout - *is marked with percentages, which makes the layout adjust its size as the screen changes.*
+**Fluid layout** - *is marked with percentages, which makes the layout adjust its size as the screen changes.*
 
 5. Why do we need to use the CSS property max-width in a responsive website?
 
