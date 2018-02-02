@@ -162,6 +162,12 @@ table {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
@@ -185,6 +191,9 @@ table {
 @media (max-width: 400px) {
   .container header nav {
     background: #FFA97A;
+    height: 50%;
+    width: 100%;
+    margin: 10px 0 0 0;
   }
 }
 .container header .logo {
@@ -198,6 +207,11 @@ table {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+@media (max-width: 400px) {
+  .container header .logo {
+    margin: auto;
+  }
 }
 .container .content {
   margin-top: 20px;
@@ -218,6 +232,16 @@ table {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .container .content .boxes {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .container .content .box1 {
@@ -253,6 +277,11 @@ table {
   width: 100%;
   height: 50px;
   background: black;
+  margin: 2px auto 0 auto;
+  position: fixed;
+  bottom: 0;
+  border-top: 3px double black;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
