@@ -27,6 +27,10 @@ header {
 		@media @phone {
 			background: @phone-bg;
 		}
+
+		@media @laptop {
+			background: @laptop-bg;
+		}
 	}
 
 	.logo {
@@ -55,6 +59,10 @@ header {
 	justify-content: space-evenly;
 	font-size: 1.5rem;
 
+	@media @phone {
+		height: 460px;
+	}
+
 	.boxes {
 		width: 45%;
 		height: 200px;
@@ -63,11 +71,26 @@ header {
 		margin-bottom: 20px;
 		display: flex;
 		.center-content();
+
+		@media @phone {
+			flex-flow: column;
+			width: 100%;
+			height: 100px;
+		}
+
+		@media @laptop {
+			flex-flow: row;
+			width: 45%;
+			height: 200px;
+		}
 	}
 
 	.box1 {
 		@media @phone {
 			background: @phone-bg;
+		}
+		@media @laptop {
+			background: @laptop-bg;
 		}
 	}
 
@@ -86,6 +109,9 @@ header {
 	.box4 {
 		@media @phone {
 			background: @phone-bg;
+		}
+		@media @laptop {
+			background: @laptop-bg;
 		}
 	}
 	
