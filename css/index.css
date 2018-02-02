@@ -163,26 +163,11 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
-header nav {
-  width: 80%;
-  height: 100%;
-  background: #1B1404;
-  margin-right: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-@media (max-width: 1100px) {
-  header nav {
-    background: green;
-  }
-}
 @media (max-width: 400px) {
-  header nav {
-    background: orange;
-    height: 50px;
-    width: 100%;
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 header .logo {
@@ -200,6 +185,28 @@ header .logo {
 @media (max-width: 768px) {
   header .logo {
     background: purple;
+  }
+}
+header nav {
+  width: 80%;
+  height: 100%;
+  background: #1B1404;
+  margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  header nav {
+    background: green;
+  }
+}
+@media (max-width: 400px) {
+  header nav {
+    background: orange;
+    height: 50px;
+    width: 100%;
   }
 }
 .content {
@@ -222,7 +229,7 @@ header .logo {
   align-items: center;
   font-size: 20px;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
   .content .box1 {
     background: green;
   }
@@ -260,7 +267,7 @@ header .logo {
     width: 100%;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1440px) {
   .content .box4 {
     background: green;
   }
