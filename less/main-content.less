@@ -1,66 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size: 62.5%; // to set 1 rem =~ 10px
+}
+
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
+	font-size: 1.6rem;
 }
 
 header {
+	flex-direction: column-reverse;
 	width: 100%;
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
-
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+	@media @tablet {
+		flex-direction: row;
+	}
+	
+	nav {
+		background-color: orange;
+		height: 50%;
+		width: 100%;
+		@media @tablet {
+			background-color: green;
+			width: 80%;
+			height: 100%;
+			margin-right: 2%;
+			.center-content;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
+	} // nav
+	
+	.logo {
+		background-color: purple;
+		.border-radius(50%);
+		height: 100%;
+		width: 20%;
+		.center-content;
+		@media @tablet {
+			background: @primary-color;
+		}
+		@media @laptop {
+		}
+	}// logo
+} // header
 
 .content {
 	margin-top: 20px;
 	width: 100%;
-	height: 420px;
 	margin-bottom: 20px;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-}
-
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
-
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
+	height: 900px;
+	@media @phone {
+		height: 420px;
+	}
+	
+	.boxes {
+		width: 100%;
+		height: 200px;
+		color: white;
+		margin-bottom: 20px;
+		display: flex;
+		.center-content;
+		background: @primary-color;
+		@media @phone {
+			width: 45%;
+		}
+		// @media @laptop {
+		// }
+	} 
+		
+	.box1 {
+		background-color: orange;
+		@media @tablet {
+			background-color: green;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
+	}
+	
+	.box2 {
+		background-color: purple;
+		@media @tablet {
+			background-color: @primary-color;
+		}
+	}
+	
+	.box3 {
+		background-color: purple;
+		@media @tablet {
+			background-color: @primary-color;
+		}
+	}
+	
+	.box4 {
+		background-color: orange;
+		@media @tablet {
+			background-color: green;
+		}
+		@media @laptop {
+			background: @primary-color;
+		}
+	}
+} // .content
 
 footer {
 	width: 100%;
 	height: 50px;
-	background: @primary-color;
+	background-color: orange;
+	.center-content;
+	@media @tablet {
+		background: @primary-color;
+	}
 }
