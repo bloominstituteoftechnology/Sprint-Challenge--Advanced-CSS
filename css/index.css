@@ -175,6 +175,11 @@ html {
   align-items: center;
   font-size: 2rem;
 }
+@media (max-width: 1100px) {
+  .container header nav {
+    background-color: green;
+  }
+}
 .container header .logo {
   width: 20%;
   height: 100%;
@@ -203,6 +208,16 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 1100px) {
+  .container .content .box1 {
+    background-color: green;
+  }
+}
+@media (max-width: 1100px) {
+  .container .content .box4 {
+    background-color: green;
+  }
 }
 .container footer {
   width: 100%;
