@@ -16,8 +16,11 @@
 		height: 100px;
 		margin-bottom: 20px;
 		display: flex;
+
 		//stretch goal
-		flex-direction: column-reverse;
+		@media @phone {
+			flex-direction: column-reverse;
+		}
 	
 		nav {
 			// width: 80%;
