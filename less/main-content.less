@@ -1,66 +1,111 @@
 .container {
-	width: 900px;
-	margin: 0 auto;
-	color: @secondary-color;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: @secondary-color;
 }
 
 header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    @media @tablet {
+        flex-direction: row;
+    }
 }
 
 header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
+    width: 100%;
+    height: 50%;
+    background-color: orange;
+    margin-right: 2%;
+    @media @tablet {
+        width: 80%;
+        height: 100%;
+        background-color: purple;
+        background: @primary-color;
+    }
+    @media @laptop {
+        background-color: green;
+    }
 }
 
 header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+    margin: 20px auto;
+    width: 20%;
+    height: 100%;
+    background: @primary-color;
+    .border-radius(50%);
+    @media @tablet {
+        background-color: purple;
+        margin: unset;
+    }
 }
 
 .content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
+.content {
+    .boxes {
+        width: 100%;
+        height: 200px;
+        background: @primary-color;
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        @media @tablet {
+            width: 45%;
+        }
+    }
+    .box1 {
+        background-color: orange;
+        @media @laptop {
+            background-color: green;
+        }
+    }
+    .box2 {
+        @media @tablet {
+            background-color: purple;
+        }
+    }
+    .box3 {
+        @media @tablet {
+            background-color: purple;
+        }
+    }
+    .box4 {
+        background-color: orange;
+        @media @laptop {
+            background-color: green;
+        }
+    }
 }
 
-.content .box1 {
-	// style this at the right time!
-}
-
-.content .box2 {
-	// style this at the right time!
-}
-
-.content .box3 {
-	// style this at the right time!
-}
-
-.content .box4 {
-	// style this at the right time!
-}
-
+// .content .box1 {
+// 	// style this at the right time!
+// }
+// .content .box2 {
+// 	// style this at the right time!
+// }
+// .content .box3 {
+// 	// style this at the right time!
+// }
+// .content .box4 {
+// 	// style this at the right time!
+// }
 footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+    background-color: orange;
+    width: 100%;
+    height: 50px;
+    @media @tablet {
+        background: @primary-color;
+    }
 }
