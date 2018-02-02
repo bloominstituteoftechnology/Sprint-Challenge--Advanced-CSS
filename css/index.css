@@ -152,8 +152,8 @@ table {
 }
 .container {
   width: 900px;
+  background: rgba(173, 216, 230, 0.541);
   margin: 0 auto;
-  color: white;
 }
 header {
   width: 100%;
@@ -164,7 +164,7 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: gray;
+  background: lightcoral;
   margin-right: 2%;
 }
 header .logo {
@@ -190,7 +190,33 @@ header .logo {
   display: flex;
 }
 footer {
+  background: rgba(144, 238, 144, 0.432);
   width: 100%;
   height: 50px;
-  background: gray;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  width: 900px;
+  background: violet;
+}
+header nav {
+  width: 704px;
+}
+header nav ul {
+  display: flex;
+  font-size: 18px;
+}
+header nav ul li a {
+  padding: 0px 31px;
+  text-decoration: none;
+  color: black;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: black;
+}
+header .logo {
+  background: lightgreen;
+  width: 178px;
 }
