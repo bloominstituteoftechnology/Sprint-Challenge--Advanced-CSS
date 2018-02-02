@@ -1,6 +1,6 @@
 //task3 nesting elements
 .container {
-	width: 900px;
+	// width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
 
@@ -16,9 +16,13 @@
 		height: 100px;
 		margin-bottom: 20px;
 		display: flex;
+		//stretch goal
+		flex-direction: column-reverse;
 	
 		nav {
-			width: 80%;
+			// width: 80%;
+			//stretch goal
+			width: 100%;
 			height: 100%;
 			// background: @primary-color;
 			margin-right: 2%;
@@ -37,12 +41,18 @@
 			//task9
 			@media @phone {
 				background: @web-orange;
+				//stretch goal
+				height: 50%;
 			}
 		}
 	
 		.logo {
 			width: 20%;
+			//stretch goal
+			width: 100%;
+			
 			height: 100%;
+
 			// background: @primary-color;
 
 			//task1 gray into black
@@ -64,7 +74,10 @@
 	.content {
 		margin-top: 20px;
 		width: 100%;
-		height: 420px;
+
+		//stretch goal fix
+		// height: 420px;
+
 		margin-bottom: 20px;
 		display: flex;
 		flex-flow: wrap;
@@ -83,6 +96,14 @@
 
 			//task4
 			.center-content;
+
+			//stretch goal
+			@media @tablet {
+				width: 100%;
+			}
+			@media @phone {
+				width: 100%;
+			}
 		}
 	
 		.box1 {
@@ -124,6 +145,7 @@
 			//task9
 			@media @phone {
 				background: @web-orange;
+				width: 100%;
 			}
 		}
 	}
