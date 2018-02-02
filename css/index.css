@@ -166,6 +166,18 @@ html {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  .container header {
+    flex-direction: column;
+  }
+  .container header nav {
+    order: 2;
+  }
+  .container header .logo {
+    order: 1;
+    align-self: center;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
@@ -184,6 +196,8 @@ html {
 @media (max-width: 400px) {
   .container header nav {
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 .container header .logo {
@@ -215,7 +229,7 @@ html {
 }
 .container .content .boxes {
   width: 45%;
-  height: 200px;
+  height: 20%;
   background: black;
   color: white;
   margin-bottom: 20px;
@@ -224,6 +238,16 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .container .content .boxes {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .container .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .container .content .box1 {
@@ -260,6 +284,7 @@ html {
   height: 50px;
   background: black;
   font-size: 2rem;
+  order: 6;
   display: flex;
   justify-content: center;
   align-items: center;
