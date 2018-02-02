@@ -166,11 +166,19 @@ header nav {
   height: 100%;
   background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 header .logo {
   width: 20%;
   height: 100%;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .content {
   margin-top: 20px;
@@ -188,9 +196,16 @@ header .logo {
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 footer {
   width: 100%;
   height: 50px;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
