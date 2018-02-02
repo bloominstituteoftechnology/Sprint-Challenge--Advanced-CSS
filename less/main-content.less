@@ -6,7 +6,6 @@ html, body {
 	width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-	font-size: 1.5rem;
 }
 
 header {
@@ -20,12 +19,16 @@ header {
 		height: 100%;
 		background: @tertiary-color;
 		margin-right: 2%;
+		font-size: 1.5rem;
+		.center-content();
 	}
 
 	.logo {
 		width: 20%;
 		height: 100%;
 		background: @tertiary-color;
+		font-size: 1.5rem;
+		.center-content();
 	}
 }
 
@@ -37,6 +40,7 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
+	font-size: 1.5rem;
 
 	.boxes {
 		width: 45%;
@@ -45,6 +49,7 @@ header {
 		color: white;
 		margin-bottom: 20px;
 		display: flex;
+		.center-content();
 	}
 
 	.box1 {
@@ -69,4 +74,6 @@ footer {
 	width: 100%;
 	height: 50px;
 	background: @tertiary-color;
+	font-size: 1.5rem;
+	.center-content();
 }
