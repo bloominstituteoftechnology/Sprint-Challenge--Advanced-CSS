@@ -1,5 +1,5 @@
 .container {
-	width:100%
+	width:100%;
 	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
@@ -16,6 +16,9 @@
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content;
+			@media @laptop {
+				background-color: green;
+			}
 		} //nav
 
 		.logo {
@@ -45,10 +48,13 @@
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
+			
 		} //boxes
 
 		.box1 {
-			// style this at the right time!
+			@media @laptop {
+			 background: green;	
+			}
 		}
 		.box2 {
 			// style this at the right time!
@@ -59,7 +65,9 @@
 		}
 
 		.box4 {
-			// style this at the right time!
+			@media @laptop {
+				background: green;
+			}
 		}
 
 	} //content
