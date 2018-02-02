@@ -148,12 +148,16 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+html {
+  font-size: 62.5%;
 }
 .container {
   width: 900px;
   margin: 0 auto;
   color: white;
+  font-size: 1.6rem;
 }
 header {
   width: 100%;
