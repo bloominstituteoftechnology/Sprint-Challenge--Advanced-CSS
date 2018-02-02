@@ -271,15 +271,27 @@ body .container footer {
   .logo {
     background-color: purple !important;
   }
-  .box2 {
+  .content {
+    height: 100%;
+  }
+  .content .boxes {
+    width: 64% !important;
+  }
+  .content .boxes .box2 {
     background-color: purple !important;
   }
-  .box3 {
+  .content .boxes .box3 {
     background-color: purple !important;
   }
 }
 @media (max-width: 400px) {
-  nav {
+  header {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  header nav {
+    height: 50% !important;
+    width: 33.3%;
     background-color: orange !important;
   }
   .box1 {
