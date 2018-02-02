@@ -150,6 +150,12 @@ table {
   align-items: center;
   font-size: 20px;
 }
+body {
+  font-size: 62.5%;
+}
+body p {
+  font-size: 1rem;
+}
 .container {
   width: 900px;
   margin: 0 auto;
