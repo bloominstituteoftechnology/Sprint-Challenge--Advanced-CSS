@@ -274,11 +274,11 @@ table {
     background: #FFA97A;
   }
 }
-.container footer {
+footer {
   width: 100%;
+  max-width: 880px;
   height: 50px;
   background: black;
-  margin: 2px auto 0 auto;
   position: fixed;
   bottom: 0;
   border-top: 3px double black;
@@ -289,7 +289,7 @@ table {
   font-size: 1rem;
 }
 @media (max-width: 400px) {
-  .container footer {
+  footer {
     background: #FFA97A;
   }
 }
