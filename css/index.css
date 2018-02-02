@@ -200,6 +200,11 @@ header .logo {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+@media (min-width: 768px) {
+  header .logo {
+    background: purple;
+  }
+}
 .content {
   margin-top: 20px;
   width: 100%;
@@ -224,6 +229,16 @@ header .logo {
 @media (min-width: 400px) {
   .content .box1 {
     background: orange;
+  }
+}
+@media (min-width: 768px) {
+  .content .box2 {
+    background: purple;
+  }
+}
+@media (min-width: 768px) {
+  .content .box3 {
+    background: purple;
   }
 }
 @media (min-width: 400px) {
