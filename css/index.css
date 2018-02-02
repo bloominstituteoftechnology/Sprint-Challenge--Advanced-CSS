@@ -148,7 +148,10 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
+}
+html {
+  font-size: 62.5%;
 }
 .container {
   width: 900px;
