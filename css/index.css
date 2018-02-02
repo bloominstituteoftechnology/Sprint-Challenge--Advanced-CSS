@@ -158,8 +158,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   color: white;
-  display: flex;
-  flex-direction: column;
 }
 .container header {
   width: 100%;
@@ -168,11 +166,17 @@ body {
   display: flex;
   font-size: 1rem;
 }
+@media (max-width: 400px) {
+  .container header {
+    flex-direction: column;
+  }
+}
 .container header nav {
   width: 80%;
   height: 100%;
   background: black;
   margin-right: 2%;
+  order: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,6 +205,7 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  order: 1;
 }
 @media (max-width: 768px) {
   .container header .logo {
@@ -209,7 +214,10 @@ body {
 }
 @media (max-width: 400px) {
   .container header .logo {
-    align-self: flex-start;
+    order: 0;
+    align-self: flex-end;
+    height: 50%;
+    font-size: 1rem;
   }
 }
 .container .content {
