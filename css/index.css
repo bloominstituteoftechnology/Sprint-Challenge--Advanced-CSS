@@ -151,7 +151,8 @@ table {
   font-size: 2rem;
 }
 .container {
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   color: white;
   font-size: 62.5%;
@@ -168,12 +169,22 @@ table {
   height: 100%;
   background: black;
   margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .container header .logo {
-  width: 20%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .container .content {
   font-size: 1.5rem;
@@ -192,10 +203,16 @@ table {
   color: white;
   margin-bottom: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .container footer {
   width: 100%;
   height: 50px;
   background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
 }
