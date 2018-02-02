@@ -1,7 +1,8 @@
 @maxWidth: 900px;
-@laptopBackgroundColorMinWidth: green;
 @phoneBackgroundColor1-MinWidth: orange;
 @phoneBackgroundColor2-MinWidth: purple;
+@tabletBackgroundColorMinWidth: green;
+@desktopBackgroundColorMinWidth: black;
 
 .container {
 	max-width: @maxWidth;
@@ -19,16 +20,6 @@
 		flex-direction: column-reverse;
 		align-items: center;
 
-		// @media @phoneMinWidth {
-		// 	display: flex;
-		// 	flex-direction: row;
-		// 	align-items: initial;
-
-		// 	// width: 100%;
-		// 	margin-bottom: 20px;
-		// 	display: flex;
-		// }
-
 		nav {
 			width: 100%;
 			height: 50%;
@@ -36,20 +27,9 @@
 
 			.center-content;
 
-			// margin-right: 2%;
-
-			// @media @laptop {
-			// 	background: @laptopBackgroundColorMinWidth;
-			// }
-
-			// @media @phone {
-			// 	background: @phoneBackgroundColor1-MinWidth;
-
-			// 	width: 100%;
-			// 	height: 50%;
-
-			// 	margin: 0;
-			// }
+			@media @tabletMinWidth {
+				background: @tabletBackgroundColorMinWidth;
+			}
 		}
 
 		.logo {
@@ -59,28 +39,24 @@
 
 			.center-content;
 			.border-radius(50%);
-
-			// @media @tablet {
-			// 	background: @phoneBackgroundColor2-MinWidth;
-			// }
 		}
 	} // header
 
 	.content {
 		margin-top: 20px;
+		margin-bottom: 0;
 		width: 100%;
-		height: 420px;
-		// margin-bottom: 20px;
+		height: auto;
 		display: flex;
 		flex-flow: wrap;
 		justify-content: space-evenly;
 
-		@media @tablet {
-			height: auto;
-		}
+		// @media @laptopMinWidth {
+		// 	margin-bottom: 20px;
+		// }
 
 		.boxes {
-			width: 45%;
+			width: 100%;
 			height: 200px;
 			background: @primary-color;
 			color: white;
@@ -88,62 +64,38 @@
 			display: flex;
 
 			.center-content;
-
-			@media @tablet {
-				width: 100%;
-			}
 		}
 
 		.box1 {
 			//
 
-			@media @laptop {
-				background: @laptopBackgroundColorMinWidth;
-			}
-
-			@media @phone {
-				background: @phoneBackgroundColor1-MinWidth;
-			}
+			background: @phoneBackgroundColor1-MinWidth;
 		}
 
 		.box2 {
 			//
 
-			@media @tablet {
-				background: @phoneBackgroundColor2-MinWidth;
-			}
+			background: @phoneBackgroundColor2-MinWidth;
 		}
 
 		.box3 {
 			//
 
-			@media @tablet {
-				background: @phoneBackgroundColor2-MinWidth;
-			}
+			background: @phoneBackgroundColor2-MinWidth;
 		}
 
 		.box4 {
 			//
 
-			@media @laptop {
-				background: @laptopBackgroundColorMinWidth;
-			}
-
-			@media @phone {
-				background: @phoneBackgroundColor1-MinWidth;
-			}
+			background: @phoneBackgroundColor1-MinWidth;
 		}
 	} // .content
 
 	footer {
 		width: 100%;
 		height: 50px;
-		background: @primary-color;
+		background: @phoneBackgroundColor1-MinWidth;
 
 		.center-content;
-
-		@media @phone {
-			background: @phoneBackgroundColor1-MinWidth;
-		}
 	} // footer
 } // container
