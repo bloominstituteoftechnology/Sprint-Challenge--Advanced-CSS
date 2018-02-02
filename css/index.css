@@ -154,6 +154,7 @@ table {
   width: 900px;
   margin: 0 auto;
   color: white;
+  font-size: 100%;
 }
 .container header {
   width: 100%;
