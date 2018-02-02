@@ -179,6 +179,9 @@ header .logo {
   justify-content: center;
   align-items: center;
   font-size: 2.0rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 .content {
   margin-top: 20px;
