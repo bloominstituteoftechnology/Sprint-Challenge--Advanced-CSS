@@ -2,15 +2,118 @@
 @import "mixins";
 @import "main-content";
 
+// ## Complete these tasks
+// * Make every gray background turn black using one variable.
+// * Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
+// * Nest every LESS selector appropriately
+// * Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
+// * Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%)
+// * Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width.
+// * Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
+// * Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;
+// * Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange;
+// * Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
+
+// **Super Stretch Goal**
+// * Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above. 
+
+html, body {
+  font-size: 62.5%;
+
+  .container {
+    width: 100%;
+    min-width: 0px;
+    font-size: 2rem;
+    align-items: center;
+
+    header {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .logo {
+        .center-content;
+        .border-radius(50%);
+        background-color: purple;
+      }
+
+      nav {
+        height: 50% !important;
+        width: 33.3%;
+        background-color: orange;
+        .center-content;
+      }
+    }
+    .content {
+      justify-content: space-around;
+      .center-content;
+      overflow: scroll;
+
+      .boxes {
+        width: 100%;
+        .center-content;
+      }
+    } // Content
+
+    .box1 {
+      background-color: orange;
+    }
+    
+    .box2 {
+      background-color: purple;
+    }
+    
+    .box3 {
+      background-color: purple;
+    }
+    
+    .box4 {
+      background-color: orange;
+    }
+  } // Container
+} // html/body
 
 
 
+footer {
+  align-self: baseline;
+  .center-content;
+  background-color: orange;
+}
 
+@media @tablet {
+header{
+  justify-content: space-around;
+  flex-direction: row !important;
+  margin: 1%;
+    nav {
+      height: 100% !important;
+      width: 100%;
+      background-color: green !important;
+      .center-content;
+    }
+  }
 
+  .content {
+    overflow: unset !important;
 
+    .boxes {
+      flex-direction: row !important;
+      width: 48% !important;
+      margin: 1%;
+      justify-content: space-around 2px;
+    }
 
+    .box1 {
+      background-color: green !important;
+    }
 
+    .box4 {
+      background-color: green !important;
+    }
+  }
+}
 
-
-
+@media (min-width: 1100px) {
+  @primary-color: black !important;
+}
 
