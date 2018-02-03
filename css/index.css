@@ -148,7 +148,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 .container {
   margin: 0 auto;
@@ -176,7 +176,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 @media (max-width: 1100px) {
   .container header nav {
@@ -197,10 +197,10 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  font-size: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   .container header .logo {
@@ -224,7 +224,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .container .content .boxes {
@@ -274,7 +274,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 2rem;
 }
 @media (max-width: 400px) {
   .container footer {
