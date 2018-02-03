@@ -20,6 +20,10 @@ html {
 			background: @primary-color;
 			margin-right: 2%;
 			.center-content;
+
+			@media @laptop {
+				background: green;
+			}
 		}
 		.logo {
 			width: 20%;
@@ -46,20 +50,25 @@ html {
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
-
-			.box1 {
-				// style this at the right time!
-			}
-			.box2 {
-				// style this at the right time!
-			}
-			.box3 {
-				// style this at the right time!
-			}
-			.box4 {
-				// style this at the right time!
-			}
 		} // boxes
+		.box1 {
+			// style this at the right time!
+			@media @laptop {
+				background: green;
+			}
+		}
+		.box2 {
+			// style this at the right time!
+		}
+		.box3 {
+			// style this at the right time!
+		}
+		.box4 {
+			// style this at the right time!
+			@media @laptop {
+				background: green;
+			}
+		}
 	} // content
 	footer {
 		width: 100%;
