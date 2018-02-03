@@ -152,21 +152,20 @@ table {
 }
 .container {
   width: 900px;
-  background: #363636;
   margin: 0 auto;
+  color: white;
 }
 header {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
   display: flex;
-  font-family: Tahoma, sans-serif;
 }
 header nav {
   width: 80%;
   height: 100%;
-  background: black;
-  margin-right: 0;
+  background: gray;
+  margin-right: 2%;
 }
 header .logo {
   width: 20%;
@@ -191,38 +190,7 @@ header .logo {
   display: flex;
 }
 footer {
-  text-align: center;
-  color: white;
-  background: black;
   width: 100%;
   height: 50px;
-}
-header {
-  display: flex;
-  justify-content: flex-start;
-  width: 900px;
-  background: violet;
-}
-header nav {
-  width: 704px;
-}
-header nav ul {
-  display: flex;
-  font-size: 18px;
-}
-header nav ul li a {
-  padding: 0px 23px;
-  text-decoration: none;
-  color: goldenrod;
-}
-header nav ul li a:hover {
-  text-decoration: underline;
-  color: black;
-}
-header .space-logo {
-  width: 20px;
-}
-header .logo {
-  background: black;
-  width: 178px;
+  background: gray;
 }
