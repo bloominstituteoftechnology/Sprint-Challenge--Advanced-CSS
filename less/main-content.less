@@ -1,7 +1,9 @@
 .container {
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
+	font-size: 62.5%
 }
 
 header {
@@ -9,19 +11,28 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-}
-
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
-
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
+	@media @phone {
+		flex-wrap: wrap-reverse
+	}
+	.logo {
+		width: 20%;
+		height: 100%;
+		background: @primary-color;
+		.center-content;
+		.border-radius(50%);
+	}
+	nav {
+		width: 80%;
+		height: 100%;
+		background: @primary-color;
+		margin-right: 2%;
+			@media @phone {
+				background-color: orange;
+				height: 50%;
+				width: 100%;
+				margin-right: 0;
+			}
+	}
 }
 
 .content {
@@ -34,33 +45,71 @@ header .logo {
 	justify-content: space-evenly;
 }
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
+.content {
+	 .boxes {
+		 width: 45%;
+		 height: 200px;
+		 background: @primary-color;
+		 color: white;
+		 margin-bottom: 20px;
+		 display: flex;
+		 .center-content;
+		 @media @tablet {
+			 width: 100%;
+		 }
+	 }
 }
 
-.content .box1 {
-	// style this at the right time!
+.content {
+	.box1 {
+		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
+		@media @phone {
+			background-color: orange;
+		}
+	}
 }
 
-.content .box2 {
-	// style this at the right time!
+.content {
+	.box2 {
+		// style this at the right time!
+		@media @tablet {
+			background-color: purple;
+		}
+	}
 }
 
-.content .box3 {
-	// style this at the right time!
+.content {
+	.box3 {
+		// style this at the right time!
+		@media @tablet {
+			background-color: purple;
+		}
+	}
 }
 
-.content .box4 {
-	// style this at the right time!
+.content {
+	.box4 {
+		// style this at the right time!
+		@media @laptop {
+			background-color: green;
+		}
+		@media @phone {
+			background-color: orange;
+		}
+	}
 }
 
 footer {
 	width: 100%;
 	height: 50px;
 	background: @primary-color;
+		@media @phone {
+			background-color: orange;
+		}
+}
+nav, footer {
+	.center-content;
 }
