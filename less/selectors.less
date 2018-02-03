@@ -48,6 +48,13 @@ html {
 		flex-flow: wrap;
 		justify-content: space-evenly;
 
+		@media @tablet {
+			height: 920px;
+		}
+		@media @phone {
+			height: 920px;
+		}
+
 		.boxes {
 			width: 45%;
 			height: 200px;
@@ -56,6 +63,13 @@ html {
 			margin-bottom: 20px;
 			display: flex;
 			.center-content;
+
+			@media @tablet { // Originally I put these into each of the boxes below - but the result was differe :o???
+				width: 100%;
+			}
+			@media @phone {
+				width: 100%
+			}
 		} // boxes
 		.box1 {
 			// style this at the right time!
