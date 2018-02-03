@@ -191,6 +191,7 @@ header nav {
     background-color: orange;
     height: 50%;
     width: 100%;
+    margin-right: 0;
   }
 }
 .content {
