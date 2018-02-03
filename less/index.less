@@ -17,116 +17,103 @@
 // **Super Stretch Goal**
 // * Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above. 
 
-@primary-color: black;
-
 html, body {
   font-size: 62.5%;
 
   .container {
-    max-width: 1200px;
     width: 100%;
+    min-width: 0px;
     font-size: 2rem;
-  
-    nav {
-      .center-content;
+    align-items: center;
+
+    header {
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .logo {
+        .center-content;
+        .border-radius(50%);
+        background-color: purple;
+      }
+
+      nav {
+        height: 50% !important;
+        width: 33.3%;
+        background-color: orange;
+        .center-content;
+      }
     }
-    
-    .logo {
+    .content {
+      justify-content: space-around;
       .center-content;
-      .border-radius(50%);
-    }
-    
+      overflow: scroll;
+
+      .boxes {
+        width: 100%;
+        .center-content;
+      }
+    } // Content
+
     .box1 {
-      .center-content;
+      background-color: orange;
     }
     
     .box2 {
-      .center-content;
+      background-color: purple;
     }
     
     .box3 {
-      .center-content;
+      background-color: purple;
     }
     
     .box4 {
-      .center-content;
+      background-color: orange;
     }
-  
-    footer {
-      .center-content;
-    }
-  } // container
-} // entire page
+  } // Container
+} // html/body
 
-@media @laptop { // (1100px) update `nav`, `.box1` and `.box4` to have a background color of green
-  nav {
-    background-color: green !important;
-  }
 
-  .box1 {
-    background-color: green !important;
-  }
 
-  .box4 {
-    background-color: green !important;
-  }
+footer {
+  align-self: baseline;
+  .center-content;
+  background-color: orange;
 }
 
-@media @tablet { // (768px) update `.logo`, `.box2` and `.box3` to have a background color of purple;
-  .logo {
-    background-color: purple !important;
+@media @tablet {
+header{
+  justify-content: space-around;
+  flex-direction: row !important;
+  margin: 1%;
+    nav {
+      height: 100% !important;
+      width: 100%;
+      background-color: green !important;
+      .center-content;
+    }
   }
 
   .content {
-    height: 100%;
+    overflow: unset !important;
 
     .boxes {
-      width: 64% !important;
+      flex-direction: row !important;
+      width: 48% !important;
+      margin: 1%;
+      justify-content: space-around 2px;
+    }
 
-      .box2 {
-        background-color: purple !important;
-      }
-    
-      .box3 {
-        background-color: purple !important;
-      }
-    } // All of the boxes
-  } // Content 
-}
+    .box1 {
+      background-color: green !important;
+    }
 
-// **Stretch Goal**
-// * Collapse boxes 1-4 to full width on tablet and phone.
-// * Decrease the navigation box to half of it's current height on phone and make it full width.
-// * Make the logo move to the top of navigation on phone using flexbox.
-
-
-@media @phone { // (400px) update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange
-  header {
-    flex-direction: column-reverse;
-    align-items: center;
-    nav {
-      height: 50% !important;
-      width: 33.3%;
-      background-color: orange !important;
+    .box4 {
+      background-color: green !important;
     }
   }
-
-  .box1 {
-    background-color: orange !important;
-  }
-
-  .box4 {
-    background-color: orange !important;
-  }
-
-  footer {
-    background-color: orange !important;
-  }
 }
 
-
-
-
-
-
+@media (min-width: 1100px) {
+  @primary-color: black !important;
+}
 

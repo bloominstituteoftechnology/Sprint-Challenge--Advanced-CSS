@@ -164,13 +164,13 @@ header {
 header nav {
   width: 80%;
   height: 100%;
-  background: black;
+  background: gray;
   margin-right: 2%;
 }
 header .logo {
   width: 20%;
   height: 100%;
-  background: black;
+  background: gray;
 }
 .content {
   margin-top: 20px;
@@ -184,7 +184,7 @@ header .logo {
 .content .boxes {
   width: 45%;
   height: 200px;
-  background: black;
+  background: gray;
   color: white;
   margin-bottom: 20px;
   display: flex;
@@ -192,7 +192,7 @@ header .logo {
 footer {
   width: 100%;
   height: 50px;
-  background: black;
+  background: gray;
 }
 html,
 body {
@@ -200,19 +200,18 @@ body {
 }
 html .container,
 body .container {
-  max-width: 1200px;
   width: 100%;
+  min-width: 0px;
   font-size: 2rem;
-}
-html .container nav,
-body .container nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 20px;
 }
-html .container .logo,
-body .container .logo {
+html .container header,
+body .container header {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+html .container header .logo,
+body .container header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,87 +219,87 @@ body .container .logo {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  background-color: purple;
+}
+html .container header nav,
+body .container header nav {
+  height: 50% !important;
+  width: 33.3%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+html .container .content,
+body .container .content {
+  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  overflow: scroll;
+}
+html .container .content .boxes,
+body .container .content .boxes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
 html .container .box1,
 body .container .box1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  background-color: orange;
 }
 html .container .box2,
 body .container .box2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  background-color: purple;
 }
 html .container .box3,
 body .container .box3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  background-color: purple;
 }
 html .container .box4,
 body .container .box4 {
+  background-color: orange;
+}
+footer {
+  align-self: baseline;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  background-color: orange;
 }
-html .container footer,
-body .container footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-@media (max-width: 1100px) {
-  nav {
-    background-color: green !important;
-  }
-  .box1 {
-    background-color: green !important;
-  }
-  .box4 {
-    background-color: green !important;
-  }
-}
-@media (max-width: 768px) {
-  .logo {
-    background-color: purple !important;
-  }
-  .content {
-    height: 100%;
-  }
-  .content .boxes {
-    width: 64% !important;
-  }
-  .content .boxes .box2 {
-    background-color: purple !important;
-  }
-  .content .boxes .box3 {
-    background-color: purple !important;
-  }
-}
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   header {
-    flex-direction: column-reverse;
-    align-items: center;
+    justify-content: space-around;
+    flex-direction: row !important;
+    margin: 1%;
   }
   header nav {
-    height: 50% !important;
-    width: 33.3%;
-    background-color: orange !important;
+    height: 100% !important;
+    width: 100%;
+    background-color: green !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
   }
-  .box1 {
-    background-color: orange !important;
+  .content {
+    overflow: unset !important;
   }
-  .box4 {
-    background-color: orange !important;
+  .content .boxes {
+    flex-direction: row !important;
+    width: 48% !important;
+    margin: 1%;
+    justify-content: space-around 2px;
   }
-  footer {
-    background-color: orange !important;
+  .content .box1 {
+    background-color: green !important;
+  }
+  .content .box4 {
+    background-color: green !important;
   }
 }
