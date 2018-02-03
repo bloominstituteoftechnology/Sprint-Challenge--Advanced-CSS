@@ -1,66 +1,172 @@
+//task3 nesting elements
 .container {
-	width: 900px;
+	// width: 900px;
 	margin: 0 auto;
 	color: @secondary-color;
-}
 
-header {
+	//task2
+	font-size: @basefont * 1.6;
+
+	//task6
 	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-}
+	max-width: 880px;
 
-header nav {
-	width: 80%;
-	height: 100%;
-	background: @primary-color;
-	margin-right: 2%;
-}
+	header {
+		width: 100%;
+		height: 100px;
+		margin-bottom: 20px;
+		display: flex;
 
-header .logo {
-	width: 20%;
-	height: 100%;
-	background: @primary-color;
-}
+		//stretch goal
+		@media @phone {
+			flex-direction: column-reverse;
+		}
+	
+		nav {
+			// width: 80%;
+			//stretch goal
+			width: 100%;
+			height: 100%;
+			// background: @primary-color;
+			margin-right: 2%;
 
-.content {
-	margin-top: 20px;
-	width: 100%;
-	height: 420px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-}
+			//task1 gray into black
+			background: @black;
 
-.content .boxes {
-	width: 45%;
-	height: 200px;
-	background: @primary-color;
-	color: white;
-	margin-bottom: 20px;
-	display: flex;
-}
+			//task4
+			.center-content;
 
-.content .box1 {
-	// style this at the right time!
-}
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
 
-.content .box2 {
-	// style this at the right time!
-}
+			//task9
+			@media @phone {
+				background: @web-orange;
+				//stretch goal
+				height: 50%;
+			}
+		}
+	
+		.logo {
+			width: 20%;
+			//stretch goal
+			width: 100%;
+			
+			height: 100%;
 
-.content .box3 {
-	// style this at the right time!
-}
+			// background: @primary-color;
 
-.content .box4 {
-	// style this at the right time!
-}
+			//task1 gray into black
+			background: @black;
 
-footer {
-	width: 100%;
-	height: 50px;
-	background: @primary-color;
+			//task4
+			.center-content;
+
+			//task5
+			.border-radius(50%);
+
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
+		}
+	}
+	
+	.content {
+		margin-top: 20px;
+		width: 100%;
+
+		//stretch goal fix
+		// height: 420px;
+
+		margin-bottom: 20px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-evenly;
+	
+		.boxes {
+			width: 45%;
+			height: 200px;
+			// background: @primary-color;
+			color: white;
+			margin-bottom: 20px;
+			display: flex;
+
+			//task1 gray into black
+			background: @black;
+
+			//task4
+			.center-content;
+
+			//stretch goal
+			@media @tablet {
+				width: 100%;
+			}
+			@media @phone {
+				width: 100%;
+			}
+		}
+	
+		.box1 {
+			// style this at the right time!
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
+
+			//task9
+			@media @phone {
+				background: @web-orange;
+			}
+		}
+	
+		.box2 {
+			// style this at the right time!
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
+		}
+	
+		.box3 {
+			// style this at the right time!
+			//task8
+			@media @tablet {
+				background: @fresh-eggplant;
+			}
+		}
+	
+		.box4 {
+			// style this at the right time!
+			//task7
+			@media @laptop {
+				background: @japanese-laurel;
+			}
+
+			//task9
+			@media @phone {
+				background: @web-orange;
+				width: 100%;
+			}
+		}
+	}
+	
+	footer {
+		width: 100%;
+		height: 50px;
+		// background: @primary-color;
+
+		//task1 gray into black
+		background: @black;
+
+		//task4
+		.center-content;
+
+		//task9
+		@media @phone {
+			background: @web-orange;
+		}
+	}
 }
