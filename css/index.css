@@ -165,6 +165,12 @@ header {
   margin-bottom: 20px;
   display: flex;
 }
+@media (max-width: 400px) {
+  header {
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+}
 header nav {
   width: 80%;
   height: 100%;
@@ -183,6 +189,8 @@ header nav {
 @media (max-width: 400px) {
   header nav {
     background: orange;
+    height: 50%;
+    width: 100%;
   }
 }
 header .logo {
@@ -200,6 +208,11 @@ header .logo {
     background: purple;
   }
 }
+@media (max-width: 400px) {
+  header .logo {
+    margin-bottom: 20px;
+  }
+}
 .content {
   margin-top: 20px;
   width: 100%;
@@ -208,6 +221,16 @@ header .logo {
   display: flex;
   flex-flow: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 768px) {
+  .content {
+    height: 860px;
+  }
+}
+@media (max-width: 400px) {
+  .content {
+    height: 860px;
+  }
 }
 .content .boxes {
   width: 45%;
@@ -219,6 +242,16 @@ header .logo {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .content .boxes {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .content .boxes {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   .content .box1 {
