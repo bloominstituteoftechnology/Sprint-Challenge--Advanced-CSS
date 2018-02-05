@@ -14,40 +14,66 @@ header {
 	height: 100px;
 	margin-bottom: 20px;
 	display: flex;
-	@media @phone {
-	  flex-flow: column-reverse;
-    align-items: center; 
-	}
+//	@media @phone {
+//	  flex-flow: column-reverse;
+//    align-items: center;				 
+//	}
+		flex-flow: column-reverse;
+		align-items: center;
+   @media @tablet {
+		  flex-flow: row;
+		  align-items: flex-start;
+	 }	
 
 	nav {
 	  width: 80%;
 	  height: 100%;
-	  background: @primary-color;				
-	  margin-right: 2%;
+//	  background: @primary-color;				
+margin-right: 2%;
 	.center-content();
-	   @media @laptop {
-      background: green;
-    }
-     @media @phone {
-       background: orange;
-			 height: 50%;
-			 width: 100%;				 	 
-		 }
+	//   @media @laptop {
+  //     background: green;
+  //  }
+  //   @media @phone {
+  //     background: orange;
+	//		 height: 50%;
+	//		 width: 100%;				 	 
+ //	}
+	    background: orange;
+        height: 50%;
+        width: 100%;
+      @media @tablet {
+         width: 80%;
+				 height: 100%;
+				 background: green;				
+     }
+      @media @desktop {
+        background: @primary-color;
+     }
   }
+	
 	.logo {
 	 width: 20%;
 	 height: 100%;
-	 background: @primary-color;
+//	 background: @primary-color;
 	 border-radius: 50%;
 	.center-content();
-	 @media @tablet {
+/*	 @media @tablet {
       background: purple;
-  	 }
-	 @media @phone {
-		 margin-bottom: 20px;
-    } 
+   }*/
+//	 @media @phone {
+//		 margin-bottom: 20px;
+//   }     
+	 margin-bottom: 20px;
+	 background: purple;
+	 @media @tablet {
+    margin-bottom: 0;
+	}
+  @media @laptop {
+    background: @primary-color;
   }
-} 
+}
+}
 	.content {
 	margin-top: 20px;
 	width: 100%;
@@ -56,73 +82,106 @@ header {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-evenly;
-  @media @tablet {
-	  height: 860px;
-	}
-  @media @phone {
-    height: 860px; 
-	}
+ // @media @tablet {
+ //	  height: 860px;
+//	}
+ // @media @phone {
+  //  height: 860px;
+//	}
+	 height: 860px;
+	 @media @laptop {
+     height: 420px;
+	 }
 	
-	.boxes {
+	 .boxes {
 	  width: 45%;
 	  height: 200px;
-	  background: @primary-color;
+//	  background: @primary-color;
 	  color: white;
 	  margin-bottom: 20px;
 	  display: flex;
     .center-content();
-		@media @tablet {
-       width: 100%;
-    }
-		@media @phone {
-       width: 100%; 
-   }
- }
+//		@media @tablet {
+ //      width: 100%;
+ //   }
+	//	@media @phone {
+  //     width: 100%; 
+  // }
+    width: 100%;
+		@media @laptop {
+     width: 45%;
+		}
+}
    .box1 {				
-	   @media @laptop {
-      background: green;
-    }
-     @media @phone {
-        background: orange;
-    }
-
-   }  
-
+	  // @media @laptop {
+    //  background: green;
+   // }
+    // @media @phone {
+     //   background: orange;
+   // }  
+     background: orange;
+		 @media	@tablet {
+			 background: green;
+		}
+     @media @desktop {
+			  background: @primary-color;
+		}
+	}
 	// style this at the right time!
 
    .box2 {
-     @media @tablet {
-       background: purple;
-     }
+   //  @media @tablet {
+   //    background: purple;
+   //  }
+      background: purple;
+			@media @laptop {
+        background: @primary-color;
+	  	}
+
 	// style this at the right time!
-  } 
+   }   
 
    .box3 {
      @media @tablet {
        background: purple;
     }	
+		background: purple;
+       @media @laptop {
+         background: @primary-color;
+     }
+
 	// style this at the right time!
   }  
 
    .box4 {
-    @media @laptop {
-    background: green;
-  }  
-	 @media @phone {
+//    @media @laptop {
+//    background: green;
+//  }  
+//	 @media @phone {
+//    background: orange;
+ // }
      background: orange;
-   }
+     @media @tablet {
+        background: green;
+     }
+      @media @desktop {
+         background: @primary-color;
+			}
 
 	// style this at the right time!
   } 
- }
-
+}
 footer {
   width: 100%;
 	height: 50px;
-	background: @primary-color;
+//	background: @primary-color;
 	display: flex;
 	.center-content();
-	  @media @phone {
-       background: orange;
-   }
+	//  @media @phone {
+  //     background: orange;
+  // }
+  background: orange;
+	 @media @tablet {
+		 background: @primary-color;
+   } 
 }
