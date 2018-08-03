@@ -1,1 +1,38 @@
 // Mixins below variables
+.center() {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    }
+    .center2() {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        }
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+  .button-creator(@width, @height,@nav-font-color, white) {
+    .border-radius(10px);
+    .center2;
+    width: @width;
+    height: @height;
+    background-color: @nav-font-color;
+    color: white;
+    border: 1px solid skyblue;
+    cursor: pointer;
+  }
+
+  .flex-wrap{
+      
+      display: flex;
+    //   align-items:baseline;
+      justify-content: space-between;
+      flex-direction: row;
+      width:100%;
+  }
+
+  @phone: ~"(max-width:500px)";
