@@ -1,0 +1,30 @@
+.nav-header{
+  border-bottom: 2px solid  @nav-border-color;
+  .flexbox();
+
+  .home-nav{
+    .flexbox(column);
+    color: @nav-font-color;
+    .width(100%);
+
+    .nav-logo-text{
+      .font-size(3rem);
+      .margin(20px 0 10px);
+      .width(100%);
+      text-align: center;
+    }
+
+    .home-sub-nav-container{
+      .margin(0 0 20px);
+      .flexbox(row, center, center, wrap);
+      .width(100%);
+
+      .nav-item{
+        .font-size(1.6rem);
+        text-decoration: none;
+        color: @nav-font-color;
+        margin: 10px 1% 0;
+      }
+    } // home-sub-nav-container
+  } // home-nav
+} // nav-header

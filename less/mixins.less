@@ -1,1 +1,29 @@
 // Mixins below variables
+
+.flexbox(@flex-direction: row, @justify-content: center, @align-item: center, @flex-wrap: wrap, @display: flex){
+  flex-direction: @flex-direction;
+  justify-content: @justify-content;
+  align-items: @align-item;
+  flex-wrap: @flex-wrap;
+  display: @display;
+}
+
+.width(@width: auto){
+  width: @width;
+}
+
+.max-width(@max-width: auto){
+  max-width: @max-width;
+}
+
+.margin(@margin: auto){
+  margin: @margin;
+}
+
+.padding(@padding: auto){
+  padding: @padding;
+}
+
+.font-size(@font-size: inherit){
+  font-size: @font-size;
+}

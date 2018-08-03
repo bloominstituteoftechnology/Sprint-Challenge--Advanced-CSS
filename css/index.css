@@ -142,3 +142,41 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.nav-header {
+  border-bottom: 2px solid #F1F1F1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.nav-header .home-nav {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  color: #454A59;
+  width: 100%;
+}
+.nav-header .home-nav .nav-logo-text {
+  font-size: 3rem;
+  margin: 20px 0 10px;
+  width: 100%;
+  text-align: center;
+}
+.nav-header .home-nav .home-sub-nav-container {
+  margin: 0 0 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+}
+.nav-header .home-nav .home-sub-nav-container .nav-item {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+  margin: 10px 1% 0;
+}
