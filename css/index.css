@@ -231,6 +231,11 @@ footer p {
 .home .middle-content {
   margin-top: 2.27%;
 }
+@media (max-width:500px) {
+  .home .middle-content {
+    padding: 1.3%;
+  }
+}
 .home .middle-content .lift-part1 {
   margin-top: 20px;
 }
@@ -244,10 +249,12 @@ footer p {
   padding-left: 1%;
   width: 33%;
   height: 200px;
+  border-radius: 8%;
 }
 @media (max-width:500px) {
   .home .the-3imgs .a3imgs {
     width: 100%;
+    border-radius: 5%;
   }
 }
 @media (max-width:500px) {
@@ -263,6 +270,11 @@ footer p {
 .home .top-img {
   width: 100%;
   height: 200px;
+}
+@media (max-width:500px) {
+  .home .top-img {
+    height: 140px;
+  }
 }
 .home .visit-planets {
   margin-top: 2.27%;
@@ -320,4 +332,7 @@ footer p {
     cursor: pointer;
     margin-bottom: 10px;
   }
+}
+.home .bottom-content .bottom-img {
+  border-radius: 2%;
 }
