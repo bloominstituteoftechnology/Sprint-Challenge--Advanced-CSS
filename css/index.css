@@ -140,3 +140,9 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.main-navigation {
+  width: 100%;
+  color: #454A59;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
