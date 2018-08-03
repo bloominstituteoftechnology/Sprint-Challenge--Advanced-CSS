@@ -168,7 +168,20 @@ h5 {
 .navigation .nav .nav-link:hover {
   text-decoration: underline;
 }
+.home {
+  background: #FFFFFF;
+}
+.home h2 {
+  color: #23293B;
+}
+.home p {
+  color: #5E6164;
+}
 .home .top-img {
   height: 200px;
   width: 100%;
+}
+.home .footer {
+  color: #81848E;
+  background: #F4F4F4;
 }
