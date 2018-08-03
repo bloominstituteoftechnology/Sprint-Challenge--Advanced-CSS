@@ -1,1 +1,259 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.home {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+.header .nav-bar-style {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0 15px;
+}
+.header .nav-bar-style .header-title {
+  padding: 5px 0 15px;
+}
+.header .nav-bar-style .header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 47.5%;
+  font-size: 1.6rem;
+}
+.header .nav-bar-style .header-nav a {
+  text-decoration: none;
+  color: #454A59;
+}
+.header .header-img {
+  width: 100%;
+  height: 200px;
+}
+.footer {
+  padding: 47px 0 0;
+}
+.footer .bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  width: 90%;
+  padding: 47px 0;
+}
+.footer .bottom-content .go-walk h3 {
+  padding: 0 0 12px;
+}
+.footer .bottom-content .bottom-img {
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+  margin: 13px 6.3%;
+  transform: translateY(-13px);
+}
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #F6F7F8;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 80px;
+  background-color: #F4F4F4;
+  color: #81848E;
+  cursor: pointer;
+  margin: 15px auto;
+}
+.main {
+  border-bottom: 2px solid #F6F7F8;
+  padding: 15px 1.8%;
+}
+.main .lift-off {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.main .lift-off h2 {
+  padding: 0 0 15px;
+}
+.main .lift-off .lift-off-img-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+.main .lift-off .lift-off-img-stack .lift-off-img {
+  width: 30%;
+  border-radius: 5px;
+}
