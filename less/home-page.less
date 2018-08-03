@@ -1,6 +1,4 @@
 // Home Content
-@h2-size: 2rem;
-@p-size: 1.3rem;
 
 .home
 {
@@ -15,24 +13,15 @@
 
     .top-content
     {
-        padding: 1% 12%;
-
-        h2
-        {
-            font-size: @h2-size;
-            margin: 1% 0;
-        }
-
-        p
-        {
-            font-size: @p-size;
-        }
+        .content-padding;
+        .h2andp;
 
         .images-bar
         {
             display: flex;
             width: 100%;
             justify-content: space-between;
+            margin: 1% 0;
 
             img
             {
@@ -41,5 +30,32 @@
                 height: 5%;
             }
         }
+    }
+
+    .middle-content
+    {
+        .content-padding;
+        .h2andp;
+        .last-p
+        {
+            padding-bottom: 40px;
+            .content-bottom-border;
+        }
+    }
+
+    .bottom-content
+    {
+        display: flex;
+        .content-padding;
+        .h2andp;
+
+        img
+        {
+            border-radius: 3px;
+        }
+        
+        padding-bottom: 40px;
+        width: 100%;
+        .content-bottom-border;
     }
 }

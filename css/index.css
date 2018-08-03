@@ -1,3 +1,17 @@
+.h2andp h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.h2andp p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.content-padding {
+  padding: 1% 12%;
+}
+.content-bottom-border {
+  border-bottom: 2px solid darkgrey;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -148,18 +162,19 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 1%;
-}
-.main-nav h1 {
-  width: 100%;
-  color: black;
-  font-size: 2rem;
 }
 .main-nav nav {
   color: black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.main-nav nav h1 {
+  width: 100%;
+  margin: 10px 35%;
+  color: black;
+  font-size: 2rem;
 }
 .main-nav nav a {
   font-size: 1.3rem;
@@ -188,16 +203,51 @@ h5 {
 }
 .home .top-content p {
   font-size: 1.3rem;
+  margin: 1% 0;
 }
 .home .top-content .images-bar {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin: 1% 0;
 }
 .home .top-content .images-bar img {
   border-radius: 10px;
   width: 31%;
   height: 5%;
+}
+.home .middle-content {
+  padding: 1% 12%;
+}
+.home .middle-content h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.home .middle-content p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.home .middle-content .last-p {
+  padding-bottom: 40px;
+  border-bottom: 2px solid darkgrey;
+}
+.home .bottom-content {
+  display: flex;
+  padding: 1% 12%;
+  padding-bottom: 40px;
+  width: 100%;
+  border-bottom: 2px solid darkgrey;
+}
+.home .bottom-content h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.home .bottom-content p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.home .bottom-content img {
+  border-radius: 3px;
 }
 html {
   font-size: 62.5%;
