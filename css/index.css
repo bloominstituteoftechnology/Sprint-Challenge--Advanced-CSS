@@ -145,6 +145,9 @@ header .nav-container {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
 }
 header .nav-container .logo-heading {
   margin: 10px auto;
@@ -214,6 +217,7 @@ header .nav-container .nav a:hover {
 }
 .home .header img {
   margin-bottom: 15px;
+  margin-top: 100px;
 }
 @media (max-width: 500px) {
   .home .header img {
