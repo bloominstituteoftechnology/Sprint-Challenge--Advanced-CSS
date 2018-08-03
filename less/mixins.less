@@ -1,1 +1,32 @@
 // Mixins below variables
+.flex-custom(@justify, @direction) {
+    display: flex;
+    justify-content: @justify;
+    flex-direction: @direction;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.border-radius(@b-radius) {
+    border-radius: @b-radius;
+  }
+
+.button-maker(@width, @height, @bg-color, @font-color) {
+    .border-radius(10px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid black;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
+  }

@@ -1,0 +1,24 @@
+.main-navigation {
+    background-color: @navigation-background;
+    color: @navigation-font-color;
+    border-bottom: 1px solid @navigation-border-color;
+    .nav-container {
+        .flex-custom(center, column);
+        text-align: center;
+        h1 {
+            font-size: @title-size;
+            padding-top: 20px;
+        }
+        .navbar {
+            .flex-custom(space-between, none);
+            margin: 10px 35%;
+            @media @phone {
+                margin: 10px 10%;
+            }
+            a {
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
