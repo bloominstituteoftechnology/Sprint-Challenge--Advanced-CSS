@@ -151,9 +151,16 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 2;
+}
 .container {
   max-width: 1000px;
-  width: 100%;
+  width: 55%;
   margin: 0 auto;
 }
 .nav {
@@ -177,4 +184,14 @@ h1 {
   width: 38%;
   font-size: 1.6rem;
   margin: 1.5% 0;
+}
+.headline .headline-image {
+  width: 100%;
+  height: 200px;
+}
+.headline .headline-body {
+  margin: 2% 0;
+}
+.headline .headline-body .headline-body-text {
+  margin: 2% 0;
 }
