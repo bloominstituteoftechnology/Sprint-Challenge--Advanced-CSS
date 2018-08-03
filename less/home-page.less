@@ -16,8 +16,8 @@
 
 // Planets
 .planets {
-  border-bottom: 3px solid @mainBorderColor;
-  padding-bottom: 8%;
+  .borderPadding;
+  
   .planets-images {
     display: flex;
     justify-content: space-between;
@@ -33,13 +33,12 @@
 
 // Walk
 .walk {
+  .borderPadding;
   margin: 5% auto;
   margin-bottom: 1%;
   width: 90%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 8%;
-  border-bottom: 3px solid @mainBorderColor;
 
   .walk-body {
     width: 45%;
@@ -49,17 +48,7 @@
     }
 
     .walk-body-btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #22283B;
-      color: white;
-      width: 35%;
-      height: 15%;
-      border: 1px solid blue;
-      border-radius: 5px;
-      font-size: 1.5rem;
-      margin-top: 3%;
+      .button-generator(#22283B, white, 35%, 15%);
     }
   }
 
