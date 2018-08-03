@@ -1,0 +1,71 @@
+.banner-about {
+	width: 100%;
+}
+
+.about {
+	.banner-about {
+		width: 100%;
+	}
+	p {
+		font-size: 1.6rem;
+		padding: 1%;
+	}
+	.things-to-do {
+		display: flex;
+		@media @phone {
+			flex-direction: column;
+	    margin: 15px 4% 15px 4%;
+	    padding: 1%
+		}
+		h2 {
+			font-size: 3rem;
+			margin: 5px 0;
+			padding: 1%;
+		}
+		.things-to-do-section {
+			margin: 1%;
+			padding: 1%;
+			border: solid black 1px;
+
+			@media @phone {
+				margin: 10px 0 10px 0;
+				border-radius: 2%;
+				border: solid black 2px;
+			}
+			.pics {
+				width: 100%;
+			}
+		}
+		.things-to-do-section:hover {
+			@media @phone {
+				background-color: darkgrey;
+				color: white;
+			}
+		}
+	}//end of things to do
+	.testimonials {
+		margin: 1%;
+		padding: 1%;
+		display: flex;
+		align-items: center;
+		@media @phone {
+			flex-direction: column-reverse;
+	    margin: 0 4% 15px 4%;
+	    padding: 0 1% 0 1%;
+		}
+		h2 {
+			font-size: 3rem;
+			margin: 5px 0;
+			padding: 1%;
+		}
+		p {
+			font-size: 2rem;
+		}
+		.testimonials-section {
+			width: 100%;
+			.happy {
+				width: 100%;
+			}
+		}
+	}
+}

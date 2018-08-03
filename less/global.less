@@ -21,3 +21,12 @@ html {
 	width: 100%;
 	margin: 0 auto;
 }
+
+hr {
+	margin: 40px 0 30px 0; 
+	border: solid @hr-color 2px;
+	@media @phone {
+		margin: 40px -4% 30px -4%;
+    border: solid lightgrey 1px;
+	}
+}

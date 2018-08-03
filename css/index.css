@@ -148,6 +148,16 @@ html {
   width: 100%;
   margin: 0 auto;
 }
+hr {
+  margin: 40px 0 30px 0;
+  border: solid lightgrey 2px;
+}
+@media ( max-width: 500px ) {
+  hr {
+    margin: 40px -4% 30px -4%;
+    border: solid lightgrey 1px;
+  }
+}
 .nav-container {
   background-color: #e8e4e4;
   text-align: center;
@@ -302,4 +312,77 @@ footer p {
 }
 .home .walk h2 {
   margin-left: 3%;
+}
+.banner-about {
+  width: 100%;
+}
+.about .banner-about {
+  width: 100%;
+}
+.about p {
+  font-size: 1.6rem;
+  padding: 1%;
+}
+.about .things-to-do {
+  display: flex;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do {
+    flex-direction: column;
+    margin: 15px 4% 15px 4%;
+    padding: 1%;
+  }
+}
+.about .things-to-do h2 {
+  font-size: 3rem;
+  margin: 5px 0;
+  padding: 1%;
+}
+.about .things-to-do .things-to-do-section {
+  margin: 1%;
+  padding: 1%;
+  border: solid black 1px;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do .things-to-do-section {
+    margin: 10px 0 10px 0;
+    border-radius: 2%;
+    border: solid black 2px;
+  }
+}
+.about .things-to-do .things-to-do-section .pics {
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do .things-to-do-section:hover {
+    background-color: darkgrey;
+    color: white;
+  }
+}
+.about .testimonials {
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+}
+@media ( max-width: 500px ) {
+  .about .testimonials {
+    flex-direction: column-reverse;
+    margin: 0 4% 15px 4%;
+    padding: 0 1% 0 1%;
+  }
+}
+.about .testimonials h2 {
+  font-size: 3rem;
+  margin: 5px 0;
+  padding: 1%;
+}
+.about .testimonials p {
+  font-size: 2rem;
+}
+.about .testimonials .testimonials-section {
+  width: 100%;
+}
+.about .testimonials .testimonials-section .happy {
+  width: 100%;
 }
