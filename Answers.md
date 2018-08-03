@@ -21,3 +21,7 @@ font-size: 62.5% in the html tag makes the dafault font size set at 10px so when
 ## 4. Decription of preprocessing
 
 Preprocessing in the terms of css is similar to any other preprocessing in that it takes the input of a less , scss, sass, ts file and then performs a transpile in to css. This is a process of parsing the file and turning it in to a css file that the browser can understand to style a website. Usually you would find use of preprocessing to simplify and streamline your workflow.
+
+## 5. My favorite concept of preprocessing
+
+ My favorite concept of preprocessing is the actual workflow benefits gained from variables and logic that the languages that get preprocessed can mean for workflow optimization and general speed of productivity. I understand that this is more of an effect than a concept but the concepts are fairly abstract in the way that preprocessing is just a parser to transpile some elements using a similare device setup to things like interpreters and JIT Compilation. the nature of this is outside the scope of this answer but I do enjoy the aspect of JIT and transpilation.
