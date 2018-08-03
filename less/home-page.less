@@ -35,7 +35,7 @@
     border: 1px solid blue;
     border-top: 1px solid @main-content-bdr-color;
     border-bottom: 1px solid @main-content-bdr-color;
-    margin: 52px 0;
+    margin: 52px 0 0;
     padding: 54px;
     display: flex;
     justify-content: space-evenly;
@@ -45,6 +45,11 @@
       width: 47%;
       height: auto;
       padding: 0 21px;
+
+      .btn {
+        .button-creator(106px, 36px, @btn-bg-color, @white, 1.6rem);     
+      }
+
     }
 
     img {
@@ -54,6 +59,8 @@
     }
 
   }
+
+  
   
   
 
