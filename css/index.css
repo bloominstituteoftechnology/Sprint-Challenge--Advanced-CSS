@@ -155,7 +155,8 @@ h5 {
   align-content: center;
   flex-direction: column;
   margin-top: 10px;
-  border: 100% #F1F1F1;
+  border: #F1F1F1;
+  border-width: thick;
   background-color: #F6F6F6;
   color: #454A59;
 }
