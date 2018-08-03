@@ -160,6 +160,12 @@ h5 {
   justify-content: space-between;
   width: 28%;
   margin-bottom: 13px;
+  font-weight: bold;
+}
+@media ( max-width: 500px ) {
+  .container header .main-nav {
+    width: 80%;
+  }
 }
 .container .home-page {
   max-width: 880px;
