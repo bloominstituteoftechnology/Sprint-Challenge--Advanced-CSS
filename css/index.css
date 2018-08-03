@@ -199,6 +199,26 @@ p {
   margin-left: 4.5%;
   color: #454A59;
 }
+footer {
+  width: 82%;
+  border: 2px solid silver;
+  background: #F4F4F4;
+  margin-top: 15px;
+  margin-left: 10%;
+  padding-bottom: 20px;
+}
+@media (max-width:500px) {
+  footer {
+    width: 100%;
+    margin-left: 8px;
+  }
+}
+footer p {
+  text-align: center;
+  color: #81848E;
+  font-size: 1.6rem;
+  padding: 20px;
+}
 .home {
   background: #FFFFFF;
   border-bottom: 1px solid silver;
