@@ -1,3 +1,13 @@
+.flex-column {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headings {
+  margin: 10px 0;
+  align-self: flex-start;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,6 +150,26 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+h1 {
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .main-nav {
   position: fixed;
   top: 0;
@@ -169,4 +199,82 @@ h5 {
   font-size: 1rem;
   text-decoration: none;
   color: black;
+}
+.home {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .header {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .header h1 {
+  margin: 10px 0;
+  align-self: flex-start;
+}
+.home .header .middle-img-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 35%;
+}
+.home .header .middle-img-content img {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.home .top-content {
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .top-content h2 {
+  margin: 10px 0;
+  align-self: flex-start;
+}
+.home .bottom-content {
+  width: 75%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home .bottom-content .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .bottom-content .text-content h2 {
+  margin: 10px 0;
+  align-self: flex-start;
+}
+.home .bottom-content .text-content .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 40px;
+  background-color: #23293B;
+  color: #FFFFFF;
+  border: 1px solid #F6F7F8;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.home .bottom-content .text-content .btn:hover {
+  background-color: #FFFFFF;
+  color: #23293B;
+}
+.home .bottom-content .bottom-img-content {
+  width: 48%;
+  padding-left: 1%;
+  align-self: center;
 }
