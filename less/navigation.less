@@ -1,0 +1,48 @@
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: @nav-bg;
+  border-bottom: 2px solid @nav-border-color;
+  position: fixed;
+
+  .nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media @mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+        justify-content: space-evenly;
+    }
+
+    .spacewalkers {
+      color: @nav-font-color;
+      @media @mobile {
+      font-size: 3rem;
+      }
+    }
+
+    .nav {
+      width: 350px;
+      display: flex;
+      justify-content: space-evenly;
+
+      @media @mobile {
+        width: 100%;
+        justify-content: space-around;
+      }
+      
+      
+      a {
+        padding: 0 10px;
+        font-size: 1.6rem;
+        color: @nav-font-color;
+        text-decoration: none;
+      }
+    }
+  }
+} // .main-navigation

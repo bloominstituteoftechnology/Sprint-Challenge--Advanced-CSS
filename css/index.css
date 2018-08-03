@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Ubuntu', sans-serif;
 }
 h1,
@@ -139,4 +140,185 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 3.9rem;
+}
+h2 {
+  color: #23293B;
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  color: #23293B;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+}
+.main-navigation .nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    justify-content: space-evenly;
+  }
+}
+.main-navigation .nav-container .spacewalkers {
+  color: #454A59;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .spacewalkers {
+    font-size: 3rem;
+  }
+}
+.main-navigation .nav-container .nav {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.main-navigation .nav-container .nav a {
+  padding: 0 10px;
+  font-size: 1.6rem;
+  color: #454A59;
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #F6F7F8;
+  background: #F4F4F4;
+}
+.footer p {
+  text-align: center;
+  color: #81848E;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .intro {
+  padding-top: 90px;
+}
+.home .intro img {
+  width: 100%;
+  height: auto;
+}
+.home .intro h2 {
+  margin: 15px 0 0 15px;
+}
+.home .intro p {
+  margin: 0 30px 10px 15px;
+}
+.home .pictures-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.home .pictures-section img {
+  border-radius: 20px;
+  width: 30%;
+  height: 30%;
+  margin: 0 15px 15px 15px;
+}
+@media (max-width: 500px) {
+  .home .pictures-section img {
+    width: 100%;
+    height: 100%;
+  }
+  .home .pictures-section .img2 {
+    display: none;
+  }
+  .home .pictures-section .img3 {
+    display: none;
+  }
+}
+.home .middle-section {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #F6F7F8;
+}
+.home .middle-section h3 {
+  margin: 25px 0 0 10px;
+}
+.home .middle-section p {
+  margin: 0 30px 10px 10px;
+}
+.home .last-section {
+  display: flex;
+  padding: 45px 0 35px 0;
+  border-bottom: 2px solid #F6F7F8;
+  margin-bottom: 20px;
+}
+.home .last-section .last-section-content {
+  padding: 0 50px;
+}
+.home .last-section img {
+  border-radius: 5px;
+  width: 45%;
+  height: 45%;
+}
+.home .last-section button {
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: white;
+  background-color: #23293B;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .home .last-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home .last-section .last-section-content {
+    padding: 0 25px;
+  }
+  .home .last-section button {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .home .last-section img {
+    width: 90%;
+    height: 90%;
+    margin-left: 20px;
+  }
 }
