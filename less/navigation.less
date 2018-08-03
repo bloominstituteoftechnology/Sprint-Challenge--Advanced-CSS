@@ -1,0 +1,41 @@
+// Nav Styles
+
+@import "variables.less";
+@import "mixins.less";
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    background: @nav-bg-color;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid @nav-border-color;
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px auto;
+
+        h1 {
+            font-size: 2.4rem;
+            color: @nav-font-color;
+        }
+
+        .nav {
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+
+            a {
+                font-size: 1rem;
+                text-decoration: none;
+                color: black;
+            } //a
+
+    } //nav
+    } //nav-container
+
+} //main-nav
