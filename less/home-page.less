@@ -8,6 +8,11 @@
   .headline-body {
     margin: 2% 0;
 
+    @media @phone {
+      width: 90%;
+      margin: 5% auto;
+    }
+
     .headline-body-text {
       margin: 2% 0;
     }
@@ -23,10 +28,32 @@
     justify-content: space-between;
     margin-bottom: 6%;
 
+    @media @phone {
+      flex-wrap: wrap;
+    }
+
     > * {
       width: 30%;
       height: 30%;
       border-radius: 20px;
+
+      @media @phone {
+        margin: 0 auto;
+        width: 85%;
+        height: 85%;
+        display: none;
+
+        &:nth-child(1) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .planets-body {
+    @media @phone {
+      width: 90%;
+      margin: 5% auto;
     }
   }
 }
@@ -40,6 +67,11 @@
   display: flex;
   justify-content: space-around;
 
+  @media @phone {
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
   .walk-body {
     width: 45%;
 
@@ -49,6 +81,16 @@
 
     .walk-body-btn {
       .button-generator(#22283B, white, 35%, 15%);
+
+      @media @phone {
+        width: 100%;
+        flex-basis: 100%;
+        margin: 10% 0;
+      }
+    }
+
+    @media @phone {
+      width: 100%;
     }
   }
 
@@ -56,5 +98,10 @@
     width: 45%;
     height: 45%;
     border-radius: 5px;
+
+
+    @media @phone {
+      width: 100%;
+    }
   }
 }

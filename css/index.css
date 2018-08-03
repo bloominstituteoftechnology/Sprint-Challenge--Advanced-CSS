@@ -171,6 +171,11 @@ p {
   background-color: #FFFFFF;
   border-color: #F6F7F8;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .nav {
   display: flex;
   justify-content: center;
@@ -215,6 +220,12 @@ p {
 .headline .headline-body {
   margin: 2% 0;
 }
+@media (max-width: 500px) {
+  .headline .headline-body {
+    width: 90%;
+    margin: 5% auto;
+  }
+}
 .headline .headline-body .headline-body-text {
   margin: 2% 0;
 }
@@ -227,10 +238,32 @@ p {
   justify-content: space-between;
   margin-bottom: 6%;
 }
+@media (max-width: 500px) {
+  .planets .planets-images {
+    flex-wrap: wrap;
+  }
+}
 .planets .planets-images > * {
   width: 30%;
   height: 30%;
   border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .planets .planets-images > * {
+    margin: 0 auto;
+    width: 85%;
+    height: 85%;
+    display: none;
+  }
+  .planets .planets-images > *:nth-child(1) {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .planets .planets-body {
+    width: 90%;
+    margin: 5% auto;
+  }
 }
 .walk {
   border-bottom: 3px solid #F6F7F8;
@@ -240,6 +273,12 @@ p {
   width: 90%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-wrap: wrap;
+    width: 80%;
+  }
 }
 .walk .walk-body {
   width: 45%;
@@ -260,8 +299,25 @@ p {
   font-size: 1.5rem;
   margin-top: 3%;
 }
+@media (max-width: 500px) {
+  .walk .walk-body .walk-body-btn {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 10% 0;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-body {
+    width: 100%;
+  }
+}
 .walk .walk-image {
   width: 45%;
   height: 45%;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .walk .walk-image {
+    width: 100%;
+  }
 }
