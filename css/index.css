@@ -150,7 +150,7 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 96px auto;
+  margin: 96px auto 20px;
 }
 .main-navigation {
   display: flex;
