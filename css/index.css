@@ -1,3 +1,20 @@
+.btn {
+  width: 30%;
+  height: 30px;
+  background-color: black;
+  border-radius: 0px;
+  border: 1px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: white;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -157,28 +174,55 @@ p {
   position: fixed;
   margin-bottom: 20px;
   margin-top: -40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .main-navigation .nav-container {
+  width: 100%;
   height: 100%;
-  display: center;
+  align-items: center;
   padding: 2%;
-  justify-content: space-between;
 }
 .main-navigation .nav-container .nav {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
-  margin-top: 10px;
-  margin-left: 20%;
+  width: 100%;
+  margin-top: px;
+  margin-left: 0%;
 }
 .main-navigation .nav-container .nav a {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #454A59;
   text-decoration: none;
+  height: 0px;
+  max-width: 2000px;
+  width: 80%;
+  padding: 0%;
+  margin-top: 10px;
+  margin-left: 0%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .main-navigation .nav-container .logo-heading {
-  font-size: 2.8rem;
-  margin-left: 40%;
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F4F4F4;
+  border-top: 1px solid lightgrey;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.home {
+  width: 100%;
 }
 .home .content-section {
   margin: 30px;
@@ -186,55 +230,69 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section h2 {
+.home h2 {
   margin-top: 1%;
 }
-.home .content-section .img-top {
+.home .img-top {
   max-width: 800px;
   width: 100%;
   padding-bottom: 10px;
   margin-top: 60px;
   margin-left: 0%;
 }
-.home .content-section .img-top img {
+.home .img-top img {
   width: 100%;
 }
-.home .content-section .text-top {
+.home .text-top {
   width: 100%;
   margin: 30px;
 }
-.home .content-section .text-content {
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .imagess {
+.imagess {
   margin: 30px;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   padding: 1%;
 }
-.home .imagess img {
+.imagess img {
   border-radius: 10px;
   width: 80%;
 }
-.home .middleContent {
+.middleContent {
   width: 100%;
   margin: 30px;
 }
-.home .middleContent .middleContentHere {
+.middleContent .middleContentHere {
   width: 80%;
   margin: 30px;
 }
-.home .bottomContent {
+.bottomContent {
   width: 100%;
-  margin-left: 20%;
+  margin-left: 10%;
   display: flex;
   justify-content: space-around;
 }
-.home .bottomContent .bottomContentHere {
-  width: 100%;
+.bottomContent .bottomContentHere {
+  max-width: 100%;
 }
-.home .bottomContent .bottomContentHere p {
-  width: 60%;
+.bottomContent .bottomContentHere p {
+  width: 80%;
+}
+.bottomContent .btmimage {
+  width: 100%;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+.bottomContent .btmimage img {
+  width: 80%;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #F4F4F4;
 }

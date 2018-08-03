@@ -2,3 +2,33 @@
 .text-top(){
     width:100%;
     padding-bottom: 2%;}
+
+
+
+    .makebutton(@width, @height, @background, @border-radius){
+        width: @width;
+        height: @height;
+        background-color: @background;
+        border-radius:@border-radius;
+    }
+            .btn {
+                .makebutton(30%, 30px, black, 0px);
+                border: 1px solid silver;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                font-size: .7rem;
+                cursor: pointer;
+    
+                
+                
+    
+                
+                &:hover {
+                    background: white;
+                    color: black;
+    
+                }
+            }
+            
