@@ -211,11 +211,11 @@ p {
 }
 .planets {
   border-bottom: 3px solid #F6F7F8;
+  padding-bottom: 8%;
 }
 .planets .planets-images {
   display: flex;
   justify-content: space-between;
-  margin-top: 3%;
   margin-bottom: 6%;
 }
 .planets .planets-images > * {
@@ -223,11 +223,9 @@ p {
   height: 30%;
   border-radius: 20px;
 }
-.planets .planets-body {
-  margin: 8% 0;
-}
 .walk {
   margin: 5% auto;
+  margin-bottom: 1%;
   width: 90%;
   display: flex;
   justify-content: space-around;
