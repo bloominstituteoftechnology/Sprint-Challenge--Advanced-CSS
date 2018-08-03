@@ -140,7 +140,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #454A59;
+  color: #23293B;
 }
 h2 {
   font-size: 4rem;
@@ -161,6 +161,7 @@ h4 {
 p {
   font-size: 1.6rem;
   line-height: 1.5;
+  color: #5E6164;
 }
 .main-navigation {
   position: sticky;
@@ -178,6 +179,9 @@ p {
   color: #454A59;
   padding: 14px 0px 12px;
 }
+.main-navigation .nav-container h2 {
+  color: #454A59;
+}
 .main-navigation .nav-container .nav {
   font-size: 1.6rem;
   width: 37.7%;
@@ -185,17 +189,24 @@ p {
   justify-content: space-between;
   padding-top: 16px;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .home .head {
   display: flex;
   justify-content: center;
+  width: 80%;
 }
 .home .head img {
-  width: 80%;
+  width: 100%;
 }
 .home .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 .home .main-content .text-content {
   width: 77%;
@@ -221,4 +232,46 @@ p {
 }
 .home .main-content .bottom-text p {
   padding-bottom: 16px;
+}
+.home .bottom-content {
+  border-top: 2px solid #F6F7F8;
+  border-right: 0px solid #F6F7F8;
+  border-bottom: 2px solid #F6F7F8;
+  border-left: 0px solid #F6F7F8;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 47px;
+}
+.home .bottom-content .text-content {
+  width: 40%;
+}
+.home .bottom-content .text-content p {
+  margin-top: 10px;
+}
+.home .bottom-content .img-content {
+  width: 40%;
+}
+.home .bottom-content .img-content img {
+  width: 100%;
+  border-radius: 2%;
+}
+.home .bottom-content .btn {
+  width: 100px;
+  height: 35px;
+  background-color: #23293B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.home .bottom-content .btn:hover {
+  color: #23293B;
+  background: white;
 }

@@ -11,3 +11,20 @@
   border-bottom: @botside @type @bcolor;
   border-left: @lside @type @bcolor;
 }
+
+.btn-creator(@width, @height) {
+  width: @width;
+  height: @height;
+  background-color: @header-font-color;
+  .center-column;
+  justify-content: center;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5%;
+  cursor: pointer;
+
+  &:hover {
+    color: @header-font-color;
+    background: white;
+  }
+}
