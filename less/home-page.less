@@ -1,1 +1,115 @@
 // Home Content
+
+.home{
+    max-width: 800px;
+    width: 100%;
+    font-size: 1.6rem;
+
+    .head{
+        width: 100%;
+
+        .img-head{
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 2%;
+            }
+        }
+
+        .text-head{
+            margin: 0 4%;
+            padding-bottom: 1%;
+        }
+    }
+
+    .content-section{
+
+        .img-content{
+            .space-between();
+            margin-left: 4%;
+            margin-bottom: 7%;
+
+            @media @phone{
+                justify-content: center;
+                margin: 4% 0;
+            }
+
+            .hidden{
+                @media @phone{
+                    display: none;
+                }
+            }
+
+            img{
+                width: 30%;
+                height: 30%;
+                border-radius: 12px;
+
+                @media @phone{
+                    width: 80%;
+                }
+
+            }
+        }
+
+        .text-content{
+            margin-left: 4%;
+            padding-bottom: 7%;
+            border-bottom: 1px solid @border-main-content;
+
+            h3{
+                margin-bottom: 2%;
+            }
+        }
+    }
+
+    .bottom-content{
+        .space-between();
+        padding: 7% 0;
+        border-bottom: 1px solid @border-main-content;
+
+        @media @phone{
+            flex-direction: column;
+        }
+
+
+        .bottom-text{
+            width: 36%;
+            margin-left: 10%;
+
+            @media @phone{
+                width: 80%;
+            }
+
+            h3{
+                margin-bottom: 2%;
+            }
+
+            .btn{
+                .button-creator(90px, 30px, @button-bg, @button-border);
+
+                @media @phone{
+                    .button-creator(100%, 40px, @button-bg, @button-border) ;
+                    margin-top: 4%;
+                }
+            }
+        }
+
+        .bottom-img{
+            width: 40%;
+            margin-right: 8%;
+
+            @media @phone{
+                width: 80%;
+                margin-left: 10%;
+                margin-top: 5%;
+            }
+            
+            img{
+                border-radius: 8px;
+            }
+        }
+    }
+}

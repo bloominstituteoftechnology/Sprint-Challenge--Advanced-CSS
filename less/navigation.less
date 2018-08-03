@@ -1,0 +1,47 @@
+.main-navigation{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5% 0;
+    background: @nav-background;
+    border-bottom: 1px solid @nav-border-color;
+
+    .nav-container{
+        .center();
+        flex-wrap: wrap;
+        width: 100%;
+        
+      
+
+        h1{
+            font-size: 4rem;
+            color: @nav-font-color;
+            width: 100%;
+            text-align: center;
+            margin-left: 3.2%;
+        }
+
+        .nav{
+            margin-top: 15px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin-left: 2.4%;
+
+            @media @phone {
+                width: 100%;
+            }
+
+
+
+            .nav-link{
+                text-decoration: none;
+                color: @nav-font-color;
+                margin: 0 2.4%;
+                font-size: 1.8rem;
+                
+                
+            }
+        }
+    }
+}

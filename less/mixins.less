@@ -1,1 +1,29 @@
 // Mixins below variables
+
+.button-creator(@width, @height, @bg-color,@border-color) {
+    border-radius: 4px;
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: white;
+    border: 1px solid @border-color;
+    font-size: 1.4rem;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @border-color;
+      color: @bg-color;
+    }
+  }
+
+  .center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between(){
+    display: flex;
+    justify-content: space-between;
+}
