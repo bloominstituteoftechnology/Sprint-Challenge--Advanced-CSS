@@ -173,6 +173,21 @@ h5 {
 .all-header .all-header-contents .navigation-dests a {
   color: #454A59;
 }
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #F6F6F6;
+  border-bottom-color: #F1F1F1;
+  border-top: 2%;
+}
+.footer .stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -242,6 +257,7 @@ h5 {
 .home .bottom-cta .bottext .btn {
   padding-top: 4%;
   padding-left: 30%;
+  padding-bottom: 3%;
 }
 .home .bottom-cta img {
   width: 30%;
