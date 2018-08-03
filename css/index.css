@@ -140,3 +140,14 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.footer {
+  width: 100%;
+  border-top: 2px dashed;
+  background: #F4F4F4;
+}
+.footer p {
+  text-align: center;
+  color: #81848E;
+  font-size: 1.6rem;
+  padding: 20px;
+}
