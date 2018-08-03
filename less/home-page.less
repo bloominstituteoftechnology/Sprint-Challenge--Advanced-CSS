@@ -5,6 +5,11 @@
   margin: 0 auto;
   max-width: 880px;
   width: 100%;
+  .top-section {
+    img {
+      width: 100%;
+    }
+  }
 
   .text-section {
    h2 {
@@ -27,10 +32,26 @@
   }
   .bottom-section {
     .flex;
-    width: 80%;
+    .center;
+    width: 90%;
+    align-self: center;
+    border-top: 1px solid @main-border;
+    img {
+      width: 50%;
+      .border-radius(10px);
+    }
     .text-section {
       .flex;
+      flex-direction: column;
       width: 50%;
+      .btn {
+        .flex;
+        .center;
+        .button-creator(50px, 150px, @button-bg-color, @button-font);
+        .border-radius(10px);
+        padding: 1rem;
+
+      }
     }
   }
 
@@ -41,5 +62,12 @@
   p {
     padding: @main-p-padding;
     line-height: 1.5rem;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: @footer-bg;
+    color: @footer-text;
   }
 }
