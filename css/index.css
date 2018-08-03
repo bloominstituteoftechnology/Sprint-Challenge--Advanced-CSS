@@ -165,3 +165,11 @@ h5 {
   max-width: 880px;
   margin: 0 auto;
 }
+.container .home-page .main-header-img-div {
+  text-align: center;
+  height: 200px;
+}
+.container .home-page .main-header-img-div img {
+  width: 91%;
+  height: 100%;
+}
