@@ -1,1 +1,45 @@
 // Home Content
+@h2-size: 2rem;
+@p-size: 1.3rem;
+
+.home
+{
+    width: 80%;
+
+    .banner
+    {
+        width: 100%;
+        padding: 1% 12%;
+        height: 200px;
+    }
+
+    .top-content
+    {
+        padding: 1% 12%;
+
+        h2
+        {
+            font-size: @h2-size;
+            margin: 1% 0;
+        }
+
+        p
+        {
+            font-size: @p-size;
+        }
+
+        .images-bar
+        {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            img
+            {
+                border-radius: 10px;
+                width: 31%;
+                height: 5%;
+            }
+        }
+    }
+}
