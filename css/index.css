@@ -140,3 +140,55 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-bottom: solid 2px #F1F1F1;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+  color: #454A59;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  justify-content: space-between;
+  width: 19.8%;
+  margin-bottom: 12px;
+}
+header nav a {
+  font-size: 1rem;
+  color: #454A59;
+  text-decoration: none;
+}
+.home .jumbo-earth-banner {
+  width: 100%;
+  height: 200px;
+}
+.home .top-content {
+  padding: 16px;
+}
+.home .top-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
