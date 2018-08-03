@@ -148,11 +148,11 @@ h5 {
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
-  padding: 2rem;
+  padding: 0.5rem;
   color: #454A59;
 }
 .main-navigation h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 1rem;
 }
 .main-navigation .nav-links {
@@ -172,4 +172,17 @@ h5 {
   margin: 0 auto;
   max-width: 880px;
   width: 100%;
+}
+.home .center-images {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 30%;
+}
+.home h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.home p {
+  padding: 1rem;
+  line-height: 1.5rem;
 }
