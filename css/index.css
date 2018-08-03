@@ -150,6 +150,7 @@ h5 {
   color: #454A59;
   border-bottom: 3px solid #F1F1F1;
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .main-nav .nav-container {
   display: flex;
