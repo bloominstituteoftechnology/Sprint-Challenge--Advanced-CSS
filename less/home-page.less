@@ -1,21 +1,18 @@
-Home Content
 .container {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
-
-    @media @phone {
+     @media @phone {
         width: 100%;
     }
-
-    .main-content {
+     .home {
         margin: 0 10% 0 10%;
-
-        .lift {
+         .lift {
             margin: 20px 0;
-
-            h2 {
+             h2 {
                 margin: 10px 0;
+                
+                
             }
         }
                 img {
@@ -23,54 +20,79 @@ Home Content
             width: 100%;
             height: 200px;
                 }
-
-        .tri-img {
-            .border-radius(10px);
+         .tri-img {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-evenly;
-            margin: 0 10% 3% 10%;
+            justify-content: space-between;
+            margin-bottom: 3%;
 
-            @media @phone {
+               .img1 {
+                   width: 31%;
+
+                   img {
+                    border-radius: 15px;
+                   }
+               
+                    @media @phone {
+                        width: 100%;
+                    }
+                }
+                .img2 {
+                    border-radius: 15px;
+                    width: 31%;
+
+                    @media @phone {
+                        width: 100%;
+                }
+            }
+                .img3 {
+                    border-radius: 15px;
+                    width: 31%;
+
+                    @media @phone {
+                        width: 100%;
+                }
+                }
+                    
+
+             @media @phone {
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-            }
+                flex-direction: column;
+             }
         }
-
-            .can {
+             .can {
                 
             }
             
         
-
-        .lets {
+         .lets {
             display: flex;
-            justify-content: center;
+            flex-direction: center;
             flex-wrap: nowrap;
             margin: 30px 50px;
-
-            @media @phone {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+            
+                @media @phone {
+                    margin: 0 50px 0 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
             }
             
            .lets-text {
-               flex-direction: row;
+               flex-direction: column;
                width: 30%;
-           
 
-            .btn {
+           
+             .btn {
                 .button-maker(30px, 20px, blue, white);
                 cursor: pointer;
                 }
             }
         }
-
-            .astronaut {
+             .astronaut {
                 margin-left: 10%;
             }
     }
