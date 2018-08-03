@@ -4,9 +4,17 @@
 
     .intro {
 
+        @media @mobile {
+            width: 100%;
+        }
+
         .text-container {
             margin: 25px 0;
             padding: 10px;
+
+            @media @mobile {
+                width: 100%;
+            }
             
         }
     }
@@ -16,21 +24,45 @@
         display: flex;
         justify-content: space-between;
 
-        .image-content {
+        @media @mobile {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .image-container {
             padding: 0 6px;
 
             img{
                 border-radius: 10px;
             }
-            
+        }
+
+        .image-content-2 {
+            @media @mobile {
+                display: none;
+            }
+        }
+
+        .image-content-3 {
+            @media @mobile {
+                display: none;
+            }
         }
     }
 
     .content-section {
         margin: 25px 0;
 
+        @media @mobile {
+            width: 100%;
+        }
+
         .text-container {
             padding: 10px;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
 
@@ -39,17 +71,46 @@
         align-items: center;
         justify-content: space-around;
         margin: 30px 0;
-        padding: 10px;
+        padding: 30px;
         border-top: 1px solid @border-color-main-content;
         border-bottom: 1px solid @border-color-main-content;
 
-        .text-container {
-            width: 300px;
+        @media @mobile {
+            flex-direction: column;
+            margin: 15px 0;
         }
 
+        .text-container {
+            width: 48%;
+
+            @media @mobile {
+                width: 100%;
+                padding: 0;
+            }
+
+            .btn {
+                margin: 20px 0;
+                .button-creator(100px, 40px, @button-background-color, @button-font-color, @button-font-size);
+            }
+        }
+
+        
+
         .image-container {
-            border-radius: 10px;
             padding: 20px;
+
+            @media @mobile {
+                width: 100%;
+                padding: 0;
+            }
+
+            img {
+                border-radius: 10px;
+
+                @media @mobile {
+                    width: 100%;
+                }
+            }
         }
     }
 }
