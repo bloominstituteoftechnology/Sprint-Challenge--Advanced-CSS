@@ -11,6 +11,12 @@
     align-items: center;
     flex-wrap: wrap;
 
+    @media @phone {
+        .mobile-width();
+        .mobile-column();
+        margin-top: 100px;
+    }
+
 
     .header {
 
@@ -26,6 +32,8 @@
             flex-direction: row;
             justify-content: space-evenly;
             width: 35%;
+
+            @media @phone {}
 
             img {
                 width: 100%;
