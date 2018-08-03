@@ -252,7 +252,6 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15%;
   width: 25%;
   height: 10%;
   background-color: #23293b;
@@ -260,8 +259,9 @@ hr {
   border: 1px solid #f6f7f8;
   cursor: pointer;
   font-size: 1.6rem;
-  padding: 3%;
-  margin-left: 5%;
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 25%;
 }
 .third-section .third-section-div .btn:hover {
   background-color: #ffffff;
