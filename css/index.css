@@ -221,6 +221,13 @@ p {
   font-size: 1.6rem;
   margin: 1.5% 0;
 }
+.nav .nav-links *:hover {
+  color: royalblue;
+  text-shadow: 1px 1px 10px cornflowerblue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 @media (max-width: 500px) {
   .nav .nav-links {
     width: 100%;
@@ -321,6 +328,15 @@ p {
   border-radius: 5px;
   font-size: 1.5rem;
   margin-top: 3%;
+}
+.walk .walk-body .walk-body-btn:hover {
+  color: royalblue;
+  text-shadow: 1px 1px 10px cornflowerblue;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: white;
+  border: 1px solid black;
 }
 @media (max-width: 500px) {
   .walk .walk-body .walk-body-btn {
