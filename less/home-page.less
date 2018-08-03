@@ -1,1 +1,100 @@
 // Home Content
+.home {
+    background-color: @Main-background-color;
+
+    .top-section {
+        
+        img {
+            width: 100%;
+        }
+
+        .top-content {
+
+            h2 {
+                font-size: @Font-size-2;
+                margin: 10px 5px;
+            }
+
+            p {
+                font-size: @Font-size-3;
+                margin: 5px 5px 15px 5px; 
+            }
+        }
+    }//top-section
+
+    .middle-section {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid @Border-color-for-main-content;
+
+        .middle-imgs {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+
+            img {
+                width: 29%;
+                height: 150px;
+                margin: 1%;
+                border-radius: 15px;  
+            }
+            
+        }
+
+        .middle-content {
+
+            h2 {
+                font-size: @Font-size-2;
+                margin: 10px 5px;
+            }
+
+            p {
+                font-size: @Font-size-3;
+                margin: 5px 5px 15px 5px; 
+            }
+        }
+
+    }//middle-section
+
+    .bottom-section {
+        .center;
+        padding: 35px;
+        border-bottom: 2px solid @Border-color-for-main-content; 
+
+        .bottom-content {
+            margin-right: 2%; 
+
+            h2 {
+                font-size: @Font-size-2;
+                margin: 10px 5px;
+            }
+
+            p {
+                font-size: @Font-size-3;
+                margin: 5px 5px 15px 5px; 
+            }
+
+            .button {
+                font-size: @Font-size-3;
+                margin: 5px 5px 15px 5px;
+            }
+        }
+
+        img {
+            width: 50%;
+            margin-left: 2%;
+            border-radius: 10px; 
+        }
+    }
+
+    footer {
+        .center;
+        font-size: 1.5rem;
+        background-color: @Footer-background-color;
+        color: @Footer-text-color;
+        padding: 20px 0;
+        border-color: @Navigation-border-color;
+        border-radius: 5px;
+        margin-top: 10px; 
+    }
+}//home

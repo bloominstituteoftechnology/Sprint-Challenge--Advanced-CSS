@@ -133,10 +133,119 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+html {
+  font-size: 62.5%;
+}
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-navigation {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+}
+.main-navigation h1 {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+.main-navigation .navigation {
+  font-size: 2rem;
+  margin: 10px;
+}
+.main-navigation .navigation a {
+  text-decoration: none;
+  color: #454A59;
+  padding: 0 7px;
+}
+.home {
+  background-color: #FFFFFF;
+}
+.home .top-section img {
+  width: 100%;
+}
+.home .top-section .top-content h2 {
+  font-size: 3rem;
+  margin: 10px 5px;
+}
+.home .top-section .top-content p {
+  font-size: 2rem;
+  margin: 5px 5px 15px 5px;
+}
+.home .middle-section {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #F6F7F8;
+}
+.home .middle-section .middle-imgs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.home .middle-section .middle-imgs img {
+  width: 29%;
+  height: 150px;
+  margin: 1%;
+  border-radius: 15px;
+}
+.home .middle-section .middle-content h2 {
+  font-size: 3rem;
+  margin: 10px 5px;
+}
+.home .middle-section .middle-content p {
+  font-size: 2rem;
+  margin: 5px 5px 15px 5px;
+}
+.home .bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  border-bottom: 2px solid #F6F7F8;
+}
+.home .bottom-section .bottom-content {
+  margin-right: 2%;
+}
+.home .bottom-section .bottom-content h2 {
+  font-size: 3rem;
+  margin: 10px 5px;
+}
+.home .bottom-section .bottom-content p {
+  font-size: 2rem;
+  margin: 5px 5px 15px 5px;
+}
+.home .bottom-section .bottom-content .button {
+  font-size: 2rem;
+  margin: 5px 5px 15px 5px;
+}
+.home .bottom-section img {
+  width: 50%;
+  margin-left: 2%;
+  border-radius: 10px;
+}
+.home footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #F4F4F4;
+  color: #81848E;
+  padding: 20px 0;
+  border-color: #F1F1F1;
+  border-radius: 5px;
+  margin-top: 10px;
 }
