@@ -142,16 +142,19 @@ h5 {
   color: #23293B;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
 }
 p {
   color: #5E6164;
 }
 .container {
-  max-width: 2048px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   line-height: 1.5rem;
@@ -159,10 +162,11 @@ p {
 .main-navigation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #F4F4F4;
+  height: 100px;
   color: #454A59;
   border: 3px solid #F1F1F1;
-  padding: 1%;
 }
 @media (max-width: 500px) {
   .main-navigation {
@@ -172,10 +176,11 @@ p {
 .main-navigation h1 {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
 }
 .main-navigation nav {
-  padding: 1% 0 0 0;
-  font-size: 1.3rem;
+  padding: 0 0 0 0;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -187,8 +192,7 @@ p {
 }
 .main-navigation nav a {
   color: #454A59;
-  margin-right: 1%;
-  margin-left: 1%;
+  margin: 2% 1% 0 2%;
   text-decoration: none;
 }
 @media (max-width: 500px) {
@@ -209,11 +213,14 @@ footer {
   border-radius: 4px;
 }
 .home .main-content {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .home .main-content img {
   width: 100%;
+}
+.home .main-content .header-img {
+  height: 200px;
 }
 .home .top-content {
   padding: 0 1%;
@@ -224,8 +231,9 @@ footer {
   }
 }
 .home .text-content {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 1%;
 }
 @media (max-width: 500px) {
   .home .text-content {
@@ -234,6 +242,10 @@ footer {
 }
 .home .text-content p {
   margin-top: 20px;
+}
+.home .inverse-content {
+  margin-left: 1%;
+  margin-bottom: 45px;
 }
 .home .gallery {
   display: flex;
@@ -247,12 +259,13 @@ footer {
 }
 .home .gallery img {
   width: 30%;
+  height: 5%;
   border-radius: 20px;
 }
 @media (max-width: 500px) {
   .home .gallery img {
     width: 85%;
-    margin: 6%;
+    margin: 0 6%;
   }
 }
 @media (max-width: 500px) {
@@ -264,8 +277,10 @@ footer {
   border-top: 1px solid #F6F7F8;
   border-bottom: 1px solid #F6F7F8;
   display: flex;
-  padding: 5% 10% 5% 10%;
-  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 7%;
+  padding-bottom: 14px;
+  margin-bottom: 15px;
 }
 @media (max-width: 500px) {
   .home .bottom-content {
@@ -273,8 +288,8 @@ footer {
   }
 }
 .home .bottom-content .text-content {
-  width: 50%;
-  margin: 2%;
+  width: 45%;
+  margin-right: 3%;
 }
 @media (max-width: 500px) {
   .home .bottom-content .text-content {
@@ -283,7 +298,8 @@ footer {
   }
 }
 .home .bottom-content img {
-  width: 50%;
+  width: 44%;
+  height: 80%;
   border-radius: 5px;
 }
 @media (max-width: 500px) {
