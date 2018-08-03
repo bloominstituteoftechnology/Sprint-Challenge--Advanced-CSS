@@ -1,1 +1,313 @@
-/* Compile your LESS first! */
+.h1-font-stencil {
+  font-size: 2.2rem;
+  color: #23293b;
+}
+.margin-stencil {
+  margin: 10px 15%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.nav {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.nav h1 {
+  font-size: 2.2rem;
+  color: #454a59;
+}
+.nav .spacehead {
+  width: 100%;
+  text-align: center;
+}
+.nav .atags {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav .atags a {
+  text-decoration: none;
+  color: #454a59;
+  margin: 10px -21% 10px -23%;
+}
+@media ( max-width: 500px ) {
+  .nav .atags a {
+    margin: 10px -12% 10px -12%;
+  }
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+.container .img img {
+  margin: 0 15%;
+  width: 70%;
+}
+@media ( max-width: 500px ) {
+  .container .img img {
+    margin: 0;
+    width: 100%;
+  }
+}
+.container .content .main-content {
+  margin: 10px 15%;
+}
+.container .content .main-content h1 {
+  font-size: 2.2rem;
+  color: #23293b;
+}
+.container .content .body-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media ( max-width: 500px ) {
+  .container .content .body-images .sky {
+    display: none;
+  }
+  .container .content .body-images .blast-off {
+    width: 70%;
+  }
+}
+.container .content .body-images img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 21%;
+  height: 78%;
+  margin: 10px -11%;
+}
+.container .content .second-content {
+  margin: 10px 15%;
+}
+.container .content .second-content h1 {
+  font-size: 2.2rem;
+  color: #23293b;
+  margin-bottom: 10px;
+}
+.container .content hr {
+  margin-bottom: 30px;
+  border: 1px solid #f6f6f6;
+}
+.container .content .bottom-content {
+  margin: 30px 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media ( max-width: 500px ) {
+  .container .content .bottom-content {
+    display: flex;
+    flex-flow: column;
+  }
+}
+.container .content .wrap-words {
+  margin-right: 10%;
+  width: 356%;
+}
+@media ( max-width: 500px ) {
+  .container .content .wrap-words {
+    width: 100%;
+  }
+}
+.container .content .wrap-words h1 {
+  font-size: 1.5rem;
+}
+.container .content .imagebottom {
+  width: 350%;
+}
+@media ( max-width: 500px ) {
+  .container .content .imagebottom {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .container .content .imagebottom img {
+    width: 100%;
+  }
+}
+.container .content .imagebottom img {
+  width: 111%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.container .content .signup {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+}
+@media ( max-width: 500px ) {
+  .container .content .signup {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+}
+.container .footer {
+  background-color: #f6f6f6;
+  width: 75%;
+  margin: 0px 12%;
+  text-align: center;
+  padding: 30px 0;
+}

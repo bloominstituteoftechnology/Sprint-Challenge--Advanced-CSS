@@ -1,1 +1,31 @@
 // Mixins below variables
+.h1-font-stencil{
+    font-size: 2.2rem;
+    color: @mainfontcolor;
+    
+}
+.margin-stencil{
+    margin: 10px 15%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.button-creator(@width, @height, @background-color, @font-color, @font-size)
+{
+    .border-radius(5px);
+    .center();
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+    color: @font-color;
+    font-size: @font-size;
+}
