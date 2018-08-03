@@ -149,9 +149,6 @@ h5 {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .container {
-    padding: 5%;
-  }
 }
 .nav-header {
   border-bottom: 2px solid #F1F1F1;
@@ -212,7 +209,7 @@ h5 {
 }
 @media (max-width: 500px) {
   .footer p {
-    padding: 0;
+    padding: 20px 0 0;
   }
 }
 .main-content {
@@ -229,7 +226,8 @@ h5 {
 }
 @media (max-width: 500px) {
   .main-content {
-    flex-direction: center;
+    margin: 0;
+    padding: 0 3%;
   }
 }
 .main-content img {
@@ -285,7 +283,9 @@ h5 {
 }
 @media (max-width: 500px) {
   .walk {
-    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    border-bottom: 1px solid #d9dee2;
   }
 }
 .walk .walk-text {
@@ -294,6 +294,7 @@ h5 {
 }
 @media (max-width: 500px) {
   .walk .walk-text {
+    padding: 0;
     width: 100%;
   }
 }
