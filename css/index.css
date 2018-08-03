@@ -153,4 +153,15 @@ h5 {
 }
 .main-navigation h1 {
   font-size: 3rem;
+  padding: 1rem;
+}
+.main-navigation .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 1rem;
+}
+.main-navigation .nav-links a {
+  text-decoration: none;
 }

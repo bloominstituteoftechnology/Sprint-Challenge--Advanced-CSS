@@ -6,7 +6,20 @@
   flex-flow: column nowrap;
   .padding-creator(@nav-padding);
   color: @nav-font;
+
   h1 {
     font-size: @nav-h1-size;
+    padding: 1rem;
+  }
+  .nav-links {
+    .flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 1rem;
+    a {
+    .text-plain;
+
+    }
   }
 }
