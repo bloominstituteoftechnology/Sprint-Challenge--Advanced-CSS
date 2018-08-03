@@ -3,9 +3,10 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    max-width: 800px;
+.index-body {
     margin: auto;
+    animation-duration: 5s;
+    animation-name: background-focus;
     background-color: @main-background-color;
     width: 100%;
     @media @mobile {
@@ -23,6 +24,11 @@ body {
         }
         img {
             width: 100%;
+        }
+        .top-img{
+            margin-top: 100px;
+            animation-name: slidein;
+            animation-duration: 3s;
         }
         .lift-off {
             @media @mobile {
