@@ -151,11 +151,11 @@ h2 {
 }
 p {
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .hdr {
   background-color: #F6F6F6;
-  border-bottom: 2px dashed #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,8 +176,20 @@ p {
   text-decoration: none;
   color: #454A59;
 }
+.ftr {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+  border-color: #F6F7F8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .ftr h6 {
   font-size: 1.6rem;
+  color: #81848E;
 }
 .index {
   display: flex;
@@ -187,6 +199,7 @@ p {
   width: 75%;
   margin: 0 auto;
   height: 100%;
+  padding-bottom: 20px;
 }
 .index .lift {
   width: 75%;
@@ -195,20 +208,50 @@ p {
 .index .lift-img {
   width: 75%;
   margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 .index .lift-img img {
-  width: 33%;
-  height: 33%;
-  border-radius: 19px;
+  width: 31%;
+  height: 31%;
+  border-radius: 20px;
 }
 .index .visit {
   width: 75%;
   margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #F6F7F8;
 }
 .index .walk {
   width: 70%;
-  margin: 0 auto;
+  margin: 30px auto 15px auto;
+  border-bottom: 2px solid #F6F7F8;
+  display: flex;
+  justify-content: space-between;
+}
+.index .walk .walk-content {
+  width: 48%;
+}
+.index .walk .walk-content .btn {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: #22283b;
+  color: white;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+.index .walk .walk-content .btn:hover {
+  background-color: white;
+  color: #22283b;
 }
 .index .walk img {
   border-radius: 5px;
+  width: 48%;
+  height: 48%;
 }
