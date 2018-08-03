@@ -1,9 +1,39 @@
 // Mixins below variables
+
+.jccenter() {
+    display: flex;
+    justify-content: center;
+}
+
+.column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnw() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .center() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.ml-10() {
+    margin-left: 10px;
+}
+
+.mt-15() {
+    margin-top: 15px;
+}
+
+.line() {
+    line-height: 1.5;
+}
+
 .border-radius(@radius) {
     -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -13,6 +43,7 @@
 .border() {
     border: 1px solid dodgerblue;
 }
+
 .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
     .center;
     .border;

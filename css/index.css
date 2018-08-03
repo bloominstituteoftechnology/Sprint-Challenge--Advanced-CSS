@@ -233,11 +233,11 @@ header .nav-container .nav a:hover {
   margin-top: 15px;
   font-size: 14px;
   margin-left: 10px;
+  line-height: 1.5;
 }
 @media (max-width: 500px) {
   .home .header p {
     font-size: 1rem;
-    line-height: 1.5;
   }
 }
 .home .main-img {
@@ -293,11 +293,11 @@ header .nav-container .nav a:hover {
   margin-top: 15px;
   font-size: 14px;
   margin-left: 10px;
+  line-height: 1.5;
 }
 @media (max-width: 500px) {
   .home .planets .bottom-content p {
     font-size: 1rem;
-    line-height: 1.5;
   }
 }
 .home .walk-content {
@@ -331,11 +331,11 @@ header .nav-container .nav a:hover {
 .home .walk-content .walk-text p {
   margin-top: 15px;
   font-size: 14px;
+  line-height: 1.5;
 }
 @media (max-width: 500px) {
   .home .walk-content .walk-text p {
     font-size: 1rem;
-    line-height: 1.5;
   }
 }
 .home .walk-content .walk-text .btn {
