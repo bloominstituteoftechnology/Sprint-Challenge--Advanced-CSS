@@ -1,1 +1,39 @@
 // Mixins below variables
+@import "mixins.less";
+@import "variables.less";
+.nav-colored(){
+  background-color: @nav-bg-color;
+  color: @nav-color;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+.button-creator(@width, @height, @bg-color, @border-radius) {
+  border-radius: @border-radius;
+  text-decoration: none;
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: white;
+  border: 1px solid ;
+  cursor: pointer;
+  padding: 0.5rem;
+  //
+  // &:hover {
+  //   background-color: @font-color;
+  //   color: @bg-color;
+  // }
+}
