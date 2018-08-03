@@ -242,14 +242,19 @@ footer p {
 }
 .home .top-img img {
   width: 30%;
-  height: 180px;
+  height: 70%;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
 @media (max-width: 500px) {
-  .home .top-img img .second-img .last-img {
+  .home .top-img .second-img,
+  .home .top-img .last-img {
     display: none;
+  }
+  .home .top-img .first-img {
+    width: 90%;
+    margin: 0 3%;
   }
 }
 .home .mid-content {
@@ -260,7 +265,7 @@ footer p {
     width: 100%;
   }
   .home .mid-content p {
-    margin: 0 3%;
+    margin: 0 5%;
   }
 }
 .home .mid-content h3 {
@@ -277,36 +282,38 @@ footer p {
 .home .bottom-content {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
   border-bottom: 2px solid #F6F7F8;
 }
 @media (max-width: 500px) {
   .home .bottom-content {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 0 auto;
   }
 }
 .home .bottom-content .signup-text {
   width: 50%;
-  padding: 8% 5% 10% 0;
+  padding: 8% 3% 10% 0;
+  margin-left: 6%;
 }
 @media (max-width: 500px) {
   .home .bottom-content .signup-text {
-    width: 100%;
-    padding: 8% 10% 10px 13%;
+    width: 90%;
+    padding: 10% 11% 10px 2%;
   }
 }
 .home .bottom-content .signup-text .btn {
-  margin-top: 30px;
+  margin-top: 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50px;
+  width: 25%;
+  height: 35px;
   background-color: #23293B;
   color: #FFFFFF;
   border: 1px solid blue;
@@ -314,9 +321,29 @@ footer p {
   font-weight: bold;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .home .bottom-content .signup-text .btn {
+    margin-top: 30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #23293B;
+    color: #FFFFFF;
+    border: 1px solid blue;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+}
 .home .bottom-content .signup-img {
   width: 50%;
   padding-top: 8%;
+  margin-right: 6%;
 }
 @media (max-width: 500px) {
   .home .bottom-content .signup-img {

@@ -29,12 +29,18 @@
 
     img {
       width: 30%;
-      height: 180px;
+      height: 70%;
       .border-radius(15px);
-      @media @phone {
-        .second-img .last-img{
-          display: none;
-        }
+    }
+
+    //This part I didn't get it before Q&A. I nested it too deep.
+    @media @phone {
+      .second-img, .last-img{
+        display: none;
+      }
+      .first-img {
+        width: 90%;
+        margin: 0 3%;
       }
     }
   } //top img
@@ -44,7 +50,7 @@
     @media @phone {
       width: 100%;
       p {
-        margin: 0 3%;
+        margin: 0 5%;
       }
     }
     h3 {
@@ -62,31 +68,39 @@
   .bottom-content {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
     border-bottom: 2px solid @main-border;
 
     @media @phone {
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       margin: 0 auto;
     }
 
     .signup-text {
       width: 50%;
-      padding: 8% 5% 10% 0;
+      padding: 8% 3% 10% 0;
+      margin-left: 6%;
+
       @media @phone {
-        width: 100%;
-        padding: 8% 10% 10px 13%;  
+        width: 90%;
+        padding: 10% 11% 10px 2%; 
       }
       .btn {
-        margin-top: 30px;
-        .button-creator(100%, 50px, @header-font, @white);
+        margin-top: 15px;
+        .button-creator(25%, 35px, @header-font, @white);
+        @media @phone {
+          margin-top: 30px;
+          .button-creator(100%, 50px, @header-font, @white);
+        }
       }
     }
 
     .signup-img {
       width: 50%;
       padding-top: 8%;
+      margin-right: 6%;
 
       @media @phone {
         width: 100%;
