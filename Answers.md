@@ -13,3 +13,7 @@ Responsive websites do load a little faster due to there only needing to be one 
 Mobile first is the technique where we design the css to make the initial layout for mobile devices and then use @media to change to larger layouts such as tablet and desktop
 
 Desktop first is the inverse of Mobile first in that we design the desktop layout in the css and then make @media query calls to change the layout as the devices get smaller.
+
+## 3. font-size: 62.5% in the html tag
+
+font-size: 62.5% in the html tag makes the dafault font size set at 10px so when we have to do the math for rem multiplication we just do rem * 10 = pixels. for instance 1.6rem = 16px in a standard browser setup. and this allows a uniform scaling to be done with browser settings and zooming.
