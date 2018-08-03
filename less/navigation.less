@@ -1,0 +1,36 @@
+header {
+  .center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1%;
+  background-color: @navigation-background;
+  border-bottom: 1px solid @navigation-border-color;
+  h1 {
+    font-size: 5rem;
+  }
+
+  nav {
+    .center;
+    .font;
+    justify-content: space-around;
+    width: 40%;
+    padding: 1%;
+    a {
+      color: @navigation-font-color;
+      text-decoration: none;
+    }
+  }
+
+  @media @tablet {
+    nav {
+      width: 60%;
+      margin-top: 2%;
+    }
+    @media @phone {
+      nav {
+        width: 100%;
+        margin-top: 2%;
+      }
+    }
+  }
+}
