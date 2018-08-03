@@ -223,21 +223,29 @@ footer {
   border: 1px solid #F6F7F8;
   border-radius: 3px;
 }
+@media (max-width: 500px) {
+  footer {
+    margin: 22px 0 0 0;
+    width: 100%;
+    border-top: 1px solid #F6F7F8;
+  }
+}
 footer p {
   color: #81848E;
   height: 25px;
   margin: 22px 0 0;
-  border: 1px solid black;
 }
-.home {
-  border: 1px solid black;
+@media (max-width: 500px) {
+  footer p {
+    position: relative;
+    left: 17px;
+  }
 }
 .home .intro img {
   width: 100%;
   height: 200px;
 }
 .home .content-section-one .text-content {
-  border: 1px solid red;
   margin: 12px 0;
   padding: 0 14px;
 }
@@ -276,7 +284,6 @@ footer p {
   }
 }
 .home .content-section-two {
-  border: 1px solid blue;
   border-top: 1px solid #F6F7F8;
   border-bottom: 1px solid #F6F7F8;
   margin: 52px 0 0;
@@ -284,11 +291,24 @@ footer p {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .home .content-section-two {
+    display: flex;
+    flex-direction: column;
+    padding-right: 35px;
+  }
+}
 .home .content-section-two .content-box {
-  border: 1px solid green;
   width: 47%;
   height: auto;
   padding: 0 21px;
+}
+@media (max-width: 500px) {
+  .home .content-section-two .content-box {
+    width: 106%;
+    height: 335px;
+    padding: 4px 0 0 5px;
+  }
 }
 .home .content-section-two .content-box .btn {
   -webkit-border-radius: 4px;
@@ -314,8 +334,23 @@ footer p {
   background: white;
   color: #454A59;
 }
+@media (max-width: 500px) {
+  .home .content-section-two .content-box .btn {
+    width: 96%;
+    margin-top: 55px;
+    height: 53px;
+  }
+}
 .home .content-section-two img {
   height: 244px;
   /* border-radius: 20px; */
   margin: 0 0 0 39px;
+}
+@media (max-width: 500px) {
+  .home .content-section-two img {
+    height: 281px;
+    width: 100%;
+    margin: 5px;
+    border-radius: 6px;
+  }
 }

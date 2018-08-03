@@ -1,6 +1,6 @@
 // Home Content
 .home {
-  border: 1px solid black;
+  //border: 1px solid black;
 
   .intro {
 
@@ -12,7 +12,7 @@
   .content-section-one {
 
     .text-content {
-      border: 1px solid red;
+      //border: 1px solid red;
       margin: 12px 0;
       padding: 0 14px;
     }
@@ -64,7 +64,7 @@
   }
 
   .content-section-two {
-    border: 1px solid blue;
+    //border: 1px solid blue;
     border-top: 1px solid @main-content-bdr-color;
     border-bottom: 1px solid @main-content-bdr-color;
     margin: 52px 0 0;
@@ -72,23 +72,54 @@
     display: flex;
     justify-content: space-evenly;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      padding-right: 35px;
+    }
+
     .content-box {
-      border: 1px solid green;
+      //border: 1px solid green;
       width: 47%;
       height: auto;
       padding: 0 21px;
 
+      @media @mobile {
+        width: 106%;
+        height: 335px;
+        padding: 4px 0 0 5px;
+      }
+
       .btn {
         .button-creator(106px, 36px, @btn-bg-color, @white, 1.6rem);     
+
+        @media @mobile {
+        width: 96%;
+        margin-top: 55px;
+        height: 53px;
+        }
       }
 
     }
 
+  //.img-box {
+      //bottom-border: 1px solid @main-content-bdr-color;
+    
     img {
       height: 244px;
     /* border-radius: 20px; */
       margin: 0 0 0 39px;
+
+      @media @mobile {
+        height: 281px;
+        width: 100%;
+        margin: 5px;
+        border-radius: 6px;
+      }
     }
+
+  //}
+
 
   }
 

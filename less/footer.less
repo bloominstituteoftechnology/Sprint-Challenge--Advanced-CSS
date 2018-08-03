@@ -9,10 +9,21 @@ footer {
   border: 1px solid @main-content-bdr-color;
   border-radius: 3px;
 
+  @media @mobile {
+    margin: 22px 0 0 0;
+    width: 100%;
+    border-top: 1px solid @main-content-bdr-color;
+  }
+
   p {
     color: @footer-font-color;
     height: 25px;
     margin: 22px 0 0;
-    border: 1px solid black;
+    //border: 1px solid black;
+
+    @media @mobile {
+      position: relative;
+      left: 17px;
+    }
   }
 }
