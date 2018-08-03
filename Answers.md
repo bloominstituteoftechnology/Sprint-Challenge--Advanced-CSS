@@ -1,0 +1,7 @@
+Difference between an adaptive and fully responsive website: A responsive website loads faster than an adaptive website design as there is only one master layout that has to be loaded across devices. It is slightly difficult to create a responsive website design, as compared to other formats.Adaptive designs are not very convenient to create as one has to create different layouts for different screen sizes.
+
+with mobile-first design:
+Global styles, those not inside media queries, are focussed on making the site look good on small screens. Where as with the desktop-first approach, global styles are designed to make the site look good on larger desktop screens.Media query styles are added to make the site look good on larger screens. Consequently, min-width is used over max-width in the media queries.
+the 62.5% solution makes calculation easier -as the font sizes in px are 10 times their rem values.
+A preprocessor is a program that takes one type of data and converts it to another type of data.Pre-processors, with their advanced features, helps to achieve writing reusable, maintainable and extensible codes in CSS. By using a pre-processor, we can easily increase  productivity, and decrease the amount of code we are writing in a project.
+Fave preprocessin concept is to write less code, trouble was with the understanding how it works.
