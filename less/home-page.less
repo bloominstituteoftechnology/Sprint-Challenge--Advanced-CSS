@@ -12,14 +12,6 @@
     .padding(0 3%);
   }
 
-  img{
-    width: 100%;
-    max-width: 880px;
-    @media @mobile{
-      width: 120%;
-    }
-  }
-
   h2{
     .font-size(2.4rem);
     .margin(20px 0 10px);
@@ -39,10 +31,16 @@
 
 .three-images{
   .margin(20px 0);
+  @media @mobile{
+    .width(100%);
+  }
 
   img{
     .mid-images(30%, 15px);
     .margin(0 1.5%);
+    @media @mobile{
+      .margin(0%);
+    }
   }
 }
 
