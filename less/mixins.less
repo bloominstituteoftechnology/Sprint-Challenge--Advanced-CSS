@@ -11,6 +11,11 @@
   justify-content: center;
 }
 
+// Remove text decorations
+.text-plain() {
+  text-decoration: none;
+}
+
 // For rounded edges, use border radius!
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
@@ -24,4 +29,8 @@
   height: @height;
   background-color: @bg-color;
   color: @font-color;
+}
+
+.padding-creator(@padding) {
+  padding: @padding;
 }
