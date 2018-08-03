@@ -18,6 +18,7 @@
       max-width: 790px;
       margin-left: 20px;
     }
+
     p {
       margin-top: 15px;
       line-height: 22px;
@@ -38,5 +39,51 @@
         margin-bottom: 30px;
       }
     }
+    .text-content {
+        width: 100%;
+        font-size: 1rem;
+        max-width: 770px;
+        margin-left: 20px;
+        h3 {
+            margin-top: 30px;
+            font-size: 1.8rem;
+        }
+        p {
+            margin-top: 15px;
+            line-height: 22px;
+          }
+      }
+
+      .showcase-2-col {
+          display: flex;
+          margin-top: 70px;
+          padding-top: 50px;
+          border-top: 1px solid @main-content-border-colour;
+          .text-area {
+            width: 38%;
+            font-size: 1rem;
+            margin-left: 50px;
+            h3 {
+                margin-top: 10px;
+                padding-top: 20px;
+                font-size: 1.8rem;
+            }
+            p {
+                margin-top: 10px;
+                line-height: 22px;
+            }
+
+            .btn {
+                margin-top: 20px;
+                .button-creator(80px, 35px, @header-font-colour, @main-bg-colour, 3px, .9rem);
+            }
+          }
+          img {
+              width: 40%;
+              height: 270px;
+              margin-left: 50px;
+          }
+      }
+  
   }
 }

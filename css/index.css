@@ -149,7 +149,6 @@ h5 {
   width: 100%;
   height: 120px;
   background: #f6f6f6;
-  border-bottom: 2px dashed #f1f1f1;
 }
 .main-navigation .nav-container {
   height: 100%;
@@ -176,6 +175,16 @@ h5 {
   color: #454a59;
   text-decoration: none;
   margin: 12px;
+}
+footer {
+  width: 100%;
+  height: 82px;
+  background: #f6f6f6;
+  margin-top: 60px;
+}
+footer p {
+  line-height: 77px;
+  text-align: center;
 }
 .home .home-banner {
   width: 100%;
@@ -212,4 +221,62 @@ h5 {
   margin-right: 19px;
   margin-left: 5px;
   margin-bottom: 30px;
+}
+.home .content-section .text-content {
+  width: 100%;
+  font-size: 1rem;
+  max-width: 770px;
+  margin-left: 20px;
+}
+.home .content-section .text-content h3 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+.home .content-section .text-content p {
+  margin-top: 15px;
+  line-height: 22px;
+}
+.home .content-section .showcase-2-col {
+  display: flex;
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 1px solid #f6f7f8;
+}
+.home .content-section .showcase-2-col .text-area {
+  width: 38%;
+  font-size: 1rem;
+  margin-left: 50px;
+}
+.home .content-section .showcase-2-col .text-area h3 {
+  margin-top: 10px;
+  padding-top: 20px;
+  font-size: 1.8rem;
+}
+.home .content-section .showcase-2-col .text-area p {
+  margin-top: 10px;
+  line-height: 22px;
+}
+.home .content-section .showcase-2-col .text-area .btn {
+  margin-top: 20px;
+  width: 80px;
+  height: 35px;
+  background-color: #232938;
+  color: #ffffff;
+  border: 1px solid blue;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.home .content-section .showcase-2-col .text-area .btn:hover {
+  background-color: #ffffff;
+  color: #232938;
+}
+.home .content-section .showcase-2-col img {
+  width: 40%;
+  height: 270px;
+  margin-left: 50px;
 }
