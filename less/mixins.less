@@ -1,1 +1,12 @@
 // Mixins below variables
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//header and footer color and border
+.bg-br-color(@bg-color, @br-color) {
+  background-color: @bg-color;
+  border: 2px solid @br-color;
+}

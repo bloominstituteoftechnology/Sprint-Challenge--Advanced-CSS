@@ -148,3 +148,12 @@ p,
 a {
   font-size: 1.6rem;
 }
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: #F6F6F6;
+  border: 2px solid #F1F1F1;
+}
