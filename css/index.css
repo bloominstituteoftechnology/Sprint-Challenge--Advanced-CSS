@@ -177,6 +177,7 @@ img {
   height: 100px;
   background: #F6F6F6;
   border-bottom: 3px solid #F1F1F1;
+  position: fixed;
 }
 .main-nav .nav-container {
   height: 100%;
@@ -215,9 +216,10 @@ img {
   align-items: center;
 }
 .home .content-section .jumbotron {
+  padding: 100px 0 0 10px;
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 300px;
 }
 .home .content-section .top-text {
   margin: 20px 0;
