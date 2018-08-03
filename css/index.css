@@ -142,6 +142,10 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+p {
+  color: #5E6164;
 }
 .container {
   max-width: 800px;
@@ -158,6 +162,7 @@ h5 {
   flex-direction: column;
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  color: #454A59;
 }
 .main-navigation h1 {
   font-size: 4rem;
@@ -169,8 +174,8 @@ h5 {
 }
 .main-navigation .navigation a {
   text-decoration: none;
-  color: #454A59;
   padding: 0 10px;
+  color: #454A59;
 }
 .home {
   background-color: #FFFFFF;
