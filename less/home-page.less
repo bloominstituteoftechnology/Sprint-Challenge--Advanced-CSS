@@ -1,1 +1,101 @@
 // Home Content
+
+.home {
+    
+    .intro {
+    padding-top: 90px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      margin: 15px 0 0 15px;     
+    }
+    p {
+      margin: 0 30px 10px 15px;     
+    }
+  }
+    
+    .pictures-section {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        img {
+            border-radius: 20px;
+            width: 30%;
+            height: 30%;
+            margin: 0 15px 15px 15px;
+        }
+        @media @mobile {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .img2 {display: none;}
+            .img3 {display: none;}
+        }
+    }
+    
+    .middle-section {
+        padding-bottom: 30px;
+        border-bottom: 2px solid @main-border-color;
+        
+        h3 {
+            margin: 25px 0 0 10px;
+        }
+        p {
+            margin: 0 30px 10px 10px;     
+        }
+    }
+    
+    .last-section {
+        display: flex;
+        padding: 45px 0 35px 0;
+        border-bottom: 2px solid @main-border-color;
+        margin-bottom: 20px;
+        .last-section-content {
+        padding: 0 50px;
+        }
+        img {
+            border-radius: 5px;
+            width: 45%;
+            height: 45%;
+        }
+        
+        button {
+            padding: 8px 14px;
+            border-radius: 5px;
+            color: white;
+            background-color: @header-font-color;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+        @media @mobile {
+            display: flex;
+            flex-wrap: wrap;
+            .last-section-content {
+                padding: 0 25px;
+            }
+            button {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            img {
+                width: 90%;
+                height: 90%;
+                margin-left: 20px;
+            }
+        }
+    }
+    
+    
+
+    
+
+    
+    
+} //HOME
