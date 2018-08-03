@@ -159,7 +159,12 @@ p {
   margin: 0 auto;
 }
 .container nav {
+  position: fixed;
+  top: 0;
   width: 100%;
+  margin: 0 auto;
+  opacity: 0.9;
+  max-width: 800px;
   height: 105px;
   display: flex;
   justify-content: center;
@@ -206,6 +211,9 @@ footer {
 footer p {
   color: #81848E;
 }
+.container .header {
+  margin-top: 105px;
+}
 .container .header img {
   width: 100%;
   height: 200px;
@@ -220,6 +228,10 @@ footer p {
   margin: 11px auto 15px auto;
   line-height: 1.5;
   color: #5E6164;
+}
+.container .main-content {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 35px;
 }
 .container .main-content .three-images {
   width: 100%;
@@ -262,14 +274,12 @@ footer p {
   border-bottom: 1px solid lightgray;
 }
 .container .bottom-content {
-  border-top: 1px solid #F6F7F8;
   display: flex;
   height: auto;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 55px 8% 0 8%;
+  margin: 35px 8% 0 8%;
   padding-bottom: 20px;
-  border-bottom: 1px solid lightgray;
 }
 @media (max-width: 500px) {
   .container .bottom-content {
@@ -290,16 +300,17 @@ footer p {
   width: 100%;
   color: #23293B;
   font-size: 2.6rem;
+  margin: 0 2%;
 }
 .container .bottom-text p {
   width: 100%;
-  margin: 10px 0;
+  margin: 10px 2%;
   color: #5E6164;
 }
 .container .bottom-text .btn {
   color: white;
   font-size: 2rem;
-  width: 130px;
+  width: 170px;
   height: 40px;
   border-radius: 5px;
   background-color: #22283b;
@@ -322,4 +333,47 @@ footer p {
     width: 100%;
     margin-top: 20px;
   }
+}
+.container {
+  height: 500px;
+}
+.container .contact-header {
+  margin-top: 105px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .contact-header img {
+  width: 50%;
+}
+.container .contact-header .spaceman2 {
+  height: 320px;
+}
+.container .contact-header .header-split {
+  width: 48%;
+  padding: 15px 0;
+}
+.container .contact-header .header-split p {
+  padding: 30px 0;
+  font-size: 2rem;
+}
+.container .contact-header .form {
+  width: 48%;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.container .contact-header .form span {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.container .contact-header .form #text {
+  width: 250px;
+}
+.container .contact-header .form .radio {
+  margin-bottom: 20px;
+}
+.container .contact-header .form #number {
+  margin-bottom: 20px;
 }

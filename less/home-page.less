@@ -5,6 +5,7 @@
 // Home Content
 .container{
     .header{
+        margin-top:105px;
         img{
             width: 100%;
             height:200px;
@@ -22,10 +23,13 @@
             }
     }
     .main-content{
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 35px;
         .three-images{
             width: 100%;
             display: flex;
             justify-content: space-around;;
+            
             img{
                 width: 30%;
                 height:175px;
@@ -66,14 +70,14 @@
 }
 
     .bottom-content{
-        border-top: 1px solid @border-color-for-main-content;
+        
+        //@border-color-for-main-content;
         display: flex;
         height: auto;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 55px 8% 0 8%;
+        margin: 35px 8% 0 8%;
         padding-bottom:20px;
-        border-bottom: 1px solid lightgray;
             @media  @phone{
                flex-direction: column;
             }
@@ -90,15 +94,16 @@
                         width: 100%;
                         color:@header-font-color;
                         font-size: 2.6rem;
+                        margin: 0 2%;
                     }
                     p{
                         width:100%;
                         color:@paragraph-font-color;
-                        margin:10px 0;
+                        margin:10px 2%;
                         color: @paragraph-font-color;
                     }
                     .btn{
-                        .button-factory(white, 2rem, 130px, 40px, 5px, @button-color);
+                        .button-factory(white, 2rem, 170px, 40px, 5px, @button-color);
                         .center;
                         align-items: center;
                         @media  @phone{
