@@ -180,10 +180,12 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  border-bottom: 1px solid #F1F1F1;
 }
 .container .liftoff .liftoff-text {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .container .liftoff .liftoff-images {
@@ -195,4 +197,21 @@ h5 {
 .container .liftoff .liftoff-images img {
   width: 30%;
   height: 30%;
+}
+.container .spacewalk {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .spacewalk .spacewalk-text {
+  padding: 0.5rem;
+}
+.container .spacewalk .spacewalk-text .signup {
+  margin-top: 1rem;
+}
+.container .spacewalk img {
+  width: 40%;
+  height: 40%;
 }
