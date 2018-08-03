@@ -215,3 +215,25 @@ header nav a {
 .home .middle-content p {
   padding-bottom: 16px;
 }
+.home .bottom-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 84%;
+}
+.home .bottom-content .bottom-left-content {
+  width: 330px;
+}
+.home .bottom-content .bottom-left-content h3 {
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+.home .bottom-content .bottom-left-content p {
+  padding-bottom: 30px;
+}
+.home .bottom-content img {
+  width: 322px;
+  height: 242px;
+}
