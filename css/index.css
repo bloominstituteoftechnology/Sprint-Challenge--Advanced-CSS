@@ -167,6 +167,10 @@ img {
   height: 90px;
   background: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  background-color: #F6F6F6;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
 }
 .main-navigation .nav-container {
   height: 100%;
@@ -189,6 +193,9 @@ img {
   font-size: 1.6rem;
   color: #454A59;
   text-decoration: none;
+}
+.main-navigation .nav-container .nav a:hover {
+  color: #c3c2b1;
 }
 .footer {
   border-radius: 10px;

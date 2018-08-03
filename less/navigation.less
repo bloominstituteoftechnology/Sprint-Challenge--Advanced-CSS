@@ -3,7 +3,8 @@
     height: 90px;
     background: @navigation-background;
     border-bottom: 1px solid @navigation-border-color;
-
+    position: fixed;
+    background-color: @navigation-background; opacity: 0.8; filter: alpha(opacity=50);
    
 
     .nav-container {
@@ -28,6 +29,10 @@
                 font-size: 1.6rem;
                 color: @navigation-font-color;
                 text-decoration: none;
+            }
+
+            a:hover {
+                color: #c3c2b1;
             }
         }
 
