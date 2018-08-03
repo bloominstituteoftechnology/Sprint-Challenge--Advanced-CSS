@@ -35,6 +35,9 @@ header {
       color: @nav-font-color;
       text-decoration: none;
     }
+    @media @phone {
+      width: 78%;
+    }
   }
 }
 .home {
@@ -48,6 +51,9 @@ header {
       font-size: 2rem;
       margin-bottom: 10px;
     }
+    @media @phone {
+      padding: 16px 10px;
+    }
   }
   .middle-images {
     padding: 0 16px;
@@ -57,6 +63,15 @@ header {
       width: 236px;
       height: 178px;
       border-radius: 7%;
+      @media @phone {
+        display: none;
+      }
+    }
+      img:first-child {
+        @media @phone {
+          .flex-center
+          width: 80%;
+      }
     }
   }
   .middle-content {
