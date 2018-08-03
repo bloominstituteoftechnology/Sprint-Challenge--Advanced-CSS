@@ -1,1 +1,15 @@
 // Footer Styles
+
+.footer{
+  .flexbox(row, center, flex-start);
+  background: @footer-background-color;
+  height: 75px;
+  border-radius: 5px;
+  
+  p{
+    .padding(20px 0 0);
+    font-weight: bold;
+    .font-size(1.6rem);
+    color: @footer-text-color;
+  }
+}

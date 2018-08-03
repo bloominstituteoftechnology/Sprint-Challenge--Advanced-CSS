@@ -1,15 +1,18 @@
 .nav-header{
   border-bottom: 2px solid  @nav-border-color;
+  background: @nav-background;
+  .width(100%);
   .flexbox();
+  font-weight: bold;
 
   .home-nav{
     .flexbox(column);
-    color: @nav-font-color;
     .width(100%);
 
     .nav-logo-text{
       .font-size(3rem);
       .margin(20px 0 10px);
+      color: @nav-font-color;
       .width(100%);
       text-align: center;
     }
