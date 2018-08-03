@@ -147,7 +147,11 @@ h1 {
   font-size: 4.3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.8rem;
   padding-bottom: 10px;
 }
 p {
@@ -207,4 +211,24 @@ a {
   height: 180px;
   border-radius: 20px;
   margin: 11px;
+}
+.home .content-section-two {
+  border: 1px solid blue;
+  border-top: 1px solid #F6F7F8;
+  border-bottom: 1px solid #F6F7F8;
+  margin: 52px 0;
+  padding: 54px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .content-section-two .content-box {
+  border: 1px solid green;
+  width: 47%;
+  height: auto;
+  padding: 0 21px;
+}
+.home .content-section-two img {
+  height: 244px;
+  /* border-radius: 20px; */
+  margin: 0 0 0 39px;
 }
