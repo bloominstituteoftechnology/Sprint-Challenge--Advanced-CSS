@@ -12,6 +12,7 @@
 
         .flex-and-wrap;
         border-bottom: 1px solid @main-content-border-color;
+
         .text-content {
             width: 100%;
             h1 {
@@ -27,11 +28,10 @@
         }
         .img-content {
             display: flex;
-            width: 100%;
+            // width: 100%;
             margin-bottom: 20px;
             img {
                 border-radius: 10px;
-                
             }
             @media @phone {
                 .img-sky {
@@ -47,12 +47,19 @@
     .cta {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
         padding: 40px 0 40px 0;
         margin-bottom: 10px;
+
         .text-content {
+
             width: 40%;
+            @media @phone {
+                width: 100%;
+            }
+
             h1 {
                 font-size: 3.5rem;
                 color: @header-font-color;
@@ -69,10 +76,19 @@
                 justify-content: center;
                 align-items: center;
                 font-size: 1.6rem;
+                @media @phone {
+                    width: 100%;
+                }
             }
         }
         .img-space-walk {
             width: 40%;
+            @media @phone {
+                width: 100%;
+            }
+            img {
+                border-radius: 5px;
+            }
         }
         
     }//cta

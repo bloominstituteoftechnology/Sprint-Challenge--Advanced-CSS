@@ -213,7 +213,6 @@ footer {
 }
 .home .main-content .img-content {
   display: flex;
-  width: 100%;
   margin-bottom: 20px;
 }
 .home .main-content .img-content img {
@@ -230,6 +229,7 @@ footer {
 .home .cta {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   padding: 40px 0 40px 0;
@@ -237,6 +237,11 @@ footer {
 }
 .home .cta .text-content {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .home .cta .text-content {
+    width: 100%;
+  }
 }
 .home .cta .text-content h1 {
   font-size: 3.5rem;
@@ -261,6 +266,19 @@ footer {
   align-items: center;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .home .cta .text-content .btn {
+    width: 100%;
+  }
+}
 .home .cta .img-space-walk {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .home .cta .img-space-walk {
+    width: 100%;
+  }
+}
+.home .cta .img-space-walk img {
+  border-radius: 5px;
 }
