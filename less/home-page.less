@@ -3,11 +3,27 @@ main {
     background: @main-bg;
     width: 90%;
     margin: 0 auto;
+    max-width: 880px;
+    @media @phone {
+        width: 100%;
+    }
 
     h2 {
         font-size: 1.5rem;
         margin: 10px 0px;
         color: @header-font;
+    }
+
+    p {
+        color: @p-font;
+    }
+
+    .content-container {
+        @media @phone {
+            padding: 0px 10px;
+            margin: 0 auto;
+
+        }
     }
 
     .banner {
@@ -35,6 +51,26 @@ main {
             margin: 2%;
             
         }
+
+        @media @phone {
+            .image-row {
+                flex-flow: column nowrap;
+                
+            }
+
+            #img1 {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            #img2 {
+                display: none;
+            }
+
+            #img3 {
+                display: none;
+            }
+        }
     }
 
     .top-content {
@@ -49,9 +85,18 @@ main {
         border-bottom: 1px solid @main-border;
         padding: 20px 0px 40px 0px;
 
+        @media @phone {
+            flex-flow: column nowrap;
+        }
+
         .bottom-text {
             margin: 2.5%;
             width: 40%;
+            @media @phone {
+                width: 100%;
+                padding: 20px;
+                margin: 0px;
+            }
         }
 
         .bottom-image {
@@ -60,6 +105,12 @@ main {
             margin: 2.5%;
             align-items: center;
             text-align: center;
+            @media @phone {
+                width: 100%;
+                padding: 20px;
+                margin: 0px;
+            }
+
             img{
                 width: 100%;
                 border-radius: 10px;
@@ -70,18 +121,9 @@ main {
         .btn {
             .button-constructor(100px, 40px, @header-font, white);
             margin-top: 20px;
-        }
-    }
-
-    footer {
-        background: @footer-bg;
-        padding: 40px;
-        text-align: center;
-        margin-top: 20px;
-        border-radius: 5px;
-
-        p {
-            color: @footer-font;
+            @media @phone {
+                width: 100%;
+            }
         }
     }
 }

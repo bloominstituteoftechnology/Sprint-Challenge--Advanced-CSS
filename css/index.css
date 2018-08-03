@@ -162,15 +162,40 @@ header .nav-container nav a {
   outline: none;
   color: #454A59;
 }
+footer {
+  background: #F4F4F4;
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+footer p {
+  color: #81848E;
+}
 main {
   background: #FFFFFF;
   width: 90%;
   margin: 0 auto;
+  max-width: 880px;
+}
+@media (max-width: 500px) {
+  main {
+    width: 100%;
+  }
 }
 main h2 {
   font-size: 1.5rem;
   margin: 10px 0px;
   color: #23293B;
+}
+main p {
+  color: #5E6164;
+}
+@media (max-width: 500px) {
+  main .content-container {
+    padding: 0px 10px;
+    margin: 0 auto;
+  }
 }
 main .banner {
   background: url('../img/main-header.jpg') no-repeat;
@@ -193,6 +218,21 @@ main .image-row img {
   border-radius: 20px;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  main .image-row .image-row {
+    flex-flow: column nowrap;
+  }
+  main .image-row #img1 {
+    max-width: 100%;
+    width: 100%;
+  }
+  main .image-row #img2 {
+    display: none;
+  }
+  main .image-row #img3 {
+    display: none;
+  }
+}
 main .top-content {
   margin-bottom: 40px;
 }
@@ -204,9 +244,21 @@ main .bottom-content {
   border-bottom: 1px solid #F6F7F8;
   padding: 20px 0px 40px 0px;
 }
+@media (max-width: 500px) {
+  main .bottom-content {
+    flex-flow: column nowrap;
+  }
+}
 main .bottom-content .bottom-text {
   margin: 2.5%;
   width: 40%;
+}
+@media (max-width: 500px) {
+  main .bottom-content .bottom-text {
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+  }
 }
 main .bottom-content .bottom-image {
   height: auto;
@@ -214,6 +266,13 @@ main .bottom-content .bottom-image {
   margin: 2.5%;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 500px) {
+  main .bottom-content .bottom-image {
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+  }
 }
 main .bottom-content .bottom-image img {
   width: 100%;
@@ -232,13 +291,8 @@ main .bottom-content .btn {
   justify-content: center;
   margin-top: 20px;
 }
-main footer {
-  background: #F4F4F4;
-  padding: 40px;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-main footer p {
-  color: #81848E;
+@media (max-width: 500px) {
+  main .bottom-content .btn {
+    width: 100%;
+  }
 }
