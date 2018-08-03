@@ -1,1 +1,126 @@
 // Home Content
+.home {
+
+    // Main content
+    .main-content {
+        max-width: 800px;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+
+        .header-img {
+            height: 200px;
+        }
+    }
+
+    // Top content section below header
+    .top-content {
+        padding: 0 1%;
+
+        // Phone
+        @media @phone {
+            padding: 0 3%;
+        }
+    }
+
+    // Text content - holds most text blocks
+    .text-content {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 1%;
+
+        // Phone
+        @media @phone {
+            padding: 3%;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+    }
+
+    // Second text content
+    .inverse-content {
+        margin-left: 1%;
+        margin-bottom: 45px;
+
+        @media @phone {
+            margin-bottom: 30px;
+        }
+    }
+
+    // Image gallery
+    .gallery {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+
+        // Phone
+        @media @phone {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 30%;
+            height: 5%;
+            .border-radius(20px);
+
+            // Phone
+            @media @phone {
+                width: 85%;
+                height: 50%;
+                margin: 0 6%;
+            }
+        }
+    }
+
+    // Bottom content
+    .bottom-content {
+        border-top: 1px solid @main-border;
+        border-bottom: 1px solid @main-border;
+        display: flex;
+        padding-top: 40px;
+        padding-left: 7%;
+        padding-bottom: 14px;
+
+        margin-bottom: 15px;
+
+        // Phone
+        @media @phone {
+            flex-direction: column;
+        }
+
+        .text-content {
+            width: 45%;
+            margin-right:3%;
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+
+        img {
+            width: 44%;
+            height: 80%;
+            .border-radius(5px);
+
+            // Phone
+            @media @phone {
+                width: 95%;
+                margin-left: 2%;
+            }
+        }
+    }
+
+    // Buttons
+    .btn {
+        .button-creator(80px, 40px, 5px, @header-color, @white);
+
+        @media @phone {
+            .button-creator(100%, 50px);
+        }
+    }
+}

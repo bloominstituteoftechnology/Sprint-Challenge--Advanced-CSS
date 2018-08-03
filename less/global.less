@@ -10,5 +10,36 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
+  color: @header-color;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  color: @par-font;
+}
+
+// Site's main wrapper
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5rem;
+}
+
+// Elements to be hidden
+.hidden {
+  @media @phone {
+      display: none;
+  }
+}

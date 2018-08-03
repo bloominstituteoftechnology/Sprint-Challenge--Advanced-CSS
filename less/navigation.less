@@ -1,0 +1,40 @@
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: @nav-bg;
+    height: 100px;
+    color: @nav-fg;
+    border: 3px solid @nav-border;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 1%;
+    }
+
+    // Navigation bar
+    nav {
+        padding: 0 0 0 0;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+
+        // Phone
+        @media @phone {
+            padding-top: 10px;
+        }
+
+        a {
+            color: @nav-fg;
+            margin: 2% 1% 0 2%;
+            text-decoration: none;
+
+            // Phone
+            @media @phone {
+                margin-right: 2%;
+                margin-left: 2%;
+            }
+        }
+    }
+}
