@@ -139,9 +139,22 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  color: #23293B;
 }
 h1 {
   font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  color: #5E6164;
+}
+.container .home {
+  background-color: #FFFFFF;
 }
 .main-navigation {
   width: 100%;
@@ -163,7 +176,45 @@ h1 {
   width: 100%;
   text-align: center;
   padding: 0 40px 5px 40px;
+  color: #454A59;
 }
 footer {
   text-align: center;
+  background-color: #F4F4F4;
+  color: #81848E;
+}
+.walk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.walk p {
+  width: 50%;
+}
+.walk .btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 35px;
+  background-color: #454A59;
+  color: #F1F1F1;
+  border: 1px solid blue;
+  cursor: pointer;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .walk .btn {
+    width: 100%;
+  }
+}
+.walk .btn:hover {
+  background: #F1F1F1;
+  color: #454A59;
+}
+.walk img {
+  width: 50%;
 }
