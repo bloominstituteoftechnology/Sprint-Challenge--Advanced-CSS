@@ -182,6 +182,11 @@ h5 {
   width: 100%;
 }
 .home .footer {
-  color: #81848E;
+  text-align: center;
+  color: #23293B;
   background: #F4F4F4;
+  padding: 24px 0 40px 0;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  margin-top: 16px;
 }
