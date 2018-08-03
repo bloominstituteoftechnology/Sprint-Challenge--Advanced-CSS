@@ -1,6 +1,8 @@
 // Home Content
 .home{
     background:@main-bg;
+    border-bottom: 1px solid silver;
+    padding-bottom: 49px;
     .top-content{
         padding:90px 0 10px;
         .top-img{
@@ -24,6 +26,7 @@
         p{
             margin: 14px 0 0 3%;
             width:90%;
+            .p;
             @media @mobile{
                 margin: 13px 0 0 -2%;
                 width: 100%;
@@ -61,15 +64,69 @@
     .middle-content {
         margin-top: 48px;
         margin-left: 24px;
+        @media @mobile{
+            margin-left: -2.13%;
+            margin-top: 45px;
+        }
         h2{
             font-size:2.8rem;
         }
         p{
-            margin-left: 0px;
-            margin-top: 10px;
-            width: 93%;
+            margin-top: 12.5px;
+            width: 98%;
+            .p;
+            @media @mobile{
+                width:106%;
+             }
         }
+    }//middle-content
+
+    .bottom-content{
+        border-top:1px solid @main-content-border-color;
+        margin-top: 116px;
+        display: flex;
+        margin-left: 72px;
+        @media @mobile{
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            h2{
+                font-size:2.8rem;
+            }
+            p{
+                .p;
+                margin-top:12px;
+                margin-bottom:15px;
+                @media @mobile{
+                width:95%;
+                }
+            }
+            .button{
+                .button-template(30%, 37px, @header-font-color, white); 
+                @media @mobile{
+                    padding: 15px 0;
+                    height: 121%;
+                    width: 95%;
+                    margin-top: 37px;
+                    border-radius: 5%;
+                }
+            }
+        }
+        img{
+            width: 44%;
+            height: 50%;
+            margin-right: 7.6%;
+           .border-radius(3px);
+           @media @mobile {
+            width: 95%;
+            margin-top: 20px;
+           }
+        }
+
     }
+
     
     
         

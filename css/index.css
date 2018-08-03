@@ -201,6 +201,8 @@ p {
 }
 .home {
   background: #FFFFFF;
+  border-bottom: 1px solid silver;
+  padding-bottom: 49px;
 }
 .home .top-content {
   padding: 90px 0 10px;
@@ -229,6 +231,9 @@ p {
 .home .top-content p {
   margin: 14px 0 0 3%;
   width: 90%;
+  color: #5E6164;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 @media (max-width:500px) {
   .home .top-content p {
@@ -268,11 +273,99 @@ p {
   margin-top: 48px;
   margin-left: 24px;
 }
+@media (max-width:500px) {
+  .home .middle-content {
+    margin-left: -2.13%;
+    margin-top: 45px;
+  }
+}
 .home .middle-content h2 {
   font-size: 2.8rem;
 }
 .home .middle-content p {
-  margin-left: 0px;
-  margin-top: 10px;
-  width: 93%;
+  margin-top: 12.5px;
+  width: 98%;
+  color: #5E6164;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+@media (max-width:500px) {
+  .home .middle-content p {
+    width: 106%;
+  }
+}
+.home .bottom-content {
+  border-top: 1px solid #F6F7F8;
+  margin-top: 116px;
+  display: flex;
+  margin-left: 72px;
+}
+@media (max-width:500px) {
+  .home .bottom-content {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .bottom-content .text h2 {
+  font-size: 2.8rem;
+}
+.home .bottom-content .text p {
+  color: #5E6164;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+@media (max-width:500px) {
+  .home .bottom-content .text p {
+    width: 95%;
+  }
+}
+.home .bottom-content .text .button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 37px;
+  background-color: #23293B;
+  color: white;
+  border: 1px solid blue;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .home .bottom-content .text .button {
+    width: 100%;
+  }
+}
+.home .bottom-content .text .button:hover {
+  background: white;
+  color: black;
+}
+@media (max-width:500px) {
+  .home .bottom-content .text .button {
+    padding: 15px 0;
+    height: 121%;
+    width: 95%;
+    margin-top: 37px;
+    border-radius: 5%;
+  }
+}
+.home .bottom-content img {
+  width: 44%;
+  height: 50%;
+  margin-right: 7.6%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+@media (max-width:500px) {
+  .home .bottom-content img {
+    width: 95%;
+    margin-top: 20px;
+  }
 }
