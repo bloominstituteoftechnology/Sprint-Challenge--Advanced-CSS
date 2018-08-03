@@ -1,1 +1,19 @@
 // Mixins below variables
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-maker(@width, @height, @color, @background, @border) {
+  .center;
+  width: @width;
+  height: @height;
+  color: @color;
+  background: @background;
+  border: @border;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}

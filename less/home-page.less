@@ -44,12 +44,31 @@
   .bot {
     display: flex;
     justify-content: center;
+    padding: 48px 0;
+    border-top: 1px solid @geyser;
+    border-bottom: 1px solid @geyser;
     
-
     .bot-container {
       display: flex;
+      justify-content: space-between;
       width: 85%;
+
+      text-container {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        .button {
+          .button-maker(81px, 38px, @white, @ebony-clay, 1px solid @azure-radiance);
+        }
+      }
+      img {
+        align-self: flex-start;
+        width: 48%;
+        border-radius: 4px;
+      }
     }
+    //
 
   }
   .footer {

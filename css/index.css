@@ -208,10 +208,37 @@ h5 {
 .home .bot {
   display: flex;
   justify-content: center;
+  padding: 48px 0;
+  border-top: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6;
 }
 .home .bot .bot-container {
   display: flex;
+  justify-content: space-between;
   width: 85%;
+}
+.home .bot .bot-container text-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.home .bot .bot-container text-container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 38px;
+  color: #FFFFFF;
+  background: #23293B;
+  border: 1px solid #007BFF;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.home .bot .bot-container img {
+  align-self: flex-start;
+  width: 48%;
+  border-radius: 4px;
 }
 .home .footer {
   width: 100%;
