@@ -143,17 +143,19 @@ h5 {
 }
 .container {
   display: flex;
-  max-width: 1000px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
 }
 .main-nav {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 90px;
-  border-bottom: 2px solid grey;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #f6f6f6;
@@ -167,4 +169,64 @@ h5 {
   font-size: 1.4rem;
   color: #454a59;
   text-decoration: none;
+}
+.main-header {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-header .header-img {
+  width: 100%;
+  height: 175px;
+  margin: 0 2%;
+}
+.main-content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 3px solid #f6f7f8;
+}
+.main-content .text-content {
+  width: 100%;
+  margin: 20px 4%;
+}
+.main-content .text-content h2 {
+  font-size: 2.4rem;
+  color: #454a59;
+}
+.main-content .text-content p {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  line-height: 20px;
+}
+.main-content .content-images {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-content .content-images .image {
+  width: 30%;
+  height: 175px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.main-content .walk-content {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  border-top: 3px solid #f6f7f8;
+}
+.main-content .walk-content .text-content {
+  width: 50%;
+  margin: 50px 0;
+}
+.main-content .walk-content .walk-image .astro {
+  width: 30%;
+  height: 175px;
+  margin-top: 20%;
+  border-radius: 10px;
 }
