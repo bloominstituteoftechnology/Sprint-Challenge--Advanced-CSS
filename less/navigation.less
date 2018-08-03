@@ -13,6 +13,8 @@
         flex-direction: column;
         align-items: center;
 
+        
+
         h1 {
             padding: 15px 0;
             color: @Navigation-font-color;
@@ -22,6 +24,10 @@
             width: 50%;
             display: flex;
             justify-content: space-between;
+
+            @media @phone {
+                width: 80%; 
+            }
 
             a {
                 font-size: 1.6rem;

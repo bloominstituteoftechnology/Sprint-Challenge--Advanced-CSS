@@ -172,11 +172,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
-  .container {
-    width: 90%;
-  }
-}
 .main-nav {
   width: 100%;
   height: 100px;
@@ -197,6 +192,11 @@ img {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .main-nav .nav-container .nav {
+    width: 80%;
+  }
 }
 .main-nav .nav-container .nav a {
   font-size: 1.6rem;
@@ -228,6 +228,17 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section .thumbnails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .content-section .thumbnails .thumb2,
+  .home .content-section .thumbnails .thumb3 {
+    display: none;
+  }
+}
 .home .content-section .thumbnails img {
   width: 30%;
   height: 30%;
@@ -236,8 +247,13 @@ img {
   border-radius: 15px;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .thumbnails img {
+    width: 85%;
+  }
+}
 .home .content-section .bot-text {
-  margin: 20px 0 60px;
+  margin: 20px 0 40px;
   width: 95%;
 }
 .home .content-moonwalk {
@@ -245,11 +261,23 @@ img {
   justify-content: space-between;
   width: 85%;
 }
+@media (max-width: 500px) {
+  .home .content-moonwalk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-moonwalk .moonwalk-text {
   width: 48%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .home .content-moonwalk .moonwalk-text {
+    width: 90%;
+  }
 }
 .home .content-moonwalk .moonwalk-text .btn {
   -webkit-border-radius: 5px;
@@ -270,11 +298,23 @@ img {
   background-color: #F1F1F1;
   color: #23293B;
 }
+@media (max-width: 500px) {
+  .home .content-moonwalk .moonwalk-text .btn {
+    width: 100%;
+    height: 55px;
+    margin: 15px 0;
+  }
+}
 .home .content-moonwalk img {
   width: 48%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .content-moonwalk img {
+    width: 90%;
+  }
 }
 .home hr {
   margin: 30px 0;
