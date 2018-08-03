@@ -158,7 +158,21 @@ h5 {
   text-decoration: none;
   color: #454A59;
 }
+.nav-bar nav {
+  padding-bottom: 1rem;
+}
 .container {
-  width: 880px;
+  display: flex;
+  flex-direction: column;
+  width: 680px;
   margin: 0 auto;
+}
+.CTA-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.CTA-img img {
+  width: 100%;
 }
