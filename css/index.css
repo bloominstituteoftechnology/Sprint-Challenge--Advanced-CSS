@@ -168,11 +168,6 @@ p {
   color: #454A59;
   border: 3px solid #F1F1F1;
 }
-@media (max-width: 500px) {
-  .main-navigation {
-    padding-top: 5%;
-  }
-}
 .main-navigation h1 {
   display: flex;
   justify-content: center;
@@ -186,8 +181,7 @@ p {
 }
 @media (max-width: 500px) {
   .main-navigation nav {
-    font-size: 1.2rem;
-    padding-top: 5%;
+    padding-top: 10px;
   }
 }
 .main-navigation nav a {
