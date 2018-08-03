@@ -185,11 +185,21 @@ h5 {
   display: flex;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .nav-header .home-nav .home-sub-nav-container {
+    justify-content: space-evenly;
+  }
+}
 .nav-header .home-nav .home-sub-nav-container .nav-item {
   font-size: 1.6rem;
   text-decoration: none;
   color: #454A59;
   margin: 10px 1% 0;
+}
+@media (max-width: 500px) {
+  .nav-header .home-nav .home-sub-nav-container .nav-item {
+    margin: 0;
+  }
 }
 .footer {
   flex-direction: row;

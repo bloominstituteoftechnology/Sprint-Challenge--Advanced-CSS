@@ -21,12 +21,18 @@
       .margin(0 0 20px);
       .flexbox();
       .width(100%);
+      @media @mobile{
+        justify-content: space-evenly;
+      }
 
       .nav-item{
         .font-size(1.6rem);
         text-decoration: none;
         color: @nav-font-color;
         margin: 10px 1% 0;
+        @media @mobile{
+          margin: 0;
+        }
       }
     } // home-sub-nav-container
   } // home-nav
