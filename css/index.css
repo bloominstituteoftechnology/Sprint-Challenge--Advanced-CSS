@@ -224,12 +224,10 @@ header nav a {
   justify-content: center;
   align-items: center;
   border-bottom: solid 2px #F6F7F8;
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: flex-start;
-  width: 84%;
+  padding: 48px 63px;
 }
 .home .bottom-content .bottom-left-content {
   width: 330px;
@@ -265,5 +263,11 @@ header nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  background: #F4F4F4;
+  color: #81848E;
+  border: solid 2px #F6F7F8;
   height: 80px;
+  font-size: 1.6rem;
+  border: 2px solid #F6F7F8;
 }
