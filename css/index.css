@@ -250,6 +250,23 @@ footer p {
   border-radius: 20px;
   margin: 11px;
 }
+@media (max-width: 500px) {
+  .home .content-section-one .middle-imgs .rocket {
+    height: 291px;
+    border-radius: 16px;
+    margin: 0 11px;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section-one .middle-imgs .space-sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section-one .middle-imgs .rocket-launch {
+    display: none;
+  }
+}
 .home .content-section-two {
   border: 1px solid blue;
   border-top: 1px solid #F6F7F8;
