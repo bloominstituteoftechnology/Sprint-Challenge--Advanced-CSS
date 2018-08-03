@@ -1,13 +1,23 @@
 // Home Content
 
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: @white;
 
   h2 {
+    font-size: 2rem;
+    color: @ebony-clay;
+  }
+  h3{
+    font-size: 1.8rem;
     color: @ebony-clay;
   }
   p {
     color: @shuttle-gray;
+    line-height: 1.5;
+    margin: 10px 0 16px 0;
   }
 
   .top-img {
@@ -15,15 +25,35 @@
     width: 100%;
   }
   .top {
+    width: 96.2%;
+    margin: 19px 0 50px 0;
 
-  }
-  .mid {
+    .img-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
 
+      img {
+        width: 30.73%;
+        align-self: flex-start;
+        border-radius: 15px;
+      }
+    }
+    
   }
   .bot {
+    display: flex;
+    justify-content: center;
+    
+
+    .bot-container {
+      display: flex;
+      width: 85%;
+    }
 
   }
   .footer {
+    width: 100%;
     text-align: center;
     color: @ebony-clay;
     background: @mild-sand;

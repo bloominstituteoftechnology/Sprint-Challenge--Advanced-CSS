@@ -169,19 +169,52 @@ h5 {
   text-decoration: underline;
 }
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #FFFFFF;
 }
 .home h2 {
+  font-size: 2rem;
+  color: #23293B;
+}
+.home h3 {
+  font-size: 1.8rem;
   color: #23293B;
 }
 .home p {
   color: #5E6164;
+  line-height: 1.5;
+  margin: 10px 0 16px 0;
 }
 .home .top-img {
   height: 200px;
   width: 100%;
 }
+.home .top {
+  width: 96.2%;
+  margin: 19px 0 50px 0;
+}
+.home .top .img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.home .top .img-container img {
+  width: 30.73%;
+  align-self: flex-start;
+  border-radius: 15px;
+}
+.home .bot {
+  display: flex;
+  justify-content: center;
+}
+.home .bot .bot-container {
+  display: flex;
+  width: 85%;
+}
 .home .footer {
+  width: 100%;
   text-align: center;
   color: #23293B;
   background: #F4F4F4;
