@@ -6,13 +6,19 @@
   align-items: center;
 }
 
+.header-style() {
+    color: @Header-font-color;
+    font-size: 2em;
+}
+
 .button-creator(@width, @height, @bg-color, @font-color) {
   width: @width;
   height: @height;
   background-color: @bg-color;
   color: @font-color;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
+  border: 1px solid @bg-color;
   font-size: 1.8rem;
   .center;
   
