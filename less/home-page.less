@@ -63,6 +63,13 @@
             margin-left: 5%;
             .border-radius(20px);
             box-shadow: 10px 10px 5px grey;
+
+            @media @phone {
+                transform: scale(1);
+                margin-right: 0;
+                margin-left: 0;
+                box-shadow: 10px 10px 5px @white;
+            }
         }
     }
 
@@ -156,10 +163,11 @@
             width: 85%;
             height: 70%;
     
-            &:hover {
-                margin: 2%;
-                box-shadow: 10px 10px 5px grey;
-                .border-radius(10px);
+            @media @phone {
+                transform: scale(1);
+                margin-right: 0;
+                margin-left: 0;
+                box-shadow: 10px 10px 5px @white;
             }
         }
 
@@ -181,7 +189,8 @@
         .button-creator(80px, 40px, 5px, @header-color, @white);
 
         @media @phone {
-            .button-creator(100%, 50px);
+            .button-creator(90%, 50px);
+            transform: scale(1.2);
         }
     }
 }

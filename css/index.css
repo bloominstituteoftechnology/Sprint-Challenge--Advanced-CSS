@@ -285,6 +285,14 @@ footer {
   border-radius: 20px;
   box-shadow: 10px 10px 5px grey;
 }
+@media (max-width: 500px) {
+  .home figure:hover {
+    transform: scale(1);
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: 10px 10px 5px #FFFFFF;
+  }
+}
 .home .post-preview {
   max-width: 100%;
   max-height: 100%;
@@ -364,12 +372,13 @@ footer {
   width: 85%;
   height: 70%;
 }
-.home .bottom-content figure:hover {
-  margin: 2%;
-  box-shadow: 10px 10px 5px grey;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+@media (max-width: 500px) {
+  .home .bottom-content figure {
+    transform: scale(1);
+    margin-right: 0;
+    margin-left: 0;
+    box-shadow: 10px 10px 5px #FFFFFF;
+  }
 }
 .home .bottom-content img {
   width: 100%;
@@ -402,7 +411,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .btn {
-    width: 100%;
+    width: 90%;
     height: 50px;
     border-radius: 5px;
     background-color: #23293B;
@@ -413,6 +422,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(1.2);
   }
   .home .btn:hover {
     transform: scale(1.2);
