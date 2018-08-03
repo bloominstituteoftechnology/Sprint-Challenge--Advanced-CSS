@@ -1,1 +1,244 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+header .nav-container {
+  width: 100%;
+  background: #F6F6F6;
+  color: #454A59;
+  border: 1px solid #F1F1F1;
+}
+header .nav-container h1 {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  padding: 10px;
+}
+header .nav-container nav {
+  display: flex;
+  justify-content: center;
+}
+header .nav-container nav a {
+  padding: 10px;
+  text-decoration: none;
+  outline: none;
+  color: #454A59;
+}
+main {
+  background: #FFFFFF;
+  width: 90%;
+  margin: 0 auto;
+}
+main h2 {
+  font-size: 1.5rem;
+  margin: 10px 0px;
+  color: #23293B;
+}
+main .banner {
+  background: url('../img/main-header.jpg') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+main .banner-text {
+  margin: 20px 0px;
+}
+main .image-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .image-row img {
+  max-width: 31%;
+  height: auto;
+  border-radius: 20px;
+  margin: 2%;
+}
+main .top-content {
+  margin-bottom: 40px;
+}
+main .bottom-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  border-top: 1px solid #F6F7F8;
+  border-bottom: 1px solid #F6F7F8;
+  padding: 20px 0px 40px 0px;
+}
+main .bottom-content .bottom-text {
+  margin: 2.5%;
+  width: 40%;
+}
+main .bottom-content .bottom-image {
+  height: auto;
+  width: 40%;
+  margin: 2.5%;
+  align-items: center;
+  text-align: center;
+}
+main .bottom-content .bottom-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+main .bottom-content .btn {
+  width: 100px;
+  height: 40px;
+  background: #23293B;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+main footer {
+  background: #F4F4F4;
+  padding: 40px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+main footer p {
+  color: #81848E;
+}
