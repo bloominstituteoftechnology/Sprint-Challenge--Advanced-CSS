@@ -1,1 +1,47 @@
 // Mixins below variables
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.justify-right() {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.row() {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.column() {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.h-font-size {
+	font-size: 2rem;
+}
+.p-font-size {
+	font-size: 1.5rem;
+}
+.border-bottom() {
+	border-bottom: 1px solid @fifth-color;
+}
+.border-radius(@radius) {
+-webkit-border-radius: @radius;
+-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+.button-maker(@width, @height, @bg-color, @font-size, @font-color) {
+	.border-radius(50px);
+	text-align: center;
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	font-size: @font-size;
+	color: @font-color;
+}
+
