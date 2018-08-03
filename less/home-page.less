@@ -4,24 +4,49 @@
     width: 1000px;
     margin: 0 auto;
 
+    @media @mobile {
+        width: 100%;
+        font-size: 62.5%;
+    }
+
     .header {
         width: 700px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: 0 auto;
+
+        @media @mobile {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
         
         img {
             margin-bottom: 15px;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
         h2 {
             font-size: 20px;
             margin-left: 10px;
+
+            @media @mobile {
+                font-size: 2.2rem;
+            }
         }
         p {
             margin-top: 15px;
             font-size: 14px;
             margin-left: 10px;
+
+            @media @mobile {
+                font-size: 1rem;
+                line-height: 1.5;
+                
+            }
         }
     }
 }
@@ -33,7 +58,19 @@
         flex-direction: row;
         justify-content: center;
 
+        @media @mobile {
+            display: flex;
+            justify-content: center;
+        }
+
         .img-content {
+            
+            .sky, .launch {
+
+                @media @mobile {
+                    display: none;
+                }
+            }
             
             img {
                 border-radius: 20px;
@@ -41,6 +78,11 @@
                 margin-top: 15px;
                 margin-left: 8px;
                 margin-right: 15px;
+
+                @media @mobile {
+                    width: 400px;
+                    margin-left: 17px;
+                }
             }
         }
     }
@@ -48,6 +90,10 @@
     .planets {
         display: flex;
         justify-content: center;
+
+        // @media @mobile {
+        //     width: 100%;
+        // }
 
         .bottom-content {
             // border: 1px solid black;
@@ -59,11 +105,20 @@
                 font-size: 20px;
                 margin-left: 10px;
                 margin-top: 15px;
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
             }
             p {
                 margin-top: 15px;
                 font-size: 14px;
                 margin-left: 10px;
+
+                @media @mobile {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
 
             }
         }
@@ -74,28 +129,62 @@
         justify-content: center;
         // padding: 40px;
 
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
         .walk-text {
             width: 350px;
             padding: 40px;
             margin-left: 10px;
 
+            @media @mobile {
+                width: 100%;
+            }
+
             h2 {
                 font-size: 20px;
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
             }
             p {
                 margin-top: 15px;
                 font-size: 14px;
+
+                @media @mobile {
+                    font-size: 1rem;
+                    line-height: 1.5;
+                }
             }
             .btn {
                 .button-creator(80px, 30px, navy, white, 13px);
                 margin-top: 15px;
+
+                @media @mobile {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 1rem;
+                }
             }
         }
         .walk-img {
             padding: 40px;
 
+            @media @mobile {
+                padding-top: 0;
+                padding-left: 45px;
+            }
+
             img {
-                width: 250px;
+                width: 250px; 
+
+                @media @mobile {
+                    width: 100%;
+                    // padding-top: 0;
+                }
             }
         }
     }
