@@ -229,8 +229,17 @@ h5 {
   margin: 5px 5px 15px 5px;
 }
 .home .bottom-section .bottom-content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  background-color: black;
+  color: white;
   font-size: 2rem;
   margin: 5px 5px 15px 5px;
+  border: 1px solid blue;
+  border-radius: 3px;
 }
 .home .bottom-section img {
   width: 50%;
