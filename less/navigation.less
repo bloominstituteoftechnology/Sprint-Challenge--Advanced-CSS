@@ -6,6 +6,10 @@
     border: 3px solid @nav-border;
     padding: 1%;
 
+    @media @phone {
+        padding-top: 5%;
+    }
+
     h1 {
         display: flex;
         justify-content: center;
@@ -17,11 +21,21 @@
         display: flex;
         justify-content: center;
 
+        @media @phone {
+            font-size: 1.2rem;
+            padding-top: 5%;
+        }
+
         a {
             color: @nav-fg;
             margin-right: 1%;
             margin-left: 1%;
             text-decoration: none;
+
+            @media @phone {
+                margin-right: 2%;
+                margin-left: 2%;
+            }
         }
     }
 }

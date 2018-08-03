@@ -12,11 +12,19 @@
 
     .top-content {
         padding: 0 1%;
+
+        @media @phone {
+            padding: 3%;
+        }
     }
 
     .text-content {
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @media @phone {
+            padding: 3%;
+        }
 
         p {
             margin-top: 20px;
@@ -28,9 +36,24 @@
         justify-content: space-around;
         margin-bottom: 40px;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         img {
             width: 30%;
             .border-radius(20px);
+
+            @media @phone {
+                width: 85%;
+                margin: 6%;
+            }
+        }
+
+        .hidden {
+            @media @phone {
+                display: none;
+            }
         }
     }
 
@@ -42,18 +65,35 @@
 
         margin-bottom: 20px;
 
+        @media @phone {
+            flex-direction: column;
+        }
+
         .text-content {
             width: 50%;
             margin: 2%;
+
+            @media @phone {
+                margin: 0;
+                width: 100%;
+            }
         }
 
         img {
             width: 50%;
             .border-radius(5px);
+
+            @media @phone {
+                width: 100%;
+            }
         }
     }
 
     .btn {
         .button-creator(80px, 40px, 5px, @header-color, @white);
+
+        @media @phone {
+            .button-creator(100%, 50px);
+        }
     }
 }

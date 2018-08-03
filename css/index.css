@@ -164,6 +164,11 @@ p {
   border: 3px solid #F1F1F1;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .main-navigation {
+    padding-top: 5%;
+  }
+}
 .main-navigation h1 {
   display: flex;
   justify-content: center;
@@ -174,11 +179,23 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .main-navigation nav {
+    font-size: 1.2rem;
+    padding-top: 5%;
+  }
+}
 .main-navigation nav a {
   color: #454A59;
   margin-right: 1%;
   margin-left: 1%;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .main-navigation nav a {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
 }
 footer {
   width: 100%;
@@ -201,9 +218,19 @@ footer {
 .home .top-content {
   padding: 0 1%;
 }
+@media (max-width: 500px) {
+  .home .top-content {
+    padding: 3%;
+  }
+}
 .home .text-content {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .home .text-content {
+    padding: 3%;
+  }
 }
 .home .text-content p {
   margin-top: 20px;
@@ -213,9 +240,25 @@ footer {
   justify-content: space-around;
   margin-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .home .gallery {
+    flex-direction: column;
+  }
+}
 .home .gallery img {
   width: 30%;
   border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .home .gallery img {
+    width: 85%;
+    margin: 6%;
+  }
+}
+@media (max-width: 500px) {
+  .home .gallery .hidden {
+    display: none;
+  }
 }
 .home .bottom-content {
   border-top: 1px solid #F6F7F8;
@@ -224,13 +267,29 @@ footer {
   padding: 5% 10% 5% 10%;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .home .bottom-content {
+    flex-direction: column;
+  }
+}
 .home .bottom-content .text-content {
   width: 50%;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .home .bottom-content .text-content {
+    margin: 0;
+    width: 100%;
+  }
+}
 .home .bottom-content img {
   width: 50%;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .bottom-content img {
+    width: 100%;
+  }
 }
 .home .btn {
   width: 80px;
@@ -243,4 +302,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #23293B;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
