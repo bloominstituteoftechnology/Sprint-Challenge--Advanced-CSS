@@ -29,9 +29,17 @@ p {
   color: @par-font;
 }
 
+// Site's main wrapper
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   line-height: 1.5rem;
+}
+
+// Elements to be hidden
+.hidden {
+  @media @phone {
+      display: none;
+  }
 }

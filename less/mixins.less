@@ -1,15 +1,20 @@
 // Mixins below variables
 
-.border-radius(@radius) {
+// Creates a cross-browser border
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
     border-radius: @radius;
 }
 
+// Centers elements
 .center() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+// Creates a button
 .button-creator(@width: 80px; @height: 40px; @radius: 5px; @bg-color: #23293B; @fg-color: #fff;) {
     width: @width;
     height: @height;
