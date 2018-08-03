@@ -146,10 +146,12 @@ h5 {
 }
 h1 {
   font-size: 4rem;
+  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+  color: #23293B;
 }
 h4 {
   font-size: 2.5rem;
@@ -159,6 +161,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  color: #5E6164;
 }
 img {
   max-width: 100%;
@@ -200,4 +203,97 @@ img {
   text-decoration: none;
   color: #454A59;
   font-weight: 600;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .content-section .jumbotron {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+.home .content-section .top-text {
+  margin: 20px 0;
+  width: 95%;
+}
+.home .content-section .thumbnails {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-section .thumbnails img {
+  width: 30%;
+  height: 30%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.home .content-section .bot-text {
+  margin: 20px 0 60px;
+  width: 95%;
+}
+.home .content-moonwalk {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.home .content-moonwalk .moonwalk-text {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.home .content-moonwalk .moonwalk-text .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 35px;
+  background-color: #23293B;
+  color: #F1F1F1;
+  font-size: 1.6rem;
+  border: 1px solid #F6F7F8;
+  cursor: pointer;
+}
+.home .content-moonwalk .moonwalk-text .btn:hover {
+  background-color: #F1F1F1;
+  color: #23293B;
+}
+.home .content-moonwalk img {
+  width: 48%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.home hr {
+  margin: 30px 0;
+  border: 0;
+  clear: both;
+  width: 100%;
+  background-color: lightgrey;
+  height: 1px;
+}
+.home .footer {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: #F4F4F4;
+}
+.home .footer p {
+  color: #81848E;
 }
