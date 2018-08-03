@@ -198,3 +198,18 @@ h5 {
   margin-top: 15px;
   line-height: 22px;
 }
+.home .content-section {
+  margin: 30px 0;
+}
+.home .content-section .showcase-3-col {
+  width: 100%;
+  display: flex;
+}
+.home .content-section .showcase-3-col img {
+  border-radius: 20px;
+  width: 270px;
+  height: 210px;
+  margin-right: 19px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
