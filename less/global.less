@@ -4,11 +4,28 @@
   box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
   font-family: 'Ubuntu', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
+  font-size: @large-font-size;
+  margin: 10px 0;
 }
 
+p {
+	font-size: @regular-font-size;
+	margin-bottom: 10px;
+	line-height: 1.5;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
