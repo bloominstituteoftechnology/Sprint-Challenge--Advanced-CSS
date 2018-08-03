@@ -1,0 +1,54 @@
+// Navigation Styles here
+
+
+
+.main-navigation {
+	width: 100%;
+	height: 90px;
+	background: @nav-bg;
+	border-bottom: 3px solid @navigation-border;
+  position: fixed;
+  top: 0;
+  color: @nav-font-color;
+
+	.nav-container {
+		height: 100%;
+    display: flex;
+    flex-direction: column;
+		align-items: center;
+    justify-content: center;
+    
+		.nav {
+			width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 10px;
+			a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @nav-font-color;
+        .bounce;
+
+        &:hover{
+          color: gray;
+        }
+      }
+		}
+  }
+}
+@media (max-width: 500px) {
+  .main-navigation {
+    .nav-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+      .logo-heading {
+        font-size: 3rem;
+      }
+      .nav {
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+  }
+}
