@@ -152,7 +152,7 @@ h5 {
   background-color: #F6F6F6;
 }
 .main-navigation .logo-heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 15px 0 10px 0;
   color: #454A59;
 }
@@ -198,6 +198,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .home .first-section {
   width: 100%;
@@ -217,12 +218,13 @@ h5 {
 }
 .home .first-section .img-section {
   width: 100%;
+  height: 270px;
   display: flex;
   justify-content: space-between;
 }
 .home .first-section .img-section .img-content {
   border-radius: 15px;
-  width: 30%;
+  width: 31%;
   margin-bottom: 40px;
 }
 .home .second-section {
@@ -248,7 +250,9 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 20px 0 15px 0;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #F6F7F8;
 }
 .home .third-section .text-content {
   width: 40%;
@@ -258,6 +262,10 @@ h5 {
 .home .third-section .text-content h2 {
   font-size: 3rem;
   padding: 15px 0 15px 0;
+}
+.home .third-section .bottom-img {
+  border-radius: 5px;
+  height: 260px;
 }
 .home .third-section .btn {
   width: 100px;
@@ -283,4 +291,7 @@ h5 {
   align-items: center;
   width: 100%;
   font-size: 1.6rem;
+  padding: 30px;
+  color: #81848E;
+  background-color: #F4F4F4;
 }
