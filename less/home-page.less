@@ -4,6 +4,10 @@
         max-width: 880px;
         margin: 0 auto;
 
+        p {
+            color: @p-font-color;
+        }
+
         .main-header-img-div {
             text-align: center;
             height: 200px;
@@ -39,9 +43,9 @@
 
         .mid-img-div {
             margin: 0 55px 48px 55px;
-            display: flex;
-            justify-content: space-between;
             height: 178px;
+
+            .flex-space-between();
 
             @media @phone {
                 width: 85%;
@@ -60,7 +64,7 @@
                         display: none;
                     }
                 }
-            }
+            } // mid-img-div img
         } // mid-img-div
 
         .can-we-visit-planets-section {
@@ -92,8 +96,8 @@
 
         .lets-go-for-a-walk-section {
             margin: 48px 104px 49px 104px;
-            display: flex;
-            justify-content: space-between;
+            
+            .flex-space-between();
 
             @media @phone {
                 margin: 48px;
@@ -138,16 +142,5 @@
                 }
             } //lets-go-for-a-walk-section div
         } // lets-go-for-a-walk-section
-
-        footer {
-            width: 91%;
-            background: @footer-bg-color;
-            border: 2px solid @nav-border-color;
-            text-align: center;
-            margin: 0 auto;
-            margin-top: 14px;
-            padding-top: 25px;
-            padding-bottom: 38px;
-        } // footer
     } // home-page
 } // container
