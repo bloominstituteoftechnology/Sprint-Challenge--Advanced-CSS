@@ -216,3 +216,35 @@ p {
 .planets .planets-body {
   margin: 8% 0;
 }
+.walk {
+  margin: 5% auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 8%;
+  border-bottom: 3px solid #F6F7F8;
+}
+.walk .walk-body {
+  width: 45%;
+}
+.walk .walk-body .walk-body-text {
+  margin-top: 3%;
+}
+.walk .walk-body .walk-body-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #22283B;
+  color: white;
+  width: 35%;
+  height: 15%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+.walk .walk-image {
+  width: 45%;
+  height: 45%;
+  border-radius: 5px;
+}
