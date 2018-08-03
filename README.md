@@ -1,50 +1,66 @@
-# Assessing Your Preprocessor and Responsive Design Learning
+# Assessing Your Responsive Web Design and Preprocessing Learning
 
-* The objective of this challenge is test your knowledge on all of the topics surrounding preprocessing (LESS) and responsive web design you learned this week.
-* Answers to your written questions will be recorded in _Answers.md_
-* This is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have, and the LESS Documentation, however, please refrain from copying and pasting any of your answers. Try and understand the question and put your responses in your own words. Be as thorough as possible when explaining something.
-* **Just a friendly Reminder** Don't fret or get anxious about this, this is a no-pressure assessment that is only going to help guide you here in the near future. This is NOT a pass/fail situation.
+You will be building a website from scratch using all your responsive web design and preprocessing skills from the sprint.  The theme of this challenge is _Spacewalkers Magazine_.  Spacewalkers has asked you to build a small proof of concept website for their marketing team.  They have provided designs for both desktop and phone views.
 
-## Start by forking and cloning this repository.
+* This project is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have and the training kit content.
 
-## Questions - Self Study - You can exercise your Google-Fu for this and any other _Sprint Challenge_ in the future.
+## Task 1: Set Up The Project With Git
 
-1. If you had to teach someone with basic CSS knowledge what a preprocessor was, how would you describe it?
-2. What is the command in node package manager (npm) to install LESS globally on your computer?
-3. Please provide an example of a mixin you have used in a project this week.
-4. What is the difference between fixed layout, adaptive layout, and fluid layout?
-5. Why do we need to use the CSS property max-width in a responsive website?
+* [ ] Fork the project into your GitHub user account
+* [ ] Clone the forked project into a directory on your machine
+* [ ] You are now ready to build this project with your preferred IDE
+
+#### Pro tip: Commit every time you complete a task or feature!
+
+## Task 2: Comprehension Questions
+Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your responses there.
+
+1. What is the difference between an adaptive website and a fully responsive website?
+
+2. Describe what it means to be mobile first vs desktop first.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+
+4. How would you describe preprocessing to someone new to CSS?
+
+5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
+
+## Task 3: Set up your preprocessor
+* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+
+## Task 4: Import LESS Files
+* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+
+1. `variables.less`
+2. `mixins.less`
+3. `reset.less`
+4. `global.less`
+5. `navigation.less`
+6. `footer.less`
+7. `home-page.less`
+
+## Task 5: Home Page - Desktop HTML & LESS
+* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [ ] Navigation: Use the `navigation.less` file for styling
+* [ ] Main Content: Use the `home-page.less` file for styling
+* [ ] Footer: Use the `footer.less` file for styling
+* [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
+* [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
+* [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
+
+## Task 6: Home Page - Mobile HTML & LESS
+* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
+* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
 
 
-## Initializing Project
-* Fork / Clone this project into a directory on your machine.
-* `cd` into your forked local copy.
+**Congratulations, you completed the sprint challenge!**
 
-## Get LESS up and running
-1. Be sure LESS is installed globally
-2. If you haven't already, install a less watch compiler globally by running: `npm install -g less-watch-compiler`
-1. Once that is install you should be able to run `less-watch-compiler less css index.less`
-
-**If you get user permission errors,** re-run the command with: `sudo` in front of it.
-
-## Complete these tasks
-* Make every gray background turn black using one variable.
-* Convert all font-size values from px to rem, make sure that all of the rem values are based on a 10px base.
-* Nest every LESS selector appropriately
-* Use the mixin ".center-content" to center the text in `nav`, `.logo`, `.boxes`, and the `footer`.
-* Use the mixin ".border-radius" to make the `.logo` an oval shape (hint: 50%)
-* Make the whole site responsive by adjusting the .container class' width to 100% and introduce a max-width.
-* Use the escaped media query variable for laptop sizes (1100px) and update `nav`, `.box1` and `.box4` to have a background color of green;
-* Use the escaped media query variable for tablet sizes (768px) and update `.logo`, `.box2` and `.box3` to have a background color of purple;
-* Use the escaped media query variable for phone sizes (400px), and update `nav`, `footer`, `.box1`, and `.box4` to have a background color of orange;
-* Once you're done with all the tasks, push your commits to your fork and submit a Pull-Request
-
-**Stretch Goal**
-* Collapse boxes 1-4 to full width on tablet and phone.
-* Decrease the navigation box to half of it's current height on phone and make it full width.
-* Make the logo move to the top of navigation on phone using flexbox.
-
-**Super Stretch Goal**
-* Switch the media queries to min-width and accomplish the same color goals AND layout goals listed above.
-
-### Remember you can use any resources you want to solve these problems, but avoid copying/pasting solutions you've previously written. Also if you don't finish all of the challenges, that's fine! Just do what you can and submit your challenges in the end! HAVE FUN!
+## Stretch Goals
+Stretch goals are only available if you complete every task listed above.  **Do not work on them until your pull request is in.**
+* [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
+* [ ] Introduce CSS animations to your site.
+* [ ] 
