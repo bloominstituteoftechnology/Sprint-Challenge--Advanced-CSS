@@ -267,6 +267,24 @@ h5 {
   font-size: 2em;
   padding: 15px 0 15px 0;
 }
+.home .second-section .text-content .form .btn-form {
+  width: 100px;
+  height: 40px;
+  background-color: #23293B;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #23293B;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.home .second-section .text-content .form .btn-form:hover {
+  background-color: white;
+  color: #23293B;
+}
 .home .third-section {
   width: 100%;
   display: flex;
