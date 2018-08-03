@@ -1,1 +1,300 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+.main-nav .nav-bar {
+  background: #F6F6F6;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F1F1F1;
+}
+.main-nav .nav-bar h1 {
+  font-size: 3.2rem;
+  color: #23293b;
+  padding-bottom: 15px;
+}
+.main-nav .nav-bar nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.4rem;
+  padding-right: 5%;
+}
+.main-nav img {
+  width: 80%;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .main-nav img {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+footer {
+  width: 80%;
+  margin-left: 10%;
+  background: #f4f4f4;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #81848e;
+  border: 1px solid gray;
+  margin-top: 20px;
+  height: 60px;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .main-content {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 15px;
+  border-bottom: 2px solid #f6f7f8;
+}
+@media (max-width: 500px) {
+  .container .main-content {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+.container .main-content h2 {
+  font-size: 2.8rem;
+  color: #23293b;
+  padding-bottom: 10px;
+}
+.container .main-content p {
+  font-size: 1.4rem;
+  color: #5e6164;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+.container .main-content .small-imgs {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .main-content .small-imgs .img2,
+  .container .main-content .small-imgs .img3 {
+    display: none;
+  }
+}
+.container .main-content .small-imgs .img1,
+.container .main-content .small-imgs .img2,
+.container .main-content .small-imgs .img3 {
+  border-radius: 15px;
+  width: 30%;
+  height: 200px;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .container .main-content .small-imgs .img1,
+  .container .main-content .small-imgs .img2,
+  .container .main-content .small-imgs .img3 {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+.container .bottom-content {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 70%;
+  margin-left: 15%;
+  border-bottom: 2px solid #f6f7f8;
+}
+@media (max-width: 500px) {
+  .container .bottom-content {
+    flex-direction: column;
+  }
+}
+.container .bottom-content h2 {
+  font-size: 2.4rem;
+  padding-bottom: 15px;
+  color: #23293b;
+}
+.container .bottom-content p {
+  font-size: 1.4rem;
+  color: #5e6164;
+  padding-bottom: 20px;
+}
+.container .bottom-content img {
+  width: 350px;
+  height: 250px;
+}
+@media (max-width: 500px) {
+  .container .bottom-content img {
+    padding-bottom: 20px;
+  }
+}
+.container .bottom-content .button {
+  width: 80px;
+  height: 30px;
+  background: #23293b;
+  border: 1px solid blue;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5px;
+}
+@media (max-width: 500px) {
+  .container .bottom-content .button {
+    margin-bottom: 20px;
+    width: 340px;
+  }
+}

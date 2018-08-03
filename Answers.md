@@ -1,0 +1,9 @@
+1. Adaptive layouts will change in response to breakpoint resolutions. Media queries are used to specify how adaptive layouts should change when breakpoints are reached. A fully responsive layout takes the concepts of adaptive layout and adds percentage based styling, which allows content to always fill a certain percentage of the viewport regardless of screen size.
+
+2. Mobile-first design means that the base styling of the website is done with mobile use in mind (for example, styled to be viewed at a 500px width) and then desktop and tablet-friendly media queries are introduced afterward. Desktop-first design is base styled with desktop use in mind and mobile and tablet-friendly media queries are introduced afterward.
+
+3. Adding a property of 'font-size: 62.5%' in the html tag will create an easy to use ratio of 10px to every 1rem, so when using rems in your styling there is less calculation needed and less room for error.
+
+4. LESS stands for 'leaner CSS' and that is exactly what it is. It is a way of styling webpages with CSS that is easier and more intuitive for humans to read. Selectors can be nested within one another in a way that reflects the nesting of the webpages corresponding HTML, which keeps things "orderly". LESS also eliminates much of the repetition of CSS, resulting in 'dry' code. Using compiling software, LESS can be automatically compiled into CSS behind the scenes
+
+5. Parametric mixins are my favorite concept in preprocessing because it reminds me of JavaScript. The thing that gives me the most trouble in preprocessing is keeping nested selectors orderly and not adding or delting any curly braces, because then the less-watch-compiler stops compiling and I have to go back and find my error.

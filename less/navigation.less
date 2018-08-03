@@ -1,0 +1,34 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+
+    .nav-bar{
+        background: @nav-bg;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid @nav-border-color;
+
+        h1 {
+            font-size: 3.2rem;
+            color: @header-font-color;
+            padding-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: @nav-font-color;
+            font-size: 1.4rem;
+            padding-right: 5%;
+        }
+    }
+
+    img {
+       .content-center;
+       
+       @media @mobile {
+           width: 100%;
+           margin-left: 0%;
+       }
+    }
+}
