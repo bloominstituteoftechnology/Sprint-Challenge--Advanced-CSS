@@ -1,1 +1,77 @@
-// Home Content
+Home Content
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    .main-content {
+        margin: 0 10% 0 10%;
+
+        .lift {
+            margin: 20px 0;
+
+            h2 {
+                margin: 10px 0;
+            }
+        }
+                img {
+            display: flex;
+            width: 100%;
+            height: 200px;
+                }
+
+        .tri-img {
+            .border-radius(10px);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            margin: 0 10% 3% 10%;
+
+            @media @phone {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+            .can {
+                
+            }
+            
+        
+
+        .lets {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 30px 50px;
+
+            @media @phone {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            
+           .lets-text {
+               flex-direction: row;
+               width: 30%;
+           
+
+            .btn {
+                .button-maker(30px, 20px, blue, white);
+                cursor: pointer;
+                }
+            }
+        }
+
+            .astronaut {
+                margin-left: 10%;
+            }
+    }
+}

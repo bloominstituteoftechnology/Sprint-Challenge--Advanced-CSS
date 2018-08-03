@@ -1,1 +1,24 @@
 // Mixins below variables
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-radius(@radius) {
+   -webkit-border-radius: @radius;
+      -moz-border-radius: @radius;
+           border-radius: @radius;
+}
+.button-maker(@width, @height, @b-color, @font-color) {
+    .border-radius(10px);
+    .center();
+    width: @width;
+    height: @height;
+    background-color: @b-color;
+    color: @font-color;
+
+    &:hover {
+       background: @white;
+       color: @eastern-blue; 
+    }
+}
