@@ -4,6 +4,10 @@
 	hr {
 		margin: 40px 0 30px 0; 
 		border: solid @hr-color 2px;
+		@media @phone {
+			margin: 40px -4% 30px -4%;
+	    border: solid lightgrey 1px;
+		}
 	}
 	.banner {
 		width: 100%;
@@ -18,6 +22,9 @@
 	.lift-off {
 		.section-1-lift-off {
 			.padding;
+			@media @phone {
+				padding: 10px 3% 10px 3%;
+			}
 		}
 		.section-2-lift-off {
 			display: flex;
@@ -49,27 +56,30 @@
 	}
 	.planets {
 		.padding;
+		@media @phone {
+			padding: 10px 3% 10px 3%;
+		}
 		p {
 			margin: 15px 0;
 		}
 	}
 	.walk {
 		display: flex;
-		margin: 0 7%;
+		margin: 0 0 0 14%;
 
 		@media @phone {
 	    flex-direction: column;
 	    width: 100%;
-	    padding: 0;
+	    padding: 0 5% 0 5%;
 	    margin: 0;
 	  }
 
 		.section-1-walk {
-			margin-right: 9%;
-
+			//margin-right: 9%;
+			width: 43%;
 			@media @phone {
-				margin: 2%;
-				
+				width: 100%;
+				padding: 0 2%;
 			}
 
 			p {
@@ -77,13 +87,14 @@
 			}
 			.btn {
 				background-color: @btn-color;
-		    text-align: center;
+				text-align: center;
 		    padding: 9px;
 		    font-size: 1.6rem;
 		    color: white;
-		    margin-left: 11px;
+		    margin-left: 10px;
 		    border-radius: 4px;
 		    width: 80px;
+		    margin-top: 5px;
 
 		    @media @phone {
 		    	margin-top: 10px;
@@ -94,7 +105,7 @@
 		}
 		.section-2-walk {
 			.walker {
-				height: 200px;
+				width: 66%;
 				@media @phone {
 			    width: 100%;
 			    height: 100%;
