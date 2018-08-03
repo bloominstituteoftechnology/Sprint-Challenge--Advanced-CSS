@@ -167,12 +167,32 @@ h5 {
   width: 680px;
   margin: 0 auto;
 }
-.CTA-img {
+.container .CTA-img {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.CTA-img img {
+.container .CTA-img img {
   width: 100%;
+}
+.container .liftoff {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.container .liftoff .liftoff-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.container .liftoff .liftoff-images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .liftoff .liftoff-images img {
+  width: 30%;
+  height: 30%;
 }
