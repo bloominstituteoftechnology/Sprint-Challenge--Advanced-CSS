@@ -1,1 +1,107 @@
 // Home Content
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    .main-content {
+        .content-center;
+        margin-top: 15px;
+        border-bottom: 2px solid @main-content-border-color;
+
+        @media @mobile {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            color: @header-font-color;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: @pg-font-color;
+            padding-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .small-imgs {
+            display: flex;
+            justify-content: space-between;
+
+            @media @mobile {
+                .img2, .img3 {
+                    display: none;
+                }
+            }
+            
+            .img1, .img2, .img3 {
+                .img-border-radius;
+                width: 30%;
+                height: 200px;
+                margin-bottom: 15px;
+
+                @media @mobile {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+            }
+        }
+    }
+
+    .bottom-content {
+        .content-center;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        width: 70%;
+        margin-left: 15%;
+        border-bottom: 2px solid @main-content-border-color;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 2.4rem;
+            padding-bottom: 15px;
+            color: @header-font-color;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: @pg-font-color;
+            padding-bottom: 20px;
+        }
+
+        img {
+            width: 350px;
+            height: 250px;
+
+            @media @mobile {
+                padding-bottom: 20px;
+            }
+        }
+
+        .button {
+            .button-creator(80px, 30px, @header-font-color, 1px solid blue);
+            color: white;
+            font-size: 1.6rem;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 5px;
+
+            @media @mobile {
+                margin-bottom: 20px;
+                width: 340px;
+            }
+         }
+    }
+}
