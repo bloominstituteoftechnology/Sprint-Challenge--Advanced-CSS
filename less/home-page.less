@@ -1,9 +1,7 @@
 // Home Content
 
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  .center-column;
   background: @white;
 
   h2 {
@@ -34,12 +32,11 @@
     }
 
     .img-container {
-      display: flex;
-      justify-content: space-between;
+      .flex-between;
       margin-bottom: 50px;
 
       @media @mobile {
-        margin: 35px 0 45px 0;  
+        margin: 37px 0 45px 0;  
       }
 
       img {
@@ -61,15 +58,14 @@
     
   }
   .bot {
-    display: flex;
-    justify-content: space-between;
+    .flex-between;
     padding: 48px 7.9%;
     border-top: 1px solid @geyser;
     border-bottom: 1px solid @geyser;
 
     @media @mobile {
       flex-direction: column;
-      padding: 48px 13%;
+      padding: 48px 12.6%;
     }
 
       .text-container {

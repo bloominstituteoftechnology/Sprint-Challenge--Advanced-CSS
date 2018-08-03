@@ -1,3 +1,12 @@
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -208,7 +217,7 @@ h5 {
 }
 @media (max-width: 517px) {
   .home .top .img-container {
-    margin: 35px 0 45px 0;
+    margin: 37px 0 45px 0;
   }
 }
 .home .top .img-container img {
@@ -237,7 +246,7 @@ h5 {
 @media (max-width: 517px) {
   .home .bot {
     flex-direction: column;
-    padding: 48px 13%;
+    padding: 48px 12.6%;
   }
 }
 .home .bot .text-container {
