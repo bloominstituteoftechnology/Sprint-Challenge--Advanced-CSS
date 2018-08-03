@@ -149,13 +149,16 @@ h5 {
   margin: 0 auto;
   font-size: 1.6rem;
 }
-@phone {
-  max-width: 500px;
-}
 .main-navigation {
   width: 100%;
   display: flex;
   align-content: center;
   flex-direction: column;
   margin-top: 10px;
+  background-color: #F6F6F6;
+  color: #454A59;
+  border: #F1F1F1;
+}
+.home {
+  background-color: #FFFFFF;
 }
