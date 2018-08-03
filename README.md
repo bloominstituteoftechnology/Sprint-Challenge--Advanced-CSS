@@ -1,5 +1,4 @@
 # Assessing Your Responsive Web Design and Preprocessing Learning
-
 You will be building a website from scratch using all your responsive web design and preprocessing skills from the sprint.  The theme of this challenge is _Spacewalkers Magazine_.  Spacewalkers has asked you to build a small proof of concept website for their marketing team.  They have provided designs for both desktop and phone views.
 
 * This project is to be worked on alone but you can use outside resources. You can _reference_ any old code you may have and the training kit content.
@@ -13,9 +12,10 @@ You will be building a website from scratch using all your responsive web design
 #### Pro tip: Commit every time you complete a task or feature!
 
 ## Task 2: Comprehension Questions
-Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your responses there.
+Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your resp
+onses there.
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1.What is the difference between an adaptive website and a fully responsive website?
 
 2. Describe what it means to be mobile first vs desktop first.
 
@@ -26,7 +26,7 @@ Answer the following questions to the best of your ability. You can exercise you
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
 
 ## Task 3: Set up your preprocessor
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [ ] Verify that you have  LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 * [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
 * [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
