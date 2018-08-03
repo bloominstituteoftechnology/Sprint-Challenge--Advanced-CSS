@@ -1,1 +1,36 @@
 // Mixins below variables
+
+// Mixin for centering
+
+.center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Base Button 
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    .border-radius(20px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    font-size: @btn-font-size;
+    border: 3px solid @pacific-blue;
+
+    @media @phone {
+        width: 100%;
+    }
+  }
+  
+// Border Radius
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+    
+}
+
