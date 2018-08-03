@@ -1,3 +1,8 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -143,8 +148,33 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+h1 {
+  font-size: 4rem;
+}
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: #F6F6F6;
+  color: #454A59;
+  border: 3px solid #F1F1F1;
+}
+.nav .nav-title {
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 1.2%;
+}
+.nav .nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 38%;
+  font-size: 1.6rem;
+  margin: 1.5% 0;
 }
