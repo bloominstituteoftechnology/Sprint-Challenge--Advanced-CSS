@@ -37,6 +37,17 @@
                 margin: 1%;
                 border-radius: 15px;  
             }
+
+            @media @phone {
+                .img-1 {
+                    width: 85%;
+                    height: auto;
+                }
+
+                .img-2, .img-3 {
+                    display:none;
+                }
+            }
             
         }
 
@@ -59,8 +70,17 @@
         padding: 35px;
         border-bottom: 2px solid @Border-color-for-main-content; 
 
+        @media @phone {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
         .bottom-content {
-            margin-right: 2%; 
+            margin-right: 2%;
+            
+            @media @phone {
+                margin-right: 0;
+            }
 
             h2 {
                 .h2-style;
@@ -78,6 +98,11 @@
                 margin: 5px 5px 15px 5px;
                 border: 1px solid blue;
                 border-radius: 3px; 
+
+                @media @phone {
+                    width: 97%; 
+                    height: 45px;
+                }
             }
         }
 
@@ -85,6 +110,12 @@
             width: 50%;
             margin-left: 2%;
             border-radius: 10px; 
+
+            @media @phone {
+                margin-left: 0;
+                width: 96%;
+                height: auto;
+            }
         }
     }
 
