@@ -1,1 +1,46 @@
 // Mixins below variables
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font() {
+  font-size: 1.6rem;
+}
+
+.section() {
+  width: 100%;
+  padding: 2%;
+
+  h2 {
+    padding: 1%;
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 1%;
+    .font;
+  }
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.setUpBtn(@width, @height, @primary-color, @secondary-color) {
+  .center;
+  .border-radius(15%);
+  width: @width;
+  height: @height;
+  background-color: @primary-color;
+  color: @secondary-color;
+  border: 1px solid @border-color-for-main-content;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @secondary-color;
+    color: @primary-color;
+  }
+}
