@@ -170,6 +170,7 @@ p {
   color: #454A59;
   position: fixed;
   top: 0;
+  opacity: 0.8;
 }
 .main-navigation .navigation-container h1 {
   font-size: 4rem;
