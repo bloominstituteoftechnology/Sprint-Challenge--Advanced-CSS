@@ -2,13 +2,16 @@
 .header-container {
 
     width: 100%;
- 
     height: 12rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: @nav-bg-color;
     border-bottom: 5px solid @nav-border-color;
+
+    @media @phone {
+        max-width: 500px;
+    }
     
 
     .logo {
@@ -20,6 +23,7 @@
 
     .nav {
         display: flex;
+
         a {
             /* make it look like a nav button */
             width: 10rem;

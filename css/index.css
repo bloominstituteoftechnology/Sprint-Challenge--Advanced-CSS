@@ -150,6 +150,11 @@ h5 {
   background-color: #F6F6F6;
   border-bottom: 5px solid #F1F1F1;
 }
+@media (max-width: 500px) {
+  .header-container {
+    max-width: 500px;
+  }
+}
 .header-container .logo {
   font-size: 3.6rem;
   margin: 2rem 0;
@@ -168,15 +173,35 @@ h5 {
   text-decoration: none;
   text-align: center;
 }
+.footer {
+  width: 100%;
+  height: 6rem;
+  margin-top: 1rem;
+  background-color: #F4F4F4;
+  border: 1px solid #F6F7F8;
+  border-radius: 5px;
+}
+.footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 2rem;
+}
 .main-container {
   max-width: 880px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .main-container {
+    padding: 0 1rem;
+  }
 }
 .main-container .intro-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 35rem;
 }
 .main-container .intro-container .intro-text {
   width: 100%;
@@ -192,7 +217,6 @@ h5 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 45rem;
   border-bottom: 1px solid #F6F7F8;
 }
 .main-container .middle-container .img-container {
@@ -206,6 +230,22 @@ h5 {
   width: 30%;
   height: 20rem;
   border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .main-container .middle-container .img-container .first-image {
+    width: 85%;
+    height: 20rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .middle-container .img-container .second-image {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main-container .middle-container .img-container .third-image {
+    display: none;
+  }
 }
 .main-container .middle-container .middle-text {
   width: 100%;
@@ -222,15 +262,24 @@ h5 {
 }
 .main-container .bottom-container {
   width: 85%;
-  height: 40rem;
   margin: 3rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #F6F7F8;
 }
+@media (max-width: 500px) {
+  .main-container .bottom-container {
+    flex-direction: column;
+  }
+}
 .main-container .bottom-container .bottom-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .main-container .bottom-container .bottom-text {
+    width: 100%;
+  }
 }
 .main-container .bottom-container .bottom-text h2 {
   font-size: 2.4rem;
@@ -255,21 +304,13 @@ h5 {
   border: 1px solid blue;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .main-container .bottom-container .bottom-text .button {
+    width: 95%;
+  }
+}
 .main-container .bottom-container img {
   width: 30rem;
   height: 25rem;
   border-radius: 5px;
-}
-.main-container .footer {
-  width: 100%;
-  height: 6rem;
-  margin-top: 1rem;
-  background-color: #F4F4F4;
-  border: 1px solid #F6F7F8;
-  border-radius: 5px;
-}
-.main-container .footer p {
-  font-size: 1.4rem;
-  text-align: center;
-  padding-top: 2rem;
 }
