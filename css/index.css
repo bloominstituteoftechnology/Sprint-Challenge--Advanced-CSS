@@ -189,6 +189,28 @@ p {
   justify-content: space-between;
   padding-top: 16px;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-content {
+  background: #F4F4F4;
+  color: #81848E;
+  width: 80%;
+  margin-top: 20px;
+  border-top: 2px solid #F1F1F1;
+  border-right: 2px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
+  border-left: 2px solid #F1F1F1;
+  border-radius: 4%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
 .home {
   display: flex;
   flex-direction: column;
@@ -242,6 +264,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   padding-top: 47px;
+  padding-bottom: 40px;
 }
 .home .bottom-content .text-content {
   width: 40%;
