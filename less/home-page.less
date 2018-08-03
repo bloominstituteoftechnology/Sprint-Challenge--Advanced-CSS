@@ -1,1 +1,103 @@
 // Home Content
+
+.home {
+    width: 1000px;
+    margin: 0 auto;
+
+    .header {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        
+        img {
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.home {
+    
+    .main-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .img-content {
+            
+            img {
+                border-radius: 20px;
+                width: 210px;
+                margin-top: 15px;
+                margin-left: 8px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .planets {
+        display: flex;
+        justify-content: center;
+
+        .bottom-content {
+            // border: 1px solid black;
+            width: 700px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 40px;
+
+            h2 {
+                font-size: 20px;
+                margin-left: 10px;
+                margin-top: 15px;
+            }
+            p {
+                margin-top: 15px;
+                font-size: 14px;
+                margin-left: 10px;
+
+            }
+        }
+    }
+
+    .walk-content {
+        display: flex;
+        justify-content: center;
+        // padding: 40px;
+
+        .walk-text {
+            width: 350px;
+            padding: 40px;
+            margin-left: 10px;
+
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+            .btn {
+                .button-creator(80px, 30px, navy, white, 13px);
+                margin-top: 15px;
+            }
+        }
+        .walk-img {
+            padding: 40px;
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
+
