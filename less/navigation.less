@@ -1,0 +1,51 @@
+// Color assignments
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-bg:  @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+
+// Colors
+@white: #FFFFFF;
+@silver: #C0C0C0;
+@shark: #212529;
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;
+
+@mobile: ~"(max-width: 500px)";
+
+header {
+    .center;
+    flex-flow: row wrap;
+    border-bottom: 2px solid @navigation-border;
+    /* color: #212529; */
+    /* @media @mobile { */
+    /* 	border-bottom: white; */
+    /* } */
+    
+    h1 {
+	width: 100%;
+	/* border: 1px solid red; */
+	text-align: center;
+	margin-top: 7px;
+	font-size: 2rem;
+	color: @font-color;
+    }
+
+    .as {
+	/* text-decoration: none; */
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 50%;
+	margin: 10px 0;
+	/* @media @mobile { */
+	/*     width: 100%; */
+	/* } */
+	/* border: 1px solid red; */
+	a {
+	    text-decoration: none;
+	    color: @font-color;
+	}
+    }
+}

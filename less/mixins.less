@@ -1,1 +1,23 @@
 // Mixins below variables
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexflow() {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.button-maker(@width, @height, @bg, @color, @border-rad) {
+    width: @width;
+    height: @height;
+    background: @bg;
+    color: @color;
+    border-radius: @border-rad;
+    border: @bg;
+}
+
