@@ -23,3 +23,11 @@
   font-size: 1.5rem;
   margin-top: 3%;
 }
+
+.keyframes(@name; @arguments) {
+  @keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+  animation: @arguments;
+}

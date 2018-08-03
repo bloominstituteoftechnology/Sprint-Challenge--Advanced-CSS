@@ -190,6 +190,29 @@ p {
   width: 100%;
   flex-basis: 100%;
   margin-top: 1.2%;
+  animation: wave 5s linear infinite alternate both;
+}
+@keyframes wave {
+  0% {
+    color: palevioletred;
+    background: lightblue;
+  }
+  25% {
+    color: greenyellow;
+    background: paleturquoise;
+  }
+  50% {
+    color: purple;
+    background: cornflowerblue;
+  }
+  75% {
+    color: gold;
+    background: royalblue;
+  }
+  100% {
+    color: paleturquoise;
+    background: blue;
+  }
 }
 .nav .nav-links {
   display: flex;

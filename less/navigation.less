@@ -11,6 +11,16 @@
     width: 100%;
     flex-basis: 100%;
     margin-top: 1.2%;
+
+    .keyframes(wave; {
+      0% { color: palevioletred; background:  lightblue;}
+      25% { color: greenyellow; background: paleturquoise; }
+      50% { color: purple; background: cornflowerblue; }
+      75% { color: gold; background: royalblue; }
+      100% { color: paleturquoise; background: blue; }
+    });
+
+    .animation(wave 5s linear infinite alternate both);
   }
   
   .nav-links {
