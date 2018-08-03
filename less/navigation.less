@@ -2,23 +2,28 @@
 
 .nav-section {
 	.center;
-	flex-direction: row;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: @regular-font-size;
-
-	.top-nav {
-		.center;
+	width: 100%;
+	flex-flow: row wrap;
+	padding: 20px 0;
+	background: @navigation-background;
+	border-bottom: 2px solid @navigation-border-color;
 	
-		h1 {
+	@media @phone {
+			flex-direction: column;
+		}
+	
+	h1 {
+			display: block;
 			justify-content: center;
 			align-content: center;
 			font-size: @large-font-size;
 		}
-
+	.top-nav {
+		flex-flow: row wrap;
 		a {
 			justify-content: space-evenly;
 			align-content: center;
+			font-size: @regular-font-size;
 		}
 	}
 }
