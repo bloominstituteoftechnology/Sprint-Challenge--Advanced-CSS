@@ -73,9 +73,12 @@ header {
   }
   .bottom-content {
     .flex-center();
+    border-bottom: solid 2px @main-border-color;
     padding-top: 50px;
+    padding-bottom: 50px;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: flex-start;
     width: 84%;
     .bottom-left-content {
       width: 330px;
@@ -84,12 +87,20 @@ header {
         font-size: 1.8rem;
       }
       p{
-        padding-bottom: 30px;
+        padding-bottom: 15px;
+      }
+      a{
+        .btn(1rem, bold, 106px, 38px, 4px, @ebony-clay, white);
       }
     }
     img {
       width: 322px;
       height: 242px;
+      border-radius: 2%;
     }
+  }
+  footer {
+    .flex-center;
+    height: 80px;
   }
 }

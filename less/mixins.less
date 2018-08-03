@@ -2,11 +2,21 @@
 .flex-center() {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.btn(@width, @height, @btn-bg-color, @btn-font-color) {
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+.btn(@font-size, @weight, @width, @height, @border-radius, @btn-bg-color, @btn-font-color) {
   .flex-center();
+  font-size: @font-size;
+  font-weight: @weight;
   width: @width;
   height: @height;
+  .border-radius(@border-radius);
   background: @btn-bg-color;
   color: @btn-font-color;
+  text-decoration: none;
 }
