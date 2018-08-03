@@ -19,11 +19,11 @@ Answer the following questions to the best of your ability. You can exercise you
 
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 4. How would you describe preprocessing to someone new to CSS?
 
-5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
+5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble?
 
 ## Task 3: Set up your preprocessor
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
@@ -44,7 +44,7 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html)
 * [ ] Navigation: Use the `navigation.less` file for styling.
 * [ ] Main Content: Use the `home-page.less` file for styling
 * [ ] Footer: Use the `footer.less` file for styling
@@ -53,7 +53,7 @@ Answer the following questions to the best of your ability. You can exercise you
 * [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
 
 ## Task 6: Home Page - Mobile HTML & LESS
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
+* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 * [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
 
 
