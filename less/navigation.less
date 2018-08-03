@@ -5,6 +5,10 @@
   background-color: @nav-bg;
   border-bottom: 2px solid @nav-bdr-color;
 
+  @media @mobile {
+    width: 100%;
+  }
+
 }
 
   .nav-container {
@@ -14,10 +18,29 @@
     flex-direction: column;
     align-items: center;
     //border: 1px solid black;
-  }
+
+    
+  
+    h1 {
+
+      @media @mobile {
+        font-size: 4rem;
+        position: relative;
+       left: 16px;
+      }
+      
+    }
+
+    }
 
     .nav {
       padding: 13px;
+
+      @media @mobile {
+        position: relative;
+        left: 16px;
+        top: 5px;
+      }
     }
 
     a {
