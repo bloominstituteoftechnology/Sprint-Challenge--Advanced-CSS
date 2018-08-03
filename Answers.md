@@ -17,3 +17,7 @@ Desktop first is the inverse of Mobile first in that we design the desktop layou
 ## 3. font-size: 62.5% in the html tag
 
 font-size: 62.5% in the html tag makes the dafault font size set at 10px so when we have to do the math for rem multiplication we just do rem * 10 = pixels. for instance 1.6rem = 16px in a standard browser setup. and this allows a uniform scaling to be done with browser settings and zooming.
+
+## 4. Decription of preprocessing
+
+Preprocessing in the terms of css is similar to any other preprocessing in that it takes the input of a less , scss, sass, ts file and then performs a transpile in to css. This is a process of parsing the file and turning it in to a css file that the browser can understand to style a website. Usually you would find use of preprocessing to simplify and streamline your workflow.
