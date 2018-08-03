@@ -24,6 +24,10 @@
     p {
       padding-top: 2%;
       padding-left: 3%;
+
+      @media @phone {
+        padding-bottom: 6%;
+      }
     }
 
   } // intro
@@ -34,6 +38,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
     .main-images {
       width: 100%;
       display: block;
@@ -43,6 +48,23 @@
         float: left;
         width: 28%;
         margin: 2%;
+
+        @media @phone {
+          width: 100%;
+          padding-bottom: 5%;
+        }
+      }
+
+       .two {
+        @media @phone {
+          display: none;
+        }
+      }
+        .three {
+          @media @phone {
+            display: none;
+          }
+        }
       }
    }
 } // main-content
@@ -56,6 +78,10 @@
 
     p {
       padding-top: 2%;
+
+      @media @phone {
+        padding-bottom: 6%;
+      }
     }
   } //middle-text
 
@@ -69,14 +95,28 @@
     border-top: 2px solid @main-border;
     border-bottom: 2px solid @main-border;
 
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+    }
     .walk-text {
       width: 40%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 80%;
+        margin: 0 auto 2%;
+      }
 
       h2 {
         padding-top: 2%;
         padding-bottom: 1%;
         font-size: 2rem;
+
+        @media @phone {
+          padding-top: 4%;
+        }
       }
 
       p {
@@ -88,13 +128,23 @@
       border-radius: 10px;
       width: 80%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 auto 4%;
+      }
     }
 
     .btn {
       .button-create(120px, 40px, @header-font, @main-bg, 1.2rem);
       flex-wrap: wrap;
       margin-top: 6%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 auto 2%;
+        margin-top: 8%;
+      }
     }
 
   }
-} //home
