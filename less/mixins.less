@@ -1,1 +1,15 @@
 // Mixins below variables
+.flex-and-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-creator(@width, @height, @background-color, @font-color, @radius) {
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+    color: @font-color;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}

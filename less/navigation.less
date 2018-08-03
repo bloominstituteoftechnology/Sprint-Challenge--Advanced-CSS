@@ -1,0 +1,27 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    background-color: @nav-background;
+    border-bottom: 2px solid @nav-border-color;
+    .header-logo {
+        font-size: 3.5rem;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        width: 35%;
+        min-width: 285px;
+        margin: 20px auto 0 auto;
+
+        .nav-link {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: @nav-font-color;
+        }
+    }
+}
+
