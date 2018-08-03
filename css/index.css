@@ -155,9 +155,13 @@ h5 {
   align-content: center;
   flex-direction: column;
   margin-top: 10px;
+  border: 100% #F1F1F1;
   background-color: #F6F6F6;
   color: #454A59;
-  border: #F1F1F1;
+}
+footer {
+  color: #81848E;
+  background-color: #F4F4F4;
 }
 .home {
   background-color: #FFFFFF;
