@@ -17,9 +17,9 @@
 <body>
   <div class="container home">
     <header class="main-navigation">
-      <h1>SpaceWalkers</h1>
+      <a href="index.html"><h1>SpaceWalkers</h1></a>
       <nav>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="#">About Us</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
@@ -37,11 +37,20 @@
       </section> <!-- top-content -->
 
       <div class="gallery">
-        <img src="img/blast.jpg" alt="Rocket blasting off">
+        <figure class="post-preview">
+            <img src="img/blast.jpg" alt="Rocket blasting off">
+            <div class="overlay">Rocket blasting off</div>
+        </figure>
 
-        <img class="hidden" src="img/sky.jpg" alt="Space sky image">
-      
-        <img class="hidden" src="img/launch.jpg" alt="Launching rocket">
+        <figure class="post-preview">
+            <img class="hidden" src="img/sky.jpg" alt="Space sky image">
+            <div class="overlay">Space sky image</div>
+        </figure>
+
+        <figure class="post-preview">
+            <img class="hidden" src="img/launch.jpg" alt="Launching rocket">
+            <div class="overlay">Launching rocket</div>
+        </figure>
       </div> <!-- gallery -->
 
       <div class="text-content inverse-content">
@@ -60,7 +69,12 @@
           <div class="btn">Sign Up</div>
         </div>
 
-        <img src="img/space-walk.jpg" alt="Space walking astronaut">
+        <figure class="post-preview">
+            <img src="img/space-walk.jpg" alt="Space walking astronaut">
+            <div class="overlay">Space walking astronaut</div>
+        </figure>
+
+        
       </section> <!-- bottom-content -->
 
         <footer>
