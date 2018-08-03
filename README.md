@@ -45,7 +45,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 ## Task 5: Home Page - Desktop HTML & LESS
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
-* [ ] Navigation: Use the `navigation.less` file for styling
+* [ ] Navigation: Use the `navigation.less` file for styling.
 * [ ] Main Content: Use the `home-page.less` file for styling
 * [ ] Footer: Use the `footer.less` file for styling
 * [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
@@ -63,4 +63,5 @@ Answer the following questions to the best of your ability. You can exercise you
 Stretch goals are only available if you complete every task listed above.  **Do not work on them until your pull request is in.**
 * [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
 * [ ] Introduce CSS animations to your site.
-* [ ] 
+* [ ] Create a fixed navigation and add some opacity to the background
+* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
