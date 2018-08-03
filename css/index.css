@@ -1,1 +1,261 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+p,
+a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+.main-navigation {
+  background-color: #F6F6F6;
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
+}
+.main-navigation .navcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+  height: 100px;
+}
+.main-navigation .navcontainer nav {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.main-navigation .navcontainer nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #454A59;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #F4F4F4;
+  color: #81848E;
+}
+.home .banner-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.home section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.home section div {
+  width: 96%;
+  margin-bottom: 15px;
+}
+.home .lift-off .img-row {
+  display: flex;
+  justify-content: space-between;
+}
+.home .lift-off .img-row img {
+  border-radius: 15px;
+  width: 31%;
+  height: 31%;
+}
+.home .visit-planets {
+  padding-bottom: 35px;
+  border-bottom: 1px solid #F6F7F8;
+}
+.home .visit-planets p {
+  margin-bottom: 15px;
+}
+.home .space-walk {
+  border-bottom: 1px solid #F6F7F8;
+  padding-bottom: 35px;
+}
+.home .space-walk .spacecontainer {
+  padding-top: 22px;
+  width: 84%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.home .space-walk .spacecontainer .text-content {
+  width: 43%;
+}
+.home .space-walk .spacecontainer p {
+  margin-bottom: 15px;
+}
+.home .space-walk .spacecontainer img {
+  width: 48%;
+  height: 48%;
+  border-radius: 5px;
+}
+.home .space-walk .spacecontainer a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 12px;
+  background-color: #23293B;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 5px;
+}

@@ -1,0 +1,16 @@
+#Task 2: Comprehesion Questions#
+
+##1. What is the difference between an adaptive website and a fully responsive website?##
+ A: An adaptive website changes CSS styles at various 'breakpoints' defined using CSS Media Queries and based on the current viewed width of the content. Fluid websites use percentages to size elements which allows the website to scale fluidly with any changes in the viewed width of the content. A fully responsive website is like a combination of the benefits of fluid websites and adaptive websites, using percentages to scale elements but also utilizing 'breakpoints' to update layouts to best fit a variety of viewports.
+
+##2. Describe what it means to be mobile first vs desktop first.##
+ A: A mobile first styling paradigm is used when your primary stylings (top most in the cascade) are created for mobile devices. The size of the elements defined on a style sheet are small at the top and big at the bottom. CSS Media Queries use min-width to determine breakpoints. A desktop first styling paradigm is used when your primary stylings are created for desktop devices.  The size of the elements definied are big at the top fo the style sheet and small at the bottom. CSS Media Queries use max-width to determine breakpoints. 
+
+##3. What does font-size: 62.5% in the html tag do for us when using rem units?##
+ A: The default font-size in the User Agent Style of most browsers is `16px`. The displayed font-size of rem units is calculatin by multiplying the number of rems by the font size of the root element (`<html>`). 16 is a difficult number to use when styling, but we still want to use the User Agent Style for accesibility, in case anyone has it turned up. To solve this, we find the ratio of 10 to 16 in percentages, which is 62.5%. Then, by setting the `font-size` of the html tag to `62.5%` we are setting `1rem` equal to `10px` making it easier to use, but preserving the accesibility advantage of rems.
+
+##4. How would you describe preprocessing to someone new to CSS?##
+ A: Preprocessing is just coding CSS in a nested hierarchy that mimics the structure of HTML and makes it more difficult to make specificity mistakes. Basically, you're just coding CSS in a specific structure with classes nested inside of other classes and using variable and collections of rules and parameters (called mixins) that is then taken in by a program (compiler) that interprets the structure and outputs a mostly normal css document.
+
+##5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?##
+ A: My favorite concept in preprocessing is either variables or mixins. So, interpolation I guess! I love that I can have most of what I might need to change in my CSS located conveniently in comparmentalized, organized, locations, while preserving an intuitive hierarchy of styling. That said, the concept that gives me the most trouble is the nesting of elements inside of other elements. I've used CSS for a while and the nesting doesn't feel intuitive yet. But I'm getting there!
