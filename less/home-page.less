@@ -35,6 +35,12 @@
         }
     
             border-bottom: 1px solid @Border-color-for-main-content;
+
+             @media @phone{
+                &:nth-child(1) {
+                    display: block;
+                  }
+            }
       }
 
 
@@ -63,6 +69,10 @@
         btn{
     
             .button-builder(@button-width, @button-height, @font-color, @button-bg);
+          }
+
+          @media @phone {
+            flex-wrap: wrap;
           }
       }
   
