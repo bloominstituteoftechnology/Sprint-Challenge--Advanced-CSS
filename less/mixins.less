@@ -1,1 +1,24 @@
-// Mixins below variables
+.flexbox(@l, @w) {
+    display: flex;
+    justify-content: @l;
+    flex-direction: @w;
+}
+.margin-content(){
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.button-creator(@width, @height, @bg-color, @font-color, @radius) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border-radius: @radius;
+    border: 1px solid @silver;
+    cursor: pointer;
+    .center;
+}
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
