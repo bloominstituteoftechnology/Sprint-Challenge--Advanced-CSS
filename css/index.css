@@ -169,6 +169,7 @@ p {
 }
 .main-navigation .nav-container {
   background: #F6F6F6;
+  opacity: 0.8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,18 +199,21 @@ footer .footer-content {
   background: #F4F4F4;
   color: #81848E;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 16px;
   border-top: 2px solid #F1F1F1;
   border-right: 2px solid #F1F1F1;
   border-bottom: 2px solid #F1F1F1;
   border-left: 2px solid #F1F1F1;
   border-radius: 4%;
-  height: 70px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
+}
+footer .footer-content h6 {
+  padding-bottom: 15px;
 }
 .home {
   display: flex;
@@ -264,24 +268,35 @@ footer .footer-content {
   display: flex;
   justify-content: space-evenly;
   padding-top: 47px;
-  padding-bottom: 40px;
+  padding-bottom: 48px;
 }
 .home .bottom-content .text-content {
-  width: 40%;
+  width: 41%;
+  padding-left: 19px;
+}
+.home .bottom-content .text-content h4 {
+  font-size: 2.8rem;
+  letter-spacing: 0px;
+  padding-top: 2px;
 }
 .home .bottom-content .text-content p {
-  margin-top: 10px;
+  margin-top: 11px;
+}
+.home .bottom-content .text-content .bot-p {
+  margin-top: 16px;
 }
 .home .bottom-content .img-content {
   width: 40%;
+  margin-right: 20px;
 }
 .home .bottom-content .img-content img {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 1.6%;
+  height: 242px;
 }
 .home .bottom-content .btn {
-  width: 100px;
-  height: 35px;
+  width: 107px;
+  height: 38px;
   background-color: #23293B;
   display: flex;
   flex-direction: column;
@@ -291,8 +306,8 @@ footer .footer-content {
   font-size: 1.6rem;
   border-radius: 5%;
   cursor: pointer;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 0px;
+  margin-top: 16px;
 }
 .home .bottom-content .btn:hover {
   color: #23293B;
