@@ -173,3 +173,36 @@ h5 {
 .all-header .all-header-contents .navigation-dests a {
   color: #454A59;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .cta-banner-text {
+  padding-top: 2%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home .cta-banner-text h2 {
+  padding-bottom: 1%;
+  font-size: 1.5rem;
+}
+.home .cta-banner-text p {
+  padding-bottom: 2%;
+}
+.home .images-section {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.home .images-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8%;
+  padding: 3%;
+}
