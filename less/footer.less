@@ -6,8 +6,11 @@ footer {
     background-color: @footer-bg-color;
     color: @footer-font-color;
     height: 80px;
-    border: 1px solid grey;
+    border: 1px solid @footer-border-color;
     border-radius: 5px;
     padding-top: 10px;
     font-size: 1.6rem;
+
+    @media @phone {}
+    width: 100%;
 }

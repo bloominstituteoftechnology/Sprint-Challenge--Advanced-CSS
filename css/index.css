@@ -159,6 +159,7 @@ h5 {
   align-items: center;
   padding: 20px 0 20px 0;
   background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
 }
 .header-container .header-logo {
   font-size: 3.5rem;
@@ -182,10 +183,11 @@ footer {
   background-color: #F4F4F4;
   color: #81848E;
   height: 80px;
-  border: 1px solid grey;
+  border: 1px solid #F1F1F1;
   border-radius: 5px;
   padding-top: 10px;
   font-size: 1.6rem;
+  width: 100%;
 }
 .home .top-image {
   width: 100%;
@@ -195,6 +197,7 @@ footer {
   width: 100%;
 }
 .home .main-content {
+  padding: 0 15px 0 15px;
   display: flex;
   flex-wrap: wrap;
   border-color: #F6F7F8;
@@ -222,6 +225,13 @@ footer {
 .home .main-content .img-group .middle-image {
   width: 31%;
 }
+@media (max-width: 500px) {
+  .home .main-content .img-group .middle-image {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 .home .main-content .img-group img {
   border-radius: 10px;
   width: 100%;
@@ -238,9 +248,9 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  padding: 40px 0 40px 0;
+  border-top: 1px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
+  padding: 40px 35px 40px 35px;
   margin-bottom: 10px;
 }
 .home .cta .text-content {
@@ -287,6 +297,7 @@ footer {
 @media (max-width: 500px) {
   .home .cta .img-space-walk {
     width: 100%;
+    margin: 15px 0 0 0;
   }
 }
 .home .cta .img-space-walk img {

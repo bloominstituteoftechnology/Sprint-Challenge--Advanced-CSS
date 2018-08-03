@@ -1,5 +1,6 @@
 // Home Content
 .home {
+
     .top-image {
         width: 100%;
         margin-bottom: 20px;
@@ -9,10 +10,10 @@
     }//top-image
 
     .main-content {
-
+        padding: 0 15px 0 15px;
         .flex-and-wrap;
         border-color: @main-content-border-color;
-
+        
         .text-content {
             width: 100%;
             h1 {
@@ -34,6 +35,11 @@
             margin-bottom: 20px;
             .middle-image {
                 width: 31%;
+                @media @phone {
+                    width: 100%;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
             }
             img {
                 border-radius: 10px;
@@ -54,11 +60,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        border-top: 1px solid grey;
-        border-bottom: 1px solid grey;
-        padding: 40px 0 40px 0;
+        border-top: 1px solid @cta-border-color;
+        border-bottom: 1px solid @cta-border-color;
+        padding: 40px 35px 40px 35px;
         margin-bottom: 10px;
-
+        
         .text-content {
 
             width: 40%;
@@ -93,6 +99,7 @@
             margin-left: 30px;
             @media @phone {
                 width: 100%;
+                margin: 15px 0 0 0;
             }
             img {
                 width: 100%;
