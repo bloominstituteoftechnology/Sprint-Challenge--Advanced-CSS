@@ -6,8 +6,11 @@
   max-width: 880px;
   width: 100%;
 
-  .header-content {
-
+  .text-section {
+   h2 {
+     padding: 1rem;
+     font-size: @main-h2-size;
+   }
   }
 
   .center-images {
@@ -20,6 +23,14 @@
       width: 33%;
       height: 16rem;
       .border-radius(30px);
+    }
+  }
+  .bottom-section {
+    .flex;
+    width: 80%;
+    .text-section {
+      .flex;
+      width: 50%;
     }
   }
 
