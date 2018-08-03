@@ -15,6 +15,7 @@
     .header {
 
         .flex-column();
+        
 
         h1 {
            .headings();
@@ -37,9 +38,14 @@
 
     .top-content {
         .flex-column;
+        .border-bottom();
 
         h2 {
            .headings();
+        }
+
+        p {
+            margin-bottom: 20px;
         }
     }
 
@@ -51,6 +57,7 @@
     // flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+        .border-bottom();
 
        .text-content {
            width: 48%;
@@ -62,7 +69,9 @@
 
            .btn {
                .button-factory(110px, 40px, @header-font-color, @main-bg-color);
+               margin-bottom: 20px;
            }
+
        }
 
        .bottom-img-content {
