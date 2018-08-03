@@ -1,1 +1,24 @@
 // Mixins below variables
+
+.simpleCenter() {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.button-creator(@width, @height, @bgColor, @fontColor, @navBorder) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: @fontColor;
+    border: 1px solid @navBorder;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @fontColor;
+      color: @bgColor;
+    }
+  }

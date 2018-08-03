@@ -1,1 +1,257 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+.hdr {
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hdr .heading {
+  font-size: 4rem;
+  color: #454A59;
+  margin: 15px 0;
+}
+.hdr .navigation {
+  width: 40%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hdr .navigation a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+}
+.ftr {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #F4F4F4;
+  border-color: #F6F7F8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ftr h6 {
+  font-size: 1.6rem;
+  color: #81848E;
+}
+.index {
+  display: flex;
+  flex-direction: column;
+}
+.index .main-img {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.index .lift {
+  width: 75%;
+  margin: 0 auto;
+}
+.index .lift-img {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.index .lift-img img {
+  width: 31%;
+  height: 31%;
+  border-radius: 20px;
+}
+.index .visit {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #F6F7F8;
+}
+.index .walk {
+  width: 70%;
+  margin: 30px auto 15px auto;
+  border-bottom: 2px solid #F6F7F8;
+  display: flex;
+  justify-content: space-between;
+}
+.index .walk .walk-content {
+  width: 48%;
+}
+.index .walk .walk-content .btn {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  background-color: #22283b;
+  color: white;
+  border: 1px solid #007bff;
+  cursor: pointer;
+}
+.index .walk .walk-content .btn:hover {
+  background-color: white;
+  color: #22283b;
+}
+.index .walk img {
+  border-radius: 5px;
+  width: 48%;
+  height: 48%;
+}

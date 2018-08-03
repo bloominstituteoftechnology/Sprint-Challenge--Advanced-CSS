@@ -1,0 +1,28 @@
+// Navigation styling
+
+.hdr {
+    background-color: @navBg;
+    border-bottom: 2px solid @navBorder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+        font-size: 4rem;
+        color: @navFont;
+        margin: 15px 0;
+    }
+
+    .navigation {
+        width: 40%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            font-size: @stdFont;
+            text-decoration: none;
+            color: @navFont;
+        }
+    }
+}

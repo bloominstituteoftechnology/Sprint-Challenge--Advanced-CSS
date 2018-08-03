@@ -1,1 +1,60 @@
 // Home Content
+
+.index {
+    display: flex;
+    flex-direction: column;
+
+    .main-img {
+        .simpleCenter;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+
+    .lift {
+        .simpleCenter;
+    }
+
+    .lift-img {
+        .simpleCenter;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 31%;
+            height: 31%;
+            border-radius: 20px;
+        }
+    }
+
+    .visit {
+        .simpleCenter;
+        padding-bottom: 30px;
+        border-bottom: 2px solid @mainBorder;
+    }
+
+    .walk {
+        width: 70%;
+        margin: 30px auto 15px auto;
+        border-bottom: 2px solid @mainBorder;
+        display: flex;
+        justify-content: space-between;
+
+        .walk-content {
+            width: 48%;
+
+            .btn {
+                font-size: 1.6rem;
+                .button-creator(100px, 40px, #22283b, white, #007bff);
+            }
+        }
+
+        img {
+            border-radius: 5px;
+            width: 48%;
+            height: 48%;
+        }
+
+        
+    }
+}
