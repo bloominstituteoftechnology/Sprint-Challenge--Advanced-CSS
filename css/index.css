@@ -175,8 +175,17 @@ h5 {
 }
 .home .center-images {
   display: flex;
+  width: 100%;
   flex-flow: row nowrap;
-  width: 30%;
+  justify-content: space-between;
+}
+.home .center-images img {
+  padding: 0.5rem;
+  width: 33%;
+  height: 16rem;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 .home h1 {
   font-size: 2rem;
