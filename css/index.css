@@ -147,6 +147,15 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+}
 .home {
   margin: 0 auto;
   text-align: center;
