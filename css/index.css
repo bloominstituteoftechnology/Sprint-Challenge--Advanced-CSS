@@ -169,6 +169,18 @@ header nav a {
   color: #454a59;
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 60%;
+    margin-top: 2%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  header nav {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
 footer {
   font-size: 1.6rem;
   margin-top: 3%;
@@ -191,6 +203,11 @@ footer {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home-container {
+    width: 100%;
+  }
+}
 .first-section {
   width: 100%;
   padding: 2%;
@@ -212,8 +229,22 @@ footer {
   padding: 2%;
   border-radius: 15%;
 }
-hr {
-  width: 80%;
+@media (max-width: 500px) {
+  .first-section .first-section-div-img .blast-img {
+    width: 100%;
+    padding: 5%;
+  }
+  .first-section .first-section-div-img .sky-img {
+    display: none;
+  }
+  .first-section .first-section-div-img .launch-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .first-section p {
+    line-height: 2rem;
+  }
 }
 .second-section {
   width: 100%;
@@ -226,6 +257,11 @@ hr {
 .second-section p {
   padding: 1%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .second-section p {
+    line-height: 2rem;
+  }
 }
 .third-section {
   width: 100%;
@@ -267,6 +303,48 @@ hr {
   background-color: #ffffff;
   color: #23293b;
 }
+@media (max-width: 800px) {
+  .third-section .third-section-div h2 {
+    font-size: 2rem;
+  }
+  .third-section .third-section-div .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 15%;
+    background-color: #23293b;
+    color: #ffffff;
+    border: 1px solid #f6f7f8;
+    cursor: pointer;
+    margin-left: 15%;
+  }
+  .third-section .third-section-div .btn:hover {
+    background-color: #ffffff;
+    color: #23293b;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .third-section .third-section-div {
+    width: 100%;
+  }
+  .third-section .third-section-div .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 20%;
+    background-color: #23293b;
+    color: #ffffff;
+    border: 1px solid #f6f7f8;
+    cursor: pointer;
+    margin-left: 10%;
+  }
+  .third-section .third-section-div .btn:hover {
+    background-color: #ffffff;
+    color: #23293b;
+  }
+}
 .third-section .third-section-div-img {
   width: 50%;
   padding: 5%;
@@ -274,4 +352,14 @@ hr {
 .third-section .third-section-div-img img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .third-section .third-section-div-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .third-section {
+    flex-wrap: wrap;
+  }
 }
