@@ -1,1 +1,13 @@
 // Mixins below variables
+.center-column()  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.border-creator(@tside, @rside, @botside, @lside, @type, @bcolor) {
+  border-top: @tside @type @bcolor;
+  border-right: @rside @type @bcolor;
+  border-bottom: @botside @type @bcolor;
+  border-left: @lside @type @bcolor;
+}
