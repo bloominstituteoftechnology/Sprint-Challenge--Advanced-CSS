@@ -145,7 +145,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #F1F1F1;
+  background: #F6F6F6;
   /* color: #212529; */
   /* @media @mobile { */
   /* 	border-bottom: white; */
@@ -157,14 +158,14 @@ header h1 {
   text-align: center;
   margin-top: 7px;
   font-size: 2rem;
-  color: #212529;
+  color: #454A59;
 }
 header .as {
-  /* text-decoration: none; */
+  /* border: 1px solid red; */
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   margin: 10px 0;
   /* @media @mobile { */
   /*     width: 100%; */
@@ -173,7 +174,7 @@ header .as {
 }
 header .as a {
   text-decoration: none;
-  color: #212529;
+  color: #454A59;
 }
 .main footer {
   width: 90%;
@@ -181,7 +182,7 @@ header .as a {
   margin-top: 10px;
   text-align: center;
   height: 55px;
-  background: #FFEBCD;
+  background: #F4F4F4;
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
@@ -192,59 +193,54 @@ header .as a {
   margin: auto;
   max-width: 880px;
 }
-.main {
-  width: 80%;
-  margin: auto;
-  max-width: 880px;
+.container .main .planets {
+  display: none;
 }
-.main .mainimg {
+.container .main .mainimg {
   display: flex;
   justify-content: center;
 }
-.main .mainimg img {
-  width: 90%;
-  height: 150px;
+.container .main .mainimg img {
+  width: 100%;
+  height: 180px;
 }
-.main .liftoff {
-  width: 90%;
+.container .main .liftoff {
+  width: 100%;
   margin: 15px auto;
+  /* border: 1px solid blue; */
 }
-.main .liftoff h1 {
+.container .main .liftoff h1 {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
-.main .images {
-  display: flex;
-  flex-flow: row nowrap;
+.container .main .liftoff p {
   /* border: 1px solid red; */
-  width: 90%;
-  margin: auto;
-  /* height: 150px; */
+}
+.container .main .images {
+  display: flex;
+  /* flex-direction: row; */
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 0 auto 25px auto;
   justify-content: space-between;
 }
-.main .images img {
-  width: 30%;
-  height: 40%;
+.container .main .images img {
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
 }
-.main .planets {
-  width: 90%;
-  margin: auto;
-  margin-top: 30px;
+.container .main .planets {
   margin-bottom: 40px;
-  /* display: flex; */
-  /* flex-flow: row wrap; */
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid darkgrey;
   padding-bottom: 30px;
 }
-.main .planets h1 {
+.container .main .planets h1 {
   margin-bottom: 10px;
   font-size: 1.5rem;
 }
-.main .walk {
+.container .main .walk {
   width: 90%;
   margin: auto;
   display: flex;
@@ -255,44 +251,32 @@ header .as a {
   /* padding-top: 10px; */
   border-bottom: 1px solid darkgray;
 }
-.main .walk h1 {
+.container .main .walk h1 {
   font-size: 1.5rem;
 }
-.main .walk section {
+.container .main .walk section {
   width: 40%;
   /* border: 1px solid red; */
 }
-.main .walk section img {
+.container .main .walk section img {
   width: 100%;
 }
-.main .walk section p {
+.container .main .walk section p {
   margin-top: 15px;
 }
-.main .walk section .btn {
+.container .main .walk section .btn {
   margin-top: 15px;
   margin-right: 150%;
   margin-bottom: 35px;
   font-size: 0.9rem;
   width: 80px;
   height: 30px;
-  background: #212529;
+  background: #23293B;
   color: white;
   border-radius: 3px;
-  border: #212529;
+  border: #23293B;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.main footer {
-  width: 90%;
-  margin: auto;
-  margin-top: 10px;
-  text-align: center;
-  height: 55px;
-  background: darkgrey;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
