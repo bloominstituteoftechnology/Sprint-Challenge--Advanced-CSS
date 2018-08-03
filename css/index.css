@@ -250,3 +250,12 @@ a {
   height: 48%;
   border-radius: 5px;
 }
+.home .space-walk .spacecontainer a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 12px;
+  background-color: #23293B;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 5px;
+}
