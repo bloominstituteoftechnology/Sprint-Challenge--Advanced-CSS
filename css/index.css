@@ -265,8 +265,12 @@ p {
   }
 }
 .container .home .lets .lets-text {
+  flex-wrap: wrap;
   flex-direction: column;
   width: 30%;
+}
+.container .home .lets .lets-text h2 {
+  margin: 10px;
 }
 .container .home .lets .lets-text .btn {
   -webkit-border-radius: 10px;
@@ -275,8 +279,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 20px;
+  width: 100px;
+  height: 30px;
   background-color: blue;
   color: white;
   cursor: pointer;
@@ -286,5 +290,6 @@ p {
   color: blue;
 }
 .container .home .astronaut {
-  margin-left: 10%;
+  height: 400px;
+  margin-left: 35%;
 }
