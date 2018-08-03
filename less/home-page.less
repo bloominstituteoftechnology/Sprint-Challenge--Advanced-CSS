@@ -35,7 +35,7 @@
     .center;
     width: 90%;
     align-self: center;
-    border-top: 1px solid @main-border;
+    padding: @bottom-section-padding;
     img {
       width: 50%;
       .border-radius(10px);
@@ -48,7 +48,8 @@
         .flex;
         .center;
         .button-creator(50px, 150px, @button-bg-color, @button-font);
-        .border-radius(10px);
+        .border-radius(5px);
+        border: 2px solid blue;
         padding: 1rem;
 
       }

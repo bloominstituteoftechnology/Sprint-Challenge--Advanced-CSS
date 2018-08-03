@@ -141,7 +141,6 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
 }
 .main-navigation {
   width: 100%;
@@ -161,7 +160,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 30%;
   padding: 1rem;
 }
 .main-navigation .nav-links a {
@@ -202,7 +201,7 @@ h5 {
   justify-content: center;
   width: 90%;
   align-self: center;
-  border-top: 1px solid #F6F7F8;
+  padding: 2rem 1rem 2rem 1rem;
 }
 .home .bottom-section img {
   width: 50%;
@@ -223,9 +222,10 @@ h5 {
   height: 50px;
   background-color: #23293B;
   color: #F6F6F6;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid blue;
   padding: 1rem;
 }
 .home h1 {
