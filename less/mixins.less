@@ -20,9 +20,9 @@
   margin: 0 auto;
 }
 
-.btn-maker(@width, @height, @bg-color, @font-color) {
+.btn-maker(@width, @height, @bg-color, @font-color, @radius) {
   .center;
-  border-radius: 15px;
+  border-radius: @radius;
   width: @width;
   height: @height;
   background-color: @bg-color;
