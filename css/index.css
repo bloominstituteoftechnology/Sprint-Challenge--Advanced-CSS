@@ -164,13 +164,13 @@ h5 {
   margin-top: 20px;
 }
 .main-navigation .navigation {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px;
 }
 .main-navigation .navigation a {
   text-decoration: none;
   color: #454A59;
-  padding: 0 7px;
+  padding: 0 10px;
 }
 .home {
   background-color: #FFFFFF;
