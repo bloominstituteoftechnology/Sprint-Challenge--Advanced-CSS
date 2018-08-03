@@ -1,1 +1,115 @@
 // Home Content
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background-color: @main-background-color;
+    width: 100%;
+    @media @mobile {
+        max-width: 500px;
+        width: 100%;
+    }
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+        @media @mobile {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+        }
+        .lift-off {
+            @media @mobile {
+                margin: 20px;
+            }
+            h1 {
+                .h1-format();
+            }
+            p {
+                .p-format();
+
+            }
+        }
+        .lift-img {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            @media @mobile {
+                justify-content: center;
+                margin: 0;
+                width: 200%;
+                margin-bottom: 20px;
+                .img-2 {
+                    display: none;
+                }
+                .img-3 {
+                    display: none;
+                }
+            }
+            img {
+                width: 30%;
+                height: 10%;
+                border-radius: 15px;
+            }
+        }
+        .can-we {
+            @media @mobile {
+                width: 90%;
+            }
+            h1 {
+                .h1-format();
+            }
+            p {
+                .p-format();
+                margin-bottom: 20px;
+            }
+            border-bottom: solid @border-color-for-main-content 1px;
+        }
+    }    
+
+    .bottom-section {
+        @media @mobile {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        display: flex;
+        width: 70%;
+        align-items: center;
+        margin: auto;
+        justify-content: space-between;
+        border-bottom: solid @border-color-for-main-content 1px;
+        .lets-go {
+            margin-top: 35px;
+            h1 {
+                .h1-format();
+            }
+            p {
+                .p-format();
+                margin: 20px 0;
+            }
+            .btn {
+                .sign-me-up-btn();
+                margin-bottom: 20px;
+                @media @mobile {
+                    width: 100%;
+                    height: 30px;
+                }
+            }
+        }
+        img {
+            height: 20%;
+            width: 50%;
+            @media @mobile {
+                width: 100%;
+            }
+        }
+    }    
+
+    
+}

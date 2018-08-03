@@ -1,1 +1,48 @@
 // Mixins below variables
+
+
+.h1-format() {
+        margin: 10px 0;
+        font-size: 2rem;
+        color: @header-font-color;
+}
+
+.p-format() {
+        font-size: 1.18rem;
+        line-height: 18px;
+        color: @paragraph-font-color;
+}
+
+
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    .border-radius(3px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid silver;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: @font-color;
+      color: @bg-color;
+    }
+  }
+
+.sign-me-up-btn() {
+    .button-creator(60px, 25px, black, white);
+}
