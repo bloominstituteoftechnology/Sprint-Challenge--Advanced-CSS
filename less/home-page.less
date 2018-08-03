@@ -104,10 +104,21 @@
         font-size: 1.6rem;
         font-weight: bold;
         margin-top: 9px;
+        transition: all 0.5s ease-in-out;
+
+        transform: translate(0);
+        box-shadow: 0;
 
         @media @phone {
           .button(100%, 37px, @button-bg, @button-color, @button-br, 5px);
-          
+        }
+
+        &:hover {
+          cursor: pointer;
+          transform: translate(10px 10px);
+          box-shadow: -10px -10px @button-bg;
+          background-color: @button-br;
+
         }
       }
 

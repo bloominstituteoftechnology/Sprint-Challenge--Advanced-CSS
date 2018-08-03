@@ -187,7 +187,7 @@ header .main-nav nav {
   align-items: center;
   justify-content: space-around;
   width: 50%;
-  padding: 13px 0;
+  padding: 9px 0;
 }
 @media ( max-width:501px ) {
   header .main-nav nav {
@@ -196,6 +196,12 @@ header .main-nav nav {
 }
 header .main-nav nav a {
   text-decoration: none;
+  transition: all 0.5s ease;
+  padding: 5px;
+}
+header .main-nav nav a:hover {
+  color: black;
+  transform: skew(15deg) scale(1.2);
 }
 footer {
   max-width: 800px;
@@ -327,6 +333,9 @@ footer p {
   font-size: 1.6rem;
   font-weight: bold;
   margin-top: 9px;
+  transition: all 0.5s ease-in-out;
+  transform: translate(0);
+  box-shadow: 0;
 }
 @media ( max-width:501px ) {
   .home .lower-section .lower-content .btn {
@@ -340,6 +349,12 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+}
+.home .lower-section .lower-content .btn:hover {
+  cursor: pointer;
+  transform: translate(10px 10px);
+  box-shadow: -10px -10px #22283B;
+  background-color: #0472E9;
 }
 .home .lower-section img {
   width: 42%;
