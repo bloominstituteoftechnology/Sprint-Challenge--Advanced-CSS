@@ -6,7 +6,17 @@
 }
 
 //header and footer color and border
-.bg-br-color(@bg-color, @br-color) {
+.br-color(@br-color) {
+  border-bottom: 2px solid @br-color;
+}
+
+//Button maker
+.button(@width, @height, @bg-color, @color, @br-color, @br-rad) {
+  width: @width;
+  height: @height;
   background-color: @bg-color;
+  color: @color;
   border: 2px solid @br-color;
+  border-radius: @br-rad;
+  .center;
 }

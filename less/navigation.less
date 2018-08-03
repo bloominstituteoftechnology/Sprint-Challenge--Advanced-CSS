@@ -1,8 +1,27 @@
 header {
-  .bg-br-color(@nav-bg, @nav-br-color);
+  .br-color(@nav-br-color);
+  background-color: @nav-bg;
+  padding-top: 17px;
 
 
   .main-nav {
+    .center();
+    flex-direction: column;
 
+    h1 {
+      font-size: 4rem;
+
+    }
+
+    nav {
+      .center();
+      justify-content: space-around;
+      width: 50%;
+      padding: 13px 0;
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }

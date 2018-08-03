@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: @main-bg;
 }
 
 html, body {
@@ -15,14 +16,22 @@ html, body {
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   font-size: 3rem;
+  color: @header-color;
 }
 
 p, a {
   font-size: 1.6rem;
+  color: @paragraph-color;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
 }
 
 .container {
-  max-width: 880px;
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  .br-color(@br-main-color);
 }
