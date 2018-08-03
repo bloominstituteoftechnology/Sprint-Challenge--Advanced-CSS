@@ -193,6 +193,11 @@ p {
   font-size: 1.6rem;
   margin: 1.5% 0;
 }
+@media (max-width: 500px) {
+  .nav .nav-links {
+    width: 100%;
+  }
+}
 .footer {
   background: #F4F4F4;
   color: #81848E;
