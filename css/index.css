@@ -152,8 +152,13 @@ h5 {
   color: #454A59;
   background-color: #F6F6F6;
 }
+@media ( max width = 500px ) {
+  .main-navigation {
+    align-content: center;
+  }
+}
 .main-navigation h1 {
-  font-size: 2rem;
+  font-size: 2.8rem;
   padding: 1rem;
 }
 .main-navigation .nav-links {
@@ -166,6 +171,11 @@ h5 {
 .main-navigation .nav-links a {
   text-decoration: none;
   color: #454A59;
+}
+@media ( max width = 500px ) {
+  .main-navigation .nav-links a {
+    display: flex;
+  }
 }
 .home {
   display: flex;

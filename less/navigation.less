@@ -7,7 +7,10 @@
   .padding-creator(@nav-padding);
   color: @nav-font;
   background-color: @nav-bg;
+  @media @phone {
+    align-content: center;
 
+  }
   h1 {
     font-size: @nav-h1-size;
     padding: 1rem;
@@ -18,9 +21,16 @@
     justify-content: space-between;
     width: 30%;
     padding: 1rem;
+    @media @phone {
+      
+
+    }
     a {
     .text-plain;
     color: @nav-font;
+    @media @phone {
+      display: flex;
+    }
     }
   }
 }
