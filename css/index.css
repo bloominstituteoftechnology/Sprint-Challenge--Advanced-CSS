@@ -132,6 +132,11 @@ table {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
 }
 h1,
 h2,
@@ -139,4 +144,71 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.hdr {
+  background-color: #F6F6F6;
+  border-bottom: 2px dashed #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hdr .heading {
+  font-size: 4rem;
+  color: #454A59;
+  margin: 15px 0;
+}
+.hdr .navigation {
+  width: 40%;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.hdr .navigation a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+}
+.ftr h6 {
+  font-size: 1.6rem;
+}
+.index {
+  display: flex;
+  flex-direction: column;
+}
+.index .main-img {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+}
+.index .lift {
+  width: 75%;
+  margin: 0 auto;
+}
+.index .lift-img {
+  width: 75%;
+  margin: 0 auto;
+}
+.index .lift-img img {
+  width: 33%;
+  height: 33%;
+  border-radius: 19px;
+}
+.index .visit {
+  width: 75%;
+  margin: 0 auto;
+}
+.index .walk {
+  width: 70%;
+  margin: 0 auto;
+}
+.index .walk img {
+  border-radius: 5px;
 }
