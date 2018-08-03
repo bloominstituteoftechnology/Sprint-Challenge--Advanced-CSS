@@ -150,6 +150,7 @@ h5 {
   flex-flow: column nowrap;
   padding: 0.5rem;
   color: #454A59;
+  background-color: #F6F6F6;
 }
 .main-navigation h1 {
   font-size: 2rem;
