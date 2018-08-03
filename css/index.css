@@ -1,1 +1,220 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  color: #5E6164;
+}
+.container .home {
+  background-color: #FFFFFF;
+}
+.main-navigation {
+  width: 100%;
+  height: 110px;
+  background: #F6F6F6;
+  color: #454A59;
+  border: 1px solid #F1F1F1;
+  position: fixed;
+}
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-container nav a {
+  width: 100%;
+  text-align: center;
+  padding: 0 40px 5px 40px;
+  color: #454A59;
+}
+footer {
+  text-align: center;
+  background-color: #F4F4F4;
+  color: #81848E;
+}
+.walk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.walk p {
+  width: 50%;
+}
+.walk .btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 35px;
+  background-color: #454A59;
+  color: #F1F1F1;
+  border: 1px solid blue;
+  cursor: pointer;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .walk .btn {
+    width: 100%;
+  }
+}
+.walk .btn:hover {
+  background: #F1F1F1;
+  color: #454A59;
+}
+.walk img {
+  width: 50%;
+}
