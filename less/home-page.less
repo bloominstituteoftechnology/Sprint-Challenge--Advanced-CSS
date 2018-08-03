@@ -1,1 +1,162 @@
 // Home Content
+.home {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  .head {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .main-content {
+    .center-column;
+    margin-bottom: 32px;
+
+    .text-content {
+      width: 77%;
+      padding-top: 20px;
+      padding-bottom: 16px;
+
+      @media @phone {
+        width: 94%;
+      }
+
+      h3  {
+        padding-bottom: 11px;
+      }
+    }
+
+    .img-content  {
+      display: flex;
+      justify-content: space-between;
+      width: 77%;
+      padding-bottom: 29px;
+
+      @media @phone {
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      img  {
+        border-radius: 7%;
+        width: 30.6%;
+        height: 177px;
+      }
+
+      .non-phone  {
+        @media @phone  {
+          display: none;
+        }
+      }
+
+      .phone-img  {
+        @media @phone {
+          width: 80%;
+          height: 300px;
+          margin-right: 28px;
+          border-radius: 4%;
+        }
+      }
+      
+    }
+
+    .bottom-text {
+      h4  {
+        padding-bottom: 10px;
+      }
+
+      p   {
+        padding-bottom: 16px;
+      }
+
+      @media @phone  {
+        padding-top: 14px;
+      }
+    }
+  }//main content
+
+  .bottom-content {
+    .border-creator(2px, 0px, 2px, 0px, solid, @border-color-main-content);
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 47px;
+    padding-bottom: 48px;
+
+    @media @phone {
+      width: 100%;
+      .center-column;
+    }
+
+    .text-content {
+      width: 41%;
+      padding-left: 19px;
+
+      @media @phone {
+        width: 82%;
+      }
+
+      h4  {
+        font-size: 2.8rem;
+        letter-spacing: 0px;
+        padding-top: 2px;
+      }
+
+      p   {
+        margin-top: 11px;
+      }
+
+      .bot-p  {
+        margin-top: 16px;
+
+        @media @phone {
+          width: 96%;
+        }
+      }
+    }
+
+    .img-content  {
+      width: 40%;
+      margin-right: 20px;
+
+      @media @phone {
+        width: 100%;
+        .center-column;
+        margin-right: 0;
+        margin-top: 20px;
+      }
+
+      img   {
+        width: 100%;
+        border-radius: 1.6%;
+        height: 242px;
+
+        @media @phone {
+          width: 75%;
+          height: 281px;
+        }
+      }
+    }
+
+    .btn  {
+      .btn-creator(107px, 38px);
+      margin-left: 0px;
+      margin-top: 16px;
+
+      @media @phone {
+        .btn-creator(372px, 50px);
+        margin-top: 36px;
+      }
+    }
+  }
+}//home
