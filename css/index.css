@@ -181,7 +181,7 @@ h5 {
 }
 .home .cta-banner-text {
   padding-top: 2%;
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,9 +190,11 @@ h5 {
 .home .cta-banner-text h2 {
   padding-bottom: 1%;
   font-size: 1.5rem;
+  color: #23293B;
 }
 .home .cta-banner-text p {
   padding-bottom: 2%;
+  color: #5E6164;
 }
 .home .images-section {
   width: 60%;
@@ -205,4 +207,44 @@ h5 {
   height: auto;
   border-radius: 8%;
   padding: 3%;
+}
+.home .bottom-text {
+  padding-bottom: 3%;
+  padding-top: 3%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom-color: #F6F7F8;
+}
+.home .bottom-cta {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+.home .bottom-cta .bottext {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.home .bottom-cta .bottext h2 {
+  padding-bottom: 2%;
+}
+.home .bottom-cta .bottext p {
+  padding-bottom: 2%;
+}
+.home .bottom-cta .bottext .btn {
+  padding-top: 4%;
+  padding-left: 30%;
+}
+.home .bottom-cta img {
+  width: 30%;
+  height: 30%;
+  border-radius: 8%;
 }
