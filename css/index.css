@@ -318,6 +318,11 @@ footer {
   align-items: flex-end;
   padding-bottom: 5%;
 }
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
 .home .gallery {
   display: flex;
   justify-content: space-around;
