@@ -5,6 +5,11 @@
     flex-direction: column;
 }
 
+.flex-row() {
+    display: flex;
+    flex-direction: row;
+}
+
 .nav-padding () {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -13,3 +18,34 @@
 .border-bottom-style () {
     border-bottom: 1px solid @nav-border-color;
 }
+
+.text-header-style () {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+// Button Creator Section//
+
+// Border Radius
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    .border-radius(5px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: @btn-font-color;
+    border: 1px solid @btn-border-color;
+    cursor: pointer;
+  }

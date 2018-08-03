@@ -161,11 +161,24 @@ h5 {
 .nav-bar nav {
   padding-bottom: 1rem;
 }
+.footer {
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .container {
   display: flex;
   flex-direction: column;
-  width: 680px;
+  width: 681px;
   margin: 0 auto;
+}
+.container .text-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 .container .CTA-img {
   display: flex;
@@ -186,7 +199,7 @@ h5 {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .container .liftoff .liftoff-images {
   width: 100%;
@@ -210,6 +223,18 @@ h5 {
 }
 .container .spacewalk .spacewalk-text .signup {
   margin-top: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  border: 1px solid blue;
+  cursor: pointer;
 }
 .container .spacewalk img {
   width: 40%;
