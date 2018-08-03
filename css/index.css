@@ -140,14 +140,27 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  color: #454A59;
 }
 h2 {
   font-size: 4rem;
+}
+h3 {
+  font-size: 3.1rem;
+  letter-spacing: 0.6px;
+}
+h4 {
+  letter-spacing: -1.1px;
+  font-size: 3rem;
 }
 .container {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 .main-navigation {
   position: sticky;
@@ -171,4 +184,41 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
+}
+.home .head {
+  display: flex;
+  justify-content: center;
+}
+.home .head img {
+  width: 80%;
+}
+.home .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .main-content .text-content {
+  width: 77%;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.home .main-content .text-content h3 {
+  padding-bottom: 11px;
+}
+.home .main-content .img-content {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+  padding-bottom: 29px;
+}
+.home .main-content .img-content img {
+  border-radius: 7%;
+  width: 30.6%;
+  height: 177px;
+}
+.home .main-content .bottom-text h4 {
+  padding-bottom: 10px;
+}
+.home .main-content .bottom-text p {
+  padding-bottom: 16px;
 }
