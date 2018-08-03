@@ -169,6 +169,9 @@ img:hover {
   display: flex;
   font-weight: bold;
 }
+.nav-header:hover {
+  background: #dddddd;
+}
 .nav-header .home-nav {
   flex-direction: column;
   justify-content: center;
