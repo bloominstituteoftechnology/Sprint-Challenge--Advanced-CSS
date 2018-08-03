@@ -193,7 +193,8 @@ h5 {
   }
 }
 .home {
-  width: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 .home .banner {
   width: 100%;
