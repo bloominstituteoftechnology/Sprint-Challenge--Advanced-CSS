@@ -229,8 +229,8 @@ h5 {
 }
 @media (max-width: 500px) {
   .home .top-content .images-bar .blast-off {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    content: 0 5%;
   }
   .home .top-content .images-bar .space-sky {
     display: none;
@@ -241,7 +241,8 @@ h5 {
 }
 @media (max-width: 500px) {
   .home .top-content {
-    width: 100%;
+    margin: 0 5%;
+    width: 90%;
     padding: 0;
   }
 }
@@ -260,12 +261,18 @@ h5 {
   padding-bottom: 40px;
   border-bottom: 2px solid darkgrey;
 }
+@media (max-width: 500px) {
+  .home .middle-content {
+    width: 100%;
+  }
+}
 .home .bottom-content {
   display: flex;
   padding: 1% 12%;
   padding-bottom: 40px;
   width: 100%;
   border-bottom: 2px solid darkgrey;
+  flex-wrap: wrap;
 }
 .home .bottom-content h2 {
   font-size: 2rem;
@@ -277,6 +284,22 @@ h5 {
 }
 .home .bottom-content img {
   border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .home .bottom-content {
+    display: block;
+  }
+  .home .bottom-content p .bottom-text {
+    width: 100%;
+  }
+  .home .bottom-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .bottom-content {
+    display: block;
+  }
 }
 html {
   font-size: 62.5%;

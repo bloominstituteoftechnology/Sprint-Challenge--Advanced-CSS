@@ -39,8 +39,8 @@
             {
                 .blast-off
                 {
-                    width: 90%;
-                    margin: 0 5%;
+                    width: 100%;
+                    content: 0 5%;
                 }
                 .space-sky
                 {
@@ -55,7 +55,8 @@
 
         @media @mobile
         {
-            width:100%;
+            margin: 0 5%;
+            width: 90%;
             padding: 0;
         }
     }
@@ -68,6 +69,11 @@
         {
             padding-bottom: 40px;
             .content-bottom-border;
+        }
+
+        @media @mobile
+        {
+            width: 100%;
         }
     }
 
@@ -85,5 +91,32 @@
         padding-bottom: 40px;
         width: 100%;
         .content-bottom-border;
+        flex-wrap: wrap;
+
+        @media @mobile
+        {
+            display: block;
+
+            p
+            {
+                .bottom-text
+                {
+                    width: 100%;
+                }
+            }
+            
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    @media @mobile
+    {
+        .bottom-content
+        {
+            display: block;
+        }
     }
 }
