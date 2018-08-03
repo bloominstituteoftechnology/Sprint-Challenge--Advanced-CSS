@@ -186,6 +186,12 @@ h5 {
 .main-nav nav a:hover {
   color: black;
 }
+@media (max-width: 500px) {
+  .main-nav nav {
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
 .home {
   width: 80%;
 }
@@ -193,6 +199,11 @@ h5 {
   width: 100%;
   padding: 1% 12%;
   height: 200px;
+}
+@media (max-width: 500px) {
+  .home .banner {
+    height: 50px;
+  }
 }
 .home .top-content {
   padding: 1% 12%;
@@ -215,6 +226,24 @@ h5 {
   border-radius: 10px;
   width: 31%;
   height: 5%;
+}
+@media (max-width: 500px) {
+  .home .top-content .images-bar .blast-off {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .home .top-content .images-bar .space-sky {
+    display: none;
+  }
+  .home .top-content .images-bar .launching-off {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .middle-content {
   padding: 1% 12%;

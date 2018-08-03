@@ -9,6 +9,11 @@
         width: 100%;
         padding: 1% 12%;
         height: 200px;
+
+        @media @mobile
+        {
+            height: 50px;
+        }
     }
 
     .top-content
@@ -29,6 +34,29 @@
                 width: 31%;
                 height: 5%;
             }
+
+            @media @mobile
+            {
+                .blast-off
+                {
+                    width: 90%;
+                    margin: 0 5%;
+                }
+                .space-sky
+                {
+                    display: none;
+                }
+                .launching-off
+                {
+                    display: none;
+                }
+            }
+        }
+
+        @media @mobile
+        {
+            width:100%;
+            padding: 0;
         }
     }
 
