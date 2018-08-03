@@ -1,11 +1,6 @@
 // Home Content
 .home {
 
-  .contain {
-    max-width: 770px;
-    margin: 0 auto;
-  }
-
   .main-section {
 
     img {
@@ -15,6 +10,7 @@
 
     .main-content {
       padding: 18px 0px;
+      .padding;
 
       h2 {
         margin-bottom: 10px;
@@ -25,20 +21,40 @@
 
   .middle-section {
     .br-color(@br-main-color); 
+    .padding;
 
     .middle-imgs {
       .center;
       justify-content: space-between;
 
+      @media @phone {
+        justify-content: center;
+        padding-top: 25px;
+      }
+
+      .hide {
+        @media @phone {
+          display: none;
+        }
+      }
+
       img {
         width: 31%;
         border-radius: 15px;
+
+        @media @phone {
+          width: 88%;
+        }
       }
     } //Middle images end
 
     .middle-content {
       margin-top: 46px;
       padding-bottom: 63px;
+
+      @media @phone {
+        margin-top: 38px;
+      }
 
       h3 {
         letter-spacing: -1px;
@@ -54,10 +70,21 @@
   .lower-section {
     padding: 47px 0 46px 0;
     .center;
+    .br-color(@br-main-color);
+    .padding;
+
+    @media @phone {
+      flex-direction: column;
+    }
 
     .lower-content {
       width: 46%;
       padding-right: 4%;
+
+      @media @phone {
+        width: 80%;
+        padding: 0 0 28px 0;
+      }
 
       h3 {
         letter-spacing: -1px;
@@ -65,6 +92,10 @@
 
       p {
         padding: 10px 0;
+
+        @media @phone {
+          padding: 12px 0;
+        }
       }
 
       .btn {
@@ -72,6 +103,11 @@
         font-size: 1.6rem;
         font-weight: bold;
         margin-top: 9px;
+
+        @media @phone {
+          .button(100%, 37px, @button-bg, @button-color, @button-br, 5px);
+          
+        }
       }
 
     }
@@ -80,6 +116,12 @@
       width: 42%;
       height: 244px;
       align-self: flex-start;
+
+      @media @phone {
+          width: 82%;
+          align-self: center;
+          height: 278px;
+      }
     }
   } //Lower section end
 } // home end
