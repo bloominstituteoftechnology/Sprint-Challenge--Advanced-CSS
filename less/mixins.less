@@ -31,6 +31,12 @@
 .mid-images(@width: auto, @border-radius: none){
   width: @width;
   border-radius: @border-radius;
+  @media @mobile {
+    &:not(.first){
+      display: none;
+    }
+    width: 100%;
+  }
 }
 
 .btn(@width: auto, @height: auto, @font-color: white, @background: @black, @border-radius: none, @padding: none, @margin: none, @font-size: 1rem){

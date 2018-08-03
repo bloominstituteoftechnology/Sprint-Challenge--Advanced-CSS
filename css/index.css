@@ -134,6 +134,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 62.5%;
+  line-height: 1.5;
 }
 h1,
 h2,
@@ -146,6 +147,11 @@ h5 {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 5%;
+  }
 }
 .nav-header {
   border-bottom: 2px solid #F1F1F1;
@@ -204,6 +210,11 @@ h5 {
   font-size: 1.6rem;
   color: #81848E;
 }
+@media (max-width: 500px) {
+  .footer p {
+    padding: 0;
+  }
+}
 .main-content {
   width: 100%;
   flex-direction: column;
@@ -216,9 +227,19 @@ h5 {
   background: #ffffff;
   padding: 0 0 20px 0;
 }
+@media (max-width: 500px) {
+  .main-content {
+    flex-direction: center;
+  }
+}
 .main-content img {
   width: 100%;
   max-width: 880px;
+}
+@media (max-width: 500px) {
+  .main-content img {
+    width: 120%;
+  }
 }
 .main-content h2 {
   font-size: 2.4rem;
@@ -231,6 +252,11 @@ h5 {
   font-size: 1.6rem;
   color: #5E6164;
 }
+@media (max-width: 500px) {
+  .main-content p {
+    margin: 10px 0 10px;
+  }
+}
 .three-images {
   margin: 20px 0;
 }
@@ -238,6 +264,14 @@ h5 {
   width: 30%;
   border-radius: 15px;
   margin: 0 1.5%;
+}
+@media (max-width: 500px) {
+  .three-images img {
+    width: 100%;
+  }
+  .three-images img:not(.first) {
+    display: none;
+  }
 }
 .walk {
   flex-direction: row;
@@ -249,9 +283,19 @@ h5 {
   margin: 0 0 10px 0;
   border-bottom: 1px solid #d9dee2;
 }
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column;
+  }
+}
 .walk .walk-text {
   width: 48%;
   padding-right: 3%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
 }
 .walk .walk-text h2 {
   font-size: 2.4rem;
@@ -259,10 +303,20 @@ h5 {
   color: #23293B;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .walk .walk-text h2 {
+    margin: 20px 0;
+  }
+}
 .walk .walk-text p {
   font-size: 1.6rem;
   color: #5E6164;
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .walk .walk-text p {
+    margin: 10px 0 10px;
+  }
 }
 .walk .walk-text button {
   width: auto;
@@ -274,7 +328,19 @@ h5 {
   margin: none;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .walk .walk-text button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+}
 .walk img {
   border-radius: 5px;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .walk img {
+    width: 100%;
+  }
 }
