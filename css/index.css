@@ -15,6 +15,25 @@
   background-color: white;
   color: darkblue;
 }
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+    height: 60px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid aqua;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
+    background-color: white;
+    color: darkblue;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -157,6 +176,16 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  body {
+    max-width: 450px;
+  }
+}
 .container {
   background-color: #F6F6F6;
   color: #454A59;
@@ -175,6 +204,11 @@ h5 {
   display: flex;
   justify-content: space-evenly;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .container .nav-bar {
+    width: 100%;
+  }
 }
 .container .nav-link {
   text-decoration: none;
@@ -204,6 +238,20 @@ h5 {
   flex-wrap: wrap;
   margin: auto;
   background-color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .middle-section .top-image {
+    max-width: 500px;
+    width: 100%;
+  }
+  .middle-section .image-1 {
+    max-width: 500px;
+    width: 100%;
+  }
+  .middle-section .image-2,
+  .middle-section .image-3 {
+    display: none;
+  }
 }
 .middle-section .top-content {
   display: flex;
@@ -236,5 +284,25 @@ h5 {
   flex-direction: column;
 }
 .middle-section .bottom-content .bottom-main {
-  width: 50%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .middle-section .bottom-content {
+    background-color: red;
+    width: 100%;
+    margin: auto;
+  }
+  .middle-section .bottom-content .bottom-text {
+    padding-bottom: 30px;
+  }
+  .middle-section .bottom-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .middle-section .btn,
+  .middle-section img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

@@ -26,4 +26,9 @@
 .btn {
     .button-creator(80px, 30px, @button-bg, @font-color);
     .center;
+
+    @media @phone {
+        .button-creator(100%, 60px, @button-bg, @font-color);
+        .center;
+    }
 }

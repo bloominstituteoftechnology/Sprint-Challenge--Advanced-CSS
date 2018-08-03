@@ -7,6 +7,21 @@
     margin: auto;
     background-color: @Main-background-color;
     
+    @media @phone {
+        .top-image {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .image-1 {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .image-2, .image-3 {
+            display: none;
+        }
+    }
 
     .top-content {
         display: flex;
@@ -43,8 +58,28 @@
         flex-direction: column;
 
         .bottom-main {
-            width: 50%;
-            
+            width: 100%;
+        }
+
+        @media @phone {
+            background-color: red; 
+            width: 100%;
+            margin: auto;
+
+            .bottom-text {
+                padding-bottom: 30px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media @phone {
+        .btn, img {
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 
