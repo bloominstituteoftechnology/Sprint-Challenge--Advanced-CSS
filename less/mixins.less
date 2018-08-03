@@ -1,1 +1,22 @@
 // Mixins below variables
+
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-creator(@width, @height, @radius, @bg-color, @fg-color) {
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    background-color: @bg-color;
+    color: @fg-color;
+    margin-top: 20px;
+    cursor: pointer;
+    .center();
+}
