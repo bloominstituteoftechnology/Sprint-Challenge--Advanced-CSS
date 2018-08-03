@@ -145,3 +145,22 @@ h5 {
   margin: auto;
   border: 1px solid black;
 }
+.main-nav {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.main-nav h1 {
+  align-self: center;
+}
+.main-nav .nav {
+  display: flex;
+  justify-content: center;
+}
+.liftoff .images {
+  max-width: 880px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
