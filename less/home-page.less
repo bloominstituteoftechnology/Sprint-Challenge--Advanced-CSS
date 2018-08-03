@@ -1,15 +1,91 @@
 // Home Content
-.container .home-page {
-    max-width: 880px;
-    margin: 0 auto;
+.container {
+    .home-page {
+        max-width: 880px;
+        margin: 0 auto;
 
-    .main-header-img-div {
-        text-align: center;
-        height: 200px;
-        
-        img {
+        .main-header-img-div {
+            text-align: center;
+            height: 200px;
+            margin-bottom: 18px;
+            
+            img {
+                width: 91%;
+                height: 100%;
+            }
+        } // main-header-img-div
+
+        .lift-off-section {
+            margin: 0 55px 18px 55px;
+
+            h2 {
+                font-size: 2rem;
+                color: @header-font-color;
+                margin-bottom: 15px;
+            }
+
+            p {
+                line-height: 140%;
+            }
+        } // lift-off-section
+
+        .mid-img-div {
+            margin: 0 55px 48px 55px;
+            display: flex;
+            justify-content: space-between;
+            height: 178px;
+            img {
+                width: 30.8%;
+                border-radius: 9%;
+            }
+        } // mid-img-div
+
+        .can-we-visit-planets-section {
+            margin: 0 55px 18px 55px;
+            padding-bottom: 52px;
+
+            h2 {
+                font-size: 1.75rem;
+                color: @header-font-color;
+                margin-bottom: 15px;
+            }
+
+            p {
+                line-height: 140%;
+            }
+        } // can-we-visit-planets-section
+
+        hr {
             width: 91%;
-            height: 100%;
+            margin-bottom: 48px;
         }
-    }
-}
+
+        .lets-go-for-a-walk-section {
+            margin: 0 104px 18px 104px;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                width: 46%;
+                
+                h2 {
+                    font-size: 1.75rem;
+                    color: @header-font-color;
+                    margin-bottom: 15px;
+                }
+    
+                p {
+                    line-height: 140%;
+                }
+
+                .second-walk-p {
+                    background: red;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        } // lets-go-for-a-walk-section
+    } // home-page
+} // container
