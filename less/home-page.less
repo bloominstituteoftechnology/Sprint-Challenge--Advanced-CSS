@@ -18,7 +18,7 @@
         padding: 0 1%;
 
         @media @phone {
-            padding: 3%;
+            padding: 0 3%;
         }
     }
 
@@ -39,6 +39,10 @@
     .inverse-content {
         margin-left: 1%;
         margin-bottom: 45px;
+
+        @media @phone {
+            margin-bottom: 30px;
+        }
     }
 
     .gallery {
@@ -48,6 +52,7 @@
 
         @media @phone {
             flex-direction: column;
+            margin-bottom: 10px;
         }
 
         img {
@@ -57,6 +62,7 @@
 
             @media @phone {
                 width: 85%;
+                height: 50%;
                 margin: 0 6%;
             }
         }
@@ -87,7 +93,6 @@
             margin-right:3%;
 
             @media @phone {
-                margin: 0;
                 width: 100%;
             }
         }
@@ -98,7 +103,8 @@
             .border-radius(5px);
 
             @media @phone {
-                width: 100%;
+                width: 95%;
+                margin-left: 2%;
             }
         }
     }
