@@ -1,1 +1,135 @@
 // Home Content
+.home {
+
+  .intro {
+		padding: 90px 0 10px;
+		img {
+			width: 100%;
+      height: auto;
+      .bounce;
+		}
+		h2 {
+      margin-top: 20px;
+      color: @header-font-color;
+		}
+  }
+
+  @media @phone {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .content-section {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: @header-font-color;
+    border: 1px solid @border-main;
+    
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .img-2, .img-3{
+      @media @phone {
+        display: none;
+      }
+    }
+   
+    
+    .text-content {
+      width: 100%;
+      padding-right: 1%;
+      padding-top: 40px;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
+  }
+
+  .content-section-bottom {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding-top: 50px;
+    border-top: 3px solid @navigation-border;
+    color: @header-font-color;
+
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+   
+    
+    .text-content {
+      padding-right: 1%;
+
+
+      .btn {
+        margin: 20px 0;
+        .button-creator(100px, 45px, @ebony-clay, white);
+        font-size: 1.5rem;
+
+        @media @phone {
+          width: 100%;
+          margin: 0 auto 30px;
+        }
+      }
+    }
+  }
+
+    .img-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      img {
+        border-radius: 10px;
+        width: 30%;
+        height: 100%;
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+    }
+
+  .img-content-bottom {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    margin: 0 auto 30px;
+    width: 100%;
+
+    @media @phone {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  footer{
+    background-color: @footer-bg;
+    margin-top: 40px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}// home
