@@ -1,0 +1,26 @@
+.main-navigation {
+    background-color: @navbackground;
+    color: @navigationatext;
+    border-bottom: 2px solid @navigationborder;
+    .navcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 15px;
+        height: 100px;
+        nav {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: stretch;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: @navigationatext;
+            }
+        }
+    }  
+}
