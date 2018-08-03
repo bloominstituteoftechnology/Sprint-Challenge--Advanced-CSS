@@ -170,6 +170,7 @@ img {
 }
 .main-navigation {
   width: 100%;
+  position: fixed;
   background-color: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
 }
@@ -216,6 +217,7 @@ footer p {
   width: 100%;
 }
 .home .header img {
+  margin-top: 108px;
   width: 100%;
 }
 .home .header h2 {
