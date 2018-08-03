@@ -235,6 +235,7 @@ hr {
   align-items: center;
   border-top: 3px solid #f6f7f8;
   border-bottom: 3px solid #f6f7f8;
+  background-color: blue;
 }
 .third-section h2 {
   padding: 1%;
@@ -247,6 +248,25 @@ hr {
 .third-section .third-section-div {
   width: 50%;
   padding: 5%;
+  background-color: red;
+}
+.third-section .third-section-div .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+  width: 25%;
+  height: 10%;
+  background-color: #23293b;
+  color: #ffffff;
+  border: 1px solid #f6f7f8;
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin-left: 5%;
+}
+.third-section .third-section-div .btn:hover {
+  background-color: #ffffff;
+  color: #23293b;
 }
 .third-section .third-section-div-img {
   width: 50%;
