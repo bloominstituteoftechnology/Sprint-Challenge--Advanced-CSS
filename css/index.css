@@ -159,11 +159,12 @@ header {
   border-bottom: solid #F1F1F1 3px;
 }
 header h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav a {
   text-decoration: none;
@@ -233,6 +234,7 @@ footer .footer-content p {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .bottom-content .bottom-text {
   width: 45%;
@@ -240,7 +242,7 @@ footer .footer-content p {
 .bottom-content .bottom-text a {
   text-decoration: none;
   font-size: 1.6rem;
-  padding: 10px 15px;
+  padding: 10px 1.5%;
   background: #23293B;
   color: #F6F7F8;
   border-radius: 5px;
