@@ -145,7 +145,7 @@ h5 {
   width: 100%;
   text-align: center;
   color: #454A59;
-  background-color: red;
+  background-color: #F6F6F6;
   border: 2px solid #F1F1F1;
 }
 .nav-container .nav-link {
@@ -192,8 +192,8 @@ h5 {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .middle-section:nth-child(1) {
-    display: block;
+  .home .middle-section:nth-child(3) {
+    display: none;
   }
 }
 .home .lower-section {
