@@ -241,6 +241,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: flex-start;
   padding: 35px;
   border-bottom: 2px solid #F6F7F8;
 }
@@ -287,7 +288,7 @@ p {
   }
 }
 .home .bottom-section img {
-  width: 50%;
+  width: 45%;
   margin-left: 2%;
   border-radius: 10px;
 }
@@ -305,7 +306,7 @@ p {
   font-size: 1.5rem;
   background-color: #F4F4F4;
   color: #81848E;
-  padding: 20px 0;
+  padding: 40px 0;
   border-color: #F1F1F1;
   border-radius: 5px;
   margin-top: 10px;
