@@ -150,9 +150,14 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 96px auto;
 }
 .main-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-navigation .navigation-container {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
@@ -163,16 +168,18 @@ p {
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
   color: #454A59;
+  position: fixed;
+  top: 0;
 }
-.main-navigation h1 {
+.main-navigation .navigation-container h1 {
   font-size: 4rem;
   margin-top: 20px;
 }
-.main-navigation .navigation {
+.main-navigation .navigation-container .navigation {
   font-size: 1.5rem;
   margin: 10px;
 }
-.main-navigation .navigation a {
+.main-navigation .navigation-container .navigation a {
   text-decoration: none;
   padding: 0 10px;
   color: #454A59;
