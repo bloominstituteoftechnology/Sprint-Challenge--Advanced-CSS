@@ -338,6 +338,12 @@ footer {
   padding: 10px;
   border-radius: 2px;
   text-align: center;
+  cursor: pointer;
+}
+.container .home-page .lets-go-for-a-walk-section div .sign-up-btn:hover {
+  background-color: white;
+  color: #23293B;
+  border: 1px solid #23293B;
 }
 @media ( max-width: 500px ) {
   .container .home-page .lets-go-for-a-walk-section div .sign-up-btn {
@@ -347,5 +353,11 @@ footer {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
+  }
+  .container .home-page .lets-go-for-a-walk-section div .sign-up-btn:hover {
+    background-color: white;
+    color: #23293B;
+    border: 1px solid #23293B;
   }
 }

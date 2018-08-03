@@ -11,13 +11,20 @@
     }
 }
 
-.btn-creator(@bg-color, @font-color, @width, @padding, @border-radius, @text-align) {
+.btn-creator(@bg-color, @font-color, @width, @padding, @border-radius, @text-align, @cursor) {
     background-color: @bg-color;
     color: @font-color;
     width: @width;
     padding: @padding;
     border-radius: @border-radius;
     text-align: @text-align;
+    cursor: @cursor;
+
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+        border: 1px solid @bg-color;
+    }
 }
 
 .link-size-animation() {
