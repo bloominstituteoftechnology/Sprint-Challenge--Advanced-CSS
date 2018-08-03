@@ -165,3 +165,10 @@ h5 {
 .main-navigation .nav-links a {
   text-decoration: none;
 }
+.home {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+}
