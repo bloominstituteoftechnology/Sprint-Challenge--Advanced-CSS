@@ -1,1 +1,155 @@
 // Home Content
+
+@import "variables.less";
+@import "mixins.less";
+
+.home {
+
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media @phone {
+        
+        margin-top: 100px;
+    }
+
+
+    .header {
+
+        .flex-column();
+
+        
+        
+        @media @phone {
+            .mobile-column();
+            .mobile-width();
+           
+        }
+
+        h1 {
+           .headings();
+
+           @media @phone {
+               margin: 5px
+           }
+        }
+
+        p {
+            @media @phone {
+                margin: 5px;
+            }
+        }
+
+        .middle-img-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 35%;
+
+            @media @phone {
+                width: 100%;
+            }
+
+            .img2 {
+                @media @phone {
+                    display: none;
+                }
+            }
+
+            .img3 {
+                @media @phone {
+                    display: none;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 90%;
+                padding: 10px;
+                border-radius: 20px;
+
+        
+            }
+        }
+    } //header
+
+    .top-content {
+        .flex-column;
+        .border-bottom();
+
+        @media @phone {
+            margin: 0 10px;
+        }
+
+        h2 {
+           .headings();
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    } //top-content
+
+    .bottom-content {
+    
+        width: 75%;
+        margin-top: 50px;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+        .border-bottom();
+
+        @media @phone {
+            .mobile-column();
+                    
+        }
+
+       .text-content {
+           width: 48%;
+           padding-right: 1%;
+
+        @media @phone {
+            .mobile-width();
+        }
+
+           h2 {
+            .headings();
+           }
+
+           .btn {
+               .button-factory(110px, 40px, @header-font-color, @main-bg-color);
+               margin-bottom: 20px;
+
+               
+        @media @phone {
+            .button-factory(365px, 40px, @header-font-color, @main-bg-color);
+            
+        }
+           }
+
+       } //text-content
+
+       .bottom-img-content {
+           width: 48%;
+           padding-left: 1%;
+           align-self: center;
+
+           
+        @media @phone {
+            .mobile-width();
+        }
+          
+           img {
+            border-radius: 5px;
+           }
+       }
+
+ 
+    } //bottom-content
+
+
+} //home
