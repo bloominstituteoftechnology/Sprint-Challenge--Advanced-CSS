@@ -140,3 +140,35 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.main-navigation {
+  width: 100%;
+  height: 120px;
+  background: #f6f6f6;
+  border-bottom: 2px dashed #f1f1f1;
+}
+.main-navigation .nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main-navigation .nav-container .logo-heading {
+  font-size: 3rem;
+  color: #454a59;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.main-navigation .nav-container .nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+.main-navigation .nav-container .nav a {
+  line-height: 20px;
+  font-size: 1.2rem;
+  color: #454a59;
+  text-decoration: none;
+  margin: 12px;
+}
