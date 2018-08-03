@@ -192,3 +192,26 @@ header nav a {
   font-size: 2rem;
   margin-bottom: 10px;
 }
+.home .middle-images {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.home .middle-images img {
+  width: 236px;
+  height: 178px;
+  border-radius: 7%;
+}
+.home .middle-content {
+  border-bottom: solid 2px #F6F7F8;
+  padding: 16px 16px 50px 16px;
+}
+.home .middle-content h3 {
+  font-size: 1.8rem;
+  margin-top: 34px;
+  margin-bottom: 10px;
+}
+.home .middle-content p {
+  padding-bottom: 16px;
+}
