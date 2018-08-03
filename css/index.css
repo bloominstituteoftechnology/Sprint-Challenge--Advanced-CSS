@@ -1,1 +1,426 @@
-/* Compile your LESS first! */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes background-focus {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #FFFFFF;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.main-navigation {
+  border: 1px solid #F1F1F1;
+  background-color: #F6F6F6;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  opacity: 0.7;
+}
+.main-navigation .nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+.main-navigation .nav-container h1 {
+  padding-bottom: 10px;
+  font-size: 3rem;
+  color: #454A59;
+}
+.main-navigation .nav-container .nav {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media ( max-width: 500px ) {
+  .main-navigation .nav-container .nav {
+    width: 70%;
+  }
+}
+.main-navigation .nav-container .nav a {
+  text-decoration: none;
+  color: #454A59;
+}
+html {
+  font-size: 62.5%;
+}
+footer {
+  border: 1px solid #F6F7F8;
+  color: #81848E;
+  background-color: #F4F4F4;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5px;
+  height: 50px;
+}
+@media ( max-width: 500px ) {
+  footer {
+    width: 100%;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+.index-body {
+  margin: auto;
+  animation-duration: 5s;
+  animation-name: background-focus;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  .index-body {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.index-body .top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+@media ( max-width: 500px ) {
+  .index-body .top-section {
+    width: 100%;
+  }
+}
+.index-body .top-section img {
+  width: 100%;
+}
+.index-body .top-section .top-img {
+  margin-top: 100px;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+@media ( max-width: 500px ) {
+  .index-body .top-section .lift-off {
+    margin: 20px;
+  }
+}
+.index-body .top-section .lift-off h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #23293B;
+}
+.index-body .top-section .lift-off p {
+  font-size: 1.18rem;
+  line-height: 18px;
+  color: #5E6164;
+}
+.index-body .top-section .lift-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+@media ( max-width: 500px ) {
+  .index-body .top-section .lift-img {
+    justify-content: center;
+    margin: 0;
+    width: 200%;
+    margin-bottom: 20px;
+  }
+  .index-body .top-section .lift-img .img-2 {
+    display: none;
+  }
+  .index-body .top-section .lift-img .img-3 {
+    display: none;
+  }
+}
+.index-body .top-section .lift-img img {
+  width: 30%;
+  height: 10%;
+  border-radius: 15px;
+}
+.index-body .top-section .can-we {
+  border-bottom: solid #F6F7F8 1px;
+}
+@media ( max-width: 500px ) {
+  .index-body .top-section .can-we {
+    width: 90%;
+  }
+}
+.index-body .top-section .can-we h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #23293B;
+}
+.index-body .top-section .can-we p {
+  font-size: 1.18rem;
+  line-height: 18px;
+  color: #5E6164;
+  margin-bottom: 20px;
+}
+.index-body .bottom-section {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  border-bottom: solid #F6F7F8 1px;
+}
+@media ( max-width: 500px ) {
+  .index-body .bottom-section {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+}
+.index-body .bottom-section .lets-go {
+  margin-top: 35px;
+}
+.index-body .bottom-section .lets-go h1 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #23293B;
+}
+.index-body .bottom-section .lets-go p {
+  font-size: 1.18rem;
+  line-height: 18px;
+  color: #5E6164;
+  margin: 20px 0;
+}
+.index-body .bottom-section .lets-go .btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border: 1px solid silver;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.index-body .bottom-section .lets-go .btn:hover {
+  background-color: white;
+  color: black;
+}
+@media ( max-width: 500px ) {
+  .index-body .bottom-section .lets-go .btn {
+    width: 100%;
+    height: 30px;
+  }
+}
+.index-body .bottom-section img {
+  height: 20%;
+  width: 50%;
+}
+@media ( max-width: 500px ) {
+  .index-body .bottom-section img {
+    width: 100%;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin-top: 100px;
+  /* Style inputs with type="text", select elements and textareas */
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button, add a darker green color */
+  /* Add a background color and some padding around the form */
+}
+body input[type=text],
+body select,
+body textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+body input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body input[type=submit]:hover {
+  background-color: #45a049;
+}
+body .contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body .contact-container .contact-container {
+  margin-top: 100px;
+  border: solid black 1px;
+}

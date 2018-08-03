@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+}
+
+.main-navigation {
+    border: 1px solid  @nav-border-color;
+    background-color: @nav-background;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    opacity: 0.7;
+
+    
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        h1 {
+            padding-bottom: 10px;
+            font-size: 3rem;
+            color: @nav-font-color;
+        }
+        .nav {
+            width: 40%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            @media @mobile {
+                width: 70%;
+            }
+            a {
+                text-decoration: none;
+                color: @nav-font-color;
+            }
+        }
+    }
+}

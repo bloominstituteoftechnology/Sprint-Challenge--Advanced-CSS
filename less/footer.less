@@ -1,1 +1,20 @@
 // Footer Styles
+html {
+    font-size: 62.5%;
+}
+
+footer {
+    @media @mobile {
+        width: 100%;
+    }
+    border: 1px solid  @border-color-for-main-content;
+    color: @footer-text-color;
+    background-color: @footer-background-color;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+    height: 50px;
+}
