@@ -1,0 +1,32 @@
+.main-navigation{
+    width: 100%;
+    height: 100px;
+    background: @nav-bg;
+    position: fixed;
+    border-bottom:1px solid @nav-border-color;
+    .nav-container{
+        height:100%;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        justify-content: space-between;
+        padding:14px 0;
+        .logo{
+            font-size:4rem;
+            margin-left:2.25%;
+            color:@nav-font-color;
+        }
+        .nav{
+            width:52.5%;
+            display:flex;
+            justify-content: space-evenly;
+            .nav-link{
+                text-decoration: none;
+                font-size:1.6rem;
+                margin-left:4.5%;
+            } 
+        }
+        
+
+    }
+}
