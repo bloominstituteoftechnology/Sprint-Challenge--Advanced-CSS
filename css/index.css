@@ -210,13 +210,13 @@ h5 {
 @media ( max-width: 500px ) {
   .container .home-page .mid-img-div {
     width: 85%;
-    margin: 0 auto;
+    margin: 40px auto 48px auto;
     height: auto;
   }
 }
 .container .home-page .mid-img-div img {
   width: 30.8%;
-  border-radius: 9%;
+  border-radius: 5%;
 }
 @media ( max-width: 500px ) {
   .container .home-page .mid-img-div img {
@@ -230,6 +230,11 @@ h5 {
   margin: 0 55px 18px 55px;
   padding-bottom: 52px;
 }
+@media ( max-width: 500px ) {
+  .container .home-page .can-we-visit-planets-section {
+    margin: 0 12px 18px 12px;
+  }
+}
 .container .home-page .can-we-visit-planets-section h2 {
   font-size: 1.75rem;
   color: #23293B;
@@ -241,13 +246,30 @@ h5 {
 .container .home-page hr {
   width: 91%;
 }
+@media ( max-width: 500px ) {
+  .container .home-page hr {
+    width: 100%;
+  }
+}
 .container .home-page .lets-go-for-a-walk-section {
   margin: 48px 104px 49px 104px;
   display: flex;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .container .home-page .lets-go-for-a-walk-section {
+    margin: 48px;
+    flex-wrap: wrap;
+  }
+}
 .container .home-page .lets-go-for-a-walk-section div {
   width: 46%;
+}
+@media ( max-width: 500px ) {
+  .container .home-page .lets-go-for-a-walk-section div {
+    width: 100%;
+    margin-bottom: 18px;
+  }
 }
 .container .home-page .lets-go-for-a-walk-section div h2 {
   font-size: 1.75rem;
@@ -273,6 +295,16 @@ h5 {
   padding: 10px;
   border-radius: 2px;
   text-align: center;
+}
+@media ( max-width: 500px ) {
+  .container .home-page .lets-go-for-a-walk-section div .sign-up-btn {
+    background-color: #23293B;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
 }
 .container .home-page footer {
   width: 91%;

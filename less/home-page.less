@@ -45,13 +45,13 @@
 
             @media @phone {
                 width: 85%;
-                margin: 0 auto;
+                margin: 40px auto 48px auto;
                 height: auto;
             }
 
             img {
                 width: 30.8%;
-                border-radius: 9%;
+                border-radius: 5%;
 
                 @media @phone {
                     width: 100%;
@@ -67,6 +67,10 @@
             margin: 0 55px 18px 55px;
             padding-bottom: 52px;
 
+            @media @phone {
+                margin: 0 12px 18px 12px;
+            }
+
             h2 {
                 font-size: 1.75rem;
                 color: @header-font-color;
@@ -80,6 +84,10 @@
 
         hr {
             width: 91%;
+
+            @media @phone {
+                width: 100%;
+            }
         }
 
         .lets-go-for-a-walk-section {
@@ -87,8 +95,18 @@
             display: flex;
             justify-content: space-between;
 
+            @media @phone {
+                margin: 48px;
+                flex-wrap: wrap;
+            }
+
             div {
                 width: 46%;
+
+                @media @phone {
+                    width: 100%;
+                    margin-bottom: 18px;
+                }
                 
                 h2 {
                     font-size: 1.75rem;
@@ -112,7 +130,11 @@
                 }
 
                 .sign-up-btn {
-                    .btn-creator(@bg-color: @header-font-color, @font-color: white, @width: 26%, @padding: 10px, @border-radius: 2px, @text-align: center);                    
+                    .btn-creator(@bg-color: @header-font-color, @font-color: white, @width: 26%, @padding: 10px, @border-radius: 2px, @text-align: center);
+
+                    @media @phone {
+                        .btn-creator(@bg-color: @header-font-color, @font-color: white, @width: 100%, @padding: 15px, @border-radius: 5px, @text-align: center);
+                    }
                 }
             } //lets-go-for-a-walk-section div
         } // lets-go-for-a-walk-section
