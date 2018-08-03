@@ -196,6 +196,7 @@ footer {
 .home .main-content {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid #F6F7F8;
 }
 .home .main-content .text-content {
   width: 100%;
@@ -228,6 +229,11 @@ footer {
 }
 .home .cta {
   display: flex;
+  justify-content: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 40px 0 40px 0;
+  margin-bottom: 10px;
 }
 .home .cta .text-content {
   width: 40%;
@@ -254,4 +260,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+}
+.home .cta .img-space-walk {
+  width: 40%;
 }
