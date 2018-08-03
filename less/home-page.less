@@ -1,1 +1,97 @@
 // Home Content
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 880px;
+    
+    .main .planets {
+	display: none;
+    }
+	
+    .main {
+	.mainimg {
+	    display: flex;
+	    justify-content: center;
+	    img {
+		width: 100%;
+		height: 180px;
+	    }
+	}
+
+	.liftoff {
+	    width: 100%;
+	    margin: 15px auto;
+	    /* border: 1px solid blue; */
+	    h1 {
+		font-size: 1.5rem;
+		margin-bottom: 15px;
+	    }
+	    p {
+		/* border: 1px solid red; */
+	    }
+	}
+	
+	.images {
+	    display: flex;
+	    /* flex-direction: row; */
+	    /* border: 1px solid red; */
+	    width: 100%;
+	    margin: 0 auto 25px auto;
+	    justify-content: space-between;
+	    img {
+		height: 180px;
+		object-fit: cover;
+		border-radius: 10px;
+	    }
+	}
+
+	.planets {
+	    margin-bottom: 40px;
+	    .flexflow;
+	    border-bottom: 1px solid darkgrey;
+	    padding-bottom: 30px;
+	    h1 {
+		margin-bottom: 10px;
+		font-size: 1.5rem;
+	    }
+	}
+	
+	.walk {
+	    width: 90%;
+	    margin: auto;
+	    display: flex;
+	    flex-flow: row wrap;
+	    justify-content: space-evenly;
+	    /* height: 300px; */
+	    /* border: 1px solid red; */
+	    /* padding-top: 10px; */
+	    border-bottom: 1px solid darkgray;
+	    h1 {
+		font-size: 1.5rem;
+	    }
+	    section {
+		width: 40%;
+		/* border: 1px solid red; */
+		img {
+		    width: 100%;
+		}
+		p {
+		    margin-top: 15px;
+		}
+
+		.btn {	
+		    margin-top: 15px;
+		    margin-right: 150%;
+		    margin-bottom: 35px;
+		    font-size: 0.9rem;
+		    .button-maker(80px, 30px, @header-txt, white, 3px);
+		    text-align: center;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+	    }
+	}
+    }
+}

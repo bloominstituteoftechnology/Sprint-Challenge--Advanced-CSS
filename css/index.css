@@ -1,1 +1,282 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  border-bottom: 2px solid #F1F1F1;
+  background: #F6F6F6;
+  /* color: #212529; */
+  /* @media @mobile { */
+  /* 	border-bottom: white; */
+  /* } */
+}
+header h1 {
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+  margin-top: 7px;
+  font-size: 2rem;
+  color: #454A59;
+}
+header .as {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 40%;
+  margin: 10px 0;
+  /* @media @mobile { */
+  /*     width: 100%; */
+  /* } */
+  /* border: 1px solid red; */
+}
+header .as a {
+  text-decoration: none;
+  color: #454A59;
+}
+.main footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  height: 55px;
+  background: #F4F4F4;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 880px;
+}
+.container .main .planets {
+  display: none;
+}
+.container .main .mainimg {
+  display: flex;
+  justify-content: center;
+}
+.container .main .mainimg img {
+  width: 100%;
+  height: 180px;
+}
+.container .main .liftoff {
+  width: 100%;
+  margin: 15px auto;
+  /* border: 1px solid blue; */
+}
+.container .main .liftoff h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.container .main .liftoff p {
+  /* border: 1px solid red; */
+}
+.container .main .images {
+  display: flex;
+  /* flex-direction: row; */
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 0 auto 25px auto;
+  justify-content: space-between;
+}
+.container .main .images img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.container .main .planets {
+  margin-bottom: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 30px;
+}
+.container .main .planets h1 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.container .main .walk {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* height: 300px; */
+  /* border: 1px solid red; */
+  /* padding-top: 10px; */
+  border-bottom: 1px solid darkgray;
+}
+.container .main .walk h1 {
+  font-size: 1.5rem;
+}
+.container .main .walk section {
+  width: 40%;
+  /* border: 1px solid red; */
+}
+.container .main .walk section img {
+  width: 100%;
+}
+.container .main .walk section p {
+  margin-top: 15px;
+}
+.container .main .walk section .btn {
+  margin-top: 15px;
+  margin-right: 150%;
+  margin-bottom: 35px;
+  font-size: 0.9rem;
+  width: 80px;
+  height: 30px;
+  background: #23293B;
+  color: white;
+  border-radius: 3px;
+  border: #23293B;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

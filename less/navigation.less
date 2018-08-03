@@ -1,0 +1,40 @@
+// Color assignments
+
+@mobile: ~"(max-width: 500px)";
+
+header {
+    .center;
+    flex-flow: row wrap;
+    border-bottom: 2px solid @nav-border;
+    background: @nav-bg;
+    /* color: #212529; */
+    /* @media @mobile { */
+    /* 	border-bottom: white; */
+    /* } */
+    
+    h1 {
+	width: 100%;
+	/* border: 1px solid red; */
+	text-align: center;
+	margin-top: 7px;
+	font-size: 2rem;
+	color: @nav-txt;
+    }
+
+    .as {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 40%;
+	margin: 10px 0;
+	/* @media @mobile { */
+	/*     width: 100%; */
+	/* } */
+	/* border: 1px solid red; */
+	a {
+	    text-decoration: none;
+	    color: @nav-txt;
+	}
+    }
+}
