@@ -1,0 +1,40 @@
+.container header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: @nav-bg-color;
+    padding-top: 14px;
+    color: @nav-font-color;
+    border-bottom: 2px solid @nav-border-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .main-nav {
+        width: 28%;
+        margin-bottom: 13px;
+        font-weight: bold;
+
+        .flex-space-between();
+        
+        @media @phone {
+            width: 80%;
+        }
+
+        a {
+            text-decoration: none;
+            color: @nav-font-color;
+
+            &:hover {
+                .link-size-animation();
+            }
+        }
+    }
+}

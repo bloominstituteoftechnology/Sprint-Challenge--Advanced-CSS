@@ -1,1 +1,133 @@
 // Home Content
+.container {
+    .home-page {
+        max-width: 880px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        .p-font-color-line-height();
+
+        .main-header-img-div {
+            text-align: center;
+            height: 200px;
+            margin-bottom: 18px;
+            
+            img {
+                width: 91%;
+                height: 100%;
+
+                @media @phone {
+                    width: 100%;
+                }
+            }
+        } // main-header-img-div
+
+        .lift-off-section {
+            margin: 0 55px 18px 55px;
+
+            @media @phone {
+                margin: 0 12px 18px 12px;
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: @header-font-color;
+                margin-bottom: 15px;
+            }
+        } // lift-off-section
+
+        .mid-img-div {
+            margin: 0 55px 48px 55px;
+            height: 178px;
+
+            .flex-space-between();
+
+            @media @phone {
+                width: 85%;
+                margin: 40px auto 48px auto;
+                height: auto;
+            }
+
+            img {
+                width: 30.8%;
+                border-radius: 5%;
+
+                @media @phone {
+                    width: 100%;
+
+                    &:nth-child(n+2) {
+                        display: none;
+                    }
+                }
+            } // mid-img-div img
+        } // mid-img-div
+
+        .can-we-visit-planets-section {
+            margin: 0 55px 18px 55px;
+            padding-bottom: 52px;
+
+            @media @phone {
+                margin: 0 12px 18px 12px;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+                color: @header-font-color;
+                margin-bottom: 15px;
+            }
+        } // can-we-visit-planets-section
+
+        hr {
+            width: 91%;
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+
+        .lets-go-for-a-walk-section {
+            margin: 48px 104px 49px 104px;
+            
+            .flex-space-between();
+
+            @media @phone {
+                margin: 48px;
+                flex-wrap: wrap;
+            }
+
+            div {
+                width: 46%;
+
+                @media @phone {
+                    width: 100%;
+                    margin-bottom: 18px;
+                }
+                
+                h2 {
+                    font-size: 1.75rem;
+                    color: @header-font-color;
+                    margin-bottom: 15px;
+                }
+
+                .second-walk-p {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    width: 104%;
+                    border-radius: 2%;
+                    margin-left: -10px;
+                }
+
+                .sign-up-btn {
+                    .btn-creator(@bg-color: @header-font-color, @font-color: white, @width: 26%, @padding: 10px, @border-radius: 2px, @text-align: center, @cursor: pointer);
+
+                    @media @phone {
+                        .btn-creator(@bg-color: @header-font-color, @font-color: white, @width: 100%, @padding: 15px, @border-radius: 5px, @text-align: center, @cursor: pointer);
+                    }
+                } // lets-go-for-a-walk-section div .sign-up-btn
+            } // lets-go-for-a-walk-section div
+        } // lets-go-for-a-walk-section
+    } // home-page
+} // container
