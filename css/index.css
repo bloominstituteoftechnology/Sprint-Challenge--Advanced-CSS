@@ -1,1 +1,295 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: 'Russo One', sans-serif;
+}
+.head {
+  width: 100%;
+  height: 60px;
+  background: #F6F6F6;
+}
+.head .spacewalker {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head .nav {
+  width: 60%;
+  margin-left: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width:500px) {
+  .head .nav {
+    width: 100%;
+    margin-right: 100%;
+  }
+}
+.head .nav a {
+  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+  color: #454A59;
+}
+.foot {
+  background: #F6F6F6;
+  width: 60%;
+  height: 50px;
+  margin-left: 20%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .home {
+  margin: 0 10% 0 10%;
+}
+.container .home .lift {
+  margin: 20px 0;
+}
+.container .home .lift h2 {
+  margin: 10px 0;
+}
+.container .home img {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+.container .home .tri-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.container .home .tri-img .img1 {
+  width: 31%;
+}
+.container .home .tri-img .img1 img {
+  border-radius: 15px;
+}
+@media (max-width:500px) {
+  .container .home .tri-img .img1 {
+    width: 100%;
+  }
+}
+.container .home .tri-img .img2 {
+  border-radius: 15px;
+  width: 31%;
+}
+@media (max-width:500px) {
+  .container .home .tri-img .img2 {
+    width: 100%;
+  }
+}
+.container .home .tri-img .img3 {
+  border-radius: 15px;
+  width: 31%;
+}
+@media (max-width:500px) {
+  .container .home .tri-img .img3 {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .container .home .tri-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .home .lets {
+  display: flex;
+  flex-direction: center;
+  flex-wrap: nowrap;
+  margin: 30px 50px;
+}
+@media (max-width:500px) {
+  .container .home .lets {
+    margin: 0 50px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.container .home .lets .lets-text {
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 30%;
+}
+.container .home .lets .lets-text h2 {
+  margin: 10px;
+}
+.container .home .lets .lets-text .btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+.container .home .lets .lets-text .btn:hover {
+  background: white;
+  color: blue;
+}
+.container .home .astronaut {
+  height: 400px;
+  margin-left: 35%;
+}
