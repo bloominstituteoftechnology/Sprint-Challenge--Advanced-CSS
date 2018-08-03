@@ -1,1 +1,32 @@
 // Mixins below variables
+.button-creator(@width, @height, @bg-color, @font-color, @radius, @font-size) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid blue;
+    border-radius: @radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: @font-size;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+    }
+  }
+
+  .h3-template() {
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 1.8rem;
+  }
+
+  .footer-align() {
+    line-height: 77px;
+    text-align: center;
+  }
+   
