@@ -212,7 +212,7 @@ h5 {
   margin-bottom: 48px;
 }
 .container .home-page .lets-go-for-a-walk-section {
-  margin: 0 104px 18px 104px;
+  margin: 0 104px 49px 104px;
   display: flex;
   justify-content: space-between;
 }
@@ -229,6 +229,7 @@ h5 {
 }
 .container .home-page .lets-go-for-a-walk-section div .second-walk-p {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .container .home-page .lets-go-for-a-walk-section div img {
   width: 104%;
@@ -236,5 +237,15 @@ h5 {
   margin-left: -10px;
 }
 .container .home-page .lets-go-for-a-walk-section div .sign-up-btn {
-  background: green;
+  background-color: #23293B;
+  color: white;
+  width: 26%;
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+}
+.container .home-page footer {
+  background: #F4F4F4;
+  border: 2px solid #F1F1F1;
+  text-align: center;
 }
