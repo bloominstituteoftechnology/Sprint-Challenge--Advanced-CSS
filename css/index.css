@@ -213,7 +213,11 @@ footer {
 }
 .home .main-content .img-content {
   display: flex;
+  width: 100%;
   margin-bottom: 20px;
+}
+.home .main-content .img-content .middle-image {
+  width: 20%;
 }
 .home .main-content .img-content img {
   border-radius: 10px;
