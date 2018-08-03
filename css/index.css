@@ -193,7 +193,7 @@ footer p {
 main {
   background: #FFFFFF;
   width: 90%;
-  margin: 85px auto;
+  margin: 85px auto 0px auto;
   max-width: 880px;
 }
 @media (max-width: 500px) {
@@ -297,7 +297,7 @@ main .bottom-content .bottom-image img {
   border-radius: 10px;
 }
 main .bottom-content .btn {
-  width: 100px;
+  width: 80px;
   height: 40px;
   background: #22283A;
   color: white;

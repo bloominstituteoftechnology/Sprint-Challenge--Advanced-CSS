@@ -2,7 +2,7 @@
 main {
     background: @main-bg;
     width: 90%;
-    margin: 85px auto;
+    margin: 85px auto 0px auto;
     max-width: 880px;
     @media @phone {
         width: 100%;
@@ -118,10 +118,10 @@ main {
         }
 
         .btn {
-            .button-constructor(100px, 40px, #22283A, white);
+            .button-constructor(80px, 40px, #22283A, white);
             margin-top: 20px;
             transition: 300ms ease-in-out;
-            
+
             &:hover {
                 .hover-zoom();
             }
