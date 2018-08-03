@@ -147,6 +147,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  color: #23293B;
 }
 h1 {
   font-size: 4rem;
@@ -157,11 +158,14 @@ h2 {
 p {
   font-size: 1.5rem;
   line-height: 2;
+  color: #5E6164;
 }
 .container {
   max-width: 1000px;
   width: 55%;
   margin: 0 auto;
+  background-color: #FFFFFF;
+  border-color: #F6F7F8;
 }
 .nav {
   display: flex;
@@ -194,4 +198,21 @@ p {
 }
 .headline .headline-body .headline-body-text {
   margin: 2% 0;
+}
+.planets {
+  border-bottom: 3px solid #F6F7F8;
+}
+.planets .planets-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+.planets .planets-images > * {
+  width: 30%;
+  height: 30%;
+  border-radius: 20px;
+}
+.planets .planets-body {
+  margin: 8% 0;
 }
