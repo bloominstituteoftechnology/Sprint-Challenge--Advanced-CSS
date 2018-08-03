@@ -228,8 +228,13 @@ h5 {
   line-height: 140%;
 }
 .container .home-page .lets-go-for-a-walk-section div .second-walk-p {
-  background: red;
+  margin-top: 10px;
 }
 .container .home-page .lets-go-for-a-walk-section div img {
-  width: 100%;
+  width: 104%;
+  border-radius: 2%;
+  margin-left: -10px;
+}
+.container .home-page .lets-go-for-a-walk-section div .sign-up-btn {
+  background: green;
 }
