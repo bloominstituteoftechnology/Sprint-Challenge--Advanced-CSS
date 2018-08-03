@@ -8,10 +8,16 @@
     }
     h2 {
       margin-top: 15px;
+      @media @phone {
+        margin: 15px 3% 0 3%;
+      }
     }
 
     p {
       margin-bottom: 15px;
+      @media @phone {
+        margin: 0 3% 15px 3%;
+      }
     }
   } //header
 
@@ -20,20 +26,32 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
 
     img {
       width: 30%;
       height: 180px;
       .border-radius(15px);
+      @media @phone {
+        .second-img .last-img{
+          display: none;
+        }
+      }
     }
   } //top img
 
   .mid-content {
     border-bottom: 2px solid @main-border;
-
+    @media @phone {
+      width: 100%;
+      p {
+        margin: 0 3%;
+      }
+    }
     h3 {
       margin-top: 30px; 
+      @media @phone {
+        margin: 30px 3% 0 3%;
+      }
     }
 
     p:last-child{
@@ -48,17 +66,33 @@
     margin: 0 5%;
     border-bottom: 2px solid @main-border;
 
+    @media @phone {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
     .signup-text {
       width: 50%;
       padding: 8% 5% 10% 0;
+      @media @phone {
+        width: 100%;
+        padding: 8% 10% 10px 13%;  
+      }
       .btn {
-        .button-creator(25%, 30px, @header-font, @white);
+        margin-top: 30px;
+        .button-creator(100%, 50px, @header-font, @white);
       }
     }
 
     .signup-img {
       width: 50%;
       padding-top: 8%;
+
+      @media @phone {
+        width: 100%;
+        padding: 5px 10% 40px 13%; 
+      }
     }
   } //bottom content
 } //home

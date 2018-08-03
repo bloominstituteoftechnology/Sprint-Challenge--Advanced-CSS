@@ -179,19 +179,21 @@ img {
   align-items: center;
 }
 .nav-container .logo-heading {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 .nav-container .nav {
   width: 100%;
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .nav-container .nav .nav-link {
   text-decoration: none;
+  text-align: center;
   font-size: 1.6rem;
   color: #454A59;
-  margin: 0 5%;
+  margin: 0 2% 10px;
 }
 footer {
   width: 100%;
@@ -205,6 +207,11 @@ footer p {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  footer p {
+    color: #23293B;
+  }
+}
 .home {
   width: 100%;
 }
@@ -214,8 +221,18 @@ footer p {
 .home .header h2 {
   margin-top: 15px;
 }
+@media (max-width: 500px) {
+  .home .header h2 {
+    margin: 15px 3% 0 3%;
+  }
+}
 .home .header p {
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .home .header p {
+    margin: 0 3% 15px 3%;
+  }
 }
 .home .top-img {
   width: 100%;
@@ -230,11 +247,29 @@ footer p {
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .home .top-img img .second-img .last-img {
+    display: none;
+  }
+}
 .home .mid-content {
   border-bottom: 2px solid #F6F7F8;
 }
+@media (max-width: 500px) {
+  .home .mid-content {
+    width: 100%;
+  }
+  .home .mid-content p {
+    margin: 0 3%;
+  }
+}
 .home .mid-content h3 {
   margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .home .mid-content h3 {
+    margin: 30px 3% 0 3%;
+  }
 }
 .home .mid-content p:last-child {
   margin-bottom: 70px;
@@ -246,19 +281,33 @@ footer p {
   margin: 0 5%;
   border-bottom: 2px solid #F6F7F8;
 }
+@media (max-width: 500px) {
+  .home .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
 .home .bottom-content .signup-text {
   width: 50%;
   padding: 8% 5% 10% 0;
 }
+@media (max-width: 500px) {
+  .home .bottom-content .signup-text {
+    width: 100%;
+    padding: 8% 10% 10px 13%;
+  }
+}
 .home .bottom-content .signup-text .btn {
+  margin-top: 30px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   background-color: #23293B;
   color: #FFFFFF;
   border: 1px solid blue;
@@ -269,4 +318,10 @@ footer p {
 .home .bottom-content .signup-img {
   width: 50%;
   padding-top: 8%;
+}
+@media (max-width: 500px) {
+  .home .bottom-content .signup-img {
+    width: 100%;
+    padding: 5px 10% 40px 13%;
+  }
 }
