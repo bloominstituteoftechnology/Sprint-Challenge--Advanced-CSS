@@ -11,7 +11,7 @@
     .main-content {
 
         .flex-and-wrap;
-        border-bottom: 1px solid @main-content-border-color;
+        border-color: @main-content-border-color;
 
         .text-content {
             width: 100%;
@@ -22,19 +22,22 @@
             }
             p {
                 font-size: 1.4rem;
+                line-height: 2rem;
                 color: @paragraph-font-color;
                 margin-bottom: 20px;
             }
         }
-        .img-content {
+        .img-group {
             display: flex;
+            justify-content: space-between;
             width: 100%;
             margin-bottom: 20px;
             .middle-image {
-                width: 20%;
+                width: 31%;
             }
             img {
                 border-radius: 10px;
+                width: 100%;
             }
             @media @phone {
                 .img-sky {
@@ -70,6 +73,7 @@
             }
             p {
                 font-size: 1.4rem;
+                line-height: 2rem;
                 color: @paragraph-font-color;
                 margin-bottom: 20px;
             }
@@ -86,10 +90,12 @@
         }
         .img-space-walk {
             width: 40%;
+            margin-left: 30px;
             @media @phone {
                 width: 100%;
             }
             img {
+                width: 100%;
                 border-radius: 5px;
             }
         }
