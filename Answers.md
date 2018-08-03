@@ -8,3 +8,8 @@ Responsive web design requires a more stringent look at the css of the site and 
 
 Responsive websites do load a little faster due to there only needing to be one layout loaded as opposed to an adaptive site requiring several layouts to load in to allow the break point scenareo.
 
+## 2. Mobile first Vs Desktop First
+
+Mobile first is the technique where we design the css to make the initial layout for mobile devices and then use @media to change to larger layouts such as tablet and desktop
+
+Desktop first is the inverse of Mobile first in that we design the desktop layout in the css and then make @media query calls to change the layout as the devices get smaller.
