@@ -1,3 +1,16 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background-color: grey;
+  color: black;
+  border: 1px solid gold;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,6 +200,23 @@ h5 {
   margin: 20px;
   align-content: flex-start;
 }
+.footer {
+  display: flex;
+  align-content: center;
+  padding: 50px;
+  margin-top: 1rem;
+  justify-content: center;
+  border: 1px solid red;
+  font-size: 1.5rem;
+  background: #F1F1F1;
+}
+.home h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.home p {
+  font-size: 1.5rem;
+}
 .home .intro {
   padding: 90px 0 10px;
 }
@@ -200,6 +230,8 @@ h5 {
   margin-top: 20px;
   border: 1px solid red;
 }
-.home .intro img header.intro .content-section2 {
+.home .intro img header.intro .content-section .img-content {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
