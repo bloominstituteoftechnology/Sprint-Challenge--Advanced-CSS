@@ -1,0 +1,34 @@
+// Navigation styles here
+
+.main-nav {
+    width: 100%;
+    height: 100px;
+    background: @Navigation-background;
+    border-bottom: 3px solid @Navigation-border-color;
+    // position:fixed;
+
+    .nav-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            padding: 15px 0;
+            color: @Navigation-font-color;
+        }
+
+        .nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                font-size: 1.6rem;
+                text-decoration: none;
+                color: @Navigation-font-color;
+                font-weight: 600;
+            }
+        }
+    }
+} 
