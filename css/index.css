@@ -180,8 +180,18 @@ h5 {
   width: 91%;
   height: 100%;
 }
+@media ( max-width: 500px ) {
+  .container .home-page .main-header-img-div img {
+    width: 100%;
+  }
+}
 .container .home-page .lift-off-section {
   margin: 0 55px 18px 55px;
+}
+@media ( max-width: 500px ) {
+  .container .home-page .lift-off-section {
+    margin: 0 12px 18px 12px;
+  }
 }
 .container .home-page .lift-off-section h2 {
   font-size: 2rem;
@@ -197,9 +207,24 @@ h5 {
   justify-content: space-between;
   height: 178px;
 }
+@media ( max-width: 500px ) {
+  .container .home-page .mid-img-div {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
 .container .home-page .mid-img-div img {
   width: 30.8%;
   border-radius: 9%;
+}
+@media ( max-width: 500px ) {
+  .container .home-page .mid-img-div img {
+    width: 100%;
+  }
+  .container .home-page .mid-img-div img:nth-child(n+2) {
+    display: none;
+  }
 }
 .container .home-page .can-we-visit-planets-section {
   margin: 0 55px 18px 55px;

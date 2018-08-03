@@ -12,11 +12,19 @@
             img {
                 width: 91%;
                 height: 100%;
+
+                @media @phone {
+                    width: 100%;
+                }
             }
         } // main-header-img-div
 
         .lift-off-section {
             margin: 0 55px 18px 55px;
+
+            @media @phone {
+                margin: 0 12px 18px 12px;
+            }
 
             h2 {
                 font-size: 2rem;
@@ -34,9 +42,24 @@
             display: flex;
             justify-content: space-between;
             height: 178px;
+
+            @media @phone {
+                width: 85%;
+                margin: 0 auto;
+                height: auto;
+            }
+
             img {
                 width: 30.8%;
                 border-radius: 9%;
+
+                @media @phone {
+                    width: 100%;
+
+                    &:nth-child(n+2) {
+                        display: none;
+                    }
+                }
             }
         } // mid-img-div
 
