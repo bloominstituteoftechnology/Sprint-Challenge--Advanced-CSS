@@ -1,4 +1,4 @@
-# Test Header
+# Answers
 
 1. What is the difference between an adaptive website and a fully responsive website?
 Adaptive websites respond to browser widths at specific break points, while responsive websites respond to browser widths across the whole spectrum. As you toggle the width of the page, an adaptive design will snap into place once it reaches a certain breaking point, while a responsive design will fluidly change as the width changes.
