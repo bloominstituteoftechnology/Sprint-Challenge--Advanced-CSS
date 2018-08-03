@@ -209,10 +209,9 @@ h5 {
 }
 .container .home-page hr {
   width: 91%;
-  margin-bottom: 48px;
 }
 .container .home-page .lets-go-for-a-walk-section {
-  margin: 0 104px 49px 104px;
+  margin: 48px 104px 49px 104px;
   display: flex;
   justify-content: space-between;
 }
@@ -245,7 +244,12 @@ h5 {
   text-align: center;
 }
 .container .home-page footer {
+  width: 91%;
   background: #F4F4F4;
   border: 2px solid #F1F1F1;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 14px;
+  padding-top: 25px;
+  padding-bottom: 38px;
 }
