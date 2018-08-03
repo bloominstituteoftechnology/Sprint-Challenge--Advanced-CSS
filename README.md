@@ -33,7 +33,7 @@ Answer the following questions to the best of your ability. You can exercise you
 * [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
@@ -44,7 +44,7 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
 * [ ] Navigation: Use the `navigation.less` file for styling.
 * [ ] Main Content: Use the `home-page.less` file for styling
 * [ ] Footer: Use the `footer.less` file for styling
