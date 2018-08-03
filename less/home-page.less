@@ -8,6 +8,7 @@
     background-color: @Main-background-color;
     
     @media @phone {
+        
         .top-image {
             max-width: 500px;
             width: 100%;
@@ -41,7 +42,14 @@
         border-radius: 20px;
         max-width: 880px;
         width: 33%;
-        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        @media @phone {
+           
+                max-width: 500px;
+                width: 100%;
+            
+        }
     }
 
     .middle-content {
@@ -55,33 +63,41 @@
         width: 700px;
         padding-top: 40px;
         display: flex;
-        flex-direction: column;
+        
 
         .bottom-main {
             width: 100%;
         }
 
         @media @phone {
-            background-color: red; 
+             
             width: 100%;
-            margin: auto;
+            margin-bottom: 20px;
+            flex-direction: column;
+            border-bottom: 1px solid @Border-color-for-main-content;
 
             .bottom-text {
                 padding-bottom: 30px;
             }
 
+            .btn {
+                margin-top: 40px;
+            }
+
             img {
                 width: 100%;
+                margin-bottom: 60px;
+                border-bottom: 1px solid @Border-color-for-main-content;
             }
         }
     }
 
-    @media @phone {
-        .btn, img {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-    }
+    // @media @phone {
+    //     .btn, img {
+    //         display: flex;
+    //         // flex-direction: column-reverse;
+    //     }
+    // }
 
     
 

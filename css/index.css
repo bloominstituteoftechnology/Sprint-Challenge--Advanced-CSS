@@ -269,7 +269,13 @@ body {
   border-radius: 20px;
   max-width: 880px;
   width: 33%;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .middle-section .middle-image {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 .middle-section .middle-content {
   color: #5E6164;
@@ -281,28 +287,26 @@ body {
   width: 700px;
   padding-top: 40px;
   display: flex;
-  flex-direction: column;
 }
 .middle-section .bottom-content .bottom-main {
   width: 100%;
 }
 @media (max-width: 500px) {
   .middle-section .bottom-content {
-    background-color: red;
     width: 100%;
-    margin: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border-bottom: 1px solid #F6F7F8;
   }
   .middle-section .bottom-content .bottom-text {
     padding-bottom: 30px;
   }
+  .middle-section .bottom-content .btn {
+    margin-top: 40px;
+  }
   .middle-section .bottom-content img {
     width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .middle-section .btn,
-  .middle-section img {
-    display: flex;
-    flex-direction: column-reverse;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #F6F7F8;
   }
 }
