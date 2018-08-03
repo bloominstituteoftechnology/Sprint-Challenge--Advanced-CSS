@@ -1,1 +1,51 @@
 // Mixins below variables
+
+.flexbox(@flex-direction: row, @justify-content: center, @align-item: center, @flex-wrap: wrap, @display: flex){
+  flex-direction: @flex-direction;
+  justify-content: @justify-content;
+  align-items: @align-item;
+  flex-wrap: @flex-wrap;
+  display: @display;
+}
+
+.width(@width: auto){
+  width: @width;
+}
+
+.max-width(@max-width: auto){
+  max-width: @max-width;
+}
+
+.margin(@margin: auto){
+  margin: @margin;
+}
+
+.padding(@padding: auto){
+  padding: @padding;
+}
+
+.font-size(@font-size: inherit){
+  font-size: @font-size;
+}
+
+.mid-images(@width: auto, @border-radius: none){
+  width: @width;
+  border-radius: @border-radius;
+  @media @mobile {
+    &:not(.first){
+      display: none;
+    }
+    width: 100%;
+  }
+}
+
+.btn(@width: auto, @height: auto, @font-color: white, @background: @black, @border-radius: none, @padding: none, @margin: none, @font-size: 1rem){
+  width: @width;
+  height: @height;
+  color: @font-color;
+  background: @background;
+  border-radius: @border-radius;
+  padding: @padding;
+  margin: @margin;
+  font-size: @font-size;
+}

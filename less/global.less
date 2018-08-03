@@ -2,13 +2,24 @@
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
 }
 
+.container{
+  .width(100%);
+  .max-width(880px);
+  .margin(0 auto);
+  @media @mobile{
+    // padding: 0 3%;
+  }
+}
