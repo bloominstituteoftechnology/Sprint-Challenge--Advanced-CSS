@@ -1,1 +1,12 @@
 // Mixins below variables
+.flex-center() {
+  display: flex;
+  justify-content: center;
+}
+.btn(@width, @height, @btn-bg-color, @btn-font-color) {
+  .flex-center();
+  width: @width;
+  height: @height;
+  background: @btn-bg-color;
+  color: @btn-font-color;
+}
