@@ -164,14 +164,17 @@ h5 {
 }
 h1 {
   font-size: 1.6rem;
+  color: #23293B;
 }
 h2 {
   font-size: 1.4rem;
+  color: #23293B;
 }
 p {
   line-height: 1.5;
   font-size: 0.9rem;
   padding-bottom: 10px;
+  color: #5E6164;
 }
 img {
   max-width: 100%;
@@ -198,7 +201,6 @@ img {
   margin: 20px auto;
 }
 .main-nav .nav-container h1 {
-  font-size: 2.4rem;
   color: #454A59;
 }
 .main-nav .nav-container .nav {
@@ -208,9 +210,8 @@ img {
   padding-top: 20px;
 }
 .main-nav .nav-container .nav a {
-  font-size: 1rem;
   text-decoration: none;
-  color: black;
+  color: #454A59;
 }
 .footer {
   width: 100%;
@@ -221,7 +222,6 @@ img {
 .footer p {
   text-align: center;
   color: #81848E;
-  font-size: 1rem;
   padding: 20px;
 }
 .home {
@@ -307,4 +307,7 @@ img {
   width: 48%;
   padding-left: 1%;
   align-self: center;
+}
+.home .bottom-content .bottom-img-content img {
+  border-radius: 5px;
 }
