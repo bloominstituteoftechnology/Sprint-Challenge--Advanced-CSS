@@ -1,1 +1,15 @@
 // Mixins below variables
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.button-factory (@font-color, @font-size, @width, @height, @radius, @bg-color){
+    color: @font-color;
+    font-size: @font-size;
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    background-color: @bg-color;
+    text-decoration-line: none;
+}
