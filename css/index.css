@@ -264,12 +264,21 @@ img {
     justify-content: space-evenly;
     margin: 0;
     width: 100%;
-    margin: 5px;
   }
 }
 .home .header h1 {
   margin: 10px 0;
   align-self: flex-start;
+}
+@media ( max-width: 500px ) {
+  .home .header h1 {
+    margin: 5px;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .header p {
+    margin: 5px;
+  }
 }
 .home .header .middle-img-content {
   display: flex;

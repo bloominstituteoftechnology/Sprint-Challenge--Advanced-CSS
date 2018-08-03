@@ -20,18 +20,28 @@
     .header {
 
         .flex-column();
+
+        
         
         @media @phone {
             .mobile-column();
             .mobile-width();
-            margin: 5px;
+           
         }
 
         h1 {
            .headings();
+
+           @media @phone {
+               margin: 5px
+           }
         }
 
-        
+        p {
+            @media @phone {
+                margin: 5px;
+            }
+        }
 
         .middle-img-content {
             display: flex;
