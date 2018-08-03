@@ -18,5 +18,14 @@
 
 .center(){
   margin: 0 auto;
-  text-align: center;
+}
+
+.btn-maker(@width, @height, @bg-color, @font-color) {
+  .center;
+  border-radius: 15px;
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: @font-color;
+  cursor: pointer;
 }

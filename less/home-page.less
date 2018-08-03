@@ -1,5 +1,22 @@
 // Home Content
 
 .main {
+  border-bottom: 2px solid @border-color-main;
+  
+  .lift-off{
+    #flex.column;
+    align-items: flex-start;
 
+    .lift-off-img-stack{
+      #flex.row;
+      // flex-wrap: nowrap;
+
+      max-width: 800px;
+      width: 100%;
+
+      .lift-off-img {
+        width: 33%;
+      }
+    }
+  }
 }
