@@ -1,0 +1,55 @@
+.navbar {
+    max-width: 1600px;
+    width: 100%;
+    background-color: #F6F6F6;
+    height: 13vh;
+    .center;
+    flex-direction: column;
+    position: fixed;    
+    animation: yourAnimation 1s forwards 0s ease-in;
+    z-index: 2;
+
+    @keyframes yourAnimation{
+        0%{
+            transform: rotate(0) translateY(-60%);
+            }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+            }
+    }
+
+    h1 {
+        color: @gun-powder;
+        font-size: 2rem;
+
+        @media @phone {
+            padding-bottom: 3%;
+        }
+    }
+
+    .nav {
+        padding-top: 1%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;                
+
+        a {
+            color: @shuttle-gray;
+            text-decoration: none; 
+            padding-right: 1%; 
+            
+            @media @phone {
+                margin-left: 3%;
+                padding-right: 6%;                
+            }
+        }
+
+        a:hover {
+            color: black;
+            font-size: 1.3rem;
+        }
+    }
+}

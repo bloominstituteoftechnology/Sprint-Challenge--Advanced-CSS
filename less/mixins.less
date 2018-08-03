@@ -1,1 +1,30 @@
 // Mixins below variables
+
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-font() {
+    color: @ebony-clay;
+    font-size: 2rem;
+}
+
+.p-font() {
+    color: @outer-space;
+    line-height: 1.5;
+}
+
+.img-creator() {
+    border-radius: 10px;
+}
+
+.button-creator (@height, @width, @bg-color, @color, @bd-radius) {
+    height: @height;
+    width: @width;
+    background-color: @bg-color;
+    color: @color;
+    border-radius: @bd-radius;
+}
