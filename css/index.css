@@ -162,8 +162,10 @@ p {
 }
 header {
   border-bottom: 2px solid #F1F1F1;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.7);
   padding-top: 17px;
+  position: fixed;
+  width: 100%;
 }
 header .main-nav {
   display: flex;
@@ -214,6 +216,9 @@ footer {
 }
 footer p {
   color: #81848E;
+}
+.home .main-section {
+  padding-top: 100px;
 }
 .home .main-section img {
   width: 100%;
