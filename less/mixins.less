@@ -1,1 +1,32 @@
 // Mixins below variables
+.centered() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-space-between() {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.border-radius(@button-radius) {
+    -webkit-border-radius: @button-radius;
+       -moz-border-radius: @button-radius;
+            border-radius: @button-radius;
+}
+
+
+.button-builder(@button-width, @button-height, @font-color, @button-bg) {
+
+    .centered();
+    width: @button-width;
+    height: @button-height;
+    color: @font-color;
+    background-color: @button-bg;
+    border: 1px solid @button-border-color;
+    .border-radius(@button-radius);
+
+}
