@@ -1,3 +1,10 @@
+.border-top-bottom {
+  border-top: 1px solid #E2E6E9;
+  border-bottom: 1px solid #E2E6E9;
+}
+.hover-zoom {
+  transform: scale(1.15, 1.15);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,11 +147,16 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
 header .nav-container {
   width: 100%;
   background: #F6F6F6;
   color: #454A59;
-  border: 1px solid #F1F1F1;
+  border-bottom: 1px solid #E5E5E5;
 }
 header .nav-container h1 {
   text-align: center;
@@ -161,6 +173,11 @@ header .nav-container nav a {
   text-decoration: none;
   outline: none;
   color: #454A59;
+  transition: 300ms ease-in-out;
+}
+header .nav-container nav a:hover {
+  transform: scale(1.15, 1.15);
+  color: black;
 }
 footer {
   background: #F4F4F4;
@@ -168,6 +185,7 @@ footer {
   text-align: center;
   margin-top: 20px;
   border-radius: 5px;
+  border: 1px solid #E2E6E9;
 }
 footer p {
   color: #81848E;
@@ -175,7 +193,7 @@ footer p {
 main {
   background: #FFFFFF;
   width: 90%;
-  margin: 0 auto;
+  margin: 85px auto;
   max-width: 880px;
 }
 @media (max-width: 500px) {
@@ -189,7 +207,7 @@ main h2 {
   color: #23293B;
 }
 main p {
-  color: #5E6164;
+  color: #46494D;
 }
 @media (max-width: 500px) {
   main .content-container {
@@ -240,8 +258,8 @@ main .bottom-content {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  border-top: 1px solid #F6F7F8;
-  border-bottom: 1px solid #F6F7F8;
+  border-top: 1px solid #E2E6E9;
+  border-bottom: 1px solid #E2E6E9;
   padding: 20px 0px 40px 0px;
 }
 @media (max-width: 500px) {
@@ -281,15 +299,20 @@ main .bottom-content .bottom-image img {
 main .bottom-content .btn {
   width: 100px;
   height: 40px;
-  background: #23293B;
+  background: #22283A;
   color: white;
   border-radius: 5px;
+  border: 1px solid #1774E3;
   cursor: pointer;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  transition: 300ms ease-in-out;
+}
+main .bottom-content .btn:hover {
+  transform: scale(1.15, 1.15);
 }
 @media (max-width: 500px) {
   main .bottom-content .btn {

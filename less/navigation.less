@@ -1,9 +1,14 @@
 header{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
     .nav-container {
         width: 100%;
         background: @nav-bg;
         color: @nav-font;
-        border: 1px solid @nav-border;
+        border-bottom: 1px solid @nav-border;
 
         h1 {
             text-align: center;
@@ -21,6 +26,12 @@ header{
                 text-decoration: none;
                 outline: none;
                 color: @nav-font;
+                transition: 300ms ease-in-out;
+
+                &:hover {
+                    .hover-zoom();
+                    color: black;
+                }
             }
         }
     }
