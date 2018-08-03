@@ -1,3 +1,7 @@
+.p-font-color-line-height p {
+  color: #5E6164;
+  line-height: 140%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,11 +163,11 @@ h5 {
   margin-bottom: 15px;
 }
 .container header .main-nav {
-  display: flex;
-  justify-content: space-between;
   width: 28%;
   margin-bottom: 13px;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 @media ( max-width: 500px ) {
   .container header .main-nav {
@@ -187,6 +191,7 @@ footer {
 }
 .container .home-page p {
   color: #5E6164;
+  line-height: 140%;
 }
 .container .home-page .main-header-img-div {
   text-align: center;
@@ -214,9 +219,6 @@ footer {
   font-size: 2rem;
   color: #23293B;
   margin-bottom: 15px;
-}
-.container .home-page .lift-off-section p {
-  line-height: 140%;
 }
 .container .home-page .mid-img-div {
   margin: 0 55px 48px 55px;
@@ -257,9 +259,6 @@ footer {
   color: #23293B;
   margin-bottom: 15px;
 }
-.container .home-page .can-we-visit-planets-section p {
-  line-height: 140%;
-}
 .container .home-page hr {
   width: 91%;
 }
@@ -292,9 +291,6 @@ footer {
   font-size: 1.75rem;
   color: #23293B;
   margin-bottom: 15px;
-}
-.container .home-page .lets-go-for-a-walk-section div p {
-  line-height: 140%;
 }
 .container .home-page .lets-go-for-a-walk-section div .second-walk-p {
   margin-top: 10px;
