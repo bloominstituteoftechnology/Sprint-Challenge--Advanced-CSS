@@ -6,6 +6,9 @@
     padding-top: 14px;
     color: @nav-font-color;
     border-bottom: 2px solid @nav-border-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
     
     h1 {
         width: 100%;
@@ -23,6 +26,11 @@
         
         @media @phone {
             width: 80%;
+        }
+
+        a {
+            text-decoration: none;
+            color: @nav-font-color;
         }
     }
 }

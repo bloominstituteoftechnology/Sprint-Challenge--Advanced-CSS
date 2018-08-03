@@ -155,6 +155,9 @@ h5 {
   padding-top: 14px;
   color: #454A59;
   border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .container header h1 {
   width: 100%;
@@ -174,6 +177,10 @@ h5 {
     width: 80%;
   }
 }
+.container header .main-nav a {
+  text-decoration: none;
+  color: #454A59;
+}
 footer {
   width: 91%;
   background: #F4F4F4;
@@ -188,6 +195,7 @@ footer {
 .container .home-page {
   max-width: 880px;
   margin: 0 auto;
+  margin-top: 100px;
 }
 .container .home-page p {
   color: #5E6164;
