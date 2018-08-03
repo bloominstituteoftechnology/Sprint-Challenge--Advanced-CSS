@@ -160,20 +160,27 @@ p {
   max-width: 800px;
   width: 100%;
 }
-.header {
+.header .nav-bar-style {
+  background-color: #F6F6F6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  padding: 10px 0 15px;
 }
-.header .header-nav {
+.header .nav-bar-style .header-title {
+  padding: 5px 0 15px;
+}
+.header .nav-bar-style .header-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 47.5%;
   font-size: 1.6rem;
+}
+.header .nav-bar-style .header-nav a {
   text-decoration: none;
   color: #454A59;
 }
@@ -182,7 +189,6 @@ p {
   height: 200px;
 }
 .footer .bottom-content {
-  background-color: orange;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
