@@ -1,1 +1,20 @@
 // Mixins below variables
+
+
+.header-style() {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    color: @header-color;
+}
+
+.button-factory(@width, @height, @bg-color, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    text-align: center;
+}

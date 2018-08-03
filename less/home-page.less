@@ -1,2 +1,128 @@
 // Home Content
 
+.main-container {
+    max-width: 880px;
+    margin: 0 auto;
+    
+    // border: 2px solid red;
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 35rem;
+    
+        .intro-text {
+            width: 100%;
+            font-size: @font-size;
+            padding: 1rem;
+        }
+    
+        .intro-text h2 {
+            .header-style();
+        }
+    
+    }// intro-container tag
+
+    .middle-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 45rem;
+        border-bottom: 1px solid #F6F7F8;
+
+        .img-container {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 21rem;
+            margin: 1rem 0;
+            
+
+            img {
+                width: 30%;
+                height: 20rem;
+                border-radius: 20px;
+              
+
+            }
+        }
+
+        .middle-text {
+            width: 100%;
+            height: 15 rem;
+
+            h2 {
+                .header-style();
+            }
+
+            p {
+                font-size: @font-size;
+                padding: 1rem 0;
+            }
+        }
+    } //middle-container tag
+    
+    .bottom-container {
+        width: 85%;
+        height: 40rem;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F6F7F8;
+
+        .bottom-text {
+
+            width: 50%;
+            h2 {
+                .header-style();
+            }
+
+            p {
+                font-size: @font-size;
+                padding: 1rem 0;
+            }
+
+            .button {
+                display: block;
+                margin: 2rem 0;
+                .button-factory(10rem, 4rem, @header-color, @nav-border-color);
+                border: 1px solid blue;
+                border-radius: 5px;
+               
+            }
+        }
+
+        img {
+            width: 30rem;
+            height: 25rem;
+            border-radius: 5px;
+
+        }
+
+    } //bottom-container tag
+
+    .footer {
+        width: 100%;
+        height: 6rem;
+        margin-top: 1rem;
+        background-color: @footer-bg-color;
+        border: 1px solid #F6F7F8;
+        border-radius: 5px;
+
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+            padding-top: 2rem;
+        }
+    }
+
+
+    
+    
+
+ 
+
+
+} //main-container tag
