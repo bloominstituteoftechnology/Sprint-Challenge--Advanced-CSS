@@ -1,44 +1,47 @@
 .main-navigation {
-  width: 100%;
-  height: 90px;
-  background: @main-bg;
-  border-bottom: 2px solid @navigation-border;
- 
-
-  .nav-container {
+    width: 100%;
     height: 100%;
-    display: flex;
+    padding-bottom: 10px;
     align-items: center;
-    justify-content: space-between;
-
-    @media @phone {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding-top: 10px;
-    }
-
-    .logo-heading {
-      @media @phone {
-        font-size: 3rem;
-      }
-    }
-
+    flex: 1;
+    flex-wrap: wrap;
+    color: @navigation-font;
+    background: @navigation-bg;
+    border-bottom: 2px solid @navigation-border;
     .nav {
-      width: 350px;
-      display: flex;
-      justify-content: space-evenly;
-
-      @media @phone {
-        width: 100%;
-        justify-content: space-around;
-      }
-      
-      
-      a {
-        font-size: 1.6rem;
-        color: @font-color;
-        text-decoration: none;
-      }
+        flex-wrap: wrap;
+        flex: 1;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        @media @phone {
+            width: 100%;
+            justify-content: space-around;
+        }
+        a {
+            font-size: 1.6rem;
+            color: @navigation-font;
+            text-decoration: none;
+        }
     }
-  }
+    .nav-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media @phone {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .logo-heading {
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            @media @phone {
+                font-size: 3rem;
+            }
+        }
+    }
 } // .main-navigation
