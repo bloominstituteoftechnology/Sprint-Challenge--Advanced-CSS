@@ -1,11 +1,11 @@
+.lift-off-img {
+    width: 100%;
+}
+
 .main-content {
-    margin-bottom: 50px;
+    margin: 0 2% 10% 2%;
     padding-bottom: 30px;
     border-bottom: solid @mainborder 2px;
-
-    .lift-off-img {
-        width: 100%;
-    }
 
     h2{
         .h2font();
@@ -25,12 +25,25 @@
         margin-top: 15px;
         margin-bottom: 40px;
 
-        img {
+        .pics{
             width: 31%;
             height: 200px;
-            border-radius: 15px;
-         
+            .border-radius(15px);
         }
+
+        .rocket{
+            @media @phone {
+                width: 100%;
+                margin: 0 4%;
+            }
+        }
+
+        .launch {
+            @media @phone {
+            display: none;
+            }
+        }
+      
     }
 }
 
@@ -46,13 +59,27 @@
     .bottom-text {
         width: 45%;
 
+        @media @phone {
+            width: 100%;
+        }
+
+        p{
+            @media @phone {
+                margin-bottom: 50px;
+            }
+        }
+
         a {
             text-decoration: none;
             font-size: 1.6rem;
             padding: 10px 1.5%;
-            background: @headerfont;
-            color: @mainborder;
-            border-radius: 5px; 
+            .button-creator(40px, 20px, @headerfont, @mainborder);
+            .border-radius(5px); 
+
+            @media @phone {
+                width: 500px;
+                .border-radius(0px);
+            }
         }
 
         a:hover {
@@ -62,11 +89,18 @@
     }
 
     .bottom-img{
-        width: 48%;
     
+        @media @phone{
+            margin-top: 25px;
+        }
         img {
-            height: 300px;
-            border-radius: 15px;
+            width: 100%;
+            height: 250px;
+            .border-radius(15px);
+
+            @media @phone {
+                .border-radius(0px);
+            }
         }
     }
 

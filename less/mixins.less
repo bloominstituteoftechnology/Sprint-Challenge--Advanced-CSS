@@ -11,3 +11,16 @@
     color: @headerfont;
     margin: 15px 0px;
 }
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}        
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+}

@@ -196,13 +196,13 @@ footer .footer-content p {
   color: #454A59;
   padding-top: 20px;
 }
+.lift-off-img {
+  width: 100%;
+}
 .main-content {
-  margin-bottom: 50px;
+  margin: 0 2% 10% 2%;
   padding-bottom: 30px;
   border-bottom: solid #F6F7F8 2px;
-}
-.main-content .lift-off-img {
-  width: 100%;
 }
 .main-content h2 {
   font-size: 2.75rem;
@@ -223,10 +223,23 @@ footer .footer-content p {
   margin-top: 15px;
   margin-bottom: 40px;
 }
-.main-content .rocket-imgs img {
+.main-content .rocket-imgs .pics {
   width: 31%;
   height: 200px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .main-content .rocket-imgs .rocket {
+    width: 100%;
+    margin: 0 4%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .rocket-imgs .launch {
+    display: none;
+  }
 }
 .bottom-content {
   width: 90%;
@@ -239,24 +252,58 @@ footer .footer-content p {
 .bottom-content .bottom-text {
   width: 45%;
 }
+@media (max-width: 500px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text p {
+    margin-bottom: 50px;
+  }
+}
 .bottom-content .bottom-text a {
   text-decoration: none;
   font-size: 1.6rem;
   padding: 10px 1.5%;
-  background: #23293B;
+  width: 40px;
+  height: 20px;
+  background-color: #23293B;
   color: #F6F7F8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text a {
+    width: 500px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
 }
 .bottom-content .bottom-text a:hover {
   color: #23293B;
   background: lightgray;
 }
-.bottom-content .bottom-img {
-  width: 48%;
+@media (max-width: 500px) {
+  .bottom-content .bottom-img {
+    margin-top: 25px;
+  }
 }
 .bottom-content .bottom-img img {
-  height: 300px;
+  width: 100%;
+  height: 250px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-img img {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
 }
 .bottom-content h2 {
   font-size: 2.75rem;
