@@ -1,0 +1,28 @@
+header {
+  .flex-center();
+  flex-direction: column;
+  background: @nav-bg-color;
+  border-bottom: solid 2px @nav-border-color;
+  h1 {
+    .flex-center();
+    margin-top: 14px;
+    margin-bottom: 16px;
+    font-size: 2.5rem;
+    color: @nav-font-color;
+  }
+  nav {
+    .flex-center();
+    align-self: center;
+    justify-content: space-between;
+    width: 19.8%;
+    margin-bottom: 12px;
+    a {
+      font-size: 1rem;
+      color: @nav-font-color;
+      text-decoration: none;
+    }
+    @media @phone {
+      width: 78%;
+    }
+  }
+}
