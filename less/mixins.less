@@ -1,1 +1,34 @@
 // Mixins below variables
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-creator(@width, @height, @button-bg, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @button-bg;
+    color: @font-color;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 1px solid @button-border;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @font-color;
+        color: @button-bg;
+    }
+    
+}
+
+.btn {
+    .button-creator(80px, 30px, @button-bg, @font-color);
+    .center;
+
+    @media @phone {
+        .button-creator(100%, 60px, @button-bg, @font-color);
+        .center;
+    }
+}

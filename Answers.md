@@ -1,0 +1,5 @@
+Responsive wed design changes the placement of elements so that they will fit in the available space. Adaptive web design makes use of multiple fixed layout sizes, and then selects the most appropriate layout based on the size of the detected available space.
+Mobile first means you start with a design/layout for a mobile viewport, and then design out from there. Desktop first means you start with a design/layout for a desktop viewport, and then design down (smaller viewports) from there.
+Setting the font-size to 62.5% in the html tag will make it easier to calculate the rem to px conversion as you try to adjust font-sizes.
+Preprocessing alloows you to write less code, because it takes variables and mixins, and adds the code when you compile. Your code looks simpler, and is more readable. The variables and mixins also give you more power in your styling.
+The variables are my favorite because they make the most sense, and you can style something once and then use it over and over. The mixins are also very useful, but I have to take more time writing them because I am not as clear in my understanding of their structure.

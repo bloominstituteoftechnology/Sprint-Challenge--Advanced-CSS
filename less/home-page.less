@@ -1,1 +1,106 @@
-// Home Content
+.middle-section {
+    max-width: 880px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: @Main-background-color;
+    
+    @media @phone {
+        
+        .top-image {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .image-1 {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .image-2, .image-3 {
+            display: none;
+        }
+    }
+
+    .top-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        color: @Paragraph-font-color;
+    }
+
+    .header {
+        color: @Header-font-color;
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+
+    .middle-image {
+        border-radius: 20px;
+        max-width: 880px;
+        width: 33%;
+        margin-bottom: 40px;
+
+        @media @phone {
+           
+                max-width: 500px;
+                width: 100%;
+            
+        }
+    }
+
+    .middle-content {
+        color: @Paragraph-font-color;
+        padding-bottom: 40px;
+        border-bottom: 1px solid @Border-color-for-main-content;
+    }
+
+    .bottom-content {
+        max-width: 880px;
+        width: 700px;
+        padding-top: 40px;
+        display: flex;
+        
+
+        .bottom-main {
+            width: 100%;
+        }
+
+        @media @phone {
+             
+            width: 100%;
+            margin-bottom: 20px;
+            flex-direction: column;
+            border-bottom: 1px solid @Border-color-for-main-content;
+
+            .bottom-text {
+                padding-bottom: 30px;
+            }
+
+            .btn {
+                margin-top: 40px;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 60px;
+                border-bottom: 1px solid @Border-color-for-main-content;
+            }
+        }
+    }
+
+    // @media @phone {
+    //     .btn, img {
+    //         display: flex;
+    //         // flex-direction: column-reverse;
+    //     }
+    // }
+
+    
+
+    
+    
+}
