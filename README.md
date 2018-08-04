@@ -64,4 +64,4 @@ Stretch goals are only available if you complete every task listed above.  **Do 
 * [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
 * [ ] Introduce CSS animations to your site.
 * [ ] Create a fixed navigation and add some opacity to the background
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [x] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
