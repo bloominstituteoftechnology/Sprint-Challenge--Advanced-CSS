@@ -216,7 +216,7 @@ img {
   align-items: center;
 }
 .home .content-section .jumbotron {
-  padding: 100px 0 0 10px;
+  padding: 100px 0 10px 0;
   width: 100%;
   height: auto;
   max-height: 300px;
