@@ -1,1 +1,112 @@
 // Home Content
+.home {
+  width: 100%;
+
+  .header {
+    img {
+      margin-top: 108px;
+      width: 100%;
+    }
+    h2 {
+      margin-top: 15px;
+      @media @phone {
+        margin: 15px 3% 0 3%;
+      }
+    }
+
+    p {
+      margin-bottom: 15px;
+      @media @phone {
+        margin: 0 3% 15px 3%;
+      }
+    }
+  } //header
+
+  .top-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    img {
+      width: 30%;
+      height: 70%;
+      .border-radius(15px);
+    }
+
+    //This part I didn't get it before Q&A. I nested it too deep.
+    @media @phone {
+      .second-img, .last-img{
+        display: none;
+      }
+      .first-img {
+        width: 90%;
+        margin: 0 3%;
+      }
+    }
+  } //top img
+
+  .mid-content {
+    border-bottom: 2px solid @main-border;
+    @media @phone {
+      width: 100%;
+      p {
+        margin: 0 5%;
+      }
+    }
+    h3 {
+      margin-top: 30px; 
+      @media @phone {
+        margin: 30px 3% 0 3%;
+      }
+    }
+
+    p:last-child{
+      margin-bottom: 70px;
+    }
+  } //mid-content
+
+  .bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 2px solid @main-border;
+
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .signup-text {
+      width: 50%;
+      padding: 8% 3% 10% 0;
+      margin-left: 6%;
+
+      @media @phone {
+        width: 90%;
+        padding: 10% 11% 10px 2%; 
+      }
+      .btn {
+        margin-top: 15px;
+        .button-creator(25%, 35px, @header-font, @white);
+        @media @phone {
+          margin-top: 30px;
+          .button-creator(100%, 50px, @header-font, @white);
+        }
+      }
+    }
+
+    .signup-img {
+      width: 50%;
+      padding-top: 8%;
+      margin-right: 6%;
+
+      @media @phone {
+        width: 100%;
+        padding: 5px 10% 40px 13%; 
+      }
+    }
+  } //bottom content
+} //home
