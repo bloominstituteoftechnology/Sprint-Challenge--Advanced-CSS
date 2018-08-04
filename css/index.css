@@ -1,1 +1,388 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+hr {
+  margin: 40px 0 30px 0;
+  border: solid lightgrey 2px;
+}
+@media ( max-width: 500px ) {
+  hr {
+    margin: 40px -4% 30px -4%;
+    border: solid lightgrey 1px;
+  }
+}
+.nav-container {
+  background-color: #e8e4e4;
+  text-align: center;
+  border-bottom: solid #b3aeae 4px;
+}
+@media ( max-width: 500px ) {
+  .nav-container {
+    background-color: white;
+  }
+}
+.nav-container h1 {
+  font-size: 3.5rem;
+  padding-top: 10px;
+}
+.nav-container nav {
+  margin: 10px 0;
+}
+.nav-container nav a {
+  margin-right: 3%;
+  color: #454A59;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+footer {
+  text-align: center;
+  background-color: #F4F4F4;
+  color: #81848E;
+  padding: 3%;
+}
+footer p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.home hr {
+  margin: 40px 0 30px 0;
+  border: solid lightgrey 2px;
+}
+@media ( max-width: 500px ) {
+  .home hr {
+    margin: 40px -4% 30px -4%;
+    border: solid lightgrey 1px;
+  }
+}
+.home .banner {
+  width: 100%;
+  height: 200px;
+}
+.home p {
+  font-size: 1.6rem;
+}
+.home h2 {
+  font-size: 2.6rem;
+}
+.home .lift-off .section-1-lift-off {
+  padding: 10px 2% 10px 2%;
+}
+@media ( max-width: 500px ) {
+  .home .lift-off .section-1-lift-off {
+    padding: 10px 3% 10px 3%;
+  }
+}
+.home .lift-off .section-2-lift-off {
+  display: flex;
+  padding: 10px 2% 10px 2%;
+  width: 35%;
+  border-radius: 4%;
+}
+@media ( max-width: 500px ) {
+  .home .lift-off .section-2-lift-off {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.home .lift-off .section-2-lift-off .pics {
+  width: 100%;
+  margin-right: 5%;
+  border-radius: 13%;
+  height: 60%;
+}
+@media ( max-width: 500px ) {
+  .home .lift-off .section-2-lift-off .pics {
+    padding: 3%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .lift-off .section-2-lift-off .none {
+    display: none;
+  }
+}
+.home .planets {
+  padding: 10px 2% 10px 2%;
+}
+@media ( max-width: 500px ) {
+  .home .planets {
+    padding: 10px 3% 10px 3%;
+  }
+}
+.home .planets p {
+  margin: 15px 0;
+}
+.home .walk {
+  display: flex;
+  margin: 0 0 0 14%;
+}
+@media ( max-width: 500px ) {
+  .home .walk {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    margin: 0;
+  }
+}
+.home .walk .section-1-walk {
+  width: 43%;
+}
+@media ( max-width: 500px ) {
+  .home .walk .section-1-walk {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+.home .walk .section-1-walk p {
+  padding: 3% 3%;
+}
+.home .walk .section-1-walk .btn {
+  background-color: #0d0d80;
+  text-align: center;
+  padding: 9px;
+  font-size: 1.6rem;
+  color: white;
+  margin-left: 10px;
+  border-radius: 4px;
+  width: 80px;
+  margin-top: 5px;
+}
+@media ( max-width: 500px ) {
+  .home .walk .section-1-walk .btn {
+    margin-top: 10px;
+    width: 94%;
+    padding: 5%;
+  }
+}
+.home .walk .section-2-walk .walker {
+  width: 66%;
+}
+@media ( max-width: 500px ) {
+  .home .walk .section-2-walk .walker {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+  }
+}
+.home .walk h2 {
+  margin-left: 3%;
+}
+.banner-about {
+  width: 100%;
+}
+.about .banner-about {
+  width: 100%;
+}
+.about p {
+  font-size: 1.6rem;
+  padding: 1%;
+}
+.about .things-to-do {
+  display: flex;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do {
+    flex-direction: column;
+    margin: 15px 4% 15px 4%;
+    padding: 1%;
+  }
+}
+.about .things-to-do h2 {
+  font-size: 3rem;
+  margin: 5px 0;
+  padding: 1%;
+}
+.about .things-to-do .things-to-do-section {
+  margin: 1%;
+  padding: 1%;
+  border: solid black 1px;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do .things-to-do-section {
+    margin: 10px 0 10px 0;
+    border-radius: 2%;
+    border: solid black 2px;
+  }
+}
+.about .things-to-do .things-to-do-section .pics {
+  width: 100%;
+}
+@media ( max-width: 500px ) {
+  .about .things-to-do .things-to-do-section:hover {
+    background-color: darkgrey;
+    color: white;
+  }
+}
+.about .testimonials {
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+}
+@media ( max-width: 500px ) {
+  .about .testimonials {
+    flex-direction: column-reverse;
+    margin: 0 4% 15px 4%;
+    padding: 0 1% 0 1%;
+  }
+}
+.about .testimonials h2 {
+  font-size: 3rem;
+  margin: 5px 0;
+  padding: 1%;
+}
+.about .testimonials p {
+  font-size: 2rem;
+}
+.about .testimonials .testimonials-section {
+  width: 100%;
+}
+.about .testimonials .testimonials-section .happy {
+  width: 100%;
+}
