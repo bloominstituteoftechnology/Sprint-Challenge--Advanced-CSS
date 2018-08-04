@@ -1,1 +1,80 @@
 // Home Content
+
+.home {
+
+    max-width: 1024px;
+      width: 90%;
+      border: 1px solid red;
+      margin: 0 auto;
+      padding: 0 5%;
+  
+    .cta-section{
+      margin: 0 auto;
+    }
+  
+    .middle-section {
+        margin: 30px 0;
+        
+    
+       
+        
+        .text-content {
+          width: 100%;
+          padding-right: 1%;
+        }
+    
+        .img-content {
+          width:100%;
+          
+       
+          img {
+            border-radius: 10px;
+          }
+          
+         
+        }
+    
+            border-bottom: 1px solid @Border-color-for-main-content;
+
+             @media @phone{
+                &:nth-child(3) {
+                    display: none;
+                  }
+            }
+      }
+
+
+      .lower-section {
+        display:flex;
+        .flex-space-between();
+        padding-bottom: 30px;
+        border-bottom: 1px solid @Border-color-for-main-content;
+    
+        .text-content {
+          width: 50%;
+          padding-left: 1%;
+          padding-right: 0;
+    
+          
+    
+        }
+    
+        .img-content {
+          width:47%;
+          padding-right:1%;
+          padding-left: 2%;
+    
+        }
+    
+        btn{
+    
+            .button-builder(@button-width, @button-height, @button-font-color, @button-bg);
+          }
+
+          @media @phone {
+            flex-wrap: wrap;
+          }
+      }
+  
+    
+  }// home
