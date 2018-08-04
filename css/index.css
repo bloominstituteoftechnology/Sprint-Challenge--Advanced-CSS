@@ -280,6 +280,11 @@ h5 {
   border-radius: 4px;
   text-decoration: none;
   font-size: 1rem;
+  transition: 0.2s;
+}
+.home .bot .text-container .button:hover {
+  background: #11679D;
+  transition: 0s;
 }
 @media (max-width: 517px) {
   .home .bot .text-container .button {
@@ -296,6 +301,87 @@ h5 {
 @media (max-width: 517px) {
   .home .bot img {
     width: 100%;
+  }
+}
+.home .magazine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 7.9% 19px 7.9%;
+  margin-top: 25px;
+  border-bottom: 1px solid #DEE2E6;
+}
+@media (max-width: 517px) {
+  .home .magazine {
+    flex-direction: column;
+    padding: 0 12.6%;
+  }
+}
+.home .magazine .text-container {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  margin-top: 2px;
+}
+@media (max-width: 517px) {
+  .home .magazine .text-container {
+    width: 100%;
+  }
+}
+.home .magazine form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 47.8%;
+}
+@media (max-width: 517px) {
+  .home .magazine form {
+    width: 100%;
+  }
+}
+.home .magazine form label {
+  align-self: flex-start;
+  color: #81848E;
+  margin-left: 1px;
+}
+.home .magazine form input {
+  width: 100%;
+  margin: 2px 0 3px 0;
+}
+.home .magazine .button-container {
+  display: flex;
+  margin-left: auto;
+  width: 47.8%;
+}
+@media (max-width: 517px) {
+  .home .magazine .button-container {
+    width: 100%;
+    margin: 0;
+  }
+}
+.home .magazine .button-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 38px;
+  color: #FFFFFF;
+  background: #23293B;
+  border: 1px solid #007BFF;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+.home .magazine .button-container a:hover {
+  background: #11679D;
+  transition: 0s;
+}
+@media (max-width: 517px) {
+  .home .magazine .button-container a {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
   }
 }
 .home .footer {

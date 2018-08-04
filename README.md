@@ -61,7 +61,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 ## Stretch Goals
 Stretch goals are only available if you complete every task listed above.  **Do not work on them until your pull request is in.**
-* [x] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
-* [ ] Introduce CSS animations to your site.
-* [ ] Create a fixed navigation and add some opacity to the background
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
+* [x] Introduce CSS animations to your site. 
+* [x] Create a fixed navigation and add some opacity to the background
+* [x] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
