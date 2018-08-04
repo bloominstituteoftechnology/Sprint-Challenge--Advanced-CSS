@@ -1,1 +1,23 @@
 // Footer Styles
+
+footer {
+    height: 70px;
+    margin-top: 10px;
+    background: @navbackground;
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: solid @navborder 2px;
+        border-left: solid @navborder 2px;
+        border-right: solid @navborder 2px;
+
+        p {
+            .pfont();
+            color: @navfont;
+            padding-top: 20px;
+        }
+    }
+
+}

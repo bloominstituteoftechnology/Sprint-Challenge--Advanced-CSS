@@ -1,1 +1,26 @@
 // Mixins below variables
+
+.pfont() {
+    color: @pfont;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.h2font() {
+    font-size: 2.75rem;
+    color: @headerfont;
+    margin: 15px 0px;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}        
+
+.button-creator(@width, @height, @bg-color, @font-color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+}

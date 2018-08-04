@@ -1,0 +1,34 @@
+header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: @navbackground;
+    border-bottom: solid @navborder 3px;
+    
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: @navfont;
+        font-size: 1.6rem;
+        padding: 10px 20px;
+        
+
+    }
+
+    nav a:hover {
+        background: lightgrey;
+        border-radius: 5px;
+    }
+}
