@@ -1,1 +1,307 @@
-/* Compile your LESS first! */
+.h2andp h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.h2andp p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.content-padding {
+  padding: 1% 12%;
+}
+.content-bottom-border {
+  border-bottom: 2px solid darkgrey;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.main-nav {
+  width: 100%;
+  height: 90px;
+  background-color: darkgrey;
+  border-bottom: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+}
+.main-nav nav {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main-nav nav h1 {
+  width: 100%;
+  margin: 10px 35%;
+  color: black;
+  font-size: 2rem;
+}
+.main-nav nav a {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+  width: 90px;
+  padding: 0 2%;
+}
+.main-nav nav a:hover {
+  color: black;
+}
+@media (max-width: 500px) {
+  .main-nav nav {
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+.home {
+  width: 100%;
+  margin: 0 auto;
+}
+.home .banner {
+  width: 100%;
+  padding: 1% 12%;
+  height: 200px;
+}
+@media (max-width: 500px) {
+  .home .banner {
+    height: 50px;
+  }
+}
+.home .top-content {
+  padding: 1% 12%;
+}
+.home .top-content h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.home .top-content p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.home .top-content .images-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+.home .top-content .images-bar img {
+  border-radius: 10px;
+  width: 31%;
+  height: 5%;
+}
+@media (max-width: 500px) {
+  .home .top-content .images-bar .blast-off {
+    width: 100%;
+    content: 0 5%;
+  }
+  .home .top-content .images-bar .space-sky {
+    display: none;
+  }
+  .home .top-content .images-bar .launching-off {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    margin: 0 5%;
+    width: 90%;
+    padding: 0;
+  }
+}
+.home .middle-content {
+  padding: 1% 12%;
+}
+.home .middle-content h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.home .middle-content p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.home .middle-content .last-p {
+  padding-bottom: 40px;
+  border-bottom: 2px solid darkgrey;
+}
+@media (max-width: 500px) {
+  .home .middle-content {
+    width: 100%;
+  }
+}
+.home .bottom-content {
+  display: flex;
+  padding: 1% 12%;
+  padding-bottom: 40px;
+  width: 100%;
+  border-bottom: 2px solid darkgrey;
+  flex-wrap: wrap;
+}
+.home .bottom-content h2 {
+  font-size: 2rem;
+  margin: 1% 0;
+}
+.home .bottom-content p {
+  font-size: 1.3rem;
+  margin: 1% 0;
+}
+.home .bottom-content img {
+  border-radius: 3px;
+}
+@media (max-width: 500px) {
+  .home .bottom-content {
+    display: block;
+  }
+  .home .bottom-content p .bottom-text {
+    width: 100%;
+  }
+  .home .bottom-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .bottom-content {
+    display: block;
+  }
+}
+html {
+  font-size: 62.5%;
+}

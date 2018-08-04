@@ -1,1 +1,123 @@
 // Home Content
+
+.home
+{
+    width: 100%;
+    margin: 0 auto;
+
+    .banner
+    {
+        width: 100%;
+        padding: 1% 12%;
+        height: 200px;
+
+        @media @mobile
+        {
+            height: 50px;
+        }
+    }
+
+    .top-content
+    {
+        .content-padding;
+        .h2andp;
+
+        .images-bar
+        {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin: 1% 0;
+
+            img
+            {
+                border-radius: 10px;
+                width: 31%;
+                height: 5%;
+            }
+
+            @media @mobile
+            {
+                .blast-off
+                {
+                    width: 100%;
+                    content: 0 5%;
+                }
+                .space-sky
+                {
+                    display: none;
+                }
+                .launching-off
+                {
+                    display: none;
+                }
+            }
+        }
+
+        @media @mobile
+        {
+            margin: 0 5%;
+            width: 90%;
+            padding: 0;
+        }
+    }
+
+    .middle-content
+    {
+        .content-padding;
+        .h2andp;
+        .last-p
+        {
+            padding-bottom: 40px;
+            .content-bottom-border;
+        }
+
+        @media @mobile
+        {
+            width: 100%;
+        }
+    }
+
+    .bottom-content
+    {
+        display: flex;
+        .content-padding;
+        .h2andp;
+
+        img
+        {
+            border-radius: 3px;
+        }
+        
+        padding-bottom: 40px;
+        width: 100%;
+        .content-bottom-border;
+        flex-wrap: wrap;
+
+        @media @mobile
+        {
+            display: block;
+
+            p
+            {
+                .bottom-text
+                {
+                    width: 100%;
+                }
+            }
+            
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    @media @mobile
+    {
+        .bottom-content
+        {
+            display: block;
+        }
+    }
+}
