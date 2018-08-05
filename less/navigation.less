@@ -1,17 +1,17 @@
 
-.header {
   // background-color: orange;
-  .nav-bar-style{
+  .nav-bar{
       background-color: @navigation-background;
       #flex.column;
-      padding: 10px 0 15px;
+      padding: 10px 0 12px;
+      border-bottom: 2px solid @navigation-border-color;
 
       .header-title{
-        padding: 5px 0 15px;
+        padding: 5px 0 16px;
       }
-      .header-nav{
+      .nav{
         #flex.row;
-        width: 47.5%;
+        width: 28%;
         font-size: @size-a;
 
         @media @phone {
@@ -25,6 +25,7 @@
       }
     }
 
+    .header {
     .header-img{
       width: 100%;
       height: 200px;
