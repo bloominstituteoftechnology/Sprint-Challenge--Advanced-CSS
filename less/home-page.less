@@ -33,7 +33,11 @@
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-between;
-
+     @media @phone {
+       width: 100%;
+       align-self: center;
+       padding: 1rem;
+     }
 
     img {
       padding: .5rem;
@@ -42,11 +46,10 @@
       .border-radius(30px);
 
          @media @phone {
-           width: 90%;
+           width: 100%;
+           padding: 1rem .5rem 1rem .5rem;
            &:not(.first-img) {
-             flex-flow: column;
              display: none;
-
           }
          }
     }

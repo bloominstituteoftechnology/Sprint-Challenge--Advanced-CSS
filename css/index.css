@@ -217,6 +217,13 @@ h5 {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+@media ( max-width: 500px ) {
+  .home .center-images {
+    width: 100%;
+    align-self: center;
+    padding: 1rem;
+  }
+}
 .home .center-images img {
   padding: 0.5rem;
   width: 33%;
@@ -227,10 +234,10 @@ h5 {
 }
 @media ( max-width: 500px ) {
   .home .center-images img {
-    width: 90%;
+    width: 100%;
+    padding: 1rem 0.5rem 1rem 0.5rem;
   }
   .home .center-images img:not(.first-img) {
-    flex-flow: column;
     display: none;
   }
 }
