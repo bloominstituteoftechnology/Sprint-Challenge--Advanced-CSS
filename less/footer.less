@@ -10,10 +10,24 @@
     padding: 48px 7.8%;
     border-bottom: 1px solid @navigation-border-color;
 
+    @media @phone {
+      #flex.column;
+      padding: 48px 0%;
+    }
+
     .go-walk{
       width: 48%;
       h3{padding: 2px 0 0px;}
-      p{padding: 11px 0 5px;}
+      p{padding: 11px 0 5px;
+
+        @media @phone {
+          margin-right: 1px;
+        }
+      }
+
+      @media @phone {
+        width: 77.5%;
+      }
 
       .btn {
         .btn-maker(81px, 38px,  #22283A, white, 5px );
@@ -21,16 +35,26 @@
         padding: 10px 0;
         text-align: center;
         font-size: 1.6rem;
+        border: 1px solid blue;
+
+        @media @phone {
+          width: 99.75%;
+          height: 50px;
+          margin: 31px 0 20px;
+          padding: 15px 0;
+
+        }
       }
 
 
       }
       .bottom-img{
         width: 48%;
-        // height: auto;
         border-radius: 5px;
-        // margin: 13px 6.3%;
-        // transform: translateY(-13px);
+
+        @media @phone {
+          width: 77.5%;
+        }
 
     }
   }
@@ -42,8 +66,8 @@
   border-top: 2px solid @border-color-main;
   font-size: @size-p;
   // color: @footer-text-color;
-  .btn-maker(100%, 84px, @footer-bg-color, @footer-text-color, 5px);
-  margin: 14px auto;
+  .btn-maker(100%, 82px, @footer-bg-color, @footer-text-color, 5px);
+  margin: 16px auto;
   border: 1px solid lightgray;
 
   small {
