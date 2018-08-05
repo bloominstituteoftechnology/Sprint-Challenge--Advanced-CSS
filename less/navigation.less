@@ -8,8 +8,7 @@
   color: @nav-font;
   background-color: @nav-bg;
   @media @phone {
-    align-content: center;
-
+    flex-flow: row wrap;
   }
   h1 {
     font-size: @nav-h1-size;
@@ -19,17 +18,21 @@
     .flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    //width: 30%;
     padding: 1rem;
     @media @phone {
-      
+      width: 100%;
+      .flex;
+      .center;
 
     }
     a {
     .text-plain;
     color: @nav-font;
+    padding: 1rem;
     @media @phone {
       display: flex;
+      padding: .5rem;
     }
     }
   }
