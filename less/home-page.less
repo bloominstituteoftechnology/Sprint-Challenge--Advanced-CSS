@@ -23,6 +23,10 @@
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-between;
+    @media @phone {
+      flex-flow: column;
+    }
+
 
     img {
       padding: .5rem;
@@ -30,12 +34,10 @@
       height: 16rem;
       .border-radius(30px);
 
-        @media @phone {
-          &:not(.first-img) {
-              display: none;
-        }
-      }
+         @media @phone {
+           width: 90%;
 
+         }
     }
   }
   .bottom-section {
@@ -44,14 +46,24 @@
     width: 90%;
     align-self: center;
     padding: @bottom-section-padding;
+    @media @phone {
+      flex-flow: column wrap;
+    }
     img {
       width: 50%;
       .border-radius(10px);
+      @media @phone {
+        width: 100%;
+      }
     }
     .text-section {
       .flex;
       flex-direction: column;
       width: 50%;
+      @media @phone {
+        width: 100%;
+        //flex-flow: row wrap;
+      }
       .btn {
         .flex;
         .center;
