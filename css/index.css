@@ -159,7 +159,6 @@ h5 {
 }
 .main-navigation h1 {
   font-size: 2.8rem;
-  padding: 1rem;
 }
 .main-navigation .nav-links {
   display: flex;
@@ -170,21 +169,13 @@ h5 {
 @media ( max width = 500px ) {
   .main-navigation .nav-links {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 .main-navigation .nav-links a {
   text-decoration: none;
   color: #454A59;
-  padding: 1rem;
 }
 @media ( max width = 500px ) {
-  .main-navigation .nav-links a {
-    display: flex;
-    padding: 0.5rem;
-  }
 }
 .home {
   display: flex;
@@ -213,6 +204,11 @@ h5 {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+}
+@media ( max width = 500px ) {
+  .home .center-images img:not(.first-img) {
+    display: none;
+  }
 }
 .home .bottom-section {
   display: flex;
