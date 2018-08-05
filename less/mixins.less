@@ -5,3 +5,20 @@
     justify-content: center;
     align-items: center;
 }
+
+.button-creator(@width, @height) {
+    border-radius: 0;
+    .center;
+    width: @width;
+    height: @height;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+}  
+
+@phone: ~ "( max-width: 500px )";
