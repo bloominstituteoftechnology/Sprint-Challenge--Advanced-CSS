@@ -3,30 +3,55 @@
     height: 60px;
     background: #F6F6F6;
 
+    @media @phone {
+        width: 100%;
+    }
+
     .spacewalker {
         font-family: 'Russo One', sans-serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media @phone {
+            width: 100%;
+        }
     }
         .nav {
-            width: 60%;
-            margin-left: 20%;
+            margin: 0 25% 0 25%;
             height: 100%;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-evenly;
+
+            @media @tablet {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
 
             @media @phone {
                 width: 100%;
-                margin-right: 100%;
-        }
+                display: flex;
+                justify-content: center;
+              
+            }
 
             a {
+                font-size: 1.2rem;
                 font-family: 'Russo One', sans-serif;
                 text-decoration: none;
                 color: #454A59;
+
+                @media @phone {
+                    width: 100%;
+                    font-family: 'Russo One', sans-serif;
+                    text-decoration: none;
+                    color: #454A59;
+                    font-size: 0.5rem;
+                }
             }
         }
-    }
+    
+}

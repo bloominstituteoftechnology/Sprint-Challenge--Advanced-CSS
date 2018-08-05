@@ -1,17 +1,20 @@
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
+    // max-width: 1000px;
+    // margin: 0 auto;
     width: 100%;
-     @media @phone {
+   
+    
+    @media @phone {
         width: 100%;
     }
      .home {
+        max-width: 1000px;
         margin: 0 10% 0 10%;
+        // width: 100%;
          .lift {
             margin: 20px 0;
              h2 {
                 margin: 10px 0;
-                
                 
             }
         }
@@ -23,13 +26,12 @@
          .tri-img {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
             justify-content: space-between;
             margin-bottom: 3%;
 
                .img1 {
                    width: 31%;
-
+                    
                    img {
                     border-radius: 15px;
                    }
@@ -42,17 +44,25 @@
                     border-radius: 15px;
                     width: 31%;
 
+                    img {
+                        border-radius: 15px;
+                       }
+
                     @media @phone {
                         width: 100%;
+                    }
                 }
-            }
                 .img3 {
                     border-radius: 15px;
                     width: 31%;
 
+                    img {
+                        border-radius: 15px;
+                       }
+
                     @media @phone {
                         width: 100%;
-                }
+                    }
                 }
                     
 
@@ -60,48 +70,54 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-             }
-        }
+                }
+            }
              .can {
                 
             }
             
-        
          .lets {
             display: flex;
-            flex-direction: center;
-            flex-wrap: nowrap;
-            margin: 30px 50px;
+            justify-content: space-between;
+            margin: 30px 0 30px 0;
             
                 @media @phone {
-                    margin: 0 50px 0 0;
+                    // margin: 0 50px 0 0;
                     width: 100%;
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-            }
-            
+                }
            .lets-text {
-               flex-wrap: wrap;
-               flex-direction: column;
-               width: 30%;
+               width: 300px;
+               margin-left: 10%;
 
+               @media @phone {
+                   width: 100%;
+               }
+               
                h2 {
                    margin: 10px;
-               
-                   p{
-                       justify-content: space-evenly;
-                   }
-           
-             .btn {
-                .button-maker(100px, 30px, blue, white);
-                cursor: pointer;
-                }
+               }
+             
+                    .btn {
+                        .button-maker(100px, 30px, blue, white);
+                        cursor: pointer;
+
+                        @media @phone {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
             }
         }
              .astronaut {
-                 height: 400px;
-                 margin-left: 35%;
+                 height: 300px;
+                 width: 350px;
+            
+                @media @phone {
+                    width: 100%;
+                }
             }
     }
 }

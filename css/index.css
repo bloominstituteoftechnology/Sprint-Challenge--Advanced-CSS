@@ -146,31 +146,58 @@ p {
   height: 60px;
   background: #F6F6F6;
 }
+@media (max-width:500px) {
+  .head {
+    width: 100%;
+  }
+}
 .head .spacewalker {
   font-family: 'Russo One', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  .head .spacewalker {
+    width: 100%;
+  }
+}
 .head .nav {
-  width: 60%;
-  margin-left: 20%;
+  margin: 0 25% 0 25%;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
+}
+@media (max-width:700px) {
+  .head .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media (max-width:500px) {
   .head .nav {
     width: 100%;
-    margin-right: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 .head .nav a {
+  font-size: 1.2rem;
   font-family: 'Russo One', sans-serif;
   text-decoration: none;
   color: #454A59;
+}
+@media (max-width:500px) {
+  .head .nav a {
+    width: 100%;
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    color: #454A59;
+    font-size: 0.5rem;
+  }
 }
 .foot {
   background: #F6F6F6;
@@ -181,10 +208,16 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+}
+@media (max-width:500px) {
+  .foot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
   width: 100%;
 }
 @media (max-width:500px) {
@@ -193,6 +226,7 @@ p {
   }
 }
 .container .home {
+  max-width: 1000px;
   margin: 0 10% 0 10%;
 }
 .container .home .lift {
@@ -209,7 +243,6 @@ p {
 .container .home .tri-img {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 3%;
 }
@@ -228,6 +261,9 @@ p {
   border-radius: 15px;
   width: 31%;
 }
+.container .home .tri-img .img2 img {
+  border-radius: 15px;
+}
 @media (max-width:500px) {
   .container .home .tri-img .img2 {
     width: 100%;
@@ -236,6 +272,9 @@ p {
 .container .home .tri-img .img3 {
   border-radius: 15px;
   width: 31%;
+}
+.container .home .tri-img .img3 img {
+  border-radius: 15px;
 }
 @media (max-width:500px) {
   .container .home .tri-img .img3 {
@@ -251,13 +290,11 @@ p {
 }
 .container .home .lets {
   display: flex;
-  flex-direction: center;
-  flex-wrap: nowrap;
-  margin: 30px 50px;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
 }
 @media (max-width:500px) {
   .container .home .lets {
-    margin: 0 50px 0 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -265,9 +302,13 @@ p {
   }
 }
 .container .home .lets .lets-text {
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 30%;
+  width: 300px;
+  margin-left: 10%;
+}
+@media (max-width:500px) {
+  .container .home .lets .lets-text {
+    width: 100%;
+  }
 }
 .container .home .lets .lets-text h2 {
   margin: 10px;
@@ -289,7 +330,18 @@ p {
   background: white;
   color: blue;
 }
+@media (max-width:500px) {
+  .container .home .lets .lets-text .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
 .container .home .astronaut {
-  height: 400px;
-  margin-left: 35%;
+  height: 300px;
+  width: 350px;
+}
+@media (max-width:500px) {
+  .container .home .astronaut {
+    width: 100%;
+  }
 }
