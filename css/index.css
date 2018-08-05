@@ -167,7 +167,7 @@ p {
     font-size: 3rem;
   }
 }
-.nav-bar {
+header {
   background-color: #F6F6F6;
   display: flex;
   flex-wrap: wrap;
@@ -177,10 +177,10 @@ p {
   padding: 10px 0 12px;
   border-bottom: 2px solid #F1F1F1;
 }
-.nav-bar .header-title {
+header .header-title {
   padding: 5px 0 16px;
 }
-.nav-bar .nav {
+header .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -189,13 +189,9 @@ p {
   width: 28%;
   font-size: 1.6rem;
 }
-.nav-bar .nav a {
+header .nav a {
   text-decoration: none;
   color: #454A59;
-}
-.header .header-img {
-  width: 100%;
-  height: 200px;
 }
 .footer {
   padding: 0px 0 0;
@@ -291,6 +287,11 @@ p {
 .copyright small {
   transform: translateY(-8px);
   color: black;
+}
+.header-img {
+  max-width: 800px;
+  width: 100%;
+  height: 200px;
 }
 .main {
   padding: 1px 1.9% 44px;
