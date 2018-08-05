@@ -33,12 +33,7 @@
     width: 100%;
     flex-flow: row nowrap;
     justify-content: space-between;
-    &:not(.first-img) {
-    @media @phone {
-      flex-flow: column;
-      display: none;
-    }
-}
+
 
     img {
       padding: .5rem;
@@ -48,31 +43,34 @@
 
          @media @phone {
            width: 90%;
+           &:not(.first-img) {
+             flex-flow: column;
+             display: none;
 
+          }
          }
     }
   }
   .bottom-section {
     .flex;
-    .center;
+    //.center;
     width: 90%;
     align-self: center;
-
     padding: @bottom-section-padding;
     @media @phone {
-      flex-flow: row wrap;
-      width: 100%;
-      align-items: flex-start;
-      justify-content: flex-start;
-      align-content: flex-start;
+    flex-direction: column;
 
     }
     .bottom-img {
+      @media @phone {
+
+      }
     img {
       width: 100%;
       .border-radius(3px);
       @media @phone {
         width: 100%;
+
       }
     }
   }
@@ -82,7 +80,8 @@
       width: 50%;
       @media @phone {
         width: 100%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-self: center;
       }
       .btn {
         .flex;
@@ -91,7 +90,10 @@
         .border-radius(3px);
         border: 2px solid blue;
         padding: 1rem;
-
+        @media @phone {
+          .button-creator(3rem, 100%, @button-bg-color, @button-font);
+          margin-bottom: 1rem;
+        }
       }
     }
   }
