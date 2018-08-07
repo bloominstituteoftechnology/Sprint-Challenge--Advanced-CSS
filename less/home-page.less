@@ -1,1 +1,119 @@
 // Home Content
+.home {
+  .flex;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+
+  @media @phone {
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+
+  .top-section {
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-section {
+    @media @phone {
+
+      width: 100%;
+    }
+   h2 {
+     padding: 1rem;
+     font-size: @main-h2-size;
+   }
+  }
+
+  .center-images {
+    .flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+     @media @phone {
+       width: 100%;
+       align-self: center;
+       padding: 1rem;
+     }
+
+    img {
+      padding: .5rem;
+      width: 33%;
+      height: 16rem;
+      .border-radius(30px);
+
+         @media @phone {
+           width: 100%;
+           padding: 1rem .5rem 1rem .5rem;
+           &:not(.first-img) {
+             display: none;
+          }
+         }
+    }
+  }
+  .bottom-section {
+    .flex;
+    //.center;
+    width: 90%;
+    align-self: center;
+    padding: @bottom-section-padding;
+    @media @phone {
+    flex-direction: column;
+
+    }
+    .bottom-img {
+      @media @phone {
+
+      }
+    img {
+      width: 100%;
+      .border-radius(3px);
+      @media @phone {
+        width: 100%;
+
+      }
+    }
+  }
+    .text-section {
+      .flex;
+      flex-direction: column;
+      width: 50%;
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        align-self: center;
+      }
+      .btn {
+        .flex;
+        .center;
+        .button-creator(30px, 100px, @button-bg-color, @button-font);
+        .border-radius(3px);
+        border: 2px solid blue;
+        padding: 1rem;
+        @media @phone {
+          .button-creator(3rem, 100%, @button-bg-color, @button-font);
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: @main-h1-size;
+    padding: @main-h1-padding;
+  }
+  p {
+    padding: @main-p-padding;
+    line-height: 1.5rem;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: @footer-bg;
+    color: @footer-text;
+  }
+}

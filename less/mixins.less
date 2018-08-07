@@ -1,1 +1,36 @@
 // Mixins below variables
+
+// Flex container
+.flex() {
+  display: flex;
+}
+
+// True center Content
+.center() {
+  align-items: center;
+  justify-content: center;
+}
+
+// Remove text decorations
+.text-plain() {
+  text-decoration: none;
+}
+
+// For rounded edges, use border radius!
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Button maker
+.button-creator(@height, @width, @bg-color, @font-color) {
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: @font-color;
+}
+
+.padding-creator(@padding) {
+  padding: @padding;
+}

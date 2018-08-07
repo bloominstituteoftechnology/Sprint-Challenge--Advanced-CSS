@@ -1,0 +1,42 @@
+// Navigation styling begins
+.main-navigation {
+  width: 100%;
+  .flex;
+  .center;
+  flex-flow: column nowrap;
+  .padding-creator(@nav-padding);
+  color: @nav-font;
+  background-color: @nav-bg;
+  @media @phone {
+    flex-flow: column;
+  }
+  h1 {
+    font-size: @nav-h1-size;
+    //padding: 1rem;
+  }
+  .nav-links {
+    .flex;
+    align-items: center;
+    justify-content: space-between;
+    //width: 30%;
+    padding: 1rem;
+    @media @phone {
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    a {
+    .text-plain;
+    color: @nav-font;
+    padding: 0 1rem 0 1rem;
+    @media @phone {
+      .flex;
+       padding: 0 0.5rem 0 0.5rem;
+       justify-content: space-between;
+      //padding: .5rem;
+
+    }
+    }
+  }
+}
