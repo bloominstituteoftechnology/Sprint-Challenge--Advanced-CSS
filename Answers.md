@@ -1,0 +1,11 @@
+// Adaptive vs Responsive
+
+1. One main difference between adaptive response and adaptive design is that for adaptive there are multiple layouts for all of the different web browsing devices while respoonsive is one, more complex and fluid layout. It is more diffiult to build a responsive layout beucase of its response at any and all sizes. 
+
+2. Depending on which is first (desktop, or mobile) the latter design second will be the design based off the first design. Media queries will be used for the latter while Global styles will be used for the  former. Mobile design holds all of the essential functionalities while desktop design is scaled to the highest resolution of the design aspect. 
+
+3. There are two reasons we set the font-size to 62.5 in CSS. The first reason is usability for design. 62.5 / 100 * 16(px) = 10px. Now, 10px == 1rem. It is much more intutitive to be able to set font sizes through the single unit rem. The second reason for setting the global font-size to 62.5% is for scaling compatability with cross browsers settings. If a developer did not set to 62.5 percent, the user zooming or increasing font size would not be honored as a pixel font. It will give users of different browsers needing to read large text a hard time if they cannot read larger texts when they have trouble seeing small text. 
+
+4. I would describe preprocessing to someone new as a sand castle mold. First you set a general idea of where and how much sand you want to use for the castle. Then you come in with the castle mold to give it the final robust shape. We have a general idea of what we need for the CSS, and then we use Preprocessing make it easier to make a beautiful layout. 
+
+5. I enjoy the nesting aspect of Preprocessing since it reflects the hierarchy levels of the HTML semantic. It is intuitive to the level of organization is helpful. A aspect of Preprocessing I'm having issues with would be mixins. I just don't really understand where and when to use a mixin best. With Variables, Josh gave us a real example of how variables could save us time by adding a color variable to a main color variable so we could add @main-color to the preprocessing file and just change the color variable once. 
