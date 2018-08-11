@@ -309,7 +309,7 @@ footer .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .top-section .text-content h1 {
   justify-content: flex-start;
