@@ -1,12 +1,13 @@
 // Mixins below variables
+@img-borders:20px;
+@full-width:100%;
 
-@img-borders:~"border-radius:20px";
-@full-width:~"width:100%;";
-
-.button-maker(@color:white,@background:darkgrey,@width:100px,@height:40px){
+.button-maker(@color:white,@background:@main-color,@width:100px,@height:40px){
 	color:@color;
 	background:@background;
 	width:@width;
 	height:@height;
 	border-radius:7px;
+	text-align:center;
+	padding-top:10px;
 }

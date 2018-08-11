@@ -5,13 +5,14 @@
 	margin:0 auto;
 	
 	.img-one{
-		@full-width;
+		width:@full-width;
 		margin-bottom:1rem;
 	}
 
 	h2{
 		font-size:2rem;
 		margin-bottom:1rem;
+		color:@main-color;
 	}
 	
 	p{
@@ -22,21 +23,21 @@
 	
 	.three-imgs{
 		display:flex;
-		@full-width;
+		width:@full-width;
 		
 		.blast{
 			margin:1rem;
-			@img-borders;
+			border-radius:@img-borders;
 		}
 		
 		.sky{
 			margin:1rem;
-			@img-borders;
+			border-radius:@img-borders;
 		}
 		
 		.launch{
 			margin:1rem;
-			@img-borders;
+			border-radius:@img-borders;
 		}
 	}
 	
@@ -52,8 +53,8 @@
 	.bottom-content{
 		margin-top:2rem;
 		display:flex;
-		padding:10%;
-		
+
+
 		.text-content{
 		
 			padding:2%;
@@ -64,8 +65,14 @@
 
 			}
 
-	
 
+			.btn{
+				.button-maker;
+			}
+
+			.btn:hover{
+				background:black;
+			}
 
 		}
 		
@@ -76,6 +83,5 @@
 
 		
 	}
-	
 
 }

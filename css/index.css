@@ -159,8 +159,11 @@ h5 {
   color: black;
 }
 .copyright {
+  margin-top: 2rem;
   text-align: center;
   padding: 2rem;
+  width: 100%;
+  border: 1px solid grey;
 }
 .container {
   max-width: 800px;
@@ -173,6 +176,7 @@ h5 {
 .container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #4A5362;
 }
 .container p {
   line-height: 2;
@@ -204,7 +208,6 @@ h5 {
 .container .bottom-content {
   margin-top: 2rem;
   display: flex;
-  padding: 10%;
 }
 .container .bottom-content .text-content {
   padding: 2%;
@@ -213,6 +216,18 @@ h5 {
 .container .bottom-content .text-content p {
   line-height: 1.2;
   margin-bottom: 1.3rem;
+}
+.container .bottom-content .text-content .btn {
+  color: white;
+  background: #4A5362;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  text-align: center;
+  padding-top: 10px;
+}
+.container .bottom-content .text-content .btn:hover {
+  background: black;
 }
 .container .bottom-content .img-content {
   border-radius: 7px;
