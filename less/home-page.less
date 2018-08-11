@@ -15,21 +15,18 @@ html{
             flex-wrap:wrap;
             color:@secondary-color;
             width:55%;
-            
+            @media(@mobile){
+                width:95%;
+            }
 
-        }
+        
 
         img:first-child{
             width:100%;
             border-radius:0%;
 
         }
-        
-        img:nth-child(2){
-            @media(@mobile){
-                width:100%;
-            }
-        }
+
 
         img:nth-child(3){
             @media(@mobile){
@@ -68,6 +65,10 @@ html{
         margin-right:1.8rem;
         border-radius:15%;
         margin-bottom:1.2rem;
+
+        @media(@mobile){
+            width:100%;
+        }
     }
 
 
@@ -80,4 +81,4 @@ html{
 
 
     }
-}
+}}

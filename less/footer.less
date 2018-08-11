@@ -22,6 +22,11 @@ padding-top:2rem;
 
 .verticaltextblock{
     width:40%;
+
+    @media(@mobile){
+        width:85%;
+    }
+   
 }
 img{
     border-radius:5%;
@@ -29,12 +34,22 @@ img{
     height: 199px;
     padding-left: 1rem;
     margin-top: 1.4rem;
-    @media(@mobile){width:100%;}
+}
+
+.bottomimg{
+    @media(@mobile){
+        width:85%;
+        border-radius:1%;
+    }
 }
 
 button{
 
     .button-maker(white,rgb(42, 12, 90),1.8rem);
+    @media(@mobile){
+        width:100%;
+        
+    }
 
     
 }

@@ -192,6 +192,11 @@ html body footer {
 html body footer .verticaltextblock {
   width: 40%;
 }
+@media (max-width: 500px) {
+  html body footer .verticaltextblock {
+    width: 85%;
+  }
+}
 html body footer img {
   border-radius: 5%;
   width: 40%;
@@ -200,8 +205,9 @@ html body footer img {
   margin-top: 1.4rem;
 }
 @media (max-width: 500px) {
-  html body footer img {
-    width: 100%;
+  html body footer .bottomimg {
+    width: 85%;
+    border-radius: 1%;
   }
 }
 html body footer button {
@@ -212,6 +218,11 @@ html body footer button {
   color: white;
   background: #2a0c5a;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  html body footer button {
+    width: 100%;
+  }
 }
 html body .copyright {
   width: 90%;
@@ -240,41 +251,46 @@ html body main {
   color: #22283B;
   width: 55%;
 }
-html body img:first-child {
+@media (max-width: 500px) {
+  html body main {
+    width: 95%;
+  }
+}
+html body main img:first-child {
   width: 100%;
   border-radius: 0%;
 }
 @media (max-width: 500px) {
-  html body img:nth-child(2) {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  html body img:nth-child(3) {
+  html body main img:nth-child(3) {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  html body img:nth-child(4) {
+  html body main img:nth-child(4) {
     display: none;
   }
 }
-html body h2 {
+html body main h2 {
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-html body p {
+html body main p {
   font-size: 1.8rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-html body .horizontalblock {
+html body main .horizontalblock {
   margin-left: 1.2rem;
 }
-html body img {
+html body main img {
   width: 30%;
   margin-right: 1.8rem;
   border-radius: 15%;
   margin-bottom: 1.2rem;
+}
+@media (max-width: 500px) {
+  html body main img {
+    width: 100%;
+  }
 }
