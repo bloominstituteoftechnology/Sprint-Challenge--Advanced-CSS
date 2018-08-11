@@ -5,6 +5,7 @@ body {
     max-width: 880px;
     margin: 0 auto;
     background: @main-color;
+    justify-content: center;
 
     @media @phone {
         width: 100%;
@@ -24,6 +25,10 @@ body {
     font-size: 1rem;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media @phone {
+        width: 100%;
+    }
 
 h2 {
     margin-top: 20px;
@@ -48,9 +53,22 @@ img {
     display: inline-block;
     flex-direction: column;
     margin: 0 auto;
+
+    @media @phone {
+        width: 100%;
+    }
 }
+.sky {
+    @media @phone {
+        display: none;
+    }
 }
-.bottom {
+.blast {
+    @media @phone {
+        display: none;
+    }
+}
+.bottom-text {
     width: 65%;
     margin-top: 50px;
     flex-direction: row;
@@ -59,7 +77,12 @@ img {
     position: relative;
     align-items: center;
     border-top: 4px solid @accent-color;
+
+    @media @phone {
+        .mobile-width();
+        .mobile-column();
     }
+}
 h2 {
     width: 30%;
     position: relative;
@@ -71,10 +94,20 @@ h2 {
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+        width: 100%;
+        font-size: 2rem;
+    }
+}
 p {
     position: relative;
+
+    @media @phone {
+        .mobile-width();
+        .mobile-column();
+    }
 }
-}
+
 .astroimg {
     position: relative;
     top: -201px;
@@ -99,4 +132,5 @@ p {
     @media @phone {
         width: 100%;
     }
+}
 }
