@@ -214,14 +214,17 @@ footer p {
   margin-right: 10px;
 }
 .top-content-images {
-  background-color: orange;
+  background-color: white;
   width: 100%;
   height: auto;
   display: flex;
 }
 .top-content-images img {
   flex: 1;
-  height: 100px;
+  height: 176px;
+  margin-left: 14px;
+  margin-right: 14px;
+  border-radius: 14px;
 }
 .middle-content {
   padding-top: 10px;
