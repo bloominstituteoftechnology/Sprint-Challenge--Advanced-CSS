@@ -6,13 +6,13 @@ You will be building a website from scratch using all your responsive web design
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] You are now ready to build this project with your preferred IDE
 
 #### Pro tip: Commit every time you complete a task or feature!
 
-## Task 2: Comprehension Questions
+## Task 2: Comprehension Questions (Answered)
 Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your responses there.
 
 1. What is the difference between an adaptive website and a fully responsive website?
@@ -26,14 +26,14 @@ Answer the following questions to the best of your ability. You can exercise you
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
 
 ## Task 3: Set up your preprocessor
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [X] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [X] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [X] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [X] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [X] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`

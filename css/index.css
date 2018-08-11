@@ -1,1 +1,266 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  width: 100%;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0px;
+}
+.header .space-walker {
+  padding: 20px 0px;
+  text-align: center;
+  color: #22283B;
+}
+.header .header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.header .header-nav .a-tag {
+  padding-right: 10px;
+  text-decoration: none;
+  color: #22283B;
+  font-size: 1.6rem;
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background: #e0e0e0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  text-align: center;
+  color: #22283B;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home .banner {
+  width: 100%;
+}
+.home .banner img {
+  width: 100%;
+  border-top: 2px solid #e0e0e0;
+}
+.home .content {
+  padding: 30px 20px;
+}
+.home .content .text-content {
+  width: 100%;
+}
+.home .content .image-content {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+.home .content .image-content img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+.home .signup {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 40px;
+}
+.home .signup .text-content-signup {
+  width: 60%;
+  margin-right: 20px;
+}
+.home .signup .text-content-signup p {
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+.home .signup .text-content-signup .btn {
+  margin-top: 35px;
+  font-size: 1.8rem;
+  width: 150px;
+  height: 60px;
+  background-color: #22283B;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+.home .signup .text-content-signup .btn:hover {
+  border: 1px solid #22283B;
+  background-color: white;
+  color: #22283B;
+}
+.home .signup .image-signup img {
+  width: 330px;
+  border-radius: 10px;
+}
