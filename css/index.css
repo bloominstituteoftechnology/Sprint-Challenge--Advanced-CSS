@@ -150,6 +150,18 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+html h1,
+body h1 {
+  font-size: 3.5rem;
+}
+html h2,
+body h2 {
+  font-size: 2.3rem;
+}
+html p,
+body p {
+  font-size: 1.6rem;
+}
 h1,
 h2,
 h3,
@@ -157,24 +169,25 @@ h4,
 h5 {
   font-family: "Russo One", sans-serif;
 }
-.navigation {
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+.nav-container .navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 500px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.navigation h1 {
-  font-size: 3.5rem;
-}
-.navigation nav {
+.nav-container .navigation nav {
   margin-top: 10px;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.navigation nav a {
+.nav-container .navigation nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
@@ -182,4 +195,11 @@ h5 {
 .main-header {
   display: flex;
   flex-direction: column;
+}
+.main-header .bottom {
+  width: 96%;
+  margin: 15px auto;
+}
+.main-header .bottom p {
+  margin-top: 15px;
 }
