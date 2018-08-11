@@ -14,6 +14,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.liftoff {
+    
+    animation: slideIn 2s infinite reverse;
+    @keyframes slideIn {
+        from {
+          margin-left: 80%;
+          width: 300%; 
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+        100% {opacity: 1;}
+        0% {opacity: 0;}
+        
+    }
+}
 .middle-pics {
     display: flex;
     justify-content: space-around;
