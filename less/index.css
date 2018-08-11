@@ -34,11 +34,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5rem;
   margin: 1rem;
-  width: 5rem;
-  color: white;
-  background-color: blue;
-  border-radius: 1rem;
+  padding: 1rem;
+  width: 8rem;
+  color: #f4f4f4;
+  background-color: #22283B;
+  border-radius: 0.5rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -213,6 +215,14 @@ h5 {
 #navtop img {
   width: 100%;
 }
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #e0e0e0;
+}
 .main {
   border: 1px solid orange;
   width: 100%;
@@ -220,6 +230,7 @@ h5 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #f4f4f4;
 }
 .main img {
   width: 100%;

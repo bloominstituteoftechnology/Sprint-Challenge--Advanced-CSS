@@ -45,15 +45,17 @@
   border-radius: @arguments;
 }
 
-.datButton (@margin; @width; @f_color; @bg_color) {
+.datButton (@fsize; @margin; @padding; @width; @f_color; @bg_color) {
   .flexRow();
+  font-size: @fsize;
   margin: @margin;
+  padding: @padding;
   width: @width;
   color: @f_color;
   background-color: @bg_color;
-  .rounded(1rem);
+  .rounded(.5rem);
 }
 
 .fbtn {
-  .datButton(1rem; 5rem; white; blue)
+  .datButton(1.5rem; 1rem; 1rem; 8rem; @main-color; @secondary-color)
 }
