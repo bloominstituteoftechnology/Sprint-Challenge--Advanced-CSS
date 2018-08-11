@@ -13,10 +13,39 @@
     .header__nav {
         width: 40%;
         .displayflex(row, space-around, center);
+        margin-top: 5px;
 
         .header__link {
             .p();
             text-decoration: none;
+            height: 50px;
+
+            &:hover {
+                animation: float 3s ease-in infinite;
+
+                @keyframes float
+                {
+                0% {
+                    transform: translate(0, 0px);
+                } 
+                25% {
+                    transform: translate(0, 10px);
+                }
+                50% {
+                    transform: translate(0, 0px);
+                }
+                75% {
+                    transform: translate(0, 5px);
+                }
+                100% {
+                    transform: translate(0, 0px);
+                }  
+            }
+            }
+        }
+
+        @media @phone {
+            width: 100%;
         }
     }
 }

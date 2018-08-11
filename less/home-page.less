@@ -21,7 +21,7 @@ body {
 
     .content__top {
         border-bottom: 1px solid darkgray;
-        padding-bottom: 70px;
+        padding: 0 2% 70px 2%;
         .displayflex(row, space-between, center);
         flex-wrap: wrap;
 
@@ -42,12 +42,27 @@ body {
             border-radius: 20px;
             margin: 10px 0;
         }
+
+        @media @phone {
+            .displayflex(column, center, center);
+            
+            .content__img--accent { 
+                width: 95%;
+            }
+            .hidden {
+                display:none;
+            }
+        }
     }
 
     .content__bottom {
         padding: 20px 10%;
         .displayflex(row, space-between, flex-start);
         flex-wrap: wrap;
+
+        @media @phone {
+            .displayflex(column, center, center);
+        }
         
         .content__bottom--right{
             width: 45%;
@@ -56,6 +71,14 @@ body {
             button {
                 .p();
                 .button(50px, 30%, 5px, @secondary-color, @main-color);
+
+                @media @phone {
+                    width: 100%;
+                }
+            }
+
+            @media @phone {
+                width: 95%;
             }
         }
 
@@ -63,6 +86,10 @@ body {
             width: 50%;
             border-radius: 10px;
             margin-top: 10px;
+
+            @media @phone {
+                width: 95%;
+            }
         }
     }
 }

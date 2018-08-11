@@ -1,4 +1,3 @@
-@phone ~(max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,6 +161,7 @@ h5 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
 }
 .header .header__nav .header__link {
   font-family: 'Ubuntu', sans-serif;
@@ -170,6 +170,32 @@ h5 {
   margin: 10px 0;
   line-height: 1.5rem;
   text-decoration: none;
+  height: 50px;
+}
+.header .header__nav .header__link:hover {
+  animation: float 3s ease-in infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0, 0px);
+  }
+  25% {
+    transform: translate(0, 10px);
+  }
+  50% {
+    transform: translate(0, 0px);
+  }
+  75% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+@media (max-width: 500px) {
+  .header .header__nav {
+    width: 100%;
+  }
 }
 body {
   font-size: 62.5%;
@@ -196,7 +222,7 @@ body {
 }
 .content .content__top {
   border-bottom: 1px solid darkgray;
-  padding-bottom: 70px;
+  padding: 0 2% 70px 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,6 +243,20 @@ body {
   border-radius: 20px;
   margin: 10px 0;
 }
+@media (max-width: 500px) {
+  .content .content__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .content__top .content__img--accent {
+    width: 95%;
+  }
+  .content .content__top .hidden {
+    display: none;
+  }
+}
 .content .content__bottom {
   padding: 20px 10%;
   display: flex;
@@ -224,6 +264,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .content .content__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .content .content__bottom .content__bottom--right {
   width: 45%;
@@ -244,10 +292,25 @@ body {
   background-color: #22283B;
   color: #f4f4f4;
 }
+@media (max-width: 500px) {
+  .content .content__bottom .content__bottom--right button {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .content .content__bottom .content__bottom--right {
+    width: 95%;
+  }
+}
 .content .content__bottom img {
   width: 50%;
   border-radius: 10px;
   margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .content .content__bottom img {
+    width: 95%;
+  }
 }
 footer {
   font-family: 'Ubuntu', sans-serif;
