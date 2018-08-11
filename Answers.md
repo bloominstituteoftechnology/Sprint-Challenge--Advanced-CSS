@@ -1,0 +1,9 @@
+### 1. Fully responsive is where the elements are constantly adapting using something such as flexbox. The elements will re-size depending on the size of the window to look good at any screen size. Where adaptive you might just have a fixed desktop, a tablet, and a mobile site but the elements on that site don't resize automatically such as a full responsive site.
+
+### 2. Mobile first is when you are designing a website with the mobile user to have the optimal experience first, and then you create media queries and flexbox designs to create the other layouts such as tablet and desktop. Where as desktop, you are writing the code for the desktop layout first and then you are using media queries and flexbox designs to create your tablet and possibly cell phone (mobile) site.
+
+###3. 62.5% is the conversion factor in the html for font size makes REM so it is equal to 1 pixel as to simplify the font size for developers since they are likely much more familiar with what 32 pixels is instead of the true equivalent of 32 pixels to rem.
+
+###4. I would describe pre-processing as a way of writing our CSS code which not only will enable us to write our CSS easier due to factors such as nesting, but gives us more functionality thanks to Mix-ins and variables. The code you write in your pre-processor is compiled and transformed by another language in LESS's case Javascript into the traditional CSS format since pre-processing languages aren't supported by browsers. Pre-processing is essentially a language for writing CSS, easier.
+
+###5. Escaping for mobile layouts is my favorite feature by far. It is so useful to just to able to write something like @media @mobile, it is much more simplified and easier to change all elements at one central location if you need to. The concept that is the biggest challenge for me is keeping my code organized, but practice and experience will go a long way for me with keeping my code as clean as possible.
