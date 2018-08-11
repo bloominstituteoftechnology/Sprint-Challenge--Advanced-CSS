@@ -1,0 +1,40 @@
+header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px 0;
+    background-color: @accent-color;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+
+
+	@keyframes example {
+	    from {background-color: @accent-color;}
+	    to {background-color: yellow;}
+	}
+
+	
+
+
+	h1 {
+		font-size: @header-h1-font;
+	}
+
+
+	li {
+		.li-design;
+
+		@media @phone {
+			padding: 15px 15px;
+		}
+
+		a {
+			text-decoration: none;
+			color: @secondary-color;
+		}
+	}
+}

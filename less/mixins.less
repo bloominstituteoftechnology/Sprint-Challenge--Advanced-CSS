@@ -1,1 +1,37 @@
 // Mixins below variables
+
+.btnMake() {
+    font-size: 1.3rem;
+    width: 25%;
+    height: 50px;
+    color: white;
+    border: @main-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: @secondary-color;
+
+    @media @phone {
+    	width: 100%;
+    }
+  
+    &:hover {
+      background-color: black;
+      border: 2px solid blue;
+      color: white;
+    }
+}
+
+.li-design {
+	display: inline-flex;
+	flex-direction: row;
+	padding: 25px 50px;
+	font-size: 1.1rem;	
+}
+
+.img-design {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;	
+}
