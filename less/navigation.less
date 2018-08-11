@@ -1,0 +1,26 @@
+@import "variables.less";
+@import "mixins.less";
+
+#header-content {
+    .flex-column-centered (100%, 75px, 1.5rem, 1%, auto);
+    background-color: @header-footer-bg-color;
+    @media @phone {
+        height: 100px;
+    }
+    h1 {
+        font-size: @subtitle-font-size;
+        @media @phone {
+            font-size: @mobile-subtitle-font-size;
+        }
+    }
+    nav {
+        .flex-row-space-evenly (50%, auto, 1.5rem, 1%, auto);
+        a {
+            text-decoration: none;
+            color: @main-text-color;
+        }
+        @media @phone {
+            width: 100%;
+        }   
+    }   
+}
