@@ -307,6 +307,11 @@ main .banner img {
   color: #fff;
   background: #444958;
 }
+@media only screen and (max-width: 500px) {
+  #btn-signup {
+    width: 34em;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
