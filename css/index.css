@@ -1,1 +1,284 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+/* NAVIGATION STYLING!!! */
+.navigation {
+  text-align: center;
+  color: #22283B;
+  border-bottom: 2px solid #f4f4f4;
+}
+.navigation h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.navigation a {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.navigation a:hover {
+  color: black;
+}
+@media (max-width:500px) {
+  .navigation {
+    margin-bottom: 2rem;
+  }
+  .navigation a {
+    font-size: 1rem;
+  }
+}
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  border: 1px solid #f4f4f4;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  /*	@media @phone{
+		background-color:red;		TESTER FOR MOBILE
+	}
+*/
+}
+.container .img-one {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #22283B;
+}
+.container p {
+  line-height: 2;
+  font-size: 1.15rem;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .container .top-content {
+    padding: 20px;
+  }
+}
+.container .three-imgs {
+  display: flex;
+  width: 100%;
+}
+.container .three-imgs .blast {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.container .three-imgs .sky {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.container .three-imgs .launch {
+  margin: 1rem;
+  border-radius: 20px;
+}
+@media (max-width:500px) {
+  .container .three-imgs {
+    flex-direction: column;
+  }
+  .container .three-imgs .sky {
+    display: none;
+  }
+  .container .three-imgs .launch {
+    display: none;
+  }
+}
+.container .mid-content {
+  border-bottom: 2px solid lightgrey;
+}
+.container .mid-content p {
+  margin-bottom: 2rem;
+}
+@media (max-width:500px) {
+  .container .mid-content {
+    padding: 20px;
+  }
+}
+.container .bottom-content {
+  margin-top: 2rem;
+  display: flex;
+}
+.container .bottom-content .text-content {
+  padding: 2%;
+  width: 50%;
+}
+.container .bottom-content .text-content p {
+  line-height: 1.2;
+  margin-bottom: 1.3rem;
+}
+.container .bottom-content .text-content .btn {
+  color: white;
+  background: #22283B;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  text-align: center;
+  padding-top: 10px;
+}
+@media (max-width:500px) {
+  .container .bottom-content .text-content .btn {
+    width: 100%;
+  }
+}
+.container .bottom-content .text-content .btn:hover {
+  background: black;
+}
+.container .bottom-content .img-content {
+  border-radius: 7px;
+}
+@media (max-width:500px) {
+  .container .bottom-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .container .bottom-content .text-content {
+    width: 100%;
+  }
+  .container .bottom-content .img-content {
+    padding: 20px;
+  }
+}
