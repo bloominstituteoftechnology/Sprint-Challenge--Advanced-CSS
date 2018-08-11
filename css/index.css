@@ -270,8 +270,8 @@ body {
   font-size: 2rem;
   margin-bottom: 10px;
 }
-.top img {
-  width: 25%;
+img {
+  width: 30%;
   padding: 10px;
   margin-top: 20px;
   display: inline-block;
@@ -279,21 +279,21 @@ body {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  .top img {
+  img {
     width: 100%;
   }
 }
 @media (max-width: 500px) {
-  .top .sky {
+  .sky {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .top .blast {
+  .blast {
     display: none;
   }
 }
-.top .bottom-text {
+.bottom-text {
   width: 65%;
   margin-top: 50px;
   flex-direction: row;
@@ -304,7 +304,7 @@ body {
   border-top: 4px solid #e0e0e0;
 }
 @media (max-width: 500px) {
-  .top .bottom-text {
+  .bottom-text {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -312,7 +312,7 @@ body {
     margin: 0;
   }
 }
-.top h2 {
+h2 {
   width: 30%;
   position: relative;
   font-size: 1.5rem;
@@ -324,16 +324,16 @@ body {
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .top h2 {
+  h2 {
     width: 100%;
     font-size: 2rem;
   }
 }
-.top p {
+p {
   position: relative;
 }
 @media (max-width: 500px) {
-  .top p {
+  p {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -341,7 +341,7 @@ body {
     margin: 0;
   }
 }
-.top .astroimg {
+.astroimg {
   position: relative;
   top: -201px;
   bottom: 22px;
@@ -349,14 +349,12 @@ body {
   width: 40%;
 }
 @media (max-width: 500px) {
-  .top .astroimg {
-    top: -201px;
-    bottom: 22px;
-    left: 576px;
-    width: 40%;
-  }
+  top: -201px;
+  bottom: 22px;
+  left: 576px;
+  width: 40%;
 }
-.top .btn {
+.btn {
   font-size: 1rem;
   text-align: center;
   width: 20%;
@@ -372,14 +370,14 @@ body {
   top: 5px;
   right: 3px;
 }
-.top .btn:hover {
+.btn:hover {
   border: 2px solid  aqua;
   background-color: darkcyan;
   color: whitesmoke;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .top .btn {
+  .btn {
     width: 100%;
   }
 }
