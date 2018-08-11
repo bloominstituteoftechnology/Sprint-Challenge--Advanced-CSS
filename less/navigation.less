@@ -1,0 +1,32 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  background: @accent-color;
+  // height: 100px;
+  width: 100%;
+}
+
+.nav-bar-ctn {
+  .flex-center();
+  flex-direction: column;
+
+  h1 {
+    font-size: @h1-font-size;
+    padding: 15px;
+  }
+
+  nav {
+    margin-bottom: 15px;
+
+     a {
+      font-size: @main-text-size;
+      text-decoration: none;
+      color: @secondary-color;
+      padding: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
