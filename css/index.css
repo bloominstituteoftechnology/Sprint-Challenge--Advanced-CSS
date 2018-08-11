@@ -233,6 +233,8 @@ footer p {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  width: 45%;
+  padding: 10px;
 }
 @media (max-width:500px) {
   .second-section .middle-imgs {
@@ -247,7 +249,8 @@ footer p {
 }
 img {
   width: 31%;
-  border-radius: 15px;
+  border-radius: 10%;
+  padding: 10px;
 }
 @media (max-width:500px) {
   img {
