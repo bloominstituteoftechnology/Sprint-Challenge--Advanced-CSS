@@ -202,23 +202,22 @@ footer .footer {
   width: 70%;
   justify-content: center;
   margin: 0 auto;
+  align-items: center;
 }
 @media (max-width:500px) {
   .container .walk-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
+    width: 500px;
+    height: auto;
   }
 }
 @media (max-width:500px) {
   .container .walk-section .text-section {
     width: 100%;
   }
-}
-.container .walk-section .img-content {
-  width: 49%;
 }
 .container .walk-section img {
   height: 200px;
