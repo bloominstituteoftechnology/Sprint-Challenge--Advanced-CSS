@@ -1,1 +1,63 @@
 // Footer Styles
+.walk-section{
+   .flex-row;
+   border-bottom:@border;
+   padding:30px 1.25%;
+   justify-content:center;
+   margin:0 auto;
+   margin-top:20px;
+   
+   @media @mobile{
+       flex-direction:column;
+       width:100%;
+   }
+   
+  
+
+   .walk-section-words{
+       width:45%;
+       padding-right:15px;
+
+       @media @mobile{
+           width:90%;
+           margin:0 auto;
+       }
+
+       .btn{
+           .button-creator(30%,white,40px);
+
+           @media @mobile{
+               .button-creator(100%,white,60px);
+              
+           }
+       }
+   }
+   img{
+       border-radius:5px;
+       width:47%;
+       height:240px;
+
+       @media @mobile{
+           width:90%;
+           margin:20px auto;
+           height:280px;
+           
+       }
+       
+   }
+  
+  
+}
+.h5-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80px;
+    width:100%;
+    font-size:1.6rem;
+    background-color:@accent-color;
+    border-radius:5px;
+    border:1px solid lightgray;
+    margin-top:20px;
+    
+}
