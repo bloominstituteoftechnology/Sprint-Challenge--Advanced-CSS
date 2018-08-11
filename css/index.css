@@ -140,3 +140,29 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+nav {
+  widows: 100%;
+  border-bottom: #e0e0e0;
+  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  justify-content: center;
+  color: #22283B;
+}
+nav p {
+  margin: 1.2rem;
+}
+nav p:first-child {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-left: 45%;
+  margin-right: 45%;
+  font-family: 'Do Hyeon', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: Ubuntu;
+}
