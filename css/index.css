@@ -202,3 +202,36 @@ header a {
 .second-section p {
   padding-top: 15px;
 }
+.third-section {
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+.third-section .third-text {
+  width: 45%;
+  padding-right: 3%;
+}
+.third-section p {
+  padding: 10px 0;
+}
+.third-section .button {
+  width: 35%;
+  height: 37px;
+  background-color: #22283B;
+  color: #E6F0EC;
+  border: 2px solid #22283B;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.third-section img {
+  width: 65%;
+  height: 240px;
+  align-self: flex-start;
+}
