@@ -10,7 +10,7 @@
   margin-top: 2%;
 }
 .flex-main-child-styles img {
-  height: 100%;
+  height: 76%;
   border-radius: 7px;
 }
 .flex-main-child-styles p {
@@ -189,6 +189,22 @@ h5 {
 .nav-container a:hover {
   text-decoration: underline;
 }
+footer {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  height: 100px;
+  color: #22283B;
+  width: 880px;
+}
+footer p {
+  text-align: center;
+  font-size: 1.9rem;
+}
 .container {
   margin: 0 auto;
   width: 925px;
@@ -228,21 +244,20 @@ h5 {
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
-  height: 300px;
+  height: 400px;
 }
 .container .flex-main-content-container .flex-main-child {
   width: 42%;
   margin-top: 2%;
 }
 .container .flex-main-content-container .flex-main-child img {
-  height: 100%;
+  height: 76%;
   border-radius: 7px;
 }
 .container .flex-main-content-container .flex-main-child p {
   line-height: 27px;
 }
 .container .button {
-  width: 90%;
   margin: 0 auto;
 }
 .container .button a {
@@ -252,4 +267,9 @@ h5 {
   border-radius: 3px;
   color: white;
   font-size: 2rem;
+}
+.container .button a:hover {
+  background: white;
+  color: #22283B;
+  border: 2px solid lightgray;
 }
