@@ -5,3 +5,26 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.width(@mw,@w) {
+    max-width:@mw;
+    width:@w;
+}
+
+.p(@fonts,@lh) {
+    padding-top: 10px;
+    font-size: @fonts;
+    line-height:@lh;
+}
+
+.btn(@fsize,@width,@color,@bcolor) {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: @fsize;
+    width: @width;
+    color: @color;
+    background-color: @bcolor;
+}

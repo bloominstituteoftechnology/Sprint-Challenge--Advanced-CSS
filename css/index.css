@@ -144,12 +144,10 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 .Main {
+  max-width: 1000px;
+  width: 100%;
   background-color: yellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
+  margin: 20px auto;
 }
 .Main2 {
   background-color: aqua;
@@ -165,7 +163,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   background-color: lightgray;
   border-bottom: 1px solid gray;
   padding: 10px 0px;
@@ -180,7 +179,8 @@ header nav {
   align-items: center;
   background-color: green;
   margin-top: 10px;
-  width: 300px;
+  max-width: 300px;
+  width: 37.5%;
 }
 header nav a {
   text-decoration: none;
@@ -189,19 +189,22 @@ header nav a {
 footer {
   border-top: 1px solid gray;
   background-color: lightgray;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
 }
 footer p {
   text-align: center;
   padding: 20px 0px;
 }
 .Main2 .large-img {
-  width: 800px;
+  max-width: 800px;
+  width: 100%;
 }
 .Main2 .Sec1 {
   background-color: red;
-  width: 800px;
-  padding: 10px 10px;
+  max-width: 800px;
+  width: 95%;
+  padding: 10px 1.25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,9 +214,9 @@ footer p {
   font-size: 2.5rem;
 }
 .Main2 .Sec1 p {
+  padding-top: 10px;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-top: 10px;
 }
 .Main2 .Sec1 section {
   display: flex;
@@ -222,13 +225,15 @@ footer p {
   align-items: center;
 }
 .Main2 .Sec1 section img {
-  width: 250px;
+  max-width: 250px;
+  width: 31.25%;
   border-radius: 20px;
 }
 .Main2 .Sec2 {
   background-color: red;
-  width: 800px;
-  padding: 30px 10px;
+  max-width: 800px;
+  width: 95%;
+  padding: 30px 1.25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,14 +243,15 @@ footer p {
   font-size: 2.5rem;
 }
 .Main2 .Sec2 p {
+  padding-top: 10px;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-top: 10px;
 }
 .Main2 .Sec3 {
   border-top: 1px solid gray;
-  width: 800px;
-  padding: 40px 40px;
+  max-width: 800px;
+  width: 95%;
+  padding: 40px 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -253,8 +259,9 @@ footer p {
 }
 .Main2 .text {
   background-color: red;
-  width: 375px;
-  padding: 10px 10px;
+  max-width: 375px;
+  width: 46.875%;
+  padding: 10px 1.25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -264,21 +271,21 @@ footer p {
   font-size: 2.5rem;
 }
 .Main2 .text p {
+  padding-top: 10px;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding-top: 10px;
 }
 .Main2 .text a {
-  font-size: 1.5rem;
-  width: 100px;
-  text-align: center;
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  background-color: black;
   margin-top: 10px;
   padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 26.667%;
+  color: white;
+  background-color: black;
 }
 .Main2 img {
-  width: 300px;
+  width: 50%;
 }

@@ -5,13 +5,13 @@
 .Main2 {
 
     .large-img {
-        width:800px;
+        .width(800px,100%);
     }
 
     .Sec1 {
         background-color: red;
-        width:800px;
-        padding: 10px 10px;
+        .width(800px,95%);
+        padding: 10px 1.25%;
         .flex(column,center,space-between);
 
         h2 {
@@ -19,15 +19,13 @@
         }
 
         p {
-            font-size: @psize;
-            line-height: 1.5;
-            padding-top: 10px;
+            .p(@psize,1.5);
         }
 
         section {
             .flex(row,space-between,center);
             img {
-                width:250px;
+                .width(250px,31.25%);
                 border-radius: 20px;
             }
         }
@@ -35,8 +33,8 @@
 
     .Sec2 {
         background-color: red;
-        width:800px;
-        padding: 30px 10px;
+        .width(800px,95%);
+        padding: 30px 1.25%;
         .flex(column,center,space-between);
 
         h2 {
@@ -44,22 +42,20 @@
         }
 
         p {
-            font-size: @psize;
-            line-height: 1.5;
-            padding-top: 10px;
+            .p(@psize,1.5);
         }
     }
 
     .Sec3 {
-        border-top: 1px solid gray;
-        width:800px;
-        padding: 40px 40px;
+        border-top: 1px solid @borderc;
+        .width(800px,95%);
+        padding: 40px 5%;
         .flex(row,space-between,center);
     }
     .text {
         background-color: red;
-        width:375px;
-        padding: 10px 10px;
+        .width(375px, 46.875%);
+        padding: 10px 1.25%;
         .flex(column,center,space-between);
 
         h2 {
@@ -67,25 +63,15 @@
         }
 
         p {
-            font-size: @psize;
-            line-height: 1.5;
-            padding-top: 10px;
+            .p(@psize,1.5);
         }
 
         a {
-            font-size: @psize;
-            width: 100px;
-            text-align: center;
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-            background-color: black;
-            margin-top: 10px;
-            padding: 10px;
+            .btn(@psize, 26.667%,white,black)
         }
     }
 
     img {
-        width: 300px;
+        width: 50%;
     }
 }
