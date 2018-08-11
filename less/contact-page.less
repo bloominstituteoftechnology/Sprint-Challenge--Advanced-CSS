@@ -1,0 +1,46 @@
+.contact-container {
+    width:100%;
+    max-width: 880px;
+    margin:0 auto;
+    .flex-jc-ai-center(column);
+    background-color:@secondary-color;
+
+
+    .contact-jumbo-top-img {
+        border-radius: 15px;
+    }
+
+    .sign-up-form {
+        display:flex;
+        color:white;
+        
+        input[type=text]{
+            .form-style;
+        }
+
+        input[type=password] {
+            .form-style;
+        }
+
+        .sign-in {
+            color:white;
+        }
+
+       .btn-subscribe {
+        font-size:1.8rem;
+        text-align:center;
+        border-radius: 10px;
+        width:100%;
+        padding:15px;
+        color:@secondary-color;
+        background-color:@accent-color;
+
+        &:hover {
+            border:1px solid @secondary-color;
+            background-color: blanchedalmond;
+            color:@secondary-color;
+        }
+       }
+    }
+
+}
