@@ -1,1 +1,58 @@
 // Mixins below variables
+// For Button
+
+//@btn-font-size: 1.6rem;
+
+@btn-font-color: @white;
+@btn-bg-color: @dgray;
+//@botton-bg: @lblue;
+
+
+@dgray: @nav-font-color;
+@white: white;
+@lblue: lightblue;
+
+//Mixin Level 1
+.center() {
+  display: flex;
+  justify-content: center;
+}
+
+.column () {
+  display: flex;
+    flex-direction: column;
+}
+
+//Mixin Level 4: for button
+.center-btn() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.button-creator(@width, @height, @btn-bg-color, @btn-font-color, @btn-font-size) {
+  .border-radius(4px);
+  .center-btn;
+  width: @width;
+  height: @height;
+  background-color: @btn-bg-color;
+  color: @btn-font-color;
+  border: 1px solid @dgray;
+  cursor: pointer;
+  font-size: @btn-font-size;
+
+  @media @mobile {
+    width: 100%;
+  }
+  
+  &:hover {
+    background: @white;
+    color: @btn-bg-color;
+  }
+}
