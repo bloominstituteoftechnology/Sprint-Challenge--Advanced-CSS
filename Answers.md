@@ -6,7 +6,9 @@
 
     * Mobile first focus on the mobile experience being the best as possible without ignoring desktop users. This is the preferred method because as studies show most users are mobile these days. Desktop first focuses on making the desktop experience as best as possible without ignoring the mobile.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+    * This is a neat trick (thanks Dan) that makes rem very easy to use since we are taught to use pixels first. Every 1 rem is 10 pixels so 1.2 rem is 12px. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
