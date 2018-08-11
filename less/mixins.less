@@ -3,3 +3,23 @@
     display: flex;
     justify-content: center;
 }
+.buttonCreator() {
+    font-size:1.8rem;
+    text-align:center;
+    width: 120px;
+    padding:8px;
+    border-radius:12%;
+    background:@teal;
+    color: @white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    &:hover {
+        border: 2px solid @button-bg;
+        background-color: @white;
+        color: @button-bg;
+        cursor: pointer;
+    }
+}

@@ -1,4 +1,50 @@
 // Navigation
 nav {
-    
-}
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35%;
+    right: 0px;
+    left: 274px;
+    top: 22px;
+  
+    @media @mobile {
+      width: 100%;
+      justify-content: space-between;
+      margin-left: 20px;
+    }
+  
+    a {
+      position: relative;
+      font-size: 1rem;
+      color: #212529;
+      text-decoration: none;
+      margin-bottom: 10px;
+      
+      &:hover {
+        text-decoration: underline;
+        color: gray;
+        
+      }
+      @media @mobile {
+        width: 100%;
+        .flex-center();
+        margin: 0 auto;
+      }
+  }
+  }
+      .logo {
+      position: relative;
+      top: 19px;
+      left: 314px;
+      font-size: 2rem;
+      display: flex;
+      justify-content: baseline;
+      margin-bottom: 10px;
+  
+      @media @mobile {
+        .flex-center();
+        top: -15px;
+      }
+  }

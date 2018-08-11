@@ -140,8 +140,96 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35%;
+  right: 0px;
+  left: 274px;
+  top: 22px;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+}
+nav a {
+  position: relative;
+  font-size: 1rem;
+  color: #212529;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+.logo {
+  position: relative;
+  top: 19px;
+  left: 314px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: baseline;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    top: -15px;
+  }
+}
 body {
+  font-size: 62.5%;
   width: 100%;
+  max-width: 880px;
   margin: 0 auto;
-  justify-content: center;
+  background: #f4f4f4;
+}
+.header-img {
+  margin-top: 20px;
+  width: 80%;
+  border-top: 1px solid #f4f4f4;
+  z-index: 1;
+}
+.middle {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.middle h2 {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top {
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.top h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.top img {
+  width: 20%;
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  flex-direction: column;
+  margin: 0 auto;
 }
