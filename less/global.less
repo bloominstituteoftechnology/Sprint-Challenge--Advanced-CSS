@@ -1,11 +1,4 @@
 // General Styles
-@fontFamily: 'Ubuntu', sans-serif;
-@topbarBG: lightgray;
-@h1: 3.5rem;
-@h2: 2rem;
-@p: 1.2rem;
-
-
 * {
   box-sizing: border-box;
 }
@@ -18,23 +11,23 @@ h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
 }
 
-h1{
+h1 {
   font-size: @h1;
 }
 
-h2{
+h2 {
   font-size: @h2;
 }
 
-p{
+p {
   font-size: @p;
 }
 
-a{
+a {
   font-size: @p;
 }
 
-.container{
+.container {
   .flexbox-set(@fJustify:center, @fAItems:center, @fDir:column);
   .element-sizing(@mWidth: 880px);
   .element-spacing(@margin:0 auto);
@@ -52,5 +45,3 @@ a{
   width: @width;
   height: @height;
 }
-
-

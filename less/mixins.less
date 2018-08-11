@@ -39,10 +39,10 @@
     padding-right: @pRight;
 }
 
-.button-prop(@backColor:black, @foreColor:white){
+.button-prop(@backColor:black, @foreColor:white, @bMWidth:100%, @bWidth:150px, @bHeight:50px){
     .flexbox-set(@fJustify:center, @fAItems:center);
     .element-shape(@border: 1px solid black, @borderRadius: 5%);
-    .element-sizing(@mWidth: 100%, @width: 150px, @height: 50px);
+    .element-sizing(@mWidth: @bMWidth, @width:@bWidth , @height: @bHeight );
     .element-color(@bgColor: @backColor, @color: @foreColor);
 }
 

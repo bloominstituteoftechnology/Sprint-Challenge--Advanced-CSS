@@ -5,22 +5,41 @@
     .element-spacing(@padding: 1.5%);
     .element-color(@bgColor: @topbarBG);
     border-bottom: 0.5px solid gray;
+
+    @media @phone {
+        h1 {
+            font-size: 3rem;
+        }
+    }
 }
 
 .main-content {
     h2 {
         .element-spacing(@mTop: 3%, @mBottom: 3%);
+
+        @media @phone {
+            .element-spacing(@mLeft: 3%, @mRight: 3%);
+        }
     }
 
     img {
         .flexbox-set(@fJustify:center, @fAItems:center);
         .element-sizing(@mWidth: 880px, @width: 100%);
         .element-spacing(@margin: 0 auto);
+
+        @media @phone {
+            .element-sizing(@mWidth: 500px, @width: 100%, @height: 300px);
+        }
     }
 }
 
 p {
     .element-spacing(@mTop: 3%, @mBottom: 3%);
+
+    @media @phone {
+        .element-spacing(@mLeft: 3%, @mRight: 3%);
+        text-align: justify;
+    }
 }
 
 .extra-margin {
@@ -34,6 +53,9 @@ p {
         .element-sizing(@mWidth: 36%);
         .element-spacing(@padding: 1.5%);
         .element-shape(@borderRadius: 10%);
+    }
+    @media @phone{
+        display: none;
     }
 }
 
@@ -56,10 +78,25 @@ p {
             .element-shape(@borderRadius: 2%);
         }
     }
+
+    @media @phone {
+        .flexbox-set(@fWrap: wrap, @fDir: column, @fJustify:center, @fAItems:center);
+        .element-spacing(@mLeft: 3%, @mRight: 3%);
+        .left {
+            .element-sizing(@mWidth: 100%);
+        }
+        .right {
+            .element-sizing(@mWidth: 100%, @height:250px);
+            .element-spacing(@pBottom: 3%);
+        }
+    }
 }
 
 .button {
     .button-prop;
+    @media @phone {
+        .button-prop(@bWidth: 100%)
+    }
 }
 
 footer {
