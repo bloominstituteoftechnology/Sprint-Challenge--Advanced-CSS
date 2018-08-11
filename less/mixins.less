@@ -1,1 +1,23 @@
 // Mixins below variables
+
+@headerfooter-color: #e0e0e0;
+
+.button-c(@bgColor) {
+    border: @bgColor 4px solid;
+    font-size: 1.2rem;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: @bgColor;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media @phone {
+        width: 200px;
+        justify-content: center;
+
+    }
+}
