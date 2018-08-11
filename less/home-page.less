@@ -35,11 +35,22 @@
       margin: 1rem;
     }
   }
+  @media @mobile {
+    #rocket {
+      .full_width();
+      padding: 0 .5rem;
+    }
+    #space {
+      display: none;
+    }
+    #launching {
+      display: none;
+    }
+  }
 }
 
 .bottom {
   .b_sg();
-//  margin: 0 5%;
   .flexRow();
   padding: 2rem;
   .full_width();
@@ -70,6 +81,17 @@
     .flexRow();
     padding: 2rem;
   //  width: 20%;
+  }
+  @media @mobile {
+    .full_width();
+    .flexCol();
+  .group {
+    .full_width();
+  }
+    .fbtn {
+      .datButton(1.5rem; 1rem; 1rem; 100%; @main-color; @secondary-color)
+    }
+
   }
 }
 

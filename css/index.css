@@ -267,6 +267,18 @@ footer {
   border-radius: 2rem;
   margin: 1rem;
 }
+@media (max-width:500px) {
+  .main #rocket {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .main #space {
+    display: none;
+  }
+  .main #launching {
+    display: none;
+  }
+}
 .bottom {
   border: 4px solid seagreen;
   display: flex;
@@ -310,4 +322,28 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2rem;
+}
+@media (max-width:500px) {
+  .bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom .group {
+    width: 100%;
+  }
+  .bottom .fbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    color: #f4f4f4;
+    background-color: #22283B;
+    border-radius: 0.5rem;
+  }
 }
