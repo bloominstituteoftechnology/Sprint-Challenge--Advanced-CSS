@@ -167,7 +167,7 @@ a {
   margin: 20px 0;
 }
 .index-header h1 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .index-nav a {
   margin: 15px;
@@ -175,7 +175,7 @@ a {
   color: #000000;
 }
 footer {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,6 +189,14 @@ footer {
   width: 92%;
   padding-left: 2%;
 }
+.lift p {
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .lift {
+    width: 97%;
+  }
+}
 .lift-img {
   width: 98%;
   display: flex;
@@ -197,9 +205,26 @@ footer {
   padding-left: 2%;
 }
 .lift-img img {
-  width: 30%;
+  width: 80%;
   border-radius: 10%;
   height: 200px;
+}
+@media (max-width: 500px) {
+  .lift-img img {
+    width: 85%;
+  }
+  .lift-img img:nth-of-type(2) {
+    display: none;
+  }
+  .lift-img img:nth-of-type(3) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .lift-img {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .visit {
   margin: 20px 0;
@@ -234,10 +259,37 @@ footer {
   align-items: center;
   font-size: 1.4rem;
 }
+@media (max-width: 500px) {
+  .walk .walk-content .btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-content {
+    width: 100%;
+  }
+}
 .walk .walk-img {
   width: 45%;
 }
 .walk .walk-img img {
   height: 200px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk .walk-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column;
+    width: 84%;
+  }
 }
