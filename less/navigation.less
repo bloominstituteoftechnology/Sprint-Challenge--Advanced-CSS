@@ -1,9 +1,9 @@
 .index-header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     .section-separator();
-
     h1 {
         margin-bottom: 20px;
     }
@@ -15,5 +15,13 @@
         margin: 15px;
         text-decoration: none;
         color: @font-color;
+
+        @media @phone {
+            font-size: 1.4rem;
+        }
     }
+    @media @phone {
+        display: flex;
+    }
+
 }
