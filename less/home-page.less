@@ -2,8 +2,54 @@
 
 //Border on bottom on main content
 
+.main-content{
+    .display-flex(column, center);
+    width: 80%;
+    margin: 0 auto;
+    
+    img{
+        width: 100%;
+    }
 
+
+}
 
 .bottom-content{
-    //direction: row
+    .display-flex(row, center);
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    border-top: 1px solid @accent-color-two;
+    border-bottom: 1px solid @accent-color-two;
+    padding: 30px 0%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+
+    .bottom-text{
+        width: 50%;
+        padding-left: 5%;
+
+        h2{
+            .h2-styling;
+            padding-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        p{
+            .p-styling;
+            padding-bottom: 5px;
+            width: 85%;
+        }
+
+        .button{
+            .button-creator(25px, 20%);
+        }
+    }
+
+    img{
+        height: 180px;
+        padding-right: 5%;
+    }
+
 }
