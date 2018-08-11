@@ -1,1 +1,32 @@
 // Mixins below variables
+
+
+
+.flex(@dir, @jus, @align){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jus;
+    align-items: @align;
+}
+
+.h(@size:1.4rem){
+    color: @secondary-color;
+    font-size: @size;
+}
+
+.buttonCreator(@height: 30px, @width: 20%, @fsize: 1rem){
+    height: @height;
+    width: @width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: @fsize;
+    background:  @secondary-color;
+    border-radius: 5px;
+    color: @accent-color;
+    &:hover {
+        background-color: @main-color;
+        color: @secondary-color;
+        cursor: pointer;
+    }    
+}
