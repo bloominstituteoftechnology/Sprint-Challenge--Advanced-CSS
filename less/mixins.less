@@ -5,3 +5,13 @@
     justify-content: @jc;
     align-items: @ai;
 }
+
+.btn-design(@width,@height) {
+    border: 1px solid @header-border-color;
+    border-radius: 10%;
+    background-color: @h-text-color;
+    color: white;
+    width: @width;
+    height: @height;
+    .flex();
+}

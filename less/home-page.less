@@ -35,4 +35,26 @@ div.main-body {
         }
     }
 
+    div.sub-body {
+        border-top: 1px solid @header-border-color;
+        border-bottom: 1px solid @header-border-color;
+        margin: 50px 0;
+
+        .smaller-body {
+            width: 80%;
+            margin: 0px auto;
+            .flex(row, space-between);
+
+            .text {
+                width: 48%;
+            }
+            img {
+                width: 300px;
+            }
+            .button {
+                .btn-design(100px, 35px);
+                margin: 20px 15px;    
+            }
+        }
+    }
 }
