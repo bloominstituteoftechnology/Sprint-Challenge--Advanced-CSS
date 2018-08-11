@@ -258,7 +258,12 @@ header img {
   width: 100%;
   font-size: 1.6rem;
 }
-#walking button {
+#walking #signUp {
+  font-size: 1.6rem;
+  color: white;
+  height: 12%;
+  width: 25%;
+  background-color: #22283a;
   margin-top: 5%;
 }
 footer {
