@@ -1,1 +1,38 @@
 // Mixins below variables
+.flexbox-row(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.flexbox-column(@justify:center, @align:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+.padding-20px(@padding:20px){
+    padding-top:@padding;
+    padding-bottom:@padding;
+}
+.margin-tb(@margin-top: 30px,@margin-bottom: 30px){
+    margin-top: @margin-top;
+    margin-bottom: @margin-bottom;
+}
+
+.button-creator(@bgColor:@button-bg,@text-color:@button-font, @border:@button-border){
+    background-color:@bgColor;
+    color:@text-color;
+    border-radius: 2px;
+    width: 30%;
+    height: 40px;
+    .flexbox-row();
+    font-size: 1rem;
+    border: 1px solid @button-border;
+
+    &:hover{
+        cursor: pointer;
+        background-color:@text-color;
+        color: @bgColor;
+        border: 1px solid @button-border;
+    }
+}

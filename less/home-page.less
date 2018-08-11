@@ -1,1 +1,70 @@
 // Home Content
+.home {
+    .homepage-header-img{
+      height: 200px;
+      .margin-tb(100px, 20px);
+      width: @width-100percent;
+    }
+    .content-section{
+        .flexbox-row();
+        .text-content{
+        width: 95%;
+        }
+    }
+    .middle-launch-images{
+        .flexbox-row(space-around, center);
+        img{
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+    .planets{
+        .margin-tb(40px, 40px);
+    }
+    .bottom-content{
+        .flexbox-row(space-around, center);
+        padding: 50px 5%;
+        margin-bottom: 20px;
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+        .text-content {
+            width: 45%;
+            .sign-up-button{
+                .button-creator();
+                margin-top: 20px;
+            }
+        }
+        .space-walk{
+            width: 45%;
+            border-radius: 10px;
+        }
+    }
+}
+
+@media @phone{
+    .home{
+        .middle-launch-images{
+            .sky-img, .launch-img{
+                display: none;
+            }
+            .blast-img{
+                width: 90%;
+                margin-top: 40px;
+            }
+        }
+        .bottom-content{
+            .flexbox-column();
+            .text-content{
+                width: 86%;
+                margin-bottom: 30px;
+                .sign-up-button{
+                    width: @width-100percent;
+                    height: 50px;
+                }
+            }
+            .space-walk{
+                width: 86%;
+            }
+        }
+    }
+}
