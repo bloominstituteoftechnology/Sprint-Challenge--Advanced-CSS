@@ -1,1 +1,122 @@
 // Home Content
+header {
+    text-align: center;
+    background-color: @main-color;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid @accent-color;
+    
+    
+    h1 {
+        font-size: 2.5rem;
+        padding: 15px 0;
+        color: @secondary-color;
+    }
+}
+
+.home {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .top-img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.l-o {
+    margin-top: 18px;
+    padding: 0 2%;
+    .section-style;
+    h2 {
+        .section-title(2rem);
+    }
+    // p {
+    //     line-height: 1.5;
+    //     margin-bottom: 13px;
+    // }
+    .images {
+        display: flex;
+        justify-content: space-between;;
+    
+        img {
+            width: 31.3%;
+            height: 177px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+
+            @media @phone {
+                width: 87%;
+                height: 300px;
+                margin: 20px auto;
+                &:nth-of-type(2), &:nth-of-type(3){
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+.canWe {
+    .section-style;
+    padding: 0 2%;
+    padding-bottom: 52px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid @accent-color;
+    h2 {
+        .section-title(1.75rem);
+    }
+
+    @media @phone {
+        margin-top: 24px;
+    }
+}
+
+.letsGo {
+    .section-style;
+    display: flex;
+    padding: 0 8%;
+    padding-bottom: 48px;
+    border-bottom: 1px solid @accent-color;
+    .text {
+        width: 50%;
+        h2 {
+        .section-title(1.75rem);
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .btn{
+            .btn-creator(80px, 38px, @secondary-color);
+           
+        }
+    }
+
+    img {
+        height: 240px;
+        margin-left: 3%;
+        border-radius: 5px;
+    }
+
+    @media @phone {
+        flex-direction: column;
+        padding: 0 12%;
+        .text {
+            width: 100%;
+            .btn {
+                .btn-creator(100%, 50px, @secondary-color);
+                margin-bottom: 20px;
+                margin-top: 35px
+            }
+        }
+        img {
+            margin-left: 0;
+            height: 280px;
+            margin-bottom: 50px;
+        }
+    }
+    
+      
+}
