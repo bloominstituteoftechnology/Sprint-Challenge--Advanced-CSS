@@ -1,1 +1,39 @@
 // Home Content
+.home {
+    .homepage-header-img{
+      height: 200px;
+      .margin-tb(100px, 20px);
+      width: @width-100percent;
+    }
+    .content-section{
+        .flexbox-row();
+        .text-content{
+        width: 95%;
+        }
+    }
+    .middle-launch-images{
+        .flexbox-row(space-around, center);
+        .launch-img{
+            border-radius: 10px;
+            width: 30%;
+        }
+    }
+    .planets{
+        .margin-tb(40px, 40px);
+    }
+    .bottom-content{
+        .flexbox-row(space-around, center);
+        padding: 80px 5%;
+        border-top: 1px solid @border-color;
+        border-bottom: 1px solid @border-color;
+        .text-content {
+            width: 45%;
+            .sign-up-button{
+                .button-creator();
+            }
+        }
+        .space-walk{
+            width: 45%;
+        }
+    }
+}
