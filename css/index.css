@@ -207,10 +207,39 @@ body {
   justify-content: space-around;
   margin: 15px 0px;
 }
+@media (max-width: 500px) {
+  .image-trio-middle {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .image-trio-middle img {
   border-radius: 15px;
   width: 30%;
   height: 200px;
+}
+@media (max-width: 500px) {
+  .image-trio-middle img {
+    width: 90%;
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .second-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .third-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .middle-lower-text-block {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
 }
 .middle-lower-text-block h2 {
   font-size: 2rem;
@@ -228,8 +257,21 @@ body {
   flex-direction: row;
   border-top: 1px dashed black;
 }
+@media (max-width: 500px) {
+  .lower-text-block {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
 .lower-text-block .walk-button {
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .lower-text-block .walk-button {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .lower-text-block .walk-button h2 {
   font-size: 2rem;
@@ -257,8 +299,20 @@ body {
   cursor: pointer;
   background-color: dodgerblue;
 }
+@media (max-width: 500px) {
+  .lower-text-block .walk-button button {
+    width: 70%;
+    margin: 20px 0px 0px 40px;
+  }
+}
 .lower-text-block img {
   width: 40%;
   border-radius: 5px;
   margin: 40px;
+}
+@media (max-width: 500px) {
+  .lower-text-block img {
+    width: 63%;
+    margin: 20px 0px 50px 63px;
+  }
 }
