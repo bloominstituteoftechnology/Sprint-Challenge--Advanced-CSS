@@ -143,8 +143,8 @@ h5 {
 /* NAVIGATION STYLING!!! */
 .navigation {
   text-align: center;
-  color: #4A5362;
-  border-bottom: 2px solid lightgrey;
+  color: #22283B;
+  border-bottom: 2px solid #f4f4f4;
 }
 .navigation h1 {
   margin-top: 1rem;
@@ -158,16 +158,28 @@ h5 {
 .navigation a:hover {
   color: black;
 }
+@media (max-width:500px) {
+  .navigation {
+    margin-bottom: 2rem;
+  }
+  .navigation a {
+    font-size: 1rem;
+  }
+}
 .copyright {
   margin-top: 2rem;
   text-align: center;
   padding: 2rem;
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #f4f4f4;
 }
 .container {
   max-width: 800px;
   margin: 0 auto;
+  /*	@media @phone{
+		background-color:red;		TESTER FOR MOBILE
+	}
+*/
 }
 .container .img-one {
   width: 100%;
@@ -176,12 +188,17 @@ h5 {
 .container h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #4A5362;
+  color: #22283B;
 }
 .container p {
   line-height: 2;
   font-size: 1.15rem;
   width: 100%;
+}
+@media (max-width:500px) {
+  .container .top-content {
+    padding: 20px;
+  }
 }
 .container .three-imgs {
   display: flex;
@@ -199,11 +216,27 @@ h5 {
   margin: 1rem;
   border-radius: 20px;
 }
+@media (max-width:500px) {
+  .container .three-imgs {
+    flex-direction: column;
+  }
+  .container .three-imgs .sky {
+    display: none;
+  }
+  .container .three-imgs .launch {
+    display: none;
+  }
+}
 .container .mid-content {
   border-bottom: 2px solid lightgrey;
 }
 .container .mid-content p {
   margin-bottom: 2rem;
+}
+@media (max-width:500px) {
+  .container .mid-content {
+    padding: 20px;
+  }
 }
 .container .bottom-content {
   margin-top: 2rem;
@@ -219,16 +252,33 @@ h5 {
 }
 .container .bottom-content .text-content .btn {
   color: white;
-  background: #4A5362;
+  background: #22283B;
   width: 100px;
   height: 40px;
   border-radius: 7px;
   text-align: center;
   padding-top: 10px;
 }
+@media (max-width:500px) {
+  .container .bottom-content .text-content .btn {
+    width: 100%;
+  }
+}
 .container .bottom-content .text-content .btn:hover {
   background: black;
 }
 .container .bottom-content .img-content {
   border-radius: 7px;
+}
+@media (max-width:500px) {
+  .container .bottom-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .container .bottom-content .text-content {
+    width: 100%;
+  }
+  .container .bottom-content .img-content {
+    padding: 20px;
+  }
 }
