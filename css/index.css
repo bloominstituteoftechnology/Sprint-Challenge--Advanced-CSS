@@ -134,6 +134,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -146,10 +149,10 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 h2 {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 .main-header {
   width: 100%;
@@ -161,20 +164,34 @@ p {
   padding: 10px;
 }
 .main-header h1 {
-  font-size: 2.2rem;
-  color: darkslategrey;
+  font-size: 3.4rem;
+  color: #444958;
 }
 .navbar {
   display: flex;
   justify-content: space-around;
 }
 .navcontent {
+  font-size: 1.6rem;
   text-decoration: none;
-  color: darkslategrey;
+  color: #444958;
   padding: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444958;
+  background-color: #444958;
+  width: 100%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-top: 1px solid lightgray;
+  padding: 10px;
+  height: 85px;
 }
 .main-content {
   max-width: 880px;
@@ -208,4 +225,17 @@ p {
 .main-content .main-text-bottom h2 {
   padding: 5px;
   margin-bottom: 5px;
+}
+.bottom-content {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 25px;
+}
+.bottom-content .bottom-text {
+  width: 40%;
+}
+.bottom-content .bottom-img {
+  width: 40%;
 }
