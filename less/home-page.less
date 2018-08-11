@@ -36,13 +36,35 @@ body {
     justify-content: space-between;
     height: 350px;
 
+    @media @phone {
+        height: 375px;       
+    }
+
     .middleimages {
         .flex-row-just(space-between);
+
+        @media @phone {
+            justify-content: center;
+        }
 
         img {
             width: 30%;
             height: 200px;
-            border-radius: 10%
+            border-radius: 10%;
+        }
+
+        @media @phone {
+            .img1 {
+                width: 90%;
+            }
+
+            .img2 {
+                display:none;
+            }
+
+            .img3 {
+                display: none;
+            }
         }
     }
 }
@@ -54,6 +76,10 @@ body {
     margin-top: 30px;
     padding-bottom: 50px;
     border-bottom: 1px solid @accent-color;
+
+    @media @phone {
+        height: 250px;       
+    }
 }
 
 .center-three {
@@ -82,6 +108,25 @@ body {
         .button-maker(80px, 30px, @secondary-color, @main-color);
         .flex-row-just(center);
         align-items: center;
+    }
+
+    @media @phone {
+        .flex-column-align(center);
+        height: 550px;
+
+        .content {
+            width: 100%;
+            height: 300px;
+        }
+
+        .lastimage {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            width: 100%;
+        }
     }
 
 }

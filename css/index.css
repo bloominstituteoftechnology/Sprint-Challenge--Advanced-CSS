@@ -145,6 +145,7 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  color: #22283B;
 }
 p {
   font-size: 1.8rem;
@@ -166,11 +167,18 @@ header .header-content {
   align-items: center;
   max-width: 880px;
   width: 100%;
+  color: #22283B;
 }
 header .header-content nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+@media (max-width:500px) {
+  header .header-content nav {
+    width: 90%;
+    justify-content: space-around;
+  }
 }
 header .header-content nav a {
   text-decoration: none;
@@ -211,14 +219,35 @@ body {
   justify-content: space-between;
   height: 350px;
 }
+@media (max-width:500px) {
+  .center-one {
+    height: 375px;
+  }
+}
 .center-one .middleimages {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .center-one .middleimages {
+    justify-content: center;
+  }
 }
 .center-one .middleimages img {
   width: 30%;
   height: 200px;
   border-radius: 10%;
+}
+@media (max-width:500px) {
+  .center-one .middleimages .img1 {
+    width: 90%;
+  }
+  .center-one .middleimages .img2 {
+    display: none;
+  }
+  .center-one .middleimages .img3 {
+    display: none;
+  }
 }
 .center-two {
   display: flex;
@@ -229,6 +258,11 @@ body {
   margin-top: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid #e0e0e0;
+}
+@media (max-width:500px) {
+  .center-two {
+    height: 250px;
+  }
 }
 .center-three {
   display: flex;
@@ -260,6 +294,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:500px) {
+  .center-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+  }
+  .center-three .content {
+    width: 100%;
+    height: 300px;
+  }
+  .center-three .lastimage {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .center-three .btn {
+    width: 100%;
+  }
 }
 footer {
   margin-top: 10px;
