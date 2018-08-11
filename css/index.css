@@ -224,7 +224,8 @@ footer p {
 }
 @media (max-width:500px) {
   .middle-container .middle-img-container .middle-img {
-    width: 70%;
+    width: 95%;
+    height: 270px;
     margin: 0px auto;
   }
 }
