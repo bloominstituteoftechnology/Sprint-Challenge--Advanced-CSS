@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/Answers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="221">
-                <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <first_editor relative-caret-position="340">
+                <caret line="20" column="315" lean-forward="false" selection-start-line="20" selection-start-column="315" selection-end-line="20" selection-end-column="315" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -57,6 +57,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -121,6 +124,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e747566f-66de-4567-ad06-9aea74174d14" name="Default" comment="" />
@@ -128,12 +134,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534003696313</updated>
-      <workItem from="1534003709784" duration="1640000" />
+      <workItem from="1534003709784" duration="1855000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1640000" />
+    <option name="totallyTimeSpent" value="1855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -183,8 +189,8 @@
     <entry file="file://$PROJECT_DIR$/Answers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="221">
-            <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <first_editor relative-caret-position="340">
+            <caret line="20" column="315" lean-forward="false" selection-start-line="20" selection-start-column="315" selection-end-line="20" selection-end-column="315" />
             <folding />
           </first_editor>
           <second_editor />

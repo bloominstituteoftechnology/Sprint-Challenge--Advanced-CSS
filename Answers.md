@@ -18,3 +18,5 @@
 
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
 
+    * My favorite concept are variables and mixins. They make CSS very clean and easy to mantain. also mixings make certain lines of code reusable saving us time. The most I struggle with are nesting when something is too nested and doesn't work for some reason but I try not to nest too much to avoid this problem. 
+
