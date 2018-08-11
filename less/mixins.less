@@ -1,1 +1,53 @@
 // Mixins below variables
+.flex-header(@maxWidth: 100%, @headerWidth: 100%){
+    display: flex;
+    flex-direction: column;
+    max-width: @maxWidth;
+    width: @headerWidth;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+
+}
+
+.flex-nav(@maxWidth: 100%, @headerWidth: 100%, @flexDirectionNav: row){
+    display: flex;
+    flex-direction: @flexDirectionNav;
+    max-width: @maxWidth;
+    width: @headerWidth;
+    justify-content: center;
+   
+    align-items: center;
+    
+}
+
+.flex-navItem(@fontSizeNav: 1.4rem) {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    font-size: @fontSizeNav;
+    /* font-size: 1.4rem; */
+    align-self: center;
+    padding-top: 10px;
+    text-decoration: none;
+
+}
+
+.button-maker() {
+    font-size: 1.8rem;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @secondary-color;
+    color: white;
+    border-radius: 15px;
+    @media @phone {
+
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}

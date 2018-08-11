@@ -1,0 +1,44 @@
+.header1 {
+    .flex-header();
+    background-color: @accent-color;
+
+}
+
+.navText {
+   /*  font-family: 'Indie Flower', cursive; */
+    font-size: 4rem;
+    color: @secondary-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navBar {
+    .flex-nav;
+}
+
+.navItem {
+    .flex-navItem;
+}
+
+@media @phone {
+   
+   .header1 {
+       .flex-header(500px, 500px);
+       flex-direction: column;
+   }
+    .navBar {
+
+      .flex-nav(500px, 100%, row);
+        justify-content: center;
+    }
+
+    .navItem {
+        .flex-navItem(1.8rem);
+        justify-content: center;
+    }
+    
+
+
+}
