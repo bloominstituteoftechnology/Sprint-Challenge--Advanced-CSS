@@ -135,7 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 62.5%;
-  background-color: red;
+  background-color: white;
 }
 h1,
 h2,
@@ -145,7 +145,7 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 .container {
-  width: 880px;
+  width: 800px;
   margin: 0px auto;
   background-color: white;
 }
@@ -154,16 +154,29 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: orange;
+  background-color: #f4f4f4;
   height: auto;
   padding-bottom: 10px;
   padding-top: 10px;
+  border-bottom: 2px solid #e0e0e0;
 }
 header h1 {
   display: inline-block;
+  margin-top: 4px;
+  font-size: 4rem;
 }
 header nav {
-  display: block;
+  display: inline-block;
+  margin-top: 16px;
+  display: flex;
+}
+header nav a {
+  height: 20px;
+  width: 80px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #22283B;
+  text-align: center;
 }
 footer {
   display: flex;
