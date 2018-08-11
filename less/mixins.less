@@ -1,1 +1,33 @@
 // Mixins below variables
+.x2 {
+  font-size: 2rem;
+}
+.x4 {
+  font-size: 4rem;
+}
+.x3 {
+  font-size: 3rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+
+.btn-sign-up(@border-width, @border-style, @color, @font-s) {
+  border: @border-width @border-style @color;
+  font-size: @font-s;
+}
+
+.btn {
+  .btn-sign-up(2px, solid, cadetblue, 1.4rem);
+  background: @secondary-color;
+  border-radius: 5px;
+  color: @main-color;
+  text-align: center;
+  padding: 2% 3%;
+  width: 110px;
+
+}
