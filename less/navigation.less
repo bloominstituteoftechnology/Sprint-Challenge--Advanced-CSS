@@ -14,14 +14,18 @@ header {
     }
     
     nav {
-        display: flex;
-        justify-content: space-around;
-        width: 30%;
+        .space-around();
+        width: 35%;
         margin-bottom: 15px;
+
+        @media @mobile {
+            width: 80%;
+        }
 
         a {
             color: @navtextcolor;
             text-decoration: none;
+            margin: 3%;
         }
     }
 }

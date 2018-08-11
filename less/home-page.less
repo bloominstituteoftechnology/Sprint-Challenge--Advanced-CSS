@@ -15,6 +15,10 @@
     .main-section();
     width: 90%;
     margin: 13px 0px 13px 2%;
+
+    @media @mobile {
+        width: 95%;
+    }
 }
 
 .images {
@@ -27,42 +31,60 @@
         height: 180px;
         border-radius: 12px;
     }
+
+    .blast {
+        @media @mobile {
+            width: 87%;
+            height: 300px;
+            margin: 40px 0px 40px 25px;
+        }
+    }
+
+    .sky, .launch {
+        @media @mobile {
+            display: none;
+        }
+    }
 }
 
 .visit {
     .main-section();
     width: 95%;
     margin: 50px 0px 50px 2%;
+
 }
 
 .cta {
-    display: flex;
+    .space-around();
     width: 100%;
-    justify-content: space-around;
     border-top: @bottomborders;
     border-bottom: @bottomborders;
     padding: 50px 3%;
+
+    @media @mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 
     div {
         width: 42%;
         display: flex;
         flex-direction: column;
 
+        @media @mobile {
+            width: 80%;
+        }
+
         p {
             line-height: 1.5;
         }
 
         a {
-            width: 27%;
-            height: 40px;
-            padding: 10px;
-            margin: 20px 0px;
-            color: white;
-            background-color: #232839;
-            border: 1px solid #3581F3;
-            border-radius: 4px;
-            text-align: center;
-            text-decoration: none;
+            .btnmixin(27%);
+
+            @media @mobile {
+                .btnmixin(100%);
+            }
         }
     }
 
@@ -70,5 +92,9 @@
         width: 42%;
         height: 250px;
         border-radius: 4px;
+
+        @media @mobile {
+            width: 80%;
+        }
     }
 }

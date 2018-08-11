@@ -3,6 +3,10 @@
   flex-direction: column;
   line-height: 1.5;
 }
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -171,12 +175,18 @@ header h1 {
 header nav {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 35%;
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
 }
 header nav a {
   color: #454957;
   text-decoration: none;
+  margin: 3%;
 }
 footer {
   width: 100%;
@@ -206,6 +216,11 @@ footer p {
   width: 90%;
   margin: 13px 0px 13px 2%;
 }
+@media (max-width: 500px) {
+  .lift-off {
+    width: 95%;
+  }
+}
 .images {
   display: flex;
   justify-content: space-between;
@@ -216,6 +231,19 @@ footer p {
   height: 180px;
   border-radius: 12px;
 }
+@media (max-width: 500px) {
+  .images .blast {
+    width: 87%;
+    height: 300px;
+    margin: 40px 0px 40px 25px;
+  }
+}
+@media (max-width: 500px) {
+  .images .sky,
+  .images .launch {
+    display: none;
+  }
+}
 .visit {
   display: flex;
   flex-direction: column;
@@ -225,16 +253,27 @@ footer p {
 }
 .cta {
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
   border-top: 1px solid #DFE2E6;
   border-bottom: 1px solid #DFE2E6;
   padding: 50px 3%;
+}
+@media (max-width: 500px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .cta div {
   width: 42%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .cta div {
+    width: 80%;
+  }
 }
 .cta div p {
   line-height: 1.5;
@@ -251,8 +290,27 @@ footer p {
   text-align: center;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .cta div a {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0px;
+    color: white;
+    background-color: #232839;
+    border: 1px solid #3581F3;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
 .cta img {
   width: 42%;
   height: 250px;
   border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .cta img {
+    width: 80%;
+  }
 }
