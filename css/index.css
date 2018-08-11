@@ -204,7 +204,7 @@ footer .footerText .button {
 }
 @media (max-width: 500px) {
   footer .footerText {
-    width: 83%;
+    width: 93%;
   }
 }
 @media (max-width: 500px) {
@@ -227,7 +227,7 @@ footer .footerImg img {
 }
 @media (max-width: 500px) {
   footer .footerImg {
-    width: 83%;
+    width: 93%;
   }
 }
 @media (max-width: 500px) {
