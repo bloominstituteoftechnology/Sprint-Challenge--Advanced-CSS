@@ -17,7 +17,7 @@
         
     }
     h2{
-        font-size:1.8rem;
+        font-size:2rem;
         margin-top:10px;
         margin-bottom:5px;
     }
@@ -31,9 +31,17 @@
         margin-top:15px;
         margin-bottom: 30px;
         .middle-img{
-            width:31.5%;
-            height:170px;
-            border-radius:15px;
+            .middle-3-images-styling();
+            @media @phone{
+                width:70%;
+                margin:0px auto;
+            }
+        }
+        
+    }
+    @media @phone{
+            .non-mobile-img{
+            display:none;
         }
     }
 }
@@ -48,18 +56,29 @@
       display: flex;
     justify-content: space-between;
     border-bottom:@border-bottom;
+    @media @phone{
+        flex-direction:column;
+    }
   .bottom-content{
       width:40%;
-      margin-top:30px;
+      margin-top:20px;
+      @media @phone{
+          width:100%;
+      }
   }
   img{
       width:40%;
       height:180px;
       margin-top:30px;
+      @media @phone{
+          width:100%;
+          margin-bottom: 40px;
+          margin-top:0px;
+      }
       
   }
     h2{
-        font-size:1.8rem;
+        font-size:2rem;
         margin-bottom: 10px;
     }
     
@@ -67,8 +86,12 @@
         font-size:1.6rem;
     }
     .button{
-        .button-style(navy,80px,#22283B,5px,1.6rem,5px);
+        .button-style(navy,80px,#22283B,4px,1.6rem,5px);
         margin-top:20px;
         margin-bottom: 30px;
+        @media @phone{
+          width:100%;
+          margin-bottom: 20px;
+      }
     }
 }
