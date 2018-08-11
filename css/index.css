@@ -167,9 +167,19 @@ h2 {
   font-size: 2.5rem;
   margin: 30px 0;
 }
+@media (max-width: 500px) {
+  h2 {
+    margin: 30px;
+  }
+}
 p {
   font-size: 1.5rem;
   margin: 30px 0;
+}
+@media (max-width: 500px) {
+  p {
+    margin: 30px;
+  }
 }
 header {
   height: 100px;
@@ -255,4 +265,13 @@ main .gallery {
 main .gallery img {
   width: 30%;
   border-radius: 20px;
+}
+@media (max-width: 500px) {
+  main .gallery img:not(:first-child) {
+    display: none;
+  }
+  main .gallery img {
+    margin: 0 auto;
+    width: 90%;
+  }
 }
