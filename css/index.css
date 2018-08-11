@@ -1,1 +1,402 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+header .nav-container {
+  border: 1px solid #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+}
+header .nav-container .logo-heading {
+  margin: 10px auto;
+  font-size: 30px;
+  color: #454A59;
+}
+header .nav-container .nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+}
+header .nav-container .nav .left,
+header .nav-container .nav .right {
+  padding: 15px;
+  color: #454A59;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  header .nav-container .nav .left,
+  header .nav-container .nav .right {
+    font-size: 0.9rem;
+  }
+}
+header .nav-container .nav .left:hover {
+  color: blue;
+  text-shadow: 1px 1px cyan;
+  -webkit-transform: rotate(-10deg) scale(1.2);
+  -moz-transform: rotate(-10deg) scale(1.2);
+  -o-transform: rotate(-10deg) scale(1.2);
+}
+header .nav-container .nav .right:hover {
+  color: blue;
+  text-shadow: 1px 1px cyan;
+  -webkit-transform: rotate(10deg) scale(1.2);
+  -moz-transform: rotate(10deg) scale(1.2);
+  -o-transform: rotate(10deg) scale(1.2);
+}
+.footer {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+  border-top: 1px solid gray;
+  background: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+    height: 70px;
+  }
+}
+.footer p {
+  color: #81848E;
+}
+@media (max-width: 500px) {
+  .footer p {
+    color: black;
+  }
+}
+.home {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    font-size: 62.5%;
+  }
+}
+.home .header {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home .header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+.home .header img {
+  margin-bottom: 15px;
+  margin-top: 98px;
+}
+@media (max-width: 500px) {
+  .home .header img {
+    width: 100%;
+  }
+}
+.home .header h2 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .home .header h2 {
+    font-size: 2.2rem;
+  }
+}
+.home .header p {
+  margin-top: 15px;
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .home .header p {
+    font-size: 1rem;
+  }
+}
+.home .main-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .main-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .main-img .img-content .sky,
+  .home .main-img .img-content .launch {
+    display: none;
+  }
+}
+.home .main-img .img-content img {
+  border-radius: 20px;
+  width: 210px;
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-right: 15px;
+}
+@media (max-width: 500px) {
+  .home .main-img .img-content img {
+    width: 400px;
+    margin-left: 17px;
+  }
+}
+.home .planets {
+  display: flex;
+  justify-content: center;
+}
+.home .planets .bottom-content {
+  width: 700px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+}
+.home .planets .bottom-content h2 {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .home .planets .bottom-content h2 {
+    font-size: 1.8rem;
+  }
+}
+.home .planets .bottom-content p {
+  margin-top: 15px;
+  font-size: 14px;
+  margin-left: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .home .planets .bottom-content p {
+    font-size: 1rem;
+  }
+}
+.home .walk-content {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .walk-content .walk-text {
+  width: 350px;
+  padding: 40px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-text {
+    width: 100%;
+  }
+}
+.home .walk-content .walk-text h2 {
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-text h2 {
+    font-size: 1.8rem;
+  }
+}
+.home .walk-content .walk-text p {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-text p {
+    font-size: 1rem;
+  }
+}
+.home .walk-content .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid dodgerblue;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  background-color: navy;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-text .btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+.home .walk-content .walk-img {
+  padding: 40px;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-img {
+    padding-top: 0;
+    padding-left: 45px;
+  }
+}
+.home .walk-content .walk-img img {
+  width: 250px;
+}
+@media (max-width: 500px) {
+  .home .walk-content .walk-img img {
+    width: 100%;
+  }
+}

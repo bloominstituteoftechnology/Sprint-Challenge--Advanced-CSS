@@ -1,0 +1,47 @@
+// Navigation Styles here
+
+header {
+
+    .nav-container {
+        border: 1px solid @nav-border;
+        .column;
+        background-color: @nav-bg;
+        position: fixed;
+        width: 100%;
+        opacity: 0.9;
+
+        .logo-heading {
+            margin: 10px auto;
+            font-size: 30px;
+            color: @nav-ft;
+        }
+        .nav {
+            .jccenter;
+            padding-top: 0;
+
+            .left, .right {
+                padding: 15px;
+                color: @nav-ft;
+                text-decoration: none;
+                
+                @media @mobile {
+                    font-size: 0.9rem;
+                }
+            }
+            .left:hover {
+                color: blue;
+                text-shadow: 1px 1px cyan;
+                -webkit-transform: rotate(-10deg) scale(1.2);
+                -moz-transform: rotate(-10deg) scale(1.2);
+                -o-transform: rotate(-10deg) scale(1.2);
+            }
+            .right:hover {
+                color: blue;
+                text-shadow: 1px 1px cyan;
+                -webkit-transform: rotate(10deg) scale(1.2);
+                -moz-transform: rotate(10deg) scale(1.2);
+                -o-transform: rotate(10deg) scale(1.2);
+            }
+        }
+    }
+}

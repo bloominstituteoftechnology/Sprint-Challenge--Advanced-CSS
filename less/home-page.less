@@ -1,1 +1,185 @@
 // Home Content
+
+.home {
+    width: 1000px;
+    margin: 0 auto;
+
+    @media @mobile {
+        width: 100%;
+        font-size: 62.5%;
+    }
+
+    .header {
+        width: 700px;
+        .columnw;
+        margin: 0 auto;
+
+        @media @mobile {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        
+        img {
+            margin-bottom: 15px;
+            margin-top: 98px;
+
+            @media @mobile {
+                width: 100%;
+            }
+        }
+        h2 {
+            .font-20;
+            .ml-10;
+
+            @media @mobile {
+                font-size: 2.2rem;
+            }
+        }
+        p {
+            .mt-15;
+            .font-14;
+            .ml-10;
+            .line;
+
+            @media @mobile {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.home {
+    
+    .main-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        @media @mobile {
+            .jccenter;
+        }
+
+        .img-content {
+            
+            .sky, .launch {
+
+                @media @mobile {
+                    display: none;
+                }
+            }
+            
+            img {
+                border-radius: 20px;
+                width: 210px;
+                .mt-15;
+                margin-left: 8px;
+                margin-right: 15px;
+
+                @media @mobile {
+                    width: 400px;
+                    margin-left: 17px;
+                }
+            }
+        }
+    }
+
+    .planets {
+        .jccenter;
+
+        // @media @mobile {
+        //     width: 100%;
+        // }
+
+        .bottom-content {
+            // border: 1px solid black;
+            width: 700px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 40px;
+
+            h2 {
+                .font-20;
+                .ml-10;
+                .mt-15;
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
+            }
+            p {
+                .mt-15;
+                .font-14;
+                .ml-10;
+                .line;
+
+                @media @mobile {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .walk-content {
+        .jccenter;
+        // padding: 40px;
+
+        @media @mobile {
+            .column;
+        }
+
+        .walk-text {
+            width: 350px;
+            padding: 40px;
+            .ml-10;
+
+            @media @mobile {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 20px;
+
+                @media @mobile {
+                    font-size: 1.8rem;
+                }
+            }
+            p {
+                .mt-15;
+                font-size: 14px;
+                .line;
+
+                @media @mobile {
+                    font-size: 1rem;
+                }
+            }
+            .btn {
+                .button-creator(80px, 30px, navy, white, 13px);
+                .mt-15;
+
+                @media @mobile {
+                    width: 100%;
+                    height: 50px;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .walk-img {
+            padding: 40px;
+
+            @media @mobile {
+                padding-top: 0;
+                padding-left: 45px;
+            }
+
+            img {
+                width: 250px; 
+
+                @media @mobile {
+                    width: 100%;
+                    // padding-top: 0;
+                }
+            }
+        }
+    }
+}
+
