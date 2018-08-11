@@ -1,26 +1,33 @@
 // Navigation Bar
 
 .header {
-    border: 3px solid blue;
+    // border: 3px solid blue;
     .width-start-mixin();
     display: flex;
     flex-direction: column;
+    background-color: @accent-color;
 
     h1 {
         font-size: @h1-font-size;
-        border: 1px solid red;
+        // border: 1px solid red;
         align-self: center;
         margin: 10px 0 10px 0;
+        color: @secondary-color;
     }
 
     nav {
         font-size: @p-font-size;
-        border: 1px solid green;
+        // border: 1px solid green;
         width: 50%;
         align-self: center;
         display: flex;
         justify-content: space-around;
         margin: 10px 0 10px 0;
+
+        a {
+            color: @secondary-color;
+            text-decoration: none;
+        }
     }
 
 }
