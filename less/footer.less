@@ -1,1 +1,12 @@
 // Footer Styles
+
+@import "variables.less";
+@import "mixins.less";
+
+#copyright {
+    .flex-column-centered (80%, 50px, @content-font-size, 0%, auto);
+    background-color: @header-footer-bg-color;
+    @media @phone {
+        .flex-column-centered (100%, 80px, @mobile-content-font-size, 0%, auto);
+    }
+}
