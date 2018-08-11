@@ -14,6 +14,8 @@ The default font-size in most browsers is 16px and setting the root element to h
 
 ####How would you describe preprocessing to someone new to CSS?
 
+I'd say that it's perfectly fine to not use preprocessing, however if they'd like to make their website easier to maintain, and more manageable (using smaller less files) then they should give it a try. On top of easier to maintain and more manageable preprocessing also allows the person writing it to follow the similar nested structure of the html where the content is displayed, which can also help when working on large projects to have a similar nested structure for content and styles.
+
 ####What is your favorite concept in preprocessing?
 
 ####What is the concept that gives you the most trouble?
