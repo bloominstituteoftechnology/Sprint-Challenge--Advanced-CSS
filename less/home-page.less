@@ -1,1 +1,92 @@
 // Home Content
+.wrapper {
+	max-width: 880px;
+	width: 100%;
+	margin: 30px auto;
+}
+
+main .banner {
+	width: 100%;
+
+	img {
+	width: 100%;
+	display: block;
+	margin: 0;
+	}
+}
+
+.lift-off {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	border-bottom: 1px solid #F4F4F4;
+
+	.lift-off-content {
+		padding: 15px;
+		h2 {
+			font-size: 3rem;
+			margin: 0;
+		} 
+
+		p {
+			margin: 0;
+			font-size: 1.8rem;
+		}
+		}
+	}
+
+.lift-off-images {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 100%;
+			justify-content: space-evenly;
+			align-items: center;
+
+			img {
+				width: 30%;
+				border-radius: 35px;
+				padding: 1em;
+			}
+}
+
+.go-for-walk {
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #F4F4F4;
+	margin-top: 20px;
+	padding-bottom: 20px;
+
+	.go-walk-content {
+		h2 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+	.go-for-walk .go-walk-img img {
+	border-radius: 15px;
+	}
+
+/* button style */
+#btn-signup {
+	 margin-top: 13px;
+	 width: 13em;
+	.btn-maker(1em 2em, 5px, #fff,@header-color);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	background: #F4F4F4;
+	small {
+		font-size: 1.3rem;
+		margin-top: 10px;
+		height: 100px;
+	}
+}
