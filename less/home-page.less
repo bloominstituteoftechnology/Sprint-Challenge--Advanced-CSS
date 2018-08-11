@@ -15,17 +15,32 @@ main .banner {
 	}
 }
 
+	.go-for-walk .go-walk-content h2 {
+	    font-size: 3rem;
+	    text-align: justify;
+	    padding-bottom: 20px;
+	 }
+
 .lift-off {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
 	border-bottom: 1px solid #ECEEF0;
 
+	@media @phone {
+		.justify-text
+	}
+
 	.lift-off-content {
-		padding: 15px;
+		padding: 20px;
 		h2 {
 			.font-size-h2-tags;
 			margin: 0;
+			padding-bottom: 20px;
+
+			@media @phone {
+				padding-bottom: 20px;
+			}
 		} 
 
 		p {
@@ -39,6 +54,7 @@ main .banner {
 			display: flex;
 			flex-wrap: wrap;
 			max-width: 100%;
+			margin: 0 10px;
 			justify-content: space-evenly;
 			align-items: center;
 			@media @phone {
@@ -63,16 +79,20 @@ main .banner {
 	padding-bottom: 20px;
 	@media @phone {
 		flex-direction: column;
-    	padding: 10px;
+    	padding: 20px;
+    	 
 	}
 
 	.go-walk-content {
 		@media @phone {
 			padding-bottom: 15px;
+			box-sizing: border-box;
 		}
 
 		h2 {
-			.font-size-h2-tags
+			.font-size-h2-tags;
+			.justify-text;
+
 		}
 
 		p {
@@ -80,7 +100,6 @@ main .banner {
 		}
 	}
 }
-
 	.go-for-walk .go-walk-img img {
 	border-radius: 15px;
 	}
@@ -94,6 +113,15 @@ main .banner {
 	}
 
 /* button style */
+#button-container {
+	@media @phone {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 #btn-signup {
 	 margin-top: 13px;
 	 width: 13em;
@@ -102,7 +130,7 @@ main .banner {
 		font-size: 1.5rem;
 	}
 	@media @phone {
-		width: 37em;
+		width: 39.8em;
 	}
 }
 
