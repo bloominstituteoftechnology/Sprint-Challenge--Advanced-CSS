@@ -140,3 +140,117 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.nav-border {
+  border-bottom: 3px dotted lightgrey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  display: block;
+  padding: 1rem;
+}
+.nav-border h1 {
+  font-size: 1.6rem;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav li {
+  padding: 2px;
+  display: inline-block;
+}
+.nav li a {
+  text-decoration: none;
+  color: grey;
+}
+footer {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 62.5%;
+}
+.container h2 {
+  font-size: 2rem;
+}
+.container p {
+  font-size: 1rem;
+  padding: 5px;
+}
+.container .walk-section {
+  padding-top: 50px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container .walk-section .text-section {
+  width: 50%;
+}
+.container .walk-section .img-content {
+  width: 49%;
+}
+.container .walk-section .img-content img {
+  height: 200px;
+  width: 200px;
+}
+.container .walk-section .button {
+  display: inline-flex;
+  border: darkcyan 4px solid;
+  font-size: 1.2rem;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-image {
+  padding-top: 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-image img {
+  width: 100%;
+  height: 200px;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.top-section .top-section-images {
+  max-width: 100%;
+  display: flex;
+  height: 180px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-section .top-section-images img {
+  margin-top: 10px;
+  display: inline-flex;
+  max-width: 30%;
+  flex-wrap: nowrap;
+  border-radius: 10%;
+}
+.text-content {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-content h1 {
+  justify-content: flex-start;
+}
