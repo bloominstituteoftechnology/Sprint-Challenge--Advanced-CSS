@@ -191,10 +191,6 @@ nav a {
   text-decoration: none;
   padding: 0px 13.5px;
 }
-nav a:hover {
-  background-color: yellow;
-  color: black;
-}
 @media (max-width: 500px) {
   nav {
     width: 75%;
