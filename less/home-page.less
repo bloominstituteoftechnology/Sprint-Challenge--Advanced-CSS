@@ -1,1 +1,26 @@
 // Home Content
+.row{
+    .flexbox-set(@justify:center, @fAItems:center, @fDir:column);
+    .element-sizing(@height: 110px);
+    .element-spacing(@padding: 1.5%);
+    .element-color(@bgColor: @topbarBG);
+
+    // .flex-set(@justify:center, @alignItems:center, @flexDir:column, @padding:1.5%, @height:110px);
+    // background-color: @topbarBG;
+    // height: 110px;
+
+    nav{
+        .flexbox-set(@justify:center, @@fAItems:center);
+        .element-sizing(@width: 100%);
+        .element-spacing(@mTop: 1%);
+        // .flex-set(@justify:center, @alignItems:center, @width:100%);
+        // margin-top: 1%;
+        // margin: 0 auto;
+        // width: 100%;
+    }
+
+    a{
+        margin: 1%;
+    }
+
+}
