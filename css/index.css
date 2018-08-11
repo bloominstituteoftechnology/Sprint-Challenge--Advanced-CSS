@@ -185,26 +185,27 @@ html {
 .main-content {
   display: flex;
   flex-direction: column;
-  border: solid 2px black;
+  height: 900px;
+  justify-content: space-around;
   width: 98%;
 }
 .main-content .intro {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: solid 2px black;
+  height: 30% ;
+  justify-content: space-between;
 }
 .main-content .intro h1 {
   font-size: 2.5rem;
 }
 .main-content .intro p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .main-content .image-row {
   display: flex;
   width: 100%;
   height: auto;
-  border: solid 2px black;
   justify-content: space-between;
 }
 .main-content .image-row .image {
@@ -214,4 +215,74 @@ html {
   display: flex;
   height: auto;
   width: 100%;
+  border-radius: 15px;
+}
+.main-content .planets {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.main-content .planets h1 {
+  font-size: 2.5rem;
+}
+.main-content .planets p {
+  font-size: 1.5rem;
+}
+.main-content .walk {
+  display: flex;
+  align-self: center;
+  width: 95%;
+  justify-content: space-evenly;
+}
+.main-content .walk .walk-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35%;
+}
+.main-content .walk .walk-content h1 {
+  font-size: 2.5rem;
+}
+.main-content .walk .walk-content p {
+  font-size: 1.5rem;
+}
+.main-content .walk .btn {
+  display: flex;
+  justify-content: center;
+  background-color: teal;
+  padding: none;
+  width: 25%;
+  height: 15%;
+}
+.main-content .walk .btn p {
+  align-self: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.main-content .walk .walk-img {
+  width: 35%;
+}
+.main-content .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.main-content .walk h1 {
+  font-size: 2.5rem;
+}
+.main-content .walk p {
+  font-size: 1.5rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+footer p {
+  font-size: 2rem;
 }

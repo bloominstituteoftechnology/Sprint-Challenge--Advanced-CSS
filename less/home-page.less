@@ -7,6 +7,7 @@ html {
     flex-direction: column;
     margin: 0 auto;
     max-width: 880px;
+    
     align-items: center;
 }
 
@@ -22,21 +23,24 @@ html {
 
 .main-content {
     .flex-column;
-    border: solid 2px black;
     
+    height: 900px;
+    justify-content: space-around;
 
     width: 98%;
 
     .intro{
         .flex-column;
         width: 100%;
-        border: solid 2px black;
+        
+        height:30% ;
+        justify-content: space-between;
 
         h1 {
             font-size: 2.5rem;
         }
         p {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
 
         }
 
@@ -47,7 +51,7 @@ html {
         .flex-row;
         width: 100%;
         height: auto;
-        border: solid 2px black;
+        
         justify-content: space-between;
         .image{
             width: 30%;
@@ -57,6 +61,86 @@ html {
             display: flex;
             height: auto;
             width: 100%;
+            border-radius: 15px;
         }
+    }
+
+    .planets{
+        .flex-column;
+        justify-content: space-between;
+        
+        height: 15%;
+        padding-left: 1%;
+        padding-right: 1%;
+
+        h1{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .walk {
+        
+        .flex-row;
+        align-self: center;
+        width: 95%;
+        justify-content: space-evenly;
+        .walk-content{
+            .flex-column;
+            justify-content: space-around;
+            width: 35%;
+            
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+         
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        
+        .button-creator(@bgc:teal; @wt:25%; @ht:15%;);
+        p {
+            align-self:center;
+            font-size:1.5rem;
+            color: white;
+        }
+    }
+
+    .walk-img{
+        width: 35%;
+
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    }
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+    p{
+        font-size: 2rem;
     }
 }
