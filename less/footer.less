@@ -1,1 +1,37 @@
 // Footer Styles
+footer {
+  .containerWidthCentered();
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    .borderBottom();
+
+    section {
+      width: 40%;
+      .generalMargin();
+    }
+
+    img {
+      width: 90%;
+    }
+
+    .astronaut-img {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn {
+      .buttonCreator(10px, black, white, 30%, 10px);
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: @main-color;
+
+    p {
+      margin: 10px 0 0 0;
+      padding: 20px 0 50px 0;
+    }
+  }
+}
