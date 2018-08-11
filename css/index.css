@@ -1,3 +1,9 @@
+.flex-align-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +135,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -139,4 +148,118 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.content-main {
+  max-width: 880px;
+  margin: 0 auto;
+}
+header {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #22283B;
+  border-bottom: 1px solid #e0e0e0;
+}
+header h1 {
+  padding: 10px 0 10px 0;
+  font-size: 4rem;
+}
+.navigation-section {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+}
+.navigation-section a {
+  text-decoration: none;
+  color: inherit;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px 0px 40px 0px;
+  border: 1px solid #e0e0e0;
+}
+footer p {
+  font-size: 1.3rem;
+  font-color: #22283B;
+}
+.content-section .planet-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-flow: wrap;
+}
+.content-section .planet-content img {
+  height: 200px;
+  width: 100%;
+}
+.content-section .text-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #22283B;
+}
+.content-section .text-content h1 {
+  font-size: 3.5rem;
+  padding: 10px 0 0 10px;
+}
+.content-section .text-content p {
+  font-size: 1.6rem;
+  padding: 10px 0 0 10px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  color: #22283B;
+}
+.content-section .ship-space-content {
+  border-bottom: 1px solid lightgrey;
+}
+.content-section .ship-space-content img {
+  width: 28%;
+  border-radius: 20px;
+  margin-right: 2%;
+  margin-bottom: 30px;
+}
+.content-section .ship-space-content .img1 {
+  margin-left: 1%;
+}
+.content-section .ship-space-content .text-content {
+  margin-bottom: 40px;
+}
+.content-section .spaceman-section {
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  padding: 50px 50px 0px 50px;
+  margin-bottom: 20px;
+}
+.content-section .spaceman-section img {
+  width: 35%;
+  height: 250px;
+  border-radius: 5px;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+.content-section .spaceman-section .text-content {
+  width: 50%;
+  margin-bottom: 40px;
+}
+.content-section .spaceman-section .text-content p {
+  padding: 0 7.8% 0 3%;
+}
+.content-section .spaceman-section .text-content .signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 30px;
+  color: #e0e0e0;
+  border-radius: 2px;
+  background-color: #22283B;
+  margin-left: 10px;
 }
