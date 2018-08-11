@@ -178,6 +178,10 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+footer {
+  display: flex;
+  justify-content: center;
+}
 body {
   display: flex;
   justify-content: center;
@@ -204,6 +208,20 @@ main .bottom-content {
 }
 main .bottom-content .bottom-content-text {
   padding: 0 25px;
+}
+main .bottom-content .bottom-content-text a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+main .bottom-content .bottom-content-text a .sign-up {
+  color: #f4f4f4;
+  background-color: #22283B;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 5px 10px;
 }
 main .bottom-content .space-walk-img {
   border-radius: 5px;
