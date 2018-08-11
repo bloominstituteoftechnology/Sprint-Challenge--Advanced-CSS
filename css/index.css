@@ -141,14 +141,14 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 nav {
-  widows: 100%;
+  width: 100%;
   border-bottom: #e0e0e0;
   background: #f4f4f4;
   display: flex;
   flex-wrap: wrap;
   font-size: 1.8rem;
   justify-content: center;
-  color: #22283B;
+  color: #5a6b87;
 }
 nav p {
   margin: 1.2rem;
@@ -165,4 +165,38 @@ html {
 }
 html body {
   font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #22283B;
+  width: 55%;
+}
+html body img:first-child {
+  width: 100%;
+  border-radius: 0%;
+}
+html body h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+html body p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+html body .horizontalblock {
+  margin-left: 1.2rem;
+}
+html body img {
+  width: 30%;
+  margin-right: 1.8rem;
+  border-radius: 15%;
+  margin-bottom: 1.2rem;
 }
