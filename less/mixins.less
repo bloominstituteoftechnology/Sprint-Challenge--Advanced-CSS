@@ -1,1 +1,35 @@
 // Mixins below variables
+.flex-center()    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column-center()    {
+    .flex-center;
+    flex-direction: column;
+}
+.img-styler(@width:31%)    {
+    width: @width;
+    height: 31%;
+    border-radius: 7%;
+}
+.img-styler(@width:31%, @border-radius:7%)    {
+    width: @width;
+    height: 31%;
+    border-radius: @border-radius;
+}
+.button-creator(@btn-bg:black, @btn-txt:white) {
+    .flex-center;
+    width: 52px;
+    height: 22px;
+    background: @btn-bg;
+    color: @btn-txt;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+    &:hover {
+        background: @btn-txt;
+        color: @btb-bg;
+        border: 1px solid @btn-bg;
+    }
+}
