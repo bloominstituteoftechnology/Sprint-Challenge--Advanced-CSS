@@ -275,7 +275,7 @@ div.main-body div.sub-body .smaller-body .button {
 }
 @media (max-width:500px) {
   div.main-body div.sub-body .smaller-body .button {
-    margin: 20px auto;
+    margin: 20px -18px;
     border: 1px solid #e0e0e0;
     border-radius: 15px;
     background-color: #22283B;
