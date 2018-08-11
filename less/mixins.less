@@ -1,1 +1,26 @@
 // Mixins below variables
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button-builder(@color: @main-bg; @bg-color: @button-bg;
+                @width: 90px; @height: 45px; @radius: 15px;
+                @font-size: 1.6rem) {
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    background-color: @bg-color;
+    color: @color;
+    font-size: @font-size;
+    .flex-centered();
+   
+    &:hover {
+      border: 2px solid @bg-color;
+      background-color: @color;
+      color: @bg-color;
+      cursor: pointer;
+    }
+ }

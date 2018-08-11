@@ -1,3 +1,8 @@
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +134,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -139,4 +147,59 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+.container {
+  max-width: 840px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.nav-container {
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #e0e0e0;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .navbar {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #444958;
+}
+.nav-container .navbar nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-container .navbar nav a {
+  text-decoration: none;
+  color: #22283B;
+  font-size: 1.6rem;
+  margin-top: 15px;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+.footer p {
+  text-align: center;
+  color: #22283B;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+img {
+  width: 100%;
+  height: 200px;
 }
