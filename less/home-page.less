@@ -1,1 +1,59 @@
 // Home Content
+
+.container-content{
+    max-width: 880px;
+    margin: 0px auto;
+
+    .headerimg{
+        width:100%;
+        height: 200px;
+    }
+
+    .content-intro, .content-main, .content-signup {
+        margin: 20px;
+        h2{
+            font-size:2rem;
+            padding: 10px 0px;
+        }
+
+        p{
+            padding: 10px 0px;
+            line-height: 150%  
+        }
+    }
+
+    .image-row{
+        margin: 20px;
+        .flexmix(space-between; center;);
+
+        img{
+            width: 30%;
+            border-radius: 15px; 
+        }
+    }
+
+    .content-main{
+        padding-bottom: 30px;
+        .bottomBorder();
+    }
+
+    .content-signup{
+        padding: 20px 6%;
+        .flexmix(space-evenly; flex-start;);
+        .bottomBorder();
+        padding-bottom: 20px;
+
+        button{
+            .buttnMix(25%; 10px; 10px;);
+            margin-top:15px;
+        }
+
+        div{
+           width: 45%; 
+        }
+        img{
+            width: 45%;
+        }
+    }
+
+}
