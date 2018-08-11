@@ -3,6 +3,7 @@
 .container {
     .flex-maker(center, center, column);
     .desktop-width-settings;
+    padding-bottom: 20px;
     background: @background;
     color: @text-color;
 }
@@ -53,4 +54,11 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.button {
+    .flex-maker(center, center);
+    .button-maker(200px, 35px, 10px, @text-color, @background, 1.8rem, bold);
+    margin-bottom: 20px;
+    
 }

@@ -175,6 +175,12 @@ nav a {
   border-radius: 10px;
   text-align: center;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -183,6 +189,7 @@ nav a {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  padding-bottom: 20px;
   background: black;
   color: white;
 }
@@ -240,5 +247,19 @@ nav a {
   margin-left: 10px;
 }
 .content-reversed .text-content h2 {
+  margin-bottom: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
   margin-bottom: 20px;
 }
