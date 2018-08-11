@@ -140,9 +140,6 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
-hr {
-  color: maroon;
-}
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -235,12 +232,17 @@ footer .footerImg img {
     padding-top: 40px;
   }
 }
+.hrFooter {
+  margin-top: 50px;
+}
 .trademark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 75px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 40px 0%;
+  background-color: #ececec;
 }
 .container {
   max-width: 800px;
