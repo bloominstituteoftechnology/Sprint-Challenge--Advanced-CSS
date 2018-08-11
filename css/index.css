@@ -204,16 +204,32 @@ header p {
   border-radius: 20px;
   margin-right: 2rem;
 }
+@media (max-width:500px) {
+  .images .first {
+    display: flex;
+    align-items: center;
+  }
+}
 .images .second {
   width: 250px;
   height: 165px;
   border-radius: 20px;
   margin-right: 2rem;
 }
+@media (max-width:500px) {
+  .images .second {
+    display: none;
+  }
+}
 .images .third {
   width: 250px;
   height: 165px;
   border-radius: 20px;
+}
+@media (max-width:500px) {
+  .images .third {
+    display: none;
+  }
 }
 .can-we {
   width: 90%;
@@ -240,12 +256,24 @@ header p {
   display: flex;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .sign-up {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .sign-up .bottom-img {
   border-radius: 10px;
 }
 .sign-up .text-content {
   width: 50%;
   margin: 0 5%;
+}
+@media (max-width:500px) {
+  .sign-up .text-content {
+    width: 95%;
+    margin: 0 2.5%;
+  }
 }
 .sign-up .text-content h2 {
   font-size: 3rem;
@@ -270,6 +298,22 @@ button {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+@media (max-width:500px) {
+  button {
+    width: 100%;
+    background-color: #22283B;
+    width: 450px;
+    height: 75px;
+    border: 1px solid #22283B;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 footer {
   display: flex;
