@@ -287,7 +287,7 @@ footer .footer {
   .top-section .top-section-images {
     display: flex;
     justify-content: center;
-    height: 180px;
+    height: auto;
   }
 }
 .top-section img {
@@ -300,6 +300,8 @@ footer .footer {
 @media (max-width:500px) {
   .top-section img {
     max-width: 80%;
+    width: 500px;
+    height: auto;
     margin-top: 30px;
     padding-bottom: 30px;
   }
