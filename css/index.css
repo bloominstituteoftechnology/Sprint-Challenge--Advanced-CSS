@@ -140,12 +140,14 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
-h1 {
-  font-size: 4rem;
-}
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.2rem;
+  }
 }
 h4 {
   font-size: 2.5rem;
@@ -155,6 +157,12 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    line-height: 1.1;
+    font-size: 1.2rem;
+  }
 }
 .container {
   max-width: 1024px;
@@ -170,16 +178,29 @@ p {
   align-items: center;
   padding: 30px 0px;
 }
+@media (max-width: 500px) {
+  .header {
+    width: 100%;
+    padding: 20px 0px;
+  }
+}
 .header .space-walker {
   padding: 20px 0px;
   text-align: center;
+  font-size: 3.8rem;
   color: #22283B;
+}
+@media (max-width: 500px) {
+  .header .space-walker {
+    padding: 10px;
+    font-size: 2.2rem;
+  }
 }
 .header .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 .header .header-nav .a-tag {
@@ -187,6 +208,12 @@ p {
   text-decoration: none;
   color: #22283B;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .header .header-nav .a-tag {
+    font-size: 1rem;
+    padding-right: 7px;
+  }
 }
 .footer {
   width: 100%;
@@ -202,6 +229,16 @@ p {
   color: #22283B;
   font-size: 1.6rem;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
 }
 .home .banner {
   width: 100%;
@@ -221,10 +258,28 @@ p {
   justify-content: space-between;
   height: 200px;
 }
+@media (max-width: 500px) {
+  .home .content .image-content {
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .content .image-content .img-hide {
+    display: none;
+  }
+}
 .home .content .image-content img {
   width: 30%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content .image-content img {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .home .signup {
   display: flex;
@@ -234,9 +289,21 @@ p {
   border-bottom: 1px solid #e0e0e0;
   padding: 40px;
 }
+@media (max-width: 500px) {
+  .home .signup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .signup .text-content-signup {
   width: 60%;
   margin-right: 20px;
+}
+@media (max-width: 500px) {
+  .home .signup .text-content-signup {
+    width: 100%;
+  }
 }
 .home .signup .text-content-signup p {
   line-height: 1.2;
@@ -244,7 +311,7 @@ p {
 }
 .home .signup .text-content-signup .btn {
   margin-top: 35px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 150px;
   height: 60px;
   background-color: #22283B;
@@ -260,7 +327,34 @@ p {
   background-color: white;
   color: #22283B;
 }
+@media (max-width: 500px) {
+  .home .signup .text-content-signup .btn {
+    font-size: 1.2rem;
+    width: 150px;
+    height: 60px;
+    background-color: #22283B;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 0px;
+  }
+  .home .signup .text-content-signup .btn:hover {
+    border: 1px solid #22283B;
+    background-color: white;
+    color: #22283B;
+  }
+}
 .home .signup .image-signup img {
   width: 330px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .signup .image-signup img {
+    width: 100%;
+    border-radius: 0px;
+  }
 }
