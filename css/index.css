@@ -166,3 +166,39 @@ header a {
   text-decoration: none;
   color: #22283b;
 }
+.home {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.first-section img {
+  border: 1px solid green;
+  width: 100%;
+  height: 200px;
+}
+.first-section .first-text {
+  padding: 18px 0px;
+}
+.first-section h2 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+.second-section {
+  border-bottom: 2px solid #F6F7F8;
+}
+.second-section .middle-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.second-section img {
+  width: 31%;
+  border-radius: 15px;
+}
+.second-section .second-text {
+  margin-top: 45px;
+  padding-bottom: 60px;
+}
+.second-section p {
+  padding-top: 15px;
+}
