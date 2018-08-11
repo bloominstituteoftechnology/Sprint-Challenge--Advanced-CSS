@@ -140,3 +140,11 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
