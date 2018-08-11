@@ -144,7 +144,7 @@ header {
   width: 100%;
   background-color: #f4f4f4;
   border-bottom: 1px solid #e0e0e0;
-  padding: 14px 0px;
+  padding: 14px 0px 1px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,4 +162,21 @@ header nav a {
   color: #22283B;
   font-size: 1rem;
   padding: 0px 14px;
+}
+div.main-body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+}
+div.main-body img.header {
+  width: 800px;
+  height: 200px;
+}
+div.main-body h2 {
+  font-size: 2rem;
+  padding: 15px;
+}
+div.main-body p {
+  padding: 0px 15px;
+  line-height: 1.4;
 }
