@@ -143,10 +143,24 @@ h5 {
 html {
   font-size: 62.5%;
 }
+h1 {
+  font-size: 3.6rem;
+  color: #22283B;
+}
+h2 {
+  font-size: 2.6rem;
+  color: #22283B;
+}
+p {
+  font-size: 1.6rem;
+  margin: 10px 0;
+  line-height: 20px;
+}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px 0;
 }
 header h1 {
   font-size: 3.6rem;
@@ -169,5 +183,30 @@ body {
   justify-content: center;
 }
 .container {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
+}
+main .section-content {
+  margin: 25px 15px 40px 15px;
+}
+main .section-content .middle-content {
+  display: flex;
+  justify-content: space-between;
+}
+main .section-content .middle-content .middle-images {
+  border-radius: 15px;
+  height: 175px;
+  width: 250px;
+}
+main .bottom-content {
+  display: flex;
+  margin: 60px;
+}
+main .bottom-content .bottom-content-text {
+  padding: 0 25px;
+}
+main .bottom-content .space-walk-img {
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
 }
