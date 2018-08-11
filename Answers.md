@@ -12,7 +12,7 @@
 
 4. How would you describe preprocessing to someone new to CSS?
 
-    [logo]: img/car.jpg "car meme"
+    [logo]: (img/car.jpg) "car meme"
 
     * "slaps roof of car" this baby will help you reuse pieces of CSS like making variables for those colors you reuse on your website, make everything a bit more pleasing to the eyes with nesting and talking about reusable you can create mixins that to put an example are like Javascript functions that you can call anytime you want, pass values, etc that change that element.
 
