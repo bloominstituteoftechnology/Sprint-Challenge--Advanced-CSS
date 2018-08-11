@@ -2,4 +2,71 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    color: @main-color;
+    .main-header-img {
+        width: 100%;
+    }
+    .intro-paragraph {
+        margin: 25px 0px;
+        h2 {
+            margin-bottom: 15px;
+        }
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    section {
+        .main-padding();
+    }
+    .row-three-images {
+        .flex(space-between);
+        width: 100%;
+        .main-padding();
+        .img-row {
+            width: 30%;
+            border-radius: 10px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .img-row:first-child {
+            margin-left: 0px;
+        }
+        .img-row:last-child {
+            margin-right: 0px;
+        }
+    }
+    .visit {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-bottom: @border;
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
+    .walk-section {
+        .flex(row; space-between; center);
+        padding: 80px 10%;
+        border-bottom: @border;
+        .walk-paragraph-button {
+            margin-right: 40px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            .signup-btn {
+                .sign-up-btn(@main-color; 10px; 10px);
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 15px;
+                width: 30%;
+                margin-left: 25%;
+
+            }
+        }
+        .space-walk-img {
+            margin-left: 40px;
+            width: 40%;
+            border-radius: 10px;
+        }
+    }
+  
 }

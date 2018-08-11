@@ -1,1 +1,19 @@
 // Mixins below variables
+.flex (@direction: row; @justify: flex-start; @align: flex-start) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.main-padding () {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.sign-up-btn (@bg-color; @x-pad; @y-pad){
+    border: 1px solid @accent-color;
+    background-color: @bg-color;
+    padding: @y-pad @x-pad;
+    color: @secondary-color;
+}
