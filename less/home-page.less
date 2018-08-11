@@ -1,1 +1,112 @@
 // Home Content
+
+.header{
+    width: 100%;
+    background-color: @main-color;
+    height: 100px;
+    border-bottom: 2px solid @accent-color;
+    .headerContent{
+        max-width: 880px;
+        .flex(column, space-evenly, center);
+        margin: 0 auto;
+        height: 100%;
+        h1{
+            .h(2rem)
+        }
+    }
+}
+
+.container{
+    margin: 0 auto;  
+    max-width: 880px;
+    width: 100%;
+    @media @phone{
+        .flexMobile;
+    }
+}
+
+.content{
+    padding-bottom: 3%;
+    border-bottom: 2px solid @accent-color;
+    img{
+        width: 100%;
+        height: 220px;
+    }
+    .flex(column, space-around, flex-start);
+
+    .text{
+        .flex(column, space-evenly, flex-start);
+        height: 130px;
+        padding: 0 2%;
+        @media @phone{
+            height: 200px;
+        }
+        h2{
+            .h;
+        }
+    } 
+    .images{
+        .flex(row, space-between, center);
+        width: 100%;
+        padding: 0 1%;
+        margin-bottom: 2%;
+        @media @phone{
+            img:nth-of-type(1){
+                width: 100%;
+                height: 200px;
+                padding: 0 5%;
+                border-radius: 30px;
+                margin: 5% 0;
+            }
+            img:nth-of-type(2){
+                display: none;
+            }
+            img:nth-of-type(3){
+                display: none;
+            }
+        }
+        img{
+            height: 170px;
+            width: 32%;
+            border-radius: 10px;
+        }
+    }
+    
+}
+.signUp{
+    .flex(row, space-between, center);
+    padding: 5%;
+    @media @phone{
+        .flexMobile;
+        padding: 5% 10%;
+    }
+
+    .text{
+        height: 200px;
+        margin-right: 4%;
+        .flex(column, space-between, flex-start);
+        @media @phone{
+            margin-right: 0;
+            height: 250px;
+        }
+        h2{
+            .h;
+        }
+        .button{
+            .buttonCreator;
+            @media @phone{
+                .buttonCreator(40px, 100%, 1rem);
+            }
+        }
+    }
+    img{
+        height: 200px;
+        width: 40%;
+        border-radius: 5px;
+        @media @phone{
+            width: 100%;
+            padding-top: 3%;
+
+        }
+    }
+}
