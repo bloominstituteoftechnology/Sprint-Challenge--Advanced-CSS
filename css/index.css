@@ -188,7 +188,7 @@ html {
   width: 100%;
 }
 .main-header .main-header-text {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .main-header .main-header-text h2 {
   font-size: 3rem;
@@ -216,7 +216,7 @@ html {
   padding: 10px;
 }
 .content-section .text-content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 10px;
 }
 .sign-up-section {
@@ -236,7 +236,7 @@ html {
   padding: 10px;
 }
 .sign-up-section .sign-up-text p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 10px;
 }
 .sign-up-section .sign-up-text .sign-up-btn {
@@ -245,7 +245,7 @@ html {
   align-items: center;
   height: 45px;
   width: 85px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background: #22283B;
   color: #f4f4f4;
   border: 1px solid blue;
@@ -276,5 +276,5 @@ footer {
   width: 100%;
 }
 footer p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
