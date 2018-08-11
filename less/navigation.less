@@ -1,9 +1,6 @@
 header {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: @backgroundColor;
+    .flex(center, center, column);
 
     h1 {
         font-size: 4rem;
@@ -11,8 +8,7 @@ header {
     }
 
     nav {
-        display: flex;
-        justify-content: center;
+        .flex(center);
         width: 100%;
         font-size: 1.6rem;
         padding-bottom: 15px;

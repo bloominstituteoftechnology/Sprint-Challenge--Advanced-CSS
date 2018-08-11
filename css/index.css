@@ -213,9 +213,9 @@ footer {
   }
 }
 .container .mainInfo .midImgAll {
-  display: flex;
   margin-bottom: 20px;
   height: 180px;
+  display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
@@ -263,7 +263,7 @@ footer {
   padding: 10px;
   border: 1px solid blue;
   border-radius: 5px;
-  background-color: darkblue;
+  background-color: #0e0e3f;
   color: white;
   width: 25%;
 }
@@ -271,4 +271,14 @@ footer {
   .container .button {
     width: 100%;
   }
+}
+.container .button:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #0e0e3f;
+  border-radius: 5px;
+  background-color: white;
+  color: #0e0e3f;
 }
