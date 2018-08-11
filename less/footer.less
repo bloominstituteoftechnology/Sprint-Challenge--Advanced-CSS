@@ -7,6 +7,9 @@ footer {
     border-top: 2px solid @border-color;
     width: 59%;
     margin: 0 auto;
+    @media @phone {
+        width: 100%;
+    }
     
 
     p {
@@ -14,5 +17,8 @@ footer {
         margin-top: 20px;
         padding: 40px 36.1%;
         background-color: @header-color;
+        @media @phone {
+            padding: 25px 27.1%;
+        }
     }
 }

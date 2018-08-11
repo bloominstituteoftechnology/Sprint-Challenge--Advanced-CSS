@@ -235,11 +235,21 @@ footer {
   width: 59%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
 footer p {
   border: 1px solid #E4E4E4;
   margin-top: 20px;
   padding: 40px 36.1%;
   background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  footer p {
+    padding: 25px 27.1%;
+  }
 }
 .home {
   border-top: 3px solid #E4E4E4;
