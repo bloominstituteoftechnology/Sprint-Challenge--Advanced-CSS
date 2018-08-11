@@ -175,3 +175,20 @@ a {
   text-decoration: none;
   color: #000000;
 }
+.lift {
+  margin: 20px 0;
+  width: 92%;
+  padding-left: 2%;
+}
+.lift-img {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+.lift-img img {
+  width: 30%;
+  border-radius: 10%;
+  height: 200px;
+}
