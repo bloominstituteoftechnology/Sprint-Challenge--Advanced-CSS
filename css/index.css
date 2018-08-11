@@ -228,8 +228,17 @@ header nav:last-child {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home {
-  border: 2px solid red;
+.home .header {
+  width: 100%;
+  display: flex;
+  flex-wrap: "";
+  flex-direction: "";
+  justify-content: center;
+  align-items: center;
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
 }
 .home .content-section {
   display: flex;
@@ -247,4 +256,15 @@ header nav:last-child {
   width: 100%;
   margin: 30px 0;
   padding-left: 1%;
+}
+.home .img-content {
+  display: flex;
+  align-items: center;
+}
+.home .img-content .space {
+  width: 100%;
+  margin: 23.33px;
+}
+.home .img-content .space img {
+  border-radius: 10%;
 }
