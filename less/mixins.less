@@ -14,3 +14,20 @@
   display: flex;
   justify-content: space-between;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-creator(@bgColor: grey, @width: 150px, @height: 60px, @bRadius: 10px, @bColor: black, @color) {
+  font-size: 1.9rem;
+  color: @color;
+  width: @width;
+  height: @height;
+  background-color: @bgColor;
+  border-radius: @bRadius;
+  border: 1px solid @bColor;
+  .flex-center;
+}

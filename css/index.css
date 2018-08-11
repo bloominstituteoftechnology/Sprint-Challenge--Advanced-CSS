@@ -11,6 +11,11 @@
   display: flex;
   justify-content: space-between;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -192,6 +197,13 @@ h5 {
   text-decoration: none;
   color: black;
 }
+footer {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
 .main-header {
   display: flex;
   flex-direction: column;
@@ -220,27 +232,39 @@ h5 {
 .middle-container .bottom-middle p {
   margin-top: 15px;
 }
-.bottom-container {
+.bottom .bottom-container1 {
   display: flex;
   justify-content: space-around;
   width: 80%;
   margin: 90px auto 20px auto;
 }
-.bottom-container .left-container {
+.bottom .bottom-container1 .left-container {
   width: 39.4%;
 }
-.bottom-container .left-container p {
+.bottom .bottom-container1 .left-container p {
   margin-top: 20px;
 }
-.bottom-container .rigth-container {
+.bottom .bottom-container1 .rigth-container {
   width: 45%;
 }
-.bottom-container .rigth-container img {
+.bottom .bottom-container1 .rigth-container img {
   width: 100%;
   height: 100%;
 }
-.button {
-  display: flex;
+.bottom .bottom-container2 {
   width: 75%;
+  display: flex;
   margin: 0 auto;
+}
+.bottom .bottom-container2 .button {
+  font-size: 1.9rem;
+  color: white;
+  width: 80px;
+  height: 40px;
+  background-color: #031226;
+  border-radius: 5px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
