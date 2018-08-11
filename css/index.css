@@ -184,7 +184,16 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+footer {
+  border-top: 1px solid gray;
+  background-color: lightgray;
+  width: 1000px;
+}
+footer p {
+  text-align: center;
+  padding: 20px 0px;
 }
 .Main2 .large-img {
   width: 800px;
@@ -199,10 +208,10 @@ header nav a {
   align-items: space-between;
 }
 .Main2 .Sec1 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .Main2 .Sec1 p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   padding-top: 10px;
 }
@@ -215,4 +224,61 @@ header nav a {
 .Main2 .Sec1 section img {
   width: 250px;
   border-radius: 20px;
+}
+.Main2 .Sec2 {
+  background-color: red;
+  width: 800px;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Main2 .Sec2 h2 {
+  font-size: 2.5rem;
+}
+.Main2 .Sec2 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.Main2 .Sec3 {
+  border-top: 1px solid gray;
+  width: 800px;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main2 .text {
+  background-color: red;
+  width: 375px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Main2 .text h2 {
+  font-size: 2.5rem;
+}
+.Main2 .text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.Main2 .text a {
+  font-size: 1.5rem;
+  width: 100px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: black;
+  margin-top: 10px;
+  padding: 10px;
+}
+.Main2 img {
+  width: 300px;
 }

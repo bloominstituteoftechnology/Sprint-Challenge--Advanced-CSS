@@ -1,29 +1,6 @@
 // Home Content
 
 
-header {
-    .flex(column,center,center);
-    width: 1000px;
-    background-color: lightgray;
-    border-bottom: 1px solid gray;
-    padding: 10px 0px;
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    nav {
-        .flex(row, space-between,center);
-        background-color: green;
-        margin-top: 10px;
-        width:300px;
-
-        a {
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-    }
-}
 
 .Main2 {
 
@@ -38,11 +15,11 @@ header {
         .flex(column,center,space-between);
 
         h2 {
-            font-size: 2rem;
+            font-size: @h2size;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: @psize;
             line-height: 1.5;
             padding-top: 10px;
         }
@@ -54,6 +31,61 @@ header {
                 border-radius: 20px;
             }
         }
+    }
 
+    .Sec2 {
+        background-color: red;
+        width:800px;
+        padding: 30px 10px;
+        .flex(column,center,space-between);
+
+        h2 {
+            font-size: @h2size;
+        }
+
+        p {
+            font-size: @psize;
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+    }
+
+    .Sec3 {
+        border-top: 1px solid gray;
+        width:800px;
+        padding: 40px 40px;
+        .flex(row,space-between,center);
+    }
+    .text {
+        background-color: red;
+        width:375px;
+        padding: 10px 10px;
+        .flex(column,center,space-between);
+
+        h2 {
+            font-size: @h2size;
+        }
+
+        p {
+            font-size: @psize;
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+
+        a {
+            font-size: @psize;
+            width: 100px;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: black;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    }
+
+    img {
+        width: 300px;
     }
 }
