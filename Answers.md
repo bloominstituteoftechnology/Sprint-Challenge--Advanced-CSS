@@ -1,0 +1,5 @@
+The difference between adaptive and fully responsive websites are that fully responsive websites are awesome! They look good at any screensize, even new ones that come out. Adaptive websites are basically pre-made layouts for specific screen sizes, but if a new one comes out, it might not look good on that screen.
+Mobile first means to design/code a website that will be primarily viewed on a mobile device, first. 
+Adding the `font-size: 62.5%` in the html tag allows us to calculate the desired font-size in Rems as a tenth the size in pixels. So 20px becomes 2.0 Rems.
+I would describe Preprocessing to someone new to CSS as a more intuitive way to write CSS that makes it easier to work with in big projects.
+My favorite concept in preprocessing is nesting. The concept that gives me the most trouble would probably be mixins.
