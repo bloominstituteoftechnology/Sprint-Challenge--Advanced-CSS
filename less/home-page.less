@@ -23,9 +23,10 @@
     }
     .bottom-content{
         .flexbox-row(space-around, center);
-        padding: 80px 5%;
+        padding: 50px 5%;
+        margin-bottom: 20px;
         border-top: 1px solid @border-color;
-        border-bottom: 1px solid red;
+        border-bottom: 1px solid @border-color;
         .text-content {
             width: 45%;
             .sign-up-button{
@@ -35,12 +36,16 @@
         }
         .space-walk{
             width: 45%;
+            border-radius: 10px;
         }
     }
 }
 
 @media @phone{
     .home{
+        .homepage-header-img {
+            margin-top: 100px;
+        }
         .middle-launch-images{
             .sky-img, .launch-img{
                 display: none;
@@ -54,7 +59,7 @@
             .flexbox-column();
             .text-content{
                 width: 86%;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
                 .sign-up-button{
                     width: @width-100percent;
                     height: 50px;
