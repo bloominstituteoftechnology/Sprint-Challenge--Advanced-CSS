@@ -1,1 +1,22 @@
 // Mixins below variables
+.section-style {
+    p {
+        line-height: 1.5;
+        margin-bottom: 13px;
+    }
+}
+.section-title(@font-size) {
+    font-size: @font-size;
+    margin-bottom: 13px;
+}
+
+.btn-creator(@width, @height, @bgcolor){
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
