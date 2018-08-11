@@ -22,3 +22,5 @@ My favorite concept in preprocessing is the ability to use mixins (code reusabil
 
 ####What is the concept that gives you the most trouble?
 
+Honeslty nothing so far, I get the concept, why we use preprocessing and how overall it makes it easier for us to write smaller pieces of code that are easier to maintain.
+
