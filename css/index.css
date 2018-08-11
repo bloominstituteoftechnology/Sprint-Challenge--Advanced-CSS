@@ -13,6 +13,10 @@
   justify-content: center;
   align-items: center;
 }
+.btn:hover {
+  animation: stripes-move 0.75s infinite linear;
+  background: repeating-linear-gradient(45deg, #232839 0, #2b7def 0.25em, transparent 0.25em, transparent 0.5em);
+}
 @media (max-width:500px) {
   .btn {
     background: #232839;
@@ -28,6 +32,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@keyframes stripes-move {
+  100% {
+    background-position: 5em 0px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
