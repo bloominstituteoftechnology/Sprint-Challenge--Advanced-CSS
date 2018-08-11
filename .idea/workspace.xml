@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/Answers.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="157" lean-forward="false" selection-start-line="10" selection-start-column="157" selection-end-line="10" selection-end-column="157" />
+              <first_editor relative-caret-position="238">
+                <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -89,6 +89,11 @@
               <item name="Sprint-Challenge--Responsive-Less" type="b2602c69:ProjectViewProjectNode" />
               <item name="Sprint-Challenge--Responsive-Less" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Sprint-Challenge--Responsive-Less" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sprint-Challenge--Responsive-Less" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -123,12 +128,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534003696313</updated>
-      <workItem from="1534003709784" duration="780000" />
+      <workItem from="1534003709784" duration="1357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="780000" />
+    <option name="totallyTimeSpent" value="1357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -178,8 +183,8 @@
     <entry file="file://$PROJECT_DIR$/Answers.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="157" lean-forward="false" selection-start-line="10" selection-start-column="157" selection-end-line="10" selection-end-column="157" />
+          <first_editor relative-caret-position="238">
+            <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             <folding />
           </first_editor>
           <second_editor />
