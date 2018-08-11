@@ -12,15 +12,17 @@
         h2{
             font-size: 1.8rem;
             padding:10px;
+            color: @text-color;
         }
         p {
             padding: 10px 40px 10px 10px;
             font-size: 1.0rem;
+            color: @text-color;
         }
 
     }
     .image-row {
-        display: flex;
+        .flex-display;
         justify-content: space-around;
         img{
             width: 30%;
@@ -29,38 +31,31 @@
         }
     }
     .bottom-content {
-        display: flex;
+        .flex-display;
         justify-content: center;
         margin: 40px;
         padding: 30px;
-        border-top: 2px solid @nav-footer-bg;
-        border-bottom: 2px solid @nav-footer-bg;
+        .horizontal-line;
         img{
             padding: 10px;
             border-radius: 20px;
         }
         .button{
-            font-size: 1.0rem;
-            padding: 10px;
-            background-color: @darkgray;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 80px;
-            color: white;
-            border-radius: 5px;
+            .btn-mixin(white,@darkgray);
         }
         .half-wide-text {
-            display: flex;
+            .flex-display;
             flex-direction: column;
         
             h3{
                 font-size: 1.5rem;
                 padding: 20px 0;
+                color: @text-color;
             }
             p{
                 font-size: 1.0rem;
                 padding: 10px 0;
+                color: @text-color;
             }
         }
         

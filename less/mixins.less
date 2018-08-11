@@ -1,20 +1,23 @@
 // Mixins below variables
 
+.flex-display () {
+    display: flex;
+}
 
-// .border-bottom () {
-//     border-bottom: 2px dashed lightgray;
-// }
+.horizontal-line(){
+    border-top: 2px solid @nav-footer-bg;
+    border-bottom: 2px solid @nav-footer-bg;
+}
 
-// .btn-mixin (){
 
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     font-size: 1.7rem;
-//     font-weight: 900;
-//     color: @white;
-//     background-color: @eastern-blue;
-//     padding: 12px 0;
-//     margin: 0 15px;
-//     border-radius: 10px;
-// }
+.btn-mixin (@textcolor,@bg-color){
+    font-size: 1.0rem;
+    padding: 10px;
+    background-color: @bg-color;
+    .flex-display;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    color: @textcolor;
+    border-radius: 5px;
+}
