@@ -158,6 +158,11 @@ nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1rem;
+  }
+}
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -232,6 +237,17 @@ header h2 {
   width: 30%;
   border-radius: 15px;
   height: 170px;
+}
+@media (max-width: 500px) {
+  .imageRow .imgBox {
+    width: 90%;
+    height: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .imageRow .imgMobile {
+    display: none;
+  }
 }
 .infoArea {
   padding: 40px 20px 20px 20px;
