@@ -161,8 +161,8 @@ html {
   flex-wrap: wrap;
   margin: 0 auto;
   padding-bottom: 10px;
-  background-color: whitesmoke;
-  border-bottom: 2px solid lightgray;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e0e0e0;
 }
 .top-container h1 {
   width: 100%;
@@ -181,6 +181,20 @@ nav a {
   color: black;
   text-decoration: none;
   padding: 0px 13.5px;
+}
+footer {
+  background-color: #f4f4f4;
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-size: 1.3rem;
 }
 .home {
   max-width: 640px;
@@ -210,9 +224,73 @@ nav a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 .home .row-of-pics-main img {
-  width: 190px;
+  width: 29.5%;
   border-radius: 12px;
+}
+.home .middle-section-main {
+  padding-bottom: 50px;
+}
+.home .middle-section-main h2 {
+  font-size: 2.24rem;
+  padding: 13px 1.9% 10px 1.9%;
+}
+.home .middle-section-main br {
+  line-height: 1.35;
+}
+.home .middle-section-main p {
+  padding-left: 1.9%;
+  padding-right: 1.9%;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  letter-spacing: 0.13px;
+}
+.home .bottom-section-main {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.home .bottom-section-main .textbox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 42%;
+  flex-direction: column;
+  padding-left: 3%;
+  padding-top: 40px;
+}
+.home .bottom-section-main .textbox h2 {
+  font-size: 2.24rem;
+  padding: 0px 1.9% 10px 0px;
+  text-align: left;
+}
+.home .bottom-section-main .textbox br {
+  line-height: 1.35;
+}
+.home .bottom-section-main .textbox p {
+  padding-left: 1.9%;
+  padding-right: 1.9%;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  letter-spacing: 0.13px;
+}
+.home .bottom-section-main .textbox .button {
+  background-color: #22283B;
+  color: #f4f4f4;
+  width: 65px;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 5px 0px;
+  font-size: 1.8rem;
+  text-align: center;
+  border: 1px solid #157FFB;
+}
+.home .bottom-section-main img {
+  width: 260px;
+  border-radius: 5px;
 }
