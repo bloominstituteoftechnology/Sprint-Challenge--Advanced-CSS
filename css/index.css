@@ -1,0 +1,288 @@
+/* Colors found by Raymond Garcia */
+/* Margins */
+/* Media Breakpoints */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2 {
+  font-size: 2rem;
+}
+.topNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+.topNavBar a {
+  color: #22283B;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0 1%;
+}
+@media (max-width: 500px) {
+  .topNavBar {
+    width: 70%;
+  }
+}
+footer {
+  text-align: center;
+  line-height: 100px;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e0e0e0;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+.pageContainer .btmMargin {
+  margin-bottom: 3%;
+}
+.pageContainer .indexHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0 auto;
+}
+.pageContainer .headerText {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1% 0;
+  color: #22283B;
+}
+.pageContainer .fullWidthContainer {
+  width: 100vw;
+  position: relative;
+  left: 49%;
+  right: 49%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #e0e0e0;
+}
+.pageContainer .contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pageContainer .roundedImg {
+  border-radius: 10px;
+}
+.pageContainer .contentText {
+  margin: 4% 0;
+}
+.pageContainer .imageBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.pageContainer .imageBar .imgBarItem {
+  width: 30%;
+  height: 30%;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .pageContainer .imageBar .imgBarItem {
+    width: 70%;
+    height: 70%;
+  }
+  .pageContainer .imageBar .imgBarItem:nth-of-type(2) {
+    display: none;
+  }
+  .pageContainer .imageBar .imgBarItem:nth-of-type(3) {
+    display: none;
+  }
+}
+.pageContainer .centerContent {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 4% 0;
+}
+.pageContainer .bottomContentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+.pageContainer .bottomContentContainer .bottomContentTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: 'space-around';
+  width: 40%;
+}
+.pageContainer .bottomContentContainer .bottomImg {
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+}
+.pageContainer .bottomContentContainer .btn {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  background-color: #22283B;
+  color: #f4f4f4;
+  padding: 3%;
+  margin: 5% 0;
+}
+.pageContainer footer {
+  margin: 3% 0;
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 100px;
+}

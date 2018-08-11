@@ -1,1 +1,104 @@
 // Home Content
+.pageContainer {
+    .flex-column();
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+
+    .btmMargin {
+        margin-bottom: @bottom-margin;
+    }
+
+    .indexHeader {
+        .flex-column();
+        width: 98%;
+        margin: 0 auto;
+    }
+    .headerText {
+        font-size: 3rem;
+        text-align: center;
+        margin: 1% 0;
+        color: @secondary-color;
+    }
+
+    .fullWidthContainer {
+        width: 100vw;
+        position: relative;
+        left: 49%;
+        right: 49%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: @accent-color;
+      }
+
+    .contentContainer {
+        .flex-column();
+    }
+    .roundedImg {
+        border-radius: 10px;
+    }
+
+    .contentText {
+        margin: 4% 0;
+    }
+
+    .imageBar {
+        .flex-row();
+        width: 100%;
+
+        .imgBarItem {
+            width: 30%;
+            height: 30%;
+            margin: 2% 0;
+        }
+        @media @phone {
+            .imgBarItem {
+                width: 70%;
+                height: 70%;
+            }
+            .imgBarItem:nth-of-type(2) {
+                display: none;
+            }
+            .imgBarItem:nth-of-type(3) {
+                display: none;
+            }
+        }
+    }
+
+    .centerContent {
+        border-bottom: 1px solid @accent-color;
+        margin: 4% 0;
+    }
+
+    .bottomContentContainer {
+        .flex-row();
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid @accent-color;
+
+        .bottomContentTextContainer {
+            .flex-column('space-around');
+            width: 40%;
+        }
+
+        .bottomImg {
+            width: 30%;
+            height: 30%;
+            border-radius: 5px;
+
+        }
+        .btn {
+            .button-creator(100px, @secondary-color);
+            color: @main-color;
+            padding: 3%;
+            margin: 5% 0;
+        }
+    }
+
+    footer {
+        margin: 3% 0;
+        background-color: @accent-color;
+        width: 100%;
+        height: 100px;
+    }
+}
