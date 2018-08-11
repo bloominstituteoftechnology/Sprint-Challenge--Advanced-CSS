@@ -1,0 +1,29 @@
+.nav-bar {
+    .flexMix(column, space-around, center);
+    max-width: 100vw;
+    width: 100%;
+    height: 70px;
+    background: @nav-color;
+    border-bottom: 1px solid @brdr-color;
+    color: @font-color;
+    .inner-nav {
+        .flexMix(column, center, center);
+        max-width: 880px;
+        width: 100%;
+        .logo {
+            font-size: 2.6rem;
+            font-family: 'Russo One', sans-serif;
+            letter-spacing: 2px;
+            margin: 10px auto;
+        }
+        .nav-elements {
+            .flexMix(row, space-evenly, center);
+            width: 50%;
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: black;
+            }
+        }
+    }
+}

@@ -1,1 +1,36 @@
 // Home Content
+.container{
+    max-width:880px;
+    width:100%;
+    margin:0 auto;
+}
+.home{
+    .flexMix(column, space-between, center);
+    width:90%;
+
+    #sky-img{
+        max-width: 880px;
+        width:100%;
+        margin:0 auto;
+
+        @mobile @phone{
+         max-width: 500px;
+         width:100%;
+        }
+    }
+
+    .text-content{
+        margin:30px auto;
+        .flexMix(column, space-around, flex-start);
+
+            h2{
+               font-size:2.4rem; 
+            }
+            p{
+              font-size: 1.8rem;
+              line-height: 2;
+            }
+    }
+
+    
+}
