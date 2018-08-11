@@ -148,11 +148,21 @@ h5 {
   flex-direction: column;
   background-color: #e0e0e0;
 }
+@media (max-width: 500px) {
+  .header {
+    background-color: #f4f4f4;
+  }
+}
 .header h1 {
   font-size: 3.2rem;
   align-self: center;
   margin: 10px 0 10px 0;
   color: #22283B;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 4rem;
+  }
 }
 .header nav {
   font-size: 1.5rem;
@@ -165,6 +175,11 @@ h5 {
 .header nav a {
   color: #22283B;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .header nav {
+    width: 90%;
+  }
 }
 .footer {
   width: 100%;
@@ -194,6 +209,8 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+}
 .container .main-header .img-content {
   align-self: center;
 }
@@ -210,6 +227,12 @@ html {
   font-size: 1.5rem;
   margin: 0 0 20px 0;
 }
+@media (max-width: 500px) {
+  .container .main-header .text-content {
+    width: 100%;
+    padding: 5px 10px 10px 10px;
+  }
+}
 .container .content-section {
   display: flex;
   flex-direction: column;
@@ -219,6 +242,21 @@ html {
   width: 75%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container .content-section .img-content {
+    width: 100%;
+  }
+  .container .content-section .img-content .pic1 {
+    width: 90%;
+    height: 300px;
+  }
+  .container .content-section .img-content .pic2 {
+    display: none;
+  }
+  .container .content-section .img-content .pic3 {
+    display: none;
+  }
 }
 .container .content-section .img-content img {
   width: 30%;
@@ -238,12 +276,22 @@ html {
   font-size: 1.5rem;
   margin: 0 0 20px 0;
 }
+@media (max-width: 500px) {
+  .container .content-section .text-content {
+    width: 100%;
+  }
+}
 .container .content-sign {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .container .content-sign {
+    flex-direction: column;
+  }
 }
 .container .content-sign .text-content {
   width: 50%;
@@ -284,6 +332,47 @@ html {
 .container .content-sign .text-content .btn:hover a {
   color: #22283B;
 }
+@media (max-width: 500px) {
+  .container .content-sign .text-content .btn {
+    width: 100%;
+    height: 50px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: white;
+    background: #22283B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .container .content-sign .text-content .btn a {
+    text-decoration: none;
+    color: white;
+  }
+  .container .content-sign .text-content .btn:hover {
+    background: white;
+    color: #22283B;
+    border: 1px solid #22283B;
+  }
+  .container .content-sign .text-content .btn:hover a {
+    color: #22283B;
+  }
+}
+@media (max-width: 500px) {
+  .container .content-sign .text-content {
+    width: 100%;
+    padding: 0 40px 0 40px;
+  }
+  .container .content-sign .text-content h2 {
+    padding: 10px 0 20px 0;
+  }
+}
 .container .content-sign .img-content img {
   width: 70%;
+}
+@media (max-width: 500px) {
+  .container .content-sign .img-content img {
+    margin: 0 0 50px 40px;
+    width: 80%;
+  }
 }

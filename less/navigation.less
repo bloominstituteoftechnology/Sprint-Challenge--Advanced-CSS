@@ -6,12 +6,20 @@
     .flex-column();
     background-color: @accent-color;
 
+   @media @phone {
+       background-color: @main-color;
+   }
+
     h1 {
         font-size: @h1-font-size;
         // border: 1px solid red;
         align-self: @align-self;
         margin: 10px 0 10px 0;
         color: @secondary-color;
+
+        @media @phone {
+            font-size: 4rem;
+        }
     }
 
     nav {
@@ -26,6 +34,10 @@
         a {
             color: @secondary-color;
             text-decoration: none;
+        }
+
+        @media @phone {
+            width: 90%;
         }
     }
 
