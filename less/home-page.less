@@ -8,12 +8,19 @@
 .first-section{
 
   img {
-    border: 1px solid green;
     width: 100%;
     height: 200px;
+
+    @media @phone{
+      width: 100%;
+    }
   }
   .first-text{
     padding: 18px 0px;
+
+    @media @phone{
+    margin: 10px;
+    }
   }
 
   h2{
@@ -30,20 +37,39 @@
   .middle-imgs {
     .flexCenter();
     justify-content: space-between;
+
+    @media @phone{
+      justify-content: center;
+      padding: 5px;
+    }
+
+    .hide {
+      @media @phone {
+        display:none;
+      }
+    }
   }
+}
 
   img{
     width: 31%;
     border-radius: 15px;
+
+    @media @phone {
+      width: 100%;
+    }
   }
 
   .second-text{
     margin-top: 45px;
     padding-bottom: 60px;
+
+    @media @phone {
+      margin: 38px;
+    }
   }
  p{
    padding-top: 15px;
- }
 
 }
 //End second section//
@@ -55,13 +81,27 @@
   .flexCenter();
   padding-left: 10%;
 
+  @media @phone{
+    flex-direction: column;
+  }
+}
+
   .third-text{
     width: 45%;
     padding-right: 3%;
+
+    @media @phone {
+      width: 80%;
+      padding: 10px 0;
+    }
   }
 
   p{
-    padding: 10px 0;
+    padding: 5px 0;
+
+    @media @phone {
+      padding: 0;
+    }
   }
 
   .button{
@@ -69,11 +109,28 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10px;
+
+    @media @phone{
+      .button(100%, 37px, @button-bg, @button-color, @button-br, 5px);
+    }
+
+    &:hover{
+      cursor: pointer;
+      transform: translate(10px, 10px);
+      box-shadow: -10px -10px @button-bg;
+      background-color: @button-br;
+    }
   }
 
   img{
-    width: 65%;
+    width: 70%;
     height: 240px;
     align-self: flex-start;
+    border-radius: 4%;
+
+    @media @phone{
+      width: 90%;
+      height: 180px;
+    padding-left: 40px;
+    }
   }
-}
