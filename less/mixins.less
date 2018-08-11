@@ -6,9 +6,9 @@
     align-items: @ai;
 }
 
-.btn-design(@width,@height) {
+.btn-design(@width,@height,@rad:15px) {
     border: 1px solid @header-border-color;
-    border-radius: 10%;
+    border-radius: @rad;
     background-color: @h-text-color;
     color: white;
     width: @width;

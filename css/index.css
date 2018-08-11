@@ -182,6 +182,11 @@ div.main-body img.header {
   width: 800px;
   height: 200px;
 }
+@media (max-width:500px) {
+  div.main-body img.header {
+    width: 500px;
+  }
+}
 div.main-body h2 {
   font-size: 2rem;
   padding: 15px;
@@ -206,6 +211,18 @@ div.main-body .image-block img {
   border: 1px solid white;
   border-radius: 25px;
 }
+@media (max-width:500px) {
+  div.main-body .image-block img {
+    width: 400px;
+    display: none;
+    margin: 0px auto;
+  }
+}
+@media (max-width:500px) {
+  div.main-body .image-block img:first-child {
+    display: inline;
+  }
+}
 div.main-body div.sub-body {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
@@ -219,15 +236,33 @@ div.main-body div.sub-body .smaller-body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 div.main-body div.sub-body .smaller-body .text {
   width: 48%;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body .text {
+    width: 90%;
+  }
 }
 div.main-body div.sub-body .smaller-body img {
   width: 300px;
 }
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body img {
+    width: 400px;
+  }
+}
 div.main-body div.sub-body .smaller-body .button {
   border: 1px solid #e0e0e0;
-  border-radius: 10%;
+  border-radius: 15px;
   background-color: #22283B;
   color: white;
   width: 100px;
@@ -237,4 +272,19 @@ div.main-body div.sub-body .smaller-body .button {
   justify-content: center;
   align-items: center;
   margin: 20px 15px;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body .button {
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: #22283B;
+    color: white;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }

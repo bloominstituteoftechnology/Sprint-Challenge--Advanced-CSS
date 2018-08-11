@@ -7,6 +7,10 @@ div.main-body {
     img.header {
         width: 800px;
         height: 200px;
+
+        @media @mobile {
+            width: 500px;
+        }
     }
 
     h2 {
@@ -32,7 +36,18 @@ div.main-body {
             width: 240px;
             border: 1px solid white;
             border-radius: 25px;
+            @media @mobile {
+                width: 400px;
+                display: none;
+                margin: 0px auto;
+            }
         }
+        img:first-child {
+            @media @mobile {
+                display: inline;
+            }
+        }
+
     }
 
     div.sub-body {
@@ -45,15 +60,29 @@ div.main-body {
             margin: 0px auto;
             .flex(row, space-between);
 
+            @media @mobile {
+                .flex(column);
+            }
+
             .text {
                 width: 48%;
+                @media @mobile {
+                    width: 90%;
+                }
             }
             img {
                 width: 300px;
+                @media @mobile {
+                    width: 400px;
+                }
             }
             .button {
                 .btn-design(100px, 35px);
-                margin: 20px 15px;    
+                margin: 20px 15px;
+                @media @mobile {
+                    margin: 20px auto;
+                    .btn-design(400px, 45px);
+                }
             }
         }
     }
