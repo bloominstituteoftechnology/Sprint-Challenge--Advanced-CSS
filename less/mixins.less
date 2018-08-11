@@ -23,7 +23,7 @@
 }
 
 .flexCol {
-  width: 100%;
+  width: @full;
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 .flexRow {
-  width: 100%;
+  width: @full;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -43,4 +43,17 @@
 
 .rounded (@arguments) {
   border-radius: @arguments;
+}
+
+.datButton (@margin; @width; @f_color; @bg_color) {
+  .flexRow();
+  margin: @margin;
+  width: @width;
+  color: @f_color;
+  background-color: @bg_color;
+  .rounded(1rem);
+}
+
+.fbtn {
+  .datButton(1rem; 5rem; white; blue)
 }
