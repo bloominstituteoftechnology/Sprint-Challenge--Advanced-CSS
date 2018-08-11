@@ -1,0 +1,53 @@
+//Navigation and Logo
+
+.navigation {
+
+   
+
+    // max-width: 800px;
+    width: 100%;
+    height: 120px;
+    // margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid @accent-color;
+
+    h1 {
+        font-size: 4.4rem;
+        color: @navtext;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: @navtext;
+    }
+
+
+    @media @phone {
+
+        padding-bottom: 0px;
+        border-bottom: none;
+
+        nav{
+            width: 80%;
+        }
+
+                        
+    }
+
+}
+
