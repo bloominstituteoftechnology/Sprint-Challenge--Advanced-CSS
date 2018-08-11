@@ -140,3 +140,29 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+header {
+  border-bottom: 2px solid #F1F1F1;
+  background-color: #F6F6F6;
+  padding-top: 15px;
+}
+header .container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 3.5rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  padding: 12px 0;
+}
+header a {
+  text-decoration: none;
+  color: #22283b;
+}
