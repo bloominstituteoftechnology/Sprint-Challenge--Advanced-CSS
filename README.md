@@ -17,7 +17,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be phone first vs desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
 
@@ -52,9 +52,9 @@ Answer the following questions to the best of your ability. You can exercise you
 * [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
 * [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
 
-## Task 6: Home Page - Mobile HTML & LESS
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
+## Task 6: Home Page - phone HTML & LESS
+* [ ] [Review the provided home phone design file](design-files/home-phone.png). Match your phone styling the best you can using the design file. 
+* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested phone styling.
 
 
 **Congratulations, you completed the sprint challenge!**
