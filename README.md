@@ -44,12 +44,12 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
 * [X] Navigation: Use the `navigation.less` file for styling.
 * [X] Main Content: Use the `home-page.less` file for styling
-* [ ] Footer: Use the `footer.less` file for styling
+* [X] Footer: Use the `footer.less` file for styling
 * [X] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
-* [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
+* [X] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
 * [X] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
 
 ## Task 6: Home Page - Mobile HTML & LESS
