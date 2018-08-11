@@ -192,3 +192,43 @@ a {
   border-radius: 10%;
   height: 200px;
 }
+.visit {
+  margin: 20px 0;
+  padding-left: 2%;
+}
+.visit h2 {
+  margin-bottom: 15px;
+}
+.visit .p1 {
+  margin-bottom: 15px;
+  width: 96%;
+}
+.walk {
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.walk .walk-content {
+  width: 46%;
+}
+.walk .walk-content p {
+  margin: 20px 0;
+}
+.walk .walk-content .btn {
+  color: #ffffff;
+  width: 30%;
+  height: 30px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.walk .walk-img {
+  width: 45%;
+}
+.walk .walk-img img {
+  height: 200px;
+  border-radius: 10px;
+}
