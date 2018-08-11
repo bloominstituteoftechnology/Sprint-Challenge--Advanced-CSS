@@ -164,6 +164,11 @@ header nav a {
   color: grey;
   margin: 0 1%;
 }
+@media (max-width: 500px) {
+  header nav a {
+    margin: 0 3%;
+  }
+}
 footer {
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -196,15 +201,37 @@ footer {
   flex-direction: column;
   margin: 0 1%;
 }
+@media (max-width: 500px) {
+  .container .mainInfo {
+    margin: 0 2%;
+  }
+  .container .mainInfo .midImg2 {
+    display: none;
+  }
+  .container .mainInfo .midImg3 {
+    display: none;
+  }
+}
 .container .mainInfo .midImgAll {
   display: flex;
   margin-bottom: 20px;
   height: 180px;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .mainInfo .midImgAll {
+    justify-content: center;
+    height: 300px;
+  }
+}
 .container .mainInfo .midImgAll .middleImg {
   width: 30%;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .container .mainInfo .midImgAll .middleImg {
+    width: 85%;
+  }
 }
 .container .bottomInfo {
   padding: 40px 4% 80px 4%;
@@ -214,8 +241,20 @@ footer {
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 }
+@media (max-width: 500px) {
+  .container .bottomInfo {
+    flex-direction: column;
+    padding: 40px 10% 80px 10%;
+  }
+}
 .container .bottomInfo div {
   padding-right: 5%;
+}
+@media (max-width: 500px) {
+  .container .bottomInfo div {
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .container .button {
   display: flex;
@@ -227,4 +266,9 @@ footer {
   background-color: darkblue;
   color: white;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .container .button {
+    width: 100%;
+  }
 }

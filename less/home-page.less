@@ -25,16 +25,35 @@
         display: flex;
         flex-direction: column;
         margin: 0 1%;
+        @media @phone {
+
+            margin: 0 2%;
+
+            .midImg2 {
+                display: none;
+            }
+
+            .midImg3 {
+                display: none;
+            }
+        }
 
         .midImgAll {
             display: flex;
             margin-bottom: 20px;
             height: 180px;
             justify-content: space-between;
+            @media @phone {
+                justify-content: center;
+                height: 300px;
+            }
 
             .middleImg {
                 width: 30%;
                 border-radius: 15px;
+                @media @phone {
+                    width: 85%;
+                }
 
             }
         }
@@ -47,9 +66,17 @@
         flex-direction: row;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
+        @media @phone {
+            flex-direction: column;
+            padding: 40px 10% 80px 10%;
+        }
 
         div {
             padding-right: 5%;
+            @media @phone {
+                padding-right: 0;
+                margin-bottom: 10px;
+            }
         }
 
     }
@@ -57,5 +84,8 @@
     .button {
         .btnMixin(blue, darkblue, white);
         width: 25%;
+        @media @phone {
+            width: 100%;
+        }
     } 
 }
