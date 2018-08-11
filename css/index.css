@@ -145,12 +145,35 @@ h5 {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header h1 {
+  font-size: 3.2rem;
+  border: 1px solid red;
+  align-self: center;
+  margin: 10px 0 10px 0;
+}
+.header nav {
+  font-size: 1.5rem;
+  border: 1px solid green;
+  width: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 10px 0;
 }
 .footer {
   border: 3px solid orange;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }
 .container {
   border: 3px solid red;
