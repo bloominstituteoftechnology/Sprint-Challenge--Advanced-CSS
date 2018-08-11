@@ -17,3 +17,11 @@
     padding: @y-pad @x-pad;
     color: @secondary-color;
 }
+
+.button-switch(@bg-color; @text-color; @transition) {
+    transition: @transition;
+    transform: scale(1.1);
+    background-color: @bg-color;
+    color: @text-color;
+    border: 2px solid @text-color;
+}
