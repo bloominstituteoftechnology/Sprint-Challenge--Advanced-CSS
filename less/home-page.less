@@ -16,23 +16,41 @@
         font-size: 1.6rem;
     }
     section {
-        .main-padding();
+        .main-padding(1%; 1%);
+        @media @phone {
+            .main-padding(2%; 2%);
+        }
     }
     .row-three-images {
         .flex(space-between);
         width: 100%;
-        .main-padding();
+        .main-padding(1%; 1%);
+        @media @phone {
+            .main-padding(2%; 2%)
+        }
         .img-row {
             width: 30%;
             border-radius: 10px;
-            margin-right: 20px;
-            margin-left: 20px;
+            margin-right: 2.5%;
+            margin-left: 2.5%;
         }
         .img-row:first-child {
             margin-left: 0px;
+            @media @phone {
+                width: 100%;
+                margin-right: 0px;
+            }
+        }
+        .img-row:nth-child(2) {
+            @media @phone {
+                display: none;
+            }
         }
         .img-row:last-child {
             margin-right: 0px;
+            @media @phone {
+                display: none;
+            }
         }
     }
     .visit {
@@ -47,10 +65,18 @@
         .flex(row; space-between; center);
         padding: 80px 10%;
         border-bottom: @border;
+        @media @phone {
+            .flex(column; center; center);
+            padding-bottom: 10px;
+            padding-top: 20px;
+        }
         .walk-paragraph-button {
             margin-right: 40px;
             h2 {
                 margin-bottom: 20px;
+            }
+            @media @phone {
+                margin-right: 0px;
             }
             .signup-btn {
                 .sign-up-btn(@main-color; 10px; 10px);
@@ -59,13 +85,23 @@
                 margin-top: 15px;
                 width: 30%;
                 margin-left: 25%;
-
+                @media @phone {
+                    width: 100%;
+                    margin-left: 0%;
+                    margin-bottom: 20px;
+                    border-radius: 0px;
+                }
             }
         }
         .space-walk-img {
             margin-left: 40px;
             width: 40%;
             border-radius: 10px;
+            @media @phone {
+                width: 100%;
+                margin-left: 0px;
+                border-radius: 0px;
+            }
         }
     }
   

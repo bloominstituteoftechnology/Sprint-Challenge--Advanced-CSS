@@ -192,6 +192,12 @@ h5 {
   padding-right: 1%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .container section {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
 .container .row-three-images {
   display: flex;
   flex-direction: space-between;
@@ -201,17 +207,39 @@ h5 {
   padding-right: 1%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .container .row-three-images {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
 .container .row-three-images .img-row {
   width: 30%;
   border-radius: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
 }
 .container .row-three-images .img-row:first-child {
   margin-left: 0px;
 }
+@media (max-width: 500px) {
+  .container .row-three-images .img-row:first-child {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container .row-three-images .img-row:nth-child(2) {
+    display: none;
+  }
+}
 .container .row-three-images .img-row:last-child {
   margin-right: 0px;
+}
+@media (max-width: 500px) {
+  .container .row-three-images .img-row:last-child {
+    display: none;
+  }
 }
 .container .visit {
   padding-top: 60px;
@@ -229,11 +257,26 @@ h5 {
   padding: 80px 10%;
   border-bottom: 1px solid #DFE2E6;
 }
+@media (max-width: 500px) {
+  .container .walk-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+}
 .container .walk-section .walk-paragraph-button {
   margin-right: 40px;
 }
 .container .walk-section .walk-paragraph-button h2 {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .container .walk-section .walk-paragraph-button {
+    margin-right: 0px;
+  }
 }
 .container .walk-section .walk-paragraph-button .signup-btn {
   border: 1px solid #3780F3;
@@ -246,8 +289,23 @@ h5 {
   width: 30%;
   margin-left: 25%;
 }
+@media (max-width: 500px) {
+  .container .walk-section .walk-paragraph-button .signup-btn {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 20px;
+    border-radius: 0px;
+  }
+}
 .container .walk-section .space-walk-img {
   margin-left: 40px;
   width: 40%;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .walk-section .space-walk-img {
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
 }
