@@ -16,7 +16,6 @@ body {
     font-size: 1rem;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid @accent-color;
 
 h2 {
     margin-top: 20px;
@@ -31,15 +30,54 @@ h2 {
     margin-bottom: 20px;
 h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 img {
-    width: 20%;
+    width: 25%;
     padding: 10px;
     margin-top: 20px;
     display: inline-block;
     flex-direction: column;
     margin: 0 auto;
 }
+}
+.bottom {
+    width: 65%;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    position: relative;
+    align-items: center;
+    border-top: 4px solid @accent-color;
+    }
+h2 {
+    width: 30%;
+    position: relative;
+    font-size: 1.5rem;
+    margin-bottom: 28px;
+    margin-top: 10px;
+    bottom: 6px;
+    top: 21px;
+    display: flex;
+    justify-content: space-between;
+
+p {
+    position: relative;
+}
+}
+.astroimg {
+    position: relative;
+    top: -201px;
+    bottom: 22px;
+    left: 576px;
+    width: 40%;
+}
+.btn {
+    .buttonCreator();
+    position: relative;
+    .flex-center();
+    top: 5px;
+    right: 3px;
 }
