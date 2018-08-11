@@ -192,6 +192,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+img:hover {
+  filter: invert(100%);
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -216,7 +219,7 @@ img {
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
-  padding: 25px 18% 10px 18%;
+  padding: 15px 18% 10px 18%;
   width: 100%;
   max-width: 800px;
 }
