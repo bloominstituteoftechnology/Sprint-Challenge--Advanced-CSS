@@ -169,11 +169,12 @@ a {
 }
 .index-header h1 {
   margin-bottom: 20px;
+  color: #444958;
 }
 .index-nav a {
   margin: 15px;
   text-decoration: none;
-  color: #000000;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .index-nav a {
@@ -269,7 +270,7 @@ footer {
   color: #ffffff;
   width: 30%;
   height: 30px;
-  background-color: #000000;
+  background-color: #22283A;
   display: flex;
   justify-content: center;
   align-items: center;
