@@ -1,1 +1,125 @@
 // Home Content
+
+body{
+    .flex(center, space-around, column, wrap);
+}
+
+#body-container{
+    width: 66%;
+    height: 86%;
+    @media @phone {
+        .flex(center, space-around, column, wrap);
+        height: 1765px;
+        width: 100%;
+    }
+
+    #earth-space-img{
+        width: 100%;
+        height: 16%;
+        @media @phone {
+            height: 200px;
+        }
+    }
+
+    .main-para-container{
+        width: 90%;
+        height: 160px;
+        .flex(space-around, space-around, column, wrap);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @media @phone {
+            .flex(space-around, center column, wrap);
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .para-title{
+            width: auto;
+            height: 33px;
+            font-size: @title-font;
+        }
+
+        .para-text{
+            width: 100%;
+            height: auto;
+            font-size: @body-font;
+            line-height: 20px;
+        }
+    }
+
+    #img-container{
+        width: 100%;
+        height: 191px;
+        .flex(center, space-around, row, nowrap);
+        
+        @media @phone {
+            height: 305px;
+            #img2{ display: none; }
+            #img3{ display: none; }
+        }
+
+        .tri-img{
+            height: 191px;
+            width: 252px;
+            border-radius: 20px;
+            
+            @media @phone {
+                width: 400px;
+                height: 305px;
+            }
+        }
+        
+    }
+
+    .line-break{
+        width: 100%;
+        height: 1px;
+        border: 1px solid @bg-border;
+    }
+
+    #walk-section{
+        width: 100%;
+        height: 33%;
+        .flex(center, space-around, column, wrap);
+        @media @phone {
+            width: 74%;
+            height: 710px;
+        }
+       
+
+        #walk-text-container{
+            height: 60%;
+            width: 40%;
+
+            @media @phone {
+                width: 100%;
+                height: 312px;
+            }
+
+
+            .walk-text{
+                font-size: @body-font;
+                @media @phone {
+                    width: 100%;
+                    height: 100px;
+                    line-height: 20px;
+                }
+            }
+            .walk-title{
+                font-size: @title-font;
+                @media @phone {
+                    width: 100%;
+                    height: 30px;
+                }
+            }
+            .sign-up-button{
+                .button;
+            }
+        }
+        #astronaut-img{
+            height: 262px;
+            width: 343px;
+            border-radius: 5px;
+        }
+    }
+}//BODY CONTAINER
