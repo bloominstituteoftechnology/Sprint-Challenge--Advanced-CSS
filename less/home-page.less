@@ -1,6 +1,5 @@
 // Home Content
 .main  {
-  .b_o();
   .full_width();
   .flexCol();
   background-color: @main-color;
@@ -12,7 +11,6 @@
   }
 
   h1 {
-    .b_red();
     .full_width();
     font-size: 2rem;
     text-align: left;
@@ -28,7 +26,6 @@
      padding: 1rem 0;
   }
   .roundedIMGs {
-    .b_sg();
     .full_width();
     .flexRow();
     img {
@@ -37,6 +34,42 @@
       .rounded(2rem);
       margin: 1rem;
     }
+  }
+}
+
+.bottom {
+  .b_sg();
+//  margin: 0 5%;
+  .flexRow();
+  padding: 2rem;
+  .full_width();
+  margin: 0 auto;
+  .group {
+    .b_blue();
+    .flexCol();
+    width: 50%;
+  }
+  h1 {
+    .full_width();
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .para {
+    .flexCol();
+  }
+
+  p {
+    .full_width();
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  img {
+    .b_red();
+    .flexRow();
+    padding: 2rem;
+  //  width: 20%;
   }
 }
 

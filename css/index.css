@@ -224,7 +224,6 @@ footer {
   background-color: #e0e0e0;
 }
 .main {
-  border: 1px solid orange;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -239,7 +238,6 @@ footer {
   width: 100%;
 }
 .main h1 {
-  border: 1px solid red;
   width: 100%;
   font-size: 2rem;
   text-align: left;
@@ -258,7 +256,6 @@ footer {
   padding: 1rem 0;
 }
 .main .roundedIMGs {
-  border: 4px solid seagreen;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -269,4 +266,48 @@ footer {
   width: 30%;
   border-radius: 2rem;
   margin: 1rem;
+}
+.bottom {
+  border: 4px solid seagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.bottom .group {
+  border: 1px solid blue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.bottom h1 {
+  width: 100%;
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem 0;
+}
+.bottom .para {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom p {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.bottom img {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
