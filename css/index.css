@@ -142,12 +142,12 @@ h5 {
 }
 .nav-border {
   border-bottom: 3px dotted lightgrey;
-  position: fixed;
-  top: 0;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: blue;
   display: block;
   padding: 1rem;
+  position: fixed;
+  top: 0;
 }
 .nav-border h1 {
   font-size: 1.6rem;
@@ -166,8 +166,13 @@ h5 {
   text-decoration: none;
   color: grey;
 }
-footer {
-  text-align: center;
+.footer {
+  background-color: blue;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   width: 100%;
