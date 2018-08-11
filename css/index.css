@@ -232,3 +232,27 @@ html {
   font-size: 1.5rem;
   margin: 0 0 20px 0;
 }
+.container .content-sign {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .content-sign .text-content {
+  width: 50%;
+  margin: 0 100px 0 200px;
+  padding: 0 5% 0 15%;
+  font-size: 2.5rem;
+  margin: 20px 0 10px 0;
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+}
+.container .content-sign .text-content h2 {
+  font-size: 2.5rem;
+}
+.container .content-sign .text-content p {
+  font-size: 1.5rem;
+}
+.container .content-sign .img-content img {
+  width: 70%;
+}
