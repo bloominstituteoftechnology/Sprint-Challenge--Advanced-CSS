@@ -1,1 +1,282 @@
-/* Compile your LESS first! */
+.bottomBorder {
+  border-bottom: 2px solid #e0e0e0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #22283B;
+}
+.container-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.container-header nav {
+  width: 100%;
+}
+.container-header h1 {
+  font-size: 4rem;
+  padding: 20px 0px;
+}
+.container-header a {
+  text-decoration: none;
+  padding: 5px 4%;
+  color: #22283B;
+}
+footer {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -18px;
+  margin: 0px 20px;
+  border: 2px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+}
+.container-content {
+  max-width: 880px;
+  margin: 0px auto;
+}
+.container-content .headerimg {
+  width: 100%;
+  height: 200px;
+}
+.container-content .content-intro,
+.container-content .content-main,
+.container-content .content-signup {
+  margin: 20px;
+}
+.container-content .content-intro h2,
+.container-content .content-main h2,
+.container-content .content-signup h2 {
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+.container-content .content-intro p,
+.container-content .content-main p,
+.container-content .content-signup p {
+  padding: 10px 0px;
+  line-height: 150%;
+}
+.container-content .image-row {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .container-content .image-row #img1 {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .container-content .image-row #img2 {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .container-content .image-row #img3 {
+    display: none;
+  }
+}
+.container-content .image-row img {
+  width: 30%;
+  border-radius: 15px;
+}
+.container-content .content-main {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e0e0e0;
+}
+.container-content .content-signup {
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+@media (max-width:500px) {
+  .container-content .content-signup {
+    flex-direction: column;
+  }
+}
+.container-content .content-signup button {
+  background-color: #22283B;
+  width: 25%;
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+@media (max-width:500px) {
+  .container-content .content-signup button {
+    background-color: #22283B;
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}
+.container-content .content-signup div {
+  width: 45%;
+}
+@media (max-width:500px) {
+  .container-content .content-signup div {
+    width: 100%;
+  }
+}
+.container-content .content-signup img {
+  width: 45%;
+}
+@media (max-width:500px) {
+  .container-content .content-signup img {
+    width: 100%;
+  }
+}
