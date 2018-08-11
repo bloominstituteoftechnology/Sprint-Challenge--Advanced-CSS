@@ -1,9 +1,7 @@
 header {
     .flex-maker(space-between, center);
-    width: 100%;
-    max-width:880px;
+    .desktop-width-settings;
     height: 50px;
-    margin: 0 auto;
     background: @background;
     color: @text-color;
     padding: 0 10px;
@@ -16,8 +14,8 @@ nav {
 
     a {
         text-decoration: none;
-        color: black;
-        background: white;
+        color: @background;
+        background: @text-color;
         width: 75px;
         height: 20px;
         border-radius: 10px;

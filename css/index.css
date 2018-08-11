@@ -1,3 +1,8 @@
+.desktop-width-settings {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -147,8 +152,8 @@ header {
   flex-direction: row;
   width: 100%;
   max-width: 880px;
-  height: 50px;
   margin: 0 auto;
+  height: 50px;
   background: black;
   color: white;
   padding: 0 10px;
@@ -169,4 +174,71 @@ nav a {
   height: 20px;
   border-radius: 10px;
   text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  background: black;
+  color: white;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.content img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.content .img-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+.content .text-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.content .text-content h2 {
+  margin-bottom: 20px;
+}
+.content-reversed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.content-reversed img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.content-reversed .img-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 90%;
+}
+.content-reversed .text-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.content-reversed .text-content h2 {
+  margin-bottom: 20px;
 }
