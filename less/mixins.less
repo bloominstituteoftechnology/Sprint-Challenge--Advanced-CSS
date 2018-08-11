@@ -1,1 +1,21 @@
 // Mixins below variables
+
+.flex-column(@spacing: space-between) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @spacing;
+}
+
+.flex-row(@spacing: space-around) {
+    display: flex;
+    flex-direction: row;
+    justify-content: @spacing;
+}
+
+.button-creator(@width: 100px, @bgColor, @borderColor: black) {
+    text-align: center;
+    border: 1px solid @borderColor;
+    border-radius: 10px;
+    width: @width;
+    background-color: @bgColor;
+}
