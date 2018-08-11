@@ -1,1 +1,58 @@
 // Home Content
+
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+#header-img {
+    display: flex;
+    justify-content: center;
+    #header-img-1 {
+        width: 80%;
+        height: 150px;
+    }
+}
+#lift-off-content {
+    .flex-column-space-evenly (80%, 300px, @subtitle-font-size, 1%, auto);
+    #lift-off-picture-row {
+        .flex-row-space-evenly (100%, auto, 1.5rem, 0%, 0%); 
+        img {
+            border-radius: @pic-border-radius;
+            width: 33%;
+
+        }
+    }
+}
+
+#visit-planets-content {
+    .flex-column-space-evenly (80%, 175px, @subtitle-font-size, 1%, auto);
+}
+
+#go-for-walk-content {
+    .flex-row-space-evenly (70%, 350px, @subtitle-font-size, 1%, auto);
+    #go-for-walk-text {
+        .flex-column-space-evenly (45%, 265px, @subtitle-font-size, 0%, auto);
+        #button {
+            .flex-row-space-evenly (30%, 50px, @content-font-size, 0%, 0%);
+            background-color: @button-bg-color;
+            border-radius: @pic-border-radius;
+        }
+    }
+    img {
+        width: 50%;
+        height: 265px;
+    }
+}
+
+#copyright {
+    .flex-column-centered (80%, 50px, @content-font-size, 0%, auto);
+    background-color: @header-footer-bg-color;
+}
+
+p {
+    font-size: @content-font-size;
+}
