@@ -239,13 +239,6 @@ html {
   padding-bottom: 45px;
   margin: 25px 0;
 }
-@media (max-width: 500px) {
-  .sign-up-section {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-  }
-}
 .sign-up-section .sign-up-text {
   display: flex;
   flex-direction: column;
@@ -281,28 +274,27 @@ html {
   color: #22283B;
   background: #f4f4f4;
 }
-@media (max-width: 500px) {
-  .sign-up-section .sign-up-text .sign-up-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-  }
-}
 .sign-up-section .sign-up-img {
   display: flex;
   justify-content: center;
   width: 40%;
 }
+.sign-up-section .sign-up-img img {
+  border-radius: 10px;
+}
 @media (max-width: 500px) {
-  .sign-up-section .sign-up-img {
+  .sign-up-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .sign-up-section .sign-up-text .sign-up-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
   }
-}
-.sign-up-section .sign-up-img img {
-  border-radius: 10px;
 }
 footer {
   display: flex;

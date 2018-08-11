@@ -86,12 +86,6 @@ html {
   padding-bottom: 45px;
   margin: 25px 0;
 
-  @media @phone {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
   .sign-up-text {
     display: flex;
     flex-direction: column;
@@ -113,11 +107,6 @@ html {
 
     .sign-up-btn {
       .btn-creator();
-
-      @media @phone {
-        .flex-center();
-        width: 300px;
-      }
     }
   }
 
@@ -126,12 +115,22 @@ html {
     justify-content: center;
     width: 40%;
 
-    @media @phone {
-      .flex-center();
-    }
-
     img {
       border-radius: 10px;
+    }
+  }
+}
+
+@media @phone {
+  .sign-up-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .sign-up-text .sign-up-btn {
+      .flex-center();
+      width: 95%;
     }
   }
 }
