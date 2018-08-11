@@ -1,0 +1,22 @@
+.header {
+     width: 100%;
+     height: 100px;
+     .displayflex_style(column, center, center);
+     background-color: @accent-color;
+     border-bottom: 1px solid darkgrey;
+
+     .header_title {
+         .h1_style();
+         margin: 10px 0;
+     }
+
+     .header__nav {
+         width: 40%;
+         .displayflex_style(row, space-around, center);
+
+         .nav_link {
+             .p_style();
+             text-decoration: none;
+         }
+     }
+ }
