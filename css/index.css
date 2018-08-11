@@ -201,19 +201,23 @@ footer p {
   height: 198px;
 }
 .top-content {
-  background-color: purple;
+  background-color: white;
+  padding: 16px;
 }
 .top-content h2 {
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 .top-content p {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  margin-top: 13px;
+  line-height: 24px;
+  margin-right: 10px;
 }
 .top-content-images {
   background-color: orange;
-  display: flex;
   width: 100%;
   height: auto;
+  display: flex;
 }
 .top-content-images img {
   flex: 1;
