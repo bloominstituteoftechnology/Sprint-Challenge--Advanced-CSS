@@ -205,7 +205,7 @@ footer {
   padding-left: 2%;
 }
 .lift-img img {
-  width: 80%;
+  width: 30%;
   border-radius: 10%;
   height: 200px;
 }
@@ -218,6 +218,11 @@ footer {
   }
   .lift-img img:nth-of-type(3) {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .lift-img img {
+    width: 80%;
   }
 }
 @media (max-width: 500px) {
