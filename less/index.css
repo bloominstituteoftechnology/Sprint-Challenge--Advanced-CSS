@@ -30,12 +30,8 @@
   width: 100%;
 }
 .fbtn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  margin: 1rem;
+  margin: 0rem;
   padding: 1rem;
   width: 8rem;
   color: #f4f4f4;
@@ -176,9 +172,9 @@ table {
 html,
 body,
 a {
-  border: 4px solid seagreen;
   font-family: 'Ubuntu', sans-serif;
   font-size: 62.5%;
+  color: #22283B;
 }
 body {
   margin: 0 15%;
@@ -262,7 +258,6 @@ footer {
   align-items: center;
 }
 .main .roundedIMGs img {
-  border: 1px solid orange;
   width: 30%;
   border-radius: 2rem;
   margin: 1rem;
@@ -280,7 +275,6 @@ footer {
   }
 }
 .bottom {
-  border: 4px solid seagreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +283,6 @@ footer {
   margin: 0 auto;
 }
 .bottom .group {
-  border: 1px solid blue;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -315,8 +308,10 @@ footer {
   font-size: 1.2rem;
   padding: 1rem 0;
 }
+.bottom .button {
+  width: 100%;
+}
 .bottom img {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -335,11 +330,8 @@ footer {
     width: 100%;
   }
   .bottom .fbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 0rem;
     padding: 1rem;
     width: 100%;
     color: #f4f4f4;

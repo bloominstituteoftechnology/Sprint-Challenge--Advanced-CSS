@@ -29,7 +29,6 @@
     .full_width();
     .flexRow();
     img {
-      .b_o();
       width: 30%;
       .rounded(2rem);
       margin: 1rem;
@@ -50,16 +49,15 @@
 }
 
 .bottom {
-  .b_sg();
   .flexRow();
   padding: 2rem;
   .full_width();
   margin: 0 auto;
   .group {
-    .b_blue();
     .flexCol();
     width: 50%;
   }
+
   h1 {
     .full_width();
     font-size: 2rem;
@@ -76,8 +74,13 @@
     padding: 1rem 0;
   }
 
+  .button {
+    .full_width();
+ //   padding: 0 0 ;
+ //   margin: 0 0;
+  }
+
   img {
-    .b_red();
     .flexRow();
     padding: 2rem;
   //  width: 20%;
@@ -89,7 +92,7 @@
     .full_width();
   }
     .fbtn {
-      .datButton(1.5rem; 1rem; 1rem; 100%; @main-color; @secondary-color)
+      .datButton(1.5rem; 0rem; 1rem; 100%; @main-color; @secondary-color)
     }
 
   }
