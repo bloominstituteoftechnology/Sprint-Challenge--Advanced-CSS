@@ -1,1 +1,23 @@
 // Mixins below variables
+
+.flex-display () {
+    display: flex;
+}
+
+.horizontal-line(){
+    border-top: 2px solid @nav-footer-bg;
+    border-bottom: 2px solid @nav-footer-bg;
+}
+
+
+.btn-mixin (@textcolor,@bg-color){
+    font-size: 1.0rem;
+    padding: 10px;
+    background-color: @bg-color;
+    .flex-display;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    color: @textcolor;
+    border-radius: 5px;
+}
