@@ -140,6 +140,37 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.header {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header h1 {
+  font-size: 3.4rem;
+  color: #22283B;
+}
+.header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.header nav a {
+  text-decoration: none;
+  color: #22283B;
+  opacity: 0.6;
+}
+.header nav a:hover {
+  opacity: 1;
+}
 html {
   font-size: 62.5%;
 }
