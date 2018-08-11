@@ -1,3 +1,27 @@
+.colDisplay {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.rowDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.spaceDisplay {
+  display: flex;
+}
+.navHeaderFont {
+  font-size: 5rem;
+  color: #444958;
+}
+.headerFont {
+  font-size: 3rem;
+  color: #444958;
+}
+.pFont {
+  font-size: 1.6rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +155,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Ubuntu', sans-serif;
 }
 h1,
@@ -139,4 +164,102 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+#navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+#navigation h1 {
+  font-size: 5rem;
+  color: #444958;
+  width: 100%;
+  margin: 1% 0;
+}
+#navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 45%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+#navigation li {
+  padding: 0 5%;
+  margin: 2% 0;
+}
+#container {
+  width: 880px;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: 3rem;
+  color: #444958;
+  padding: 1% ;
+}
+header p {
+  width: 90%;
+  padding: 1% ;
+  margin: 1%;
+  font-size: 1.6rem;
+}
+header img {
+  width: 100%;
+  margin: 2% 0;
+}
+#middleWrap {
+  margin: 1%;
+}
+#middleWrap #imageWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+#middleWrap img {
+  border-radius: 10px;
+  width: 30%;
+  margin: 2% 0;
+}
+#middleWrap h1 {
+  font-size: 3rem;
+  color: #444958;
+}
+#middleWrap p {
+  margin: 2% 0;
+  font-size: 1.6rem;
+}
+#walking {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#walking #bottomWrap {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+#walking img {
+  width: 30%;
+}
+#walking h1 {
+  width: 100%;
+  font-size: 3rem;
+  color: #444958;
+}
+#walking p {
+  width: 100%;
+  font-size: 1.6rem;
+}
+footer {
+  height: 100px;
+  background-color: #f6f6f6;
+  margin-top: 5%;
+  padding-top: 4%;
+  text-align: center;
+  font-size: 1.6rem;
 }
