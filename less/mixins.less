@@ -1,1 +1,15 @@
 // Mixins below variables
+.flex-row-centered() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-maker(@width; @bgColor; @height; @txColor) {
+    .flex-row-centered;
+    width: @width;
+    background-color: @bgColor;
+    height: @height;
+    color: @txColor;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}

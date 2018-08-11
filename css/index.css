@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -140,9 +143,23 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+p,
+a {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+p {
+  text-align: start;
+}
 .header {
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
 }
 .header .header-container {
   display: flex;
@@ -153,16 +170,86 @@ h5 {
   margin: 0px auto;
   padding: 10px;
 }
-.header .header-container .header__h1 {
-  font-size: 2.8rem;
-}
 .header .header-container .header__nav {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 .header .header-container .nav___a {
   text-decoration: none;
   color: black;
+}
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-image {
+  width: 100%;
+  height: 200px;
+}
+.main-container .first-section {
+  width: 100%;
+  padding: 10px 0;
+}
+.main-container .first-section .main-content {
+  width: 100%;
+}
+.main-container .first-section .img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  height: 200px;
+}
+.main-container .middle-section {
+  margin: 30px 0;
+}
+.main-container .bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 40px 0;
+}
+.main-container .bottom-section .bottom-content {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.main-container .bottom-section .bottom-content .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background-color: #22283B;
+  height: 35px;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+.main-container .bottom-section .bottom-image {
+  width: 45%;
+}
+.main-container .bottom-section .bottom-image img {
+  max-width: 310px;
+  max-height: 310px;
+}
+.main-container .footer {
+  width: 100%;
+  background-color: #f4f4f4;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+.middle-img {
+  width: 30%;
+  border-radius: 10px;
 }
