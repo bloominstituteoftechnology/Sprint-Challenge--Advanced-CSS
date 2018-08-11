@@ -1,1 +1,29 @@
 // Mixins below variables
+.h3{
+    font-size:2rem;
+    margin-bottom:@space-width;
+}
+.p{
+    font-size:1.8rem;
+    text-align: justify;
+    line-height: 1.3;
+    margin-bottom: @space-width;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn(@button-bg, @width, @height: 40px, @mt: 10px) {
+    font-size: 1.4rem;
+    width:@width;
+    height:@height;
+    margin-top:@mt;
+    color:white;
+    text-transform: capitalize;
+    background-color:@button-bg;
+    border-radius: 8px;
+    .flex-centered;
+ }
