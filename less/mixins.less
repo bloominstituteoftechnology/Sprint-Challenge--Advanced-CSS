@@ -1,1 +1,31 @@
 // Mixins below variables
+
+.button-centered() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.button-style(@box-color:@secondary-color, @width: 200px, @height: 40px, @margin-t: 10px) {
+   font-size: 1.8rem;
+   width: @width;
+   height: @height;
+   background-color: @box-color;
+   color: white;
+   margin-top: @margin-t;
+   border-radius: 10px;
+   .button-centered;
+ }
+
+
+.p-style() {
+    font-size: 1.7rem;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.secondary-header-style(){
+
+    font-size: 3rem;
+}

@@ -209,3 +209,25 @@ nav a:first-child {
   border-radius: 10px;
   width: 90%;
 }
+.middle-section {
+  margin: 30px 0px;
+}
+.middle-section h3 {
+  font-size: 3rem;
+}
+.middle-section p {
+  font-size: 1.7rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.bottom-section {
+  margin: 30px 0px;
+}
+.bottom-section h3 {
+  font-size: 3rem;
+}
+.bottom-section p {
+  font-size: 1.7rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
