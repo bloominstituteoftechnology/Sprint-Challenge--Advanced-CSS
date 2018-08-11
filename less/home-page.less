@@ -11,14 +11,14 @@
 
 .top-content {
     background-color: white;
-    padding: 16px;
+    padding: @padding-left;
 
     h2 {
-        font-size: 3.2rem; // todo - make a shared size.
+        font-size: @font-size-2; // todo - make a shared size.
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: @font-size-3;
         margin-top: 13px;
         line-height: 24px;
         margin-right: 10px;
@@ -42,17 +42,20 @@
 }
 
 .middle-content {
-
-    padding-top: 10px; // todo - use shared sized throughout.
-    padding-bottom: 10px; // todo - use shared sized throughout.
-    border-bottom: 1px solid green; // todo - replace with the real color, this is just so I can see it.
+    padding-left: @padding-left;
+    padding-top: 50px; 
+    padding-bottom: 65px;
+    border-bottom: 1px solid @acent-color;
 
     h2 {
-        font-size: 2rem; // todo - make this a shared height.
+        font-size: 2.8rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: @font-size-3;
+        margin-top: 13px;
+        line-height: 24px;
+        margin-right: 10px;
     }
 }
 
