@@ -163,8 +163,15 @@ ul li a {
   font-size: 1.2rem;
   color: gray;
 }
+footer {
+  margin: 0 auto;
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 1rem;
+}
 .container {
-  max-width: 880px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .container img {
@@ -190,7 +197,10 @@ ul li a {
 .container .bottom-content {
   display: flex;
   justify-content: center;
-  padding: 70px;
+  margin: 40px;
+  padding: 30px;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
 }
 .container .bottom-content img {
   padding: 10px;
