@@ -152,6 +152,10 @@ h5 {
 html {
   font-size: 62.5%;
 }
+.fixed-nav-container {
+  max-width: 962px;
+  margin: 0 auto;
+}
 .top-container {
   max-width: 962px;
   width: 100%;
@@ -228,10 +232,6 @@ footer {
 }
 footer p {
   font-size: 1.3rem;
-}
-.fixed-nav-container {
-  max-width: 962px;
-  margin: 0 auto;
 }
 .home {
   max-width: 640px;
@@ -417,6 +417,10 @@ footer p {
 .home .bottom-section-main .textbox .button:hover {
   background-color: orange;
   color: black;
+}
+.home .bottom-section-main .textbox .button p a {
+  text-decoration: none;
+  color: #f4f4f4;
 }
 .home .bottom-section-main img {
   width: 260px;

@@ -1,0 +1,53 @@
+.signup {
+    font-size: 1.6rem;
+
+    .form-sheet {
+        margin-top: 80px;
+        .flex();
+        flex-wrap: wrap;
+
+        .content-box {
+            width: 100%;
+            .flex(space-between);
+            margin-bottom: 10px;
+        }
+    }
+
+    .pricing-table {
+        .flex();
+        max-width: 800px;
+        width: 100%;
+
+        .package {
+            background-color: #e8e8e8;
+            border-radius: 3px;
+            padding: 20px;
+            margin: 50px 3%;
+            font-size: 1.2rem;
+            border: 5px solid green;
+            width: 400px;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+            .pricing {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .button {
+        .button-creator(150px);
+        .hover-mixin-button();
+
+            p {
+                a {
+                text-decoration: none;
+                color: @main-color;
+
+                }
+            }
+    }
+
+}
