@@ -1,1 +1,14 @@
 // Mixins below variables
+.flex-row(@justify) {
+    display: flex;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.flex-column(@column) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @column;
+    align-items: center;
+}
+
