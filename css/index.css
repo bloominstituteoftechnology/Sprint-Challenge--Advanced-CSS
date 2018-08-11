@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.nav-head {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  width: 100%;
+}
+.nav-head h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.nav-head nav {
+  margin: 10px auto;
+}
+.nav-head nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  margin: 0px 15px;
+}
+footer {
+  background-color: aqua;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+footer h3 {
+  font-size: 1.6rem;
+  padding: 30px;
+}
+HTML {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header-img {
+  width: 100%;
+  height: 200px;
+}
+.lift-off-text {
+  margin: 10px 0px;
+}
+@media (max-width: 500px) {
+  .lift-off-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.lift-off-text h2 {
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+.lift-off-text p {
+  font-size: 1.6rem;
+}
+.image-trio-middle {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0px;
+}
+.image-trio-middle img {
+  border-radius: 15px;
+  width: 30%;
+  height: 200px;
+}
+.middle-lower-text-block h2 {
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+.middle-lower-text-block p {
+  font-size: 1.6rem;
+  margin-bottom: 10px 0px;
+}
+.middle-lower-text-block .mid-lower-second-p {
+  margin: 10px 0px;
+}
+.lower-text-block {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px dashed black;
+}
+.lower-text-block .walk-button {
+  flex-direction: column;
+}
+.lower-text-block .walk-button h2 {
+  font-size: 2rem;
+  margin: 40px 0px 10px 40px;
+}
+.lower-text-block .walk-button p {
+  font-size: 1.6rem;
+  width: 70%;
+  margin-left: 40px;
+}
+.lower-text-block .walk-button .lower-text-block-second-p {
+  margin: 10px 0px;
+  margin-left: 40px;
+}
+.lower-text-block .walk-button button {
+  width: 30%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: darkblue;
+  text-align: center;
+  margin: 10px 40px;
+}
+.lower-text-block .walk-button button:hover {
+  cursor: pointer;
+  background-color: dodgerblue;
+}
+.lower-text-block img {
+  width: 40%;
+  border-radius: 5px;
+  margin: 40px;
+}
