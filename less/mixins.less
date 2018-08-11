@@ -1,1 +1,29 @@
 // Mixins below variables
+
+.photos ( @padding: 15px; @width; @height; @border-radius;) {
+  padding: @padding;
+  width: @width;
+  height: @height;
+  border-radius: @border-radius;
+}
+
+.liftoffpics {
+  .photos(10px; 250px; 250px; 15%;);
+}
+
+.button
+  (@background-color; @color; @width; @text-align; @padding; @border-radius; @border-style; @border-color; @border-width;) {
+  background-color: @background-color;
+  color: @color;
+  width: @width;
+  text-align: @text-align;
+  padding: @padding;
+  border-radius: @border-radius;
+  border-style: @border-style;
+  border-color: @border-color;
+  border-width: @border-width;
+}
+
+.btn {
+  .button(black; white; 100px; center; 10px; 5px; solid; royalblue; 2px;);
+}

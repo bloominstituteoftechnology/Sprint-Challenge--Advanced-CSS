@@ -1,0 +1,239 @@
+.liftoffpics {
+  padding: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 15%;
+}
+.btn {
+  background-color: black;
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: royalblue;
+  border-width: 2px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+}
+.header {
+  text-align: center;
+  margin-top: 15px;
+}
+nav {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+nav a {
+  padding-left: 25px;
+}
+footer {
+  background-color: whitesmoke;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+.container {
+  width: 880px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.liftoff {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.liftoffphotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.visit {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
+}
+.walk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.walk .walk-content {
+  width: 350px;
+}
+.walk .space-walk {
+  width: 350px;
+}
+.walk .btn {
+  border: 2px, solid, royalblue;
+}
+@media (max-width: 500px) {
+  .img1 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .img2 {
+    display: none;
+  }
+}
