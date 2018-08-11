@@ -261,6 +261,7 @@ footer small {
   height: 100px;
 }
 
+/* Mobile Query */
 @media only screen and (max-width: 500px) {
   #header {
         flex-direction: column;
@@ -268,14 +269,15 @@ footer small {
 
   #header nav {
     display: flex;
+    width: 100%;
   }
 
   #header nav ul {
     justify-content: space-evenly;
     text-align: center;
+    width: 100%;
   }
   #header nav ul li {
-    flex: 1;
     display: block;
     width:  100%;
   }
@@ -283,6 +285,11 @@ footer small {
   #header nav ul li a {
     display:  inline-block;
     margin-right: 5px;
+    width: 100%;
+  }
+
+  #header .main-nav {
+    width: 100%;
   }
 
   .lift-off-images {
@@ -295,9 +302,12 @@ footer small {
 
   .go-for-walk {
     flex-direction: column;
-    padding: 5px;
+    padding: 10px;
   }
-
+  .go-walk-content {
+    padding-bottom: 15px;
+  }
+  
   #astronaut {
     width: 100%;
     padding: 5px;
