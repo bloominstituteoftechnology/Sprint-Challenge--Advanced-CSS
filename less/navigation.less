@@ -5,17 +5,31 @@
     background-color: @bg-color;
     border-bottom: 2 px solid @bg-border;
     .flex(center, space-around, column, wrap);
+    @media @phone {
+        height: 90px;
+        .flex(space-around, center, row, wrap);
+    }
 
     #logo-holder{
         width: auto;
         height: 80px;
-
         .flex(center, center, row, wrap);
+
+        @media @phone {
+            width: 90%;
+            height: 40px;
+        }
 
         .logo{
             font-size: @title-font;
             color: @bg-button;
             font-weight: bold;
+
+            @media @phone {
+                width: auto;
+                height: 40px;
+                font-size: 3.5rem;
+            }
     
         }
     }
@@ -25,6 +39,10 @@
         width: 31%;
         height: 42px;
         .flex(center, space-between, row, nowrap);
+        @media @phone {
+            width: 70%;
+            height: 20px;
+        }
 
         .nav-button {
             width: auto;
@@ -41,4 +59,5 @@
         }
     }
 }
+
 
