@@ -1,0 +1,5 @@
+1- Fully Responsives websites will respond at any screen width and adaptive will respond at somepoints (the ones we specify in our media queries).
+2-Basically we use max-width in our media queries for desktop first and min-width for mobile first. This set in what point we are going to use the styling within those media queries.
+3-This is a trick that allows us to convert easily to px, so 1rem will be 10px after aplying 62.5% in our html tag.
+4-Preprocessing is a technology that allows us to writte CSS more eficiently and make changes to our entire website easily and keep our code DRY, by storing properties and values within variables and mixins, we can acces this values throghout our entire project and it finally compiles our code into regular CSS.
+5-My favorite concept is paramethric mixins and how we can call another mixins and variables  within a mixin. My biggest troubles so far had come from the syntax and the compiler, I've been wondering why some things don't work until I check the compiler and I see an error there, so it wasn't compiling at all and the changes never get to the CSS and thats why this thing wasn't working.
