@@ -191,6 +191,10 @@ nav a {
   text-decoration: none;
   padding: 0px 13.5px;
 }
+nav a:hover {
+  background-color: yellow;
+  color: black;
+}
 @media (max-width: 500px) {
   nav {
     width: 75%;
@@ -390,6 +394,10 @@ footer p {
   font-size: 1.8rem;
   text-align: center;
   border: 1px solid #157FFB;
+}
+.home .bottom-section-main .textbox .button:hover {
+  background-color: yellowgreen;
+  color: black;
 }
 @media (max-width: 500px) {
   .home .bottom-section-main .textbox .button {
