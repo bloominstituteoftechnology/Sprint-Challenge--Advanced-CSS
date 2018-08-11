@@ -5,3 +5,15 @@
      font-size:1.2rem;
      padding:10px 7.5px 10px 7.5px;
 }       
+@border-bottom:2px solid #e0e0e0;
+
+.button-style(@border-color,@width,@bg-color,@border-radius,@size,@padding){
+    border:1px solid @border-color;
+    color:white;
+    width:@width;
+    background-color: @bg-color;
+    border-radius: @border-radius;
+    font-size:@size;
+    text-align: center;
+    padding:7.5px @padding 7.5px @padding;
+}
