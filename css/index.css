@@ -140,11 +140,6 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
-body {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -160,4 +155,17 @@ nav h1 {
 nav a {
   font-size: 1.5rem;
   padding: 15px;
+}
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bannerImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bannerImg img {
+  width: 100%;
 }
