@@ -1,3 +1,12 @@
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-wrap-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -220,10 +229,10 @@ main .images img {
   border-radius: 20px;
 }
 main .call-to-action {
-  width: 85%;
-  margin: 60px 0;
   display: flex;
   justify-content: space-between;
+  width: 85%;
+  margin: 60px 0;
 }
 main .call-to-action .blurb a.button {
   margin-top: 20px;
