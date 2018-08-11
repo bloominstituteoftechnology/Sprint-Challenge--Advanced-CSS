@@ -1,3 +1,16 @@
+@media only screen and (max-width: 500px) {
+  .media-mobile__nav {
+    display: flex;
+    flex-wrap: "";
+    flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,4 +189,15 @@ img {
   text-align: center;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .content-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: "";
+  justify-content: space-between;
+  align-items: "";
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  width: "";
 }

@@ -1,1 +1,33 @@
 // Mixins below variables
+
+
+
+//Button Creator
+
+.button-creator(@bgColor: teal, @width:200px, @height:35px, @font-btn-size:2rem) {
+    font-size: @font-btn-size;
+    font-weight: 500;
+    width: @width;
+    height: @height;
+    border-radius: 10px;
+    background-color: @bgColor;
+    text-align: center;
+    color: @main-color;
+    cursor: pointer;
+    padding: 20px 0px;
+  
+  }
+  
+  //flex mixin parametric
+  .flex-boxed(@justify:"", @margin:"", @margin-top:"", @max-width:"", @alignitems:"", @flexdir:"", @width:"",@wrap:"")
+{
+  display: flex;
+  flex-wrap:@wrap;
+  flex-direction: @flexdir;
+  justify-content: @justify;
+  align-items: @alignitems;
+  margin: @margin;
+  margin-top: @margin-top;
+  max-width: @max-width;
+  width:@width;
+}

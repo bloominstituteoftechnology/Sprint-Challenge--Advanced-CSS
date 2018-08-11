@@ -4,3 +4,19 @@
 @main-color: #f4f4f4;
 @secondary-color: #22283b;
 @accent-color: #e0e0e0;
+
+
+
+
+
+
+//Media Queries
+@mobile: ~"only screen and (max-width: 500px)";
+@tablet: ~"only screen and (max-width: 880px)";
+
+.media-mobile__nav  {
+
+  @media @mobile {
+    .flex-boxed(@flexdir:column);
+  }
+}
