@@ -4,6 +4,8 @@
 
 2. Describe what it means to be mobile first vs desktop first.
 
+    * Mobile first focus on the mobile experience being the best as possible without ignoring desktop users. This is the preferred method because as studies show most users are mobile these days. Desktop first focuses on making the desktop experience as best as possible without ignoring the mobile.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
 
 4. How would you describe preprocessing to someone new to CSS?
