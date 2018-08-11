@@ -1,1 +1,22 @@
 // Mixins below variables
+.flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.button-creator(@bgColor:blue, @width: 100px, @height: 40px, @mt: 10px) {
+    font-size: 1.8rem;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: white;
+    margin-top: @mt;
+    border-radius: 5px;
+    .flex-centered;
+   
+    &:hover {
+      border: 1px solid @bgColor;
+      background-color: white;
+      color: @bgColor;
+    }
+}
