@@ -17,4 +17,4 @@ Helps set 1rem = 10px.
 * `Preprocessing as the name suggests can be put as => before it is processed to CSS. Once you have written your preprocessor, it uses Javascript to compile and convert it into CSS. There are various pre-processors including less, sass etc, that work on the same principle but have different ways of defining variables, mixins etc.`
 
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble?
-`I love mixins and refactoring with CSS, I have yet to learn more in-depth usage of pre-processing with less but it gave me an insight as to why HTML/CSS has now become a developer driven thing verses what it was in the past.` 
+`I love mixins and refactoring with CSS, I have yet to learn more in-depth usage of pre-processing with less but it gave me an insight as to why HTML/CSS has now become a developer driven thing verses what it was in the past. The greatest thing I was able to do in class is create mixins that can be reused! That was brilliant!` 
