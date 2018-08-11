@@ -13,7 +13,7 @@
     }
     .middle-launch-images{
         .flexbox-row(space-around, center);
-        .launch-img{
+        img{
             border-radius: 10px;
             width: 30%;
         }
@@ -25,15 +25,44 @@
         .flexbox-row(space-around, center);
         padding: 80px 5%;
         border-top: 1px solid @border-color;
-        border-bottom: 1px solid @border-color;
+        border-bottom: 1px solid red;
         .text-content {
             width: 45%;
             .sign-up-button{
                 .button-creator();
+                margin-top: 20px;
             }
         }
         .space-walk{
             width: 45%;
+        }
+    }
+}
+
+@media @phone{
+    .home{
+        .middle-launch-images{
+            .sky-img, .launch-img{
+                display: none;
+            }
+            .blast-img{
+                width: 90%;
+                margin-top: 40px;
+            }
+        }
+        .bottom-content{
+            .flexbox-column();
+            .text-content{
+                width: 86%;
+                margin-bottom: 40px;
+                .sign-up-button{
+                    width: @width-100percent;
+                    height: 50px;
+                }
+            }
+            .space-walk{
+                width: 86%;
+            }
         }
     }
 }

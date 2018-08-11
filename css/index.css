@@ -194,12 +194,18 @@ img {
   padding-top: 15px;
   font-size: 1rem;
 }
+@media (max-width:500px) {
+  .main-header h1 {
+    font-size: 2.5rem;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
   height: 80px;
+  margin-top: 10px;
 }
 .home .homepage-header-img {
   height: 200px;
@@ -220,7 +226,7 @@ img {
   justify-content: space-around;
   align-items: center;
 }
-.home .middle-launch-images .launch-img {
+.home .middle-launch-images img {
   border-radius: 10px;
   width: 30%;
 }
@@ -234,7 +240,7 @@ img {
   align-items: center;
   padding: 80px 5%;
   border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid red;
 }
 .home .bottom-content .text-content {
   width: 45%;
@@ -250,6 +256,7 @@ img {
   align-items: center;
   font-size: 1rem;
   border: 1px solid #17A2B8;
+  margin-top: 20px;
 }
 .home .bottom-content .text-content .sign-up-button:hover {
   cursor: pointer;
@@ -259,4 +266,31 @@ img {
 }
 .home .bottom-content .space-walk {
   width: 45%;
+}
+@media (max-width:500px) {
+  .home .middle-launch-images .sky-img,
+  .home .middle-launch-images .launch-img {
+    display: none;
+  }
+  .home .middle-launch-images .blast-img {
+    width: 90%;
+    margin-top: 40px;
+  }
+  .home .bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .bottom-content .text-content {
+    width: 86%;
+    margin-bottom: 40px;
+  }
+  .home .bottom-content .text-content .sign-up-button {
+    width: 100%;
+    height: 50px;
+  }
+  .home .bottom-content .space-walk {
+    width: 86%;
+  }
 }
