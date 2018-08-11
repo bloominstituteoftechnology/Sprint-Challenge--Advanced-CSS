@@ -2,7 +2,7 @@
 
 ### 2. Mobile first is when you are designing a website with the mobile user to have the optimal experience first, and then you create media queries and flexbox designs to create the other layouts such as tablet and desktop. Where as desktop, you are writing the code for the desktop layout first and then you are using media queries and flexbox designs to create your tablet and possibly cell phone (mobile) site.
 
-###3. 62.5% is the conversion factor in the html for font size makes REM so it is equal to 1 pixel as to simplify the font size for developers since they are likely much more familiar with what 32 pixels is instead of the true equivalent of 32 pixels to rem.
+###3. 62.5% is the conversion factor in the html for font size makes REM so it is equal to 10 pixels as to simplify the font size for developers since they are likely much more familiar with what 32 pixels is instead of the true equivalent of 32 pixels to rem.
 
 ###4. I would describe pre-processing as a way of writing our CSS code which not only will enable us to write our CSS easier due to factors such as nesting, but gives us more functionality thanks to Mix-ins and variables. The code you write in your pre-processor is compiled and transformed by another language in LESS's case Javascript into the traditional CSS format since pre-processing languages aren't supported by browsers. Pre-processing is essentially a language for writing CSS, easier.
 

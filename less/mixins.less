@@ -1,1 +1,24 @@
 // Mixins below variables
+.flex-column {
+display:flex;
+flex-direction:column;
+}
+
+.flex-row-sb {
+display:flex;
+justify-content:space-between;
+
+
+}
+
+.buttonmaker (@bgcolor, @bordercolor, @textcolor) {
+margin-top:15px;
+font-size: 1.6rem;
+background-color: @bgcolor;
+padding:8px 3px;
+border: 1px solid @bordercolor;
+color: @textcolor;
+width:100px;
+border-radius:5px;
+text-align:center;
+}
