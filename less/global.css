@@ -1,23 +1,16 @@
-// General Styles
-
 * {
   box-sizing: border-box;
 }
-
-html, body, a {
+html,
+body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 62.5%;
-  color: #22283B;
-//  padding: 0 100px;
-
-
 }
-
-body {
-  margin: 0 15%;
-}
-
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Russo One', sans-serif;
 }
-
+/*# sourceMappingURL=global.css.map */

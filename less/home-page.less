@@ -1,1 +1,101 @@
 // Home Content
+.main  {
+  .full_width();
+  .flexCol();
+  background-color: @main-color;
+  img {
+  .full_width();
+  }
+  .topIMG {
+    .full_width();
+  }
+
+  h1 {
+    .full_width();
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .para {
+    .flexCol();
+  }
+
+  p {
+    .full_width();
+    font-size: 1.2rem;
+     padding: 1rem 0;
+  }
+  .roundedIMGs {
+    .full_width();
+    .flexRow();
+    img {
+      width: 30%;
+      .rounded(2rem);
+      margin: 1rem;
+    }
+  }
+  @media @mobile {
+    #rocket {
+      .full_width();
+      padding: 0 .5rem;
+    }
+    #space {
+      display: none;
+    }
+    #launching {
+      display: none;
+    }
+  }
+}
+
+.bottom {
+  .flexRow();
+  padding: 2rem;
+  .full_width();
+  margin: 0 auto;
+  .group {
+    .flexCol();
+    width: 50%;
+  }
+
+  h1 {
+    .full_width();
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .para {
+    .flexCol();
+  }
+
+  p {
+    .full_width();
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  .button {
+    .full_width();
+ //   padding: 0 0 ;
+ //   margin: 0 0;
+  }
+
+  img {
+    .flexRow();
+    padding: 2rem;
+  //  width: 20%;
+  }
+  @media @mobile {
+    .full_width();
+    .flexCol();
+  .group {
+    .full_width();
+  }
+    .fbtn {
+      .datButton(1.5rem; 0rem; 1rem; 100%; @main-color; @secondary-color)
+    }
+
+  }
+}
+
+
