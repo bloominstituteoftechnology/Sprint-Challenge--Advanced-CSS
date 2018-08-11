@@ -2,7 +2,6 @@
 .container {
     margin: @margin;
     width: 925px;
-    border: 1px solid red;
 
     h2 {
         font-size: @h2-size;
@@ -50,5 +49,70 @@
         margin: @margin;
         .createButton(@secondary-color, 3px);
     }
+}
 
+@media @phone {
+    
+    .nav-container {
+        .nav-child {
+            width: 100%;
+        }
+    }
+        
+    .container {
+        width: 100%;
+
+        .mobile-display-none {
+            display: none;
+        }
+
+        .main-content {
+            width: 90%;
+        }
+
+        header {
+            margin-bottom: 20px;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+
+        .flex-img-container {
+            width: 80%;
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .flex-main-content-container {
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .flex-main-child {
+                width: 90%;
+                height: 100%;
+                h2 {
+                    margin-bottom: 20px;
+                }
+                .button {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                img {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        footer {
+            width: 90%;
+        }
+    }
 }

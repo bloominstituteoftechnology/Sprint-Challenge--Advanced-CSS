@@ -208,7 +208,6 @@ footer p {
 .container {
   margin: 0 auto;
   width: 925px;
-  border: 1px solid red;
 }
 .container h2 {
   font-size: 3.5rem;
@@ -268,8 +267,68 @@ footer p {
   color: white;
   font-size: 2rem;
 }
+@media (max-width:500px) {
+  .container .button a {
+    padding: 10px 150px;
+  }
+}
 .container .button a:hover {
   background: white;
   color: #22283B;
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
+}
+@media (max-width:500px) {
+  .nav-container .nav-child {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .mobile-display-none {
+    display: none;
+  }
+  .container .main-content {
+    width: 90%;
+  }
+  .container header {
+    margin-bottom: 20px;
+  }
+  .container header img {
+    margin-bottom: 20px;
+  }
+  .container .flex-img-container {
+    width: 80%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .container .flex-img-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .flex-main-content-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .flex-main-content-container .flex-main-child {
+    width: 90%;
+    height: 100%;
+  }
+  .container .flex-main-content-container .flex-main-child h2 {
+    margin-bottom: 20px;
+  }
+  .container .flex-main-content-container .flex-main-child .button {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container .flex-main-content-container .flex-main-child img {
+    margin-bottom: 40px;
+  }
+  .container footer {
+    width: 90%;
+  }
 }

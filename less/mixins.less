@@ -28,10 +28,13 @@
         border-radius: @radius;
         color: white;
         font-size: @link-size;
+        @media @phone {
+            padding: 10px 150px;
+        }
     }
     a:hover {
         background: white;
         color: @secondary-color;
-        border: 2px solid lightgray;
+        border: 1px solid lightgray;
     }
 }
