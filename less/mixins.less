@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.flex-wrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .button-creator(@btncolor: rgb(35, 40, 57), @bordercolor: rgb(43, 125, 239), @width: 100px, @height: 50px, @mt: 15px) {
     background: @btncolor;
     border: 1px solid @bordercolor;
@@ -26,7 +31,7 @@
         animation: stripes-move 0.75s infinite linear;
         background: repeating-linear-gradient(45deg, rgb(35, 40, 57) 0, rgb(43, 125, 239) 0.25em, transparent 0.25em, transparent .5em);
     }
-    
+
     @media @phone {
         .button-creator(@width: 100%)
     }
