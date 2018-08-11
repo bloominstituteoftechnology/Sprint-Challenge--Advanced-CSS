@@ -1,36 +1,30 @@
 //Navigation
-
-
 header {
     width: 100%;
     background: @accent-color;
-    .flex-boxed(@flexdir: column,@justify:center, @alignitems:center );
-    @media @mobile {
-        .flex-boxed(@justify:center);
-      }
-  h1 {
-      text-align: center;
-  }
-  
+    .flex-boxed(@flexdir: column, @justify: center, @alignitems: center);
+    @media @phone {
+        .flex-boxed(@justify: center);
+    }
+    h1 {
+        text-align: center;
+    }
     nav {
-      width: 50%;
-      margin: 10px 0;
-      font-size: 1.6rem;
-      .flex-boxed(@wrap: wrap,@justify:space-evenly, @alignitems:center );
-      color: @secondary-color;
-      @media @mobile {
-        margin-top: 25px;
-        width: 80%;
-      }
-      a {
-        text-decoration: none;
+        width: 50%;
+        margin: 10px 0;
+        font-size: 1.6rem;
+        .flex-boxed(@wrap: wrap, @justify: space-evenly, @alignitems: center);
         color: @secondary-color;
-   
-      }
-  
-      &:last-child {
-        margin-right: 25px;
-      }
+        @media @phone {
+            margin-top: 25px;
+            width: 80%;
+        }
+        a {
+            text-decoration: none;
+            color: @secondary-color;
+        }
+        &:last-child {
+            margin-right: 25px;
+        }
     }
 }
-

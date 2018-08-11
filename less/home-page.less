@@ -5,7 +5,7 @@
         .flex-boxed(@justify: center, @alignitems: center);
     }
     .text-liftoff {
-        @media @mobile{
+        @media @phone {
             padding: 0 1%;
         }
         width: 100%;
@@ -14,8 +14,7 @@
     }
     .img-content {
         .flex-boxed(@alignitems: center);
-
-        @media @mobile{
+        @media @phone {
             .flex-boxed(@alignitems: center);
             margin: 20px;
             .img2,
@@ -23,53 +22,55 @@
                 display: none;
             }
         }
-            .space {
-                width: 100%;
-                margin: 23.33px; 
+        .space {
+            width: 100%;
+            margin: 23.33px;
+        }
+        img {
+            border-radius: 10%;
+        }
+    }
+}
 
-            }
-            img {
-                border-radius: 10%;
-            }
+hr {
+    border: none;
+    border-top: 1px solid @secondary-color
+}
+
+.content-section {
+    .flex-boxed(@justify: space-between, @wrap: wrap);
+    margin-bottom: 5%;
+    @media @phone {
+        padding: 0 2%;
+    }
+}
+
+.repeat-section {
+    margin-top: 5%;
+    width: 100%;
+    padding-right: 0 1%;
+    @media @phone {
+        .flex-column-centered;
+    }
+    .bottom {
+        align-content: center;
+        width: 50%;
+        @media @phone {
+            width: 80%;
         }
     }
-    hr {
-        border: none;
-        border-top: 1px solid @secondary-color
-    }
-    .content-section {
-        .flex-boxed(@justify: space-between, @wrap: wrap);
-        margin-bottom: 5%;
-        @media @mobile{
-            padding: 0 2%;
+    .btn {
+        .button-creator(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
+        @media @phone {
+            .btn-media;
+            margin: 20px 0;
         }
     }
-    .repeat-section {
-        margin-top: 5%;
-        width: 100%;
-        padding-right: 0 1%;
-        @media @mobile{
-            .flex-column-centered;
-        }
-        .bottom {
-            align-content: center;
-            width: 50%;
-            @media @mobile{
-                width: 80%;
-            }
-        }
-        .btn {
-            .button-creator(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
-            @media @mobile{
-                .btn-media;
-                margin: 20px 0;
-            }
-        }
-    } // .text-content {
-    //     width: 48%;
-    //     padding-right: 1%;
-    //     @media @mobile{
-    //         width: 100%;
-    //         padding: 0 5%;
-    //     }
-    // }
+} // .text-content {
+//     width: 48%;
+//     padding-right: 1%;
+//     @media @phone{
+//         width: 100%;
+//         padding: 0 5%;
+//     }
+// }
