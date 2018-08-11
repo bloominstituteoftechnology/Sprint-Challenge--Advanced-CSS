@@ -18,5 +18,7 @@ I'd say that it's perfectly fine to not use preprocessing, however if they'd lik
 
 ####What is your favorite concept in preprocessing?
 
+My favorite concept in preprocessing is the ability to use mixins (code reusability) and the ability to pass in arguments in parametric mixins, because this makes for great code reuse. 
+
 ####What is the concept that gives you the most trouble?
 
