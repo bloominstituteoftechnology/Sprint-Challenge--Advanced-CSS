@@ -1,3 +1,5 @@
+@font-color color: #444958;
+@button-colors #22283a;
 .colDisplay {
   display: flex;
   flex-direction: column;
@@ -259,9 +261,11 @@ header img {
   font-size: 1.6rem;
 }
 #walking #signUp {
+  border-radius: 10px;
+  border: 2px solid #1f7ff1;
   font-size: 1.6rem;
   color: white;
-  height: 12%;
+  height: 13%;
   width: 25%;
   background-color: #22283a;
   margin-top: 5%;
