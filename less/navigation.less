@@ -1,15 +1,17 @@
 // Navigation styles
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: @main-color;
-    height: auto;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-bottom: 2px solid @acent-color;
+    @media screen and (min-width: @desktop) {
+        background-color: @main-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 2px solid @acent-color;
+    }
 
     h1 {
         display: inline-block; 

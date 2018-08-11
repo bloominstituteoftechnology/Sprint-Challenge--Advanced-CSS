@@ -149,16 +149,18 @@ h5 {
   margin: 0px auto;
   background-color: white;
 }
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f4f4f4;
-  height: auto;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-bottom: 2px solid #e0e0e0;
+@media screen and (min-width: 800px) {
+  header {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid #e0e0e0;
+  }
 }
 header h1 {
   display: inline-block;
@@ -266,15 +268,15 @@ footer p {
 .bottom-content .bottom-center-container a {
   height: 38px;
   width: 80px;
-  margin-top: 17px;
-  margin-bottom: 20px;
   background-color: #232839;
   border-radius: 4px;
   text-align: center;
-  padding: 11px;
-  color: white;
   text-decoration: none;
   font-size: 1.6rem;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  padding: 11px;
+  color: white;
   border: 1px solid #3681F3;
 }
 .bottom-content img {
