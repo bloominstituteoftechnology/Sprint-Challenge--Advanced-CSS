@@ -146,10 +146,22 @@ h5 {
 h1 {
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+    padding: 20px 0 0 0;
+  }
+}
 a {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.8rem;
+    padding: 0 0 20px 0;
+  }
 }
 h2 {
   font-size: 2.5rem;
@@ -173,6 +185,12 @@ header nav {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+    justify-content: space-around;
+  }
 }
 footer {
   width: 100%;
