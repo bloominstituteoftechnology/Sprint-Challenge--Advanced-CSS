@@ -1,83 +1,68 @@
 // Home Content
-
 .home {
-
-    .header{
+    .header {
         width: 100%;
-        .flex-boxed(@justify:center, @alignitems:center);
-       
+        .flex-boxed(@justify: center, @alignitems: center);
     }
-
-   
-    .text-liftoff{
+    .text-liftoff {
+        @media @mobile {
+            padding: 0 1%;
+        }
         width: 100%;
         margin: 30px 0;
         padding-left: 1%;
-
     }
-
-    .img-content{
-     .flex-boxed(@alignitems: center);
-   
-       .space {
-        width:100%;
-        margin: 23.33px;
-       img{
-        border-radius: 10%;
+    .img-content {
+        .flex-boxed(@alignitems: center);
         @media @mobile {
-           & :nth-child(2){
-               display: none;
-           }
-           
-           &:nth-last-child{
-            display: none;
+            .flex-boxed(@alignitems: center);
+            margin: 20px;
+            .img2,
+            .img3 {
+                display: none;
+            }
+            .space {
+                width: 100%;
+                margin: 23.33px;
+            }
+            img {
+                border-radius: 10%;
+            }
         }
-        }
-
-       }
-
-       }
-    
     }
     hr {
         border: none;
         border-top: 1px solid @secondary-color
     }
-
     .content-section {
         .flex-boxed(@justify: space-between, @wrap: wrap);
-       margin-bottom:5%;
-
-    }
-    .repeat-section {
-    margin-top: 5%;
-     width: 100%;
-     padding-right:0 1%;
-     @media @mobile{
-    .flex-column-centered;
-       
-     
-    } 
-     .bottom {
-      align-content: center;
-      width: 50%;
-      @media @mobile {
-          width: 80%;
-      }
-     
-    } 
-    .btn {
-        .button-creator(@bgColor: 
-        @secondary-color, @width: 95px, @font-btn-size:@font-size);
-      @media @mobile {
-        
-          .btn-media;
-          margin:  20px 0;
+        margin-bottom: 5%;
+        @media @mobile {
+            padding: 0 2%;
         }
     }
-
-    }
-    // .text-content {
+    .repeat-section {
+        margin-top: 5%;
+        width: 100%;
+        padding-right: 0 1%;
+        @media @mobile {
+            .flex-column-centered;
+        }
+        .bottom {
+            align-content: center;
+            width: 50%;
+            @media @mobile {
+                width: 80%;
+            }
+        }
+        .btn {
+            .button-creator(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
+            @media @mobile {
+                .btn-media;
+                margin: 20px 0;
+            }
+        }
+    } // .text-content {
     //     width: 48%;
     //     padding-right: 1%;
     //     @media @mobile {
@@ -85,6 +70,4 @@
     //         padding: 0 5%;
     //     }
     // }
-
-
 }
