@@ -140,3 +140,24 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+nav h1 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+nav a {
+  font-size: 1.5rem;
+  padding: 15px;
+}
