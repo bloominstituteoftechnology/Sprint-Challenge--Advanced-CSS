@@ -135,6 +135,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 62.5%;
+  background-color: red;
 }
 h1,
 h2,
@@ -146,7 +147,7 @@ h5 {
 .container {
   width: 880px;
   margin: 0px auto;
-  background-color: red;
+  background-color: white;
 }
 header {
   display: flex;
@@ -190,4 +191,27 @@ header nav {
 .top-content-images img {
   flex: 1;
   height: 100px;
+}
+.middle-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid green;
+}
+.middle-content h2 {
+  font-size: 2rem;
+}
+.middle-content p {
+  font-size: 1rem;
+}
+.bottom-content {
+  display: flex;
+}
+.bottom-content .bottom-center-container {
+  flex: 1;
+  background-color: orange;
+  margin: 20px;
+}
+.bottom-content img {
+  flex: 1;
+  margin: 20px;
 }
