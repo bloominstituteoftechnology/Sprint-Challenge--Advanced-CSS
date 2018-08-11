@@ -33,7 +33,7 @@ Answer the following questions to the best of your ability. You can exercise you
 * [ X ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+* [ X ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
