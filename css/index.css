@@ -256,14 +256,14 @@ img {
   width: 95%;
 }
 .home .intro h2 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .home .intro img {
   max-width: 30%;
   height: auto;
-  margin-right: 3%;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  margin-left: 3.1%;
 }
 .home .content-section {
   margin: 3.5rem 0;
