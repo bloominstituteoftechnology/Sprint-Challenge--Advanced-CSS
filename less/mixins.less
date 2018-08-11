@@ -1,1 +1,31 @@
 // Mixins below variables
+.h1() {
+    font-family: 'Russo One', sans-serif;
+    font-size: 3.6rem;
+}
+
+.h2() {
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.8rem;
+}
+
+.p() {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+    color: @secondary-color;
+}
+
+.displayflex(@direction: row, @justify: center, @align: center) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button (@height, @width, @radius, @bgcolor, @txtcolor) {
+    height: @height;
+    width: @width;
+    border-radius: @radius;
+    background-color: @bgcolor;
+    color: @txtcolor;
+}
