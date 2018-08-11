@@ -44,8 +44,8 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
-* [ ] Navigation: Use the `navigation.less` file for styling.
+* [ X ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [ X ] Navigation: Use the `navigation.less` file for styling.
 * [ ] Main Content: Use the `home-page.less` file for styling
 * [ ] Footer: Use the `footer.less` file for styling
 * [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
