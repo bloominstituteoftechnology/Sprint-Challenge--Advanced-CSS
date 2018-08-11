@@ -161,6 +161,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -171,4 +174,43 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: 2px solid #dee2e6;
+}
+header h1 {
+  color: #444958;
+  font-size: 3.2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #444958;
+  font-size: 1.6rem;
 }
