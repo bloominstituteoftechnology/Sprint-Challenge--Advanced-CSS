@@ -5,8 +5,98 @@ html {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 880px;
+  max-width: 1300px;
   margin: 0 auto;
+  line-height: normal;
+}
+
+.main-header {
+  width: 100%;
+  margin-bottom: 15px;
+
+  .main-header-img {
+    width: 100%;
+  }
+
+  .main-header-text {
+    font-size: 1.6rem;
+
+    h2 {
+      font-size: 3rem;
+      padding: 10px;
+    }
+
+    p {
+      padding: 10px;
+    }
+  }
+}
+
+.shuttle-imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  img {
+    border-radius: 30px;
+    padding: 10px;
+  }
+}
+
+.content-section {
+  border-bottom: 2px solid @accent-color;
+  padding-bottom: 50px;
+  margin: 25px 0;
+
+  .text-content {
+
+    h2 {
+      font-size: 3rem;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding: 10px;
+    }
+  }
+}
+
+.sign-up-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+
+  .sign-up-text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    h2 {
+      font-size: 3rem;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding: 10px;
+    }
+
+    .sign-up-btn {
+      .btn-creator();
+    }
+  }
+
+  .sign-up-img {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+
+    img {
+      border-radius: 10px;
+    }
+  }
 }
