@@ -1,1 +1,153 @@
 // Home Content
+HTML {
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-img {
+    width: 100%;
+    height: 200px;
+}
+
+.lift-off-text {
+    margin: 10px 0px;
+
+    @media @phone {
+        .phone-width();
+    }
+
+    h2 {
+        font-size: @h2rem;
+        margin: @textmargin;
+    }
+
+    p {
+        font-size: @prem;
+    }
+}
+
+.image-trio-middle {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+
+    @media @phone {
+        .phone-width();
+    }
+
+    img {
+        border-radius: 15px;
+        width: 30%;
+        height: 200px;
+
+        @media @phone {
+            width: 90%;
+            margin: 20px 0px;
+        } 
+    }
+}
+
+.second-img {
+    @media @phone {
+        display: none;
+    }
+}
+
+.third-img {
+    @media @phone {
+        display: none;
+    }
+}
+
+.middle-lower-text-block {
+    @media @phone {
+        .phone-width();
+        margin-bottom: 40px;
+    }
+
+    h2{
+        font-size: @h2rem;
+        margin: @textmargin;
+    }
+
+    p{
+        font-size: @prem;
+        margin-bottom: @textmargin;
+    }
+    .mid-lower-second-p {
+        margin: @textmargin;
+    }
+}
+
+.lower-text-block {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px dashed black;
+
+    @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .walk-button {
+        flex-direction: column;
+
+        @media @phone {
+            .phone-width();
+        }
+
+        h2{
+            font-size: @h2rem;
+            margin: 40px 0px 10px 40px;
+
+           
+        }
+
+        p {
+            font-size: @prem;
+            width: 70%;
+            margin-left: 40px;
+        }
+
+        .lower-text-block-second-p {
+            margin: @textmargin;
+            margin-left: 40px;
+        }
+
+        button {
+            .button();
+            margin: 10px 40px;
+
+            @media @phone {
+                width: 70%;
+                margin: 20px 0px 0px 40px;
+            }
+        }
+    }
+
+    img {
+        width: 40%;
+        border-radius: 5px;
+        margin: 40px;
+
+        @media @phone {
+            width: 63%;
+            margin: 20px 0px 50px 63px;        
+        }
+    }
+}
+    
+
+
