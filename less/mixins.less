@@ -1,1 +1,20 @@
 // Mixins below variables
+.flex-align-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.font-height-size-mixin (@fsize, @color) {
+    font-size: @fsize;
+    font-color: @color;
+}
+
+.button-creator-mixin (@width, @height, @accent-color, @radius, @secondary-color) {
+    width: @width;
+    height: @height;
+    color: @accent-color;
+    border-radius: @radius;
+    background-color: @secondary-color;
+}
