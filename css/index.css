@@ -190,12 +190,40 @@ footer .footerText .button {
   text-align: center;
   margin-top: 10px;
 }
+@media (max-width: 500px) {
+  footer .footerText .button {
+    width: 100%;
+    border-radius: 5px;
+    margin: 15px 0%;
+    padding: 15px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerText {
+    width: 83%;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerText {
+    justify-content: center;
+  }
+}
 footer .footerImg {
   width: 33%;
 }
 footer .footerImg img {
   height: 210px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  footer .footerImg img {
+    height: 250px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerImg {
+    width: 83%;
+  }
 }
 .trademark {
   display: flex;

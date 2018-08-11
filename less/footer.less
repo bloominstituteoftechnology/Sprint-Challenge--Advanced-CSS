@@ -19,6 +19,20 @@ footer{
             .btn; 
             text-align: center; 
             margin-top: 10px; 
+
+            @media @phone{
+                width: 100%; 
+                border-radius: 5px; 
+                margin: 15px 0%; 
+                padding: 15px; 
+            }
+        }
+
+        @media @phone {
+            width: 83%; 
+        }
+        @media @phone{
+            justify-content: center; 
         }
     }
 
@@ -28,6 +42,13 @@ footer{
         img{
             height: 210px;
              width: 100%; 
+
+            @media @phone{
+                height: 250px; 
+            }
+        }
+        @media @phone{
+            width: 83%; 
         }
     }  
 }
