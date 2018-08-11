@@ -156,6 +156,27 @@ nav a {
   font-size: 1.5rem;
   padding: 15px;
 }
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+footer .footerText {
+  width: 40%;
+}
+footer .footerImg {
+  width: 30%;
+}
+footer .footerImg img {
+  height: 160px;
+  width: 100%;
+}
+.trademark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 body {
   max-width: 800px;
   width: 100%;
