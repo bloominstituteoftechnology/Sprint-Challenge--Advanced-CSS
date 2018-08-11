@@ -5,7 +5,7 @@
         .flex-boxed(@justify: center, @alignitems: center);
     }
     .text-liftoff {
-        @media @mobile {
+        @media @phone {
             padding: 0 1%;
         }
         width: 100%;
@@ -14,7 +14,7 @@
     }
     .img-content {
         .flex-boxed(@alignitems: center);
-        @media @mobile {
+        @media @phone {
             .flex-boxed(@alignitems: center);
             margin: 20px;
             .img2,
@@ -37,7 +37,7 @@
     .content-section {
         .flex-boxed(@justify: space-between, @wrap: wrap);
         margin-bottom: 5%;
-        @media @mobile {
+        @media @phone {
             padding: 0 2%;
         }
     }
@@ -45,19 +45,19 @@
         margin-top: 5%;
         width: 100%;
         padding-right: 0 1%;
-        @media @mobile {
+        @media @phone {
             .flex-column-centered;
         }
         .bottom {
             align-content: center;
             width: 50%;
-            @media @mobile {
+            @media @phone {
                 width: 80%;
             }
         }
         .btn {
             .button-creator(@bgColor: @secondary-color, @width: 95px, @font-btn-size: @font-size);
-            @media @mobile {
+            @media @phone {
                 .btn-media;
                 margin: 20px 0;
             }
@@ -65,7 +65,7 @@
     } // .text-content {
     //     width: 48%;
     //     padding-right: 1%;
-    //     @media @mobile {
+    //     @media @phone {
     //         width: 100%;
     //         padding: 0 5%;
     //     }
