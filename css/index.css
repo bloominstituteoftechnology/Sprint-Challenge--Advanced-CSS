@@ -167,10 +167,17 @@ h5 {
   text-decoration: none;
 }
 .footer {
-  border: 3px solid orange;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  background-color: #e0e0e0;
+}
+.footer p {
+  font-size: 1.5rem;
+  align-self: center;
 }
 * {
   box-sizing: border-box;
@@ -237,6 +244,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin-top: 20px;
 }
 .container .content-sign .text-content {
   width: 50%;
@@ -254,6 +262,7 @@ html {
   font-size: 1.5rem;
 }
 .container .content-sign .text-content .btn {
+  margin-top: 20px;
   width: 40%;
   height: 50px;
   font-size: 1.6rem;
