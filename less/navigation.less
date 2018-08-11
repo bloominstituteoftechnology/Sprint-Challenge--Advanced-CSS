@@ -2,6 +2,7 @@
     .flexbox-row();
     position: fixed;
     width: @width-100percent;
+    height: 100px;
     background-color: @navigation-background;
 }
 .main-header{
@@ -9,10 +10,15 @@
     .padding-20px();
     width: @width-100percent;
     max-width: 800px;
+    nav{
+        width: 100%;
+        .flexbox-row();
+    }
     nav a{
         text-decoration: none;
         color:@shark;
-        margin: 0 15px;
+        margin: 0px 2%;
+        padding-top: 15px;
         font-size: 1rem;
     }
 }
