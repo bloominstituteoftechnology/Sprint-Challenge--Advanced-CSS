@@ -147,6 +147,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #e6e6e6;
 }
 nav h1 {
   font-size: 2.2rem;
