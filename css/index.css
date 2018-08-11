@@ -132,6 +132,9 @@ table {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -139,4 +142,52 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.container {
+  width: 880px;
+  margin: 0px auto;
+  background-color: red;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+header h1 {
+  display: inline-block;
+}
+header nav {
+  display: block;
+}
+.top-banner {
+  width: 100%;
+  height: auto;
+}
+.top-banner img {
+  width: 100%;
+  height: 200px;
+}
+.top-content {
+  background-color: purple;
+}
+.top-content h2 {
+  font-size: 2rem;
+}
+.top-content p {
+  font-size: 2rem;
+}
+.top-content-images {
+  background-color: orange;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.top-content-images img {
+  flex: 1;
+  height: 100px;
 }
