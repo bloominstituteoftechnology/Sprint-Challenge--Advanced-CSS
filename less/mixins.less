@@ -1,1 +1,18 @@
 // Mixins below variables
+.flex-column-align (@items) {
+    display: flex;
+    flex-direction: column;
+    align-items: @items;
+}
+
+.flex-row-just(@content) {
+    display: flex;
+    justify-content: @content;
+}
+
+.button-maker (@width, @height, @bg-color, @color) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @color;     
+}
