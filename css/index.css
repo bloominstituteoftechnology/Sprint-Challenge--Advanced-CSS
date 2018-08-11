@@ -1,1 +1,203 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.header-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 800px;
+  margin: auto;
+}
+.header-main h1 {
+  font-size: 2rem;
+  padding: 1%;
+}
+nav {
+  justify-content: center;
+}
+nav a {
+  text-decoration: none;
+  padding: 4px;
+}
+.main-header {
+  width: 800px;
+  margin: auto;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.closing p {
+  text-align: center;
+}
+.container {
+  width: 800px;
+  margin: auto;
+}
+.middle h1 {
+  margin-left: 8px;
+  margin-bottom: 1%;
+}
+.middle p {
+  margin-left: 8px;
+  margin-bottom: 2%;
+}
+#picture-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1%;
+}
+#picture-row img {
+  width: 250px;
+  height: 200px;
+  border-radius: 22px;
+  margin-bottom: 3%;
+}
+#picture-row img h1 {
+  margin-bottom: 1%;
+  padding: 1%;
+}
+.last-walk {
+  margin-top: 10%;
+  display: flex;
+}
