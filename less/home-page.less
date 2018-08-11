@@ -26,6 +26,22 @@
         margin: 20px;
         .flexmix(space-between; center;);
 
+        #img1{
+            @media @phone{
+                width: 90%;
+            }
+        }
+        #img2{
+            @media @phone{
+                display: none;
+            }
+        }
+        #img3{
+            @media @phone{
+                display: none;
+            }
+        }
+
         img{
             width: 30%;
             border-radius: 15px; 
@@ -43,16 +59,30 @@
         .bottomBorder();
         padding-bottom: 20px;
 
+        @media @phone{
+            flex-direction: column;
+        }
+
         button{
             .buttnMix(25%; 10px; 10px;);
             margin-top:15px;
+            @media @phone{
+                .buttnMix(100%; 10px; 10px;);
+                margin-bottom: 10px;
+            }
         }
 
         div{
            width: 45%; 
+            @media @phone{
+                width: 100%;
+            }
         }
         img{
             width: 45%;
+            @media @phone{
+                width: 100%;
+            }
         }
     }
 

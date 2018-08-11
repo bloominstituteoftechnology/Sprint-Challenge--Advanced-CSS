@@ -142,6 +142,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+  color: #22283B;
 }
 .container-header {
   width: 100%;
@@ -153,13 +154,17 @@ h5 {
   padding-bottom: 10px;
   border-bottom: 2px solid #e0e0e0;
 }
+.container-header nav {
+  width: 100%;
+}
 .container-header h1 {
   font-size: 4rem;
   padding: 20px 0px;
 }
 .container-header a {
   text-decoration: none;
-  padding: 5px 30px;
+  padding: 5px 4%;
+  color: #22283B;
 }
 footer {
   background-color: #f4f4f4;
@@ -203,6 +208,21 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  .container-content .image-row #img1 {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .container-content .image-row #img2 {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .container-content .image-row #img3 {
+    display: none;
+  }
+}
 .container-content .image-row img {
   width: 30%;
   border-radius: 15px;
@@ -219,17 +239,44 @@ footer {
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 20px;
 }
+@media (max-width:500px) {
+  .container-content .content-signup {
+    flex-direction: column;
+  }
+}
 .container-content .content-signup button {
   background-color: #22283B;
   width: 25%;
   padding: 10px 10px;
   color: white;
   border: none;
+  border-radius: 5px;
   margin-top: 15px;
+}
+@media (max-width:500px) {
+  .container-content .content-signup button {
+    background-color: #22283B;
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 }
 .container-content .content-signup div {
   width: 45%;
 }
+@media (max-width:500px) {
+  .container-content .content-signup div {
+    width: 100%;
+  }
+}
 .container-content .content-signup img {
   width: 45%;
+}
+@media (max-width:500px) {
+  .container-content .content-signup img {
+    width: 100%;
+  }
 }
