@@ -16,8 +16,15 @@ Answer: Desktop-first treats the desktop view as default, with mobile/tablet as 
 
 What does font-size: 62.5% in the html tag do for us when using rem units?
 
-Answer:
+Answer: This is a hack that sets the rem-to-pixel ratio to be 1:10, where 1rem = 10px (e.g., 1.2rem = 12px and so on..)
 
 How would you describe preprocessing to someone new to CSS?
 
+Answer: Preprocessing is writing CSS in a modular way and serves to make your code more DRY, allowing us coders to not          have to repeat ourselves. It makes your code easier to comprehend and facilitates communication between team            members. 
+
+        Moreover, it introduces variables and functions into CSS and serves as a segue into javascript. 
+
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Answer: My favorite concept is nesting and nesting-at because it allows CSS and HTML to visually mirror each other. 
+        The concept that gives me the most trouble, at the moment, is bundling mixins through namespaces. 
