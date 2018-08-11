@@ -17,7 +17,6 @@
     font-size: 1.8rem;
     text-align: center;
     border: 1px solid @button-border-color;
-    .hover-mixin();
 
     @media @phone{
         width: 95%;
@@ -26,18 +25,16 @@
     }
 }
 
-.hover-mixin() {
-    button {
-        &:hover { 
-            background-color: yellowgreen;
-            color: black;
-        }
+.hover-mixin-button() {
+    &:hover { 
+        background-color: orange;
+        color: black;
     }
+}
 
-    a {
-        &:hover {
-            background-color: yellow;
-            color: black;
-        }
+.hover-mixin-a() {
+    &:hover {
+        background-color: yellow;
+        color: black;
     }
 }
