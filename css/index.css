@@ -237,6 +237,7 @@ header h1 {
 }
 @media (max-width: 500px) {
   .container .content-lift .img-content {
+    padding: 0 5%;
     width: 100%;
   }
 }
