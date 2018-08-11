@@ -1,0 +1,34 @@
+header {
+    background-color: @accent-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 880px;
+        width: 100%;
+        color: @secondary-color;
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+
+            @media @phone {
+                width: 90%;
+                justify-content: space-around;
+            }
+
+            a {
+                text-decoration: none;
+                color: @secondary-color;
+            }
+        }
+    }
+}
