@@ -1,1 +1,315 @@
-/* Compile your LESS first! */
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center-spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 62.5%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+html h1,
+body h1 {
+  font-size: 3.5rem;
+  color: #22283b;
+}
+html h2,
+body h2 {
+  font-size: 2.3rem;
+  color: #22283b;
+}
+html p,
+body p {
+  font-size: 1.6rem;
+  color: #22283b;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+.nav-container .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.nav-container .navigation nav {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container .navigation nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+footer {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .main-header img {
+    height: 100px;
+  }
+}
+.main-header .bottom {
+  width: 96%;
+  margin: 15px auto;
+}
+.main-header .bottom p {
+  margin-top: 15px;
+}
+.middle-container {
+  display: flex;
+  flex-direction: column;
+}
+.middle-container .top-middle {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-container .top-middle img {
+  width: 31%;
+  height: 31%;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .middle-container .top-middle {
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-container .top-middle img {
+    width: 90%;
+  }
+  .middle-container .top-middle img:nth-of-type(2) {
+    display: none;
+  }
+  .middle-container .top-middle img:nth-of-type(3) {
+    display: none;
+  }
+}
+.middle-container .bottom-middle p {
+  margin-top: 15px;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 90px auto 20px auto;
+}
+@media (max-width: 500px) {
+  .bottom-container {
+    flex-direction: column;
+  }
+}
+.bottom-container .left-container {
+  width: 39.4%;
+}
+@media (max-width: 500px) {
+  .bottom-container .left-container {
+    width: 100%;
+  }
+}
+.bottom-container .left-container p {
+  margin-top: 20px;
+}
+.bottom-container .left-container .button {
+  font-size: 1.9rem;
+  color: white;
+  width: 80px;
+  height: 40px;
+  background-color: #031226;
+  border-radius: 5px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .bottom-container .left-container .button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.bottom-container .rigth-container {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .bottom-container .rigth-container {
+    width: 100%;
+  }
+}
+.bottom-container .rigth-container img {
+  width: 90%;
+  height: 80%;
+}
+@media (max-width: 500px) {
+  .bottom-container .rigth-container img {
+    width: 100%;
+  }
+}
