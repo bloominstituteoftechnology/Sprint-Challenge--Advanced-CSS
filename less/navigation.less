@@ -1,0 +1,41 @@
+
+.header{
+    background-color: @header-bg;
+    border-bottom: 1px solid @accent-color;
+    .display-flex(column, center);
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    h1{
+        font-size: 3.4rem;
+        color: @font-color;
+
+        @media @mobile {
+            font-size: 4.0rem;
+        }
+    }
+
+    nav{
+        .display-flex(row, space-between);
+        width: 35%;
+        padding-top: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        @media @mobile {
+            width: 80%;
+            font-size: 1.6rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: @font-color;
+            opacity: 0.6;
+        }
+
+        a:hover{
+            opacity: 1;
+        }
+    }
+}
