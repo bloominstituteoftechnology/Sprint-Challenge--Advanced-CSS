@@ -4,8 +4,14 @@
     max-width: 600px;
     margin: 0 auto;
     font-size: 1.2rem;
+    @media only screen and @phone {
+        font-size: 1.6rem;
+    }
     h2 {
         font-size: 2.4rem;
+        @media only screen and @phone {
+            font-size: 3.0rem;
+        }
     }
     section {
         margin: 2%;
@@ -20,7 +26,16 @@
         margin: 2%;
         img {
             .img-styler;
+            @media only screen and @phone {
+                width: 100%;
+            }
         }
+        .notMobile    {
+            @media only screen and @phone {
+                display: none;
+            }
+        }
+
     }
     .section-2    {
         padding-top: 20px;
@@ -33,14 +48,28 @@
         padding: 20px 10%;
         margin-bottom: 15px;
         border-bottom: 1px solid @border-color;
+        @media only screen and @phone {
+            flex-direction: column;
+        }
         .text    {
             width: 50%;
+            @media only screen and @phone {
+                width: 100%;
+            }
         }
         img {
             .img-styler(40%, 2%);
+            @media only screen and @phone {
+                width: 100%;
+            }
         }
         .button    {
             .button-creator;
+            margin-bottom: 10px;
+            @media only screen and @phone {
+                .button-creator(50px, 100%);
+                font-size: 1.6rem;
+            }
         }
     }
 }
