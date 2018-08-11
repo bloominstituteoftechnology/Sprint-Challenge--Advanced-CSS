@@ -1,0 +1,26 @@
+header {
+    background-color: @backgroundColor;
+    .flex(center, center, column);
+
+    h1 {
+        font-size: 4rem;
+        padding: 15px 0;
+    }
+
+    nav {
+        .flex(center);
+        width: 100%;
+        font-size: 1.6rem;
+        padding-bottom: 15px;
+
+        a{
+            text-decoration: none;
+            color: grey;
+            margin: 0 1%;
+            @media @phone {
+                margin: 0 3%;
+            }
+        }
+    }
+
+}

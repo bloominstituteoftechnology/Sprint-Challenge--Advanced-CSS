@@ -1,1 +1,94 @@
 // Home Content
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    font-size: 1.6rem;
+    margin: 0 auto;
+
+    .topImg {
+        width: 100%;
+        height: 240px;
+        margin-bottom: @marginBottom;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: @marginBottom;
+    }
+
+    p {
+        margin-bottom: @marginBottom;
+    }
+
+    .mainInfo {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1%;
+        @media @phone {
+
+            margin: 0 2%;
+
+            .midImg2 {
+                display: none;
+            }
+
+            .midImg3 {
+                display: none;
+            }
+        }
+
+        .midImgAll {
+            margin-bottom: @marginBottom;
+            height: 180px;
+            .flex(space-between);
+            @media @phone {
+                justify-content: center;
+                height: 300px;
+            }
+
+            .middleImg {
+                width: 30%;
+                border-radius: 15px;
+                @media @phone {
+                    width: 85%;
+                }
+
+            }
+        }
+    }
+
+    .bottomInfo {
+        padding: 40px 4% 80px 4%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid @borderColor;
+        border-bottom: 1px solid @borderColor;
+        @media @phone {
+            flex-direction: column;
+            padding: 40px 10% 80px 10%;
+        }
+
+        div {
+            padding-right: 5%;
+            @media @phone {
+                padding-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+
+    .button {
+        .btnMixin(blue, #0e0e3f, white);
+        width: 25%;
+        @media @phone {
+            width: 100%;
+        }
+
+        &:hover {
+            .btnMixin(#0e0e3f, white, #0e0e3f);
+        }
+    } 
+}

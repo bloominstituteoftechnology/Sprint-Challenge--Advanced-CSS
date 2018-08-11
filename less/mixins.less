@@ -1,1 +1,19 @@
 // Mixins below variables
+.flexMixin(@jc, @ai, @fd) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @fd;
+}
+
+.btnMixin(@border, @background, @text) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid @border;
+    border-radius: 5px;
+    background-color: @background;
+    color: @text;
+
+}
