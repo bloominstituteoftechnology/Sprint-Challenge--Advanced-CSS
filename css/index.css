@@ -140,3 +140,23 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+/* NAVIGATION STYLING!!! */
+.container .navigation {
+  text-align: center;
+  color: #4A5362;
+  margin-bottom: 1.5rem;
+}
+.container .navigation h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.container .navigation a {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.container .navigation a:hover {
+  color: white;
+  background: black;
+  border-radius: 25px;
+}
