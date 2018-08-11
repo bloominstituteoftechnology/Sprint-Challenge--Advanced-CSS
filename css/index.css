@@ -164,3 +164,67 @@ header nav a {
   color: grey;
   margin: 0 1%;
 }
+footer {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 40px 0;
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+.container .topImg {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+}
+.container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+.container p {
+  margin-bottom: 20px;
+}
+.container .mainInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1%;
+}
+.container .mainInfo .midImgAll {
+  display: flex;
+  margin-bottom: 20px;
+  height: 180px;
+  justify-content: space-between;
+}
+.container .mainInfo .midImgAll .middleImg {
+  width: 30%;
+  border-radius: 15px;
+}
+.container .bottomInfo {
+  padding: 40px 4% 80px 4%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+.container .bottomInfo div {
+  padding-right: 5%;
+}
+.container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  width: 25%;
+}
