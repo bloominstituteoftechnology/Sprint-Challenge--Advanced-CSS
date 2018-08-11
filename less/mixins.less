@@ -1,1 +1,47 @@
 // Mixins below variables
+.flexColumnCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexSpaceBetween() {
+  display: flex;
+  justify-content: space-between;
+}
+
+.generalMargin() {
+  margin: 30px 0;
+}
+
+.phoneGeneralMargin() {
+  margin: 30px;
+}
+
+.borderBottom() {
+  border-bottom: 2px solid @accent-color;
+}
+
+.containerWidthCentered() {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.buttonCreator(@padding, @backgroundColor, @textColor, @width, @borderRadius) {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  width: @width;
+  padding: @padding;
+  background-color: @backgroundColor;
+  color: @textColor;
+  border-radius: @borderRadius;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}

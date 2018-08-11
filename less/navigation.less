@@ -1,0 +1,23 @@
+header {
+  height: 100px;
+  .flexColumnCenter();
+  background-color: @main-color;
+  .borderBottom();
+
+  @media @phone {
+    height: 120px;
+  }
+
+  nav {
+    width: 20%;
+    margin-top: 20px;
+    .flexSpaceBetween();
+
+    @media @phone {
+      width: 80%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0 5px;
+    }
+  }
+}

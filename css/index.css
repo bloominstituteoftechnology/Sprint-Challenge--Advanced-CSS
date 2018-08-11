@@ -1,1 +1,321 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+    padding: 20px 0 0 0;
+  }
+}
+a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  padding: 0 5px;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.8rem;
+    padding: 0 0 20px 0;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  h2 {
+    margin: 30px;
+  }
+}
+p {
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  p {
+    margin: 30px;
+  }
+}
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #e0e0e0;
+}
+@media (max-width: 500px) {
+  header {
+    height: 120px;
+  }
+}
+header nav {
+  width: 20%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+}
+footer {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #e0e0e0;
+}
+@media (max-width: 500px) {
+  footer .footer-container {
+    flex-direction: column;
+  }
+}
+footer .footer-container section {
+  width: 40%;
+  margin: 30px 0;
+}
+@media (max-width: 500px) {
+  footer .footer-container section {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+footer .footer-container img {
+  width: 90%;
+}
+@media (max-width: 500px) {
+  footer .footer-container img {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0 50px 0;
+  }
+}
+footer .footer-container .astronaut-img {
+  display: flex;
+  align-items: center;
+}
+footer .footer-container .btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  width: 30%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+footer .footer-container .btn p {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  footer .footer-container .btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    width: 85%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+  footer .footer-container .btn p {
+    margin: 0;
+    padding: 0;
+  }
+}
+footer .copyright {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+footer .copyright p {
+  margin: 10px 0 0 0;
+  padding: 20px 0 50px 0;
+}
+main {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  border-bottom: 2px solid #e0e0e0;
+}
+main img {
+  display: block;
+}
+main .jumbotron {
+  width: 100%;
+}
+main .gallery {
+  display: flex;
+  justify-content: space-between;
+}
+main .gallery img {
+  width: 30%;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  main .gallery img:not(:first-child) {
+    display: none;
+  }
+  main .gallery img {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
