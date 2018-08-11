@@ -1,3 +1,16 @@
+@media only screen and (max-width: 500px) {
+  .media-mobile__nav {
+    display: flex;
+    flex-wrap: "";
+    flex-direction: column;
+    justify-content: "";
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
+  }
+}
 .btn-media {
   font-size: 1.6rem;
   width: 390px;
@@ -303,19 +316,19 @@ header nav:last-child {
   .home .img-content .img3 {
     display: none;
   }
-  .home .img-content .space {
-    width: 100%;
-    margin: 23.33px;
-  }
-  .home .img-content img {
-    border-radius: 10%;
-  }
 }
-.home hr {
+.home .img-content .space {
+  width: 100%;
+  margin: 23.33px;
+}
+.home .img-content img {
+  border-radius: 10%;
+}
+hr {
   border: none;
   border-top: 1px solid #22283b;
 }
-.home .content-section {
+.content-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: "";
@@ -328,17 +341,17 @@ header nav:last-child {
   margin-bottom: 5%;
 }
 @media only screen and (max-width: 500px) {
-  .home .content-section {
+  .content-section {
     padding: 0 2%;
   }
 }
-.home .repeat-section {
+.repeat-section {
   margin-top: 5%;
   width: 100%;
   padding-right: 0 1%;
 }
 @media only screen and (max-width: 500px) {
-  .home .repeat-section {
+  .repeat-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -346,16 +359,16 @@ header nav:last-child {
     align-items: center;
   }
 }
-.home .repeat-section .bottom {
+.repeat-section .bottom {
   align-content: center;
   width: 50%;
 }
 @media only screen and (max-width: 500px) {
-  .home .repeat-section .bottom {
+  .repeat-section .bottom {
     width: 80%;
   }
 }
-.home .repeat-section .btn {
+.repeat-section .btn {
   font-size: 1.6rem;
   width: 95px;
   height: 35px;
@@ -368,7 +381,7 @@ header nav:last-child {
   border: 1px solid teal;
 }
 @media only screen and (max-width: 500px) {
-  .home .repeat-section .btn {
+  .repeat-section .btn {
     font-size: 1.6rem;
     width: 390px;
     height: 35px;

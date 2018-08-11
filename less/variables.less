@@ -13,4 +13,12 @@
 
 
 //Media Queries
-@phone: ~"only screen and (max-width: 500px)";
+@mobile: ~"only screen and (max-width: 500px)";
+@tablet: ~"only screen and (max-width: 880px)";
+
+.media-mobile__nav  {
+
+  @media @mobile {
+    .flex-boxed(@flexdir:column);
+  }
+}
