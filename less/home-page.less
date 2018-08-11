@@ -65,6 +65,10 @@
             padding-top: 46px;
             padding-bottom: 99px;
             width: 96%;
+            @media @phone {
+                padding-top: 11px;
+                padding-bottom: 63px;
+            }
         }
     }
 
@@ -76,18 +80,33 @@
         justify-content: space-evenly;
         padding-top: 68px;
         padding-bottom: 43px;
+        @media @phone {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 52px;
+        }
 
         .text-content {
             width: 40%;
+            @media @phone {
+                width: 77%;
+            }
 
             .btn {
-                .btn-creator();
+                .btn-creator(100%);
                 margin-top: 28px;
             }
         }
 
         .space-walk {
             width: 40%;
+            @media @phone {
+                width: 77%;
+                padding-top: 18px;
+            }
 
             img {
                 border-radius: 8px;

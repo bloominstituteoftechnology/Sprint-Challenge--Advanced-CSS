@@ -1,12 +1,3 @@
-.btn-creator {
-  font-size: 2.3rem;
-  color: #f4f4f4;
-  background-color: #212529;
-  width: 27%;
-  padding: 15px 11px;
-  border-radius: 5px;
-  text-align: center;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,7 +164,7 @@ h3 {
 }
 @media (max-width: 500px) {
   h3 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 a {
@@ -320,6 +311,12 @@ footer p {
   padding-bottom: 99px;
   width: 96%;
 }
+@media (max-width: 500px) {
+  .home .lift-off-section .text-content2 {
+    padding-top: 11px;
+    padding-bottom: 63px;
+  }
+}
 .home .walk-section {
   max-width: 1118px;
   margin: 0 auto;
@@ -329,21 +326,42 @@ footer p {
   padding-top: 68px;
   padding-bottom: 43px;
 }
+@media (max-width: 500px) {
+  .home .walk-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 52px;
+  }
+}
 .home .walk-section .text-content {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .home .walk-section .text-content {
+    width: 77%;
+  }
 }
 .home .walk-section .text-content .btn {
   font-size: 2.3rem;
   color: #f4f4f4;
-  background-color: #212529;
-  width: 27%;
+  background-color: #262D3D;
+  width: 100%;
   padding: 15px 11px;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
   margin-top: 28px;
 }
 .home .walk-section .space-walk {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .home .walk-section .space-walk {
+    width: 77%;
+    padding-top: 18px;
+  }
 }
 .home .walk-section .space-walk img {
   border-radius: 8px;
