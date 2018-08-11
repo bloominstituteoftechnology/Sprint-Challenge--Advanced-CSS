@@ -1,8 +1,23 @@
 // Mixins below variables
 
-.flex(@dir, @just, @al) {
-    display: flex;
-    flex-direction: @dir;
-    justify-content: @just;
-    align-items: @al;
+.flex(@dir; @just; @al) {
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @just;
+  align-items: @al;
+}
+
+.navFonts(@size; @color) {
+  font-size: @size;
+  color: @color;
+  text-decoration-line: none;
+}
+
+.buttonDesign {
+  .flex(row; center; center);
+  padding: 8px 12px;
+  color: @accent-color;
+  border: 2px solid @accent-color;
+  border-radius: 5px;
+  background-color: @secondary-color;
 }

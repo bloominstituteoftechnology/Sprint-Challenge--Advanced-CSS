@@ -1,1 +1,75 @@
 // Home Content
+
+.container {
+  .flex(column; center; center);
+  width: 90%;
+  max-width: 880px;
+  margin: auto;
+
+  .homeHeaderPic {
+    width: 100%;
+  }
+
+  .homeLead {
+    padding: 15px;
+    .flex(column; space-evenly; flex-start);
+
+    .homeLeadTitle {
+      padding-bottom: 15px;
+    }
+
+    .homeLeadPara {
+      padding-bottom: 15px;
+    }
+
+    .homeLeadPicDiv {
+      .flex(row; space-between; center);
+    }
+
+    .homeLeadPic {
+      width: 30%;
+      border-radius: 10px;
+    }
+  }
+
+  .homeFollowup {
+    .flex(column; space-evenly; flex-start);
+    padding: 15px;
+
+    .homeFollowupTitle {
+      padding-bottom: 15px;
+    }
+
+    .homeFollowupPara {
+      padding-bottom: 15px;
+    }
+  }
+
+  .homeConc {
+    .flex(row; space-around; center);
+    border-top: 1px solid @accent-color;
+    border-bottom: 1px solid @accent-color;
+    padding: 25px;
+
+    .homeConcWords {
+      .flex(column; space-between; flex-start);
+      width: 45%;
+    }
+
+    .homeConcPic {
+      width: 40%;
+    }
+
+    .homeConcTitle {
+      padding-bottom: 15px;
+    }
+
+    .homeConcPara {
+      padding-bottom: 15px;
+    }
+
+    .homeConcBtn {
+      .buttonDesign;
+    }
+  }
+}
