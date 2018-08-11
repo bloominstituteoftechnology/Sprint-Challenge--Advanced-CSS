@@ -181,12 +181,12 @@ footer .footerText h2 {
   padding-bottom: 15px;
 }
 footer .footerText .button {
-  border: 1px solid white;
+  border: 1px solid #e0e0e0;
   width: 25%;
   padding: 7px;
-  background-color: #000057;
+  background-color: #22283B;
   font-size: 1rem;
-  color: white;
+  color: #f4f4f4;
   text-align: center;
   margin-top: 10px;
 }
@@ -223,6 +223,11 @@ footer .footerImg img {
 @media (max-width: 500px) {
   footer .footerImg {
     width: 83%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 40px;
   }
 }
 .trademark {
@@ -284,4 +289,9 @@ header h2 {
 .infoArea h2 {
   padding-bottom: 20px;
   font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .infoArea {
+    padding-bottom: 40px;
+  }
 }
