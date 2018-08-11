@@ -180,3 +180,15 @@ div.main-body p {
   padding: 0px 15px;
   line-height: 1.4;
 }
+div.main-body .image-block {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.main-body .image-block img {
+  width: 240px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
