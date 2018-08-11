@@ -5,6 +5,9 @@ With an adaptive website there are several different layouts targeted towards di
 
 ####Describe what it means to be mobile first vs desktop first.
 
+Mobile first means your focus is to build the core of the website first (those features that are high on the list of a mobile users needs) and progressively work your way up to a desktop version per the specifications. Desktop first means you work on the most complete design overall with every feature and function that's laid out in the design specification and then work your way down to mobile design and/or smaller resolutions.
+
+
 ####What does font-size: 62.5% in the html tag do for us when using rem units?
 
 ####How would you describe preprocessing to someone new to CSS?
