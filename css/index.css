@@ -11,6 +11,25 @@
     width: "";
   }
 }
+.btn-media {
+  font-size: 1.6rem;
+  width: 390px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #22283b;
+  text-align: center;
+  color: #f4f4f4;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid teal;
+}
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -194,6 +213,19 @@ header {
   max-width: "";
   width: "";
 }
+@media only screen and (max-width: 500px) {
+  header {
+    display: flex;
+    flex-wrap: "";
+    flex-direction: "";
+    justify-content: center;
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
+  }
+}
 header h1 {
   text-align: center;
 }
@@ -211,6 +243,12 @@ header nav {
   max-width: "";
   width: "";
   color: #22283b;
+}
+@media only screen and (max-width: 500px) {
+  header nav {
+    margin-top: 25px;
+    width: 80%;
+  }
 }
 header nav a {
   text-decoration: none;
@@ -263,6 +301,14 @@ header nav:last-child {
 .home .img-content .space img {
   border-radius: 10%;
 }
+@media only screen and (max-width: 500px) {
+  .home .img-content .space img :nth-child(2) {
+    display: none;
+  }
+  .home .img-content .space img:nth-last-child {
+    display: none;
+  }
+}
 .home hr {
   border: none;
   border-top: 1px solid #22283b;
@@ -284,9 +330,23 @@ header nav:last-child {
   width: 100%;
   padding-right: 0 1%;
 }
+@media only screen and (max-width: 500px) {
+  .home .repeat-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
 .home .repeat-section .bottom {
   align-content: center;
   width: 50%;
+}
+@media only screen and (max-width: 500px) {
+  .home .repeat-section .bottom {
+    width: 80%;
+  }
 }
 .home .repeat-section .btn {
   font-size: 1.6rem;
@@ -299,4 +359,19 @@ header nav:last-child {
   cursor: pointer;
   padding: 5px;
   border: 1px solid teal;
+}
+@media only screen and (max-width: 500px) {
+  .home .repeat-section .btn {
+    font-size: 1.6rem;
+    width: 390px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #22283b;
+    text-align: center;
+    color: #f4f4f4;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid teal;
+    margin: 20px 0;
+  }
 }
