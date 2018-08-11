@@ -163,3 +163,59 @@ ul li a {
   font-size: 1.2rem;
   color: gray;
 }
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.container img {
+  width: 100%;
+}
+.container .full-wide-text h2 {
+  font-size: 1.8rem;
+  padding: 10px;
+}
+.container .full-wide-text p {
+  padding: 10px 40px 10px 10px;
+  font-size: 1rem;
+}
+.container .image-row {
+  display: flex;
+  justify-content: space-around;
+}
+.container .image-row img {
+  width: 30%;
+  height: 200px;
+  border-radius: 20px;
+}
+.container .bottom-content {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+.container .bottom-content img {
+  padding: 10px;
+  border-radius: 20px;
+}
+.container .bottom-content .button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #444958;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  color: white;
+  border-radius: 5px;
+}
+.container .bottom-content .half-wide-text {
+  display: flex;
+  flex-direction: column;
+}
+.container .bottom-content .half-wide-text h3 {
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+.container .bottom-content .half-wide-text p {
+  font-size: 1rem;
+  padding: 10px 0;
+}
