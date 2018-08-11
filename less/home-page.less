@@ -4,6 +4,67 @@
     .element-sizing(@height: 110px);
     .element-spacing(@padding: 1.5%);
     .element-color(@bgColor: @topbarBG);
+    border-bottom: 0.5px solid gray;
 }
 
+.main-content {
+    h2 {
+        .element-spacing(@mTop: 3%, @mBottom: 3%);
+    }
 
+    img {
+        .flexbox-set(@fJustify:center, @fAItems:center);
+        .element-sizing(@mWidth: 880px, @width: 100%);
+        .element-spacing(@margin: 0 auto);
+    }
+}
+
+p {
+    .element-spacing(@mTop: 3%, @mBottom: 3%);
+}
+
+.extra-margin {
+    .element-spacing(@mBottom: 5%);
+}
+
+.images {
+    .row-images;
+    img {
+        // padding: 5px;
+        .element-sizing(@mWidth: 36%);
+        .element-spacing(@padding: 1.5%);
+        .element-shape(@borderRadius: 10%);
+    }
+}
+
+.bottom-content {
+    .flexbox-set(@fWrap: wrap, @fDir: row);
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    .left {
+        .flexbox-set(@fWrap: wrap);
+        .element-spacing(@mTop: 5%, @mRight: 5%);
+        .element-sizing(@mWidth: 45%);
+    }
+
+    .right {
+        .flexbox-set(@fWrap: wrap, @fJustify: flex-end);
+        .element-spacing(@mTop: 5%, @mRight: 5%);
+        .element-sizing(@mWidth: 45%, @height:250px);
+        img {
+            .element-shape(@borderRadius: 2%);
+        }
+    }
+}
+
+.button {
+    .button-prop;
+}
+
+footer {
+    .flexbox-set(@fJustify:center, @fAItems:center);
+    .element-color(@bgColor: @topbarBG);
+    .element-sizing(@width: 100%, @height: 80px);
+    .element-spacing(@mTop: 3%, @padding: 0);   
+}
