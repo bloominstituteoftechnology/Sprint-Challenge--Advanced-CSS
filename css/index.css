@@ -176,12 +176,16 @@ div.main-body h2 {
   font-size: 2rem;
   padding: 15px;
 }
+div.main-body h3 {
+  font-size: 1.75rem;
+  padding: 15px;
+}
 div.main-body p {
   padding: 0px 15px;
   line-height: 1.4;
 }
 div.main-body .image-block {
-  padding: 15px;
+  padding: 15px 15px 35px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
