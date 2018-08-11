@@ -61,15 +61,48 @@
 
 .bottom-content {
     display: flex;
+    margin-bottom: 45px;
 
     .bottom-center-container {
-        flex: 1;
-        background-color: orange;
-        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding-top: 50px;
+        padding-left: 64px;
+
+        h2 {
+            font-size: 2.8rem;
+        }
+
+        p {
+            font-size: @font-size-3;
+            margin-top: 13px;
+            line-height: 24px;
+            margin-right: 6px;
+            padding-right: 10px;
+        }
+
+        a {
+            height: 38px;
+            width: 80px;
+            margin-top: 17px;
+            margin-bottom: 20px;
+            background-color: #232839;
+            border-radius: 4px;
+            text-align: center;
+            padding: 11px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            border: 1px solid #3681F3;
+        }
     }
 
     img {
-        flex: 1;
-        margin: 20px;
+        height: 242px;
+        width: 323px;
+        margin-right: 62px;
+        margin-top: 48px;
+        border-radius: 4px;
     }
 }

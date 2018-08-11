@@ -182,15 +182,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: purple;
+  background-color: #f4f4f4;
   width: 100%;
   height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 footer p {
-  background-color: red;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 2rem;
+  margin-top: 25px;
+  margin-bottom: 37px;
+  font-size: 1.6rem;
 }
 .top-banner {
   width: 100%;
@@ -243,13 +244,43 @@ footer p {
 }
 .bottom-content {
   display: flex;
+  margin-bottom: 45px;
 }
 .bottom-content .bottom-center-container {
-  flex: 1;
-  background-color: orange;
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding-top: 50px;
+  padding-left: 64px;
+}
+.bottom-content .bottom-center-container h2 {
+  font-size: 2.8rem;
+}
+.bottom-content .bottom-center-container p {
+  font-size: 1.6rem;
+  margin-top: 13px;
+  line-height: 24px;
+  margin-right: 6px;
+  padding-right: 10px;
+}
+.bottom-content .bottom-center-container a {
+  height: 38px;
+  width: 80px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  background-color: #232839;
+  border-radius: 4px;
+  text-align: center;
+  padding: 11px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  border: 1px solid #3681F3;
 }
 .bottom-content img {
-  flex: 1;
-  margin: 20px;
+  height: 242px;
+  width: 323px;
+  margin-right: 62px;
+  margin-top: 48px;
+  border-radius: 4px;
 }
