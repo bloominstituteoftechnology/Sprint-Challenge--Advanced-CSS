@@ -2,24 +2,33 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 25px 0;
+    padding: 25px 0 10px 0;
     border-bottom: 2px solid @border;
+    background: @head-foot-background;
 
     h1 {
         color:@title-color;
-        font-size:3.2rem;
     }
 
     nav {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         justify-content: space-between;
+        padding: 15px 0 5px 0;
+        width: 50%;
 
         a {
             text-decoration:none;
             color:@title-color;
             font-size:1.6rem;
+            
+            &:hover{
+                color:rgb(252,187,88);
+                cursor:pointer;
+            }
         }
     }
 }
