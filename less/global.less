@@ -2,7 +2,7 @@
 @topbarBG: lightgray;
 @h1: 3.5rem;
 @h2: 2.5rem;
-@p: 1.4rem;
+@p: 1.2rem;
 
 * {
   box-sizing: border-box;
@@ -29,9 +29,9 @@ p{
 }
 
 .container{
-
-  width: 100%;
-  max-width: 800px;
+  .flexbox-set(@fJustify:center, @fAItems:center, @fDir:column);
+  .element-sizing(@mWidth: 880px);
+  .element-spacing(@margin:0 auto);
 }
 
 .flex-set(@justify:"", @margin:"", @marginTop:"", @maxWidth:"", @alignItems:"", @flexDir:"", @padding:"", @width:"", @height:""){
@@ -48,17 +48,18 @@ p{
 }
 
 // FIX THE VARIABLES HERE AND REMOVE FLEX SET AFTER MODIFYING IMPLEMENTATION
-.flexbox-set(@justify:"", @margin:"", @marginTop:"", @maxWidth:"", @alignItems:"", @flexDir:"", @padding:"", @width:"", @height:""){
-  display: flex;
-  flex-direction: @fDir;
-  flex-flow: @fFlow;
-  flex-grow: @fGrow;
-  flex-wrap: @fWrap;
-  justify-content: @fJustify;
-  align-items: @fAItems;
-  align-self: @fASelf;
-  align-content: @fAContent;
-  order: @fOrder;
+.flexbox-set(@fDir:"", @fFlow:"", @fGrow:"", @fWrap:"", @fJustify:"", 
+  @fAItems:"", @fASelf:"", @fAContent:"", @fOrder:""){
+    display: flex;
+    flex-direction: @fDir;
+    flex-flow: @fFlow;
+    flex-grow: @fGrow;
+    flex-wrap: @fWrap;
+    justify-content: @fJustify;
+    align-items: @fAItems;
+    align-self: @fASelf;
+    align-content: @fAContent;
+    order: @fOrder;
 }
 
 .element-color(@bgColor:"", @color:""){
@@ -71,17 +72,18 @@ p{
   border-radius: @borderRadius;
 }
 
-.element-spacing(@margin:"", @mTop:"", @mBottom:"", @mRight:"", @mLeft:"", @padding:"", @pTop:"", @pBottom:"", @pLeft:"", @pRight:""){
-  margin: @margin;
-  margin-top: @mTop;
-  margin-bottom: @mBottom;
-  margin-left: @mLeft;
-  margin-right: @mRight;
-  padding: @padding;
-  padding-top: @pTop;
-  padding-bottom: @pBottom;
-  padding-left: @pLeft;
-  padding-right: @pRight;
+.element-spacing(@margin:"", @mTop:"", @mBottom:"", @mRight:"", @mLeft:"", 
+  @padding:"", @pTop:"", @pBottom:"", @pLeft:"", @pRight:""){
+    margin: @margin;
+    margin-top: @mTop;
+    margin-bottom: @mBottom;
+    margin-left: @mLeft;
+    margin-right: @mRight;
+    padding: @padding;
+    padding-top: @pTop;
+    padding-bottom: @pBottom;
+    padding-left: @pLeft;
+    padding-right: @pRight;
 }
 
 .element-sizing(@mWidth:"", @width:"", @height:"", @mHeight:""){
