@@ -143,3 +143,76 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.Main {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.Main2 {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+}
+header h1 {
+  font-size: 3rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  margin-top: 10px;
+  width: 300px;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.Main2 .large-img {
+  width: 800px;
+}
+.Main2 .Sec1 {
+  background-color: red;
+  width: 800px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Main2 .Sec1 h2 {
+  font-size: 2rem;
+}
+.Main2 .Sec1 p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.Main2 .Sec1 section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main2 .Sec1 section img {
+  width: 250px;
+  border-radius: 20px;
+}

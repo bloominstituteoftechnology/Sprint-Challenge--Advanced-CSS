@@ -1,1 +1,59 @@
 // Home Content
+
+
+header {
+    .flex(column,center,center);
+    width: 1000px;
+    background-color: lightgray;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        .flex(row, space-between,center);
+        background-color: green;
+        margin-top: 10px;
+        width:300px;
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.Main2 {
+
+    .large-img {
+        width:800px;
+    }
+
+    .Sec1 {
+        background-color: red;
+        width:800px;
+        padding: 10px 10px;
+        .flex(column,center,space-between);
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            padding-top: 10px;
+        }
+
+        section {
+            .flex(row,space-between,center);
+            img {
+                width:250px;
+                border-radius: 20px;
+            }
+        }
+
+    }
+}
