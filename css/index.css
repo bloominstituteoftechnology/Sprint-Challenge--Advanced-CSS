@@ -140,3 +140,21 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.header {
+  border: 3px solid blue;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.footer {
+  border: 3px solid orange;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container {
+  border: 3px solid red;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
