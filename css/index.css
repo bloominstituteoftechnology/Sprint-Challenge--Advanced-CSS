@@ -188,7 +188,7 @@ h5 {
   font-size: 1.6rem;
 }
 #navigation li {
-  padding: 0 5%;
+  padding: 0 2%;
   margin: 2% 0;
 }
 #container {
@@ -202,7 +202,6 @@ header h1 {
 }
 header p {
   width: 90%;
-  padding: 1% ;
   margin: 1%;
   font-size: 1.6rem;
 }
@@ -211,7 +210,7 @@ header img {
   margin: 2% 0;
 }
 #middleWrap {
-  margin: 1%;
+  margin: 3% 0 7% 0;
 }
 #middleWrap #imageWrap {
   display: flex;
@@ -226,11 +225,12 @@ header img {
   margin: 2% 0;
 }
 #middleWrap h1 {
+  margin: 1%;
   font-size: 3rem;
   color: #444958;
 }
 #middleWrap p {
-  margin: 2% 0;
+  margin: 1%;
   font-size: 1.6rem;
 }
 #walking {
@@ -238,13 +238,15 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 5% 0 0 0;
+  border-top: 2px solid lightgray;
 }
 #walking #bottomWrap {
-  width: 100%;
-  padding: 0 0 0 0;
+  width: 50%;
+  padding: 0 4%;
 }
 #walking img {
-  width: 30%;
+  width: 40%;
 }
 #walking h1 {
   width: 100%;
@@ -252,8 +254,12 @@ header img {
   color: #444958;
 }
 #walking p {
+  margin-top: 5%;
   width: 100%;
   font-size: 1.6rem;
+}
+#walking button {
+  margin-top: 5%;
 }
 footer {
   height: 100px;
