@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
 }
+.theme {
+  color: #444958;
+  background-color: whitesmoke;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -155,11 +159,12 @@ p {
   font-size: 2rem;
 }
 .main-header {
+  color: #444958;
+  background-color: whitesmoke;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: whitesmoke;
   border-bottom: 1px solid lightgray;
   padding: 10px;
 }
@@ -185,10 +190,9 @@ footer {
   justify-content: center;
   align-items: center;
   color: #444958;
-  background-color: #444958;
+  background-color: whitesmoke;
   width: 100%;
   margin: 0 auto;
-  background-color: whitesmoke;
   border-top: 1px solid lightgray;
   padding: 10px;
   height: 85px;
@@ -213,16 +217,31 @@ footer {
   width: 100%;
   margin: 20px 0;
 }
-.main-content .liftoff-imgs img {
+.main-content .liftoff-imgs .img {
   border-radius: 10px;
   width: 275px;
   height: 183px;
 }
-.main-content .main-text-bottom {
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img1 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img3 {
+    display: none;
+  }
+}
+.main-text-bottom {
   padding: 12px;
   margin-bottom: 50px;
 }
-.main-content .main-text-bottom h2 {
+.main-text-bottom h2 {
   padding: 5px;
   margin-bottom: 5px;
 }
@@ -233,9 +252,49 @@ footer {
   justify-content: space-around;
   padding: 70px 25px;
 }
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .bottom-content .bottom-text {
   width: 40%;
 }
+.bottom-content .bottom-text .btn {
+  color: whitesmoke;
+  background-color: #22283a;
+  font-size: 1.6rem;
+  padding: 5px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #1770da;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text .btn {
+    width: 100%;
+  }
+}
+.bottom-content .bottom-text .btn:hover {
+  color: #22283a;
+  background-color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
 .bottom-content .bottom-img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+  }
 }

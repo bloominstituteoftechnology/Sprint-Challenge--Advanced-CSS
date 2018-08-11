@@ -4,3 +4,29 @@
     justify-content: center;
     align-items: center;
 }
+
+.theme {
+    color: @theme;
+    background-color: whitesmoke;
+}
+.make-button() {
+    color:whitesmoke;
+    background-color: #22283a;
+    font-size: 1.6rem;
+    padding: 5px;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #1770da;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media @phone {
+        width: 100%;
+    }
+    
+    &:hover {
+      color: #22283a;
+      background-color: whitesmoke;
+    }
+  }
