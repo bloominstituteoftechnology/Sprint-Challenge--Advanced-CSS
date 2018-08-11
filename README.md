@@ -15,15 +15,15 @@ You will be building a website from scratch using all your responsive web design
 ## Task 2: Comprehension Questions
 Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit.  Open up the [Answers.md](Answers.md) file and record your responses there.
 
-1. What is the difference between an adaptive website and a fully responsive website?
+[x] 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+[x] 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+[x] 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
 
-4. How would you describe preprocessing to someone new to CSS?
+[x] 4. How would you describe preprocessing to someone new to CSS?
 
-5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
+[x] 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
 
 ## Task 3: Set up your preprocessor
 * [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
