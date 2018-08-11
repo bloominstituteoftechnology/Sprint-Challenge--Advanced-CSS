@@ -142,7 +142,24 @@ h5 {
 }
 header {
   width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header h1 {
+  color: #22283B;
   font-size: 2.5rem;
+}
+header nav {
+  padding: 14px 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #22283B;
+  font-size: 1rem;
+  padding: 0px 14px;
 }
