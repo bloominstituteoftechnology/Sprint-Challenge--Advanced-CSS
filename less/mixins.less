@@ -1,1 +1,45 @@
 // Mixins below variables
+.flex-header(@maxWidth: 100%, @headerWidth: 100%){
+    display: flex;
+    max-width: @maxWidth;
+    width: @headerWidth;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px dashed gray;
+    padding: 10px;
+
+}
+
+.flex-nav(@maxWidth: 640px, @headerWidth: 100%, @flexDirectionNav: row){
+    display: flex;
+    flex-direction: @flexDirectionNav;
+    max-width: @maxWidth;
+    width: @headerWidth;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.flex-navItem(@fontSizeNav: 1.4rem) {
+    display: flex;
+    width: 80px;
+    height: 40px;
+    font-size: @fontSizeNav;
+    /* font-size: 1.4rem; */
+    align-self: center;
+    padding-top: 10px;
+    text-decoration: none;
+
+}
+
+.button-maker() {
+    font-size: 1.8rem;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @button-bg;
+    color: white;
+    border-radius: 15px;
+}
