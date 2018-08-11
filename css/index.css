@@ -17,9 +17,9 @@
 .btn {
   border: 2px solid cadetblue;
   font-size: 1.4rem;
-  background: #111111;
-  border-radius: 5%;
-  color: white;
+  background: #22283B;
+  border-radius: 5px;
+  color: #f4f4f4;
   text-align: center;
   padding: 2% 3%;
   width: 110px;
@@ -226,7 +226,7 @@ footer p {
   padding: 2%;
 }
 .content-section .text-section h2 {
-  color: #0e3974;
+  color: #22283B;
 }
 .content-section .text-section p {
   font-size: 1.5rem;
