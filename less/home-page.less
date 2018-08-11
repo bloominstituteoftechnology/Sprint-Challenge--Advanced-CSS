@@ -68,12 +68,14 @@ html {
 .sign-up-section {
   display: flex;
   justify-content: space-around;
+  border-bottom: 2px solid @accent-color;
+  padding-bottom: 45px;
   margin: 25px 0;
 
   .sign-up-text {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 27%;
 
     h2 {
       font-size: 3rem;
@@ -98,5 +100,21 @@ html {
     img {
       border-radius: 10px;
     }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: @accent-color;
+  border: 2px solid @accent-color;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  width: 100%;
+
+  p {
+    font-size: 1.6rem;
   }
 }

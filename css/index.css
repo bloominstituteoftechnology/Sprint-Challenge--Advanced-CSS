@@ -222,12 +222,14 @@ html {
 .sign-up-section {
   display: flex;
   justify-content: space-around;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 45px;
   margin: 25px 0;
 }
 .sign-up-section .sign-up-text {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 27%;
 }
 .sign-up-section .sign-up-text h2 {
   font-size: 3rem;
@@ -261,4 +263,18 @@ html {
 }
 .sign-up-section .sign-up-img img {
   border-radius: 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  width: 100%;
+}
+footer p {
+  font-size: 1.6rem;
 }
