@@ -175,7 +175,7 @@ footer {
 }
 footer .footerText {
   width: 40%;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 footer .footerText h2 {
   font-size: 1.7rem;
@@ -210,10 +210,10 @@ footer .footerText .button {
   }
 }
 footer .footerImg {
-  width: 37%;
+  width: 45%;
 }
 footer .footerImg img {
-  height: 210px;
+  height: 260px;
   width: 100%;
   border-radius: 5px;
 }
@@ -234,6 +234,7 @@ footer .footerImg img {
 }
 .hrFooter {
   margin-top: 50px;
+  color: white;
 }
 .trademark {
   display: flex;
@@ -243,6 +244,7 @@ footer .footerImg img {
   border-radius: 5px;
   padding: 40px 0%;
   background-color: #ececec;
+  font-weight: bold;
 }
 .container {
   max-width: 800px;
@@ -261,7 +263,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 header h2 {
   font-size: 1.7rem;
