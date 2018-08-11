@@ -1,1 +1,17 @@
 // Mixins below variables
+.bottomBorder{
+    border-bottom: 1px solid @accent-color;
+}
+
+.flexmix(@jc:center; @ai: center;){
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai; 
+}
+
+.buttnMix(@buttnWidth:100%; @tbPad; @lrPad;){
+    background-color: @secondary-color;
+    width: @buttnWidth;
+    padding: @tbPad @lrPad;
+}
+
