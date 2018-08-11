@@ -203,3 +203,44 @@ h5 {
 .main-header .bottom p {
   margin-top: 15px;
 }
+.middle-container {
+  display: flex;
+  flex-direction: column;
+}
+.middle-container .top-middle {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-container .top-middle img {
+  width: 31%;
+  height: 31%;
+  border-radius: 10px;
+}
+.middle-container .bottom-middle p {
+  margin-top: 15px;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 90px auto 20px auto;
+}
+.bottom-container .left-container {
+  width: 39.4%;
+}
+.bottom-container .left-container p {
+  margin-top: 20px;
+}
+.bottom-container .rigth-container {
+  width: 45%;
+}
+.bottom-container .rigth-container img {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
