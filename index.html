@@ -15,18 +15,19 @@
 </head>
 
 <body>
-  <div class="container home">
     <header>
-      <h1 class="spacewalkers">SpaceWalkers</h1>
-        <nav>
+      <nav class="outer-nav">
+      <h1>SpaceWalkers</h1>
+        <div class="inner-nav">
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
           <a href="#">Sign In</a>
-        </nav>
+        </div>
+      </nav>
     </header>
-
+  <div class="container home">
       <section class="earth">
           <img src="img/main-header.jpg" alt="Space view of Earth">
       </section>    
@@ -38,13 +39,13 @@
           <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
         </div>
 
-        <div class="lift-off-img">
+        <div class="lift-off-img" id="rocket">
           <img src="img/blast.jpg" alt="Rocket blasting off">
         </div>
-        <div class="lift-off-img">
+        <div class="lift-off-img" id="apogee">
           <img src="img/sky.jpg" alt="Space sky image">
         </div>
-        <div class="lift-off-img">
+        <div class="lift-off-img" id="launchpad">
           <img src="img/launch.jpg" alt="Launching rocket">
         </div>
       </section>

@@ -21,17 +21,30 @@
 
         .lift-off-text {
             width: 100%;
+            padding-bottom: 10px;
         }
 
         .lift-off-img {
             display: inline-flex;
-            // flex-direction: row;
             align-content: center;
             width: 30%;
             height: 175px;
             
             img {
                 border-radius: 10px;
+            }
+        }
+
+        @media @phone {
+            #rocket {
+                width: 95%;
+                height: auto;
+                justify-content: center;
+                padding-top: 25px;
+            }
+
+            #apogee, #launchpad {
+                display: none;
             }
         }
     }
@@ -44,6 +57,10 @@
 
         h2 {
             padding-bottom: 10px;
+        }
+
+        @media @phone {
+            border-bottom: 1px solid @border;
         }
     }
 
@@ -65,8 +82,23 @@
             width: 49%;
     
           img {
-            border-radius: 3px;
+            border-radius: 5px;
           }
+        }
+
+        @media @phone {
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5% 0 5%;
+
+            .space-walk-text {
+                width: 100%;
+            }
+
+            .space-walk-img {
+                width: 100%;
+                padding-top: 20px;
+            }
         }
     }
 }
