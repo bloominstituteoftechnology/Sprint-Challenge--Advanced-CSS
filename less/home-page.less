@@ -7,6 +7,7 @@ html {
 header {
     width:100%;
     background-color:@main-color;
+    border-bottom:1px solid @accent-color;
     .flex-jc-ai-center(column);
 
     h1 {
@@ -21,8 +22,9 @@ header {
     width:100%;
     max-width:880px;
     margin: 0 auto;
+    border-bottom:1px solid @accent-color;
     .flex-jc-ai-center(column);
-
+   
     .jumbo-top-img {
         width:100%;
         height:auto;
@@ -33,7 +35,12 @@ header {
         display:flex;
         flex-wrap:wrap;
         justify-content: space-between;
-
+        @media @phone {
+            padding:0px 15px;
+        }
+    
+      
+       
         
         h2 {
             font-size:@h2-font-size;
@@ -49,17 +56,45 @@ header {
 
         img {
             width:32%;
-            height:auto;
             border-radius:25px;
             padding-left:10px;
             padding-bottom:10px;
+
+            @media @phone {
+                width:100%;
+            }
         }
+        
+        .top-img-one {
+           @media @phone {
+               width:90%;
+           }
+        }
+
+            .top-img-two {
+               @media @phone {
+                   display:none;
+               }
+            }
+
+            .top-img-three {
+                @media @phone {
+                    display:none;
+                }
+            }
+        
     }
 
     .middle-container {
         width: 100%;
         margin-top:30px;
         margin-bottom:30px;
+        border-bottom:1px solid @accent-color;
+        
+        @media @phone {
+            padding:0px 15px;
+        }
+    
 
         h2 {
             font-size:@h2-font-size;
@@ -76,6 +111,12 @@ header {
         width:80%;
         display:flex;
         justify-content: space-around;
+        border-bottom:1px solid @accent-color;
+        @media @phone {
+            padding:0px 15px;
+            flex-direction:column;
+        }
+    
        
 
         h2 {
@@ -92,10 +133,19 @@ header {
         img {
             width:45%;
             border-radius:6px;
+            margin-bottom:15px;
+            @media @phone {
+                width:100%;
+            }
         }
 
         .button {
             .btn-creator;
+            @media @phone {
+                width:100%;
+                margin-bottom:20px;
+
+            }
         }
     }
 

@@ -8,6 +8,8 @@ What does font-size: 62.5% in the html tag do for us when using rem units?
 -This helps the font-size become more responsive when it comes to screen size. It makes 10px = 1rem. So in turn by setting the fonts to rem if we are on a mobile phone or a desktop browser it would adjust the font size to best fit the setting and screen size.
 
 How would you describe preprocessing to someone new to CSS?
+-Preprocessing is a concept that helps you create more effiecnt and reusable CSS. You are able to better visualize the speceficity and structure of your styling.
 
 
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+-My favorite concept is that we are able to have variable and mixins, i still have a little trouble when it comes to setting the parametric mixins and the nesting but the more practice the better i get.
