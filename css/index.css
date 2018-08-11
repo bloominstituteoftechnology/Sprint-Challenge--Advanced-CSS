@@ -140,3 +140,29 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.header {
+  width: 100%;
+  background-color: whitesmoke;
+}
+.header .header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 10px;
+}
+.header .header-container .header__h1 {
+  font-size: 2.8rem;
+}
+.header .header-container .header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px auto;
+}
+.header .header-container .nav___a {
+  text-decoration: none;
+  color: black;
+}
