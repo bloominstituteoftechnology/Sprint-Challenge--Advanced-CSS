@@ -1,6 +1,6 @@
 // Mixins below variables
 
-@headerfooter-color: blue;
+@headerfooter-color: #e0e0e0;
 
 .button-c(@bgColor) {
     border: @bgColor 4px solid;
@@ -14,4 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media @phone {
+        width: 200px;
+        justify-content: center;
+
+    }
 }

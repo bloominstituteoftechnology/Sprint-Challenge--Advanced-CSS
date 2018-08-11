@@ -6,6 +6,10 @@
     margin: 0 auto;
     font-size: 62.5%;
 
+    @media @phone {
+        padding: 10px;
+}    
+
     h2 {
         font-size: 2rem;
     }
@@ -15,34 +19,58 @@
         padding: 5px;
     }
 
-
     .walk-section {
         padding-top: 50px;
         display: flex;
         width: 80%;
         justify-content: center;
         margin: 0 auto;
+
+        @media @phone {
+            border: 1px solid green;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     
         .text-section {
             width: 50%;
+
+            @media @phone {
+                width: 100%;
+            }            
         }
     
         .img-content {
             width: 49%;
+        }
     
             img {
                 height: 200px;
                 width: 200px;
+
+                @media @phone {
+                    width: 250px;
+                    justify-content: center;
+                }                
             }
     
         }
     
         .button {
-            display: inline-flex;
-            .button-c(darkcyan)
+            display: flex;
+            justify-content: center;
+            .button-c(darkcyan);
+
+            @media @phone {
+                width: 90%;
+            }   
+
         }
     }
-}
+
 
 .header-image {
     padding-top: 78px;
@@ -64,12 +92,33 @@
     margin: 0 auto;
     margin-bottom: 20px;
 
+  
+
     .top-section-images {
         max-width: 100%;
         display: flex;
         height: 180px;
         justify-content: space-between;
         align-items: center;
+        
+        .disappearing-mobile-images {
+            @media @phone {
+                display: none;
+            }    
+        }
+
+        @media @phone {
+            border: 1px solid red;
+            
+            // img {
+            //     width: 200px;
+            //     border: 1px solid blue;
+
+            // }
+         
+        }
+    
+    }
 
         img {
             margin-top: 10px;
@@ -77,11 +126,20 @@
             max-width: 30%;
             flex-wrap: nowrap;
             border-radius: 10%;
-         
+
+               
+               @media @phone {
+                border: 1px solid green;
+               
+
+                img {
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid blue;
+                    max-width: 90%;
         }
     }
- 
-}
+        }
 
 .text-content {
     margin-top: 15px;
@@ -94,4 +152,4 @@
         justify-content: flex-start;
     }
 }
-
+    }
