@@ -7,10 +7,11 @@
 	}
 .banner {
 	width:100%;
-
+    
 		img {
 		  width:100%;
 		  border-top: 2px solid @accent-color;
+		  @media @mobile {height: 150px;}
 		}
 	}
     
@@ -56,11 +57,7 @@
 	          width:60%;
 	          margin-right:20px;
 	          @media @mobile {width:100%}
-              p {
-                 line-height:1.2;
-                 font-size:1.4rem
-              }
-
+              
               .btn {
                  margin-top:35px;
                 .button-creator(@secondary-color, @btn-large-font);

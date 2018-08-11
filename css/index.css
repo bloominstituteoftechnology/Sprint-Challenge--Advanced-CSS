@@ -162,6 +162,7 @@ p {
   p {
     line-height: 1.1;
     font-size: 1.2rem;
+    text-align: justify;
   }
 }
 .container {
@@ -247,6 +248,11 @@ p {
   width: 100%;
   border-top: 2px solid #e0e0e0;
 }
+@media (max-width: 500px) {
+  .home .banner img {
+    height: 150px;
+  }
+}
 .home .content {
   padding: 30px 20px;
 }
@@ -304,10 +310,6 @@ p {
   .home .signup .text-content-signup {
     width: 100%;
   }
-}
-.home .signup .text-content-signup p {
-  line-height: 1.2;
-  font-size: 1.4rem;
 }
 .home .signup .text-content-signup .btn {
   margin-top: 35px;
