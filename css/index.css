@@ -149,6 +149,17 @@ nav a {
   text-decoration: none;
   color: #22283B;
 }
+footer {
+  width: 100%;
+  font-size: 1.7rem;
+  background-color: #f4f4f4;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 25px;
+}
 html {
   font-size: 62.5%;
   color: #22283B;
@@ -157,11 +168,83 @@ header {
   width: 100%;
   background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 header h1 {
   font-size: 3.4rem;
   padding: 15px;
+}
+.main-container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .jumbo-top-img {
+  width: 100%;
+  height: auto;
+}
+.main-container .top-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-container .top-container h2 {
+  font-size: 3.2rem;
+  margin: 15px 0px;
+}
+.main-container .top-container p {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+.main-container .top-container img {
+  width: 32%;
+  height: auto;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.main-container .middle-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-container .middle-container h2 {
+  font-size: 3.2rem;
+}
+.main-container .middle-container p {
+  font-size: 1.7rem;
+  margin: 25px 0px;
+}
+.main-container .bottom-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .bottom-container h2 {
+  font-size: 3.2rem;
+}
+.main-container .bottom-container p {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.main-container .bottom-container img {
+  width: 45%;
+  border-radius: 6px;
+}
+.main-container .bottom-container .button {
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  padding: 15px;
+  color: white;
+  background-color: #22283B;
 }
