@@ -2,18 +2,20 @@
 html{
     body{
 footer{
-display:flex;
-flex-direction:row;
-justify-content:space-around;
+    .flex-row;
 width:90%;
 color:@secondary-color;
 font-size:1.8rem;
 margin-top:1rem;
 margin-bottom:1rem;
-border-top:1px solid  #e0e0e0;
-border-bottom:1px solid  #e0e0e0;
+border-top:1px solid @accent-color;
+border-bottom:1px solid  @accent-color;
 padding-bottom:2rem;
 padding-top:2rem;
+
+@media(@mobile){
+    flex-wrap:wrap;
+}
 
 
 
@@ -27,18 +29,16 @@ img{
     height: 199px;
     padding-left: 1rem;
     margin-top: 1.4rem;
+    @media(@mobile){width:100%;}
 }
 
 button{
-    display:block;
-    margin:auto;
-    margin-top:1.2rem;
-    font-size:1.8rem;
-    color:white;
-    background: rgb(42, 12, 90);
-    padding:1.0rem;
+
+    .button-maker(white,rgb(42, 12, 90),1.8rem);
+
     
 }
+
 
 
 }

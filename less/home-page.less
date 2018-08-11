@@ -11,9 +11,7 @@ html{
         align-items:center;
 
 
-        main{display:flex;
-            justify-content:center;
-            align-items:center;
+        main{.flex-centered;
             flex-wrap:wrap;
             color:@secondary-color;
             width:55%;
@@ -24,7 +22,28 @@ html{
         img:first-child{
             width:100%;
             border-radius:0%;
+
         }
+        
+        img:nth-child(2){
+            @media(@mobile){
+                width:100%;
+            }
+        }
+
+        img:nth-child(3){
+            @media(@mobile){
+                display:none;
+            }
+        }
+
+        img:nth-child(4){
+            @media(@mobile){
+                display:none;
+            }
+        }
+
+        
 
         h2{
             font-size:3rem;
@@ -36,6 +55,7 @@ html{
             font-size:1.8rem;
             margin-top:1rem;
             margin-bottom:1rem;
+          
         }
 
     .horizontalblock{

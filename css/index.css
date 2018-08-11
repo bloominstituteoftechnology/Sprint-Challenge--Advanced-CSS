@@ -1,3 +1,13 @@
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +184,11 @@ html body footer {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+@media (max-width: 500px) {
+  html body footer {
+    flex-wrap: wrap;
+  }
+}
 html body footer .verticaltextblock {
   width: 40%;
 }
@@ -183,6 +198,11 @@ html body footer img {
   height: 199px;
   padding-left: 1rem;
   margin-top: 1.4rem;
+}
+@media (max-width: 500px) {
+  html body footer img {
+    width: 100%;
+  }
 }
 html body footer button {
   display: block;
@@ -223,6 +243,21 @@ html body main {
 html body img:first-child {
   width: 100%;
   border-radius: 0%;
+}
+@media (max-width: 500px) {
+  html body img:nth-child(2) {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html body img:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html body img:nth-child(4) {
+    display: none;
+  }
 }
 html body h2 {
   font-size: 3rem;

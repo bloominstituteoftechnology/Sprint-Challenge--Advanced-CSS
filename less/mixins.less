@@ -1,1 +1,25 @@
 // Mixins below variables
+.flex-centered{
+    display:flex;
+            justify-content:center;
+            align-items:center;
+}
+
+.flex-row{
+    display:flex;
+flex-direction:row;
+justify-content:space-around;
+}
+
+
+.button-maker(@text-color,@background-color,@font-size){
+    display:block;
+    margin:auto;
+    margin-top:1.2rem;
+    font-size:@font-size;
+    color:@text-color;
+    background: @background-color;
+    padding:1.0rem;
+    
+}
+
