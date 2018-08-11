@@ -6,9 +6,9 @@ You will be building a website from scratch using all your responsive web design
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] You are now ready to build this project with your preferred IDE
 
 #### Pro tip: Commit every time you complete a task or feature!
 
