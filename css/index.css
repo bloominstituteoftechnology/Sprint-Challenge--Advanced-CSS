@@ -1,1 +1,295 @@
-/* Compile your LESS first! */
+.li-design {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 25px 50px;
+  font-size: 1.1rem;
+}
+.img-design {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e0e0e0;
+}
+header h1 {
+  font-size: 3rem;
+}
+li {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 25px 50px;
+  font-size: 1.1rem;
+}
+@media (max-width: 500px) {
+  li {
+    padding: 15px 15px;
+  }
+}
+li a {
+  text-decoration: none;
+  color: #22283B;
+}
+footer {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6%;
+}
+body .container1 {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+body .container1 .jumbo img {
+  display: flex;
+  width: 100%;
+  padding-bottom: 25px;
+}
+body .container1 .text-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  body .container1 .text-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+body .container1 .text-content h1 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+body .container1 .text-content p {
+  font-size: 1rem;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  width: 90%;
+  line-height: 1.5rem;
+}
+@media (max-width: 500px) {
+  body .container1 .text-content p {
+    width: 100%;
+  }
+}
+body .container1 .img-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  body .container1 .img-content .one {
+    margin: 0 auto;
+  }
+  body .container1 .img-content .two,
+  body .container1 .img-content .three {
+    display: none;
+  }
+}
+body .container1 .img-content img {
+  border-radius: 10%;
+  padding: 0 10px;
+}
+body .container1 .middle {
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 25px;
+}
+body .container1 .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  padding: 35px 0;
+  border: 1px solid #e0e0e0;
+}
+@media (max-width: 500px) {
+  body .container1 .bottom {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+body .container1 .bottom .left-side {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  body .container1 .bottom .left-side {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
+body .container1 .bottom img {
+  border-radius: 2%;
+}
+body .container1 .bottom .btn {
+  font-size: 1.3rem;
+  width: 25%;
+  height: 50px;
+  color: white;
+  border: #f4f4f4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283B;
+}
+@media (max-width: 500px) {
+  body .container1 .bottom .btn {
+    width: 100%;
+  }
+}
+body .container1 .bottom .btn:hover {
+  background-color: black;
+  border: 2px solid blue;
+  color: white;
+}
