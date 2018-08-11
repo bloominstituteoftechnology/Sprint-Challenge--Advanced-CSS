@@ -205,7 +205,6 @@ footer .footer {
 }
 @media (max-width:500px) {
   .container .walk-section {
-    border: 1px solid green;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -289,7 +288,9 @@ footer .footer {
 }
 @media (max-width:500px) {
   .top-section .top-section-images {
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    height: 180px;
   }
 }
 .top-section img {
@@ -301,13 +302,9 @@ footer .footer {
 }
 @media (max-width:500px) {
   .top-section img {
-    border: 1px solid green;
-  }
-  .top-section img img {
-    display: flex;
-    justify-content: center;
-    border: 1px solid blue;
-    max-width: 90%;
+    max-width: 80%;
+    margin-top: 30px;
+    padding-bottom: 30px;
   }
 }
 .top-section .text-content {
