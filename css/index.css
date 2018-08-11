@@ -165,3 +165,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+.main-header nav a {
+  text-decoration: none;
+  color: #212529;
+  margin: 0 15px;
+  font-size: 1.6rem;
+}

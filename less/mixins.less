@@ -1,1 +1,40 @@
 // Mixins below variables
+.flex-box-row(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.flex-box-column(@justify:center, @align:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @align;
+}
+.dashed-border-bottom(@border:2px dashed @lightgrey){
+    border-bottom: @border;
+}
+.padding-20px(@padding:20px){
+    padding-top:@padding;
+    padding-bottom:@padding;
+}
+.margin-tb(@margin-top: 30px,@margin-bottom: 30px){
+    margin-top: @margin-top;
+    margin-bottom: @margin-bottom;
+}
+
+.button-creator(@bgColor:@eastern-blue,@text-color:@white){
+    background-color:@bgColor;
+    color:@text-color;
+    border-radius: 10px;
+    width: 75%;
+    height: 40px;
+    .flex();
+    font-size: 2rem;
+    border: 1px solid @bgColor;
+
+    &:hover{
+        background-color:@text-color;
+        color: @bgColor;
+        border: 1px solid @shark;
+    }
+}
