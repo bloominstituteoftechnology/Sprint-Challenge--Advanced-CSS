@@ -2,6 +2,9 @@
 .header {
     width: @width-100;
     background-color: @main-color;
+    @media @phone {
+        max-width: 500px;
+    }
     .header-container {
         display: flex;
         flex-direction: column;
@@ -10,12 +13,18 @@
         max-width: 800px;
         margin: 0px auto;
         padding: 10px;
+        @media @phone {
+            max-width: 500px;
+        }
         
         .header__nav {
             display: flex;
             justify-content: space-between;
             width: 50%;
             margin: 5px auto;
+            @media @phone {
+                width: @width-100;
+            }
         }
         .nav___a {
             text-decoration: none;
