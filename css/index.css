@@ -141,22 +141,79 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 /* NAVIGATION STYLING!!! */
-.container .navigation {
+.navigation {
   text-align: center;
   color: #4A5362;
-  margin-bottom: 1.5rem;
+  border-bottom: 2px solid lightgrey;
 }
-.container .navigation h1 {
+.navigation h1 {
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 3rem;
 }
-.container .navigation a {
+.navigation a {
   padding: 1rem;
   font-size: 1.3rem;
 }
-.container .navigation a:hover {
-  color: white;
-  background: black;
-  border-radius: 25px;
+.navigation a:hover {
+  color: black;
+}
+.copyright {
+  text-align: center;
+  padding: 2rem;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container .img-one {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.container p {
+  line-height: 2;
+  font-size: 1.15rem;
+  width: 100%;
+}
+.container .three-imgs {
+  display: flex;
+  width: 100%;
+}
+.container .three-imgs .blast {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.container .three-imgs .sky {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.container .three-imgs .launch {
+  margin: 1rem;
+  border-radius: 20px;
+}
+.container .mid-content {
+  border-bottom: 2px solid lightgrey;
+}
+.container .mid-content p {
+  margin-bottom: 2rem;
+}
+.container .bottom-content {
+  margin-top: 2rem;
+  display: flex;
+  padding: 10%;
+}
+.container .bottom-content .text-content {
+  padding: 2%;
+  width: 50%;
+}
+.container .bottom-content .text-content p {
+  line-height: 1.2;
+  margin-bottom: 1.3rem;
+}
+.container .bottom-content .img-content {
+  border-radius: 7px;
 }
