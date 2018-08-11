@@ -168,3 +168,60 @@ header nav a {
   max-width: 2420px;
   width: 100%;
 }
+.container .top-img {
+  margin-left: 17%;
+  width: 66.1%;
+  height: 400px;
+}
+.container .top-content h1 {
+  padding-top: 40px;
+  margin-left: 18%;
+  font-size: 6.5rem;
+}
+.container .top-content p {
+  margin: 0 18%;
+  font-size: 3.6rem;
+  padding-top: 24px;
+}
+.container .three-imgs {
+  margin-left: 18%;
+  padding-top: 30px;
+}
+.container .three-imgs .img {
+  width: 24%;
+  margin-right: 57px;
+  height: 348px;
+  border-radius: 27px;
+}
+.container .three-imgs .img:last-child {
+  margin-right: 0;
+}
+.container .middle-content {
+  margin-bottom: 140px;
+}
+.container .middle-content h1 {
+  padding-top: 95px;
+  margin-left: 18%;
+  font-size: 5.5rem;
+}
+.container .middle-content p {
+  margin: 0 18%;
+  font-size: 3.6rem;
+  padding-top: 30px;
+}
+.container hr {
+  width: 65%;
+}
+.container .bottom-content h2 {
+  padding-top: 90px;
+  margin-left: 22%;
+  font-size: 5.5rem;
+}
+.container .bottom-content p {
+  margin-left: 22%;
+  font-size: 3.1rem;
+  padding-top: 24px;
+  width: 24%;
+  line-height: 1.5;
+  display: inline-block;
+}
