@@ -195,6 +195,16 @@ footer {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes slidein {
+  from {
+    margin-left: 30%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .pageContainer .btmMargin {
   margin-bottom: 3%;
 }
@@ -210,6 +220,8 @@ footer {
   text-align: center;
   margin: 1% 0;
   color: #22283B;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 .pageContainer .fullWidthContainer {
   width: 100vw;
