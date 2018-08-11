@@ -1,19 +1,27 @@
 // Home Content
-
+.noMobile {
+    @media @mobile {
+        display: none;
+    }
+}
 .container {
     .flex-maker(center, center, column);
     .desktop-width-settings;
-    padding-bottom: 20px;
-    background: @background;
+    padding: 0 1.13% 20px 1.13%;
     color: @text-color;
 }
 
-.content {
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.top-content {
     .flex-maker(space-between, center, column);
-    margin-bottom: 10px;
 
     img {
         width: 100%;
+        height: 225px;
         margin-bottom: 20px;
     }
 
@@ -21,44 +29,68 @@
         .flex-maker(space-between, center);
         width: 90%;
     }
-
-    .text-content {
-        .flex-maker(flex-start, space-between, column);
-        margin-left: 10px;
-
-        h2 {
-            margin-bottom: 20px;
-        }
-    }
 }
 
-.content-reversed {
-    .flex-maker(space-between, center, column);
-    margin-bottom: 10px;
+.middle-img {
+    .flex-maker(space-between, center);
+    margin-bottom: 40px;
 
     img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+        width: 30%;
+        border-radius: 10px;
 
-    .img-text {
-        .flex-maker(space-between, center, row-reverse);
-        width: 90%;
-    }
-
-    .text-content {
-        .flex-maker(flex-start, space-between, column);
-        margin-left: 10px;
-
-        h2 {
-            margin-bottom: 20px;
+        @media @mobile {
+            width: 100%;
         }
     }
 }
 
-.button {
-    .flex-maker(center, center);
-    .button-maker(200px, 35px, 10px, @text-color, @background, 1.8rem, bold);
+.text-content {
+    .flex-maker(space-between, flex-start, column);
     margin-bottom: 20px;
-    
+}
+
+.bottom-content {
+    .flex-maker(space-between, center);
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 30px;
+    padding: 50px 5.7%;
+    @media @mobile {
+        .flex-maker(space-between, center, column);
+        
+    }
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sign-up {
+        .flex-maker(space-between, flex-start, column);
+        width: 40%;
+
+        @media @mobile {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .button {
+    .flex-maker(center, center);
+    .button-maker(90px, 25px, 0, @text-color, @background, 1rem);
+    margin: 20px 0;
+    border: 1px solid blue;
+
+    @media @mobile {
+        .button-maker(400px, 50px, 0, @text-color, @background, 1rem);
+        width: 100%;
+        max-width: 400px;
+    }
+    }
 }

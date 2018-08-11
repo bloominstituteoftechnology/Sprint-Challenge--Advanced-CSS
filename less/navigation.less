@@ -1,25 +1,28 @@
-header {
-    .flex-maker(space-between, center);
-    .desktop-width-settings;
-    height: 50px;
-    background: @background;
+.header {
+    .flex-maker(space-between, center, column);
+    width: 100%;
+    background: @background2;
     color: @text-color;
-    padding: 0 10px;
-    margin-bottom: 30px;
-}
+    padding: 10px 0;
+    height: 80px;
 
-nav {
-    .flex-maker(space-between, center);
-    width: 50%;
+    h1 {
+        font-size: 2.0rem;
+        margin-bottom: 20px;
+    }
 
-    a {
+
+    nav {
+        .flex-maker(space-between, center);
+        width: 35%;
+        
+        @media @mobile {
+            width: 80%;
+        }
+        
+        a {
         text-decoration: none;
-        color: @background;
-        background: @text-color;
-        width: 75px;
-        height: 20px;
-        border-radius: 10px;
-        text-align: center;
-
+        color: @text-color;
+        }
     }
 }
