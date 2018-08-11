@@ -5,6 +5,9 @@
 	align-items: center;
 	height: 100px;
 	background: @header-background;
+	@media @phone {
+		flex-direction: column;
+	}
 
 	h1 {
 		font-size: 3.2rem;
@@ -14,14 +17,27 @@
 
 .main-nav {
 	width: 55%;
+	@media @phone {
+		 display: flex;
+    	 width: 100%;
+	}
 }
 .main-nav ul {
 	display: flex;
 	flex-direction: row;
 	text-align: center;
+	@media @phone {
+		justify-content: space-evenly;
+    	text-align: center;
+    	width: 100%;
+	}
 	
 	li {
 		width: 100%;
+		@media @phone {
+			display: block;
+    		width:  100%;
+		}
 	}
 
 	a {
@@ -34,7 +50,9 @@
 		margin:0;
 		color: @header-color;
 		@media @phone {
-			padding: 40px;
+			 display:  inline-block;
+    	     margin-right: 5px;
+    		 width: 100%;
 		}
 	}
 }

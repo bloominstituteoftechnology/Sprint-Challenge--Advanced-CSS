@@ -156,6 +156,11 @@ h5 {
   height: 100px;
   background: #F6F6F6;
 }
+@media only screen and (max-width: 500px) {
+  #header {
+    flex-direction: column;
+  }
+}
 #header h1 {
   font-size: 3.2rem;
   color: #444958;
@@ -163,13 +168,32 @@ h5 {
 .main-nav {
   width: 55%;
 }
+@media only screen and (max-width: 500px) {
+  .main-nav {
+    display: flex;
+    width: 100%;
+  }
+}
 .main-nav ul {
   display: flex;
   flex-direction: row;
   text-align: center;
 }
+@media only screen and (max-width: 500px) {
+  .main-nav ul {
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+  }
+}
 .main-nav ul li {
   width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .main-nav ul li {
+    display: block;
+    width: 100%;
+  }
 }
 .main-nav ul a {
   display: block;
@@ -181,10 +205,17 @@ h5 {
   margin: 0;
   color: #444958;
 }
+@media only screen and (max-width: 500px) {
+  .main-nav ul a {
+    display: inline-block;
+    margin-right: 5px;
+    width: 100%;
+  }
+}
 .wrapper {
   max-width: 880px;
   width: 100%;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 main .banner {
   width: 100%;
@@ -218,10 +249,20 @@ main .banner img {
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (max-width: 500px) {
+  .lift-off-images {
+    flex-direction: column;
+  }
+}
 .lift-off-images img {
   width: 30%;
   border-radius: 35px;
   padding: 1em;
+}
+@media only screen and (max-width: 500px) {
+  .lift-off-images img {
+    width: 100%;
+  }
 }
 .go-for-walk {
   display: flex;
@@ -229,6 +270,17 @@ main .banner img {
   border-bottom: 1px solid #F4F4F4;
   margin-top: 20px;
   padding-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .go-for-walk {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .go-for-walk .go-walk-content {
+    padding-bottom: 15px;
+  }
 }
 .go-for-walk .go-walk-content h2 {
   font-size: 3rem;
@@ -238,6 +290,13 @@ main .banner img {
 }
 .go-for-walk .go-walk-img img {
   border-radius: 15px;
+}
+@media only screen and (max-width: 500px) {
+  #astronaut {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+  }
 }
 /* button style */
 #btn-signup {
@@ -259,58 +318,4 @@ footer small {
   font-size: 1.3rem;
   margin-top: 10px;
   height: 100px;
-}
-
-/* Mobile Query */
-@media only screen and (max-width: 500px) {
-  #header {
-        flex-direction: column;
-  }
-
-  #header nav {
-    display: flex;
-    width: 100%;
-  }
-
-  #header nav ul {
-    justify-content: space-evenly;
-    text-align: center;
-    width: 100%;
-  }
-  #header nav ul li {
-    display: block;
-    width:  100%;
-  }
-
-  #header nav ul li a {
-    display:  inline-block;
-    margin-right: 5px;
-    width: 100%;
-  }
-
-  #header .main-nav {
-    width: 100%;
-  }
-
-  .lift-off-images {
-    flex-direction: column;
-  }
-
-  .lift-off-images img {
-    width: 100%;
-  }
-
-  .go-for-walk {
-    flex-direction: column;
-    padding: 10px;
-  }
-  .go-walk-content {
-    padding-bottom: 15px;
-  }
-  
-  #astronaut {
-    width: 100%;
-    padding: 5px;
-    border-radius: 10px;
-  }
 }

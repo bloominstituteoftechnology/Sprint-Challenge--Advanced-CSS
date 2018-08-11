@@ -2,7 +2,7 @@
 .wrapper {
 	max-width: 880px;
 	width: 100%;
-	margin: 30px auto;
+	margin: 0 auto;
 }
 
 main .banner {
@@ -24,7 +24,7 @@ main .banner {
 	.lift-off-content {
 		padding: 15px;
 		h2 {
-			.font-size-h2-tags
+			.font-size-h2-tags;
 			margin: 0;
 		} 
 
@@ -41,11 +41,17 @@ main .banner {
 			max-width: 100%;
 			justify-content: space-evenly;
 			align-items: center;
+			@media @phone {
+				flex-direction: column;
+			}
 
 			img {
 				width: 30%;
 				border-radius: 35px;
 				padding: 1em;
+				@media @phone {
+					width: 100%;
+				}
 			}
 }
 
@@ -55,8 +61,16 @@ main .banner {
 	border-bottom: 1px solid #F4F4F4;
 	margin-top: 20px;
 	padding-bottom: 20px;
+	@media @phone {
+		flex-direction: column;
+    	padding: 10px;
+	}
 
 	.go-walk-content {
+		@media @phone {
+			padding-bottom: 15px;
+		}
+
 		h2 {
 			.font-size-h2-tags
 		}
@@ -69,6 +83,14 @@ main .banner {
 
 	.go-for-walk .go-walk-img img {
 	border-radius: 15px;
+	}
+
+	#astronaut {
+		@media @phone {
+			 width: 100%;
+    		 padding: 5px;
+   			 border-radius: 10px;
+		}
 	}
 
 /* button style */
