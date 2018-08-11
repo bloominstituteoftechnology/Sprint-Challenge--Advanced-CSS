@@ -140,6 +140,34 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  background: #e0e0e0;
+  width: 100%;
+}
+.nav-bar-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-ctn h1 {
+  font-size: 5rem;
+  padding: 15px;
+}
+.nav-bar-ctn nav {
+  margin-bottom: 15px;
+}
+.nav-bar-ctn nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #22283B;
+  padding: 15px;
+}
+.nav-bar-ctn nav a:hover {
+  text-decoration: underline;
+}
 html {
   font-size: 62.5%;
 }
