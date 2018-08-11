@@ -13,7 +13,7 @@
 
 .h2-padding() {
     font-size: @h2-font-size;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 .p-padding() {
@@ -24,4 +24,16 @@
 .text-content-width-padding() {
     width: 75%;
     padding: 0 5% 0 2%;
+}
+
+.text-content-mixin(){
+    .text-content-width-padding();            
+    align-self: @align-self;
+
+    h2 {
+        .h2-padding();
+    }
+    p {
+        .p-padding();
+    }
 }

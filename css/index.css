@@ -198,9 +198,37 @@ html {
 }
 .container .main-header .text-content h2 {
   font-size: 2.5rem;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 10px 0;
 }
 .container .main-header .text-content p {
+  font-size: 1.5rem;
+  margin: 0 0 20px 0;
+}
+.container .content-section {
+  display: flex;
+  flex-direction: column;
+}
+.container .content-section .img-content {
+  align-self: center;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .content-section .img-content img {
+  width: 30%;
+  height: 130px;
+  border-radius: 15px;
+}
+.container .content-section .text-content {
+  width: 75%;
+  padding: 0 5% 0 2%;
+  align-self: center;
+}
+.container .content-section .text-content h2 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px 0;
+}
+.container .content-section .text-content p {
   font-size: 1.5rem;
   margin: 0 0 20px 0;
 }

@@ -22,21 +22,33 @@ html {
 
         .text-content {
             // border: 2px solid blue;
-            .text-content-width-padding();            
-            align-self: @align-self;
-
-            h2 {
-                .h2-padding();
-            }
-            p {
-                .p-padding();
-            }
+            .text-content-mixin();
         }
 
     } // /.main-header
 
     .content-section {
+        // border: 3px solid limegreen;
+        .flex-column();
 
+        .img-content {
+            // border: 3px solid pink;
+            align-self: @align-self;
+            width: 75%;
+            display: flex;
+            justify-content: space-around;
+            
+            img {
+                width: 30%;
+                height: 130px;
+                border-radius: 15px;
+            }
+        }
+
+        .text-content {
+            // border: 3px solid blue;
+            .text-content-mixin();
+        }
     } //.content-section
 
     .content-sign {
