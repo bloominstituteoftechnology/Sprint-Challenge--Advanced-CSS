@@ -1,1 +1,40 @@
 // Mixins below variables
+// Used for testing
+.testBorder(){
+    border: 1px solid black;
+}
+
+.flex-col-cen-cen(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row-bet(){
+    display: flex;
+    justify-content: space-between;
+}
+
+.wid-cen(@widthPercent){
+    width: @widthPercent;
+    margin: 0px auto;
+}
+
+.create-button(@width, @height, @textSize, @textColor, @bgColor, @borderSize, @borderColor, @borderRadiusSize){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: @width;
+    height: @height;
+    font-size: @textColor;
+    color: @textColor;
+    background-color: @bgColor;
+    border: @borderSize solid @borderColor;
+    border-radius: @borderRadiusSize;
+
+    &:hover{
+        color: @bgColor;
+        background-color: @textColor;
+    }
+}

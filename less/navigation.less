@@ -1,0 +1,38 @@
+.site-nav{
+    border-bottom: 2px solid @borderLineColor;
+
+    div{
+        width: 100%;
+        max-width: 800px;
+        margin: 0px auto;
+        .flex-col-cen-cen;
+
+        h1{
+            font-size: 4.3rem;
+            padding-top: 10px;
+            color: @navColor;
+        }
+    
+        nav{
+            .flex-row-bet;
+            width:46%;
+            font-size: 1.6rem;
+            padding: 15px 0px 15px 0px;
+
+            a{
+                color: @navColor;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @media @phone{
+        border: none;
+
+        div{
+            nav{
+                width: 75%;
+            }
+        }
+    }
+}

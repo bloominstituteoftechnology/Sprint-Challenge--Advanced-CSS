@@ -1,1 +1,156 @@
 // Home Content
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+}
+
+.home-page{
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+
+    #header-img{
+        width: 100%;
+        height: 200px
+    }
+
+    .lift-off{
+        .wid-cen(96%);
+
+        h2{
+            padding-top: 10px;
+        }
+
+        p{
+            padding: 10px 0px 15px 0px;
+        }
+
+        @media @phone{
+            p{
+                padding-bottom: 35px;
+            }
+        }
+    }
+
+    .images{
+        .flex-row-bet;
+        .wid-cen(96%);
+
+        img{
+            width: 30%;
+            height: 30%;
+            border-radius: 15px;
+        }
+
+        @media @phone{
+            justify-content: center;
+
+            .first{
+                width: 90%;
+            }
+
+            .second, .third{
+                display: none;
+            }
+        }
+    }
+
+    .visit{
+        .wid-cen(100%);
+        padding: 50px 0px 50px 0px;
+        border-bottom: 1px solid @borderLineColor;
+
+        div{
+            .wid-cen(96%);
+
+            p{
+                padding-top: 15px;
+            }
+        }
+    }
+
+    .walk{
+        .flex-row-bet;
+        .wid-cen(84%);
+        padding: 50px 0px 50px 0px;
+
+        div{
+            .flex-col-cen-cen;
+            width: 47%;
+            
+
+            p{
+                padding-top: 15px;
+            }
+
+            .button{
+                .create-button(80px, 40px, 1.6rem, white, @buttonColor, 1px, @buttonBorderColor, 3px);
+                font-size: 1.6rem;
+                margin-top: 20px;
+                align-self: flex-start;
+            }
+        }
+
+        img{
+            width: 47%;
+            height: 47%;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        @media @phone{
+            .flex-col-cen-cen;
+            width: 77%;
+            border-bottom: none;
+
+            div{
+                width: 100%;
+
+                h3{
+                    align-self: flex-start
+                }
+
+                .button{
+                    .create-button(100%, 50px, 1.6rem, white, @buttonColor, 1px, @buttonBorderColor, 5px);
+                    font-size: 1.6rem;
+                    margin-top: 30px;
+                    align-self: center;
+                }
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .border-line{
+        border-bottom: 1px solid @borderLineColor;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0px 25px 0px;
+        border: 1px solid @borderLineColor;
+        border-radius: 5px;
+        background-color: @footerBGColor;
+        margin: 15px 0px 30px 0px;
+
+        p{
+            font-size: 1.4rem;
+        }
+    }
+}
