@@ -158,14 +158,17 @@ body {
 html h1,
 body h1 {
   font-size: 3.5rem;
+  color: #22283b;
 }
 html h2,
 body h2 {
   font-size: 2.3rem;
+  color: #22283b;
 }
 html p,
 body p {
   font-size: 1.6rem;
+  color: #22283b;
 }
 h1,
 h2,
@@ -208,6 +211,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .main-header img {
+    height: 100px;
+  }
+}
 .main-header .bottom {
   width: 96%;
   margin: 15px auto;
@@ -229,34 +237,47 @@ footer {
   height: 31%;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .middle-container .top-middle {
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-container .top-middle img {
+    width: 90%;
+  }
+  .middle-container .top-middle img:nth-of-type(2) {
+    display: none;
+  }
+  .middle-container .top-middle img:nth-of-type(3) {
+    display: none;
+  }
+}
 .middle-container .bottom-middle p {
   margin-top: 15px;
 }
-.bottom .bottom-container1 {
+.bottom-container {
   display: flex;
   justify-content: space-around;
   width: 80%;
   margin: 90px auto 20px auto;
 }
-.bottom .bottom-container1 .left-container {
+@media (max-width: 500px) {
+  .bottom-container {
+    flex-direction: column;
+  }
+}
+.bottom-container .left-container {
   width: 39.4%;
 }
-.bottom .bottom-container1 .left-container p {
+@media (max-width: 500px) {
+  .bottom-container .left-container {
+    width: 100%;
+  }
+}
+.bottom-container .left-container p {
   margin-top: 20px;
 }
-.bottom .bottom-container1 .rigth-container {
-  width: 45%;
-}
-.bottom .bottom-container1 .rigth-container img {
-  width: 100%;
-  height: 100%;
-}
-.bottom .bottom-container2 {
-  width: 75%;
-  display: flex;
-  margin: 0 auto;
-}
-.bottom .bottom-container2 .button {
+.bottom-container .left-container .button {
   font-size: 1.9rem;
   color: white;
   width: 80px;
@@ -267,4 +288,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .bottom-container .left-container .button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.bottom-container .rigth-container {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .bottom-container .rigth-container {
+    width: 100%;
+  }
+}
+.bottom-container .rigth-container img {
+  width: 90%;
+  height: 80%;
+}
+@media (max-width: 500px) {
+  .bottom-container .rigth-container img {
+    width: 100%;
+  }
 }
