@@ -15,7 +15,13 @@ body{
 
 header{
     .flex; 
-    justify-content: space-around;
+    padding: @padding; 
+    line-height: @line-height; 
+
+    h2{
+        font-size: @h2; 
+        padding-bottom: @h2-padding; 
+    }
 }
 
 .imageRow{
@@ -26,7 +32,16 @@ header{
     .imgBox{
         width: 30%; 
         border-radius: 15px; 
-        height: 150px; 
-    
+        height: 170px; 
+    }
+}
+
+.infoArea{
+    padding: 40px @padding @padding @padding; 
+    line-height: 1.2; 
+
+    h2{
+        padding-bottom: @padding; 
+        font-size: @h2; 
     }
 }

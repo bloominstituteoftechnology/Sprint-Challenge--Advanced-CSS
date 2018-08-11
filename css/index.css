@@ -149,33 +149,55 @@ nav {
   padding: 20px;
 }
 nav h1 {
-  font-size: 2rem;
-  padding-bottom: 10px;
+  font-size: 2.2rem;
+  padding-bottom: 15px;
 }
 nav a {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   padding: 15px;
+  text-decoration: none;
+  color: black;
 }
 footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 footer .footerText {
   width: 40%;
+  line-height: 1.2;
+}
+footer .footerText h2 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+}
+footer .footerText .button {
+  border: 1px solid white;
+  width: 25%;
+  padding: 7px;
+  background-color: #000057;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
 }
 footer .footerImg {
-  width: 30%;
+  width: 33%;
 }
 footer .footerImg img {
-  height: 160px;
+  height: 210px;
   width: 100%;
 }
 .trademark {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
 }
 body {
   max-width: 800px;
@@ -193,7 +215,12 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 20px;
+  line-height: 1.2;
+}
+header h2 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
 }
 .imageRow {
   display: flex;
@@ -204,5 +231,13 @@ header {
 .imageRow .imgBox {
   width: 30%;
   border-radius: 15px;
-  height: 150px;
+  height: 170px;
+}
+.infoArea {
+  padding: 40px 20px 20px 20px;
+  line-height: 1.2;
+}
+.infoArea h2 {
+  padding-bottom: 20px;
+  font-size: 1.7rem;
 }

@@ -1,18 +1,32 @@
 footer{
     .flex; 
     width: 100%; 
-    justify-content: space-around; 
+    justify-content: space-evenly; 
+    padding-top: 60px; 
+    padding-left: @padding; 
+    padding-right: @padding; 
      
 
     .footerText{
         width: 40%; 
+        line-height: @line-height; 
+        
+        h2{
+            font-size: @h2; 
+            padding-bottom: 15px; 
+        }
+        .button{
+            .btn; 
+            text-align: center; 
+            margin-top: 10px; 
+        }
     }
 
     .footerImg{
-       width: 30%; 
+       width: 33%; 
 
         img{
-            height: 160px;
+            height: 210px;
              width: 100%; 
         }
     }  
@@ -21,4 +35,6 @@ footer{
 .trademark{
         .flex; 
         justify-content: center; 
+        padding-top: 75px; 
+        padding-bottom: 30px; 
     }
