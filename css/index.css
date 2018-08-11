@@ -180,7 +180,7 @@ img {
   background: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
   /* Header Animation */
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-name: slidein;
 }
 @keyframes slidein {
@@ -247,78 +247,78 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-home {
+.home {
   width: 80%;
   flex-wrap: nowrap;
   margin-left: 11%;
 }
-home .intro {
+.home .intro {
   width: 95%;
 }
-home .intro h2 {
+.home .intro h2 {
   margin-top: 20px;
 }
-home .intro img {
+.home .intro img {
   max-width: 30%;
   height: auto;
   margin-right: 3%;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-home .content-section {
+.home .content-section {
   margin: 3.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-home .content-section .text-content {
+.home .content-section .text-content {
   width: 100%;
   padding-right: 1%;
 }
 @media (max-width: 500px) {
-  home .content-section .text-content {
+  .home .content-section .text-content {
     width: 100%;
     padding: 0;
   }
 }
-home .content-section .img-content {
+.home .content-section .img-content {
   width: 40%;
   padding-left: 1%;
 }
 @media (max-width: 500px) {
-  home .content-section .img-content {
+  .home .content-section .img-content {
     width: 100%;
     padding: 0;
   }
 }
-home .content-section .img-content img {
+.home .content-section .img-content img {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  home .content-section .img-content img {
+  .home .content-section .img-content img {
     width: 100%;
   }
 }
-home .first {
+.home .first {
   border-bottom: 1px solid #F6F7F8;
   padding-bottom: 4rem;
 }
-home .second {
+.home .second {
   justify-content: unset;
   margin-left: 6%;
   border-bottom: 1px solid #F6F7F8;
   margin-bottom: 1.5rem;
   padding-bottom: 4rem;
 }
-home .second .text-content {
+.home .second .text-content {
   flex: 0.8;
   font-size: 80%;
 }
-home .second .img-content {
+.home .second .img-content {
   width: 44%;
   margin-left: 2.5%;
 }
-home .second .btn {
+.home .second .btn {
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
@@ -334,16 +334,16 @@ home .second .btn {
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  home .second .btn {
+  .home .second .btn {
     width: 100%;
   }
 }
-home .second .btn:hover {
+.home .second .btn:hover {
   background: white;
   color: #330066;
 }
 @media (max-width: 500px) {
-  home .second .btn {
+  .home .second .btn {
     width: 100%;
   }
 }
