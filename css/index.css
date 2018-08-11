@@ -1,4 +1,31 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@phones = ~"(max-width: 500px)";
+.x2 {
+  font-size: 2rem;
+}
+.x4 {
+  font-size: 4rem;
+}
+.x3 {
+  font-size: 3rem;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.btn {
+  border: 2px solid cadetblue;
+  font-size: 1.4rem;
+  background: #111111;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  padding: 2% 3%;
+  width: 110px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -106,6 +133,7 @@ section {
 }
 body {
   line-height: 1;
+  font-size: 62.5%;
 }
 ol,
 ul {
@@ -139,4 +167,89 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.home .header-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.home .header-section h1 {
+  font-size: 4rem;
+  padding: 2%;
+}
+.home .header-section h2 {
+  font-size: 3rem;
+  padding: 2%;
+}
+.home .header-section ul {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  width: 100%;
+}
+.home .header-section li {
+  padding: 1% 3%;
+}
+.home .header-section a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+footer {
+  font-size: 1.6rem;
+  padding: 3%;
+}
+footer p {
+  text-align: center;
+}
+.content-section {
+  font-size: 2rem;
+}
+.content-section .text-section {
+  padding: 2%;
+}
+.content-section .text-section h2 {
+  color: #0e3974;
+}
+.content-section .text-section p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 2% 4% 2% 0;
+}
+.content-section .img-section img {
+  width: 100%;
+  max-height: 250px;
+}
+.content-section .tri-img-section {
+  display: flex;
+  justify-content: space-around;
+}
+.content-section .tri-img-section div {
+  padding-bottom: 3%;
+  width: 31%;
+}
+.content-section .tri-img-section div img {
+  border: 1px solid transparent;
+  border-radius: 5%;
+  width: 100%;
+}
+.content-section:nth-of-type(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.content-section:nth-of-type(3) div {
+  margin: 10% auto 5%;
+  padding: 0;
+  width: 48%;
+}
+.content-section:nth-of-type(3) div img {
+  border: 1px solid transparent;
+  border-radius: 5%;
 }
