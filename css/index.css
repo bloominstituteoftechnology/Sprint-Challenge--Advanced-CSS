@@ -202,9 +202,22 @@ html {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-.shuttle-imgs img {
+.shuttle-imgs .shuttle {
   border-radius: 30px;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .shuttle-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuttle-imgs .shuttle-2 {
+    display: none;
+  }
+  .shuttle-imgs .shuttle-3 {
+    display: none;
+  }
 }
 .content-section {
   border-bottom: 2px solid #e0e0e0;
@@ -226,10 +239,22 @@ html {
   padding-bottom: 45px;
   margin: 25px 0;
 }
+@media (max-width: 500px) {
+  .sign-up-section {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
 .sign-up-section .sign-up-text {
   display: flex;
   flex-direction: column;
   width: 27%;
+}
+@media (max-width: 500px) {
+  .sign-up-section .sign-up-text {
+    width: 90%;
+  }
 }
 .sign-up-section .sign-up-text h2 {
   font-size: 3rem;
@@ -256,10 +281,25 @@ html {
   color: #22283B;
   background: #f4f4f4;
 }
+@media (max-width: 500px) {
+  .sign-up-section .sign-up-text .sign-up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+}
 .sign-up-section .sign-up-img {
   display: flex;
   justify-content: center;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .sign-up-section .sign-up-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .sign-up-section .sign-up-img img {
   border-radius: 10px;
