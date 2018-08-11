@@ -4,12 +4,16 @@
     border-bottom: 1px solid @accent-color;
     .display-flex(column, center);
     align-items: center;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 
     h1{
         font-size: 3.4rem;
         color: @font-color;
+
+        @media @mobile {
+            font-size: 4.0rem;
+        }
     }
 
     nav{
@@ -18,6 +22,11 @@
         padding-top: 15px;
         font-size: 1.2rem;
         font-weight: bold;
+
+        @media @mobile {
+            width: 80%;
+            font-size: 1.6rem;
+        }
 
         a{
             text-decoration: none;
