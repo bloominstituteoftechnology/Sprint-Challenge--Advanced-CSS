@@ -11,4 +11,35 @@ html {
 .container {
     border: 3px solid red;
     .width-start-mixin();
+
+    .main-header {
+        // border: 2px solid goldenrod;
+        .flex-column();
+
+        .img-content {
+            align-self: @align-self;
+        }
+
+        .text-content {
+            // border: 2px solid blue;
+            .text-content-width-padding();            
+            align-self: @align-self;
+
+            h2 {
+                .h2-padding();
+            }
+            p {
+                .p-padding();
+            }
+        }
+
+    } // /.main-header
+
+    .content-section {
+
+    } //.content-section
+
+    .content-sign {
+
+    } //.content-sign
 }
