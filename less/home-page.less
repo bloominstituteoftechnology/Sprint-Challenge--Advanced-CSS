@@ -1,1 +1,155 @@
 // Home Content
+.container{
+ max-width: 500px;
+ width: 100%;
+ padding: 10px 2%;
+ .flex-colomn;
+ box-shadow: 0 0 5px @border-color1;
+
+ @media @desktop {
+    .flex-colomn;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+ }
+
+ section{
+    .flex-colomn;
+    @media @desktop {
+        width: 100%; 
+     }
+
+    
+    h1{
+       .title(1.5rem, 15px, 10px); 
+       
+       @media @desktop {
+        .title(3.5rem, 25px, 15px);  
+     }
+    }
+    p{
+        .paragraph(1.5rem, 10px); 
+        @media @desktop {
+            .paragraph(2rem, 25px);  
+         }
+    }
+    }
+
+    .visit-planet{
+        .border-bottom;
+        @media @desktop {
+          
+            border-bottom: 0;
+           
+         }
+        .visit-planet--images{
+            align-self: stretch;
+            @media @desktop {
+                .flex-row-spaceBetween;
+    
+             }
+        }
+       
+       
+        img{
+            width: 100%;
+            @media @desktop {
+                width: 30%; 
+                border-radius: 15px;
+                box-shadow: 0 0 5px @border-color1;
+             }
+        }
+        img:nth-of-type(2){
+            display: none;
+            @media @desktop {
+                display: inline-block;
+             }
+        }
+
+        img:nth-of-type(3){
+            display: none;
+            @media @desktop {
+                display: inline-block;
+             }
+        }
+    }
+  
+
+    .go-for-walk{
+        .flex-colomn-centered;
+       
+        flex-wrap: wrap;
+       
+        margin: 20px 0;
+        padding: 20px 10%;
+
+        @media @desktop {
+            width: 80%;
+            display: flex;
+
+            align-items: center;
+            flex-direction: row;
+       
+              
+           padding: 0;
+           margin: 10px auto;
+           align-items: flex-end;
+            
+        }
+
+        .go-for-walk--text{
+            .flex-colomn;
+            align-items: center;
+            width: 100%;
+           
+            @media @desktop {
+                align-items: flex-start;
+                width: 45%;
+                
+            }
+        }
+
+        a{
+            .btn-link(100%);
+            @media @desktop {
+               
+                .btn-link(30%);
+                
+            }
+        }
+       
+
+        img{
+            width: 100%;
+            @media @desktop {
+                align-self: stretch;
+                width: 35%;
+                height: 300px;
+                margin: 30px auto;
+              
+             }
+        }
+    }
+
+    footer{
+        .border-top;
+
+        @media @desktop {
+          
+            border-top: 0;
+           
+         }
+      
+
+        h2{
+            .title(1rem, 15px, 10px); 
+            text-align: center;
+            background: @border-color1;
+            margin: 20px 0;
+            padding: 20px 0;
+           
+        }
+
+    }
+}

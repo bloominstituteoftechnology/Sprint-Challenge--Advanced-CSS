@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 62.5%;
 }
 ol, ul {
 	list-style: none;

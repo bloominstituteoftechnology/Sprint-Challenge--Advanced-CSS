@@ -1,1 +1,58 @@
 // Mixins below variables
+
+.flex-row-spaceBetween(){
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.flex-colomn(){
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-colomn-centered(){
+    .flex-colomn;
+    align-items: center;
+}
+
+.btn-link( @width-btn:50%){
+    width: @width-btn;
+    font-size: 1.8rem;
+    padding: 10px 2%;
+    margin: 10px ;
+    background: @primary-color;
+    text-align: center;
+    color: @primary-color3;
+    text-decoration: none;
+    border: 1px solid @border-color2;
+
+}
+.image(@m-width:480px, @width:100%){
+    max-width: @m-width;
+    width:@width;
+            
+}
+.title(@font-size:1.6rem, @margin-top:30px, @margin-bottom:30px){
+    font-size: @font-size;
+    margin-top: @margin-top;
+    margin-bottom: @margin-bottom;
+    color:@primary-color;
+}
+.paragraph (@font-size:1.6rem, @margin-top-bottom:20px){
+font-size: @font-size;
+margin-top: @margin-top-bottom;
+margin-bottom: @margin-top-bottom;
+color: @primary-color2;
+
+    
+}
+
+.border-top(){
+    border-top: 2px solid #555 ;   
+}
+.border-bottom(){
+    border-bottom: 2px solid #555 ;
+    
+}
+
