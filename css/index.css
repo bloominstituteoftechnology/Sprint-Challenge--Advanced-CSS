@@ -256,14 +256,17 @@ header h1 {
   margin: 25px 0px;
 }
 .main-container .bottom-container {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
   border-bottom: 1px solid #e0e0e0;
 }
 @media (max-width:500px) {
   .main-container .bottom-container {
-    padding: 0px 15px;
+    padding-left: 10%;
+    padding-right: 10%;
     flex-direction: column;
   }
 }
