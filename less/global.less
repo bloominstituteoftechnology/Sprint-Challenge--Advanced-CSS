@@ -6,9 +6,29 @@
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
+}
+
+img {
+  height: auto;
+  max-width: 100%;  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+
+  @media @phone {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
 }
 

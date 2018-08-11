@@ -1,1 +1,21 @@
-// Mixins below variables
+.button-creator(@bgColor: black, @border-color: black) {
+  .flex-centered;
+  background-color: @bgColor;
+  border: 1px solid @border-color;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.8rem;
+  height: 40px;
+  width: 25%;
+}
+
+.flex-centered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-between() {
+  display: flex;
+  justify-content: space-between;
+}
