@@ -295,18 +295,6 @@ p {
   font-size: 1.4rem;
   border-radius: 5px;
 }
-.main-container .bottom-section .bottom-content .button:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 80px;
-  background-color: white;
-  height: 35px;
-  color: #22283B;
-  font-size: 1.4rem;
-  border-radius: 5px;
-  border: 1px solid #22283B;
-}
 @media (max-width: 500px) {
   .main-container .bottom-section .bottom-content .button {
     margin: 20px 0;
@@ -320,6 +308,11 @@ p {
     font-size: 1.4rem;
     border-radius: 5px;
   }
+}
+.main-container .bottom-section .bottom-content .button:hover {
+  background-color: white;
+  color: #22283B;
+  border: 1px solid #22283B;
 }
 .main-container .bottom-section .bottom-image {
   width: 45%;
