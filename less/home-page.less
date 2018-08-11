@@ -13,12 +13,15 @@
         img {
             height: 278px;
             @media @phone {
-                height: 164px;
+                height: 200px;
             }
         }
         .text-content {
             width: 96%;
             padding-top: 25px;
+            @media @phone {
+                width: 94%;
+            }
 
         }
         .rocket-images {
@@ -26,12 +29,35 @@
             display: flex;
             justify-content: center;
             width: 96%;
+            @media @phone {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             img {
                 padding: 0px 18px;
                 border-radius: 40px;
                 width: 34.5%;
                 height: 249px;
+                @media @phone {
+                    width: 96%;
+                    padding: 10px 0px;
+                    height: 315px;
+                }
+            }
+
+            .sky-img {
+                @media @phone {
+                    display: none;
+                }
+            }
+
+            .launch-img {
+                @media @phone {
+                    display: none;
+                }
             }
         }
 

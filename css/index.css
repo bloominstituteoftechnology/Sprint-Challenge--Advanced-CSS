@@ -155,19 +155,44 @@ h5 {
 h1 {
   font-size: 5.6rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
 h2 {
   font-size: 4.7rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.2rem;
+  }
 }
 h3 {
   font-size: 3.9rem;
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 3.2rem;
+  }
+}
 a {
   font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  a {
+    font-size: 1.6rem;
+  }
 }
 p {
   font-size: 2.3rem;
   line-height: 1.5;
   padding-top: 15px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 img {
   width: 100%;
@@ -195,11 +220,6 @@ header {
 header h1 {
   color: #454B58;
 }
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 4rem;
-  }
-}
 header nav {
   width: 30%;
   display: flex;
@@ -215,11 +235,6 @@ header nav {
 header nav a {
   text-decoration: none;
   color: #454B58;
-}
-@media (max-width: 500px) {
-  header nav a {
-    font-size: 1.6rem;
-  }
 }
 footer {
   display: flex;
@@ -251,12 +266,17 @@ footer p {
 }
 @media (max-width: 500px) {
   .home .lift-off-section img {
-    height: 164px;
+    height: 200px;
   }
 }
 .home .lift-off-section .text-content {
   width: 96%;
   padding-top: 25px;
+}
+@media (max-width: 500px) {
+  .home .lift-off-section .text-content {
+    width: 94%;
+  }
 }
 .home .lift-off-section .rocket-images {
   padding: 21px 0px;
@@ -264,11 +284,36 @@ footer p {
   justify-content: center;
   width: 96%;
 }
+@media (max-width: 500px) {
+  .home .lift-off-section .rocket-images {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .lift-off-section .rocket-images img {
   padding: 0px 18px;
   border-radius: 40px;
   width: 34.5%;
   height: 249px;
+}
+@media (max-width: 500px) {
+  .home .lift-off-section .rocket-images img {
+    width: 96%;
+    padding: 10px 0px;
+    height: 315px;
+  }
+}
+@media (max-width: 500px) {
+  .home .lift-off-section .rocket-images .sky-img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .lift-off-section .rocket-images .launch-img {
+    display: none;
+  }
 }
 .home .lift-off-section .text-content2 {
   padding-top: 46px;
