@@ -19,7 +19,7 @@ main .banner {
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	border-bottom: 1px solid #F4F4F4;
+	border-bottom: 1px solid #ECEEF0;
 
 	.lift-off-content {
 		padding: 15px;
@@ -58,7 +58,7 @@ main .banner {
 .go-for-walk {
 	display: flex;
 	margin-bottom: 10px;
-	border-bottom: 1px solid #F4F4F4;
+	border-bottom: 1px solid #ECEEF0;
 	margin-top: 20px;
 	padding-bottom: 20px;
 	@media @phone {
@@ -97,9 +97,12 @@ main .banner {
 #btn-signup {
 	 margin-top: 13px;
 	 width: 13em;
-	.btn-maker(1em 2em, 5px, #fff,@header-color);
+	.btn-maker(15px 0px, 5px, #fff,@header-color);
+	p {
+		font-size: 1.5rem;
+	}
 	@media @phone {
-		width: 34em;
+		width: 37em;
 	}
 }
 
@@ -111,7 +114,7 @@ footer {
 	background: #F4F4F4;
 	small {
 		font-size: 1.3rem;
-		margin-top: 10px;
-		height: 100px;
+		margin-top: 30px;
+		height: 50px;
 	}
 }
