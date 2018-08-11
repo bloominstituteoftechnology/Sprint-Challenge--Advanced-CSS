@@ -150,8 +150,9 @@ h5 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  position: fixed;
   width: 100%;
-  background: #e0e0e0;
+  background-color: rgba(224, 224, 224, 0.7);
   color: #22283B;
   padding: 10px 0;
   height: 80px;
@@ -166,9 +167,11 @@ h5 {
   align-items: center;
   flex-direction: row;
   width: 35%;
+  min-width: 400px;
 }
 @media (max-width:500px) {
   .header nav {
+    min-width: 300px;
     width: 80%;
   }
 }
@@ -202,7 +205,7 @@ footer {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
-  padding: 0 1.13% 20px 1.13%;
+  padding: 80px 1.13% 20px 1.13%;
   color: #22283B;
 }
 h2 {
