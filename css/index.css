@@ -260,3 +260,47 @@ footer small {
   margin-top: 10px;
   height: 100px;
 }
+
+@media only screen and (max-width: 500px) {
+  #header {
+        flex-direction: column;
+  }
+
+  #header nav {
+    display: flex;
+  }
+
+  #header nav ul {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #header nav ul li {
+    flex: 1;
+    display: block;
+    width:  100%;
+  }
+
+  #header nav ul li a {
+    display:  inline-block;
+    margin-right: 5px;
+  }
+
+  .lift-off-images {
+    flex-direction: column;
+  }
+
+  .lift-off-images img {
+    width: 100%;
+  }
+
+  .go-for-walk {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  #astronaut {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
