@@ -186,7 +186,7 @@ header nav {
 header nav a {
   color: #454957;
   text-decoration: none;
-  margin: 3%;
+  margin: 0 3%;
 }
 footer {
   width: 100%;
@@ -253,6 +253,7 @@ footer p {
 }
 @media (max-width: 500px) {
   .visit {
+    width: 94%;
     margin: 0px 0px 50px 2%;
   }
 }
