@@ -26,11 +26,11 @@ html {
 
     h2 {
       font-size: @h2-font-size;
-      padding: 10px;
+      padding: @text-pad-width;
     }
 
     p {
-      padding: 10px;
+      padding: @text-pad-width;
     }
   }
 }
@@ -55,12 +55,12 @@ html {
 
     h2 {
       font-size: @h2-font-size;
-      padding: 10px;
+      padding: @text-pad-width;
     }
 
     p {
       font-size: @main-text-size;
-      padding: 10px;
+      padding: @text-pad-width;
     }
   }
 }
@@ -79,12 +79,12 @@ html {
 
     h2 {
       font-size: @h2-font-size;
-      padding: 10px;
+      padding: @text-pad-width;
     }
 
     p {
       font-size: @main-text-size;
-      padding: 10px;
+      padding: @text-pad-width;
     }
 
     .sign-up-btn {
@@ -104,9 +104,7 @@ html {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .flex-center();
   background: @accent-color;
   border: 2px solid @accent-color;
   border-radius: 5px;

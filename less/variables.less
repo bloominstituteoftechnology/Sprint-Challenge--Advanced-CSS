@@ -10,7 +10,17 @@
 @secondary-color: #22283B;
 @accent-color: #e0e0e0;
 
-// btn creator
+// padding width
+@text-pad-width: 10px;
+
+// flex centered mixin
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// btn creator mixin
 .btn-creator(@bgColor: @secondary-color, @width: 85px, @height: 45px ) {
   display: flex;
   justify-content: center;

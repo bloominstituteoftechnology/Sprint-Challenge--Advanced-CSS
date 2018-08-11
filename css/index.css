@@ -148,9 +148,9 @@ h5 {
 }
 .nav-bar-ctn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .nav-bar-ctn h1 {
   font-size: 5rem;
