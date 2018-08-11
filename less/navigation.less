@@ -10,11 +10,11 @@ nav {
     left: 274px;
     top: 22px;
     margin-bottom: 10px;
-  
-    @media @mobile {
+    
+    @media @phone {
       width: 100%;
-      justify-content: space-between;
-      margin-left: 20px;
+      align-items: center;
+      left: 42px;
     }
   
     a {
@@ -25,18 +25,26 @@ nav {
       margin-bottom: 10px;
       border-bottom: 2px solid @main-border-color;
       
+      @media @phone {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: flex-start;
+      }
+
       &:hover {
         text-decoration: underline;
         color: gray;
         
-      }
-      @media @mobile {
+      
+      @media @phone {
         width: 100%;
-        .flex-center();
-        margin: 0 auto;
+        align-items: center;
+        float: left;
       }
   }
   }
+}
       .logo {
       position: relative;
       top: 19px;
@@ -46,8 +54,8 @@ nav {
       justify-content: baseline;
       margin-bottom: 10px;
   
-      @media @mobile {
-        .flex-center();
-        top: -15px;
+      @media @phone {
+         width: 100%;
+         left:137px;
+    }
       }
-  }

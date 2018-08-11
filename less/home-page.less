@@ -5,12 +5,20 @@ body {
     max-width: 880px;
     margin: 0 auto;
     background: @main-color;
+
+    @media @phone {
+        width: 100%;
+    }
 }
 .header-img {
     margin-top: 20px;
     width: 80%;
     border-top: 1px solid @main-color;
     z-index: 1;
+
+    @media @phone {
+        width: 100%;
+    }
 }
 .middle {
     font-size: 1rem;
@@ -73,6 +81,13 @@ p {
     bottom: 22px;
     left: 576px;
     width: 40%;
+
+    @media @phone {
+        top: -201px;
+        bottom: 22px;
+        left: 576px;
+        width: 40%;
+    }
 }
 .btn {
     .buttonCreator();
@@ -80,4 +95,8 @@ p {
     .flex-center();
     top: 5px;
     right: 3px;
+
+    @media @phone {
+        width: 100%;
+    }
 }

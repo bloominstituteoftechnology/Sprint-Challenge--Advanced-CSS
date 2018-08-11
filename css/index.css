@@ -1,3 +1,12 @@
+.mobile-width {
+  width: 100%;
+}
+.mobile-column {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -155,8 +164,8 @@ nav {
 @media (max-width: 500px) {
   nav {
     width: 100%;
-    justify-content: space-between;
-    margin-left: 20px;
+    align-items: center;
+    left: 42px;
   }
 }
 nav a {
@@ -167,16 +176,23 @@ nav a {
   margin-bottom: 10px;
   border-bottom: 2px solid #F6F7F8;
 }
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: flex-start;
+  }
+}
 nav a:hover {
   text-decoration: underline;
   color: gray;
 }
 @media (max-width: 500px) {
-  nav a {
+  nav a:hover {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    align-items: center;
+    float: left;
   }
 }
 .logo {
@@ -190,9 +206,8 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   .logo {
-    display: flex;
-    justify-content: center;
-    top: -15px;
+    width: 100%;
+    left: 137px;
   }
 }
 .footer {
@@ -214,11 +229,21 @@ body {
   margin: 0 auto;
   background: #f4f4f4;
 }
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
 .header-img {
   margin-top: 20px;
   width: 80%;
   border-top: 1px solid #f4f4f4;
   z-index: 1;
+}
+@media (max-width: 500px) {
+  .header-img {
+    width: 100%;
+  }
 }
 .middle {
   font-size: 1rem;
@@ -278,6 +303,14 @@ h2 p {
   left: 576px;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .astroimg {
+    top: -201px;
+    bottom: 22px;
+    left: 576px;
+    width: 40%;
+  }
+}
 .btn {
   font-size: 1rem;
   text-align: center;
@@ -299,4 +332,9 @@ h2 p {
   background-color: darkcyan;
   color: whitesmoke;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
