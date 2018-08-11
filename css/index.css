@@ -190,6 +190,10 @@ p {
   width: 100%;
   margin: 0px auto;
 }
+.border-bottom {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dee2e6;
+}
 main {
   display: flex;
   flex-wrap: wrap;
@@ -215,15 +219,32 @@ main .images {
 main .images img {
   border-radius: 20px;
 }
-main .border-bottom {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #dee2e6;
-}
 main .call-to-action {
   width: 85%;
   margin: 60px 0;
   display: flex;
   justify-content: space-between;
+}
+main .call-to-action .blurb a.button {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #ffffff;
+  padding: 10px 15px;
+  background: #22283A;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+main .call-to-action .blurb a.button:hover {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #22283A;
+  padding: 10px 15px;
+  background: #ffffff;
+  border: 1px solid #22283A;
+  border-radius: 5px;
 }
 main .call-to-action img {
   border-radius: 10px;
@@ -233,5 +254,5 @@ footer {
   padding: 30px 0 50px 0;
   text-align: center;
   background: #f6f6f6;
-  border-bottom: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
