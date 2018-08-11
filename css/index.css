@@ -145,7 +145,7 @@ h5 {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -181,4 +181,38 @@ nav a {
   color: black;
   text-decoration: none;
   padding: 0px 13.5px;
+}
+.home {
+  max-width: 640px;
+  width: 100%;
+}
+.home .header-main {
+  width: 100%;
+  padding-bottom: 12px;
+}
+.home .header-main h2 {
+  font-size: 2.6rem;
+  padding: 13px 1.9% 10px 1.9%;
+}
+.home .header-main p {
+  padding-left: 1.9%;
+  padding-right: 6%;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  letter-spacing: 0.13px;
+}
+.home .header-main img {
+  width: 100%;
+  height: 160px;
+}
+.home .row-of-pics-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.home .row-of-pics-main img {
+  width: 190px;
+  border-radius: 12px;
 }
