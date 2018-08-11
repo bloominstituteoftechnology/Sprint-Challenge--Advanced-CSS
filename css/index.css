@@ -1,6 +1,6 @@
 .btn-media {
   font-size: 1.6rem;
-  width: 390px;
+  width: 465px;
   height: 35px;
   border-radius: 5px;
   background-color: #22283b;
@@ -347,12 +347,20 @@ hr {
   }
 }
 .repeat-section .bottom {
-  align-content: center;
   width: 50%;
 }
 @media only screen and (max-width: 500px) {
   .repeat-section .bottom {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap: "";
+    flex-direction: column;
+    justify-content: center;
+    align-items: "";
+    margin: "";
+    margin-top: "";
+    max-width: "";
+    width: "";
   }
 }
 .repeat-section .btn {
@@ -366,11 +374,15 @@ hr {
   cursor: pointer;
   padding: 5px;
   border: 1px solid teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 500px) {
   .repeat-section .btn {
+    align-self: center;
     font-size: 1.6rem;
-    width: 390px;
+    width: 465px;
     height: 35px;
     border-radius: 5px;
     background-color: #22283b;
