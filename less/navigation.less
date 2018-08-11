@@ -1,0 +1,35 @@
+.navbar {
+    .flex-row;
+    justify-content: center;
+    background-color:@main-color;
+    border-bottom: solid 2px @accent-color;
+    height: 100px;
+    nav{
+        .flex-column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+
+
+    }
+
+    ul {
+        .flex-row;
+        justify-content: space-evenly;
+        width: 30%;
+        @media @mobile {
+            width: 100%;
+        }
+
+    }
+
+    li{
+        font-size: 1.4rem;
+        color: @secondary-color;
+    }
+    h1{
+        font-size:3.5rem;
+        padding-bottom: 1%;
+        color: @secondary-color;
+    }    
+}

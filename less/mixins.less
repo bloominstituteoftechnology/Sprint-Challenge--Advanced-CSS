@@ -1,1 +1,18 @@
 // Mixins below variables
+.flex-column(){
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-row() {
+    display:flex;
+}
+
+.button-creator(@bgc:none; @wt:none; @ht:none; @pd:none;){
+    background-color: @bgc;
+    padding:@pd;
+    width: @wt;
+    height: @ht;
+
+
+}
