@@ -1,3 +1,8 @@
+.flexMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -195,6 +200,13 @@ footer {
   max-width: 880px;
   width: 100%;
 }
+@media (max-width:500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 .content {
   padding-bottom: 3%;
   border-bottom: 2px solid #e0e0e0;
@@ -215,6 +227,11 @@ footer {
   height: 130px;
   padding: 0 2%;
 }
+@media (max-width:500px) {
+  .content .text {
+    height: 200px;
+  }
+}
 .content .text h2 {
   color: #22283B;
   font-size: 1.4rem;
@@ -228,6 +245,21 @@ footer {
   padding: 0 1%;
   margin-bottom: 2%;
 }
+@media (max-width:500px) {
+  .content .images img:nth-of-type(1) {
+    width: 100%;
+    height: 200px;
+    padding: 0 5%;
+    border-radius: 30px;
+    margin: 5% 0;
+  }
+  .content .images img:nth-of-type(2) {
+    display: none;
+  }
+  .content .images img:nth-of-type(3) {
+    display: none;
+  }
+}
 .content .images img {
   height: 170px;
   width: 32%;
@@ -240,6 +272,14 @@ footer {
   align-items: center;
   padding: 5%;
 }
+@media (max-width:500px) {
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 10%;
+  }
+}
 .signUp .text {
   height: 200px;
   margin-right: 4%;
@@ -247,6 +287,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width:500px) {
+  .signUp .text {
+    margin-right: 0;
+    height: 250px;
+  }
 }
 .signUp .text h2 {
   color: #22283B;
@@ -268,8 +314,32 @@ footer {
   color: #22283B;
   cursor: pointer;
 }
+@media (max-width:500px) {
+  .signUp .text .button {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background: #22283B;
+    border-radius: 5px;
+    color: #e0e0e0;
+  }
+  .signUp .text .button:hover {
+    background-color: #f4f4f4;
+    color: #22283B;
+    cursor: pointer;
+  }
+}
 .signUp img {
   height: 200px;
   width: 40%;
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .signUp img {
+    width: 100%;
+    padding-top: 3%;
+  }
 }
