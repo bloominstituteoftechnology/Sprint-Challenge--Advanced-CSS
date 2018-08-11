@@ -186,8 +186,19 @@ header {
   padding-top: 20px;
   padding-bottom: 18px;
 }
+@media (max-width: 500px) {
+  header {
+    padding-top: 15px;
+    padding-bottom: 11px;
+  }
+}
 header h1 {
   color: #454B58;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 4rem;
+  }
 }
 header nav {
   width: 30%;
@@ -195,9 +206,20 @@ header nav {
   justify-content: space-around;
   padding-top: 22px;
 }
+@media (max-width: 500px) {
+  header nav {
+    width: 81%;
+    padding-top: 15px;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #454B58;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.6rem;
+  }
 }
 footer {
   display: flex;
@@ -227,6 +249,11 @@ footer p {
 .home .lift-off-section img {
   height: 278px;
 }
+@media (max-width: 500px) {
+  .home .lift-off-section img {
+    height: 164px;
+  }
+}
 .home .lift-off-section .text-content {
   width: 96%;
   padding-top: 25px;
@@ -255,7 +282,7 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   padding-top: 68px;
-  padding-bottom: 68px;
+  padding-bottom: 43px;
 }
 .home .walk-section .text-content {
   width: 40%;
