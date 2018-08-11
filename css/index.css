@@ -184,6 +184,16 @@ header .header-content nav a {
   text-decoration: none;
   color: #22283B;
 }
+footer {
+  margin-top: 10px;
+  max-width: 880px;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+}
 html {
   font-size: 62.5%;
 }
@@ -313,14 +323,4 @@ body {
   .center-three .btn {
     width: 100%;
   }
-}
-footer {
-  margin-top: 10px;
-  max-width: 880px;
-  height: 80px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e0e0e0;
 }
