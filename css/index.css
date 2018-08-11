@@ -253,6 +253,29 @@ html {
 .container .content-sign .text-content p {
   font-size: 1.5rem;
 }
+.container .content-sign .text-content .btn {
+  width: 40%;
+  height: 50px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  color: white;
+  background: #22283B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .content-sign .text-content .btn a {
+  text-decoration: none;
+  color: white;
+}
+.container .content-sign .text-content .btn:hover {
+  background: white;
+  color: #22283B;
+  border: 1px solid #22283B;
+}
+.container .content-sign .text-content .btn:hover a {
+  color: #22283B;
+}
 .container .content-sign .img-content img {
   width: 70%;
 }

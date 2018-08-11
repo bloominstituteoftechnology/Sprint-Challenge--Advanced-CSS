@@ -37,3 +37,32 @@
         .p-padding();
     }
 }
+
+.button-creator(@width: 80%, @height: 50px, @button-color: @secondary-color) {
+    width: @width;
+    height: @height;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: white;
+    background: @button-color;
+
+    a {
+        text-decoration: none;
+        color: white;
+      }
+
+    &:hover {
+        background: white;
+        color: @button-color;
+        border: 1px solid @button-color;
+        a {
+            color: @secondary-color;
+        }
+    } // &:hover
+} //.button-creator
+
+.flex-center(@di: flex, @jc: center, @ai: center) {
+    display: @di;
+    justify-content: @jc;
+    align-items: @ai;
+}
