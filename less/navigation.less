@@ -1,28 +1,36 @@
 nav {
 		display: flex;
-		justify-content: center;
+    justify-content: center;
 		margin: auto;
-    height: auto;
+		align-items: center;
 		flex-wrap: wrap;
+    width: 100%;
 		padding: 10px 0;
     border-bottom: 1px solid @accent-color;
 
+    div{
+      display: flex;
+      font-size: 1.7rem;
+      width: 30%;
+      justify-content: space-around;
+    margin: 10px 0px;
+    @media @phone {
+  width: 80%;
+  }
 
-	a {
-		display: inline;
-		font-size: 2.1rem;
-    padding-top: 5px;
-		text-decoration: none;
-		color: @secondary-color;
 
-}
+    }
+    h1{
+        text-align: center;
+        width: 100%;
+    }
 
-a:first-child  {
-  display: block;
-  font-size: 5rem;
+a{
+  color: @secondary-color;
   text-decoration: none;
-  font-family: @secondary-font;
-  width: 100%;
-  text-align: center;
 }
+
+
+
+
 }
