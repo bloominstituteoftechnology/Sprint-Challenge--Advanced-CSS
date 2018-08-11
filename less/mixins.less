@@ -1,1 +1,24 @@
 // Mixins below variables
+.main-section {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnmixin(@btnwidth) {
+    width: @btnwidth;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0px;
+    color: white;
+    background-color: #232839;
+    border: 1px solid #3581F3;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}

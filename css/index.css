@@ -1,1 +1,322 @@
-/* Compile your LESS first! */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3rem;
+  color: #232839;
+}
+p,
+a {
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #E5E5E5;
+}
+header h1 {
+  color: #454957;
+  font-size: 4rem;
+  margin: 15px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 80%;
+  }
+}
+header nav a {
+  color: #454957;
+  text-decoration: none;
+  margin: 0 3%;
+}
+footer {
+  width: 100%;
+  background-color: #F6F6F6;
+  border: 1px solid #E5E5E5;
+  margin-top: 10px;
+  padding: 30px 0px;
+  text-align: center;
+  border-radius: 4px;
+}
+footer p {
+  color: #232839;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.earth {
+  width: 100%;
+  height: 200px;
+}
+.lift-off {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  width: 90%;
+  margin: 13px 0px 13px 2%;
+}
+@media (max-width: 500px) {
+  .lift-off {
+    width: 95%;
+  }
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2%;
+}
+.images img {
+  width: 30%;
+  height: 180px;
+  border-radius: 12px;
+}
+@media (max-width: 500px) {
+  .images .blast {
+    width: 87%;
+    height: 300px;
+    margin: 40px 0px 40px 25px;
+  }
+}
+@media (max-width: 500px) {
+  .images .sky,
+  .images .launch {
+    display: none;
+  }
+}
+.visit {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  width: 95%;
+  margin: 50px 0px 50px 2%;
+}
+@media (max-width: 500px) {
+  .visit {
+    width: 94%;
+    margin: 0px 0px 50px 2%;
+  }
+}
+.cta {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #DFE2E6;
+  border-bottom: 1px solid #DFE2E6;
+  padding: 50px 3%;
+}
+@media (max-width: 500px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cta div {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .cta div {
+    width: 80%;
+  }
+}
+.cta div p {
+  line-height: 1.5;
+}
+.cta div a {
+  width: 27%;
+  height: 40px;
+  padding: 10px;
+  margin: 20px 0px;
+  color: white;
+  background-color: #232839;
+  border: 1px solid #3581F3;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .cta div a {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 20px 0px;
+    color: white;
+    background-color: #232839;
+    border: 1px solid #3581F3;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+.cta img {
+  width: 42%;
+  height: 250px;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .cta img {
+    width: 80%;
+  }
+}

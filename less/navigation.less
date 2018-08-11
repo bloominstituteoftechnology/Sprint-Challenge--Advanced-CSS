@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: @barcolor;
+    border-bottom: 2px solid @barborder;
+
+    h1 {
+        color: @navtextcolor;
+        font-size: 4.0rem;
+        margin: 15px 0;
+    }
+    
+    nav {
+        .space-around();
+        width: 35%;
+        margin-bottom: 15px;
+
+        @media @phone {
+            width: 80%;
+        }
+
+        a {
+            color: @navtextcolor;
+            text-decoration: none;
+            margin: 0 3%;
+        }
+    }
+}
