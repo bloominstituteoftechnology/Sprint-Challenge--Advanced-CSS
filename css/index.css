@@ -156,6 +156,7 @@ a {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  padding: 0 5px;
 }
 @media (max-width: 500px) {
   a {
@@ -190,6 +191,11 @@ header {
   background-color: #f4f4f4;
   border-bottom: 2px solid #e0e0e0;
 }
+@media (max-width: 500px) {
+  header {
+    height: 120px;
+  }
+}
 header nav {
   width: 20%;
   margin-top: 20px;
@@ -200,6 +206,8 @@ header nav {
   header nav {
     width: 80%;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5px;
   }
 }
 footer {
