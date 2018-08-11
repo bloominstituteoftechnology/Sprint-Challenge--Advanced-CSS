@@ -1,1 +1,31 @@
 // Mixins below variables
+.margin() {
+    width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-size() {
+    width: 250px;
+    height: 165px;
+    border-radius: 20px;
+}
+
+.make-button(@bgColor, @width, @height) {
+    background-color: @bgColor;
+    width: @width;
+    height: @height;
+    border: 1px solid @bgColor;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

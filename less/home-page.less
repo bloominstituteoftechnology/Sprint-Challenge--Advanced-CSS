@@ -1,1 +1,142 @@
 // Home Content
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .main-img {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+header {
+    .flex-column;
+    .margin;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: @line-height;
+    }
+}
+
+.images {
+    .margin;
+    display: flex;
+    margin-bottom: 60px;
+
+    .first {
+        .image-size;
+        margin-right: 2rem;
+        @media @phone {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .second {
+        .image-size;
+        margin-right: 2rem;
+        @media @phone {
+            display: none;
+        }
+    }
+
+    .third {
+        .image-size;
+        @media @phone {
+            display: none;
+        }
+    }
+}
+
+.can-we {
+    .margin;
+    margin-bottom: 60px;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .first-paragraph {
+        margin-bottom: 10px;
+        line-height: @line-height;
+    }
+
+    .second-paragraph {
+        line-height: @line-height;
+    }
+}
+
+.sign-up {
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 40px 0;
+    display: flex;
+    margin-bottom: 30px;
+    @media @phone {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .bottom-img {
+        border-radius: 10px;
+    }
+
+    .text-content {
+        width: 50%;
+        margin: 0 5%;
+        @media @phone {
+            width: 95%;
+            margin: 0 2.5%;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .first-paragraph {
+            line-height: @line-height;
+            margin-bottom: 10px;
+        }
+
+        .second-paragraph {
+            line-height: @line-height;
+        }
+    }
+}
+
+button {
+    .make-button(@secondary-color, 100px, 50px);
+    @media @phone {
+        width: 100%;
+        .make-button(@secondary-color, 450px, 75px);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: @main-color;
+    font-size: 1.6rem;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
