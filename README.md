@@ -17,23 +17,35 @@ Answer the following questions to the best of your ability. You can exercise you
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+daptive design uses different static layouts to address changes in presentation (mobile, printing, etc.) while a fully-responsive website uses code to dynamically adapt the same page of content to the needs of the media presentation.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop-first is starts with the desktop presentation in mind and utilizes the @media (max-width: x) query at breakpoints for tablet and mobile.  Mobile does the reverse, started by designing a site optimized for mobile and uses the @media (min-width: x) query to adapt the display for tablet and desktop devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This allows us to set a font-size later within the html to a desired pixel size by dividing that pixel size by 10 and setting it's rem value to that.  Example:
+
+font-size: 1.6rem; //16px
+
 4. How would you describe preprocessing to someone new to CSS?
+
+CSS allows you to keep your style separate from content.  Preprocessing allows you to write your CSS using programming ideas like nesting, variables, and mixins (which are akin to functions), giving your style some limited behavior and enhancing reusability.
 
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble?
 
+I love using variables.  I'm starting to love mixins, but they are giving me the most trouble.
+
 ## Task 3: Set up your preprocessor
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
@@ -44,17 +56,17 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html)
-* [ ] Navigation: Use the `navigation.less` file for styling.
-* [ ] Main Content: Use the `home-page.less` file for styling
-* [ ] Footer: Use the `footer.less` file for styling
-* [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
-* [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
-* [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html)
+* [x] Navigation: Use the `navigation.less` file for styling.
+* [x] Main Content: Use the `home-page.less` file for styling
+* [x] Footer: Use the `footer.less` file for styling
+* [x] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
+* [x] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
+* [X] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
 
 ## Task 6: Home Page - Mobile HTML & LESS
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
 
 
 **Congratulations, you completed the sprint challenge!**
