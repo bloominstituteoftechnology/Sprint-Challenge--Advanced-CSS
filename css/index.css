@@ -132,6 +132,7 @@ table {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
 }
 h1,
 h2,
@@ -139,4 +140,33 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  width: 100%;
+  background: #f7f7f7;
+  border-bottom: 2px solid lightgray;
+}
+.nav-container .nav-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-container .links {
+  width: 35%;
+  padding-bottom: 1%;
+}
+.nav-container h1 {
+  font-size: 4.5rem;
+  margin: 1% 0;
+}
+.nav-container a {
+  text-decoration: none;
+  color: black;
+}
+.nav-container a:hover {
+  text-decoration: underline;
 }
