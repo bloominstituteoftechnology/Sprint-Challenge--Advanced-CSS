@@ -10,6 +10,8 @@ Mobile first means your focus is to build the core of the website first (those f
 
 ####What does font-size: 62.5% in the html tag do for us when using rem units?
 
+The default font-size in most browsers is 16px and setting the root element to have a font-size of 62.5% of 16px means if we use rem for our font sizes throughout our designs. An example of this would be 1 rem is equal to 10px, 2 rem is equal to 20px and so on. Essentially this adjustment on the root element allows us to better and more accurately adjust font-sizes as the calculations are made easier.
+
 ####How would you describe preprocessing to someone new to CSS?
 
 ####What is your favorite concept in preprocessing?
