@@ -1,1 +1,107 @@
 // Home Content
+.row {
+    .flexbox-set(@fJustify:center, @fAItems:center, @fDir:column);
+    .element-sizing(@height: 110px);
+    .element-spacing(@padding: 1.5%);
+    .element-color(@bgColor: @topbarBG);
+    border-bottom: 0.5px solid gray;
+
+    @media @phone {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.main-content {
+    h2 {
+        .element-spacing(@mTop: 3%, @mBottom: 3%);
+
+        @media @phone {
+            .element-spacing(@mLeft: 3%, @mRight: 3%);
+        }
+    }
+
+    img {
+        .flexbox-set(@fJustify:center, @fAItems:center);
+        .element-sizing(@mWidth: 880px, @width: 100%);
+        .element-spacing(@margin: 0 auto);
+
+        @media @phone {
+            .element-sizing(@mWidth: 500px, @width: 100%, @height: 300px);
+        }
+    }
+}
+
+p {
+    .element-spacing(@mTop: 3%, @mBottom: 3%);
+
+    @media @phone {
+        .element-spacing(@mLeft: 3%, @mRight: 3%);
+        text-align: justify;
+    }
+}
+
+.extra-margin {
+    .element-spacing(@mBottom: 5%);
+}
+
+.images {
+    .row-images;
+    img {
+        // padding: 5px;
+        .element-sizing(@mWidth: 36%);
+        .element-spacing(@padding: 1.5%);
+        .element-shape(@borderRadius: 10%);
+    }
+    @media @phone{
+        display: none;
+    }
+}
+
+.bottom-content {
+    .flexbox-set(@fWrap: wrap, @fDir: row);
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+    .left {
+        .flexbox-set(@fWrap: wrap);
+        .element-spacing(@mTop: 5%, @mRight: 5%);
+        .element-sizing(@mWidth: 45%);
+    }
+
+    .right {
+        .flexbox-set(@fWrap: wrap, @fJustify: flex-end);
+        .element-spacing(@mTop: 5%, @mRight: 5%);
+        .element-sizing(@mWidth: 45%, @height:250px);
+        img {
+            .element-shape(@borderRadius: 2%);
+        }
+    }
+
+    @media @phone {
+        .flexbox-set(@fWrap: wrap, @fDir: column, @fJustify:center, @fAItems:center);
+        .element-spacing(@mLeft: 3%, @mRight: 3%);
+        .left {
+            .element-sizing(@mWidth: 100%);
+        }
+        .right {
+            .element-sizing(@mWidth: 100%, @height:250px);
+            .element-spacing(@pBottom: 3%);
+        }
+    }
+}
+
+.button {
+    .button-prop;
+    @media @phone {
+        .button-prop(@bWidth: 100%)
+    }
+}
+
+footer {
+    .flexbox-set(@fJustify:center, @fAItems:center);
+    .element-color(@bgColor: @topbarBG);
+    .element-sizing(@width: 100%, @height: 80px);
+    .element-spacing(@mTop: 3%, @padding: 0);   
+}

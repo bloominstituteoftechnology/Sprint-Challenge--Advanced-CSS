@@ -1,1 +1,68 @@
 // Mixins below variables
+// FIX THE VARIABLES HERE AND REMOVE FLEX SET AFTER MODIFYING IMPLEMENTATION
+.flexbox-set(@fDir:"", @fFlow:"", @fGrow:"", @fWrap:"", @fJustify:"", 
+  @fAItems:"", @fASelf:"", @fAContent:"", @fOrder:""){
+    display: flex;
+    flex-direction: @fDir;
+    flex-flow: @fFlow;
+    flex-grow: @fGrow;
+    flex-wrap: @fWrap;
+    justify-content: @fJustify;
+    align-items: @fAItems;
+    align-self: @fASelf;
+    align-content: @fAContent;
+    order: @fOrder;
+}
+
+.element-color(@bgColor:"", @color:""){
+  background: @bgColor;
+  color: @color;
+}
+
+.element-shape(@boxShadow:"", @borderRadius:"", @border:""){
+  box-shadow: @boxShadow;
+  border-radius: @borderRadius;
+  border: @border;
+}
+
+.element-spacing(@margin:"", @mTop:"", @mBottom:"", @mRight:"", @mLeft:"", 
+  @padding:"", @pTop:"", @pBottom:"", @pLeft:"", @pRight:""){
+    margin: @margin;
+    margin-top: @mTop;
+    margin-bottom: @mBottom;
+    margin-left: @mLeft;
+    margin-right: @mRight;
+    padding: @padding;
+    padding-top: @pTop;
+    padding-bottom: @pBottom;
+    padding-left: @pLeft;
+    padding-right: @pRight;
+}
+
+.button-prop(@backColor:black, @foreColor:white, @bMWidth:100%, @bWidth:150px, @bHeight:50px){
+    .flexbox-set(@fJustify:center, @fAItems:center);
+    .element-shape(@border: 1px solid black, @borderRadius: 5%);
+    .element-sizing(@mWidth: @bMWidth, @width:@bWidth , @height: @bHeight );
+    .element-color(@bgColor: @backColor, @color: @foreColor);
+}
+
+.element-sizing(@mWidth:"", @width:"", @height:"", @mHeight:""){
+  max-width: @mWidth;
+  width: @width;
+  height: @height;
+  max-height: @mHeight;
+}
+
+// OVERRIDE STANDARD FONTS
+.element-font(@fSize:"", @fFamily:"", @tAlign:"", @tDecor:""){
+  font-size: @fSize;
+  font-family: @fFamily;
+  text-align: @tAlign;
+  text-decoration: @tDecor;
+}
+
+.row-images(){
+    .flexbox-set(@fJustify: center, @fAItems: center);
+    .element-spacing(@padding:2%, @mTop: 1%, @mBottom: 1%);
+    width: 100%;
+}

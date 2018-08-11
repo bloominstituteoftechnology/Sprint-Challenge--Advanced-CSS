@@ -1,5 +1,4 @@
 // General Styles
-
 * {
   box-sizing: border-box;
 }
@@ -12,3 +11,37 @@ h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
 }
 
+h1 {
+  font-size: @h1;
+}
+
+h2 {
+  font-size: @h2;
+}
+
+p {
+  font-size: @p;
+}
+
+a {
+  font-size: @p;
+}
+
+.container {
+  .flexbox-set(@fJustify:center, @fAItems:center, @fDir:column);
+  .element-sizing(@mWidth: 880px);
+  .element-spacing(@margin:0 auto);
+}
+
+.flex-set(@justify:"", @margin:"", @marginTop:"", @maxWidth:"", @alignItems:"", @flexDir:"", @padding:"", @width:"", @height:""){
+  display: flex;
+  flex-direction: @flexDir;
+  justify-content: @justify;
+  align-items: @alignItems;
+  margin: @margin;
+  margin-top: @marginTop;
+  padding: @padding;
+  max-width: @maxWidth;
+  width: @width;
+  height: @height;
+}
