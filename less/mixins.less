@@ -2,3 +2,31 @@
 .margin-for-all-containers {
     margin-top: 2%;
 }
+
+.flex-and-centered-for-containers {
+    display: flex;
+    margin: @margin;
+}
+
+.flex-main-child-styles {
+    width: 42%;
+    .margin-for-all-containers();
+    img {
+        height: 100%;
+        border-radius: 7px;
+    }
+    p {
+        line-height: 27px;
+    }
+}
+
+.createButton(@background-color, @radius) {
+    a {
+        text-decoration: none;
+        background-color: @background-color;
+        padding: 7px 10px;
+        border-radius: @radius;
+        color: white;
+        font-size: @link-size;
+    }
+}

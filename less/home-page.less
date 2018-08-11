@@ -17,6 +17,7 @@
     .main-content {
         width: @main-content-width;
         margin: @margin;
+        color: @secondary-color;
         p {
             font-size: @paragraph-size;
             line-height: @paragraph-line-height;
@@ -24,15 +25,30 @@
     }
 
     .flex-img-container {
-        display: flex;
+        .flex-and-centered-for-containers();
         justify-content: space-between;
         width: @main-content-width;
-        margin: @margin;
-        .margin-for-all-containers();
+        padding-bottom: 10px;
         img {
             width: 31%;
             height: 31%;
             border-radius: 20px;
+            .margin-for-all-containers();
         }
+    }
+
+    .flex-main-content-container {
+        .flex-and-centered-for-containers();
+        justify-content: space-evenly;
+        height: 300px;
+        .flex-main-child {
+            .flex-main-child-styles();
+        }
+    }
+
+    .button {
+        width: 90%;
+        margin: @margin;
+        .createButton(@secondary-color, 3px);
     }
 }
