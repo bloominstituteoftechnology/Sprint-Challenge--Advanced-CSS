@@ -45,16 +45,16 @@ Answer the following questions to the best of your ability. You can exercise you
 
 ## Task 5: Home Page - Desktop HTML & LESS
 * [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
-* [ ] Navigation: Use the `navigation.less` file for styling.
-* [ ] Main Content: Use the `home-page.less` file for styling
-* [ ] Footer: Use the `footer.less` file for styling
-* [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
-* [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
-* [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
+* [X] Navigation: Use the `navigation.less` file for styling.
+* [X] Main Content: Use the `home-page.less` file for styling
+* [X] Footer: Use the `footer.less` file for styling
+* [X] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
+* [X] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
+* [X] Variables: Use `variables.less` to contain colors or media query strings for the site design.  You have been provided the hex codes for each color used in the site.
 
 ## Task 6: Home Page - Mobile HTML & LESS
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
 
 
 **Congratulations, you completed the sprint challenge!**
