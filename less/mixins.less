@@ -1,1 +1,7 @@
 // Mixins below variables
+.flex-maker(@justify, @align, @direction: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
