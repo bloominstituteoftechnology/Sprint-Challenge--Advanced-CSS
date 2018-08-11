@@ -1,27 +1,28 @@
 // Mixins below variables
 
-.display-center() {
+.margin-auto() {
+   margin: 0px auto;
+}
+
+.display-flex(@fd:row, @jc:center, @ai:center) {
 	display:flex;
-	justify-content:center;
-	align-items:center;
+  flex-direction: @fd;
+	justify-content: @jc;
+	align-items:@ai;
 }
 
 
-
-.button-creator(@bgColor:blue,  @btn-font, @width: 150px, @height: 60px) {
+.button-creator(@bgColor:blue,  @btn-font, @width: 150px, @height:60px) {
+   background-color: @bgColor;
    font-size: @btn-font;
    width: @width;
    height: @height;
-   background-color: @bgColor;
    color: white;
    border-radius: 10px;
-   
-   
-   .display-center;
-  
-   &:hover {
-     border: 1px solid @bgColor;
-     background-color: white;
+   .display-flex();
+    &:hover {
+     border: 1px solid red;
+     background-color:yellow;
      color: @bgColor;
    }
 }

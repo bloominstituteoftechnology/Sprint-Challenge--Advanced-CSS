@@ -193,16 +193,17 @@ p {
 }
 @media (max-width: 500px) {
   .header .space-walker {
-    padding: 10px;
+    padding: 10px 10px 15px 10px;
     font-size: 2.2rem;
   }
 }
 .header .header-nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .header .header-nav .a-tag {
   padding-right: 10px;
@@ -222,6 +223,7 @@ p {
   background: #e0e0e0;
   margin-top: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -313,31 +315,33 @@ p {
 }
 .home .signup .text-content-signup .btn {
   margin-top: 35px;
+  background-color: #22283B;
   font-size: 1.6rem;
   width: 150px;
   height: 60px;
-  background-color: #22283B;
   color: white;
   border-radius: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 1px solid blue;
 }
 .home .signup .text-content-signup .btn:hover {
-  border: 1px solid #22283B;
-  background-color: white;
+  border: 1px solid red;
+  background-color: yellow;
   color: #22283B;
 }
 @media (max-width: 500px) {
   .home .signup .text-content-signup .btn {
+    background-color: #22283B;
     font-size: 1.2rem;
     width: 150px;
     height: 60px;
-    background-color: #22283B;
     color: white;
     border-radius: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -345,8 +349,8 @@ p {
     border-radius: 0px;
   }
   .home .signup .text-content-signup .btn:hover {
-    border: 1px solid #22283B;
-    background-color: white;
+    border: 1px solid red;
+    background-color: yellow;
     color: #22283B;
   }
 }
