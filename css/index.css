@@ -169,7 +169,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .topNavBar {
-    width: 70%;
+    width: 80%;
   }
 }
 footer {
@@ -178,7 +178,14 @@ footer {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 3%;
   background-color: #e0e0e0;
+}
+@media (max-width: 500px) {
+  footer {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 .pageContainer {
   display: flex;
@@ -262,7 +269,7 @@ footer {
 .pageContainer .bottomContentContainer .bottomContentTextContainer {
   display: flex;
   flex-direction: column;
-  justify-content: 'space-around';
+  justify-content: space-around;
   width: 40%;
 }
 .pageContainer .bottomContentContainer .bottomImg {
@@ -279,6 +286,32 @@ footer {
   color: #f4f4f4;
   padding: 3%;
   margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .pageContainer .bottomContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 0;
+    align-items: center;
+  }
+  .pageContainer .bottomContentContainer .bottomContentTextContainer {
+    width: 80%;
+  }
+  .pageContainer .bottomContentContainer .bottomImg {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 5%;
+  }
+  .pageContainer .bottomContentContainer .btn {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #22283B;
+  }
 }
 .pageContainer footer {
   margin: 3% 0;
