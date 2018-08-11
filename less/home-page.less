@@ -3,6 +3,7 @@
 .container{
     max-width: 800px;
     margin: 0 auto;
+   
 
     img{
         width: 100%;
@@ -21,27 +22,53 @@
         }
 
     }
+    
     .image-row {
         .flex-display;
         justify-content: space-around;
+        @media @phone {
+            padding: 20px 0;
+        }
+
         img{
             width: 30%;
             height: 200px;
             border-radius: 20px;
+            @media @phone {
+                width: 90%;
+                height: 300px;
+            }
+            
         }
     }
+    .mobile-none{
+        @media @phone {
+            display: none;
+        }
+    }
+   
     .bottom-content {
         .flex-display;
         justify-content: center;
         margin: 40px;
         padding: 30px;
         .horizontal-line;
+        @media @phone {
+            flex-direction: column;
+            justify-content: center;
+            
+            
+        }
         img{
             padding: 10px;
             border-radius: 20px;
         }
         .button{
             .btn-mixin(white,@darkgray);
+            @media @phone {
+                width:100%;
+                margin: 10px 0;
+            }
         }
         .half-wide-text {
             .flex-display;
