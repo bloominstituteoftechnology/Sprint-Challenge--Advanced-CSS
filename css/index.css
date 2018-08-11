@@ -1,3 +1,12 @@
+.btn-creator {
+  font-size: 2.3rem;
+  color: #f4f4f4;
+  background-color: #212529;
+  width: 27%;
+  padding: 15px 11px;
+  border-radius: 5px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,20 +153,126 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5.6rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4.7rem;
+}
+h3 {
+  font-size: 3.9rem;
+}
+a {
+  font-size: 2.3rem;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 2.3rem;
   line-height: 1.5;
+  padding-top: 15px;
 }
 img {
   width: 100%;
 }
 .container {
-  max-width: 800px;
+  max-width: 1685px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+header h1 {
+  color: #454B58;
+}
+header nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 22px;
+}
+header nav a {
+  text-decoration: none;
+  color: #454B58;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-top: 2px solid #E4E4E4;
+  width: 59%;
+  margin: 0 auto;
+}
+footer p {
+  border: 1px solid #E4E4E4;
+  margin-top: 20px;
+  padding: 40px 36.1%;
+  background-color: #F6F6F6;
+}
+.home {
+  border-top: 3px solid #E4E4E4;
+}
+.home .lift-off-section {
+  max-width: 1118px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.home .lift-off-section img {
+  height: 278px;
+}
+.home .lift-off-section .text-content {
+  width: 96%;
+  padding-top: 25px;
+}
+.home .lift-off-section .rocket-images {
+  padding: 21px 0px;
+  display: flex;
+  justify-content: center;
+  width: 96%;
+}
+.home .lift-off-section .rocket-images img {
+  padding: 0px 18px;
+  border-radius: 40px;
+  width: 34.5%;
+  height: 249px;
+}
+.home .lift-off-section .text-content2 {
+  padding-top: 46px;
+  padding-bottom: 99px;
+  width: 96%;
+}
+.home .walk-section {
+  max-width: 1118px;
+  margin: 0 auto;
+  border-top: 1px solid #E4E4E4;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+.home .walk-section .text-content {
+  width: 40%;
+}
+.home .walk-section .text-content .btn {
+  font-size: 2.3rem;
+  color: #f4f4f4;
+  background-color: #212529;
+  width: 27%;
+  padding: 15px 11px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 28px;
+}
+.home .walk-section .space-walk {
+  width: 40%;
+}
+.home .walk-section .space-walk img {
+  border-radius: 8px;
 }
