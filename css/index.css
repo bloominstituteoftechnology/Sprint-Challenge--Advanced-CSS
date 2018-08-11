@@ -176,22 +176,36 @@ header {
   text-align: center;
   padding: 15px 0;
   background-color: #e0e0e0;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    background-color: #e0e0e0;
+  }
+  to {
+    background-color: yellow;
+  }
 }
 header h1 {
   font-size: 3rem;
 }
-li {
+header li {
   display: inline-flex;
   flex-direction: row;
   padding: 25px 50px;
   font-size: 1.1rem;
 }
 @media (max-width: 500px) {
-  li {
+  header li {
     padding: 15px 15px;
   }
 }
-li a {
+header li a {
   text-decoration: none;
   color: #22283B;
 }
@@ -213,6 +227,15 @@ body .smart-container .jumbo img {
   display: flex;
   width: 100%;
   padding-bottom: 25px;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 body .smart-container .text-content {
   display: flex;

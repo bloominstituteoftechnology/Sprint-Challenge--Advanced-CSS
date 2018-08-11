@@ -3,16 +3,29 @@
 body {
 
 	.smart-container {
-	width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
 
 
 	.jumbo img {
 		display: flex;
 		width: 100%;
 		padding-bottom: 25px;
+
+		animation: pulse 5s infinite;
 	}
+
+	@keyframes pulse {
+		0% {
+			opacity: 0;
+		}
+
+		100% {
+			opacity: 1;
+		}
+	}
+
 
 	.text-content {
 		display: flex;
