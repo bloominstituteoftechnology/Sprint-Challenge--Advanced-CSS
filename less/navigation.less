@@ -1,0 +1,21 @@
+.header{
+    background-color: @header-backgroundcolor;
+    width: 100%;
+    height: 100px;
+    .flex-column(space-evenly);
+    color: @font-color;
+    border-bottom: @border-bottom;
+    h1 {
+        width: 25%;
+        font-size: 2.5rem;
+        .flex-row(center);
+    }
+    nav {
+        width:40%;
+        .flex-row(space-between);
+        a {
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
+}

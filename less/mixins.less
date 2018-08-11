@@ -1,1 +1,25 @@
 // Mixins below variables
+.flex-row(@justify) {
+    display: flex;
+    justify-content: @justify;
+    align-items: center;
+}
+
+.flex-column(@column) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @column;
+    align-items: center;
+}
+
+.btn-creator() {
+    width: 80px;
+    height:30px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    background: @btn-color;
+    color:white;
+    border: 1px solid blue;
+    .flex-row(center);
+    margin: 15px 0;
+}
