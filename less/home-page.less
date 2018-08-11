@@ -2,6 +2,48 @@
 
 .main-container {
     .flex-column(space-between);
-    width:80%;
+    align-items: unset;
+    width:60%;
+    height:900px;
     margin:auto;
+    border-bottom: @border-bottom;
+    padding-bottom: 50px;
+    .main-header{
+        width:100%;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .img-container {
+        .flex-row(space-between);
+        width:100%;
+        margin-bottom: 40px;
+        .rocket-img {
+            width:31%;
+            border-radius: 5px;
+        }
+    }
+    
+}
+
+.sec-container {
+    width:60%;
+    margin: 30px auto;
+    .flex-row(space-around);
+    .text-container {
+        width:40%;
+     h2 {
+         font-size: 1.8rem;
+         margin-bottom: 10px;
+     }
+     button {
+         .btn-creator();
+     }
+    }
+
+    img {
+        width:30%;
+        border-radius: 10px;
+        margin: 20px;
+    }
 }
