@@ -1,1 +1,34 @@
 // Mixins below variables
+.h1_style() {
+     font-family: 'Russo One', sans-serif;
+     font-size: 2.6rem;
+ }
+
+ .h2_style() {
+     font-family: 'Russo One', sans-serif;
+     font-size: 2.0rem;
+     margin: 20px 0;
+ }
+
+ .p_style() {
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 1.1rem;
+     color: @secondary-color;
+     margin: 5px 0;
+     line-height: 1.5rem;
+ }
+
+ .displayflex_style(@direction: row, @justify: center, @align: center) {
+     display: flex;
+     flex-direction: @direction;
+     justify-content: @justify;
+     align-items: @align;
+ }
+
+ .button_style (@height, @width, @radius, @bgcolor, @txtcolor) {
+     height: @height;
+     width: @width;
+     border-radius: @radius;
+     background-color: @bgcolor;
+     color: @txtcolor;
+ }
