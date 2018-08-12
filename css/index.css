@@ -275,6 +275,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .walk .walk-content .btn {
