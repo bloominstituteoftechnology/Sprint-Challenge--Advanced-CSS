@@ -16,12 +16,24 @@ main {
 
         .middle-content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
 
-            .middle-images {
-                border-radius: 15px;
-                height: 175px;
-                width: 250px;
+            .blast {
+                .middle-images();
+                @media @phone {
+                    width: 100%;
+                    max-width: 400px;
+                    height: 300px;
+                    margin: 10px;
+                }
+            }
+
+            .sky, .launch {
+                .middle-images();
+                @media @phone {
+                    display: none;
+                }
             }
         }
     }
@@ -29,12 +41,21 @@ main {
     .bottom-content {
         display: flex;
         margin: 30px;
+        @media @phone {
+            flex-direction: column;
+            margin: 100px 20px 20px 20px;
+        }
 
         .bottom-content-text {
             padding: 0 25px;
 
             .sign-up {
                 padding: 5px 10px;
+                @media @phone {
+                    width: 100%;
+                    max-width: 370px;
+                    margin: 20px 0;
+                }
 
                 .button-maker();
             }
@@ -44,7 +65,12 @@ main {
             border-radius: 5px;
             margin: 30px;
             height: 200px;
-            width: 300px;
+            max-width: 300px;
+            @media @phone {
+                width: 100%;
+                max-width: 370px;
+                margin: 0 24px;
+            }
         }
     }
 }

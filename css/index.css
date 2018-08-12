@@ -178,6 +178,11 @@ header nav a {
 header nav a:hover {
   text-decoration: underline;
 }
+header .main-header {
+  height: 200px;
+  width: 100%;
+  max-width: 800px;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -195,16 +200,45 @@ main .section-content {
 }
 main .section-content .middle-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-main .section-content .middle-content .middle-images {
+main .section-content .middle-content .blast {
   border-radius: 15px;
   height: 175px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
+}
+@media (max-width: 500px) {
+  main .section-content .middle-content .blast {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 10px;
+  }
+}
+main .section-content .middle-content .sky,
+main .section-content .middle-content .launch {
+  border-radius: 15px;
+  height: 175px;
+  width: 100%;
+  max-width: 250px;
+}
+@media (max-width: 500px) {
+  main .section-content .middle-content .sky,
+  main .section-content .middle-content .launch {
+    display: none;
+  }
 }
 main .bottom-content {
   display: flex;
   margin: 30px;
+}
+@media (max-width: 500px) {
+  main .bottom-content {
+    flex-direction: column;
+    margin: 100px 20px 20px 20px;
+  }
 }
 main .bottom-content .bottom-content-text {
   padding: 0 25px;
@@ -224,9 +258,23 @@ main .bottom-content .bottom-content-text .sign-up {
   height: 40px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  main .bottom-content .bottom-content-text .sign-up {
+    width: 100%;
+    max-width: 370px;
+    margin: 20px 0;
+  }
+}
 main .bottom-content .space-walk-img {
   border-radius: 5px;
   margin: 30px;
   height: 200px;
-  width: 300px;
+  max-width: 300px;
+}
+@media (max-width: 500px) {
+  main .bottom-content .space-walk-img {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 24px;
+  }
 }

@@ -18,11 +18,11 @@
 **Add,Commit, and PUSH**
 
 ## Home Page - Desktop HTML & LESS
-- [ ] Navigation: Use the `navigation.less` file for styling.
-- [ ] Main Content: Use the `home-page.less` file for styling
-- [ ] Footer: Use the `footer.less` file for styling
+- [x] Navigation: Use the `navigation.less` file for styling.
+- [x] Main Content: Use the `home-page.less` file for styling
+- [x] Footer: Use the `footer.less` file for styling
 - [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
-- [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
+- [x] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
 - [ ] Variables: Use `variables.less` to contain colors or media query strings for the site design.
 **Add,Commit, and PUSH**
 
