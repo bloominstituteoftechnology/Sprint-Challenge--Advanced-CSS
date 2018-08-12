@@ -1,1 +1,130 @@
 // Home Content
+.content-large {
+    width: 100%;
+}
+
+.content-medium {
+    width: 48%;
+
+    @media (@phone) {
+        width: 100%;
+    }
+}
+
+.content-small {
+    width: 31%;
+
+    @media (@phone) {
+        width: 84%;
+    }
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.mobile-hide {
+    @media (@phone) {
+        display: none;
+    }
+}
+
+main {
+    .flex-column-center;
+
+    .home-image {
+        margin-bottom: 20px;
+
+        @media (@phone) {
+            margin-bottom: 15px;
+        }
+    
+        img {
+            height: 225px;
+
+            @media (@phone) {
+                height: 200px;
+            }
+        }
+    }
+
+    .text-container {
+        width: 95%;
+
+        @media (@phone) {
+            width: 93%;
+        }
+    }
+
+    .image-container {
+        width: 95%;
+        .flex-space-between;
+        margin-top: 7px;
+        margin-bottom: 53px;
+
+        @media (@phone) {
+            margin-top: 22px;
+            padding-left: 10%;
+            margin-bottom: 40px;
+        }
+
+        img {
+            border-radius: 15px;
+
+            @media (@phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    .call-to-action {
+        margin: 65px 0 20px 0;
+        padding: 55px 0;
+        border-top: 1px solid @border-color-accent;
+        border-bottom: 1px solid @border-color-accent;
+        .flex-column-center;
+
+        @media (@phone) {
+            margin: 48px 0 15px 0;
+            padding: 50px 0;
+        }
+        
+        .content-inset {
+            width: 85%;
+            .flex-space-between;
+
+            @media (@phone) {
+                width: 74%;
+                .flex-column-center;
+            }
+
+            .blurb {
+            
+                a.button {
+                    margin-top: 10px;
+                    .button-creator(@background-color-button, @text-color-button, @text-color-button);
+
+                    &:hover {
+                        .button-creator(@text-color-button, @background-color-button, @background-color-button);
+                    }
+
+                    @media (@phone) {
+                        margin-top: 17px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            img {
+                border-radius: 10px;
+
+                @media (@phone) {
+                    margin-top: 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
