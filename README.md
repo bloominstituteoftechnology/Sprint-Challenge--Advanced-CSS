@@ -54,7 +54,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 ## Task 6: Home Page - Mobile HTML & LESS
 * [x ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file. 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string.  Use the `@phone` variable for all your nested mobile styling.
 
 
 **Congratulations, you completed the sprint challenge!**
