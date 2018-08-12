@@ -151,7 +151,7 @@ p {
   font-size: 1.6rem;
 }
 a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .container {
   width: 100%;
@@ -175,6 +175,7 @@ a {
   margin: 15px;
   text-decoration: none;
   color: #22283A;
+  display: inline-block;
   transition: transform 0.2s linear;
 }
 @media (max-width: 500px) {
