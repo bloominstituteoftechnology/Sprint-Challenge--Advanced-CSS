@@ -1,1 +1,19 @@
-// Mixins below variables
+.flex(){
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.flexCenter(){
+    .flex; 
+    justify-content: center; 
+}
+
+
+.btn(@border: 1px solid teal, @width: 25%, @padding: 7px, @background-color:  #22283B){
+    border: @border; 
+    width: @width; 
+    padding: @padding; 
+    background-color: @background-color;
+    font-size: 1rem; 
+    color: #f4f4f4;
+}

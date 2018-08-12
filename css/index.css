@@ -1,1 +1,306 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ececec;
+}
+nav h1 {
+  font-size: 2.3rem;
+  padding-bottom: 15px;
+}
+nav a {
+  font-size: 1.1rem;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1rem;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+footer .footerText {
+  width: 40%;
+  line-height: 1.5;
+}
+footer .footerText h2 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+}
+footer .footerText .button {
+  border: 1px solid teal;
+  width: 25%;
+  padding: 7px;
+  background-color: #22283B;
+  font-size: 1rem;
+  color: #f4f4f4;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  footer .footerText .button {
+    width: 100%;
+    margin: 15px 0%;
+    padding: 15px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerText {
+    width: 93%;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerText {
+    justify-content: center;
+  }
+}
+footer .footerImg {
+  width: 45%;
+}
+footer .footerImg img {
+  height: 260px;
+  width: 100%;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  footer .footerImg img {
+    height: 250px;
+  }
+}
+@media (max-width: 500px) {
+  footer .footerImg {
+    width: 93%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    padding-top: 40px;
+  }
+}
+.hrFooter {
+  margin-top: 50px;
+  color: white;
+}
+.trademark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 40px 0%;
+  background-color: #ececec;
+  font-weight: bold;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bannerImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bannerImg img {
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  line-height: 1.5;
+}
+header h2 {
+  font-size: 1.7rem;
+  padding-bottom: 15px;
+}
+.imageRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.imageRow .imgBox {
+  width: 30%;
+  border-radius: 15px;
+  height: 170px;
+}
+@media (max-width: 500px) {
+  .imageRow .imgBox {
+    width: 90%;
+    height: 280px;
+  }
+}
+@media (max-width: 500px) {
+  .imageRow .imgMobile {
+    display: none;
+  }
+}
+.infoArea {
+  padding: 40px 20px 20px 20px;
+  line-height: 1.2;
+}
+.infoArea h2 {
+  padding-bottom: 20px;
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  .infoArea {
+    padding-bottom: 40px;
+  }
+}
