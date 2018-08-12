@@ -1,27 +1,41 @@
 header {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: @text-color-header;
     padding: 15px 0;
     background: @background-color-accent;
     border-bottom: 2px solid @border-color;
+    .flex-column-center;
+
+    @media (@phone) {
+        border-bottom: none;
+    }
 
     h1 {
-        font-size: 4.5rem;
+        @media (@phone) {
+            font-size: 4rem;
+        }
     }
 
     nav {
-        width: 31%;
+        max-width: 420px;
+        width: 95%;
         color: inherit;
         margin-top: 17px;
         .flex-space-between;
+
+        @media (@phone) {
+            max-width: 375px;
+            margin-top: 15px;
+        }
 
         a {
             color: inherit;
             text-decoration: none;
             font-size: 1.8rem;
+
+            @media (@phone) {
+                font-size: 1.6rem;
+            }
         }
 
     }
