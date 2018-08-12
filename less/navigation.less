@@ -16,9 +16,14 @@
         margin: 15px;
         text-decoration: none;
         color: @font-color;
+        transition: transform 0.2s linear;
 
         @media @phone {
             font-size: 1.4rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
         }
     }
     @media @phone {
