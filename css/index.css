@@ -269,7 +269,7 @@ footer p {
 }
 @media (max-width:500px) {
   .container .button a {
-    padding: 10px 150px;
+    padding: 10px 100px;
   }
 }
 .container .button a:hover {
