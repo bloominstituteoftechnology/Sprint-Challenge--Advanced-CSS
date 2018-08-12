@@ -3,21 +3,26 @@
     width: 100%;
     margin: 0 auto;
     background-color: #f6f6f6;
-
-        h1 {
-          .navHeaderFont;
-          width:  100%;
-          margin: 1% 0;
-        }
-        ul {
-          .rowDisplay;
-          width: 45%;
-          margin: 0 auto;
-          .pFont;
-        }
-
-        li {
-          padding: 0 2%;
-          margin: 2% 0;
+    
+    h1 {
+      .navHeaderFont;
+      width:  100%;
+      margin: 1% 0;
+    }
+    ul {
+      .rowDisplay;
+      width: 45%;
+      margin: 0 auto;
+      .pFont;
+      @media @phone {
+        width:100%;
+            margin: 0;
+            padding: 0;
+      }
+    }
+    
+    li {
+      padding: 0 2%;
+      margin: 2% 0;
         }
 }

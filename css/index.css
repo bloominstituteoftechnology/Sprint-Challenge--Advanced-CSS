@@ -1,5 +1,4 @@
 @font-color color: #444958;
-@button-colors #22283a;
 .colDisplay {
   display: flex;
   flex-direction: column;
@@ -189,30 +188,62 @@ h5 {
   margin: 0 auto;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  #navigation ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 #navigation li {
   padding: 0 2%;
   margin: 2% 0;
 }
 #container {
-  width: 880px;
+  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
 }
 header h1 {
   font-size: 3rem;
   color: #444958;
-  padding: 1% ;
+  padding: 1%;
 }
 header p {
   width: 90%;
   margin: 1%;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  header p {
+    width: 50%;
+    margin: 1% 0 0 1%;
+    padding: 0;
+  }
+}
 header img {
   width: 100%;
   margin: 2% 0;
 }
+@media (max-width: 500px) {
+  header img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 #middleWrap {
+  width: 100%;
   margin: 3% 0 7% 0;
+}
+@media (max-width: 500px) {
+  #middleWrap {
+    width: 100%;
+  }
 }
 #middleWrap #imageWrap {
   display: flex;
@@ -221,19 +252,56 @@ header img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  #middleWrap #imageWrap {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
 #middleWrap img {
   border-radius: 10px;
   width: 30%;
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  #middleWrap img {
+    display: flex;
+    justify-content: flex-start;
+    width: 450px;
+    margin: 3%;
+    padding: 0;
+  }
 }
 #middleWrap h1 {
   margin: 1%;
   font-size: 3rem;
   color: #444958;
 }
+@media (max-width: 500px) {
+  #middleWrap h1 {
+    width: 500px;
+  }
+}
 #middleWrap p {
   margin: 1%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  #middleWrap p {
+    width: 470px;
+  }
+}
+@media (max-width: 500px) {
+  #middleWrap #imageWrap img:nth-of-type(2) {
+    border-radius: ;
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #middleWrap #imageWrap img:nth-of-type(3) {
+    border-radius: ;
+    display: none;
+  }
 }
 #walking {
   margin: 1%;
@@ -243,12 +311,23 @@ header img {
   padding: 5% 0 0 0;
   border-top: 2px solid lightgray;
 }
+@media (max-width: 500px) {
+  #walking {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #walking #bottomWrap {
   width: 50%;
   padding: 0 4%;
 }
 #walking img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  #walking img {
+    margin: 5%;
+  }
 }
 #walking h1 {
   width: 100%;
@@ -270,6 +349,11 @@ header img {
   background-color: #22283a;
   margin-top: 5%;
 }
+@media (max-width: 500px) {
+  #walking #signUp {
+    width: 100%;
+  }
+}
 footer {
   height: 100px;
   background-color: #f6f6f6;
@@ -277,4 +361,9 @@ footer {
   padding-top: 4%;
   text-align: center;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 500px;
+  }
 }
