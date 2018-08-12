@@ -204,7 +204,7 @@ main .section-content .middle-content .middle-images {
 }
 main .bottom-content {
   display: flex;
-  margin: 60px;
+  margin: 30px;
 }
 main .bottom-content .bottom-content-text {
   padding: 0 25px;
@@ -226,6 +226,7 @@ main .bottom-content .bottom-content-text .sign-up {
 }
 main .bottom-content .space-walk-img {
   border-radius: 5px;
+  margin: 30px;
   height: 200px;
   width: 300px;
 }
