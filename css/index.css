@@ -15,6 +15,26 @@
     margin-bottom: 15px;
   }
 }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    left: 300px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    right: 300px;
+  }
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -238,9 +258,15 @@ footer {
 }
 .container .homeLead .homeLeadTitle {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
 }
 .container .homeLead .homeLeadPara {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInRight;
+  animation-duration: 3s;
 }
 .container .homeLead .homeLeadPicDiv {
   display: flex;
@@ -286,9 +312,15 @@ footer {
 }
 .container .homeFollowup .homeFollowupTitle {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
 }
 .container .homeFollowup .homeFollowupPara {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInRight;
+  animation-duration: 3s;
 }
 .container .homeConc {
   display: flex;
@@ -329,9 +361,15 @@ footer {
 }
 .container .homeConc .homeConcTitle {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInLeft;
+  animation-duration: 3s;
 }
 .container .homeConc .homeConcPara {
   padding-bottom: 15px;
+  position: relative;
+  animation-name: fadeInRight;
+  animation-duration: 3s;
 }
 .container .homeConc .homeConcBtn {
   display: flex;
