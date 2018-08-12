@@ -4,11 +4,46 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html, body {
   font-family: 'Ubuntu', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  color: rgb(35, 40, 58);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  color: rgb(33, 37, 41);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 

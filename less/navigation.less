@@ -1,0 +1,42 @@
+.outer-nav {
+    width: 100%;
+    border-bottom: 2px solid @border;
+    background: @head-foot-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 4px 0;
+
+    h1 {
+        color:@title-color;
+    }
+
+    .inner-nav {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 15px 18% 10px 18%;
+        width: 100%;
+        max-width: 800px;
+
+        @media @phone {
+            width: 100%;
+            padding-left: 11%;
+            padding-right: 11%;
+        }
+
+        a {
+            text-decoration:none;
+            color:@title-color;
+            font-size:1.6rem;
+            
+            &:hover{
+                color:rgb(252,187,88);
+                cursor:pointer;
+            }
+        }
+    }
+}
