@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: @header-bg;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    @media @phone {
+        padding-top: 15px;
+        padding-bottom: 11px;
+    }
+
+    h1 {
+        color: @header-font-color;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 22px;
+        @media @phone {
+            width: 81%;
+            padding-top: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: @header-font-color;
+        }
+    }
+}
