@@ -299,8 +299,12 @@ header h1 {
 }
 .main-container .bottom-container .button:hover {
   border: 1px solid #22283B;
-  background-color: white;
+  background-color: blue;
   color: #22283B;
+}
+.main-container .bottom-container .button a {
+  text-decoration: none;
+  color: white;
 }
 @media (max-width:500px) {
   .main-container .bottom-container .button {
@@ -312,6 +316,7 @@ header h1 {
   width: 100%;
   max-width: 880px;
   margin: 0 auto;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,6 +325,9 @@ header h1 {
 }
 .contact-container .contact-jumbo-top-img {
   border-radius: 15px;
+}
+.contact-container h1 {
+  font-size: 2.8rem;
 }
 .contact-container .sign-up-form {
   display: flex;
@@ -355,4 +363,17 @@ header h1 {
   border: 1px solid #22283B;
   background-color: blanchedalmond;
   color: #22283B;
+}
+.contact-container p {
+  margin-bottom: 20px;
+}
+.sign-in {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+.sign-in a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: powderblue;
 }

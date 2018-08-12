@@ -7,18 +7,18 @@
     flex-direction:@flex-dirctn
 }
 
-.btn-creator() {
+.btn-creator(@BGcolor:@secondary-color) {
     font-size:1.8rem;
     text-align:center;
     border-radius: 10px;
     width:100px;
     padding:15px;
     color:white;
-    background-color:@secondary-color;
+    background-color:@BGcolor;
 
     &:hover {
         border:1px solid @secondary-color;
-        background-color: white;
+        background-color: blue;
         color:@secondary-color;
     }
 }
