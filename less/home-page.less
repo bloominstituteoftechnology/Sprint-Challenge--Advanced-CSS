@@ -1,1 +1,157 @@
 // Home Content
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  @media @phone {
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    .headerFont;
+    padding: 1%;
+    @media @phone {
+        margin: 2%;
+    }
+  }
+  p {
+    width: 90%;
+    margin: 1%;
+    .pFont;
+    @media @phone {
+      width: 90%;
+      margin: 2% 0 0% 3%;
+      padding: 0;
+    }
+  }
+  img {
+    width: 100%;
+    margin: 2% 0;
+    @media @phone {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}  //end header
+
+#middleWrap {
+  width: 100%;
+  margin: 3% 0 7% 0;
+  @media @phone {
+    width: 100%;
+    padding: 3%;
+  }
+  #imageWrap {
+    .rowDisplay;
+    width: 100%;
+    margin: 0 auto;
+    @media @phone {
+      width: 100%;
+    }
+  }
+  img {
+    border-radius: 10px;
+    width: 30%;
+    margin: 2% 0;
+    @media @phone {
+      display: flex;
+      width: 100%;
+      margin: 3%;
+      padding: 0;
+    }
+  }
+  h1 {
+    margin: 1%;
+    .headerFont;
+    @media @phone {
+      width: 100%;
+      margin: 4% 0 0 0%;
+    }
+  }
+  p {
+    width: 100%;
+    margin: 0%;
+    .pFont;
+    @media @phone {
+      width: 100%;
+      padding: 0;
+      margin: 5% 0;
+    }
+  }
+}  //end middle wrap
+
+#middleWrap #imageWrap img:nth-of-type(2) {
+  @media @phone {
+    border-radius: ;
+    display: none;
+  }
+}
+
+#middleWrap #imageWrap img:nth-of-type(3) {
+  @media @phone {
+    border-radius: ;
+    display: none;
+  }
+}
+
+#walking {
+  margin: 1%;
+  .rowDisplay;
+  padding: 5% 0 0 0;
+  border-top: 2px solid lightgray;
+  @media @phone {
+    padding: 5%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #bottomWrap {
+    width: 100%;
+    padding: 0 4%;
+    @media @phone {
+        width: 100%;
+    }
+  }
+  img {
+    width: 40%;
+    @media @phone {
+      width: 90%;
+      margin: 0% 5%;
+    }
+  }
+  h1 {
+    width: 100%;
+    .headerFont;
+  }
+  p {
+    margin-top: 5%;
+    width: 100%;
+    .pFont;
+  }
+  #signUp { .buttons(13%; 25%; @button-color;);
+    margin-top: 5%;
+    @media @phone {
+      border-radius: 5px;
+      width: 100%;
+      height: 17%;
+      margin: 10% 0;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #f6f6f6;
+  margin-top: 5%;
+  padding-top: 4%;
+  text-align: center;
+  .pFont;
+  @media @phone {
+    width: 100%;
+  }
+}
