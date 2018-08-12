@@ -1,1 +1,96 @@
 // Home Content
+.noMobile {
+    @media @mobile {
+        display: none;
+    }
+}
+.container {
+    .flex-maker(center, center, column);
+    .desktop-width-settings;
+    padding: 80px 1.13% 20px 1.13%;
+    color: @text-color;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.top-content {
+    .flex-maker(space-between, center, column);
+
+    img {
+        width: 100%;
+        height: 225px;
+        margin-bottom: 20px;
+    }
+
+    .img-text {
+        .flex-maker(space-between, center);
+        width: 90%;
+    }
+}
+
+.middle-img {
+    .flex-maker(space-between, center);
+    margin-bottom: 40px;
+
+    img {
+        width: 30%;
+        border-radius: 10px;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+}
+
+.text-content {
+    .flex-maker(space-between, flex-start, column);
+    margin-bottom: 20px;
+}
+
+.bottom-content {
+    .flex-maker(space-between, center);
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 30px;
+    padding: 50px 5.7%;
+    @media @mobile {
+        .flex-maker(space-between, center, column);
+        
+    }
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sign-up {
+        .flex-maker(space-between, flex-start, column);
+        width: 40%;
+
+        @media @mobile {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .button {
+    .flex-maker(center, center);
+    .button-maker(90px, 25px, 0, @text-color, @background, 1rem);
+    margin: 20px 0;
+    border: 1px solid blue;
+
+    @media @mobile {
+        .button-maker(400px, 50px, 0, @text-color, @background, 1rem);
+        width: 100%;
+        max-width: 400px;
+    }
+    }
+}
