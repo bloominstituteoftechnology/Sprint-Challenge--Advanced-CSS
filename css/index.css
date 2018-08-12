@@ -333,7 +333,7 @@ header h1 {
 }
 .container .content-walk .img-content {
   height: 100%;
-  width: 50%;
+  width: 45%;
 }
 @media (max-width: 500px) {
   .container .content-walk .img-content {
