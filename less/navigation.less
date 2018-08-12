@@ -1,28 +1,28 @@
+// header navigation bar
+
 .nav-container {
     width: 100%;
     height: 100px;
     border-bottom: 2px solid @accent-color;
     background: @main-color;
-    .flex-centered();
+    color: @header-text-color;
+    .flex-column-centered();
 
-    .navbar {
-        width: 100%;
-        max-width: 800px;
-        .flex-centered();
-        flex-direction: column;
+    h1 {
         color: @header-text-color;
+    }
 
-        nav {
+    nav {
+        .flex-around();
+        width: 100%;
+        max-width: 420px;
+
+        a {
             display: flex;
-            justify-content: space-around;
-            width: 50%;
-    
-            a {
-                text-decoration: none;
-                color: @secondary-color;
-                font-size: 1.6rem;
-                margin-top: 15px;
-            }
+            text-decoration: none;
+            color: @header-text-color;
+            font-size: 1.6rem;
+            margin-top: 15px;
         }
     }
 }

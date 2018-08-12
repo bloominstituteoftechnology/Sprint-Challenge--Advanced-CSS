@@ -1,7 +1,63 @@
 // Home Content
 
-img {
-    width: 100%;
-    height: 200px;
-}
+.home {
+    .flex-column-centered();
 
+    .jumbotron {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    .main-content {
+        padding: 15px 15px 50px 15px;
+        border-bottom: 2px solid @accent-color;
+
+        .img-banner {
+            margin: 20px 0 45px 0;
+            .flex-between();
+
+            img {
+                width: 30%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .signup {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 45px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid @accent-color;
+
+        .signup-text {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            p {
+                margin: 10px 0 5px 0;
+            }
+            .signup-btn {
+                .button-builder(@color: @main-color; @bg-color: @secondary-color;
+                                @radius: 5px; @height: 35px;);
+                margin-top: 15px;
+            }
+        }
+
+        .signup-img {
+            width: 45%;
+            img {
+                border-radius: 5px;
+                width: 100%;
+            }
+        }
+    }
+
+}
