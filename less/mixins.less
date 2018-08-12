@@ -1,12 +1,16 @@
 // Mixins below variables
 
-.button(@color: @main-color, @bgColor: @secondary-color, @width: 100px, @height: 30px) {
+.button-maker(@color: @main-color, @bgColor: @secondary-color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: @color;
-    background-color: #22283B;
-    width: @width;
-    height: @height;
+    background-color: @bgColor;
     border-radius: 5px;
-    border: 1px solid @accent-color;
+    border: 1px solid #157ffa;
     text-align: center;
-    padding: 5px 10px;
+    width: 100%;
+    max-width: 80px;
+    height: 40px;
+    font-size: 1.6rem;
 }

@@ -209,19 +209,20 @@ main .bottom-content {
 main .bottom-content .bottom-content-text {
   padding: 0 25px;
 }
-main .bottom-content .bottom-content-text a {
-  text-decoration: none;
+main .bottom-content .bottom-content-text .sign-up {
   padding: 5px 10px;
-}
-main .bottom-content .bottom-content-text a .sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f4f4f4;
   background-color: #22283B;
-  width: 100px;
-  height: 30px;
   border-radius: 5px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #157ffa;
   text-align: center;
-  padding: 5px 10px;
+  width: 100%;
+  max-width: 80px;
+  height: 40px;
+  font-size: 1.6rem;
 }
 main .bottom-content .space-walk-img {
   border-radius: 5px;
