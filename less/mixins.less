@@ -12,7 +12,7 @@
 }
 
 .button
-  (@background-color; @color; @width; @text-align; @padding; @border-radius; @border-style; @border-color; @border-width;) {
+  (@background-color; @color; @width; @text-align; @padding; @border-radius; @border-style; @border-color; @border-width; @margin-top;) {
   background-color: @background-color;
   color: @color;
   width: @width;
@@ -22,8 +22,12 @@
   border-style: @border-style;
   border-color: @border-color;
   border-width: @border-width;
+  margin-top: @margin-top;
 }
 
 .btn {
-  .button(black; white; 100px; center; 10px; 5px; solid; royalblue; 2px;);
+  .button(
+    rgb(31, 19, 49) ; white; 100px; center; 10px; 5px; solid; royalblue; 2px;
+      25px;
+  );
 }
