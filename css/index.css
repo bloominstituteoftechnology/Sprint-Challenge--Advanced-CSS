@@ -153,14 +153,48 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+h2,
+h3 {
+  margin-bottom: 10px;
+}
 h1 {
   font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 h2 {
   font-size: 3.5rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.2rem;
+  }
+}
 h3 {
   font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 17px;
+  }
+}
+img {
+  width: 100%;
 }
 header {
   width: 100%;
@@ -172,12 +206,12 @@ header {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header {
     border-bottom: none;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header h1 {
     font-size: 4rem;
   }
@@ -190,7 +224,7 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header nav {
     max-width: 375px;
     margin-top: 15px;
@@ -201,7 +235,7 @@ header nav a {
   text-decoration: none;
   font-size: 1.8rem;
 }
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   header nav a {
     font-size: 1.6rem;
   }
@@ -214,27 +248,34 @@ footer {
   border: 1px solid #e5e5e5;
   border-radius: 5px;
 }
-img {
-  width: 100%;
-}
-p {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  margin-bottom: 10px;
-}
 .content-large {
   width: 100%;
 }
 .content-medium {
   width: 48%;
 }
+@media (max-width: 500px) {
+  .content-medium {
+    width: 100%;
+  }
+}
 .content-small {
   width: 31%;
+}
+@media (max-width: 500px) {
+  .content-small {
+    width: 84%;
+  }
 }
 .container {
   max-width: 900px;
   width: 100%;
   margin: 0px auto;
+}
+@media (max-width: 500px) {
+  .mobile-hide {
+    display: none;
+  }
 }
 main {
   display: flex;
@@ -244,15 +285,26 @@ main {
 main .home-image {
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  main .home-image {
+    margin-bottom: 15px;
+  }
+}
 main .home-image img {
   height: 225px;
+}
+@media (max-width: 500px) {
+  main .home-image img {
+    height: 200px;
+  }
 }
 main .text-container {
   width: 95%;
 }
-main .text-container h2,
-main .text-container h3 {
-  margin-bottom: 10px;
+@media (max-width: 500px) {
+  main .text-container {
+    width: 93%;
+  }
 }
 main .image-container {
   width: 95%;
@@ -261,8 +313,20 @@ main .image-container {
   margin-top: 7px;
   margin-bottom: 53px;
 }
+@media (max-width: 500px) {
+  main .image-container {
+    margin-top: 22px;
+    padding-left: 10%;
+    margin-bottom: 40px;
+  }
+}
 main .image-container img {
-  border-radius: 20px;
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  main .image-container img {
+    width: 100%;
+  }
 }
 main .call-to-action {
   margin: 65px 0 20px 0;
@@ -273,35 +337,72 @@ main .call-to-action {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  main .call-to-action {
+    margin: 48px 0 15px 0;
+    padding: 50px 0;
+  }
+}
 main .call-to-action .content-inset {
   width: 85%;
   display: flex;
   justify-content: space-between;
 }
-main .call-to-action .content-inset .blurb h3 {
-  margin-bottom: 10px;
+@media (max-width: 500px) {
+  main .call-to-action .content-inset {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 main .call-to-action .content-inset .blurb a.button {
   margin-top: 10px;
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8em;
+  text-align: center;
+  font-size: 1.8rem;
   color: #ffffff;
   padding: 11px 15px;
   background: #22283A;
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  main .call-to-action .content-inset .blurb a.button {
+    font-size: 1.6rem;
+    padding: 16px 0;
+  }
+}
 main .call-to-action .content-inset .blurb a.button:hover {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.8em;
+  text-align: center;
+  font-size: 1.8rem;
   color: #22283A;
   padding: 11px 15px;
   background: #ffffff;
   border: 1px solid #22283A;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  main .call-to-action .content-inset .blurb a.button:hover {
+    font-size: 1.6rem;
+    padding: 16px 0;
+  }
+}
+@media (max-width: 500px) {
+  main .call-to-action .content-inset .blurb a.button {
+    margin-top: 17px;
+    width: 100%;
+  }
+}
 main .call-to-action .content-inset img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  main .call-to-action .content-inset img {
+    margin-top: 20px;
+    border-radius: 5px;
+  }
 }
