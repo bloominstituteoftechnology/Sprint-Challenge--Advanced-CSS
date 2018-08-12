@@ -1,0 +1,28 @@
+// header navigation bar
+
+.nav-container {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid @accent-color;
+    background: @main-color;
+    color: @header-text-color;
+    .flex-column-centered();
+
+    h1 {
+        color: @header-text-color;
+    }
+
+    nav {
+        .flex-around();
+        width: 100%;
+        max-width: 420px;
+
+        a {
+            display: flex;
+            text-decoration: none;
+            color: @header-text-color;
+            font-size: 1.6rem;
+            margin-top: 15px;
+        }
+    }
+}
