@@ -209,12 +209,12 @@ p {
   padding-right: 10px;
   text-decoration: none;
   color: #22283B;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .header .header-nav .a-tag {
-    font-size: 1rem;
-    padding-right: 7px;
+    font-size: 0.9rem;
+    padding-right: 6px;
   }
 }
 .footer {
@@ -256,7 +256,7 @@ p {
   }
 }
 .home .content {
-  padding: 30px 20px;
+  padding: 30px 16px;
 }
 .home .content .text-content {
   width: 100%;
@@ -295,7 +295,7 @@ p {
   width: 100%;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
-  padding: 40px;
+  padding: 38px;
 }
 @media (max-width: 500px) {
   .home .signup {
