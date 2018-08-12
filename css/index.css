@@ -146,11 +146,9 @@ h5 {
 .Main {
   max-width: 1000px;
   width: 100%;
-  background-color: yellow;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 .Main2 {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,19 +170,35 @@ header {
 header h1 {
   font-size: 3rem;
 }
-header nav {
+@media (max-width:500px) {
+  header h1 {
+    font-size: 5.5em;
+  }
+}
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
   margin-top: 10px;
-  max-width: 300px;
-  width: 37.5%;
+  max-width: 500px;
+  width: 90%;
 }
-header nav a {
+@media (max-width:500px) {
+  nav {
+    max-width: 425px;
+    width: 95%;
+  }
+}
+nav a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  color: black;
+}
+@media (max-width:500px) {
+  nav a {
+    font-size: 1.75rem;
+  }
 }
 footer {
   border-top: 1px solid gray;
@@ -195,16 +209,15 @@ footer {
 footer p {
   text-align: center;
   padding: 20px 0px;
+  font-size: 1.2rem;
 }
 .Main2 .large-img {
   max-width: 800px;
   width: 100%;
 }
 .Main2 .Sec1 {
-  background-color: red;
   max-width: 800px;
   width: 95%;
-  padding: 10px 1.25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,11 +225,20 @@ footer p {
 }
 .Main2 .Sec1 h2 {
   font-size: 2.5rem;
+  padding-top: 40px;
 }
 .Main2 .Sec1 p {
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.5;
+  padding-bottom: 15px;
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
 }
 .Main2 .Sec1 section {
   display: flex;
@@ -229,8 +251,23 @@ footer p {
   width: 31.25%;
   border-radius: 20px;
 }
-.Main2 .Sec2 {
-  background-color: red;
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi1 {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi2 {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi3 {
+    display: none;
+  }
+}
+.Sec2 {
   max-width: 800px;
   width: 95%;
   padding: 30px 1.25%;
@@ -239,15 +276,22 @@ footer p {
   justify-content: center;
   align-items: space-between;
 }
-.Main2 .Sec2 h2 {
+.Sec2 h2 {
   font-size: 2.5rem;
 }
-.Main2 .Sec2 p {
+.Sec2 p {
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.5;
 }
-.Main2 .Sec3 {
+@media (max-width:500px) {
+  .Sec2 p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+.Sec3 {
   border-top: 1px solid gray;
   max-width: 800px;
   width: 95%;
@@ -257,8 +301,17 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
-.Main2 .text {
-  background-color: red;
+@media (max-width:500px) {
+  .Sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    width: 95%;
+  }
+}
+.text {
   max-width: 375px;
   width: 46.875%;
   padding: 10px 1.25%;
@@ -267,25 +320,73 @@ footer p {
   justify-content: center;
   align-items: space-between;
 }
-.Main2 .text h2 {
+@media (max-width:500px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 95%;
+  }
+}
+.text h2 {
   font-size: 2.5rem;
 }
-.Main2 .text p {
+.text p {
   padding-top: 10px;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   line-height: 1.5;
 }
-.Main2 .text a {
+@media (max-width:500px) {
+  .text p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+.text a {
   margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
-  width: 26.667%;
+  font-size: 1.75rem;
+  width: 100%;
   color: white;
   background-color: black;
 }
-.Main2 img {
+@media (max-width:500px) {
+  .text a {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+}
+@media (max-width:750px) {
+  .text a {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+}
+img {
   width: 50%;
+}
+@media (max-width:500px) {
+  img {
+    width: 95%;
+  }
 }

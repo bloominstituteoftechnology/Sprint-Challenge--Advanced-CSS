@@ -7,17 +7,28 @@ header {
 
     h1 {
         font-size: 3rem;
+
+        @media @phone {
+            font-size: 5.5em;
+            }
+        }
     }
 
     nav {
         .flex(row, space-between,center);
-        background-color: green;
         margin-top: 10px;
-        .width(300px,37.5%);
+        .width(500px,90%);
+
+        @media @phone {
+            .width(425px,95%);
+        }
 
         a {
             text-decoration: none;
             font-size: @psize;
+            color: black;
+            @media @phone {
+                font-size: 1.75rem;
+            }
         }
     }
-}
