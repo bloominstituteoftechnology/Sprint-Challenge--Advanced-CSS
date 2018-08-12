@@ -19,5 +19,9 @@ h1, h2, h3, h4, h5 {
 .container {
   width: 800px;
   margin: 0px auto;
-  background-color: white;
+  background-color: red;
+  @media screen and (max-width: @phone) {
+    width: 500px;
+    background-color: purple;
+  }
 }
