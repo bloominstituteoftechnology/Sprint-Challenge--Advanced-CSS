@@ -71,21 +71,20 @@
                 }
 
                 &:hover {
-                    background-color: white;
-                    color: @secondary-color;
-                    border: 1px solid @secondary-color;
+                    .button-effect(white; @secondary-color);                
                 }
             }
         }
         .bottom-image {
             width: 45%;
+            padding-left: 70px;
             @media @phone {
                 width: @width-100;
                 padding: 15px;
             }
             img {
-                max-width: 310px;
-                max-height: 310px;
+                max-width: 330px;
+                max-height: 300px;
                 @media @phone {
                     width: @width-100;
                     max-width: unset;

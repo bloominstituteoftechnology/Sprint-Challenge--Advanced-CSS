@@ -316,6 +316,7 @@ p {
 }
 .main-container .bottom-section .bottom-image {
   width: 45%;
+  padding-left: 70px;
 }
 @media (max-width: 500px) {
   .main-container .bottom-section .bottom-image {
@@ -324,8 +325,8 @@ p {
   }
 }
 .main-container .bottom-section .bottom-image img {
-  max-width: 310px;
-  max-height: 310px;
+  max-width: 330px;
+  max-height: 300px;
 }
 @media (max-width: 500px) {
   .main-container .bottom-section .bottom-image img {
