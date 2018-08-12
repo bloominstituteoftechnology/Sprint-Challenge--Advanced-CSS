@@ -3,11 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: @p-size;
     width: @width;
     height: @height;
     background-color: @bgColor;
-    color: white;
+    color: @main-color;
     border-radius: 5px;
 
     &:hover {
@@ -16,3 +16,10 @@
     }
 }
 
+
+
+.go {
+    .img;
+    border-top: 1px solid @accent-color;
+    border-bottom: 1px solid @accent-color;
+}

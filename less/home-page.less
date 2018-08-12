@@ -17,11 +17,11 @@ header {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: @h2-size;
     }
 
 p {
-    font-size: 1.6rem;
+    font-size: @p-size;
     line-height: 1.5;
 }
 
@@ -38,15 +38,15 @@ p {
     }
 
     h2 {
-        font-size: 2.5rem;
-        margin: 2%;
-        margin: 2%;
+        font-size: @h2-size;
+        margin: @margin;
+        margin: @margin;
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: @p-size;
         line-height: 1.5;
-        margin: 2%;
+        margin: @margin;
     }
 }
 
@@ -60,26 +60,25 @@ p {
         height: 200px;
         border-radius: 13px;
     }
+    
 }
 
 .visit {
-    margin: 2%;
+    margin: @margin;
     margin-bottom: 7%;
    
     h2  {
-        font-size: 2.5rem;
+        font-size: @h2-size;
     }
 
     p {
-        font-size: 1.6rem;
+        font-size: @p-size;
         line-height: 1.5;
     }
 }
 
 .go {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .img;
     border-top: 1px solid @accent-color;
     border-bottom: 1px solid @accent-color;
 }
@@ -89,11 +88,11 @@ div {
     margin-bottom: 30px;
 
     .img-box {
-        width: 35%;
-        height: 300px;
-        
-        img {
+      
+        .space-walk {
             border-radius: 8px;
+            width: 100%;
+            height: 250px;
         }
     }
     
