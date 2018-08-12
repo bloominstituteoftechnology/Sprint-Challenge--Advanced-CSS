@@ -5,11 +5,12 @@ img {
 
 p {
     font-size: 1.8rem;
-    line-height: 3rem;
+    line-height: 2.8rem;
+    margin-bottom: 10px;
 }
 
 .content-large {
-    width: 95%;
+    width: 100%;
 }
 
 .content-medium {
@@ -26,16 +27,10 @@ p {
     margin: 0px auto;
 }
 
-.border-bottom {
-    padding-bottom: 50px;
-    border-bottom: 1px solid @border-color-accent;
-}
-
 main {
-    .flex-wrap-center;
+    .flex-column-center;
 
     .home-image {
-        width: 100%;
         margin-bottom: 20px;
     
         img {
@@ -43,15 +38,19 @@ main {
         }
     }
 
-    h2 {
-        font-size: 3.5rem;
-        margin-bottom: 5px;
+    .text-container {
+        width: 95%;
+
+        h2, h3 {
+            margin-bottom: 10px;
+        }
     }
 
-    .images {
+    .image-container {
+        width: 95%;
         .flex-space-between;
-        margin-top: 15px;
-        margin-bottom: 70px;
+        margin-top: 7px;
+        margin-bottom: 53px;
 
         img {
             border-radius: 20px;
@@ -59,32 +58,35 @@ main {
     }
 
     .call-to-action {
-        .flex-space-between;
-        width: 85%;
-        margin: 60px 0;
-
-        .blurb {
+        margin: 65px 0 20px 0;
+        padding: 55px 0;
+        border-top: 1px solid @border-color-accent;
+        border-bottom: 1px solid @border-color-accent;
+        .flex-column-center;
         
-            a.button {
-                margin-top: 20px;
-                .button-creator(@background-color-button, @text-color-button, @text-color-button);
+        .content-inset {
+            width: 85%;
+            .flex-space-between;
 
-                &:hover {
-                    .button-creator(@text-color-button, @background-color-button, @background-color-button);
+            .blurb {
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+            
+                a.button {
+                    margin-top: 10px;
+                    .button-creator(@background-color-button, @text-color-button, @text-color-button);
+
+                    &:hover {
+                        .button-creator(@text-color-button, @background-color-button, @background-color-button);
+                    }
                 }
             }
-        }
 
-        img {
-            border-radius: 10px;
+            img {
+                border-radius: 10px;
+            }
         }
     }
-}
-
-footer {
-    width: 100%;
-    padding: 30px 0 50px 0;
-    text-align: center;
-    background: @background-color-accent;
-    border: 1px solid @border-color;
 }

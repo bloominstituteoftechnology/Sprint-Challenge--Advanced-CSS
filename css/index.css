@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
 }
-.flex-wrap-center {
+.flex-column-center {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -153,6 +153,15 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3.2rem;
+}
 header {
   width: 100%;
   display: flex;
@@ -178,15 +187,24 @@ header nav a {
   text-decoration: none;
   font-size: 1.8rem;
 }
+footer {
+  width: 100%;
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}
 img {
   width: 100%;
 }
 p {
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 2.8rem;
+  margin-bottom: 10px;
 }
 .content-large {
-  width: 95%;
+  width: 100%;
 }
 .content-medium {
   width: 48%;
@@ -199,69 +217,72 @@ p {
   width: 100%;
   margin: 0px auto;
 }
-.border-bottom {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #dee2e6;
-}
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 main .home-image {
-  width: 100%;
   margin-bottom: 20px;
 }
 main .home-image img {
   height: 225px;
 }
-main h2 {
-  font-size: 3.5rem;
-  margin-bottom: 5px;
+main .text-container {
+  width: 95%;
 }
-main .images {
+main .text-container h2,
+main .text-container h3 {
+  margin-bottom: 10px;
+}
+main .image-container {
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 70px;
+  margin-top: 7px;
+  margin-bottom: 53px;
 }
-main .images img {
+main .image-container img {
   border-radius: 20px;
 }
 main .call-to-action {
+  margin: 65px 0 20px 0;
+  padding: 55px 0;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .call-to-action .content-inset {
+  width: 85%;
   display: flex;
   justify-content: space-between;
-  width: 85%;
-  margin: 60px 0;
 }
-main .call-to-action .blurb a.button {
-  margin-top: 20px;
+main .call-to-action .content-inset .blurb h3 {
+  margin-bottom: 10px;
+}
+main .call-to-action .content-inset .blurb a.button {
+  margin-top: 10px;
   display: inline-block;
   text-decoration: none;
   font-size: 1.8em;
   color: #ffffff;
-  padding: 10px 15px;
+  padding: 11px 15px;
   background: #22283A;
   border: 1px solid #ffffff;
   border-radius: 5px;
 }
-main .call-to-action .blurb a.button:hover {
+main .call-to-action .content-inset .blurb a.button:hover {
   display: inline-block;
   text-decoration: none;
   font-size: 1.8em;
   color: #22283A;
-  padding: 10px 15px;
+  padding: 11px 15px;
   background: #ffffff;
   border: 1px solid #22283A;
   border-radius: 5px;
 }
-main .call-to-action img {
+main .call-to-action .content-inset img {
   border-radius: 10px;
-}
-footer {
-  width: 100%;
-  padding: 30px 0 50px 0;
-  text-align: center;
-  background: #f6f6f6;
-  border: 1px solid #e5e5e5;
 }
