@@ -1,1 +1,379 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+nav {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #22283B;
+}
+footer {
+  width: 100%;
+  font-size: 1.7rem;
+  background-color: #f4f4f4;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 25px;
+  border: 1px solid #e0e0e0;
+}
+html {
+  font-size: 62.5%;
+  color: #22283B;
+}
+header {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 3.4rem;
+  padding: 15px;
+}
+.main-container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .jumbo-top-img {
+  width: 100%;
+  height: auto;
+}
+.main-container .top-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .main-container .top-container {
+    padding: 0px 15px;
+  }
+}
+.main-container .top-container h2 {
+  font-size: 3.2rem;
+  margin: 15px 0px;
+}
+.main-container .top-container p {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+}
+.main-container .top-container img {
+  width: 32%;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width:500px) {
+  .main-container .top-container img {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .main-container .top-container .top-img-one {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .main-container .top-container .top-img-two {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .main-container .top-container .top-img-three {
+    display: none;
+  }
+}
+.main-container .middle-container {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media (max-width:500px) {
+  .main-container .middle-container {
+    padding: 0px 15px;
+  }
+}
+.main-container .middle-container h2 {
+  font-size: 3.2rem;
+}
+.main-container .middle-container p {
+  font-size: 1.7rem;
+  margin: 25px 0px;
+}
+.main-container .bottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media (max-width:500px) {
+  .main-container .bottom-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+  }
+}
+.main-container .bottom-container h2 {
+  font-size: 3.2rem;
+}
+.main-container .bottom-container p {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.main-container .bottom-container img {
+  width: 45%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+@media (max-width:500px) {
+  .main-container .bottom-container img {
+    width: 100%;
+  }
+}
+.main-container .bottom-container .button {
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+  padding: 15px;
+  color: white;
+  background-color: #22283B;
+}
+.main-container .bottom-container .button:hover {
+  border: 1px solid #22283B;
+  background-color: blue;
+  color: #22283B;
+}
+.main-container .bottom-container .button a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width:500px) {
+  .main-container .bottom-container .button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.sign-in-container {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #22283B;
+}
+.sign-in-container .contact-jumbo-top-img {
+  border-radius: 15px;
+}
+.sign-in-container h1 {
+  font-size: 2.8rem;
+}
+.sign-in-container .sign-up-form {
+  display: flex;
+  color: white;
+}
+.sign-in-container .sign-up-form input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.sign-in-container .sign-up-form input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.sign-in-container .sign-up-form .sign-in {
+  color: white;
+}
+.sign-in-container .sign-up-form .btn-subscribe {
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  color: #22283B;
+  background-color: #e0e0e0;
+}
+.sign-in-container .sign-up-form .btn-subscribe:hover {
+  border: 1px solid #22283B;
+  background-color: blanchedalmond;
+  color: #22283B;
+}
+.sign-in-container p {
+  margin-bottom: 20px;
+}
+.sign-in {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+.sign-in a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: powderblue;
+}
