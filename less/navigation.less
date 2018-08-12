@@ -1,0 +1,34 @@
+.index-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-separator();
+    h1 {
+        margin-bottom: 20px;
+        color: @charcoal;
+    }
+
+}
+
+.index-nav {
+    a {
+        margin: 15px;
+        text-decoration: none;
+        color: @font-color;
+        display: inline-block;
+        transition: transform 0.2s linear;
+
+        @media @phone {
+            font-size: 1.4rem;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    @media @phone {
+        display: flex;
+    }
+
+}

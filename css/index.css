@@ -1,1 +1,318 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 2.8rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+a {
+  font-size: 1.6rem;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.index-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.index-header h1 {
+  margin-bottom: 20px;
+  color: #444958;
+}
+.index-nav a {
+  margin: 15px;
+  text-decoration: none;
+  color: #22283A;
+  display: inline-block;
+  transition: transform 0.2s linear;
+}
+@media (max-width: 500px) {
+  .index-nav a {
+    font-size: 1.4rem;
+  }
+}
+.index-nav a:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 500px) {
+  .index-nav {
+    display: flex;
+  }
+}
+footer {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid #dadada;
+  margin: 40px 0 50px;
+  height: 50px;
+}
+.lift {
+  margin: 20px 0;
+  width: 92%;
+  padding-left: 2%;
+}
+.lift p {
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .lift {
+    width: 97%;
+  }
+}
+.lift-img {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+.lift-img img {
+  width: 30%;
+  border-radius: 10%;
+  height: 200px;
+}
+@media (max-width: 500px) {
+  .lift-img img {
+    width: 85%;
+  }
+  .lift-img img:nth-of-type(2) {
+    display: none;
+  }
+  .lift-img img:nth-of-type(3) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .lift-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .lift-img {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.visit {
+  margin: 20px 0;
+  padding-left: 2%;
+}
+.visit h2 {
+  margin-bottom: 15px;
+}
+.visit .p1 {
+  margin-bottom: 15px;
+  width: 96%;
+}
+.walk {
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.walk .walk-content {
+  width: 46%;
+}
+.walk .walk-content p {
+  margin: 20px 0;
+}
+.walk .walk-content .btn {
+  color: #ffffff;
+  width: 30%;
+  height: 30px;
+  background-color: #22283A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .walk .walk-content .btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-content {
+    width: 100%;
+  }
+}
+.walk .walk-img {
+  width: 45%;
+}
+.walk .walk-img img {
+  height: 200px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk .walk-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column;
+    width: 84%;
+  }
+}

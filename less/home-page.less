@@ -1,1 +1,122 @@
 // Home Content
+.lift {
+    .section-separator;
+    width: 92%;
+    padding-left: 2%;
+
+    p {
+        .section-separator;
+    }
+
+    @media @phone {
+        width: 97%;
+    }
+} //.lift
+
+.lift-img {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+
+    img {
+        width: 30%;
+        border-radius: 10%;
+        height: 200px;
+
+        @media @phone {
+            width: 85%;
+            &:nth-of-type(2){
+                display: none;
+            }
+            &:nth-of-type(3){
+                display: none;
+            }
+        }
+
+        @media @phone {
+            width: 80%;
+        }
+    }  // .lift-img img
+
+    @media @phone {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+} //.lift-img
+
+
+//**************************************
+.visit {
+    .section-separator;
+    padding-left: 2%;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    .p1 {
+        margin-bottom: 15px;
+        width: 96%;
+    }
+
+} //.visit
+
+//*************************************
+.walk {
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+    .walk-content {
+        width: 46%;
+
+        p {
+            .section-separator;
+        }
+
+        .btn {
+            .button-creator(@background-color, 30%, 30px, @button-color);
+            .flex-centered;
+            font-size: 1.4rem;
+            cursor: pointer;
+
+            @media @phone {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media @phone {
+            width: 100%;
+        }
+    } //.walk-content
+
+    .walk-img{
+        width: 45%;
+
+        img {
+            height: 200px;
+            border-radius: 10px;
+
+            @media @phone {
+               width: 100%;
+            }
+        }// img
+
+        @media @phone {
+            width: 100%;
+        }
+    } //.walk-img
+
+    @media @phone {
+        flex-direction: column;
+        width: 84%;
+    }
+} //.walk
+
+
