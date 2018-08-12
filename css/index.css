@@ -162,6 +162,7 @@ img {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 nav a {
   color: #444958;
@@ -200,6 +201,7 @@ header {
   display: flex;
   background-color: #f6f6f6;
   border-bottom: 2px solid #e5e5e5;
+  width: 100%;
 }
 header h1 {
   color: #444958;
@@ -331,7 +333,7 @@ header h1 {
 }
 .container .content-walk .img-content {
   height: 100%;
-  width: 45%;
+  width: 50%;
 }
 @media (max-width: 500px) {
   .container .content-walk .img-content {
