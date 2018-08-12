@@ -147,12 +147,11 @@ h5 {
 .container {
   width: 800px;
   margin: 0px auto;
-  background-color: red;
+  background-color: white;
 }
 @media screen and (max-width: 500px) {
   .container {
     width: 500px;
-    background-color: purple;
   }
 }
 header {
@@ -203,6 +202,11 @@ footer p {
   margin-top: 25px;
   margin-bottom: 37px;
   font-size: 1.6rem;
+}
+@media screen and (max-width: 500px) {
+  footer p {
+    margin-top: 44px;
+  }
 }
 .top-banner {
   width: 100%;
@@ -323,10 +327,33 @@ footer p {
   color: white;
   border: 1px solid #3681F3;
 }
+@media screen and (max-width: 500px) {
+  .bottom-content .bottom-center-container a {
+    height: 38px;
+    width: 375px;
+    background-color: #232839;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin-top: 62px;
+    height: 50px;
+    padding: 15px;
+  }
+}
 .bottom-content img {
   height: 242px;
   width: 323px;
   margin-right: 62px;
   margin-top: 48px;
   border-radius: 4px;
+}
+@media screen and (max-width: 500px) {
+  .bottom-content img {
+    margin-top: 0px;
+    align-self: center;
+    width: 375px;
+    height: 280px;
+    margin-right: 0px;
+  }
 }

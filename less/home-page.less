@@ -92,9 +92,9 @@
     }
 }
 
-.signup() {
+.signup(@width: 80px) {
     height: 38px;
-    width: 80px;
+    width: @width;
     background-color: #232839;
     border-radius: 4px;
     text-align: center;
@@ -136,6 +136,13 @@
             padding: 11px;
             color: white;
             border: 1px solid #3681F3;
+
+            @media screen and (max-width: @phone) {
+                .signup(@width: 375px);
+                margin-top: 62px;
+                height: 50px;
+                padding: 15px;
+            }
         }
     }
 
@@ -145,5 +152,13 @@
         margin-right: 62px;
         margin-top: 48px;
         border-radius: 4px;
+
+        @media screen and (max-width: @phone) {
+            margin-top: 0px;
+            align-self: center;
+            width: 375px;
+            height: 280px;
+            margin-right: 0px;
+        }
     }
 }
