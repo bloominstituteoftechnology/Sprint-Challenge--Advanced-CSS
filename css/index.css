@@ -166,9 +166,9 @@ p {
   }
 }
 .container {
-  max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
+  max-width: 1024px;
+  margin: 0px auto;
 }
 .header {
   width: 100%;
