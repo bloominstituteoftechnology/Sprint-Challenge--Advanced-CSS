@@ -3,6 +3,7 @@
 html {
     font-size: 62.5%;
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,15 @@ header {
         margin-top: 1%;
         font-size: 3rem;
     }
+}
+
+h2 {
+    font-size: 2.5rem;
+    }
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 .second-container {
@@ -37,9 +47,7 @@ header {
         font-size: 1.6rem;
         line-height: 1.5;
         margin: 2%;
-        
     }
-    
 }
 
 .img {
@@ -52,7 +60,6 @@ header {
         height: 200px;
         border-radius: 13px;
     }
-
 }
 
 .visit {
@@ -72,37 +79,31 @@ header {
 .go {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     border-top: 1px solid @accent-color;
     border-bottom: 1px solid @accent-color;
-
-    btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid black;
-        border-radius: 2px;
-        background-color: black;
-        color: white;
-        width: 30%;
-        height: 20px;
-
-    }
 }
 
-    .box {
-        width: 45%;
+div {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    .img-box {
+        width: 35%;
         height: 300px;
-        margin: 8%;
-        border-radius: 10px;
-
-        h2 {
-            font-size: 2.5rem;
-            // margin-top: 5%;
-        }
-
-        p {
-            font-size: 1.6rem;
-            line-height: 1.5;
+        
+        img {
+            border-radius: 8px;
         }
     }
+    
+    .box {
+        width: 35%;
+        height: 300px;
+
+        btn {
+            margin-top: 15px;
+            .btn-maker()
+        }
+    }
+}

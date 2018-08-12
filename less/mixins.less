@@ -1,1 +1,18 @@
 // Mixins below variables
+.btn-maker(@bgColor: @secondary-color, @width: 80px, @height: 40px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+        color: @secondary-color;
+        background: @main-color;
+    }
+}
+

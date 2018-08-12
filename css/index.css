@@ -160,7 +160,7 @@ nav a {
   margin-top: 20px;
   background-color: #f4f4f4;
   width: 69.75%;
-  height: 70px;
+  height: 100px;
 }
 .foot footer {
   font-size: 1.2rem;
@@ -177,6 +177,13 @@ header {
 header h1 {
   margin-top: 1%;
   font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 .second-container {
   width: 69.75%;
@@ -219,31 +226,38 @@ header h1 {
 .go {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
-.go btn {
+div {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+div .img-box {
+  width: 35%;
+  height: 300px;
+}
+div .img-box img {
+  border-radius: 8px;
+}
+div .box {
+  width: 35%;
+  height: 300px;
+}
+div .box btn {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 2px;
-  background-color: black;
-  color: white;
-  width: 30%;
-  height: 20px;
-}
-.box {
-  width: 45%;
-  height: 300px;
-  margin: 8%;
-  border-radius: 10px;
-}
-.box h2 {
-  font-size: 2.5rem;
-}
-.box p {
   font-size: 1.6rem;
-  line-height: 1.5;
+  width: 80px;
+  height: 40px;
+  background-color: #22283B;
+  color: white;
+  border-radius: 5px;
+}
+div .box btn:hover {
+  color: #22283B;
+  background: #f4f4f4;
 }
