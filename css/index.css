@@ -217,6 +217,10 @@ html {
 }
 .container .main-header .img-content {
   align-self: center;
+  -webkit-filter: grayscale(100%);
+}
+.container .main-header .img-content:hover {
+  -webkit-filter: grayscale(0%);
 }
 .container .main-header .text-content {
   width: 75%;
