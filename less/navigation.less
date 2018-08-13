@@ -1,31 +1,40 @@
 .header-container {
     align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 14px;
-    height: 173px;
+    background-color: @header-color;
+    border-bottom: 1px solid @border-color;
+    .flex-column;
+    height: 100px;
 
     .logo {
         display: block;
+        margin-top: 14px;
     
         .logo-font {
-            font-size: 80px;
+            color: @logo-color;
+            font-size: 4.0rem;
         }
     }
     
     nav {
-        margin-top: 30px;
+        margin-top: 13px;
     }
     
     nav ul li {
         display: inline-block;
-        margin-right: 50px; 
+        margin-right: 18px; 
     }
     
     nav ul li a {
-        color: black;
-        font-size: 32px;
+        color: @logo-color;
+        font-size: 1.8rem;
+        font-weight: bold;
         text-decoration: none;
     }
+
+    nav ul li a:hover {
+        color: rgb(97, 96, 96);
+        cursor: pointer;
+    }
+  
 } //.header-container
 
