@@ -1,1 +1,83 @@
 // Mixins below variables
+
+.width-start-mixin() {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+ 
+}
+
+.width-start-mixin-footer() {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-padding() {
+    font-size: @h2-font-size;
+    margin: 20px 0 10px 0;
+}
+
+.p-padding() {
+    font-size: @p-font-size;
+    margin: 0 0 20px 0;
+}
+
+.text-content-width-padding() {
+    width: 75%;
+    padding: 0 5% 0 2%;
+}
+
+.text-content-mixin(){
+    .text-content-width-padding();            
+    align-self: @align-self;
+
+    h2 {
+        .h2-padding();
+    }
+    p {
+        .p-padding();
+    }
+}
+
+.button-creator(@width: 80%, @height: 50px, @button-color: @secondary-color) {
+    width: @width;
+    height: @height;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    color: white;
+    background: @button-color;
+
+    a {
+        text-decoration: none;
+        color: white;
+      }
+
+    &:hover {
+        background: white;
+        color: @button-color;
+        border: 1px solid @button-color;
+        a {
+            color: @secondary-color;
+        }
+    } // &:hover
+} //.button-creator
+
+.flex-center(@di: flex, @jc: center, @ai: center) {
+    display: @di;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.grayscale-hover() {
+    -webkit-filter: grayscale(70%);
+        &:hover {
+            -webkit-filter: grayscale(0%);
+        }
+}

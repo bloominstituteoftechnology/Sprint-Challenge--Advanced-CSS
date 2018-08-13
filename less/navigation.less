@@ -1,0 +1,49 @@
+// Navigation Bar
+
+.header {
+    // border: 3px solid blue;
+    .width-start-mixin();
+    .flex-column();
+    background-color: @accent-color;
+
+   @media @phone {
+       background-color: @main-color;
+   }
+
+    h1 {
+        font-size: @h1-font-size;
+        // border: 1px solid red;
+        align-self: @align-self;
+        margin: 10px 0 10px 0;
+        color: @secondary-color;
+
+        @media @phone {
+            font-size: 4rem;
+        }
+    }
+
+    nav {
+        font-size: @p-font-size;
+        // border: 1px solid green;
+        width: 50%;
+        align-self: @align-self;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0 10px 0;
+
+        a {
+            color: @secondary-color;
+            text-decoration: none;
+
+            &:hover {
+                background: @secondary-color;
+                color: @main-color;
+            }
+        }
+
+        @media @phone {
+            width: 90%;
+        }
+    }
+
+}
