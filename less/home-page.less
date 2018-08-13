@@ -14,10 +14,8 @@
 	.block2 {
 		margin: 1% 0;
 		height: 80px;
-		display: flex;
+		.center();
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
 		h2 {
 			font-size: 2rem;
 			width: 95%;
@@ -46,10 +44,8 @@
 	.block4 {
 		height: 120px;
 		margin: 4% 0;
-		display: flex;
+		.center();
 		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
 		h2 {
 			font-size: 2rem;
 			width: 95%;
@@ -82,12 +78,9 @@
 			p {
 				font-size: 1.6rem;
 			}
-			button {
+			.btn {
+				.button-creator(30px, 70px, #000080, white, 2%, 1.6rem);
 				align-self: flex-start;
-				color: white;
-				background: blue;
-				border-radius: 2%;
-				height: 30px;
 			}
 		}
 		.b5right {

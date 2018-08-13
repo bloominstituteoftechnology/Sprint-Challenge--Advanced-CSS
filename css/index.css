@@ -206,9 +206,9 @@ footer p {
   margin: 1% 0;
   height: 80px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .container .block2 h2 {
   font-size: 2rem;
@@ -237,9 +237,9 @@ footer p {
   height: 120px;
   margin: 4% 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .container .block4 h2 {
   font-size: 2rem;
@@ -273,12 +273,21 @@ footer p {
 .container .block5 .b5left p {
   font-size: 1.6rem;
 }
-.container .block5 .b5left button {
-  align-self: flex-start;
-  color: white;
-  background: blue;
-  border-radius: 2%;
+.container .block5 .b5left .btn {
   height: 30px;
+  width: 70px;
+  background: #000080;
+  color: white;
+  border-radius: 2%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+.container .block5 .b5left .btn:hover {
+  background: white;
+  color: #000080;
 }
 .container .block5 .b5right {
   height: 80%;
