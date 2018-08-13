@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Ubuntu', sans-serif;
 }
 h1,
@@ -139,4 +140,38 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0px 15px 0px;
+  border-bottom: 2px solid #E5E5E5;
+  background-color: #F6F6F6;
+}
+.top-content h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #454957;
+  font-size: 3.1rem;
+  margin-bottom: 15px;
+}
+.top-content .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-content .navbar a {
+  margin: 0px 10px 0px 10px;
+  color: #454957;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.container {
+  width: 100%;
+  border: 1px solid blue;
 }
