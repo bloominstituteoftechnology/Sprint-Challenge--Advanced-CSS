@@ -49,11 +49,25 @@ html {
             display: flex;
             justify-content: space-around;
 
+            .pic1 {
+                .grayscale-hover();
+            }
+
+            .pic2 {
+                .grayscale-hover();
+            }
+
+            .pic3 {
+                .grayscale-hover();
+            }
+            
+
             @media @phone {
                 width: 100%;
                 .pic1 {
                     width: 90%;
                     height: 300px;
+                    .grayscale-hover();
                 }
                 .pic2 {
                     display: none;
@@ -127,7 +141,7 @@ html {
         }
 
         .img-content {
-            
+            .grayscale-hover();
            
             img {
                 width: 70%;
