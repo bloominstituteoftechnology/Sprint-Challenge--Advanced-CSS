@@ -1,36 +1,68 @@
 // Home Content
-.container{
-    max-width:880px;
-    width:100%;
-    margin:0 auto;
+.container {
+    max-width: 880px;
+    width: 100;
+    margin: 0 auto;
 }
-.home{
+
+.home {
     .flexMix(column, space-between, center);
-    width:90%;
-
-    #sky-img{
+    #sky-img {
         max-width: 880px;
-        width:100%;
-        margin:0 auto;
-
-        @mobile @phone{
-         max-width: 500px;
-         width:100%;
+        width: 100%;
+        margin: 0 auto;
+        @mobile @phone {
+            max-width: 500px;
+            width: 100%;
         }
     }
-
-    .text-content{
-        margin:30px auto;
+    .text-content {
+        width: 100%;
         .flexMix(column, space-around, flex-start);
-
-            h2{
-               font-size:2.4rem; 
-            }
-            p{
-              font-size: 1.8rem;
-              line-height: 2;
-            }
+        .text-boxes;
+        margin-bottom: 30px;
+        border-bottom: 1px solid @brdr-color;
+        padding-bottom: 40px;
     }
-
-    
+    .header-content {
+        margin: 20px auto;
+        .head-img {
+            .flexMix(row, space-between, center);
+            margin: 31.5px 0;
+            img {
+                width: 30%;
+                height: 200px;
+                border-radius: 10px;
+            }
+        }
+    }
+    footer {
+        .flexMix(row, center, center);
+        background: @footer-color;
+        color: @font-color;
+        font-size: 1.8rem;
+        max-width: 880px;
+        width: 100%;
+        height: 80px;
+    }
 }
+
+    .bottom-content {
+        margin: 25px auto;
+        padding: 40px;
+        width: 100%;
+        .flexMix(row, flex-start, center);
+        border-bottom: 1px solid @brdr-color;
+        img {
+            align-self: flex-start;
+        }
+        .bottom-text-content {
+            .text-boxes; // padding-right:15px;
+            // padding-top:10px;
+            .btn {
+                // width: 25%;
+                // height: 60px;
+                .buttonCreator( @font-color, #1e90ff, white);
+            }
+        }
+    }

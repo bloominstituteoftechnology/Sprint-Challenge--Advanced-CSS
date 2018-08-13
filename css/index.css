@@ -1,3 +1,14 @@
+.text-boxes h2 {
+  font-size: 2.8rem;
+  text-align: left;
+  width: 90%;
+}
+.text-boxes p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 90%;
+  margin-top: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -146,11 +157,10 @@ h5 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 100vw;
-  width: 100%;
-  height: 70px;
+  width: 100vw;
+  height: 80px;
   background: #f5f0f0;
-  border-bottom: 1px solid #e9e3e3;
+  border-bottom: 1px solid #dbd4d4;
   color: #2b3247;
 }
 .nav-bar .inner-nav {
@@ -162,10 +172,11 @@ h5 {
   width: 100%;
 }
 .nav-bar .inner-nav .logo {
-  font-size: 2.6rem;
-  font-family: 'Russo One', sans-serif;
   letter-spacing: 2px;
   margin: 10px auto;
+}
+.nav-bar .inner-nav .logo h1 {
+  font-size: 3rem;
 }
 .nav-bar .inner-nav .nav-elements {
   display: flex;
@@ -181,7 +192,7 @@ h5 {
 }
 .container {
   max-width: 880px;
-  width: 100%;
+  width: 100;
   margin: 0 auto;
 }
 .home {
@@ -189,7 +200,6 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
 }
 .home #sky-img {
   max-width: 880px;
@@ -201,16 +211,74 @@ h5 {
   width: 100%;
 }
 .home .text-content {
-  margin: 30px auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #dbd4d4;
+  padding-bottom: 40px;
 }
 .home .text-content h2 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
+  text-align: left;
+  width: 90%;
 }
 .home .text-content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 90%;
+  margin-top: 20px;
+}
+.home .header-content {
+  margin: 20px auto;
+}
+.home .header-content .head-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 31.5px 0;
+}
+.home .header-content .head-img img {
+  width: 30%;
+  height: 200px;
+  border-radius: 10px;
+}
+.home footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #ebe6e6;
+  color: #2b3247;
   font-size: 1.8rem;
-  line-height: 2;
+  max-width: 880px;
+  width: 100%;
+  height: 80px;
+}
+.bottom-content {
+  margin: 25px auto;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #dbd4d4;
+}
+.bottom-content img {
+  align-self: flex-start;
+}
+.bottom-content .bottom-text-content h2 {
+  font-size: 2.8rem;
+  text-align: left;
+  width: 90%;
+}
+.bottom-content .bottom-text-content p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 90%;
+  margin-top: 20px;
 }
