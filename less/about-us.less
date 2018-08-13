@@ -1,0 +1,26 @@
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    color: @nav-text;
+    .main-content {
+        .flex(row;
+        space-between;
+        flex-start);
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding-right: 2%;
+        padding-left: 2%;
+        .main-text {
+            padding-right: 10%;
+            width: 50%;
+            h1 {
+                margin-bottom: 30px;
+                font-size: 2rem;
+                @media @phone {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
