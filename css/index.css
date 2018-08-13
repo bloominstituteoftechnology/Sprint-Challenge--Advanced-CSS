@@ -179,65 +179,62 @@ footer {
   border: 1px solid #e4e4e4;
   border-radius: 5px;
 }
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-items: unset;
-  width: 60%;
-  height: 900px;
-  margin: auto;
-  border-bottom: 1px solid #e4e4e4;
-  padding-bottom: 50px;
-}
-.main-content .top-header {
-  width: 100%;
-}
-.main-content h2 {
-  font-size: 2rem;
-}
-.main-content .img-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 40px;
-}
-.main-content .img-content .rocket-img {
-  width: 31%;
-  border-radius: 5px;
-}
-.middle-content {
-  width: 60%;
-  margin: 30px auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1px solid #e4e4e4;
-}
-.middle-content .text-content {
-  width: 40%;
-}
-.middle-content .text-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-}
-.middle-content .text-content button {
-  width: 80px;
-  height: 30px;
-  font-size: 0.8rem;
-  border-radius: 5px;
-  background: #444958;
-  color: white;
-  border: 1px solid blue;
+.header-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 15px 0;
+  margin-left: 23%;
+  width: 50%;
+  height: auto;
 }
-.middle-content img {
-  width: 30%;
-  border-radius: 10px;
-  margin: 20px;
+.container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h3 {
+  font-size: 1.4rem;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+p {
+  margin-bottom: 18px;
+}
+img {
+  border-radius: 15px;
+  height: 145px;
+  width: 190px;
+  display: inline-block;
+  margin: 15px;
+}
+img .rocket-img {
+  width: 33%;
+}
+img .sky-img {
+  width: 33%;
+}
+img .launch {
+  width: 33%;
+}
+.bottom {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  flex-wrap: wrap;
+  border-top: 1px solid lightgray;
+}
+.bottom-content {
+  width: 50%;
+  margin-bottom: 20px;
+}
+button {
+  width: 65px;
+  background-color: #444958;
+  color: white;
+  height: 15px;
+  border: 1px solid blue;
+}
+bottom-img {
+  width: 33%;
 }
