@@ -176,6 +176,10 @@ h5 {
   color: #22283B;
   text-decoration: none;
 }
+.header nav a:hover {
+  background: #22283B;
+  color: #f4f4f4;
+}
 @media (max-width: 500px) {
   .header nav {
     width: 90%;
