@@ -1,1 +1,392 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.Main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+}
+.Main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+  padding: 10px 0px;
+}
+header h1 {
+  font-size: 3rem;
+}
+@media (max-width:500px) {
+  header h1 {
+    font-size: 5.5em;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+@media (max-width:500px) {
+  nav {
+    max-width: 425px;
+    width: 95%;
+  }
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: black;
+}
+@media (max-width:500px) {
+  nav a {
+    font-size: 1.75rem;
+  }
+}
+footer {
+  border-top: 1px solid gray;
+  background-color: lightgray;
+  max-width: 1000px;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1.2rem;
+}
+.Main2 .large-img {
+  max-width: 800px;
+  width: 100%;
+}
+.Main2 .Sec1 {
+  max-width: 800px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Main2 .Sec1 h2 {
+  font-size: 2.5rem;
+  padding-top: 40px;
+}
+.Main2 .Sec1 p {
+  padding-top: 10px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+.Main2 .Sec1 section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main2 .Sec1 section img {
+  max-width: 250px;
+  width: 31.25%;
+  border-radius: 20px;
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi1 {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi2 {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .Main2 .Sec1 section .mi3 {
+    display: none;
+  }
+}
+.Sec2 {
+  max-width: 800px;
+  width: 95%;
+  padding: 30px 1.25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+.Sec2 h2 {
+  font-size: 2.5rem;
+}
+.Sec2 p {
+  padding-top: 10px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+@media (max-width:500px) {
+  .Sec2 p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+.Sec3 {
+  border-top: 1px solid gray;
+  max-width: 800px;
+  width: 95%;
+  padding: 40px 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .Sec3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    width: 95%;
+  }
+}
+.text {
+  max-width: 375px;
+  width: 46.875%;
+  padding: 10px 1.25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+@media (max-width:500px) {
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 95%;
+  }
+}
+.text h2 {
+  font-size: 2.5rem;
+}
+.text p {
+  padding-top: 10px;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+@media (max-width:500px) {
+  .text p {
+    padding-top: 10px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+}
+.text a {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.75rem;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+@media (max-width:500px) {
+  .text a {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+}
+@media (max-width:750px) {
+  .text a {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.75rem;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
+}
+img {
+  width: 50%;
+}
+@media (max-width:500px) {
+  img {
+    width: 95%;
+  }
+}

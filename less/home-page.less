@@ -1,1 +1,130 @@
 // Home Content
+
+
+
+.Main2 {
+
+    .large-img {
+        .width(800px,100%);
+    }
+
+    .Sec1 {
+        .width(800px,95%);
+        .flex(column,center,space-between);
+
+        h2 {
+            font-size: @h2size;
+            padding-top: 40px;
+        }
+
+        p {
+            .p(@psize,1.5);
+            padding-bottom: 15px;
+            @media @phone {
+                .p(1.75rem,1.5);
+
+            }
+        }
+
+        section {
+            .flex(row,space-between,center);
+
+            img {
+                .width(250px,31.25%);
+                border-radius: 20px;
+            }
+
+            .mi1 {
+                @media @phone {
+                    .width(400px,100%);                    }
+                }
+            .mi2 {
+                @media @phone {
+                        display:none;
+                    }
+                }
+
+                .mi3 {
+                    @media @phone {
+                            display:none;
+                        }
+                    }
+            }
+        }
+    }
+
+    .Sec2 {
+        .width(800px,95%);
+        padding: 30px 1.25%;
+        .flex(column,center,space-between);
+
+        h2 {
+            font-size: @h2size;
+        }
+
+        p {
+            .p(@psize,1.5);
+            
+            @media @phone {
+                .p(1.75rem,1.5);
+            }
+        }
+    }
+
+    .Sec3 {
+        border-top: 1px solid @borderc;
+        .width(800px,95%);
+        padding: 40px 5%;
+        .flex(row,space-between,center);
+        
+        @media @phone {
+            .flex(column,space-between,center);
+            .width(400px,95%);
+        }
+            }
+    
+    .text {
+        .width(375px, 46.875%);
+        padding: 10px 1.25%;
+        .flex(column,center,space-between);
+
+        @media @phone {
+            .flex(column,space-between,flex-start);
+            .width(400px,95%);
+        }
+
+        h2 {
+            font-size: @h2size;
+        }
+
+        p {
+            .p(@psize,1.5);
+
+            @media @phone {
+                .p(1.75rem,1.5);
+            }
+        }
+
+        a {
+            .btn(1.75rem, 100%,white,black);
+
+            @media @phone {
+                .btn(1.75rem, 100%,white,black);
+            }
+
+            @media @tablet {
+                .btn(1.75rem, 100%,white,black);
+
+            }
+            
+        }
+    }
+
+    img {
+        width: 50%;
+
+        @media @phone {
+            width: 95%;
+        }
+    }
+
