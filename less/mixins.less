@@ -1,1 +1,44 @@
 // Mixins below variables
+.btn-media {
+
+    .button-creator(@bgColor: @secondary-color, @width: 94.3%, @font-btn-size: @font-size);
+}
+
+.flex-justify-centered () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+//Button Creator
+.button-creator(@bgColor: teal, @width: 200px, @height: 35px, @font-btn-size: 1.2rem) {
+    font-size: @font-btn-size;
+    width: @width;
+    height: @height;
+    border-radius: 5px;
+    background-color: @bgColor;
+    text-align: center;
+    color: @main-color;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid teal;
+} //flex mixin parametric
+.flex-boxed(@justify: "", @margin: "", @margin-top: "", @max-width: "", @alignitems: "", @flexdir: "", @width: "", @wrap: "") {
+    display: flex;
+    flex-wrap: @wrap;
+    flex-direction: @flexdir;
+    justify-content: @justify;
+    align-items: @alignitems;
+    margin: @margin;
+    margin-top: @margin-top;
+    max-width: @max-width;
+    width: @width;
+}
