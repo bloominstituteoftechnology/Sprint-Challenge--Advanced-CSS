@@ -1,1 +1,35 @@
 // Mixins below variables
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-top-content {
+    margin-top: 20px;
+}
+
+.btn-creator (@bg-color: @accent-color, @height: 45px){
+    background-color: @bg-color;
+    border-radius: 5px;
+    border:1px solid #157ffb;
+	color: white;
+    font-size: 18px;
+	height: @height;
+    text-align: center;
+}
+
+.btn-creator-hover (@bg-color: @hover-color, @height: 45px){
+    background-color: @bg-color;
+    border-radius: 5px;
+    border:1px solid #157ffb;
+	color: white;
+    font-size: 18px;
+	height: @height;
+    text-align: center;
+}
+
