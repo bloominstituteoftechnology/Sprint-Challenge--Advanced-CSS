@@ -1,1 +1,31 @@
-// Mixins below variables
+.main-text(@MTpx: 18px, @PaddingLR: 2%) {
+    margin-top: @MTpx;
+    padding: 0px @PaddingLR;
+}
+
+.flexC() {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexR-spaceB() {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-template(@text-color: @button-color, @BGcolor: @button-bg, @Bborder: @button-border, @font-size: 1.6rem, @width: 80px, @height: 40px, @bR: 5px) {
+    .flex-center;
+    color: @text-color;
+    background-color: @BGcolor;
+    border: 1px solid @Bborder;
+    font-size: @font-size;
+    width: @width;
+    height: @height;
+    border-radius: @bR;
+}
