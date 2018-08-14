@@ -1,1 +1,310 @@
-/* Compile your LESS first! */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.theme {
+  color: #444958;
+  background-color: whitesmoke;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 2rem;
+}
+.main-header {
+  color: #444958;
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+.main-header h1 {
+  font-size: 3.4rem;
+  color: #444958;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.navcontent {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #444958;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #444958;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  padding: 10px;
+  height: 85px;
+}
+.main-content {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.main-content .main-header-img {
+  width: 100%;
+}
+.main-content .main-text {
+  padding: 12px;
+}
+.main-content .main-text h2 {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.main-content .liftoff-imgs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+.main-content .liftoff-imgs .img {
+  border-radius: 10px;
+  width: 275px;
+  height: 183px;
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img1 {
+    margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img3 {
+    display: none;
+  }
+}
+.main-text-bottom {
+  padding: 12px;
+  margin-bottom: 50px;
+}
+.main-text-bottom h2 {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.bottom-content {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 25px;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.bottom-content .bottom-text {
+  width: 40%;
+}
+.bottom-content .bottom-text .btn {
+  color: whitesmoke;
+  background-color: #22283a;
+  font-size: 1.6rem;
+  padding: 5px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #1770da;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text .btn {
+    margin: 15px auto;
+    width: 82.9%;
+  }
+}
+.bottom-content .bottom-text .btn:hover {
+  color: #22283a;
+  background-color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
+.bottom-content .bottom-img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-img {
+    margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+  }
+}
