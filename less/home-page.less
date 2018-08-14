@@ -1,1 +1,108 @@
 // Home Content
+body {
+    font-size: 62.5%;
+    background-color: @main-color;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid darkgray;
+    padding-bottom: 20px;
+
+    h2 {
+        .h2();
+    }
+
+    p {
+        .p();
+    }
+
+    .content__top {
+        border-bottom: 1px solid darkgray;
+        padding: 0 2% 70px 2%;
+        .displayflex(row, space-between, center);
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .content__img--accent {
+            width: 30%;
+            border-radius: 20px;
+            margin: 10px 0;
+        }
+
+        @media @phone {
+            .displayflex(column, center, center);
+            
+            .content__img--accent { 
+                width: 95%;
+            }
+            .hidden {
+                display:none;
+            }
+        }
+    }
+
+    .content__bottom {
+        padding: 20px 10%;
+        .displayflex(row, space-between, flex-start);
+        flex-wrap: wrap;
+
+        @media @phone {
+            .displayflex(column, center, center);
+        }
+        
+        .content__bottom--right{
+            width: 45%;
+            .displayflex(column, space-between, flex-start);
+
+            button {
+                .p();
+                .button(50px, 30%, 5px, @secondary-color, @main-color);
+
+                @media @phone {
+                    width: 100%;
+                }
+            }
+
+            @media @phone {
+                width: 95%;
+            }
+        }
+
+        img {
+            width: 50%;
+            border-radius: 10px;
+            margin-top: 10px;
+
+            @media @phone {
+                width: 95%;
+            }
+        }
+    }
+}
+
+footer {
+    .p();
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 50px;
+    padding-top: 10px;
+    background-color: @accent-color;
+    text-align: center;
+
+}
