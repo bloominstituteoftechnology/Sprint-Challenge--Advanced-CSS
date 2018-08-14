@@ -1,1 +1,190 @@
 // Home Content
+
+.home {
+    max-width: 640px;
+    width: 100%;
+
+    .header-main { 
+        width: 100%;
+        padding-bottom: 12px;
+
+        h2 {
+            font-size: 2.6rem;
+            padding: 13px 1.9% 10px 1.9%;
+
+            @media @phone{
+                padding-left: 3%;
+                font-size: 3.2rem;
+                padding-top: 17px;
+            }
+        }
+
+        p {
+            padding-left: 1.9%;
+            padding-right: 6%;
+            font-size: 1.25rem;
+            line-height: 1.55;
+            letter-spacing: .13px;
+
+            @media @phone{
+                padding-left: 3%;
+                font-size: 1.6rem;
+                letter-spacing: 0px;
+                padding-right: 4%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 160px;
+            margin-top: 80px;
+
+            @media @phone{
+                height: 200px;
+            }
+        }
+    }
+
+    .row-of-pics-main {
+        width: 100%;
+        .flex(space-around);
+        padding-bottom: 26px;
+
+        img {
+            width: 29.5%;
+            border-radius: 12px;
+
+            @media @phone{
+            width: 80%;
+            margin-right: 6%;
+            margin-top: 25px;
+            }
+        }
+
+        @media @phone{
+            .no-display-mobile-main {
+                display: none;
+            }
+        }
+    }
+
+    .middle-section-main {
+        padding-bottom: 50px;
+
+        @media @phone{
+            padding-bottom: 70px;
+        }
+
+
+        h2 {
+            font-size: 2.24rem;
+            padding: 13px 1.9% 10px 1.9%;
+
+            @media @phone{
+                padding-left: 3%;
+                font-size: 2.8rem;
+                padding-top: 17px;
+            }
+        }
+
+        br {
+            line-height: 1.35;
+        }
+
+        p {
+            padding-left: 1.9%;
+            padding-right: 1.9%;
+            font-size: 1.25rem;
+            line-height: 1.55;
+            letter-spacing: .13px;
+
+            @media @phone{
+                padding-left: 3%;
+                font-size: 1.6rem;
+                letter-spacing: 0px;
+                padding-right: 3.5%;
+            }
+        }
+    }
+
+    .bottom-section-main {
+        border-top: 1px solid @accent-color;
+        border-bottom: 1px solid @accent-color;
+        .flex(space-evenly);
+        padding-bottom: 40px;
+
+            @media @phone{
+                width: 81%;
+                flex-wrap: wrap;
+            }
+
+        .textbox {
+            .flex(center, flex-start);
+            width: 42%;
+            flex-direction: column;
+            padding-left: 3%;
+            padding-top: 40px;
+          
+            @media @phone{
+                width: 100%;
+                padding-top: 30px;
+            }
+
+
+                        
+            h2 {
+                font-size: 2.24rem;
+                padding: 0px 1.9% 10px 0px;
+                text-align: left;
+
+                @media @phone{
+                    padding-left: 1.9%;
+                    font-size: 2.8rem;
+                    padding-top: 17px;
+                }
+            }
+
+            br {
+                line-height: 1.35;
+            }
+
+            p {
+                padding-left: 1.9%;
+                padding-right: 1.9%;
+                font-size: 1.25rem;
+                line-height: 1.55;
+                letter-spacing: .13px;
+
+                @media @phone{
+                    padding-left: 1.9%;
+                    font-size: 1.6rem;
+                    letter-spacing: 0px;
+                    padding-right: 3.5%;
+                }
+            }
+
+            .button {
+                .button-creator();
+                .hover-mixin-button();
+
+                    p {
+                        a {
+                        text-decoration: none;
+                        color: @main-color;
+
+                        }
+                    }
+            }
+        }
+
+        img {
+            width: 260px;
+            border-radius: 5px;
+
+            @media @phone{
+                width: 95%;
+                margin-top: 20px;
+            }
+        }
+    }
+}

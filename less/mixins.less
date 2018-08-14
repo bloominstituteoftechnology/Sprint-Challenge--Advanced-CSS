@@ -1,1 +1,40 @@
 // Mixins below variables
+
+.flex(@jc:center, @ai:center) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+
+.button-creator(@width: 65px, @bgColor:@secondary-color) {
+    background-color: @bgColor;
+    color: @main-color;
+    width: @width;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px 0px;
+    font-size: 1.8rem;
+    text-align: center;
+    border: 1px solid @button-border-color;
+
+    @media @phone{
+        width: 95%;
+        margin-top: 25px;
+        padding: 10px 0px;
+    }
+}
+
+.hover-mixin-button() {
+    &:hover { 
+        background-color: orange;
+        color: black;
+    }
+}
+
+.hover-mixin-a() {
+    &:hover {
+        background-color: yellow;
+        color: black;
+    }
+}

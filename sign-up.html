@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>SpaceWalkers</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+	<link href="css/sign-up.css" rel="stylesheet">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="fixed-nav-container">
+		<div class="top-container">
+			<h1>SpaceWalkers</h1>
+		
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="#">About Us</a>
+				<a href="#">Blog</a>
+				<a href="#">Contact</a>
+				<a href="#">Sign In</a>
+			</nav>
+		</div>
+
+		<div class="container signup">
+            <form action="contact_form.php" method="get" class="form-sheet">
+				<div class="content-box">
+					<label for="first-name">First Name:</label>
+					<input type="text" name="first-name" placeholder="JON" required>
+				
+					<label for="last-name">Last Name:</label>
+					<input type="text" name="last-name" placeholder="SNOW" required>
+				</div>
+				
+				<br>
+
+				<div class="content-box">
+					<label for="email">Email:</label>
+					<input type="text" name="email" placeholder="email@email.com" required>
+				
+					<label for="phone-number">Phone Number:</label>
+					<input type="number" name="phone-number" placeholder="(111)111-1111" required>
+				</div>
+                <br>
+
+				<div class="content-box">
+					<label for="message">Message:</label>
+					<textarea name="message" rows="15" cols="100" required>
+					</textarea>
+				</div>
+
+
+				<div class="pricing-table">
+						<div class="package">
+							<h2>Package 1</h2>
+								<p>Lorem ipsum dolor sit amet, consectetr adipscing elit, sed do</p>
+								<br>
+								<p class="pricing">9.99/month</p>
+						</div>
+						
+						<div class="package">
+							<h2>Package 2</h2>
+								<p>Lorem ipsum dolor sit amet, consectetr adipscing elit, sed do</p>
+								<br>
+								<p class="pricing">19.99/month</p>
+						</div>
+						<div class="package">
+							<h2>Package 3</h2>
+								<p>Lorem ipsum dolor sit amet, consectetr adipscing elit, sed do</p>
+								<br>
+								<p class="pricing">29.99/month</p>
+						</div>
+					</div>
+	 
+					<label for="options">Package Options:</label>
+			<br>
+			
+			<input type="checkbox" name="options" value="package-1"> Package 1
+			<br>
+			
+			<input type="checkbox" name="options" value="package-2"> Package 2
+			<br>
+			
+			<input type="checkbox" name="options" value="package-3"> Package 3
+			<br>
+		</form>
+			<br>
+			<div class="button">
+					<p><a href="#">Confirm Purchase</a></p>
+				</div>
+			<hr>
+
+			<footer>
+				<p>Copyright SpaceWalkers 2018</p>
+			</footer>
+
+		</div>
+	</div>
+</body>
+</html>
