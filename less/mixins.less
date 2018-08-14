@@ -1,1 +1,21 @@
 // Mixins below variables
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.button-creator(@bgColor:@secondary-color, @width: 55px, @height: 25px, @mt: 5px) {
+    width: @width;
+    height: @height;
+    background-color: @bgColor;
+    color: @accent-color;
+    margin-top: @mt;
+    font-size: .75rem;
+    border-radius: 5px;
+    .flex-row;
+}
