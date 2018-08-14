@@ -1,1 +1,227 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid lightgray;
+}
+header h1 {
+  font-size: 8.5rem;
+}
+header nav {
+  padding-top: 24px;
+}
+header nav a {
+  text-decoration: none;
+  padding: 24px;
+  font-size: 3.6rem;
+  color: black;
+}
+.container {
+  max-width: 2420px;
+  width: 100%;
+}
+.container .top-img {
+  margin-left: 17%;
+  width: 66.1%;
+  height: 400px;
+}
+.container .top-content h1 {
+  padding-top: 40px;
+  margin-left: 18%;
+  font-size: 6.5rem;
+}
+.container .top-content p {
+  margin: 0 18%;
+  font-size: 3.6rem;
+  padding-top: 24px;
+}
+.container .three-imgs {
+  margin-left: 18%;
+  padding-top: 30px;
+}
+.container .three-imgs .img {
+  width: 24%;
+  margin-right: 57px;
+  height: 348px;
+  border-radius: 27px;
+}
+.container .three-imgs .img:last-child {
+  margin-right: 0;
+}
+.container .middle-content {
+  margin-bottom: 140px;
+}
+.container .middle-content h1 {
+  padding-top: 95px;
+  margin-left: 18%;
+  font-size: 5.5rem;
+}
+.container .middle-content p {
+  margin: 0 18%;
+  font-size: 3.6rem;
+  padding-top: 30px;
+}
+.container hr {
+  width: 65%;
+}
+.container .bottom-content h2 {
+  padding-top: 90px;
+  margin-left: 22%;
+  font-size: 5.5rem;
+}
+.container .bottom-content p {
+  margin-left: 22%;
+  font-size: 3.1rem;
+  padding-top: 24px;
+  width: 24%;
+  line-height: 1.5;
+  display: inline-block;
+}
