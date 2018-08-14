@@ -172,6 +172,11 @@ header {
   font-size: 2rem;
   width: 100%;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #827b7b;
+}
 h2 {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -217,4 +222,5 @@ h2 {
   width: 15%;
   text-align: center;
   display: flex;
+  padding-bottom: 10px;
 }
