@@ -225,6 +225,8 @@ footer {
 @media (max-width: 500px) {
   .main-content .liftoff-imgs .img1 {
     margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
   }
 }
 @media (max-width: 500px) {
@@ -278,7 +280,8 @@ footer {
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-text .btn {
-    width: 100%;
+    margin: 15px auto;
+    width: 82.9%;
   }
 }
 .bottom-content .bottom-text .btn:hover {
@@ -292,6 +295,13 @@ footer {
 }
 .bottom-content .bottom-img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-img {
+    margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
+  }
 }
 @media (max-width: 500px) {
   .bottom-content {
