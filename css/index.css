@@ -172,3 +172,49 @@ header {
   font-size: 2rem;
   width: 100%;
 }
+h2 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.top-image {
+  width: 100%;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+.top-content {
+  padding-bottom: 5%;
+  padding-top: 5;
+}
+.rockets {
+  display: flex;
+  justify-content: space-between;
+}
+.rockets img {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  width: 30%;
+  border-radius: 25px;
+}
+.bottom-content {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.foot-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.sidebyside {
+  display: flex;
+}
+.button {
+  background-color: lightblue;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 15%;
+  text-align: center;
+  display: flex;
+}
