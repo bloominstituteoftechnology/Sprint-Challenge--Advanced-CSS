@@ -1,1 +1,296 @@
-/* Compile your LESS first! */
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+nav {
+  width: 100%;
+  border-bottom: #e0e0e0;
+  background: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+  justify-content: center;
+  color: #5a6b87;
+}
+nav p {
+  margin: 1.2rem;
+}
+nav p:first-child {
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-left: 45%;
+  margin-right: 45%;
+  font-family: 'Do Hyeon', sans-serif;
+}
+html body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  color: #22283B;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+@media (max-width: 500px) {
+  html body footer {
+    flex-wrap: wrap;
+  }
+}
+html body footer .verticaltextblock {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  html body footer .verticaltextblock {
+    width: 85%;
+  }
+}
+html body footer img {
+  border-radius: 5%;
+  width: 40%;
+  height: 199px;
+  padding-left: 1rem;
+  margin-top: 1.4rem;
+}
+@media (max-width: 500px) {
+  html body footer .bottomimg {
+    width: 85%;
+    border-radius: 1%;
+  }
+}
+html body footer button {
+  display: block;
+  margin: auto;
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  color: white;
+  background: #2a0c5a;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  html body footer button {
+    width: 100%;
+  }
+}
+html body .copyright {
+  width: 90%;
+  background: #f4f4f4;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  font-size: 1.6rem;
+  padding: 2rem;
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #22283B;
+  width: 55%;
+}
+@media (max-width: 500px) {
+  html body main {
+    width: 95%;
+  }
+}
+html body main img:first-child {
+  width: 100%;
+  border-radius: 0%;
+}
+@media (max-width: 500px) {
+  html body main img:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html body main img:nth-child(4) {
+    display: none;
+  }
+}
+html body main h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+html body main p {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+html body main .horizontalblock {
+  margin-left: 1.2rem;
+}
+html body main img {
+  width: 30%;
+  margin-right: 1.8rem;
+  border-radius: 15%;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 500px) {
+  html body main img {
+    width: 100%;
+  }
+}
