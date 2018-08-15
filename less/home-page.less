@@ -41,17 +41,31 @@ header {
       border-radius: 10px;
       height: 225px;
       width: 225px;
+      .marg-bot(20px);
 
       &:first-child {
         .img-creator('../img/blast.jpg')
       }
 
       &:nth-child(2) {
-        .img-creator('../img/sky.jpg')
+        .img-creator('../img/sky.jpg');
+
+        @media @mobile {
+          display: none;
+        }
       }
 
       &:last-child {
-        .img-creator('../img/launch.jpg')
+        .img-creator('../img/launch.jpg');
+
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      @media @mobile {
+        width: 100%;
+        height: 300px;
       }
     }
   }
@@ -68,17 +82,37 @@ header {
     .promo-text {
       width: 45%;
       margin-right: 20px;
+
+      @media @mobile {
+        .full-width;
+        padding: 50px;
+      }
     }
 
     .promo-img {
       .img-creator('../img/space-walk.jpg');
-      height: 200px;
+      height: 300px;
       width: 200px;
+
+      @media @mobile {
+        .full-width;
+        .marg-top(20px);
+      }
     }
 
     .button {
       .marg-top();
       .button-creator(100px);
+
+      @media @mobile {
+        .full-width;
+        height: 75px;
+        .marg-top(20px);
+      }
+    }
+
+    @media @mobile {
+      .flx-c;
     }
   }
 }
