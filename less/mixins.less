@@ -1,1 +1,50 @@
 // Mixins below variables
+
+.flex(@dir; @just; @al) {
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @just;
+  align-items: @al;
+}
+
+.navFonts(@size; @color) {
+  font-size: @size;
+  color: @color;
+  text-decoration-line: none;
+}
+
+.buttonDesign {
+  .flex(row; center; center);
+  padding: 8px 12px;
+  color: @main-color;
+  border: 2px solid @secondary-color;
+  border-radius: 5px;
+  background-color: @btn-color;
+
+  @media @phone {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {opacity: 0; left:300px;}
+  to {opacity: 1; left:0px;}
+}
+
+@keyframes fadeInRight {
+  from {opacity: 0; right:300px;}
+  to {opacity: 1; right:0px;}
+}
+
+.animationToLeft(@sec:5s) {
+  position: relative;
+  animation-name: fadeInLeft;
+  animation-duration: @sec;
+}
+
+.animationToRight(@sec:5s) {
+  position: relative;
+  animation-name: fadeInRight;
+  animation-duration: @sec;
+}

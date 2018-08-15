@@ -1,1 +1,118 @@
 // Home Content
+
+.container {
+  .flex(column; center; center);
+  width: 90%;
+  max-width: 880px;
+  margin: auto;
+  line-height: 1.5;
+
+  @media @phone {
+    width: 100%;
+  }
+
+  .homeHeaderPic {
+    width: 100%;
+  }
+
+  .homeLead {
+    padding: 15px;
+    .flex(column; space-evenly; flex-start);
+
+    .homeLeadTitle {
+      padding-bottom: 15px;
+      .animationToLeft(@animation-dur);
+    }
+
+    .homeLeadPara {
+      padding-bottom: 15px;
+      .animationToRight(@animation-dur);
+    }
+
+    .homeLeadPicDiv {
+      .flex(row; space-between; center);
+
+      @media @phone {
+          .flex(column; space-evenly; center);
+          width: 100%;
+      }
+    }
+
+    .homeLeadPic {
+      width: 30%;
+      border-radius: 10px;
+
+      @media @phone {
+          width: 90%;
+          margin: 10px;
+      }
+    }
+
+    .two {
+        @media @phone {
+            display: none;
+        }
+    }
+
+    .three {
+        @media @phone {
+            display: none;
+        }
+    }
+  }
+
+  .homeFollowup {
+    .flex(column; space-evenly; flex-start);
+    padding: 15px;
+
+    .homeFollowupTitle {
+      padding-bottom: 15px;
+      .animationToLeft(@animation-dur);
+    }
+
+    .homeFollowupPara {
+      padding-bottom: 15px;
+      .animationToRight(@animation-dur);
+    }
+  }
+
+  .homeConc {
+    .flex(row; space-around; center);
+    border-top: 1px solid @accent-color;
+    border-bottom: 1px solid @accent-color;
+    padding: 25px;
+
+    @media @phone {
+        .flex(column; space-around; center;)
+    }
+
+    .homeConcWords {
+      .flex(column; space-between; flex-start);
+      width: 45%;
+      @media @phone {
+          width: 85%;
+      }
+    }
+
+    .homeConcPic {
+      width: 40%;
+      @media @phone {
+          width: 85%;
+      }
+    }
+
+    .homeConcTitle {
+      padding-bottom: 15px;
+      .animationToLeft(@animation-dur);
+    }
+
+    .homeConcPara {
+      padding-bottom: 15px;
+      .animationToRight(@animation-dur);
+    }
+
+    .homeConcBtn {
+      .buttonDesign;
+    }
+  }
+}

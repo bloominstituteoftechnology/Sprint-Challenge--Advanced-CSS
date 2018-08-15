@@ -1,0 +1,31 @@
+.headerNavBar {
+  width: 100%;
+  background-color: @main-color;
+  .flex(column; space-evenly; center);
+  padding-top: 15px;
+  border-bottom: 2px solid @accent-color;
+  position: fixed;
+  opacity: 0.85;
+
+  .title {
+    font-size: 3.2rem;
+  }
+
+  .topNavBar {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  .navLink {
+    .navFonts(1.2rem; black);
+    padding: 15px;
+
+    @media @phone {
+      padding: 12px;
+    }
+  }
+}
+
+.headerSpace {
+  height: 85px;
+}
