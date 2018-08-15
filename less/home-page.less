@@ -1,1 +1,118 @@
-// Home Content
+header {
+  .desktop-width;
+  .pad-top;
+  .flx-c;
+  .aln-ctr;
+  .just-ctr;
+
+  h1 {
+    font-size: 4rem;
+    color: @text-color;
+  }
+}
+
+.home {
+  .desktop-width;
+  padding: 20px;
+
+  .banner {
+    .img-creator("../img/main-header.jpg");
+    width: 100%;
+    height: 200px;
+    .marg-bot(20px);
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .lift-off-images {
+    .flx-r;
+    .just-btwn;
+    .marg-top(20px);
+    .marg-bot(20px);
+    flex-wrap: wrap;
+
+    .img-sm {
+      border-radius: 10px;
+      height: 225px;
+      width: 225px;
+      .marg-bot(20px);
+
+      &:first-child {
+        .img-creator('../img/blast.jpg')
+      }
+
+      &:nth-child(2) {
+        .img-creator('../img/sky.jpg');
+
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        .img-creator('../img/launch.jpg');
+
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      @media @mobile {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+
+  .promo {
+    .flx-r;
+    .just-ctr;
+    .desktop-width;
+    padding: 40px 0;
+    margin: 40px 0;
+    border-top: thin solid @divider-color;
+    border-bottom: thin solid @divider-color;
+
+    .promo-text {
+      width: 45%;
+      margin-right: 20px;
+
+      @media @mobile {
+        .full-width;
+        padding: 50px;
+      }
+    }
+
+    .promo-img {
+      .img-creator('../img/space-walk.jpg');
+      height: 300px;
+      width: 200px;
+
+      @media @mobile {
+        .full-width;
+        .marg-top(20px);
+      }
+    }
+
+    .button {
+      .marg-top();
+      .button-creator(100px);
+
+      @media @mobile {
+        .full-width;
+        height: 75px;
+        .marg-top(20px);
+      }
+    }
+
+    @media @mobile {
+      .flx-c;
+    }
+  }
+}

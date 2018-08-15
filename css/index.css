@@ -1,1 +1,357 @@
-/* Compile your LESS first! */
+.flx-r {
+  display: flex;
+  flex-direction: row;
+}
+.flx-c {
+  display: flex;
+  flex-direction: column;
+}
+.flx-r-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flx-c-rev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.just-ctr {
+  justify-content: center;
+}
+.just-end {
+  justify-content: flex-end;
+}
+.just-btwn {
+  justify-content: space-between;
+}
+.aln-ctr {
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
+.desktop-width {
+  width: 100%;
+  max-width: 800px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.navigation a {
+  margin-right: 20px;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #434e5a;
+}
+.navigation a:hover {
+  color: #2d353d;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  font-size: 1.5rem;
+  background: #eff0f1;
+}
+header {
+  width: 100%;
+  max-width: 800px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 4rem;
+  color: #434e5a;
+}
+.home {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+.home .banner {
+  background-image: url("../img/main-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.home h2 {
+  font-size: 2.5rem;
+}
+.home p {
+  font-size: 1.8rem;
+}
+.home .lift-off-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.home .lift-off-images .img-sm {
+  border-radius: 10px;
+  height: 225px;
+  width: 225px;
+  margin-bottom: 20px;
+}
+.home .lift-off-images .img-sm:first-child {
+  background-image: url('../img/blast.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home .lift-off-images .img-sm:nth-child(2) {
+  background-image: url('../img/sky.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 510px) {
+  .home .lift-off-images .img-sm:nth-child(2) {
+    display: none;
+  }
+}
+.home .lift-off-images .img-sm:last-child {
+  background-image: url('../img/launch.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 510px) {
+  .home .lift-off-images .img-sm:last-child {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .home .lift-off-images .img-sm {
+    width: 100%;
+    height: 300px;
+  }
+}
+.home .promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px 0;
+  margin: 40px 0;
+  border-top: thin solid #d9dfe7;
+  border-bottom: thin solid #d9dfe7;
+}
+.home .promo .promo-text {
+  width: 45%;
+  margin-right: 20px;
+}
+@media (max-width: 510px) {
+  .home .promo .promo-text {
+    width: 100%;
+    padding: 50px;
+  }
+}
+.home .promo .promo-img {
+  background-image: url('../img/space-walk.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 200px;
+}
+@media (max-width: 510px) {
+  .home .promo .promo-img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.home .promo .button {
+  margin-top: 10px;
+  background: #434e5a;
+  width: 100px;
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 510px) {
+  .home .promo .button {
+    width: 100%;
+    height: 75px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 510px) {
+  .home .promo {
+    display: flex;
+    flex-direction: column;
+  }
+}
