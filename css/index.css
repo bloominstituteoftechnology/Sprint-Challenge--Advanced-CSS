@@ -1,3 +1,34 @@
+.flx-r {
+  display: flex;
+  flex-direction: row;
+}
+.flx-c {
+  display: flex;
+  flex-direction: column;
+}
+.flx-r-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flx-c-rev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.just-ctr {
+  justify-content: center;
+}
+.just-end {
+  justify-content: flex-end;
+}
+.just-btwn {
+  justify-content: space-between;
+}
+.aln-ctr {
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -129,6 +160,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -139,4 +173,30 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
+}
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+.navigation a {
+  margin-right: 20px;
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #434e5a;
+}
+.navigation a:hover {
+  color: #2d353d;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 4rem;
+  color: #434e5a;
 }

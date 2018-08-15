@@ -1,1 +1,70 @@
-// Mixins below variables
+.flx-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.flx-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flx-r-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flx-c-rev {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.just-ctr {
+  justify-content: center;
+}
+
+.just-end {
+  justify-content: flex-end;
+}
+
+.just-btwn {
+  justify-content: space-between;
+}
+
+.aln-ctr {
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pad-top(@pad: 10px) {
+  padding-top: @pad;
+}
+
+.pad-bot(@pad: 10px) {
+  padding-bottom: @pad;
+}
+
+.marg-top(@marg: 10px) {
+  margin-top: @marg;
+}
+
+.marg-bot(@marg: 10px) {
+  margin-bottom: @marg;
+}
+
+.button-creator(@background: @button-bg, @color: white, @width: 200px) {
+  background: @background;
+  color: @color;
+  width: @width;
+  padding: 10px;
+  font-size: 1.3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  .flx-r;
+  .just-ctr;
+  .aln-ctr;
+}
+
