@@ -1,1 +1,39 @@
 // Mixins below variables
+
+.margin-auto() {
+   margin: 0px auto;
+}
+
+.container-style() {
+  width: 100%;
+  max-width:1024px;
+  .margin-auto;
+}
+
+.display-flex(@fd:row, @jc:center, @ai:center) {
+	display:flex;
+  flex-direction: @fd;
+	justify-content: @jc;
+	align-items:@ai;
+}
+
+
+.button-creator(@bgColor:blue,  @btn-font, @width: 150px, @height:60px) {
+   background-color: @bgColor;
+   font-size: @btn-font;
+   width: @width;
+   height: @height;
+   color: white;
+   border-radius: 10px;
+   .display-flex();
+    &:hover {
+     border: 1px solid red;
+     background-color:yellow;
+     color: @bgColor;
+   }
+}
+
+
+
+
+

@@ -1,0 +1,41 @@
+
+.header {
+       
+	width:100%;
+    background:@accent-color;
+    .display-flex(column, space-around);
+    padding: 30px 0px;
+
+    @media @mobile {
+       width:100%;
+       padding: 20px 0px;
+    }
+
+	.space-walker {
+	    padding: 20px 0px;
+	    text-align:center;
+	    font-size:3.8rem;
+	    color:@secondary-color;
+			    @media @mobile  {
+		         padding:10px 10px 15px 10px;
+		         font-size: 2.2rem;
+		       }
+	}
+	.header-nav {
+
+	   .display-flex(row, space-between);
+       width:90%;
+       .margin-auto;
+
+	   .a-tag {
+	      padding-right:10px;
+	      text-decoration:none;
+	      color:@secondary-color;
+	      font-size: 1.5rem;
+	       @media @mobile {
+	          font-size: .9rem;
+	          padding-right:6px;
+	       }
+	   }
+	}
+}
