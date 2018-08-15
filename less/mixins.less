@@ -38,6 +38,11 @@
   width: 100%;
 }
 
+.desktop-width {
+  .full-width;
+  max-width: 800px;
+}
+
 .pad-top(@pad: 10px) {
   padding-top: @pad;
 }
@@ -54,12 +59,13 @@
   margin-bottom: @marg;
 }
 
-.button-creator(@background: @button-bg, @color: white, @width: 200px) {
-  background: @background;
-  color: @color;
+.button-creator(@width: 200px) {
+  background: @button-background;
   width: @width;
+  color: white;
   padding: 10px;
   font-size: 1.3rem;
+  border: none;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -68,3 +74,9 @@
   .aln-ctr;
 }
 
+.img-creator(@url) {
+  background-image: url(@url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
