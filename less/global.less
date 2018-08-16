@@ -6,9 +6,22 @@
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
 }
 
+.container {
+  width: 800px;
+  margin: 0px auto;
+  background-color: white;
+
+  @media screen and (max-width: @phone) {
+    width: 500px;
+  }
+}

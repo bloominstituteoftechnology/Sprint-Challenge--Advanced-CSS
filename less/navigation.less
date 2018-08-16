@@ -1,0 +1,38 @@
+// Navigation styles
+
+header {
+    background-color: @main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid @acent-color;
+
+    h1 {
+        display: inline-block; 
+        margin-top: 4px;
+        font-size: 4rem;
+
+        @media screen and (min-width: @desktop) {
+            margin-top:14px;
+        }
+    }
+
+    nav {
+        display: inline-block; 
+        margin-top: 16px;
+        display: flex;
+        
+        a {
+            height: 20px;
+            width: 80px;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @secondary-color;
+            text-align: center;
+        }
+    }
+}

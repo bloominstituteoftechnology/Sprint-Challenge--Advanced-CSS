@@ -1,1 +1,22 @@
 // Footer Styles
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @main-color;
+    width: 100%;
+    height: auto;
+    border: 1px solid @acent-color;
+    border-radius: 4px;
+
+    p {
+        margin-top: 25px;
+        margin-bottom: 37px;
+        font-size: 1.6rem;
+
+        @media screen and (max-width: @phone) {
+            margin-top: 44px;
+        }
+    }
+}
