@@ -1,0 +1,68 @@
+.main-nav {
+    width: 100%;
+    height: 90px;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border-color;
+
+    /* Header Animation */
+    animation-duration: 3s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    .navigate {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+
+        @media @mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .name {
+            @media @mobile {
+                font-size: 3rem;
+            }
+        }
+
+        nav {
+            width: 38%;
+            display: flex;
+            margin-top: 1rem;
+            .center();
+            justify-content: space-between;
+
+
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            a {
+                font-size: 1.6rem;
+                color: @n-font-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// main-nav
+
+.head-image {
+      .center();
+      width: 100%;
+     
+  }
