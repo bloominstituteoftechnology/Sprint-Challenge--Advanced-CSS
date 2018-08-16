@@ -1,0 +1,30 @@
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: @link-size;
+    width: 100%;
+    background: @main-color;
+    color: @secondary-color;
+    border-bottom: 2px solid lightgray;
+    .nav-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links {
+        width: 35%;
+        padding-bottom: 1%;
+    }
+    h1 {
+        font-size: 4.5rem;
+        margin: 1% 0;
+    }
+    a {
+        text-decoration: none;
+        color: @secondary-color;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
