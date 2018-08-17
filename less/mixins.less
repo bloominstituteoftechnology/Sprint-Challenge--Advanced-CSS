@@ -5,14 +5,17 @@
     justify-content: @jc;
     align-items: @ai;
 }
-.buttonCreator(@bgColor, @color, @brdColor) {
+
+
+.new-button(@bgColor, @color, @brdColor, @height: 40px, @width:30%){
+    height: @height;
+    width: @width; 
     font-size: 1.2rem;
     background: @bgColor;
     color: @color;
-    border-radius: 12px;
-    boarder:1px solid @brdColor;
+    border: 2px solid @brdColor;
     .flexMix;
-    .hover-transition;
+    .hover-transition(white, dodgerblue, @font-color);
    
 }
 

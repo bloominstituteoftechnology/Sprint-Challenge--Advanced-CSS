@@ -7,62 +7,83 @@
 
 .home {
     .flexMix(column, space-between, center);
+   
     #sky-img {
         max-width: 880px;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         @mobile @phone {
             max-width: 500px;
             width: 100%;
+            @media @phone{
+                width:100%;
+            }
         }
     }
     .text-content {
         width: 100%;
-        .flexMix(column, space-around, flex-start);
+        .flexMix(column, space-around, center);
         .text-boxes;
         margin-bottom: 30px;
         border-bottom: 1px solid @brdr-color;
-        padding-bottom: 40px;
+        padding: 40px;
     }
     .header-content {
-        margin: 20px auto;
+        width:85%;
+         margin: 20px 0;
         .head-img {
-            .flexMix(row, space-between, center);
-            margin: 31.5px 0;
+            .flexMix(row, space-around, center);
+            // margin: 31.5px 0;
             img {
-                width: 30%;
-                height: 200px;
+                width: 31%;
+                height: 300px;
                 border-radius: 10px;
+                @media @phone{
+                    width: 90%;
+                    height: 400px;
+                }
+            }
+
+            #img2, #img3{
+                @media @phone{
+                    display: none;
+                }
             }
         }
-    }
-    footer {
-        .flexMix(row, center, center);
-        background: @footer-color;
-        color: @font-color;
-        font-size: 1.8rem;
-        max-width: 880px;
-        width: 100%;
-        height: 80px;
+   
     }
 }
 
-    .bottom-content {
-        margin: 25px auto;
-        padding: 40px;
-        width: 100%;
-        .flexMix(row, flex-start, center);
-        border-bottom: 1px solid @brdr-color;
-        img {
-            align-self: flex-start;
-        }
-        .bottom-text-content {
-            .text-boxes; // padding-right:15px;
-            // padding-top:10px;
-            .btn {
-                // width: 25%;
-                // height: 60px;
-                .buttonCreator( @font-color, #1e90ff, white);
-            }
-        }
+.bottom-content {
+    margin: 25px auto;
+    padding: 20px;
+    width: 90%;
+    .flexMix(row, flex-start, center);
+    border-bottom: 1px solid @brdr-color;
+    .bottom-img {
+        align-self: center;
+        
     }
+    @media @phone{
+        .flexMix(column, space-between, center);
+    }
+    .bottom-text-content {
+        .text-boxes; 
+        width: 100%;
+        @media @phone{
+            margin:20px auto;
+        }
+
+    }
+
+    .btn{
+        .new-button( @font-color, white, dodgerblue);
+
+        @media @phone{
+            width:100%;
+            height: 40px;
+            margin-top: 15px;
+        }
+        
+    }
+}
