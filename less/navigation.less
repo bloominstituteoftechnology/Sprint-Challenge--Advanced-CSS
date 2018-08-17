@@ -1,0 +1,34 @@
+.nav-bar {
+    .flexMix(column, space-around, center);
+    width:100vw;
+    height: 80px;
+    background: @nav-color;
+    border-bottom: 1px solid @brdr-color;
+    color: @font-color;
+    .inner-nav {
+        .flexMix(column, center, center);
+        max-width: 880px;
+        width: 100%;
+        .logo {
+            
+            letter-spacing: 2px;
+            margin: 10px auto;
+
+                h1{
+                    font-size: 3rem;
+                }
+        }
+        .nav-elements {
+            .flexMix(row, space-evenly, center);
+            width: 50%;
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: black;
+            }
+            @media @phone{
+                width:100%;
+            }
+        }
+    }
+}
