@@ -1,1 +1,148 @@
 // Home Content
+.wrapper {
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main .banner {
+	width: 100%;
+
+	img {
+	width: 100%;
+	display: block;
+	margin: 0;
+	}
+}
+
+	.go-for-walk .go-walk-content h2 {
+	    font-size: 3rem;
+	    text-align: justify;
+	    padding-bottom: 20px;
+	 }
+
+.lift-off {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+	border-bottom: 1px solid #ECEEF0;
+
+	@media @phone {
+		.justify-text
+	}
+
+	.lift-off-content {
+		padding: 20px;
+		h2 {
+			.font-size-h2-tags;
+			margin: 0;
+			padding-bottom: 20px;
+
+			@media @phone {
+				padding-bottom: 20px;
+			}
+		} 
+
+		p {
+			margin: 0;
+			.font-size-p;
+		}
+		}
+	}
+
+.lift-off-images {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 100%;
+			margin: 0 10px;
+			justify-content: space-evenly;
+			align-items: center;
+			@media @phone {
+				flex-direction: column;
+			}
+
+			img {
+				width: 30%;
+				border-radius: 35px;
+				padding: 1em;
+				@media @phone {
+					width: 100%;
+				}
+			}
+}
+
+.go-for-walk {
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ECEEF0;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	@media @phone {
+		flex-direction: column;
+    	padding: 20px;
+    	 
+	}
+
+	.go-walk-content {
+		@media @phone {
+			padding-bottom: 15px;
+			box-sizing: border-box;
+		}
+
+		h2 {
+			.font-size-h2-tags;
+			.justify-text;
+
+		}
+
+		p {
+			.font-size-p;
+		}
+	}
+}
+	.go-for-walk .go-walk-img img {
+	border-radius: 15px;
+	}
+
+	#astronaut {
+		@media @phone {
+			 width: 100%;
+    		 padding: 5px;
+   			 border-radius: 10px;
+		}
+	}
+
+/* button style */
+#button-container {
+	@media @phone {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+#btn-signup {
+	 margin-top: 13px;
+	 width: 13em;
+	.btn-maker(15px 0px, 5px, #fff,@header-color);
+	p {
+		font-size: 1.5rem;
+	}
+	@media @phone {
+		width: 39.8em;
+	}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+	background: #F4F4F4;
+	small {
+		font-size: 1.3rem;
+		margin-top: 30px;
+		height: 50px;
+	}
+}
