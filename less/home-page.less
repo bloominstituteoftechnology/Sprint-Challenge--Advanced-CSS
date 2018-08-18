@@ -3,10 +3,8 @@
     .flex-column-center;
     max-width: 600px;
     margin: 0 auto;
-    font-size: 1.2rem;
-    @media only screen and @phone {
-        font-size: 1.6rem;
-    }
+    font-size: 1.6rem;
+    
     h2 {
         font-size: 2.4rem;
         @media only screen and @phone {
@@ -20,6 +18,11 @@
         line-height: 20px;
         padding-top: 10px;
     }
+    .mobileHeadImg    {
+        @media only screen and @phone {
+            width: 100%;
+        }
+    }
     .images    {
         display: flex;
         justify-content: space-between;
@@ -28,6 +31,7 @@
             .img-styler;
             @media only screen and @phone {
                 width: 100%;
+                max-width: 500px;
             }
         }
         .notMobile    {

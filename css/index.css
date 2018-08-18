@@ -191,12 +191,7 @@ footer {
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 500px) {
-  .container {
-    font-size: 1.6rem;
-  }
+  font-size: 1.6rem;
 }
 .container h2 {
   font-size: 2.4rem;
@@ -213,6 +208,11 @@ footer {
   line-height: 20px;
   padding-top: 10px;
 }
+@media only screen and (max-width: 500px) {
+  .container .mobileHeadImg {
+    width: 100%;
+  }
+}
 .container .images {
   display: flex;
   justify-content: space-between;
@@ -226,6 +226,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .container .images img {
     width: 100%;
+    max-width: 500px;
   }
 }
 @media only screen and (max-width: 500px) {
