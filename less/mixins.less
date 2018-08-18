@@ -1,1 +1,17 @@
 // Mixins below variables
+.flex (@dir: row, @jc: center, @ai: center) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.btn-design(@width,@height,@rad:15px) {
+    border: 1px solid @header-border-color;
+    border-radius: @rad;
+    background-color: @h-text-color;
+    color: white;
+    width: @width;
+    height: @height;
+    .flex();
+}

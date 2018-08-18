@@ -1,1 +1,290 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+header {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: #22283B;
+  font-size: 2.5rem;
+}
+header nav {
+  padding: 14px 0;
+}
+header nav a {
+  text-decoration: none;
+  color: #22283B;
+  font-size: 1rem;
+  padding: 0px 14px;
+}
+footer {
+  max-width: 800px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  margin: 0px auto;
+  background-color: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  padding: 14px 0px 1px;
+}
+div.main-body {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+}
+div.main-body img.header {
+  width: 800px;
+  height: 200px;
+}
+@media (max-width:500px) {
+  div.main-body img.header {
+    width: 500px;
+  }
+}
+div.main-body h2 {
+  font-size: 2rem;
+  padding: 15px;
+}
+div.main-body h3 {
+  font-size: 1.75rem;
+  padding: 15px;
+}
+div.main-body p {
+  padding: 0px 15px;
+  line-height: 1.4;
+}
+div.main-body .image-block {
+  padding: 15px 15px 35px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.main-body .image-block img {
+  width: 240px;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+@media (max-width:500px) {
+  div.main-body .image-block img {
+    width: 400px;
+    display: none;
+    margin: 0px auto;
+  }
+}
+@media (max-width:500px) {
+  div.main-body .image-block img:first-child {
+    display: inline;
+  }
+}
+div.main-body div.sub-body {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  margin: 50px 0;
+}
+div.main-body div.sub-body .smaller-body {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+div.main-body div.sub-body .smaller-body .text {
+  width: 48%;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body .text {
+    width: 90%;
+  }
+}
+div.main-body div.sub-body .smaller-body img {
+  width: 300px;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body img {
+    width: 400px;
+  }
+}
+div.main-body div.sub-body .smaller-body .button {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background-color: #22283B;
+  color: white;
+  width: 100px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 15px;
+}
+@media (max-width:500px) {
+  div.main-body div.sub-body .smaller-body .button {
+    margin: 20px -18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: #22283B;
+    color: white;
+    width: 400px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
