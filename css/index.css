@@ -143,10 +143,6 @@ h5 {
 * {
   font-size: 65%;
 }
-.container {
-  width: 880px;
-  margin: auto 0;
-}
 h1 {
   font-size: 85px;
   display: flex;
@@ -176,6 +172,10 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #827b7b;
+}
+.container {
+  width: 880px;
+  margin: auto 0;
 }
 h2 {
   padding-top: 2%;
