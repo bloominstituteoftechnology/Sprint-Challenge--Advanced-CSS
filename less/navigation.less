@@ -3,9 +3,14 @@ nav {
     justify-content: space-around;
     width: 40%;
     margin-top: 1%;
+    @media @phone {
+        width: 80%;
+        margin-top: 20px;
+        font-weight: @font-weight;
+    }
     
     a {
-        color: black;
+        color: @secondary-color;
         text-decoration: none;
         font-size: 1.6rem;
         margin-bottom: 3%;

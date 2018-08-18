@@ -4,13 +4,15 @@ html {
     font-size: 62.5%;
 }
 
-body .container {
-    @media @phone {
-        width: 100%;
-        max-width: 500px;
+body {
+    .container {
+        @media @phone {
+            width: 100%;
+            max-width: 500px;
+        }
     }
-
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -18,11 +20,16 @@ header {
     background-color: @main-color; 
     @media @phone {
         background-color: white;
+        color: @secondary-color;
+        margin-top: 20px;
     }
 
     h1 {
         margin-top: 1%;
-        font-size: 3rem;
+        font-size: @phone-h2;
+        @media @phone {
+            font-size: 4rem;
+        }
     }
 }
 
