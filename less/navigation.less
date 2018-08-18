@@ -1,14 +1,19 @@
 header {
-    background-color: #f4f4f4;
+    background-color: @main-color;
     .flex-align-center-column;
-    color: #22283B;
-    border-bottom: 1px solid #e0e0e0;
-
+    color: @secondary-color;
+    border-bottom: 1px solid @accent-color;
+    
+     @media @phone {
+         .navigation-section {
+            width: 80%;
+         }
+    }
+    
     h1 {
         padding: 10px 0 10px 0;
         font-size: 4.0rem;
     }
-
 
 }
 

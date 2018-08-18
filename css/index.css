@@ -162,6 +162,11 @@ header {
   color: #22283B;
   border-bottom: 1px solid #e0e0e0;
 }
+@media (max-width:500px) {
+  header .navigation-section {
+    width: 80%;
+  }
+}
 header h1 {
   padding: 10px 0 10px 0;
   font-size: 4rem;
@@ -189,6 +194,11 @@ footer p {
   font-size: 1.3rem;
   font-color: #22283B;
 }
+@media (max-width:500px) {
+  footer p {
+    padding: 0px;
+  }
+}
 .content-section .planet-content {
   display: flex;
   justify-content: center;
@@ -199,6 +209,19 @@ footer p {
 .content-section .planet-content img {
   height: 200px;
   width: 100%;
+}
+@media (max-width:500px) {
+  .content-section .planet-content .text-content h1 {
+    padding: 15px 0 0 3%;
+    font-size: 2.9rem;
+  }
+  .content-section .planet-content .text-content p {
+    padding: 10px 10px 0 3%;
+    font-size: 1.6rem;
+  }
+  .content-section .planet-content .text-content br {
+    display: none;
+  }
 }
 .content-section .text-content {
   width: 100%;
@@ -218,7 +241,7 @@ footer p {
   color: #22283B;
 }
 .content-section .ship-space-content {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #e0e0e0;
 }
 .content-section .ship-space-content img {
   width: 30%;
@@ -231,6 +254,25 @@ footer p {
 }
 .content-section .ship-space-content .text-content {
   margin-bottom: 40px;
+}
+@media (max-width:500px) {
+  .content-section .ship-space-content img {
+    display: none;
+  }
+  .content-section .ship-space-content .img1 {
+    display: block;
+    width: 80%;
+    margin: 10px 0 30px 7%;
+  }
+  .content-section .ship-space-content .text-content {
+    padding: 10px 10px 0 10px;
+  }
+  .content-section .ship-space-content .text-content h1 {
+    font-size: 2.9rem;
+  }
+  .content-section .ship-space-content .text-content br {
+    display: none;
+  }
 }
 .content-section .spaceman-section {
   border-bottom: 1px solid #e0e0e0;
@@ -250,7 +292,7 @@ footer p {
   margin-bottom: 40px;
 }
 .content-section .spaceman-section .text-content p {
-  padding: 0 7.8% 0 3%;
+  padding: 10px 7.8% 0 3%;
 }
 .content-section .spaceman-section .text-content .signup-button {
   display: flex;
@@ -262,4 +304,33 @@ footer p {
   border-radius: 2px;
   background-color: #22283B;
   margin-left: 10px;
+}
+@media (max-width:500px) {
+  .content-section .spaceman-section {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .content-section .spaceman-section .text-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .content-section .spaceman-section .text-content h1 {
+    font-size: 2.9rem;
+    margin-bottom: 10px;
+  }
+  .content-section .spaceman-section .text-content p {
+    padding-right: 15px;
+  }
+  .content-section .spaceman-section .text-content .signup-button {
+    width: 93%;
+    height: 45px;
+    margin-top: 20px;
+  }
+  .content-section .spaceman-section img {
+    width: 92%;
+    margin: 0 0 50px 12px;
+  }
+  .content-section .spaceman-section br {
+    display: none;
+  }
 }

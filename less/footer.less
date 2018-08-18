@@ -2,12 +2,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: @main-color;
     padding: 20px 0px 40px 0px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid @accent-color;
 
 
     p {
-        .font-height-size-mixin(1.3rem, #22283B)
+        .font-height-size-mixin(1.3rem, @secondary-color)
+    }
+
+    @media @phone {
+        p {
+            padding: 0px;
+        }
     }
 }
