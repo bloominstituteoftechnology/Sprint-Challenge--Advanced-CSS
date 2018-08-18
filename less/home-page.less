@@ -1,1 +1,164 @@
 // Home Content
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+.bodyContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 2.4rem;
+    }
+}
+header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    margin-bottom: 2%;
+    .imgSpaceViewOfEarth{
+    display: flex;
+    justify-content: center;
+        img {
+            width: 800px;
+            height: 200px;
+            align-self: center;
+        }
+    }
+}
+
+.middleIMGs {
+    display: inline-flex;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-around;
+    margin: 0 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+
+        img {
+            max-width: 250px;
+            max-height: 200px;
+            border: 1px solid transparent;
+            border-radius: 15px;
+        }
+}
+
+.content {
+    margin: 0 1.5%;
+
+    p {
+        margin-top: 1.4%;
+        font-size: 1.6rem;
+        color: @secondary-color;
+    }
+}
+    
+.bottomInfo {
+    display: inline-flex;
+    margin: 15% auto;
+    padding: 0 10%;
+    justify-content: space-around;
+    h2 {
+        margin-bottom: 5%;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+
+    div {
+        width: 380px;
+        margin: 0 2.25%;
+    }
+
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .signupButton {
+        font-size: 1.8rem;
+        .buttons;
+    }
+}
+
+@media @phone {
+
+    .spaceViewOfEarthIMGProperties{
+        max-width: 495px;
+        margin: 0 auto;
+    }
+
+    .middleIMGs{
+        .flexWrap;
+
+        img{
+            max-width: 500px;
+            max-height: 400px;
+        }
+
+        .rocketBlastingOffIMG{
+            margin-top: 30px;
+            width: 400px;
+            height: 300px;
+        }
+    }
+ 
+    .bodyContainer {
+    max-width: 500px;
+    }
+
+    .hideableIMGs {
+        .hideIMG
+    }
+
+    .bottomInfo{
+        .flexWrap;
+        margin: 0 auto;
+        margin-top: 25%;
+        margin-bottom: 15%;
+
+
+        p {
+            max-width: 93%;
+        }
+
+        .signupButton {
+            .buttons(90%)
+        }
+    }
+    .topContentText {
+        h2{
+            margin: 0 auto;
+            padding-left: 1.5%;
+        }
+        p{
+            .mobileParagraphs;
+        }
+    }
+    .middleTextContent{
+        h2{
+            margin: 0 auto;
+            padding-left: 1.5%;
+        }
+        p {
+            .mobileParagraphs;
+        }
+    }
+
+    .bottomAstronautIMG {
+        padding-top: 20px;
+    }
+    #bottomAstronautIMG {
+        width: 90%;
+        height: 250px;
+        margin-left: -1%;
+    }
+}
