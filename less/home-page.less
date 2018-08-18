@@ -1,1 +1,101 @@
 // Home Content
+.main-container {
+    width: @width-100;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .main-image {
+        width: @width-100;
+        height: 200px;
+    }
+    .first-section {
+        width: @width-100;
+        padding: 15px 0;
+        @media @phone {
+            margin-bottom: 100px;
+        }
+        .main-content {
+            width: @width-100;
+            @media @phone {
+                padding: 15px;
+            }
+        }
+        .img-container {
+            display: flex;
+            justify-content: space-between;
+            width: @width-100;
+            margin: 10px 0;
+            height: 200px;
+            @media @phone {
+                padding: 30px;
+                .gone {
+                    display: none;
+                }
+                .stay {
+                    width: @width-100;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    .middle-section {
+        margin: 30px 0;
+        @media @phone {
+            padding: 15px;
+        }
+    }
+    .bottom-section {
+        display: flex;
+        justify-content: space-evenly;
+        width: @width-100;
+        border-top: 1px solid @accent-color;
+        border-bottom: 1px solid @accent-color;
+        padding: 40px 0;
+        @media @phone {
+            flex-direction: column;
+        }
+        .bottom-content {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            @media @phone {
+                width: @width-100;
+                padding: 15px;
+            }
+            .button {
+                .button-maker(80px; @secondary-color; 35px; white;);                
+                @media @phone {
+                    margin: 20px 0;
+                    .button-maker(@width-100; @secondary-color; 35px; white;)
+                }
+
+                &:hover {
+                    .button-effect(white; @secondary-color);                
+                }
+            }
+        }
+        .bottom-image {
+            width: 45%;
+            padding-left: 70px;
+            @media @phone {
+                width: @width-100;
+                padding: 15px;
+            }
+            img {
+                max-width: 330px;
+                max-height: 300px;
+                @media @phone {
+                    width: @width-100;
+                    max-width: unset;
+                    max-height: unset;
+                }
+            }
+        }
+    }
+    
+}
+.middle-img {
+    width: 30%;
+    border-radius: 10px;
+}
