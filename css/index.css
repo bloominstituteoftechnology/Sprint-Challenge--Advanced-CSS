@@ -1,3 +1,6 @@
+@media ( max-width: 500px ) {
+  max-width: 500px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,6 +178,11 @@ h5 {
 .upper-block-nav .inner-block div header {
   font-size: 3rem;
 }
+@media ( max-width: 500px ) {
+  .upper-block-nav .inner-block {
+    width: 100%;
+  }
+}
 footer {
   font-size: 1.6rem;
   color: gray;
@@ -184,11 +192,24 @@ footer {
   border-radius: 2%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin-top: 2%;
 }
 footer p {
   padding: 2%;
+}
+@media ( max-width: 500px ) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container {
   max-width: 880px;
@@ -290,10 +311,54 @@ footer p {
   color: #000080;
 }
 .container .block5 .b5right {
-  height: 80%;
   width: 35%;
+  height: 80%;
 }
 .container .block5 .b5right img {
   width: 100%;
   height: 100%;
+}
+@media ( max-width: 500px ) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .container .block2 {
+    height: 200px;
+  }
+  .container .block3 {
+    height: 250px;
+  }
+  .container .block3 .goAway {
+    display: none;
+  }
+  .container .block3 .stayHere {
+    display: flex;
+    width: 100%;
+  }
+  .container .block3 .stayHere img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .block4 {
+    margin: 0;
+    height: 250px;
+  }
+  .container .block5 {
+    margin: 5% 10%;
+  }
+  .container .block5 .b5left {
+    width: 100%;
+  }
+  .container .block5 .b5left .btn {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .container .block5 .b5right {
+    width: 100%;
+    border: 2px solid red;
+    margin-bottom: 5%;
+  }
 }

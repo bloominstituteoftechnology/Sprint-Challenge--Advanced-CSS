@@ -7,11 +7,23 @@ footer {
 		background: #F6F6F6;
 		border: 2px solid #F1F1F1;
 		border-radius: 2%;
-		display: flex;
-		justify-content: center;
-		align-content: center;
+		.center();
 		margin-top: 2%;
 		p {
 			padding: 2%;
 		};
 	}
+
+	@media @phone {
+		footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			p {
+				width: 100%;
+				.center();
+			}
+		}
+
+	}
+
