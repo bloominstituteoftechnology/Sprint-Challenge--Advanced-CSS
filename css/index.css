@@ -1,1 +1,314 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+nav div {
+  display: flex;
+  font-size: 1.7rem;
+  width: 30%;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+@media (max-width:500px) {
+  nav div {
+    width: 80%;
+  }
+}
+nav h1 {
+  text-align: center;
+  width: 100%;
+}
+nav a {
+  color: #22283B;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+@media (max-width:500px) {
+  .header p {
+    padding: 10px 10px;
+  }
+  .header h2 {
+    padding: 10px 10px;
+  }
+}
+.main-container img {
+  padding-bottom: 10px;
+}
+p {
+  font-size: 1.7rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+.content-section .img-content img {
+  border-radius: 10px;
+  width: 90%;
+}
+@media (max-width:500px) {
+  .content-section .img-content img .hidden {
+    display: none;
+  }
+}
+.middle-section {
+  margin: 30px 0px;
+  padding: 20px 0px;
+  border-bottom: 1px solid #e0e0e0;
+}
+@media (max-width:500px) {
+  .middle-section p {
+    padding: 10px 10px;
+  }
+  .middle-section h3 {
+    padding: 10px 10px;
+  }
+}
+.middle-section h3 {
+  font-size: 2.7rem;
+}
+.middle-section p {
+  font-size: 1.7rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.bottom-section {
+  margin: 30px 20px;
+  width: 100%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0px 20px 20px 20px;
+}
+.bottom-section div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  padding-right: 35px;
+}
+.bottom-section h3 {
+  font-size: 2.7rem;
+}
+.bottom-section p {
+  font-size: 1.7rem;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.bottom-section .btn {
+  font-size: 1.8rem;
+  width: 100px;
+  height: 45px;
+  background-color: #22283B;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .bottom-section .btn {
+    font-size: 1.8rem;
+    width: 400px;
+    height: 45px;
+    background-color: #22283B;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #e0e0e0;
+  font-size: 1.7rem;
+  height: 75px;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+}
