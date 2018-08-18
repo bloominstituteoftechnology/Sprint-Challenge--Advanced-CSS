@@ -188,6 +188,21 @@ h5 {
     font-size: 1.6rem;
     padding: 10px 2%;
   }
+  footer {
+    max-width: 880px;
+    width: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: #F4F4F4;
+    border: 2px solid #F1F1F1;
+    border-radius: 4px;
+    padding: 20px 0 30px 0;
+  }
+  footer p {
+    color: footer-color;
+  }
   .home {
     font-color: #5E6164;
     max-width: 1000px;
@@ -285,3 +300,4 @@ h5 {
     width: 100%;
     font-size: 1.6rem;
   }
+  // Footer Styles
