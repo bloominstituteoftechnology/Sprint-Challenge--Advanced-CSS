@@ -9,8 +9,17 @@
     background-color: @main-color;
     width: 69.75%;
     height: 100px;
+    @media @phone {
+        width: 99%;
+        border: 1px solid @accent-color;
+        border-radius: 5px;
+    }
 
     footer {
         font-size: 1.2rem;
+        @media @phone {
+            font-size: @p-size;
+            font-weight: @font-weight;
+        }
     }
 }

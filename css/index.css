@@ -189,8 +189,21 @@ nav a {
   width: 69.75%;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .foot {
+    width: 99%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+}
 .foot footer {
   font-size: 1.2rem;
+}
+@media (max-width: 500px) {
+  .foot footer {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
 }
 html {
   font-size: 62.5%;
@@ -330,6 +343,14 @@ p {
   border-bottom: 1px solid #e0e0e0;
 }
 @media (max-width: 500px) {
+  .go {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
   .go .sky {
     display: none;
   }
@@ -352,15 +373,40 @@ p {
 div {
   margin-top: 40px;
   margin-bottom: 30px;
-}
-div .img-box .space-walk {
-  border-radius: 8px;
   width: 100%;
+}
+@media (max-width: 500px) {
+  div {
+    margin: 0 auto;
+  }
+  div h2 {
+    font-size: 3rem;
+  }
+}
+div .space-walk {
+  border-radius: 8px;
+  width: 32%;
   height: 250px;
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  div .space-walk {
+    width: 79%;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    border-radius: 3px;
+  }
 }
 div .box {
-  width: 35%;
+  width: 32%;
   height: 300px;
+}
+@media (max-width: 500px) {
+  div .box {
+    margin-top: 50px;
+    width: 79%;
+  }
 }
 div .box btn {
   margin-top: 15px;
@@ -372,7 +418,13 @@ div .box btn {
   height: 40px;
   background-color: #22283B;
   color: #f4f4f4;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  div .box btn {
+    width: 100%;
+    height: 50px;
+  }
 }
 div .box btn:hover {
   color: #22283B;
