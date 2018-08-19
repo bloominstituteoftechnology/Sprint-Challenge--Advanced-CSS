@@ -357,8 +357,8 @@ footer p {
     margin-bottom: 5%;
   }
   .container .block5 .b5right {
+    display: flex;
     width: 100%;
-    border: 2px solid red;
-    margin-bottom: 5%;
+    paddingbottom: 10%;
   }
 }
