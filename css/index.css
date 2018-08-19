@@ -164,6 +164,17 @@ header nav a {
   font-size: 1.6rem;
   color: black;
 }
+footer {
+  border-top: 2px solid lightgray;
+  margin: 0 2%;
+}
+footer p {
+  text-align: center;
+  padding: 22px;
+  font-size: 1.6rem;
+  background-color: #f4f4f4;
+  margin: 2% 0 2% 2%;
+}
 .container {
   max-width: 880px;
   width: 100%;
@@ -227,7 +238,7 @@ header nav a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 500px;
+  height: 395px;
   padding-top: 44px;
 }
 .container .bottom-content h2 {
