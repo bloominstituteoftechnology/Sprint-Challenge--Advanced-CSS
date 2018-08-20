@@ -170,7 +170,7 @@ h5 {
 div.navigation {
   max-width: 880px;
   width: 100%;
-  height: 130px;
+  height: 90px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -232,12 +232,11 @@ section.middle-content .middle-images {
   max-width: 880px;
   width: 100%;
   border-radius: 10px;
-  padding-bottom: 50px;
 }
 section.middle-content .middle-images img {
   width: 24.3%;
   padding-left: 1.3%;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   border-radius: 25px;
   margin-left: 5.7%;
 }
@@ -245,11 +244,10 @@ section.middle-content .middle-images img {
   max-width: 730px;
   width: 100%;
   height: 180px;
-  border: 1px solid red;
   font-size: 1.7rem;
   word-spacing: 2px;
   margin-left: 7.8%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .middle-section2 h2 {
   font-size: 2.5rem;
@@ -273,7 +271,6 @@ section.middle-content .middle-images img {
   justify-content: flex-start;
   justify-items: flex-start;
   flex-wrap: nowrap;
-  border: 1px solid blue;
   max-width: 600px;
   width: 100%;
   height: 300px;
@@ -308,6 +305,32 @@ div.bottom-text p {
   height: 180px;
   border-radius: 3px;
   padding-left: 6%;
+}
+div.btn {
+  color: white;
+  font-size: 1.2rem;
+  background-color: midnightblue;
+  width: 20.33%;
+  height: 30px;
+  border-radius: 5px;
+  margin: 0 2.7%;
+  padding: 8px 14px;
+}
+.hr2 {
+  max-width: 720px;
+  width: 100%;
+  margin-left: 9%;
+  color: ghostwhite;
+  margin-top: 10px;
+}
+footer {
+  width: 81.7%;
+  height: 80px;
+  font-size: 1.5rem;
+  background-color: lightgray;
+  margin: 20px 9%;
+  padding: 30px 28%;
+  border-radius: 5px;
 }
 html {
   font-size: 62.5%;
