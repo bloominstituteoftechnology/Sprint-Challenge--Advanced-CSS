@@ -1,3 +1,18 @@
+.flex-width {
+  display: flex;
+  width: 100%;
+}
+.text-content {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+.header2-title {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+.content {
+  margin: 15px 15px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,27 +157,33 @@ h5 {
 }
 .top-bar {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   background-color: gainsboro;
 }
 .top-bar h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   margin: 10px 0;
 }
 .top-bar .navigation {
-  width: 30%;
+  font-size: 1.5rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: center;
   margin: 8px 0;
+}
+.top-bar .navigation a {
+  margin: 0 2rem;
 }
 @media (max-width:500px) {
   .top-bar .navigation {
     width: 100%;
     font-size: 0.9rem;
   }
+}
+html {
+  font-size: 62%;
 }
 .container {
   margin: 0 auto;
@@ -171,39 +192,13 @@ h5 {
 }
 .home img {
   width: 100%;
-  height: 220px;
 }
 .home h2 {
-  font-size: 1.7rem;
+  font-size: 3rem;
   margin: 15px 0;
 }
-.home .top-section {
-  margin-bottom: 10px;
-}
-@media (max-width:500px) {
-  .home .top-section {
-    margin: 0 10px;
-  }
-}
-.home .text-content {
+.home p {
   margin: 15px 15px;
-}
-@media (max-width:500px) {
-  .home .text-content {
-    margin: 15px 0;
-    width: 100%;
-  }
-}
-.home .image-content {
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width:500px) {
-  .home .image-content .two,
-  .home .image-content .three {
-    display: none;
-    justify-items: center;
-  }
 }
 .home .image-box {
   width: 30%;
@@ -215,11 +210,42 @@ h5 {
     margin: 0 auto;
   }
 }
-.home .plant-content {
-  margin: 10px 15px;
+.home .top-section {
+  margin-bottom: 10px;
 }
-.home .plant-content p {
-  padding-bottom: 10px;
+@media (max-width:500px) {
+  .home .top-section {
+    margin: 0 10px;
+  }
+}
+.home .text-content {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+@media (max-width:500px) {
+  .home .text-content {
+    margin: 15px 0;
+    width: 100%;
+  }
+}
+.home .image-content {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .home .image-content .two,
+  .home .image-content .three {
+    display: none;
+    justify-items: center;
+  }
+}
+.home .plant-content {
+  margin: 15px 15px;
+}
+.home .plant-content .work {
+  line-height: 1.6;
+  font-size: 1.5rem;
 }
 .home .walk-content {
   display: flex;
@@ -261,6 +287,7 @@ h5 {
 .home footer {
   width: 100%;
   background-color: lightgrey;
+  font-size: 1.3rem;
 }
 .home footer p {
   text-align: center;

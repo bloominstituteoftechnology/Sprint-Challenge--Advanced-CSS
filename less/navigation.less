@@ -1,29 +1,32 @@
 @import 'variables.less';
-
+@import 'mixins.less';
 
 .top-bar{
-    display:flex;
+    .flex-width();
     flex-direction: column;
     align-items: center;
-    width:100%;
+    
     background-color: gainsboro;
     
     h1{
-        font-size:2.5rem;
+        font-size:4.5rem;
         margin: 10px 0;
         @media screen {
             
         }
     }
     .navigation{
-        width:30%;
-       display:flex;
-       flex-direction: row;
-       justify-content: space-evenly;
+        font-size:1.5rem;
+        .flex-width();
+       justify-content: center;
        margin: 8px 0; 
+       a{
+        margin:0 2rem;
+    }
        @media @phone{ 
             width:100%;
             font-size:.9rem;
+            
         }
     }
 }
