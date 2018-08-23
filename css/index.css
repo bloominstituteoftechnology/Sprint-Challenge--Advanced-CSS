@@ -359,6 +359,7 @@ footer p {
   .container .block5 .b5right {
     display: flex;
     width: 100%;
-    paddingbottom: 10%;
+    height: 300px;
+    margin-bottom: 100px;
   }
 }
