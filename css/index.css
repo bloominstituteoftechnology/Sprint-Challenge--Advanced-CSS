@@ -1,1 +1,365 @@
-/* Compile your LESS first! */
+@media ( max-width: 500px ) {
+  max-width: 500px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.upper-block-nav {
+  width: 100%;
+  height: 100px;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+.upper-block-nav .inner-block {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.upper-block-nav .inner-block div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upper-block-nav .inner-block div nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.upper-block-nav .inner-block div nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.6rem;
+}
+.upper-block-nav .inner-block div header {
+  font-size: 3rem;
+}
+@media ( max-width: 500px ) {
+  .upper-block-nav .inner-block {
+    width: 100%;
+  }
+}
+footer {
+  font-size: 1.6rem;
+  color: gray;
+  height: 50px;
+  background: #F6F6F6;
+  border: 2px solid #F1F1F1;
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+footer p {
+  padding: 2%;
+}
+@media ( max-width: 500px ) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.container .block1 {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.container .block1 img {
+  width: 100%;
+}
+.container .block2 {
+  margin: 1% 0;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .block2 h2 {
+  font-size: 2rem;
+  width: 95%;
+}
+.container .block2 p {
+  font-size: 1.6rem;
+  width: 95%;
+}
+.container .block3 {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container .block3 div {
+  width: 30%;
+}
+.container .block3 div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.container .block4 {
+  height: 120px;
+  margin: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .block4 h2 {
+  font-size: 2rem;
+  width: 95%;
+}
+.container .block4 p {
+  font-size: 1.6rem;
+  width: 95%;
+}
+.container .block5 {
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
+  padding-bottom: 5%;
+}
+.container .block5 .b5left {
+  padding-top: 3%;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .block5 .b5left h2 {
+  font-size: 2rem;
+}
+.container .block5 .b5left p {
+  font-size: 1.6rem;
+}
+.container .block5 .b5left .btn {
+  height: 30px;
+  width: 70px;
+  background: #000080;
+  color: white;
+  border-radius: 2%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+.container .block5 .b5left .btn:hover {
+  background: white;
+  color: #000080;
+}
+.container .block5 .b5right {
+  width: 35%;
+  height: 80%;
+}
+.container .block5 .b5right img {
+  width: 100%;
+  height: 100%;
+}
+@media ( max-width: 500px ) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .container .block2 {
+    height: 200px;
+  }
+  .container .block3 {
+    height: 250px;
+  }
+  .container .block3 .goAway {
+    display: none;
+  }
+  .container .block3 .stayHere {
+    display: flex;
+    width: 100%;
+  }
+  .container .block3 .stayHere img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .block4 {
+    margin: 0;
+    height: 250px;
+  }
+  .container .block5 {
+    margin: 5% 10%;
+  }
+  .container .block5 .b5left {
+    width: 100%;
+  }
+  .container .block5 .b5left .btn {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .container .block5 .b5right {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+}
