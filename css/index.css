@@ -1,1 +1,298 @@
-/* Compile your LESS first! */
+.section-style p {
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+nav {
+  display: flex;
+  width: 100%;
+  max-width: 380px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+nav a {
+  text-decoration: none;
+  color: #22283B;
+}
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin-top: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+header {
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  border-bottom: 2px solid #e0e0e0;
+}
+header h1 {
+  font-size: 2.5rem;
+  padding: 15px 0;
+  color: #22283B;
+}
+.home {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.home .top-img {
+  width: 100%;
+  height: 200px;
+}
+.top-sec {
+  margin-top: 18px;
+  padding: 0 2%;
+}
+.top-sec p {
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+.top-sec h2 {
+  font-size: 1.75rem;
+}
+.top-sec h2 p {
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+.images img {
+  width: 31.3%;
+  height: 177px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+@media (max-width:500px) {
+  .images img {
+    width: 87%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .images img:nth-of-type(2),
+  .images img:nth-of-type(3) {
+    display: none;
+  }
+}
+.canWe {
+  padding: 0 2%;
+  padding-bottom: 52px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.canWe p {
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+.canWe h2 {
+  font-size: 1.75rem;
+  margin-bottom: 13px;
+}
+.letsGo {
+  display: flex;
+  padding: 0 8%;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.letsGo p {
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+.letsGo .text {
+  width: 50%;
+}
+.letsGo .text h2 {
+  font-size: 1.75rem;
+  margin-bottom: 13px;
+}
+.letsGo .text p {
+  margin-bottom: 15px;
+}
+.letsGo .text .btn {
+  width: 80px;
+  height: 38px;
+  background-color: #22283B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.letsGo img {
+  height: 240px;
+  margin-left: 3%;
+  border-radius: 5px;
+}
+@media (max-width:500px) {
+  .letsGo {
+    flex-direction: column;
+    padding: 0 12%;
+  }
+  .letsGo .text {
+    width: 100%;
+  }
+  .letsGo .text .btn {
+    width: 100%;
+    height: 50px;
+    background-color: #22283B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 35px;
+  }
+  .letsGo img {
+    margin-left: 0;
+    height: 280px;
+    margin-bottom: 50px;
+  }
+}
