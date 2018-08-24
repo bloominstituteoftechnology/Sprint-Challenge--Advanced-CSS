@@ -6,9 +6,9 @@ You will be building a website from scratch using all your responsive web design
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] You are now ready to build this project with your preferred IDE
 
 #### Pro tip: Commit every time you complete a task or feature!
 
@@ -17,23 +17,47 @@ Answer the following questions to the best of your ability. You can exercise you
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+The difference between an adaptive and responsive site is to fit a various amount of devices, while adaptive sites are at set 
+viewports.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Build from the ground up working on a smaller presentation first, makes it easier to produce a site. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
 
+It lets us calculate rem units better. 62.5 makes default html font-size calculate 1 rem for every
+10px
+
 4. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing allows for my range to visually impact a web page. 
+
+Nesting: You can include rules inside of each other's brackets. {}
+This allows CSS to flow better with the HTML. We should not nest 
+everything, more than 4 layers is not ok. By that time it would be 
+considered an regular #ID tag. 
+
+Mix-Ins: The ability to mix different classes together. Being able
+to create one class and use it's properties within another class.
+Adding parentheses to the selector() like a JS function will allow
+you to mix in another class.
+
+Variables: Identify with the @ symbol. @variable-name: #FF0000;
 
 5. What is your favorite concept in preprocessing?  What is the concept that gives you the most trouble? 
 
+My favorite concept is the mix-in when used correctly it keeps code DRY. 
+
 ## Task 3: Set up your preprocessor
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
-* [ ] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank.  You have been asked to use a certain import order. That order is as follows:
 
 1. `variables.less`
 2. `mixins.less`
@@ -44,9 +68,9 @@ Answer the following questions to the best of your ability. You can exercise you
 7. `home-page.less`
 
 ## Task 5: Home Page - Desktop HTML & LESS
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
-* [ ] Navigation: Use the `navigation.less` file for styling.
-* [ ] Main Content: Use the `home-page.less` file for styling
+* [x ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the home page HTML and LESS from scratch.  You have been provided content in the [index.html file](index.html) 
+* [x ] Navigation: Use the `navigation.less` file for styling.
+* [x ] Main Content: Use the `home-page.less` file for styling
 * [ ] Footer: Use the `footer.less` file for styling
 * [ ] Mixins: Create and use 2 different mixins to aid your styling.  Use the `mixins.less` file for your mixins
 * [ ] Parametric Mixin: create a parametric mixin that is used to create the `sign up` button.
