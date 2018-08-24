@@ -1,38 +1,22 @@
 // Mixins below variables
-.flex-center() {
-    display: flex;
-    justify-content: center;
+.section-style {
+    p {
+        line-height: 1.5;
+        margin-bottom: 13px;
+    }
 }
-.buttonCreator() {
-    font-size:1rem;
-    text-align:center;
-    width: 20%;
-    padding:8px;
-    border-radius:12%;
-    background:@secondary-color;
+.section-title(@font-size) {
+    font-size: @font-size;
+    margin-bottom: 13px;
+}
+
+.btn-creator(@width, @height, @bgcolor){
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-
-    &:hover {
-        border: 2px solid  aqua;
-        background-color: darkcyan;
-        color: whitesmoke;
-        cursor: pointer;
-    }
+    border-radius: 5px;
 }
-
-// Mobile Mixins
-
-.mobile-width {
-    width: 100%;
-  }
-
-  .mobile-column {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0;
-  }

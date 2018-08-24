@@ -1,61 +1,14 @@
 // Navigation
 nav {
-    background-color: whitesmoke;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 35%;
-    right: 0px;
-    left: 274px;
-    top: 22px;
-    margin-bottom: 10px;
-    
-    @media @phone {
-      width: 100%;
-      align-items: center;
-      left: 42px;
-    }
-  
-    a {
-      position: relative;
-      font-size: 1rem;
-      color: #212529;
-      text-decoration: none;
-      margin-bottom: 10px;
-      border-bottom: 2px solid @main-border-color;
-      
-      @media @phone {
-        width: 100%;
-        align-items: center;
-        display: flex;
-        flex-direction: flex-start;
-      }
+  display: flex;
+  width: 100%;
+  max-width: 380px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 12px;
 
-      &:hover {
-        text-decoration: underline;
-        color: gray;
-        
-      
-      @media @phone {
-        width: 100%;
-        align-items: center;
-        float: left;
-      }
-  }
+  a{
+    text-decoration: none;
+    color: @secondary-color;
   }
 }
-      .logo {
-      position: relative;
-      top: 19px;
-      left: 314px;
-      font-size: 2rem;
-      display: flex;
-      justify-content: baseline;
-      margin-bottom: 10px;
-  
-      @media @phone {
-         width: 100%;
-         left:137px;
-    }
-      }
