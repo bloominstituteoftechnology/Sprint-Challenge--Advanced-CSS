@@ -1,0 +1,25 @@
+nav {
+    .flex-column-center;
+    width: 100%;
+    background: @secondary-bg;
+    height: 100px;
+    border-bottom: 2px solid @border-color;
+    font-size: 1.4rem;
+    h1 {
+        font-size: 3.6rem;
+        padding: 1% 0;
+    }
+    .links    {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+        @media only screen and @phone {
+            width: 100%;    
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 1% 0;
+        }
+    }
+}

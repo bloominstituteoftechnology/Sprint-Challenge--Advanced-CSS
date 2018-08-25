@@ -1,1 +1,309 @@
-/* Compile your LESS first! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: whitesmoke;
+  height: 100px;
+  border-bottom: 2px solid gainsboro;
+  font-size: 1.4rem;
+}
+nav h1 {
+  font-size: 3.6rem;
+  padding: 1% 0;
+}
+nav .links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+@media only screen and (max-width: 500px) {
+  nav .links {
+    width: 100%;
+  }
+}
+nav .links a {
+  text-decoration: none;
+  color: black;
+  padding: 1% 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background: whitesmoke;
+  width: 100%;
+  height: 100px;
+}
+@media only screen and (max-width: 500px) {
+  footer {
+    height: 80px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.container h2 {
+  font-size: 2.4rem;
+}
+@media only screen and (max-width: 500px) {
+  .container h2 {
+    font-size: 3rem;
+  }
+}
+.container section {
+  margin: 2%;
+}
+.container p {
+  line-height: 20px;
+  padding-top: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .container .mobileHeadImg {
+    width: 100%;
+  }
+}
+.container .images {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+.container .images img {
+  width: 31%;
+  height: 31%;
+  border-radius: 7%;
+}
+@media only screen and (max-width: 500px) {
+  .container .images img {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container .images .notMobile {
+    display: none;
+  }
+}
+.container .section-2 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: solid 1px lightgray;
+}
+.container .section-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  margin-bottom: 15px;
+  border-bottom: 1px solid gainsboro;
+}
+@media only screen and (max-width: 500px) {
+  .container .section-3 {
+    flex-direction: column;
+  }
+}
+.container .section-3 .text {
+  width: 50%;
+}
+@media only screen and (max-width: 500px) {
+  .container .section-3 .text {
+    width: 100%;
+  }
+}
+.container .section-3 img {
+  width: 40%;
+  height: 31%;
+  border-radius: 2%;
+}
+@media only screen and (max-width: 500px) {
+  .container .section-3 img {
+    width: 100%;
+  }
+}
+.container .section-3 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 22px;
+  background: black;
+  color: white;
+  border-radius: 3px;
+  margin-top: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.container .section-3 .button:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+@media only screen and (max-width: 500px) {
+  .container .section-3 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-size: 1.6rem;
+  }
+  .container .section-3 .button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
