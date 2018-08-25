@@ -1,1 +1,295 @@
-/* Compile your LESS first! */
+.flex-width {
+  display: flex;
+  width: 100%;
+}
+.text-content {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+.header2-title {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+.content {
+  margin: 15px 15px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+.top-bar {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: gainsboro;
+}
+.top-bar h1 {
+  font-size: 4.5rem;
+  margin: 10px 0;
+}
+.top-bar .navigation {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 8px 0;
+}
+.top-bar .navigation a {
+  margin: 0 2rem;
+}
+@media (max-width:500px) {
+  .top-bar .navigation {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+html {
+  font-size: 62%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+}
+.home img {
+  width: 100%;
+}
+.home h2 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+.home p {
+  margin: 15px 15px;
+}
+.home .image-box {
+  width: 30%;
+  border-radius: 25px;
+}
+@media (max-width:500px) {
+  .home .image-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.home .top-section {
+  margin-bottom: 10px;
+}
+@media (max-width:500px) {
+  .home .top-section {
+    margin: 0 10px;
+  }
+}
+.home .text-content {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+@media (max-width:500px) {
+  .home .text-content {
+    margin: 15px 0;
+    width: 100%;
+  }
+}
+.home .image-content {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .home .image-content .two,
+  .home .image-content .three {
+    display: none;
+    justify-items: center;
+  }
+}
+.home .plant-content {
+  margin: 15px 15px;
+}
+.home .plant-content .work {
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+.home .walk-content {
+  display: flex;
+  width: 100%;
+  margin: 15px 0;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+.home .walk-content .inner-box-content {
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width:500px) {
+  .home .walk-content .inner-box-content {
+    flex-direction: column;
+    width: 65%;
+  }
+}
+.home .walk-content .image-content {
+  width: 40%;
+}
+@media (max-width:500px) {
+  .home .walk-content .image-content {
+    width: 100%;
+  }
+}
+.home .walk-content .text-content {
+  width: 40%;
+}
+@media (max-width:500px) {
+  .home .walk-content .text-content {
+    width: 100%;
+  }
+}
+.home footer {
+  width: 100%;
+  background-color: lightgrey;
+  font-size: 1.3rem;
+}
+.home footer p {
+  text-align: center;
+  padding: 20px;
+}

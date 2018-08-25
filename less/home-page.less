@@ -1,1 +1,128 @@
+@import 'variables.less';
+@import 'mixins.less';
+
 // Home Content
+html{
+    font-size:62%;
+}
+.container {
+    margin:0 auto;
+    max-width:880px;
+    width:100%;
+   
+}
+
+.home{
+    img{
+        width:100%;
+    }
+    h2{
+        .header2-title();
+    }
+    p{
+        .content();
+    }
+
+    .image-box{
+        
+        width:30%;
+        border-radius: 25px;
+        @media @phone{
+            width:80%;
+            margin: 0 auto;
+        }
+    }
+
+
+
+    //lift off - first section
+    .top-section{
+        margin-bottom:10px;
+        @media @phone{
+            margin: 0 10px;
+        }
+    }
+    .text-content{
+        .text-content();
+        @media @phone {
+            margin:15px 0;
+            width:100%;
+            
+        }
+        
+    }
+    .image-content{
+        margin:0 2rem;
+        display:flex;
+        justify-content: space-between;
+        @media @phone{
+            .two, .three{
+                display:none;
+                justify-items: center;
+            }
+        }
+
+    }
+
+
+
+    //Plant content - second section
+    .plant-content{
+        .content();
+
+        .work{
+            line-height: 1.6;
+     font-size:1.5rem;
+        }
+        
+    }
+
+
+
+    //Walk around - third section
+    .walk-content{
+        .flex-width();
+        margin: 15px 0;
+        border-top:1px solid lightgrey;
+        border-bottom:1px solid lightgrey;
+        
+        
+        .inner-box-content{
+            margin:0 auto 30px;
+            display:flex;
+            flex-direction: row;
+            width:80%;
+            align-items: center;
+            justify-content: space-around;
+            @media @phone{
+                flex-direction: column;
+                width:65%;
+            }
+        }
+
+        .image-content{
+            width:40%;
+            @media @phone {
+                width:100%;
+            }
+    
+        
+        }
+        .text-content{
+            width:40%;
+            @media @phone {
+                width:100%;
+            }
+        }
+    }
+
+    footer{
+        width:100%;
+        background-color:lightgrey;
+        font-size:1.3rem;
+        p{
+            text-align: center;
+            padding:20px;
+        }
+    }
+}
