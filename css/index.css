@@ -132,10 +132,7 @@ table {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-<<<<<<< HEAD
   font-size: 62.5%;
-=======
->>>>>>> 1cda387696b8cf85f569856a993b29d4f215c5b0
 }
 h1,
 h2,
@@ -145,11 +142,15 @@ h5 {
   font-family: 'Russo One', sans-serif;
 }
 .container {
-<<<<<<< HEAD
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid black;
+}
+@media ((max-width: 500px)) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .navigation {
   display: flex;
@@ -158,7 +159,7 @@ h5 {
 .navigation h1 {
   font-size: 4rem;
   align-self: center;
-  margin: 15px 1px 1px 1px;
+  margin: 15px 0.1% 1px 0.1%;
 }
 .navigation .nav {
   font-size: 1.73rem;
@@ -166,29 +167,29 @@ h5 {
   flex-direction: row;
   align-self: center;
   justify-content: space-evenly;
-  width: 443px;
-  margin: 14px 1px 1px 2px;
+  width: 44.3%;
+  margin: 14px 0.1% 1px 0.2%;
 }
 .copyright {
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
-  margin: 46px 1px 1px 0;
+  margin: 46px 0.1% 1px 0;
 }
 .header-pic {
   width: 80%;
   height: 202px;
-  margin: 12px 1px 1px 100px;
+  margin: 12px 0.1% 1px 10%;
   align-self: center;
 }
 .liftoff h2 {
   font-size: 3.2rem;
-  margin: 15px 1px 1px 115px;
+  margin: 15px 0.1% 1px 11.5%;
 }
 .liftoff p {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  margin: 11px 100px 1px 115px;
+  margin: 11px 10% 1px 11.5%;
 }
 .liftoff .liftoff-pics {
   display: flex;
@@ -197,87 +198,78 @@ h5 {
 }
 .liftoff .liftoff-pic {
   height: 177px;
-  width: 237px;
-  margin: 15px 14px 1px 15px;
-  padding: 1px 1px 1px 1px;
-  border-radius: 17px;
+  width: 23.7%;
+  margin: 15px 1.4% 1px 1.5%;
+  padding: 1px 0.1% 1px 0.1%;
+  border-radius: 9%;
   object-fit: fill;
+}
+.liftoff .liftoff-pic:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 .planets h2 {
   font-size: 2.8rem;
-  margin: 49px 1px 1px 115px;
+  margin: 49px 0.1% 1px 11.5%;
 }
 .planets .planets-para1 {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  margin: 11px 100px 1px 115px;
+  margin: 11px 10% 1px 11.5%;
 }
 .planets .planets-para2 {
   font-size: 1.6rem;
   line-height: 2.4rem;
-  margin: 16px 1px 1px 115px;
+  margin: 16px 0.1% 1px 11.5%;
 }
 .walk {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
-.walk h2 {
-  font-size: 2.8rem;
-  margin: 115px 1px 1px 163px;
-}
-.walk .walk-p1 {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin: 11px 1px 1px 163px;
-}
-.walk .walk-p2 {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  margin: 16px 1px 1px 163px;
-}
-.walk .space-walk {
+.walk .astro {
   height: 242px;
-  width: 321px;
-  margin: 113px 1px 1px 46px;
+  width: 32.1%;
+  margin: 113px 0.1% 1px 1.6%;
 }
-.walk .button {
+.walk .walk-text {
+  width: 50%;
+}
+.walk .walk-text h2 {
+  font-size: 2.8rem;
+  margin: 115px 0.1% 1px 32.3%;
+}
+.walk .walk-text .walk-p1 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 11px 0.1% 1px 32.2%;
+}
+.walk .walk-text .walk-p2 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin: 17px 0.1% 1px 32.2%;
+}
+.walk .walk-text .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 109px;
+  width: 21.9%;
   height: 37px;
   background-color: #22283B;
   color: #F4F4F4;
-  border-radius: 5px;
+  border-radius: 0.5%;
   font-size: 1.6rem;
-  margin: 16px 1px 1px 161px;
+  margin: 17px 0.1% 1px 32.1%;
   border: 1px solid #6CDAE7;
 }
-.walk .button:hover {
-  background-color: black;
-  color: red;
-=======
-  max-width: 880px;
-  margin: auto;
-  border: 1px solid black;
+.walk .walk-text .button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
 }
-.main-nav {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  margin: 10px 0;
-}
-.main-nav h1 {
-  align-self: center;
-}
-.main-nav .nav {
-  display: flex;
-  justify-content: center;
-}
-.liftoff .images {
-  max-width: 880px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
->>>>>>> 1cda387696b8cf85f569856a993b29d4f215c5b0
+@media ((max-width: 500px)) {
+  .walk .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
