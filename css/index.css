@@ -148,8 +148,7 @@ h5 {
 }
 @media ((max-width: 500px)) {
   .container {
-    display: flex;
-    flex-direction: column;
+    max-width: 500px;
   }
 }
 .navigation {
@@ -163,12 +162,22 @@ h5 {
 }
 .navigation .nav {
   font-size: 1.73rem;
+  width: 80%;
   display: flex;
   flex-direction: row;
   align-self: center;
-  justify-content: space-evenly;
-  width: 44.3%;
+  justify-content: flex-start;
   margin: 14px 0.1% 1px 0.2%;
+  padding: 0 20%;
+}
+@media (max-width: 600px) {
+  .navigation .nav {
+    display: flex;
+    width: 100%;
+  }
+  .navigation a {
+    padding: 0 2%;
+  }
 }
 .copyright {
   font-size: 1.5rem;
@@ -267,8 +276,11 @@ h5 {
   transition: all 0.2s ease-in-out;
   transform: scale(1.2);
 }
-@media ((max-width: 500px)) {
-  .walk .container {
+@media (max-width: 600px) {
+  .spacewalkers {
+    color: red;
+  }
+  .liftoff-pic {
     display: flex;
     flex-direction: column;
   }
