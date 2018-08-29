@@ -16,13 +16,15 @@
     margin: 14px .1% 1px .2%;
     padding: 0 20%;
   }
-  @media (max-width: 600px) {
+  @media @phone {
     .nav {
       display: flex;
-      width: 100%
+      justify-content: space-around;
+      width: 100%;
     }
     a {
-      padding: 0 2%;
+      padding: 0 1%;
+      font-size: 1.6rem;
     }
   }
 }
