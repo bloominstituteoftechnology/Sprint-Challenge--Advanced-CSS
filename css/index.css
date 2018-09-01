@@ -210,6 +210,7 @@ h3 {
     height: 80%;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 }
 @media (max-width:500px) {
@@ -236,9 +237,9 @@ h3 {
 }
 @media (max-width:500px) {
   .inChild {
-    margin: 0 auto;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
     width: 80%;
   }
 }
@@ -255,13 +256,16 @@ h3 {
   border-radius: 5px;
   background-color: #22283B;
   width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 .walk {
   border-radius: 15px;
 }
 @media (max-width:500px) {
   .walk {
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width:500px) {
