@@ -6,32 +6,42 @@ h2, h3, p {
 
 h2 {
   font-size: 1.8rem;
+  color: @secondary-color;
 }
 
 h3 {
   font-size: 1.6rem;
+  color: @secondary-color;
 }
 
-.topImages {
+.rowImages {
   display: flex;
   justify-content: space-between;
-}
-
-.mNoShow {
-
-  @media @phone {}
-  display: none;
-  }
+  width: 100%;
 }
 
 .topImg {
   width: 100%;
   margin-bottom: 1.0rem;
-
 }
 
-.imgRow {
+.imgRowItem {
   border-radius: 15px;
+  width: 30%;
+  height: 30%;
+
+  @media @phones {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+
+.mNoShow {
+  @media @phones{
+    display: none;
+  }
 }
 
 .inset {
@@ -39,16 +49,43 @@ h3 {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
+
+  @media @phones {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .inChild {
   width: 30%;
+  @media @phones {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 80%
+  }
 }
 
 .btn {
   .btnMaker();
+  width: 100%;
 }
 
 .walk{
   border-radius: 15px;
+
+  @media @phones {
+    width: 50%;
+  }
+}
+
+.homeItems {
+  @media @phones {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -145,7 +145,7 @@ body {
   width: 80%;
   max-width: 88rem;
 }
-@media (max-wdth: 500px) {
+@media (max-width:500px) {
   body {
     width: 100%;
   }
@@ -162,10 +162,15 @@ nav {
   display: flex;
   justify-content: space-around;
 }
-@media (max-wdth: 500px) {
+@media (max-width:500px) {
   nav {
     width: 100%;
   }
+}
+h1,
+nav {
+  background-color: #f4f4f4;
+  color: #22283B;
 }
 .copyright {
   text-align: center;
@@ -179,20 +184,38 @@ p {
 }
 h2 {
   font-size: 1.8rem;
+  color: #22283B;
 }
 h3 {
   font-size: 1.6rem;
+  color: #22283B;
 }
-.topImages {
+.rowImages {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .topImg {
   width: 100%;
   margin-bottom: 1rem;
 }
-.imgRow {
+.imgRowItem {
   border-radius: 15px;
+  width: 30%;
+  height: 30%;
+}
+@media (max-width:500px) {
+  .imgRowItem {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  .mNoShow {
+    display: none;
+  }
 }
 .inset {
   margin: 30px auto;
@@ -200,11 +223,27 @@ h3 {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width:500px) {
+  .inset {
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .inChild {
   width: 30%;
 }
+@media (max-width:500px) {
+  .inChild {
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+}
 .btn {
-  color: blanchedalmond;
+  color: #f4f4f4;
   font-size: 1.2rem;
   padding: 5px;
   width: 40%;
@@ -214,8 +253,22 @@ h3 {
   align-content: center;
   justify-content: space-around;
   border-radius: 5px;
-  background-color: #002A5D;
+  background-color: #22283B;
+  width: 100%;
 }
 .walk {
   border-radius: 15px;
+}
+@media (max-width:500px) {
+  .walk {
+    width: 50%;
+  }
+}
+@media (max-width:500px) {
+  .homeItems {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -3,7 +3,7 @@ body {
   width: 80%;
   max-width: 88.0rem;
 
-  @media @phone {
+  @media @phones {
     width: 100%;
   }
 }
@@ -19,7 +19,12 @@ nav {
   display: flex;
   justify-content: space-around;
 
-  @media @phone {
+  @media @phones {
     width: 100%;
   }
+}
+
+h1, nav {
+  background-color: @main-color;
+  color: @secondary-color;
 }
