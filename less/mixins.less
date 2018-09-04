@@ -1,23 +1,23 @@
 // Mixins below variables
 
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-   .button-creator(@width, @height, @bg-color, @font-color) {
-    width: @width;
-    height: @height;
-    background-color: @bg-color;
-    color: @font-color;
-    border: 1px solid @silver;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.8rem;
-    .center;
-    
-    &:hover {
-      background-color: @font-color;
-      color: @bg-color;
-    }
-  } 
+.button-maker(@color: @main-color, @bgColor: @secondary-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @color;
+  background-color: @bgColor;
+  border-radius: 5px;
+  border: 1px solid #157ffa;
+  text-align: center;
+  width: 100%;
+  max-width: 80px;
+  height: 40px;
+  font-size: 1.6rem;
+}
+
+.middle-images() {
+  border-radius: 15px;
+  height: 175px;
+  width: 100%;
+  max-width: 250px;
+}

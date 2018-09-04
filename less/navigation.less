@@ -1,32 +1,32 @@
-.main-navigation {
-    border-bottom: 2px solid @nav-border-color;
-    width: 100%;
-    background-color: @nav-bg;
+header {
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-
-.logo-heading {
-    font-size: 3rem;
-    margin: 15px 0 10px 0;
-    width: 100%;
     align-items: center;
-    color: @nav-font-color;
-    @media @phone {
-        margin: 0px 36% 15px 36%;
-        font-size: 3rem;
+    margin: 15px 0;
+
+    h1 {
+        font-size: 3.6rem;
+        color: @secondary-color;
     }
-}
 
+    nav {
+        margin: 10px;
 
-.nav {
-    width: 100%;
-    align-items: center;
-    .nav-link {
-        text-decoration: none;
-        color: @nav-font-color;
-        font-size: 1.6rem;
-        padding: 10px 2%;
+        a {
+            color: @secondary-color;
+            text-decoration: none;
+            font-size: 1.6rem;
+            padding: 15px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .main-header {
+        height: 200px;
+        width: 100%;
+        max-width: 800px;
     }
 }
