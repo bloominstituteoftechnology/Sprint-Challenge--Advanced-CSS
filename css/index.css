@@ -1,3 +1,22 @@
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,7 +200,6 @@ img:after {
   border-right: none;
   transform: rotate(45deg);
 }
-/* nail */
 img:before {
   content: '';
   position: absolute;
@@ -192,14 +210,6 @@ img:before {
   z-index: 5;
   border-radius: 50% 50%;
   background: #000;
-}
-@keyframes swing {
-  0% {
-    transform: rotate(3deg);
-  }
-  100% {
-    transform: rotate(-3deg);
-  }
 }
 .main-navigation {
   width: 100%;
@@ -214,6 +224,7 @@ img:before {
 }
 .main-navigation .nav-container .logo-heading {
   padding: 10px;
+  animation: float 6s ease-in-out infinite;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {
