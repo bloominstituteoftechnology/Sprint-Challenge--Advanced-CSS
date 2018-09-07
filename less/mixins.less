@@ -8,14 +8,15 @@
 }
 
 // button with defined size, parameters select font and backgroun color
-.custom-button(@color, @background) {
+.custom-button(@color, @background, @width, @padding) {
     
     font-size: 1.8rem;
     border-radius: 5px;
-    padding: 9px 19px;
-    width: 100px;
+    text-align: center;
+    width: @width;
     color: @color;
     background: @background;
+    padding: @padding 0;
 
     &:hover {
         color: @background;
