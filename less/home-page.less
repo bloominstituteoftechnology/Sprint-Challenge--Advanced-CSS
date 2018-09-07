@@ -1,8 +1,14 @@
 // Home Content
 
 .home {
+  width: 79%;
 
   .intro {
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +30,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile {
+        width: 100%;
+      }
+      
+    }
+    
+    @media @mobile {
+      .sky, .launch {
+       display: none;
+      }
     }
   }
 
@@ -58,6 +74,8 @@
       }
 
       .btn {
+        width: 20%;
+        .createButton(10px, 10%, 1.2rem, none, white, @btn-bg-color, 5px, 1px, none, none );
       }
     }
 
