@@ -8,6 +8,9 @@
      margin: 0 auto;
      .arbitraryMixin2();
      .arbitraryMixin1();
+     @media @mobile {
+         width: 100%;
+     }
 
     h1 {
         margin: 0 auto;
@@ -16,7 +19,11 @@
         color: #23293B;
         margin-top: 10px;
         justify-content: center;
-        width: 250px;
+        width: 240px;
+         
+        @media @mobile {
+            justify-content: center;
+        }
 
          
     }
@@ -28,6 +35,11 @@
         flex-direction: row;
         max-width: 700px;
         min-width: 500px;
+
+        @media @mobile {
+            min-width: 0;
+            width: 100%
+        }
 
         a {
             color: black;
