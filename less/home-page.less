@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  padding-top: 112px;
   .intro {
 
     .headerImage {
@@ -99,6 +100,7 @@
         &:hover {
           background: white;
           color: @btn-bg-color;
+          transition: 1s all;
         }
       }
     }
@@ -120,4 +122,18 @@
       }
     }
   }
-}// home
+
+  // MAGAZINE SUBSCRIPTION (BOOTSTRAP)
+  .form {
+    .formText{
+      text-align: center;
+    }
+    .formContainer {
+      margin: 20px 0 70px;
+
+      @media @phone {
+        margin: 20px 100px 30px;
+      }
+    }
+  }
+}

@@ -2,11 +2,9 @@
     color: @river-bend;
     background: @wild-sand;
     border: 1px solid @sea-shell;
-
-    @media @phone {
-        background: none;
-        border: none;
-    }
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
     .title {
         .flex(center, center);
         h1 {
@@ -22,6 +20,13 @@
             font-size: 2rem;
             text-decoration: none;
             color: @ebony-clay;
+            &:hover {
+                background: @river-bend;
+                color: white;
+                transition: 1s all;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
         }
     }
 }

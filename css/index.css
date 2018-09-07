@@ -165,12 +165,9 @@ p {
   color: #454A59;
   background: #F6F6F6;
   border: 1px solid #F1F1F1;
-}
-@media (max-width: 500px) {
-  .nav {
-    background: none;
-    border: none;
-  }
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
 }
 .nav .title {
   display: flex;
@@ -191,6 +188,13 @@ p {
   text-decoration: none;
   color: #23293B;
 }
+.nav .navBar a:hover {
+  background: #454A59;
+  color: white;
+  transition: 1s all;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -208,6 +212,9 @@ footer {
   footer {
     padding: 20px 0;
   }
+}
+.home {
+  padding-top: 112px;
 }
 .home .intro .headerImage {
   border-radius: 5px;
@@ -303,6 +310,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: white;
   color: #22283A;
+  transition: 1s all;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -319,4 +327,15 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form .formText {
+  text-align: center;
+}
+.home .form .formContainer {
+  margin: 20px 0 70px;
+}
+@media (max-width: 500px) {
+  .home .form .formContainer {
+    margin: 20px 100px 30px;
+  }
 }
