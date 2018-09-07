@@ -86,7 +86,7 @@
       .btn {
         .button(@btn-bg-color, white, 100px, 40px);
         @media @phone {
-          .button(btn-bg-color, white, 100%, 50px);
+          .button(@btn-bg-color, white, 100%, 50px);
         }
       }
     }
@@ -118,7 +118,7 @@ body {
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 0;
+    z-index: -1000;
   }
   .cb-slideshow:after {
     content: "";
@@ -135,12 +135,12 @@ body {
     background-position: 50% 50%;
     background-repeat: none;
     opacity: 0;
-    z-index: 0;
+    z-index: -1000;
     animation: imageAnimation 36s linear infinite 0s;
   }
 
   .cb-slideshow li div {
-    z-index: 1000;
+    z-index: -1000;
     position: absolute;
     bottom: 30px;
     left: 0px;
@@ -203,11 +203,11 @@ body {
       animation-timing-function: ease-in;
     }
     8% {
-      opacity: .5;
+      opacity: 0.5;
       animation-timing-function: ease-out;
     }
     17% {
-      opacity: .5;
+      opacity: 0.5;
     }
     25% {
       opacity: 0;
@@ -216,5 +216,5 @@ body {
       opacity: 0;
     }
   }
-
 }
+
