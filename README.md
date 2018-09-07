@@ -10,11 +10,11 @@ You will be updating a website using all your responsive web design and preproce
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [x ] Fork the project into your GitHub user account
 
-* [ ] Clone the forked project into a directory on your machine
+* [ x] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [x ] You are now ready to build this project with your preferred IDE
 
 #### Pro tip: Commit every time you complete a task or feature!
 
@@ -24,13 +24,25 @@ Answer the following questions to the best of your ability. You can exercise you
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive design is a more fluid and overall higher quality design method that uses media queries to change the design pattern to fit the real estate available to it. It also has a faster loading speed. It is the most preferred way to build a website but it is also more time consuming. 
+
+Adaptive design has multiple fixed layout sizes. When the site detects the available space (max-width for example), it selects the layout most appropriate for the screen. So, when you open a browser on the desktop, the site chooses the best layout for that desktop screen. It can seem a little clunky and load more slowly though.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+To be 'mobile first' means to start by coding for mobile access first and then for the desktop version of a website.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It lets you work with factors of (approximately) 10px, which makes rem calculations much easier. It makes for an easier conversion from pixels to rems. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is basically using a special programming syntax to make writing your css (or other code??) easier. With the LESS preprocessor, it makes writing the code more intuitive by allowing you to nest selectors and use javascript elements when writing your css. It gives the power of javascript to your css. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept by far is the ability to use mixins and variables. It's going to make things so much easier to not have to repeat my code or go back and copy and paste hex codes for colors a million times. 
 
 ## Task 3: Set up your preprocessor
 
