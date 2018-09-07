@@ -6,18 +6,26 @@
   justify-content: space-around;
   background-color: @nav-bg;
   margin-top: 0;
+
   h1 {
     font-size: 4rem;
   }
 
   .links {
     width: 60%;
+    @media @mobile {
+      width: 100%;
+    }
     .flex-row-center();
     a {
       font-size: 1.6rem;
       padding: 18px 2.7%;
       text-decoration: none;
       color: black;
+      @media @mobile {
+        padding: 22px 3.3%;
+        padding-bottom: 12px;
+      }
     }
   }
 }

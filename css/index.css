@@ -180,11 +180,22 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  .navigation .links {
+    width: 100%;
+  }
+}
 .navigation .links a {
   font-size: 1.6rem;
   padding: 18px 2.7%;
   text-decoration: none;
   color: black;
+}
+@media (max-width:500px) {
+  .navigation .links a {
+    padding: 22px 3.3%;
+    padding-bottom: 12px;
+  }
 }
 footer {
   color: #22283B;
