@@ -160,6 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.sw {
+  width: 0 auto;
+  height: 75px;
+  background-color: #81848E;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
