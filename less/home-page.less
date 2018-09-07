@@ -1,10 +1,12 @@
 // Home Content
 
-.home {
-
   .main-nav {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    background-color: @nav-bg;
+    max-width: 800px;
+    width: 100%;
 
     h1 {
       font-size: 4rem;
@@ -16,6 +18,8 @@
       border-radius: 5px;
     }
   }
+.home {
+
 
 
   .intro {
@@ -74,6 +78,7 @@
       }
 
       .btn {
+        .custom-button(@header-font-color, 29%)
       }
     }
 
