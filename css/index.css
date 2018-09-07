@@ -1,3 +1,7 @@
+.nav-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,11 +177,11 @@ p {
   align-items: center;
 }
 .main-navigation .nav-container .logo-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding-bottom: 2%;
 }
 .main-navigation .nav-container .nav {
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -251,6 +255,10 @@ footer {
   font-size: 1.6rem;
   padding: 1%;
   text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

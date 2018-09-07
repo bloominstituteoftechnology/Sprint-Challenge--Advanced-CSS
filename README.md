@@ -78,7 +78,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 	* [ ]  Use at least 2 parameters to create your button
 	* [ ] Create a hover state that swaps the background color and font color of the base button styles.
 

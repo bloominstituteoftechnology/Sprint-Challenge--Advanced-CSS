@@ -1,4 +1,8 @@
 // Mixins Here
+.nav-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 //parametric mixin
 .button (@bgcolor, @fntcolor, @width, @height, @fntsize) {
@@ -10,4 +14,9 @@
   font-size: @fntsize;
   padding: 1%;
   text-align: center;
+
+  &:hover {
+    background-color: @fntcolor;
+    color: @bgcolor;
+  }
 }
