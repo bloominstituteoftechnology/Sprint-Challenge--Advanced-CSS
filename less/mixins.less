@@ -1,1 +1,41 @@
 // Mixins Here
+.center(){
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.aTagStyling(){
+    .custom-font-styling;
+    padding:5px;
+    color:black;
+    text-decoration:none;
+    &:hover{
+        text-decoration:underline;
+    }
+}
+.custom-font-styling(){
+    font-size:1.6rem;
+}
+.border-radius(){
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.content-border(){
+    padding-bottom:3%;
+    border-bottom:2px dashed @navigation-border;
+}
+.button-styling(){
+    .custom-font-styling();
+    .center;
+    height:40px;
+    .border-radius;
+    background-color:@btn-bg-color;
+    color:@white;
+    cursor: pointer;
+    &:hover{
+        background:;
+        color:@btn-bg-color;
+        border:2px solid @silver;
+    }
+}
