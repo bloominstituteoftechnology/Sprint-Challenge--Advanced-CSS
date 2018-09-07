@@ -323,3 +323,27 @@ footer {
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 15px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 20px 2.5%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text h3 {
+    margin-top: 11px;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
