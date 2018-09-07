@@ -374,6 +374,14 @@ form button {
 form input:focus {
   background-color: rgba(0, 0, 0, 0.4);
 }
+@keyframes hover {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: green;
+  }
+}
 #nav-header {
   display: flex;
   justify-content: center;
@@ -387,6 +395,10 @@ form input:focus {
   font-weight: bold;
   margin-top: 12px;
 }
+#nav-header h1:hover {
+  animation-name: hover;
+  animation-duration: 4s;
+}
 #nav-header nav {
   max-width: 100%;
   display: flex;
@@ -398,6 +410,10 @@ form input:focus {
   color: black;
   text-decoration-line: none;
   white-space: nowrap;
+}
+#nav-header nav a:hover {
+  animation-name: hover;
+  animation-duration: 4s;
 }
 footer {
   color: #22283B;
