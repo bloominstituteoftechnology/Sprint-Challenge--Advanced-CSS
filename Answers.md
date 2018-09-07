@@ -7,3 +7,4 @@
 
 3.  This attribute and the value of 62.5% resets the root font size of the document so that the calculation between rems and px is quick and easy.  With that set as the root font size 10 px becomes equal to 1 rem.  So, a base font size of 1.60rem is now equal to 16px.
 
+4.  Preprocessing CSS adds the power of the programmatic languages to CSS.  It is essentially the CSS one would expect after eating the proverbial +1UP mushroom from the game Mario Bros.  It is essentially JavaScript which is then compiled and minified into vanilla CSS.  With the addition of JavaScript, comes the powers of such things as variables, nested structure, functions, mixins, namespaces and other features not typically present in vanilla CSS.  Essentially, the syntax is mostly the same, with some JS facets thrown in there; however, a compiler is used to transcript all of the code in vanilla CSS.  Also, the ability to use imports is useful and can clean up the file structure very nicely.
