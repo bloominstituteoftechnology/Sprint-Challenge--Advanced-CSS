@@ -323,3 +323,28 @@ footer {
     margin-bottom: 25px;
   }
 }
+.about header {
+  padding-top: 101px;
+  position: relative;
+}
+.about header video {
+  width: 100%;
+  height: auto;
+}
+.about header .vid-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.about header .vid-text h2 {
+  font-size: 9vw;
+  color: white;
+}
+.about header p {
+  margin: 20px 0;
+}
