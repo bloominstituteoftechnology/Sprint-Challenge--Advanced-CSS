@@ -1,4 +1,17 @@
 // Mixins Here
+.navStyles() {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: black;
+    padding: 5px 13px;
+}
+
+.displayFlex(@justify: center, @align:center, @direction: row) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align
+}
 
 .createBtn(@bg, @color) {
     width: 100px;

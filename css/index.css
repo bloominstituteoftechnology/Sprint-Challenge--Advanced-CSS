@@ -162,7 +162,7 @@ p {
 }
 .navigation {
   width: 100%;
-  background: #F5F5F5;
+  background: #F1F1F1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
