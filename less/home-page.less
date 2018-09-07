@@ -6,6 +6,10 @@
 
     .main-header-img {
       border-radius: 10px;
+
+      @media @phone {
+        max-width: 100%;
+      }
     }
 
     h2 {
@@ -28,6 +32,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        padding: 2%;
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
     }
   }
 
@@ -50,8 +67,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      width: 100%;
+      padding: 15px;
+      flex-direction: column;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -64,6 +91,11 @@
       .btn {
         .signup-button-mkr(30%, center, 5px);
 
+        @media @phone {
+          .signup-button-mkr(100%, center, 5px);
+          padding: 6%;
+        }
+
         &:hover {
           background-color: red;
         }
@@ -73,6 +105,13 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        padding: 2%;
+        order: -1;
+      }
       
       img {
         width: 100%;
