@@ -4,7 +4,8 @@
 
   .intro {
     .planet {
-      .imgs(100%, auto, 5px);
+      .imgs(98%, auto, 5px);
+      margin: 2px 1%;
     }
 
     h2 {
@@ -21,11 +22,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
     img {
       .imgs(28%, 100%, 20px);
       margin: 20px 2.5%;
     }
+
+    .blast {
+      @media @phone {
+        .imgs(100%, 100%, 20px);
+        margin: 20px 4%;
+      }
+    }
+
+    .not-mobile {
+      @media @phone {
+        display: none;
+      }
+    }
+
   }
 
   .visit-planets {
@@ -46,10 +61,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      margin-top: 20px;
+      padding: 20px 3%;
+      .flex(space-between, center, column-reverse);
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -59,9 +80,17 @@
       }
 
       .btn {
-        .button(100px, black, white);
+        .button(100px, @btn);
         &:hover {
-          .button(100px, white, black);
+          .button(100px, @btn-hvr);
+        }
+        @media @phone {
+          .button(100%, @btn);
+          padding: 25px 0;
+          &:hover {
+            .button(100%, @btn-hvr);
+            padding: 25px 0;
+          }
         }
       }
     }
@@ -69,7 +98,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 98%;
+        margin: 0 5% 20px;
+      }
       img {
         .imgs(100%, auto, 10px);
       }
