@@ -348,3 +348,23 @@ footer {
 .about header p {
   margin: 20px 0;
 }
+.about .space-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.about .space-images .card {
+  width: 48%;
+  margin: 0 1%;
+}
+.about .space-images .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about .space-images .card h2 {
+  text-align: center;
+}
