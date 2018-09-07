@@ -164,11 +164,6 @@ p {
   background-color: #f4f4f4;
   height: auto;
 }
-@media (max-width: 500px) {
-  .main-header {
-    background-color: lightgreen;
-  }
-}
 .main-header .navcontainer {
   display: flex;
   justify-content: center;
@@ -307,6 +302,33 @@ footer {
   .home .walk .walk-text .btn {
     width: 100%;
     height: 60px;
+    -webkit-animation: fade-in 1.5s linear infinite alternate;
+    -moz-animation: fade-in 1.5s linear infinite alternate;
+    animation: fade-in 1.5s linear infinite alternate;
+  }
+  @-moz-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 .home .walk .walk-text .btn a {
@@ -323,7 +345,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 100%;
+    width: 90%;
+    height: auto;
     margin-left: 0;
   }
 }
@@ -334,7 +357,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img img {
-    width: 95%;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 }

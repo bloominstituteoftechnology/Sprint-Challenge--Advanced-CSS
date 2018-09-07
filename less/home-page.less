@@ -97,7 +97,13 @@
 				}
 
 				@media @phone {
-					.size(100%, 60px);
+          .size(100%, 60px);
+          .keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+        
+          .animation(fade-in 1.5s linear infinite alternate);
 				}
 				a {
 					.anchorText(1.8rem, none, white);
@@ -114,8 +120,9 @@
 			margin-left: 4%;
 
 			@media @phone {
-				width: 100%;
-				margin-left: 0;
+        .size(90%, auto);
+        margin-left: 0;
+       
 			}
 
 			img {
@@ -123,8 +130,8 @@
 				border-radius: 10px;
 
 				@media @phone {
-					width: 95%;
-					align-items: center;
+					width: 100%;
+					justify-content: center;
 				}
 			}
 		}
