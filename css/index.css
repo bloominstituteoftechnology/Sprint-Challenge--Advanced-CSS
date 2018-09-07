@@ -191,12 +191,18 @@ p {
   background: #F6F6F6;
   padding: 20px 0;
   border-bottom: 1px double #e0e0e0;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .navigation {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-around;
   padding-top: 1%;
