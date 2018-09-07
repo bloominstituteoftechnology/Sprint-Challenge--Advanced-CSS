@@ -1,12 +1,14 @@
 // Navigation code here
 .main-navigation {
     width: 100%;
+    max-width: 1000px;
     display: flex;
     background: @wild-sand;
     height: 90px;
     font-family: @river-bend;
     .nav-bar {
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
         .center();
         flex-direction: column;
         margin: 0 auto;
@@ -26,8 +28,10 @@
                 margin: 0 10px;
                 text-decoration: none;
                 color: @river-bend;
+                white-space: nowrap;
                 @media @mobile {
                     margin: 0 20px;
+                    white-space: nowrap;
                 }
             }
         }
