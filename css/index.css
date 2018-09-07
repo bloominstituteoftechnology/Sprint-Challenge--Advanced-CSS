@@ -292,6 +292,24 @@ footer {
     font-size: 1.6rem;
   }
 }
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  width: 75px;
+  border-radius: 5px;
+  color: black;
+  height: 30px;
+  font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: white;
+    width: 75px;
+    border-radius: 5px;
+    color: black;
+    height: 30px;
+    font-size: 1.6rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
