@@ -23,3 +23,20 @@
   -o-border-radius: @radius;
   border-radius: @radius;
 }
+
+.fade(@duration) {
+  animation-name: fade;
+  animation-duration: @duration;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -15,6 +15,14 @@
   text-decoration: none;
   box-shadow: 1px 1px 1px grey;
 }
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -190,6 +198,10 @@ p {
   font-size: 4rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+  animation-name: fade;
+  animation-duration: 15x 0ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 .nav .nav__menuItem {
   font-size: 1.6rem;
