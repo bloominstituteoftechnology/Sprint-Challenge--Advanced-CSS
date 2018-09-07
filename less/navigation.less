@@ -1,1 +1,26 @@
-// Navigation code here
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: @nav-bg;
+  color: @main-font-color;
+  padding: 1rem 4rem;
+
+  .nav__logo {
+    font-size: 4rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav__menuBox {
+    // border: 5px solid black;
+  }
+
+  .nav__menuItem {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: @main-font-color;
+    padding: 0 1.5rem;
+  }
+}
