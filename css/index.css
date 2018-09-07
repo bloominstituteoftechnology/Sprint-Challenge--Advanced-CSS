@@ -1,3 +1,4 @@
+@mobile (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,30 +160,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.main-header {
   width: 100%;
   background-color: #f4f4f4;
 }
-header .navcontainer {
+.main-header .navcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 75%;
   margin: 0 auto;
 }
-header .navcontainer h1 {
+.main-header .navcontainer h1 {
   font-size: 3.2rem;
   width: 51%;
   text-align: center;
   margin-top: 15px;
 }
-header .navcontainer nav {
+.main-header .navcontainer nav {
   display: flex;
   justify-content: space-around;
   width: 51%;
   margin: 15px 0 10px;
 }
-header .navcontainer nav a {
+.main-header .navcontainer nav a {
   font-size: 1.4rem;
   color: #5E6164;
   text-decoration: none;
@@ -196,6 +197,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -238,6 +244,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 28px;
+  background-color: #23293B;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
 }
 .home .walk .walk-img {
   width: 46%;
