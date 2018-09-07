@@ -16,6 +16,11 @@
             text-align: center;
             padding-top: 11px;
             padding-left: 2%;
+
+            @media @phone {
+                padding-left: 3.5%;
+             
+            }
         }
             nav {
                 
@@ -24,12 +29,21 @@
                 justify-content: space-around;
                 padding: 19px 23% 10px 25%;
 
+                @media @phone {
+                    padding: 19px 6% 10px 9%;
+                 }
+
                 a {
                     
                     font-size: 1.6rem;
                     text-decoration: none;
                     font-family: @nav-font, sans-serif;
                     color: @header-font-color;
+                    transition: opacity .75s;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
                 }
             }
 
