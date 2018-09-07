@@ -1,1 +1,41 @@
 // Navigation code here
+.main-navigation {
+    width: 100%;
+    background: @nav-bg;
+    .nav-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .logo-heading {
+            padding: 10px;
+        }
+        @media @mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .logo-heading {
+            @media @mobile {
+                font-size: 3rem;
+            }
+        }
+        .nav {
+            width: 400px;
+            display: flex;
+            padding: 10px;
+            justify-content: space-evenly;
+            
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+            }
+            a {
+                font-size: 1.8rem;
+                color: @nav-font;
+                text-decoration: none;
+            }
+        }
+    }
+} // .main-navigation
