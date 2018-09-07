@@ -167,6 +167,11 @@ p {
   align-items: center;
   border-bottom: 0.2rem solid #F1F1F1;
 }
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
 .navigation h1 {
   font-size: 3.2rem;
   padding-top: 10px;
@@ -284,9 +289,10 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  width: 10rem;
   text-align: center;
-  padding: 5px 20px;
-  font-size: 1rem;
+  padding: 8px 5px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: white;
   background-color: #22283A;
