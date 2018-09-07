@@ -45,8 +45,7 @@
 
   .walk {
     border-top: 1px solid @main-border-color;
-    display: flex;
-    justify-content: center;
+    .flexStack();
     margin-top: 60px;
     padding: 50px 60px;
 
@@ -62,13 +61,7 @@
       }
 
       .btn {
-        background: black;
-        border-radius: 5px;
-        color: white;
-        font-size: 2rem;
-        max-width: 40%;
-        padding: 13px 5%;
-        text-align: center;
+        .su-btn(black, white, 5px);
       }
     }
 
