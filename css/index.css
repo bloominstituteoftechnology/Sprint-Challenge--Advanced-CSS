@@ -323,9 +323,11 @@ footer {
   color: black;
   background-color: lightgray;
 }
-.home .walk .walk-text .btn:hover:hover {
-  width: 100%;
-  padding: 4%;
+@media (max-width:500px) {
+  .home .walk .walk-text .btn:hover:hover {
+    width: 100%;
+    padding: 4%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
