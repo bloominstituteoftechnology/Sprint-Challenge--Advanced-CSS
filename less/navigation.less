@@ -1,29 +1,46 @@
 // Navigation code here
 
 header {
-	width: 100%;
-  background-color: @sea-shell;
+	.size(100%, unset);
+	background-color: @sea-shell;
+	
 	.Navigation {
-		display: flex;
+		.flexbox(center,unset);
 		flex-wrap: wrap;
-		justify-content: center;
-		width: 75%;
+		max-width: 800px;
+		.size(100%, unset);
 		margin: 0 auto;
+		
 		h1 {
 			font-size: 3.2rem;
-			width: 50%;
+			.size(50%, unset);
 			text-align: center;
-			margin-top: 15px;
+			margin-top: 10%;
+			margin-bottom: 3%;
 		}
 		nav {
-			display: flex;
-			justify-content: space-around;
-			width: 51%;
-			margin: 15px 0 10px;
+			.flexbox(space-around, unset);
+			.size(100%, unset);
+			flex-wrap: nowrap;
+			padding-right: 20%;
+			position: fixed;
+			opacity: 50%;
+			font-weight:bold;
+
+			@media @phone {
+				margin: 15px 10%;
+		 }
+
 			a {
 				font-size: 1.4rem;
 				color: @main-font-color;
 				text-decoration: none;
+				margin: 0 10px;
+
+				@media @phone {
+					margin: 0, 10%;
+					font-size: 1.4rem;
+			 }
 			}
 		}
 	}
