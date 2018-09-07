@@ -481,6 +481,7 @@ footer {
   align-self: center;
 }
 .space-force-heading {
+  font-family: 'Ubuntu';
   padding: 5px;
   font-size: 3rem;
   color: #406A59;
