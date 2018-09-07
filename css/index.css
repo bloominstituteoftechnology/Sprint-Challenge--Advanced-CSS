@@ -9,6 +9,10 @@
   color: white;
   border: 1px black;
 }
+.button:hover {
+  background: white;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -262,6 +266,10 @@ footer {
   border-radius: 5px;
   color: white;
   border: 1px black;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
