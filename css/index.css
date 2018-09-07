@@ -368,3 +368,11 @@ footer {
 .about .space-images .card h2 {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .about .space-images {
+    flex-direction: column;
+  }
+  .about .space-images .card {
+    width: 98%;
+  }
+}
