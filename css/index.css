@@ -188,6 +188,9 @@ p {
   color: black;
   margin: 0 1.75%;
 }
+.navigation nav a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   .navigation nav {
     justify-content: space-evenly;
