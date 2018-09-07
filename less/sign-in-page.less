@@ -1,0 +1,73 @@
+.sign-in {
+  .animation(fadein, 400ms, ease, forwards);
+  padding-top: 100px;
+  .center;
+  flex-direction: column;
+  height: 100vh;
+
+  .card {
+    background-color: @nav-bg;
+    padding: 100px 20px;
+    width: 80%;
+    margin: auto;
+    .border-radius(10px);
+    .center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 300ms;
+    transform: scaleY(0);
+    .animation(grow, 800ms, ease-in-out, forwards);
+
+    h2 {
+      justify-self: flex-start;
+      margin-bottom: 40px;
+      opacity: 0;
+      .animation(fadein, 300ms, ease, forwards);
+      animation-delay: 600ms;
+    }
+
+    form {
+      width: 60%;
+      margin: 0 auto;
+      opacity: 0;
+      .animation(fadein, 300ms, ease, forwards);
+      animation-delay: 800ms;
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+
+      label {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        .border-radius(5px);
+      }
+    }
+
+    .btn {
+      .custom-button(@btn-bg-color, @sea-shell, 100%, 1.6rem);
+      border: 2px solid @btn-bg-color;
+    }
+
+    .links {
+      margin-top: 1.6rem;
+      text-align: right;
+
+      a,
+      a:visited {
+        color: @header-font-color;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+  }
+}

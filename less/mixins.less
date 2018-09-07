@@ -1,1 +1,45 @@
 // Mixins Here
+
+// Add a border-radius
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+// Flex display with flex-wrap on
+.flex-display(@justify: flex-start, @align: stretch) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: @justify;
+  align-items: @align;
+  width: 100%;
+}
+
+// Quick center using flexbox;
+.center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Button creator
+.custom-button(@bg, @color, @max-width, @padding) {
+  background: @bg;
+  color: @color;
+  max-width: @max-width;
+  .border-radius(5px);
+  .center; // centers text
+  font-size: 1.6rem;
+  padding: @padding;
+  transition: all 300ms;
+  cursor: pointer;
+
+  &:hover {
+    background: @color;
+    color: @bg;
+  }
+}
+
+// Animation
+.animation (@name, @duration: 300ms, @ease: ease, @direction) {
+  animation: @name @duration @ease @direction;
+}

@@ -1,1 +1,40 @@
 // Navigation code here
+.navigation {
+  background-color: rgba(@nav-bg, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  .container {
+    .flex-display(center);
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+      margin: 1.3rem 0;
+      width: 100%;
+    }
+
+    .nav-list {
+      width: 47%;
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0 12px;
+
+      @media @phone {
+        width: 75%;
+      }
+
+      a,
+      a:visited {
+        color: @header-font-color;
+        font-size: 1.6rem;
+        text-decoration: none;
+        transition: all 300ms;
+      }
+      a:hover {
+        color: lighten(@header-font-color, 20%);
+        text-decoration: underline;
+      }
+    }
+  }
+}
