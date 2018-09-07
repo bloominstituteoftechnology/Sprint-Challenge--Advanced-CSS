@@ -76,6 +76,8 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid @main-border-color;
+    margin-bottom: 50px;
 
     @media @phone {
       flex-direction: column-reverse;
@@ -131,4 +133,12 @@
       }
     }
   }
+
+  .contact-form {
+    @media @phone {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
 }// home

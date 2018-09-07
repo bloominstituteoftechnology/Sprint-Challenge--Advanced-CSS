@@ -270,6 +270,8 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -328,4 +330,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .contact-form {
+    width: 100%;
+    max-width: 500px;
+  }
 }
