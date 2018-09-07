@@ -159,6 +159,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .container header {
   transform: translateY(1000px);
@@ -198,12 +199,15 @@ p {
 }
 .navigation {
   width: 100%;
-  background: #F1F1F1;
+  background: rgba(241, 241, 241, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 .navigation h1 {
   font-size: 4rem;

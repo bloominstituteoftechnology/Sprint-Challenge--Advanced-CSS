@@ -1,9 +1,13 @@
 // Navigation code here
 .navigation {
     width: 100%;
-    background: @sea-shell;
+    background: rgba(@sea-shell, 0.8);
     .displayFlex(space-around, center, column);
     height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
     h1{
         font-size: 4rem;
 
