@@ -5,6 +5,7 @@
   .intro {
     img {
       border-radius: 5px;
+      .img-responsive(100%);
     }
     h2 {
       padding: 15px;
@@ -20,6 +21,23 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      
+      img:first-child {
+        max-width:100%;
+        max-height:100%;
+        width: 100%;
+        margin: 0 auto;
+        margin: 10px;
+      }
+      img:nth-of-type(2) {
+        display: none;
+      }
+      img:nth-of-type(3) {
+        display: none;
+      }
+    }
+    
 
     img {
       width: 28%;
