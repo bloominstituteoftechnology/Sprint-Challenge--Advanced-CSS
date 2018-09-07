@@ -2,3 +2,21 @@
 .db(@color) {
   border: 1 px solid @color;
 }
+
+.btn(@bg, @color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99px;
+  height: 35px;
+  color: @color;
+  background: @bg;
+  border-radius: 5px;
+  font-size: 1.8rem;
+
+  &:hover {
+    color: @bg;
+    background: @color;
+    border: 1px solid @bg;
+  }
+}
