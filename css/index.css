@@ -1,3 +1,11 @@
+@keyframes slide {
+  0% {
+    transform: rotate(0) translateX(-1000px);
+  }
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +209,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  animation: slide 0.5s 1 0s ease-out;
 }
 .home .intro h2 {
   padding: 15px;
