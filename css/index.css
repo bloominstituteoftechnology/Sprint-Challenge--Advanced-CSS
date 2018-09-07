@@ -214,6 +214,11 @@ p {
   color: #23293b;
   font-size: 1.6rem;
   text-decoration: none;
+  transition: all 300ms;
+}
+.navigation .container .nav-list a:hover {
+  color: #49557b;
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
@@ -265,6 +270,7 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  animation: grow 800ms ease-in-out forwards;
 }
 .home .visit-planets {
   padding: 15px;

@@ -6,9 +6,6 @@
   z-index: 1000;
   .container {
     .flex-display(center);
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
     text-align: center;
 
     h1 {
@@ -32,6 +29,11 @@
         color: @header-font-color;
         font-size: 1.6rem;
         text-decoration: none;
+        transition: all 300ms;
+      }
+      a:hover {
+        color: lighten(@header-font-color, 20%);
+        text-decoration: underline;
       }
     }
   }
