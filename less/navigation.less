@@ -15,18 +15,18 @@
         font-size: 3rem;
         text-align: center;
         margin-bottom: 15px;
-
-        @media @mobile {
-            margin-left: 280px;
-        }
     }
     
     nav {
         display: flex;
-        width: 350px;
+        width: 100%;
         justify-content: space-around;
         padding-bottom: 10px;
         margin-left: 220px;
+
+        @media @mobile {
+            margin-left: 20px;
+        }
     
         a {
             color: @nav-font;

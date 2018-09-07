@@ -163,7 +163,7 @@ p {
 @media (max-width: 500px) {
   .container {
     width: 90%;
-    margin: 0 5%;
+    margin: 0;
   }
 }
 .nav-container {
@@ -183,17 +183,17 @@ p {
   text-align: center;
   margin-bottom: 15px;
 }
-@media (max-width: 500px) {
-  .nav-container h1 {
-    margin-left: 280px;
-  }
-}
 .nav-container nav {
   display: flex;
-  width: 350px;
+  width: 100%;
   justify-content: space-around;
   padding-bottom: 10px;
   margin-left: 220px;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    margin-left: 20px;
+  }
 }
 .nav-container nav a {
   color: #454A59;
@@ -218,7 +218,7 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .home .intro {
+  .home {
     width: 100%;
   }
 }
@@ -229,11 +229,21 @@ footer {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -263,6 +273,11 @@ footer {
 .home .visit-planets {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    width: 100%;
+  }
+}
 .home .visit-planets h3 {
   margin-top: 11px;
 }
@@ -272,13 +287,14 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 20px 10px;
   display: flex;
   justify-content: center;
 }
 @media (max-width: 500px) {
   .home .walk {
     flex-flow: column;
+    margin-top: 20px;
   }
 }
 .home .walk .walk-text {
@@ -317,7 +333,36 @@ footer {
   color: black;
 }
 @media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    text-decoration: none;
+    background: black;
+    color: white;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: white;
+    color: black;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
   .home .walk .walk-text {
+    width: 100%;
     order: 2;
   }
 }
@@ -328,6 +373,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    margin-left: 0;
+    margin-bottom: 2%;
     order: 1;
   }
 }
