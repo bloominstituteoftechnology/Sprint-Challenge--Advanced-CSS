@@ -19,6 +19,12 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 30%;
+
+        @media @mobile {
+            justify-content: space-around;
+            padding: 0 15%;
+        }
+
         a{
             .fontDecorate(none, 1.3rem,@river-bend, none);
         }

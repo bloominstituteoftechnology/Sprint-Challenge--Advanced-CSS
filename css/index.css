@@ -181,6 +181,12 @@ p {
   justify-content: space-between;
   padding: 0px 30%;
 }
+@media (max-width: 500px) {
+  .navigation nav {
+    justify-content: space-around;
+    padding: 0 15%;
+  }
+}
 .navigation nav a {
   text-decoration: none;
   color: #454A59;
@@ -199,6 +205,11 @@ footer {
 }
 .home {
   width: 79%;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
 }
 .home .intro img {
   width: 100%;
@@ -224,6 +235,7 @@ footer {
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
+    margin-left: 5%;
   }
 }
 @media (max-width: 500px) {
@@ -248,8 +260,22 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    padding: 20px 3% 0px 3%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -258,18 +284,32 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 20%;
-  padding: 10px 10%;
-  font-size: 1.2rem;
-  font-weight: none;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 1rem;
+  font-weight: bold;
   color: white;
   background-color: #22283A;
   border-radius: 5px;
   border: 1px none none;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
