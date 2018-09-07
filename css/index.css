@@ -160,6 +160,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  border: 1px solid red;
+  background: #F6F6F6;
+  display: flex;
+}
+.navigation nav a {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
