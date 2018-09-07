@@ -27,5 +27,10 @@
 
 
 4)	How would you describe preprocessing to someone new to CSS?
+		-	CSS Preprocessors convert code into a true CSS by taking the same written code from a simple preprocessed language (CSS with 	
+			added extensions). Besides CSS preprocessors are used to add extensions which aren’t used in CSS yet like: functions, mixins, nested rules, variables, operations and inheritance.
+
 
 5)	What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+		-	Using esacaping and mixins you can increase your productivity and decrease the amount of code you are writing.
+		-	...
