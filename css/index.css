@@ -181,10 +181,11 @@ nav {
   align-items: center;
   font-family: 'Russo One', sans-serif;
   color: #23293B;
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
   nav {
+    font-size: 3.2rem;
     padding: 2rem 0 0.2rem 0;
   }
 }
@@ -200,13 +201,14 @@ nav .menu a {
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   color: #5E6164;
-  padding: 1rem;
+  padding: 1rem 1.3rem;
   display: flex;
 }
 @media (max-width: 500px) {
   nav .menu a {
     font-size: 1.3rem;
     font-weight: bold;
+    padding: 1rem;
   }
 }
 footer {
