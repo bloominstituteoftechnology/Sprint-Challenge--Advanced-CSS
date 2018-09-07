@@ -9,10 +9,10 @@
 	background-clip:         padding-box;
 }
 
-.button() {
-    width: 29.5%;
+.button(@width, @border-radius) {
+    width: @width;
     height: 3.5rem;
-    .border-radius();
+    .border-radius(@border-radius);
     padding-top: 9px;
     background: @button-bg;
     color: white;
@@ -24,5 +24,19 @@
         padding-top: 7px;
         background: white;
         color: @button-bg;
+    }
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.std-pad() {
+    padding: 15px;
+
+    @media @phone {
+        padding: 15px @mobile-pad;
     }
 }
