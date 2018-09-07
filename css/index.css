@@ -171,6 +171,7 @@ p {
   border-bottom: 1px solid #F1F1F1;
   position: fixed;
   opacity: 0.95;
+  z-index: 1;
 }
 .nav .logo {
   text-decoration: none;
