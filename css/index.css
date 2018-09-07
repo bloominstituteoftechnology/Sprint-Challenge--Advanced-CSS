@@ -160,7 +160,7 @@ p {
   max-width: 800px;
   min-width: 350px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container {
     max-width: 500px;
   }
@@ -182,7 +182,7 @@ header .header-contents {
   padding: 12px 0 5px;
   border-bottom: 1px double #F1F1F1;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header .header-contents {
     max-width: 500px;
   }
@@ -196,7 +196,7 @@ header .header-contents nav {
   justify-content: space-between;
   margin-top: 20px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header .header-contents nav {
     width: 75%;
   }
@@ -249,13 +249,13 @@ footer {
   -webkit-border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .space-images img {
     width: 90%;
     margin: 20px 5%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .space-images .desktop-only {
     display: none;
   }
@@ -278,7 +278,7 @@ footer {
   justify-content: center;
   align-items: stretch;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
     margin: 20px 0;
@@ -288,7 +288,7 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
   }
@@ -317,7 +317,7 @@ footer {
   color: #454A59;
   transition: all 0.5s;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .walk .walk-text .btn {
     display: block;
     background: #454A59;
@@ -336,7 +336,7 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
     margin: 0 0 20px;
