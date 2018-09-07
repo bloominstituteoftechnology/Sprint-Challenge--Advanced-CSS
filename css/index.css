@@ -169,6 +169,7 @@ p {
 }
 .main-nav h1 {
   font-size: 4rem;
+  margin: 1.5rem 0 1rem 0;
 }
 .main-nav nav {
   display: flex;
@@ -177,7 +178,7 @@ p {
   color: #454A59;
   font-size: 1.6rem;
   font-weight: bold;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 .main-nav nav a:link,
 .main-nav nav a:visited {
@@ -203,6 +204,12 @@ footer {
 .home .intro img {
   border-radius: 0.5rem;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    height: auto;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -213,6 +220,16 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .home .space-images img:first-child {
+    display: inherit;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -230,8 +247,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -243,10 +272,24 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 100%;
+    margin-left: inherit;
+    margin-bottom: 1.5rem;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .home .btn {
   display: inline-block;
@@ -265,4 +308,11 @@ footer {
 .home .btn:active {
   background: #b9b9b9;
   color: #1a1e2c;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    padding: 2.5rem 0;
+    text-align: center;
+  }
 }
