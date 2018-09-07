@@ -23,6 +23,14 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width:100%;
+      }
+      &:nth-child(1n+2){
+          @media @phone{
+          display: none;
+        }
+      }
     }
   }
 
