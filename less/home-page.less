@@ -4,7 +4,6 @@
 
   .intro {
 
-    
 
     h2 {
       padding: 15px;
@@ -13,7 +12,18 @@
     p {
       padding:0 15px;
     }
-  
+    @media @mobile{
+      
+        h2{
+          width:100%;
+        }
+      .logo{
+          max-width:500px;
+          width:100%;
+        }
+          
+    }
+
   }
 
   .space-images {
@@ -26,6 +36,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    .blast{
+      width:90%;
+      margin: 20px auto;
+    }
+
+    .sky{
+      @media @mobile{
+        display:none;
+      }
+    }
+
+    .launch{
+      @media @mobile{
+        display:none;
+      }
     }
   }
 
@@ -75,5 +101,31 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile{
+      flex-direction:column-reverse;
+      justify-content: flex-start;
+      margin-top:2%;
+      padding:5%;
+      .walk-img{
+          width:100%;
+          margin:0 auto;
+        img{
+          width:100%;
+        }
+      }
+
+      .walk-text{
+        width:100%;
+
+        .btn{
+          .buttoncreator(100%,15%,@btn-bg-color,white,1.6rem);
+          padding:5%;
+        }
+      }
+      
+      
+    }
+    
   }
 }// home
