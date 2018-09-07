@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-// button with defined size, parameters select font and backgroun color
+// button with settable font color, background, and size
 .custom-button(@color, @background, @width, @padding) {
     
     font-size: 1.8rem;
@@ -28,4 +28,12 @@
 .width-height(@width, @height){
     width: @width;
     height: @height;
+}
+
+//transition mixin
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
 }

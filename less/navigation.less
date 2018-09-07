@@ -2,13 +2,10 @@
 
 .fixed-nav-container {
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     width: 100%;
     background: @nav-bg;
     border-bottom: @nav-border;
-
-    @media @phone {
-    }
 
     .fixed-nav {
         display: flex;
@@ -29,6 +26,11 @@
                 font-size: 1.6rem;
                 padding: 0px 15px;
                 text-decoration: none;
+                .transition(color 1s ease);
+
+                &:hover {
+                    color: @footer-font-color;
+                }
             }
         }
     }

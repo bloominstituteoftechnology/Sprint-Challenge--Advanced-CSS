@@ -165,7 +165,7 @@ p {
 }
 .fixed-nav-container {
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   width: 100%;
   background: rgba(246, 246, 246, 0.9);
   border-bottom: #F1F1F1;
@@ -187,6 +187,13 @@ p {
   font-size: 1.6rem;
   padding: 0px 15px;
   text-decoration: none;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+}
+.fixed-nav-container .fixed-nav nav a:hover {
+  color: #81848E;
 }
 footer {
   color: #22283B;
