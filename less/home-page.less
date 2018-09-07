@@ -1,3 +1,7 @@
+// margin: 0% 0% 0% 8%;
+// @media @phone {
+
+// }
 // Home Content
 html{
   font-size: 62.5%
@@ -13,16 +17,27 @@ html{
     
     margin: 1% 0% 2% 37%;
 width: 80%;
+@media @phone {
+  margin: 0% 0% 6% 21%;
+}
+
   }
 }
 .home {
   max-width: 880px;
 
+@media @phone {
+        max-width: 500px;
+      }
 
   .intro {
     img{
       border-radius: 10px;
       margin: 0% 0% 0% 3.5%;
+      @media @phone {
+        margin: 2% 0% 0% 0%;
+        border-radius: 0px;
+      }
     }
 
     h2 {
@@ -41,12 +56,24 @@ width: 80%;
     .fx;
     flex-wrap: wrap;
     width: 91%;
+    @media @phone {
+      .sky{
+display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 96%;
+      }
     }
   }
 
@@ -72,10 +99,20 @@ width: 80%;
     flex-wrap: wrap;
     width:90%;
     margin-left: 3%;
+    @media @phone {
+      .fx;
+      justify-content: space-between;
      
+      margin-bottom: 0%;
+    }
     .walk-text {
       width: 35%;
       margin: 4% 3% 0% 10%;
+      @media @phone {
+        // order:1;
+        margin:0% 0% 0% 0%;
+        width: 86%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -91,11 +128,18 @@ width: 80%;
       margin-top: 4%;
       width: 50%;
       // margin-left: 4%;
+      @media @phone {
+        width: 144%;
+        order:-1;
+      }
+
       
       img {
         width: 72%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+        width: 100%;
       }
     }
     // .custom-button(@width, @backcolor, @br,@height,@txtc) {
@@ -118,27 +162,40 @@ width: 80%;
   //     }
 
   //   }
-
+  }
     
-  // }
-}
-.btn{
-  margin: 0% 0% 5% 0%;
-  button{
-    margin: 0% 0% 4% 119%;
-  .custom-button(100%,black, 10%,100%,white);
-  &:hover {
-    background-color: yellow;
-    color: blue;
+ 
 
   }
 
-}
+  
+  
+  button{
+    .custom-button(11%,black, 10%,10%,white);
+  margin: 0% 0% 5% 11%;
+    @media @phone {
+      .custom-button(90%,black, 10%,55%,white);
+      // width: 90%;
+      padding: 5% 0% 7% 0%;
+      margin: 0% 0% 5% 3%;
+  }
+  &:hover {
+    background-color: yellow;
+    color: blue;
+    }
+    // margin: 0% 0% 4% 119%;
+  
+ 
+  
+  }
 
 
-}
+  // }
+
+
   
  footer{
+
     .bg;
   }
 }// home
