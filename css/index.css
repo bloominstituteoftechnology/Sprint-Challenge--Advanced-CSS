@@ -145,6 +145,12 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -170,7 +176,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+.home .intro h2 h1 {
   padding: 15px;
 }
 .home .intro p {
@@ -221,3 +227,11 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: enter;
+}
+
