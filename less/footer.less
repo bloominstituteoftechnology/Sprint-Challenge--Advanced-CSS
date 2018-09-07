@@ -11,12 +11,21 @@ footer {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay:6s;
-  transition-property: transform;
+  p{
+    transition-property: transform;
   transition-duration:3s;
     &:hover{
     transform: rotateY(360deg);
       }
+  
+  }
   @media @mobile{
     background:gray;
+    transition-property: transform;
+    transition-duration:3s;
+      &:hover{
+      transform: rotateY(360deg);
+        }
+    
   }
 }

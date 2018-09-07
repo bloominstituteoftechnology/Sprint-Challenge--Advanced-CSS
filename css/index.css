@@ -218,15 +218,22 @@ footer {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 6s;
+}
+footer p {
   transition-property: transform;
   transition-duration: 3s;
 }
-footer:hover {
+footer p:hover {
   transform: rotateY(360deg);
 }
 @media (max-width:500px) {
   footer {
     background: gray;
+    transition-property: transform;
+    transition-duration: 3s;
+  }
+  footer:hover {
+    transform: rotateY(360deg);
   }
 }
 .home .intro {
@@ -301,7 +308,6 @@ footer:hover {
   margin-top: 13px;
 }
 .home .walk {
-  border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
