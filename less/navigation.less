@@ -9,41 +9,43 @@
        font-family: Ubuntu;
        font-weight: bolder;
     }
-    nav {
+    nav {   width: 82.545%;
+            display: flex;
+            justify-content: space-around;
+
             padding: 20px;
         a{
-           margin: 30px;
+           margin: 0;
            text-decoration: none;
            color: black;
            font-size:2rem;
            font-weight: bold;
         }
     }
+   
 }
 
 @media @phone {
     .top-nav {
         display: flex;
         justify-content: center;
-        flex-flow: row wrap;
-        align-items: center;
-        margin: 10px 0 20px 0;
-        width:100%;
-        height: auto;
+        flex-wrap: wrap;
+        margin: 10px 0 0px 0;
+        width: 100%;
     h1 {
        font-size:5rem;
        font-family: Ubuntu;
        font-weight: bolder;
-       widows: 100%;
+       width: 100%;
        height:auto;
     }
     nav {
-            width: 93.4%;
-            height: auto;
-           .center;
-           padding: 10px 0 0 0;
+           width: 100%;
+           padding: 10px 0 10px 0;
+           display: flex;
+           justify-content: space-around;
         a{
-           margin: 15px;
+           margin: 0;
            text-decoration: none;
            color: black;
            font-size:1.6rem;
@@ -54,6 +56,8 @@
 }
 
 }
+
+
 
 @media @phone {
 
