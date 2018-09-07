@@ -159,10 +159,13 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 85px;
 }
 .top-bar {
   width: 100%;
   position: fixed;
+  top: 0;
+  opacity: 0.8;
 }
 .top-bar .nav-container {
   max-width: 1000px;
