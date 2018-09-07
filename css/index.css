@@ -180,7 +180,7 @@ p {
   text-decoration: underline overline;
 }
 .navigation .links {
-  width: 60%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,9 +192,10 @@ p {
 }
 .navigation .links a {
   font-size: 1.6rem;
-  padding: 18px 2.7%;
+  margin: 18px 2.7%;
   text-decoration: none;
   color: black;
+  text-align: center;
   text-decoration: underline overline;
   font-size: 2rem;
 }
@@ -210,7 +211,7 @@ p {
 }
 @media (max-width:500px) {
   .navigation .links a {
-    padding: 22px 3.3%;
+    margin: 22px 3.3%;
     padding-bottom: 12px;
   }
 }
@@ -225,7 +226,7 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 125px;
+  margin-top: 130px;
 }
 .home .intro img {
   border-radius: 5px;
