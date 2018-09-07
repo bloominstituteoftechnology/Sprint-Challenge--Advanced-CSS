@@ -1,1 +1,15 @@
 // Mixins Here
+.btn(@width, @size) {
+  background: @btn-bg-color;
+  color: white;
+  padding: 1rem 1.8rem 0.7rem 1.8rem;
+  font-size: @size;
+  width: @width;
+  border-radius: 5px;
+  &:hover {
+    background: white;
+    color: @btn-bg-color;
+    margin: -0.1rem;
+    border: 0.1rem solid @btn-bg-color;
+  }
+}
