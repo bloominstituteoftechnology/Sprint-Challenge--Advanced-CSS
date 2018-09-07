@@ -1,8 +1,23 @@
 // Home Content
 
 .home {
+  @media @phone {
+    width: 90%;
+  }
 
   .intro {
+    @media phone {
+      display: flex;
+      flex-flow: column;
+      max-width: 100%;
+    }
+
+    .img {
+      @media @phone{
+        max-width:99%;
+        height: auto;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,12 +33,28 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    #skyImage {
+      @media @phone {
+        display:none;
+      }
+    }
+
+    #launch {
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 90%;
+      }
+
     }
   }
 
@@ -45,9 +76,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 5px 6px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 90%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -65,6 +103,9 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+     
+      }
+      }
       
       img {
         width: 100%;
