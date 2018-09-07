@@ -160,6 +160,37 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.main-nav {
+  background: #F6F6F6;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #F1F1F1;
+}
+.main-nav .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav .container h1 {
+  font-size: 4rem;
+  margin: 13px 0;
+}
+.main-nav .container nav {
+  margin: 8px 0;
+}
+.main-nav .container nav a {
+  text-decoration: none;
+  font-family: #454A59;
+  color: #22283A;
+  font-weight: bold;
+  margin: 7px 15px;
+}
+.main-nav .container nav a:hover {
+  color: #5E6164;
+}
+.main-nav .container nav a:active {
+  color: white;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

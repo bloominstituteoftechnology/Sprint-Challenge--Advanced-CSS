@@ -1,1 +1,35 @@
 // Navigation code here
+
+.main-nav {
+    background: @nav-bg;
+    font-size: 1.6rem;
+    border-bottom: 2px solid @nav-border;
+
+    .container {
+        .flex(column, center);
+        align-items: center;
+
+        h1 {
+            font-size: 4rem;
+            margin: 13px 0;
+        }
+
+        nav {
+            margin: 8px 0;
+
+            a {
+                .link(@river-bend, @btn-bg-color);
+                font-weight: bold;
+                margin: 7px 15px;
+
+                &:hover {
+                    color: @shuttle-gray;
+                }
+
+                &:active {
+                    color: white;
+                }
+            }
+        }
+    }
+}
