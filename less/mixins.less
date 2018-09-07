@@ -4,27 +4,25 @@
 -webkit-border-radius: @radius;
 -moz-border-radius: @radius;
 border-radius: @radius;
-  }
+}
 
 
-  .button(@width, @height, @bg-color, @color, @font-size) {
-    .border-radius(5px);
-     width: @width;
-    height: @height;
-    background-color: @bg-color;
-    color: @color;
-    cursor: pointer;
-    font-size: @font-size;
-    text-align: center;
-    padding-top: 9px;
-  
-    &:hover {
-      background: @porcelain;
-      color:  @btn-bg-color;
-      -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-  }
+.button(@width, @height, @bg-color, @color, @font-size) {
+.border-radius(5px);
+width: @width;
+height: @height;
+background-color: @bg-color;
+color: @color;
+cursor: pointer;
+font-size: @font-size;
+text-align: center;
+padding-top: 9px;
 
- 
+&:hover {
+background: @porcelain;
+color: @btn-bg-color;
+-webkit-transform: scale(1.3);
+-ms-transform: scale(1.3);
+transform: scale(1.3);
+}
+}
