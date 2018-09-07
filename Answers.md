@@ -10,6 +10,9 @@ Desktop is the opposit where you start with a larger screen and scale downwards.
 
 What does font-size: 62.5% in the html tag do for us when using rem units?
 
+Using 62.5% in the html tag sets the font size in the root element. So all the elements that us a unit of rem will go baseed off of the root element.
+If we wnated to quickly increase or decrease the font size of the entire project, we would just change the root elements font-size.
+
 How would you describe preprocessing to someone new to CSS?
 
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
