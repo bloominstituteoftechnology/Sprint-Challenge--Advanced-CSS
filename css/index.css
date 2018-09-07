@@ -5,6 +5,8 @@
   font-weight: bold;
   background: black;
   padding: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   color: white;
   border: 1px black;
@@ -267,6 +269,8 @@ footer {
   font-weight: bold;
   background: black;
   padding: 2%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   color: white;
   border: 1px black;
