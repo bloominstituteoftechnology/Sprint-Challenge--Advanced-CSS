@@ -1,0 +1,17 @@
+What is the difference between an adaptive website and a fully responsive website?
+<p> The responsive approach to web-design shifts content based on the size of the browser window, which changes depending on your device. This is achieved through defining common browser sizes (breakpoints) and assigning tweaks in behavior or style based on the breakpoints defined. </p>
+<p>The adaptive approach on the other hand creates specific designs for specific device types. When the webpage loads it is told what type of device is being used, and based on that information then loads in the corresponding design. </p>
+<p>The adaptive approach allows for more design control, but can also result in more variability in the user experience across devices which isn’t always a good thing. While in the responsive approach, the content presentation feels more consistent across devices because of the fundamental difference that a responsive design is modulating on one central design, vs completely separate designs. </p>
+
+
+Describe what it means to be mobile first vs desktop first.
+<p> A mobile first approach to web design means two things. First, the site is conceptualized and organized with the starting point of what it will look and act like on mobile, and the design is then expanded out to tablet, and then desktop. Second, a mobile first approach means in the styling code you will you the min-width property when creating media queries, as required by the logic built into cascading rules in CSS styling.A desktop first approach is the inverse of a mobile first approach, because it is the inverse the the max-width property of the media query is used.</p> 
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+<p>It creates a consistent base of 10 for calculating font size, which can be used regardless of where you are in the cascade. So for every increase of 1 in a rem, is a 10 pixel increase, or 1rem = 10px, 1.5rem=15px, and so on. </p> 
+
+How would you describe preprocessing to someone new to CSS?
+<p>Preprocessing can be thought of as translation, and the preprocessor program can be thought of a translator. Just like there are some ideas that might be easier to express in Spanish than in English and vice versa, the same can true in across different coding languages. Preprocessing allows someone who might be more expressive using the syntax and organizational principles found in scripting languages the ability to create in that language, and then the preprocessor (translator) which knows all the rules and nuances of both languages, reorganizes it into CSS which is the language the browser speaks for presentation and styling. </p> 
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? 
+<p>I really like the object oriented nature of it. It's a more natural way for our brains to approach problem solving as well as the creation/making process itself. Because of that, I think it also mirrors many organizational systems out in the world so my brain is just way more primed to work in that logic. So far, none of it really gives me any conceptual issues. Learning the exact syntax for everything will take me some time, but with practice that will come too. </p> 
