@@ -3,7 +3,6 @@
 .imgStyle() {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .center() {
@@ -29,4 +28,9 @@
         background: teal;
         color: black;
     }
+
+    @media @phone {
+        max-width: 100%;
+        padding: 5%;
+      }
 }
