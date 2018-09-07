@@ -316,17 +316,17 @@ footer {
   color: #22283A;
   transition-duration: 0.5s;
 }
-@keyframes extend {
+@keyframes rotate {
   from {
-    max-width: 30%;
+    transform: rotate(0deg);
   }
   to {
-    max-width: 50%;
+    transform: rotate(360deg);
   }
 }
 .home .walk .walk-text .btn:hover {
-  animation-name: extend;
-  animation-duration: 3s;
+  animation-name: rotate;
+  animation-duration: 2s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
