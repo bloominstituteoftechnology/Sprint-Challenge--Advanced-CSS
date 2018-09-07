@@ -179,12 +179,24 @@ p {
   justify-content: center;
   align-items: center;
 }
+@media (max-width:500px) {
+  .navigation h1 {
+    padding-top: 2.5%;
+    padding-bottom: 2%;
+    margin-left: 5%;
+  }
+}
 .navigation nav {
   padding-top: 1.5%;
   padding-bottom: 1.5%;
   width: 48%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .navigation nav {
+    width: 76%;
+  }
 }
 .navigation nav a {
   display: flex;
