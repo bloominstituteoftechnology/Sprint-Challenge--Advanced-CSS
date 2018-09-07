@@ -162,10 +162,12 @@ p {
 }
 .nav-content {
   display: flex;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.6);
   padding: 20px;
   border-bottom: 1px solid #F1F1F1;
   font-size: 4rem;
@@ -207,6 +209,7 @@ footer {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+  margin-top: 16%;
 }
 @media (max-width: 500px) {
   .home .intro img {
