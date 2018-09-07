@@ -160,10 +160,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.15);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 .navigation {
   background-color: rgba(246, 246, 246, 0.9);
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 .navigation .container {
   display: flex;
@@ -206,6 +226,7 @@ footer {
   align-items: center;
 }
 .home {
+  animation: fadein 400ms ease forwards;
   padding-top: 100px;
 }
 .home .intro img {
@@ -337,6 +358,7 @@ footer {
   border-radius: 10px;
 }
 .sign-in {
+  animation: fadein 400ms ease forwards;
   padding-top: 100px;
   display: flex;
   align-items: center;
@@ -355,14 +377,23 @@ footer {
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 300ms;
+  transform: scaleY(0);
+  animation: grow 800ms ease-in-out forwards;
 }
 .sign-in .card h2 {
   justify-self: flex-start;
   margin-bottom: 40px;
+  opacity: 0;
+  animation: fadein 300ms ease forwards;
+  animation-delay: 600ms;
 }
 .sign-in .card form {
   width: 60%;
   margin: 0 auto;
+  opacity: 0;
+  animation: fadein 300ms ease forwards;
+  animation-delay: 800ms;
 }
 .sign-in .card .form-group {
   display: flex;
