@@ -1,15 +1,15 @@
 // Mixins Here
 
 
- .button(@color @bg-color) {
+ .button(@color, @bg-color) {
    border:1px solid black;
    color: @color;
    background: @bg-color;
-   border-radius:@radius(8px);
    height: 35px;
    width: 30%;
    text-align: center;
    padding-top: 10px;
+   border-radius:8px;
 
    &:hover {
     background: white;

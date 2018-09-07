@@ -126,20 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.button {
-  border: 1px solid black;
-  color: white;
-  background: black;
-  border-radius: 8px;
-  height: 35px;
-  width: 30%;
-  text-align: center;
-  padding-top: 10px;
-}
-.button:hover {
-  background: white;
-  color: black;
-}
 * {
   box-sizing: border-box;
 }
@@ -215,6 +201,11 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -237,6 +228,12 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -250,21 +247,26 @@ footer {
   border: 1px solid black;
   color: white;
   background: black;
-  border-radius: 8px;
   height: 35px;
   width: 30%;
   text-align: center;
   padding-top: 10px;
+  border-radius: 8px;
 }
 .home .walk .walk-text .btn:hover {
   background: white;
   color: black;
 }
-.home .walk-img {
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 98%;
+  }
+}
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk-img img {
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
