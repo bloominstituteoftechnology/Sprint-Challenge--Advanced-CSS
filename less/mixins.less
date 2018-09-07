@@ -1,5 +1,13 @@
 // Mixins Here
 
+.flex-display {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+}
 
 .border-radius (@radius){
     -webkit-border-radius: @radius;
@@ -13,7 +21,7 @@
         text-align: center;
         font-size: 1.6rem;
         font-weight: bold;
-        background: black;
+        background: @btn-bg-color;
         padding: 2%;
         .border-radius(5px);
         color: white;

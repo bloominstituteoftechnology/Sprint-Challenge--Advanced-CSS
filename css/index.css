@@ -1,9 +1,15 @@
+.flex-display {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 .button {
   width: 30%;
   text-align: center;
   font-size: 1.6rem;
   font-weight: bold;
-  background: black;
+  background: #22283A;
   padding: 2%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -267,7 +273,7 @@ footer {
   text-align: center;
   font-size: 1.6rem;
   font-weight: bold;
-  background: black;
+  background: #22283A;
   padding: 2%;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
