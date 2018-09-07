@@ -1,1 +1,14 @@
 // Mixins Here
+.button(@bg, @text-color) {
+    background: @bg;
+    padding: 10px 13px;
+    color: @text-color;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    max-width: 105px;
+    text-align: center;
+    &:hover {
+      background: @text-color;
+      color: @bg;
+    }
+}
