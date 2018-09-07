@@ -17,6 +17,7 @@ width:100%;
     nav {
         width:100%;
         .flexit(center);
+        
 
         a {
             text-decoration: none;
@@ -24,6 +25,10 @@ width:100%;
             color: black;
             font-size: 2rem;
             padding: 2%;
+            .hoverOver(@waterloo, @nav-bg);
+            @media @phone {
+            font-size:1.4rem;
+             }
         }
     }
 }
