@@ -16,6 +16,10 @@
 
     .header-img {
       border-radius: 5px;
+
+      @media @phone {
+        height: 128px;
+      }
     }
   }
 .home {
@@ -39,11 +43,33 @@
     flex-wrap: wrap;
     width: 100%;
 
+      @media @phone {
+        width: 95%;
+        margin: 0 auto;
+      }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
+
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
