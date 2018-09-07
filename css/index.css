@@ -444,21 +444,97 @@ footer {
   border-radius: 10px;
 }
 .body-login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 800px;
   margin: 0;
   padding: 0;
-  background: url(login-spacebg.jpg);
+  background-image: url("https://desktopwalls.net/wp-content/uploads/2015/02/Abstract%20Triangle%20Space%20Background%20Desktop%20Wallpaper.jpg");
   background-size: cover;
   background-position: center;
   font-family: 'Ubuntu', sans-serif;
 }
 .loginbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
   width: 420px;
   height: 520px;
   background: #000;
   color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
   box-sizing: border-box;
+}
+.loginbox .space-force-plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  text-align: center;
+}
+.loginbox .space-force-plus .avatar {
+  width: 212px;
+  height: 212px;
+  border-radius: 50%;
+  order: 0;
+  align-self: center;
+}
+.space-force-heading {
+  padding: 5px;
+  font-size: 3rem;
+  color: #406A59;
+  order: -1;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  height: 167.2px;
+}
+form .login-button {
+  background-color: #406A59;
+  color: white;
+  padding: 5px 20px;
+  margin: 5px 10px 15px 10px;
+}
+form .login-button:hover {
+  background: white;
+  border: 1px solid #22283A;
+  color: #22283A;
+}
+form .user-input {
+  margin-bottom: 10px;
+}
+form .password-input {
+  margin-bottom: 10px;
+}
+form .account-links {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+form .lost-password {
+  padding-bottom: 10px;
+}
+form .lost-password:hover {
+  color: red;
+}
+form .account-links {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+form .lost-account {
+  padding-bottom: 10px;
+}
+form .lost-account:hover {
+  color: red;
+}
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 35px;
 }
