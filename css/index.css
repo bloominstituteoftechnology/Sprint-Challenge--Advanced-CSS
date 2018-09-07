@@ -165,6 +165,7 @@ p {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: space-around;
   background-color: #f6f6f6;
@@ -177,6 +178,7 @@ p {
   width: 60%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .navigation .links a {
   font-size: 1.6rem;
@@ -238,6 +240,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 1.8rem;
+  padding: 8px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
