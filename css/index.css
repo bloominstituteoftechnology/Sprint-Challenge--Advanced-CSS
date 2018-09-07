@@ -161,7 +161,9 @@ p {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1%;
+}
+.home img {
+  border-radius: 8px;
 }
 @media (max-width: 500px) {
   .home img {
