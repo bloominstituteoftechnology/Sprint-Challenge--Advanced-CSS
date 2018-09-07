@@ -164,9 +164,10 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 800px
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 10px;
+  background: gray;
 }
 .top-nav .top-img img {
   width: 100%;
@@ -182,6 +183,7 @@ p {
   text-decoration: none;
   font-size: 1.6rem;
   margin: 0 15px;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -228,8 +230,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
-    width: 90%;
-    margin-left: 10px;
+    width: 100%;
+    margin: 0 10px;
   }
 }
 .home .space-images img {
