@@ -5,3 +5,5 @@
 
 2.  Mobile first is an approach in which you start with the mobile design and then move through the viewport as it grows larger and the rest of the designs follow from that.  A desktop first approach is just the opposite.  In that approach you start with your design on the desktop and design the responsive aspects of the site as the viewport decreases in size, eventually finishing with the mobile design.  
 
+3.  This attribute and the value of 62.5% resets the root font size of the document so that the calculation between rems and px is quick and easy.  With that set as the root font size 10 px becomes equal to 1 rem.  So, a base font size of 1.60rem is now equal to 16px.
+
