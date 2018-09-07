@@ -1,5 +1,5 @@
-.signUpBtn (@color) {
-  .border-radius(5px);
+.signUpBtn (@color, @radius) {
+  .border-radius(@radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .btn {
-  .signUpBtn(@btn-bg-color);
+  .signUpBtn(@btn-bg-color, 5px);
 }
 
 .border-radius(@radius) {
