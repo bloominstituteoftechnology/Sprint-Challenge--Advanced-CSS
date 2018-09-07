@@ -1,1 +1,44 @@
 // Mixins Here
+.navi () {
+    padding-top: 20px;
+    width: 40%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.naviMobile () {
+    width: 85%;
+    justify-content: space-around;
+}
+
+.navi-text () {
+    font-size: 1.5rem;
+    // background-color: yellow;
+    text-decoration: none;
+}
+
+.button (@backgroundColor; @textColor; @radius) {
+    border: 1px solid @backgroundColor;
+    width: 30%;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 5px 0;
+    border-radius: @radius;
+    color: @textColor;
+    background-color: @backgroundColor;
+}
+
+.btnMobile {
+    width: 100%;
+    padding: 4%;
+}
+
+.remove-pic () {
+    .sky {
+        display: none;
+    }
+    .launch {
+        display: none;
+    }
+}

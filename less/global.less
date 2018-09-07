@@ -5,7 +5,6 @@
 
 html {
   font-size: 62.5%;
-  background-color: red;
 }
 
 html, body {
@@ -35,5 +34,9 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @mobile {
+    max-width: 500px;
+  }
 }
 

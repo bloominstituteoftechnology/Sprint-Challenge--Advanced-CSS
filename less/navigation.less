@@ -9,20 +9,22 @@
 
     h1 {
         font-size: 3.5rem;
+
+        @media @mobile {
+            font-size: 4rem;
+        }
     }
 
     nav {
         // background-color: aqua;
-        padding-top: 20px;
-        width: 40%;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-between;
+        .navi;
+
+        @media @mobile {
+            .naviMobile;
+        }
         
         a {
-            font-size: 1.5rem;
-            // background-color: yellow;
-            text-decoration: none;
+            .navi-text;
         }
     }
 }
