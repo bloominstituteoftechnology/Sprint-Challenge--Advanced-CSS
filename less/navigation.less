@@ -1,1 +1,25 @@
+
+
 // Navigation code here
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+    }
+    nav {
+        display: flex;
+        a {
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 1.5rem;
+            &:link, &:visited {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+}

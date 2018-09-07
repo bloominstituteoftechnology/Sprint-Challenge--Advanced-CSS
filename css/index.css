@@ -160,6 +160,27 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-nav h1 {
+  font-size: 4rem;
+}
+.main-nav nav {
+  display: flex;
+}
+.main-nav nav a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+.main-nav nav a:link,
+.main-nav nav a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
