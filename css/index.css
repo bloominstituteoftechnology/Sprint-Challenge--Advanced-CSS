@@ -335,3 +335,81 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.sign-in header {
+  margin: 20px 0;
+  border-bottom: 2px solid #F1F1F1;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .sign-in header {
+    margin-left: 3%;
+  }
+}
+.sign-in header h2 {
+  margin-left: 2%;
+  padding-top: 19px;
+}
+.sign-in .form-container {
+  border: 1px solid #F1F1F1;
+  border-radius: 9px;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+  padding-bottom: 0;
+  background-color: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .sign-in .form-container {
+    width: 93%;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+}
+.sign-in .form-container .helmet-icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.sign-in .form-container .helmet-icon img {
+  width: 30%;
+}
+.sign-in .form-container .form-group {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: column;
+}
+.sign-in .form-container .form-group label {
+  font-size: 2rem;
+  color: #23293B;
+  margin-bottom: 10px;
+}
+.sign-in .form-container .form-group input {
+  border: 1px solid #dee2e6;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 13px 2%;
+  font-size: 1.6rem;
+}
+.sign-in .form-container .form-group button {
+  width: 100%;
+  border: 2px solid #22283A;
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #22283A;
+  color: #F6F7F8;
+  margin-bottom: 20px;
+}
+.sign-in .form-container .form-group button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
