@@ -1,1 +1,32 @@
 // Navigation code here
+.main-navigation {
+  width: 100%;
+  background: @nav-bg;
+  border-bottom: 2px solid @nav-border;
+  //position: fixed;
+
+  .nav-container {
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-title {
+      font-size: 3rem;
+      padding-bottom: 2%;
+    }
+
+    .nav {
+      width: 300px;
+      display: flex;
+      justify-content: space-evenly;
+
+      a {
+        font-size: 1.4rem;
+        color: @nav-font;
+        text-decoration: none;        
+      }
+    }
+  }
+}
