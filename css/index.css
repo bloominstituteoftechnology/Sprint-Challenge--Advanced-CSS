@@ -332,3 +332,53 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.subscribe .subscribe-content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe .subscribe-content h1 {
+  font-size: 3.5rem;
+}
+.subscribe .subscribe-content .card {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0000ff;
+}
+.subscribe .subscribe-content .card1 {
+  background: #ff4141;
+}
+.subscribe .subscribe-content .card2 {
+  background: orange;
+}
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sign-in h1 {
+  font-size: 3.5rem;
+}
+.sign-in .log-in-container {
+  display: flex;
+  flex-direction: column;
+}
+.sign-in .log-in-container .login-input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid blue;
+  border-left: 1px solid blue;
+  margin-top: 20px;
+}
+.sign-in .log-in-container .login-submit {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  background: lightblue;
+  border-radius: 10px;
+}
