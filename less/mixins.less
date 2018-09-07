@@ -1,1 +1,44 @@
-// Mixins Here
+
+
+  // Mixins Here
+
+  .btn-maker() {
+    border: 1px solid @border-real;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    background: black;
+    color: whitesmoke;
+
+        &:hover {
+            background: black;
+            cursor: pointer;
+        }
+}
+.btn-maker-big() {
+    border: 1px solid @border-real;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 200px;
+    height: 35px;
+    padding: 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: black;
+    color: whitesmoke;
+
+        &:hover {
+            background: @border-real;
+            cursor: pointer;
+        }
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
