@@ -1,0 +1,5 @@
+1) Adaptive webstie uses media query for different view port while responsive use both percentage for the width and media query for the view ports
+2) To be mobile first is to develop webpage for mobile devices before desktop devices( using min width instead of max width). desktop first design the page to fit desktop view first then change it to fit mobile view.
+3) It gives a base of ten so that it is easier to caculate your rem. Rem gives your text elements in your page the ability to adjust to user setting
+4) Preprocessing take the grinding work out of the equation. It also make developers create less error and being quicker to fix any error. It also more intuitive to use and the code easier to read. But in the end, preprocessing still convert to css. 
+5) My favorite concept has to be nesting since it makes my code much easier to read and debug. I dont find any concept of preprocessing troublesome except maybe my forgetfulness to have to less watcher running before editing my code.
