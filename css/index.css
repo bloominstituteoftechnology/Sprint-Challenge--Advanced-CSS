@@ -161,10 +161,14 @@ p {
   margin: 0 auto;
 }
 .nav-header {
-  background: #f6f6f6;
-  border-bottom: #f1f1f1;
+  background: rgba(246, 246, 246, 0.9);
+  border-bottom: 2px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav-header .nav-bar {
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,7 +182,7 @@ p {
   justify-content: space-between;
   max-width: 376px;
   width: 80%;
-  margin: 6px 0 12px;
+  margin: 6px 0 10px;
 }
 .nav-header .nav-bar nav a {
   font-size: 1.6rem;
@@ -194,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;

@@ -1,7 +1,13 @@
 // Mixins Here
 .nav-style() {
   background: @nav-bg;
-  border-bottom: @nav-border;
+  border-bottom: 2px solid @nav-border;
+}
+
+.floating-nav() {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .nav-text() {
