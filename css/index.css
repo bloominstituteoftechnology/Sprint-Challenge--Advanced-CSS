@@ -170,6 +170,9 @@ a {
 }
 nav {
   background: #F6F6F6;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 nav .container.menu {
@@ -196,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro .atmosphere {
   border-radius: 5px;
