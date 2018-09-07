@@ -197,9 +197,10 @@ footer {
 }
 .home .intro .headerImage {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 15px 1.875%;
 }
 .home .intro p {
   padding: 0 15px;
@@ -216,7 +217,7 @@ footer {
   height: 100%;
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 15px 1.875%;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -227,7 +228,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 50px 7.5%;
   display: flex;
   justify-content: center;
 }
