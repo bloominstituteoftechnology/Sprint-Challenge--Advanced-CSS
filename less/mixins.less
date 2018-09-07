@@ -1,1 +1,21 @@
 // Mixins Here
+.rounded-edges {
+    border-radius: .5rem;
+}
+.font-color() {
+    color: @river-bend;
+}
+.button-mixin (@radius, @bg) {
+    border: 1px solid black;
+    border-radius: @radius;
+    font-size: 1.8rem;
+    background-color: @bg;
+    color: white;
+    padding: .5rem 0rem .5rem 0rem;
+    max-width: 30%;
+    text-align: center;
+        &:hover {
+            background: white;
+            color: black;
+        }
+}
