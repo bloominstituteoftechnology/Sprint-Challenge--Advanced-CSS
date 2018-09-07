@@ -163,6 +163,7 @@ p {
 }
 .navigation {
   width: 100%;
+  background-color: #F6F6F6;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -172,8 +173,8 @@ p {
 .navigation div {
   width: 50%;
   max-width: 800px;
-  margin: 10px auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 10px 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -181,11 +182,11 @@ p {
   align-items: center;
 }
 .navigation div h2 {
-  width: 95%;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px 0;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 .navigation div a {
@@ -198,6 +199,9 @@ p {
   text-decoration: none;
   color: #454A59;
 }
+.navigation div a:hover {
+  color: #81848E;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -208,11 +212,29 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  padding: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .home .space-images {
   display: flex;
@@ -249,6 +271,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #454A59;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;

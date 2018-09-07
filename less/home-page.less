@@ -3,7 +3,7 @@
 .home {
 
   .intro {
-
+    .elementAlignment(0 auto, 20px 0, 100%);
     h2 {
       padding: 15px;
     }
@@ -11,7 +11,10 @@
     p {
       padding:0 15px;
     }
-  
+    img{
+      .elementAlignment(0 auto 10px auto, 0, 100%);
+      .border-radius(10px);
+    }
   }
 
   .space-images {
@@ -58,6 +61,17 @@
       }
 
       .btn {
+        .customButton(
+          @btn-color, 
+          @btn-font-color, 
+          50%, 
+          10px 0, 
+          5px, 
+          @btn-hover-bg, 
+          @btn-hover-color);
+          
+        font-size: 1.8rem;
+        text-align: center;
       }
     }
 

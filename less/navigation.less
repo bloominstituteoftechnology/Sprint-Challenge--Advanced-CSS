@@ -2,15 +2,16 @@
 
 .navigation{
     width: @100percent;
+    background-color: @nav-bg;
     .flexMixin(row, nowrap, center, center, center);
 
     div {
-        .elementAlignment(10px auto, 0, 50%);
+        .elementAlignment(0 auto, 10px 0, 50%);
         .flexMixin(row, wrap, space-evenly, center, center);
 
         h2{
-            .elementAlignment(0 auto, 20px 0, 95%);
-            font-size: 5rem;
+            .elementAlignment(0 auto, 20px 0, 100%);
+            font-size: 4rem;
             text-align: center;
         }
     
@@ -22,7 +23,7 @@
             color: @nav-font;
 
             &:hover{
-    
+                color: @waterloo;
             }
         }
 

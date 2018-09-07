@@ -2,7 +2,7 @@
 
 
 //control border radius
-.border-radius (@radius: 5px) {
+.border-radius(@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius:    @radius;
 	border-radius:         @radius;
@@ -14,11 +14,14 @@
 
 //flexbox mixin
 .flexMixin(
+
     @flxDirection: row, 
     @flxWrap: nowrap, 
     @flxJustify: flex-start, 
     @flxContent: stretch,  
-    @flxItems: stretch){
+    @flxItems: stretch
+    
+    ){
 
         display: flex;
         flex-flow: @flxDirection @flxWrap; 
@@ -29,17 +32,26 @@
 
 //custom button mixin
 .customButton( 
+
     @btnBackground, 
     @btnColor, 
     @btnWidth: @100percent, 
     @btnPadding: 0,  
-    @btnBordrRadius: .border-radius()){
+    @btnBordrRadius: .border-radius(),
+    @btnHoverBG,
+    @btnHoverColor
+    ){
 
         width: @btnWidth;
         padding: @btnPadding;
         border-radius: @btnBordrRadius;
         background-color: @btnBackground;
         color: @btnColor;
+
+        &:hover{
+            background-color: @btnHoverBG;
+            color: @btnHoverColor;
+        }
 }
 
 //html elements alignment mixin
