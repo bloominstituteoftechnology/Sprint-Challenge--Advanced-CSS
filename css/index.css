@@ -161,7 +161,6 @@ p {
   margin: 0 auto;
 }
 .main-nav {
-  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
@@ -184,7 +183,8 @@ p {
   text-align: center;
   display: flex;
   justify-content: space-around;
-  padding: 19px 23% 10px 25%;
+  max-width: 800px;
+  margin: 12px auto;
 }
 @media (max-width: 500px) {
   .main-nav header nav {
@@ -211,13 +211,20 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro #intro-img {
+  width: 100%;
+  background-image: url('../img/main-header.png');
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
 .home .intro img {
   border-radius: 6px;
   width: 100%;
 }
 @media (max-width: 500px) {
   .home .intro img {
-    width: 100%;
     padding-bottom: 3px;
   }
 }
