@@ -273,19 +273,14 @@ footer {
   padding: 13px 5%;
   text-align: center;
 }
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background: white;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     max-width: 100%;
   }
-}
-.home .walk .walk-text .btn:hover {
-  background: white;
-  border-radius: 5px;
-  color: black;
-  font-size: 2rem;
-  max-width: 40%;
-  padding: 13px 5%;
-  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
