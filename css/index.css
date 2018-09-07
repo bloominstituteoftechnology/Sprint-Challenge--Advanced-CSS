@@ -175,7 +175,7 @@ p {
     opacity: 1;
   }
   28% {
-    opacity: 0;
+    opacity: 0.18;
   }
   50% {
     opacity: 0.91;
@@ -191,9 +191,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 770px;
+  max-width: 100%;
   margin: 0 auto;
-  margin-top: 13px;
+  padding-top: 13px;
+  background-color: lightgrey;
 }
 @media (max-width: 500px) {
   .main-nav {
@@ -279,6 +280,13 @@ footer {
   100% {
     transform: rotate(2520deg);
   }
+}
+.home .sky-blue-wrapper {
+  background-image: url("../img/main-header.png");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 500px) {
   .home {
@@ -403,8 +411,8 @@ footer {
   background: white;
   border: 1px solid #22283A;
   color: #22283A;
-  animation-name: turbineAnim;
-  animation-duration: 5s;
+  animation-name: flashAnim;
+  animation-duration: 1s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -422,8 +430,8 @@ footer {
     background: white;
     border: 1px solid #22283A;
     color: #22283A;
-    animation-name: turbineAnim;
-    animation-duration: 5s;
+    animation-name: flashAnim;
+    animation-duration: 1s;
   }
 }
 .home .walk .walk-img {
