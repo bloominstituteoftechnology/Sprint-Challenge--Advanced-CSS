@@ -162,7 +162,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  border: 1px solid red;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
@@ -256,6 +255,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 37%;
+  border: 2px solid #22283A;
+  border-radius: 5px;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #22283A;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
