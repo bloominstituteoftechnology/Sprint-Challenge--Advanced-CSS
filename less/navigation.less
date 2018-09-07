@@ -1,7 +1,7 @@
 // Navigation code here
 nav{
 .nav-colors;
-padding: 20px 0;
+padding: 2rem 0;
 display: flex;
 flex-flow: column wrap;
 justify-content: center;
@@ -9,6 +9,10 @@ align-items: center;
 font-family: 'Russo One', sans-serif;
 color: @header-font-color;
 font-size: 3.2rem;
+
+@media @mobile{
+    padding:2rem 0 .2rem 0;
+}
 
 .menu{
     
@@ -23,8 +27,11 @@ font-size: 3.2rem;
         text-decoration: none;
         color: @main-font-color;
         padding:1rem;
-        
-
+        display:flex;
+        @media @mobile{
+            font-size:1.3rem;
+            font-weight: bold;
+         }
     }
 }
 }
