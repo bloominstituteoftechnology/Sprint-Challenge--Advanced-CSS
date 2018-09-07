@@ -160,6 +160,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-links {
+  background: lightgrey;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links nav a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Russo One', sans-serif;
+  font-size: 20px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
