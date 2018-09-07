@@ -3,21 +3,19 @@
     width: 100%;
     height: 100px;
     background-color: @nav-bg;
-    border-bottom: 2px solid @nav-border;
+    .custom-border;
 
     .nav-container {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid red;
         flex-wrap: wrap;
 
 
         h1 {
             font-size: 4rem;
             display: block-inline;
-            border: 1px solid green;
             margin: 1% 48%;
             color: @header-font-color
         }
@@ -25,7 +23,6 @@
         nav {
             font-size: 1.5rem;
             display: block-inline;
-            border: 1px solid blue;
             width: 380px;
     
             a {
