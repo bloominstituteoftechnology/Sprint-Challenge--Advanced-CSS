@@ -1,8 +1,7 @@
 // Mixins Here
 
-.flex(@direction, @justify, @align) {
+.flex(@justify, @align) {
     display: flex;
-    flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
@@ -15,4 +14,9 @@
     padding: 5px 20px;
     font-size: 2.2rem;
     border-radius: 5px;
+}
+
+.mobileFlex(@direction) {
+    display: flex;
+    flex-direction: @direction;
 }

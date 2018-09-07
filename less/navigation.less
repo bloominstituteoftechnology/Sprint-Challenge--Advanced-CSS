@@ -2,8 +2,13 @@
     color: @river-bend;
     background: @wild-sand;
     border: 1px solid @sea-shell;
+
+    @media @phone {
+        background: none;
+        border: none;
+    }
     .title {
-        .flex(row, center, center);
+        .flex(center, center);
         h1 {
             font-size: 4rem;
             margin: 20px 0;
