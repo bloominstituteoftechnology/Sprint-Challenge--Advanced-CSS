@@ -164,6 +164,10 @@ p {
   background: #F6F6F6;
   font-size: 1.6rem;
   border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.95;
 }
 .main-nav .container {
   display: flex;
@@ -202,6 +206,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  margin-top: 100px;
   border-radius: 5px;
   width: 100%;
 }
@@ -308,6 +313,14 @@ footer {
   color: #22283A;
   background: white;
   border: 1px solid #22283A;
+  transition: 0.4s;
+}
+.home .walk .walk-text .btn a {
+  color: white;
+  text-decoration: none;
+}
+.home .walk .walk-text .btn a:hover {
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -329,4 +342,73 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup img {
+  margin-top: 100px;
+}
+.signup h2 {
+  padding: 15px;
+}
+.signup p {
+  padding: 15px;
+}
+.signup form {
+  background: #23293B;
+  padding: 50px 80px;
+  width: 60%;
+  margin: 40px auto;
+}
+.signup form p {
+  color: #F6F6F6;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.signup form h3 {
+  color: #81848E;
+  margin: 10px 0;
+}
+.signup form input {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 1.6rem;
+}
+.signup form .btn {
+  margin: 15px auto 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #22283A;
+  background: white;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  width: 100px;
+  cursor: pointer;
+}
+.signup form .btn:hover {
+  color: #22283A;
+  background: #22283A;
+  border: 1px solid white;
+  transition: 0.4s;
+}
+.signup form .btn:hover {
+  color: white;
+}
+.signup form .btn:active {
+  background: black;
+}
+.signup form .btn a {
+  color: white;
+  text-decoration: none;
+}
+.signup form .btn a:hover {
+  color: white;
+}
+@media (max-width: 500px) {
+  .signup form .btn {
+    width: 100%;
+    padding: 25px;
+  }
 }

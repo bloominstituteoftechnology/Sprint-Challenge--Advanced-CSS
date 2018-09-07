@@ -5,6 +5,7 @@
   .intro {
 
     img {
+      margin-top: 100px;
       border-radius: 5px;
       width: 100%;
     }
@@ -101,6 +102,15 @@
 
       .btn {
         .btn(white, @btn-bg-color);
+        
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            color: @btn-bg-color;
+          }
+        }
 
         @media @phone {
           .stretch-x();
@@ -126,3 +136,73 @@
     }
   }
 }// home
+
+
+// Sign up
+.signup {
+
+  img {
+    margin-top: 100px;
+  }
+
+  h2 {
+    padding: 15px;
+  }
+
+  p {
+    padding: 15px;
+  }
+
+  form {
+    // border-top: 1px solid @border-real;
+    background: @ebony-clay;
+    padding: 50px 80px;
+    width: 60%;
+    margin: 40px auto;
+
+    p {
+      color: @wild-sand;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    h3 {
+      color: @waterloo;
+      margin: 10px 0;
+    }
+
+    input {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 5px 15px;
+      font-size: 1.6rem;
+    }
+    .btn {
+      margin: 15px auto 0;
+      .btn(@btn-bg-color, white);
+
+      &:hover {
+        color: white;
+      }
+
+      &:active {
+        background: black;
+      }
+      
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      @media @phone {
+        .stretch-x();
+        padding: 25px;
+      }
+    }
+  }
+
+
+}
