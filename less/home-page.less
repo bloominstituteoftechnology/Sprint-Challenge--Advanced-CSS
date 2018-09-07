@@ -9,6 +9,10 @@
     img{
       width:100%;
       .border-radius(10px);
+
+      @media @phone {
+        .border-radius(5px);
+      }
     }
 
     h2 {
@@ -36,6 +40,8 @@
         align-items: center;
         width: 95%;
         padding: 0 2%;
+        .border-radius(25px);
+       
       }
     }
 
@@ -69,9 +75,19 @@
     padding: 50px 60px;
     .flex-center();
 
+
+    @media @phone {
+      flex-flow:column wrap;
+      padding: 20px 2%;
+      
+    }
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        padding: 2%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -88,6 +104,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        order: -2;
+        width: 95%;
+      }
       
       img {
         width: 100%;
