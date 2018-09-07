@@ -180,9 +180,21 @@ p {
   flex-direction: row;
   width: 420px;
 }
+@media (max-width: 500px) {
+  .nav-bar nav {
+    width: 80%;
+  }
+}
 .nav-bar nav .nav-element {
+  min-width: 80px;
+  text-align: center;
   padding-bottom: 8px;
   border-bottom: 1px solid #F6F6F6;
+}
+@media (max-width: 500px) {
+  .nav-bar nav .nav-element {
+    min-width: 50px;
+  }
 }
 .nav-bar nav .nav-element a {
   margin: 0 0.5%;
