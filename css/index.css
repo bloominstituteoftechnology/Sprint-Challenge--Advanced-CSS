@@ -184,7 +184,7 @@ p {
   font-family: #454A59;
 }
 footer {
-  color: #22283B;
+  color: #81848E;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -238,6 +238,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: white;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 2rem;
+  padding: 2%;
 }
 .home .walk .walk-img {
   width: 46%;
