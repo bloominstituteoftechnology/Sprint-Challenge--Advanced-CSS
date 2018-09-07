@@ -162,8 +162,10 @@ p {
 }
 .navigation {
   border-bottom: 1px solid #F1F1F1;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.9);
   height: 100px;
+  position: fixed;
+  width: 100%;
 }
 .navigation div {
   display: flex;
@@ -208,6 +210,7 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  margin-top: 100px;
 }
 @media (max-width: 500px) {
   .home .intro img {
