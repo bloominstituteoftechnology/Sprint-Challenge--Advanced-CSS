@@ -340,6 +340,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .subscription form {
+  width: 50%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
@@ -349,6 +350,16 @@ footer {
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
+}
+.home .subscription form .state-zip {
+  display: flex;
+}
+.home .subscription form .state-zip input {
+  width: 155px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  justify-self: flex-start;
 }
 .home .subscription .btn {
   border-radius: 5px;
