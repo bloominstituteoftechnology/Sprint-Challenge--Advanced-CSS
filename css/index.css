@@ -336,7 +336,7 @@ footer {
 }
 @media ( max-width: 500px ) {
   .home .subscription {
-    width: 90%;
+    width: 100%;
   }
 }
 .home .subscription h3 {
