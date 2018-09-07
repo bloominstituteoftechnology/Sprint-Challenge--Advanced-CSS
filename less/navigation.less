@@ -1,1 +1,30 @@
 // Navigation code here
+header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h1{
+        width:60%;
+        text-align: center;
+        margin: 10px;
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        width: 43%;
+        margin-top:5px;
+        margin-bottom: 10px;
+        @media @phone{
+            width:70%;
+        }
+        a{
+            font-size: 1.6rem;
+            text-decoration: none;
+            color:black;
+            &:hover{
+                text-decoration: underline;
+                color:blue;
+            }
+        }
+    }
+}
