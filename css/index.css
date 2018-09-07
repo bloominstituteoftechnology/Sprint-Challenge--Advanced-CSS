@@ -303,7 +303,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text .btn:hover {
     background-color: white;
-    width: 75px;
+    width: 100%;
     border-radius: 5px;
     color: black;
     height: 30px;
