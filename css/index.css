@@ -145,6 +145,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+body {
+  background-image: url("../img/space.jpg");
+}
 h1,
 h2,
 h3,
@@ -167,6 +170,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 .navbar {
   display: flex;
@@ -180,12 +184,13 @@ p {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+  background: #bfbfbf;
 }
 .navbar h1 {
   font-size: 3.2rem;
   margin: 2% 0;
   transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 .navbar h1:hover {
   transform: rotateY(360deg);
@@ -203,10 +208,8 @@ p {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #bfbfbf;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,10 +219,15 @@ footer {
   animation-fill-mode: forwards;
   animation-delay: 6s;
   transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 footer:hover {
   transform: rotateY(360deg);
+}
+@media (max-width:500px) {
+  footer {
+    background: gray;
+  }
 }
 .home .intro {
   opacity: 0;
@@ -227,6 +235,7 @@ footer:hover {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
+  background: #bfbfbf;
 }
 .home .intro h2 {
   padding: 15px;
@@ -252,6 +261,7 @@ footer:hover {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 3s;
+  background: #bfbfbf;
 }
 .home .space-images img {
   width: 28%;
@@ -282,6 +292,7 @@ footer:hover {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 4s;
+  background: #bfbfbf;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -290,7 +301,6 @@ footer:hover {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
@@ -300,6 +310,7 @@ footer:hover {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 5s;
+  background: #bfbfbf;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -321,7 +332,7 @@ footer:hover {
   align-items: center;
   justify-content: center;
   transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 3s;
 }
 .home .walk .walk-text .btn:hover {
   transform: rotateY(360deg);
@@ -339,7 +350,6 @@ footer:hover {
   .home .walk {
     flex-direction: column-reverse;
     justify-content: flex-start;
-    margin-top: 2%;
     padding: 5%;
   }
   .home .walk .walk-img {
