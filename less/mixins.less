@@ -1,1 +1,30 @@
 // Mixins Here
+
+// centers horizontally and vertically
+.center-all(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// button with defined size, parameters select font and backgroun color
+.custom-button(@color, @background) {
+    
+    font-size: 1.8rem;
+    border-radius: 5px;
+    padding: 9px 19px;
+    width: 100px;
+    color: @color;
+    background: @background;
+
+    &:hover {
+        color: @background;
+        background: @color;
+    }
+}
+
+//sets width and height of element in one line
+.width-height(@width, @height){
+    width: @width;
+    height: @height;
+}
