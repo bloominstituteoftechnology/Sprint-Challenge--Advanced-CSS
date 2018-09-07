@@ -10,6 +10,9 @@
     padding-bottom: 10px;
     border-bottom: 2px solid @sea-shell;
     background-color: @nav-bg;
+    animation-name: navanimation;
+    animation-duration: 4s;
+
 
     h1 {
         font-size: 4.4rem;
@@ -28,12 +31,23 @@
 
     a {
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: @river-bend;
 
         &:hover{
             color: @shuttle-gray;
         }
+    }
+
+    @media @mobile {
+
+        padding-bottom: 0px;
+        border-bottom: none;
+
+        nav{
+            width: 80%;
+            padding-bottom: 15px;
+        }           
     }
 
 }
