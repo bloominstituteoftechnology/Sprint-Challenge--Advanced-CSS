@@ -160,25 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.navbar {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
   align-items: center;
+  animation: opacity1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
-header h1 {
+.navbar h1 {
   font-size: 3.2rem;
   margin: 2% 0;
 }
-header nav {
+.navbar nav {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   margin: 2% 0;
 }
-header nav a {
+.navbar nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -219,9 +222,11 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-.home .space-images .blast {
-  width: 90%;
-  margin: 20px auto;
+@media (max-width:500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 @media (max-width:500px) {
   .home .space-images .sky {
