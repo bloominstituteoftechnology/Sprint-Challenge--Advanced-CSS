@@ -1,0 +1,9 @@
+1. Adaptive websites rely entirely on break points for compatibility with different viewports. This can be useful if you want strict control over how your website displays but may come with compromises like horizontal scroll bars and sub optimal user experience on viewports just above a break point. Fully responsive websites rely on percentage based measurments in addition to break points so that the content scales with the size of the viewport between preakpoints. This can eliminate side-scrolling but can also cause layout issues if breakpoints are too far apart.
+
+2. Mobile-first designs start with the mobile view as the main styling. Break points occur for increases in resolution and min-width values are used for media queries. This is opposed to desktop-first designs where the desktop view is the starting point and break points are added for lower resolutions with max-width media queries. The dicision about when to use which depends on the intended purpose of the app but you can achieve the same results either way.
+
+3. `font-size 62.5%` allows you to use simpler, base ten intagers for `rem` font size units. since the default font size in most browsers is 16px, adding this to the `html` tag converts the default size to 10px and allows you to convert your rem sizes to pixels simply by moving the decimal.
+
+4. Preprocessing allows you to write and edit CSS in a format that is more readable while providing added functionality like variables, mixins and imports to better organize the styling. But it just compiles down to regular CSS.
+
+5. Mixins are my jam. I like the idea of being able to make styling completely modular. The thing I've had the most trouble with is puttin media queries in the right spots.
