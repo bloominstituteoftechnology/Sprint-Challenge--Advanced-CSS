@@ -1,3 +1,7 @@
+.centerItem {
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,6 +200,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -237,6 +244,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  background-color: black;
+  width: 75px;
+  border-radius: 5px;
+  color: white;
+  height: 30px;
+  font-size: 1.6rem;
+  justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-img {
   width: 46%;

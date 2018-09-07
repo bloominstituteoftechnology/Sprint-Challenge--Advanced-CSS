@@ -3,7 +3,9 @@
 .home {
 
   .intro {
-
+    img{
+      .customBorderRadius(5px);
+    }
     h2 {
       padding: 15px;
     }
@@ -22,7 +24,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .customBorderRadius(20px);
       height: 100%;
     }
   }
@@ -58,6 +60,9 @@
       }
 
       .btn {
+        display:flex;
+        .customButton(black, 5px, 75px,white,30px);
+        .centerItem();
       }
     }
 
@@ -68,7 +73,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .customBorderRadius(10px);
       }
     }
   }
