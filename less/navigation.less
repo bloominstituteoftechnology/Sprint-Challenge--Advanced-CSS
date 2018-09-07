@@ -1,8 +1,14 @@
 // Navigation code here
-
-.nav-bar {
-    .centered-column();
+.nav-box {
     background-color: @nav-bg;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .nav-bar {
+        .centered-column();
+        max-width: 500px;
+        width: 100%;
 
     h1 {
         font-size: 5rem;
@@ -10,12 +16,20 @@
     }
 
     nav {
+        width: 100%;
         margin: 10px 0px;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media @phone {
+            padding: 0px 5%;
+        }
+
         a {
             font-size: 1.6rem;
             text-decoration: none;
             color: @nav-font;
-            margin: 20px;
         }
+    }
     }
 }
