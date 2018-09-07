@@ -1,7 +1,5 @@
 // Navigation code here
 
-// Navigation Styles here
-
 .topnav {
   h1 {
     font-size: 3.9rem;
@@ -13,30 +11,25 @@
   align-items: center;
   padding-bottom:0px;
 
-  //@media @phone {
-   // flex-direction:column;
-    //margin-bottom: 0px;
-  //}
-
-  //h1 {
-  //  color: black;
-  //}
+  @media @phone {
+    h1 {
+      font-size:4.25rem;
+    }
+  }
 
   nav {
     a {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       text-decoration: none;
       color: black;
     }
-    //@media @phone {
-    //  width: 100%;
-    //}
     width: 50%;
     margin-top:20px;
     display:flex;
     justify-content:space-around;
-    
-    //}
+    @media @phone {
+      width: 90%;
+    }
   }
 }
 
