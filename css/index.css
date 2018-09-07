@@ -160,12 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+section {
   display: flex;
   width: 800px;
-  border: 1px solid maroon;
 }
-header nav {
+section nav {
   align-self: center;
 }
 footer {
