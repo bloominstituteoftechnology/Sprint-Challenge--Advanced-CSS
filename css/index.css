@@ -169,8 +169,11 @@ p {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  max-width: 800px;
-  margin: 12.5px auto;
+  position: fixed;
+  margin: 0 auto;
+  padding: 12.5px 0;
+  background: #F6F6F6;
+  opacity: 0.8;
 }
 .navigation h1 {
   margin-bottom: 20px;
@@ -205,6 +208,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 101px;
 }
 .home .intro img {
   width: 100%;
