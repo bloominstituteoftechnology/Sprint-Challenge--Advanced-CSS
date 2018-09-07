@@ -242,9 +242,15 @@ footer {
   color: white;
   text-align: center;
   background: #23293B;
-  padding: 8px 0 8px;
+  padding: 7px 0 7px;
   width: 100px;
+  border: 1px solid #23293B;
   border-radius: 5px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: #23293B;
+  background: white;
 }
 .home .walk .walk-img {
   width: 46%;
