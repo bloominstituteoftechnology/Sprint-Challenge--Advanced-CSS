@@ -18,6 +18,24 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile {
+      display: flex;
+      flex-flow: column wrap;
+
+      .blast {
+        width: 95%;
+        padding-right: 0;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       .space-imgs();
     }
@@ -42,8 +60,21 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      padding: 20px;
+    }
+
     .walk-text {
       width: 50%;
+      @media @mobile {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        order: 1;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -55,12 +86,24 @@
 
       .btn {
         .custom-button(black, white);
+        width: 100px;
+        @media @mobile {
+          order: 2;
+          align-self: center;
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        order: 0;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+      }
 
       img {
         width: 100%;
