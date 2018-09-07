@@ -1,1 +1,16 @@
-// Navigation code here
+.nav-bar {
+    background: whitesmoke;
+    padding: 20px;
+    .flex(space-between, center, column);
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    nav {
+        .flex(space-between, center, row);
+        min-width: 480px;
+        a {
+            .navLinks(100%);
+        }
+    }
+}

@@ -1,1 +1,28 @@
 // Mixins Here
+// justifyAlign
+// img mixin: width, height, border-radius
+// button mixin
+
+.flex(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.navLinks(@width) {
+    margin: 0 1%;
+    width: @width;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.imgs(@width, @height, @radius) {
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+}
+
