@@ -167,6 +167,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
+  width: 100%;
   text-align: center;
 }
 .navigation .container h1 {
@@ -195,6 +197,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -204,6 +209,8 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
   width: 100%;
 }
 .home .space-images img {
