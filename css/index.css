@@ -191,7 +191,7 @@ p {
 .header .nav nav a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #454A59;
+  color: gray;
   padding: 10px 0;
 }
 footer {
