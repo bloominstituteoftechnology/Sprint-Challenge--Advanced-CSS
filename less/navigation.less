@@ -4,20 +4,14 @@
     flex-flow: column;
     align-items: center;
     background-color: @nav-bg;
+    margin: 0 10%;
+    padding-bottom:1%;
     h1 {
         font-size: 4rem;
         padding: 1%;
     }
     nav {
-        display:flex;
-        width: 30%;
-        justify-content: space-between;
-        a {
-            font-size: 1.5rem;
-            text-decoration: none;
-            font-family: @nav-font;
-            color: @header-font-color;
-            padding: 2%;
+        .navigation(@header-font-color, @nav-font)
         }
-    }
+    
 }
