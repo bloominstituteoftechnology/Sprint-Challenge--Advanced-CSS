@@ -173,12 +173,14 @@ p {
   text-align: center;
   margin-bottom: 15px;
 }
-.nav-container .nav {
-  width: 100%;
+.nav-container nav {
   display: flex;
-  justify-content: space-around;
+  width: 350px;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  margin-left: 220px;
 }
-.nav-container .nav a {
+.nav-container nav a {
   color: #454A59;
   text-decoration: none;
 }
