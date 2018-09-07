@@ -1,1 +1,43 @@
 // Navigation code here
+
+.nav {
+    .flex(column,nowrap,center,center);
+    padding: 13px 0 11px;
+    width: 100%;
+    background: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    
+    .logo {
+        .link-styling;
+        font-size: 4rem;
+        font-family: @header-font;
+    }
+
+    nav {
+        .flex(row,wrap,space-evenly,center);
+        padding-top: 19px;
+        width: 29%;
+
+        a { 
+            .link-styling;
+            font-size: 1.6rem;
+        }
+    }
+
+    // @media @mobile {
+    //     .flex(column,nowrap,center,center);
+    //     position: relative;
+    //     padding: 18px 0 9px;
+
+    //     .logo {
+    //         font-size: 3rem;
+    //         padding-bottom: 15px;
+    //     }
+
+    //     nav {
+    //         margin-right: 0;
+    //         width: 95%;		
+    //     }
+    // } // header mobile media query end
+
+}
