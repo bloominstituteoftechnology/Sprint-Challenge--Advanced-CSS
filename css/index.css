@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background-color: #F6F6F6;
+}
+.navigation .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.navigation .container h1 {
+  font-size: 4rem;
+  margin: 1.3rem 0;
+  width: 100%;
+}
+.navigation .container .nav-list {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0 12px;
+}
+.navigation .container .nav-list a,
+.navigation .container .nav-list a:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
