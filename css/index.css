@@ -163,7 +163,7 @@ p {
 .nav-header {
   background: rgba(246, 246, 246, 0.9);
   border-bottom: 2px solid #f1f1f1;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -198,9 +198,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home {
-  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;
