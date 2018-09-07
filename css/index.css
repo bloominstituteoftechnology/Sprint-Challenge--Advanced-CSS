@@ -256,6 +256,10 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
+.home .walk .walk-text .btn:hover {
+  background: teal;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
