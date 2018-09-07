@@ -164,13 +164,12 @@ p {
   width: 100%;
   height: 100px;
   background-color: #F6F6F6;
-  color: #23293B;
 }
 .main-navigation .nav-container h1 {
   font-size: 4rem;
+  color: #23293B;
   padding: 12px 0 20px;
   text-align: center;
-  color: red;
 }
 .main-navigation .nav-container .nav {
   display: flex;
@@ -179,7 +178,7 @@ p {
 }
 .main-navigation .nav-container .nav a {
   font-size: 1.6rem;
-  color: red;
+  color: #454A59;
   text-decoration: none;
 }
 footer {
@@ -233,6 +232,26 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  width: 100px;
+  height: 35px;
+  background-color: #22283A;
+  border: 1px solid #22283A;
+  color: #F6F7F8;
+  font-size: 2rem;
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+.home .walk .walk-text .sign-up-btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

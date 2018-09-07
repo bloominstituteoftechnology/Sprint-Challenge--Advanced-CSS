@@ -1,3 +1,41 @@
-.scooby() {
+//  Mixins
+
+// Used for Debugging to highlight current item
+.scooby() {  
   border: 1px solid red;
 }
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justified-center() {
+  display: flex;
+  justify-content: center;
+}
+
+.size-color-font(@size, @color) {
+  font-size: @size;
+  color: @color;
+}
+
+.border-radius(@radius-ems) {
+  -webkit-border-radius: @radius-ems;
+     -moz-border-radius: @radius-ems;
+          border-radius: @radius-ems;
+}
+
+.btn-mkr(@width, @height, @bg, @color, @font-size) {
+  .center();
+  .border-radius(.2em);
+  width: @width;
+  height: @height;
+  background-color: @bg;
+  border: 1px solid @bg;
+  color: @color;
+  font-size: @font-size;
+  cursor: pointer;
+}
+
