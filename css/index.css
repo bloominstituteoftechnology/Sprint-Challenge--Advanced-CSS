@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
   color: #5E6164;
 }
 h1,

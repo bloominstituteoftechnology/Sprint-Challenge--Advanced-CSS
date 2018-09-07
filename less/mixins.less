@@ -1,1 +1,33 @@
 // Mixins Here
+
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.flexMixin(@flxDirection: row, @flxWrap: nowrap, @flxJustify: flex-start, 
+@flxContent: stretch,  @flxItems: stretch){
+   display: flex;
+   flex-flow: @flxDirection @flxWrap; 
+   justify-content: @flxJustify;
+   align-content: @flxContent; 
+   align-items: @flexItems;
+}
+
+.customButton( 
+    @btnBackground, 
+    @btnColor, 
+    @btnWidth: @100percent, 
+    @btnPadding: 0,  
+    @btnBordrRadius: .border-radius()){
+        
+        width: @btnWidth;
+        padding: @btnPadding;
+        border-radius: @btnBordrRadius;
+        background-color: @btnBackground;
+        color: @btnColor;
+}
