@@ -2,12 +2,21 @@
 
 // Mixins Here
 
+.plain-text() {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gentle-border() {
+    border-radius: 0.5rem;
+}
+
 .button(@background: @btn-bg-color, @foreground: @wild-sand) {
     background: @background;
     color: @foreground;
-    border-radius: 0.5rem;
     border: solid 1px @background;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.6rem;
+    .gentle-border;
     &:hover {
         background: @foreground;
         color: @background;
