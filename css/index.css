@@ -331,6 +331,11 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 15px;
 }
+@media ( max-width: 500px ) {
+  .home .subscription {
+    width: 90%;
+  }
+}
 .home .subscription h3 {
   align-self: flex-start;
   margin-bottom: 10px;
@@ -345,8 +350,13 @@ footer {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+@media ( max-width: 500px ) {
+  .home .subscription form {
+    width: 100%;
+  }
+}
 .home .subscription form input {
-  width: 400px;
+  width: 420px;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
@@ -355,7 +365,7 @@ footer {
   display: flex;
 }
 .home .subscription form .state-zip input {
-  width: 155px;
+  width: 165px;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;

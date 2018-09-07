@@ -125,6 +125,10 @@
     align-items: center;
     border-top: 1px solid @main-border-color;
     padding: 15px;
+
+    @media @phone {
+      width: 90%;
+    }
     h3{
       align-self: flex-start;
       margin-bottom: 10px;
@@ -139,22 +143,28 @@
       font-size: 1.6rem;
       line-height: 1.4;
 
+      @media @phone{
+        width: 100%;
+      }
+
       input{
-        width: 400px;
+        width: 420px;
         padding: 5px;
         margin: 10px;
         border-radius: 5px;
+
       }
 
       .state-zip {
         display: flex;
 
         input{
-          width: 155px;
+          width: 165px;
           padding: 5px;
           margin: 10px;
           border-radius: 5px;
           justify-self: flex-start;
+
         }
       }
 
