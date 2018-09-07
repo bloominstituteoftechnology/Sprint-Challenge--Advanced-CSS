@@ -161,8 +161,9 @@ p {
   margin: 0 auto;
 }
 .nav-bar {
-  background: whitesmoke;
+  background: #F6F6F6;
   padding: 20px 0 10px;
+  border: 1px solid #F1F1F1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -179,7 +180,11 @@ p {
   flex-direction: row;
   width: 420px;
 }
-.nav-bar nav a {
+.nav-bar nav .nav-element {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #F6F6F6;
+}
+.nav-bar nav .nav-element a {
   margin: 0 0.5%;
   width: 100%;
   text-decoration: none;
@@ -187,6 +192,19 @@ p {
   text-align: center;
   cursor: pointer;
   font-size: 1.6rem;
+  color: #454A59;
+}
+.nav-bar nav .nav-element:hover {
+  animation: border-animation;
+  animation-duration: 1s;
+}
+@keyframes border-animation {
+  from {
+    border-bottom: 1px solid #F6F6F6;
+  }
+  to {
+    border-bottom: 1px solid #454A59;
+  }
 }
 footer {
   color: #22283B;
@@ -313,6 +331,7 @@ footer {
   font-size: 16px;
 }
 .home .btn {
+  margin-top: 10px;
   width: 100px;
   background: #23293B;
   color: white;
