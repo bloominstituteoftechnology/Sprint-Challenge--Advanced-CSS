@@ -240,7 +240,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .btn a {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 7px;
@@ -248,11 +248,16 @@ footer {
   line-height: 1.5;
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #F6F7F8;
   background-color: #22283A;
   border-radius: 10px;
   text-align: center;
+  text-decoration: none;
   width: 30%;
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
