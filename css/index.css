@@ -243,3 +243,24 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .walk .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px 0px;
+}
+.home .walk .btn:hover {
+  background-color: lightblue;
+  color: black;
+}
