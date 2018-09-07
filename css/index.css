@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.nav-wrapper h1 {
+  font-size: 4rem;
+}
+.nav-wrapper nav {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  width: 42.5%;
+  justify-content: space-between;
+}
+.nav-wrapper a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: #454A59;
+  color: #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +197,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;

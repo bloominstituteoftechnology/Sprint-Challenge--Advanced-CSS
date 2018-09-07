@@ -1,1 +1,25 @@
-// Navigation code here
+.nav-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		margin: 15px 0;
+		width: 42.5%;
+		justify-content: space-between;
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 1.6rem;
+		font-family: @nav-font;
+		color: @header-font-color;
+	}
+}
