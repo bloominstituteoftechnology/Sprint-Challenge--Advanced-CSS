@@ -160,29 +160,47 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
 .nav-container {
-  width: 100%;
   display: flex;
   flex-flow: column;
   padding-top: 10px;
   border-bottom: 2px solid #F1F1F1;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    width: 90%;
+  }
+}
 .nav-container h1 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 15px;
 }
+@media (max-width: 500px) {
+  .nav-container h1 {
+    margin-left: 280px;
+  }
+}
 .nav-container nav {
   display: flex;
   width: 350px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 10px;
   margin-left: 220px;
 }
 .nav-container nav a {
   color: #454A59;
   text-decoration: none;
+}
+.nav-container nav a:hover {
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
@@ -193,6 +211,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
+}
+.home .intro img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -205,11 +240,25 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -226,6 +275,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-flow: column;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -252,17 +306,30 @@ footer {
   text-decoration: none;
   background: black;
   color: white;
-  /*@media @mobile {
-        width: 100%;
-    }*/
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-text .btn:hover {
   background: white;
   color: black;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    order: 1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
