@@ -1,1 +1,30 @@
 // Mixins Here
+
+.nav-colors{
+    color: #22283B;
+    background: #f4f4f4;
+    border: 1px double #e0e0e0;
+}
+
+
+//button
+.sign-up-button(@width,@bgcolor) {
+  
+    
+    color:@porcelain;
+    text-align: center;
+    height: 3.5rem;
+    width: @width;
+    background-color: @bgcolor;
+    border-radius: 5px;
+    font-size:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+    &:hover {
+     background-color: @sea-shell;
+     color: @btn-bg-color;
+    }
+  }

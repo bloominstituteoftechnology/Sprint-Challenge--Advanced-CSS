@@ -1,3 +1,8 @@
+.nav-colors {
+  color: #22283B;
+  background: #f4f4f4;
+  border: 1px double #e0e0e0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,8 +168,8 @@ p {
 nav {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
   border: 1px double #e0e0e0;
+  padding: 20px 0;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -238,6 +243,23 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: #F6F7F8;
+  text-align: center;
+  height: 3.5rem;
+  width: 10rem;
+  background-color: #22283A;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
