@@ -276,8 +276,9 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .intro img {
+  .home .intro img {
     max-height: 121px;
+    border-radius: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -309,6 +310,10 @@ footer {
   .home .walk .walk-img {
     width: 126%;
     border-radius: 20px;
+    margin: 0% 0% 5% -13%;
+  }
+  .home .walk .walk-text {
+    width: 130%;
     margin: 0% 0% 5% -13%;
   }
 }
