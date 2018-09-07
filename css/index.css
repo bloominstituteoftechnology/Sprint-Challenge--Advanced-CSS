@@ -358,7 +358,7 @@ footer {
   }
 }
 .home .subscription form input {
-  width: 420px;
+  width: 390px;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
@@ -367,7 +367,7 @@ footer {
   display: flex;
 }
 .home .subscription form .state-zip input {
-  width: 165px;
+  width: 150px;
   padding: 5px;
   margin: 10px;
   border-radius: 5px;
