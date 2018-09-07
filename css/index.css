@@ -135,7 +135,8 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #2D3033;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 h1,
 h2,
@@ -161,7 +162,7 @@ p {
   margin: 0 auto;
 }
 .nav-bar {
-  background-color: #fdf9f9;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,13 +186,16 @@ h1 {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +238,12 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 2rem;
+  text-align: center;
+  background-color: #22283A;
+  color: #F6F6F6;
 }
 .home .walk .walk-img {
   width: 46%;
