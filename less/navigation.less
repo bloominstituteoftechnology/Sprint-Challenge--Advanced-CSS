@@ -2,9 +2,9 @@
 	width: 100%;
 	background-color: #f4f4f4;
 	.navcontainer {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+		.flex(center);
+        flex-wrap: wrap;
+		
 		width: 75%;
 		margin: 0 auto;
 		h1 {
@@ -14,14 +14,11 @@
 			margin-top: 15px;
 		}
 		nav {
-			display: flex;
-			justify-content: space-around;
+			.flex(space-around);
 			width: 51%;
 			margin: 15px 0 10px;
 			a {
-				font-size: 1.4rem;
-				color: @main-font-color;
-				text-decoration: none;
+				.anchorText(1.4rem, none, @main-font-color);
 			}
 		}
 	}
