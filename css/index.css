@@ -188,7 +188,7 @@ p {
 }
 @media (max-width:500px) {
   .navigation nav a {
-    padding: 2px;
+    padding: 7px;
   }
 }
 footer {
