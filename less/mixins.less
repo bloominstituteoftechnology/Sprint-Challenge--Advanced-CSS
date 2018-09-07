@@ -1,13 +1,13 @@
 // Mixins Here
 
-.custom-btn(@bg-color, @font-color, @size, @radius){
+.custom-btn(@bg-color, @font-color, @size, @radius,@padding, @width){
     text-align: center;
     background: @bg-color;
     color: @font-color;
     font-size: @size;
     border-radius: @radius;
-    width: 30%;
-    padding: 10px;
+    width: @width;
+    padding: @padding;
     &:hover{
         background: @font-color;
         color: @bg-color;
