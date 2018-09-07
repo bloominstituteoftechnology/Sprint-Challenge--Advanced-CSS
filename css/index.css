@@ -162,10 +162,25 @@ p {
 }
 section {
   display: flex;
-  width: 800px;
+  justify-content: space-between;
 }
 section nav {
-  align-self: center;
+  margin: 15px;
+}
+section nav a {
+  background: maroon;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid red;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  borrder-radius: 5px;
+}
+section nav a button:hover {
+  background-color: chartreuse;
+  color: black;
 }
 footer {
   color: #22283B;
