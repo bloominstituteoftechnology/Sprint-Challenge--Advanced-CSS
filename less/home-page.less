@@ -11,7 +11,12 @@
     p {
       padding:0 15px;
     }
-  
+    img {
+      width: 100%;
+      @media @phone {
+        border-radius: 5px;
+      }
+    }
   }
 
   .space-images {
@@ -24,6 +29,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+        width: 100%;
+      }
     }
   }
 
