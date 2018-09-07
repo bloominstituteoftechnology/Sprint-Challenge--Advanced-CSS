@@ -7,12 +7,22 @@
   background-color: @nav-bg;
   margin-top: 0;
 
+  //changes for fixed nav start here
+
+  position: fixed;
+  z-index: 100;
+  opacity: 0.7;
+  padding-top: 15px;
   h1 {
     font-size: 4rem;
+
+    //fixed nav alterations
+    text-decoration: underline overline;
   }
 
   .links {
     width: 60%;
+
     @media @mobile {
       width: 100%;
     }
@@ -22,6 +32,21 @@
       padding: 18px 2.7%;
       text-decoration: none;
       color: black;
+      text-align: center;
+      //make links stand out more for fixed nav:
+      text-decoration: underline overline;
+      font-size: 2rem;
+
+      @media (min-width: 501px) {
+        &:hover {
+          transform: scale(1.5);
+          text-decoration: none;
+          border-radius: 2px;
+          padding: 0;
+          color: @nav-bg;
+          background-color: black;
+        }
+      }
       @media @mobile {
         padding: 22px 3.3%;
         padding-bottom: 12px;
