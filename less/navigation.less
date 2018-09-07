@@ -1,1 +1,42 @@
 // Navigation code here
+
+nav {
+  color: @nav-font;
+  
+  .nav-container {
+    max-width: @desktop-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.35rem 0 1.2rem 0;
+    
+
+    a {
+      color: @nav-font;
+      text-decoration: none;
+      h1 {
+        font-size: 4rem;
+      }
+      margin: 0 auto;
+      @media @phone {
+      }
+    }
+    
+    div.nav-destination {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1.9rem auto 0 auto;
+      width: 40.8%;
+      align-items: center;
+      font-size: 1.6rem;
+      a {
+        color: @nav-font;
+        text-decoration: none;
+      }
+      @media @phone {
+        width: 100%;
+      }
+    }
+  }
+}
