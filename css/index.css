@@ -208,11 +208,6 @@ footer {
   align-items: center;
 }
 @media (max-width: 500px) {
-  .home {
-    max-width: 100%;
-  }
-}
-@media (max-width: 500px) {
   .home .intro {
     display: flex;
     flex-wrap: wrap;
@@ -245,6 +240,7 @@ footer {
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
+    padding: 1.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -300,6 +296,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    margin-left: 0;
   }
 }
 .home .walk .walk-img img {
