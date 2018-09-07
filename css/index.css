@@ -163,21 +163,35 @@ p {
 header {
   width: 100%;
   background: #F6F6F6;
+}
+header .header-contents {
+  margin: 0 auto;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 12px 0;
 }
-header h1 {
+@media (max-width: 600px) {
+  header .header-contents {
+    width: 500px;
+  }
+}
+header .header-contents h1 {
   font-size: 4rem;
 }
-header nav {
+header .header-contents nav {
   width: 25.5%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-header nav a {
+@media (max-width: 600px) {
+  header .header-contents nav {
+    width: 75%;
+  }
+}
+header .header-contents nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #454A59;
