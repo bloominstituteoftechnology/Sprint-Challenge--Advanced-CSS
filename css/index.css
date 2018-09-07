@@ -191,6 +191,7 @@ p {
 }
 .navigation .container .nav-list a,
 .navigation .container .nav-list a:visited {
+  color: #23293b;
   font-size: 1.6rem;
   text-decoration: none;
 }
@@ -334,4 +335,76 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.sign-in {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.sign-in .card {
+  background-color: #f6f6f6;
+  padding: 100px 20px;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.sign-in .card h2 {
+  justify-self: flex-start;
+  margin-bottom: 40px;
+}
+.sign-in .card form {
+  width: 60%;
+  margin: 0 auto;
+}
+.sign-in .card .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.sign-in .card .form-group label {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+.sign-in .card .form-group input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.sign-in .card .btn {
+  background: #22283a;
+  color: #f1f1f1;
+  max-width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  transition: all 300ms;
+  cursor: pointer;
+  border: 2px solid #22283a;
+}
+.sign-in .card .btn:hover {
+  background: #f1f1f1;
+  color: #22283a;
+}
+.sign-in .card .links {
+  margin-top: 1.6rem;
+  text-align: right;
+}
+.sign-in .card .links a,
+.sign-in .card .links a:visited {
+  color: #23293b;
+}
+.sign-in footer {
+  width: 100%;
 }
