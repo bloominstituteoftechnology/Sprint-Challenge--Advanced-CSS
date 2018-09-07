@@ -11,5 +11,17 @@
   &:hover {
     background-color: @bgColor/1.5;
     font-weight: bold;
+    color: @bgColor * 8;
   }
+}
+
+.flexColCent() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contentWidths(@max, @total) {
+  max-width: @max;
+  width: @total;
 }

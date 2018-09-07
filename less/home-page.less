@@ -6,8 +6,7 @@
     img {
       border-radius: 5px;
       @media @phone {
-        max-width: 500px;
-        width: 100%;
+        .contentWidths( 500px, 100% );
   }
     }
 
@@ -68,10 +67,8 @@
     display: flex;
     justify-content: center;
     @media @phone {
-      max-width: 500px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+      .contentWidths( 500px, 100% );
+      .flexColCent();
       margin:0 auto;
       padding: 0;
       margin-bottom: 20px;
@@ -79,8 +76,7 @@
     .walk-text {
       width: 50%;
       @media @phone {
-        max-width: 500px;
-        width: 95%;
+        .contentWidths( 500px, 95% );
         padding: 0;
         margin: 0 2%;
         order: 2;
@@ -96,10 +92,9 @@
       .btn {
         .myButton(2rem, rgb(29, 30, 97), #fff);
         @media @phone {
-          max-width: 500px;
-          width: 100%;
+          .contentWidths( 500px, 100% );
           margin: 0 auto;
-      }
+        }
       }
     }
 
@@ -107,8 +102,7 @@
       width: 46%;
       margin-left: 4%;
       @media @phone {
-        max-width: 500px;
-        width: 95%;
+        .contentWidths( 500px, 95% );
         margin: 0 auto;
         order: 1;
         padding-top: 0;
@@ -118,9 +112,8 @@
         height: auto;
         border-radius: 10px;
         @media @phone {
-          max-width: 500px;
-          width: 100%;
-      }
+          .contentWidths( 500px, 100% );
+        }
       }
     }
   }

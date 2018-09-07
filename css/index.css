@@ -177,10 +177,10 @@ p {
   }
 }
 .nav header {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 @media (max-width:500px) {
   .nav header {
@@ -288,6 +288,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 20px;
@@ -324,6 +325,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #131441;
   font-weight: bold;
+  color: #e8f0ff;
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
