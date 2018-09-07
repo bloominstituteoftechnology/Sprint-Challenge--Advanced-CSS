@@ -162,7 +162,7 @@ p {
 }
 .nav-bar {
   background: whitesmoke;
-  padding: 20px;
+  padding: 20px 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,16 +177,16 @@ p {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  min-width: 460px;
+  width: 420px;
 }
 .nav-bar nav a {
-  margin: 0 1%;
+  margin: 0 0.5%;
   width: 100%;
   text-decoration: none;
-  font-size: 1.8rem;
   color: black;
   text-align: center;
   cursor: pointer;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -202,7 +202,7 @@ footer {
   width: 98%;
   height: auto;
   border-radius: 5px;
-  margin: 2px 1%;
+  margin: 0 1%;
 }
 .home .intro h2 {
   padding: 15px;

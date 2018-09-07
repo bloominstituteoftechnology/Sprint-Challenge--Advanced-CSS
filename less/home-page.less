@@ -5,7 +5,7 @@
   .intro {
     .planet {
       .imgs(98%, auto, 5px);
-      margin: 2px 1%;
+      margin: 0 1%;
     }
 
     h2 {
@@ -80,15 +80,15 @@
       }
 
       .btn {
-        .button(100px, @btn);
+        .button(100px, @header-font-color, white);
         &:hover {
-          .button(100px, @btn-hvr);
+          .button(100px, white, @header-font-color);
         }
         @media @phone {
-          .button(100%, @btn);
+          .button(100%, @header-font-color, white);
           padding: 25px 0;
           &:hover {
-            .button(100%, @btn-hvr);
+            .button(100%, white, @header-font-color);
             padding: 25px 0;
           }
         }
