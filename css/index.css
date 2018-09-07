@@ -167,11 +167,22 @@ p {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border-bottom: 1px double #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+.navigation a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  padding: 4px 15px;
 }
 footer {
   color: #22283B;
