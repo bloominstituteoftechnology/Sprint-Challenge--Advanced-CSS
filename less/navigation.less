@@ -11,7 +11,11 @@
         h1 {
             width: 100%;
             text-align: center;
-            margin-top: 2.1%;
+            margin-top: 1.5%;
+
+            @media @phone {
+                margin-top: 2%;
+            }
         }
 
 
@@ -23,8 +27,12 @@
             a {
                 text-decoration: none;
                 color: @shuttle-gray;
-                font-size: 1.7rem;
-                margin: 2.1%;
+                font-size: 1.6rem;
+                margin: 2%;
+
+                @media @phone {
+                    margin: 3%;
+                }
             }
         }
     }
