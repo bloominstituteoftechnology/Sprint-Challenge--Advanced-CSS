@@ -323,3 +323,43 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  form {
+    width: 90%;
+    margin-left: 23px;
+  }
+}
+form label {
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+form input {
+  height: 30px;
+}
+form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+form .btn-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99px;
+  height: 35px;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 20px 0;
+}
+form .btn-container .btn:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+}
