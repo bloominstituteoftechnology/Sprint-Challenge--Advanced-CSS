@@ -3,18 +3,26 @@
 nav 
 {
 	width : 100%;
-	margin-left : 10em;
+	margin-left : 25em;
     margin-top: 1.5em;
+
+    @media @phone {
+    	margin-left : 6em;
+    }
 
 		a {
 			padding : 1.6em;
 			text-decoration : none;
 			color : black;
-			font-size : 1rem;
+			font-size : 1.5rem;
+
+			@media @phone {
+				font-size : 1.2rem;
+			}
 
 			&:hover {
 				color : red;
-				font-size : 110%;
+				font-size : 1.7rem;
 			}
 		}
 }

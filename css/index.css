@@ -131,6 +131,7 @@ table {
 }
 html,
 body {
+  font-size: 62.5%;
   font-family: 'Arial', sans-serif;
 }
 h1,
@@ -169,6 +170,12 @@ img {
   width: 880px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container-home {
+    background: gold;
+    width: 100%;
+  }
+}
 .container-home header {
   border: 1px dotted #EDEDED;
   display: flex;
@@ -179,8 +186,9 @@ img {
   background: #EDEDED;
 }
 .container-home header h1 {
-  padding: 0.2em;
+  font-size: 5rem;
   font-weight: bold;
+  padding: 0.2em;
 }
 .container-home .top-content img {
   width: 100%;
@@ -189,6 +197,11 @@ img {
 .container-home .top-content .text-content {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+@media (max-width: 500px) {
+  .container-home .top-content .text-content {
+    margin-left: 0.8em;
+  }
 }
 .container-home .top-content .text-content h2 {
   font-size: 2.5rem;
@@ -199,20 +212,43 @@ img {
   margin-right: 1.7em;
   border-radius: 2em;
 }
+@media (max-width: 500px) {
+  .container-home .image-section img {
+    width: 85%;
+    margin: 4em;
+  }
+}
+@media (max-width: 500px) {
+  .container-home .image-section .image1 {
+    display: none;
+  }
+}
 .container-home .text-section {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   border-bottom: 1px dashed silver;
 }
+@media (max-width: 500px) {
+  .container-home .text-section {
+    margin-left: 0.8em;
+  }
+}
 .container-home .text-section h3 {
   font-size: 2rem;
+  font-weight: bold;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
-  font-weight: bold;
 }
 .container-home .last-section {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container-home .last-section {
+    display: block;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
 }
 .container-home .last-section .last-section-front {
   margin-left: 2em;
@@ -220,16 +256,21 @@ img {
 }
 .container-home .last-section .last-section-front h3 {
   font-size: 2rem;
+  font-weight: bold;
   margin-top: 0.8em;
   margin-bottom: 0.8em;
-  font-weight: bold;
 }
 .container-home .last-section .last-section-front p {
-  width: 70%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .container-home .last-section .last-section-front p {
+    width: 90%;
+  }
 }
 .container-home .last-section .last-section-front button {
   border: 1px solid black;
-  max-width: 100px;
+  max-width: 400px;
   padding: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -243,6 +284,11 @@ img {
   color: black;
   transform: scale(2.1);
 }
+@media (max-width: 500px) {
+  .container-home .last-section .last-section-front button {
+    width: 100%;
+  }
+}
 .container-home .last-section .last-section-back {
   margin-right: 2em;
 }
@@ -254,18 +300,28 @@ img {
 }
 nav {
   width: 100%;
-  margin-left: 10em;
+  margin-left: 25em;
   margin-top: 1.5em;
+}
+@media (max-width: 500px) {
+  nav {
+    margin-left: 6em;
+  }
 }
 nav a {
   padding: 1.6em;
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.2rem;
+  }
 }
 nav a:hover {
   color: red;
-  font-size: 110%;
+  font-size: 1.7rem;
 }
 .footer {
   width: 100%;

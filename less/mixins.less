@@ -1,20 +1,26 @@
 // Mixins 
 
-.margin(@top, @bottom) {
+.marginlr(@left, @right) {
+	margin-left : @left;
+	margin-right : @right;
+}
+
+.margintb(@top, @bottom) {
 	margin-top : @top;
 	margin-bottom : @bottom;
 }
 
-.display(@justify, @align) {
-	display : flex;
-	justify-content : @justify;
-	align-item : @align;
+.font(@size) {
+	font-size : @size;
+	font-weight : bold;
 }
+
+@phone : ~"(max-width: 500px)";
 
 
 .custom-button(@bg, @color) {
   	border: 1px solid black;
-  	max-width: 100px;
+  	max-width: 400px;
   	padding: 10px;
   	border-radius : 5px;
   	text-decoration: none;
