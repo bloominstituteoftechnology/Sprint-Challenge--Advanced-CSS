@@ -327,3 +327,19 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .magazine {
+  border-top: 1px solid #dee2e6;
+  padding: 20px;
+}
+.home .magazine p {
+  padding: 10px 0;
+  font-size: 1.8rem;
+}
+.home .magazine form {
+  line-height: 2;
+  font-size: 1.6rem;
+}
+.home .magazine form input:hover {
+  color: white;
+  background-color: #5E6164;
+}
