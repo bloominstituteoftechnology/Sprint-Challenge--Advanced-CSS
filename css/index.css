@@ -160,6 +160,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #F6F6F6;
+  padding: 20px;
+  border-bottom: 1px solid #F1F1F1;
+  font-size: 4rem;
+}
+.nav-content h1 {
+  margin-bottom: 20px;
+}
+.nav-content nav {
+  font-size: 1.6rem;
+  font-family: #454A59;
+}
+.nav-content nav a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #23293B;
+  font-family: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +192,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
