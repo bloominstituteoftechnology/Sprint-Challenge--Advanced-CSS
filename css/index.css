@@ -175,13 +175,13 @@ p {
     opacity: 1;
   }
   28% {
-    opacity: 0.18;
+    opacity: 0.71;
   }
   50% {
     opacity: 0.91;
   }
   74% {
-    opacity: 0.18;
+    opacity: 0.71;
   }
   100% {
     opacity: 1;
@@ -253,7 +253,7 @@ p {
 .main-nav nav a:hover {
   background-color: #186BA1;
   animation-name: flashAnim;
-  animation-duration: 2s;
+  animation-duration: 0.45s;
 }
 @media (max-width: 800.1px) {
   .sky-blue {
