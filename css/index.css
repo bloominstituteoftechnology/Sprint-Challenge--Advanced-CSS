@@ -156,9 +156,14 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
-  width: 100%;
   margin: 0 auto;
+  max-width: 800px;
+  min-width: 350px;
+}
+@media (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
 }
 header {
   width: 100%;
@@ -167,21 +172,24 @@ header {
 header .header-contents {
   margin: 0 auto;
   max-width: 800px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   padding: 12px 0;
+  border-bottom: 1px double #F1F1F1;
 }
 @media (max-width: 600px) {
   header .header-contents {
-    width: 500px;
+    max-width: 500px;
   }
 }
 header .header-contents h1 {
   font-size: 4rem;
 }
 header .header-contents nav {
-  width: 25.5%;
+  width: 376px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -206,6 +214,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -221,7 +235,20 @@ footer {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 600px) {
+  .home .space-images img {
+    width: 90%;
+    margin: 20px 5%;
+  }
+}
+@media (max-width: 600px) {
+  .home .space-images .desktop-only {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -237,10 +264,24 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: stretch;
+}
+@media (max-width: 600px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin: 20px 0;
+    padding: 20px 20px 0;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 600px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -248,12 +289,52 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  display: inline-block;
+  background: #454A59;
+  color: #F6F7F8;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 9px 19px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.home .walk .walk-text .btn:hover {
+  border: 1px double #F1F1F1;
+  background: #F6F7F8;
+  color: #454A59;
+  transition: all 0.5s;
+}
+@media (max-width: 600px) {
+  .home .walk .walk-text .btn {
+    display: block;
+    background: #454A59;
+    color: #F6F7F8;
+    text-align: center;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 25px 19px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 600px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 0 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }

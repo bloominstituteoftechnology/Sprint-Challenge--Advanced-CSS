@@ -6,23 +6,22 @@ header {
 
   .header-contents {
     .containerMaker(@desktop-width);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .autoFlexer(column,flex-start,center);
     padding: 12px 0;
+    border-bottom: 1px double @sea-shell;
 
-    @media @mobile {
-      width: @mobile-width;
+    @media @phone {
+      max-width: @mobile-width;
     }
     h1 {
       font-size: 4rem;
     }
     nav {
-      width: 25.5%;
+      width: 376px;
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
-      @media @mobile {
+      @media @phone {
         width: 75%;
       }
       a {
