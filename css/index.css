@@ -160,6 +160,42 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  max-width: 1000px;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background: #F6F6F6;
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: default;
+}
+nav h1 {
+  font-size: 4rem;
+  align-self: center;
+}
+nav .navigation {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+nav .navigation a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #4F526A;
+  font-size: 1.6rem;
+  margin: 15px;
+}
+nav .navigation a:hover {
+  font-weight: normal;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
