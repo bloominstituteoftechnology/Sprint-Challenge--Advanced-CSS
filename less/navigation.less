@@ -1,60 +1,49 @@
 // Navigation code here
 .main-navigation {
     width: 100%;
-    background: @nav-bg;
+    max-width: 1000px;
     display: flex;
-      
-    
-      .nav-container {
-        display: flex;
-        align-items: center;
+    background: @wild-sand;
+    height: 90px;
+    font-family: @river-bend;
+    .nav-bar {
+        width: 100%;
+        max-width: 800px;
+        .center();
         flex-direction: column;
+        margin: 0 auto;
+        font-size: 2rem;
         justify-content: space-between;
-        background: @nav-bg;
-    
+        animation: pulse 5s infinite;
+        @keyframes pulse {
+            0% {
+                background-color: purple;
+            }
+            100% {
+                background-color: @wild-sand;
+            }
+        }
         @media @mobile {
-          flex-wrap: wrap;
-          justify-content: center;
-          padding-top: 10px;
+            font-size: 1.6rem;
         }
-    
-        .logo-heading {
-          display: flex;
-          align-items: flex-start;
-          align-self: center;
-          margin: 5px auto 0px auto;
-          font-size: 4rem;
-          padding-bottom: 1%;
-         
-          @media @mobile {
-            font-size: 3rem;
-          }
+        .space {
+           margin-top: 15px;
+           font-size: 4rem;
         }
-    
         .nav {
-          width: 440px;
-          display: flex;
-          justify-content: space-evenly;
-          background-color: @nav-bg;
-          align-items: flex-end;
-    
-          @media @mobile {
-            width: 100%;
-            justify-content: space-around;
-          }
-          
-          
-          a {
-            font-size: 1.5rem;
-            color: @header-font-color;
-            text-decoration: none;
             display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            padding: 20px 0px 10px 0px;
-          }
+            justify-content: space-between;
+            a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: @river-bend;
+                white-space: nowrap;
+                @media @mobile {
+                    margin: 0 20p;
+                    white-space: nowrap;
+                }
+            }
         }
-      }
-    } 
-    
+    }
+}
     // .main-navigation END
