@@ -6,6 +6,9 @@
      .center();
      height: auto;
      margin-top: 10px;
+     @media @mobile {
+       height: 130px;
+     }
    }
   .intro {
     
@@ -24,12 +27,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile {
+      flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+      .launch {
+        display: none;
+      }
+      .sky {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile {
+        width: 90%;
+      }
     }
   }
 
@@ -51,9 +68,24 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @mobile {
+      border-top: 2px solid @border-real;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-right: 10px;
+      padding: 0;
+    }
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 90%;
+        max-width: 500px;
+        margin-left: 4%;
+        margin-top: 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -66,9 +98,16 @@
       .btn {
         cursor: pointer;
         .button-creator(100px, 40px,black, white );
+        @media @mobile {
+          .button-creator(450px, 70px, @btn-bg-color, white);
+          margin-bottom: 20px;
+        }
         &:hover {
           background: white;
           color: black;
+          @media @mobile {
+            border: 1px solid @btn-bg-color;
+          }
         }
     }
     }
@@ -76,12 +115,32 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+       width: 90%;
+       max-width: 500px;
+        .center();
+        display: flex;
+        margin: 0;
+        margin-left: 4%;
+        margin-top: 20px;
+        
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile {
+          max-width: 500px;
+        }
       }
     }
   }
 }// home
+footer {
+  color: @waterloo;
+  @media @mobile {
+    color: @btn-bg-color;
+    font-weight: bold;
+  }
+}
