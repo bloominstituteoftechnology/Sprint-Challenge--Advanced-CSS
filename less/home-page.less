@@ -1,7 +1,10 @@
 // Home Content
 
 .home {
-
+@media @phone {
+  .flex-center();
+  flex-flow: column wrap;
+}
   .intro {
     img{
       width:100%;
@@ -28,6 +31,23 @@
       margin: 20px 2.5%;
       .border-radius(20px);
       height: 100%;
+      @media @phone{
+        .flex-center();
+        align-items: center;
+        width: 95%;
+        padding: 0 2%;
+      }
+    }
+
+    .sky{
+      @media @phone{
+        display:none;
+      }
+    }
+      .launch{
+        @media @phone{
+          display:none;
+        }
     }
   }
 
