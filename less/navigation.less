@@ -1,27 +1,20 @@
 // Navigation code here
 nav {
   background-color: @wild-sand;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid @sea-shell;
   .nav-logo {
-    display: flex;
-    justify-content: center;
+    .flex-center;
     h1 {
       font-size: 3.5rem;
       padding: 20px 0 10px;
+      font-family: @river-bend;
     }
   }
   .nav-links {
-    display: flex;
-    justify-content: center;
+    .flex-center;
     font-size: 1.8rem;
     a {
-      color: black;
-      text-decoration: none;
-      margin: 10px;
-      opacity: 0.6;
-      &:hover {
-        opacity: 1;
-      }
+      .nav-links-mixin(black);
     }
   }
 }

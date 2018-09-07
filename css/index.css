@@ -162,19 +162,22 @@ p {
 }
 nav {
   background-color: #F6F6F6;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #F1F1F1;
 }
 nav .nav-logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 nav .nav-logo h1 {
   font-size: 3.5rem;
   padding: 20px 0 10px;
+  font-family: #454A59;
 }
 nav .nav-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 1.8rem;
 }
 nav .nav-links a {
@@ -182,6 +185,7 @@ nav .nav-links a {
   text-decoration: none;
   margin: 10px;
   opacity: 0.6;
+  font-family: #454A59;
 }
 nav .nav-links a:hover {
   opacity: 1;
@@ -237,6 +241,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: white;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
+  transition: 300ms;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -1,1 +1,38 @@
 // Mixins Here
+
+// custom button
+.custom-button(@color, @bg) {
+  background: @bg;
+  color: @color;
+  padding: 10px;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    background: @color;
+    color: @bg;
+    transition: 300ms;
+  }
+}
+
+// flex center
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// nav link mixin
+.nav-links-mixin(@color) {
+  color: @color;
+  text-decoration: none;
+  margin: 10px;
+  opacity: 0.6;
+  font-family: @river-bend;
+  &:hover {
+    opacity: 1;
+  }
+}
