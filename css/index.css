@@ -160,6 +160,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  width: 800px;
+  border: 1px solid maroon;
+}
+header nav {
+  align-self: center;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
