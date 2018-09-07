@@ -160,6 +160,42 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.container header {
+  transform: translateY(1000px);
+  animation: headerLoad 600ms cubic-bezier(0.55, 1.05, 1, 0.9) 0ms forwards;
+}
+@keyframes headerLoad {
+  100% {
+    transform: translateY(0px);
+  }
+}
+.container .space-images {
+  transform: translateY(1000px);
+  animation: nth1 600ms cubic-bezier(0.55, 1.05, 1, 0.9) 200ms forwards;
+}
+@keyframes nth1 {
+  100% {
+    transform: translateY(0px);
+  }
+}
+.container .visit-planets {
+  transform: translateY(1000px);
+  animation: nth1 600ms cubic-bezier(0.55, 1.05, 1, 0.9) 400ms forwards;
+}
+@keyframes nth1 {
+  100% {
+    transform: translateY(0px);
+  }
+}
+.container .walk {
+  transform: translateY(1000px);
+  animation: nth1 600ms cubic-bezier(0.55, 1.05, 1, 0.9) 600ms forwards;
+}
+@keyframes nth1 {
+  100% {
+    transform: translateY(0px);
+  }
+}
 .navigation {
   width: 100%;
   background: #F1F1F1;

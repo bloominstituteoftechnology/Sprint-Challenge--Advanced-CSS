@@ -31,3 +31,13 @@
         padding: 26px 0px;
     }
 }
+
+.loadAnimation(@name, @delay) {
+    @keyframes @name {
+        100% {
+            transform: translateY(0px)
+        }
+    }
+    transform: translateY(1000px);
+    animation: @name 600ms @loadCubic @delay forwards;
+}
