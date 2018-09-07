@@ -1,3 +1,5 @@
+#Chad Jemmett Sprint Challenge Sept 7
+#finished at 11:55 pm With one stretch goal
 # Assessing Your Responsive Web Design and Preprocessing Learning
 
   
