@@ -168,6 +168,8 @@ p {
 header {
   width: 100%;
   background: #F6F6F6;
+  position: fixed;
+  opacity: 0.7;
 }
 header .header-contents {
   margin: 0 auto;
@@ -213,6 +215,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 .home .intro img {
   width: 100%;
