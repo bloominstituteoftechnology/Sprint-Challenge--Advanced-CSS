@@ -160,14 +160,32 @@ p {
 }
 .container {
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  .home img {
+    width: 100%;
+    height: 129px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 0 1% 16px 1%;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0 4px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -180,8 +198,31 @@ p {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-left: 5px;
+    padding-top: 19px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 1px;
@@ -196,11 +237,23 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 38px 0 10px 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-left: 8px;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -221,14 +274,103 @@ p {
   background: white;
   color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    max-width: 100%;
+    height: 68px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 7px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    padding: 0px;
+  }
+}
+.space-banner {
+  height: 250px;
+}
+@media (max-width: 500px) {
+  .space-banner {
+    height: 100px;
+  }
+}
+.bg-space {
+  width: 100%;
+  height: 500px;
+  background: url(https://news.unclesamsmisguidedchildren.com/wp-content/uploads/2018/06/spaceforce.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  margin-top: -10px;
+}
+@media (max-width: 500px) {
+  .bg-space {
+    background-size: cover;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  background: rgba(130, 130, 130, 0.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255, 255, 255, 0.4);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-bottom-color: rgba(60, 60, 60, 0.4);
+  border-right-color: rgba(60, 60, 60, 0.4);
+}
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
+form input,
+form button {
+  width: 450px;
+  border: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(60, 60, 60, 0.35);
+  border-top-color: rgba(60, 60, 60, 0.35);
+  border-left-color: rgba(80, 80, 80, 0.45);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  letter-spacing: 0.075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 19px;
+}
+@media (max-width: 500px) {
+  form input,
+  form button {
+    width: 100%;
+  }
+}
+form input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #nav-header {
   display: flex;
@@ -240,15 +382,17 @@ p {
 }
 #nav-header h1 {
   font-size: 4rem;
+  font-weight: bold;
   margin-top: 12px;
 }
 #nav-header nav {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 6px;
 }
 #nav-header nav a {
-  margin: 15px;
+  margin: 12px 5% 5%;
   color: black;
   text-decoration-line: none;
   white-space: nowrap;
