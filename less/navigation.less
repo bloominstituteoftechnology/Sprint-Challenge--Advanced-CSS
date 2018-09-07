@@ -3,10 +3,12 @@
 // Navigation code here
 
 .main-nav {
+    position: sticky;
+    top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: @nav-bg;
+    background: fade(@nav-bg, 50%);
     border-bottom: 2px solid @nav-border;
 
     h1 {
