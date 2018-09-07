@@ -1,4 +1,11 @@
 // Mixins Here
+
+.center() {
+    margin: 0 auto;
+}
+
+// Parametric Mixins
+
 .flex(@direction, @justify){
     display: flex;
     flex-direction: @direction;
@@ -9,4 +16,25 @@
     text-decoration: none;
     font-family: @font;
     color: @color;
+}
+
+.btn(@font-color, @btn-color) {
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: @font-color;
+    background: @btn-color;
+    text-align: center;
+    display: block;
+    // border: none;
+    padding: 10px 0;
+    width: 100px;
+    cursor: pointer;
+
+    &:hover {
+        color: @btn-bg-color;
+        background: @font-color;
+        border: 1px solid @btn-color;
+    }
 }
