@@ -189,7 +189,7 @@ p {
   }
 }
 .nav-box .nav-bar nav a {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: none;
   color: #454A59;
 }
@@ -257,6 +257,7 @@ footer {
     flex-direction: column-reverse;
     width: 100%;
     padding: 15px;
+    margin-top: 30px;
   }
 }
 .home .walk .walk-text {
@@ -294,7 +295,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 90%;
+    width: 100%;
   }
 }
 .home .walk .walk-img {
