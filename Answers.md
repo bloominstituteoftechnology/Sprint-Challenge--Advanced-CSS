@@ -15,8 +15,16 @@
 
 
 2)	Describe what it means to be mobile first vs desktop first.
+		-	These both are responsive methods. You need to consider this approach before designing the main function of the site.
+		-	Desktop first design means designing the highest specifications first and then going down to smaller resolutions. Uses @media 
+			query with max-width.
+		-	As the name suggests first design for mobile screen size and then go for higher resolution (tablet, Desktop). Uses @media query
+			with min-width
 
 3)	What does font-size: 62.5% in the html tag do for us when using rem units?
+		- 	rem stands for 'Root-em'. The rem unit is relative to the root—or the html—element. That means that we can define a single font
+		 	size on the html element and define all rem units to be a percentage of that. Using rem unit approx. 10px = 1rem when html is set to font-size: 62.5%; 
+
 
 4)	How would you describe preprocessing to someone new to CSS?
 
