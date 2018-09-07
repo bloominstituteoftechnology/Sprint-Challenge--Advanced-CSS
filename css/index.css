@@ -177,7 +177,7 @@ p {
 .main-navigation .nav-container h1 {
   width: 100%;
   text-align: center;
-  margin-top: 2%;
+  margin-top: 2.1%;
 }
 .main-navigation .nav-container nav {
   display: flex;
@@ -190,7 +190,7 @@ p {
   text-decoration: none;
   color: #5E6164;
   font-size: 1.7rem;
-  margin: 2%;
+  margin: 2.1%;
 }
 footer {
   color: #22283B;
@@ -201,6 +201,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -243,6 +252,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: white;
+  padding: 10px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.7rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .home .walk .walk-img {
   width: 46%;
