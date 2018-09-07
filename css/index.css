@@ -1,3 +1,11 @@
+@keyframes h1ease {
+  0% {
+    transform: rotate(0) scale(1) translateX(0) translateY(-140%);
+  }
+  100% {
+    transform: rotate(0) scale(1) translateX(0) translateY(0);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,6 +186,7 @@ p {
 .main-nav .container h1 {
   font-size: 4rem;
   margin: 13px 0;
+  animation: h1ease 1.5s 1 0s ease;
 }
 .main-nav .container nav {
   margin: 8px 0;
@@ -356,7 +365,7 @@ footer {
   background: #23293B;
   padding: 50px 80px;
   width: 60%;
-  margin: 40px auto;
+  margin: 40px auto 60px;
 }
 .signup form p {
   color: #F6F6F6;
