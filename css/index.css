@@ -167,7 +167,7 @@ nav {
   margin: 0 auto;
   background: #F6F6F6;
   color: #454A59;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 1px solid #dee2e6;
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -205,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -247,6 +250,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid black;
+  max-width: 100px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.5s;
+  background: #22283A;
+  color: white;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
+  transition-duration: 0.5s;
 }
 .home .walk .walk-img {
   width: 46%;

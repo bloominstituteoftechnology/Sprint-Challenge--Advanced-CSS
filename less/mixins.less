@@ -5,3 +5,30 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.img-responsive(@size) {
+    max-width: @size;
+    height: auto;
+}
+
+.custom-button(@bg, @color) {
+    border: 1px solid black;
+    max-width: 100px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+
+    transition: all .5s;
+    background: @bg;
+    color: @color;
+
+    
+    &:hover {
+      background: @color;
+      color: @bg;
+      transition-duration: .5s;
+    }
+  }
