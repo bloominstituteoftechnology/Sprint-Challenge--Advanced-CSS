@@ -21,18 +21,18 @@
     -moz-border-radius:5px;
     border-radius:5px;
 }
-.btn-styling(){
+.btn-styling(@btn-bg-color,@btn-font-color){
     .custom-font-styling();
     .center;
     height:40px;
     width:100px;
     .border-radius;
     background-color:@btn-bg-color;
-    color:@white;
+    color:@btn-font-color;
     cursor:pointer;
     &:hover{
         color:@btn-bg-color;
-        background:@white;
+        background:@btn-font-color;
         border:1px solid @btn-bg-color;
     }
 }

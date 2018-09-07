@@ -10,7 +10,7 @@
     p {
       padding:0 15px;
     }
-    @media @mobile{
+    @media @phone{
       .header-img{
         height:120px;
       }
@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @media @mobile{
+    @media @phone{
       .blast{
         width:100%;
       }
@@ -59,13 +59,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    @media @mobile{
+    @media @phone{
       flex-direction:column-reverse;
       padding:15px;;
     }
     .walk-text {
       width: 50%;
-      @media @mobile{
+      @media @phone{
         width:100%;
       }
       h3 {
@@ -77,8 +77,8 @@
       }
 
       .btn {
-        .btn-styling;
-        @media @mobile{
+        .btn-styling(@btn-bg-color,rgb(255, 255, 255));
+        @media @phone{
           height:65px;
           width:100%;
         }
@@ -88,7 +88,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @mobile{
+      @media @phone{
         width:100%;
         margin-left:0;
       }
@@ -97,9 +97,6 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-      @media @mobile{
-        
       }
     }
   }
