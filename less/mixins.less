@@ -1,1 +1,45 @@
 // Mixins Here
+
+
+//Gray Background
+
+.grayNavBG() {
+    background-color: @nav-bg;
+    border-bottom: 3px solid @nav-border;
+}
+
+//Colum Center Mixin
+
+.columnCenter() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnBG () {
+    background-color:@btn-bg-color;
+     width: 110px;
+    padding: 7px 15px;
+}
+
+//Parametric Mixins for Button
+
+.borderRadius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+ .buttonText (@size; @color; @align) {
+     font-size: @size; 
+     color: @color;
+     text-align: @align;
+
+ }
+
+
+    
+    
+
+
+
