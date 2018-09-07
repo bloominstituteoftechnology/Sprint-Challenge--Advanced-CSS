@@ -1,20 +1,31 @@
 // Navigation code here
 
 .navigation{
-    .elementAlignment(10px auto, 0);
-    .flexMixin(row, wrap, space-evenly, center, center);
-    border:1px solid blue;
+    width: @100percent;
+    .flexMixin(row, nowrap, center, center, center);
 
-    h2{
-        border: 1px solid red;
-        .elementAlignment(0 auto, 10px 2%);
-        font-size: 6rem;
-        text-align: center;
-    }
+    div {
+        .elementAlignment(10px auto, 0, 50%);
+        .flexMixin(row, wrap, space-evenly, center, center);
 
-    a{
-        &:hover{
-
+        h2{
+            .elementAlignment(0 auto, 20px 0, 95%);
+            font-size: 5rem;
+            text-align: center;
         }
+    
+        a{
+            .elementAlignment(0, 10px 2%, 13%);
+            text-align: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @nav-font;
+
+            &:hover{
+    
+            }
+        }
+
     }
+   
 }
