@@ -10,4 +10,21 @@ border-radius: 3px;
 font-size: 2rem;
 padding: 2%;
 
+&:hover{
+    background: @color;
+    color: @bg-color;
 }
+
+}
+
+.flex-center(){
+    display:flex;
+    justify-content:center;
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+  }
