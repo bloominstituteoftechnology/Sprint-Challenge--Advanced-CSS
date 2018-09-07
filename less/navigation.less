@@ -1,7 +1,10 @@
 // Navigation code here
 .main-navigation {
+    z-index: 1;
+    position: fixed;
+    top: 0;
     width: 100%;
-    background: @nav-bg;
+    background: rgba(246,246,246, .5);
     .nav-container {
         height: 100%;
         display: flex;
@@ -27,7 +30,6 @@
             display: flex;
             padding: 10px;
             justify-content: space-evenly;
-            
             @media @phone {
                 width: 100%;
                 justify-content: space-around;

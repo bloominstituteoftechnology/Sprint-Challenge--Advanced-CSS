@@ -212,8 +212,11 @@ img:before {
   background: #000;
 }
 .main-navigation {
+  z-index: 1;
+  position: fixed;
+  top: 0;
   width: 100%;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.5);
 }
 .main-navigation .nav-container {
   height: 100%;
@@ -264,6 +267,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 92px;
 }
 .home .intro img {
   -webkit-border-radius: 5px;
