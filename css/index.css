@@ -175,6 +175,21 @@ body > header {
   align-items: center;
   background: #F6F6F6;
 }
+body > header h1 {
+  margin-top: 13px;
+  font-size: 4rem;
+}
+body > header nav {
+  width: 41%;
+  margin: 13px 0;
+  display: flex;
+  justify-content: space-around;
+}
+body > header nav a {
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -184,6 +199,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .home .intro h2 {
   padding: 15px;
