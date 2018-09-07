@@ -9,11 +9,11 @@
 	background-clip:         padding-box;
 }
 
-.button(@width, @border-radius) {
+.button(@width, @height, @pad-top, @font-size) {
     width: @width;
-    height: 3.5rem;
-    .border-radius(@border-radius);
-    padding-top: 9px;
+    height: @height;
+    .border-radius();
+    padding-top: @pad-top;
     background: @button-bg;
     color: white;
     font-size: 1.84rem;
@@ -21,7 +21,7 @@
 
     &:hover {
         border: 2px solid @button-bg;
-        padding-top: 7px;
+        padding-top: calc(@pad-top - 2px);
         background: white;
         color: @button-bg;
     }
