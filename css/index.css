@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -161,8 +161,8 @@ p {
   margin: 0 auto;
 }
 nav {
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #f1f1f1;
 }
 nav .nav-logo {
   display: flex;
@@ -172,7 +172,7 @@ nav .nav-logo {
 nav .nav-logo h1 {
   font-size: 3.5rem;
   padding: 20px 0 10px;
-  font-family: #454A59;
+  font-family: #454a59;
 }
 nav .nav-links {
   display: flex;
@@ -185,7 +185,7 @@ nav .nav-links a {
   text-decoration: none;
   margin: 10px;
   opacity: 0.6;
-  font-family: #454A59;
+  font-family: #454a59;
 }
 nav .nav-links a:hover {
   opacity: 1;
@@ -206,16 +206,30 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -233,8 +247,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -243,7 +269,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background: #22283A;
+  background: #22283a;
   color: white;
   padding: 10px;
   font-size: 1.8rem;
@@ -255,12 +281,25 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background: white;
-  color: #22283A;
+  color: #22283a;
   transition: 300ms;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 100%;
+    margin: auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
