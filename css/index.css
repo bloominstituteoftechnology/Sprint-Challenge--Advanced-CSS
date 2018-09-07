@@ -1,3 +1,11 @@
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,9 +175,11 @@ p {
   width: 100%;
   margin: 0 auto;
   align-items: center;
-  animation: opacity1;
-  animation-duration: 3s;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 .navbar h1 {
   font-size: 3.2rem;
@@ -195,6 +205,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+.home .intro {
+  opacity: 0;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 .home .intro h2 {
   padding: 15px;
@@ -215,6 +237,11 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 .home .space-images img {
   width: 28%;
@@ -240,6 +267,11 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  animation: myAnimation;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -253,6 +285,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
 }
 .home .walk .walk-text {
   width: 50%;
