@@ -73,8 +73,10 @@
         display: flex;
         justify-content: center;
         @media @phone{
-          display: block;
+          display: flex;
+          flex-wrap: wrap-reverse;
           padding: 50px 20px;
+
         }
         .walk-text {
             width: 50%;
@@ -85,6 +87,9 @@
           }
             h3 {
                 margin-bottom: 10px;
+                // @media @mobile {
+                //   margin: auto, 10px;
+                // }
             }
             p {
                 margin-bottom: 26px;
@@ -107,12 +112,17 @@
             margin-left: 4%;
             @media @phone {
               width: 100%;
+              padding: 15px, 0px;
+
 
             }
             img {
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+                @media @phone {
+                  margin-bottom: 20px;
+                }
             }
         }
     }

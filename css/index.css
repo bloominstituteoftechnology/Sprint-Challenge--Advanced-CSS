@@ -277,7 +277,8 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .home .walk {
-    display: block;
+    display: flex;
+    flex-wrap: wrap-reverse;
     padding: 50px 20px;
   }
 }
@@ -324,7 +325,7 @@ footer {
     font-size: 1.8rem;
     text-align: center;
     max-width: 500px;
-    height: 35px;
+    height: 45px;
     padding: 40px, auto;
     border-radius: 5px;
     text-decoration: none;
@@ -343,10 +344,16 @@ footer {
 @media only screen and (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    padding: 15px, 0px;
   }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media only screen and (max-width: 500px) {
+  .home .walk .walk-img img {
+    margin-bottom: 20px;
+  }
 }
