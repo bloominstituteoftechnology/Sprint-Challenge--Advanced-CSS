@@ -8,41 +8,39 @@
 	align-items: @align;
 }
 
-// style header links
-.link-styling() {
+// style the header links
+.link-styling(@text-deco) {
 	text-decoration: none;
 	color: @nav-font;
 	&:hover {
-		color: @ebony-clay; 
+        text-decoration: @text-deco;
 	}
 }
 
-// style the buttons
-// .button-styling(@bg-color,@txt-color) {
-//     text-align: center;
-//     text-decoration: none;
-//     font-weight: bolder;
-//     font-size: 1.8rem;
-//     padding: 12px 0;
-//     width: 83.333333%;
-//     background: @bg-color;
-//     border: 1px solid @bg-color;
-//     color: @txt-color;
-//     border-radius: 15px;
-//     transition: 0.3s;
-//     &:hover {
-//         .scale(0.9);
-//         background: @txt-color;
-//         color: @bg-color;   
-//     }
-// }
-
+// style the button
+.button-styling(@bg-color,@txt-color, @width) {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding: 8px 0;
+    width: @width;
+    background: @bg-color;
+    border: 1px solid @bg-color;
+    color: @txt-color;
+    border-radius: 5px;
+    &:hover {
+        background: @txt-color;
+        color: @bg-color;
+        border: 1px solid @bg-color;
+    }
+}
 
 //mixin for animation stretch goal
-// .scale (@factor) {
-// 	-webkit-transform: scale(@factor);
-// 	-moz-transform: 	 scale(@factor);
-// 	-ms-transform: 		 scale(@factor);
-//     -o-transform: 		 scale(@factor);
-//     transition: 0.3s;
-// }
+.scale(@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+    -o-transform: 		 scale(@factor);
+    transition: 0.3s;
+}

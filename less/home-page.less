@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  max-width: 800px;
 
   .intro {
 
@@ -11,8 +12,22 @@
     p {
       padding:0 15px;
     }
-  
-  }
+
+    img {
+      border-radius: 5px;
+      margin-top: 100px;
+      transition: 0.3s;
+      width: 100%;
+      height: auto;
+      &:hover {
+        .scale(0.9);
+      } // animation mixin stretch goal
+
+      @media @phone {
+        margin-top: 0px;
+      } // header img media query
+    }
+  } // end intro section 
 
   .space-images {
     display: flex;
@@ -24,8 +39,32 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      transition: 0.3s;
+      &:hover {
+        .scale(1.1);
+      } // animation mixin stretch goal
     }
-  }
+
+    @media @phone {
+      .blast {
+        width: 90%;
+        height: 90%;    
+        margin: 20px auto;
+        &:hover{
+          .scale(0.9);
+        } // animation mixin stretch goal
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+
+    } // end img media query
+  } // end space images section
 
   .visit-planets {
     padding: 15px;
@@ -46,8 +85,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      margin-top: 45px;
+      .flex(column, nowrap, center, center);
+      padding: 18px 5%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +107,42 @@
       }
 
       .btn {
+        .button-styling(@ebony-clay,@porcelain, 100px);
+
+        @media @phone {
+          padding: 25px 0;
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        order: -1;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        transition: 0.3s;
+        &:hover {
+          .scale(1.1);
+        } // animation mixin stretch goal
+
+        @media @phone {
+          &:hover {
+            .scale(0.9);
+          }
+        }
       }
-    }
+    } // end walk-img
   }
 }// home
