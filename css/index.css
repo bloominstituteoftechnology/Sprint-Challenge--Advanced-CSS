@@ -167,8 +167,10 @@ p {
 }
 .nav-bar {
   margin: 0 auto;
-  max-width: 1000px;
-  background: #F6F6F6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(246, 246, 246, 0.8);
   border: 1px solid #F1F1F1;
 }
 .nav-bar .nav-title {
@@ -184,11 +186,14 @@ p {
 }
 .nav-bar .nav-list .nav-option {
   padding: 15px;
-  color: #454A59;
+}
+.nav-bar .nav-list .nav-option:hover {
+  background: lightgray;
 }
 .nav-bar .nav-list .nav-option a {
   text-decoration: none;
   font-size: 1.6rem;
+  color: #454A59;
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -207,6 +212,7 @@ footer {
 }
 .home .intro .main-header-img {
   border-radius: 5px;
+  margin-top: 100px;
 }
 @media (max-width: 500px) {
   .home .intro .main-header-img {

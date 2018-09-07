@@ -1,8 +1,12 @@
 // Navigation code here
 
 .nav-bar {
+
   .simpleCenter();
-  max-width: 1000px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // Changing @nav-bg to RGBA for fixed position
   background: @nav-bg;
   border: 1px solid @nav-border;
 
@@ -22,13 +26,19 @@
 
     .nav-option {
       padding: 15px;
-      color: @nav-font;
+
+      &:hover {
+        background: lightgray;
+      }
     }
 
     .nav-option a {
       text-decoration: none;
       font-size: 1.6rem;
+      color: @nav-font;
+
     }
+
   }
 
   @media @phone {
