@@ -7,21 +7,23 @@ border-radius: @radius;
   }
 
 
-.button(@width, @height, @bg-color, @font-color, @font-size) {
-.border-radius(15px);
-width: @width;
-height: @height;
-background-color: @bg-color;
-color: @font-color;
-font-size: @font-size;
+  .button() {
+    .border-radius(5px);
+     width: 100px;
+    height: 35px;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    cursor: pointer;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 9px;
+  
+    
+    
+    &:hover {
+      background: @porcelain;
+      color:  @btn-bg-color;
+    }
+  }
 
-@media @mobile {
-    width: 100%
-}
-
-&:hover {
-    background: @font-color;
-    color: @bg-color;
-}
-
-}
+ 
