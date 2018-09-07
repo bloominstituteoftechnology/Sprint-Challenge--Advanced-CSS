@@ -1,0 +1,5 @@
+Adaptive web design is different from responsive design in that there isn't one layout that always changes. Instead, there are several distinct layouts for multiple screen sizes. ... The site detects the type of device used, and delivers the pre-set layout for that device.
+ mobile first means designing an online experience for mobile before designing it for the desktop Web
+62.5% solution makes calculation easier (as the font sizes in px are 10 times their rem values), it ends up forcing developers to explicitly rewrite all the font sizes in their website.
+CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+Mixins is a little confusing, also was confusing at first
