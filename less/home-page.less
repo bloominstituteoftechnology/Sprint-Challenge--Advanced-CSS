@@ -15,7 +15,7 @@
     }
 
     .header-img {
-      border-radius: 5px;
+      .std-image();
 
       @media @phone {
         height: 128px;
@@ -49,10 +49,9 @@
       }
 
     img {
-      width: 28%;
+      .std-image(28%, 100%, 20px);
       margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+      .fade-in-animation();
 
       @media @phone {
         width: 100%;
@@ -136,9 +135,9 @@
       }
       
       img {
-        width: 100%;
-        height: auto;
+        .std-image();
         border-radius: 10px;
+        .fade-in-animation();
       }
     }
   }
