@@ -1,1 +1,37 @@
 // Navigation code here
+.nav {
+  width: 100%;
+  @media @phone {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media @phone {
+      margin: 0 auto;
+  }
+    h1 {
+      font-size: 4rem;
+      color:@header-font-color;
+    }
+    nav {
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: space-evenly;
+      width: 55%;
+      padding-top: 25px;
+      margin-bottom: 20px;
+      @media @phone {
+        width: 100%;
+  }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: @nav-font;
+      }
+    }
+  }
+}
