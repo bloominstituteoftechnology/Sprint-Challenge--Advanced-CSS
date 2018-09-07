@@ -185,6 +185,16 @@ p {
   font-size: 1.6rem;
   color: #23293B;
 }
+@media (min-width: 500px) {
+  .nav-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.85);
+    margin-top: 0;
+    padding-top: 15px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -194,6 +204,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 500px) {
+  .home {
+    padding-top: 11rem;
+  }
 }
 .home .intro h2 {
   padding: 15px;
