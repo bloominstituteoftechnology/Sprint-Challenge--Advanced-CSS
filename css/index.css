@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-header {
+  background: #F6F6F6;
+  border-bottom: #F1F1F1;
+}
+.nav-header .nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-header .nav-bar h1 {
+  font-size: 4rem;
+  margin: 13px;
+}
+.nav-header .nav-bar nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 376px;
+  width: 80%;
+  margin: 6px 0 12px;
+}
+.nav-header .nav-bar nav a {
+  font-size: 1.6rem;
+  color: #454A59;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -211,6 +236,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  background: #23293B;
+  padding: 8px 0 8px;
+  width: 100px;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -1,1 +1,21 @@
 // Mixins Here
+.nav-style() {
+  background: @nav-bg;
+  border-bottom: @nav-border;
+}
+
+.nav-text() {
+  font-size: 1.6rem;
+  color: @nav-font;
+  text-decoration: none;
+}
+
+.button(@width, @padding, @bg-color) {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  background: @bg-color;
+  padding: @padding 0 @padding;
+  width: @width;
+  border-radius: 5px;
+}
