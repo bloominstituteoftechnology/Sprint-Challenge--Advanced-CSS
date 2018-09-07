@@ -16,7 +16,7 @@
         }
     
         a{
-            .elementAlignment(0, 10px 2%, 13%);
+            .elementAlignment(0, 10px 2%, 20%);
             text-align: center;
             font-size: 1.5rem;
             text-decoration: none;
@@ -27,6 +27,30 @@
             }
         }
 
+    }
+
+    @media @tabletMaxWidth{
+        div{
+
+            h2{
+                .elementAlignment(0 auto,  10px 0, 100%);
+            }
+
+            a{
+                .elementAlignment(0, 10px 2%, 20%);
+            }
+        }
+    }
+
+    @media @mobileMaxWidth{
+        div{
+            .elementAlignment(0 auto, 10px 0, 100%);
+
+            h2{
+                .elementAlignment(0 auto,  10px 0, 100%);
+                font-size: 4rem;
+            }
+        }
     }
    
 }
