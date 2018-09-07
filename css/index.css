@@ -172,10 +172,20 @@ p {
   background-color: #F6F6F6;
   border-bottom: #F1F1F1;
 }
+@media ( max-width: 500px ) {
+  .nav-container {
+    max-width: 500px;
+  }
+}
 .nav-container h1 {
   width: 100%;
   font-size: 4rem;
   padding-bottom: 1.5%;
+}
+@media ( max-width: 500px ) {
+  .nav-container h1 {
+    margin-bottom: 10px;
+  }
 }
 .nav-container nav {
   width: 100%;

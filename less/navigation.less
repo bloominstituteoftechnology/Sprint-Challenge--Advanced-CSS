@@ -10,10 +10,18 @@
     background-color: @nav-bg;
     border-bottom: @nav-border;
 
+    @media @phone {
+      max-width: 500px;
+    }
+
     h1 {
       width: 100%;
       font-size: 4rem;
       padding-bottom: 1.5%;
+
+      @media @phone {
+        margin-bottom: 10px;
+      }
     }
     nav {
       width: 100%;
