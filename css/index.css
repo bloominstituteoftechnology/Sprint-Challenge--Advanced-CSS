@@ -172,10 +172,20 @@ p {
   font-size: 4rem;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .navBar h1 {
+    font-size: 3rem;
+  }
+}
 .navBar nav {
   display: flex;
   width: 38%;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .navBar nav {
+    width: 80%;
+  }
 }
 .navBar nav a {
   font-size: 1.5rem;
@@ -183,6 +193,16 @@ p {
   font-family: #454A59;
   color: #23293B;
   padding: 2%;
+  display: inline;
+}
+@media (max-width: 500px) {
+  .navBar nav a {
+    font-size: 1.2rem;
+  }
+}
+.navBar nav a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 footer {
   color: #22283B;

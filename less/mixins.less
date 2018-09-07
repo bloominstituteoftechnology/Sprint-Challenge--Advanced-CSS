@@ -5,12 +5,23 @@
         display:flex;
         width: 38%;
         justify-content: space-between;
+        @media @phone {
+            width: 80%;
+        }
         a {
             font-size: 1.5rem;
             text-decoration: none;
             font-family: @font;
             color: @color;
             padding: 2%;
+            display: inline;
+            @media @phone {
+                font-size: 1.2rem;
+            }
+            &:hover {
+                color: blue;
+                text-decoration: underline;
+            }
         }
     }
 
