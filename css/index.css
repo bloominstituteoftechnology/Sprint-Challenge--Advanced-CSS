@@ -172,6 +172,7 @@ nav h1 {
   margin: 0 0 22px 0;
 }
 nav .anchors {
+  color: black;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -221,11 +222,11 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
   display: flex;
   justify-content: center;
+  margin-top: 60px;
+  padding: 50px 60px;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -235,6 +236,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: black;
+  border-radius: 5px;
+  color: white;
+  font-size: 2rem;
+  max-width: 40%;
+  padding: 13px 5%;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
