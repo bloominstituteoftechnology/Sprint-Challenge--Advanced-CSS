@@ -1,3 +1,9 @@
+.bg {
+  background-color: #f7f6f6;
+}
+.fx {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -235,11 +241,12 @@ html {
   border-top: 1px solid #dee2e6;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin-left: 3%;
 }
 .home .walk .walk-text {
   width: 35%;
-  margin: 4% 1% 0% 12%;
+  margin: 4% 3% 0% 10%;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -255,4 +262,19 @@ html {
   width: 72%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .btn {
+  margin: 0% 0% 4% 10%;
+  width: 10%;
+  background-color: black;
+  border-radius: 10px;
+  Height: 5%;
+  color: white;
+}
+.home .walk .btn:hover {
+  background-color: yellow;
+  color: blue;
+}
+.home footer {
+  background-color: #f7f6f6;
 }
