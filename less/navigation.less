@@ -1,1 +1,29 @@
 // Navigation code here
+.main-navigation {
+    width: 100%;
+    display: flex;
+    background: @wild-sand;
+    height: 90px;
+    font-family: @river-bend;
+    .nav-bar {
+        width: 800px;
+        .center();
+        flex-direction: column;
+        margin: 0 auto;
+        font-size: 2rem;
+        justify-content: space-between;
+        .space {
+           margin-top: 15px;
+           font-size: 4rem;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: @river-bend;
+            }
+        }
+    }
+}
