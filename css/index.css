@@ -172,7 +172,7 @@ p {
   position: fixed;
   top: 0;
   border-bottom: 2px solid #F1F1F1;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
 }
 .fixed-navbar .navbar-container {
   margin: 0 auto;
