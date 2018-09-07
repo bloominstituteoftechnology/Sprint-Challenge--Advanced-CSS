@@ -1,1 +1,22 @@
 // Mixins Here
+
+.flex(@justify, @align){
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+
+}
+
+.link() {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: @main-font-color;
+  font-weight: bolder; 
+
+}
+.buttonizer(@color, @width, @padding){
+  background-color: @color;
+  width: @width;
+  padding: @padding;
+}
