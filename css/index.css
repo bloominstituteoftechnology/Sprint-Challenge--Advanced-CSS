@@ -161,7 +161,9 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.9);
+  position: fixed;
+  width: 100%;
 }
 .navigation .container {
   display: flex;
@@ -201,6 +203,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 .home .intro img {
   border-radius: 5px;
