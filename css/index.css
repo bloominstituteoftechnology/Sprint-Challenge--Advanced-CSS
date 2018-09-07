@@ -217,6 +217,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: auto;
+  margin-top: 10px;
 }
 .home .intro h2 {
   padding: 15px;
