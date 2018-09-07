@@ -6,6 +6,11 @@
 
     img {
       border-radius: 5px;
+      padding-top: 125px;
+
+      @media @phone {
+        padding-top: 0px;
+      }
     }
 
     h2 {
@@ -46,6 +51,7 @@
   }
 
   .sky {
+   
     @media @phone {
       display:none;
     }
@@ -134,7 +140,17 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
   }
 }// home
+
+img:hover {
+  opacity: .5;
+}
+
+.btn:hover {
+  opacity: .5;
+  cursor: pointer;
+}
