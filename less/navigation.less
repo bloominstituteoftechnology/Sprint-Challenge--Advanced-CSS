@@ -1,1 +1,40 @@
-// Navigation code here
+//Navigation and Logo
+
+.navigation {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid @sea-shell;
+    background-color: @nav-bg;
+
+    h1 {
+        font-size: 4.4rem;
+        color: @river-bend;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: @river-bend;
+
+        &:hover{
+            color: @shuttle-gray;
+        }
+    }
+
+}
+
