@@ -168,12 +168,19 @@ p {
   background-color: #F6F6F6;
   flex-wrap: wrap;
   width: 100%;
+  position: fixed;
+  opacity: 0.9;
 }
 .navigation h1 {
   font-size: 5rem;
   width: 100%;
   padding: 3% 0;
   text-align: center;
+}
+@media (max-width:500px) {
+  .navigation h1 {
+    font-size: 4rem;
+  }
 }
 .navigation nav {
   width: 100%;
@@ -185,7 +192,7 @@ p {
   font-family: #454A59;
   color: black;
   font-size: 2rem;
-  padding: 2%;
+  margin: 0px 2% 2%;
 }
 .navigation nav a:hover {
   color: #81848E;
@@ -193,7 +200,7 @@ p {
 }
 @media (max-width:500px) {
   .navigation nav a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 footer {
@@ -207,6 +214,7 @@ footer {
   align-items: center;
 }
 .home .intro .header-img {
+  padding-top: 28%;
   width: 100%;
   border-radius: 5px;
 }
@@ -266,7 +274,7 @@ footer {
 @media (max-width:500px) {
   .home .walk {
     flex-direction: column-reverse;
-    padding: 0px;
+    padding: 25px 0 0;
   }
 }
 .home .walk .walk-text {
