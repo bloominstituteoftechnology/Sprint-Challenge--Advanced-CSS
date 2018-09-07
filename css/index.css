@@ -286,7 +286,7 @@ footer {
 .home .space-images img {
   max-width: 350px;
   width: 33%;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 20px 10px 0px 10px;
 }
 @media (max-width:500px) {
@@ -358,7 +358,7 @@ footer {
   }
 }
 .home .walk .walk-img img {
-  border-radius: 5px;
+  border-radius: 15px;
   margin: 30px;
   height: 200px;
   max-width: 300px;
