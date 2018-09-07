@@ -1,7 +1,5 @@
 .nav-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	.center(column);
 	margin-top: 15px;
 
 	h1 {
@@ -9,17 +7,15 @@
 	}
 
 	nav {
-		display: flex;
-		flex-direction: row;
+		.center(row);
 		margin: 15px 0;
 		width: 42.5%;
 		justify-content: space-between;
 	}
 
 	a {
-		text-decoration: none;
+		.fix-font(@nav-font);
 		font-size: 1.6rem;
-		font-family: @nav-font;
 		color: @header-font-color;
 	}
 }
