@@ -181,6 +181,11 @@ p {
   width: 40%;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .top-nav .navigation nav {
+    width: 80%;
+  }
+}
 .top-nav .navigation nav a {
   text-decoration: none;
   color: #454A59;
