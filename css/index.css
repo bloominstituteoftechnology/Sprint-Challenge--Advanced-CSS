@@ -184,6 +184,11 @@ p {
 .navbar h1 {
   font-size: 3.2rem;
   margin: 2% 0;
+  transition-property: transform;
+  transition-duration: 2s;
+}
+.navbar h1:hover {
+  transform: rotateY(360deg);
 }
 .navbar nav {
   display: flex;
@@ -210,6 +215,11 @@ footer {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 6s;
+  transition-property: transform;
+  transition-duration: 2s;
+}
+footer:hover {
+  transform: rotateY(360deg);
 }
 .home .intro {
   opacity: 0;
@@ -287,7 +297,7 @@ footer {
   justify-content: center;
   opacity: 0;
   animation: myAnimation;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-delay: 5s;
 }
@@ -310,6 +320,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: transform;
+  transition-duration: 2s;
+}
+.home .walk .walk-text .btn:hover {
+  transform: rotateY(360deg);
 }
 .home .walk .walk-img {
   width: 46%;

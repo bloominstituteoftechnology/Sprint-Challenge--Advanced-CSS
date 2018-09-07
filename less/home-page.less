@@ -90,7 +90,7 @@
     justify-content: center;
     opacity:0;
     animation:myAnimation;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-delay:5s;
 
@@ -108,6 +108,11 @@
       .btn {
               .buttoncreator(25%,15%,@btn-bg-color,white,1.6rem);
               .center;
+              transition-property: transform;
+              transition-duration:2s;
+              &:hover{
+                transform: rotateY(360deg);
+              }
       }
     }
 
@@ -141,6 +146,7 @@
         .btn{
           .buttoncreator(100%,15%,@btn-bg-color,white,1.6rem);
           padding:5%;
+          
         }
       }
       
