@@ -1,1 +1,23 @@
 // Navigation code here
+.navBar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: @nav-bg;
+    h1 {
+        font-size: 4rem;
+        padding: 1%;
+    }
+    nav {
+        display:flex;
+        width: 30%;
+        justify-content: space-between;
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-family: @nav-font;
+            color: @header-font-color;
+            padding: 2%;
+        }
+    }
+}
