@@ -205,6 +205,7 @@ p {
     align-items: center;
     position: relative;
     padding: 13px 0px 10px 27px;
+    opacity: 1;
   }
   .nav .logo {
     font-size: 4rem;
@@ -338,7 +339,7 @@ footer {
   font-weight: bolder;
   font-size: 1.8rem;
   padding: 8px 0;
-  width: 100px;
+  width: 12.5%;
   background: #23293B;
   border: 1px solid #23293B;
   color: #F6F7F8;
@@ -388,5 +389,62 @@ footer {
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
     transition: 0.3s;
+  }
+}
+.home .subscribe {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  border-top: 1px solid #dee2e6;
+}
+.home .subscribe h2 {
+  margin-bottom: 50px;
+}
+.home .subscribe label {
+  font-size: 1.8rem;
+  color: #23293B;
+}
+.home .subscribe input,
+.home .subscribe select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #5E6164;
+  border-radius: 4px;
+  margin: 6px 0 30px;
+  resize: vertical;
+  font-family: inherit;
+  font-weight: 400;
+}
+.home .subscribe input[type=submit] {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  padding: 8px 0;
+  width: 12.5%;
+  background: #23293B;
+  border: 1px solid #23293B;
+  color: #F6F7F8;
+  border-radius: 5px;
+}
+.home .subscribe input[type=submit]:hover {
+  background: #F6F7F8;
+  color: #23293B;
+  border: 1px solid #23293B;
+}
+@media (max-width: 500px) {
+  .home .subscribe form {
+    margin-left: 8%;
+  }
+  .home .subscribe input,
+  .home .subscribe select {
+    width: 92%;
+  }
+  .home .subscribe input[type=submit] {
+    padding: 25px 0;
+    width: 92%;
   }
 }

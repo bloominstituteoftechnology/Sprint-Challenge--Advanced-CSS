@@ -107,7 +107,7 @@
       }
 
       .btn {
-        .button-styling(@ebony-clay,@porcelain, 100px);
+        .button-styling(@ebony-clay,@porcelain);
 
         @media @phone {
           padding: 25px 0;
@@ -144,5 +144,52 @@
         }
       }
     } // end walk-img
+  } // emd walk section
+
+  .subscribe {
+    .flex(row, wrap, center, center);
+    margin-bottom: 30px;
+    padding-top: 50px;
+    border-top: 1px solid @main-border-color;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+		label {
+      font-size: 1.8rem;
+      color: @header-font-color;
+		}
+
+		input, select {
+			width: 100%;
+			padding: 12px;   
+			border: 1px solid @main-font-color; 
+			border-radius: 4px; 
+			margin: 6px 0 30px;
+			resize: vertical;
+			font-family: inherit;
+			font-weight: 400; 
+    }
+		
+		input[type=submit] {
+      .button-styling(@ebony-clay,@porcelain);
+		}
+
+		@media (max-width: 500px) {
+			form {
+				margin-left: 8%;
+			}
+
+			input, select {
+				width: 92%;
+      }	
+
+      input[type=submit] {
+        padding: 25px 0;
+        width: 92%;
+      }
+    }
   }
+
 }// home
