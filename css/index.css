@@ -316,6 +316,18 @@ footer {
   color: #22283A;
   transition-duration: 0.5s;
 }
+@keyframes extend {
+  from {
+    max-width: 30%;
+  }
+  to {
+    max-width: 50%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  animation-name: extend;
+  animation-duration: 3s;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     max-width: 100%;

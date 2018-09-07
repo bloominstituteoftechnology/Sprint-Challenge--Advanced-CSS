@@ -96,7 +96,16 @@
 
       .btn {
         .custom-button(@btn-bg-color, white);
+        
+        @keyframes extend {
+          from {max-width: 30%;}
+          to {max-width: 50%}
+        }
 
+        &:hover {
+          animation-name: extend;
+          animation-duration: 3s;
+        }
         @media @phone {
           max-width: 100%;
           height: 75px;
