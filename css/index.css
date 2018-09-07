@@ -534,7 +534,7 @@ form .lost-account:hover {
 input[type="password"] {
   border: none;
   border-bottom: 1px solid #fff;
-  background: transparent;
+  background: #1F6DA2;
   outline: none;
   height: 35px;
 }
