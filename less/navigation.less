@@ -1,1 +1,19 @@
-// Navigation code here
+nav {
+  background: @wild-sand;
+  width: 100%;
+
+  .container.menu {
+    padding: 13px;
+    text-align: center;
+
+    .nav-links {
+      .flex(space-evenly);
+      margin: 18px auto 0;
+      width: 57%;
+
+      @media @phone {
+        width: 92.5%;
+      }
+    }
+  }
+}
