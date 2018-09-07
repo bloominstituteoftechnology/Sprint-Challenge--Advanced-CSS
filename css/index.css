@@ -241,6 +241,26 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  width: 30%;
+  padding: 7px;
+  color: #F1F1F1;
+  background: #23293B;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  animation-name: example;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  to {
+    background: #F1F1F1;
+    color: #23293B;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
