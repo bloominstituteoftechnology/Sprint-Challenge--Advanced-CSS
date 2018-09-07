@@ -1,1 +1,39 @@
 // Navigation code here
+.fixed-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid @nav-border;
+  background-color: @nav-bg;
+
+  .navbar-container {
+    .center;
+    max-width: @container-width;
+
+  }
+}
+
+.navbar-container {
+  .custom-layout(space-between, center);
+  flex-direction: column;
+  padding: 8px 0;
+
+  h1 {
+    .space-bottom(15px);
+  }
+}
+
+// Main nav
+.main-nav {
+  .custom-layout(space-evenly, flex-start);
+  width: 56%;
+
+  a {
+    color: @header-font-color;
+    text-decoration: none;
+
+    &:hover {
+      color: @main-font-color;
+    }
+  }
+}
