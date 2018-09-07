@@ -3,6 +3,16 @@
   width: 100%;
   background: @nav-bg;
   display: flex;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+
+  @keyframes example {
+    from {background-color:@nav-bg;}
+    to {background-color: yellow;
+    }
+}
     
   
     .nav-container {
@@ -11,6 +21,16 @@
       flex-direction: column;
       justify-content: space-between;
       background: @nav-bg;
+      -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: example;
+      animation-duration: 4s;
+
+      @keyframes example {
+        from {background-color:@nav-bg;}
+        to {background-color: yellow;
+        }
+    }
   
       @media @mobile {
         flex-wrap: wrap;
@@ -37,6 +57,19 @@
         justify-content: space-evenly;
         background-color: @nav-bg;
         align-items: flex-end;
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 4s;
+
+        @keyframes example {
+          from {background-color:@nav-bg;}
+          to {background-color: yellow;
+          }
+      }
+
+
+
   
         @media @mobile {
           width: 100%;
@@ -52,6 +85,8 @@
           justify-content: space-evenly;
           width: 100%;
           padding: 20px 0px 10px 0px;
+
+
         }
       }
     }

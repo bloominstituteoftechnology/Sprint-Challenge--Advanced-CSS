@@ -1,12 +1,24 @@
 // Mixins Here
 
-// Center
-.flex-center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+// Flex direction
+  .flex(@direction, @justify, @align) {
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+// min max width
+.width(@max,@width) {
+    max-width:@max;
+    width:@width;
+}
 
+// p mixin
+.p(@fonts,@lh) {
+    padding-top: 10px;
+    font-size: @fonts;
+    line-height:@lh;
+}
 // Web Prefixes
 .border-radius(@radius) {
     -webkit-border-radius: @radius;
