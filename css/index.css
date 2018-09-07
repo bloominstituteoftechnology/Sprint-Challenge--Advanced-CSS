@@ -166,7 +166,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.5);
   border-bottom: 2px solid #F1F1F1;
 }
 .main-nav h1 {
@@ -196,6 +196,52 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+footer form {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  footer form {
+    width: 100%;
+  }
+}
+footer form label {
+  font-size: 1.6rem;
+}
+footer form .form-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+footer form .form-bar * {
+  flex-grow: 1;
+}
+footer form .form-bar input[type=email] {
+  flex-grow: 10;
+}
+footer form .form-bar .submit {
+  background: #454A59;
+  color: #F6F6F6;
+  border: solid 1px #454A59;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+}
+footer form .form-bar .submit:hover {
+  background: #F6F6F6;
+  color: #454A59;
+}
+footer form .form-bar .submit:active {
+  background: #b9b9b9;
+  color: #343843;
+}
+footer p {
+  margin-top: 2rem;
 }
 .home .intro h2 {
   padding: 15px;
@@ -300,8 +346,8 @@ footer {
   background: #22283A;
   color: #F6F6F6;
   border: solid 1px #22283A;
-  padding: 0.8rem 1.6rem;
   border-radius: 0.5rem;
+  padding: 0.8rem 1.6rem;
 }
 .home .btn:hover {
   background: #F6F6F6;

@@ -8,4 +8,39 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  form {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @media @phone {
+      width: 100%;
+    }
+    label {
+      font-size: 1.6rem;
+    }
+    .form-bar {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      * {
+        flex-grow: 1;
+      }
+      input[type=email] {
+        flex-grow: 10;
+      }
+      .submit {
+        .button(@river-bend, @wild-sand);
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+  }
 }
