@@ -10,11 +10,11 @@ You will be updating a website using all your responsive web design and preproce
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [X] Fork the project into your GitHub user account
 
-* [ ] Clone the forked project into a directory on your machine
+* [X] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] You are now ready to build this project with your preferred IDE
 
 #### Pro tip: Commit every time you complete a task or feature!
 
