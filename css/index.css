@@ -163,6 +163,12 @@ p {
 nav {
   background-color: #f6f6f6;
   border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.95;
+  height: 110px;
 }
 nav .nav-logo {
   display: flex;
@@ -208,6 +214,7 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  margin-top: 100px;
 }
 .home .space-images {
   display: flex;
@@ -306,4 +313,43 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home form {
+  border: 1px solid black;
+  max-width: 500px;
+  font-family: #454a59;
+  margin: 20px auto;
+}
+.home form .name-email {
+  display: flex;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+.home form h1 {
+  font-size: 2rem;
+  text-align: center;
+  background: #22283a;
+  color: white;
+  font-weight: 200;
+  padding: 10px;
+}
+.home form #email,
+.home form #name {
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+.home form #submit {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  font-size: 2.1rem;
+  cursor: pointer;
+  background: #22283a;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+.home .email-signup {
+  padding: 20px;
 }
