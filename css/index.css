@@ -190,14 +190,14 @@ p {
 }
 .nav-container nav {
   display: flex;
-  width: 100%;
+  width: 350px;
   justify-content: space-around;
   padding-bottom: 10px;
   margin-left: 220px;
 }
 @media (max-width: 500px) {
   .nav-container nav {
-    margin-left: 20px;
+    margin-left: 70px;
   }
 }
 .nav-container nav a {
