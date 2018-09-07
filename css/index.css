@@ -354,6 +354,8 @@ footer {
 }
 .signup img {
   margin-top: 100px;
+  border-radius: 5px;
+  width: 100%;
 }
 .signup h2 {
   padding: 15px;
@@ -366,6 +368,11 @@ footer {
   padding: 50px 80px;
   width: 60%;
   margin: 40px auto 60px;
+}
+@media (max-width: 500px) {
+  .signup form {
+    width: 100%;
+  }
 }
 .signup form p {
   color: #F6F6F6;
@@ -388,22 +395,24 @@ footer {
   font-weight: bold;
   border: 1px solid transparent;
   border-radius: 5px;
-  color: #22283A;
-  background: white;
+  color: #dee2e6;
+  background: #22283A;
   text-align: center;
   display: block;
   padding: 10px 0;
   width: 100px;
   cursor: pointer;
+  border: 1px solid #dee2e6;
 }
 .signup form .btn:hover {
   color: #22283A;
-  background: #22283A;
-  border: 1px solid white;
+  background: #dee2e6;
+  border: 1px solid #22283A;
   transition: 0.4s;
 }
 .signup form .btn:hover {
   color: white;
+  background: #81848E;
 }
 .signup form .btn:active {
   background: black;
@@ -418,6 +427,7 @@ footer {
 @media (max-width: 500px) {
   .signup form .btn {
     width: 100%;
-    padding: 25px;
+    padding: 15px;
+    margin: 15px auto 15px;
   }
 }
