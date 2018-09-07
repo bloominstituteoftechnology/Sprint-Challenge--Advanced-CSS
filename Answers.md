@@ -18,3 +18,5 @@ If we wnated to quickly increase or decrease the font size of the entire project
 Preproccessing allows you to decrease the amount of code that you are writing and makes a lot of the styling for your selectors reusable. It makes your code much easier to read and keeps it looking organized.
 
 5.What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept of pre-processing are variables. The concept that gives me the most trouble are mix-ins. I'm just not comfortable with adding in parameters because I'm not sure when I would use them effectively. 
