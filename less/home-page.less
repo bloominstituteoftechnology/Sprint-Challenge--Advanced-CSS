@@ -115,10 +115,10 @@
 
   .walk {
     @media @phone {
-      width: 100%;
+      width: 85%;
       flex-direction: column-reverse;
       margin: 0 auto;
-      padding-top: 5%;
+      padding: 0% 5% 0%;
       .walk-img {
         width: 126%;
         border-radius: 20px;
@@ -127,9 +127,17 @@
       .walk-text {
         width: 130%;
         margin: 0% 0% 5% -13%;
+      .btn {
+        .button-me(5px, 5%);
+        width: 97%;
       }
+     }
     }
   }
 
-
+  footer {
+    @media @phone {
+      border-radius: 0px;
+    }
+  }
 }// Home
