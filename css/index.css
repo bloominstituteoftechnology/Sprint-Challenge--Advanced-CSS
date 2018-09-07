@@ -1,3 +1,4 @@
+@phone : max-width: 500px;
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -259,4 +260,79 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#animated-example {
+
+   height: 20px;
+   margin: 20px auto;
+   width: 300px;
+
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounceIn {
+    animation-name: bounceIn;
 }
