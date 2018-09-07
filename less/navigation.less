@@ -1,24 +1,38 @@
 .main-header {
 	width: 100%;
-	background-color: #f4f4f4;
+    background-color: #f4f4f4;    
+    height: auto;
+
+    @media @phone{
+        background-color: lightgreen;
+    }
 	.navcontainer {
 		.flex(center);
         flex-wrap: wrap;
-		
-		width: 75%;
-		margin: 0 auto;
-		h1 {
+        max-width:800px;
+        width:100%;
+        margin: 0 auto;
+        h1 {
 			font-size: 3.2rem;
 			width: 51%;
 			text-align: center;
 			margin-top: 15px;
 		}
 		nav {
-			.flex(space-around);
-			width: 51%;
-			margin: 15px 0 10px;
+			.flex(center);
+			width: 100%;
+            margin: 15px 0 10px;
+            
+            
 			a {
-				.anchorText(1.4rem, none, @main-font-color);
+                .anchorText(1.4rem, none, @main-font-color);
+                margin:0 10px;
+                @media @phone {
+                    margin: 0 15px;
+                    font-size: 1.4rem;
+
+                }
+                
 			}
 		}
 	}

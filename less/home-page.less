@@ -1,6 +1,11 @@
 // Home Content
 
 .home {
+	@media @phone {
+		max-width: 500px;
+		width: 100%;
+	}
+
 	.intro {
 		img {
 			.size(100%, auto);
@@ -21,10 +26,18 @@
 		flex-wrap: wrap;
 		width: 100%;
 
+		@media @phone {
+			justify-content: center;
+		}
+
 		img {
 			.size(28%, 100%);
 			margin: 20px 2.5%;
 			border-radius: 20px;
+
+			@media @phone {
+				width: 90%;
+			}
 		}
 	}
 
@@ -46,6 +59,14 @@
 		border-top: 1px solid @main-border-color;
 		padding: 50px 60px;
 
+		@media @phone {
+			display: flex;
+			flex-flow: column-reverse wrap;
+			justify-content: center;
+			width: 100%;
+			padding: 15px;
+		}
+
 		.walk-text {
 			width: 50%;
 
@@ -57,22 +78,33 @@
 				margin-bottom: 26px;
 			}
 
+			@media @phone {
+				display: flex;
+				flex-flow: column wrap;
+				width: 100%;
+				padding-top: 20px;
+			}
+
 			.btn {
 				.flex(center);
 				align-items: center;
 				.size(28%, 30px);
 				background-color: @header-font-color;
-        border-radius: 5px;
-        
-        &:hover{
-          background-color: white;
-        }
+				border-radius: 5px;
+
+				&:hover {
+					background-color: white;
+				}
+
+				@media @phone {
+					.size(100%, 60px);
+				}
 				a {
-          .anchorText(1.8rem, none, white);
-          
-          &:hover{
-            color: @header-font-color;
-          }
+					.anchorText(1.8rem, none, white);
+
+					&:hover {
+						color: @header-font-color;
+					}
 				}
 			}
 		}
@@ -81,9 +113,19 @@
 			width: 46%;
 			margin-left: 4%;
 
+			@media @phone {
+				width: 100%;
+				margin-left: 0;
+			}
+
 			img {
 				.size(100%, auto);
 				border-radius: 10px;
+
+				@media @phone {
+					width: 95%;
+					align-items: center;
+				}
 			}
 		}
 	}
