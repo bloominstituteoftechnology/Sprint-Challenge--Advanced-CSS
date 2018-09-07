@@ -77,3 +77,52 @@
     }
   }
 }// home
+
+// Mobile
+
+.intro {
+  @media @phone {
+    img {
+      max-height:  121px; 
+    }
+  }
+}
+
+.home {
+  .space-images {
+  @media @phone {
+    width: 100%;
+    .blast {
+      width: 100%;
+    }
+    .sky {
+      display: none;
+    }
+    .launch {
+      display: none;
+    }
+  }
+ }
+
+ .visit-planets {
+   @media @phone {
+        padding-bottom: 7%;
+     }
+  }
+
+  .walk {
+    @media @phone {
+      width: 100%;
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      padding-top: 5%;
+      .walk-img {
+        width: 126%;
+        border-radius: 20px;
+        margin: 0% 0% 5% -13%;
+      }
+    }
+  }
+
+
+}// Home

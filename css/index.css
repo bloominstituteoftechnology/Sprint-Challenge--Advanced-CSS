@@ -1,4 +1,3 @@
-@phone (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -185,6 +184,19 @@ h1 {
   margin-left: 20px;
   padding-right: 25px;
 }
+@media (max-width: 500px) {
+  .nav-bar h1 {
+    font-size: 4rem;
+    padding-bottom: 4%;
+  }
+  .nav-bar .links {
+    padding-bottom: 2%;
+    white-space: nowrap;
+  }
+  .nav-bar .links a {
+    padding-right: 15px;
+  }
+}
 footer {
   color: #22283B;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -262,4 +274,41 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .intro img {
+    max-height: 121px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    width: 100%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-bottom: 7%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .home .walk .walk-img {
+    width: 126%;
+    border-radius: 20px;
+    margin: 0% 0% 5% -13%;
+  }
 }
