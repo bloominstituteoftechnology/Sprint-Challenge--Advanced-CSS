@@ -189,6 +189,15 @@ p {
   margin: 0 auto;
   font-size: 2rem;
   justify-content: space-between;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: aquamarine;
+  }
+  100% {
+    background-color: #F6F6F6;
+  }
 }
 @media (max-width: 500px) {
   .main-navigation .nav-bar {
@@ -211,7 +220,7 @@ p {
 }
 @media (max-width: 500px) {
   .main-navigation .nav-bar .nav a {
-    margin: 0 20px;
+    margin: 0 20p;
     white-space: nowrap;
   }
 }
