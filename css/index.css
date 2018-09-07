@@ -187,9 +187,6 @@ p {
   margin: 12px auto;
 }
 @media (max-width: 500px) {
-  .main-nav header nav {
-    padding: 19px 6% 10px 9%;
-  }
 }
 .main-nav header nav a {
   font-size: 1.6rem;
