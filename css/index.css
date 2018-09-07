@@ -242,3 +242,21 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: #22283A;
+  color: #F6F6F6;
+  border-radius: 0.5rem;
+  border: solid 1px #22283A;
+  padding: 1rem 2rem;
+}
+.home .btn:hover {
+  background: #F6F6F6;
+  color: #22283A;
+}
+.home .btn:active {
+  background: #b9b9b9;
+  color: #1a1e2c;
+}

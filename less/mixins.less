@@ -1,1 +1,19 @@
+
+
 // Mixins Here
+
+.button(@background: @btn-bg-color, @foreground: @wild-sand) {
+    background: @background;
+    color: @foreground;
+    border-radius: 0.5rem;
+    border: solid 1px @background;
+    padding: 1rem 2rem;
+    &:hover {
+        background: @foreground;
+        color: @background;
+    }
+    &:active {
+        background: shade(@foreground, 25%);
+        color: shade(@background, 25%);
+    }
+}
