@@ -348,6 +348,12 @@ footer {
   justify-content: center;
   align-items: center;
   border: 1px solid #0000ff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.subscribe .subscribe-content .card:hover {
+  background: #7bff00;
+  cursor: pointer;
 }
 .subscribe .subscribe-content .card1 {
   background: #ff4141;
@@ -362,6 +368,7 @@ footer {
   flex-direction: column;
 }
 .sign-in h1 {
+  margin-top: 10px;
   font-size: 3.5rem;
 }
 .sign-in .log-in-container {
@@ -381,4 +388,8 @@ footer {
   border: none;
   background: lightblue;
   border-radius: 10px;
+}
+.sign-in .log-in-container .login-submit:hover {
+  background: #70d314;
+  cursor: pointer;
 }
