@@ -172,6 +172,11 @@ p {
   border-bottom: 1px solid #F1F1F1;
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .nav-content {
+    position: relative;
+  }
+}
 .nav-content h1 {
   margin-bottom: 20px;
 }
@@ -218,6 +223,7 @@ footer {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
+    margin-top: 2%;
   }
 }
 .home .intro h2 {
