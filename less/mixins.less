@@ -1,1 +1,28 @@
 // Mixins Here
+.custom-layout(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.font-size(@fontsize) {
+    font-size: @fontsize;
+}
+
+// Parametric Mixin
+.button(@btn-bg-color, @color) {
+    border: 1px solid black;
+    max-width: 101px;
+    height: auto;
+    .font-size(1.8rem);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: @btn-bg-color;
+    color: @color;
+
+    &:hover {
+        background: @color;
+        color: @btn-bg-color;
+      }
+}
