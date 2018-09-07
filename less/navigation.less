@@ -1,1 +1,33 @@
 // Navigation code here
+
+.nav-bar {
+  .simpleCenter();
+  max-width: 1000px;
+  background: @nav-bg;
+  border: 1px solid @nav-border;
+
+  .nav-title {
+    font-size: 4.0rem;
+    color: @header-font-color;
+    text-align: center;
+    padding-top: 15px; 
+  }
+
+  .nav-list {
+
+    .simpleCenter();
+    display: flex;
+    justify-content: center;
+
+
+    .nav-option {
+      padding: 15px;
+      color: @nav-font;
+    }
+
+    .nav-option a {
+      text-decoration: none;
+      font-size: 1.6rem;
+    }
+  }
+}
