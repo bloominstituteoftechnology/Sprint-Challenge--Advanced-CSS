@@ -169,6 +169,15 @@ p {
 }
 .nav {
   width: 100%;
+  position: fixed;
+  z-index: 200;
+  margin-bottom: 40px;
+  min-height: 40px;
+  overflow: hidden;
+  background-color: #F6F6F6;
+  top: 0;
+  opacity: 0.8;
+  border-bottom: 2px solid black;
 }
 @media (max-width:500px) {
   .nav {
@@ -177,10 +186,12 @@ p {
   }
 }
 .nav header {
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 @media (max-width:500px) {
   .nav header {
@@ -218,6 +229,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 150px;
 }
 .home .intro img {
   border-radius: 5px;
