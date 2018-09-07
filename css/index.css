@@ -169,7 +169,8 @@ p {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   margin: 0 auto;
   padding: 12.5px 0;
   background: #F6F6F6;
@@ -208,9 +209,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home .intro {
-  padding-top: 101px;
 }
 .home .intro img {
   width: 100%;
@@ -324,7 +322,6 @@ footer {
   }
 }
 .about header {
-  padding-top: 101px;
   position: relative;
 }
 .about header video {
@@ -339,7 +336,7 @@ footer {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100px;
 }
 .about header .vid-text h2 {
   font-size: 9vw;
