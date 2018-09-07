@@ -79,14 +79,14 @@ _You will know everything is working properly when you see the styles enabled fo
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
-	* [ ]  Use at least 2 parameters to create your button
-	* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+	* [x]  Use at least 2 parameters to create your button
+	* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ## Task 6: Home Page - Mobile HTML & LESS
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
-* [ ] Push your changes and create a pull request if you haven't already.   
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] Push your changes and create a pull request if you haven't already.   
 
 **Congratulations, you completed the sprint challenge!**
 
