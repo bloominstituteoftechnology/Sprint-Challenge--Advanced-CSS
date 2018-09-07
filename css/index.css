@@ -190,16 +190,18 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
   color: #5E6164;
   padding: 1rem 1rem;
+  position: fixed;
+  width: 100%;
 }
 .nav .nav__logo {
   font-size: 4rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   animation-name: fade;
-  animation-duration: 15x 0ms;
+  animation-duration: 1500ms;
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
@@ -231,6 +233,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .intro__img {
+  margin-top: 10.3rem;
 }
 @media (max-width: 500px) {
   .home .intro .intro__img {

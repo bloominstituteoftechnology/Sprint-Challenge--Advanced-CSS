@@ -3,15 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: @nav-bg;
+  background-color: @nav-bg-transparent;
   color: @main-font-color;
   padding: 1rem 1rem;
+  
+  //fixed navigation
+  position: fixed;
+  width: 100%;
 
   .nav__logo {
     font-size: 4rem;
     margin-top: .5rem;
     margin-bottom: 2rem;
-    .fade(15x00ms);
+    .fade(1500ms);
   }
 
   .nav__menuItem {
