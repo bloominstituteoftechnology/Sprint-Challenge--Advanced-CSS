@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .planet {
+      .imgs(100%, auto, 5px);
+    }
 
     h2 {
       padding: 15px;
@@ -20,10 +23,8 @@
     width: 100%;
 
     img {
-      width: 28%;
+      .imgs(28%, 100%, 20px);
       margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
     }
   }
 
@@ -58,6 +59,10 @@
       }
 
       .btn {
+        .button(100px, black, white);
+        &:hover {
+          .button(100px, white, black);
+        }
       }
     }
 
@@ -66,9 +71,7 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        .imgs(100%, auto, 10px);
       }
     }
   }
