@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flexit(@justifyContent) {
+    display:flex;
+    justify-content: @justifyContent;
+}
+
+.hoverOver(@hoverColor, @hoverBG) {
+    &:hover{
+        color: @hoverColor;
+        background-color: @hoverBG;
+     }
+}
+
+.buttonize() {
+    background-color: @btn-bg-color;
+    color:white;
+    border: none;
+    font-size: 2rem;
+    padding: 2% 5%;
+    border-radius:5px;
+    font-family: 'Ubuntu', sans-serif;
+    .hoverOver(@btn-bg-color,white);
+}
