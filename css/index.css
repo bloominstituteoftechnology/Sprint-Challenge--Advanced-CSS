@@ -1,3 +1,14 @@
+.button {
+  width: 30%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: black;
+  padding: 2%;
+  border-radius: 5px;
+  color: white;
+  border: 1px black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
