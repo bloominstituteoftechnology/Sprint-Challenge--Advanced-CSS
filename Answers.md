@@ -15,4 +15,4 @@ A: It is a simpler way of writting multiple lines of CSS code. It's a specific s
 
 
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-A: My favorite concept are mixins. Nothing really comes to mind that gives me trouble with preprocessing.
+A: My favorite concept are mixins. The harderst part for me to understand was how it would compile the index.css file wven though it was just watching the file which only had @imports.
