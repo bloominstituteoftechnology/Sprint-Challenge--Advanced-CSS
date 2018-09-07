@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.topnav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px 0px;
+  align-items: center;
+  padding-bottom: 0px;
+}
+.topnav h1 {
+  font-size: 3.9rem;
+}
+.topnav nav {
+  width: 50%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.topnav nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
