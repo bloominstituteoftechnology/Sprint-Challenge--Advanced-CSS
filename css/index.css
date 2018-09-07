@@ -274,50 +274,6 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  width: 100px;
-  background: #23293B;
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 1.6rem;
-  padding: 10px;
-  text-align: center;
-}
-.home .walk .walk-text .btn:hover {
-  width: 100px;
-  background: white;
-  color: #23293B;
-  border: 1px solid black;
-  border-radius: 5px;
-  font-size: 1.6rem;
-  padding: 10px;
-  text-align: center;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    background: #23293B;
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    padding: 10px;
-    text-align: center;
-    padding: 25px 0;
-  }
-  .home .walk .walk-text .btn:hover {
-    width: 100%;
-    background: white;
-    color: #23293B;
-    border: 1px solid black;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    padding: 10px;
-    text-align: center;
-    padding: 25px 0;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -332,4 +288,71 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .magazine {
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .home .magazine {
+    padding: 20px 3%;
+  }
+}
+.home .magazine .form {
+  width: 80%;
+  margin: 0 1%;
+}
+.home .magazine .form .input {
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+.home .btn {
+  width: 100px;
+  background: #23293B;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 10px;
+  text-align: center;
+}
+.home .btn:hover {
+  width: 100px;
+  background: white;
+  color: #23293B;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 95%;
+    background: #23293B;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+    padding: 25px 0;
+  }
+  .home .btn:hover {
+    width: 95%;
+    background: white;
+    color: #23293B;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    padding: 10px;
+    text-align: center;
+    padding: 25px 0;
+  }
 }

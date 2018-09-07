@@ -78,23 +78,8 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        .button(100px, @header-font-color, white);
-        &:hover {
-          .button(100px, white, @header-font-color);
-        }
-        @media @phone {
-          .button(100%, @header-font-color, white);
-          padding: 25px 0;
-          &:hover {
-            .button(100%, white, @header-font-color);
-            padding: 25px 0;
-          }
-        }
-      }
     }
-
+// .btn is at the bottom for less specificity (to share styles with submit button)
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -104,6 +89,40 @@
       }
       img {
         .imgs(100%, auto, 10px);
+      }
+    }
+  }
+
+  .magazine {
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    .flex(space-between, flex-start, column);
+    @media @phone {
+      padding: 20px 3%;
+    }
+    .form {
+      width: 80%;
+      margin: 0 1%;
+      .input {
+        width: 100%;
+        margin: 15px 0;
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn {
+    .button(100px, @header-font-color, white);
+    &:hover {
+      .button(100px, white, @header-font-color);
+    }
+    @media @phone {
+      .button(95%, @header-font-color, white);
+      padding: 25px 0;
+      &:hover {
+        .button(95%, white, @header-font-color);
+        padding: 25px 0;
       }
     }
   }
