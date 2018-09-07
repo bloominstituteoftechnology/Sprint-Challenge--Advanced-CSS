@@ -2,6 +2,16 @@
   width: 100%;
   padding: 4%;
 }
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -163,6 +173,8 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  animation-name: zoomIn;
+  animation-duration: 7s;
 }
 @media (max-width:500px) {
   .container {
