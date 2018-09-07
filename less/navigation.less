@@ -1,1 +1,30 @@
 // Navigation code here
+
+
+.navigation{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    width:100%;
+    max-width: 1024px;
+    background-color: #F0F0F0;
+    height:100px;
+    nav{
+        height: 100%;        
+        margin-top:20px;
+        a{
+            text-decoration: none;
+            font-size: 1rem;
+            padding:20px;
+            color:black;
+
+            @media @mobile {
+                padding:15px;
+            }
+        }
+    }
+    
+
+}
