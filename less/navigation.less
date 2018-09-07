@@ -1,20 +1,14 @@
 // Navigation code here
 .navigation {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  .flex(column, space-around);
   max-width: 800px;
-  width: 100%;
   margin: 12.5px auto;
 
   h1 {
     margin-bottom: 20px;
   }
   nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    .flex(row, center);
     
     a {
       text-decoration: none;
