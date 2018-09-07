@@ -1,31 +1,25 @@
 // Home Content
 
 .home {
-  
-  padding-top: 20px; 
+  padding-top: 10px;
 
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-  
 
     img {
-    
       .space-imgs();
-  
     }
   }
 
@@ -42,9 +36,9 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 70px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 40px 60px;
     display: flex;
     justify-content: center;
 
@@ -60,13 +54,14 @@
       }
 
       .btn {
+        .custom-button(black, white);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -74,4 +69,4 @@
       }
     }
   }
-}// home
+} // home

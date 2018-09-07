@@ -173,7 +173,7 @@ p {
   margin: 10px 0;
 }
 .container.header header h1 {
-  font-size: 4.2rem;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 .container.header header nav {
@@ -190,7 +190,7 @@ p {
   margin: 0 1%;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -198,9 +198,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 6px;
 }
 .home {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -229,9 +230,9 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 70px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 40px 60px;
   display: flex;
   justify-content: center;
 }
@@ -243,6 +244,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: black;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: black;
+  max-width: 100px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
