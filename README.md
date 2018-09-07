@@ -68,7 +68,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [X] Add a viewport meta tag to the head of your index.html page
 
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
