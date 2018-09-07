@@ -1,0 +1,5 @@
+1. Adaptive layout provides distinct view according to certain breakpoints for multiple screen sizes. While, fully responsive layout changes the view as the screen is resized.
+2. Mobile first approach lets the developer think about the building of webpage, or website through the lens of mobile users. One would think about the property (min-width) when approaching Mobile first. Desktop first approach allows the developer design the webpage for full sized screens.
+3. To correspond to browser defuault font-size.
+4. CSS preprocessing allow developers to write CSS from a modular, logical point of view which is difficult to conduct in pure CSS.
+5. My favourite concept in regards to preprocessing would be mixins since they are reusable like functions. However, I stil find them troubling because I haven't fully understood them.

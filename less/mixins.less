@@ -1,1 +1,21 @@
 // Mixins Here
+.flex-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+.hover-general{
+    :hover{
+        box-shadow: 5px 5px grey;
+    }
+}
+
+.btn-mixin( @hover, @bRadius ){
+    border-radius: @bRadius;
+    & :hover{
+        .hover-general();
+    }
+}
