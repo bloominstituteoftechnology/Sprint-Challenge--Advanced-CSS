@@ -160,27 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-section {
-  display: flex;
-  justify-content: space-between;
-}
-section nav {
-  margin: 15px;
-}
-section nav a {
-  background: maroon;
+.container {
   width: 100%;
-  padding: 10px;
-  display: inline-block;
-  border: 1px solid red;
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  borrder-radius: 5px;
 }
-section nav a button:hover {
-  background-color: chartreuse;
+.container h1 {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 40px;
+}
+.container nav {
+  display: flex;
+  justify-content: center;
+}
+.container nav a {
+  background: white;
+  width: 100px;
+  border: 1px solid white;
   color: black;
+  padding: 5px 14px;
+  text-decoration: none;
+  border-radius: 75px;
+  font-size: 16px;
+  height: 30px;
+}
+.container nav a:hover {
+  background: chartreuse;
+  color: black;
+  border: 2px dotted black;
 }
 footer {
   color: #22283B;
@@ -233,6 +240,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: grey;
+  width: 100px;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 14px;
+  text-decoration: none;
+  border-radius: 75px;
+  font-size: 16px;
+  height: 30px;
+}
+.home .walk .walk-text .btn:hover {
+  background: chartreuse;
+  color: black;
+  border: 2px dotted black;
 }
 .home .walk .walk-img {
   width: 46%;

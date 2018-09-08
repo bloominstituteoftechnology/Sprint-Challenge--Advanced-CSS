@@ -1,6 +1,31 @@
 // Mixins Here
 
+//Button
+.custom-button(@backG, @bord, @color){
+    background: @backG;
+    width: 100px;
+    border: @bord;
+    color: @color;
+    padding: 5px 14px;
+    text-decoration:none;
+    border-radius:(75px);
+    font-size: 16px;
+    height: 30px;
+    
 
+    
+    &:hover{
+    background: chartreuse;
+    color: black;
+    border: 2px dotted black;
+  }
+    
+    }
+
+    @media (max-width:500px){
+
+    }
+    
     
 
 
