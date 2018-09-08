@@ -320,7 +320,7 @@ footer {
     padding: 20px 20px 20px 20px;
     width: 100%;
     border-radius: 5px;
-    background: #22283A;
+    background: #22283a;
     font-size: 1.8rem;
     text-align: center;
     /* display: inline; */
@@ -337,10 +337,19 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+  }
   .home .walk .walk-img img {
     width: 100%;
     margin: 20px 4.5%;
     border-radius: 20px;
-    height: 100%;
   }
 }
