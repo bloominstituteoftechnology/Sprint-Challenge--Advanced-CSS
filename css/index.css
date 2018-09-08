@@ -173,11 +173,11 @@ p {
 }
 .main-navigation {
   width: 100%;
-  max-width: 1000px;
   display: flex;
   background: #F6F6F6;
   height: 90px;
   font-family: #454A59;
+  margin: 0 auto;
 }
 .main-navigation .nav-bar {
   width: 100%;
