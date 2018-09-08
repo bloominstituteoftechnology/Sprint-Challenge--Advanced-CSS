@@ -2,6 +2,9 @@
 
 .navigation{
     width: @100percent;
+    position: sticky;
+    top:0;
+    opacity: .95;
     background-color: @nav-bg;
     .flexMixin(row, nowrap, center, center, center);
 
@@ -37,7 +40,7 @@
             }
 
             a{
-                .elementAlignment(0, 10px 2%, 20%);
+                .elementAlignment(0, 10px 0, 20%);
             }
         }
     }

@@ -4,6 +4,15 @@
 
   .intro {
     .elementAlignment(0 auto, 20px 0, 100%);
+
+    .header-img-wrapper{
+      height: 200px;
+      background-image: url("../img/main-header.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -20,9 +29,7 @@
     @media @mobileMaxWidth{
       margin-top: -20px;
     }
-
   }
-
 
   .space-images {
     .flexMixin(row, wrap);
@@ -40,6 +47,7 @@
       img{
         display: none;
       }
+      
       img:first-child{
         width: 100%;
         padding: 0 2%;
