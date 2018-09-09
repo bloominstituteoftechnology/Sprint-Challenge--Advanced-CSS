@@ -1,64 +1,58 @@
 // Navigation code here
 .top-nav {
-        display: flex;
-        justify-content: center;
-        flex-flow: column wrap;
-        align-items: center;
-    h1 {
-       font-size:6rem;
-       font-family: Ubuntu;
-       font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  h1 {
+    font-size: 6rem;
+    font-family: Ubuntu;
+    font-weight: bolder;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 25px 0 12px 0;
+    a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-size: 2rem;
+      font-weight: bold;
     }
-    nav {   width: 82.545%;
-            display: flex;
-            justify-content: space-around;
-
-            padding: 20px;
-        a{
-           margin: 0;
-           text-decoration: none;
-           color: black;
-           font-size:2rem;
-           font-weight: bold;
-        }
-    }
-   
+  }
 }
 
 @media @phone {
-    .top-nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 10px 0 0px 0;
-        width: 100%;
+  .top-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    padding: 13px 25px 1px 25px;
     h1 {
-       font-size:5rem;
-       font-family: Ubuntu;
-       font-weight: bolder;
-       width: 100%;
-       height:auto;
+      font-size: 4rem;
+      font-family: Ubuntu;
+      font-weight: bolder;
     }
     nav {
-           width: 100%;
-           padding: 10px 0 10px 0;
-           display: flex;
-           justify-content: space-around;
-        a{
-           margin: 0;
-           text-decoration: none;
-           color: black;
-           font-size:1.6rem;
-           font-weight: bold;
-           padding: 0;
-        }
+      width: 100%;
+      padding: 10px 0 10px 0;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+      }
     }
+  }
 }
-
-}
-
-
 
 @media @phone {
-
 }

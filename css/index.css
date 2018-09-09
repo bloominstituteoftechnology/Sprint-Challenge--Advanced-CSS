@@ -172,13 +172,13 @@ p {
   font-weight: bolder;
 }
 .top-nav nav {
-  width: 82.545%;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 25px 0 12px 0;
 }
 .top-nav nav a {
-  margin: 0;
+  margin: 0 15px;
   text-decoration: none;
   color: black;
   font-size: 2rem;
@@ -189,15 +189,14 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 10px 0 0px 0;
+    margin: 0 auto;
     width: 100%;
+    padding: 13px 25px 1px 25px;
   }
   .top-nav h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: Ubuntu;
     font-weight: bolder;
-    width: 100%;
-    height: auto;
   }
   .top-nav nav {
     width: 100%;
@@ -206,12 +205,12 @@ p {
     justify-content: space-around;
   }
   .top-nav nav a {
-    margin: 0;
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
     font-weight: bold;
     padding: 0;
+    margin: 0;
   }
 }
 footer {
@@ -223,6 +222,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  max-width: 800px;
+}
+.home .intro .banner {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -242,18 +247,9 @@ footer {
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .home .intro .banner {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .home .banner {
-    width: 100%;
-  }
   .home .space-images .blast {
+    margin: 15px 4.5%;
     width: 100%;
-    margin: 20px 4.5%;
-    border-radius: 20px;
     height: 100%;
   }
   .home .space-images .sky {
@@ -302,31 +298,6 @@ footer {
   background: white;
   color: #22283A;
 }
-@media (max-width: 500px) {
-  .home .walk .home .walk {
-    margin-top: 16px;
-    border-top: 1px solid #dee2e6;
-    padding: 0px 21px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-flow: column-reverse;
-  }
-  .home .walk .home .walk .walk-text {
-    width: 100%;
-  }
-  .home .walk .home .walk .walk-text .btn {
-    color: white;
-    padding: 20px 20px 20px 20px;
-    width: 100%;
-    border-radius: 5px;
-    background: #22283a;
-    font-size: 1.8rem;
-    text-align: center;
-    /* display: inline; */
-    margin-bottom: 10px;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -338,18 +309,40 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
+    margin-top: 16px;
+    border-top: 1px solid #dee2e6;
+    padding: 30px 10px;
     display: flex;
+    align-items: center;
+    width: 100%;
     flex-flow: column-reverse;
   }
   .home .walk .walk-text {
     width: 100%;
   }
+  .home .walk .walk-text p {
+    margin-bottom: 26px;
+  }
+  .home .walk .walk-text .btn {
+    color: white;
+    padding: 18px 42%;
+    width: 100%;
+    border-radius: 5px;
+    background: #22283a;
+    font-size: 1.8rem;
+    text-align: center;
+    /* display: inline; */
+    margin-bottom: 10px;
+  }
   .home .walk .walk-img {
     width: 100%;
+    margin: 0;
   }
   .home .walk .walk-img img {
     width: 100%;
     margin: 20px 4.5%;
     border-radius: 20px;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
