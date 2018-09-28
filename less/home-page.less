@@ -3,6 +3,10 @@
 	color: #212529;
 	margin: 0px 150px;
 
+	@media screen and (max-width: @mobile) {
+		margin: 0px;
+	}
+
 	.header-img{
 		width: 100%;
 		height: 15rem;
@@ -18,12 +22,17 @@
 			justify-content: space-between;
 			margin-top: 10px;
 			margin-bottom: 30px;
-			.top-img{
-				display: flex;
-				align-self: center;
-				width: 30%;
-				height: auto;
-				border-radius: 10px;
+			.top-img-1{
+				.third-img;
+				.responsive(@mobile; {
+					width: 90%
+				})
+			}
+			.top-img-2{
+				.third-img;
+				.responsive(@mobile; {
+					display: none;
+				})
 			}
 		}
 	}
@@ -32,14 +41,25 @@
 		padding: 20px 30px;
 		display: flex;
 		border-bottom: 1px solid gray;
+		@media screen and (max-width: @mobile) {
+			flex-direction: column;
+		}
 
 		.bottom-text{
 			width: 50%;
+			@media screen and (max-width: @mobile) {
+				width: 100%;
+			}
 		}
 
 		.bottom-img{
 			width: 50%;
 			height: 50%;
+			@media screen and (max-width: @mobile) {
+				width: 100%;
+				height: auto;
+				margin-top: 10px;
+			}
 		}
 
 		button{

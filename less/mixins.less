@@ -1,1 +1,14 @@
 // Mixins below variables
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}
+
+.third-img{
+	display: flex;
+	align-self: center;
+	width: 30%;
+	height: auto;
+	border-radius: 10px;
+}
