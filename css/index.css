@@ -272,6 +272,11 @@ footer {
   padding: 10px;
   border-radius: 5px;
 }
+@media only screen and (max-width: 400px) {
+  .container .bottom button {
+    width: 100%;
+  }
+}
 h2 {
   font-size: 24px;
   color: #22283A;
