@@ -1,10 +1,6 @@
-# Assessing Your Responsive Web Design and Preprocessing Learning
-
-  
+# Assessing Your Advanced CSS Learning
 
 You will be updating a website using all your responsive web design and preprocessing skills from the sprint. The theme of this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
-
-  
 
 * This project is to be worked on alone but you can google all you want. You may reference any previous code solutions as well as training kit content.  
 
@@ -16,7 +12,7 @@ You will be updating a website using all your responsive web design and preproce
 
 * [ ] You are now ready to build this project with your preferred IDE
 
-#### Pro tip: Commit every time you complete a task or feature!
+### Pro tip: Commit every time you complete a task or feature!
 
 ## Task 2: Comprehension Questions
 
