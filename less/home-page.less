@@ -47,6 +47,7 @@
     justify-content: center;
 
     .walk-text {
+      
       width: 50%;
 
       h3 {
@@ -58,6 +59,13 @@
       }
 
       .btn {
+        .custom-btn(@btn-bg-color, white);
+        padding: 3%;
+        width: 30%;
+        .animate-duration( 0.8s);
+
+        .scale-up(1.2);
+
       }
     }
 
