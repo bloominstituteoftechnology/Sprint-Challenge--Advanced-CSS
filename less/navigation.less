@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1%;
+
+    // Children
+    h1 {
+        font-size: 4rem;
+        padding: 1%;
+    }
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: @header-font-color;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    }
+}
