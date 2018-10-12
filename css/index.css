@@ -1,3 +1,4 @@
+@phone (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,6 +167,7 @@ p {
   align-items: center;
   flex-direction: column;
   background-color: #F6F6F6;
+  border: 1px solid #F1F1F1;
 }
 .navigation h1 {
   font-size: 4rem;
@@ -173,12 +175,13 @@ p {
   margin-bottom: 1%;
 }
 .navigation nav {
+  margin-top: 0;
   margin-bottom: 1.5rem;
 }
 .navigation nav a {
   font-size: 1.7rem;
   text-decoration: none;
-  color: black;
+  color: #454A59;
   margin-left: 2.8rem;
 }
 .navigation nav a:hover {
@@ -235,6 +238,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: white;
+  background-color: #22283A;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;

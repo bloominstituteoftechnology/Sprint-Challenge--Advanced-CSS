@@ -3,20 +3,25 @@
     .center();
     flex-direction: column;
     background-color: @nav-bg;
+    border: 1px solid @nav-border;
   
     h1 {
       font-size: 4rem;
-      margin-top: 0.5%;
-      margin-bottom: 1%;
+      .nav-margin(0.5%, 1%);
+
+      @media @phone {
+        margin-bottom: 20px;
+    }
+    
     }
   
     nav {
-      margin-bottom: 1.5rem;
+      .nav-margin(0, 1.5rem);
   
       a {
         font-size: 1.7rem;
         text-decoration: none;
-        color: black;
+        color: @nav-font;
         margin-left: 2.8rem;
   
         &:hover {
@@ -24,5 +29,4 @@
         }
       }
     }
-  }
-  
+  } // navigation
