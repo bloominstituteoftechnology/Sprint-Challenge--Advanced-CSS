@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.top h1 {
+  font-size: 4rem;
+  margin: 14px 0;
+  color: #23293B;
+}
+.top nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 37%;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.top nav a {
+  font-family: #454A59;
+  color: #23293B;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +195,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
