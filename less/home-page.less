@@ -1,17 +1,37 @@
 // Home Content
 
 .home {
+  @media @phone {
+    flex-direction: column;
 
+    h1 {
+      font-size: 4rem;
+    }
+
+    nav {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+
+      a {
+        padding: 10px 0;
+        // border-top: 1px solid black;
+
+        &:first-child {
+          border-top: none;
+        } //a:first-child
+      } //nav
+    } //media
+  }
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -56,15 +76,15 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        .custom-btn(85px, 50px, @river-bend, @color);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +92,4 @@
       }
     }
   }
-}// home
+} // home

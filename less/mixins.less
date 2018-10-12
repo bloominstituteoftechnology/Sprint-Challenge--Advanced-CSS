@@ -1,1 +1,23 @@
 // Mixins Here
+.justify(@justify, @dir) {
+  display: flex;
+  justify-content: @justify;
+  flex-direction: @dir;
+}
+
+.custom-btn(@width, @height, @background, @color) {
+  width: @width;
+  height: @height;
+  background: @background;
+  color: @ebony-clay;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  cursor: pointer;
+
+  &:hover {
+    color: @background;
+    background: @color;
+  }
+}
