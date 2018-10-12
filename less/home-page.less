@@ -118,12 +118,19 @@
       }
 
       .btn {
-        .customBtn(@btn-bg-color, white);
+        padding: 15px 0;
 
         @media @phone {
-          width: 100%;
-          padding: 5% 4%;
+          padding: 40px 0;
         }
+
+        a {
+          .customBtn(@btn-bg-color, white);
+        
+          @media @phone {
+            padding: 5% 43%;
+          }
+          }
       }
     }
 

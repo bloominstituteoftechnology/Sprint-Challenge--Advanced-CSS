@@ -394,24 +394,32 @@ footer {
   }
 }
 .home .walk .walk-text .btn {
-  width: 28%;
+  padding: 15px 0;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding: 40px 0;
+  }
+}
+.home .walk .walk-text .btn a {
   min-width: 100px;
   text-align: center;
-  padding: 2% 4%;
+  padding: 2% 7%;
   border-radius: 5px;
   background-color: #22283A;
   color: white;
   font-size: 1.6rem;
   border: 1px solid #dee2e6;
+  cursor: pointer;
+  text-decoration: none;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text .btn a:hover {
   background-color: white;
   color: #22283A;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    padding: 5% 4%;
+  .home .walk .walk-text .btn a {
+    padding: 5% 43%;
   }
 }
 .home .walk .walk-img {
