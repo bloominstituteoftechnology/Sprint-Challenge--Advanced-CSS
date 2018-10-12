@@ -1,1 +1,38 @@
 // Navigation code here
+.nav-container {
+    .custom-layout(column, space-between, center);
+    width: 100%;
+    padding-top: 12.5px;
+    position: fixed;
+    h1 {
+        font-size: 4rem;
+
+        &:hover {
+            color: black;
+        }
+    }
+    nav {
+        .custom-layout(row, space-between, center);
+        width: 37.5%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        a {
+            .link-styling();
+
+            &:hover {
+                color: black;
+                font-weight: bold;
+            }
+        }
+        
+        @media @phone {
+            width: 75%;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        background-color: @border-real;
+    }
+}

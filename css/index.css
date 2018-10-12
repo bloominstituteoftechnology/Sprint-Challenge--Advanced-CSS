@@ -1,0 +1,474 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.special-nav {
+  background-color: white;
+  opacity: 0.5;
+}
+.contact-img {
+  width: 100%;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  border: 1px dashed #5E6164;
+  width: 80%;
+  padding: 2.5%;
+  padding-bottom: 7.5%;
+  margin: 20px auto;
+  background-color: #F6F6F6;
+}
+.contact-container label {
+  padding-bottom: 1%;
+}
+.contact-container input[type='text'] {
+  width: 100%;
+  padding: 8px 1px;
+  margin: 10px 0;
+}
+.contact-container #address {
+  margin-bottom: 0;
+}
+.contact-container select {
+  margin-bottom: 2.5%;
+  width: 40%;
+}
+.contact-container textarea {
+  width: 100%;
+  margin: 2.5% 0;
+}
+.contact-container button {
+  background-color: #22283A;
+  color: #F6F7F8;
+  padding: 9px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-container button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+@media screen and (max-width: 500px) {
+  .contact-container button {
+    padding: 0;
+  }
+}
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #23293B;
+  margin: 20px auto;
+}
+.sign-in .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  margin: 0 auto;
+}
+.sign-in .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.sign-in .buttons button {
+  margin: 10px 0;
+  width: 20%;
+}
+.sign-in .buttons button:hover {
+  color: white;
+  background-color: black;
+}
+@media screen and (max-width: 500px) {
+  .sign-in .buttons button {
+    width: 25%;
+  }
+}
+.sign-in .buttons .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.sign-in .buttons .row .submit {
+  margin: 5px 0 15px 0;
+  background-color: #22283A;
+  color: #F6F7F8;
+  padding: 9px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px 0;
+  width: 30%;
+}
+.sign-in .buttons .row .submit:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+.sign-in .buttons a {
+  text-decoration: none;
+  color: #23293B;
+  margin-top: 50px;
+}
+.sign-in .buttons a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.sign-in input[type='text'],
+.sign-in input[type='password'] {
+  width: 100%;
+  padding: 7px 1px;
+  margin: 10px 0;
+  text-align: left;
+}
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 12.5px;
+  position: fixed;
+}
+.nav-container h1 {
+  font-size: 4rem;
+}
+.nav-container h1:hover {
+  color: black;
+}
+.nav-container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 37.5%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.nav-container nav a {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+  text-decoration: none;
+}
+.nav-container nav a:hover {
+  color: black;
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .nav-container nav {
+    width: 75%;
+  }
+}
+.nav-container:hover {
+  opacity: 1;
+  background-color: #dee2e6;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    height: 125px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 5%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: #F6F7F8;
+  padding: 9px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 26px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

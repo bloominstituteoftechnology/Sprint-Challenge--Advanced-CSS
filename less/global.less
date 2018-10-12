@@ -33,6 +33,136 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  padding-top: 100px;  
 }
+
+
+
+//Contact Page Styles
+
+
+
+.special-nav {
+  background-color: white;
+  opacity: 0.5;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.contact-container {
+  .custom-layout(column, space-between, flex-start);
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+  border: 1px dashed @shuttle-gray;
+  width: 80%;
+  padding: 2.5%;
+  padding-bottom: 7.5%;
+  margin: 20px auto;
+  background-color: @footer-background;
+
+  label {
+    padding-bottom: 1%;
+  }
+
+  input[type='text'] {
+    width: 100%;
+    padding: 8px 1px;
+    margin: 10px 0;
+  }
+
+  #address {
+    margin-bottom: 0;
+  }
+
+  select {
+    margin-bottom: 2.5%;
+    width: 40%;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 2.5% 0;
+  }
+
+  button {
+    .btn-style(@btn-bg-color, @porcelain);
+
+    @media @phone {
+      padding: 0;
+
+    }
+  }
+}
+
+
+
+//Sign-In Page Styles
+
+
+.sign-in {
+  .custom-layout(column, space-between, center);
+  width: 80%;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: @header-font-color;
+  margin: 20px auto;
+
+  .login-container {
+    .custom-layout(column, space-between, flex-start);
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .buttons {
+    .custom-layout(column, space-between, center);
+    width: 50%;
+
+    button {
+      margin: 10px 0;
+      width: 20%;
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+
+      @media @phone {
+        width: 25%;
+      }
+    }
+    .row {
+      .custom-layout(row, space-between, center);
+      width: 100%;
+      .submit {
+        margin: 5px 0 15px 0;
+        .btn-style(@btn-bg-color, @porcelain);
+        padding: 5px 0;
+        width: 30%;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: @header-font-color;
+      margin-top: 50px;
+
+      &:hover {
+        text-decoration: underline;
+        color: blue;
+      }
+    }
+  }
+
+  input[type='text'], input[type='password'] {
+    width: 100%;
+    padding: 7px 1px;
+    margin: 10px 0;
+    text-align: left;
+  }
+}
+
+
 
