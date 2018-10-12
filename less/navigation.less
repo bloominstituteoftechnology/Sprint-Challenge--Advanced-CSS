@@ -5,13 +5,15 @@
     padding: 2% 0 1% 0;
     flex-direction: column;
     background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
 
     .logo {
         .logoFS();
         margin-bottom: 1%;
 
         a {
-            font-family: 'Russo One', sans-serif;
+            // font-family: 'Russo One', sans-serif;
+            font-family: @nav-font;
             text-decoration: none;
             color: black;
         }
@@ -29,6 +31,8 @@
             font-size: 1.4rem;
             text-decoration: none;
             color: black;
+            font-family: @nav-font;
+
         }
     }
 } // navigation

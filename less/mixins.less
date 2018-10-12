@@ -22,3 +22,19 @@
 .logoFS() {
     font-size: 4rem;
 }
+
+.customBtn(@bgColor, @color) {
+    width: 28%;
+    text-align: center;
+    padding: 2% 4%;
+    border-radius: 5px;
+    background-color: @bgColor;
+    color: @color;
+    font-size: 1.6rem;
+    border: 1px solid @main-border-color;
+
+    &:hover {
+        background-color: @color;
+        color: @bgColor;
+    }
+}
