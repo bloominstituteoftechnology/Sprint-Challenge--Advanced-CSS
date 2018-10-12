@@ -4,17 +4,27 @@
 
   .intro {
 
+
     .header-img {
       border-radius: 5px;
-    }
+      width: 100%;
+      height: auto;
+    } // header-img
 
-    h2 {
-      padding: 15px;
-    }
+    .header-text {
+      h2 {
+        padding: 15px;
+      }
+  
+      p {
+        padding:0 15px;
 
-    p {
-      padding:0 15px;
-    }
+        @media @phone {
+          font-size: 1.5rem;
+        }
+      }  
+    } // header-text
+
   
   }
   
@@ -23,6 +33,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .img2 {
+        display: none;
+      }
+  
+      .img3 {
+        display: none;
+      }
+
+      .img1 {
+        width: 95%;
+        height: 95%;
+      }
+    }
 
     img {
       width: 28%;
@@ -41,6 +66,10 @@
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        font-size: 1.55rem;
+      }
     }
   }
 
@@ -51,8 +80,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .center();
+      flex-direction: column-reverse;
+      padding: 3% 2%;
+      margin-top: 2%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 95%;
+        // padding: 15px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -60,16 +101,32 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          margin-bottom: 15px;
+        }
       }
 
       .btn {
-        .customBtn(black, white);
+        .customBtn(@btn-bg-color, white);
+
+        @media @phone {
+          width: 100%;
+          padding: 5% 4%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 95%;
+        height: 95%;
+        margin-left: 0; 
+        margin-bottom: 5%;
+      }
       
       img {
         width: 100%;

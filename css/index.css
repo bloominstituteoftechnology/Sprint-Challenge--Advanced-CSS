@@ -173,25 +173,35 @@ p {
   font-size: 4rem;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .navigation .logo {
+    font-size: 3.5rem;
+    margin-bottom: 3%;
+  }
+}
 .navigation .logo a {
-  font-family: #454A59;
+  font-family: 'Russo One', sans-serif;
   text-decoration: none;
-  color: black;
+  color: #454A59;
 }
 .navigation .nav-links {
   width: 50%;
-  max-width: 800px;
+  max-width: 400px;
   min-width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+}
+@media (max-width: 500px) {
+  .navigation .nav-links {
+    width: 90%;
+    padding: 0 5%;
+  }
 }
 .navigation .nav-links a {
   font-size: 1.4rem;
   text-decoration: none;
-  color: black;
-  font-family: #454A59;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -205,17 +215,36 @@ footer {
 }
 .home .intro .header-img {
   border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
-.home .intro h2 {
+.home .intro .header-text h2 {
   padding: 15px;
 }
-.home .intro p {
+.home .intro .header-text p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro .header-text p {
+    font-size: 1.5rem;
+  }
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .img2 {
+    display: none;
+  }
+  .home .space-images .img3 {
+    display: none;
+  }
+  .home .space-images .img1 {
+    width: 95%;
+    height: 95%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -232,6 +261,11 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    font-size: 1.55rem;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -239,8 +273,23 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 3% 2%;
+    margin-top: 2%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 95%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -248,23 +297,43 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text p {
+    margin-bottom: 15px;
+  }
+}
 .home .walk .walk-text .btn {
   width: 28%;
+  min-width: 100px;
   text-align: center;
   padding: 2% 4%;
   border-radius: 5px;
-  background-color: black;
+  background-color: #22283A;
   color: white;
   font-size: 1.6rem;
   border: 1px solid #dee2e6;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
-  color: black;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 5% 4%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+    height: 95%;
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

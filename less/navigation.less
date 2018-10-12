@@ -11,27 +11,35 @@
         .logoFS();
         margin-bottom: 1%;
 
+        @media @phone {
+            font-size: 3.5rem;
+            margin-bottom: 3%;
+        }
+
         a {
-            // font-family: 'Russo One', sans-serif;
-            font-family: @nav-font;
+            font-family: @hFont;
             text-decoration: none;
-            color: black;
+            color: @nav-font;
         }
     } // logo
 
     .nav-links {
         width: 50%;
-        max-width: 800px;
+        max-width: 400px;
         min-width: 350px;
         .center();
-        padding: 0 10%;
+        // padding: 0 10%;
         // .devBor();
+
+        @media @phone {
+            width: 90%;
+            padding: 0 5%;
+        }
 
         a {
             font-size: 1.4rem;
             text-decoration: none;
-            color: black;
-            font-family: @nav-font;
+            color: @nav-font;
 
         }
     }
