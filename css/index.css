@@ -167,6 +167,11 @@ p {
   flex-direction: column;
   background: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
+  left: 0%;
+  right: 0%;
+  position: fixed;
+  height: 100px;
+  opacity: 0.96;
 }
 .top h1 {
   font-size: 4rem;
@@ -191,6 +196,9 @@ p {
   font-size: 1.6rem;
   text-decoration: none;
 }
+.top nav a:hover {
+  text-decoration: underline;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -200,6 +208,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 .home .intro img {
   width: 100%;

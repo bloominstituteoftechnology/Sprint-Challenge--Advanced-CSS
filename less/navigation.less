@@ -5,7 +5,15 @@
     flex-direction: column;
     background: @nav-bg;
     border-bottom: 2px solid @nav-border;
-
+    
+    //fixed header
+    
+    
+    left: 0%;
+    right: 0%;
+    position: fixed;
+    height: 100px;
+    opacity:0.96;
     
 
     h1 {
@@ -29,6 +37,9 @@
             color: @header-font-color;
             font-size: 1.6rem;
             text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
         }//a
     }//nav
 }//.top
