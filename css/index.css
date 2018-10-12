@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-bar {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0 10px 0 ;
+}
+.top-bar h1 {
+  font-size: 4rem;
+}
+.top-bar nav {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.top-bar nav a {
+  color: #23293B;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0 2%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -170,11 +196,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home {
-  border: 1px solid red;
-}
 .home .intro {
   border: 1px solid blue;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
