@@ -1,3 +1,41 @@
+@keyframes beating {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: translateX(2px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+@keyframes slideleft {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slideright {
+  from {
+    margin-right: -100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -209,6 +247,11 @@ p {
   color: #454A59;
   text-decoration: none;
 }
+.top-bar nav a:hover {
+  animation-name: beating;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 @media (max-width: 800px) {
   .top-bar nav {
     width: 85%;
@@ -247,7 +290,7 @@ footer {
 }
 .home {
   position: relative;
-  top: 1.5%;
+  margin-top: 1.5%;
 }
 @media (max-width: 800px) {
   .home {
@@ -281,6 +324,9 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  animation-name: slideleft;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .home .intro p {
   padding: 0 15px;
@@ -360,6 +406,9 @@ footer {
 }
 .home .visit-planets h3 {
   margin-top: 11px;
+  animation-name: slideleft;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .home .visit-planets p {
   margin-top: 13px;
@@ -408,6 +457,9 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+  animation-name: slideleft;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -450,6 +502,9 @@ footer {
   padding: 2%;
   width: 30%;
   height: auto;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 800px) {
   .home .walk .walk-text .btn:hover {
