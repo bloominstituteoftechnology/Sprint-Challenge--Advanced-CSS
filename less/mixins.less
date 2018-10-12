@@ -1,1 +1,27 @@
 // Mixins Here
+.button-style-1(@width,@bg-color,@txt-color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background: @bg-color;
+    color: @txt-color;
+    width: @width;
+    height: 40px;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+        .opacity-animation(1s,infinite);
+        background: @txt-color;
+        color: @bg-color;
+        border: 3px solid @nav-border;
+    }
+}
+
+.opacity-animation(@cycle-time, @num-cycles){
+    animation-name: opacity-scale;
+    animation-duration: @cycle-time;
+    animation-iteration-count: @num-cycles;
+}
+

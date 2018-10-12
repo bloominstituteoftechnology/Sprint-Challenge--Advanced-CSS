@@ -2,7 +2,14 @@
 
 .home {
 
+
   .intro {
+
+    .header-img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-top: 102px;
+    }
 
     h2 {
       padding: 15px;
@@ -25,6 +32,15 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media @mobile {
+      .blast {
+        width: 100%;
+        padding: 2%;
+      }
+      .sky, .launch {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -45,9 +61,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+      margin-top: 20px;
+      flex-direction: column;
+      padding: 4%;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 100%;
+        margin-top: 20px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +83,23 @@
       }
 
       .btn {
+        .button-style-1(30%,@header-font-color,@nav-bg);
+        @media @mobile{
+          .button-style-1(100%,@header-font-color,@nav-bg);
+          font-size: 1.6rem;
+          height: 50px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        order: -1;
+        width: 100%;
+        margin-left: 0%;
+      }
       
       img {
         width: 100%;
@@ -71,5 +107,37 @@
         border-radius: 10px;
       }
     }
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    @media @mobile {
+      margin-top: 40px;
+    }
+
+    .newsletter-form {
+      border: 3px solid @nav-border;
+      background-color: @nav-bg;
+      border-radius: 20px;
+      padding: 20px;
+
+      h1 {
+        font-size: 3rem;
+      }
+      label {
+        font-size: 2rem;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      button {
+        .button-style-1(30%,@header-font-color,@nav-bg);
+        border: none;
+      }
+    }
+
+
   }
 }// home
