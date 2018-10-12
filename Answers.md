@@ -12,3 +12,8 @@ the styling for mobile devices.
 It sets the fon-size to 10px so 1 rem will equal 10px
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is using a program that allows us to have added features in our CSS such as mixins and variables. The compiler than takes all those added features and turns them into CSS so that a browser can read it. 
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite part in preprocessing is being able to use mixins and variables. The concept that gives me the hardest time is nesting and figuring out which styling is being abled to the element. 
