@@ -11,3 +11,5 @@
 >Preprocessing writes CSS code for you, it allows the user to write dryer css by adstracting away a lot of the redundancies in css. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+>Favorite: variables. They allow you to change things like color in one place and it affects everything in the document. 
+Most trouble: namespaces. Considering i have never used them, they must give me the most trouble. 
