@@ -171,10 +171,11 @@ p {
   background: #F6F6F6;
 }
 .header .nav-container {
-  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
   max-width: 800px;
   padding-bottom: 13px;
 }
