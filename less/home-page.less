@@ -46,8 +46,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-position(center, stretch);
 
     .walk-text {
       width: 50%;
@@ -61,20 +60,7 @@
       }
 
       .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: @ebony-clay-dark;
-        max-width: 100px;
-        border-radius: 5px;
-        
-
-        a {
-          text-decoration: none;
-          color: white;
-          font-size: 1.8rem;
-          padding: 9px 18px;
-        }
+        .btn-signUp(@ebony-clay-dark, 5px, white, 1.8rem, 9px 19px);
       }
     }
 

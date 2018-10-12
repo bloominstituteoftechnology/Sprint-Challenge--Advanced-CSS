@@ -232,6 +232,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -254,7 +255,11 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 1.8rem;
-  padding: 9px 18px;
+  padding: 9px 19px;
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
