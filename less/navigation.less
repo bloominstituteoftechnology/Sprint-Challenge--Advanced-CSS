@@ -1,1 +1,53 @@
 // Navigation code here
+
+.navigator {
+  .flex-mixer();
+  align-items: center;
+  padding: 10px 0; // examine
+  background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+
+  .title {
+    font-size: 4rem; // examine
+    margin: 5px; // examine
+  }
+
+  @media @phone {
+    width: 100%;
+    padding: 2px;
+    position: sticky;
+    .title {
+      font-size: 4rem;
+      text-align: center;
+
+      width: 100%;
+      margin: 10px 0;
+      padding-left: 25px;
+    }
+  } // examine
+
+  nav {
+    display: flex;
+    max-width: 400px;
+    width: 60.3%; // examine
+    justify-content: space-around; // examine
+    margin-top: 13px;
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.6rem; // examine
+    }
+
+    @media @phone {
+      width: 87%;
+      margin-left: 25px;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+  }
+}

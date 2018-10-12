@@ -1,1 +1,22 @@
 // Mixins Here
+
+.flex-mixer(@direction: column) {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-btn(@bg-color: #22283a, @f-color:white, @f-size: 1.8rem, @vert-padding: 8px, @horiz-padding: 18px) {
+  background-color: @bg-color;
+  color: @f-color;
+  font-size: @f-size;
+  padding: @vert-padding @horiz-padding;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid @bg-color;
+
+  &:hover {
+    background-color: @f-color;
+    color: @bg-color;
+    cursor: pointer;
+  }
+}
