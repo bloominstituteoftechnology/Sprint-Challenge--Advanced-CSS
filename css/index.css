@@ -162,8 +162,8 @@ p {
   padding-top: 100px;
 }
 .special-nav {
-  background: #dee2e6;
-  opacity: 0.25;
+  background-color: white;
+  opacity: 0.5;
 }
 .contact-img {
   width: 100%;
@@ -346,6 +346,7 @@ p {
 }
 .nav-container:hover {
   opacity: 1;
+  background-color: #dee2e6;
 }
 footer {
   color: #22283B;
