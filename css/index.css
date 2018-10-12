@@ -202,6 +202,9 @@ header nav a {
   color: black;
   text-decoration: none;
 }
+header nav a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 500px) {
   header nav {
     display: flex;
@@ -312,6 +315,8 @@ footer {
   justify-content: center;
   align-content: center;
   padding-top: 5px;
+  border: 2px solid #F1F1F1;
+  transition: 2s;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
@@ -349,9 +354,6 @@ footer {
     width: 100%;
   }
 }
-* {
-  box-sizing: border-box;
-}
 header .header-img {
   width: 100%;
 }
@@ -367,15 +369,24 @@ form {
   width: 100%;
   margin-bottom: 25px;
 }
-.sign-form {
+form .sign-form {
   font-size: 1.6rem;
 }
-input {
+form .sign-form h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+form .sign-form p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+form .sign-form input {
   font-size: 1.3rem;
 }
-/* Full-width input fields */
-input[type=text],
-input[type=password] {
+form .sign-form input[type=text],
+form .sign-form input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -384,16 +395,15 @@ input[type=password] {
   background: white;
   color: black;
 }
-input[type=text]:focus,
-input[type=password]:focus {
+form .sign-form input[type=text]:focus,
+form .sign-form input[type=password]:focus {
   outline: none;
 }
-hr {
-  border: 1px solid #dee2e6;
+form .sign-form hr {
+  border: 2px solid #F1F1F1;
   margin-bottom: 25px;
 }
-/* Set a style for all buttons */
-button {
+form .sign-form button {
   background-color: black;
   color: white;
   border-radius: 5px;
@@ -404,29 +414,21 @@ button {
   justify-content: center;
   align-content: center;
   padding-top: 5px;
+  border: 2px solid #F1F1F1;
   margin-top: 15px;
+  margin-bottom: 15px;
+  transition: 2s;
 }
-button:hover {
-  opacity: 1;
+form .sign-form button:hover {
+  background-color: white;
+  color: black;
 }
-/* Extra styles for the cancel button */
-.cancelbtn {
+form .sign-form .cancelbtn {
   padding: 14px 20px;
   padding-top: 5px;
 }
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,
-.signupbtn {
+form .sign-form .cancelbtn,
+form .sign-form .signupbtn {
   float: left;
   width: 50%;
-}
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
