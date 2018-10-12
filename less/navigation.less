@@ -1,1 +1,29 @@
 // Navigation code here
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    h1 {
+        margin-top: 12px;
+        font-size: 4rem;
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+    }
+    nav {
+        margin-top: 19px;
+        display: flex;
+        justify-content: space-between;
+        .margin-center;
+        width: 37.6%;
+        font-size: 1.6rem;
+        padding-bottom: 11px;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+        }
+    }
+}
