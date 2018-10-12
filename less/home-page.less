@@ -108,4 +108,37 @@
       }
     }
   }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    // border: 3px solid @nav-border;
+    // background-color: @nav-bg;
+    // border-radius: 20px;
+    margin-bottom: 50px;
+
+
+    .newsletter-form {
+      border: 3px solid @nav-border;
+      background-color: @nav-bg;
+      border-radius: 20px;
+      padding: 20px;
+
+      h1 {
+        font-size: 3rem;
+      }
+      label {
+        font-size: 2rem;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      button {
+        .button-style-1(30%,@header-font-color,@nav-bg);
+        border: none;
+      }
+    }
+
+
+  }
 }// home

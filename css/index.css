@@ -1,23 +1,23 @@
-@keyframes opacity-animation {
+@keyframes opacity-scale {
   0% {
     opacity: 1;
-    transform: rotate(0deg);
+    transform: scale(1, 1);
   }
   25% {
     opacity: 0.75;
-    transform: rotate(-1deg);
+    transform: scale(1.1, 1.1);
   }
   50% {
     opacity: 0.5;
-    transform: rotate(-2deg);
+    transform: scale(1.2, 1.2);
   }
   75% {
     opacity: 0.75;
-    transform: rotate(-1deg);
+    transform: scale(1.1, 1.1);
   }
   100% {
     opacity: 1;
-    transform: rotate(0deg);
+    transform: scale(1, 1);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -223,7 +223,7 @@ p {
   }
 }
 .nav-bar .container nav a:hover {
-  animation-name: opacity-animation;
+  animation-name: opacity-scale;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
@@ -320,7 +320,7 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
-  animation-name: opacity-animation;
+  animation-name: opacity-scale;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   background: #F6F6F6;
@@ -343,7 +343,7 @@ footer {
   }
   .home .walk .walk-text .btn:hover {
     cursor: pointer;
-    animation-name: opacity-animation;
+    animation-name: opacity-scale;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     background: #F6F6F6;
@@ -366,4 +366,46 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.home .form-container .newsletter-form {
+  border: 3px solid #F1F1F1;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 20px;
+}
+.home .form-container .newsletter-form h1 {
+  font-size: 3rem;
+}
+.home .form-container .newsletter-form label {
+  font-size: 2rem;
+}
+.home .form-container .newsletter-form input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.home .form-container .newsletter-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: #23293B;
+  color: #F6F6F6;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+.home .form-container .newsletter-form button:hover {
+  cursor: pointer;
+  animation-name: opacity-scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  background: #F6F6F6;
+  color: #23293B;
+  border: 3px solid #F1F1F1;
 }
