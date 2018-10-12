@@ -19,7 +19,6 @@ You will be updating a website using all your responsive web design and preproce
 Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit. Open up the [Answers.md](Answers.md) file and record your responses there.
 
 1. What is the difference between an adaptive website and a fully responsive website?
-> Adaptive responds to resolutions accross devices. Fully Responsive applies characteristics of fixed, fluid, and adaptive designs to create websites optimized for all viewing circumstances.  
 
 2. Describe what it means to be mobile first vs desktop first.
 
