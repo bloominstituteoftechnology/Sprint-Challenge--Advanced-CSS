@@ -4,6 +4,11 @@
 
   .intro {
 
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,6 +29,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @mobile {
+      > img {
+        display: none;
+      } 
+
+      img:first-child {
+        display: block;
+        width: 100%;
+      }
     }
   }
 
@@ -71,6 +87,27 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      margin-top: 25px;
+      padding: 20px 10px;
+
+      .walk-img {
+        width: 100%;
+        margin: 0%;
+        order: -1;
+      }
+
+      .walk-text {
+        width: 100%;
+        margin-top: 20px;
+
+        .btn {
+          .btn-style(100%, 25px);
+        }
       }
     }
   }
