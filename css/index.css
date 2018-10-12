@@ -168,6 +168,7 @@ p {
   flex-wrap: wrap;
   background-color: #F6F6F6;
   border-bottom: 1px double #F1F1F1;
+  position: fixed;
 }
 .nav-bar div {
   width: 100%;
@@ -186,6 +187,10 @@ p {
   color: #454A59;
   font-size: 1.4rem;
   margin: 0 2%;
+  transition: all 0.3s ease-out;
+}
+.nav-bar nav a:hover {
+  transform: scale(1.5);
 }
 @media (max-width: 500px) {
   .nav-bar nav a {
@@ -207,6 +212,7 @@ footer {
 .home .intro .header-img {
   border-radius: 5px;
   width: 100%;
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
