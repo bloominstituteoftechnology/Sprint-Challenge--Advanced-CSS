@@ -59,21 +59,18 @@
       }
 
       .btn {
-        background: lighten(black, 20%);
-        border: 1px solid lighten(black, 20%);
-        color: white;
+        border: 1px solid @btn-bg-color;
         text-align: center;
         width: 10rem;
-        font-size: 1.85rem;
         padding: 0.9rem 1.85rem;
         margin-top: 1.7rem;
         .border-radius(1rem);
-        text-decoration: none;
+        // color, background, font-size, text-decoration
+        .btn-styles(white, @btn-bg-color, 1.85rem, none);
       }
 
       .btn:hover {
-        background: white;
-        color: lighten(black, 20%);
+        .btn-styles(@btn-bg-color, white);
       }
     }
 
