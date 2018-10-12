@@ -224,8 +224,6 @@ footer {
 @media (max-width: 500px) {
   .home .space-images {
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     align-items: center;
   }
 }
