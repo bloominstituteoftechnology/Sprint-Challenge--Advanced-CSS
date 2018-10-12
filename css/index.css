@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +207,10 @@ footer {
 .home {
   margin-top: 101px;
 }
+.home .intro {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards;
+}
 .home .intro img {
   width: 100%;
   height: auto;
@@ -217,6 +231,16 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  opacity: 0;
+}
+.home .space-images .blast {
+  animation: fadeIn 0.5s ease-in-out 3.5s forwards;
+}
+.home .space-images .sky {
+  animation: fadeIn 0.5s ease-in-out 4s forwards;
+}
+.home .space-images .launch {
+  animation: fadeIn 0.5s ease-in-out 4.5s forwards;
 }
 @media (max-width: 520px) {
   .home .space-images .blast {
@@ -234,6 +258,8 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 5s forwards;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -247,6 +273,8 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 7s forwards;
 }
 @media (max-width: 520px) {
   .home .walk {
@@ -276,6 +304,8 @@ footer {
   border-radius: 4px;
   font-size: 2rem;
   border: 1px solid #22283A;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 8s forwards;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
