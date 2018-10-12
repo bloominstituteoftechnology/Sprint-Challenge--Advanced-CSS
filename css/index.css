@@ -330,7 +330,8 @@ footer {
   }
 }
 .signup-form {
-  border: 3px dotted #F1F1F1;
+  border: 2px dotted #23293B;
+  border-radius: 10px;
 }
 .signup-form .form {
   margin: 0px auto;
