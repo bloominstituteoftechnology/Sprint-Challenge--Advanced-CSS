@@ -1,1 +1,30 @@
 // Navigation code here
+
+.navigation {
+  // stretch: add a fixed navigation and add some opacity to the backgroung
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  background-color: fadeout(@wild-sand, 2%);
+  // end of stretch
+
+  .display-flex(column, center, center);
+  padding: 12px 0px;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto 9px;
+    border-radius: 5px;
+    .hover-swap(@btn-bg-color, @wild-sand);
+  }
+}

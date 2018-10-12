@@ -1,1 +1,42 @@
 // Mixins Here
+
+.display-flex(@direction: row, @justify: flex-start, @align: flex-start) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.hover-swap(@color, @bg-color) {
+  color: @color;
+  background-color: @bg-color;
+
+  &:hover {
+    color: @bg-color;
+    background-color: @color;
+  }
+}
+
+.btn-style(@width, @padding) {
+  width: @width;
+  padding: @padding;
+  .hover-swap(@wild-sand, @btn-bg-color);
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.animation (@name, @duration, @count) {
+  animation-name: @name;
+  animation-duration: @duration;
+  animation-iteration-count: @count;
+}
+
+@keyframes animate-opacity {
+    0%   {opacity:1;}
+    25%  {opacity:0.5;}
+    50%  {opacity:1;}
+    75%  {opacity:0.5;}
+    100% {opacity:1;}
+}
