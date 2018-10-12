@@ -14,3 +14,17 @@
     height: @height;
     border-radius: @radius;
 }
+
+.sign-up-btn (@btn-text-color, @btn-bg-color){
+    .center();
+    background: @btn-bg-color;
+    color: @btn-text-color;
+    padding: 7px 0;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    border: 1px solid @btn-bg-color;
+    &:hover {
+        background: @btn-text-color;
+        color: @btn-bg-color;
+    }
+}
