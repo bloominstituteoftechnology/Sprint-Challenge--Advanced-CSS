@@ -1,1 +1,34 @@
 // Navigation code here
+
+.con-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .center();
+    background: @nav-bg;
+    border: 1px double @nav-border;
+    color: @nav-font;
+    opacity: 0.9;
+
+    h1 {
+        font-size: 4rem;
+        padding: 20px 0px;
+    }
+
+    nav {
+        // border: 1px solid red;
+        width: 450px;
+        .nav();
+        margin-bottom: 15px;
+        @media @phone {
+            width: 95%;
+        }
+
+
+        a{
+            font-size: 2rem;
+            text-decoration: none;
+            color: #22283B;
+        }
+    }
+}
