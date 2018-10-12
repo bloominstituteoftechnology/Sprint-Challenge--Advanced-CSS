@@ -478,3 +478,50 @@ footer {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+.home .form-content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightgray;
+  margin-bottom: 200px;
+}
+.home .form-content h2 {
+  padding: 30px 0;
+  font-size: 2rem;
+}
+.home .form-content .input-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.home .form-content .input-fields label {
+  margin: 0 0 5px 0;
+  font-size: 1.6rem;
+}
+.home .form-content .input-fields input {
+  margin-bottom: 20px;
+}
+.home .form-content .submit-btn {
+  margin: 20px;
+}
+.home .form-content .submit-btn a {
+  min-width: 100px;
+  text-align: center;
+  padding: 2% 7%;
+  border-radius: 5px;
+  background-color: #22283A;
+  color: white;
+  font-size: 1.6rem;
+  border: 1px solid #dee2e6;
+  cursor: pointer;
+  text-decoration: none;
+}
+.home .form-content .submit-btn a:hover {
+  background-color: white;
+  color: #22283A;
+}
