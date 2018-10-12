@@ -1,1 +1,19 @@
 // Navigation code here
+.nav-container {
+    .custom-layout(column, space-between, center);
+    width: 100%;
+    margin-top: 12.5px;
+    h1 {
+        font-size: 4rem;
+    }
+    nav {
+        .custom-layout(row, space-between, center);
+        width: 37.5%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        a {
+            .link-styling();
+        }
+    }
+}
