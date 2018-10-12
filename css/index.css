@@ -162,12 +162,12 @@ p {
 }
 .nav-container {
   width: 100%;
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
+  flex-direction: row;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
   align-items: center;
   padding: 1%;
 }
@@ -178,7 +178,9 @@ p {
 .nav-container nav {
   width: 30%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-content: center;
 }
 .nav-container nav a {
   color: #23293B;
@@ -240,6 +242,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #454A59;
+  border: 1px solid #23293B;
+  color: #F1F1F1;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1%;
+  width: 30%;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
