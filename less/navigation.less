@@ -1,45 +1,45 @@
 // Navigation code here
 
 .navigation {
-    background-color: @nav-bg;
-    .custom-layout(space-around, center);
-    flex-direction: column; 
-    height: 100px;
+  background-color: @nav-bg;
+  .custom-layout(space-around, center);
+  flex-direction: column;
+  height: 100px;
 
-    h1 {
-        @media @mobile {
-            font-size: 3.2rem;
-        }
+  h1 {
+    @media @mobile {
+      font-size: 3.2rem;
+    }
+  }
+
+  .nav-menu {
+    .custom-layout(space-between, center);
+    width: 50%;
+    @media @tablet {
+      width: 75%;
     }
 
-    .nav-menu {
-        .custom-layout(space-between, center);
-        width: 50%;
-        @media @tablet {
-            width: 75%;
-        }
-
-        @media @mobile {
-            width: 100%;
-        }
-
-        a {
-            text-decoration: none;
-            font-size: 1.6rem;
-            color: @nav-font;
-            padding: 10px;
-
-            &:hover {
-                text-decoration: underline;
-                transform: translate(10px);
-                transition: transform 300ms ease-in-out;
-                background: @nav-font;
-                color: @nav-bg;
-                border-radius: 5px;
-                @media @mobile {
-                    transform: none;
-                }
-            }
-        }
+    @media @mobile {
+      width: 100%;
     }
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @nav-font;
+      padding: 10px;
+
+      &:hover {
+        text-decoration: underline;
+        transform: translate(10px);
+        transition: transform 300ms ease-in-out;
+        background: @nav-font;
+        color: @nav-bg;
+        border-radius: 5px;
+        @media @mobile {
+          transform: none;
+        }
+      }
+    }
+  }
 }

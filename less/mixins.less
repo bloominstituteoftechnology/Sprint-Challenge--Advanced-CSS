@@ -1,78 +1,76 @@
 // Mixins Here
 
 .red-border() {
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .center() {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-layout(@justify-value, @align-value) {
-    display: flex;
-    justify-content: @justify-value;
-    align-items: @align-value;
+  display: flex;
+  justify-content: @justify-value;
+  align-items: @align-value;
+}
+
+#button-styles() {
+  .small-btn(@width, @height, @background, @color) {
+    width: @width;
+    height: @height;
+    background: @background;
+    color: @color;
+    font-size: 2rem;
+    border: 1px solid @button-bg;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: @color;
+      color: @background;
+      transform: translate(10px);
+      transition: transform 300ms ease-in-out;
+    }
   }
 
-  #button-styles() {
-    .small-btn(@width, @height, @background, @color) {
-    
-        width: @width;
-        height: @height;
-        background: @background;
-        color: @color;
-        font-size: 2rem;
-        border: 1px solid @button-bg;
-        border-radius: 5px;
-        cursor: pointer;
-        
-        &:hover {
-          background: @color;
-          color: @background;
-          transform: translate(10px);
-          transition: transform 300ms ease-in-out;
-        }
-    } 
+  .wide-btn(@height, @background, @color) {
+    width: 100%;
+    height: @height;
+    background: @background;
+    color: @color;
+    font-size: 2rem;
+    border: 1px solid @button-bg;
+    border-radius: 5px;
+    cursor: pointer;
 
-    .wide-btn(@height, @background, @color) {
-        width: 100%;
-        height: @height;
-        background: @background;
-        color: @color;
-        font-size: 2rem;
-        border: 1px solid @button-bg;
-        border-radius: 5px;
-        cursor: pointer;
-        
-        &:hover {
-          background: @color;
-          color: @background;
-          transform: none;
-        }
+    &:hover {
+      background: @color;
+      color: @background;
+      transform: none;
     }
-
-    .half-btn(@height, @background, @color) {
-        width: 50%;
-        height: @height;
-        background: @background;
-        color: @color;
-        font-size: 2rem;
-        border: 1px solid @button-bg;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 0 auto;
-        
-        &:hover {
-          background: @color;
-          color: @background;
-          transform: none;
-        }
-
-        @media @mobile {
-            width: 100%;
-        }
-    }
-  
   }
+
+  .half-btn(@height, @background, @color) {
+    width: 50%;
+    height: @height;
+    background: @background;
+    color: @color;
+    font-size: 2rem;
+    border: 1px solid @button-bg;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+
+    &:hover {
+      background: @color;
+      color: @background;
+      transform: none;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+}
