@@ -168,7 +168,6 @@ p {
 @media (max-width: 500px) {
   .container {
     Width: 95%;
-    border: 1px solid red;
   }
 }
 header {
@@ -401,7 +400,11 @@ button {
   width: 30%;
   height: 30px;
   font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   padding-top: 5px;
+  margin-top: 15px;
 }
 button:hover {
   opacity: 1;
@@ -409,12 +412,6 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  width: 30%;
-  height: 30px;
-  font-size: 1.6rem;
   padding-top: 5px;
 }
 /* Float cancel and signup buttons and add an equal width */
