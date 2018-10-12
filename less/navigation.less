@@ -2,6 +2,11 @@
 .navigation{
   .flexnavi();
   background-color: @nav-bg;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
   h1{
     font-size: 3.5rem;
     padding-bottom: 1rem;
@@ -17,7 +22,6 @@
       color: @header-font-color;
       margin: 0 1rem;
       font-size: 1.3rem;
-
     }
   }
 }

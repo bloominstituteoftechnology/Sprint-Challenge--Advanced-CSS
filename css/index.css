@@ -169,6 +169,10 @@ p {
   border-bottom: 0.2rem solid #F1F1F1;
   width: 100%;
   background-color: #F6F6F6;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .navigation h1 {
   font-size: 3.5rem;
@@ -196,6 +200,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  background-color: white;
+  opacity: 0.6;
+}
+.home .intro img {
+  margin-top: 80px;
 }
 @media (max-width: 500px) {
   .home .intro img {
