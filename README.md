@@ -40,7 +40,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task -->
 
-## Task 4: Import LESS Files
+<!-- ## Task 4: Import LESS Files
 
 * [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
@@ -58,7 +58,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 7.  `home-page.less`
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._   -->
 
 ## Task 5: Home Page - Desktop HTML & LESS
 
