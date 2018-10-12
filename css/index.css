@@ -287,8 +287,9 @@ p {
 .sign-in input[type='text'],
 .sign-in input[type='password'] {
   width: 100%;
-  padding: 8px 20px;
+  padding: 7px 0;
   margin: 10px 0;
+  text-align: left;
 }
 .nav-container {
   display: flex;
