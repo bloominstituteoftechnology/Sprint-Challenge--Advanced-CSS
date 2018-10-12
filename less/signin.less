@@ -1,5 +1,3 @@
-// Mixins Here
-
 .custom-btn-para(@color-btn, @background-btn) {
     width: 30%;
     height: auto;
@@ -46,4 +44,54 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#bodie {
+    width: 98%;
+    border: 5px solid @main-border-color;
+    padding: 8% 5%;
+    margin: 3%;
+    .lineUp();
+    justify-content: space-between;
+}
+
+.largeOne {
+    font-size: 2.0rem;
+    width: 50%;
+    .lineUp();
+    font-color: @nav-font;
+    background-color: @waterloo;
+    border: height: 45px;
+    width: 75%;
+    padding: 6px;
+}
+
+.largeOne2 {
+    .lineUp();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-color: @nav-font;
+    background-color: darksalmon;
+    border: height: 45px;
+    width: 98%;
+    padding: 3%;
+    margin: 2%;
+}
+
+#line {
+    padding-bottom: 5px;
+}
+
+#oo {
+    padding-left: 34%;
+}
+
+.btn2 {
+    // .custom-btn-para();
+}
+
+.mainHeader {
+    width: 95%;
+    height: auto;
 }
