@@ -1,0 +1,58 @@
+.signin {
+
+    header {
+       
+        img {
+
+        }
+
+       
+    }
+  
+    .middle-content {
+        background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
+
+        .signin-box {
+            .center;
+            margin: 20px auto 10px;
+            width: 60%;
+            background-color: @nav-bg;
+            border: 3px solid @nav-border;
+            font-size: 1.6rem;
+            border-radius: 20px;
+
+            @media @phone {
+            width: 100%;
+            }
+
+            h2 {
+                margin: 10px;
+                text-align: center;
+                }
+
+            .signin-form {
+                .center;
+                flex-direction: column;
+                padding: 20px;
+
+                label, select, input, textarea {
+                    width: 100%;
+                }
+
+                label {
+                    
+                }
+
+                .btn {
+                    .button(black, white);
+                    margin: 20px;
+                }
+
+                a {
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+} //Sign-in

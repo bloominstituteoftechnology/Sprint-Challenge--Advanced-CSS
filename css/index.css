@@ -367,3 +367,68 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.signin .middle-content {
+  background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
+}
+.signin .middle-content .signin-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 20px auto 10px;
+  width: 60%;
+  background-color: #F6F6F6;
+  border: 3px solid #F1F1F1;
+  font-size: 1.6rem;
+  border-radius: 20px;
+}
+@media (max-width:500px) {
+  .signin .middle-content .signin-box {
+    width: 100%;
+  }
+}
+.signin .middle-content .signin-box h2 {
+  margin: 10px;
+  text-align: center;
+}
+.signin .middle-content .signin-box .signin-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.signin .middle-content .signin-box .signin-form label,
+.signin .middle-content .signin-box .signin-form select,
+.signin .middle-content .signin-box .signin-form input,
+.signin .middle-content .signin-box .signin-form textarea {
+  width: 100%;
+}
+.signin .middle-content .signin-box .signin-form .btn {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  min-width: 100px;
+  background-color: black;
+  padding: 9px 5px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.signin .middle-content .signin-box .signin-form .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 4px;
+}
+@media (max-width:500px) {
+  .signin .middle-content .signin-box .signin-form .btn:hover {
+    width: 100%;
+    padding: 25px;
+  }
+}
+.signin .middle-content .signin-box .signin-form a {
+  text-align: center;
+  padding-bottom: 10px;
+}
