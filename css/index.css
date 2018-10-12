@@ -180,8 +180,15 @@ p {
   font-size: 4rem;
   padding-bottom: 1%;
 }
-.main-navigation div a {
-  font-size: 2rem;
+.main-navigation div nav {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-navigation div nav a {
+  font-size: 1.6rem;
   color: #454A59;
   text-decoration: none;
 }
