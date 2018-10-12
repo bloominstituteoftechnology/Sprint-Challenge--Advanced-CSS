@@ -197,6 +197,9 @@ p {
   font-size: 1.6rem;
   color: #454A59;
 }
+.navigation .nav-menu a:hover {
+  text-decoration: underline;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -297,6 +300,17 @@ footer {
 @media (max-width: 600px) {
   .home .walk .walk-text .btn {
     width: 100%;
+    height: 40px;
+    background: #23293B;
+    color: #F6F6F6;
+    font-size: 2rem;
+    border: 1px solid #23293B;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #F6F6F6;
+    color: #23293B;
   }
 }
 .home .walk .walk-img {

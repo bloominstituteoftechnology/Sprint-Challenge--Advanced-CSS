@@ -82,10 +82,10 @@
       }
 
       .btn {
-        .custom-btn(100px, 40px, @button-bg, @button-font);
+        #button-styles > .small-btn(100px, 40px, @button-bg, @button-font);
         .center();
         @media @mobile { 
-          width: 100%;
+          #button-styles > .wide-btn(40px, @button-bg, @button-font);
         }
       }
     }

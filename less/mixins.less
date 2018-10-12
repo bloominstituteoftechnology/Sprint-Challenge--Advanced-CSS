@@ -16,18 +16,38 @@
     align-items: @align-value;
   }
 
-  .custom-btn(@width, @height, @background, @color) {
-    width: @width;
-    height: @height;
-    background: @background;
-    color: @color;
-    font-size: 2rem;
-    border: 1px solid @button-bg;
-    border-radius: 5px;
-    cursor: pointer;
+  #button-styles() {
+    .small-btn(@width, @height, @background, @color) {
     
-    &:hover {
-      background: @color;
-      color: @background;
+        width: @width;
+        height: @height;
+        background: @background;
+        color: @color;
+        font-size: 2rem;
+        border: 1px solid @button-bg;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover {
+          background: @color;
+          color: @background;
+        }
+    } 
+
+    .wide-btn(@height, @background, @color) {
+        width: 100%;
+        height: @height;
+        background: @background;
+        color: @color;
+        font-size: 2rem;
+        border: 1px solid @button-bg;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover {
+          background: @color;
+          color: @background;
+        }
     }
+  
   }
