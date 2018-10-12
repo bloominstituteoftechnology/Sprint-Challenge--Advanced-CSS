@@ -65,12 +65,12 @@
         padding: 0.9rem 1.85rem;
         margin-top: 1.7rem;
         .border-radius(1rem);
-        // color, background, font-size, text-decoration
         .btn-styles(white, @btn-bg-color, 1.85rem, none);
       }
 
       .btn:hover {
-        .btn-styles(@btn-bg-color, white);
+        background: white;
+        color: @btn-bg-color;
       }
     }
 
@@ -86,3 +86,49 @@
     }
   }
 } // home
+
+@media @phone {
+  .home {
+    width: 92%;
+    .space-images {
+      .center-stuff();
+
+      img {
+        width: 100%;
+      }
+
+      #img-2,
+      #img-3 {
+        display: none;
+      }
+    }
+
+    section.walk {
+      height: auto;
+      padding: 0;
+      padding-bottom: 2rem;
+      .center-stuff();
+
+      .walk-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .btn {
+          padding: 2rem;
+          width: 100%;
+        }
+      }
+
+      .walk-img {
+        order: -1;
+        width: 100%;
+        margin: 3rem 0;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
