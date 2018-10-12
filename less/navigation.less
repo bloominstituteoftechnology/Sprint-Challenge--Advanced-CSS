@@ -1,1 +1,28 @@
 // Navigation code here
+.navigation {
+    .center();
+    flex-direction: column;
+    background-color: @nav-bg;
+  
+    h1 {
+      font-size: 4rem;
+      margin-top: 0.5%;
+      margin-bottom: 1%;
+    }
+  
+    nav {
+      margin-bottom: 1.5rem;
+  
+      a {
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: black;
+        margin-left: 2.8rem;
+  
+        &:hover {
+          color: darken(@nav-bg, 30%);
+        }
+      }
+    }
+  }
+  
