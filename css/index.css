@@ -292,6 +292,9 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text a {
+  text-decoration: none;
+}
 .home .walk .walk-text .btn {
   display: flex;
   justify-content: center;
@@ -343,4 +346,57 @@ footer {
     width: 100%;
     margin-left: 0;
   }
+}
+.signup {
+  margin-top: 101px;
+}
+.signup .header {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards;
+  margin-bottom: 15px;
+}
+.signup .header img {
+  width: 100%;
+  height: auto;
+}
+.signup .header h2 {
+  padding: 15px;
+}
+.signup .header p {
+  padding: 0 15px;
+}
+.signup .signup-form {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 3s forwards;
+  background-color: rgba(209, 209, 209, 0.58);
+  padding: 15px 0;
+  margin: auto;
+}
+.signup .signup-form span {
+  margin-top: 10px;
+  padding-left: 40px;
+  display: inline-block;
+  width: 40%;
+  font-size: 1.6rem;
+}
+.signup .signup-form input {
+  min-height: 25px;
+  display: inline-block;
+  width: 50%;
+}
+.signup .signup-form #gender input {
+  min-height: inherit;
+  width: auto;
+}
+.signup .signup-form textarea {
+  display: inline-block;
+  margin-top: 10px;
+  width: 50%;
+}
+.signup .signup-form #submit,
+.signup .signup-form #reset {
+  display: inline-block;
+  width: auto;
+  margin-top: 10px;
+  margin-left: 40%;
 }

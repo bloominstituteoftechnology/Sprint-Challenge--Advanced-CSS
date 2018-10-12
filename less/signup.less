@@ -1,0 +1,76 @@
+// Sign up content
+
+.signup {
+
+  margin-top: 101px;
+
+  .header {
+
+    opacity: 0;
+
+    .animation(fadeIn, 2s, 1s, forwards);
+    margin-bottom: 15px;
+
+    img {
+
+      .responsive-img();
+
+    }
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding:0 15px;
+    }
+
+
+  }
+
+  .signup-form {
+
+    opacity: 0;
+
+    .animation(fadeIn, 1s, 3s, forwards);
+
+    background-color: rgba(209, 209, 209, 0.58);
+    padding: 15px 0;
+    margin: auto;
+
+    span {
+    	margin-top: 10px;
+    	padding-left: 40px;
+    	display: inline-block;
+    	width: 40%;
+      font-size: 1.6rem;
+    }
+
+    input {
+    	min-height: 25px;
+    	display: inline-block;
+    	width: 50%;
+    }
+
+    #gender input {
+    	min-height: inherit;
+      width: auto;
+    }
+
+    textarea {
+    	display: inline-block;
+    	margin-top: 10px;
+    	width: 50%;
+    }
+
+    #submit,
+    #reset {
+    	display: inline-block;
+    	width: auto;
+    	margin-top: 10px;
+    	margin-left: 40%;
+    }
+
+  }
+
+}
