@@ -62,11 +62,16 @@
         border: 1px solid @button-bg;
         border-radius: 5px;
         cursor: pointer;
+        margin: 0 auto;
         
         &:hover {
           background: @color;
           color: @background;
           transform: none;
+        }
+
+        @media @mobile {
+            width: 100%;
         }
     }
   

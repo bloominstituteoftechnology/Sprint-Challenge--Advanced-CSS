@@ -239,6 +239,7 @@ footer {
 }
 .home .intro .earth {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -361,6 +362,7 @@ footer {
 }
 .sign_up .intro .earth {
   border-radius: 5px;
+  width: 100%;
 }
 .sign_up .intro h2 {
   padding: 15px;
@@ -376,7 +378,7 @@ footer {
   margin-bottom: 100px;
 }
 .sign_up .sign-up .form .btn {
-  width: 100%;
+  width: 50%;
   height: 40px;
   background: #23293B;
   color: #F6F6F6;
@@ -384,6 +386,7 @@ footer {
   border: 1px solid #23293B;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,4 +395,9 @@ footer {
   background: #F6F6F6;
   color: #23293B;
   transform: none;
+}
+@media (max-width: 600px) {
+  .sign_up .sign-up .form .btn {
+    width: 100%;
+  }
 }
