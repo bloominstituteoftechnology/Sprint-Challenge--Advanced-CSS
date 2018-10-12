@@ -332,6 +332,7 @@ footer {
 .signup-form {
   border: 2px dotted #23293B;
   border-radius: 10px;
+  display: none;
 }
 .signup-form .form {
   margin: 0px auto;
