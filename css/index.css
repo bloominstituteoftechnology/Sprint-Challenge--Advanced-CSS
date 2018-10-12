@@ -172,6 +172,7 @@ img {
 header {
   background-color: #F6F6F6;
   padding: 1rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,8 +182,16 @@ header .logo {
   font-size: 4rem;
 }
 header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10rem;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(246, 246, 246, 0.7);
+  height: 3rem;
   font-size: 1.6rem;
-  margin-top: 2rem;
 }
 header nav a {
   text-decoration: none;
