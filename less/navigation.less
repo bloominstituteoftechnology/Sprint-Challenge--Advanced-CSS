@@ -1,1 +1,37 @@
 // Navigation code here
+
+header {
+  background-color: @wild-sand;
+  padding: 1rem;
+  height: 15rem;
+
+  // FLEX
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    font-size: 4rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 10rem;
+    width: 100%;
+    text-align: center;
+
+    background-color: rgba(@wild-sand, 0.7);
+    height: 3rem;
+    font-size: 1.6rem;
+
+    a {
+      text-decoration: none;
+      color: black;
+      margin: 0 1.4rem;
+    }
+  }
+}

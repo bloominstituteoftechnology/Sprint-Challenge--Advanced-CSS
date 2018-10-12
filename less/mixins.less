@@ -1,1 +1,22 @@
 // Mixins Here
+.center-stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius (@radius: 0.5rem;) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.btn-styles(@color, @background, @font-size, @text-decor) {
+  color: @color;
+  font-size: @font-size;
+  text-decoration: @text-decor;
+  background: @background;
+}
+
+@phone: ~"(max-width: 500px)";
