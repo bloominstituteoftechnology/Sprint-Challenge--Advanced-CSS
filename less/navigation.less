@@ -10,11 +10,19 @@
     h1 {
         font-size: 4rem;
         margin-top: 1.3%;
+
+        @media @phone {
+            margin-top: 2%;
+        } //media
     }//h1
 
     nav {
         width: 43.5%;
         .justify-align-items(space-evenly);
+
+        @media @phone {
+            width: 87%;
+        }//media
 
         a {
             margin: 4.1% 0 2.5% 0;
