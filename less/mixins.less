@@ -4,6 +4,7 @@
     flex-direction: @direction;
     justify-content: @justify;
     align-content: @align;
+    flex-wrap: wrap;
 }
 
 .button(@bg-color, @border-color, @color){
@@ -13,4 +14,10 @@
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
+    border-radius: 5px;
+    &:hover {
+        background-color: @color;
+        border: 1px solid @border-color;
+        color: @bg-color;
+    }
 }
