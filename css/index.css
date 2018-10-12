@@ -162,17 +162,19 @@ p {
 }
 nav {
   font-size: 1.5rem;
+  border: 2px solid red;
   text-decoration: none;
-  justify-content: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 38%;
+  justify-content: center;
+  width: 80%;
   padding-bottom: 1%;
+  margin-bottom: 0.8%;
 }
 nav a {
   text-decoration: none;
   color: #454A59;
+  padding: 0 3.2%;
 }
 @media (max-width: 500px) {
   nav {
@@ -182,8 +184,8 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
-    padding-bottom: 1%;
+    width: 90%;
+    padding-bottom: 2%;
   }
   nav a {
     text-decoration: none;
@@ -215,6 +217,7 @@ header h1 {
   padding: 1% 0 2% 0;
 }
 .home img {
+  width: 100%;
   border-radius: 6px;
 }
 .home .intro h2 {
