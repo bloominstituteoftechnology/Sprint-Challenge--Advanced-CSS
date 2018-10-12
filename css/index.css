@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation-img {
+  text-align: center;
+}
+.navigation-img h1 {
+  font-size: 3.7rem;
+  margin: 1% 0;
+}
+.navigation-img nav {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+.navigation-img nav a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+.navigation-img nav a:hover {
+  color: blue;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
