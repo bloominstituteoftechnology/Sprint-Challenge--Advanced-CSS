@@ -1,1 +1,59 @@
 // Navigation code here
+.top-bar {
+    border-bottom: 2px @nav-border solid;
+    background-color: @nav-bg;
+    #layout > .margins-padding(0, 1%);
+    #layout > .width-height(100%, auto);
+    #layout > .flex-column(space-between, center, wrap);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+
+    @media @tablet {
+        background-color: @nav-bg;
+        position: unset;
+        opacity: 1;
+    }
+
+    @media @phone {
+        background-color: @nav-bg;
+        position: unset;
+        opacity: 1;
+    }
+
+    h1 {
+      font-size: 4rem;
+      #animations > .animation4();
+
+    }
+
+    nav {
+        font-size: 1.6rem;
+        #layout > .width-height(45%, auto);
+        #layout > .margins-padding(1% 0 0, 0);
+        #layout > .flex-row(space-around, center, nowrap);
+
+        a {
+            color: @nav-font;
+            text-decoration: none;
+        }
+
+        a:hover {
+            #animations > .animation1();
+        }
+
+
+        @media @tablet {
+            #layout > .width-height(85%, auto);
+            #layout > .margins-padding(2% 0 0, 0);
+        }
+
+        @media @phone {
+            #layout > .width-height(85%, auto);
+            #layout > .margins-padding(2% 0 0, 0);
+        }
+        
+    }
+
+}
