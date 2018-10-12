@@ -326,6 +326,51 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-html {
-  background-color: red;
+.blog-post {
+  margin: 20px;
+}
+.blog-post a {
+  display: flex;
+  border: 2px solid gray;
+  height: 200px;
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.blog-post a:hover {
+  background-color: #DCDCDC;
+}
+.blog-post a .post-1 .blog-content {
+  padding-left: 20px;
+}
+.blog-post a .post-1 img {
+  padding-right: 20px;
+}
+.blog-post a .post-2 {
+  display: flex;
+  border: 2px solid gray;
+  height: 200px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.blog-post a .post-2 .blog-content {
+  margin-left: 20px;
+}
+.blog-post a .post-2 img {
+  margin-right: 20px;
+}
+article {
+  width: 80%;
+  margin-left: 10%;
+}
+article img {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+}
+article .blog-header {
+  text-align: center;
+  font-size: 3rem;
 }
