@@ -40,18 +40,20 @@
 
     .animation3() {
         animation-name: slideleft;
-        animation-duration: .5s;
+        animation-duration: 5s;
         animation-iteration-count: 1;
     }
+
     .animation4() {
-        animation-name: slideright;
-        animation-duration: .5s;
+        animation-name: expand;
+        animation-duration: 5s;
         animation-iteration-count: 1;
     }
 }
 
 #button {
     .button1(@background, @color){
+        border: 1px @border-real solid;
         border-radius: 5px;
         background: @background;
         color: @color;
@@ -63,7 +65,6 @@
     }
     
     .button2(@background, @color) {
-        border: 1px @btn-bg-color solid;
         border-radius: 5px;
         background: @color;
         color: @background;

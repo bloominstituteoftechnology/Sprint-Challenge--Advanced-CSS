@@ -5,8 +5,8 @@
 @nav-font: @river-bend;
 @nav-border: @sea-shell;
 
-@header-font-color: @ebony-clay;
-@main-font-color: @shuttle-gray;
+@header-font-color: @porcelain;
+@main-font-color: @porcelain;
 @main-border-color: @border-real;
 
 @footer-background: @wild-sand;
@@ -61,7 +61,7 @@
 @keyframes slideleft {
 
    from {
-    margin-left: -100%;
+    margin-left: -150%;
   }
 
   to {
@@ -72,10 +72,24 @@
 @keyframes slideright {
 
     from {
-     margin-right: -100%;
+     margin-right: 200%;
    }
  
    to {
      margin-right: 0%;
    }
  }
+
+ @keyframes expand {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}

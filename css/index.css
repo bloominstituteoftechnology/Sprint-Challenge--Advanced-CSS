@@ -22,7 +22,7 @@
 }
 @keyframes slideleft {
   from {
-    margin-left: -100%;
+    margin-left: -150%;
   }
   to {
     margin-left: 0%;
@@ -30,10 +30,21 @@
 }
 @keyframes slideright {
   from {
-    margin-right: -100%;
+    margin-right: 200%;
   }
   to {
     margin-right: 0%;
+  }
+}
+@keyframes expand {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -173,7 +184,8 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #F6F7F8;
+  background: #23293B;
 }
 h1,
 h2,
@@ -181,7 +193,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #F6F7F8;
 }
 h2 {
   font-size: 3.2rem;
@@ -216,20 +228,23 @@ p {
 }
 @media (max-width: 800px) {
   .top-bar {
-    background-color: white;
+    background-color: rgba(246, 246, 246, 0.5);
     position: unset;
     opacity: 1;
   }
 }
 @media (max-width: 500px) {
   .top-bar {
-    background-color: white;
+    background-color: rgba(246, 246, 246, 0.5);
     position: unset;
     opacity: 1;
   }
 }
 .top-bar h1 {
   font-size: 4rem;
+  animation-name: expand;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 .top-bar nav {
   font-size: 1.6rem;
@@ -270,7 +285,7 @@ p {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: rgba(246, 246, 246, 0.5);
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -325,7 +340,7 @@ footer {
 .home .intro h2 {
   padding: 15px;
   animation-name: slideleft;
-  animation-duration: 0.5s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
 }
 .home .intro p {
@@ -407,7 +422,7 @@ footer {
 .home .visit-planets h3 {
   margin-top: 11px;
   animation-name: slideleft;
-  animation-duration: 0.5s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
 }
 .home .visit-planets p {
@@ -457,16 +472,14 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
-  animation-name: slideleft;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  border: 1px #dee2e6 solid;
   border-radius: 5px;
-  background: #22283A;
+  background: #454A59;
   color: #F6F7F8;
   font-size: 1.6rem;
   font-weight: bold;
@@ -491,10 +504,9 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  border: 1px #22283A solid;
   border-radius: 5px;
   background: #F6F7F8;
-  color: #22283A;
+  color: #454A59;
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
@@ -545,4 +557,125 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form-style-6 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75%;
+  margin: 10px auto;
+  padding: 16px;
+  background: #5E6164;
+}
+.home .form-style-6 h1 {
+  background: #5E6164;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  margin: -16px -16px 16px -16px;
+}
+.home .form-style-6 input[type="text"],
+.home .form-style-6 input[type="date"],
+.home .form-style-6 input[type="datetime"],
+.home .form-style-6 input[type="email"],
+.home .form-style-6 input[type="number"],
+.home .form-style-6 input[type="search"],
+.home .form-style-6 input[type="time"],
+.home .form-style-6 input[type="url"],
+.home .form-style-6 textarea,
+.home .form-style-6 select {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 3%;
+  color: #555;
+  font: 95% Arial, Helvetica, sans-serif;
+}
+.home .form-style-6 input[type="text"]:focus,
+.home .form-style-6 input[type="date"]:focus,
+.home .form-style-6 input[type="datetime"]:focus,
+.home .form-style-6 input[type="email"]:focus,
+.home .form-style-6 input[type="number"]:focus,
+.home .form-style-6 input[type="search"]:focus,
+.home .form-style-6 input[type="time"]:focus,
+.home .form-style-6 input[type="url"]:focus,
+.home .form-style-6 textarea:focus,
+.home .form-style-6 select:focus {
+  box-shadow: 0 0 5px #dee2e6;
+  padding: 3%;
+  border: 1px solid #dee2e6;
+}
+.home .form-style-6 input[type="submit"],
+.home .form-style-6 input[type="button"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px #dee2e6 solid;
+  border-radius: 5px;
+  background: #22283A;
+  color: #F6F7F8;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 2%;
+  width: 30%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .home .form-style-6 input[type="submit"],
+  .home .form-style-6 input[type="button"] {
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .form-style-6 input[type="submit"],
+  .home .form-style-6 input[type="button"] {
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
+}
+.home .form-style-6 input[type="submit"]:hover,
+.home .form-style-6 input[type="button"]:hover {
+  border-radius: 5px;
+  background: #F6F7F8;
+  color: #22283A;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding: 2%;
+  width: 30%;
+  height: auto;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+@media (max-width: 800px) {
+  .home .form-style-6 input[type="submit"]:hover,
+  .home .form-style-6 input[type="button"]:hover {
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .form-style-6 input[type="submit"]:hover,
+  .home .form-style-6 input[type="button"]:hover {
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
 }
