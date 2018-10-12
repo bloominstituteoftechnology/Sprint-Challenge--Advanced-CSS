@@ -1,11 +1,10 @@
 // Home Content
 
 .home {
-
   .intro {
-    img{
-      width:100%;
-      height:auto;
+    img {
+      width: 100%;
+      height: auto;
       .customBorderRadius(5px);
     }
     h2 {
@@ -13,9 +12,8 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -30,15 +28,16 @@
       height: 100%;
     }
 
-      .sky,.launch{
-        @media @mobile{
-          display:none;
-        }
+    .sky,
+    .launch {
+      @media @mobile {
+        display: none;
       }
-      .blast{
-        @media @mobile{
-          width:100%;
-        }
+    }
+    .blast {
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
   .visit-planets {
@@ -60,7 +59,7 @@
     display: flex;
     justify-content: center;
 
-    @media @mobile{
+    @media @mobile {
       margin-top: 10px;
       flex-direction: column-reverse;
       padding: 15px 10px;
@@ -68,8 +67,8 @@
 
     .walk-text {
       width: 50%;
-      @media @mobile{
-        width:100%;
+      @media @mobile {
+        width: 100%;
       }
 
       h3 {
@@ -81,33 +80,31 @@
       }
 
       .btn {
-        display:flex;
-        .customButton(rgb(18, 18, 97), 5px, 75px,white,30px);
+        display: flex;
+        .customButton(rgb(18, 18, 97), 5px, 75px, white, 30px);
         .centerItem();
 
         @media @mobile {
-          .customButton(rgb(18, 18, 97), 5px, 100%,white,30px);
+          .customButton(rgb(18, 18, 97), 5px, 100%, white, 30px);
         }
-  
       }
-      .btn:hover{
-        .reverseButton(red, 5px, 75px,black,30px);
+      .btn:hover {
+        .reverseButton(red, 5px, 75px, black, 30px);
         @media @mobile {
-          .reverseButton(red, 5px, 100%,black,30px);
+          .reverseButton(red, 5px, 100%, black, 30px);
         }
       }
-
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
 
-      @media @mobile{
-        width:100%;
-        margin-left:0;
+      @media @mobile {
+        width: 100%;
+        margin-left: 0;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -115,4 +112,4 @@
       }
     }
   }
-}// home
+} // home

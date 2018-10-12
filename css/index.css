@@ -172,7 +172,7 @@ p {
   padding: 20px;
   width: 100%;
   max-width: 1024px;
-  background-color: #F0F0F0;
+  background-color: #F6F6F6;
   height: 100px;
   margin: 0 auto;
 }
@@ -273,7 +273,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   display: flex;
-  background-color: #121261;
+  background-color: #22283A;
   width: 75px;
   border-radius: 5px;
   color: white;
@@ -284,7 +284,7 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
-    background-color: #121261;
+    background-color: #22283A;
     width: 100%;
     border-radius: 5px;
     color: white;
@@ -293,7 +293,7 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: red;
+  background-color: #22283A;
   width: 75px;
   border-radius: 5px;
   color: black;
@@ -302,7 +302,7 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn:hover {
-    background-color: red;
+    background-color: #22283A;
     width: 100%;
     border-radius: 5px;
     color: black;
@@ -324,4 +324,72 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+form {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  background: #454A59;
+  color: #fff;
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-inner {
+  padding: 0 8px;
+  justify-content: space-between;
+}
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+.flex-outer li p {
+  margin: 0;
+}
+.flex-outer li input:not([type="checkbox"]),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 2px;
+}
+.flex-inner li {
+  width: 100px;
 }
