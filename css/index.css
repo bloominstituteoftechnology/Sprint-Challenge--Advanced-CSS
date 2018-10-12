@@ -168,12 +168,12 @@ p {
 @media (max-width: 500px) {
   .container {
     Width: 95%;
+    border: 1px solid red;
   }
 }
 header {
   margin-top: 35px;
   margin-bottom: 15px;
-  border: 1px solid black;
 }
 @media (max-width: 500px) {
   header {
@@ -349,4 +349,87 @@ footer {
     display: flex;
     width: 100%;
   }
+}
+* {
+  box-sizing: border-box;
+}
+header .header-img {
+  width: 100%;
+}
+.container-main {
+  max-width: 800px;
+  width: 95%;
+  margin-left: 15px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.sign-form {
+  font-size: 1.6rem;
+}
+input {
+  font-size: 1.3rem;
+}
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid #dee2e6;
+  background: white;
+  color: black;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  outline: none;
+}
+hr {
+  border: 1px solid #dee2e6;
+  margin-bottom: 25px;
+}
+/* Set a style for all buttons */
+button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  height: 30px;
+  font-size: 1.6rem;
+  padding-top: 5px;
+}
+button:hover {
+  opacity: 1;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 30%;
+  height: 30px;
+  font-size: 1.6rem;
+  padding-top: 5px;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
