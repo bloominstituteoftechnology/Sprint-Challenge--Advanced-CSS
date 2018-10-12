@@ -180,6 +180,7 @@ nav {
   position: fixed;
   top: 0px;
   background-color: rgba(221, 221, 221, 0.8);
+  z-index: 10;
 }
 nav h1 {
   font-size: 4rem;
