@@ -1,9 +1,7 @@
 // Home Content
 
 .home {
-
   .intro {
-
     .main-header {
       width: 100%;
       height: auto;
@@ -14,9 +12,8 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -35,7 +32,8 @@
       }
     }
 
-    .sky, .launch {
+    .sky,
+    .launch {
       @media @phone {
         display: none;
       }
@@ -66,7 +64,7 @@
       align-items: center;
       padding: 50px 0px;
       margin-top: 20px;
-      padding: 20px 0px; 
+      padding: 20px 0px;
     }
 
     .walk-text {
@@ -85,6 +83,11 @@
 
       .btn {
         .custom-btn(14rem, 4rem, @btn-bg-color, white, 2rem);
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
         @media @phone {
           width: 100%;
         }
@@ -98,7 +101,7 @@
         width: 90%;
         margin: 20px auto;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -109,4 +112,4 @@
       }
     }
   }
-}// home
+} // home

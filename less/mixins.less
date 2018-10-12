@@ -24,10 +24,17 @@
     border: 1px solid @background;
     border-radius: (@font-size * 0.25);
     cursor: pointer;
+    a {
+        color: @color;
+        text-decoration: none;
+      }
   
     &:hover {
       background-color: @color;
       color: @background;
       border: 1px solid @background;
+      a {
+        color: @background;
+      }
     }
   }

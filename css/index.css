@@ -159,8 +159,12 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 120px;
+  z-index: -1;
 }
 .con-nav {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -169,6 +173,7 @@ p {
   background: #F6F6F6;
   border: 1px double #F1F1F1;
   color: #454A59;
+  opacity: 0.9;
 }
 .con-nav h1 {
   font-size: 4rem;
@@ -287,10 +292,21 @@ footer {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+.home .walk .walk-text .btn a {
+  color: white;
+  text-decoration: none;
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: #22283A;
   border: 1px solid #22283A;
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
+}
+.home .walk .walk-text .btn a {
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -315,5 +331,63 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img img {
     order: -1;
+  }
+}
+.form1 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.form1 label,
+.form1 input,
+.form1 textarea {
+  font-size: 2rem;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .form1 label,
+  .form1 input,
+  .form1 textarea {
+    width: 95%;
+  }
+}
+.form1 label {
+  padding: 1.5rem 0;
+}
+.form1 input {
+  padding: 1rem 1rem;
+}
+.form1 .btn-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
+  height: 5.5rem;
+  background-color: #22283A;
+  color: white;
+  font-size: 2rem;
+  border: 1px solid #22283A;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 50%;
+  margin: 20px 0;
+}
+.form1 .btn-form a {
+  color: white;
+  text-decoration: none;
+}
+.form1 .btn-form:hover {
+  background-color: white;
+  color: #22283A;
+  border: 1px solid #22283A;
+}
+.form1 .btn-form:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .form1 .btn-form {
+    width: 95%;
   }
 }
