@@ -1,1 +1,28 @@
 // Navigation code here
+
+.navigation {
+  width: 100%;
+  background-color: @wild-sand;
+  .display-flex(column, center, center);
+  padding: 12px 0px;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: auto 9px;
+
+    &:hover {
+      background-color: @btn-bg-color;
+      color: @wild-sand;
+      border-radius: 5px;
+    }
+  }
+}
