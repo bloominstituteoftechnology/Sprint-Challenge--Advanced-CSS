@@ -214,6 +214,10 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .mainHeader {
+  width: 99%;
+  height: auto;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -396,4 +400,8 @@ footer {
 }
 #oo {
   padding-left: 34%;
+}
+.mainHeader {
+  width: 97%;
+  height: auto;
 }
