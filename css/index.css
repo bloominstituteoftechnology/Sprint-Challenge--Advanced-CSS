@@ -318,3 +318,24 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.blog .intro h2 {
+  padding: 15px;
+}
+.blog .table table {
+  border: 1px solid black;
+  width: 100%;
+}
+.blog .table table caption {
+  font-size: 2rem;
+  padding: 20px;
+}
+.blog .table table tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  width: 100%;
+}
+.blog .table table tr td {
+  padding: 10px;
+}
