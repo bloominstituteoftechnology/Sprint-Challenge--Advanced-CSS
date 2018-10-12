@@ -1,1 +1,40 @@
 // Navigation code here
+
+nav {  
+    font-size: 1.5rem;
+    text-decoration: none;
+    .just-center();
+    .align-center();
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 1%;
+    margin-bottom: .8%;
+   
+
+    a {
+        text-decoration: none;
+        color: @nav-font; 
+        padding: 0 3.2%;    
+    }
+}
+
+// MOBILE
+
+@media @mobile {
+
+    nav {  
+        font-size: 1.5rem;
+        text-decoration: none;
+        .just-center();
+        .align-center();
+        justify-content: space-between;
+        width: 90%;
+        padding-bottom: 2%;
+    
+        a {
+            text-decoration: none;
+            color: @nav-font; 
+              
+        }
+    }
+}
