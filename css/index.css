@@ -176,24 +176,25 @@ p {
   width: 100%;
   text-align: center;
   vertical-align: middle;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 .nav-container nav {
   margin-top: 19px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  width: 37.6%;
+  width: 407.5px;
   font-size: 1.6rem;
   padding-bottom: 11px;
 }
 .nav-container nav a {
   text-decoration: none;
   color: #454a59;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 @media (max-width: 500px) {
   .nav-container nav {
-    justify-content: space-around;
     margin-top: 19px;
     width: 81.5%;
   }
