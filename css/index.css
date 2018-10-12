@@ -326,3 +326,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.contact address {
+  margin: 50px 30px;
+}
