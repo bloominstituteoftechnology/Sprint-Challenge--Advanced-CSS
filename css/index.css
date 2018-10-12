@@ -1,3 +1,20 @@
+@keyframes animate-opacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +218,9 @@ footer {
 .home .intro img {
   width: 100%;
   border-radius: 5px;
+  animation-name: animate-opacity;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 }
 .home .intro h2 {
   padding: 15px;
