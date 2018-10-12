@@ -169,6 +169,8 @@ p {
   background: #F6F6F6;
   font-family: #454A59;
   border-bottom: 1px solid #F1F1F1;
+  position: sticky;
+  top: 0;
 }
 .top-nav h1 {
   font-size: 4rem;
