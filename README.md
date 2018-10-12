@@ -1,4 +1,4 @@
-# Assessing Your Advanced CSS Learning
+<!-- # Assessing Your Advanced CSS Learning
 
 You will be updating a website using all your responsive web design and preprocessing skills from the sprint. The theme of this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
 
@@ -10,9 +10,9 @@ You will be updating a website using all your responsive web design and preproce
 
 * [ ] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [ ] You are now ready to build this project with your preferred IDE -->
 
-### Pro tip: Commit every time you complete a task or feature!
+<!-- ### Pro tip: Commit every time you complete a task or feature!
 
 ## Task 2: Comprehension Questions
 
@@ -26,7 +26,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 4. How would you describe preprocessing to someone new to CSS?
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? -->
 
 ## Task 3: Set up your preprocessor
 
