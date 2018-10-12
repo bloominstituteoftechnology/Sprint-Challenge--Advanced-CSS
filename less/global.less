@@ -52,18 +52,20 @@ p {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
   border: 1px dashed @shuttle-gray;
+  width: 80%;
   padding: 2.5%;
   padding-bottom: 7.5%;
-  margin-bottom: 2.5%;
+  margin: 20px auto;
   background-color: @footer-background;
 
   label {
     padding-bottom: 1%;
   }
 
-  input {
-    margin-bottom: 2.5%;
-    width: 30%;
+  input[type='text'] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px 0;
   }
 
   #address {
@@ -86,7 +88,7 @@ p {
 }
 
 //Sign-In Page
-form {
+.sign-in {
   .custom-layout(column, space-between, center);
   width: 80%;
   font-size: 1.6rem;
@@ -99,6 +101,8 @@ form {
     margin: 0 auto;
     button {
       margin: 5px 0 15px 0;
+      .btn-style(@btn-bg-color, @porcelain);
+      padding: 5px 0;
     }
   }
   .forgot {
@@ -106,8 +110,23 @@ form {
     width: 15%;
     button {
       margin: 10px 0;
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: @header-font-color;
+
+      &:hover {
+        text-decoration: underline;
+        color: blue;
+      }
     }
   }
+
   input[type='text'], input[type='password'] {
     width: 100%;
     padding: 8px 20px;

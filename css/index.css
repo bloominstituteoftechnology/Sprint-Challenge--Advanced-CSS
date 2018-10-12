@@ -175,17 +175,19 @@ p {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
   border: 1px dashed #5E6164;
+  width: 80%;
   padding: 2.5%;
   padding-bottom: 7.5%;
-  margin-bottom: 2.5%;
+  margin: 20px auto;
   background-color: #F6F6F6;
 }
 .contact-container label {
   padding-bottom: 1%;
 }
-.contact-container input {
-  margin-bottom: 2.5%;
-  width: 30%;
+.contact-container input[type='text'] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 10px 0;
 }
 .contact-container #address {
   margin-bottom: 0;
@@ -214,7 +216,7 @@ p {
   cursor: pointer;
   border: 1px solid #22283A;
 }
-form {
+.sign-in {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -225,7 +227,7 @@ form {
   color: #23293B;
   margin: 20px auto;
 }
-form .login-container {
+.sign-in .login-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,21 +235,48 @@ form .login-container {
   width: 50%;
   margin: 0 auto;
 }
-form .login-container button {
+.sign-in .login-container button {
   margin: 5px 0 15px 0;
+  background-color: #22283A;
+  color: #F6F7F8;
+  padding: 9px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px 0;
 }
-form .forgot {
+.sign-in .login-container button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+.sign-in .forgot {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 15%;
 }
-form .forgot button {
+.sign-in .forgot button {
   margin: 10px 0;
 }
-form input[type='text'],
-form input[type='password'] {
+.sign-in .forgot button:hover {
+  color: white;
+  background-color: black;
+}
+.sign-in .forgot a {
+  text-decoration: none;
+  color: #23293B;
+}
+.sign-in .forgot a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.sign-in input[type='text'],
+.sign-in input[type='password'] {
   width: 100%;
   padding: 8px 20px;
   margin: 10px 0;
