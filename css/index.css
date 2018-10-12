@@ -370,6 +370,11 @@ footer {
 .signin .middle-content {
   background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
 }
+@media (max-width:500px) {
+  .signin .middle-content {
+    background-image: none;
+  }
+}
 .signin .middle-content .signin-box {
   display: flex;
   flex-wrap: wrap;
@@ -380,7 +385,7 @@ footer {
   background-color: #F6F6F6;
   border: 3px solid #F1F1F1;
   font-size: 1.6rem;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media (max-width:500px) {
   .signin .middle-content .signin-box {
@@ -404,6 +409,10 @@ footer {
 .signin .middle-content .signin-box .signin-form input,
 .signin .middle-content .signin-box .signin-form textarea {
   width: 100%;
+  padding: 5px;
+}
+.signin .middle-content .signin-box .signin-form label {
+  padding-top: 20px;
 }
 .signin .middle-content .signin-box .signin-form .btn {
   text-decoration: none;
@@ -426,6 +435,12 @@ footer {
   .signin .middle-content .signin-box .signin-form .btn:hover {
     width: 100%;
     padding: 25px;
+  }
+}
+@media (max-width:500px) {
+  .signin .middle-content .signin-box .signin-form .btn {
+    width: 100%;
+    margin: 20px auto;
   }
 }
 .signin .middle-content .signin-box .signin-form a {

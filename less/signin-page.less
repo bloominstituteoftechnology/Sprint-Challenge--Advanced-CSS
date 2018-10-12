@@ -12,6 +12,10 @@
     .middle-content {
         background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
 
+        @media @phone {
+            background-image: none;
+        }
+
         .signin-box {
             .center;
             margin: 20px auto 10px;
@@ -19,7 +23,7 @@
             background-color: @nav-bg;
             border: 3px solid @nav-border;
             font-size: 1.6rem;
-            border-radius: 20px;
+            border-radius: 10px;
 
             @media @phone {
             width: 100%;
@@ -37,15 +41,21 @@
 
                 label, select, input, textarea {
                     width: 100%;
+                    padding: 5px;
                 }
 
                 label {
-                    
+                    padding-top: 20px;
                 }
 
                 .btn {
                     .button(black, white);
                     margin: 20px;
+
+                    @media @phone {
+                        width: 100%;
+                        margin: 20px auto;
+                    }
                 }
 
                 a {
