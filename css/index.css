@@ -191,8 +191,8 @@ p {
   margin: 0 2px;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -255,6 +255,12 @@ footer {
   padding: 9px 5px;
   border-radius: 5px;
   width: 20%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 4px;
 }
 .home .walk .walk-img {
   width: 46%;
