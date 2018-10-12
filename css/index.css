@@ -235,43 +235,52 @@ p {
   width: 50%;
   margin: 0 auto;
 }
-.sign-in .login-container button {
+.sign-in .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.sign-in .buttons button {
+  margin: 10px 0;
+  width: 20%;
+}
+.sign-in .buttons button:hover {
+  color: white;
+  background-color: black;
+}
+.sign-in .buttons .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.sign-in .buttons .row .submit {
   margin: 5px 0 15px 0;
   background-color: #22283A;
   color: #F6F7F8;
   padding: 9px 0;
-  width: 30%;
   text-align: center;
   font-size: 1.8rem;
   border-radius: 5px;
   font-family: 'Ubuntu', sans-serif;
   padding: 5px 0;
+  width: 30%;
 }
-.sign-in .login-container button:hover {
+.sign-in .buttons .row .submit:hover {
   background-color: #F6F7F8;
   color: #22283A;
   cursor: pointer;
   border: 1px solid #22283A;
 }
-.sign-in .forgot {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 15%;
-}
-.sign-in .forgot button {
-  margin: 10px 0;
-}
-.sign-in .forgot button:hover {
-  color: white;
-  background-color: black;
-}
-.sign-in .forgot a {
+.sign-in .buttons a {
   text-decoration: none;
   color: #23293B;
+  margin-top: 50px;
 }
-.sign-in .forgot a:hover {
+.sign-in .buttons a:hover {
   text-decoration: underline;
   color: blue;
 }

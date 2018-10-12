@@ -36,7 +36,11 @@ p {
   margin: 0 auto;  
 }
 
+
+
 //Contact Page Styles
+
+
 
 .contact-special {
   background: @border-real;
@@ -87,7 +91,11 @@ p {
   }
 }
 
-//Sign-In Page
+
+
+//Sign-In Page Styles
+
+
 .sign-in {
   .custom-layout(column, space-between, center);
   width: 80%;
@@ -95,30 +103,40 @@ p {
   font-family: 'Ubuntu', sans-serif;
   color: @header-font-color;
   margin: 20px auto;
+
   .login-container {
     .custom-layout(column, space-between, flex-start);
     width: 50%;
     margin: 0 auto;
-    button {
-      margin: 5px 0 15px 0;
-      .btn-style(@btn-bg-color, @porcelain);
-      padding: 5px 0;
-    }
   }
-  .forgot {
+
+  .buttons {
     .custom-layout(column, space-between, center);
-    width: 15%;
+    width: 60%;
+
     button {
       margin: 10px 0;
+      width: 20%;
 
       &:hover {
         color: white;
         background-color: black;
       }
     }
+    .row {
+      .custom-layout(row, space-evenly, center);
+      width: 100%;
+      .submit {
+        margin: 5px 0 15px 0;
+        .btn-style(@btn-bg-color, @porcelain);
+        padding: 5px 0;
+        width: 30%;
+      }
+    }
     a {
       text-decoration: none;
       color: @header-font-color;
+      margin-top: 50px;
 
       &:hover {
         text-decoration: underline;
