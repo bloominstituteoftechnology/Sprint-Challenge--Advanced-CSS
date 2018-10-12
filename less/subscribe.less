@@ -1,0 +1,35 @@
+.subscribe {   
+    form {
+        background: url('http://i63.tinypic.com/5c10kl.jpg') no-repeat fixed;
+        background-size: cover;
+        margin: 0 auto;
+        padding: 100px 50px;
+        width: 80%;
+        font-size: 1.6rem;
+        color: lightgray;
+
+        label {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input[type=text] {
+            .subscribe-mix();
+        }
+
+        input[type=submit] {
+            .btn-style(1.85rem, #FFFFFF, bold, center, #000000, 100px, 2.5% 2%, 5px, #000000, #DEDEDE);
+        }
+
+        input[type=submit]:hover {
+            color: #000000;
+            background-color:#DEDEDE;
+        }
+
+        textarea {
+            .subscribe-mix();
+            color: gray;
+            height: 250px;
+            background-color: #f8f8f8;
+        }
+    }
+}

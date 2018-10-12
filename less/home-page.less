@@ -83,11 +83,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .btn-style(1.85rem, #FFFFFF, bold, center, #000000, 100px, 2.5% 2%, 5px, #000000, #DEDEDE);
-        @media @phone {
-          width: 100%;
-          padding: 6% 0;
+      a {
+        text-decoration: none;
+        a:hover {
+          text-decoration: none;
+        }
+        .btn {
+          .btn-style(1.85rem, #FFFFFF, bold, center, #000000, 100px, 2.5% 2%, 5px, #000000, #DEDEDE);
+          @media @phone {
+            width: 100%;
+            padding: 6% 0;
+          }
         }
       }
     }

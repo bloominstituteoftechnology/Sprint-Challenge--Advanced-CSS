@@ -277,7 +277,13 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text a {
+  text-decoration: none;
+}
+.home .walk .walk-text a a:hover {
+  text-decoration: none;
+}
+.home .walk .walk-text a .btn {
   font-size: 1.85rem;
   color: #FFFFFF;
   font-weight: bold;
@@ -287,13 +293,13 @@ footer {
   padding: 2.5% 2%;
   border-radius: 5px;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text a .btn:hover {
   color: #000000;
   background-color: #DEDEDE;
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text a .btn {
     width: 100%;
     padding: 6% 0;
   }
@@ -313,4 +319,54 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.subscribe form {
+  background: url('http://i63.tinypic.com/5c10kl.jpg') no-repeat fixed;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 80%;
+  font-size: 1.6rem;
+  color: lightgray;
+}
+.subscribe form label {
+  font-family: 'Roboto', sans-serif;
+}
+.subscribe form input[type=text] {
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+.subscribe form input[type=submit] {
+  font-size: 1.85rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000000;
+  width: 100px;
+  padding: 2.5% 2%;
+  border-radius: 5px;
+}
+.subscribe form input[type=submit]:hover {
+  color: #000000;
+  background-color: #DEDEDE;
+  cursor: pointer;
+}
+.subscribe form input[type=submit]:hover {
+  color: #000000;
+  background-color: #DEDEDE;
+}
+.subscribe form textarea {
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  color: gray;
+  height: 250px;
+  background-color: #f8f8f8;
 }
