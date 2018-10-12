@@ -5,6 +5,7 @@
     .custom-layout(space-around, center);
     flex-direction: column; 
     height: 100px;
+
     h1 {
         @media @mobile {
             font-size: 3.2rem;
@@ -19,16 +20,25 @@
         }
 
         @media @mobile {
-            width: 80%;
+            width: 100%;
         }
 
         a {
             text-decoration: none;
             font-size: 1.6rem;
             color: @nav-font;
+            padding: 10px;
 
             &:hover {
                 text-decoration: underline;
+                transform: translate(10px);
+                transition: transform 300ms ease-in-out;
+                background: @nav-font;
+                color: @nav-bg;
+                border-radius: 5px;
+                @media @mobile {
+                    transform: none;
+                }
             }
         }
     }
