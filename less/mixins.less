@@ -1,1 +1,21 @@
 // Mixins Here
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(15px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    font-size: @font-size;
+  
+    @media @mobile {
+      width: 100%;
+    }
+    
+    &:hover {
+      background: @white;
+      color: @button-bg;
+    }
+  }
