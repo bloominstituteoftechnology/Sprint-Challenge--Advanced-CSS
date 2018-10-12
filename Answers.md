@@ -1,0 +1,9 @@
+1. An adaptive website has breakpoints that change the layout when size of the view port changes. A fully responsive website is fluid and adaptive meaning that it incremenatlly adjusts the layout in between breakpoints and changes the layout at the breakpoints. A fully responsive website's layout can accomodate any viewport size (any device screen) while maintaining the presentation intended by the developer. 
+
+2. 'Mobile first' means to design a website's layout to accomodate a mobile viewport first and then adjust to other viewport sizes. 'Desktop first' means to design a website's layout to accomodate a desktop viewport first and then adjust to other viewport sizes. 
+
+3. ```font-size: 62.5%``` in the ```html``` tag tells the browser to render the font-size at 10px. When using ```rem```, it allows the developer to easily adjust font size in their head because the conversion is a multiple of ten. For example, to make the a font-size to be rendered at 16px the developer would set the font-size to 1.6rem.
+
+4. A CSS preprocessor allows the developer to flexibility when writing CSS. A preprocessor allows the developer to write CSS selectors in a nested fashion and provides functions to create variables and other functions to write cleaner code. The preprocessor collects the preliminary CSS files, processes all of the code that is written in the preproccesors syntax, and all of the function/variables and then outputs a single CSS file. The preprocessor will also provide compilation errors if there is an issue in the CSS code. 
+
+5. My favorite concept is parametric mixins. It allows me to adjust settings in one location so I don't have to make adjustment to every element. I don't really have any trouble with any of the preprocessor concepts. 
