@@ -1,1 +1,38 @@
 // Navigation code here
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .justify-align-items(flex-start, center);
+    flex-direction: column;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    opacity: 0.9;
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 1.3%;
+
+        @media @phone {
+            margin-top: 2%;
+        } //media
+    }//h1
+
+    nav {
+        width: 43.5%;
+        .justify-align-items(space-evenly);
+
+        @media @tablet {
+            width: 60%;
+        }
+        @media @phone {
+            width: 87%;
+        }//media
+
+        a {
+            margin: 4.1% 0 2.5% 0;
+            .general-link(black);
+        }//a
+    }//nav
+}//navigation-bar
