@@ -1,1 +1,25 @@
 // Mixins Here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Button
+  .btn(@background: @header-font-color; @text-color: white; @font-size: 1.6rem;  ) {
+    background-color: @background;
+    border: 1px solid @background;
+    border-radius: 0.5rem;
+    color: @text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: @font-size;
+  
+    &:hover {
+      color: @background;
+      background-color: @text-color;
+      border: 1px solid @background;
+    }
+  }
+  
