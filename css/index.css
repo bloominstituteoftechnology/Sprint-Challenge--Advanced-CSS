@@ -160,6 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.home div {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  width: 100%;
+}
+.home div h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3.6rem;
+  margin: 10px 0px;
+}
+.home div nav {
+  display: flex;
+  justify-content: space-around;
+}
+.home div nav a {
+  text-decoration: none;
+  margin: 17px 0px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
