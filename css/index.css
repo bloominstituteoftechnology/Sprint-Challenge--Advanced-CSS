@@ -170,6 +170,7 @@ p {
   flex-direction: column;
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  opacity: 0.9;
 }
 .navigation-bar h1 {
   font-size: 4rem;
