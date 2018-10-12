@@ -184,6 +184,12 @@ p {
   align-content: center;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .nav-container nav {
+    width: 80%;
+    padding: 2% 0;
+  }
+}
 .nav-container nav a {
   color: #23293B;
   text-decoration: none;

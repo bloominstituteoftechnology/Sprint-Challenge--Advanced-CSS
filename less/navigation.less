@@ -18,6 +18,12 @@
     nav {
         width: 30%;
         .flex(row, space-between, center);
+
+        // Breakpoints
+        @media @phone {
+            width: 80%;
+            padding: 2% 0;
+        }
         a{
             color: @header-font-color;
             text-decoration: none;
