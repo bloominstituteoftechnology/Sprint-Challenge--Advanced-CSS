@@ -77,8 +77,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .btn-signUp(@ebony-clay-dark, 100px, 5px, white, 1.8rem, 9px 19px);
+      a {
+        text-decoration: none;
+        .btn {
+          .btn-signUp(@ebony-clay-dark, 100px, 5px, white, 1.8rem, 9px 19px);
+        }
+
+        .btn:hover {
+          .btn-signUp(white, 100px, 5px, @ebony-clay-dark, 1.8rem, 9px 19px);
+        }
       }
     }
 
@@ -107,9 +114,25 @@
           line-height: 1.5;
         }
 
-        .btn {
-          .btn-signUp(@ebony-clay-dark, 100%, 5px, white, 1.8rem, 25px 43%);
+        a {
           margin-bottom: 10px;
+
+          .btn {
+            .btn-signUp(@ebony-clay-dark, 100px, 5px, white, 1.8rem, 15px 19px);
+            padding: 0;
+          }
+
+          // .btn:hover {
+          //   .btn-signUp(white, 100px, 5px, @ebony-clay-dark, 1.8rem, 15px 19px);
+          //   padding: 0;
+          // }
+        
+        }
+
+        a:hover {
+          margin-bottom: 10px;
+          background-color: white;
+          color: @ebony-clay-dark;
         }
       }
 
