@@ -6,3 +6,24 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.hover-swap(@color, @bg-color) {
+  color: @color;
+  background-color: @bg-color;
+
+  &:hover {
+    color: @bg-color;
+    background-color: @color;
+  }
+}
+
+.btn-style(@width, @padding) {
+  width: @width;
+  padding: @padding;
+  .hover-swap(@wild-sand, @btn-bg-color);
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
