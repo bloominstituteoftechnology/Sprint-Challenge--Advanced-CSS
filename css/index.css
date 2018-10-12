@@ -245,10 +245,12 @@ footer {
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px;
+  border: 1px solid black;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: black;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
