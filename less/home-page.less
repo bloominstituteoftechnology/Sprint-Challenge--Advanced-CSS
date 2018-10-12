@@ -6,6 +6,10 @@
 
     img {
       border-radius: 5px;
+
+      @media @phone {
+        width: 100%;
+      }  
     }
 
     h2 {
@@ -59,8 +63,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      width: 100%;
+      flex-wrap: wrap-reverse;
+      padding: 15px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }  
 
       h3 {
         margin-bottom: 10px;
@@ -73,12 +87,23 @@
       .btn {
         .button(black, white);
         width: 20%;
+
+        @media @phone {
+          width: 100%;
+          padding: 20px;
+        }  
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+      }  
       
       img {
         width: 100%;

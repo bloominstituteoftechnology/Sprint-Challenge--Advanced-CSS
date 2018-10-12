@@ -17,12 +17,19 @@
     nav {
         .center;
         width: 44%;
-        
+
+        @media @phone {
+            width: 100%;
+        }        
 
         a {
             .a-style(black);
             padding: 13px 11px 4px;
             margin: 0 2px;
+
+            @media @phone {
+                padding: 10px 5px 4px;
+            }    
             
         }
     }
