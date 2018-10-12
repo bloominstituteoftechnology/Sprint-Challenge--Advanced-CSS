@@ -1,1 +1,24 @@
 // Mixins Here
+
+.center-text(){
+    text-align: center;
+}
+
+.style-nav(){
+    color: black;
+    text-decoration: none;
+}
+
+.btn-styles(@width;@height;@color;@background-color){
+    width: @width;
+    height:@height;
+    color: @color;
+    background-color: @background-color;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    border: 1px solid black;
+    &:hover{
+        color: @btn-bg-color;
+        background-color:white; 
+    }
+}
