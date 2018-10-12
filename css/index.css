@@ -183,6 +183,9 @@ p {
   text-decoration: none;
   font-size: 1.2rem;
 }
+.nav-section nav a:hover {
+  color: gray;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
