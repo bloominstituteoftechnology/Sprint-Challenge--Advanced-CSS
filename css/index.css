@@ -326,3 +326,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+html {
+  background-color: red;
+}
