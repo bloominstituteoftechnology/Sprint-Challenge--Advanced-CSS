@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding: 10px 0px 10px 0px;
     max-width: 900px;
-    width: 90%;
+    width: 100%;
     background: #f4f4f4;
 
     .center-column(); //code below replicated
@@ -17,10 +17,15 @@
         font-size: 3.5rem;
     }
     nav {
+        @media @phone {
+            width: 90%;
+            padding: 10px 10px 0px 10px;
+        }
         //border: 1px solid red;
-        padding: 10px 0px 0px 0px;
+        padding: 10px 10px 0px 10px;
         font-size: 1.5rem;
-        width: 40%;
+        width: 50%;
+        
         //display:flex;
         //justify-content: space-between;
         //text-decoration: none;
