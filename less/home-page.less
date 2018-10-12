@@ -64,9 +64,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .mobilize();
+      padding: 15px;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -79,6 +87,11 @@
         .button(@river-bend, @ebony-clay, @sea-shell);
         padding: 1%;
         width: 30%;
+
+        @media @phone {
+          width: 100%;
+          padding: 5%;
+        }
       }
     }
 
@@ -86,10 +99,15 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        order: -1;
+        width: 100%;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
   }
