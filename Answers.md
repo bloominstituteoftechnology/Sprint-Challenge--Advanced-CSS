@@ -5,8 +5,9 @@
 >Mobil first means the .css file starts with optimizing for mobile and utilizes min-width media queries to progressively adaplt to larger viewport sizes. Desktop first is the oposite: it optimizes first for desktop and then uses media queries with max-width to adopt to progressively smaller viewports. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-It adjusts the font size so that when using rem units throughout the css they can easily be converted.
+>It adjusts the font size so that when using rem units throughout the css they can easily be converted.
 
 4. How would you describe preprocessing to someone new to CSS?
+>Preprocessing writes CSS code for you, it allows the user to write dryer css by adstracting away a lot of the redundancies in css. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
