@@ -197,8 +197,14 @@ p {
 }
 @media (max-width:500px) {
   .nav-container nav a {
-    padding: 10px 5px 4px;
+    padding: 10px 11px 4px;
   }
+}
+.nav-container nav a:hover {
+  font-weight: bold;
+}
+.nav-container nav a.active {
+  font-weight: bold;
 }
 footer {
   color: #81848E;
@@ -216,13 +222,24 @@ footer {
 @media (max-width:500px) {
   .home .intro img {
     width: 100%;
+    margin-bottom: 13px;
   }
 }
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width:500px) {
+  .home .intro h2 {
+    padding: 6px;
+  }
+}
 .home .intro p {
-  padding: 0 15px;
+  padding: 0 6px;
+}
+@media (max-width:500px) {
+  .home .intro p {
+    padding: 7px 6px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -236,6 +253,8 @@ footer {
   }
   .home .space-images img.blast {
     width: 100%;
+    padding: 0 4px;
+    margin-top: 16px;
   }
 }
 .home .space-images img {
@@ -247,11 +266,26 @@ footer {
 .home .visit-planets {
   padding: 15px;
 }
+@media (max-width:500px) {
+  .home .visit-planets {
+    padding: 6px;
+  }
+}
 .home .visit-planets h3 {
   margin-top: 11px;
 }
+@media (max-width:500px) {
+  .home .visit-planets h3 {
+    padding: 10px 0;
+  }
+}
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width:500px) {
+  .home .visit-planets p {
+    margin: 1px 0 11px;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -264,7 +298,8 @@ footer {
   .home .walk {
     width: 100%;
     flex-wrap: wrap-reverse;
-    padding: 15px;
+    padding: 20px 11px;
+    margin-top: 20px;
   }
 }
 .home .walk .walk-text {
@@ -277,6 +312,12 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text h3 {
+    margin-bottom: 4px;
+    padding: 5px 0;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -299,9 +340,15 @@ footer {
   padding: 8px 4px;
 }
 @media (max-width:500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+    padding: 25px;
+  }
+}
+@media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    padding: 20px;
+    padding: 26px;
   }
 }
 .home .walk .walk-img {
