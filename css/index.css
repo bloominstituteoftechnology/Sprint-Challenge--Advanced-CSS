@@ -246,6 +246,17 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images:hover {
+  animation: grayout 2s both;
+}
+@keyframes grayout {
+  0% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
 @media (max-width:500px) {
   .home .space-images img.sky,
   .home .space-images img.launch {
@@ -368,11 +379,18 @@ footer {
   border-radius: 10px;
 }
 .signin .middle-content {
+  width: 100%;
   background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
+  padding: 120px 0;
+  border-radius: 10px;
+  margin: 20px;
 }
 @media (max-width:500px) {
   .signin .middle-content {
     background-image: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
   }
 }
 .signin .middle-content .signin-box {
@@ -381,11 +399,12 @@ footer {
   justify-content: center;
   align-content: center;
   margin: 20px auto 10px;
+  padding: 40px 20px 10px;
   width: 60%;
   background-color: #F6F6F6;
   border: 3px solid #F1F1F1;
   font-size: 1.6rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 @media (max-width:500px) {
   .signin .middle-content .signin-box {
@@ -402,17 +421,19 @@ footer {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0 0;
 }
-.signin .middle-content .signin-box .signin-form label,
 .signin .middle-content .signin-box .signin-form select,
 .signin .middle-content .signin-box .signin-form input,
 .signin .middle-content .signin-box .signin-form textarea {
   width: 100%;
   padding: 5px;
+  margin-bottom: 20px;
 }
 .signin .middle-content .signin-box .signin-form label {
-  padding-top: 20px;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
 }
 .signin .middle-content .signin-box .signin-form .btn {
   text-decoration: none;
@@ -446,4 +467,39 @@ footer {
 .signin .middle-content .signin-box .signin-form a {
   text-align: center;
   padding-bottom: 10px;
+  text-decoration: none;
+  color: #454A59;
+}
+.signin .middle-content .signin-box .signin-form a:hover {
+  text-decoration: underline;
+}
+.signin .middle-content .signin-box .signin-form a.new-account {
+  margin-top: 40px;
+}
+.signin .middle-content .signin-box .signin-form a.help {
+  margin-top: 40px;
+}
+.about header img {
+  margin-bottom: 40px;
+}
+.about header h2 {
+  margin-bottom: 20px;
+}
+.about .astronauts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 40px 10px;
+}
+.about .astronauts img {
+  height: 20%;
+  max-height: 200px;
+  width: auto;
+  margin: 20px;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+.about .astronauts img:hover {
+  filter: grayscale(0);
 }

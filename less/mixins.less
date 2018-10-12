@@ -38,3 +38,15 @@
         }  
     }
 }
+
+.grayout() {
+    @keyframes grayout {
+        0% {
+           filter: grayscale(0%);
+        }
+        100% {
+           filter: grayscale(100%);
+        }
+    };
+    animation: grayout 2s both;
+}
