@@ -1,39 +1,12 @@
 // Home Content
 
-.nav-bar {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: @nav-bg;
-  border-bottom: 1px double @nav-border;
-
-  div {
-    width: 100%;
-    text-align: center;
-    padding: 1% 0;
-    font-size: 3.5rem;
-  }
-
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1%;
-
-    a {
-      text-decoration: none;
-      color: @nav-font;
-      font-size: 1.4rem;
-      margin: 0 1%;
-    }
-  }
-}
-
 .home {
 
   .intro {
+
+    .header-img {
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -74,8 +47,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flexcenter();
 
     .walk-text {
       width: 50%;
@@ -89,6 +61,13 @@
       }
 
       .btn {
+        .button(30%, 35px, black, @header-font-color, white);
+        border-radius: 6px;
+        font-size: 1.6rem;
+
+        &:hover {
+          .swap(white, @header-font-color);
+        }
       }
     }
 
