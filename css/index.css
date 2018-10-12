@@ -159,10 +159,14 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 100px;
+  z-index: -1;
 }
 @media (max-width: 500px) {
   .container {
     max-width: 500;
+    top: 0;
   }
 }
 .navigator {
@@ -171,6 +175,11 @@ p {
   align-items: center;
   padding: 10px 0;
   background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
 }
 .navigator .title {
   font-size: 4rem;
@@ -178,7 +187,9 @@ p {
 }
 @media (max-width: 500px) {
   .navigator {
+    width: 100%;
     padding: 2px;
+    position: sticky;
   }
   .navigator .title {
     font-size: 4rem;
@@ -190,7 +201,8 @@ p {
 }
 .navigator nav {
   display: flex;
-  width: 34.3%;
+  max-width: 400px;
+  width: 60.3%;
   justify-content: space-around;
   margin-top: 13px;
 }

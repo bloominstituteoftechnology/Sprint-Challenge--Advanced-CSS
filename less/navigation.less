@@ -5,6 +5,11 @@
   align-items: center;
   padding: 10px 0; // examine
   background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
 
   .title {
     font-size: 4rem; // examine
@@ -12,7 +17,9 @@
   }
 
   @media @phone {
+    width: 100%;
     padding: 2px;
+    position: sticky;
     .title {
       font-size: 4rem;
       text-align: center;
@@ -25,7 +32,8 @@
 
   nav {
     display: flex;
-    width: 34.3%; // examine
+    max-width: 400px;
+    width: 60.3%; // examine
     justify-content: space-around; // examine
     margin-top: 13px;
 

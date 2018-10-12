@@ -39,8 +39,12 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: 100px;
+  z-index: -1;
 
   @media @phone {
     max-width: 500;
+    top: 0;
   }
 }
