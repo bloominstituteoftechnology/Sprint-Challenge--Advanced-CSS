@@ -169,16 +169,19 @@ p {
 .home div h1 {
   display: flex;
   justify-content: center;
-  font-size: 3.6rem;
+  font-size: 4rem;
   margin: 10px 0px;
 }
 .home div nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .home div nav a {
   text-decoration: none;
   margin: 17px 0px;
+  padding: 0px 15px;
+  color: #454A59;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
