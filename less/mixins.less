@@ -1,1 +1,22 @@
 // Mixins Here
+
+.signup-button-mkr(@maxWidth, @alignment, @borderRadius) {
+    max-width: @maxWidth;
+    text-align: @alignment;
+    font-size: 1.8rem;
+    color: @porcelain;
+    background-color: @btn-bg-color;
+    padding: 2%;
+    border-radius: @borderRadius;
+}
+
+.phoneWidthPad() {
+    width: 100%;
+    padding: 2%;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
