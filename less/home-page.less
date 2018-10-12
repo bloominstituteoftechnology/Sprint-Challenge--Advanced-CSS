@@ -2,28 +2,68 @@
 
 .home {
 
+  margin-top: 110px;
+
+  @media @phone {
+    margin-top: 80px;;
+  }
+  
   .intro {
 
-    h2 {
-      padding: 15px;
-    }
 
-    p {
-      padding:0 15px;
-    }
+    .header-img {
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
+    } // header-img
+
+    .header-text {
+      h2 {
+        padding: 15px;
+      }
+  
+      p {
+        padding:0 15px;
+
+        @media @phone {
+          font-size: 1.5rem;
+        }
+      }  
+    } // header-text
+
   
   }
+  
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .img2 {
+        display: none;
+      }
+  
+      .img3 {
+        display: none;
+      }
+
+      .img1 {
+        width: 95%;
+        height: 95%;
+
+        .imgShake();
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      .imgShake();
     }
   }
 
@@ -36,6 +76,10 @@
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        font-size: 1.55rem;
+      }
     }
   }
 
@@ -46,8 +90,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .center();
+      flex-direction: column-reverse;
+      padding: 3% 2%;
+      margin-top: 2%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 95%;
+        // padding: 15px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -55,20 +111,46 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          margin-bottom: 15px;
+        }
       }
 
       .btn {
+        padding: 15px 0;
+
+        @media @phone {
+          padding: 40px 0;
+        }
+
+        a {
+          .customBtn(@btn-bg-color, white);
+        
+          @media @phone {
+            padding: 5% 43%;
+          }
+          }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 95%;
+        height: 95%;
+        margin-left: 0; 
+        margin-bottom: 5%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
+        .imgShake();
       }
     }
   }

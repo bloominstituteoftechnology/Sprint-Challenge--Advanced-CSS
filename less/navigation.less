@@ -1,1 +1,48 @@
 // Navigation code here
+
+.navigation {
+    .center();
+    padding: 2% 0 1% 0;
+    flex-direction: column;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+
+    .fixedNav();
+
+    .logo {
+        .logoFS();
+        margin-bottom: 1%;
+
+        @media @phone {
+            font-size: 3.5rem;
+            margin-bottom: 3%;
+        }
+
+        a {
+            font-family: @hFont;
+            text-decoration: none;
+            color: @nav-font;
+        }
+    } // logo
+
+    .nav-links {
+        width: 50%;
+        max-width: 400px;
+        min-width: 350px;
+        .center();
+        // padding: 0 10%;
+        // .devBor();
+
+        @media @phone {
+            width: 90%;
+            padding: 0 5%;
+        }
+
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: @nav-font;
+
+        }
+    } // nav-links
+} // navigation

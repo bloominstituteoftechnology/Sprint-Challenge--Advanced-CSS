@@ -1,0 +1,41 @@
+
+.home {
+
+    .form-content {
+        width:60%;
+        margin: 0 auto;
+        padding: 30px;
+        .center();
+        flex-direction: column;
+        background-color: lightgray;
+        margin-bottom: 200px;
+
+        h2 {
+            padding: 30px 0;
+            font-size: 2rem;
+        }
+
+        .input-fields {
+            .center();
+            flex-direction: column;
+
+            label {
+                margin: 0 0 5px 0;
+                font-size: 1.6rem;
+            }
+
+            input {
+                margin-bottom: 20px;
+            }
+        }
+
+        .submit-btn {
+            margin: 20px;
+            a {
+                .customBtn(@btn-bg-color, white);
+                // font-size: 2rem;
+            }
+        }
+    }
+
+} // home
