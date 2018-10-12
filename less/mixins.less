@@ -1,1 +1,28 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a-style(@a-color) {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: @a-color;
+}
+
+.button(@btn-color, @a-color) {
+    .a-style(@a-color);
+    text-align: center;
+    min-width: 100px;
+    background-color: @btn-color;
+    padding: 9px 5px;
+    border-radius: 5px;
+}
