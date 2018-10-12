@@ -159,6 +159,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 @media (max-width: 500px) {
   .container {
@@ -166,8 +167,11 @@ p {
   }
 }
 .container .nav-div {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
-  margin: 2px 0;
+  padding: 2px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -183,6 +187,11 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+@media (max-width: 700px) {
+  .container .nav-div nav {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .container .nav-div nav {
@@ -328,6 +337,7 @@ footer {
   width: 80%;
   font-size: 1.6rem;
   color: lightgray;
+  border-radius: 10px;
 }
 .subscribe form label {
   font-family: 'Roboto', sans-serif;

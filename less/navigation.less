@@ -1,5 +1,8 @@
 .container {
     .nav-div {
+        position: fixed;
+        top: 0;
+        background-color: rgba(white, 0.8);
         .navdiv-style();
         h1 {
             padding: 10px;
@@ -7,6 +10,9 @@
         }
         nav {
             .nav-style();
+            @media (max-width: 700px) {
+                width: 90%;
+            }
             @media @phone {
                 width: 85%;
             }
