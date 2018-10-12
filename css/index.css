@@ -178,8 +178,11 @@ p {
   margin: 0 auto;
 }
 .navigation {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.98);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,8 +1,14 @@
 // Navigation code here
 
 .navigation {
+  // stretch: add a fixed navigation and add some opacity to the backgroung
+  position: sticky;
+  top: 0px;
+  z-index: 999;
   width: 100%;
-  background-color: @wild-sand;
+  background-color: fadeout(@wild-sand, 2%);
+  // end of stretch
+
   .display-flex(column, center, center);
   padding: 12px 0px;
 
