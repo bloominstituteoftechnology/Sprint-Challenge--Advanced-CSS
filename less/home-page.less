@@ -3,7 +3,7 @@
 .home {
   .intro {
     img {
-      border-radius: 0.5rem;
+      .border-radius(0.5rem);
     }
 
     h2 {
@@ -23,7 +23,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(2rem);
       height: 100%;
     }
   }
@@ -60,14 +60,20 @@
 
       .btn {
         background: lighten(black, 20%);
+        border: 1px solid lighten(black, 20%);
         color: white;
         text-align: center;
         width: 10rem;
         font-size: 1.85rem;
         padding: 0.9rem 1.85rem;
-        border-radius: 1rem;
         margin-top: 1.7rem;
+        .border-radius(1rem);
         text-decoration: none;
+      }
+
+      .btn:hover {
+        background: white;
+        color: lighten(black, 20%);
       }
     }
 
@@ -78,7 +84,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border-radius(1rem);
       }
     }
   }
