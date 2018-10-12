@@ -1,1 +1,27 @@
 // Mixins Here
+
+.margin-center() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn(@bg-color: black; @color: white; @font-size: auto; @width: 40px; @height: 20px; @radius: 15px;) {
+    .flex-center;
+    background-color: @bg-color;
+    color: @color;
+    font-size: @font-size;
+    width: @width;
+    height: @height;
+    border-radius: @radius;
+    &:hover {
+        background-color: darken(@bg-color, 20%);
+        color: darken(@color, 20%);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,109 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="assessing-your-advanced-css-learning">Assessing Your Advanced CSS Learning</h1>
+<p>You will be updating a website using all your responsive web design and preprocessing skills from the sprint. The theme of this challenge is <em>Spacewalkers Magazine</em>. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.</p>
+<ul>
+<li>This project is to be worked on alone but you can google all you want. You may reference any previous code solutions as well as training kit content.</li>
+</ul>
+<h2 id="task-1-set-up-the-project-with-git">Task 1: Set Up The Project With Git</h2>
+<ul>
+<li><p>[x] Fork the project into your GitHub user account</p>
+</li>
+<li><p>[x] Clone the forked project into a directory on your machine</p>
+</li>
+<li><p>[x] You are now ready to build this project with your preferred IDE</p>
+</li>
+</ul>
+<h3 id="pro-tip-commit-every-time-you-complete-a-task-or-feature-">Pro tip: Commit every time you complete a task or feature!</h3>
+<h2 id="task-2-comprehension-questions">Task 2: Comprehension Questions</h2>
+<p>Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit. Open up the <a href="Answers.md">Answers.md</a> file and record your responses there.</p>
+<ol>
+<li><p>What is the difference between an adaptive website and a fully responsive website?</p>
+</li>
+<li><p>Describe what it means to be mobile first vs desktop first.</p>
+</li>
+<li><p>What does <code>font-size: 62.5%</code> in the <code>html</code> tag do for us when using <code>rem</code> units?</p>
+</li>
+<li><p>How would you describe preprocessing to someone new to CSS?</p>
+</li>
+<li><p>What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?</p>
+</li>
+</ol>
+<h2 id="task-3-set-up-your-preprocessor">Task 3: Set up your preprocessor</h2>
+<ul>
+<li><p>[x] Verify that you have LESS installed correctly by running <code>lessc -v</code> in your terminal, if you don&#39;t get a version message back, reach out to your project manager for help.</p>
+</li>
+<li><p>[x] Open your terminal and navigate to your preprocessing project by using the <code>cd</code> command</p>
+</li>
+<li><p>[x] Once in your project&#39;s root folder, run the following command <code>less-watch-compiler less css index.less</code></p>
+</li>
+<li><p>[x] Verify your compiler is working correctly by changing the <code>background-color</code> on the <code>html</code> selector to <code>red</code> in your <code>index.less</code> file.</p>
+</li>
+<li><p>[x] Once you see the red screen, you can delete that style and you&#39;re ready to start on the next task</p>
+</li>
+</ul>
+<h2 id="task-4-import-less-files">Task 4: Import LESS Files</h2>
+<ul>
+<li><p>[x] Navigate to your <code>index.less</code> file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:</p>
+</li>
+<li><p><code>variables.less</code></p>
+</li>
+<li><p><code>mixins.less</code></p>
+</li>
+<li><p><code>reset.less</code></p>
+</li>
+<li><p><code>global.less</code></p>
+</li>
+<li><p><code>navigation.less</code></p>
+</li>
+<li><p><code>footer.less</code></p>
+</li>
+<li><p><code>home-page.less</code></p>
+</li>
+</ul>
+<p><em>You will know everything is working properly when you see the styles enabled for the provided content.</em></p>
+<h2 id="task-5-home-page-desktop-html-less">Task 5: Home Page - Desktop HTML &amp; LESS</h2>
+<ul>
+<li><p>[x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.</p>
+</li>
+<li><p>[x] Add a viewport meta tag to the head of your index.html page</p>
+</li>
+<li><p>[x] <a href="design-files/home-desktop.png">Review the provided home desktop design file</a>. You are to build the missing navigation system and header image. You have been provided all content necessary in the <a href="index.html">index.html file</a></p>
+</li>
+<li><p>[x] Navigation Styles: Use the <code>navigation.less</code> file for styling.</p>
+</li>
+<li><p>[x] Main Content Styles: Use the <code>home-page.less</code> file for styling</p>
+</li>
+<li><p>[x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the <code>mixins.less</code> file for your mixins</p>
+</li>
+<li><p>[x] LESS Parametric Mixin: create a parametric mixin that is used to create the <code>sign up</code> button styles.</p>
+<pre><code>_ [x] Use at least 2 parameters to create your button
+_ [x] Create a hover state that swaps the background color and font color of the base button styles.
+</code></pre></li>
+</ul>
+<h2 id="task-6-home-page-mobile-html-less">Task 6: Home Page - Mobile HTML &amp; LESS</h2>
+<ul>
+<li>[x] Create a <code>@phone</code> variable that contains a <code>max-width: 500px</code> media query string. Use the <code>@phone</code> variable for all your nested mobile styling.</li>
+<li>[x] <a href="design-files/home-mobile.png">Review the provided home mobile design file</a>. Match your mobile styling the best you can using the design file.</li>
+<li>[x] Push your changes and create a pull request if you haven&#39;t already.</li>
+</ul>
+<p><strong>Congratulations, you completed the sprint challenge!</strong></p>
+<h2 id="stretch-goals">Stretch Goals</h2>
+<p>Stretch goals are only available if you complete every task listed above. <strong>Do not work on them until your pull request is in.</strong></p>
+<ul>
+<li><p>[ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.</p>
+</li>
+<li><p>[ ] Introduce CSS animations to your site.</p>
+</li>
+<li><p>[x] Create a fixed navigation and add some opacity to the background</p>
+</li>
+<li><p>[ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription</p>
+</li>
+</ul>
+
+      </body>
+    </html>
