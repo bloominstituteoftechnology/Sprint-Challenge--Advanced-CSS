@@ -1,1 +1,41 @@
 // Navigation code here
+
+
+.header {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px solid @nav-border;
+    background: @nav-bg;
+
+    .nav-container {
+        .flex-container(@align-items: center);
+        margin: 0 auto;
+        flex-direction: column;
+        max-width: 800px;
+        padding-bottom: 13px;
+
+        h1 {
+            font-size: 3.8rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            .flex-container(space-evenly, baseline);
+            width: 60%;
+            font-size: 1.5rem;
+
+            @media @phone {
+                width: 90%;
+            }
+
+            a {
+                text-decoration: none;
+                color: @nav-font;
+                margin-top: 20px;
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+}//header
