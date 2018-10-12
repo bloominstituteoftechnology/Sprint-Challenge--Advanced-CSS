@@ -1,0 +1,93 @@
+.signin {
+
+    header {
+       
+        img {
+
+        }
+
+       
+    }
+  
+    .middle-content {
+        width: 100%;
+        background-image: url(https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5ab4ea4fd87e2144a8662bee0164010d&auto=format&fit=crop&w=1950&q=80);
+        padding: 120px 0;
+        border-radius: 10px;
+        margin: 20px;
+
+        @media @phone {
+            background-image: none;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        .signin-box {
+            .center;
+            margin: 20px auto 10px;
+            padding: 40px 20px 10px;
+            width: 60%;
+            background-color: @nav-bg;
+            border: 3px solid @nav-border;
+            font-size: 1.6rem;
+            border-radius: 5px;
+
+            @media @phone {
+            width: 100%;
+            }
+
+            h2 {
+                margin: 10px;
+                text-align: center;
+                }
+
+            .signin-form {
+                .center;
+                flex-direction: column;
+                padding: 20px 0 0;
+
+                select, input, textarea {
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: 20px;
+                }
+
+                label {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 5px;
+                }
+
+                .btn {
+                    .button(black, white);
+                    margin: 20px;
+
+                    @media @phone {
+                        width: 100%;
+                        margin: 20px auto;
+                    }
+                }
+
+                a {
+                    text-align: center;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    color: @nav-font;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &.new-account {
+                        margin-top: 40px;
+                    }
+
+                    &.help {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+} //Sign-in
