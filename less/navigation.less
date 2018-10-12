@@ -1,1 +1,39 @@
 // Navigation code here
+.head-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+    h1 {
+        text-decoration: none;
+        font-size: 4.0rem;
+        color: @header-font-color ;
+        color: @header-font-color ;
+        font: @main-font-color;
+        padding: 1.5%;
+    }
+    nav {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        font: @nav-font ;
+        border: 1px solid @nav-border;
+        background-color: @nav-bg;
+        @media @phone {
+            width: 85%;
+            justify-content: space-around;
+
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @header-font-color ;
+            padding: 1.5%;
+            width: 200px;
+        }
+    }
+}
