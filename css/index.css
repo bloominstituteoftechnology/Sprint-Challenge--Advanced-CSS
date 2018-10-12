@@ -310,9 +310,13 @@ footer {
   color: #22283A;
   background-color: white;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .walk .walk-text .btn {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
     height: 25%;
   }
 }
