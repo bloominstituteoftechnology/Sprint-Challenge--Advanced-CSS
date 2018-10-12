@@ -1,1 +1,40 @@
 // Navigation code here
+
+.top-nav {
+    width: 100%;
+    .center-v;
+    background: @nav-bg;
+    font-family: @nav-font;
+    border-bottom: 1px solid @nav-border;
+    position: sticky;
+    top: 0;
+    h1 {
+        font-size: 4rem;
+        padding: 15px 0;
+    }
+    nav {
+        padding-bottom: 13px;
+        a, a:visited {
+            font-size: 1.6rem;
+            color: @nav-font;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        a:hover {
+            animation: hover .5s forwards .3s ease;
+        }
+    }
+    @keyframes hover {
+        0% {
+            border: none;
+            background: white;
+        }
+        100% {
+            border: 1px solid black;
+            background: white;
+            padding: 5px 20px;
+            font-size: 2rem;
+        }
+    }
+}
+
