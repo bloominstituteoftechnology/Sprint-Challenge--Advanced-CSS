@@ -1,1 +1,43 @@
 // Navigation code here
+
+.nav-bar {
+    .flexcenter();
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: @nav-bg;
+    border-bottom: 1px double @nav-border;
+    position: fixed;
+    
+    div {
+      width: 100%;
+      text-align: center;
+      padding: 1% 0;
+      font-size: 4.2rem;
+    }
+  
+    nav {
+      width: 100%;
+      .flexcenter();
+      padding: 1% 0;
+  
+      a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.4rem;
+        margin: 0 2%;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        @media @mobile {
+            margin: 0 3%;
+            padding: 2% 0;
+            font-size: 1.6rem;
+        }
+      }
+    }
+  }
+  
