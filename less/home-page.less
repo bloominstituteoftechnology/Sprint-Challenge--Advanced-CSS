@@ -4,6 +4,10 @@
 
   .intro {
 
+    .banner {
+      width:100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -39,6 +43,8 @@
     }
   }
 
+
+
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -57,8 +63,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      a {
+        text-decoration: none;
+        .btn {
+          .flex-cntr-content();
+          .btn-size();
+          .btn-style(@btn-bg-color,@btn-fnt-color);
+          border-radius: 5px;
+          font-size: 1.6rem;
+        }
       }
+      
     }
 
     .walk-img {
@@ -72,4 +87,13 @@
       }
     }
   }
-}// home
+  .sign-up-form {
+    margin: 20px 0px;
+  }
+}
+
+
+@media @mobile{
+  .mobile-layout();
+}
+

@@ -1,1 +1,19 @@
 // Mixins Here
+.btn-style(@btn-bg,@btn-fnt) {
+    background: @btn-bg;
+    color:@btn-fnt;
+    &:hover {
+        background:@btn-fnt;
+        color: @btn-bg;
+    }
+}
+.btn-size() {
+    width:100px;
+    height: 35px;
+}
+
+.flex-cntr-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
