@@ -1,1 +1,23 @@
 // Mixins Here
+
+.just-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.align-center() {
+    display: flex;
+    align-items: center;
+}
+
+.custom-btn(@width, @padding, @background, @color, @margin) {
+    width: @width;
+    padding: @padding;
+    margin: @margin;
+    background: @background;
+    color: @color;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    .just-center();
+    .align-center();
+}

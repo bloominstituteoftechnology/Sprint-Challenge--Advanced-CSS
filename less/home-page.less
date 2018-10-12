@@ -1,4 +1,17 @@
 // Home Content
+  header {
+    .align-center();
+    .just-center();
+    border-bottom: 2px solid @nav-border;
+    background: @nav-bg;
+    flex-direction: column;
+    height: 95px;
+    
+    h1 {
+      font-size: 4rem;
+      padding: 1% 0 2% 0;
+    }
+  }
 
 .home {
 
@@ -58,6 +71,7 @@
       }
 
       .btn {
+        .custom-btn(29.5%, 3% 0, @nav-font, @sea-shell, 7% 0)
       }
     }
 
