@@ -1,1 +1,40 @@
 // Mixins Here
+.navdiv-style() {
+    padding: 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-style() {
+    width: 53%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn-style(@size, @color, @weight, @align, @bgcolor, @width, @padding, @radius, @hovercolor, @hoverbg) {
+    font-size: @size;
+    color: @color;
+    font-weight: @weight;
+    text-align: @align;
+    background-color: @bgcolor;
+    width: @width;
+    padding: @padding;
+    border-radius: @radius;
+    &:hover {
+        color: @hovercolor;
+        background-color: @hoverbg;
+        cursor: pointer;
+    }
+}
+
+.subscribe-mix() {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}

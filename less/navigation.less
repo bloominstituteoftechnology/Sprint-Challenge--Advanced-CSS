@@ -1,1 +1,27 @@
-// Navigation code here
+body {
+    .nav-div {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgba(white, 0.8);
+        .navdiv-style();
+        h1 {
+            padding: 10px;
+            font-size: 4rem;
+        }
+        nav {
+            .nav-style();
+            @media (max-width: 700px) {
+                width: 90%;
+            }
+            @media @phone {
+                width: 85%;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
