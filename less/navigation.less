@@ -2,9 +2,14 @@
 .nav-container {
     .custom-layout(column, space-between, center);
     width: 100%;
-    margin-top: 12.5px;
+    padding-top: 12.5px;
+    position: fixed;
     h1 {
         font-size: 4rem;
+
+        &:hover {
+            color: black;
+        }
     }
     nav {
         .custom-layout(row, space-between, center);
@@ -14,10 +19,19 @@
         padding-bottom: 10px;
         a {
             .link-styling();
+
+            &:hover {
+                color: black;
+                font-weight: bold;
+            }
         }
         
         @media @phone {
             width: 75%;
         }
+    }
+
+    &:hover {
+        opacity: 1;
     }
 }

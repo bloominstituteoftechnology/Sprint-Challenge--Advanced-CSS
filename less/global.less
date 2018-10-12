@@ -33,7 +33,8 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  padding-top: 100px;  
 }
 
 
@@ -42,8 +43,9 @@ p {
 
 
 
-.contact-special {
+.special-nav {
   background: @border-real;
+  opacity: 0.25;
 }
 
 .contact-img {
@@ -68,7 +70,7 @@ p {
 
   input[type='text'] {
     width: 100%;
-    padding: 8px 20px;
+    padding: 8px 1px;
     margin: 10px 0;
   }
 
@@ -88,6 +90,11 @@ p {
 
   button {
     .btn-style(@btn-bg-color, @porcelain);
+
+    @media @phone {
+      padding: 0;
+
+    }
   }
 }
 
@@ -122,6 +129,10 @@ p {
         color: white;
         background-color: black;
       }
+
+      @media @phone {
+        width: 25%;
+      }
     }
     .row {
       .custom-layout(row, space-between, center);
@@ -147,7 +158,7 @@ p {
 
   input[type='text'], input[type='password'] {
     width: 100%;
-    padding: 7px 0;
+    padding: 7px 1px;
     margin: 10px 0;
     text-align: left;
   }

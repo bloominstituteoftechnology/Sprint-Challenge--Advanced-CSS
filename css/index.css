@@ -159,9 +159,11 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
-.contact-special {
+.special-nav {
   background: #dee2e6;
+  opacity: 0.25;
 }
 .contact-img {
   width: 100%;
@@ -186,7 +188,7 @@ p {
 }
 .contact-container input[type='text'] {
   width: 100%;
-  padding: 8px 20px;
+  padding: 8px 1px;
   margin: 10px 0;
 }
 .contact-container #address {
@@ -215,6 +217,11 @@ p {
   color: #22283A;
   cursor: pointer;
   border: 1px solid #22283A;
+}
+@media screen and (max-width: 500px) {
+  .contact-container button {
+    padding: 0;
+  }
 }
 .sign-in {
   display: flex;
@@ -249,6 +256,11 @@ p {
 .sign-in .buttons button:hover {
   color: white;
   background-color: black;
+}
+@media screen and (max-width: 500px) {
+  .sign-in .buttons button {
+    width: 25%;
+  }
 }
 .sign-in .buttons .row {
   display: flex;
@@ -287,7 +299,7 @@ p {
 .sign-in input[type='text'],
 .sign-in input[type='password'] {
   width: 100%;
-  padding: 7px 0;
+  padding: 7px 1px;
   margin: 10px 0;
   text-align: left;
 }
@@ -297,10 +309,14 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 12.5px;
+  padding-top: 12.5px;
+  position: fixed;
 }
 .nav-container h1 {
   font-size: 4rem;
+}
+.nav-container h1:hover {
+  color: black;
 }
 .nav-container nav {
   display: flex;
@@ -319,10 +335,17 @@ p {
   color: #5E6164;
   text-decoration: none;
 }
+.nav-container nav a:hover {
+  color: black;
+  font-weight: bold;
+}
 @media screen and (max-width: 500px) {
   .nav-container nav {
     width: 75%;
   }
+}
+.nav-container:hover {
+  opacity: 1;
 }
 footer {
   color: #22283B;
