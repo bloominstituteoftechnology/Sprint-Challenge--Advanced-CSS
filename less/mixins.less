@@ -1,1 +1,27 @@
 // Mixins Here
+
+.customBorderRadius(@radius) {
+  border-radius: @radius;
+}
+
+.customButton(@color,@radius,@width,@textColor,@height) {
+  background-color: @btn-bg-color;
+  width: @width;
+  border-radius: @radius;
+  color: @textColor;
+  height: @height;
+  font-size: 1.6rem;
+}
+.reverseButton(@color,@radius,@width,@textColor,@height) {
+  background-color: @btn-bg-color;
+  width: @width;
+  border-radius: @radius;
+  color: @textColor;
+  height: @height;
+  font-size: 1.6rem;
+}
+
+.centerItem {
+  justify-content: center;
+  align-items: center;
+}
