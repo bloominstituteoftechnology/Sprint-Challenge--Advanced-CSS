@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -160,6 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500;
+  }
+}
 .navigator {
   display: flex;
   flex-direction: column;
@@ -171,6 +176,17 @@ p {
   font-size: 2rem;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  .navigator {
+    padding: 2px;
+  }
+  .navigator .title {
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+}
 .navigator nav {
   display: flex;
   width: 50%;
@@ -180,6 +196,14 @@ p {
   color: black;
   text-decoration: none;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigator nav {
+    width: 87%;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
 }
 footer {
   color: #22283B;
@@ -196,11 +220,28 @@ footer {
   height: auto;
   border-radius: 1em;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    margin: 0;
+    padding: 0;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home h2 {
+    padding: 0;
+  }
+  .home p {
+    padding: 0;
+    font-size: 1.6rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 .home .space-images {
   display: flex;
@@ -212,6 +253,21 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .home .space-images img.blast {
+    width: 93%;
+    margin: 20px 1.75%;
+  }
+  .home .space-images img:nth-child(3),
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -229,8 +285,22 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0 2.5%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -239,25 +309,47 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: black;
+  background-color: #22283a;
   color: white;
   font-size: 1.8rem;
   padding: 10px 15px;
   display: inline-block;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #22283a;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
-  color: black;
+  color: #22283a;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -3;
+    width: 100%;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
