@@ -1,1 +1,28 @@
 // Mixins Here
+.button(@width,@padding){
+    width: @width;
+    padding: @padding;
+    background: @btn-bg-color;
+    color: @porcelain;
+    font-size: 1.8rem;
+    border-radius: 5px;
+
+    &:hover {
+        color: @btn-bg-color;
+        background: @porcelain; 
+    }
+}
+
+.center () {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation() {
+    max-width: 430px;
+    margin: 10px auto;
+    display:flex;
+    background: @nav-bg;
+}
+    
