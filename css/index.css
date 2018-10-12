@@ -1,3 +1,11 @@
+.hover-effect {
+  backface-visibility: hidden;
+}
+.space-images:hover,
+.hover-effect {
+  opacity: 0.6;
+  transition: 0.7s ease;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +168,13 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +184,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.home .header-img {
+  margin-top: 2%;
+  border-radius: 20px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -186,6 +210,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  backface-visibility: hidden;
+  opacity: 0.6;
+  transition: 0.7s ease;
 }
 .home .visit-planets {
   padding: 15px;
