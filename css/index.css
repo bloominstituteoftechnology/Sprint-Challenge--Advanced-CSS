@@ -160,6 +160,98 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.contact-special {
+  background: #dee2e6;
+}
+.contact-img {
+  width: 100%;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  border: 1px dashed #5E6164;
+  padding: 2.5%;
+  padding-bottom: 7.5%;
+  margin-bottom: 2.5%;
+  background-color: #F6F6F6;
+}
+.contact-container label {
+  padding-bottom: 1%;
+}
+.contact-container input {
+  margin-bottom: 2.5%;
+  width: 30%;
+}
+.contact-container #address {
+  margin-bottom: 0;
+}
+.contact-container select {
+  margin-bottom: 2.5%;
+  width: 40%;
+}
+.contact-container textarea {
+  width: 100%;
+  margin: 2.5% 0;
+}
+.contact-container button {
+  background-color: #22283A;
+  color: #F6F7F8;
+  padding: 9px 0;
+  width: 30%;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-container button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #23293B;
+  margin: 20px auto;
+}
+form .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  margin: 0 auto;
+}
+form .login-container button {
+  margin: 5px 0 15px 0;
+}
+form .forgot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+form .forgot button {
+  margin: 10px 0;
+}
+form input[type='text'],
+form input[type='password'] {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 10px 0;
+}
 .nav-container {
   display: flex;
   flex-direction: column;

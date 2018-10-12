@@ -36,3 +36,84 @@ p {
   margin: 0 auto;  
 }
 
+//Contact Page Styles
+
+.contact-special {
+  background: @border-real;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.contact-container {
+  .custom-layout(column, space-between, flex-start);
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+  border: 1px dashed @shuttle-gray;
+  padding: 2.5%;
+  padding-bottom: 7.5%;
+  margin-bottom: 2.5%;
+  background-color: @footer-background;
+
+  label {
+    padding-bottom: 1%;
+  }
+
+  input {
+    margin-bottom: 2.5%;
+    width: 30%;
+  }
+
+  #address {
+    margin-bottom: 0;
+  }
+
+  select {
+    margin-bottom: 2.5%;
+    width: 40%;
+  }
+
+  textarea {
+    width: 100%;
+    margin: 2.5% 0;
+  }
+
+  button {
+    .btn-style(@btn-bg-color, @porcelain);
+  }
+}
+
+//Sign-In Page
+form {
+  .custom-layout(column, space-between, center);
+  width: 80%;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: @header-font-color;
+  margin: 20px auto;
+  .login-container {
+    .custom-layout(column, space-between, flex-start);
+    width: 50%;
+    margin: 0 auto;
+    button {
+      margin: 5px 0 15px 0;
+    }
+  }
+  .forgot {
+    .custom-layout(column, space-between, center);
+    width: 15%;
+    button {
+      margin: 10px 0;
+    }
+  }
+  input[type='text'], input[type='password'] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 10px 0;
+  }
+}
+
+
+
