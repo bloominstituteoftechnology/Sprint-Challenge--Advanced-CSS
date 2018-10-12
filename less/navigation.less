@@ -1,1 +1,34 @@
 // Navigation code here
+
+.navigation {
+    .center();
+    padding: 2% 0 1% 0;
+    flex-direction: column;
+    background-color: @nav-bg;
+
+    .logo {
+        .logoFS();
+        margin-bottom: 1%;
+
+        a {
+            font-family: 'Russo One', sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+    } // logo
+
+    .nav-links {
+        width: 50%;
+        max-width: 800px;
+        min-width: 350px;
+        .center();
+        padding: 0 10%;
+        // .devBor();
+
+        a {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: black;
+        }
+    }
+} // navigation

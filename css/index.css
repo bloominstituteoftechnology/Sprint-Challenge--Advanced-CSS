@@ -160,6 +160,37 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 0 1% 0;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+.navigation .logo {
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+.navigation .logo a {
+  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.navigation .nav-links {
+  width: 50%;
+  max-width: 800px;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+.navigation .nav-links a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

@@ -1,1 +1,24 @@
 // Mixins Here
+
+
+.center(@flex: flex, @just: space-between, @align:center) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.devBor() {
+    border: 1px solid red;
+}
+
+.marginDef() {
+    margin: 5% 0;
+}
+
+.paddDef(@TB: 5%, @RL: 0) {
+    padding: @TB @RL;
+}
+
+.logoFS() {
+    font-size: 4rem;
+}
