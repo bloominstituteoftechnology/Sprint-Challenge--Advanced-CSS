@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -159,12 +159,15 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 99px;
 }
 .nav-container {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
+  background-color: rgba(246, 246, 246, 0.4);
   border-bottom: 1px solid #f1f1f1;
 }
 .nav-container h1 {
