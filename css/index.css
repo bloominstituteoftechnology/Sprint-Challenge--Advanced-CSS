@@ -154,9 +154,25 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
-p {
+p,
+label {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea,
+select {
+  font-family: "Russo One", sans-serif;
+  border: none;
+  font-size: 1.6rem;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  color: #454A59;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
 }
 .container {
   max-width: 800px;
@@ -342,4 +358,38 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.sign_up .intro .earth {
+  border-radius: 5px;
+}
+.sign_up .intro h2 {
+  padding: 15px;
+}
+.sign_up .intro p {
+  padding: 0 15px;
+}
+.sign_up .sign-up {
+  background: #F6F6F6;
+  border-radius: 2.5%;
+  margin: 25px auto;
+  padding: 50px 5%;
+  margin-bottom: 100px;
+}
+.sign_up .sign-up .form .btn {
+  width: 100%;
+  height: 40px;
+  background: #23293B;
+  color: #F6F6F6;
+  font-size: 2rem;
+  border: 1px solid #23293B;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign_up .sign-up .form .btn:hover {
+  background: #F6F6F6;
+  color: #23293B;
+  transform: none;
 }

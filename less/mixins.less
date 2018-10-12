@@ -52,5 +52,22 @@
           transform: none;
         }
     }
+
+    .half-btn(@height, @background, @color) {
+        width: 50%;
+        height: @height;
+        background: @background;
+        color: @color;
+        font-size: 2rem;
+        border: 1px solid @button-bg;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover {
+          background: @color;
+          color: @background;
+          transform: none;
+        }
+    }
   
   }
