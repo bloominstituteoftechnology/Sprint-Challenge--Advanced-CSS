@@ -240,7 +240,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 50%;
 }
 .sign-in .buttons button {
   margin: 10px 0;
@@ -253,7 +253,7 @@ p {
 .sign-in .buttons .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
