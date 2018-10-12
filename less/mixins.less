@@ -1,1 +1,33 @@
 // Mixins Here
+
+.red-border() {
+    border: 1px solid red;
+}
+
+.center() {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-layout(@justify-value, @align-value) {
+    display: flex;
+    justify-content: @justify-value;
+    align-items: @align-value;
+  }
+
+  .custom-btn(@width, @height, @background, @color) {
+    width: @width;
+    height: @height;
+    background: @button-bg;
+    color: @button-font;
+    font-size: 2rem;
+    border: 1px solid @button-bg;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    // &:hover {
+    //   background: @color;
+    //   color: @background;
+    // }
+  }
