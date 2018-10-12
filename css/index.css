@@ -168,6 +168,11 @@ p {
   flex-direction: column;
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
 }
 .navigation .logo {
   font-size: 4rem;
