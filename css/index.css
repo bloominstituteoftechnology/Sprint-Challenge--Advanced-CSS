@@ -161,6 +161,8 @@ p {
   margin: 0 auto;
 }
 .navigation-bar {
+  position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -184,6 +186,11 @@ p {
   justify-content: space-evenly;
   align-items: stretch;
 }
+@media (max-width: 800px) {
+  .navigation-bar nav {
+    width: 60%;
+  }
+}
 @media (max-width: 500px) {
   .navigation-bar nav {
     width: 87%;
@@ -205,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 91px;
 }
 .home .intro .header-img {
   max-width: 100%;

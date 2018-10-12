@@ -1,6 +1,8 @@
 // Navigation code here
 
 .navigation-bar {
+    position: fixed;
+    top: 0;
     width: 100%;
     .justify-align-items(flex-start, center);
     flex-direction: column;
@@ -20,6 +22,9 @@
         width: 43.5%;
         .justify-align-items(space-evenly);
 
+        @media @nav-too-small {
+            width: 60%;
+        }
         @media @phone {
             width: 87%;
         }//media
