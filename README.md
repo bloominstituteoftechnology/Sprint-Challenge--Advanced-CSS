@@ -27,7 +27,7 @@ Answer the following questions to the best of your ability. You can exercise you
 4. How would you describe preprocessing to someone new to CSS?
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? -->
-
+<!-- 
 ## Task 3: Set up your preprocessor
 
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
@@ -38,7 +38,7 @@ Answer the following questions to the best of your ability. You can exercise you
 
 * [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task -->
 
 ## Task 4: Import LESS Files
 
