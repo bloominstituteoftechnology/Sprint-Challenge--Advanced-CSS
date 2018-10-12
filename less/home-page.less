@@ -4,6 +4,17 @@
 
   .intro {
 
+    img {
+      width: auto;
+      height: 100%;
+      border-radius: 5px;
+
+      @media (@mobile) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -11,7 +22,6 @@
     p {
       padding:0 15px;
     }
-  
   }
 
   .space-images {
@@ -25,6 +35,22 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media (@mobile) {
+      justify-content: center;
+      
+      img {
+        width: 90%;
+      }
+
+      img.sky {
+        display: none;
+      }
+
+      img.launch {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -36,6 +62,11 @@
 
     p {
       margin-top: 13px;
+    }
+
+    @media (@mobile) {
+      margin-bottom: 30px;
+      padding: 8px 15px;
     }
   }
 
@@ -58,6 +89,7 @@
       }
 
       .btn {
+        #sign-me-up > .button
       }
     }
 
@@ -71,5 +103,71 @@
         border-radius: 10px;
       }
     }
+
+    @media (@mobile) {
+      margin-top: 0;
+      padding: 15px;
+      flex-direction: column-reverse;
+
+      .walk-text {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 18px;
+      }
+
+      .walk-img {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
   }
 }// home
+
+// @media screen and (@mobile) {
+//   .home {
+//     .intro {
+//       img  {
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+
+//     .space-images {
+//       justify-content: center;
+      
+//       img {
+//         width: 90%;
+//       }
+
+//       img.sky {
+//         display: none;
+//       }
+
+//       img.launch {
+//         display: none;
+//       }
+//     }
+
+//     .visit-planets {
+//       margin-bottom: 30px;
+//       padding: 8px 15px;
+//     }
+
+//     .walk {
+//       margin-top: 0;
+//       padding: 15px;
+//       flex-direction: column-reverse;
+
+//       .walk-text {
+//         width: 100%;
+//         margin-left: 0;
+//         margin-top: 18px;
+//       }
+
+//       .walk-img {
+//         width: 100%;
+//         margin-left: 0;
+//       }
+//     }
+//   }
+// }
