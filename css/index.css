@@ -160,6 +160,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    overflow: hidden;
+  }
+}
 nav {
   text-align: center;
 }
@@ -167,16 +173,32 @@ nav h1 {
   font-size: 4rem;
   margin: 1%;
 }
+@media (max-width: 500px) {
+  nav h1 {
+    margin: 3%;
+  }
+}
 nav ul {
   display: flex;
   justify-content: space-around;
   width: 42%;
   margin: 2% auto 1%;
 }
+@media (max-width: 500px) {
+  nav ul {
+    width: 82%;
+    margin-bottom: 3%;
+  }
+}
 nav ul li a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #454A59;
+}
+@media (max-width: 500px) {
+  nav ul li a {
+    font-size: 1.7rem;
+  }
 }
 footer {
   color: #22283B;
@@ -191,8 +213,24 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 4% 0 3% 1%;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding-left: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    border-radius: 5px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -205,8 +243,22 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img:nth-child(2),
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 8px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -221,8 +273,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 30px;
+    flex-direction: column;
+    padding: 4% 2%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -249,9 +313,23 @@ footer {
 .home .walk .walk-text .btn:hover {
   transform: scale(1.2);
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 5%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+    order: -1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
