@@ -6,6 +6,8 @@
     background: @nav-bg;
     border-bottom: 2px solid @nav-border;
 
+    
+
     h1 {
         font-size: 4rem;
         margin: 14px 0;
@@ -14,9 +16,14 @@
     nav {
         display: flex;
         justify-content: space-evenly;
-        width: 37%;
+        width: 440px;
         margin-top: 5px;
         margin-bottom: 10px;
+
+        @media @phone {
+            width: 89%;
+        }
+
         a {
             font-family: @nav-font;
             color: @header-font-color;
