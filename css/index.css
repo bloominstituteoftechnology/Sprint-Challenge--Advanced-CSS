@@ -167,6 +167,9 @@ nav {
   align-items: center;
   flex-direction: column;
   padding: 15px 0;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(221, 221, 221, 0.8);
 }
 nav h1 {
   font-size: 4rem;
@@ -178,6 +181,9 @@ nav a {
   font-size: 1.5rem;
   color: black;
 }
+nav a:hover {
+  color: grey;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -187,6 +193,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 101px;
 }
 .home .intro img {
   width: 100%;
