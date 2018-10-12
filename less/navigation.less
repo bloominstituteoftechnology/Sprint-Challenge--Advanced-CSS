@@ -6,28 +6,26 @@
 
 .title-space {
     .column;
-    // .btest;
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
 
     h1 {
-        // .btest;
         padding: 12px;
     }
 
     nav {
-        // .btest;
-        // border: 3px solid green;
         padding: 7px 0 10px;
         font-family: @nav-font;
 
         .spaceb;
-        // width: 50%;
         width: 377px;
+
+        @media @phone {
+            max-width: 95%;   
+        }
+
         a {
-            // .btest;
-            // padding: 0 10px;
-            // padding: 0 5px;
+
         }
     }
 }
