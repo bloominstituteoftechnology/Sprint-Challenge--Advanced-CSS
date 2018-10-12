@@ -19,15 +19,15 @@
   .custom-btn(@width, @height, @background, @color) {
     width: @width;
     height: @height;
-    background: @button-bg;
-    color: @button-font;
+    background: @background;
+    color: @color;
     font-size: 2rem;
     border: 1px solid @button-bg;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     
-    // &:hover {
-    //   background: @color;
-    //   color: @background;
-    // }
+    &:hover {
+      background: @color;
+      color: @background;
+    }
   }

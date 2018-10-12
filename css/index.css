@@ -202,6 +202,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .earth {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -243,6 +246,23 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 100px;
+  height: 40px;
+  background: #23293B;
+  color: #F6F6F6;
+  font-size: 2rem;
+  border: 1px solid #23293B;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F6F6;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
