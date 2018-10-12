@@ -6,7 +6,7 @@
     background: @nav-bg;
     flex-direction: column;
     height: 95px;
-    
+    width: 1000px;
     h1 {
       font-size: 4rem;
       padding: 1% 0 2% 0;
@@ -14,6 +14,10 @@
   }
 
 .home {
+
+  .head-img {
+    border-radius: 7px;
+  }
 
   .intro {
 
@@ -74,6 +78,11 @@
         .custom-btn(29.5%, 3% 0, @nav-font, @sea-shell, 7% 0)
       }
     }
+
+    .btn:hover {
+      background-color: @sea-shell;
+      color: @nav-font;
+  }
 
     .walk-img {
       width: 46%;

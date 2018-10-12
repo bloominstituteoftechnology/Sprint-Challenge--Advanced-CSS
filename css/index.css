@@ -192,10 +192,14 @@ header {
   background: #F6F6F6;
   flex-direction: column;
   height: 95px;
+  width: 1000px;
 }
 header h1 {
   font-size: 4rem;
   padding: 1% 0 2% 0;
+}
+.home .head-img {
+  border-radius: 7px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -250,6 +254,10 @@ header h1 {
   justify-content: center;
   display: flex;
   align-items: center;
+}
+.home .walk .btn:hover {
+  background-color: #F1F1F1;
+  color: #454A59;
 }
 .home .walk .walk-img {
   width: 46%;
