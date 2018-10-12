@@ -2,31 +2,17 @@
 
 .home {
   @media @phone {
-    flex-direction: column;
-
-    h1 {
-      font-size: 4rem;
-    }
-
-    nav {
-      width: 100%;
-      flex-direction: column;
-      text-align: center;
-      padding: 10px;
-
-      a {
-        padding: 10px 0;
-        // border-top: 1px solid black;
-
-        &:first-child {
-          border-top: none;
-        } //a:first-child
-      } //nav
-    } //media
+    // background-color: blue;
   }
   .intro {
     h2 {
       padding: 15px;
+    }
+
+    @media @phone {
+      .space {
+        width: 100%;
+      }
     }
 
     p {
@@ -38,6 +24,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .blast {
+        width: 110%;
+      }
+
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -66,6 +65,12 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -76,14 +81,31 @@
       p {
         margin-bottom: 26px;
       }
+
+      @media @phone {
+        width: 100%;
+      }
+
       .btn {
-        .custom-btn(85px, 50px, @river-bend, @color);
+        .custom-btn(110px, 50px, @btn-bg-color, @porcelain);
+        text-align: center;
+        padding: 12px;
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+
+        margin-bottom: 20px;
+      }
 
       img {
         width: 100%;

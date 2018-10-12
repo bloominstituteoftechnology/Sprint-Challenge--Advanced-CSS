@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -161,25 +161,31 @@ p {
   margin: 0 auto;
 }
 .head-nav {
-  width: 80%;
   padding: 20px 0;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  flex-direction: column;
+  font-family: #23293b;
 }
 .head-nav h1 {
   font-size: 4rem;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #23293b;
 }
 .head-nav nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .head-nav nav {
+    width: 100%;
+  }
+}
 .head-nav nav a {
+  color: #23293b;
   text-decoration: none;
 }
 footer {
@@ -192,8 +198,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+}
 .home .intro h2 {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro .space {
+    width: 100%;
+  }
 }
 .home .intro p {
   padding: 0 15px;
@@ -202,6 +215,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 110%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -225,6 +249,13 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -234,9 +265,41 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn {
+  width: 110px;
+  height: 50px;
+  background: #22283a;
+  color: #f6f7f8;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  padding: 12px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283a;
+  background: #f6f7f8;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
