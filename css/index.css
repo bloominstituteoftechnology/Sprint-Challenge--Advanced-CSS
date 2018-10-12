@@ -241,7 +241,10 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text a {
+  text-decoration: none;
+}
+.home .walk .walk-text a .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +255,7 @@ footer {
   border-radius: 5px;
   font-size: 1.6rem;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text a .btn:hover {
   background: #FFFFFF;
   color: #22283A;
 }
@@ -264,6 +267,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .sign-up-form {
+  margin: 20px 0px;
 }
 @media (max-width:500px) {
   .nav-wrapper .nav {

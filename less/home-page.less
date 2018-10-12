@@ -63,13 +63,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .flex-cntr-content();
-        .btn-size();
-        .btn-style(@btn-bg-color,@btn-fnt-color);
-        border-radius: 5px;
-        font-size: 1.6rem;
+      a {
+        text-decoration: none;
+        .btn {
+          .flex-cntr-content();
+          .btn-size();
+          .btn-style(@btn-bg-color,@btn-fnt-color);
+          border-radius: 5px;
+          font-size: 1.6rem;
+        }
       }
+      
     }
 
     .walk-img {
@@ -83,7 +87,12 @@
       }
     }
   }
+  .sign-up-form {
+    margin: 20px 0px;
+  }
 }
+
+
 @media @mobile{
   .mobile-layout();
 }
