@@ -1,1 +1,40 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceb() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btest() {
+    border: 1px solid red;
+}
+
+.custom-btn(@width, @height){
+    width: @width;
+    height: @height;
+    background: @ebony-clay;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    .center;
+    cursor: pointer;
+    
+    &:hover {
+      color: @ebony-clay;
+      background: white;
+    }
+  }
