@@ -315,3 +315,10 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.signup #signup-form {
+  height: 300px;
+  width: 300px;
+}
+.signup #signup-form .firstname {
+  width: 102%;
+}
