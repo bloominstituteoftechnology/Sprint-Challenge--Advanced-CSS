@@ -1,1 +1,29 @@
 // Mixins Here
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn(@color; @width){
+    width: @width;
+    height: 10%;
+    background: @color;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    .center;
+    cursor: pointer; 
+}
+
+// Animation 
+
+@keyframes my-animation {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}

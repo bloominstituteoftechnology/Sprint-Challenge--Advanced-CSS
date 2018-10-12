@@ -1,1 +1,49 @@
 // Navigation code here
+
+// Navigation Styles here
+.nav-wrapper {
+    .center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 1% 0%;
+    background-color: @wild-sand;
+    h1 {
+        font-size: 4rem;
+        width: 100%;
+    }
+}
+
+nav {
+    .center;
+    flex-wrap: nowrap;
+    width: 26%;
+    flex-direction: column;
+    @media @mobile {
+        width: 77%;
+        padding-top: 2%;
+        // position: fixed;
+    }
+}
+
+.nav-links {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    min-width: 400px;
+}
+
+.nav-links a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-family: @river-bend;
+    color: black;
+    }
+
+.nav-links {
+    // width: 100px;
+    // height: 100px;
+    position: relative;
+    // background-color: red;
+    animation-name: my-animation;
+    animation-duration: 4s;
+}
