@@ -1,1 +1,40 @@
 // Navigation code here
+
+.navigation {
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 900px;
+    width: 100%;
+    background: #f4f4f4;
+
+    .center-column(); //code below replicated
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    //border: 1px solid red;
+
+    h1 {
+        font-size: 3.5rem;
+    }
+    nav {
+        @media @phone {
+            width: 90%;
+            padding: 10px 10px 0px 10px;
+        }
+        //border: 1px solid red;
+        padding: 10px 10px 0px 10px;
+        font-size: 1.5rem;
+        width: 50%;
+        
+        //display:flex;
+        //justify-content: space-between;
+        //text-decoration: none;
+        .custom-layout(space-between);
+        a {
+            text-decoration: none;
+            color: @ebony-clay;
+
+        }
+        
+    }
+}
