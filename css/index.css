@@ -168,9 +168,7 @@ p {
   margin: 1% 0;
 }
 .navigation-img nav {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 1%;
 }
@@ -178,6 +176,7 @@ p {
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  margin: 0 2.8%;
 }
 .navigation-img nav a:hover {
   color: blue;
@@ -237,7 +236,7 @@ footer {
 .home .walk .walk-text .btn {
   width: 100px;
   height: 35px;
-  background: black;
+  background: #22283B;
   color: white;
   font-size: 2rem;
   border-radius: 10px;
@@ -246,7 +245,7 @@ footer {
   padding: 2% 4%;
 }
 .home .walk .walk-text .btn:hover {
-  color: black;
+  color: #22283B;
   background: white;
 }
 .home .walk .walk-img {
@@ -257,4 +256,41 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home .intro {
+    margin-bottom: 4%;
+  }
+  .home .intro img {
+    width: 100%;
+  }
+  .home .space-images img {
+    width: 175%;
+    margin: 0 10%;
+    height: 100%;
+  }
+  .home .no-dis {
+    display: none;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 50px;
+    padding: 14px 40%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }

@@ -58,7 +58,7 @@
       }
     
       .btn {
-        .custom-btn(100px, 35px, #22283B;  white);
+       .custom-btn(100px, 35px, #22283B,  white);
       }
 
 
@@ -76,3 +76,51 @@
     }
   }
 }// home
+  .home{
+      @media @phone {
+          width: 100%;
+          margin: 0 auto;
+
+          .intro{
+            margin-bottom: 4%;
+
+            img{
+              width: 100%;
+            }
+          }
+
+           .space-images {
+        
+            img {
+              width: 175%;
+               margin: 0 10%;
+               height: 100%;
+             }
+        }
+         .no-dis{
+           display: none;
+         }
+
+       .walk{
+         flex-direction: column-reverse;
+         width: 100%;
+         margin: 0 auto;
+
+         .walk-text{
+           width: 100%;
+           .btn{
+            width: 100%;
+            height: 50px;
+            padding: 14px 40%;
+         }
+        }
+         .walk-img{
+          width: 100%;
+          margin: 0 auto;
+        }
+
+       
+      }
+       
+    }
+  }
