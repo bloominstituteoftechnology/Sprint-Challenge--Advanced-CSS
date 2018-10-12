@@ -18,5 +18,21 @@
             text-decoration: none;
             padding: 0 15px;
         }
+        a:hover {
+            animation: hover .5s forwards .3s ease;
+        }
+    }
+    @keyframes hover {
+        0% {
+            border: none;
+            background: white;
+        }
+        100% {
+            border: 1px solid black;
+            background: white;
+            padding: 5px 20px;
+            font-size: 2rem;
+        }
     }
 }
+

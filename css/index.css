@@ -184,6 +184,21 @@ p {
   text-decoration: none;
   padding: 0 15px;
 }
+.top-nav nav a:hover {
+  animation: hover 0.5s forwards 0.3s ease;
+}
+@keyframes hover {
+  0% {
+    border: none;
+    background: white;
+  }
+  100% {
+    border: 1px solid black;
+    background: white;
+    padding: 5px 20px;
+    font-size: 2rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
