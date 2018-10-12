@@ -111,11 +111,10 @@
   .form-container {
     display: flex;
     justify-content: center;
-    // border: 3px solid @nav-border;
-    // background-color: @nav-bg;
-    // border-radius: 20px;
     margin-bottom: 50px;
-
+    @media @mobile {
+      margin-top: 40px;
+    }
 
     .newsletter-form {
       border: 3px solid @nav-border;

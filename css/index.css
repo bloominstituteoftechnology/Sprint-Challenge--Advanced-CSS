@@ -372,6 +372,11 @@ footer {
   justify-content: center;
   margin-bottom: 50px;
 }
+@media (max-width: 500px) {
+  .home .form-container {
+    margin-top: 40px;
+  }
+}
 .home .form-container .newsletter-form {
   border: 3px solid #F1F1F1;
   background-color: #F6F6F6;
