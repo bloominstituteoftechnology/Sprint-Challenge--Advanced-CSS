@@ -232,6 +232,7 @@ nav {
   color: black;
 }
 .nav-links {
+  position: relative;
   animation-name: my-animation;
   animation-duration: 4s;
 }
