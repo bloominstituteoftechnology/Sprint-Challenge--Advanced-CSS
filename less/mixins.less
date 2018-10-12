@@ -1,1 +1,30 @@
-// Mixins Here
+.startFlex(){
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.content-font(){
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.button-style(@color, @background){
+    padding:  8px 10px;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: @color;
+    background: @background;
+    border: 1px solid @background;
+    &:hover{
+        background: @color;
+        color: @background;
+    }
+    @media @phone{
+        width: 100%;
+        padding: 25px;
+    }
+}
+
