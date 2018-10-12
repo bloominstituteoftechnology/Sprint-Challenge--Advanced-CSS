@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -134,16 +134,16 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -161,18 +161,22 @@ p {
   margin: 0 auto;
 }
 .container-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
   flex-wrap: wrap;
-  background: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
+  background: #f6f6f6;
+  border-bottom: 1px solid #f1f1f1;
 }
 .container-nav h1 {
   font-size: 4rem;
   text-align: center;
   width: 100%;
-  color: #454A59;
+  color: #454a59;
   margin: 13px 0;
 }
 .container-nav nav {
@@ -181,13 +185,13 @@ p {
   margin: 0 0 1.6rem 0;
 }
 .container-nav a {
-  margin: 0 0.5rem;
-  color: #454A59;
+  margin: 0 1rem;
+  color: #454a59;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -195,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 101px;
 }
 .home .intro .main-header-img {
   border-radius: 5px;
@@ -218,7 +225,10 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width:500px) {
+.home .space-images img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
   }
@@ -253,8 +263,8 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background: #22283A;
-  color: #F6F6F6;
+  background: #22283a;
+  color: #f6f6f6;
   width: 100px;
   text-align: center;
   border-radius: 5px;
@@ -262,8 +272,8 @@ footer {
   padding: 8px;
 }
 .home .walk .walk-text .btn:hover {
-  background: #F6F6F6;
-  color: #22283A;
+  background: #f6f6f6;
+  color: #22283a;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -274,7 +284,10 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media (max-width:500px) {
+.home .walk .walk-img:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 500px) {
   .home .walk {
     flex-direction: column;
     margin-top: 28px;
