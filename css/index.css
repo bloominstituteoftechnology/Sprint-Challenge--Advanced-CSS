@@ -160,23 +160,23 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.home div {
+.home .nav-bar {
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
   width: 100%;
 }
-.home div h1 {
+.home .nav-bar h1 {
   display: flex;
   justify-content: center;
   font-size: 4rem;
   margin: 10px 0px;
 }
-.home div nav {
+.home .nav-bar nav {
   display: flex;
   justify-content: center;
 }
-.home div nav a {
+.home .nav-bar nav a {
   text-decoration: none;
   margin: 17px 0px;
   padding: 0px 15px;
@@ -209,6 +209,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@phone {
+  img:nth-child(2) {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
