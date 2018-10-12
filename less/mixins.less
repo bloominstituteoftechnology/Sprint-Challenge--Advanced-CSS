@@ -1,1 +1,29 @@
 // Mixins Here
+.justify-align-items(@justify: flex-start, @align: stretch) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align
+}
+
+.general-link(@font-color) {
+    color: @font-color;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+
+.general-btn(@width, @height, @font-color, @background-color) {
+    width: @width;
+    height: @height;
+    border: 1px solid @background-color;
+    border-radius: 5px;
+    .justify-align-items(center, center);
+    font-size: 1.8rem;
+    color: @font-color;
+    background-color: @background-color;
+
+    &:hover {
+        color: @background-color;
+        background-color: @font-color;
+    }
+}

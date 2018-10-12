@@ -2,9 +2,8 @@
 
 .navigation-bar {
     width: 100%;
-    display: flex;
+    .justify-align-items(flex-start, center);
     flex-direction: column;
-    align-items: center;
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
 
@@ -15,14 +14,11 @@
 
     nav {
         width: 43.5%;
-        display: flex;
-        justify-content: space-evenly;
+        .justify-align-items(space-evenly);
 
         a {
             margin: 4.1% 0 2.5% 0;
-            color: black;
-            text-decoration: none;
-            font-size: 1.6rem;
+            .general-link(black);
         }//a
     }//nav
 }//navigation-bar
