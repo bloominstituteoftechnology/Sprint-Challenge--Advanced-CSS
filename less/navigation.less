@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigation {
+    background-color: @nav-bg;
+    .custom-layout(space-around, center);
+    flex-direction: column; 
+    height: 100px;
+    h1 {
+
+    }
+
+    .nav-menu {
+        .custom-layout(space-between, center);
+        width: 50%;
+        @media @tablet {
+            width: 75%;
+        }
+
+        @media @mobile {
+            width: 80%;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
+        }
+    }
+}

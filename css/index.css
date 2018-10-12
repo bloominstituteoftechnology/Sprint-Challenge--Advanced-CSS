@@ -163,6 +163,35 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+.navigation .nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .navigation .nav-menu {
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .navigation .nav-menu {
+    width: 80%;
+  }
+}
+.navigation .nav-menu a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
