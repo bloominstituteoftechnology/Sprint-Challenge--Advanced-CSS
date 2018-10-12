@@ -1,1 +1,39 @@
 // Mixins Here
+.custom-btn(@width, @height, @background, @color){
+    width: @width;
+    height: @height;
+    background: @background;
+    color: @color;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 2% 4%;
+    
+    &:hover {
+      color: @background;
+      background: @color;
+    }
+  }
+
+  .custom-nav(){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin: 0 auto;
+        margin-bottom: 1%;
+
+        a{
+            font-size: 1.5rem;
+            color: black;
+            text-decoration: none;
+
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+  }
+
+  
