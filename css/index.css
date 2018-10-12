@@ -184,8 +184,15 @@ p {
 .main-nav ul a {
   text-decoration: none;
   color: #454A59;
-  margin: 0 14.8px;
+  margin: 0 6.8px;
   font-size: 1.6rem;
+  padding: 8px;
+}
+.main-nav ul a:hover {
+  background-color: #22283A;
+  border-radius: 5px;
+  color: #F6F6F6;
+  padding: 8px;
 }
 footer {
   color: #22283B;
