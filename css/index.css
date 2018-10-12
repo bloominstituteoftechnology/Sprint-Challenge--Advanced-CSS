@@ -177,8 +177,8 @@ p {
   display: flex;
   justify-content: space-evenly;
   width: 37%;
-  margin-top: 4px;
-  margin-bottom: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .top nav a {
   font-family: #454A59;
@@ -240,6 +240,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 29.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23293B;
+  color: #F6F7F8;
+  padding: 8px 0;
+  font-size: 1.8rem;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
