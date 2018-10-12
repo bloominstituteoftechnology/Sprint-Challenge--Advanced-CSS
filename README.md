@@ -36,9 +36,9 @@ Answer the following questions to the best of your ability. You can exercise you
 
 * [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
 
