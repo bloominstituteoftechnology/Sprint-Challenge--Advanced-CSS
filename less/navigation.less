@@ -1,1 +1,53 @@
-// Navigation code here
+header {
+    margin-top: 35px;
+    margin-bottom: 15px;
+
+    border: 1px solid black;
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+      
+     }
+    h1 {
+        font-size: 3rem;
+        .center();
+        margin-bottom: 15px;
+        
+       
+    }
+
+    nav {
+        font-size: @font-size;
+        .center();
+        margin-bottom: 10px;
+
+        
+
+        a {
+            display: flex;
+            margin-right: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        @media @phone {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    .header-img {
+        border-radius: 5px;
+
+        @media @phone {
+            width: 100%;
+        }
+    }
+
+}
