@@ -1,3 +1,7 @@
+.qa {
+  border: 1px solid red;
+  background: yellow;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -201,6 +205,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .main-header {
+  width: 100%;
+  height: 300px;
 }
 .home .intro h2 {
   padding: 15px;
