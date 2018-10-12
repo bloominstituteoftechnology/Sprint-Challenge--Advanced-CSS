@@ -1,1 +1,30 @@
 // Navigation code here
+.head-nav {
+  // width: 80%;
+  padding: 20px 0;
+  .justify(space-between);
+  align-items: center;
+  font-size: 2rem;
+  flex-direction: column;
+  font-family: @ebony-clay;
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: @ebony-clay;
+  }
+
+  nav {
+    width: 50%;
+    .justify(space-evenly);
+
+    @media @phone {
+      width: 100%;
+    }
+
+    a {
+      color: @ebony-clay;
+      text-decoration: none;
+    }
+  }
+} //nav
