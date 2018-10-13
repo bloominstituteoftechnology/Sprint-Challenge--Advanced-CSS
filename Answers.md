@@ -1,6 +1,6 @@
 1. Q.What is the difference between an adaptive website and a fully responsive website? 
 
-A. An adaptive website creates multiple versions of the page to fit a users device, whereas a fully responsive website adapts to different screen sizez with the use of media queries.
+A. An adaptive website creates multiple versions of the page to fit a users device, whereas a fully responsive website adapts to different screen sizes with the use of media queries.
 
 2. Q. Describe what it means to be mobile first vs desktop first.  
 
