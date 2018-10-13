@@ -164,7 +164,15 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.75);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .nav-container {
+    position: static;
+  }
 }
 .nav-container h1 {
   font-size: 4.2rem;
@@ -190,6 +198,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 9.7rem;
+}
+@media (max-width:500px) {
+  .home {
+    margin-top: 0rem;
+  }
 }
 .home .intro .img-header {
   border-radius: 0.5rem;

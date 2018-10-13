@@ -2,7 +2,17 @@
 .nav-container{
     .flex-center();
     flex-wrap: wrap;
-    background-color: @nav-bg;
+    background-color: fade(@nav-bg,75%);
+
+    //fixed nav
+    position: fixed;
+    top:0;
+    width:100%;
+
+    @media @phone {
+        position: static;
+        
+    }
 
     h1{
         font-size: 4.2rem;
