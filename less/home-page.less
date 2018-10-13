@@ -4,6 +4,15 @@
 
   .intro {
 
+    padding: 113px 0 10px;
+
+    img {
+      margin: 0;
+      .border-radius(5px);
+      height: auto;
+      width: 100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -22,7 +31,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(20px);
       height: 100%;
     }
   }
@@ -58,6 +67,7 @@
       }
 
       .btn {
+        .button-creator(30%, 35px, @btn-bg-color, @porcelain, 1.8rem);
       }
     }
 
@@ -68,7 +78,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border-radius(10px);
       }
     }
   }

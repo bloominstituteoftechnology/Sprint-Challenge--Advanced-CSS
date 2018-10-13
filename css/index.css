@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.8rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,10 +158,42 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  text-decoration: none;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.main-navigation {
+  width: 100%;
+  background-color: #F6F6F6;
+  color: #454A59;
+  border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+}
+.main-navigation .nav-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.nav .nav-link {
+  font-size: 1.6rem;
+  color: #454A59;
+  line-height: 1.4rem;
+  font-weight: bold;
+  padding-top: 20px;
 }
 footer {
   color: #22283B;
@@ -169,6 +204,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding: 113px 0 10px;
+}
+.home .intro img {
+  margin: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: auto;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -184,6 +230,8 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
   height: 100%;
 }
@@ -212,6 +260,29 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  -webkit-border-radius: 10 px;
+  -moz-border-radius: 10 px;
+  border-radius: 10 px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 35px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn.hover {
+  background: #F6F7F8;
+  color: #22283A;
+  border: 1 px solid #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -219,5 +290,7 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
 }
