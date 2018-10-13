@@ -34,15 +34,13 @@
 }
 
 .btn-mine {
-  background-color: @btn-bg-color;
-  border-radius: 5px;
-  border: 1px solid @btn-bg-color;
-  padding: 5px 5%;
-
+  .btn-mix();
   a {
+    .link-format();
     color: white;
-    text-decoration: none;
-    font: @nav-font;
-    font-size: 1.7rem;
+  }
+
+  &:hover {
+    .btn--hover();
   }
 }

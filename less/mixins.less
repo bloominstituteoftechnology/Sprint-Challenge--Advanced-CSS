@@ -11,3 +11,35 @@
   font: @nav-font;
   font-size: 1.7rem;
 }
+
+.btn-mix(@background-color: @btn-bg-color, @border: 1px solid @btn-bg-color, @padding: 5px 5%) {
+  background-color: @background-color;
+  .border-radius;
+  border: @border;
+  padding: @padding;
+}
+
+.btn--hover(@name: bcgc, @duration: 1s, @fill-mode: forwards) {
+  animation-name: @name;
+  animation-duration: @duration;
+  animation-fill-mode: @fill-mode;
+  a {
+    color: @btn-bg-color;
+  }
+
+  @keyframes @name {
+    0% {
+      background-color: @btn-bg-color;
+    }
+
+    100% {
+      background-color: white;
+    }
+  }
+}
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}

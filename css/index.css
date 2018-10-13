@@ -198,15 +198,33 @@ p {
 }
 .btn-mine {
   background-color: #22283A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #22283A;
   padding: 5px 5%;
 }
 .btn-mine a {
-  color: white;
   text-decoration: none;
   font: #454A59;
   font-size: 1.7rem;
+  color: white;
+}
+.btn-mine:hover {
+  animation-name: bcgc;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.btn-mine:hover a {
+  color: #22283A;
+}
+@keyframes bcgc {
+  0% {
+    background-color: #22283A;
+  }
+  100% {
+    background-color: white;
+  }
 }
 footer {
   color: #22283B;
