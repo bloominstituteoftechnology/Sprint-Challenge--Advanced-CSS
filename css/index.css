@@ -337,6 +337,7 @@ footer {
 }
 .history .history-img img {
   max-width: 100%;
+  border-radius: 10px;
 }
 .philosophy {
   display: flex;
@@ -369,6 +370,7 @@ footer {
 }
 .philosophy .philosophy-img img {
   max-width: 100%;
+  border-radius: 10px;
 }
 .mission {
   display: flex;
@@ -402,4 +404,5 @@ footer {
 }
 .mission .mission-img img {
   max-width: 100%;
+  border-radius: 10px;
 }
