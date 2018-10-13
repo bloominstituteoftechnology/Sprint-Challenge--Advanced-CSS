@@ -1,1 +1,21 @@
-// Mixins Here
+.border-radius (@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.flex(@flow, @justify, @align){
+  display: flex;
+  flex-flow: @flow;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.buttons(@color, @width){
+  background-color: @color;
+  width: @width;
+  border: 1px solid white;
+}
