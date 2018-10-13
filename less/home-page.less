@@ -3,7 +3,7 @@
 .home {
 
   .intro {
-    
+   
     .header-img {
       width: 100%;
       
@@ -33,7 +33,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-rad-lg();
       height: 100%;
     }
   }
@@ -69,6 +69,11 @@
       }
 
       .btn {
+        .btn-signup();
+      
+        &:hover {
+          .btn-signup(@color:@ebony-clay, @bg-color:#ffffff);
+        }
       }
     }
 
@@ -79,7 +84,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border-rad-sm();
       }
     }
   }

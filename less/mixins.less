@@ -8,3 +8,19 @@
 .border-rad-lg () {
   border-radius: 20px;
 }
+
+.main-font-size () {
+  font-size: 1.6rem;
+}
+
+.btn-signup (@color: #ffffff, @bg-color: @ebony-clay,@border-color: @ebony-clay) {
+  color: @color;
+  background: @bg-color;
+  width: 28%;
+  text-align: center;
+  padding: 5px 3%;
+  border-radius: 5px;
+  .main-font-size();
+  border: 1px solid @border-color;
+}
+
