@@ -29,8 +29,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    transition: all 0.5 ease-in-out;
 
     .blast {
+
+      &:hover {
+        transform: perspective(500px) scaleZ(2) rotateY(45deg);
+      }
       @media @phone {
         width: 100%;
       }
@@ -39,6 +44,7 @@
     .launch {
       @media @phone {
         display: none;
+        
       }
     }
 
@@ -110,8 +116,12 @@
         }
         
         p {
-          padding-top: 22px;
-          font-size: 2.0rem;
+          padding-top: 6px;
+
+          @media @phone {
+            padding-top: 22px;
+            font-size: 2.0rem;
+          }
         }
       }
     }

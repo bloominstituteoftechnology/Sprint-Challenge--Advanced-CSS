@@ -175,6 +175,7 @@ p {
   top: 0;
   width: 100%;
   background: white;
+  background-color: #5483ff;
 }
 .navigation .nav-container {
   display: flex;
@@ -244,6 +245,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  transition: all 0.5 ease-in-out;
+}
+.home .space-images .blast:hover {
+  transform: perspective(500px) scaleZ(2) rotateY(45deg);
 }
 @media ( max-width: 500px ) {
   .home .space-images .blast {
@@ -331,8 +336,13 @@ footer {
   }
 }
 .home .walk .walk-text .btn p {
-  padding-top: 22px;
-  font-size: 2rem;
+  padding-top: 6px;
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-text .btn p {
+    padding-top: 22px;
+    font-size: 2rem;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
