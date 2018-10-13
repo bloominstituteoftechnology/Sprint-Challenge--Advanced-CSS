@@ -10,6 +10,8 @@
 
     p {
       padding:0 15px;
+      color: @shuttle-gray;
+      font-weight: 600;
     }
   
   }
@@ -36,6 +38,8 @@
 
     p {
       margin-top: 13px;
+      color: @shuttle-gray;
+      font-weight: 600;
     }
   }
 
@@ -55,9 +59,21 @@
 
       p {
         margin-bottom: 26px;
+        color: @shuttle-gray;
+        font-weight: 600;
       }
 
       .btn {
+        .button(white, 120px, 40px, black);
+        .borderRad();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          .link {
+            text-decoration:none;
+            color: white;
+            font-size: 2rem;
+          }
       }
     }
 

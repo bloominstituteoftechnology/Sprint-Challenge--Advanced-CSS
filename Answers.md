@@ -5,3 +5,5 @@
 3. with REM is 62.5% relative to the size of the browers' font default font size.  
 
 4.  it allows for more fluid editing among more people without constant repetition or clashes.  Remeber the best programmer is the laziest programmer.
+
+5.  it allows for more fluid editing.  I've used CSS before and this method makes my life 10x easier and I actually enjoying CSS a little more then before.  
