@@ -1,1 +1,38 @@
 // Navigation code here
+
+nav {
+    .justify-center;
+    .column-center;
+    background-color: @porcelain;
+    padding: 10px;
+
+    .brand {
+        font-family: 'Russo One';
+        font-size: 4rem;
+        padding-top: 0px;
+        @media @phone {
+            font-size: 3.2rem;
+        }
+    }
+    a {
+        color: @ebony-clay;
+    }
+    ul {
+        display: flex;
+        padding: 15px 0px 0px;
+        a {
+            font-size: 1.5rem;
+            padding: 16px;
+            @media @phone {
+                padding: 16px 12px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    /* Causes Error */
+    // @media @phone {
+    //     position: fixed;
+    //     opacity: .95;
+    //     width: 100%;
+    // }
+}
