@@ -191,6 +191,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .img-header {
+  border-radius: 0.5rem;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -232,6 +235,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  cursor: pointer;
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;

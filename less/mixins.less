@@ -1,1 +1,24 @@
 // Mixins Here
+.nav-links(@color,@font-size,@v-margin,@h-margin){
+    text-decoration: none;
+    color:@color;
+    font-size: @font-size;
+    margin:@v-margin @h-margin;
+}
+
+.button(@bg-color:@btn-bg-color,@color:white,@font-size,@padding,@max-wdith){
+    background-color: @bg-color;
+    color: @color;
+    font-size: @font-size;
+    padding: @padding;
+    max-width: @max-wdith;
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+
+    &:hover{
+        cursor: pointer;
+        color:@bg-color;
+        background-color: @color;
+    }
+}
