@@ -26,9 +26,9 @@ Answer the following questions to the best of your ability. You can exercise you
 
    Mobile first is a design that uses the defaults styles such as width for smaller, mobile devices. The page can then configured for large desktop resolutions using break-point queries. Reversly, desktop first is used when the default style is designed for large devices.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+<!-- 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? -->
 
-    It allows the font size of adjust depending on the browser and the user's browser's accessibility settings.
+    It allows the font size of the html to adjust consistently and predictably depending on the browser and the user's browser's accessibility settings. 
 
 <!-- 4. How would you describe preprocessing to someone new to CSS? -->
 
