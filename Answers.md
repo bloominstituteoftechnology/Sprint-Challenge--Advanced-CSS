@@ -22,4 +22,5 @@
   Preprocessing means converting one form of data to another. There are dynamic languagues like LESS which converts to CSS used by websites. Dynamic language like LESS provided much more features and allow changes on the run by compiling to a updated CSS. Preprocessing allows fragmentation of files which allows readability and easy for developers to fix bugs and write codes.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
    Usage of mixins  and  fragmenting everything in less file makes things clean and understandable  hence those are my most favourite concept .I don't  think so any of the concept gives me trouble.
