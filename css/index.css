@@ -179,12 +179,16 @@ p {
 }
 .navigation-header .mini-head-container nav {
   display: flex;
-  width: 40%;
+  width: 50%;
   justify-content: space-around;
-  padding: 1.5%;
 }
 .navigation-header .mini-head-container nav a {
+  padding: 3.5%;
   font-size: 1.5rem;
+}
+.navigation-header .mini-head-container nav a:hover {
+  background: #22283A;
+  color: #F6F7F8;
 }
 footer {
   color: #22283B;
@@ -201,6 +205,11 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .earth {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
