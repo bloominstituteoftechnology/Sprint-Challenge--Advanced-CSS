@@ -175,7 +175,7 @@ p {
   align-items: center;
   font-size: 1.6rem;
   background-color: rgba(246, 246, 246, 0.6);
-  background-border-bottom: 2px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
 }
 .nav nav h1 {
   font-size: 5rem;
