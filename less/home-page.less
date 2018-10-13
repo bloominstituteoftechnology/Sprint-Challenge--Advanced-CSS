@@ -11,6 +11,13 @@
     p {
       padding:0 15px;
     }
+
+    .outSpaceImage {
+      @media @phone {
+        height: 125px;
+        width: 100%;
+      }
+    }
   
   }
 
@@ -24,6 +31,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
     }
   }
 
@@ -60,9 +77,20 @@
       .btn {
         .button-sm(@btn-bg-color, @wild-sand);
         width: 25%;
-        padding: 10px;
+        padding: 10px 0;
         text-align: center;
         font-size: 1.6rem;
+        border-radius: 5px;
+
+        @media @phone {
+          width: 100%;
+          padding: 25px 0;
+          font-size: 1.8rem;
+        }
+      }
+
+      @media @phone {
+        width: 100%;
       }
     }
 
@@ -75,6 +103,19 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0px;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+      margin-top: 10px;
+      // padding: 20px 0 20px 4%;
+      padding: 10px;
+      width: 100%;
     }
   }
 }// home
