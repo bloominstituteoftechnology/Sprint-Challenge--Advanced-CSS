@@ -161,6 +161,10 @@ p {
   margin: 0 auto;
 }
 .nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
   background: #f6f6f6;
   text-align: center;
   display: flex;
@@ -204,6 +208,7 @@ footer {
   align-items: center;
 }
 .home {
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
 }
