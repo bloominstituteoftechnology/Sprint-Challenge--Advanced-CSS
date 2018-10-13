@@ -182,6 +182,11 @@ p {
   text-decoration: none;
   color: #454A59;
 }
+@media (max-width: 500px) {
+  .navContainer {
+    padding-top: 25px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -208,6 +213,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+  .home .space-images img {
+    width: 92%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
