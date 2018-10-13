@@ -165,14 +165,17 @@ p {
 }
 .nav {
   width: 100%;
+  position: fixed;
+  margin-bottom: 10.5rem;
+  top: 0;
 }
 .nav nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 1.6rem;
-  background-color: #F6F6F6;
-  border-bottom: 2px solid #F1F1F1;
+  background-color: rgba(246, 246, 246, 0.6);
+  background-border-bottom: 2px solid #F1F1F1;
 }
 .nav nav h1 {
   font-size: 5rem;
@@ -214,6 +217,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 10.5rem;
 }
 @media (max-width: 500px) {
   .home header .header-img {
