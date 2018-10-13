@@ -6,6 +6,27 @@
     align-items: @align-items;
 }
 
-.center () {
-    margin: 0 auto;
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-button (@width, @height, @bg-color, @color, @font-size, @radius) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @color;
+    font-size: @font-size;
+    border-radius:@radius;
+
+    // @media @phone {
+    //     width: 100%;
+    // }
+    
+    &:hover {
+        background: @btn-font-color;
+        color: @btn-bg-color;
+        border: 2px solid @btn-bg-color;
+    }
 }
