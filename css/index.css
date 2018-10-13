@@ -221,6 +221,9 @@ footer {
 .home {
   margin-top: 10.5rem;
 }
+.home header .header-img {
+  width: 100%;
+}
 @media (max-width: 500px) {
   .home header .header-img {
     width: 100%;
