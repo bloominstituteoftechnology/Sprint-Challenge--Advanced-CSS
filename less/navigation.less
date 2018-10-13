@@ -1,1 +1,40 @@
 // Navigation code here
+.header{
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    .center(column, center, center);
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    h1{
+        font-size: 3.4rem;
+        // color: ;
+
+        @media @mobile {
+            font-size: 4.0rem;
+        }
+    }
+
+    nav{
+        .display-flex(row, space-between);
+        width: 35%;
+        padding-top: 15px;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: @ebony-clay;
+
+        @media @mobile {
+            width: 80%;
+            font-size: 1.6rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: @ebony-clay;
+            font-size: 1.6rem;
+
+        }
+
+    }
+}
