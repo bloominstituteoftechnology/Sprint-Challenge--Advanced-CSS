@@ -1,5 +1,12 @@
 .btn-sty {
-  background-color: #23293B;
+  width: 30%;
+  padding: 1rem 2rem;
+  background-color: #22283A;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 0.5rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -242,6 +249,16 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  padding: 1rem 2rem;
+  background-color: #22283A;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+  border-radius: 0.5rem;
 }
 .home .walk .walk-img {
   width: 46%;
