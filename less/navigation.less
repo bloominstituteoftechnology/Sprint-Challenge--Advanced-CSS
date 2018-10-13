@@ -1,1 +1,19 @@
 // Navigation code here
+.nav-container{
+    width: 100%;
+    height: 100px;
+    background-color: @nav-bg;
+    .center();
+    flex-direction: column;  
+
+    .nav{
+        width: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        .top-link{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.3rem;
+        }
+    }  
+}
