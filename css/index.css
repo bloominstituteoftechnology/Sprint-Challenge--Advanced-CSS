@@ -178,6 +178,10 @@ p {
   font-size: 5rem;
   text-align: center;
   padding: 1rem 0;
+  transition: all 2s ease-in-out;
+}
+.nav nav h1:hover {
+  transform: perspective(500px) scaleZ(2) rotateY(360deg);
 }
 .nav nav menu {
   display: flex;
@@ -186,6 +190,10 @@ p {
 .nav nav menu li {
   padding: 0 2.5rem;
   list-style: none;
+  transition: all 0.5s ease-in;
+}
+.nav nav menu li:hover {
+  transform: rotate(360deg);
 }
 @media (max-width: 500px) {
   .nav nav menu li {
@@ -287,6 +295,7 @@ footer {
   font-weight: 800;
   text-align: center;
   border-radius: 0.5rem;
+  transition: all 1s ease-in;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #ffffff;
@@ -304,6 +313,7 @@ footer {
     font-weight: 800;
     text-align: center;
     border-radius: 0.5rem;
+    transition: all 1s ease-in;
   }
   .home .walk .walk-text .btn:hover {
     background-color: #ffffff;

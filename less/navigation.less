@@ -12,21 +12,30 @@
       font-size: 5rem;
       text-align: center;
       padding: 1rem 0;
+      transition: all 2s ease-in-out;
+      &:hover {
+        transform: perspective(500px) scaleZ(2) rotateY(360deg);
+      }
     }
     menu {
       .flex-mix();
-      padding: .5rem 0 1rem;
+      padding: 0.5rem 0 1rem;
 
       li {
         padding: 0 2.5rem;
         list-style: none;
+        transition: all .5s ease-in;
+        &:hover {
+            transform: rotate(360deg);
+          }
         @media @phone {
-            padding: 0 1.7rem;
+          padding: 0 1.7rem;
         }
         a {
           text-decoration: none;
           font-size: 1.8rem;
           color: @nav-font;
+         
         }
       }
     }
