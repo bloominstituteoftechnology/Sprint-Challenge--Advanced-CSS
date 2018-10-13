@@ -1,1 +1,35 @@
 // Mixins Here
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-style(@background-color, @font-color,@buttonfontsize){
+
+  background: @background-color;
+  color: @font-color;
+  font-size: @buttonfontsize;
+}
+
+.fadeIn{
+  animation-name: fadeIn;
+  animation-duration: 5s;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
