@@ -10,6 +10,10 @@
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        padding: 0 13px;
+      }
     }
 
     .outSpaceImage {
@@ -39,7 +43,8 @@
       }
 
       .blast {
-        width: 100%;
+        width: 98%;
+        margin-left: 5%;
       }
     }
   }
@@ -53,6 +58,10 @@
 
     p {
       margin-top: 13px;
+    }
+
+    @media @phone {
+      padding-right: 0;    
     }
   }
 
@@ -106,14 +115,16 @@
 
       @media @phone {
         width: 100%;
-        margin-left: 0px;
+        margin-left: 0.5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
 
     @media @phone {
       flex-direction: column-reverse;
       margin-top: 10px;
-      // padding: 20px 0 20px 4%;
+      margin-left: 10px;
       padding: 10px;
       width: 100%;
     }
