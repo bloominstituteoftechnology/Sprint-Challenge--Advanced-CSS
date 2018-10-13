@@ -20,6 +20,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      .none {
+        display: none;
+      }
+      .show {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -47,12 +55,23 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 15px;
+      margin-top: 25px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          margin-top: 25px;
+        }
       }
 
       p {
@@ -60,12 +79,20 @@
       }
 
       .btn {
+        @media @phone {
+          width: 100%;
+          padding: 20px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
 
       img {
         width: 100%;

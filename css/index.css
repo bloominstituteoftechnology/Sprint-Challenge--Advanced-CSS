@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,9 +165,9 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   padding: 15px 0;
-  font: #454A59;
-  background-color: #F6F6F6;
-  border-bottom: #F1F1F1;
+  font: #454a59;
+  background-color: #f6f6f6;
+  border-bottom: #f1f1f1;
 }
 .navigation .nav-container {
   display: flex;
@@ -191,22 +191,22 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   width: 20%;
-  color: #23293B;
+  color: #23293b;
   text-decoration: none;
   font-size: 1.5rem;
-  font: #454A59;
+  font: #454a59;
 }
 .btn-mine {
-  background-color: #22283A;
+  background-color: #22283a;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #22283A;
+  border: 1px solid #22283a;
   padding: 5px 5%;
 }
 .btn-mine a {
   text-decoration: none;
-  font: #454A59;
+  font: #454a59;
   font-size: 1.7rem;
   color: white;
 }
@@ -216,11 +216,11 @@ p {
   animation-fill-mode: forwards;
 }
 .btn-mine:hover a {
-  color: #22283A;
+  color: #22283a;
 }
 @keyframes bcgc {
   0% {
-    background-color: #22283A;
+    background-color: #22283a;
   }
   100% {
     background-color: white;
@@ -251,6 +251,14 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .none {
+    display: none;
+  }
+  .home .space-images .show {
+    width: 100%;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -273,18 +281,47 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 15px;
+    margin-top: 25px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-top: 25px;
+  }
+}
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px 0;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
