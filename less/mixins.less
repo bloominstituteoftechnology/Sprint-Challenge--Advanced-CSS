@@ -1,1 +1,24 @@
 // Mixins Here
+.button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: solid @ebony-clay;
+    .round-borders;
+    width: 100px;
+    padding: 5px 0px;
+    color:white;
+    background-color: @ebony-clay;
+}
+
+.buttonHover {
+    border: solid white;
+    color :@ebony-clay;
+    background-color: white;
+}
+
+.round-borders (@radius: 5px) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+  }
