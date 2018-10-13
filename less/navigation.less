@@ -1,1 +1,80 @@
 // Navigation code here
+
+.nav-container {
+
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px dashed @sea-shell;
+  display: flex;
+  background-color: @wild-sand;
+
+  .nav-list {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+    .center();
+
+    justify-content: space-around;
+
+  }
+
+  h1 {
+    font-size: 3.4rem;
+  }
+
+  .nav-list .nav-a {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media @phone {
+      width: 100%;
+      justify-content: space-around;
+
+    }
+
+  }
+
+  .nav-list .nav-a a {
+      text-decoration: none;
+      color: @river-bend;
+
+  }
+
+
+
+}
+//    @media @mobile {
+//      flex-wrap: wrap;
+//      justify-content: center;
+//      padding-top: 10px;
+//    }
+//
+//    .logo-heading {
+//      @media @mobile {
+//        font-size: 3rem;
+//      }
+//    }
+//
+//    .nav {
+//      width: 350px;
+//      display: flex;
+//      justify-content: space-evenly;
+//
+//      @media @mobile {
+//        width: 100%;
+//        justify-content: space-around;
+//      }
+//
+//
+//      a {
+//        font-size: 1.6rem;
+//        color: @font-color;
+//        text-decoration: none;
+//      }
+//    }
+//  }
+//} // .main-navigatio*/
