@@ -166,7 +166,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 10px;
+  padding-top: 13px;
   background-color: #F6F6F6;
   border: 1px solid #F1F1F1;
 }
@@ -174,10 +174,14 @@ nav a {
   text-decoration: none;
   color: #454A59;
 }
+nav .logo {
+  font-size: 4rem;
+  padding-top: 10px;
+}
 nav .navLinks {
   width: 100%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 18px;
   padding-bottom: 10px;
   display: flex;
   justify-content: center;
@@ -266,10 +270,10 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: #F6F6F6;
-  width: 25%;
+  width: 29.5%;
   padding: 10px 0;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   border-radius: 5px;
 }
 .home .walk .walk-text .btn:hover {
