@@ -207,6 +207,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home header .header-img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
