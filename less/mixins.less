@@ -1,1 +1,21 @@
 // Mixins Here
+.flex-position(@jstCnt, @alnItm) {
+  display: flex;
+  justify-content: @jstCnt;
+  align-items: @alnItm;
+}
+
+.normalizeText(@txtColor) {
+  text-decoration: none;
+  color: @txtColor;
+}
+
+.btn-signUp(@bckRndColor, @maxWid, @brdRds, @txtColor, @txtSize, @txtPadding) {
+  .flex-position(center, center);
+  background-color: @bckRndColor;
+  max-width: @maxWid;
+  border-radius: @brdRds;
+  color: @txtColor;
+  font-size: @txtSize;
+  padding: @txtPadding;
+}

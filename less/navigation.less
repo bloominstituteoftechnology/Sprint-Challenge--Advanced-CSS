@@ -1,1 +1,36 @@
-// Navigation code here
+.main-nav {
+  max-width: ~'@{desktopNavViewSize}';
+  width: 100%;
+  margin: 0 auto;
+  .flex-position(space-evenly, center);
+  flex-direction: column;
+  background-color: @wild-sand;
+
+  h1 {
+    margin: 13px;
+    color: @ebony-clay;
+  }
+
+  ul {
+    padding: 5px 0;
+    margin-bottom: 8px;
+
+    a {
+      .normalizeText(@river-bend);
+      margin: 0 6.8px;
+      font-size: 1.6rem;
+      padding: 8px;
+
+      @media (max-width: ~'@{phoneScreenSize}') {
+        margin: 0;
+      }
+    }
+
+    a:hover {
+      background-color: @ebony-clay-dark;
+      border-radius: 5px;
+      color: @wild-sand;
+      padding: 8px;
+    }
+  }
+}

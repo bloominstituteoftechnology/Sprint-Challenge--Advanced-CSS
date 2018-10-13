@@ -1,8 +1,10 @@
 // Home Content
 
 .home {
-
   .intro {
+    img {
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -11,7 +13,12 @@
     p {
       padding:0 15px;
     }
-  
+    
+    @media (max-width: ~'@{phoneScreenSize}') {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .space-images {
@@ -24,6 +31,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media (max-width: ~'@{phoneScreenSize}') {
+      .blast {
+        width: 100%;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -43,8 +64,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-position(center, stretch);
 
     .walk-text {
       width: 50%;
@@ -57,7 +77,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      a {
+        text-decoration: none;
+        .btn {
+          .btn-signUp(@ebony-clay-dark, 100px, 5px, white, 1.8rem, 9px 0);
+        }
+
+        .btn:hover {
+          .btn-signUp(white, 100px, 5px, @ebony-clay-dark, 1.8rem, 9px 0);
+        }
       }
     }
 
@@ -69,6 +97,39 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media (max-width: ~'@{phoneScreenSize}') {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      padding: 10px 15px;
+
+      .walk-text {
+        order: 1;
+        width: 100%;
+
+        p {
+          line-height: 1.5;
+        }
+
+        a {
+          margin-bottom: 10px;
+
+          .btn {
+            .btn-signUp(@ebony-clay-dark, 100%, 5px, white, 1.8rem, 15px 0);
+          }
+
+          .btn:hover {
+            .btn-signUp(white, 100%, 5px, @ebony-clay-dark, 1.8rem, 15px 0);
+          }
+        }
+      }
+
+      .walk-img {
+        width: 100%;
+        margin: 0;
       }
     }
   }
