@@ -1,1 +1,20 @@
 // Navigation code here
+.nav-header{
+    .flex-column();
+    background-color: @nav-bg;
+    padding-top: 20px;
+
+    .nav-menu{
+        max-width: 450px;
+        width: 100%;
+        .flex-between();
+        margin: 20px auto;
+
+
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
+        }
+    }
+}

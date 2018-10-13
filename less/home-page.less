@@ -2,6 +2,10 @@
 
 .home {
 
+  @media @phone{
+    .flex-column();
+  }
+
   .intro {
 
     h2 {
@@ -11,6 +15,11 @@
     p {
       padding:0 15px;
     }
+
+    img{
+      width: 100%;
+      border-radius: 5px;
+    }
   
   }
 
@@ -18,6 +27,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone{
+      .blast{
+        width: 100%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +67,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      padding: 25px 10px;
+      width: 100%;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +90,27 @@
       }
 
       .btn {
+        .button();
+        &:hover{
+          background-color: @porcelain;
+          color: @btn-bg-color;
+        }
+        @media @phone{
+          width: 100%;
+          padding: 25px 10px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin:25px auto;
+
+      }
       
       img {
         width: 100%;
