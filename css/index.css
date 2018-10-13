@@ -188,6 +188,11 @@ p {
   font-size: 1.6rem;
   padding: 8px;
 }
+@media (max-width: 500px) {
+  .main-nav ul a {
+    margin: 0;
+  }
+}
 .main-nav ul a:hover {
   background-color: #22283A;
   border-radius: 5px;
