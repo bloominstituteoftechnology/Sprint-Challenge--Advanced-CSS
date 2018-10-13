@@ -166,20 +166,27 @@ p {
   justify-content: center;
   padding: 15px 0;
   font: #454A59;
+  background-color: #F6F6F6;
+  border-bottom: #F1F1F1;
 }
-.navigation h1 {
+.navigation .nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.navigation .nav-container h1 {
   width: 100%;
   font-size: 3.5rem;
   text-align: center;
 }
-.navigation .links {
+.navigation .nav-container .links {
   display: flex;
   flex-wrap: wrap;
-  width: 65%;
+  width: 66%;
   justify-content: center;
   padding-top: 25px;
 }
-.navigation .links a {
+.navigation .nav-container .links a {
   display: flex;
   width: 20%;
   justify-content: center;
@@ -202,6 +209,10 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  max-width: 800px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
