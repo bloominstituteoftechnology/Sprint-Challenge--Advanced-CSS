@@ -163,6 +163,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation-header {
+  margin-left: -33.33%;
+  margin-right: -33.33%;
+  background-color: #F6F6F6;
+}
+.navigation-header .mini-head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-header .mini-head-container h1 {
+  margin-top: 1%;
+}
+.navigation-header .mini-head-container nav {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  padding: 1.5%;
+}
+.navigation-header .mini-head-container nav a {
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
