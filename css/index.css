@@ -306,7 +306,7 @@ footer {
     height: 50px;
   }
 }
-.home .walk .walk-text .btn.hover {
+.home .walk .walk-text .btn:hover {
   background: #F6F7F8;
   color: #22283A;
   border: 1 px solid #22283A;
