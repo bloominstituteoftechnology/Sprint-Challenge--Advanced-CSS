@@ -160,6 +160,22 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+header nav {
+  font-size: 1.6rem;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
