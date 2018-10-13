@@ -6,6 +6,18 @@
     margin-right: -33.33%;
     background-color: @nav-bg;
 
+    // .media-width-full{
+    //     width: 100%;
+    //   }
+
+    @media @mobile-view{
+        margin-left: inherit;
+        margin-right: inherit;
+        align-items: center;
+        // .media-width-full();
+    }
+
+
     .mini-head-container{
         display: flex;
         flex-direction: column;
@@ -21,6 +33,10 @@
             width: 50%;
             justify-content: space-around;
             // padding: 1.5%;
+
+            @media @mobile-view{
+                width: 100%;
+            }
 
              a{
                  padding: 3.5%;

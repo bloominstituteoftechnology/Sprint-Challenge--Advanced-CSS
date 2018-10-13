@@ -2,11 +2,24 @@
 
 .home {
 
+  .media-width-full{
+    width: 100%;
+  }
+
+
+  @media @mobile-view{ 
+    .media-width-full();
+  }
+
   img:hover{
     .img-mixin();
   }
 
   .intro {
+    @media @mobile-view{ 
+
+      .media-width-full();
+    }
 
     h2 {
       padding: 15px;
@@ -21,6 +34,8 @@
     }
   
   }
+
+
 
   .space-images {
     display: flex;
