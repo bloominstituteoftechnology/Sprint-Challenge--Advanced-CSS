@@ -184,6 +184,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  flex-direction: column;
 }
 nav {
   align-items: center;
@@ -191,6 +192,7 @@ nav {
   flex-direction: column;
   background-color: #F6F7F8;
   padding: 10px;
+  /* Causes Error */
 }
 nav .brand {
   font-family: 'Russo One';
@@ -219,13 +221,6 @@ nav ul a {
     font-size: 1.2rem;
   }
 }
-@media (max-width: 500px) {
-  nav {
-    position: fixed;
-    opacity: 0.95;
-    width: 100%;
-  }
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -241,6 +236,12 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    flex-direction: column;
+    display: flex;
+  }
 }
 .home .intro img {
   -webkit-border-radius: 10px;
