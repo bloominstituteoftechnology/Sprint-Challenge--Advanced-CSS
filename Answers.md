@@ -1,0 +1,2 @@
+#Answer One:
+> An adaptive website is one that supports multiple viewports, but is still fixed widths. A fully responsive site is a site that does more than adapt, it fluidly adjusts to the viewport size, usually/typically after setting a max-width and width of 100%
