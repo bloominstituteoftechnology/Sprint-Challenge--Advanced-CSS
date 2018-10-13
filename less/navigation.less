@@ -1,9 +1,11 @@
 // Navigation code here
 nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  .flex-column-center;
   background-color: @wild-sand;
+  border-bottom: 1px solid @sea-shell;
 
   h1 {
     font-size: 4.0rem;
@@ -14,15 +16,15 @@ nav {
     color: @river-bend;
     font-size: 1.6rem;
     text-decoration: none;
-    margin: 0 1.4%;
+    // margin: 0 1.4%;
 
   }
 
 
   .links {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 37.5%;
     padding: 10px 0;
 
   }

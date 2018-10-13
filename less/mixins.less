@@ -1,1 +1,27 @@
 // Mixins Here
+.flex-column-center() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-content-width() {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button (@bg-color, @text-color) {
+  background-color: @bg-color;
+  color: @text-color;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    color: @bg-color;
+    background-color: @text-color;
+  }
+}
