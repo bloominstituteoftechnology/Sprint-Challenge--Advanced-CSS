@@ -247,6 +247,10 @@ footer {
   letter-spacing: 1.1px;
   font-weight: bold;
 }
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
