@@ -172,6 +172,7 @@ a {
   color: #454A59;
   border-bottom: 1px solid #F1F1F1;
   position: fixed;
+  opacity: 0.75;
 }
 .main-navigation .nav-container {
   max-width: 800px;
