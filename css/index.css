@@ -161,7 +161,10 @@ p {
   margin: 0 auto;
 }
 .spacewalker {
+  position: fixed;
+  width: 100%;
   font-size: 4rem;
+  opacity: 0.9;
   background-color: #F6F6F6;
 }
 .spacewalker nav {
@@ -201,6 +204,7 @@ footer {
   width: 100%;
   border-radius: 10px;
   height: 100%;
+  padding-top: 13%;
 }
 .home .intro h2 {
   padding: 15px;
