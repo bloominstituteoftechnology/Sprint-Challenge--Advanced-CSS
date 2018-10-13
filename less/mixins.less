@@ -1,1 +1,11 @@
 // Mixins Here
+.btn-atrb (@bg-color: @btn-bg-color; @border-radius: 5px; @text-color: @btn-font-color) {
+  background-color: @bg-color;
+  border-radius: @border-radius;
+  color: @text-color;
+}
+
+.btn-palette-swap {
+  background-color: @btn-font-color;
+  color: @btn-bg-color;
+}
