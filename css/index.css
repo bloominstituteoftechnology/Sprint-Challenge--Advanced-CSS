@@ -244,6 +244,18 @@ html {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  width: 30%;
+  background-color: black;
+  border-radius: 10%;
+  Height: 10%;
+  color: white;
+  margin: 0% 0% 5% 0%;
+  padding: 0% 0% 0% 6%;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
