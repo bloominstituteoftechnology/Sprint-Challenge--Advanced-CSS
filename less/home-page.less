@@ -3,6 +3,7 @@
 .home {
 
   .intro {
+    width:100%;
 
     h2 {
       padding: 15px;
@@ -11,7 +12,12 @@
     p {
       padding:0 15px;
     }
-  
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+    
   }
 
   .space-images {
@@ -58,6 +64,12 @@
       }
 
       .btn {
+        .btnparamix();
+
+        &:hover{
+          background-color: white;
+          color:black;
+        }
       }
     }
 
@@ -72,4 +84,40 @@
       }
     }
   }
-}// home
+  }
+// home
+
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+  .blast {
+    width: 500px;
+    // display: none; display working, width unresponsive
+  }
+  .walk {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .walk-img {
+    order: -1;
+    // display: block;
+    width: 100%;
+    margin-right: 20px;
+    img {
+      width: 100%;
+      // display: block;
+    }
+  }
+  .walk-text {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    width: 500px;
+  }
+}
