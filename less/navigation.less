@@ -1,6 +1,14 @@
 // Navigation code here
 
 .navigation {
+
+  @media @phone {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
     width: 100%;
     height: 80px;
     background-color: #f9f9f9;
@@ -16,17 +24,25 @@
       position: relative;
     }
     a {
+
       color: black;
       text-decoration: none;
       margin-left: 5%;
       width: 120px;
       font-size: 1.55rem;
       text-align: center;
+      @media @phone {
+        justify-content: space-around;
+        display: flex;
+        margin-left: -35px;
+        margin: 0 -15px;
+      }
 
     }
 
+
     /* Used mixin at mixins.less */
-    
+
     /* .SpaceWalkersLogo {
       position: absolute;
       font-size: 2.75rem;
