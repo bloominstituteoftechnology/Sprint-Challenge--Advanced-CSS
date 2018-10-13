@@ -83,6 +83,10 @@
         height: auto;
         border-radius: 10px;
       }
+
+      img:hover {
+        animation: spin 100s linear infinite alternate;
+      }
     }
 
     @media @phone {
@@ -101,6 +105,10 @@
       .walk-img {
         width: 100%;
         order: 0;
+
+        img:hover {
+          animation: none;
+        }
       }
 
     }
