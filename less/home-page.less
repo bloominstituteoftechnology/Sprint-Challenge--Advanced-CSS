@@ -85,6 +85,9 @@
 
     @media @phone {
       margin-top: 13px;
+      padding: 13px;
+      flex-direction: column-reverse;
+
     }
 
     .walk-text {
@@ -106,17 +109,31 @@
         .global-button (100px, 35px, @btn-bg-color, @btn-font-color, 1.8rem, .5rem);
         .center();
         font-weight: bold;
+
+        @media @phone {
+          .global-button (100%, 73px, @btn-bg-color, @btn-font-color, 1.8rem, .5rem);
+          }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        .flex-box(row, center, center);
+        margin: 15px 0 ;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone {
+        width: 98%;
+        }
       }
     }
   }
