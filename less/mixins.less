@@ -11,3 +11,26 @@
     border: 1px double @nav-border;
     padding-bottom: 10px;
 }
+
+.link-styling(@link-font-color){
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.btn-styling(@btn-bg-color, @btn-font-color) {
+    font-size: 1.8rem;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+    background-color: @header-font-color;
+    color: @footer-background;
+
+    &:hover {
+        background-color: @footer-background;
+        color: @header-font-color;
+    }
+
+    
+}

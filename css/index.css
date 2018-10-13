@@ -183,7 +183,6 @@ p {
 .navigation nav a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #23293B;
 }
 footer {
   color: #22283B;
@@ -236,6 +235,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.8rem;
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #23293B;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
