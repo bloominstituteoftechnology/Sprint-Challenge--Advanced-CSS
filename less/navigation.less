@@ -1,1 +1,42 @@
 // Navigation code here
+.main-navigation-container {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    .flex-box (center, center);
+    background-color: @nav-bg;
+
+    .navigation-container {
+        height: 100%;
+        width: 81%;
+        border-bottom: 2px solid @nav-border;
+
+        @media @phone {
+            width: 100%;
+          }
+
+        .container {
+            .flex-box (column, center, center);
+            height: 100%;
+        }
+
+        nav {
+            padding-top: 2%;
+            width: 80%;
+            .flex-box (row, space-between, center);
+
+            @media @phone {
+                width: 80%;
+                padding-top: 4.3%;
+              }
+
+            a {
+                font-size: 1.6rem;
+                color: @nav-font;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+}
