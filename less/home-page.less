@@ -2,11 +2,8 @@
 
 .home {
 
-  //adjust for fixed navbar
-  margin-top:9.7rem;
-  @media @phone{
-    margin-top: 0rem;
-  }
+    //adjustment for fixed nav
+    .nav-adjustment();
 
   .intro {
 
@@ -88,6 +85,9 @@
         margin-bottom: 26px;
       }
 
+      a{
+        text-decoration: none;
+      }
       .btn {
         .button(@btn-bg-color,white,1.6rem,1rem,100px);
 

@@ -1,0 +1,58 @@
+.get-magazine{
+    .nav-adjustment();
+    max-width: 800px;
+    width: 100%;
+
+    .intro{
+        img{
+            max-width: 800px;
+            width: 100%;
+        }
+        h2{
+            margin:.5em 0rem;
+        }
+    }
+
+    .sign-up{
+        width:30%;
+
+        @media @phone {
+            width:100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2{
+            margin: .5rem 0rem;
+        }
+        form{
+            margin: 1.5rem 0rem;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
+            @media @phone{
+                font-size: 2.6rem;
+            }
+
+            input,
+            select{
+                margin-bottom:1rem;
+                @media @phone{
+                    height:3.6rem;
+                }
+            }
+
+            
+
+            .btn{
+                border:none;
+                .button(@btn-bg-color,white,1.6rem,1rem,100px);
+                @media @phone{
+                    max-width:100%;
+                    padding: 2.5rem 0rem;
+                    font-size: 1.8rem;
+                  }
+            }
+        }
+    }
+}

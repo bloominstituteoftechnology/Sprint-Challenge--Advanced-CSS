@@ -4,6 +4,14 @@
     justify-content: center;
 }
 
+// //adjust for fixed navbar
+.nav-adjustment(){
+  margin-top:9.7rem;
+  @media @phone{
+    margin-top: 0rem;
+  }
+}
+
 .nav-links(@color,@font-size,@v-margin,@h-margin){
     text-decoration: none;
     color:@color;
@@ -20,6 +28,7 @@
     width: 100%;
     text-align: center;
     border-radius: .5rem;
+    text-decoration: none;
 
     &:hover{
         cursor: pointer;
@@ -27,3 +36,5 @@
         background-color: @color;
     }
 }
+
+

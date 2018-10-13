@@ -273,6 +273,9 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text a {
+  text-decoration: none;
+}
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: white;
@@ -282,6 +285,7 @@ footer {
   width: 100%;
   text-align: center;
   border-radius: 0.5rem;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
@@ -309,4 +313,79 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.get-magazine {
+  margin-top: 9.7rem;
+  max-width: 800px;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .get-magazine {
+    margin-top: 0rem;
+  }
+}
+.get-magazine .intro img {
+  max-width: 800px;
+  width: 100%;
+}
+.get-magazine .intro h2 {
+  margin: 0.5em 0rem;
+}
+.get-magazine .sign-up {
+  width: 30%;
+}
+@media (max-width:500px) {
+  .get-magazine .sign-up {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.get-magazine .sign-up h2 {
+  margin: 0.5rem 0rem;
+}
+.get-magazine .sign-up form {
+  margin: 1.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+@media (max-width:500px) {
+  .get-magazine .sign-up form {
+    font-size: 2.6rem;
+  }
+}
+.get-magazine .sign-up form input,
+.get-magazine .sign-up form select {
+  margin-bottom: 1rem;
+}
+@media (max-width:500px) {
+  .get-magazine .sign-up form input,
+  .get-magazine .sign-up form select {
+    height: 3.6rem;
+  }
+}
+.get-magazine .sign-up form .btn {
+  border: none;
+  background-color: #22283A;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem;
+  max-width: 100px;
+  width: 100%;
+  text-align: center;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.get-magazine .sign-up form .btn:hover {
+  cursor: pointer;
+  color: #22283A;
+  background-color: white;
+}
+@media (max-width:500px) {
+  .get-magazine .sign-up form .btn {
+    max-width: 100%;
+    padding: 2.5rem 0rem;
+    font-size: 1.8rem;
+  }
 }
