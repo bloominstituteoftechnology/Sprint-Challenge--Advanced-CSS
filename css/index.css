@@ -174,7 +174,7 @@ p {
   width: 100%;
   max-width: 405px;
   margin: 0 auto;
-  padding: 15px 0 10px 0;
+  padding: 15px 0 8px 0;
   display: flex;
   justify-content: space-around;
 }
@@ -237,6 +237,15 @@ footer {
 .home .walk .walk-text .btn {
   color: #F6F7F8;
   background-color: #22283A;
+  width: 29.5%;
+  height: 33px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  letter-spacing: 1.1px;
+  font-weight: bold;
 }
 .home .walk .walk-img {
   width: 46%;
