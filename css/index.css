@@ -1,3 +1,9 @@
+.bg {
+  background-color: #f7f6f6;
+}
+.fx {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,10 +167,10 @@ p {
   margin: 0 auto;
 }
 .topnav {
-  width: 47%;
+  width: 28%;
   display: flex;
   justify-content: space-around;
-  margin: 0% 0% 1% 0%;
+  margin: 0.4% 0% 0.9% 0%;
 }
 .topnav a {
   color: black;
@@ -184,6 +190,17 @@ footer {
 }
 html {
   font-size: 62.5%;
+}
+.tophead {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f6f6;
+}
+.tophead .toplogo {
+  font-size: 4rem;
+  margin: 0.2% 0% 1% 10%;
+  width: 30%;
 }
 .home .intro h2 {
   padding: 15px;
