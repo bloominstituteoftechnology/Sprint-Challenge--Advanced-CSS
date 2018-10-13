@@ -182,17 +182,19 @@ p {
 .navigation .nav-container .links {
   display: flex;
   flex-wrap: wrap;
-  width: 66%;
   justify-content: center;
+  width: 66%;
   padding-top: 25px;
 }
 .navigation .nav-container .links a {
   display: flex;
-  width: 20%;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 20%;
   color: #23293B;
   text-decoration: none;
   font-size: 1.5rem;
+  font: #454A59;
 }
 .btn-mine {
   background-color: #22283A;

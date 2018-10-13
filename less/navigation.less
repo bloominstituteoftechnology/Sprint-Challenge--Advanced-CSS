@@ -1,18 +1,14 @@
 // Navigation code here
 //
 .navigation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  .flex-wrap-center();
   padding: 15px 0;
   font: @nav-font;
   background-color: @nav-bg;
   border-bottom: @nav-border;
 
   .nav-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .flex-wrap-center();
 
     h1 {
       width: 100%;
@@ -21,19 +17,17 @@
     }
 
     .links {
-      display: flex;
-      flex-wrap: wrap;
+      .flex-wrap-center();
       width: 66%;
-      justify-content: center;
       padding-top: 25px;
 
       a {
-        display: flex;
+        .flex-wrap-center();
         width: 20%;
-        justify-content: center;
         color: @header-font-color;
         text-decoration: none;
         font-size: 1.5rem;
+        font: @nav-font;
       }
     }
   }
