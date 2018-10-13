@@ -1,7 +1,27 @@
 // Mixins Here
 
-.flex-center(@display: flex, @justify-content: center, @align-items: center){
-    display: @display;
+.flex(@flex-direction: initial, @justify-content: initial, @align-items: initial){
+    display: flex;
+    flex-direction: @flex-direction;
     justify-content: @justify-content;
     align-items: @align-items;
+}
+.border-radius(@radius){
+    border-radius: @radius;
+}
+.button(@bg-color:#22283A, @txt-color: @nav-bg){
+    background: @bg-color;
+    color: @txt-color;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: .6rem;
+    display: flex; // Want to avoid using the .flex mixin, so mixins work independently of one another.
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+    &:hover {
+        background: @txt-color;
+        color: @bg-color;
+    }
 }
