@@ -1,1 +1,21 @@
 // Mixins Here
+
+.button-maker(@color: @sea-shell, @bgColor: @btn-bg-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @color;
+  background-color: @bgColor;
+  border-radius: 5px;
+  border: 1px solid #157ffa;
+  text-align: center;
+  width: 100%;
+  max-width: 80px;
+  height: 40px;
+  font-size: 1.6rem;
+
+  &:hover {
+    background-color: @sea-shell;
+    color: @btn-bg-color;
+  }
+}
