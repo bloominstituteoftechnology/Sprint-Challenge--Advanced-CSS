@@ -37,7 +37,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @keyframes slidein {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
     @media @mobile{
+      width:95%;
+      animation: 1s ease-out 0s 1 slidein;
       img.sky{
         display:none;
       }
@@ -51,7 +62,7 @@
       border-radius: 20px;
       height: 100%;
       @media @mobile{
-        width:95%;
+        width: 95%;
       }
     }
   }
@@ -100,6 +111,9 @@
         .btn-layout(black,white,15%);
         &:hover{
           .btn-layout(grey,black,15%);
+        }
+        a{
+          .no-link(white);
         }
         @media @mobile{
           width:100%;

@@ -198,6 +198,11 @@ nav .nav-links a {
   text-decoration: none;
   color: black;
 }
+nav .nav-links a:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -246,7 +251,19 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 @media (max-width:500px) {
+  .home .space-images {
+    width: 95%;
+    animation: 1s ease-out 0s 1 slidein;
+  }
   .home .space-images img.sky {
     display: none;
   }
@@ -327,6 +344,10 @@ footer {
   font-size: 1.5rem;
   font-weight: 1000;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -370,6 +391,13 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-html {
-  font-size: 62.5%;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 100px;
+  flex-wrap: wrap;
 }
