@@ -256,6 +256,10 @@ html {
   display: flex;
   align-items: center;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: yellow;
+  color: blue;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
