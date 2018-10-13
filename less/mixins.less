@@ -15,14 +15,15 @@
 .link-styling(@link-font-color){
     font-size: 1.5rem;
     text-decoration: none;
+    color: @link-font-color;
 }
 
 .btn-styling(@btn-bg-color, @btn-font-color) {
     font-size: 1.8rem;
     width: 100px;
-    padding: 10px;
+    padding: 2.5%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 
     background-color: @header-font-color;
     color: @footer-background;
@@ -32,5 +33,10 @@
         color: @header-font-color;
     }
 
+    @media @phone {
+        width: 100%;
+        padding: 5%;
+        border-radius: 5px;
+    }
     
 }

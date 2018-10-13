@@ -10,12 +10,16 @@
     }
 
     nav {
-        width: 40%;
+        width: 50%;
         display: flex;
         justify-content: space-around;
 
         a {
             .link-styling(@header-font-color);
+        }
+
+        @media @phone {
+            width: 80%;
         }
     }
 }
