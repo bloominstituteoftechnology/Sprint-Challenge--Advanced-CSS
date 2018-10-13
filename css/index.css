@@ -167,6 +167,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
 nav {
   width: 550px;
   display: flex;
@@ -246,4 +251,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.header-img {
+  border-radius: 0.5rem;
 }
