@@ -65,6 +65,7 @@
       width: 50%;
       @media @phone {
         width: 100%;
+        margin-top: 2rem;
       }
 
       h3 {
@@ -77,6 +78,9 @@
 
       .btn {
         .btn-sty(@width: 32%, @padding: ~"1rem 2rem", @font-size: 1.8rem);
+        @media @phone {
+          .btn-sty(@width: 100%, @padding: ~"2rem 3rem", @font-size: 1.6rem);
+        }
       }
     }
 
