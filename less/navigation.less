@@ -11,17 +11,21 @@
     h1 {
       font-size: 5rem;
       text-align: center;
-      padding: 10px 0;
+      padding: 1rem 0;
     }
     menu {
       .flex-mix();
-      padding: 5px 0;
+      padding: .5rem 0 1rem;
 
       li {
-        padding: 0 25px;
+        padding: 0 2.5rem;
         list-style: none;
+        @media @phone {
+            padding: 0 1.7rem;
+        }
         a {
           text-decoration: none;
+          font-size: 1.8rem;
           color: @nav-font;
         }
       }
