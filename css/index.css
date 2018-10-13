@@ -170,7 +170,6 @@ p {
   width: 28%;
   display: flex;
   justify-content: space-around;
-  margin: 0.4% 0% 0.9% 0%;
 }
 @media (max-width: 500px) {
   .topnav {
@@ -184,6 +183,8 @@ p {
   text-decoration: none;
   /* no underline */
   font-size: 1.6rem;
+  padding: 0% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
 }
 footer {
   color: #22283B;
