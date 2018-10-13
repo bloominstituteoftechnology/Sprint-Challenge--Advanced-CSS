@@ -239,9 +239,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5%;
-  height: 50px;
+  height: 45px;
   width: 100px;
+  border-radius: 5%;
   border: 1px solid #dee2e6;
   color: #F6F7F8;
   background-color: #23293B;
@@ -251,7 +251,7 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   color: #23293B;
-  background-color: dodgerblue;
+  background-color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;
