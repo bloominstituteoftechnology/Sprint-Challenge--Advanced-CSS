@@ -1,12 +1,22 @@
 // Mixins Here
-.btn-sty {
-    width: 30%;
-    padding: 1rem 2rem;
+.flex-mix {
+    display: flex;
+}
+
+.btn-sty(@width, @padding, @font-size) {
+    width: @width;
+    padding: @padding;
     background-color: @btn-bg-color;
     color: @white;
-    font-size: 1.8rem;
+    font-size: @font-size;
     font-weight: 800;
     text-align: center;
     border-radius: .5rem;
+    &:hover {
+        background-color: @white;
+        color: @btn-bg-color;
+        padding: 1rem 1.8rem;
+        border: 1px solid @btn-bg-color;
+    }
 
 }

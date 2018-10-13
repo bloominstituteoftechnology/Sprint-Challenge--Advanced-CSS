@@ -1,12 +1,5 @@
-.btn-sty {
-  width: 30%;
-  padding: 1rem 2rem;
-  background-color: #22283A;
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 800;
-  text-align: center;
-  border-radius: 0.5rem;
+.flex-mix {
+  display: flex;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -251,7 +244,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 30%;
+  width: 32%;
   padding: 1rem 2rem;
   background-color: #22283A;
   color: #ffffff;
@@ -259,6 +252,12 @@ footer {
   font-weight: 800;
   text-align: center;
   border-radius: 0.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #ffffff;
+  color: #22283A;
+  padding: 1rem 1.8rem;
+  border: 1px solid #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
