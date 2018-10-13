@@ -1,1 +1,21 @@
 // Mixins Here
+.flex-me {
+    display: flex;
+    justify-content: center;
+}
+
+.anchor-one {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.btn-creator(@width; @height; @background-color;) {
+    border-radius(10px, blue);
+    width: @width;
+    height: @height;
+    background-color: @background-color;
+}
+
