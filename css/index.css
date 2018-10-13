@@ -1,3 +1,13 @@
+@keyframes text-scroll {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-170px);
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,6 +206,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  position: relative;
+}
+.home .intro .rocket::before {
+  content: 'In a galaxy far, far away...';
+  width: 50%;
+  height: 100px;
+  color: yellow;
+  position: absolute;
+  top: 170px;
+  left: 25%;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #000;
+  opacity: 0;
+}
+.home .intro .rocket:hover::before {
+  animation: text-scroll 5s linear 1;
 }
 .home .intro h2 {
   padding: 15px;

@@ -3,6 +3,26 @@
 .home {
 
   .intro {
+    position: relative;
+
+    .rocket::before {
+      content: 'In a galaxy far, far away...';
+      width: 50%;
+      height: 100px;
+      color: yellow;
+      position: absolute;
+      top: 170px;
+      left: 25%;
+      text-align: center;
+      font-size: 3rem;
+      // transition: transform 5s;
+      text-shadow: 1px 1px 2px #000;
+      opacity: 0;
+    }
+
+    .rocket:hover::before {
+      animation: text-scroll 5s linear 1;
+    }
 
     h2 {
       padding: 15px;
