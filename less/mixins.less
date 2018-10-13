@@ -1,42 +1,50 @@
 // Mixins Here
-.links(){
-    text-decoration: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: black;
-        font-size: 1.4rem;
+.links() {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  font-size: 1.4rem;
 }
 
-.spanning-img(){
-    width: 100%;
-    border-radius: 10px;
-    height: 100%;
-    
-    padding-top:13%;
+.spanning-img() {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+
+  padding-top: 13%;
 }
 
 //Button mixin
 .button() {
-    background-color:black ;
-    border: none;
-    color: white;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.6rem;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 
-    &:hover {
-        background-color: white;
-        color:black;
-    }
-
-    @media @mobile {
-        padding: 3% 3%;
-        width: 100%;
-        flex-direction: column;
-      }
+  &:hover {
+    background-color: white;
+    color: black;
   }
+
+  @media @mobile {
+    padding: 3% 3%;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+//animation
+.grow() {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition:all 0.3s ease;
+}

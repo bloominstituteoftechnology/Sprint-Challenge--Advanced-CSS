@@ -4,6 +4,10 @@
   .intro {
     img {
       .spanning-img;
+      &:hover{
+        .grow();
+      }
+      
     }
     h2 {
       padding: 15px;
@@ -18,6 +22,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    &:hover{
+      .grow();
+    }
     @media @mobile {
       .launch {
         display: none;
@@ -94,6 +101,9 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        &:hover{
+          .grow();
+        }
       }
     }
   }
