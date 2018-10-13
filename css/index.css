@@ -1,3 +1,7 @@
+.nav-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,9 +169,9 @@ p {
   width: 100%;
   margin: 0 auto;
   background-color: #F2F2F2;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .nav-header {
   font-size: 4rem;
