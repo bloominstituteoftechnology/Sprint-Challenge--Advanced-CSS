@@ -1,3 +1,14 @@
+.smlImgStyle {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.btmImgStyle {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +171,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+  padding: 10px 0%;
+  color: #454A59;
+}
+nav h1 {
+  font-size: 4rem;
+}
+nav .links {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +204,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -212,6 +251,19 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: white;
+  width: 30%;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px 0%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -220,4 +272,61 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  nav .links {
+    padding-top: 15px;
+    width: 95%;
+    justify-content: space-evenly;
+  }
+  nav .links a {
+    font-size: 1.4rem;
+  }
+  .home .intro img {
+    height: 130px;
+  }
+  .home .space-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .space-images img:first-child {
+    width: 88%;
+    margin: 20px 0%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .visit-planets p {
+    font-size: 1.55rem;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px 4%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text h3 {
+    margin-top: 20px;
+  }
+  .home .walk .walk-text p {
+    font-size: 1.5rem;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 25px 0%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0%;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+  }
 }
