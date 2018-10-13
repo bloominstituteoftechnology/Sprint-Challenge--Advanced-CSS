@@ -183,6 +183,8 @@ p {
 .navigation .main-header {
   height: auto;
   width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 footer {
@@ -268,6 +270,8 @@ footer {
   align-items: center;
   color: #F1F1F1;
   background-color: #22283A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #157ffa;
   text-align: center;
@@ -283,6 +287,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
+    max-width: 350px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

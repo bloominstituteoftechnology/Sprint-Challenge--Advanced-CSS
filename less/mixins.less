@@ -1,12 +1,10 @@
 // Mixins Here
 
 .button-maker(@color: @sea-shell, @bgColor: @btn-bg-color) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .center;
   color: @color;
   background-color: @bgColor;
-  border-radius: 5px;
+  .border-radius(5px);
   border: 1px solid #157ffa;
   text-align: center;
   width: 100%;
@@ -21,6 +19,7 @@
 
   @media @phone {
     width: 100%;
+    max-width: 350px;
     .border-radius(5px);
   }
 }
@@ -35,4 +34,10 @@
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
   border-radius: @radius;
+}
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
