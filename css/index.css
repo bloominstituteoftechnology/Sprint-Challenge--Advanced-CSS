@@ -309,3 +309,6 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+img:hover {
+  border-radius: 50%;
+}
