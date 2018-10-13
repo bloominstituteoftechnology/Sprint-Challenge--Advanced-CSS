@@ -255,3 +255,18 @@ footer {
 .header-img {
   border-radius: 0.5rem;
 }
+.btn {
+  background-color: #22283A;
+  border: 1px solid #22283A;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  width: 8.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.btn:hover {
+  background-color: white;
+  color: #22283A;
+}

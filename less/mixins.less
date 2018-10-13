@@ -41,3 +41,21 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+
+.button-styling(@bgcolor; @padding; @bradius) {
+    background-color: @bgcolor;
+    border: 1px solid @btn-bg-color;
+    border-radius: @bradius;
+    padding: @padding;
+    width: 8.2rem;
+    color: white;
+    font-weight: bold;
+    .font-small();
+    .flex-item-center();
+}
+
+.button-hover-style(@bgcolor; @fcolor) {
+    background-color: @bgcolor;
+    color: @fcolor;
+}
