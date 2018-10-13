@@ -18,15 +18,25 @@ You will be updating a website using all your responsive web design and preproce
 
 Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit. Open up the [Answers.md](Answers.md) file and record your responses there.
 
-1. What is the difference between an adaptive website and a fully responsive website?
+<!-- 1. What is the difference between an adaptive website and a fully responsive website? -->
 
-2. Describe what it means to be mobile first vs desktop first.
-   
+    Adaptive websites queries are based on the server that uses pre-selected html depending on the devices. Fully responsive designs are based on the declared media queries. Fully responsive websites download all content. Adaptive website's information is pre-selected. The templates for the adaptive design are optimized for each devices. Fully responsive has one template for all devices.
+
+<!-- 2. Describe what it means to be mobile first vs desktop first. -->
+
+   Mobile first is a design that uses the defaults styles such as width for smaller, mobile devices. The page can then configured for large desktop resolutions using break-point queries. Reversly, desktop first is used when the default style is designed for large devices.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-4. How would you describe preprocessing to someone new to CSS?
+    It allows the font size of adjust depending on the browser and the user's browser's accessibility settings.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+<!-- 4. How would you describe preprocessing to someone new to CSS? -->
+
+    A compiler or preprocesser like SCSS or LESS enables the developer to write lest DRYer code. It makes the code cleaner and easier to read. Pre-process also can allows to change styles/themes of the by changing the value of the variables.
+
+<!-- 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? -->
+    
+    Favorite parts variables and mixins that save time on declaring all the styling properties that vary from different browser. Processors can become to heavy and thus sometimes undermining the idea  that they are supposed of saving time and writing less code.
 
 ## Task 3: Set up your preprocessor
 
