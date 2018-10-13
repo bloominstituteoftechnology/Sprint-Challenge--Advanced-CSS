@@ -1,1 +1,11 @@
 // Mixins Here
+.btn-mixin(@color, @bg, @tb, @lr, @radius) {
+  display: inline-block;
+  color: @color;
+  background: @bg;
+  padding: @tb @lr;
+  .border-radius(@radius);
+}
+.border-radius(@px) {
+  border-radius: @px;
+}

@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .nav {
-  background: #f6f6f6;
+  background: #F6F6F6;
   text-align: center;
   display: flex;
   padding: 1.3rem;
@@ -233,6 +233,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  cursor: pointer;
+  font-size: 1.9rem;
+  transition: color 150ms ease-in-out, background 150ms ease-in-out;
+  display: inline-block;
+  color: white;
+  background: #22283A;
+  padding: 0.8rem 1.8rem;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: white;
 }
 .home .walk .walk-img {
   width: 46%;
