@@ -18,4 +18,21 @@
     background-color: @sea-shell;
     color: @btn-bg-color;
   }
+
+  @media @phone {
+    width: 100%;
+    .border-radius(5px);
+  }
+}
+
+.phone-none() {
+  @media @phone {
+    display: none;
+  }
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
 }
