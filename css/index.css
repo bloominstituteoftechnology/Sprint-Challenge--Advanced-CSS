@@ -1,3 +1,57 @@
+.btn {
+  border: 1px solid;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  background-color: #23293B;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #23293B;
+}
+.btn:hover {
+  color: #23293B;
+  background-color: #fff;
+}
+button {
+  border: 1px solid;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  background-color: #23293B;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+button:hover {
+  color: #fff;
+  background-color: #23293B;
+}
+button:hover {
+  color: #23293B;
+  background-color: #fff;
+}
+.SpaceWalkersLogo {
+  position: absolute;
+  font-size: 2.75rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+.logo {
+  position: absolute;
+  font-size: 2.75rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +213,29 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  /*max-width: 800px;*/
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+  background-color: #F6F6F6;
+}
+nav h1 {
+  font-size: 3rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.5rem;
+  margin-right: 20px;
 }
 footer {
   color: #22283B;
