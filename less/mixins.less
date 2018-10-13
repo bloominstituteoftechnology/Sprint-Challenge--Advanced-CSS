@@ -1,1 +1,42 @@
 // Mixins Here
+
+.btn {
+  border: 1px solid;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  background-color: @header-font-color;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  &:hover {
+    color: #fff;
+    background-color: @header-font-color;
+  }
+}
+.btn {
+  &:hover {
+    color: @header-font-color;
+    background-color: #fff;
+  }
+}
+
+button {
+  .btn
+
+}
+
+
+.SpaceWalkersLogo {
+  position: absolute;
+  font-size: 2.75rem;
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+}
+
+.logo {
+  .SpaceWalkersLogo
+}
