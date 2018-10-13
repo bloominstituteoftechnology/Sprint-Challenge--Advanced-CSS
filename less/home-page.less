@@ -1,6 +1,43 @@
+@import "mixins.less";
+@import "variables";
+
+
+
+
+//Navbar and image
+
+.header-intro {
+
+  .flexJustifyCenter;
+  flex-direction:column;
+  align-items:center;
+  background-color:#F5F5F5;
+  
+  .title {
+    h1 {
+      font-size:3rem;
+      margin-top:1%;
+    }
+  }
+  
+  .header-img {
+    img {
+      max-width:100%;
+    }
+  }
+  
+}
+
+
+
+
 // Home Content
 
 .home {
+  
+  @media @phone {
+    padding:0 2.5%;
+  }
 
   .intro {
 
@@ -19,6 +56,15 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .sky, .launch {
+        display:none;
+      }
+      
+      .blast {
+        width:100%;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -45,9 +91,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+    @media @phone {
+      flex-direction:column-reverse;
+      width:100%;
+      padding: 50px 0;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +114,25 @@
       }
 
       .btn {
+        .flexJustifyCenter;
+        width:70px;
+        .buttonStyles(2% 2%, white, black, 1.5rem, 5px);
+        
+        @media @phone {
+          width:100%;
+          padding: 4% 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width:100%;
+        margin-left:0;
+      }
       
       img {
         width: 100%;
