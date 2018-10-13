@@ -1,12 +1,8 @@
 // Navigation code here
 .nav-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.flex-centered-short();
 	flex-direction: column;
 	width: 100%;
-	padding: 0;
-	margin: 0;
 	background: #F5F4F5;
 	border-bottom: 3px solid #F1F1F1;
 	
@@ -16,11 +12,12 @@
 		margin-bottom: 25px;
 	}
 	nav {
-		width: 350px;
+		max-width: 350px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
-		text-align: center;
 		margin-bottom: 15px;
+
 		a {
 		font-size: 1.8rem;
 		text-decoration: none;
@@ -28,3 +25,4 @@
 		}
 	}
 }
+
