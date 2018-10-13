@@ -160,6 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.signup-home {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .nav {
   display: flex;
   justify-content: center;
@@ -321,4 +326,28 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.signup-home .video {
+  width: 100%;
+}
+.signup-home .video iframe {
+  width: 100%;
+}
+.signup-home .motivation {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.signup-home .tour-img {
+  width: 100%;
+}
+.signup-home .input form {
+  display: flex;
+  width: 40%;
+  font-size: 3rem;
+  flex-direction: column;
+}
+.signup-home .input form input {
+  font-size: 3rem;
+  border: 3px #5E6164;
+  background: #81848E;
 }
