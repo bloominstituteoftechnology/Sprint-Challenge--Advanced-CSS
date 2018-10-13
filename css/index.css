@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -160,6 +163,41 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation-container {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #F6F6F6;
+}
+.main-navigation-container .navigation-container {
+  height: 100%;
+  width: 81%;
+  border-bottom: 2px solid #F1F1F1;
+}
+.main-navigation-container .navigation-container .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main-navigation-container .navigation-container nav {
+  padding-top: 19px;
+  width: 47%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-navigation-container .navigation-container nav a {
+  font-size: 1.6rem;
+  color: #454A59;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +207,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding: 100px 0 10px;
 }
 .home .intro h2 {
   padding: 15px;

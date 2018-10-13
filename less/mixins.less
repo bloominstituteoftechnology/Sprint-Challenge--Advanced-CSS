@@ -1,1 +1,11 @@
 // Mixins Here
+.flex-box (@flex-direction: row, @justify-content: flex-start, @align-items: flex-start){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content:  @justify-content;
+    align-items: @align-items;
+}
+
+.center () {
+    margin: 0 auto;
+}

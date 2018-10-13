@@ -1,1 +1,33 @@
 // Navigation code here
+.main-navigation-container {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    .flex-box (center, center);
+    background-color: @nav-bg;
+
+    .navigation-container {
+        height: 100%;
+        width: 81%;
+        border-bottom: 2px solid @nav-border;
+
+        .container {
+            .flex-box (column, center, center);
+            height: 100%;
+        }
+
+        nav {
+            padding-top: 19px;
+            width: 47%;
+            .flex-box (row, space-between, center);
+
+            a {
+                font-size: 1.6rem;
+                color: @nav-font;
+                text-decoration: none;
+            }
+        }
+
+
+    }
+}
