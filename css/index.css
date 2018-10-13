@@ -151,9 +151,19 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+@media ( max-width: 500px ) {
+  h3 {
+    font-size: 2.6rem;
+  }
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media ( max-width: 500px ) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 .container {
   max-width: 800px;
@@ -183,10 +193,20 @@ p {
   justify-content: space-around;
   align-items: center;
 }
+@media ( max-width: 500px ) {
+  .navigation .nav-container .nav {
+    width: 90%;
+  }
+}
 .navigation .nav-container .nav a {
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
+}
+@media ( max-width: 500px ) {
+  .navigation .nav-container .nav a {
+    font-size: 1.5rem;
+  }
 }
 footer {
   color: #22283B;
@@ -200,6 +220,15 @@ footer {
 }
 .home {
   margin-top: 100px;
+}
+@media ( max-width: 500px ) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-top: 100px;
+  }
 }
 .home .intro .header-pic {
   width: 100%;
@@ -215,6 +244,21 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .space-images .sky {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -238,10 +282,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media ( max-width: 500px ) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 93%;
+    padding: 15px 0px;
+    margin-top: 10px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 15px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -266,13 +324,25 @@ footer {
   color: #22283A;
   border: 1px dashed #22283A;
 }
+@media ( max-width: 500px ) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 75px;
+  }
+}
 .home .walk .walk-text .btn p {
-  padding-top: 3px;
+  padding-top: 22px;
   font-size: 2rem;
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
