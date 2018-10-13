@@ -181,6 +181,12 @@ nav {
   margin: 0 auto;
   text-align: center;
 }
+@media only screen and (max-width: 500px) {
+  nav {
+    width: 450px;
+    max-width: 500px;
+  }
+}
 .header-title {
   font-size: 5rem;
   padding: 1.5rem 0 2rem;
