@@ -2,10 +2,6 @@
 
 .home {
 
-  .media-width-full{
-    width: 100%;
-  }
-
 
   @media @mobile-view{ 
     .media-width-full();
@@ -17,7 +13,6 @@
 
   .intro {
     @media @mobile-view{ 
-
       .media-width-full();
     }
 
@@ -30,7 +25,13 @@
     }
 
     .earth{
+      margin-top: 10%;
       .border-radius(5px);
+
+        @media @mobile-view{
+          .media-width-full();
+          .border-radius(10px);
+      }
     }
   
   }
@@ -42,6 +43,15 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile-view{
+
+      .blast{
+        .media-width-full();
+      }
+      .sky, .launch{
+        display: none;
+      }
+  }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -70,32 +80,51 @@
     display: flex;
     justify-content: center;
 
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-        .btn-mixin(@btn-background, @btn-color, @width, @height, @font-size);
-      }
+    @media @mobile-view{
+        flex-direction: column-reverse;
+        margin-top: 10px;
+        padding: 10px;
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-       
+      .walk-text {
+        width: 50%;
+        @media @mobile-view{
+          .media-width-full();
+        }
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          margin-bottom: 26px;
+        }
+
+        .btn {
+          .btn-mixin(@btn-background, @btn-color, @width, @height, @font-size);
+
+          @media @mobile-view{
+            .btn-mixin(@btn-background, @btn-color, 100%, 75px, @font-size);
+          }
+        }
       }
-    }
+
+      .walk-img {
+            @media @mobile-view{
+              .media-width-full();
+              margin: inherit;
+            }
+              width: 46%;
+              margin-left: 4%;
+           
+              img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+              
+              }
+          
+      }
+    
   }
 }// home
