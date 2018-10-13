@@ -195,7 +195,7 @@ footer {
 }
 .home .intro img {
   width: 100%;
-  margin: 0px auto 20px auto;
+  margin: 0 auto;
   height: 100%;
   border-radius: 5px;
 }
@@ -240,6 +240,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  font-size: 1.9rem;
+  width: 10rem;
+  color: #F6F6F6;
+  padding: 0.8rem;
+  background: #22283A;
+  border-radius: 0.6rem;
 }
 .home .walk .walk-img {
   width: 46%;
