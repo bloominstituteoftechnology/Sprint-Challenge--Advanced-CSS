@@ -183,8 +183,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 66%;
+  width: 70%;
   padding-top: 25px;
+}
+@media (max-width: 500px) {
+  .navigation .nav-container .links {
+    width: 100%;
+  }
 }
 .navigation .nav-container .links a {
   display: flex;
