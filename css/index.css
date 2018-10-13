@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navContainer {
+  width: 100%;
+  background-color: #F6F6F6;
+  margin: 0 auto;
+  text-align: center;
+}
+.navContainer .navContainer__head {
+  font-size: 4rem;
+}
+.navContainer .navContainer__navBar {
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 405px;
+  margin: 0 auto;
+  padding: 15px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.navContainer .navContainer__navBar a {
+  text-decoration: none;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
