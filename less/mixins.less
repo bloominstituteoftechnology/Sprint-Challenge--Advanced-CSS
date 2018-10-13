@@ -1,1 +1,41 @@
 // Mixins Here
+.bckgrnd {
+    width: 100%;
+    border: 2px solid skyblue;
+    background: skyblue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+    }
+img {
+    .bckgrnd;
+}
+
+.style {
+    border: 2px solid blue;
+}
+
+.header-img {
+    .style;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    box-shadow: inset 0 0 10px white, 0 0 5px blue;
+    background: darkblue;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+        
+        :hover {
+            background: lightblue;
+            color: black;
+        }
+}
+button {
+    .btn;
+}

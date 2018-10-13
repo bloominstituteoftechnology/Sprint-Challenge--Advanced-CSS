@@ -1,3 +1,56 @@
+@phone (max-width: 500px);
+.bckgrnd {
+  width: 100%;
+  border: 2px solid skyblue;
+  background: skyblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 100%;
+  border: 2px solid skyblue;
+  background: skyblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.style {
+  border: 2px solid blue;
+}
+.header-img {
+  border: 2px solid blue;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  box-shadow: inset 0 0 10px white, 0 0 5px blue;
+  background: darkblue;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn :hover {
+  background: lightblue;
+  color: black;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  box-shadow: inset 0 0 10px white, 0 0 5px blue;
+  background: darkblue;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button :hover {
+  background: lightblue;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +213,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1F1F1;
+  font-size: 4rem;
+  color: black;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+}
+a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +246,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+h1 {
+  margin-bottom: 2%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -220,4 +300,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  body {
+    width: 400px;
+  }
 }
