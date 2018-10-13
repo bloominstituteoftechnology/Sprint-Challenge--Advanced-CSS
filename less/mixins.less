@@ -1,1 +1,28 @@
 // Mixins Here
+// .btn {
+//     color: white;
+//     background-color: black;
+//     padding: 5px 10px;
+//     width: 80px;
+//     border-radius: 5px;
+//     font-size: 1.6rem;
+//     text-align: center;
+//   }
+// }
+.btnparamix (@background-color:black;
+@color:white;
+@padding:5px 10px;
+@font-size:1.6rem;
+@width: 80px;
+@text-align: center;
+@border-radius: 5px;){
+    background-color: @background-color;
+    color: @color;
+    padding: @padding;
+    font-size: @font-size;
+    width: @width;
+    text-align: @text-align;
+    border-radius: @border-radius;
+
+}
+
