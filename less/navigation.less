@@ -5,6 +5,7 @@ nav {
     .column-center;
     background-color: @porcelain;
     padding: 10px;
+
     .brand {
         font-family: 'Russo One';
         font-size: 4rem;
@@ -28,5 +29,9 @@ nav {
             }
         }
     }
-
+    @media @phone {
+        position: fixed;
+        opacity: .95;
+        width: 100%;
+    }
 }

@@ -219,6 +219,13 @@ nav ul a {
     font-size: 1.2rem;
   }
 }
+@media (max-width: 500px) {
+  nav {
+    position: fixed;
+    opacity: 0.95;
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
