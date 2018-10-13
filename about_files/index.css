@@ -193,7 +193,7 @@ footer {
 }
 .home .intro .header-img img {
   border-radius: 10px;
-  width: 100%;
+  max-width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -299,107 +299,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-.about header {
-  margin-bottom: 30px;
-}
-.about header h2 {
-  text-align: center;
-}
-.history {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .history {
-    flex-direction: column;
-  }
-}
-.history div {
-  padding: 2%;
-}
-.history .history-text {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .history .history-text {
-    width: 100%;
-  }
-}
-.history .history-img {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .history .history-img {
-    width: 100%;
-  }
-}
-.history .history-img img {
-  max-width: 100%;
-}
-.philosophy {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .philosophy {
-    flex-direction: column;
-  }
-}
-.philosophy div {
-  padding: 2%;
-}
-.philosophy .philosophy-text {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .philosophy .philosophy-text {
-    width: 100%;
-  }
-}
-.philosophy .philosophy-img {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .philosophy .philosophy-img {
-    width: 100%;
-  }
-}
-.philosophy .philosophy-img img {
-  max-width: 100%;
-}
-.mission {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-@media (max-width: 500px) {
-  .mission {
-    flex-direction: column-reverse;
-  }
-}
-.mission div {
-  padding: 2%;
-}
-.mission .mission-text {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .mission .mission-text {
-    width: 100%;
-  }
-}
-.mission .mission-img {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .mission .mission-img {
-    width: 100%;
-  }
-}
-.mission .mission-img img {
-  max-width: 100%;
 }

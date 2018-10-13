@@ -13,6 +13,8 @@
   font-size: 1.6rem;
 }
 
+
+// Buttons
 .btn-signup (@color: #ffffff, @bg-color: @ebony-clay,@border-color: @ebony-clay) {
   color: @color;
   background: @bg-color;
@@ -24,3 +26,18 @@
   border: 1px solid @border-color;
 }
 
+
+// Flex
+.flex(@direction: row) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+// Width
+.width-100() {
+  width: 100%;
+}
+
+.resp-img() {
+  max-width: 100%
+}

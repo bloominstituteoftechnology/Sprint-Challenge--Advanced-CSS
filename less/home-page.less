@@ -5,11 +5,11 @@
   .intro {
    
     .header-img {
-      width: 100%;
+      .width-100();
       
       img {
         .border-rad-sm();
-        max-width: 100%;
+        .width-100();
       }
 
     }
@@ -28,7 +28,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width-100();
 
     img {
       width: 28%;
@@ -79,7 +79,7 @@
       width: 50%;
 
       @media @phone {
-        width: 100%;
+        .width-100();
       }
 
       h3 {
@@ -93,7 +93,7 @@
       .btn {
         .btn-signup();
         @media @phone {
-          width: 100%;
+          .width-100();
           padding: 25px 0;
         }
       
@@ -108,12 +108,12 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 100%;
+        .width-100();
         margin: 10px auto 20px auto;
       }
       
       img {
-        width: 100%;
+        .width-100();
         height: auto;
         .border-rad-sm();
       }
