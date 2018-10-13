@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 .head_title {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -173,13 +174,21 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px 0px 10px 0px;
+  width: 100%;
 }
 .navigation_contain .links {
   padding: 0px 20px 0px 20px;
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 700;
   color: #23293B;
   text-decoration: none;
+}
+@media (max-width: 530px) {
+  .navigation_contain .links {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 0px 5px 0px;
+  }
 }
 .header_img_contain {
   display: flex;
@@ -187,6 +196,12 @@ p {
 }
 .header_img_contain .header_img {
   border-radius: 5px;
+  width: 100%;
+}
+@media (max-width: 530px) {
+  .header_img_contain .header_img {
+    height: 95%;
+  }
 }
 footer {
   color: #22283B;
@@ -210,6 +225,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 530px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -235,8 +259,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 530px) {
+  .home .walk {
+    padding: 50px 0px 50px 0px;
+    margin: 0px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 530px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -265,9 +301,39 @@ footer {
   color: white;
   font-size: 2rem;
 }
+@media (max-width: 530px) {
+  .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: black;
+    background-color: #5E6164;
+  }
+}
+.home .walk .walk-img_mobile {
+  display: none;
+}
+@media (max-width: 530px) {
+  .home .walk .walk-img_mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 530px) {
+  .home .walk .walk-img {
+    display: none;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
