@@ -194,6 +194,18 @@ p {
   text-decoration: none;
   font-size: 1.5rem;
 }
+.btn-mine {
+  background-color: #22283A;
+  border-radius: 5px;
+  border: 1px solid #22283A;
+  padding: 5px 5%;
+}
+.btn-mine a {
+  color: white;
+  text-decoration: none;
+  font: #454A59;
+  font-size: 1.7rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
