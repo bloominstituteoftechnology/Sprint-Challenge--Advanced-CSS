@@ -177,7 +177,8 @@ p {
   width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: #F4F4F4;
+  background-color: rgba(244, 244, 244, 0.8);
+  position: fixed;
 }
 .nav-container h1 {
   font-size: 4rem;
@@ -204,6 +205,7 @@ footer {
 }
 .home .intro .header-img {
   width: 100%;
+  padding-top: 116px;
 }
 .home .intro .header-img img {
   border-radius: 10px;
