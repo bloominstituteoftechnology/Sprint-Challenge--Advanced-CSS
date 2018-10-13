@@ -172,6 +172,13 @@ p {
   justify-content: space-around;
   margin: 0.4% 0% 0.9% 0%;
 }
+@media (max-width: 500px) {
+  .topnav {
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4% 2% 2% 6%;
+  }
+}
 .topnav a {
   color: black;
   text-decoration: none;
@@ -201,6 +208,13 @@ html {
   font-size: 4rem;
   margin: 0.2% 0% 1% 10%;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .tophead .toplogo {
+    font-size: 4rem;
+    margin: 0% 0% 0% 0%;
+    width: 57%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
