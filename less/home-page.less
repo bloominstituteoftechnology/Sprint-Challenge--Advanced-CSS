@@ -2,6 +2,10 @@
 
 .home {
 
+  img:hover{
+    .img-mixin();
+  }
+
   .intro {
 
     h2 {
@@ -63,6 +67,7 @@
       }
 
       .btn {
+        .btn-mixin(@btn-background, @btn-color, @width, @height, @font-size);
       }
     }
 
@@ -74,6 +79,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+       
       }
     }
   }

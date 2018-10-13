@@ -1,9 +1,19 @@
 // Mixins Here
 
-.border-radius(@radius) {
+.border-radius(@radius: 5px) {
     -webkit-border-radius: @radius;
        -moz-border-radius: @radius;
             border-radius: @radius;
+  }
+
+  .center(){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .img-mixin(@opacity: 0.7){
+        opacity: @opacity;
   }
 
   .btn-mixin(@btn-background, @btn-color, @width, @height, @font-size){
@@ -12,5 +22,12 @@
         width: @width;
         height: @height;
         font-size: @font-size;
-        .border-radius(5px);
+        .border-radius();
+        .center();
+
+         &:hover{
+             background: @btn-color;
+             color: @btn-background;
+             border: solid 1px @btn-bg-color;
+         }
   }
