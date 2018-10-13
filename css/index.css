@@ -180,12 +180,14 @@ p {
   text-decoration: none;
   margin-left: 5%;
   width: 120px;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   text-align: center;
 }
 .navigation .SpaceWalkersLogo {
   position: absolute;
   font-size: 2.75rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
 }
 footer {
   color: #22283B;
@@ -238,6 +240,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  color: #fff;
+  background-color: #23293B;
+  border-radius: 5px;
+  font-size: 1.5rem;
 }
 .home .walk .walk-img {
   width: 46%;
