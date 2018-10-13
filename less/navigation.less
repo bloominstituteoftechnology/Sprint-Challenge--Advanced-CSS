@@ -7,6 +7,12 @@ nav {
   background-color: @wild-sand;
   border-bottom: 1px solid @sea-shell;
 
+  @media @phone {
+    max-width: 500px;
+    width: 100%;
+
+  }
+
   h1 {
     font-size: 4.0rem;
     padding: 10px 0;
@@ -16,16 +22,20 @@ nav {
     color: @river-bend;
     font-size: 1.6rem;
     text-decoration: none;
-    // margin: 0 1.4%;
 
   }
 
 
   .links {
+    max-width: 375px;
     display: flex;
     justify-content: space-between;
-    width: 37.5%;
+    width: 100%;
     padding: 10px 0;
+
+    @media @phone {
+      width: 90%;
+    }
 
   }
 }
