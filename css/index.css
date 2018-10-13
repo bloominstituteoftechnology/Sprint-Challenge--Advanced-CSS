@@ -190,6 +190,11 @@ p {
     width: 80%;
   }
 }
+.contact-nav {
+  position: fixed;
+  width: 100%;
+  opacity: 0.85;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -211,6 +216,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .contact-header-img {
+  padding-top: 90px;
 }
 .home .space-images {
   display: flex;
@@ -313,4 +321,7 @@ footer {
     margin-top: 20px;
     flex-direction: column-reverse;
   }
+}
+.home .content {
+  padding-top: 20px;
 }
