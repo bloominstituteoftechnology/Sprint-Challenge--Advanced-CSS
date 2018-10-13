@@ -249,6 +249,10 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+.home .walk .walk-text .btn:hover {
+  color: #23293B;
+  background-color: dodgerblue;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
