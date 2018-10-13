@@ -1,15 +1,30 @@
 // Navigation code here
-nav {
-  font-size: 1.6rem;
-  color: @nav-font;
-  h1 {
-    font-size: 5rem;
-    text-align: center;
-  }
-  li {
-    a {
-      text-decoration: none;
-      color: @nav-font;
+.nav {
+  width: 100%;
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    h1 {
+      font-size: 5rem;
+      text-align: center;
+      padding: 10px 0;
+    }
+    menu {
+      display: flex;
+      padding: 5px 0;
+
+      li {
+        padding: 0 25px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: @nav-font;
+        }
+      }
     }
   }
 }

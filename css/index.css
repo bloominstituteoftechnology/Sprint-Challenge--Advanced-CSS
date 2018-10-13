@@ -1,3 +1,6 @@
+.btn-sty {
+  background-color: #23293B;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,15 +163,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  font-size: 1.6rem;
-  color: #454A59;
+.nav {
+  width: 100%;
 }
-nav h1 {
+.nav nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.nav nav h1 {
   font-size: 5rem;
   text-align: center;
+  padding: 10px 0;
 }
-nav li a {
+.nav nav menu {
+  display: flex;
+  padding: 5px 0;
+}
+.nav nav menu li {
+  padding: 0 25px;
+  list-style: none;
+}
+.nav nav menu li a {
   text-decoration: none;
   color: #454A59;
 }
