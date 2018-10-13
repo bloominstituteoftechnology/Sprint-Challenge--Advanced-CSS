@@ -181,6 +181,12 @@ p {
 .navContainer .navContainer__navBar a {
   text-decoration: none;
   color: #454A59;
+  padding: 5px 10px;
+}
+.navContainer .navContainer__navBar a:hover {
+  background-color: #5E6164;
+  color: #F6F6F6;
+  border-radius: 6px;
 }
 @media (max-width: 500px) {
   .navContainer {
