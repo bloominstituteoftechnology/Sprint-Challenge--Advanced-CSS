@@ -1,1 +1,29 @@
 // Mixins Here
+
+.btn-signup (@color-value, @bg-color) {
+    background-color: @bg-color;
+    color: @color-value;
+    width: 100px;
+    text-align: center;
+    padding: 9px 5px;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    &:hover {
+        background-color: @color-value;
+        color: @bg-color;
+    }
+}
+
+.flexrowcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space-img-size {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+}
