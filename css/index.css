@@ -235,6 +235,25 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    margin: 0px 2.5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    margin-bottom: 15px;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -243,6 +262,11 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 5px 15px 10px 15px;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -261,9 +285,9 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  -webkit-border-radius: 10 px;
-  -moz-border-radius: 10 px;
-  border-radius: 10 px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,12 +300,22 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    height: 50px;
   }
 }
 .home .walk .walk-text .btn.hover {
   background: #F6F7F8;
   color: #22283A;
   border: 1 px solid #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -293,4 +327,22 @@ footer {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 5px 0 10px 0;
+    padding: 0 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 15px 15px 15px;
+  }
 }

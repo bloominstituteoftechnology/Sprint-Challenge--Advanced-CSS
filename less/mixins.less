@@ -13,7 +13,7 @@
 }
 
 .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
-    .border-radius(10 px);
+    .border-radius(10px);
     .center;
     width: @width;
     height: @height;
@@ -24,6 +24,8 @@
 
     @media @phone {
         width: 100%;
+        .border-radius(5px);
+        height: 50px;
     }
 
     &.hover {
