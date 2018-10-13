@@ -126,6 +126,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 * {
   box-sizing: border-box;
 }
@@ -159,6 +166,25 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-title {
+  font-size: 5rem;
+  padding: 1.5rem 0 2rem;
+}
+.header-nav {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
 }
 footer {
   color: #22283B;
