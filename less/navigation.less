@@ -18,6 +18,27 @@ nav {
 }
 
 .header-title {
+    overflow: hidden;
+    border-right: .15em solid @river-bend;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: @river-bend }
+    }
+
+    
     .font-large();
     padding: 1.5rem 0 2rem;
 }

@@ -188,8 +188,31 @@ nav {
   }
 }
 .header-title {
+  overflow: hidden;
+  border-right: 0.15em solid #454A59;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   font-size: 5rem;
   padding: 1.5rem 0 2rem;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #454A59;
+  }
 }
 .header-nav {
   font-size: 1.5rem;
