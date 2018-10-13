@@ -213,6 +213,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .navigation {
   width: 100%;
   padding: 20px;
@@ -300,9 +306,4 @@ h1 {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  body {
-    width: 400px;
-  }
 }
