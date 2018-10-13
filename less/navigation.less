@@ -1,1 +1,33 @@
 // Navigation code here
+//
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 0;
+  font: @nav-font;
+
+  h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: center;
+    padding-top: 25px;
+
+    a {
+      display: flex;
+      width: 20%;
+      justify-content: center;
+      color: @header-font-color;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  }
+}
