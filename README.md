@@ -6,11 +6,11 @@ You will be updating a website using all your responsive web design and preproce
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [X] Fork the project into your GitHub user account
 
-* [ ] Clone the forked project into a directory on your machine
+* [X] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] You are now ready to build this project with your preferred IDE
 
 ### Pro tip: Commit every time you complete a task or feature!
 
@@ -19,14 +19,23 @@ You will be updating a website using all your responsive web design and preproce
 Answer the following questions to the best of your ability. You can exercise your Googling skills and use training kit. Open up the [Answers.md](Answers.md) file and record your responses there.
 
 1. What is the difference between an adaptive website and a fully responsive website?
+- `An adaptive website has separate layouts for various screen sizes. Each layout is made individually, meaning there are _multiple_ layouts.
+
+- A responsive website adapts to the viewport; it has _one_ layout that shifts based on how it's being viewed. 
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means designing and building the site for phones first. Your media queries use min-width. Your code will focus on what phones support. For responsive design, you scale upward in size.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Desktop first designs for full computers first. Everything on the site will need to be of a high enough quality to be viewed on large screens. Media queries use max-width. For responsive design, you scale downward in size.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+It makes it so 1 rem equals 10 pixels.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is using a program (like LESS) to generate long-form CSS from that program's shorthand. They add a lot of features to CSS that would otherwise be difficult or time-intensive to achieve by adding things like variables to CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I find variables to be the most useful. I forgot to use the parametric mixin in my last project, so I should practice that.
 
 ## Task 3: Set up your preprocessor
 
