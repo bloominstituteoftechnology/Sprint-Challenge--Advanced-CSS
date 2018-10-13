@@ -1,1 +1,33 @@
 // Navigation code here
+
+.navigation {
+    width: 60%;
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    @media @mobile {
+        
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.buttonFlex {
+    display: flex;
+   
+
+}
+.button {
+    padding: 0 25px;
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 1.6rem;
+}
+
+.title {
+    padding-bottom: 15px;
+}
