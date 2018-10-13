@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  // margin-top: 125px;
 
   .intro {
     position: relative;
@@ -15,13 +16,16 @@
       left: 25%;
       text-align: center;
       font-size: 3rem;
-      // transition: transform 5s;
       text-shadow: 1px 1px 2px #000;
       opacity: 0;
     }
 
     .rocket:hover::before {
-      animation: text-scroll 5s linear 1;
+      animation: text-scroll 3.5s linear 1;
+
+      @media @phone {
+        animation: none;
+      }
     }
 
     h2 {
