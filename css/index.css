@@ -324,9 +324,19 @@ footer {
     margin-top: 0rem;
   }
 }
+@media (max-width:500px) {
+  .get-magazine .intro {
+    padding: 0 1rem;
+  }
+}
 .get-magazine .intro img {
   max-width: 800px;
   width: 100%;
+}
+@media (max-width:500px) {
+  .get-magazine .intro img {
+    border-radius: 1rem;
+  }
 }
 .get-magazine .intro h2 {
   margin: 0.5em 0rem;
@@ -339,6 +349,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
   }
 }
 .get-magazine .sign-up h2 {
