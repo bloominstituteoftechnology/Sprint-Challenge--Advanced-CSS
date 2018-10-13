@@ -2,7 +2,14 @@
 
 .home {
 
+  margin-top: 100px;
+
   .intro {
+    
+    .header-pic {
+      width: 100%;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -48,6 +55,8 @@
 
     .walk-text {
       width: 50%;
+      display: flex;
+      flex-direction: column;
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +67,25 @@
       }
 
       .btn {
+        .button(white, @btn-bg-color);
+
+        // justify-content: center;
+        // align-content: center;
+        // align-items: center;
+        // align-self: flex-start;
+        // text-align: center;
+        // color: white;
+        // background: @btn-bg-color;
+        // border-radius: 10px;
+        
+        width: 30%;
+        height: 35px;
+        
+        
+        p {
+          padding-top: 3px;
+          font-size: 2.0rem;
+        }
       }
     }
 
