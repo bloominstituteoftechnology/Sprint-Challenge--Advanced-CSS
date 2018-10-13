@@ -51,7 +51,7 @@ I find variables to be the most useful. I forgot to use the parametric mixin in 
 
 ## Task 4: Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 1.  `variables.less`
 
