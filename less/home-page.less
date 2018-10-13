@@ -11,6 +11,13 @@
     p {
       padding:0 15px;
     }
+    img {
+      .border-radius(10px);
+      max-width: 100%;
+      @media @phone {
+        .border-radius(5px);
+      }
+    }
   
   }
 
@@ -18,12 +25,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media @phone {
+      .column-center;
+      .sky, .launch {
+        display: none;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 90%;
+        margin: 20px 5%;
+      }
     }
   }
 
@@ -45,7 +61,11 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 15px;
+      margin-top: 15px;
+    }
     .walk-text {
       width: 50%;
 
@@ -55,9 +75,31 @@
 
       p {
         margin-bottom: 26px;
+        @media @phone {
+          margin-bottom: 20px; 
+        }
       }
 
       .btn {
+        display: flex;
+        a {
+          .border-radius(4px);
+          .box-shadow(0px, 3px, 3px, 0.3);
+          background-color: @btn-bg-color;
+          padding: 8px 20px;
+          color: #fff;
+          font-size: 1.6rem;
+          &:hover {
+            .box-shadow(5px, 5px, 6px, 0.3);
+            background-color: @waterloo;
+          }
+          @media @phone {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.4rem;
+          }
+        }
       }
     }
 
@@ -68,7 +110,16 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border-radius(10px);
+        @media @phone {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .walk-text, .walk-img {
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }
