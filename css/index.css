@@ -352,7 +352,27 @@ footer {
     width: 100%;
   }
 }
-.btn:hover {
-  background-color: white;
-  color: #22283A;
+.subscribe {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.subscribe form {
+  padding-bottom: 1.5rem;
+}
+.subscribe h4 {
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+}
+.subscribe #email-bar {
+  width: 40rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.subscribe #form-button {
+  width: 10rem;
+  background-color: #22283A;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }

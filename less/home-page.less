@@ -131,10 +131,35 @@
 
 
 
-  //----------------------------------------Button styles
+  //----------------------------------------FORM STYLE
+
+  .subscribe {
+    
+    width: 80%;
+    .center-page();
+    .flex-item-center();
+
+    form {
+      padding-bottom: 1.5rem;
+    }
+    h4 {
+      .font-medium();
+      padding-bottom: 1rem;
+    }
+
+    #email-bar {
+      width: 40rem;
+      .form-shared-styles()
+    }
+
+    #form-button {
+      width: 10rem;
+      background-color: @btn-bg-color;
+      color: white;
+      .form-shared-styles();
+    }
 
 
-.btn:hover {
-  .button-hover-style(white; @btn-bg-color)
-}
+  }
+
 
