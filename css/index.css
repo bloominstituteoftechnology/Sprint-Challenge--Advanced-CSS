@@ -224,6 +224,12 @@ footer {
   .home .space-images {
     flex-direction: column;
   }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -282,12 +288,12 @@ footer {
   }
 }
 .home .walk .walk-text .btn button {
-  font-size: 1.8rem;
-  padding-right: 3.5%;
-  padding-left: 3.5%;
+  font-size: 2rem;
+  padding: 8px 7.5% 8px 7.5%;
   background-color: #22283A;
   color: #F1F1F1;
   border-radius: 8px;
+  font-family: monospace;
 }
 .home .walk .walk-text .btn button:hover {
   color: #22283A;

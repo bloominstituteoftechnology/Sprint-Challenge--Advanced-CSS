@@ -32,8 +32,15 @@
 
     @media @phone {
 
-      flex-direction: column;
+    flex-direction: column;
+    .sky {
+      display:none;
     }
+    .launch {
+      display:none;
+    }
+    }
+
 
     img {
       width: 28%;
@@ -42,7 +49,7 @@
       height: 100%;
 
       @media @phone {
-           
+
            width:90%;
       }
     }
@@ -99,12 +106,12 @@
   margin-bottom:20px;
 }
      button {
-       font-size:1.8rem;
-       padding-right:3.5%;
-       padding-left:3.5%;
+       font-size:2rem;
+       padding:8px 7.5% 8px 7.5%;
        background-color: @btn-bg-color;
        color:@sea-shell;
        border-radius: @border-radius;
+       font-family:monospace;
       &:hover {color:@btn-bg-color;}
 
       @media @phone {
@@ -127,6 +134,7 @@
         width:100%;
         margin-left:inherit;
         margin-bottom:20px;
+
       }
       img {
         width: 100%;
