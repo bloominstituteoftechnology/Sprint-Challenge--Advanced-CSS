@@ -1,1 +1,30 @@
 // Mixins Here
+.hover-effect {
+	backface-visibility: hidden;
+}
+
+img:hover, .hover-effect {
+	opacity: 0.6;
+	transition: .7s ease;
+}
+
+.button-style  {
+	background-color: teal;
+	color: white;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	width: 150px;
+	height: 50px;
+    border: solid 1px;
+    border-radius: 25px;
+	margin-left: 1%;
+	margin-top: 1%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.box-shadow(@b: 1px solid; @p: 10px; @shadow: 5px 10px;) {
+	border: @b;
+	padding: @p;
+	box-shadow: @shadow;
+}
