@@ -1,1 +1,27 @@
 // Navigation code here
+
+nav {
+  .flexCenter();
+  flex-wrap: wrap;
+  .paddingTop();
+  background-color: @nav-bg;
+  border: 1px solid @nav-border;
+
+  a {
+    text-decoration: none;
+    color: @nav-font;
+  }
+
+  .navLinks {
+    width: 100%;
+    text-align: center;
+    .paddingTop();
+    padding-bottom: 10px;
+    .flexCenter();
+
+    a {
+      margin: 0 1.2%;
+    }
+  }
+
+}
