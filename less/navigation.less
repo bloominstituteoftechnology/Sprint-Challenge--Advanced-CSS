@@ -1,1 +1,35 @@
-// Navigation code here
+
+.main-navbar {
+    width: 100%;
+    height: 100px;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    position: fixed;
+    top: 0;
+  
+    .top-container {
+      height: 100%;
+      flex-wrap: wrap;
+      .center;
+  
+      .logo {
+        width: 100%;
+        font-size: 4rem;
+        padding-top: 3px;
+        .center;
+        
+      }
+  
+      .nav {
+        width: 440px;
+        display: flex;
+        justify-content: space-evenly;
+  
+        a {
+          font-size: 1.6rem;
+          color: @nav-font;
+          text-decoration: none;
+        }
+      }
+    }
+  } 
