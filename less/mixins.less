@@ -1,1 +1,45 @@
 // Mixins Here
+
+// parametric flex-box
+.flex(@direction, @wrap, @justify, @align) {
+	display: flex;
+	flex-flow: @direction @wrap;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+// style the header links
+.link-styling(@text-deco) {
+	text-decoration: none;
+	color: @nav-font;
+	&:hover {
+        text-decoration: @text-deco;
+	}
+}
+
+// style the button
+.button-styling(@bg-color,@txt-color) {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding: 8px 0;
+    background: @bg-color;
+    border: 1px solid @bg-color;
+    color: @txt-color;
+    border-radius: 5px;
+    &:hover {
+        background: @txt-color;
+        color: @bg-color;
+        border: 1px solid @bg-color;
+    }
+}
+
+//mixin for animation stretch goal
+.scale(@factor) {
+	-webkit-transform: scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+    -o-transform: 		 scale(@factor);
+    transition: 0.3s;
+}
