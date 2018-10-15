@@ -202,6 +202,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro .orbit {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   width: 100%;
@@ -215,6 +220,7 @@ footer {
 @media (max-width: 500px) {
   .home .space-images .blast {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -270,9 +276,15 @@ footer {
   }
   .home .walk .walk-img {
     border: 1px solid red;
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .home .walk .walk-text {
     border: 1px solid red;
+    order: 2;
   }
   .home .walk .walk-text .btn {
     border: 1px solid red;

@@ -12,6 +12,12 @@
       padding:0 15px;
     }
 
+    @media @phone {
+      .orbit {
+        width: 100%;
+      }
+    }
+
   }
 
   .space-images {
@@ -26,10 +32,10 @@
     }
     @media @phone {
       .blast {
-        .center;
+        .center-column;
         width: 100%;
       }
-      
+
       .sky {
         display:none;
       }
@@ -73,9 +79,7 @@
       }
 
       .btn {
-        .button(300px, 300px, @btn-bg-color, @porcelain, 4.0rem) {
-
-        }
+        // .button();
       }
     }
 
@@ -101,11 +105,16 @@
       // flex-direction: column-reverse;
       .walk-img {
         border: 1px solid red;
+        order: 1;
+        width: 100%;
+        .center;
       }
       .walk-text {
         border: 1px solid red;
+        order: 2;
 
         .btn {
+          // .button(200px, 100px, @btn-bg-color);
           border: 1px solid red;
         }
       }
