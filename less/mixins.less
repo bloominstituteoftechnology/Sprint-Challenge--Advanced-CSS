@@ -1,1 +1,23 @@
 // Mixins Here
+@padding: 1%;
+@display: flex;
+@bkgrdcolor: black;
+@fntclr: white;
+
+.btn:hover(@bkgrdcolor: pink,@fntclr: aqua) {
+    background-color: @bkgrdcolor;
+    color: @fntclr;
+    transition-duration: 0.4s
+}
+
+.signup (@padding:2%,) {
+    border-radius:@brdr-radi;
+    width:@width;
+    text-align:@txt-ali;
+    padding: @padding;
+    color: @fntclr;
+    background-color:@bkgrdcolor;
+    &:hover {background-color: @bkgrdcolor;
+        color: @fntclr;
+        transition-duration: 0.4s;}
+  }
