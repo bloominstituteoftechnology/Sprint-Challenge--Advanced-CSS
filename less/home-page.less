@@ -79,7 +79,7 @@
       }
 
       .btn {
-        // .button();
+        .button(110px, 30px, 1.8rem, @btn-bg-color);
       }
     }
 
@@ -100,22 +100,20 @@
   @media @phone {
     .walk {
       .center-column;
-      border: 1px solid red;
-      // display: flex;
-      // flex-direction: column-reverse;
+      padding: 0px auto;
       .walk-img {
-        border: 1px solid red;
         order: 1;
-        width: 100%;
+        width: 120%;
         .center;
       }
       .walk-text {
-        border: 1px solid red;
         order: 2;
+        width: 120%;
 
         .btn {
-          // .button(200px, 100px, @btn-bg-color);
-          border: 1px solid red;
+          .button(480px, 80px, 2.0rem, @btn-bg-color);
+          padding: 25px;
+          width: 100%;
         }
       }
     }
