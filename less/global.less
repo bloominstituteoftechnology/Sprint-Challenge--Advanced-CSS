@@ -39,3 +39,52 @@ p {
   margin: 0 auto;  
 }
 
+@media (max-width: 1000px) {
+  // 500 - 0
+
+  // Header ----------------------->
+  header {
+    min-width: @phone;
+  }
+
+  .header {
+    border: 1px solid red;
+
+    nav div {
+      border: 1px solid black;
+  
+    }
+
+  // nav buttons ----------------------->
+  .nav {
+    min-width: 360px;
+  }
+
+  // container ----------------------->
+  .container {
+    width: @phone;
+    margin: 0 auto;
+
+    .intro {
+      border: 1px solid purple;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .space-images {
+      .blast{
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+  }
+}
+
