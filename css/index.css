@@ -337,8 +337,14 @@ footer {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-.signup-home .tour-img {
+.signup-home .tour-img img {
+  max-width: 780px;
   width: 100%;
+}
+@media (max-width:500px) {
+  .signup-home .tour-img img {
+    width: 100;
+  }
 }
 .signup-home .input form {
   display: flex;
