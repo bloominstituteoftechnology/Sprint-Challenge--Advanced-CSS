@@ -1,4 +1,3 @@
-@phone (max-width: 500px);
 .bckgrnd {
   width: 100%;
   border: 2px solid skyblue;
@@ -213,9 +212,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media ((max-width: 500px)) {
   .container {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -230,11 +229,11 @@ p {
   font-size: 4rem;
   color: black;
 }
-ul {
+.navigation ul {
   display: flex;
   flex-direction: row;
 }
-a {
+.navigation a {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -242,6 +241,11 @@ a {
   padding: 20px;
   font-size: 1.6rem;
   color: black;
+}
+@media (max-width: 500px) {
+  .navigation a {
+    padding: 5px;
+  }
 }
 footer {
   color: #22283B;
