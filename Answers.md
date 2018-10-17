@@ -1,0 +1,5 @@
+With an Adaptive methodology, the server uses HTML, which is preselected for different devices for different screen sizes.  Whereas with a fully Responsive methodology, devices are detected by media queries - grid and images are sized accordingly to screen of devices.  Fully responsive methodology works faster, but is more difficult to code.
+Mobile first means to develop and code first from a mobile device perspective and then scale outward to larger devices after initially developing mobile first.
+It allows for the fonts to scale much more easily without having to do a bunch of math.
+Preprocessing is a way of writing leaner cleaner css code with some error checking.  It also reduces redundancy in css code writing and allows for some very cool things like variables, mixins, escaping and others.
+I think mixins are my favorite part of preprocessors.  Passing in values I am still not super comfortable with.  I also am a bit fuzzy on advanced mixins as well as on determining the order of LESS files.

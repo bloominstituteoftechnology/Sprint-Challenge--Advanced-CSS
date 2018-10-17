@@ -1,1 +1,35 @@
-// Navigation code here
+.outer-header {
+    background: @header-background;
+.header {
+    max-width: 100%;
+    .center();
+    flex-direction: column;
+    .title {
+        font-size: 4rem;
+        margin: 1% 0;
+        
+        }
+    }
+
+    .nav {
+        width: 56.25%;
+        margin-bottom: 1%;
+        display: flex;
+        justify-content: space-between;
+
+        @media @phone {
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        .nav-item {
+           color:@header-font-color;
+           font-size: 1.5rem;
+           text-decoration: none;
+
+           @media @phone {
+               font-size: 1.2rem;
+           }
+        }
+}
+}
