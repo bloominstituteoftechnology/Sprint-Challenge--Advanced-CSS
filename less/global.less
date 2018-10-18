@@ -47,13 +47,6 @@ p {
     min-width: @phone;
   }
 
-  .header {
-    border: 1px solid red;
-
-    nav div {
-      border: 1px solid black;
-  
-    }
 
   // nav buttons ----------------------->
   .nav {
@@ -65,12 +58,8 @@ p {
     width: @phone;
     margin: 0 auto;
 
-    .intro {
-      border: 1px solid purple;
-
-      img {
-        width: 100%;
-      }
+    img {
+      width: 100%;
     }
 
     .space-images {
@@ -83,6 +72,35 @@ p {
 
       .launch {
         display: none;
+      }
+    }
+
+    section.walk {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 10%;
+
+      p {
+        width: 100%;
+      }
+
+      div.walk-text {
+        width: 100%;
+        div.btn {
+          width: 100%;
+        }
+      }
+
+      div.walk-img {
+        width: 100%;
+        margin-left: 0;
+
+        img{
+          width: 100%;
+
+        }
       }
     }
   }

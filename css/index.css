@@ -167,27 +167,14 @@ p {
   header {
     min-width: 500px;
   }
-  .header {
-    border: 1px solid red;
-  }
-  .header nav div {
-    border: 1px solid black;
-  }
-  .header .nav {
-    border: 3px solid blue;
+  .nav {
     min-width: 360px;
-  }
-  .header .nav a {
-    border: 1px solid black;
   }
   .container {
     width: 500px;
     margin: 0 auto;
   }
-  .container .intro {
-    border: 1px solid purple;
-  }
-  .container .intro img {
+  .container img {
     width: 100%;
   }
   .container .space-images .blast {
@@ -198,6 +185,29 @@ p {
   }
   .container .space-images .launch {
     display: none;
+  }
+  .container section.walk {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10%;
+  }
+  .container section.walk p {
+    width: 100%;
+  }
+  .container section.walk div.walk-text {
+    width: 100%;
+  }
+  .container section.walk div.walk-text div.btn {
+    width: 100%;
+  }
+  .container section.walk div.walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .container section.walk div.walk-img img {
+    width: 100%;
   }
 }
 .header {
@@ -285,13 +295,13 @@ footer {
 }
 .home .walk .walk-text .btn {
   border: 1px solid #22283A;
-  width: 33%;
-  padding: 10px;
   background: #22283A;
   color: white;
   font-size: 1.6rem;
   text-align: center;
   border-radius: 10px;
+  width: 33%;
+  padding: 10px;
 }
 .home .walk .walk-text .btn:hover {
   border: 1px solid #22283A;
