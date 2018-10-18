@@ -169,6 +169,7 @@ p {
   align-items: center;
 }
 .nav-links nav a {
+  color: black;
   margin-left: 10px;
   margin-right: 10px;
   font-family: 'Russo One', sans-serif;
@@ -235,3 +236,22 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
