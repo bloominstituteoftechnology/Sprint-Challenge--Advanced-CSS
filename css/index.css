@@ -169,7 +169,6 @@ p {
   align-items: center;
 }
 .nav-links nav a {
-  color: black;
   margin-left: 10px;
   margin-right: 10px;
   font-family: 'Russo One', sans-serif;
@@ -236,3 +235,30 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.space-walkers {
+  padding: 20px;
+  background: #f4f4f4;
+}
+.space-walkers h1 {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
