@@ -1,1 +1,23 @@
 // Mixins Here
+
+
+.border(@width; @style; @btn-bg-color) {
+    border: @width @style @btn-bg-color;
+    width: 33%;
+    padding: 10px;
+    background: @btn-bg-color;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+
+    &:hover {
+        border: @width @style @btn-bg-color;
+        background: white;
+        color: @btn-bg-color;
+    }
+ }
+
+ .border-radius(@size) {
+     border-radius: @size;
+ }
+ 

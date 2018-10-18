@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 3.6rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -34,5 +37,72 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+}
+
+@media (max-width: 1000px) {
+  // 500 - 0
+
+  // Header ----------------------->
+  header {
+    min-width: @phone;
+  }
+
+
+  // nav buttons ----------------------->
+  .nav {
+    min-width: 360px;
+  }
+
+  // container ----------------------->
+  .container {
+    width: @phone;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    .space-images {
+      .blast{
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
+    section.walk {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 10%;
+
+      p {
+        width: 100%;
+      }
+
+      div.walk-text {
+        width: 100%;
+        div.btn {
+          width: 100%;
+        }
+      }
+
+      div.walk-img {
+        width: 100%;
+        margin-left: 0;
+
+        img{
+          width: 100%;
+
+        }
+      }
+    }
+  }
 }
 
