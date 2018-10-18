@@ -1,1 +1,24 @@
 // Mixins Here
+
+.justify(@type, @wrap) {
+    display: flex;
+    justify-content: @type;
+    flex-wrap: @wrap;
+}
+
+.fontDecorate(@weight, @size, @color, @decoration) {
+	text-decoration: @decoration;
+	color: @color;
+	font-size: @size;
+	font-weight: @weight;
+}
+
+.createButton(@tb, @rl, @fontSize, @fontweight, @fontColor, @bgColor, @radius, @borderwidth, @bordertype, @bordercolor) {
+    padding: @tb @rl;
+    font-size: @fontSize;
+    font-weight: @fontweight;
+    color: @fontColor;
+    background-color: @bgColor;
+    border-radius: @radius;
+    border: @borderwidth @bordertype @bordercolor;
+}
