@@ -1,1 +1,27 @@
 // Navigation code here
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+      }
+
+    h1{
+       color: @nav-font;
+        nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            a {
+              font-size: 1.6rem;
+              text-decoration: none;
+             }
+          
+        }
+    }
+}
