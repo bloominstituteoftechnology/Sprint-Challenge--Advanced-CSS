@@ -360,3 +360,13 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.space-walkers {
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+}
+.space-walkers h1 {
+  color: #000000;
+  padding: 20px;
+  font-size: 45px;
+}
