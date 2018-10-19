@@ -4,3 +4,16 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  .custom-btn(@width, @height, @background, @color){
+    width: @width;
+    height: @height;
+    background: @btn-bg-color;
+    color: @btn-font;
+    font-size: 2rem;
+    // border-radius: 10px;
+    border: 1px solid black;
+    .center;
+    cursor: pointer;
+  }

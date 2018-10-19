@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -172,20 +175,27 @@ img {
 .nav-class {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-bottom: 20px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 140px;
+  padding-bottom: 1rem;
   border: 4px dashed red;
 }
 .nav-class h1 {
+  height: 70px;
   color: #454A59;
   size: 3rem;
+  align-items: flex-start;
+  border: 4px dashed blue;
 }
 .nav-class nav {
-  height: 100%;
+  height: 50px;
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: auto;
+  border: 4px dashed green;
 }
 .nav-class nav a {
   font-size: 1.6rem;
@@ -247,6 +257,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 100px;
+  height: 45px;
+  background: #22283A;
+  color: #F6F6F6;
+  font-size: 2rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
