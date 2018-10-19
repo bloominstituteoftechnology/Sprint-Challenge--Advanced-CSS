@@ -183,25 +183,29 @@ img {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  height: 140px;
+  height: 100px;
   padding-bottom: 1rem;
   border: 4px dashed red;
 }
 .nav-class h1 {
-  height: 70px;
+  height: 50px;
+  width: 100%;
   color: #454A59;
   size: 3rem;
-  align-items: flex-start;
   border: 4px dashed blue;
 }
 .nav-class nav {
-  height: 50px;
+  height: 36px;
   width: 50%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
-  margin: auto;
   border: 4px dashed green;
+}
+@media (max-width: 500px) {
+  .nav-class nav {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 .nav-class nav a {
   font-size: 1.6rem;
@@ -225,8 +229,7 @@ footer {
   padding: 0 15px;
 }
 .home .nav-class {
-  width: 100%;
-  height: 40px;
+  max-width: 100%;
 }
 @media (max-width: 500px) {
   .home .header-main-img {
