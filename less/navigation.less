@@ -1,18 +1,27 @@
 // Navigation code here
-header {
+ .nav-class {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    // width: 100%;
+    // height: 30px;
+    padding-bottom: 20px;
+    border: 4px dashed red;
 
-    @media @mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 10px;
-      }
+    // @media @mobile {
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     padding-top: 10px;
+    //   }
 
     h1{
        color: @nav-font;
+       size: 3rem;
+    }
+    
         nav {
+            height: 100%;
             width: 50%;
             display: flex;
             justify-content: space-evenly;
@@ -21,8 +30,7 @@ header {
               font-size: 1.6rem;
               color: @nav-font;
               text-decoration: none;
-             }
+            } 
           
         }
     }
-}

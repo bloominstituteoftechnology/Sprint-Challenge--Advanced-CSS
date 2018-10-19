@@ -43,9 +43,12 @@ img {
   margin: 0 auto; 
 }
 
-  @media @mobile {
-    width: 90%;
-    margin: 0 5%;
+@min768: ~"(min-width: 768px)";
+.element {
+  @media @min768 {
+    font-size: 1.2rem;
   }
+}
+  
 
 
