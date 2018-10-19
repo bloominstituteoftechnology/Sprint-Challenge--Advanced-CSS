@@ -185,7 +185,6 @@ img {
   width: 100%;
   height: 100px;
   padding-bottom: 1rem;
-  border: 4px dashed red;
 }
 .nav-class h1 {
   height: 50px;
@@ -193,14 +192,12 @@ img {
   padding-right: 30%;
   color: #454A59;
   size: 3rem;
-  border: 4px dashed blue;
 }
 .nav-class nav {
   height: 36px;
   width: 50%;
   display: flex;
   justify-content: space-around;
-  border: 4px dashed green;
 }
 @media (max-width: 500px) {
   .nav-class nav {
