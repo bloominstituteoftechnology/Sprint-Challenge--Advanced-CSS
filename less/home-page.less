@@ -31,7 +31,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .sky {
+      @media @mobile {
+        position: absolute;
+        visibility:hidden;
+        display:none;
+      }
+    }
  
+    .launch {
+      @media @mobile {
+        position: absolute;
+        visibility:hidden;
+        display:none;
+      }
+    }
 
     img {
       width: 28%;
@@ -41,12 +56,8 @@
 
       @media @mobile {
         width: 90%;
+        padding-bottom: 1rem;
         margin: 0 5%;
-      }
-      .mobile-none {
-        @media @mobile {
-        display: none;
-        }
       } 
 
     }
