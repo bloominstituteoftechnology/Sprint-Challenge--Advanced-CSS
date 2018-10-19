@@ -208,6 +208,10 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .nav-class {
+  width: 100%;
+  height: 40px;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
