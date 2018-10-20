@@ -1,121 +1,141 @@
-html, body {
-    font-size: 62.5%; // 16px into a base of 10px
+html,
+body {
+  font-size: 62.5%; // 16px into a base of 10px
 }
 
 .container {
-	width: 100%;
-	max-width: 900px;
-	margin: 0 auto;
-	color: @secondary-color;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: @secondary-color;
 }
 
 header {
-	width: 100%;
-	height: 100px;
-	margin-bottom: 20px;
-	display: flex;
-	.center-content();
-	flex-flow: column-reverse;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column-reverse;
 
-	@media @laptop {
-		flex-flow: row;
-	}
-	
-	nav {
-		width: 100%;
-		height: 50%;
-		background: @phone-bg;
-		margin-right: 0;
-		font-size: 1.5rem;
-		.center-content();
+  @media @laptop {
+    flex-flow: row;
+  }
+  nav {
+    .center-content();
+    width: 100%;
+    height: 50%;
+    margin-right: 0;
+    font-size: 1.5rem;
 
-		@media @laptop {
-			background: @laptop-bg;
-			width: 80%;
-			height: 100%;
-			margin-right: 2%;
-		}
-	}
+    @media @phone {
+      background: @phone-bg;
+    }
+    @media @laptop {
+      background: @tablet-bg;
+      width: 80%;
+      height: 100%;
+      margin-right: 2%;
+    }
+  }
 
-	.logo {
-		width: 20%;
-		max-width: 100px;
-		height: 100%;
-		background: @tertiary-color;
-		font-size: 1.5rem;
-		.center-content();
-		.border-radius(50%);
+  .logo {
+    .center-content();
+    .border-radius(50%);
+    width: 20%;
+    max-width: 100px;
+    height: 100%;
+    background: @tertiary-color;
+    font-size: 1.5rem;
 
-		@media @tablet {
-			background: @tablet-bg;
-		}
-	}
+    @media @tablet {
+      background: @tablet-bg;
+    }
+    @media @laptop {
+      background: @tertiary-color;
+    }
+  }
 }
 
 .content {
-	margin-top: 20px;
-	width: 100%;
-	height: 460px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-evenly;
-	font-size: 1.5rem;
+  margin-top: 20px;
+  width: 100%;
+  height: 410px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
 
-	@media @laptop {
-		height: 420px;
-	}
+  @media @laptop {
+    height: 420px;
+  }
 
-	.boxes {
-		width: 100%;
-		height: 100px;
-		background: @tertiary-color;
-		color: white;
-		margin-bottom: 20px;
-		display: flex;
-		flex-flow: column;
-		.center-content();
+  .boxes {
+    .center-content();
+    width: 100%;
+    height: 100px;
+    background: @tertiary-color;
+    color: white;
+    display: flex;
+    flex-flow: column;
 
-		@media @laptop {
-			flex-flow: row;
-			width: 45%;
-			height: 200px;
-		}
-	}
+    @media @laptop {
+      flex-flow: row;
+      width: 45%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+  }
 
-	.box1 {
-		background: @phone-bg;
-		
-		@media @laptop {
-			background: @laptop-bg;
-		}
-	}
+  .box1 {
+    @media @phone {
+      background: @phone-bg;
+    }
+    @media @laptop {
+      background: @green;
+    }
+  }
 
-	.box2 {
-		@media @tablet {
-			background: @tablet-bg;
-		}
-	}
+  .box2 {
+    @media @tablet {
+      background: @tablet-bg;
+    }
 
-	.box3 {
-		@media @tablet {
-			background: @tablet-bg;
-		}
-	}
+    @media @laptop {
+      background: @tertiary-color;
+    }
+  }
 
-	.box4 {
-		background: @phone-bg;
+  .box3 {
+    @media @tablet {
+      background: @tablet-bg;
+    }
 
-		@media @laptop {
-			background: @laptop-bg;
-		}
-	}	
+    @media @laptop {
+      background: @tertiary-color;
+    }
+  }
+
+  .box4 {
+    @media @phone {
+      background: @phone-bg;
+    }
+    @media @laptop {
+      background: @green;
+    }
+  }
 }
 
 footer {
-	width: 100%;
-	height: 50px;
-	background: @phone-bg;
-	font-size: 1.5rem;
-	.center-content();
+  .center-content();
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+
+  @media @phone {
+    background: @phone-bg;
+  }
+  @media @laptop {
+    background: @tertiary-color;
+  }
 }
