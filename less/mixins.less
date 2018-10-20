@@ -1,1 +1,27 @@
-// Mixins Here
+.btn (@btn-color, @a-color){
+    background-color: rgb(63, 62, 62);
+    border: none;
+    color:@btn-color;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    &:hover {
+      background: #fff;
+      color:@a-color;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.flex-justify(@content) {
+    display: flex;
+    justify-content: @content;
+}
