@@ -1,1 +1,38 @@
 // Navigation code here
+.main-navigation {
+    width: 100%;
+    height: 100px;
+    background-color: @nav-bg;
+    .custom-border;
+
+    .nav-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        h1 {
+            font-size: 4rem;
+            display: block-inline;
+            margin: 1% 48%;
+            color: @header-font-color
+        }
+
+        nav {
+            font-size: 1.5rem;
+            display: block-inline;
+            width: 380px;
+    
+            a {
+                text-decoration: none;
+                color: @header-font-color;
+                padding: 1%;
+                margin: 2%;
+            }
+        }
+    }
+
+}
+

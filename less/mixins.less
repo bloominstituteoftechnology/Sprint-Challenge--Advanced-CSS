@@ -1,1 +1,23 @@
 // Mixins Here
+
+.custom-button(@borderRadius, @color) {
+    border: 1px solid black;
+    color: @color;
+    background-color: @main-font-color;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: @borderRadius;
+    font-size: 1.5rem;
+    //center
+
+    &:hover {
+        color: @main-font-color;
+        background-color: @color;
+    }
+}
+
+.custom-border() {
+    color: 2px solid @nav-border;
+}
+
+//@borderRadius: 5px;
