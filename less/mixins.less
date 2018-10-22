@@ -1,1 +1,25 @@
 // Mixins Here
+
+//Button
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+.custom-button(@max-width, @padding){
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: @max-width;
+    padding: @padding;
+    .border-radius(5px);
+    background: @btn-bg-color;
+    color: @porcelain;
+
+    &:hover{
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+}
