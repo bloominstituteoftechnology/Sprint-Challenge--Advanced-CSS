@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+    img {
+      width: 100%;
+    }
   }
 
   .space-images {
@@ -19,11 +20,24 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -46,8 +60,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 5px 6px;
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        margin-top: 15px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,13 +84,22 @@
       }
 
       .btn {
+        .button(@btn-bg-color, white, 100px, 40px);
+        @media @phone {
+          .button(@btn-bg-color, white, 100%, 50px);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +107,114 @@
       }
     }
   }
-}// home
+} // home
+
+//background animations
+body {
+  .cb-slideshow,
+  .cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1000;
+  }
+  .cb-slideshow:after {
+    content: "";
+  }
+
+  .cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: -1000;
+    animation: imageAnimation 36s linear infinite 0s;
+  }
+
+  .cb-slideshow li div {
+    z-index: -1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s;
+  }
+  .cb-slideshow li div h3 {
+    font-family: "BebasNeueRegular", "Arial Narrow", Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px;
+  }
+
+  .cb-slideshow li:nth-child(1) span {
+    background-image: url(../img/blue-planets.jpg);
+  }
+  .cb-slideshow li:nth-child(2) span {
+    background-image: url(../img/image2.jpg);
+    animation-delay: 6s;
+  }
+  .cb-slideshow li:nth-child(3) span {
+    background-image: url(../img/image3.jpg);
+    animation-delay: 12s;
+  }
+  .cb-slideshow li:nth-child(4) span {
+    background-image: url(../img/image4.jpg);
+    animation-delay: 18s;
+  }
+  .cb-slideshow li:nth-child(5) span {
+    background-image: url(../img/image5.jpg);
+    animation-delay: 24s;
+  }
+  .cb-slideshow li:nth-child(6) span {
+    background-image: url(../img/image6.jpg);
+    animation-delay: 30s;
+  }
+
+  .cb-slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+  }
+  .cb-slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+  }
+  .cb-slideshow li:nth-child(4) div {
+    animation-delay: 18s;
+  }
+  .cb-slideshow li:nth-child(5) div {
+    animation-delay: 24s;
+  }
+  .cb-slideshow li:nth-child(6) div {
+    animation-delay: 30s;
+  }
+
+  @keyframes imageAnimation {
+    0% {
+      opacity: 0;
+      animation-timing-function: ease-in;
+    }
+    8% {
+      opacity: 0.5;
+      animation-timing-function: ease-out;
+    }
+    17% {
+      opacity: 0.5;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
+

@@ -1,1 +1,24 @@
 // Mixins Here
+.textNormal() {
+    text-decoration: none;
+    color: gray;
+}
+
+.centerText(){
+    text-align: center;
+}
+
+.button(@bgcolor, @font-color, @width, @height) {
+    background: @bgcolor;
+    color: @font-color;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    &:hover {
+        color: @bgcolor;
+        background: @font-color;
+    }
+}
