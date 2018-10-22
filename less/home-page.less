@@ -1,8 +1,33 @@
 // Home Content
 
-.home {
+@keyframes turbineAnim {
+  0% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(1080deg); }
+  100% {
+    transform: rotate(2520deg); } }
 
+.home {
+  .sky-blue-wrapper {
+    background-image: url("../img/main-header.png");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
   .intro {
+    @media @mobile {
+      order:0;
+      padding: 5px 0;
+
+  }
 
     h2 {
       padding: 15px;
@@ -14,16 +39,49 @@
   
   }
 
+  .space-images .blast {
+    @media @mobile {
+      order:0;
+      height: 90%;
+      width: 90%;
+      
+      
+  }
+  }
+
+  .space-images .sky {
+    @media @mobile {
+      order:0;
+      display: none;
+      
+  }
+  }
+
+  .space-images .launch {
+    @media @mobile {
+      order:0;
+      display: none;
+  }
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile {
+      justify-content: center;
+      align-content: center;
+  }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile {
+        .make-phone();
+        
+    }
     }
   }
 
@@ -45,9 +103,26 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+      .make-phone();
+      padding: 15px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+        margin-top: 15px;
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+    }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +133,24 @@
       }
 
       .btn {
+        .making-button(100px, 8px,5px);
+        @media @mobile {
+          // align-self: center;
+          .making-button(100%, 8px, 5px);
+      }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        order: 0;
+        width: 90%;
+        height: 90%;
+        margin-left: 0%;
+        
+    }
       
       img {
         width: 100%;

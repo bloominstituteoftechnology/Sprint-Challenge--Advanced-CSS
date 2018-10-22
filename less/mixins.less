@@ -1,1 +1,39 @@
 // Mixins Here
+.make-container() {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.make-phone() {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.image-wrapper(@url, @imgheight, @repeat, @size, @position) {
+    background-image: @url;
+    height: @imgheight;
+    background-repeat: @repeat;
+    background-size: @size;
+    background-position: @position;
+}
+
+.making-button(@width, @padding,@radius){
+    max-width: @width;
+    padding: @padding;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #22283A;
+    color: white;
+    border-radius: @radius;
+    &:hover {
+        background: white;
+        border: 1px solid #22283A;
+        color: #22283A;
+        animation-name: flashAnim;
+        animation-duration: 1s;
+    }
+}
