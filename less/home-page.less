@@ -1,15 +1,25 @@
 // Home Content
-
+html{
+  font-size: 62.5%;
+}
 .home {
+  @media @mobile{
+   .img-top{
+     width: 100%;
+     border-radius: 5px;
+   }
 
+  }
   .intro {
 
     h2 {
       padding: 15px;
+     
     }
 
     p {
       padding:0 15px;
+
     }
   
   }
@@ -24,6 +34,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @mobile{
+      .sky{
+        display:none;
+      }
+      .launch{
+        display: none;
+      }
+      .blast{
+        width: 100%;
+      }
     }
   }
 
@@ -40,6 +61,14 @@
   }
 
   .walk {
+    @media @mobile{
+      justify-content: center;
+      flex-flow: column-reverse;
+      width: 100%;
+      padding: 0%;
+      padding-bottom: 5%;
+      .equalSidePadding(2%);
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -48,6 +77,14 @@
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 100%;
+        justify-content: center;
+        p{
+          font-family: 'Mukta', sans-serif;
+        
+        }
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +95,25 @@
       }
 
       .btn {
+       .flexCenter();
+        background-color: @buttonColor;
+        color: white;
+        font-size: 1.5rem;
+        .dimensions(30%, 10%);
+        
+        border-radius: 5px;
+        @media @mobile{
+          background-color: rgb(11, 11, 51);
+         
+          font-size: 2rem;
+          .equalPaddingAround(10px);
+          .dimensions(100%, 70px);
+        }
+        
+      }
+      .btn:hover{
+        background-color:teal;
+        color: gold ;
       }
     }
 
@@ -69,6 +125,13 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @mobile{
+        
+        width: 100%;
+        margin-left: 0;
+        .equalPaddingAround(5%);
+        
       }
     }
   }

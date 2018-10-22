@@ -1,1 +1,28 @@
 // Mixins Here
+.border(@color){
+    border: 2px solid @color;
+}
+
+.equalSidePadding(@size){
+    padding-left: @size;
+    padding-right: @size;
+}
+
+.equalPaddingAround(@size){
+    padding-left: @size;
+    padding-right: @size;
+    padding-top: @size;
+    padding-bottom: @size;
+
+}
+
+.dimensions(@width, @height){
+    width: @width;
+    height: @height;
+}
+
+.flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
