@@ -24,6 +24,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
+      @media screen and (max-width: @phone){
+        width: 100%;
+      }
     }
   }
 
@@ -45,9 +49,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    
+    
     .walk-text {
       width: 50%;
+      @media screen and (max-width: @phone) {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -65,11 +73,53 @@
       width: 46%;
       margin-left: 4%;
       
+      @media screen and (max-width: @phone) {
+        width: 100%;
+        margin: 0 auto;
+        order: -1;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media screen and (max-width: @phone) {
+        }
       }
+    }
+    
+    @media screen and (max-width: @phone) {
+      flex-direction: column;
+      padding: 0 4%;
     }
   }
 }// home
+
+.navigation-section{
+  margin: 10px auto;
+  width: 40%;
+  .flex-space-around();
+  flex-wrap: wrap;
+  @media screen and (max-width: @phone){
+    width: 100%;
+  }
+  
+}
+
+.header-img{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.btn{
+  font-size: 1.7rem;
+  background-color: navy;
+  display: inline;
+  padding: 5px;
+  .btn-mixin( @hover, 8px );
+}
+.container{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+}

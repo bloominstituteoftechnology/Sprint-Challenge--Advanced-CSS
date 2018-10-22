@@ -1,1 +1,24 @@
 // Navigation code here
+.navigation-section{
+    .nav-bar{
+        font-size: @nav-bar-font;
+        font-weight: bold;
+        text-decoration: none;
+       
+        .flex-space-evenly();
+        a{
+            margin: 0 10px;
+        }
+        @media screen and (max-width: @phone) {
+            font-size: 1.5rem;
+            a{
+                margin: 0 4px;
+            }
+        }
+        
+    }
+    .main-heading{
+        font-size: @main-heading-font;
+        margin-bottom: 10px;
+    }
+}
