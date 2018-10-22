@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,25 @@
 <body>
 
  <!-- navigation code here -->
+ <section class="nav-h1">
+  <div class="main-nav">
+    <h1>SpaceWalkers</h1>
+    
+    <nav>
+      <a href="#">Home</a>
+     <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Sign In</a>
+  </nav>
+  </div>
+</section>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" alt="Earth from Space">
 
       <h2>Lift Off</h2>
     
@@ -58,6 +73,32 @@
       
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
+      </div>
+
+    </section>
+
+    <section class="sign-up">
+      <div class="walk-form">
+        <h3>Sign up for our Magazine</h3>
+        <form action="/vac-form" metho="post">
+          <div>
+            <label for='name'>Name:</label>
+            <input type="text" id='name' name='user_name'>
+            </div>
+            <div>
+                <label for='mail'>Email:</label>
+                <input type="email" id='mail' name='user_mail'>
+            </div>
+            <div>
+                <label for='msg'>Message:</label>
+                <textarea id="msg" name='user_message'></textarea>
+            </div>
+        
+        </form>
+      
+      </div>
+      
+      <div class="walk-img">
       </div>
 
     </section>

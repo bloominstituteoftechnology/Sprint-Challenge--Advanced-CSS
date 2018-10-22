@@ -1,1 +1,29 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-border(){
+      border-radius: 5px;
+  }
+
+  .button1(@bg, @color) {
+    border-radius : 7px;
+    padding: 9px;
+    text-decoration:none;
+    background: @bg;
+    color: @color;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+
+    &:hover {
+              background: @sea-shell;
+              color: @btn-bg-color;
+              cursor: pointer;
+            }
+
+}
