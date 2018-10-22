@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flexIt() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button (@bkg-color, @text-color) {
+    border: 1px solid @bkg-color;
+    width: 30%;
+    padding: 7px;
+    text-decoration: none;
+    background: @bkg-color;
+    color: @text-color;
+    border-radius: 5px;
+    font-size: 20px;
+        
+    &:hover {
+        background: @text-color;
+        color: @bkg-color;
+    }
+
+}

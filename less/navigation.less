@@ -1,1 +1,39 @@
 // Navigation code here
+
+.nav-bar {
+    .flexIt;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+
+    h1 {
+        padding-top: 20px;
+    }
+
+    nav {
+        .flexIt;
+        justify-content: space-around;
+        margin: 0 auto;
+
+        @media @phone {
+            margin: 0 5%;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 5%;
+            font-size: 1.6rem;
+            white-space: nowrap;
+            margin: 0 5%;
+        }
+    }
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+
+}
