@@ -1,1 +1,22 @@
 // Mixins Here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.mobileFlex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.button(@background, @color) {
+    background: @background;
+    color: @color;
+    border: 3px solid @btn-bg-color;
+    display: inline;
+    padding: 5px 20px;
+    font-size: 2.2rem;
+    border-radius: 5px;
+}
