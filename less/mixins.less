@@ -1,1 +1,50 @@
 // Mixins Here
+.stackContent() {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin:5%;
+    padding:5%;
+    
+}
+
+.button(@btn-bg-color,@btn-font-color) {
+    a {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top:7px;
+      padding-bottom:7px;
+      line-height: 1.5;
+      font-size: 1.6rem;
+      font-family: 'Roboto', sans-serif;
+      color:@btn-font-color;
+      background-color: @btn-bg-color;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      width:30%;
+    }
+            a:hover{
+                background-color: @btn-font-color;
+                color:@btn-bg-color;
+            } 
+}
+
+
+.navBar() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:50%;
+    margin-left:25%;
+        a {
+            font-size: 1.6rem;
+            color:@nav-font;
+            text-decoration: none;
+            width: 20%;
+            text-align: center;
+            margin-bottom: 13px;
+        }
+
+}
+
