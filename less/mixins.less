@@ -1,1 +1,25 @@
-// Mixins Here
+.size (@width, @height) {
+    width: @width;
+    height: @height;
+}
+.flex(@justify){
+    display:flex;
+    justify-content:@justify;
+}
+.anchorText(@fontSize, @deco, @fontColor){
+    font-size: @fontSize;
+    text-decoration: @deco;
+    color: @fontColor;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}

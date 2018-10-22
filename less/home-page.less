@@ -1,75 +1,158 @@
 // Home Content
 
 .home {
+	@media @phone {
+		max-width: 500px;
+		width: 100%;
+	}
 
-  .intro {
+	.intro {
+		img {
+			.size(100%, auto);
+			border-radius: 7px;
+		}
 
-    h2 {
-      padding: 15px;
-    }
+		h2 {
+			padding: 15px;
+		}
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+		p {
+			padding: 0 15px;
+		}
+	}
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+	.space-images {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
+		@media @phone {
+			justify-content: center;
+		}
+		.sky {
+			@media @phone {
+				display: none;
+			}
+		}
+		.launch {
+			@media @phone {
+				display: none;
+			}
+		}
 
-  .visit-planets {
-    padding: 15px;
+		img {
+			.size(28%, 100%);
+			margin: 20px 2.5%;
+			border-radius: 20px;
 
-    h3 {
-      margin-top: 11px;
-    }
+			@media @phone {
+				width: 90%;
+			}
+		}
+	}
 
-    p {
-      margin-top: 13px;
-    }
-  }
+	.visit-planets {
+		padding: 15px;
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+		@media @phone {
+			margin-bottom: 0px;
+		}
+		h3 {
+			margin-top: 11px;
+		}
 
-    .walk-text {
-      width: 50%;
+		p {
+			margin-top: 13px;
+		}
+	}
 
-      h3 {
-        margin-bottom: 10px;
-      }
+	.walk {
+		.flex(center);
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
 
-      p {
-        margin-bottom: 26px;
-      }
+		@media @phone {
+			display: flex;
+			flex-flow: column-reverse wrap;
+			justify-content: center;
+			width: 100%;
+			padding: 15px;
+			margin-top: 20px;
+		}
 
-      .btn {
-      }
-    }
+		.walk-text {
+			width: 50%;
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+			h3 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				margin-bottom: 26px;
+			}
+
+			@media @phone {
+				display: flex;
+				flex-flow: column wrap;
+				width: 100%;
+				padding-top: 20px;
+			}
+
+			.btn {
+				.flex(center);
+				align-items: center;
+				.size(28%, 30px);
+				background-color: @header-font-color;
+				border-radius: 5px;
+
+				&:hover {
+					background-color: white;
+				}
+
+				@media @phone {
+					.size(100%, 60px);
+					.keyframes(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+
+					.animation(fade-in 1.5s linear infinite alternate);
+				}
+				a {
+					.anchorText(1.8rem, none, white);
+
+					&:hover {
+						color: @header-font-color;
+					}
+					@media @phone {
+						.size(100%, 100%);
+						text-align: center;
+						padding-top: 20px;
+					}
+				}
+			}
+		}
+
+		.walk-img {
+			width: 46%;
+			margin-left: 4%;
+
+			@media @phone {
+				.size(95%, auto);
+				margin-left: 2.5%;
+				margin-top: 15px;
+			}
+
+			img {
+				.size(100%, auto);
+				border-radius: 10px;
+
+				@media @phone {
+					width: 100%;
+					justify-content: center;
+				}
+			}
+		}
+	}
+} // home
