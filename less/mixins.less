@@ -1,1 +1,16 @@
 // Mixins Here
+.size(@width,@height) {
+  width: @width;
+  height: @height;
+}
+
+.flexbox(@justify,@align) {
+  display:flex;
+  justify-content:@justify;
+  align-items: @align;
+}
+
+.button-mixin(@position, @border) {
+  position: @position;
+  border: @border;
+}
