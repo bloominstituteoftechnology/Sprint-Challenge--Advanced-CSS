@@ -1,1 +1,44 @@
 // Navigation code here
+
+.top-bar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  opacity: .8;
+  .nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    .flex(center, flex-start);
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 7px;
+    background-color: @nav-bg;
+    border-bottom: @nav-border;
+
+    @media @phone {
+      max-width: 500px;
+    }
+
+    h1 {
+      width: 100%;
+      font-size: 4rem;
+      padding-bottom: 1.5%;
+
+      @media @phone {
+        margin-bottom: 10px;
+      }
+    }
+    nav {
+      width: 100%;
+
+      a {
+        .link;
+        padding:15px;
+      }
+    }
+
+
+
+  }
+
+}
