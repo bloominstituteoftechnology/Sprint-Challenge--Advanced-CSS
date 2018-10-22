@@ -1,1 +1,20 @@
 // Mixins Here
+.display(){
+    display:flex;
+    justify-content: center;
+}
+.wrap(){
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.button(@align, @width, @padding, @font, @bg-color, @color, @border, @radius){
+    text-align:@align;
+    width:@width;
+    padding:@padding;
+    font-weight:@font;
+    background:@bg-color;
+    color:@color;
+    border:@border;
+    border-radius: @radius
+}
