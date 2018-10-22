@@ -1,1 +1,36 @@
 // Navigation code here
+nav {
+    max-width: 1000px;
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    background: @nav-bg;
+    color: @nav-font;
+    border-bottom: 1px solid @border-real;
+    padding-top: 10px;
+    .flex(wrap, center, default);
+
+    h1 {
+        font-size: 4.0rem;
+        align-self: center
+    }
+
+    .navigation {
+        // max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        .flex(wrap, center, center);
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: #4F526A;
+            font-size: 1.6rem;
+            margin: 15px;
+
+            &:hover {
+                font-weight: normal;
+            }
+        }
+    }
+}
