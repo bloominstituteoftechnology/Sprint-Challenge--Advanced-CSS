@@ -1,1 +1,45 @@
-// Navigation code here
+header{
+    .flex-colomn-centered;
+
+    
+@media @desktop {
+    
+    flex: 1 0 100%;
+    
+}
+    h2{
+        font-size: 2rem;
+        color:@primary-color;
+        margin-bottom: 15px;
+
+        @media @desktop {
+            font-size: 3.5rem;
+            
+        }
+    }
+    
+    nav{
+        @media @desktop {
+            width: 50vw;
+            margin-bottom: 20px;
+            
+}
+
+        ul{
+            .flex-row-spaceBetween;
+            flex-wrap: wrap;
+            a{
+                text-decoration: none;
+                padding: 10px;
+                font-size: 1.4rem;
+                color:@primary-color;
+                @media @desktop {
+                    font-size: 2.5rem;
+                    
+                }
+            }
+        }
+    }
+    
+
+}
