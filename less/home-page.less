@@ -1,34 +1,85 @@
-// Home Content
+// margin: 0% 0% 0% 8%;
+// @media @phone {
 
+// }
+// Home Content
+html{
+  font-size: 62.5%
+}
+.tophead{
+  .fx;
+    justify-content: center;
+    flex-wrap: wrap;
+    // background-color: rgb(247, 246, 246);
+    .bg;
+    
+  .toplogo{
+    
+    margin: 1% 0% 2% 37%;
+width: 80%;
+@media @phone {
+  margin: 0% 0% 6% 21%;
+}
+
+  }
+}
 .home {
+  max-width: 880px;
+
+@media @phone {
+        max-width: 500px;
+      }
 
   .intro {
+    img{
+      border-radius: 10px;
+      margin: 0% 0% 0% 3.5%;
+      @media @phone {
+        margin: 2% 0% 0% 0%;
+        border-radius: 0px;
+      }
+    }
 
     h2 {
-      padding: 15px;
+      // padding: 15px;
+      margin: 2% 0% 2% 5%;
     }
 
     p {
-      padding:0 15px;
+      margin: 2% 6% 2% 5%;
     }
   
   }
 
   .space-images {
-    display: flex;
+    margin: 0% 0% 0% 3%;
+    .fx;
     flex-wrap: wrap;
-    width: 100%;
+    width: 91%;
+    @media @phone {
+      .sky{
+display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 96%;
+      }
     }
   }
 
   .visit-planets {
-    padding: 15px;
+    margin: 2% 8% 0% 5%;
+    padding: 1.7% 1% 0% 0%;
 
     h3 {
       margin-top: 11px;
@@ -40,14 +91,28 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 7%;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
+    // padding: 50px 60px;
+    .fx;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    width:90%;
+    margin-left: 3%;
+    @media @phone {
+      .fx;
+      justify-content: space-between;
+     
+      margin-bottom: 0%;
+    }
     .walk-text {
-      width: 50%;
+      width: 35%;
+      margin: 4% 3% 0% 10%;
+      @media @phone {
+        // order:1;
+        margin:0% 0% 0% 0%;
+        width: 86%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,20 +121,81 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
+      
     }
-
+    
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
+      margin-top: 4%;
+      width: 50%;
+      // margin-left: 4%;
+      @media @phone {
+        width: 144%;
+        order:-1;
+      }
+
       
       img {
-        width: 100%;
+        width: 72%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+        width: 100%;
       }
     }
+    // .custom-button(@width, @backcolor, @br,@height,@txtc) {
+    //   width: @width;
+    //   background-color: @backcolor;
+    //   border-radius: @br;
+    //   Height:@height;
+    //   color:@txtc;
+      
+    // }
+
+  //   .btn{
+  //     button{
+  //     margin: 0% 0% 4% 10%;
+  //     .custom-button(10%,black, 10px,5%,white);
+  //     &:hover {
+  //       background-color: yellow;
+  //       color: blue;
+
+  //     }
+
+  //   }
+  }
+    
+ 
+
+  }
+
+  
+  
+  button{
+    .custom-button(11%,black, 10%,10%,white);
+  margin: 0% 0% 5% 11%;
+    @media @phone {
+      .custom-button(90%,black, 10%,55%,white);
+      // width: 90%;
+      padding: 5% 0% 7% 0%;
+      margin: 0% 0% 5% 3%;
+  }
+  &:hover {
+    background-color: yellow;
+    color: blue;
+    }
+    // margin: 0% 0% 4% 119%;
+  
+ 
+  
+  }
+
+
+  // }
+
+
+  
+ footer{
+
+    .bg;
   }
 }// home

@@ -1,0 +1,351 @@
+.bg {
+  background-color: #f7f6f6;
+}
+.fx {
+  display: flex;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.topnav {
+  width: 47%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 0% 1% 0%;
+}
+@media (max-width: 500px) {
+  .topnav {
+    justify-content: space-around;
+    width: 100%;
+    margin: 0% 0% 0% 8%;
+  }
+}
+.topnav a {
+  color: black;
+  text-decoration: none;
+  /* no underline */
+  font-size: 1.6rem;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  font-size: 62.5%;
+}
+.tophead {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f6f6;
+}
+.tophead .toplogo {
+  margin: 1% 0% 2% 37%;
+  width: 80%;
+}
+@media (max-width: 500px) {
+  .tophead .toplogo {
+    margin: 0% 0% 6% 21%;
+  }
+}
+.home {
+  max-width: 880px;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+  }
+}
+.home .intro img {
+  border-radius: 10px;
+  margin: 0% 0% 0% 3.5%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    margin: 2% 0% 0% 0%;
+    border-radius: 0px;
+  }
+}
+.home .intro h2 {
+  margin: 2% 0% 2% 5%;
+}
+.home .intro p {
+  margin: 2% 6% 2% 5%;
+}
+.home .space-images {
+  margin: 0% 0% 0% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 91%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 96%;
+  }
+}
+.home .visit-planets {
+  margin: 2% 8% 0% 5%;
+  padding: 1.7% 1% 0% 0%;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 7%;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 3%;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0%;
+  }
+}
+.home .walk .walk-text {
+  width: 35%;
+  margin: 4% 3% 0% 10%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    margin: 0% 0% 0% 0%;
+    width: 86%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-img {
+  margin-top: 4%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 144%;
+    order: -1;
+  }
+}
+.home .walk .walk-img img {
+  width: 72%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100%;
+  }
+}
+.home button {
+  width: 11%;
+  background-color: black;
+  border-radius: 10%;
+  Height: 10%;
+  color: white;
+  margin: 0% 0% 5% 11%;
+}
+@media (max-width: 500px) {
+  .home button {
+    width: 90%;
+    background-color: black;
+    border-radius: 10%;
+    Height: 55%;
+    color: white;
+    padding: 5% 0% 7% 0%;
+    margin: 0% 0% 5% 3%;
+  }
+}
+.home button:hover {
+  background-color: yellow;
+  color: blue;
+}
+.home footer {
+  background-color: #f7f6f6;
+}
