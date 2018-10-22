@@ -1,1 +1,39 @@
 // Navigation code here
+.navigation {
+.flexit(center);
+flex-direction: column;
+border-bottom: 1px solid @nav-border;
+background-color: @nav-bg;
+flex-wrap: wrap;
+width:100%;
+position:fixed;
+opacity: .9;
+
+    h1 {
+        font-size: 5rem;
+        width:100%;
+        padding: 3% 0;
+        text-align:center;
+        @media @phone {
+            font-size:4rem;
+        }
+    }
+
+    nav {
+        width:100%;
+        .flexit(center);
+        
+
+        a {
+            text-decoration: none;
+            font-family: @nav-font;
+            color: black;
+            font-size: 2rem;
+            margin: 0px 2% 2%;
+            .hoverOver(@waterloo, @nav-bg);
+            @media @phone {
+            font-size:1.6rem;
+             }
+        }
+    }
+}

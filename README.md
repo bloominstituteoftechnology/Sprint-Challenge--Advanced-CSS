@@ -9,7 +9,7 @@ You will be updating a website using all your responsive web design and preproce
 * [ ] Fork the project into your GitHub user account
 
 * [ ] Clone the forked project into a directory on your machine
-
+ 
 * [ ] You are now ready to build this project with your preferred IDE
 
 ### Pro tip: Commit every time you complete a task or feature!
