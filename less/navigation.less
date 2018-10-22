@@ -1,1 +1,44 @@
 // Navigation code here
+
+.nav-container {
+    display: flex;
+    flex-flow: column;
+    padding-top: 10px;
+    border-bottom: 2px solid @nav-border;
+    font-size: 1.6rem;
+    
+    @media @mobile {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media @mobile {
+            margin-left: 10%;
+        }
+    }
+    
+    nav {
+        display: flex;
+        width: 350px;
+        justify-content: space-around;
+        padding-bottom: 10px;
+        margin-left: 220px;
+
+        @media @mobile {
+            margin-left: 70px;
+        }
+    
+        a {
+            color: @nav-font;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
