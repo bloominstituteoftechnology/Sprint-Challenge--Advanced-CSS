@@ -1,1 +1,29 @@
 // Mixins Here
+.flex(@fd,@jc) {
+  display: flex;
+  flex-direction: @fd;
+  justify-content: @jc;
+  align-items: center;
+  width: 100%;
+}
+
+.textDec(@td) {
+  text-decoration: @td;
+}
+
+.customBtn(@bg,@color) {
+  .flex(row,center);
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  background: @bg;
+  color: @color;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: @color;
+    color: @bg;
+  }
+}

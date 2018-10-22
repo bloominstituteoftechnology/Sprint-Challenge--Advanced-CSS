@@ -1,1 +1,33 @@
 // Navigation code here
+.navigation {
+  .flex(column, space-around);
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 12.5px 0;
+  background: @nav-bg;
+  opacity: 0.8;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+  nav {
+    .flex(row, center);
+    
+    a {
+      .textDec(none);
+      font-size: 1.6rem;
+      color: black;
+      margin: 0 1.75%;
+
+      &:hover {
+        .textDec(underline);
+      }
+    }
+  }
+  @media @phone {
+    nav {
+      justify-content: space-evenly;
+    }
+  }
+}

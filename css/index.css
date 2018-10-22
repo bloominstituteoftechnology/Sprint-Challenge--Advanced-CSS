@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 12.5px 0;
+  background: #F6F6F6;
+  opacity: 0.8;
+}
+.navigation h1 {
+  margin-bottom: 20px;
+}
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.navigation nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+  margin: 0 1.75%;
+}
+.navigation nav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    justify-content: space-evenly;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro img {
+  width: 100%;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    border-radius: 5px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+    align-items: center;
+  }
+  .home .space-images img {
+    width: 92.5%;
+    margin: 20px 0;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  background: #22283A;
+  color: #F6F6F6;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F6F6;
+  color: #22283A;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+  .home .walk .walk-text {
+    width: 92.5%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 70px;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+    margin-bottom: 25px;
+  }
+}
+.about header {
+  position: relative;
+}
+.about header video {
+  width: 100%;
+  height: auto;
+}
+.about header .vid-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+.about header .vid-text h2 {
+  font-size: 9vw;
+  color: white;
+}
+.about header p {
+  margin: 20px 0;
+}
+.about .space-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.about .space-images .card {
+  width: 48%;
+  margin: 0 1%;
+}
+.about .space-images .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about .space-images .card h2 {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .about .space-images {
+    flex-direction: column;
+  }
+  .about .space-images .card {
+    width: 98%;
+  }
+}

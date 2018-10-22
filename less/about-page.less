@@ -1,0 +1,53 @@
+.about {
+
+  header {
+    position: relative;
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+    .vid-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 100px;
+      
+      h2 {  
+        font-size: 9vw;
+        color: white;
+      }
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  .space-images {
+    .flex(row, space-around);
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .card {
+      width: 48%;
+      margin: 0 1%;
+    
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    }
+    @media @phone {
+      flex-direction: column;
+
+      .card {
+        width: 98%;
+      }
+    }
+  }
+}
