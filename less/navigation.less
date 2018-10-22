@@ -1,1 +1,59 @@
 // Navigation code here
+
+.navigation{
+    width: @100percent;
+    position: sticky;
+    top:0;
+    opacity: .95;
+    background-color: @nav-bg;
+    .flexMixin(row, nowrap, center, center, center);
+
+    div {
+        .elementAlignment(0 auto, 10px 0, 50%);
+        .flexMixin(row, wrap, space-evenly, center, center);
+
+        h2{
+            .elementAlignment(0 auto, 20px 0, 100%);
+            font-size: 4rem;
+            text-align: center;
+        }
+    
+        a{
+            .elementAlignment(0, 10px 2%, 20%);
+            text-align: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @nav-font;
+
+            &:hover{
+                color: @waterloo;
+            }
+        }
+
+    }
+
+    @media @tabletMaxWidth{
+        div{
+
+            h2{
+                .elementAlignment(0 auto,  10px 0, 100%);
+            }
+
+            a{
+                .elementAlignment(0, 10px 0, 20%);
+            }
+        }
+    }
+
+    @media @mobileMaxWidth{
+        div{
+            .elementAlignment(0 auto, 10px 0, 100%);
+
+            h2{
+                .elementAlignment(0 auto,  10px 0, 100%);
+                font-size: 4rem;
+            }
+        }
+    }
+   
+}
