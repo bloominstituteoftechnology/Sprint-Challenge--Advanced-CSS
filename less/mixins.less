@@ -1,1 +1,34 @@
 // Mixins Here
+.custom-btn(@bg-color, @color){
+background: @bg-color;
+color: @color;
+width: 30%;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius: 3px;
+font-size: 2rem;
+padding: 2%;
+
+&:hover{
+    background: @color;
+    color: @bg-color;
+}
+
+@media @phone{
+    width:100%;
+    padding: 5%;
+}
+}
+
+.flex-center(){
+    display:flex;
+    justify-content:center;
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+  }
