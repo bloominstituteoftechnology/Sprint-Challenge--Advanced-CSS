@@ -1,0 +1,32 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+
+  @media @phone {
+    width: 90%;
+    margin-left: 23px;
+  }
+
+
+  label {
+    font-size: 1.6rem;
+    margin-top: 10px;
+
+  }
+
+  input {
+    height: 30px;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      .btn(black, white);
+      width: 50%;
+      margin: 20px 0;
+    }
+  }
+}
