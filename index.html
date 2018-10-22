@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name=”viewport” content=”width-device-width, initial-scale=1.0”>
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -15,14 +15,20 @@
 </head>
 
 <body>
-
- <!-- navigation code here -->
-
+  <section class="nav-bar">
+      <h1>SpaceWalkers</h1>
+      <nav>
+        <div class="nav-element"><a href="#">Home</a></div>
+        <div class="nav-element"><a href="#">About Us</a></div>
+        <div class="nav-element"><a href="#">Blog</a></div>
+        <div class="nav-element"><a href="#">Contact</a></div>
+        <div class="nav-element"><a href="#">Sign In</a></div>
+      </nav>
+  </section>
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
-
+      <img src="img/main-header.png" class="planet" alt="Planetary horizon">
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -30,8 +36,8 @@
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img src="img/sky.png" class="sky not-mobile" alt="Space sky image">
+        <img src="img/launch.png" class="launch not-mobile" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -59,7 +65,31 @@
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
-
+    </section>
+    
+    <section class="magazine">
+      <h3>Subscribe to Spacewalkers Magazinze</h3>
+      <div class="form">
+        <input class="input" type="text" placeholder="Name">
+      </div>
+      <div class="form">
+        <input class="input" type="text" placeholder="Email Address">
+      </div>
+      <div class="form">
+        <input class="input" type="text" placeholder="Shipping Address">
+      </div>
+      <div class="form">
+        <input class="input" type="text" placeholder="Social Security Number">
+      </div>
+      <div class="form">
+        <select class="input">
+          <option>Duration of Subscription</option>
+          <option>6 Months</option>
+          <option>1 Year</option>
+          <option>Keep them coming for all eternity</option>
+        </select>
+      </div>
+      <div class="btn">Subscribe</div>
     </section>
 
     <footer>

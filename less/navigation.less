@@ -1,1 +1,39 @@
-// Navigation code here
+.nav-bar {
+    background: @nav-bg;
+    padding: 20px 0 10px;
+    border: 1px solid @nav-border;
+    .flex(space-between, center, column);
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+    nav {
+        .flex(space-between, center, row);
+        width: 420px;
+        @media @phone {
+            width: 80%;
+        }
+        .nav-element {
+            min-width: 80px;
+            text-align: center;
+            padding-bottom: 8px;
+            border-bottom: 1px solid @nav-bg;
+            @media @phone {
+                min-width: 50px;
+            }
+            a {
+                .navLinks(100%);
+                color: @nav-font;
+            }
+            &:hover {
+                animation: border-animation;
+                animation-duration: 1s;
+            }
+        }
+    }
+}
+
+@keyframes border-animation {
+    from {border-bottom: 1px solid @nav-bg;}
+    to {border-bottom: 1px solid @nav-font;}
+}

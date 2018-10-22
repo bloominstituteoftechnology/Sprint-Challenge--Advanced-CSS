@@ -3,6 +3,10 @@
 .home {
 
   .intro {
+    .planet {
+      .imgs(98%, auto, 5px);
+      margin: 0 1%;
+    }
 
     h2 {
       padding: 15px;
@@ -18,13 +22,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
     img {
-      width: 28%;
+      .imgs(28%, 100%, 20px);
       margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
     }
+
+    .blast {
+      @media @phone {
+        .imgs(100%, 100%, 20px);
+        margin: 20px 4%;
+      }
+    }
+
+    .not-mobile {
+      @media @phone {
+        display: none;
+      }
+    }
+
   }
 
   .visit-planets {
@@ -45,10 +61,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      margin-top: 20px;
+      padding: 20px 3%;
+      .flex(space-between, center, column-reverse);
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -56,19 +78,52 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
-
+// .btn is at the bottom for less specificity (to share styles with submit button)
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 98%;
+        margin: 0 5% 20px;
+      }
       img {
+        .imgs(100%, auto, 10px);
+      }
+    }
+  }
+
+  .magazine {
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    .flex(space-between, flex-start, column);
+    @media @phone {
+      padding: 20px 3%;
+    }
+    .form {
+      width: 80%;
+      margin: 0 1%;
+      .input {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        margin: 15px 0;
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 10px;
+    .button(100px, @header-font-color, white);
+    &:hover {
+      .button(100px, white, @header-font-color);
+    }
+    @media @phone {
+      .button(95%, @header-font-color, white);
+      padding: 25px 0;
+      &:hover {
+        .button(95%, white, @header-font-color);
+        padding: 25px 0;
       }
     }
   }
