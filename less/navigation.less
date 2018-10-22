@@ -1,1 +1,30 @@
+
+
 // Navigation code here
+
+.main-nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: fade(@nav-bg, 50%);
+    border-bottom: 2px solid @nav-border;
+
+    h1 {
+        font-size: 4rem;
+        margin: 1.5rem 0 1rem 0;
+    }
+    nav {
+        display: flex;
+        a {
+            color: @nav-font;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 1.0rem 1.5rem;
+            &:link, &:visited {
+                .plain-text();
+            }
+        }
+    }
+}

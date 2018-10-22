@@ -1,1 +1,27 @@
+
+
 // Mixins Here
+
+.plain-text() {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gentle-border() {
+    border-radius: 0.5rem;
+}
+
+.button(@background: @btn-bg-color, @foreground: @wild-sand) {
+    background: @background;
+    color: @foreground;
+    border: solid 1px @background;
+    .gentle-border;
+    &:hover {
+        background: @foreground;
+        color: @background;
+    }
+    &:active {
+        background: shade(@foreground, 25%);
+        color: shade(@background, 25%);
+    }
+}
