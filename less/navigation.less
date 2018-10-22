@@ -1,1 +1,26 @@
 // Navigation code here
+nav {
+  background-color: @wild-sand;
+  border-bottom: 1px solid @sea-shell;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.95;
+  height: 110px;
+  .nav-logo {
+    .flex-center;
+    h1 {
+      font-size: 3.5rem;
+      padding: 20px 0 10px;
+      font-family: @river-bend;
+    }
+  }
+  .nav-links {
+    .flex-center;
+    font-size: 1.8rem;
+    a {
+      .nav-links-mixin(black);
+    }
+  }
+}
