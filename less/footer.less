@@ -1,11 +1,31 @@
 // Footer Styles
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #bfbfbf;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity:0;
+  animation-name:myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay:6s;
+  p{
+    transition-property: transform;
+  transition-duration:3s;
+    &:hover{
+    transform: rotateY(360deg);
+      }
+  
+  }
+  @media @mobile{
+    background:gray;
+    transition-property: transform;
+    transition-duration:3s;
+      &:hover{
+      transform: rotateY(360deg);
+        }
+    
+  }
 }

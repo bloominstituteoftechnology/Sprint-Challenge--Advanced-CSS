@@ -1,0 +1,380 @@
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+body {
+  background-image: url("../img/space.jpg");
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  background: #bfbfbf;
+}
+.navbar h1 {
+  font-size: 3.2rem;
+  margin: 2% 0;
+  transition-property: transform;
+  transition-duration: 3s;
+}
+.navbar h1:hover {
+  transform: rotateY(360deg);
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 2% 0;
+}
+.navbar nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
+footer {
+  color: #22283B;
+  background: #bfbfbf;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+footer p {
+  transition-property: transform;
+  transition-duration: 3s;
+}
+footer p:hover {
+  transform: rotateY(360deg);
+}
+@media (max-width:500px) {
+  footer {
+    background: gray;
+    transition-property: transform;
+    transition-duration: 3s;
+  }
+  footer:hover {
+    transform: rotateY(360deg);
+  }
+}
+.home .intro {
+  opacity: 0;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  background: #bfbfbf;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width:500px) {
+  .home .intro h2 {
+    width: 100%;
+  }
+  .home .intro .logo {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  background: #bfbfbf;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+  animation: myAnimation;
+  opacity: 0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  background: #bfbfbf;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: myAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+  background: #bfbfbf;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 25%;
+  height: 15%;
+  background: #22283A;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: transform;
+  transition-duration: 3s;
+}
+.home .walk .walk-text .btn:hover {
+  transform: rotateY(360deg);
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 5%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 15%;
+    background: #22283A;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 5%;
+  }
+}

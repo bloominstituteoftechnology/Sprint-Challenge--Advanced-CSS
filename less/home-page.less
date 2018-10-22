@@ -3,7 +3,12 @@
 .home {
 
   .intro {
-
+    opacity:0;
+    animation-name:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:2s;
+    background:#bfbfbf;
     h2 {
       padding: 15px;
     }
@@ -11,25 +16,65 @@
     p {
       padding:0 15px;
     }
-  
+    @media @mobile{
+      
+        h2{
+          width:100%;
+        }
+      .logo{
+          max-width:500px;
+          width:100%;
+        }
+          
+    }
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    opacity:0;
+    animation:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    background:#bfbfbf;
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
+    .blast{
+      @media @mobile{
+        width:90%;
+        margin: 20px auto;
+      }
+      
+    }
+
+    .sky{
+      @media @mobile{
+        display:none;
+      }
+    }
+
+    .launch{
+      @media @mobile{
+        display:none;
+      }
+    }
   }
 
   .visit-planets {
     padding: 15px;
-
+    animation:myAnimation;
+    opacity:0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:4s;
+    background:#bfbfbf;
     h3 {
       margin-top: 11px;
     }
@@ -40,12 +85,15 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    opacity:0;
+    animation:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:5s;
+    background:#bfbfbf;
     .walk-text {
       width: 50%;
 
@@ -58,6 +106,13 @@
       }
 
       .btn {
+              .buttoncreator(25%,15%,@btn-bg-color,white,1.6rem);
+              .center;
+              transition-property: transform;
+              transition-duration:3s;
+              &:hover{
+                transform: rotateY(360deg);
+              }
       }
     }
 
@@ -71,5 +126,31 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile{
+      flex-direction:column-reverse;
+      justify-content: flex-start;
+      padding:5%;
+      .walk-img{
+          width:100%;
+          margin:0 auto;
+        img{
+          width:100%;
+        }
+      }
+
+      .walk-text{
+        width:100%;
+
+        .btn{
+          .buttoncreator(100%,15%,@btn-bg-color,white,1.6rem);
+          padding:5%;
+          
+        }
+      }
+      
+      
+    }
+    
   }
 }// home

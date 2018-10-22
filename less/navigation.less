@@ -1,1 +1,36 @@
 // Navigation code here
+.navbar{
+    display:flex;
+    flex-direction: column;
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+    align-items:center;
+    opacity:0;
+    animation:myAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay:1s;
+    background:#bfbfbf;
+    h1{
+        font-size:3.2rem;
+        margin:2% 0;
+        transition-property: transform;
+              transition-duration:3s;
+              &:hover{
+                transform: rotateY(360deg);
+              }
+    }
+
+    nav{
+        display:flex;
+        justify-content:space-evenly;
+        width:100%;
+        margin:2% 0;
+        a{
+            text-decoration:none;
+            color:black;
+            font-size:1.6rem;
+        }
+    }
+}
