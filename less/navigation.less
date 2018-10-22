@@ -1,1 +1,36 @@
 // Navigation code here
+body > header {
+    width: 100%;
+    max-width: 1000px;
+    height: 100px;
+    border-bottom: 1px solid @nav-border;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: @nav-bg;
+
+    h1 {
+        margin-top: 13px;
+        font-size: 4rem;
+        color: @header-font-color;
+    }
+
+    nav {
+        width: 41%;
+        margin: 11px 0;
+        display: flex;
+        justify-content: space-around;
+
+        @media @phone {
+            width: 84.5%;
+        }
+
+        a {
+            font-size: 1.6rem;
+            color: @nav-font;
+            text-decoration: none;
+        }
+    }
+}

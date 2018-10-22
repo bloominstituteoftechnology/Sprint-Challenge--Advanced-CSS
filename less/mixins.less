@@ -1,1 +1,42 @@
 // Mixins Here
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+.button(@width, @height, @pad-top, @font-size) {
+    width: @width;
+    height: @height;
+    .border-radius();
+    padding-top: @pad-top;
+    background: @button-bg;
+    color: white;
+    font-size: 1.84rem;
+    text-align: center;
+
+    &:hover {
+        border: 2px solid @button-bg;
+        padding-top: calc(@pad-top - 2px);
+        background: white;
+        color: @button-bg;
+    }
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.std-pad() {
+    padding: 15px;
+
+    @media @phone {
+        padding: 15px @mobile-pad;
+    }
+}
