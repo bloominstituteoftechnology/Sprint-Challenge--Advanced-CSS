@@ -1,1 +1,48 @@
 // Mixins Here
+
+// Flex direction
+  .flex(@direction, @justify, @align) {
+    display:flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+// min max width
+.width(@max,@width) {
+    max-width:@max;
+    width:@width;
+}
+
+//
+.p(@fonts,@lh) {
+    padding-top: 10px;
+    font-size: @fonts;
+    line-height:@lh;
+}
+// Web Prefixes
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+  // Btn creators
+  .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(25px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid @silver;
+    cursor: pointer;
+    font-size: @font-size;
+  
+    @media @mobile {
+      width: 100%;
+    }
+    
+    &:hover {
+      background: @white;
+      color: @button-bg;
+    }
+  }
