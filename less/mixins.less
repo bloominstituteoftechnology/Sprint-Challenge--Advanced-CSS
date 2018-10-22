@@ -1,1 +1,28 @@
-// Mixins Here
+.center(@direction) {
+	display: flex;
+	flex-direction: @direction;
+	align-items: center;
+	justify-content: center;
+}
+
+.fix-font(@font) {
+	text-decoration: none;
+	font-family: @font;
+}
+
+.signup-button(@bg, @color) {
+	background: @bg;
+  color: @color;
+  margin: 0px;
+  padding: 10px 23px;
+  font-size: 1.6em;
+  width: 105px;
+  font-weight: bold;
+  border-radius: 5px;
+
+  &:hover {
+  	background: @color;
+  	color: @bg;
+  	cursor: pointer;
+  }
+}
