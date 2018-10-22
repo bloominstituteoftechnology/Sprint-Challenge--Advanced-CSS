@@ -12,9 +12,17 @@ html, body {
   color: @main-font-color;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
@@ -31,8 +39,9 @@ p {
 }
 
 .container {
-  max-width: 800px;
+  max-width: @container-width;
   width: 100%;
-  margin: 0 auto;  
+  .center;
+  margin-top: 89px;
 }
 
