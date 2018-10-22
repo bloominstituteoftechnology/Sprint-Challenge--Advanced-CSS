@@ -1,1 +1,31 @@
 // Navigation code here
+
+
+.main {
+  .nav-center;
+  background-color:@wild-sand;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    nav {
+      display:flex;
+      justify-content: space-evenly;
+      width:40%;
+      padding:15px;
+
+      @media @phone {
+        display:flex;
+        width:500px;
+      }
+      
+      a {
+        display:flex;
+        color:@ebony-clay;
+        font-size:1.6rem;
+        font-weight:bold;
+        text-decoration: none;
+      }
+    }
+  }
