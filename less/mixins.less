@@ -1,1 +1,42 @@
-// Mixins Here
+.signUpBtn (@color, @radius) {
+  .border-radius(@radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: @color;
+  font-size: 1.8rem;
+  max-width: 10rem;
+  height: 3.4rem;
+  text-decoration: none;
+  box-shadow: 1px 1px 1px grey;
+}
+
+.btn {
+  .signUpBtn(@btn-bg-color, 5px);
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.fade(@duration) {
+  animation-name: fade;
+  animation-duration: @duration;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
