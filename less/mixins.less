@@ -1,1 +1,28 @@
 // Mixins Here
+.nav-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+//parametric mixin
+.button(@bgcolor, @fntcolor, @width, @height, @fntsize) {
+  background-color: @bgcolor;
+  color: @fntcolor;
+  border-radius: 5px;
+  width: @width;
+  height: @height;
+  font-size: @fntsize;
+  padding: 1%;
+  text-align: center;
+
+  &:hover {
+    background-color: @fntcolor;
+    color: @bgcolor;
+  }
+}
+
+.display-none-phone {
+  @media @phone {
+    display: none;
+  }
+}
