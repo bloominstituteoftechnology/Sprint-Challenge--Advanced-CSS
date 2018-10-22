@@ -1,1 +1,31 @@
 // Mixins Here
+.containerMaker(@width) {
+  margin: 0 auto;
+  max-width: @width;
+  min-width: 350px;
+}
+
+.autoFlexer(@direction,@justify,@align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.buttonMaker(@display,@topBottomPadding) {
+  display: @display;
+  background: @river-bend;
+  color: @porcelain;
+  border: 1px double #e0e0e0;
+  text-align: center;
+  .global-radius(5px);
+  padding: @topBottomPadding 19px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.global-radius(@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
