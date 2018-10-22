@@ -13,9 +13,9 @@
 @footer-font-color: @waterloo;
 
 // Color Vars
-@wild-sand: #F6F6F6;
+@wild-sand: rgba(179, 179, 179, 0.199);
 @river-bend: #454A59;
-@sea-shell: #F1F1F1;
+@sea-shell: rgba(129, 129, 129, 0.041);
 @ebony-clay: #23293B;
 @shuttle-gray: #5E6164;
 @porcelain: #F6F7F8;
@@ -24,3 +24,15 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@mobile: ~'(max-width:500px)';
+
+// Text-Sizing
+@h2: 3.0rem;
+@h2mobile: 2.0rem;
+@p: 1.8rem;
+
+// Animations
+@keyframes navanimation {
+    from {background-color: black;}
+    to {background-color: @wild-sand;}
+}

@@ -1,1 +1,24 @@
 // Mixins Here
+.button-creator(@width,  @height) {
+    background-color: @btn-bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem;
+    color: @porcelain;
+    width: @width;
+    height: @height;
+    border-radius: 5px;
+    margin-top: 15px; 
+    // width: 40%;
+
+    &:hover {
+        color: @shuttle-gray;
+        border: @ebony-clay;
+        transition: .5s;
+        cursor: pointer;
+        background-color: @wild-sand;
+        
+    }
+}
+
