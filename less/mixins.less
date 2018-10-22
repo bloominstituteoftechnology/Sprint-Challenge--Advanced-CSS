@@ -1,1 +1,25 @@
 // Mixins Here
+.center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button() {
+    color: white;
+    padding: 6px 20px 6px 20px;
+    /* width: 98px; */
+    border-radius: 5px;
+    background: @btn-bg-color;
+    font-size: 1.8rem;
+    text-align: center;
+    display: inline;
+    .invert-btn(@btn-bg-color,white);
+}
+
+.invert-btn(@btn-bg-color, @myColor){
+     &:hover {
+         background:@myColor;
+         color: @btn-bg-color;
+     }
+}
