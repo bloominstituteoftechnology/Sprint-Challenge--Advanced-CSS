@@ -1,1 +1,39 @@
 // Mixins Here
+
+// centers horizontally and vertically
+.center-all(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// button with settable font color, background, and size
+.custom-button(@color, @background, @width, @padding) {
+    
+    font-size: 1.8rem;
+    border-radius: 5px;
+    text-align: center;
+    width: @width;
+    color: @color;
+    background: @background;
+    padding: @padding 0;
+
+    &:hover {
+        color: @background;
+        background: @color;
+    }
+}
+
+//sets width and height of element in one line
+.width-height(@width, @height){
+    width: @width;
+    height: @height;
+}
+
+//transition mixin
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+	-ms-transition:     @transition; 
+	-o-transition:      @transition;  
+}

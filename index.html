@@ -1,13 +1,18 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SpaceWalkers</title>
 
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"> -->
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,56 +21,111 @@
 
 <body>
 
- <!-- navigation code here -->
+  <!--Bootstrap Modal -->
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="my-modal-form" action=" ">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="user" placeholder="Username">
 
+            <label for="password">Password</label>
+            <input type="text" id="password" name="pass" placeholder="Password">
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+
+
+  <!-- fixed navigation bar end-->
+  <div class="fixed-nav-container">
+    <div class="fixed-nav">
+      <h1>SpaceWalkers</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="" data-toggle="modal" data-target="#exampleModal">Sign In</a>
+      </nav>
+    </div>
+  </div><!-- fixed navigation bar end -->
+
+  <!-- main page container -->
   <div class="container home">
-
-    <header class="intro">
-       <!-- image code here -->
+    <header class="intro"><!-- header, "Lift Off" content and image -->
+      <img src="img/main-header.png">
 
       <h2>Lift Off</h2>
-    
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+
+      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble,
+        the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you
+        touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+    <section class="space-images"><!-- space images section -->
+      <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+      <img src="img/sky.png" class="sky" alt="Space sky image">
+      <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
-   
-    <section class="visit-planets">
-     
+
+    <section class="visit-planets"><!-- "Can We Visit Planets?" section -->
+
       <h3>Can We Visit Planets?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
+
+      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having
+        the qualities of a globe, a round earth in which all the directions eventually meet.</p>
+
+      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
+        The airman's earth, if free men make it.</p>
     </section>
-    
-    <section class="walk">
+
+    <section class="walk"><!-- "Let's Go For A Walk" section -->
       <div class="walk-text">
         <h3>Let's Go For A Walk</h3>
 
-        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The
+          Earth was absolutely round.</p>
+
+        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and
+          my thumb blotted out the planet Earth.</p>
+
         <div class="btn">
           Sign Up
         </div>
       </div>
-      
+
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+        <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
     </section>
 
-    <footer>
+    <footer><!-- footer -->
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
 
-  </div>
+  </div><!-- end main page container -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
 </body>
+
 </html>
