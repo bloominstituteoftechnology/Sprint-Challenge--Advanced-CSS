@@ -1,1 +1,28 @@
 // Mixins Here
+.test-box{
+    border: 1px solid red;
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+  }
+.custom-button(@bg, @color) {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 30%;
+    .border-radius(10px);
+    text-decoration: none;
+    font-weight: bold;
+    background: @bg;
+    color: @color;
+    font-size:1.6rem;
+    text-align: center;
+    
+    &:hover {
+      background: @color;
+      color: @bg;
+    }
+}
