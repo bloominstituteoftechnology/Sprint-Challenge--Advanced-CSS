@@ -1,1 +1,38 @@
 // Navigation code here
+
+#nav-header {
+  .custom-layout(center);
+  align-items: center;
+  max-width: 100%;
+  flex-direction: column;
+  background-color: #F6F6F6;
+
+  h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 12px;
+
+    &:hover {
+      animation-name: hover;
+      animation-duration: 4s;
+    }
+  }
+
+  nav {
+    max-width: 100%;
+    .custom-layout(center);
+    margin-top: 6px;
+
+    a {
+      margin: 12px 5% 5%;
+      color: black;
+      text-decoration-line: none;
+      white-space: nowrap;
+
+      &:hover {
+        animation-name: hover;
+        animation-duration: 4s;
+      }
+    }
+  }
+}

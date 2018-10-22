@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.home img {
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .home img {
+    width: 100%;
+    height: 129px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 0 1% 16px 1%;
+  }
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0 4px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-left: 5px;
+    padding-top: 19px;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 1px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 53px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 38px 0 10px 0;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-left: 8px;
+  }
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid black;
+  max-width: 101px;
+  height: auto;
+  font-size: 1.8rem;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #22283A;
+  color: white;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    max-width: 100%;
+    height: 68px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px;
+    margin-bottom: 7px;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    padding: 0px;
+  }
+}
+.space-banner {
+  height: 250px;
+}
+@media (max-width: 500px) {
+  .space-banner {
+    height: 100px;
+  }
+}
+.bg-space {
+  width: 100%;
+  height: 500px;
+  background: url(https://news.unclesamsmisguidedchildren.com/wp-content/uploads/2018/06/spaceforce.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  margin-top: -10px;
+}
+@media (max-width: 500px) {
+  .bg-space {
+    background-size: cover;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 500px;
+  background: rgba(130, 130, 130, 0.3);
+  padding: 20px 22px;
+  border: 1px solid;
+  border-top-color: rgba(255, 255, 255, 0.4);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-bottom-color: rgba(60, 60, 60, 0.4);
+  border-right-color: rgba(60, 60, 60, 0.4);
+}
+@media (max-width: 500px) {
+  form {
+    width: 100%;
+  }
+}
+form input,
+form button {
+  width: 450px;
+  border: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(60, 60, 60, 0.35);
+  border-top-color: rgba(60, 60, 60, 0.35);
+  border-left-color: rgba(80, 80, 80, 0.45);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  padding: 8px 24px 8px 10px;
+  letter-spacing: 0.075em;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 19px;
+}
+@media (max-width: 500px) {
+  form input,
+  form button {
+    width: 100%;
+  }
+}
+form input:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+@keyframes hover {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: green;
+  }
+}
+#nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+#nav-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 12px;
+}
+#nav-header h1:hover {
+  animation-name: hover;
+  animation-duration: 4s;
+}
+#nav-header nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+#nav-header nav a {
+  margin: 12px 5% 5%;
+  color: black;
+  text-decoration-line: none;
+  white-space: nowrap;
+}
+#nav-header nav a:hover {
+  animation-name: hover;
+  animation-duration: 4s;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
