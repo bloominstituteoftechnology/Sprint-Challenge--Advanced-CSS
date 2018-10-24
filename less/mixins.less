@@ -1,1 +1,32 @@
 // Mixins Here
+
+
+
+//mixin 1....jk not actual mixin just a variable
+//initial mixin variable
+@main-background: @white-smoke;
+//defined mixin variable
+@white-smoke: #f4f4f4;
+
+
+//mixin 2....jk not actual mixin just a variable
+@text-color: @midnight-express;
+
+@midnight-express: #23293B; 
+
+//Actual Mixin's
+.MyFont {
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.size(@height, @width) {
+    height: @height;
+    width: @width;
+}
+
