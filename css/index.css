@@ -24,6 +24,7 @@
 .img-design {
   display: flex;
   width: 100%;
+  max-width: 1024px;
   justify-content: space-between;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -266,7 +267,14 @@ body .smart-container .text-content p {
 body .smart-container .img-content {
   display: flex;
   width: 100%;
+  max-width: 1024px;
   justify-content: space-between;
+}
+body .smart-container .img-content .one,
+body .smart-container .img-content .two,
+body .smart-container .img-content .three {
+  display: flex;
+  width: 31.5%;
 }
 @media (max-width: 500px) {
   body .smart-container .img-content .one {
