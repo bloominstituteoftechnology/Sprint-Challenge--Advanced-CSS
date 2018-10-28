@@ -270,7 +270,8 @@ body .smart-container .img-content {
 }
 @media (max-width: 500px) {
   body .smart-container .img-content .one {
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 25px 0;
   }
   body .smart-container .img-content .two,
   body .smart-container .img-content .three {
