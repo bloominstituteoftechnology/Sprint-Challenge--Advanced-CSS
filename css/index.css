@@ -150,6 +150,7 @@ h5 {
 }
 h2 {
   font-size: 3.2rem;
+  padding: 10px;
 }
 h3 {
   font-size: 2.8rem;
@@ -157,6 +158,11 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 2rem;
+  }
 }
 img {
   max-width: 100%;
@@ -214,8 +220,18 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 10px;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -262,6 +278,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
