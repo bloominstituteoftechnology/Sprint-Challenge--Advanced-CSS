@@ -191,6 +191,8 @@ img {
 nav {
   width: 100%;
   background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
 }
 nav .navi {
   max-width: 800px;
@@ -233,6 +235,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 133px;
 }
 .home .intro h2 {
   padding: 15px;
