@@ -162,8 +162,9 @@ p {
 }
 .nav-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 10px 0;
   background-color: #f6f6f6;
 }
