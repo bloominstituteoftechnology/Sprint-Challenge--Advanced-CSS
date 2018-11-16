@@ -1,3 +1,23 @@
+.btn {
+  background: #22283A;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 1.6rem;
+  padding: 10px;
+  text-align: center;
+}
+.btn:hover {
+  background: white;
+  color: #22283A;
+  border: 1px solid #22283A;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 1.6rem;
+  padding: 10px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +165,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +182,34 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+}
+.main-header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0 10px 0;
+  font-size: 1.4rem;
+  color: black;
+}
+@media (max-width: 500px) {
+  .main-header nav {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+.main-header nav a {
+  text-decoration: none;
+}
+.main-header nav a:hover {
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
