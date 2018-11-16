@@ -172,7 +172,6 @@ body nav a {
   color: #81848E;
   text-decoration: none;
   margin: 20px;
-  width: 100%;
   height: auto;
 }
 @media (('max-width: 500px')) {
@@ -200,6 +199,13 @@ footer {
   justify-content: center;
   font-size: 5rem;
   margin-top: 3%;
+}
+@media (('max-width: 500px')) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 .home .intro .top-image {
   max-width: 100%;
