@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5e6164;
+  color: #5E6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293b;
+  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
@@ -167,7 +167,7 @@ p {
   align-items: center;
   width: 100%;
   margin: auto;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   border-bottom: 1px solid #dee2e6;
 }
 .navarea .navhead {
@@ -176,11 +176,11 @@ p {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #454a59;
+  color: #454A59;
 }
 .navarea .navhead h1 {
   font-size: 4em;
-  padding: 10px;
+  padding-top: 10px;
 }
 .navarea .navhead a {
   text-decoration: none;
@@ -193,9 +193,9 @@ p {
 .navarea nav a {
   font-size: 1.6em;
   display: flex;
-  padding: 12px;
+  padding: 14px;
   text-decoration: none;
-  color: #454a59;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -240,7 +240,7 @@ footer {
     display: none;
   }
   .home .space-images .blast {
-    padding: 10px;
+    padding: 5px;
   }
   .home .space-images img {
     width: 100%;
@@ -276,6 +276,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    padding: 2.5%;
   }
 }
 .home .walk .walk-text h3 {
@@ -287,10 +288,10 @@ footer {
 .home .walk .walk-text .btn {
   width: 30%;
   height: 12%;
-  background-color: #22283a;
+  background-color: #22283A;
   border-radius: 7px;
   font-size: 1.7em;
-  color: #ffffff;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,10 +300,10 @@ footer {
   .home .walk .walk-text .btn {
     width: 100%;
     height: 55px;
-    background-color: #22283a;
+    background-color: #22283A;
     border-radius: 7px;
     font-size: 1.7em;
-    color: #ffffff;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,32 +312,37 @@ footer {
 .home .walk .walk-text .btn:hover {
   width: 30%;
   height: 12%;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 7px;
   font-size: 1.7em;
-  color: #22283a;
+  color: #22283A;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #22283a;
+  border: 1px solid #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn:hover {
     width: 100%;
     height: 55px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 7px;
     font-size: 1.7em;
-    color: #22283a;
+    color: #22283A;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #22283a;
+    border: 1px solid #22283A;
   }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    padding: 2.5%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
@@ -346,7 +352,6 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     margin: auto;
-    padding: 10px;
     width: 100%;
   }
 }
