@@ -310,6 +310,10 @@ footer {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.home .walk .walk-text .btn:hover {
+  color: #23293B;
+  background-color: #F6F7F8;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
