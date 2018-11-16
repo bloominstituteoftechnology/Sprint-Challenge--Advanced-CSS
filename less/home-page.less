@@ -7,6 +7,11 @@
     img {
       padding: 100px 0 10px;
       .border-radius(20px);
+
+      @media @phone {
+        padding-top: 100px;
+        width: 100%;
+      }
     }
     h2 {
       padding: 15px;
@@ -82,13 +87,18 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+
+      @media @phone {
+        flex-direction: column;
+
+      }
 
     .walk-text {
       width: 50%;
     
       @media @phone {
+        
         width: 100%;
         padding-top: 1.5rem;
       }
@@ -108,13 +118,6 @@
       width: 46%;
       margin-left: 4%;
 
-      @media @phone {
-        width: 100%;
-        padding: 0;
-        order:-1;
-      }
-
-    
       
       
       img {
@@ -125,11 +128,17 @@
 
    
     }
+    @media @phone {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      order:-1;
+    }
   }
 
   .btn { 
       .button-creator(98px, 38px, @btn-color, @btn-font, 1.8rem);
     }
   }
-}
+
 }// home
