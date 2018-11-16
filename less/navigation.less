@@ -1,1 +1,49 @@
-// Navigation code here
+// Navigation Styles here
+header {
+   // border: 2px solid blue;
+    border-bottom: 2px solid @nav-border;
+    width: 100%;
+    .center;
+    background-color: @nav-bg;
+
+    div{ 
+      //  .center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        @media @phone {
+         flex-wrap: wrap;
+         width: 100%;
+                     }
+    }
+    div h1 {
+        font-size: 3.8rem;
+        margin: 40px 0 10px 0;
+        color: @nav-font;
+        .center;
+     @media @phone {
+         margin: 0px 30% 15px 30%;
+         font-size: 3rem;
+         
+     }
+    }
+
+nav{
+ //   margin: 8px 0 10px 0;
+ width: 100%;
+ .center
+ }
+ nav a {
+     text-decoration: none;
+     color: @nav-font;
+     font-size: 1.6rem;
+     padding: 14px 2%;
+
+     &:hover {
+         color: @btn-bg-color;
+     }
+ }
+
+
+
+}// Navigation code here

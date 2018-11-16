@@ -160,6 +160,53 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px solid #F1F1F1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+header div {
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  header div {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+header div h1 {
+  font-size: 3.8rem;
+  margin: 40px 0 10px 0;
+  color: #454A59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  header div h1 {
+    margin: 0px 30% 15px 30%;
+    font-size: 3rem;
+  }
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
+  padding: 14px 2%;
+}
+header nav a:hover {
+  color: #22283A;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
