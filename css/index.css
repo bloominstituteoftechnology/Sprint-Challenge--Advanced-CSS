@@ -165,14 +165,19 @@ img {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 100px auto 0;
 }
 .nav-container {
+  position: fixed;
+  top: 0;
   width: 100%;
   background: #f6f6f6;
   border-bottom: 2px solid #f1f1f1;
+  opacity: 0.8;
+  z-index: 5;
 }
 .nav-container nav {
+  position: relative;
   margin: 13px auto 0;
   max-width: 800px;
   display: flex;
