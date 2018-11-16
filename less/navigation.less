@@ -12,16 +12,25 @@
         h1 {
             font-size: 4rem;
             margin: 10px 0px;
+            @media @phone {
+                margin-bottom: 15px;
+            }
         }
 
         .nav-bar {
-            width: 40%;
+            width: 60%;
             .flex-setup(space-evenly, center);
             margin-bottom: 10px;
+            @media @phone {
+                width: 90%;
+            }
 
             a {
                 .links();
                 font-size: 1.4rem;
+                @media @phone {
+                    font-size: 1.6rem;
+                }
             }
 
             a:hover {
