@@ -198,9 +198,11 @@ nav .nav-links a {
   text-decoration: none;
   padding: 0 14px;
   transition: all 0.2s ease-in-out;
+  color: black;
 }
 nav .nav-links a:visited {
   text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
