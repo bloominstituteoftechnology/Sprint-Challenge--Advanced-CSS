@@ -182,7 +182,7 @@ p {
   font-size: 1.6rem;
   padding-bottom: 20px;
 }
-@media  {
+@media (max-width: 500px) {
   .nav-unit nav {
     display: flex;
     flex-direction: row;
@@ -213,7 +213,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
-@media  {
+@media (max-width: 500px) {
   .home .intro img {
     width: 100%;
   }
@@ -235,7 +235,7 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media  {
+@media (max-width: 500px) {
   .home .space-images .launch {
     display: none;
   }
@@ -262,7 +262,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media  {
+@media (max-width: 500px) {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
@@ -273,30 +273,30 @@ footer {
   font-size: 1.8rem;
   width: 100px;
   height: 40px;
-  background-color: #22283B;
+  background-color: #22283A;
   color: white;
   margin-top: 10px;
   border-radius: 8px;
 }
 .home .walk .signup:hover {
-  border: 1px solid #22283B;
+  border: 1px solid #22283A;
   background-color: white;
-  color: #22283B;
+  color: #22283A;
 }
-@media  {
+@media (max-width: 500px) {
   .home .walk .signup {
     font-size: 1.8rem;
     width: 400px;
     height: 50px;
-    background-color: #22283B;
+    background-color: #22283A;
     color: white;
     margin-top: 10px;
     border-radius: 8px;
   }
   .home .walk .signup:hover {
-    border: 1px solid #22283B;
+    border: 1px solid #22283A;
     background-color: white;
-    color: #22283B;
+    color: #22283A;
   }
 }
 .home .walk .walk-text {
@@ -308,7 +308,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-@media  {
+@media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
   }
@@ -317,10 +317,11 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media  {
+@media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
     padding-bottom: 2rem;
+    margin: auto;
   }
 }
 .home .walk .walk-img img {
