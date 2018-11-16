@@ -28,6 +28,10 @@
       height: 100%;
     }
     .blast {
+      &:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+      }
       @media @phone {
         width: 90%;
         margin: 20px auto;
@@ -37,6 +41,12 @@
     .launch {
       @media @phone {
         display: none;
+      }
+    }
+    .launch {
+      &:hover {
+        animation: shake 0.2s;
+        animation-iteration-count: infinite;
       }
     }
   }
