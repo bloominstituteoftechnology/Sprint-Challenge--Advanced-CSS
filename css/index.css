@@ -317,7 +317,11 @@ footer {
   }
 }
 .home .walk .walk-img img {
-  width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100%;
+  }
 }

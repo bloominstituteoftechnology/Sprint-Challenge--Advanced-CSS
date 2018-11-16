@@ -84,9 +84,11 @@
         width: 95%;
       }
       img {
-        width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
