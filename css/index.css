@@ -142,6 +142,22 @@ html {
   html .home .form-style {
     width: 75%;
   }
+  html .posts {
+    width: 98%;
+    margin: 1%;
+  }
+  html .posts section {
+    flex-direction: column;
+  }
+  html .posts section div {
+    width: 100%;
+    margin: 0;
+  }
+  html .posts section .img-container img {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 500px) {
   html .navigation a {
@@ -244,7 +260,7 @@ a {
   right: 0;
   top: 0;
   padding: 1.5rem 0;
-  background-color: rgba(173, 172, 172, 0.822);
+  background-color: rgba(247, 247, 247, 0.753);
 }
 .navigation h1 {
   margin-bottom: 1.55rem;
@@ -259,7 +275,7 @@ a {
 .navigation a:hover {
   transition-property: background-color;
   transition-duration: 0.4s;
-  background-color: rgba(122, 121, 121, 0.5);
+  background-color: rgba(196, 196, 196, 0.5);
 }
 footer {
   color: #22283B;
@@ -391,8 +407,10 @@ footer {
   margin: 2rem;
 }
 .posts section {
+  border-top: 1px solid #dee2e6;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .posts section div {
   width: 48%;
@@ -420,6 +438,7 @@ footer {
 }
 .posts section .img-container img {
   width: 95%;
+  height: 95%;
   transition: all 0.2s ease-in-out;
 }
 .posts section .img-container img:hover {
