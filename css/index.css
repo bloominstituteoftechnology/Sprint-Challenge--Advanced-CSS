@@ -239,9 +239,16 @@ footer {
   background: black;
   border-radius: 5px;
   width: 30%;
-  padding: 10px 30px;
+  padding: 10px 25px;
   font-size: 1.2rem;
   font-weight: bold;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background: white;
+  border: 0.5px solid black;
 }
 .home .walk .walk-img {
   width: 46%;

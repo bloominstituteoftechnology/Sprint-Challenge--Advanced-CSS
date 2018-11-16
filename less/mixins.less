@@ -5,13 +5,21 @@
     align-items: center;
 }
 
-.main-btn() {
-    color: @btn-color;
-    background: @btn-bg;
+.main-btn(@color, @bg-color) {
+    color: @color;
+    background: @bg-color;
     border-radius: 5px;
     width: 30%;
-    padding: 10px 30px;
+    padding: 10px 25px;
     font-size: 1.2rem;
     font-weight: bold;
+    letter-spacing: 1.2px;
+    text-align: center;
+
+    &:hover {
+        color: @bg-color;
+        background: @color;
+        border: 0.5px solid black;
+    }
     
 }
