@@ -300,18 +300,18 @@ footer {
     justify-content: center;
   }
 }
-.home .walk .walk-text .walk-img {
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text .walk-img {
-    margin: auto;
-    width: 100%;
-  }
-}
-.home .walk .walk-text .walk-img img {
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: auto;
+    width: 100%;
+  }
 }
