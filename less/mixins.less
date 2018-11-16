@@ -1,1 +1,69 @@
 // Mixins Here
+
+.nav-mixin() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+}
+
+.nav-a-mixin() {
+    color: @waterloo;
+    text-decoration: none;
+    margin: 20px;
+    height: auto;
+    width: 100%; 
+}
+
+.button-mixin() {
+    background-color: @ebony-clay;
+    color: @porcelain;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @ebony-clay;
+
+    }
+}
+
+
+.phone-mixin-nav() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+}
+
+.phone-header-mixin() {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+}
+
+.phone-body-mixin() {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%
+
+
+}
+
+.phone-h2-mixin() {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+}
