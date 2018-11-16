@@ -323,20 +323,20 @@ footer {
   height: auto;
   border-radius: 20px;
 }
-.sign-in {
+.form-container {
   margin: 30px;
 }
-.sign-in legend {
+.form-container legend {
   font-size: 3rem;
   margin-bottom: 30px;
 }
-.sign-in label {
+.form-container label {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   font-size: 1.4rem;
 }
-.sign-in input {
+.form-container input {
   padding: 5px;
   width: 500px;
   font-size: 1.4rem;
