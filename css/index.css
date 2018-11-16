@@ -1,3 +1,95 @@
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+/* Add a background color when the inputs get focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for all buttons */
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 10px 20px;
+  background-color: #f44336;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container-form {
+  padding: 16px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -210,6 +302,10 @@ img {
   text-decoration: none;
   color: #454a59;
 }
+.main-navigation .nav-container .nav a:hover {
+  text-decoration: underline;
+  transform: translateY(4px);
+}
 footer {
   color: #22283b;
   background: #f4f4f4;
@@ -308,7 +404,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text button {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
@@ -324,16 +420,17 @@ footer {
   font-size: 1.8rem;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text button {
     width: 100%;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text button:hover {
   background: #f6f7f8;
   color: #22283a;
+  transform: translateY(8px);
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text button {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
@@ -348,13 +445,14 @@ footer {
     cursor: pointer;
     font-size: 1.8rem;
   }
-  .home .walk .walk-text .btn:hover {
+  .home .walk .walk-text button:hover {
     background: #f6f7f8;
     color: #22283a;
+    transform: translateY(8px);
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text button {
     width: 100%;
   }
 }
