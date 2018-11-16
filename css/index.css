@@ -205,6 +205,8 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
   height: 100%;
 }
@@ -232,6 +234,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 .home .walk .walk-img {
   width: 46%;
