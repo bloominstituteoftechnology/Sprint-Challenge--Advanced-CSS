@@ -211,7 +211,7 @@ footer {
   }
 }
 .home {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 @media (max-width: 500px) {
   .home {
