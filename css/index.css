@@ -216,6 +216,8 @@ footer {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  -webkit-animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .home .intro h2 {
   padding: 15px;
@@ -365,5 +367,19 @@ footer {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+  60% {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
