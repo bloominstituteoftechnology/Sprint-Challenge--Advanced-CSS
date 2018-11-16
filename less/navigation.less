@@ -1,6 +1,11 @@
 // Navigation code here
 nav {
     .layout (space-between, center, column);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @nav-bg;
+    border-bottom: 3px solid @nav-border;
     
 
     h1 {
@@ -15,11 +20,20 @@ nav {
         padding-bottom: 10px;
 
         a {
-            .base-font;
+            .nav-font;
 
             &:hover {
-                color: lighten(@main-font-color, 20%);
+                color: lighten(@nav-font, 20%);
             }
+        }
+    }
+
+    @media @phone {
+        h1 {
+            padding: 10px;
+        }
+        .links {
+            width: 96%;
         }
     }
 }

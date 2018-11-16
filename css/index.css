@@ -1,7 +1,30 @@
-.base-font {
+.nav-font {
   font-size: 1.6rem;
-  color: #5E6164;
+  color: #454A59;
   text-decoration: none;
+}
+@keyframes border-circle {
+  border-radius: 5px;
+  25% {
+    border-top: 3px solid #dee2e6;
+    padding: 12px 15px 15px 15px;
+  }
+  50% {
+    border-right: 3px solid #dee2e6;
+    border-top: 3px solid #dee2e6;
+    padding: 12px 12px 15px 15px;
+  }
+  75% {
+    border-right: 3px solid #dee2e6;
+    border-top: 3px solid #dee2e6;
+    border-bottom: 3px solid #dee2e6;
+    padding: 12px 12px 12px 15px;
+  }
+  100% {
+    border: 3px solid #dee2e6;
+    padding: 12px;
+  }
+  animation-fill-mode: forwards;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -171,6 +194,11 @@ nav {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F6F6F6;
+  border-bottom: 3px solid #F1F1F1;
 }
 nav h1 {
   font-size: 4rem;
@@ -187,11 +215,19 @@ nav .links {
 }
 nav .links a {
   font-size: 1.6rem;
-  color: #5E6164;
+  color: #454A59;
   text-decoration: none;
 }
 nav .links a:hover {
-  color: #919497;
+  color: #727a92;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    padding: 10px;
+  }
+  nav .links {
+    width: 96%;
+  }
 }
 footer {
   color: #22283B;
@@ -202,6 +238,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  padding-top: 90px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -315,4 +354,9 @@ footer {
     padding: 10px 0;
     margin: 0;
   }
+}
+.home h2,
+.home h3:hover {
+  animation-name: border-circle;
+  animation-duration: 4s;
 }
