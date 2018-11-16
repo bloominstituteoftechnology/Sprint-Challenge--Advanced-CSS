@@ -1,3 +1,6 @@
+.cb {
+  border: 1px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +162,21 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.top {
+  width: 100%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #F1F1F1;
+}
+.top .nav-box {
+  border: 1px solid red;
+}
+.top h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
 }
 footer {
   color: #22283B;
