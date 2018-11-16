@@ -210,6 +210,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  max-width: 100%;
+  height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
