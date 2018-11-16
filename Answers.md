@@ -16,4 +16,4 @@ As a car person, I like the analogy of CSS is your stock engine, CSS with a prep
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-My favorite concept of preprocessing is the nesting of styles, this just really clicks with me and makes styling much more intuitive. I also really like the use of variables for things like colors. The concept that gives me the most trouble is probably mixins, for me it just creates more confusion and trouble than it does help.
+My favorite concept of preprocessing is the nesting of styles, this just really clicks with me and makes styling much more intuitive. I also really like the use of variables for things like colors. The concept that gives me the most trouble is probably mixins, for me it just creates more confusion and trouble than it does help. Just remembered my real favorite part while doing the project - the error feedback the preprocessor gives. It's found a few bugs for me while doing this project and I love it very much for pointing out exactly where I've gone wrong.
