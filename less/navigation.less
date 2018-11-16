@@ -1,1 +1,31 @@
 // Navigation code here
+header{
+    .layout(flex,column,center,center);
+    h1{
+        font-size: 2.5rem;
+        color: @ebony-clay;
+        @media @phone{
+            margin-top: 3%;
+            font-size: 4rem;
+        }
+    }
+    nav {
+        .navStyle;
+        @media @phone{
+            width: 84%;
+        }
+        a{
+            color: @ebony-clay;
+            text-decoration: none;
+            font-size: 1.1rem;
+            @media @phone{
+                font-size: 1.6rem;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 800;
+                margin: 5% 0 0;
+                
+            }
+        }
+    }
+}
