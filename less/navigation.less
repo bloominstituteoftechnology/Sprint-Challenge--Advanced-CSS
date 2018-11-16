@@ -1,4 +1,28 @@
 // Navigation code here
-.navigation{
-    .navigation-style;
+.navigation {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1.5rem 0;
+  background-color: @nav-bg;
+  h1 {
+    margin-bottom: 1.55rem;
+  }
+  a {
+    color: black;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem 1rem;
+    .hover-animation(
+      background-color,
+      0.4s,
+      darken(rgb(@nav-bg, 50%, 50%), 20%)
+    );
+  }
 }

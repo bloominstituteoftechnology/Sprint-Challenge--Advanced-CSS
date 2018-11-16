@@ -139,6 +139,9 @@ html {
   html .container {
     width: 100%;
   }
+  html .home .form-style {
+    width: 75%;
+  }
 }
 @media (max-width: 500px) {
   html .navigation a {
@@ -186,6 +189,14 @@ html {
     width: 96%;
     margin: 2%;
   }
+  html .home .form-style {
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+    margin-top: 1rem;
+  }
+  html .home .form-style h3 {
+    padding: 2rem;
+  }
 }
 html,
 body {
@@ -219,7 +230,7 @@ a {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 10rem auto;
+  margin: 10rem auto 0;
 }
 .navigation {
   display: flex;
@@ -233,7 +244,7 @@ a {
   right: 0;
   top: 0;
   padding: 1.5rem 0;
-  background-color: rgba(246, 246, 246, 0.699);
+  background-color: rgba(173, 172, 172, 0.822);
 }
 .navigation h1 {
   margin-bottom: 1.55rem;
@@ -248,7 +259,7 @@ a {
 .navigation a:hover {
   transition-property: background-color;
   transition-duration: 0.4s;
-  background-color: rgba(195, 195, 195, 0.5);
+  background-color: rgba(122, 121, 121, 0.5);
 }
 footer {
   color: #22283B;
@@ -327,4 +338,52 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form-style {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 1rem auto;
+}
+.home .form-style h3 {
+  width: 100%;
+  font-size: 3em;
+  text-align: center;
+  padding: 2rem;
+}
+.home .form-style form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.home .form-style input {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.home .form-style .btn {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.home .form-style .btn:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: rgba(72, 84, 122, 0.5);
+}
+.home .form-style textarea {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  resize: none;
 }
