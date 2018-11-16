@@ -264,7 +264,3 @@ footer {
   max-width: 235;
   border-radius: 10px;
 }
-.home .walk footer p {
-  display: flex;
-  justify-content: center;
-}
