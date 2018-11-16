@@ -17,12 +17,18 @@
     color: white;
     font-size: 1.8rem;
     width: 29%;
+    @media @mobile {
+        width: 100%;
+        text-align: center;
+        padding: 27px;
+    }
     padding: 10px;
     text-align: center;
     border-radius: 5px;
     &:hover {
         color: @color;
         background-color: white;
+        border: 1px solid @color;
     }
 }
 .box-shadow(@x: 0, @y: 3, @blur: 15px, @color: rgba(0,0,0,0.2)) {
