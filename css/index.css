@@ -1,3 +1,13 @@
+/*
+.btnFactory() {
+    background: @btn-bg-color;
+    width: 30%;
+    border-radius: .5rem;
+    padding: .9rem 1.8rem;//9px 18px;
+    font-size:  1.9rem;//19px;
+    font-weight: bold;    
+}
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,6 +183,11 @@ p {
   width: 41%;
   margin: 1.3rem auto 1rem auto;
 }
+@media (max-width: 500px) {
+  .nav {
+    width: 82%;
+  }
+}
 .nav .link {
   font-size: 1.7rem;
   margin-top: 1.8rem;
@@ -196,6 +211,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home #header {
+  width: 100%;
+  height: auto;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -212,6 +231,12 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -240,6 +265,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   background: #22283A;
+  color: white;
   width: 30%;
   border-radius: 0.5rem;
   padding: 0.9rem 1.8rem;
