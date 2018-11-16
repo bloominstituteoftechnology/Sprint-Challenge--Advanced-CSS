@@ -1,1 +1,30 @@
-// Navigation code here
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: @nav-bg;
+  border-bottom: 2px solid @nav-border;
+  opacity: 0.8;
+  z-index: 5;
+
+  nav {
+    position: relative;
+    margin: 13px auto 0;
+    max-width: 800px;
+    .center(column, flex-start, center, nowrap);
+
+    div {
+      margin: 19px 0 10px;
+      width: 47%;
+      .center(row, space-between, flex-start, nowrap);
+
+      @media @phone {
+        width: 75%;
+      }
+
+      a {
+        .link-styles();
+      }
+    }
+  }
+}

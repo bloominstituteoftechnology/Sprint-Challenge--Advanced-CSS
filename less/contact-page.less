@@ -1,0 +1,66 @@
+// Contact Content
+
+.contact {
+  header {
+    .contact-header-img {
+      width: 100%;
+      img {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+
+        .img-fade-in();
+      }
+    }
+  }
+
+  .subscribe-content {
+    width: 100%;
+    margin-bottom: 30px;
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding: 0 15px;
+    }
+
+    form {
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 1.6rem;
+      line-height: 1.4;
+
+      .center(column, flex-start, flex-start, nowrap);
+
+      input {
+        padding: 5px 2% 5px 0.7%;
+      }
+
+      .address {
+        input {
+          margin-bottom: 0;
+        }
+      }
+
+      div {
+        width: 100%;
+        .center(column, flex-start, flex-start, nowrap);
+
+        textarea {
+          margin-bottom: 20px;
+          padding: 0 50% 200px 0.7%;
+        }
+      }
+
+      input:last-child {
+        .btn-template();
+        width: 100%;
+        height: 70px;
+        .center(row, center, center, nowrap);
+      }
+    }
+  }
+}
