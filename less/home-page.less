@@ -32,7 +32,7 @@
       height: 100%;
       
       @media @phone {
-        flex-wrap: wrap;
+       flex-wrap: wrap;
        flex-direction: row;
        align-items: flex-start;
        width: 100%; 
@@ -83,7 +83,7 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 35px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
@@ -91,9 +91,9 @@
 
     @media @phone {
       flex-wrap: wrap;
-    //  flex-direction: row;
-      // align-items: center;
-      // width: 100%; 
+      flex-direction: column-reverse;
+      width: 100%;
+   
   }
 
 }
@@ -102,11 +102,10 @@
       width: 50%;
 
       @media @phone {
-        flex-wrap: wrap;
+       flex-wrap: wrap;
        flex-direction: row;
        align-items: flex-start;
-        // align-items: center;
-        width: 100%; 
+       width: 100%; 
     }
 
 }
@@ -124,10 +123,12 @@
       .btn {
         
         #mixins .button-layout;
-        #mixins .border-radius(10px);
+        #mixins .border-radius(5px);
         @media @phone {
           flex-wrap: wrap;
           width: 100%; 
+          #mixins .border-radius(5px);
+          
       }
         
       &:hover {
@@ -140,11 +141,12 @@
       
       width: 46%;
       margin-left: 4%;
-      flex-wrap: wrap;
+      
       
       @media @phone {
-        flex-direction: column;
-        align-items: center;
+       flex-wrap: wrap;
+       width: 100%; 
+       margin: 0 auto;
         
       }
 
@@ -152,6 +154,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-        
-      }
+
+        @media @phone {
+        flex-wrap: wrap;
+        width: 100%; 
+          
+        }
+     }
 }// home

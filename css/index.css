@@ -190,7 +190,7 @@ nav a {
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
+  padding: 5px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
@@ -265,7 +265,7 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 35px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
@@ -274,6 +274,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
   }
 }
 .home .walk-text {
@@ -300,14 +302,24 @@ footer {
   padding: 5px 20px;
   margin: 10px;
   width: 40%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .btn {
+    padding: 15px 60px;
+    margin: 0 10px;
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .btn {
     flex-wrap: wrap;
     width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
   }
 }
 .btn:hover {
@@ -317,16 +329,22 @@ footer {
 .walk-img {
   width: 46%;
   margin-left: 4%;
-  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .walk-img {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk-img img {
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }

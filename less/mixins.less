@@ -25,7 +25,7 @@
         border-radius: @radius;
     }
 
-    //  =======Parametric Button Mixin========= 
+    
 
     .button-layout(){
         color: @wild-sand;
@@ -34,21 +34,26 @@
         padding: 5px 20px;
         margin: 10px;
         width: 40%;
+
+        @media @phone {
+            padding: 15px 60px;
+            margin: 0 10px;
+            width: 100%;
+            
+            
+        }
         
-       
+    }
 
        
-    
-}
-    
-    //  =======Parametric Button Mixin========= 
+//  =======Parametric Button Mixin========= 
       
     .button-layout(@wild-sand, @btn-bg-color) {
         color:@wild-sand;
         background-color: @btn-bg-color;
         font-size: 2rem; 
         padding: 5px 20px;
-        // #mixins .border-radius(10px);
+        
         
     }
 }
