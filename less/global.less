@@ -36,3 +36,30 @@ p {
   margin: 0 auto;  
 }
 
+.fa-rocket {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: 0rem;
+  color: @btn-bg-color;
+  .outline-text();
+
+  .keyframes(launch;
+    {
+      0% { } 
+      10% { } 
+      50% { 
+        font-size: 10rem; }      
+      100% { 
+        font-size: 0rem;
+        bottom: 95%;
+        left: 95%; }
+    };
+  );
+  .animation(launch 5s ease-in 1 forwards);
+
+  @media @phone {
+      display: none;
+  }
+}
+

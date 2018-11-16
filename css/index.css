@@ -160,6 +160,52 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.fa-rocket {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: 0rem;
+  color: #22283A;
+  text-shadow: 1px 1px 2px white;
+  -webkit-animation: launch 5s ease-in 1 forwards;
+  -moz-animation: launch 5s ease-in 1 forwards;
+  animation: launch 5s ease-in 1 forwards;
+}
+@-moz-keyframes launch {
+  50% {
+    font-size: 10rem;
+  }
+  100% {
+    font-size: 0rem;
+    bottom: 95%;
+    left: 95%;
+  }
+}
+@-webkit-keyframes launch {
+  50% {
+    font-size: 10rem;
+  }
+  100% {
+    font-size: 0rem;
+    bottom: 95%;
+    left: 95%;
+  }
+}
+@keyframes launch {
+  50% {
+    font-size: 10rem;
+  }
+  100% {
+    font-size: 0rem;
+    bottom: 95%;
+    left: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .fa-rocket {
+    display: none;
+  }
+}
 .header-nav {
   width: 100%;
   background-color: #F6F6F6;

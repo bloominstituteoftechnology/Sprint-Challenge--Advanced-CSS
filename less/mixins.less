@@ -40,3 +40,21 @@
 .bg-opacity(@op-choice) {
     background-color: rgba(246, 246, 246, @op-choice); 
 }
+
+.outline-text(@choose-color: white) {
+    text-shadow: 1px 1px 2px @choose-color;  
+}
+
+// Animations
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
