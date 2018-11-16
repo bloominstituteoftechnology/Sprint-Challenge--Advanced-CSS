@@ -12,7 +12,7 @@
         text-decoration: underline;
     }
 }
-.button-style(@color) {
+.button-style(@color, @padding) {
     background-color: @color;
     color: white;
     font-size: 1.8rem;
@@ -22,7 +22,7 @@
         text-align: center;
         padding: 27px;
     }
-    padding: 10px;
+    padding: @padding;
     text-align: center;
     border-radius: 5px;
     &:hover {
