@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: "Russo One", sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h1 {
   font-size: 4rem;
@@ -159,7 +159,7 @@ p {
   line-height: 1.4;
 }
 a {
-  color: #454A59;
+  color: #454a59;
   text-decoration: none;
   font-size: 1.6rem;
 }
@@ -174,8 +174,8 @@ a:hover {
 }
 .nav-container {
   width: 100%;
-  background: #F6F6F6;
-  border-bottom: 2px solid #F1F1F1;
+  background: #f6f6f6;
+  border-bottom: 2px solid #f1f1f1;
 }
 .nav-container nav {
   margin: 13px auto 0;
