@@ -8,6 +8,26 @@
   flex-wrap: @wrap;
 }
 
+.link-styles() {
+  color: @nav-font;
+  text-decoration: none;
+  font-size: 1.6rem;
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+.btn-template(@background: @btn-bg-color, @color: white, @radius: 5px, @padding: 7px 2%, @font: 1.8rem) {
+  text-align: center;
+  background: @background;
+  color: @color;
+  border-radius: @radius;
+  padding: @padding;
+  font-size: @font;
+}
+
 //============================== Animation Mixins
 
 .keyframes(@name; @arguments) {

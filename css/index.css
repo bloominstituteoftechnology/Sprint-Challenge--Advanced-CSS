@@ -158,15 +158,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-a {
-  color: #454a59;
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-a:hover {
-  color: black;
-  text-decoration: underline;
-}
 .container {
   max-width: 800px;
   width: 100%;
@@ -194,6 +185,15 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+.nav-container nav div a {
+  color: #454a59;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav-container nav div a:hover {
+  color: black;
+  text-decoration: underline;
 }
 footer {
   color: #22283B;
@@ -251,6 +251,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  background: #22283a;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 2%;
+  font-size: 1.8rem;
+  font-size: 1.9rem;
+  width: 29.5%;
+  border: 1px solid #22283a;
+}
+.home .walk .walk-text .btn:hover {
+  background: #f6f6f6;
+  border: 1px solid #454a59;
+  color: #454a59;
 }
 .home .walk .walk-img {
   width: 46%;
