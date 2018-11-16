@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-bottom: 1px double #F1F1F1;
+  padding: 20px 0 10px;
+}
+.nav-container h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.nav-container nav {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-container nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +200,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
