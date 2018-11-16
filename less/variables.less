@@ -12,6 +12,9 @@
 @footer-background: @wild-sand;
 @footer-font-color: @waterloo;
 
+@btn-bg: @btn-bg-color;
+@btn-font: @porcelain;
+
 // Color Vars
 @wild-sand: #F6F6F6;
 @river-bend: #454A59;
@@ -24,3 +27,26 @@
 @border-real: #dee2e6;
 
 // Mobile var
+
+@phone: ~"(max-width: 500px)";
+
+//Animations 
+
+@keyframes kenburns-bottom {
+  0% {
+    transform: scale(.75) translateY(0);
+    transform-origin: 50% 84%;
+  }
+  100% {
+    transform: scale(1.0) translateY(0px);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+@keyframes heart-beat{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
+
+@keyframes fad-in{0%{opacity:0}100%{opacity:1}}

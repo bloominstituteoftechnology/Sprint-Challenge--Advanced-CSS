@@ -1,1 +1,34 @@
 // Mixins Here
+
+.container-style() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+.center () {
+  display: flex;
+  justify-content: center;
+}
+
+// Button Parametric Mixin
+
+.btn-style(@width, @padding) {
+  background-color: @btn-bg;
+  color: @btn-font;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: @width;
+  padding: @padding;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @btn-font;
+    color: @btn-bg;
+    border: 2px solid black;
+    animation-name: heart-beat;
+    animation-duration: 2s;
+  }
+}
