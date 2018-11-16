@@ -172,8 +172,12 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 1%;
+  margin-top: 2%;
   padding-bottom: 2%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5E6164;
 }
 .navigation .page-title {
   width: 100%;
@@ -204,6 +208,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    margin-bottom: 2%;
+  }
+}
+.home .intro {
+  margin-top: 15%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -216,7 +228,8 @@ footer {
 @media (max-width: 500px) {
   .home .intro img {
     width: 98%;
-    margin: 1%;
+    margin-top: 5%;
+    margin-left: 1%;
   }
 }
 .home .space-images {
