@@ -346,3 +346,79 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dee2e6;
+}
+.about-header .about-img {
+  width: 40%;
+  margin: 20px 0px;
+}
+.about-header h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.team {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.team .person-img {
+  width: 150px;
+  margin: 0 auto;
+}
+.team .person1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.team .person1 h3 {
+  margin: 10px;
+}
+.team .person1 p {
+  text-align: center;
+}
+.team .person2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.team .person2 h3 {
+  margin: 10px;
+}
+.team .person2 p {
+  text-align: center;
+}
+.team .person3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.team .person3 h3 {
+  margin: 10px;
+}
+.team .person3 p {
+  text-align: center;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.mission .mission-img {
+  padding: 15px 0px;
+}
