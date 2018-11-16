@@ -24,6 +24,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: @nav-bg-opacity;
+    border-bottom: @nav-border;
+    padding-bottom: 5px;
+    color: @header-font-color;
+
+    @media @phone {
+        background: @nav-bg;
+    }
 }
 
 @keyframes explode {

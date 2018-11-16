@@ -225,6 +225,11 @@ p {
   padding-bottom: 5px;
   color: #23293B;
 }
+@media (max-width: 520px) {
+  .navigation-header {
+    background: #f6f6f6;
+  }
+}
 .navigation-header h1 {
   font-size: 4rem;
   margin: 13px auto;
