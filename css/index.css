@@ -179,6 +179,7 @@ p {
 }
 .hnav .mnav a {
   padding-right: 16.3px;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -195,6 +196,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 500px) {
+  .header-pic {
+    width: 98%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -206,45 +212,74 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
+.home img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+@media (max-width: 500px) {
+  .home img {
+    width: 100%;
+    height: auto;
+  }
+}
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+@media (max-width: 500px) {
+  .visit-planets {
+    flex-direction: column;
+  }
+}
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .walk .walk-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk .walk-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 .button {
   background-color: #4CAF50;
@@ -270,4 +305,33 @@ footer {
   background-color: #4CAF50;
   color: white;
   font-family: cursive;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    order: -1;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
 }
