@@ -1,9 +1,17 @@
 .nav-container {
   width: 100%;
+  background: @nav-bg;
+  border-bottom: 2px solid @nav-border;
 
   nav {
-    margin: 12px auto 0;
+    margin: 13px auto 0;
     max-width: 800px;
     .center(column, flex-start, center, nowrap);
+
+    div {
+      margin: 20px 0 9px;
+      width: 47%;
+      .center(row, space-between, flex-start, nowrap);
+    }
   }
 }
