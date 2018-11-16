@@ -1,18 +1,17 @@
 // Navigation code here
 .title {
-    display: flex;
-    flex-direction: column;
+    .flex(column);
     align-items: center;
-    width: 100%;
+    .width(100%);
     margin: 0 auto;  
     background-color: @nav-bg;
     border-bottom: 1px solid @nav-border;
     padding: 10px 0 10px 0;
     nav {
         color: @nav-font;
-        width: 100%;
+        .width(100%);
         max-width: 800px;
-        display: flex;
+        .flex(row);
         justify-content: center;
         margin: 20px 0 0 0;
         a {

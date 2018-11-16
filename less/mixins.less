@@ -1,1 +1,20 @@
 // Mixins Here
+.flex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.width(@percent) {
+    width: @percent;
+}
+
+.button(@color, @bkcolor) {
+    padding: 2% 5% 2% 5%;
+    border-radius: 5px;
+    background-color: @bkcolor;
+    color: @color;
+    font-size: 2rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}

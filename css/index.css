@@ -178,6 +178,7 @@ p {
   width: 100%;
   max-width: 800px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   margin: 20px 0 0 0;
 }
@@ -247,6 +248,17 @@ footer {
   border-radius: 5px;
   background-color: #23293B;
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+}
+.home .walk .walk-text .btn:hover {
+  padding: 2% 5% 2% 5%;
+  border-radius: 5px;
+  background-color: white;
+  color: #23293B;
   font-size: 2rem;
   font-weight: bold;
   display: inline-block;
