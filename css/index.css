@@ -301,6 +301,10 @@ footer {
   border-radius: 5px;
   text-align: center;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #5E6164;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     margin: 0%;
