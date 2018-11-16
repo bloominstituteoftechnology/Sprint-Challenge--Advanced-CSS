@@ -165,12 +165,24 @@ body nav {
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  height: auto;
   font-size: 2rem;
 }
 body nav a {
   color: #81848E;
   text-decoration: none;
   margin: 20px;
+  width: 100%;
+  height: auto;
+}
+@media (('max-width: 500px')) {
+  body nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+  }
 }
 footer {
   color: #22283B;
