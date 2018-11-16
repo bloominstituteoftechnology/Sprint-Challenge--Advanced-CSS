@@ -173,6 +173,8 @@ p {
 .nav-container h1 {
   font-size: 3.2rem;
   margin: 1rem 0;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -320,4 +322,36 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+.sign-in {
+  margin: 30px;
+}
+.sign-in legend {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.sign-in label {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  font-size: 1.4rem;
+}
+.sign-in input {
+  padding: 5px;
+  width: 500px;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 30px;
+  font-size: 1.6rem;
+  background-color: #22283a;
+  color: #f6f6f6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+button:hover {
+  color: #22283a;
+  background-color: #f6f6f6;
 }
