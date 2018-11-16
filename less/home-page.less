@@ -3,9 +3,17 @@
 .home {
 
   .intro {
+    position: static;
+    background-color: transparent;
+
+    .banner-img{
+      max-width: 100%;
+      height: auto;
+    }
 
     h2 {
       padding: 15px;
+      align-self: flex-start;
     }
 
     p {
@@ -24,7 +32,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width: 100%;
+        margin: 20px 5%;
+      }
+
+      &:nth-of-type(2), &:nth-of-type(3){
+        @media @phone{
+          display: none;
+        }
+      }
     }
+
+    
   }
 
   .visit-planets {
@@ -46,8 +67,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +89,28 @@
       }
 
       .btn {
+        margin-top: -5px;
+        font-size: 1.8rem;
+        .create-btn(black, white, 9px, 19px, 5px);
+
+        @media @phone{
+          display: block;
+          margin-top: -2px;
+          text-align: center;
+          padding: 26px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
       
       img {
         width: 100%;
@@ -73,3 +120,110 @@
     }
   }
 }// home
+
+.sign-in-overlay-space{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.589);
+  .basicflex(center, center);
+  display: none;
+  
+
+  .close-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 5.5rem;
+  }
+
+  .sign-in-cont{
+    .basicflex(center, center);
+    border-radius: 4px;
+    overflow: hidden;
+
+    .info{
+      background-color: white;
+      padding: 20px 20px;
+
+      h2{
+        margin-bottom: 10px;
+      }
+
+      p{
+        font-size: 1.5rem;
+      }
+
+      input{
+        margin-bottom: 15px;
+      }
+
+      .login{
+        margin-top: 10px;
+        border: 2px solid black;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.2s ease, background-color 0.2s ease;
+
+        &:hover{
+          background-color: black;
+          color: white;
+        }
+      }
+    }
+
+    .other{
+      background-image: linear-gradient(to left bottom, #5681c3, #00a0df, #00bde1, #00d7c8, #12eb9a);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 246px;
+      padding: 20px;
+
+      h3{
+        color: white;
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+
+      .social-flex{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .social{
+          font-size: 1.5rem;
+          display: block;
+          text-align: center;
+          background-color: rgb(27, 240, 45);
+          color: white;
+          cursor: pointer;
+          margin: 0 5px; 
+          padding: 10px 0;
+          border-radius: 4px;
+        }
+
+        .google{
+          background-color: #EA4335;
+        }
+
+        .twitter{
+          background-color: #1DA1F2;
+        }
+
+        .facebook{
+          background-color: #4867AA;
+        }
+      }
+
+    }
+  }
+}
