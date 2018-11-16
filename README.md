@@ -6,11 +6,11 @@ You will be updating a website using all your responsive web design and preproce
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [x] Fork the project into your GitHub user account
 
-* [ ] Clone the forked project into a directory on your machine
+* [x] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] You are now ready to build this project with your preferred IDE
 
 ### Pro tip: Commit every time you complete a task or feature!
 
@@ -30,15 +30,15 @@ Answer the following questions to the best of your ability. You can exercise you
 
 ## Task 3: Set up your preprocessor
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
 
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
 
