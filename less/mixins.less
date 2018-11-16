@@ -6,3 +6,18 @@
     justify-content: @jcontent;
     align-items: @alitems;
 }
+
+.sizing(@width: 100%, @height: 33%) {
+    width: @width;
+    height: @height;
+}
+
+.button-style(@color: @btn-bg-color, @width: 30%, @height: 30px) {
+    background-color: @color;
+    width: @width;
+    height: @height;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.5rem;
+    transition-duration: 0.4s
+}
