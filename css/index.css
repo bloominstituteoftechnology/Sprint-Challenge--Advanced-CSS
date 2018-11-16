@@ -271,7 +271,7 @@ footer {
 @media (max-width:500px) {
   .home .walk {
     flex-wrap: wrap-reverse;
-    padding: 49px 4%;
+    padding: 20px 4%;
     margin-top: 0px;
   }
 }
@@ -281,6 +281,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text {
     width: 100%;
+    margin: 22px 0 33px;
   }
 }
 .home .walk .walk-text h3 {
@@ -306,6 +307,26 @@ footer {
 .home .walk .walk-text .btn:hover {
   color: #22283A;
   background-color: white;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 30%;
+    width: 100%;
+    color: white;
+    background-color: #22283A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #22283A;
+    background-color: white;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

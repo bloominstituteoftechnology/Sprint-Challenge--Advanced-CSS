@@ -66,7 +66,7 @@
     justify-content: center;
     @media @phone {
       flex-wrap: wrap-reverse;
-      padding: 49px 4%;
+      padding: 20px 4%;
       margin-top: 0px;
     }
 
@@ -74,6 +74,7 @@
       width: 50%;
       @media @phone {
         width: 100%;
+        margin: 22px 0 33px;
       }
 
       h3 {
@@ -85,7 +86,10 @@
       }
     
       .btn {
-        .button(12%, 30%)
+        .button(12%, 30%);
+        @media @phone {
+          .button(30%, 100%);
+        }
       }
     }
 
