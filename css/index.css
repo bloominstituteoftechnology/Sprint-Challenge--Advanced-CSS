@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+a {
+  font-family: #454A59, sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 40%;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  .Navigation {
+    padding: 12px 9%;
+  }
+}
+.Navigation h1 {
+  margin-bottom: 19px;
+}
+@media (max-width: 500px) {
+  .Navigation h1 {
+    padding-right: 4%;
+  }
+}
+.Navigation nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .Navigation nav {
+    justify-content: space-between;
+    padding-right: 5%;
+  }
+}
+.Navigation nav a {
+  text-decoration: none;
+  color: #5E6164;
+}
+.Navigation nav a:hover {
+  animation: stretch 1.5s ease-out 0s alternate infinite none running;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+    color: red;
+  }
+  50% {
+    color: orange;
+  }
+  100% {
+    transform: scale(4);
+    color: yellow;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9px;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 47px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 15px 0 0;
+  }
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 15px 0 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    height: 127px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 7px 0 0;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    width: 97%;
+  }
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    padding: 0;
+    flex-wrap: wrap;
+    margin-top: 56px;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text p {
+    widows: 97%;
+  }
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  color: white;
+  padding: 8px 0 0 6%;
+  width: 30%;
+  height: 12%;
+}
+.home .walk .walk-text .btn:hover {
+  background: grey;
+  color: red;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: #22283A;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    color: white;
+    padding: 26px 0 0 42%;
+    width: 96%;
+    height: 27%;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: grey;
+    color: red;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    order: -1;
+    margin: 0 4% 16px 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
