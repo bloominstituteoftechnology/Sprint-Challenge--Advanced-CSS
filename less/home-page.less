@@ -34,7 +34,6 @@
     #one {
       @media @phone {
         .sizing(90%, 300px);
-
       }
     }
 
@@ -62,6 +61,7 @@
     p {
       margin-top: 13px;
     }
+
   }
 
   .walk {
@@ -71,25 +71,46 @@
     display: flex;
     justify-content: center;
 
-    .walk-text {
-      width: 50%;
+    @media @phone {
+      .layout(column-reverse, center, center);
+      margin-top: 10px;
+    }
 
+    .walk-text {
+
+      @media @phone {
+        .sizing(130%,100%);
+        margin-top: 10px;
+      }
+
+      width: 50%;
       h3 {
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
+    
       }
 
       .btn button {
         .button-style;
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        .sizing(130%, 100%);
+        margin-bottom: 10px;
+        margin-left: 0%;
+      }
       
       img {
         width: 100%;
