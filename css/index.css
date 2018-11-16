@@ -160,6 +160,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  width: 100%;
+  background-color: #F6F6F6;
+  border: 2px solid #F1F1F1;
+}
+.navigation .navigation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  margin: auto;
+}
+.navigation .navigation-wrapper .navigation-logo {
+  margin: 1.5rem;
+}
+.navigation .navigation-wrapper .navigation-logo h1 {
+  font-size: 4rem;
+  color: #23293B;
+  font-style: #454A59;
+}
+.navigation .navigation-wrapper nav {
+  margin-bottom: 1rem;
+}
+.navigation .navigation-wrapper nav a {
+  font-size: 1.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  color: #23293B;
+  font-style: #454A59;
+}
+.navigation .navigation-wrapper nav a:link {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +202,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 0.8rem;
 }
 .home .intro h2 {
   padding: 15px;
