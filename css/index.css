@@ -189,6 +189,10 @@ footer {
   font-size: 5rem;
   margin-top: 3%;
 }
+.home .intro .top-image {
+  max-width: 100%;
+  height: auto;
+}
 .home .intro h2 {
   padding: 15px;
 }
