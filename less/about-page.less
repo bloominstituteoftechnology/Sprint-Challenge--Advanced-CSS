@@ -1,0 +1,39 @@
+.about{
+  .intro {
+        img{
+        padding-top:102px;
+        .img();
+        .border-radius(10px);
+        @media @phone{
+            padding-top: 92px;
+        }
+        }
+        h2 {
+        padding: 15px;
+        }
+
+        p {
+        padding:0 15px;
+        }
+    
+    }
+}
+
+
+.team-h2{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.team{
+    .layout(space-evenly, center);
+    flex-wrap: wrap;
+    .cards{
+        .card();
+    @media @phone{
+        width: 95%;
+        margin: 10px auto;
+    }
+    }
+    margin: 30px auto;
+}

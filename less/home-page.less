@@ -3,11 +3,18 @@
 .home {
 
   .intro {
-
+    img{
+      padding-top: 103px;
+      @media @phone{
+        padding-top: 92px;
+      }
+      .img();
+      .border-radius(5px);
+      .scale-up-center(2s;)
+    }
     h2 {
       padding: 15px;
     }
-
     p {
       padding:0 15px;
     }
@@ -24,6 +31,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      &:hover{
+        .slide-top(2s);
+      }
+      @media @phone {
+        display: none;
+        &:first-child{
+          display: flex;
+          width: 100%;
+        }
+      }
     }
   }
 
@@ -45,12 +62,22 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{
+      margin-top: 20px;
+      width: 100%;
+      flex-direction: column-reverse;
+      padding: 15px;
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone{
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
+        @media @phone{
+          margin-top: 20px;
+        }
       }
 
       p {
@@ -58,17 +85,33 @@
       }
 
       .btn {
+        .layout(center, center);
+        .button(25%, 30px, @btn-bg-color, @porcelain, 1.6rem);
+        &:hover{
+          background: @porcelain;
+          color: @btn-bg-color;
+          border: 1px solid @btn-bg-color;
+        }
+        @media @phone{
+          .button(100%, 60px, @btn-bg-color, @porcelain, 1.6rem);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        width: 100%;
+        margin-left: 0;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        &:hover{
+          .rotate-center(1s);
+        }
       }
     }
   }
