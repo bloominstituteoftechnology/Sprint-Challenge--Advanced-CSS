@@ -368,6 +368,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  margin: 30px auto;
 }
 .team .cards {
   width: 40%;
@@ -392,6 +393,12 @@ footer {
 .team .cards p {
   font-size: 2rem;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .team .cards {
+    width: 95%;
+    margin: 10px auto;
+  }
 }
 @keyframes rotate-center {
   0% {
