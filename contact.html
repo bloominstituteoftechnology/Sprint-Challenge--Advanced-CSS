@@ -15,9 +15,12 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body>
+<body class="contact-home">
 
   <!-- navigation code here -->
   <section class="navigation">
@@ -31,28 +34,44 @@
     </nav>
   </section>
 
-  <div class="container home">
-    <header class="intro blog-header">
-      <!-- image code here -->
-      <img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&h=550" alt="space"
-        class="blog-main-image">
-      <h2>Contact</h2>
-
-      <p>
-        Nowadays, missions aboard the Space Station often last six months, and astronauts rarely have the opportunity
-        to train for a specific spacewalk before their mission. The spacewalkers are assisted by an astronaut in the
-        Mission Control Center, who helps develop the spacewalk and ran through the steps several times underwater. For
-        today’s spacewalk, the ground-support astronaut is Andreas. His last simulation under water took place just a
-        week ago and focused on emergency scenarios.</p>
-    </header>
-
-
-
-    <footer>
-      <p>Copyright SpaceWalkers 2018</p>
-    </footer>
-
+  <!-- Contact form   -->
+  <div class="container contact-form">
+    <div class="contact-image">
+      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+    </div>
+    <form method="post">
+      <h3>Drop Us a Message</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+          </div>
+          <div class="form-group">
+            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+          </div>
+          <div class="form-group">
+            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
   </div>
+
+
+
+  <footer class="contact-footer">
+    <p>Copyright SpaceWalkers 2018</p>
+  </footer>
+
+
 </body>
 
 </html>
