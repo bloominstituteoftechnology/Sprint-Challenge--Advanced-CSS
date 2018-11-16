@@ -4,7 +4,7 @@
 
   .intro {
     img{
-      border-radius:10px;
+      .border-radius(10px); 
     }
 
     h2 {
@@ -25,7 +25,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(20px);
       height: 100%;
     }
   }
@@ -46,8 +46,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center();
 
     .walk-text {
       width: 50%;

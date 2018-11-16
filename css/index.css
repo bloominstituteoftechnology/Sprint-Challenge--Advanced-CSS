@@ -169,6 +169,7 @@ p {
 .main-navigation .nav-container {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -193,6 +194,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 .home .intro h2 {
@@ -209,6 +211,7 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   height: 100%;
 }
@@ -227,6 +230,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-text {
   width: 50%;
