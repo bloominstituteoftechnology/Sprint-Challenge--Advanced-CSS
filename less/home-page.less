@@ -27,6 +27,13 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        display: none;
+        &:first-child{
+          display: flex;
+          width: 100%;
+        }
+      }
     }
   }
 
