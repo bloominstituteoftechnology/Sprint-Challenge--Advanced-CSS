@@ -206,6 +206,12 @@ footer {
     flex-direction: column;
     align-content: center;
   }
+  .home .home .space-images .launch {
+    display: none;
+  }
+  .home .home .space-images .sky {
+    display: none;
+  }
 }
 .home .intro .top-image {
   max-width: 100%;
