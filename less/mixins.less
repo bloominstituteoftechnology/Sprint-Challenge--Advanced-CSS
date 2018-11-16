@@ -1,1 +1,52 @@
 // Mixins Here
+
+.layout (@j-c: center, @a-i: center, @dir: row, @wrap: nowrap) {
+    display: flex;
+    justify-content: @j-c;
+    align-items: @a-i;
+    flex-direction: @dir;
+    flex-wrap: @wrap;
+
+}
+
+.nav-font {
+    font-size: 1.6rem;
+    color: @nav-font;
+    text-decoration: none;
+}
+
+.button-format (@text-c, @bg-c, @f-s: 2rem, @pads: 10px, @b-r){
+    color: @text-c;
+    background-color: @bg-c;
+    font-size: @f-s;
+    padding: @pads;
+    border-radius: @b-r;
+      
+    &:hover {
+        color: @bg-c;
+        background-color: @text-c;
+        border: 1px solid @bg-c;
+        padding: @pads - 1;
+    }
+}
+
+.animate (@a-name, @a-time) {
+    animation-name: @a-name;
+    animation-duration: @a-time;
+}
+
+@keyframes border-circle {
+    border-radius: 5px;
+    25% {border-top: 3px solid @main-border-color;
+        padding: 12px 15px 15px 15px;}
+    50% {border-right: 3px solid @main-border-color;
+        border-top: 3px solid @main-border-color;
+        padding: 12px 12px 15px 15px;}
+    75% {border-right: 3px solid @main-border-color;
+        border-top: 3px solid @main-border-color;
+        border-bottom: 3px solid @main-border-color;
+        padding: 12px 12px 12px 15px;}
+    100% {border: 3px solid @main-border-color;
+        padding: 12px;}
+    animation-fill-mode: forwards;
+}

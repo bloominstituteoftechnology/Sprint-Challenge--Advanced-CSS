@@ -1,1 +1,39 @@
 // Navigation code here
+nav {
+    .layout (space-between, center, column);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @nav-bg;
+    border-bottom: 3px solid @nav-border;
+    
+
+    h1 {
+        font-size: 4rem;
+        padding: 15px;
+    }
+
+    .links {
+        .layout (space-between);
+
+        width: 70%;
+        padding-bottom: 10px;
+
+        a {
+            .nav-font;
+
+            &:hover {
+                color: lighten(@nav-font, 20%);
+            }
+        }
+    }
+
+    @media @phone {
+        h1 {
+            padding: 10px;
+        }
+        .links {
+            width: 96%;
+        }
+    }
+}
