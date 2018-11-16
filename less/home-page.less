@@ -2,7 +2,7 @@
 .container-header {
 
   @media(@phone) {
-
+    .phone-mixin-nav();
   }
 
   header {
@@ -71,6 +71,23 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media(@phone) {
+
+      .space-images {
+
+        .launch {
+          display: none;
+          .sky {
+            display: none;
+          }
+        }
+      }
+    }
+  
+    
+
+
   }
 
   .visit-planets {
@@ -105,6 +122,10 @@
 
       .btn {
           .button-mixin();
+      }
+
+      @media(@phone) {
+        .phone-body-mixin();
       }
     }
 
