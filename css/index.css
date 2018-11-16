@@ -1,3 +1,13 @@
+@media (max-width 500px) {
+  background: gray;
+}
+.btn {
+  border-radius: 10px;
+  background-color: #22283A;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -113,6 +123,7 @@ body .walker {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  background-color: #F6F6F6;
 }
 ol,
 ul {
@@ -182,7 +193,7 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -227,9 +238,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #22283A;
-  border-radius: 4px;
-  width: 100px;
+  font-size: 1.6rem;
 }
 .home .walk .walk-img {
   width: 46%;
