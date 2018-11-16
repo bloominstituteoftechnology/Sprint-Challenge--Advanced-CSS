@@ -182,6 +182,9 @@ p {
 nav {
   margin: auto;
   font-size: 1.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
 }
 footer {
   color: #22283B;
