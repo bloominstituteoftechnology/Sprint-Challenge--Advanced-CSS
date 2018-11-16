@@ -2,6 +2,7 @@
 header {
     flex-direction: column;
     .evenly-center;
+    width: 100%;
 
     h1 {
         padding-top: 20px;
@@ -11,12 +12,21 @@ header {
     nav {
         font-size: 1.3rem;
         padding: 20px 0;
-        width: 40%;
+        width: 50%;
         .evenly-center;
+
+        @media @phone {
+         width: 75%;   
+        }
         
 
         a {
             text-decoration: none;
         }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }
