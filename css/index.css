@@ -439,3 +439,42 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.contact header .contact-header-img {
+  width: 100%;
+}
+.contact header .contact-header-img img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-animation: fade-in 2s ease-out 1 normal;
+  -moz-animation: fade-in 2s ease-out 1 normal;
+  animation: fade-in 2s ease-out 1 normal;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact .subscribe-content h2 {
+  padding: 15px;
+  border: 1px solid black;
+}
