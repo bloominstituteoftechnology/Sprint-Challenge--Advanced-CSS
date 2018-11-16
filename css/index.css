@@ -228,6 +228,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 1000px;
+  margin: 0 auto;
   left: 0;
   right: 0;
   top: 0;
