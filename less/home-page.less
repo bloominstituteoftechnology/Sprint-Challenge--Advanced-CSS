@@ -6,6 +6,7 @@
 
   .mainheader {
     width: 100%;
+    border-radius: 5px;
   }
 
   .intro {
@@ -38,6 +39,9 @@
       }
       .launch {
         display: none;
+      }
+      .blast {
+        padding: 10px;
       }
       img {
         width: 100%;
@@ -87,20 +91,20 @@
       }
 
       .btn {
-        .btnsettings(25%, 40px, @btn-bg-color, 7px, 1.7em, white);
+        .btnsettings(30%, 12%, @btn-bg-color, 7px, 1.7em, white);
 
         @media @phone {
-          .btnsettings(100%, 60px, @btn-bg-color, 7px, 1.7em, white);
+          .btnsettings(100%, 55px, @btn-bg-color, 7px, 1.7em, white);
         }
     }
 
 
     .btn:hover {
-      .btnsettings(25%, 40px, white, 7px, 1.7em, @btn-bg-color);
+      .btnsettings(30%, 12%, white, 7px, 1.7em, @btn-bg-color);
       border: 1px solid @btn-bg-color;
 
       @media @phone {
-        .btnsettings(100%, 60px, white, 7px, 1.7em, @btn-bg-color);
+        .btnsettings(100%, 55px, white, 7px, 1.7em, @btn-bg-color);
          border: 1px solid @btn-bg-color;
       }
   }
@@ -120,6 +124,7 @@
 
       @media @phone {
         margin: auto;
+        padding: 10px;
         width: 100%;
 
       }
