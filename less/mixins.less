@@ -28,6 +28,13 @@
     margin-bottom: @border-size * -2px;
 }
 
+.full-tablet-width() {
+    @media @device-size[tablet-dfirst] {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 .full-mobile-width() {
     @media @device-size[phone] {
         width: 100%;
