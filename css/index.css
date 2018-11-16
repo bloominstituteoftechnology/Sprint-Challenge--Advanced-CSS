@@ -1,6 +1,7 @@
 .button {
   background-color: #22283A;
   color: #F6F7F8;
+  border: 2px solid #22283A;
   width: 30%;
   text-align: center;
   font-size: 2rem;
@@ -9,15 +10,15 @@
   -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
+.button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 @media (max-width:500px) {
   .button {
     width: 98%;
     padding: 1.5rem;
   }
-}
-.button:hover {
-  background-color: #F6F7F8;
-  color: #22283A;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -185,7 +186,7 @@ p {
   max-width: 100%;
   width: 100%;
   background-color: #F6F6F6;
-  opacity: 0.95;
+  opacity: 0.98;
   border: 2px solid #F1F1F1;
   position: fixed;
 }
@@ -310,6 +311,7 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: #F6F7F8;
+  border: 2px solid #22283A;
   width: 30%;
   text-align: center;
   font-size: 2rem;
@@ -317,6 +319,10 @@ footer {
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   border-radius: 0.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {

@@ -7,18 +7,18 @@
 .button {
     background-color: @btn-bg-color;
     color: @porcelain;
+    border: 2px solid @btn-bg-color;
     width: 30%;
     text-align: center;
     font-size: 2.0rem;
     padding: .5rem;
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
     .border-radius(.5rem);
     @media @phone {
         width: 98%;
         padding: 1.5rem;
     }
-}
-
-.button:hover {
-    background-color: @porcelain;
-    color: @btn-bg-color;
 }
