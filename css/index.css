@@ -371,6 +371,7 @@ footer {
 .newsletter {
   max-width: 100%;
   border-top: 1px solid #dee2e6;
+  text-align: center;
 }
 .newsletter div {
   padding: 5% 0;
