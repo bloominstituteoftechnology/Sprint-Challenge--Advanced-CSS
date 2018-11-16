@@ -4,3 +4,18 @@
     justify-content: @j-content;
     align-items: @a-items;
 }
+.border-radius(@radius){
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.button(@widtg, @height, @bg-color, @color, @font-size){
+    .border-radius(15px);
+    cursor: pointer;
+    width: @width;
+    height: @height;
+    background: @bg-color;
+    color: @color;
+    font-size: @font-size;
+}
