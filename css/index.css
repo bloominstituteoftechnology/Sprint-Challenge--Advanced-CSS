@@ -167,7 +167,7 @@ a {
 }
 a:hover {
   animation-name: grow;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
