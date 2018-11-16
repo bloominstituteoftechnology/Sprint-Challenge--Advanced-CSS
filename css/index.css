@@ -194,6 +194,24 @@ p {
   text-decoration: none;
   color: black;
 }
+.nav .link:hover {
+  animation-duration: 3s;
+  animation-name: rotateAndBlink;
+}
+@keyframes rotateAndBlink {
+  25% {
+    transform: rotate(180deg);
+    opacity: 0.8;
+  }
+  60% {
+    transform: rotate(300deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 .nav .text-logo-wrapper {
   width: 100%;
   text-align: center;
