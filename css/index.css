@@ -174,6 +174,9 @@ p {
   background: #F6F6F6;
   color: #454A59;
   border: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
 .nav {
   display: flex;
@@ -232,6 +235,7 @@ footer {
 .home #header {
   width: 100%;
   height: auto;
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -325,8 +329,13 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-  padding: 20px 19px;
+  padding: 4px 3px;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    padding: 20px 19px;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
