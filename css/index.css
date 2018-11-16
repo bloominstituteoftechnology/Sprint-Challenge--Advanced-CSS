@@ -160,8 +160,24 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin-top: 18px;
+  padding-bottom: 10px;
+  width: 41%;
+  border-bottom: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  font-size: 1.2rem;
+  color: #454A59;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -170,11 +186,40 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer p {
+  font-size: 1.3rem;
+}
+.nav-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-top h1 {
+  color: #454A59;
+  margin-top: 14.35px;
+  font-size: 3.2rem;
+}
+.full-img {
+  margin-top: 100px;
+  border-radius: 5px;
+}
+.home .intro {
+  margin-right: 3%;
+}
 .home .intro h2 {
+  font-size: 2.8rem;
   padding: 15px;
+  letter-spacing: -1.3px;
 }
 .home .intro p {
   padding: 0 15px;
+  font-size: 1.3rem;
+  letter-spacing: -0.1px;
 }
 .home .space-images {
   display: flex;
@@ -191,10 +236,13 @@ footer {
   padding: 15px;
 }
 .home .visit-planets h3 {
-  margin-top: 11px;
+  margin-top: 9px;
+  font-size: 2.5rem;
+  letter-spacing: -1.75px;
 }
 .home .visit-planets p {
-  margin-top: 13px;
+  margin-top: 10px;
+  font-size: 1.3rem;
 }
 .home .walk {
   margin-top: 60px;
@@ -208,9 +256,31 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+  font-size: 2.3rem;
+  letter-spacing: -0.5px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+  font-size: 1.3rem;
+}
+.home .walk .walk-text .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: #22283A;
+  color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
