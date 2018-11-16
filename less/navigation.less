@@ -3,17 +3,32 @@
     width: 100%;
     height: 100%;
     background: @nav-bg;
+    // @media @phone {
+    //     width: 100%;
+    //   }
   
     .nav-container {
+      display: flex;
       height: 100%;
       .center();
+
+    //   @media @phone {
+    //     width: 100%;
+    //   }
     }
+
+    
 
     .logo-heading {
         display: flex;
         justify-content: center;
         font-size: 7.6rem;
         padding: 20px 0;
+
+        @media @phone {
+            width: 100%;
+            font-size: 5rem;
+        }
     }
 
     .nav {
