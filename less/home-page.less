@@ -19,9 +19,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .flex-rules();
 
     img {
       width: 28%;
@@ -47,8 +45,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-center-rules();
 
     .walk-text {
       width: 50%;
@@ -62,18 +59,10 @@
       }
 
       .btn {
-        background-color: @btn-bg-color;
-        color: @wild-sand;
-        padding: 10px;
-        width: 100px;
         text-align: center;
         font-size: 1.65rem;
         border-radius: 4px;
-        transition: all .25s;
-        &:hover {
-          cursor: pointer;
-          background-color: lighten(@btn-bg-color, 10%);
-        }
+        .button-rules(@btn-bg-color, @wild-sand, 10px, 100px);
       }
     }
 
@@ -88,4 +77,4 @@
       }
     }
   }
-}// home
+}

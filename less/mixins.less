@@ -1,1 +1,24 @@
 // Mixins Here
+.flex-rules() {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex-center-rules() {
+    display: flex;
+    justify-content: center;
+}
+
+.button-rules(@bg-color, @color, @padding, @width) {
+    background-color: @bg-color;
+    color: @color;
+    padding: @padding;
+    width: @width;
+    transition: all .25s;
+    &:hover {
+        color: @bg-color;
+        background-color: @color;
+        cursor: pointer;
+    }
+}
