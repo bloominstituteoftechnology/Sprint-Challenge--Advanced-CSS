@@ -387,3 +387,41 @@ footer {
   margin-bottom: 1rem;
   resize: none;
 }
+.posts {
+  margin: 2rem;
+}
+.posts section {
+  display: flex;
+  flex-direction: row;
+}
+.posts section div {
+  width: 48%;
+  margin: 1%;
+}
+.posts section button {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.posts section button:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: rgba(72, 84, 122, 0.5);
+}
+.posts section p {
+  padding: 1rem 0;
+}
+.posts section .img-container img {
+  width: 95%;
+  transition: all 0.2s ease-in-out;
+}
+.posts section .img-container img:hover {
+  transform: scale(0.9);
+}

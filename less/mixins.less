@@ -21,6 +21,12 @@
     background-color: @changeColorTo;
   }
 }
+.image-animation() {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
 
 .mobile-display() {
   // Mobile responsiveness for tablets and phones
@@ -31,13 +37,11 @@
     .container {
       width: 100%;
     }
-    .home{
-        .form-style{
-            width: 75%;
-
-        }
+    .home {
+      .form-style {
+        width: 75%;
+      }
     }
-
   }
   @media (max-width: 500px) {
     .navigation {
@@ -64,27 +68,26 @@
         margin: 0;
         width: 100%;
         .walk-text {
-            width: 96%;
-            margin: 2%;
-      
-            .btn {
-              .create-button(100%);
-            }
-          }
-        .walk-img {
-            width: 96%;
-            margin: 2%;
-          }
-        }
-        .form-style{
-            width: 100%;
-            border-top: 1px solid @main-border-color;
-            margin-top: 1rem;
-            h3{
-                padding: 2rem;
-            }
-        }
-      } //Home
-    }
-  }
+          width: 96%;
+          margin: 2%;
 
+          .btn {
+            .create-button(100%);
+          }
+        }
+        .walk-img {
+          width: 96%;
+          margin: 2%;
+        }
+      }
+      .form-style {
+        width: 100%;
+        border-top: 1px solid @main-border-color;
+        margin-top: 1rem;
+        h3 {
+          padding: 2rem;
+        }
+      }
+    } //Home
+  }
+}
