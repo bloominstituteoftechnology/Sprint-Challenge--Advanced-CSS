@@ -137,6 +137,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5e6164;
 }
+@media (max-width: 900px) {
+  html,
+  body {
+    margin: 0 1%;
+  }
+}
 h1,
 h2,
 h3,
@@ -181,9 +187,10 @@ p {
   width: 32%;
   padding-top: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .top-nav nav {
     width: 80%;
+    transition: 0.25s;
   }
 }
 .top-nav nav a {
@@ -210,6 +217,13 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    height: 125px;
+    border-radius: 0;
+  }
 }
 .home .space-images {
   display: flex;
