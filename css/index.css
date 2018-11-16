@@ -449,3 +449,35 @@ footer {
   border-radius: 5px;
   margin-bottom: 10px;
 }
+.about .intro h2 {
+  padding: 15px;
+}
+.about .intro p {
+  padding: 0 15px;
+}
+.about .intro img {
+  border-radius: 5px;
+}
+@media (max-width:500px) {
+  .about .intro img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.about .about-section .section1,
+.about .about-section .section2 {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.about .about-section .section1 img,
+.about .about-section .section2 img {
+  border-radius: 5px;
+}
+.about .about-section .section1 .section-text,
+.about .about-section .section2 .section-text {
+  padding: 10px;
+}
+.about .about-section .section2 {
+  flex-direction: row-reverse;
+}
