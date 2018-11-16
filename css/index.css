@@ -167,6 +167,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes take-off {
+  from {
+    left: -600px;
+  }
+  to {
+    left: 0px;
+  }
+}
 .nav {
   background-color: #f6f6f6;
   border-bottom: 1px solid #f1f1f1;
@@ -188,9 +196,15 @@ p {
   }
 }
 .nav .nav-content .logo {
+  display: flex;
   margin-top: 2%;
   max-width: 100%;
   font-size: 5rem;
+}
+.nav .nav-content .logo i {
+  color: #22283a;
+  position: relative;
+  animation: take-off 3s;
 }
 .nav .nav-content .nav-bar {
   margin-top: 2%;

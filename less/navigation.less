@@ -1,5 +1,21 @@
 // Navigation code here
-
+@keyframes take-off {
+	from {
+		left: -600px;
+	}
+	to {
+		left: 0px;
+	}
+}
+// @keyframes landing {
+// 	from {
+// 		left: 0px;
+// 	}
+// 	to {
+// 		left: 0px;
+// 		transform: rotate(270deg);
+// 	}
+// }
 .nav {
 	background-color: @nav-bg;
 	border-bottom: 1px solid @nav-border;
@@ -17,10 +33,18 @@
 			align-items: center;
 		}
 		.logo {
+			display: flex;
 			margin-top: 2%;
 			max-width: 100%;
 			font-size: 5rem;
+			i {
+				color: @btn-bg-color;
+				position: relative;
+				animation: take-off 3s;
+				// animation: landing 5s;
+			}
 		}
+
 		.nav-bar {
 			margin-top: 2%;
 			font-size: 100px;
