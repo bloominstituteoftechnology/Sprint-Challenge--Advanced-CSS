@@ -1,0 +1,31 @@
+.contact {
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: @footer-background;
+    label {
+      font-size: 1.6rem;
+      padding: 10px;
+    }
+    input,
+    textarea {
+      width: 90%;
+      padding: 10px;
+      border: 1px solid @footer-background;
+    }
+    .btn {
+      .btn-mixin(@btn-bg-color, @wild-sand);
+      text-align: center;
+      width: 90%;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 10px;
+      .border-radius(10px);
+      @media @phone {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  }
+}
