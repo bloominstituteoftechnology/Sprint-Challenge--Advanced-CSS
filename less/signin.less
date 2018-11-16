@@ -1,0 +1,47 @@
+.login {
+    .make-flex(row, flex-end);
+    width: 80%;
+    padding-top: 20px;
+    margin: 15px auto 20px;
+
+    form {
+        width: 100%;
+
+        label {
+            #login-form > .form--label();
+            margin-left: 1%;
+
+            @media @device-size[phone] {
+                display: block;
+            }
+        }
+
+        input[type="text"], input[type="password"] {
+            #login-form > .form--textfield();
+
+            @media @device-size[phone] {
+                width: 100%;
+            }
+        }
+
+        input[type="submit"] {
+            #login-form > .form--submit-button();
+            margin-top: 5px;
+
+            @media @device-size[phone] {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+            font-size: 1.6rem;
+            margin-left: 5%;
+
+            @media @device-size[phone] {
+                font-size: 1.4rem;
+                margin: 0;
+            }
+        }
+    }
+}
