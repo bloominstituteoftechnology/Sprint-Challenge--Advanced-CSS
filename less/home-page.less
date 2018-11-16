@@ -64,8 +64,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center;
 
     @media @phone {
       margin-top: 20px;
@@ -90,9 +89,27 @@
         color: @main-font-color;
       }
 
-      // .btn {
-      //   .button(@btn-background)
-      // }
+      .btn {
+        .button(@btn-background, @porcelain);
+        // background-color: @btn-background;
+        // color: @btn-color;
+        // border-radius: 10%;
+        // font-size: 1.6rem;
+        // font-weight: bold;
+        // padding: .7rem 1rem;
+        // width: 10rem;
+        // text-align: center;
+        
+        // &:hover {
+        //   background-color: @btn-color;
+        //   color: @btn-background; 
+        // }
+
+        // @media @phone {
+        //   width: 100%;
+        //   padding: 2.5rem;
+        // }
+      }
     }
 
     .walk-img {
