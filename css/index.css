@@ -226,6 +226,33 @@ footer {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  -webkit-animation: fade-in 2s ease-out 1 normal;
+  -moz-animation: fade-in 2s ease-out 1 normal;
+  animation: fade-in 2s ease-out 1 normal;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -237,6 +264,33 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  -webkit-animation: fade-in 2s ease-out 1 normal;
+  -moz-animation: fade-in 2s ease-out 1 normal;
+  animation: fade-in 2s ease-out 1 normal;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   .home .space-images {
@@ -345,6 +399,33 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  -webkit-animation: fade-in 2s ease-out 1 normal;
+  -moz-animation: fade-in 2s ease-out 1 normal;
+  animation: fade-in 2s ease-out 1 normal;
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
