@@ -62,8 +62,8 @@
 
     @media @phone {
       flex-direction: column-reverse;
-      margin: none;
-      padding: none;
+      margin: 0px 0px;
+      padding: 0px 0px;
       width: 100%;
     }
 
@@ -83,18 +83,28 @@
       }
 
       .btn {
-        .btnsettings(25%, 40px, @btn-bg-color, 7px, 1.8em, white);
+        .btnsettings(25%, 40px, @btn-bg-color, 7px, 1.7em, white);
+
+        @media @phone {
+          .btnsettings(100%, 40px, @btn-bg-color, 7px, 1.7em, white);
+        }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        margin: auto;
+        width: 100%;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+      
     }
   }
 }
