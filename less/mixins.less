@@ -1,8 +1,33 @@
 // Mixins Here
 
-.flex-center-center(@dir-choice: column) {
+.flex-center(@dir-choice: column) {
     display: flex;
     flex-direction: @dir-choice;
     justify-content: center;
     align-items: center;
+}
+
+.flex-between(@dir-choice: row) {
+    display: flex;
+    flex-direction: @dir-choice;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.sign-up-button(@text-color: white, @bg-color: @btn-bg-color) {
+    color: @text-color;
+    background-color: @bg-color;
+    border: 1px double @text-color;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%; 
+
+    &:hover {
+        color: @bg-color;
+        background-color: @text-color;
+        border: 1px double @bg-color;
+    }
 }

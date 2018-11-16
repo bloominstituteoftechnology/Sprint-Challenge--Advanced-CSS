@@ -5,7 +5,7 @@
     background-color: @nav-bg;
     border-bottom: 2px double @nav-border;
     padding: 1.2% 0;
-    .flex-center-center();
+    .flex-center(column);
 
     h1 {
         color: @header-font-color;
@@ -15,8 +15,7 @@
 
     nav {
         width: 38%;
-        display: flex;
-        justify-content: space-between;
+        .flex-between(row);
 
         a {
             color: @nav-font;
