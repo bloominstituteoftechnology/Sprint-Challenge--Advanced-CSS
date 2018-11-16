@@ -235,6 +235,8 @@ h1 {
     align-items: center;
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 0px;
+    padding-top: 20px;
   }
 }
 .home .walk .walk-text {
@@ -269,6 +271,7 @@ h1 {
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
+    padding: 30px;
   }
 }
 .home .walk .walk-img {
