@@ -10,4 +10,7 @@ A desktop first design is one in which the desktop layout was considered first w
 -- This font size is a parameter in responsive design which allows a ratio of 10px to 1rem which reduces the time spent on calculation of px.
 
 4. How would you describe preprocessing to someone new to CSS?
--- It is a method that allows developers add features to CSS
+-- It is a method that allows developers add features to CSS which makes the structure more readable and intuitive. It extends vanilla CSS to include concepts like variables, functions, interpolations, mixins and operators.
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+-- My most favorite concept is Nesting, this is because it reduces the repetition of code and allows for readability and structure. Nesting also gives me the most trouble because with long nests its easy to forget or accidentally delete a curly brace which throws the compiler into an error and changes do not reflect until it is fixed.
