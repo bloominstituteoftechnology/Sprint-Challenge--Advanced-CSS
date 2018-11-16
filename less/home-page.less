@@ -59,7 +59,12 @@
 
       .btn {
         .layout(center, center);
-        .button(25%, 30px, @btn-bg-color, @porcelain, 1.6rem); 
+        .button(25%, 30px, @btn-bg-color, @porcelain, 1.6rem);
+        &:hover{
+          background: @porcelain;
+          color: @btn-bg-color;
+          border: 1px solid @btn-bg-color;
+        }
       }
     }
 
