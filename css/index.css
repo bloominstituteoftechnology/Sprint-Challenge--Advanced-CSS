@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
 }
 .main-navigation {
   border-bottom: 2px solid #F1F1F1;
@@ -192,6 +192,7 @@ h5 {
   max-width: 1000px;
   line-height: 25px;
   padding: 0 2%;
+  margin: 0 auto;
 }
 .home .header-img {
   width: 100%;
