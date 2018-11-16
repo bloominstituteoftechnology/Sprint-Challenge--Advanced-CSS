@@ -1,5 +1,5 @@
 .cb {
-  border: 1px solid red;
+  border: 1px solid blue;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -172,10 +172,13 @@ p {
   border-bottom: 2px solid #F1F1F1;
   background-color: #F6F6F6;
 }
+.top .nav-container {
+  justify-content: center;
+}
 .top .nav-container nav {
-  width: 320px;
+  width: 450px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 1.7rem;
   padding-bottom: 10px;
 }
@@ -186,6 +189,7 @@ p {
 .top h1 {
   font-size: 5rem;
   margin-bottom: 20px;
+  padding-left: 50px;
 }
 footer {
   color: #22283B;
@@ -238,6 +242,14 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn .button {
+  width: 100px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 0;
+  background-color: #22283A;
+  color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;
