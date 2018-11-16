@@ -242,6 +242,16 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+  }
+}
 .home .intro p {
   padding: 0 15px;
 }
