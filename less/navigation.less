@@ -9,9 +9,13 @@
     .center(column, flex-start, center, nowrap);
 
     div {
-      margin: 19px 0 9px;
-      width: 75.2%;
+      margin: 19px 0 10px;
+      width: 47%;
       .center(row, space-between, flex-start, nowrap);
+
+      @media @mobile {
+        width: 75%;
+      }
 
       a {
         .link-styles();

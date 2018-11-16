@@ -158,6 +158,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -178,13 +182,18 @@ p {
   flex-wrap: nowrap;
 }
 .nav-container nav div {
-  margin: 19px 0 9px;
-  width: 75.2%;
+  margin: 19px 0 10px;
+  width: 47%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+@media (max-width: 550px) {
+  .nav-container nav div {
+    width: 75%;
+  }
 }
 .nav-container nav div a {
   color: #454a59;
@@ -205,6 +214,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home header .intro-image {
+  width: 100%;
+}
 .home header .intro-image img {
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -221,11 +233,29 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 550px) {
+  .home .space-images {
+    margin: 0 2.5%;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 550px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -243,8 +273,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 550px) {
+  .home .walk {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 20px 4% 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 550px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -268,9 +314,39 @@ footer {
   border: 1px solid #454a59;
   color: #454a59;
 }
+@media (max-width: 550px) {
+  .home .walk .walk-text .btn {
+    text-align: center;
+    background: #22283a;
+    color: white;
+    border-radius: 5px;
+    padding: 20px auto;
+    font-size: 1.8rem;
+    border: 1px solid #22283a;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #f6f6f6;
+    border: 1px solid #454a59;
+    color: #454a59;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 550px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
