@@ -1,1 +1,17 @@
 // Mixins Here
+.flex-space-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-btn(@bkgrnd-clr, @fnt-clr) {
+  background-color: @bkgrnd-clr;
+  color: @fnt-clr;
+  transition: background-color .5s;
+}
