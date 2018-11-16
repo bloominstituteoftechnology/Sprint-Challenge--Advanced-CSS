@@ -5,3 +5,27 @@
     align-content: center;
     flex-direction: column;
 }
+
+.border-radius(@radius) {
+ -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+         border-radius: @radius;
+}
+
+.button-creator(@width, @height, @btn-bg-color, @font-color, @font-size) {
+    .border-radius(5px);
+  width: @width;
+  height: @height;
+  background-color:@btn-bg-color;
+  color: @wild-sand;
+  cursor: pointer;
+  font-size: @font-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover {
+      color: @btn-bg-color;
+      background-color: @wild-sand;
+  }
+}
