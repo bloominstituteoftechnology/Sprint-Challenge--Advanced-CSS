@@ -133,11 +133,58 @@ html {
   font-size: 62.5%;
 }
 @media (max-width: 920px) {
-  html nav {
+  html .navigation {
     width: 100%;
   }
   html .container {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html .navigation a {
+    font-size: 1.2rem;
+  }
+  html .home .space-images {
+    height: 30rem;
+  }
+  html .home .space-images img {
+    width: 100%;
+    height: auto;
+  }
+  html .home .sky,
+  html .home .launch {
+    display: none;
+  }
+  html .home .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  html .home .walk .walk-text {
+    width: 96%;
+    margin: 2%;
+  }
+  html .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    background-color: #22283A;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+  }
+  html .home .walk .walk-text .btn:hover {
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    background-color: rgba(72, 84, 122, 0.5);
+  }
+  html .home .walk .walk-img {
+    width: 96%;
+    margin: 2%;
   }
 }
 html,
@@ -177,6 +224,7 @@ a {
 .navigation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 1000px;
   margin: 0 auto;
@@ -253,7 +301,7 @@ footer {
 .home .walk .walk-text .btn {
   width: 10rem;
   padding: 1rem 0;
-  border-radius: 8%;
+  border-radius: 1rem;
   background-color: #22283A;
   font-size: 1.8rem;
   font-weight: 700;
