@@ -210,6 +210,9 @@ footer {
   max-width: 800px;
   margin: auto;
 }
+.home .mainheader {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -258,7 +261,7 @@ footer {
   .home .walk {
     flex-direction: column-reverse;
     margin: 0px 0px;
-    padding: 0px 0px;
+    padding: 2%;
     width: 100%;
   }
 }
@@ -337,7 +340,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    padding: 2%;
     margin: auto;
     width: 100%;
   }
