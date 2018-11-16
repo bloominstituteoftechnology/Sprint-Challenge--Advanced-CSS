@@ -19,29 +19,38 @@
         background-color: @nav-bg;
     }
 
-    // .button-layout(){
-    //     color: @btn-bg-color;
-    //     background-color: @wild-sand;
-    //     font-size: 2rem; 
-    //     padding: 5px 20px;
-    //     margin: 10px;
-    // }
+    .border-radius(@radius) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        border-radius: @radius;
+    }
+
+    //  =======Parametric Button Mixin========= 
+
+    .button-layout(){
+        color: @wild-sand;
+        background-color: @btn-bg-color;
+        font-size: 2rem; 
+        padding: 5px 20px;
+        margin: 10px;
+        width: 40%;
+        
+       
+
+       
+    
+}
     
     //  =======Parametric Button Mixin========= 
       
-    .button-layout(@btn-bg-color, @wild-sand) {
-        color:@btn-bg-color;
-        background-color: @wild-sand;
+    .button-layout(@wild-sand, @btn-bg-color) {
+        color:@wild-sand;
+        background-color: @btn-bg-color;
         font-size: 2rem; 
         padding: 5px 20px;
-        @media @phone {
-            flex-wrap: wrap;
-          flex-direction: column;
-          align-items: center;
-            width: 100%;
+        // #mixins .border-radius(10px);
         
-
-       
-      }
     }
 }
+
+
