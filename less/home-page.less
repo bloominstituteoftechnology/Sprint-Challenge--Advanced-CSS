@@ -1,8 +1,13 @@
 // Home Content
 
 .home {
-
+  
   .intro {
+
+    .head {
+      border-radius: 5px;
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -25,6 +30,17 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media @phone {
+      .blast {
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -37,6 +53,10 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone {
+      padding-bottom: 10px;
+    }
   }
 
   .walk {
@@ -45,9 +65,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      .flex(column-reverse);
+      padding: 20px 0 0 0;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 90%;
+        margin: 0 5% 0 5%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +87,28 @@
       }
 
       .btn {
+        .button(white,@ebony-clay);
+        transition: 0.5s;
+        @media @phone {
+          .buttonphone(white,@ebony-clay);
+        }
+      }
+
+      .btn:hover {
+        .button(@ebony-clay,white);
+        @media @phone {
+          .buttonphone(@ebony-clay, white);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 90%;
+        margin: 0 5% 20px 5%;
+      }
       
       img {
         width: 100%;
@@ -73,3 +118,88 @@
     }
   }
 }// home
+
+// sign in
+
+.login {
+	-webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          width: 90%;
+          margin: 20px 5% 20px 5%;
+          .words {
+            margin: 0 0 40px 0;
+            padding: 0;
+            h2 {
+              padding: 10px 0 10px 0px;
+            }
+        
+            p {
+              padding:0px;
+            }
+          }
+          .btn {
+            .button(white,@ebony-clay);
+            transition: 0.5s;
+            @media @phone {
+              .buttonphone(white,@ebony-clay);
+
+            }
+          }
+    
+          .btn:hover {
+            .button(@ebony-clay,white);
+            @media @phone {
+              .buttonphone(@ebony-clay, white);
+              
+            }
+          }
+          
+          .textbox {
+            height: 200px;
+            width: 100%;
+          }
+          
+          .mag {
+            margin: 0 0 30px 0;
+            text-align: left;
+          }
+
+          form {
+            margin: 0 0 30px 0;
+            text-align: center;
+          }
+
+}
+
+ @-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
