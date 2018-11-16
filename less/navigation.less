@@ -1,1 +1,32 @@
 // Navigation code here
+
+.header-nav {
+    width: 100%;
+    background-color: @nav-bg;
+    border-bottom: 2px double @nav-border;
+    padding: 1.2% 0;
+    .flex-center-center();
+
+    h1 {
+        color: @header-font-color;
+        font-size: 4rem;
+        margin-bottom: 2%;
+    }
+
+    nav {
+        width: 38%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: @nav-font;
+            text-decoration: none;
+            font-size: 1.6rem;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
