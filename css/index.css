@@ -146,7 +146,7 @@ h5 {
   color: #23293B;
 }
 h1 {
-  font-size: 4.8rem;
+  font-size: 4.1rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -169,16 +169,20 @@ p {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background-color: #ececec;
-  padding: 0 0 20px 0;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+  padding: 10px 0 10px 0;
 }
 .title nav {
+  color: #454A59;
   width: 100%;
   max-width: 800px;
   display: flex;
   justify-content: center;
+  margin: 20px 0 0 0;
 }
 .title nav a {
+  color: #454A59;
   text-decoration: none;
   font-size: 1.6rem;
   margin: 0 2% 0 2%;
@@ -192,6 +196,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .head {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +241,16 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 2% 5% 2% 5%;
+  border-radius: 5px;
+  background-color: #23293B;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;

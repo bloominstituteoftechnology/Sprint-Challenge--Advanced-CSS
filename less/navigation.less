@@ -5,14 +5,18 @@
     align-items: center;
     width: 100%;
     margin: 0 auto;  
-    background-color: rgb(236, 236, 236);
-    padding: 0 0 20px 0;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    padding: 10px 0 10px 0;
     nav {
+        color: @nav-font;
         width: 100%;
         max-width: 800px;
         display: flex;
         justify-content: center;
+        margin: 20px 0 0 0;
         a {
+            color: @nav-font;
             text-decoration: none;
             font-size: 1.6rem;
             margin: 0 2% 0 2%;
