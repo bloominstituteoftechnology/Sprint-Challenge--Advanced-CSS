@@ -198,6 +198,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .banner-img {
+  max-width: 100%;
+  height: auto;
+}
 .home .intro h2 {
   padding: 15px;
   align-self: flex-start;
@@ -215,6 +219,18 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 518px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 20px 5%;
+  }
+}
+@media (max-width: 518px) {
+  .home .space-images img:nth-of-type(2),
+  .home .space-images img:nth-of-type(3) {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
