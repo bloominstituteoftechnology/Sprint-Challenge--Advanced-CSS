@@ -1,23 +1,55 @@
 // Mixins Here
-.navigation-style(){
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1000px;
-    margin: 0 auto;
-    padding: 1.5rem 0;
-    background-color: @nav-bg;
-    h1{
-        margin-bottom: 1.55rem;
-    }
-    a{
-       color: black;
-       font-size: 1.6rem;
-       padding: 1.5rem 1.5rem 1rem;
-    }
+.navigation-style() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: @nav-bg;
+  h1 {
+    margin-bottom: 1.55rem;
+  }
+  a {
+    color: black;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem 1rem;
+    .hover-animation(background-color, 0.4s, darken(rgb(@nav-bg, 50%, 50%), 20%));
+  }
 }
 
-.create-button(@btn-width, @btn-height){
-    padding: @btn-height @btn-width;
+.create-button(@btn-width:10rem, @btn-height:1rem) {
+  width: @btn-width;
+  padding: @btn-height 0;
+  border-radius: 8%;
+  background-color: @btn-background;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  .hover-animation();
+}
 
+.hover-animation(@transitionType:background-color, @durationTime:0.5s, @changeColorTo:lighten(rgb(@btn-background, 50%, 50%), 20%)) {
+  transition-property: @transitionType;
+  transition-duration: @durationTime;
+  &:hover {
+    transition-property: @transitionType;
+    transition-duration: @durationTime;
+    background-color: @changeColorTo;
+  }
+}
+.mobile-display(){
+    // Mobile responsiveness for tablets and phones
+  @media (max-width: 920px) {
+    nav{
+        width: 100%;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+
+  }
 }

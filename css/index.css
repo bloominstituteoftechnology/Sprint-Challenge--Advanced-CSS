@@ -132,6 +132,14 @@ table {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 920px) {
+  html nav {
+    width: 100%;
+  }
+  html .container {
+    width: 100%;
+  }
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -182,6 +190,13 @@ a {
   color: black;
   font-size: 1.6rem;
   padding: 1.5rem 1.5rem 1rem;
+  transition-property: background-color;
+  transition-duration: 0.4s;
+}
+.navigation a:hover {
+  transition-property: background-color;
+  transition-duration: 0.4s;
+  background-color: rgba(195, 195, 195, 0.5);
 }
 footer {
   color: #22283B;
@@ -234,6 +249,23 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 10rem;
+  padding: 1rem 0;
+  border-radius: 8%;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+.home .walk .walk-text .btn:hover {
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  background-color: rgba(72, 84, 122, 0.5);
 }
 .home .walk .walk-img {
   width: 46%;
