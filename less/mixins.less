@@ -9,12 +9,12 @@
     border-radius: 5px;
 }
 
-.btn-styles(@bg-color, @text-color,) {
+.btn-styles(@bg-color, @text-color, @width, @pad-tb, @pad-lr) {
     background: @bg-color;
     color: @text-color;
     font-size: 1.8rem;
     text-align: center;
     .radius5px;
-    width: 30%;
-    padding: 8px 5%;
+    width: @width;
+    padding: @pad-tb @pad-lr;
 }
