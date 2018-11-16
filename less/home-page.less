@@ -90,4 +90,66 @@
       }
     }
   }
+
+  @media @phone {
+    margin: 0;
+
+    .intro {
+      h2 {
+        padding: 0 15px;
+        margin: 15px 0;
+      }
+
+      img {
+        border-radius: 0;
+        width: 100%;
+        height: 130px;
+      }
+    }
+
+    .space-images {
+      .blast {
+        width: 100%;
+        padding: 0 5px;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
+    .visit-planets {
+      padding: 0 15px 15px 15px;
+    }
+
+    .walk {
+      width: 100%;
+      margin: 20px 0;
+      padding: 0 15px;
+      .layout(center, flex-start, column);
+  
+      .walk-img {
+        order: -1;
+        width: 100%;
+        padding: 20px 0 15px;
+        margin: 0;
+      }
+  
+      .walk-text {
+        width: 100%;
+  
+        .btn {
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+    
+  }
+
 }// home
