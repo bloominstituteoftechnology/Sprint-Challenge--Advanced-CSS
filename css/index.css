@@ -171,7 +171,7 @@ p {
   margin: 0 auto;
 }
 .nav-container {
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.15);
   color: #454A59;
   border: 1px solid #F1F1F1;
   position: fixed;
