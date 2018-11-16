@@ -1,6 +1,7 @@
 // Navigation code here
 .nav-container {
-    max-width: 800px;
+    background: #f4f4f4;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     .justify-flex(space-between, center);
@@ -16,7 +17,7 @@
         .justify-flex(space-around);
         @media @mobile {
             width: 100%;
-            .justify-flex(space-around);
+            .justify-flex(space-evenly);
         }
         a {
             .link-style;
