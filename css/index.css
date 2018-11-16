@@ -201,6 +201,7 @@ footer {
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
+    font-size: 3rem;
   }
 }
 .container-header header h2 {
@@ -209,6 +210,16 @@ footer {
   justify-content: center;
   font-size: 5rem;
   margin-top: 3%;
+}
+@media (max-width: 500px) {
+  .container-header header h2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+  }
 }
 @media (max-width: 500px) {
   .home {
