@@ -6,4 +6,4 @@
 
 4. I would describe preprocessing as a way to make it so you can layout your code so its easier to read, write, and edit but doesn't output to anything different than Vanilla CSS. It mainly just makes it a lot less tedious and a lot more convinent using variables and nested selectors/querys.
 
-5. My favorite concept in preprocessing has to be a tie between the module code solutions that it provides developers to make reading, writing, and editing a lot easier and the variables that it provides making you able to switch colors in your theme with no hassle.
+5. My favorite concept in preprocessing has to be a tie between the module code solutions that it provides developers to make reading, writing, and editing a lot easier and the variables that it provides making you able to switch colors in your theme with no hassle. I think the main hassle for me was the nested media querys however after a while of messing around with it I have understood it and have a good understanding with it.
