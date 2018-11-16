@@ -1,1 +1,48 @@
 // Mixins Here
+
+.layout(@f-direction, @j-content, @a-items) {
+    display: flex;
+    flex-direction: @f-direction;
+	justify-content: @j-content;
+	align-items: @a-items;
+  }
+
+
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+
+  // BUTTON Mixins
+
+  .btn-font-style(@f-size) {
+    font-size: @f-size;
+    font-weight: bold;
+    color: @porcelain;
+    text-align: center;
+  }
+
+  .btn-hover() {
+      &:hover {
+          background-color: @porcelain;
+          color: @btn-bg-color;
+      }
+  }
+
+  .btn-style(@btn-width, @btn-padding, @f-size, @b-radius) {
+    width: @btn-width;
+    padding: @btn-padding;
+    .border-radius(@b-radius);
+    background-color: @btn-bg-color;
+
+    .btn-font-style(@f-size);
+
+    .btn-hover;
+
+    
+  }
+
+
+  

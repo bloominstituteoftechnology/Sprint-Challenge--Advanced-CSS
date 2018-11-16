@@ -1,0 +1,80 @@
+// Animations 
+
+  
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-800px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+  
+      
+.focus-in() {
+    animation: focus-in-expand-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+
+
+
+
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+.slide-in-right() {
+	animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+
+
+
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+.slide-in-left() {
+	animation: slide-in-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+
+
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+.slide-in-top {
+	animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
