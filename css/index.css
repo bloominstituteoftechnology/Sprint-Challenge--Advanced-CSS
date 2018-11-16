@@ -329,7 +329,7 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-  padding: 1px 1px;
+  padding: 4px 3px;
   align-items: center;
 }
 @media (max-width: 500px) {
