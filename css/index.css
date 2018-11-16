@@ -243,7 +243,11 @@ footer {
     padding: 5px;
   }
   .home .space-images img {
-    width: 100%;
+    animation-name: imageresize;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.25s;
   }
 }
 .home .visit-planets {
@@ -352,6 +356,19 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     margin: auto;
+    width: 100%;
+    animation-name: imageresize;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.25s;
+  }
+}
+@keyframes imageresize {
+  from {
+    width: 30%;
+  }
+  to {
     width: 100%;
   }
 }
