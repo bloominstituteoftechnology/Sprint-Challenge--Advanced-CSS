@@ -1,0 +1,25 @@
+{
+  "name": "Sprint-Challenge--Advanced-CSS",
+  "version": "1.0.0",
+  "description": "You will be updating a website using all your responsive web design and preprocessing skills from the sprint. The theme of this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "less-watch-compiler less css index.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebMats/Sprint-Challenge--Advanced-CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebMats/Sprint-Challenge--Advanced-CSS/issues"
+  },
+  "homepage": "https://github.com/WebMats/Sprint-Challenge--Advanced-CSS#readme",
+  "devDependencies": {
+    "less": "^3.8.1",
+    "less-watch-compiler": "^1.13.0"
+  }
+}

@@ -1,1 +1,27 @@
 // Navigation code here
+
+.navigation {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: @nav-bg;
+    max-width: 1000px;
+    width: 100%;
+    border-bottom: 2px solid @sea-shell;
+    .duomargin(0, auto);
+    .nav__title {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 1.6rem;
+    }
+    .nav {
+        display: flex;
+        margin-bottom: 1rem;
+        .nav__item {
+            .duomargin(0, 1.6rem);
+            color: @nav-font;
+            font-size: 1.6rem;
+        }
+    }
+}
+
