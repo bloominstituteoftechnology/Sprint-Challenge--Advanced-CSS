@@ -305,6 +305,7 @@ footer {
   color: #F6F7F8;
   width: 100px;
   font-size: 1.5rem;
+  cursor: pointer;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -331,4 +332,44 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+#contact input,
+#contact textarea,
+select {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
+}
+#contact {
+  padding: 25px;
+  margin: 10px 0;
+  width: 100%;
+}
+fieldset {
+  margin: 0 0 10px;
+}
+#contact input,
+#contact textarea,
+select {
+  width: 100%;
+  border: 1px solid #81848E;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+#contact select {
+  height: 35px;
+}
+#contact textarea {
+  height: 100px;
+}
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  background: #22283A;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+#contact button[type="submit"]:hover {
+  background-color: #454A59;
 }
