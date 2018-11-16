@@ -227,6 +227,7 @@ header img {
   -moz-border-radius: 7px;
   border-radius: 7px;
   margin: 0 auto;
+  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 }
 @media (max-width: 500px) {
   header img {
@@ -250,6 +251,23 @@ header img {
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images .blast {
+  animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+.home .space-images .sky {
+  animation: focus-in-expand-fwd 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+.home .space-images .launch {
+  animation: slide-in-right 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -260,12 +278,6 @@ header img {
   .home .space-images img {
     width: 90%;
     margin: 20px auto;
-  }
-  .home .space-images img:nth-child(3) {
-    display: none;
-  }
-  .home .space-images img:nth-child(2) {
-    display: none;
   }
 }
 .home .visit-planets {
@@ -365,4 +377,50 @@ header img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-top {
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }

@@ -9,6 +9,8 @@ header {
   img {
     .border-radius(7px);
     margin: 0 auto;
+
+    .focus-in;
     
     @media @phone {
       width: 100%;
@@ -42,6 +44,29 @@ header {
     flex-wrap: wrap;
     width: 100%;
 
+    .blast {
+      .slide-in-left;
+    }
+
+    .sky {
+      .focus-in;
+    }
+
+    .launch {
+      .slide-in-right;
+    }
+
+
+    @media @phone {
+      .launch {
+        display: none;
+      }
+
+      .sky {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -52,15 +77,7 @@ header {
 
         width: 90%;
         margin: 20px auto;
-
-
-        &:nth-child(3) {
-          display: none;
-        }
-
-        &:nth-child(2) {
-          display: none;
-        }
+        
       }
     }
 
