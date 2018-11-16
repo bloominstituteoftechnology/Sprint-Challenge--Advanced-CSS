@@ -29,11 +29,42 @@
 }
 
 .full-mobile-width() {
-    @media @device-size[mobile] {
+    @media @device-size[phone] {
         width: 100%;
-        padding: 0;
+        margin: 0;
     }
 }
+
+.button-style(@font-size: 1.6rem, @desktop-height: 20px, @desktop-width: 7.5%, @bg-color: @btn-bg-color, @font-color: @btn-font-color, @hover-bg-color: @font-color, @hover-font-color: @bg-color) {
+    display: inline-block;
+    background-color: @bg-color;
+    color: @font-color;
+    cursor: pointer;
+    font-size: @font-size;
+    font-weight: bold;
+    padding: @desktop-height @desktop-width;
+    #prefixed > .border-radius(7.5px);
+    margin: 10px;
+
+    @media @device-size[phone] {
+        display: block;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: @hover-bg-color;
+        color: @hover-font-color;
+        border: 1px dashed @ebony-clay;
+        #prefixed > .transition-control(200ms);
+    }
+
+    &:active {
+        font-weight: normal;
+        border: 1px dotted @ebony-clay;
+    }
+}
+
+// Vendor prefixing aids
 
 #prefixed {
     .transition-control(@duration, @delay: 0) {
