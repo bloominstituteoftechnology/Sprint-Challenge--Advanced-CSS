@@ -31,6 +31,19 @@
     flex-wrap: wrap;
     width: 100%;
 
+    #one {
+      @media @phone {
+        .sizing(90%, 300px);
+
+      }
+    }
+
+   #two, #three {
+     @media @phone {
+       display: none;
+     }
+   }
+
     img {
       width: 28%;
       margin: 20px 2.5%;

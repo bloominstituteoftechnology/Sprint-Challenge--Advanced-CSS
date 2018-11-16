@@ -217,6 +217,18 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images #one {
+    width: 90%;
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images #two,
+  .home .space-images #three {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
