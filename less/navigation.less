@@ -1,15 +1,21 @@
 // Navigation code here
 
 .Navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 40%;
+    .center();
+    padding: 13px 40%;
     flex-wrap: wrap;
     background-color: @wild-sand;
 
+    @media @phone {
+        padding: 12px 9%;
+    }
+
     h1 {
         margin-bottom: 19px;
+
+        @media @phone {
+            padding-right: 4%; 
+        }
     }
 
     nav {
@@ -17,6 +23,11 @@
         width: 100%;
         justify-content: space-between;
         font-size: 1.6rem;
+
+        @media @phone {
+            justify-content: space-between;
+            padding-right: 5%;
+        }
 
         a {
             text-decoration: none;

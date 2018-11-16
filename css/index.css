@@ -170,18 +170,34 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 40%;
+  padding: 13px 40%;
   flex-wrap: wrap;
   background-color: #F6F6F6;
 }
+@media (max-width: 500px) {
+  .Navigation {
+    padding: 12px 9%;
+  }
+}
 .Navigation h1 {
   margin-bottom: 19px;
+}
+@media (max-width: 500px) {
+  .Navigation h1 {
+    padding-right: 4%;
+  }
 }
 .Navigation nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .Navigation nav {
+    justify-content: space-between;
+    padding-right: 5%;
+  }
 }
 .Navigation nav a {
   text-decoration: none;
