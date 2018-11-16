@@ -14,3 +14,20 @@
 	font-size: 1.6rem;
 	text-decoration: none;
 }
+
+#button {
+	.button-styles(@background) {
+		width: 25%;
+		font-size: 1.6rem;
+		color: @wild-sand;
+		padding: 5px 10px;
+		background-color: @background;
+		text-align: center;
+	}
+
+	.border-radius(@radius) {
+		-webkit-border-radius: @radius;
+		-moz-border-radius: @radius;
+		border-radius: @radius;
+	}
+}
