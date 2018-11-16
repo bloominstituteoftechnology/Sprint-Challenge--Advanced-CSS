@@ -166,6 +166,10 @@ p {
   border-bottom: 1px solid #F1F1F1;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  opacity: 0.9;
 }
 .nav-container .nav-content-container {
   width: 38%;
@@ -205,6 +209,9 @@ footer {
   footer {
     margin-top: 10px;
   }
+}
+.home {
+  padding-top: 120px;
 }
 @media (max-width: 500px) {
   .home {
