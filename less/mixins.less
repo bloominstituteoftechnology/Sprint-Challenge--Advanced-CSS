@@ -1,1 +1,22 @@
 // Mixins Here
+
+.duomargin(@td; @lr) {
+    margin: @arguments;
+}
+
+.button-creator(@bgcolor, @width, @height, @color) {
+    background-color: @bgcolor;
+    width: @width;
+    height: @height;
+    color: @color;
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    border-radius: 6px;
+    font-weight: 700;
+    &:hover {
+        background-color: aqua;
+        color: #000;
+        transition-duration: .5s;
+        transform: translateY(2px);
+    }
+}
