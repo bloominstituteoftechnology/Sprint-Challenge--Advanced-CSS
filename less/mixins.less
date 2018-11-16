@@ -7,31 +7,6 @@
     align-items: @a-items;
   }
 
-  .nav-stacked() {
-    .layout;
-    flex-direction: column;
-    padding: 5px 0 10px 0;
-    border-bottom: 1px solid @nav-border;
-    background: @nav-bg;
-    width: 100%;
-    margin: 0 auto;
-
-    .logo {
-      font-size: 4rem;
-    }
-
-    nav {
-      .layout(space-around);
-      width: 24%;
-      padding-top: 20px;
-
-      a {
-        .links;
-        transition: all 0.15s;
-      }
-    }
-  }
-
   .links() {
     text-decoration: none;
     color: @nav-font;

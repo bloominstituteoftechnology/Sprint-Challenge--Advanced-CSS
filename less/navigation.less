@@ -1,5 +1,30 @@
 // Navigation code here
 
 .top-nav {
-  #mixin.nav-stacked;
-}
+  #mixin.layout;
+  flex-direction: column;
+  padding: 5px 0 10px 0;
+  border-bottom: 1px solid @nav-border;
+  background: @nav-bg;
+  width: 100%;
+  margin: 0 auto;
+
+  .logo {
+    font-size: 4rem;
+  }
+
+  nav {
+    #mixin.layout(space-around);
+    width: 28%;
+    padding-top: 20px;
+
+    @media @mobile {
+      width: 82%;
+    }
+
+    a {
+      #mixin.links;
+      transition: all 0.15s;
+    }
+  } // nav
+} // top-nav

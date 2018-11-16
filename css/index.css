@@ -178,8 +178,13 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 24%;
+  width: 28%;
   padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .top-nav nav {
+    width: 82%;
+  }
 }
 .top-nav nav a {
   text-decoration: none;
