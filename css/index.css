@@ -185,6 +185,11 @@ p {
   font-weight: bold;
   color: #454A59;
 }
+@media (max-width: 800px) {
+  .nav-container nav {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .nav-container {
     padding: 10px 0;
@@ -271,6 +276,11 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .home {
