@@ -6,17 +6,18 @@
   border: 1px double @main-border-color;
 }
 
-.btn(@color-bg, @color-font) {
+.btn(@color-bg, @color-font, @width, @padding-h) {
     background: @color-bg;
     font-size: 1.725rem;
     color: @color-font;
     border-radius: 5px;
-    padding: 8px 20px;
-    width: 100px;
+    padding: @padding-h 0;
+    width: @width;
+    text-align: center;
     &:hover {
         background: @color-font;
         color: @color-bg;
         border: 2px solid @color-bg;
-        padding: 6px 18px;
+        padding: (@padding-h - 2px) 0;
     }
 }
