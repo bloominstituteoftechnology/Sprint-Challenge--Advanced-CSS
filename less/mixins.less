@@ -1,1 +1,23 @@
 // Mixins Here
+.navigation-style(){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    background-color: @nav-bg;
+    h1{
+        margin-bottom: 1.55rem;
+    }
+    a{
+       color: black;
+       font-size: 1.6rem;
+       padding: 1.5rem 1.5rem 1rem;
+    }
+}
+
+.create-button(@btn-width, @btn-height){
+    padding: @btn-height @btn-width;
+
+}
