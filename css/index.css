@@ -187,9 +187,6 @@ p {
   font-size: 1.6rem;
   transition: all 0.15s;
 }
-.top-nav nav ahover {
-  text-decoration: red;
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -244,6 +241,14 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 8px 20px;
+  background: #22283a;
+  color: white;
+  font-size: 1.8rem;
+  width: 30%;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;

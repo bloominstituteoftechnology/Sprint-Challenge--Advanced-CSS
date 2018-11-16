@@ -31,13 +31,17 @@
       }
     }
   }
+
   .links() {
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
-
-    &hover {
-      text-decoration: red;
-    }
   }
-}
+
+  //parametrix button mixin
+  .action-button(@y: 10px, @x: 20px) {
+    padding: @arguments;
+    background: @btn-bg-color;
+    color: white;
+  }
+} //mixin
