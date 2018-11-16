@@ -199,6 +199,10 @@ footer {
   color: #F6F7F8;
   border-radius: 10%;
 }
+.home .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
