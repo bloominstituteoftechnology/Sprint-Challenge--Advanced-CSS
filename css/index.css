@@ -161,8 +161,8 @@ p {
   margin: 0 auto;
 }
 header {
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -176,6 +176,7 @@ header nav {
   width: 40%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 header nav a {
   text-decoration: none;
@@ -231,6 +232,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: white;
+  background: black;
+  border-radius: 5px;
+  width: 30%;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .home .walk .walk-img {
   width: 46%;
