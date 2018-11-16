@@ -1,0 +1,13 @@
+What is the difference between an adaptive website and a fully responsive website?
+An adaptive website is one that has multiple layouts of fixed sizes and widths. An adaptive website uses breakpoints and media queries to switch between the layouts at specified widths. On the other hand, a fully responsive website has only one layout and uses %-based widths in addition to breakpoints and media queries to load a version of the site that works across all types of devices (tablet, phone, different resolutions, etc).
+
+Describe what it means to be mobile first vs desktop first.
+When creating a responsive website, mobile first or desktop first refers to whether the main content of the page is geared towards a desktop design (computer) or a mobile design (phone). If the code is written for a desktop design, the media query breakpoints usually begin with "(max width: 800px)" for tablets and "(max width: 500px)" for phones and progressively get to smaller resolutions (ie: 800px, 500px, 320px, etc), whereas mobile first design use the "min width" property and begin with the smaller resolutions first and progressively get to higher resolutions (ie: 320px, 500px, 800px). The difference between the two designs depends on the makeup of the users and whether most of the users use mobile phones or not.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+Rem units are used mostly for font sizes to keep all text/typography standardized and to make the text responsive to increases/decreases of the font size within the browser. A rem unit is relative to the root font size, and most browsers have a root font size of 16px (Medium). The phrase "font size: 62.5%" is important because it creates a standard that is easy to remember when programming, and that is 1rem unit = 10px (62.5% of 16px is 10px). This makes it possible and easy to convert rem units into pixels when coding.
+
+How would you describe preprocessing to someone new to CSS?
+I would say that preprocessing is like an extension of the CSS language. It enables features and new constructions of syntax that are not possible within CSS alone. A preprocessor is a software program that modifies data, compiles it, and formats it to be compatible with the CSS language. It generally allows programmers to write less code in a more organized fashion.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
