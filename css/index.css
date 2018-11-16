@@ -171,6 +171,12 @@ header h1 {
   padding-top: 20px;
   font-size: 3.5rem;
 }
+@media (max-width:500px) {
+  header h1 {
+    font-size: 4rem;
+    padding: 13px 0px 0px 17px;
+  }
+}
 header nav {
   font-size: 1.3rem;
   padding: 20px 0;
@@ -181,11 +187,15 @@ header nav {
 }
 @media (max-width:500px) {
   header nav {
-    width: 75%;
+    width: 87%;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    padding-left: 15px;
   }
 }
 header nav a {
   text-decoration: none;
+  color: #454A59;
 }
 header img {
   width: 100%;

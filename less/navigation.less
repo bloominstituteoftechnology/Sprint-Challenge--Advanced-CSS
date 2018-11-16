@@ -7,6 +7,11 @@ header {
     h1 {
         padding-top: 20px;
         font-size: 3.5rem;
+
+        @media @phone {
+            font-size: 4rem;
+            padding: 13px 0px 0px 17px;
+        }
     }
 
     nav {
@@ -16,12 +21,16 @@ header {
         .evenly-center;
 
         @media @phone {
-         width: 75%;   
+         width: 87%;  
+         font-size: 1.5rem; 
+         justify-content: space-around;
+         padding-left: 15px;
         }
         
 
         a {
             text-decoration: none;
+            color: @nav-font;
         }
     }
 
