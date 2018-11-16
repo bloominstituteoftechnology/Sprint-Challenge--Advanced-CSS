@@ -1,1 +1,25 @@
 // Mixins Here
+
+.navLinkStyles(){
+
+text-decoration: none;
+color:@main-font-color;
+font-size:1.8rem;}
+
+.navBoxModelSpecs(){
+  width:40%;
+  margin:0 auto;
+}
+
+.btn-Style(@btn-color, @btn-bg-color){
+
+  color:@btn-color;
+  background:@btn-bg-color;
+  &:hover{
+    color:@btn-bg-color;
+    background:@btn-color;
+  }
+
+
+
+}

@@ -1,9 +1,23 @@
 // Home Content
 
 .home {
+  img{
+    transition: .5s;
+
+
+  }
+  img:hover{transform:scale(1.02) perspective(1px);
+}
 
   .intro {
-
+    @media(@phone){
+      margin-bottom:20px;
+    }
+    img{
+      max-width: 100%;
+      margin-top:20px;
+      border-radius: 5px;
+    }
     h2 {
       padding: 15px;
     }
@@ -11,7 +25,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -25,9 +39,28 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media(@phone){
+      display: flex;
+      flex-direction: column;
+      img{
+        width:92%;
+        margin: 0 auto;
+        margin-top:10px;
+
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display:none;
+      }
+    }
   }
 
   .visit-planets {
+    @media(@phone){
+      margin-top:20px;
+    }
     padding: 15px;
 
     h3 {
@@ -40,13 +73,25 @@
   }
 
   .walk {
+
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media(@phone){
+      padding:0;
+      margin-top:30px;
+      display: flex;
+      flex-direction: column-reverse;
 
+    }
     .walk-text {
+      @media(@phone){
+        width:92%;
+        margin:0 auto;
+        margin-top:20px;
+      }
       width: 50%;
 
       h3 {
@@ -58,13 +103,31 @@
       }
 
       .btn {
+        .btn-Style(white, @header-font-color);
+        width:30%;
+        font-size:2rem;
+        text-align: center;
+        padding: 10px 0;
+        border-radius:5px;
+        @media(@phone){
+          width:92%;
+          margin:0 auto;
+          padding: 20px 0;
+        }
+
       }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media(@phone){
+        width:92%;
+        margin: 0 auto;
+        margin-top:20px;
+        margin-bottom:20px;
+      }
       img {
         width: 100%;
         height: auto;
@@ -72,4 +135,38 @@
       }
     }
   }
+  .formToggle{
+    form {
+    width:50%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    label{
+      font-size:1.6rem;
+      margin:10px 0 5px 0;
+    }
+    input{
+      margin:10px 0;
+      height:25px;
+    }
+
+
+  }
+  .btn {
+    .btn-Style(white, @header-font-color);
+    width:30%;
+    font-size:2rem;
+    text-align: center;
+    padding: 10px 0;
+    border-radius:5px;
+    @media(@phone){
+      width:92%;
+      margin:0 auto;
+      padding: 20px 0;
+    }
+    margin: 30px 0;
+
+  }}
 }// home

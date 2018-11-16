@@ -1,1 +1,30 @@
 // Navigation code here
+
+.navDiv{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size:3.8rem;
+    margin: 20px 0 20px 0;
+  }
+  nav{
+    .navBoxModelSpecs();
+    display: flex;
+    justify-content: space-around;
+    a{
+    .navLinkStyles();
+    transition: .5s;
+    }
+    a:hover{
+      transform:scale(1.1) perspective(1px);
+
+    }
+    @media(@phone){
+      width:90%;
+
+
+    }
+  }
+}
