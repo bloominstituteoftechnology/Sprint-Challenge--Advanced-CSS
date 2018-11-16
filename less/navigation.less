@@ -5,8 +5,18 @@
     .center(center, center);
     flex-direction: column;
     padding-bottom: 14px;
-    margin-top: 2px;
-    background-color: @nav-bg;
+    // margin-top: 2px;  //commented out for fixed bar
+    // background-color: @nav-bg; //commented out for fixed bar
+
+    // Following styles used for fixed bar
+    background-color: @nav-bg-opacity; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+
+    &:hover{
+        background-color: @nav-bg;
+    }
 
     h1{
         margin: 10px 0;

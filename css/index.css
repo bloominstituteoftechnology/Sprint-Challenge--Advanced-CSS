@@ -169,7 +169,12 @@ p {
   align-items: center;
   flex-direction: column;
   padding-bottom: 14px;
-  margin-top: 2px;
+  background-color: rgba(245, 245, 245, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.topBar:hover {
   background-color: #F6F6F6;
 }
 .topBar h1 {
@@ -194,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 97px;
 }
 .home .intro .headerImg img {
   border-radius: 4px;
