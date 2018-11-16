@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+a {
+  font-weight: 600;
+}
 h1 {
   font-size: 4rem;
 }
@@ -199,7 +202,7 @@ footer {
   align-items: center;
 }
 .home .CTA .lift-off {
-  padding: 3px 15px;
+  padding: 2px 15px;
 }
 .home .CTA .lift-off h2 {
   margin-top: 11px;
@@ -229,8 +232,9 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
+  margin-bottom: 16px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 49px 60px;
   display: flex;
   justify-content: center;
 }
@@ -241,7 +245,7 @@ footer {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 .home .walk .walk-text .btn {
   text-decoration: none;
@@ -249,7 +253,7 @@ footer {
   width: 30%;
   color: white;
   background-color: #22283A;
-  border-radius: 8px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
