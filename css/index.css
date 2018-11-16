@@ -337,3 +337,96 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.login {
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  width: 90%;
+  margin: 20px 5% 20px 5%;
+}
+.login .words {
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+.login .words h2 {
+  padding: 10px 0 10px 0px;
+}
+.login .words p {
+  padding: 0px;
+}
+.login .btn {
+  padding: 2% 5% 2% 5%;
+  border-radius: 5px;
+  background-color: #23293B;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+}
+@media (max-width:500px) {
+  .login .btn {
+    border-radius: 5px;
+    background-color: #23293B;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 2.5% 15px 2.5%;
+    text-align: center;
+  }
+}
+.login .btn:hover {
+  padding: 2% 5% 2% 5%;
+  border-radius: 5px;
+  background-color: white;
+  color: #23293B;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .login .btn:hover {
+    border-radius: 5px;
+    background-color: white;
+    color: #23293B;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px 2.5% 15px 2.5%;
+    text-align: center;
+  }
+}
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
