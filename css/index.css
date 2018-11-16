@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper {
+  width: 100%;
+  background-color: #F4F4F4;
+  border-bottom: 1px solid #dee2e6;
+}
+.wrapper .top-bar {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .top-bar h1 {
+  font-size: 4rem;
+  margin: 10px 0px;
+}
+@media (max-width: 500px) {
+  .wrapper .top-bar h1 {
+    margin-bottom: 15px;
+  }
+}
+.wrapper .top-bar .nav-bar {
+  width: 60%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .wrapper .top-bar .nav-bar {
+    width: 90%;
+  }
+}
+.wrapper .top-bar .nav-bar a {
+  color: #23293B;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .wrapper .top-bar .nav-bar a {
+    font-size: 1.6rem;
+  }
+}
+.wrapper .top-bar .nav-bar a:hover {
+  text-decoration: underline;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro .header-img {
+  border-radius: 10px;
+  width: 100%;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding-bottom: 15px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    margin-top: 30px;
+  }
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 25px;
+    padding: 20px 15px 0px;
+    flex-direction: column;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    order: 1;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    margin-bottom: 20px;
+  }
+}
+.home .walk .walk-text .btn a {
+  color: #23293B;
+  text-decoration: none;
+  color: #F4F4F4;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  width: 28%;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn a {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.home .walk .walk-text .btn a:hover {
+  color: #22283A;
+  background-color: #F4F4F4;
+  border: 1px solid #dee2e6;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 15px;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dee2e6;
+}
+.about-header .about-img {
+  width: 40%;
+  margin: 20px 0px;
+}
+.about-header h2 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.team {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.team .person-img {
+  width: 150px;
+  margin: 0 auto;
+}
+.team .person1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.team .person1 h3 {
+  margin: 10px;
+}
+.team .person1 p {
+  text-align: center;
+}
+.team .person2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.team .person2 h3 {
+  margin: 10px;
+}
+.team .person2 p {
+  text-align: center;
+}
+.team .person3 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.team .person3 h3 {
+  margin: 10px;
+}
+.team .person3 p {
+  text-align: center;
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 15px;
+}
+.mission .mission-img {
+  padding: 15px 0px;
+}
