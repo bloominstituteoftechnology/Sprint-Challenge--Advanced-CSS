@@ -16,37 +16,41 @@
         width: 100%;
 
         @media @device-size[phone] {
-            .make-flex(row, center, center, nowrap);
+            .make-flex(row, center);
         }
 
         img {
             width: 28%;
             #prefixed > .border-radius(20px);
-            margin: 20px 2.5%;
+            margin: 10px 2.5% 0;
 
             @media @device-size[phone] {
-                width: 87.5%;            
-                margin: 20px 50%;    
+                display: none;
+                width: 87.5%;
+
+                &:first-child {
+                    display: inline;
+                }
             }
         }
 
-        .blast {
-            @media @device-size[phone] {
-                order: 0;
-            }
-        }
+        // .blast {
+        //     @media @device-size[phone] {
+        //         order: 0;
+        //     }
+        // }
 
-        .sky {
-            @media @device-size[phone] {
-                order: -1;
-            }
-        }
+        // .sky {
+        //     @media @device-size[phone] {
+        //         order: -1;
+        //     }
+        // }
 
-        .launc {
-            @media @device-size[phone] {
-                order: 1;
-            }
-        }
+        // .launch {
+        //     @media @device-size[phone] {
+        //         order: 1;
+        //     }
+        // }
     }
 
     .visit-planets {
