@@ -17,8 +17,17 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 4.2rem;
+
+  @media @phone {
+    font-size: 3.8rem;
+    padding-bottom: 3%;
+}
+
 h2 {
   font-size: 3.2rem;
+  }
 }
 
 h3 {
@@ -34,5 +43,10 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+}
+
+@media @phone {
+  width: 100%;
+  margin: 0 auto;
 }
 

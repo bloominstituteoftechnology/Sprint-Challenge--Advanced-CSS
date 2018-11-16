@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SpaceWalkers</title>
 
@@ -16,12 +17,23 @@
 
 <body>
 
- <!-- navigation code here -->
+ <header class="main-navigation">
+   <div class="container nav-container">
+     <h1 class="logo-heading">SpaceWalkers</h1>
+     <nav class="nav">
+       <a class="nav-link" href="#">Home</a>
+       <a class="nav-link" href="#">About Us</a>
+       <a class="nav-link" href="#">Blog</a>
+       <a class="nav-link" href="#">Contact</a>
+       <a class="nav-link" href="#">Sign In</a>
+     </nav>
+   </div>
+ </header>
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+       <img src="img/main-header.png" alt="Space View">
 
       <h2>Lift Off</h2>
     
@@ -29,9 +41,9 @@
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img id="rocket" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img id="light-trail" src="img/sky.png" class="sky" alt="Space sky image">
+        <img id="blast-off" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
