@@ -160,6 +160,16 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  margin: 1rem;
+  padding-top: 1.1rem;
+}
+nav a {
+  text-decoration: none;
+  margin: 1.5rem;
+  color: #454A59;
+  font-size: 1.6rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +179,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+.home .intro nav {
+  text-align: center;
 }
 .home .intro h2 {
   padding: 15px;
