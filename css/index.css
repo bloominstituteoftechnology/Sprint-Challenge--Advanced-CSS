@@ -181,6 +181,11 @@ p {
   color: #5E6164;
   font-size: 1.8rem;
 }
+@media (max-width:500px) {
+  .navDiv nav {
+    width: 90%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -194,6 +199,7 @@ footer {
 .home .intro img {
   max-width: 100%;
   margin-top: 20px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
