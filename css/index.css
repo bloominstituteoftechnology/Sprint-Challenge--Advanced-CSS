@@ -398,7 +398,16 @@ footer {
     text-align: center;
   }
 }
+.login .textbox {
+  height: 200px;
+  width: 100%;
+}
+.login .mag {
+  margin: 0 0 30px 0;
+  text-align: left;
+}
 .login form {
+  margin: 0 0 30px 0;
   text-align: center;
 }
 @-webkit-keyframes slide-in-elliptic-top-fwd {
