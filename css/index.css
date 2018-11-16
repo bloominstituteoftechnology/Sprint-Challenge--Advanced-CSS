@@ -171,7 +171,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #dee2e6;
 }
 .navigation header {
   width: 500px;
@@ -208,7 +208,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #f4f4f4;
-  border-bottom: 1px solid darkgrey;
+  border-bottom: 1px solid #dee2e6;
   opacity: 0.9;
 }
 .fixed-navigation header {
@@ -367,4 +367,36 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.newsletter {
+  max-width: 100%;
+  border-top: 1px solid #dee2e6;
+}
+.newsletter div {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter div h2 {
+  margin-bottom: 5px;
+}
+.newsletter div p {
+  margin-bottom: 10px;
+}
+#submit {
+  margin-left: 5px;
+  background-color: #22283A;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
+  transition: 0.2s;
+}
+#submit:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }

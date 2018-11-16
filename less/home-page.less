@@ -102,5 +102,33 @@
         border-radius: 10px;
       }
     }
-  }
+  }    
 }// home
+
+.newsletter{
+  max-width: 100%;
+  border-top: 1px solid @main-border-color;
+  div{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      margin-bottom: 5px;
+    }
+    p{
+      margin-bottom:10px;
+    }
+  }
+}
+
+#submit{
+  margin-left: 5px;
+    background-color:@btn-bg-color;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    .animation-mix(.2s, scale(1.2), black, white);
+}
