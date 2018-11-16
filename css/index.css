@@ -168,6 +168,7 @@ p {
   width: 100%;
   margin: auto;
   background-color: #f6f6f6;
+  border-bottom: 1px solid #dee2e6;
 }
 .navarea .navhead {
   width: 100%;
@@ -178,8 +179,8 @@ p {
   color: #454a59;
 }
 .navarea .navhead h1 {
-  font-size: 3em;
-  padding: 8px;
+  font-size: 4em;
+  padding: 10px;
 }
 .navarea .navhead a {
   text-decoration: none;
@@ -192,7 +193,7 @@ p {
 .navarea nav a {
   font-size: 1.6em;
   display: flex;
-  padding: 10px;
+  padding: 12px;
   text-decoration: none;
   color: #454a59;
 }
