@@ -193,6 +193,7 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  align-self: flex-start;
 }
 .home .intro p {
   padding: 0 15px;
