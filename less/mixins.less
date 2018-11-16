@@ -16,13 +16,18 @@
 }
 
 #button {
-	.button-styles(@background) {
+	.button-styles(@background, @color) {
 		width: 25%;
 		font-size: 1.6rem;
-		color: @wild-sand;
+		color: @color;
 		padding: 5px 10px;
 		background-color: @background;
 		text-align: center;
+
+		&:hover {
+			background-color: @color;
+			color: @background;
+		}
 	}
 
 	.border-radius(@radius) {

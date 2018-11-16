@@ -257,6 +257,10 @@ footer {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #23293B;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
