@@ -1,1 +1,29 @@
-// Navigation code here
+.nav-container {
+  width: 100%;
+  background: @nav-bg;
+  border-bottom: @nav-border;
+
+
+  .nav-content {
+    max-width: 800px;
+    margin: 0 auto;
+    .col-center;
+
+    h1 {
+      margin: 2rem 0;
+    }
+
+    nav {
+      width: 50%;
+      // .b;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: @nav-font;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+

@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,10 +158,41 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-container {
+  width: 100%;
+  background: #F6F6F6;
+  border-bottom: #F1F1F1;
+}
+.nav-container .nav-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.nav-container .nav-content h1 {
+  margin: 2rem 0;
+}
+.nav-container .nav-content nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container .nav-content nav a {
+  color: #454A59;
+  margin-bottom: 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -201,6 +235,20 @@ p {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #22283A;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

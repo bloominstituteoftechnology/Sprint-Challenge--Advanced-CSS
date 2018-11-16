@@ -1,1 +1,32 @@
 // Mixins Here
+
+
+// Temporary Scaffolding Visualizer
+
+.b() {
+  border: 1px solid coral;
+}
+
+
+// Quick Display Flex Column Center
+.col-center() {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+// Button Generator
+
+.custom-btn(@text-color, @font-size, @border-radius) {
+    color: @text-color;
+    font-size: @font-size;
+    border-radius: @border-radius;
+    cursor: pointer;
+    border: 1px solid @btn-bg-color;
+
+    &:hover {
+      background: @text-color;
+      color: @btn-bg-color;
+    }
+}
+
