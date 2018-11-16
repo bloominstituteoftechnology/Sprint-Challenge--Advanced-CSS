@@ -9,8 +9,15 @@ nav {
     justify-content: center;
     max-width: 1000px;
     text-align: center;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
     @media @mobile {
         max-width: 500px;
+        position: relative;
+        opacity: 1;
     }
     h1 {
         font-size: 4rem;
@@ -24,6 +31,7 @@ nav {
             font-size: 1.65rem;
             text-decoration: none;
             padding: 0 14px;
+            transition: all .2s ease-in-out;
             &:visited {
                 text-decoration: none;
             }
