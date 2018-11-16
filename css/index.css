@@ -287,11 +287,22 @@ footer {
 .home .walk .walk-text .btn {
   background: #22283A;
   color: white;
-  width: 30%;
   border-radius: 0.5rem;
   padding: 0.9rem 1.8rem;
-  font-size: 1.9rem;
   font-weight: bold;
+  width: 30%;
+  font-size: 1.9rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    background: #22283A;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 2.6rem 0px;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

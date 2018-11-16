@@ -89,6 +89,15 @@
       .btn {
         //.btnFactory();
         .btnFactory(.9rem,1.8rem);
+        width: 30%;
+        font-size:  1.9rem;//19px;
+
+        @media @phone {
+          width: 100%;
+          .btnFactory(2.6rem, 0px);
+          text-align:center;
+
+        }
       }
     }
 
@@ -97,6 +106,8 @@
       margin-left: 4%;
       padding: 20px 19px;
       align-items:center;
+
+      
 
       @media @phone {
         width:100%;
