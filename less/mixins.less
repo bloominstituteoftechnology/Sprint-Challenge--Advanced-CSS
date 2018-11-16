@@ -1,1 +1,12 @@
 // Mixins Here
+.display (@justiy, @align) {
+    display: flex;
+    justify-content: @justiy;
+    align-items: @align;
+}
+
+.border-font(@size, @style, @color, @bg-color, @font-color) {
+    border: @size @style @color;
+    background: @bg-color;
+    color: @font-color;
+}
