@@ -1,1 +1,24 @@
 // Mixins Here
+.display(){
+    display: flex;
+    align-items: center;
+}
+
+.border(@color){
+    border-bottom: 2px solid @color;
+}
+
+.btn(@width, @height) {
+    border-radius: 10px;
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    .display;
+    justify-content: center;
+    font-size: 1.6rem;
+    &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+}

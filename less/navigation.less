@@ -4,13 +4,12 @@
     width: 100%;
     height: 100px;
     background-color: @nav-bg;
-    border-bottom: 2px solid @nav-border;
+    .border(@nav-border);
 
     .nav-container {
         height: 100%;
-        display: flex;
+        .display;
         flex-direction: column;
-        align-items: center;
 
         h1 {
             font-size: 4rem;
@@ -25,7 +24,7 @@
             a{
                 font-size: 1.6rem;
                 text-decoration: none;
-                color: @header-font-color
+                color: @header-font-color;
             }
         }
     }
