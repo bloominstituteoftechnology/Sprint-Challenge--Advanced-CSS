@@ -234,6 +234,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 @media (max-width:500px) {
   .home .intro img {
@@ -364,7 +365,7 @@ footer {
   margin: 15px 0;
 }
 .top-navigation .nav-container .nav {
-  width: 450px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
