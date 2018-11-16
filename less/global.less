@@ -34,5 +34,28 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @phone {
+    display:flex;
+    flex-direction: column;
+    // overflow-x: hidden;
+    .clouds{
+      display:none;
+    }
+    .btnc{
+      width:400px;
+      height:100px;
+    }
+    .blast {
+      width: 100px;
+      height: 200px;
+    }
+    .sky{
+      display:none;
+    }
+    .launch{
+      display: none;
+    }
+  }
 }
 

@@ -167,6 +167,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .clouds {
+    display: none;
+  }
+  .container .btnc {
+    width: 400px;
+    height: 100px;
+  }
+  .container .blast {
+    width: 100px;
+    height: 200px;
+  }
+  .container .sky {
+    display: none;
+  }
+  .container .launch {
+    display: none;
+  }
+}
 body section h1 {
   display: flex;
   justify-content: center;
