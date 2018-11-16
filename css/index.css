@@ -176,6 +176,8 @@ p {
   justify-content: center;
   flex-direction: column;
   background-color: #F6F6F6;
+  position: fixed;
+  opacity: 0.9;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -210,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 93px;
 }
 .home .intro img {
   border-radius: 5px;
