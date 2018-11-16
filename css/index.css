@@ -148,6 +148,7 @@ h5 {
 h1 {
   font-size: 4rem;
   padding: 15px;
+  text-align: center;
 }
 h2 {
   font-size: 3.2rem;
@@ -161,7 +162,6 @@ p {
 }
 header {
   width: 100%;
-  text-align: center;
   background-color: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
 }
@@ -234,6 +234,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 8px;
+  width: 29%;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

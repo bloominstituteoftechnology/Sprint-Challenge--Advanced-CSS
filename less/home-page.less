@@ -15,8 +15,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex-wrap;
     width: 100%;
 
     img {
@@ -58,6 +57,15 @@
       }
 
       .btn {
+        .color-btn(@btn-bg-color, @porcelain);
+        font-size: 1.8em;
+        text-align: center;
+        padding: 8px;
+        width: 29%;
+        border-radius: 5px;
+        &:hover {
+          .color-btn(@porcelain, @btn-bg-color)
+        }
       }
     }
 
