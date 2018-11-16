@@ -41,6 +41,16 @@
     background: #e45c01;
   }
 }
+@keyframes showcase {
+  from {
+    transform-origin: bottom left;
+    transform: scale(1);
+  }
+  to {
+    transform-origin: bottom left;
+    transform: scale(1.1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -274,6 +284,9 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  animation: showcase 1.5s ease 0s 1 forwards;
+}
 @media (max-width: 520px) {
   .home .space-images img {
     width: 100%;
@@ -336,8 +349,7 @@ footer {
   cursor: pointer;
 }
 .walk .walk-text .btn:hover {
-  height: auto;
-  animation: explode 1.5s linear 0s 1;
+  animation: explode 1.5s linear 0s 1 forwards;
 }
 @media (max-width: 520px) {
   .walk .walk-text .btn {

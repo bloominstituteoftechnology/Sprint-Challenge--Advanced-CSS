@@ -41,7 +41,12 @@
     91% { transform: scale(1.22) translateX(5%) rotate(-0deg); }
     100% { transform: scale(1.22) translateX(0%); background: rgb(228, 92, 1); }
   }  
-  .animate(@animation; @duration) {
-      height: auto;
-    animation: @animation @duration linear 0s 1;
+
+  @keyframes showcase {
+    from {transform-origin: bottom left; transform: scale(1);}
+    to {transform-origin: bottom left; transform: scale(1.1);}
+  }
+
+  .animate(@animation; @duration; @timing; @fill-mode) {
+    animation: @animation @duration @timing 0s 1 @fill-mode;
   }
