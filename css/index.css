@@ -249,7 +249,7 @@ footer {
   .home .walk {
     margin-top: 15px;
     flex-direction: column-reverse;
-    padding: 10px;
+    padding: 20px;
   }
 }
 .home .walk .walk-text {
@@ -280,6 +280,11 @@ footer {
   border: 1px solid #81848e;
   cursor: pointer;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    height: 65px;
+  }
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
