@@ -175,7 +175,7 @@ p {
 }
 .main-navigation .logo-heading {
   padding: 10px;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .main-navigation .nav-link {
   padding: 10px;
@@ -240,6 +240,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: inherit;
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
