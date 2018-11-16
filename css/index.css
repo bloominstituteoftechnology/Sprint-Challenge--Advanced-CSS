@@ -171,6 +171,10 @@ a {
   width: 100%;
   background: #F6F6F6;
   border-bottom: #F1F1F1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
 }
 .nav-container .nav-content {
   max-width: 800px;
@@ -190,6 +194,9 @@ a {
 .nav-container .nav-content nav a {
   color: #454A59;
   margin-bottom: 15px;
+}
+.home .intro {
+  margin-top: 100px;
 }
 .home .intro img {
   border-radius: 5px;
