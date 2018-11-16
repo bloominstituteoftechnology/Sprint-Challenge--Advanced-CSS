@@ -1,1 +1,29 @@
 // Navigation code here
+
+.nav-container {
+    padding: 10px 0 0 0;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+    .justify-flex(center);
+    
+    
+    .nav-content-container {
+        width: 38%;
+
+        h1 {
+            font-size: 4rem;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        nav {
+            padding-bottom: 10px;
+            .justify-flex(space-between);
+            a{
+                text-decoration: none;
+                color: @nav-font;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
