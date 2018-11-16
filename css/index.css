@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5E6164;
 }
 h1,
@@ -142,8 +142,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293B;
+}
+h1 {
+  font-size: 4.06rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +162,18 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-container {
+  width: 100%;
+}
+.nav-container nav {
+  margin: 12px auto 0;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 footer {
   color: #22283B;
