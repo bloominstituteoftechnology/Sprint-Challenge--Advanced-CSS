@@ -286,9 +286,14 @@ footer {
   color: #F6F7F8;
   font-size: 1.8rem;
   text-align: center;
+  cursor: pointer;
   border-radius: 5px;
   width: 30%;
   padding: 10px 5%;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -296,9 +301,14 @@ footer {
     color: #F6F7F8;
     font-size: 1.8rem;
     text-align: center;
+    cursor: pointer;
     border-radius: 5px;
     width: 100%;
     padding: 25px 5%;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #F6F7F8;
+    color: #22283A;
   }
 }
 .home .walk .walk-img {

@@ -14,7 +14,13 @@
     color: @text-color;
     font-size: 1.8rem;
     text-align: center;
+    cursor: pointer;
     .radius5px;
     width: @width;
     padding: @pad-tb @pad-lr;
+
+    &:hover {
+        background: @text-color;
+        color: @bg-color;
+    }
 }
