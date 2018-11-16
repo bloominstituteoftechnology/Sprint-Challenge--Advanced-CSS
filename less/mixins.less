@@ -8,4 +8,8 @@
 .btn-mixin(@bg-color, @color) {
   background-color: @bg-color;
   color: @color;
+  &:hover {
+    background-color: @color;
+    color: @bg-color;
+  }
 }
