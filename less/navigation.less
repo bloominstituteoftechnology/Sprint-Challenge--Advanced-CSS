@@ -7,15 +7,27 @@
     padding: 1.2% 0;
     .flex-center(column);
 
+    @media @phone {
+        padding: 2.4% 0;
+    }
+
     h1 {
         color: @header-font-color;
         font-size: 4rem;
         margin-bottom: 2%;
+
+        @media @phone {
+            margin-bottom: 4%;
+        }
     }
 
     nav {
         width: 38%;
         .flex-between(row);
+
+        @media @phone {
+            width: 78%;
+        }
 
         a {
             color: @nav-font;
