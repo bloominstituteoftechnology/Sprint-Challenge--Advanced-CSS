@@ -53,8 +53,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 5px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -68,6 +77,10 @@
 
         .buttmix();
   
+        @media @phone {
+          width: 99%;
+        }
+
       &:hover {
       color: @btn-bg-color;
       background-color: @sea-shell;
@@ -80,6 +93,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 99%;
+        margin: 10px auto;
+      }
       
       img {
         width: 100%;
