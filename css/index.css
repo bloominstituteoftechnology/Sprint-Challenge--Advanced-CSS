@@ -172,17 +172,33 @@ footer {
 }
 .navarea {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   max-width: 800px;
+  width: 100%;
   margin: auto;
+}
+.navarea .navhead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
 }
-.navarea h1 {
-  font-size: 2em;
-  display: block;
+.navarea .navhead h1 {
+  font-size: 4em;
 }
-.navarea .nav a {
+.navarea .navhead a {
+  text-decoration: none;
+}
+.navarea nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.navarea nav a {
+  font-size: 1.6em;
   display: flex;
   text-decoration: none;
 }
