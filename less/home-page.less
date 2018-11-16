@@ -7,6 +7,7 @@
     img {
       .radius5px;
       width: 100%;
+      padding-bottom: 2px;
     }
 
     h2 {
@@ -30,6 +31,19 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+   
   }
 
   .visit-planets {
