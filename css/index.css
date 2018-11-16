@@ -173,7 +173,7 @@ p {
 .navigation nav {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 376px;
   padding: 4px 0px 12px 0px;
 }
 @media (max-width: 500px) {
