@@ -1,1 +1,45 @@
-// Navigation code here
+// Top Nav Area Styles
+.nav-area {
+    .container-centering();
+    text-align: center;
+    margin: 15px auto 10px;
+
+    h1 {
+        margin-bottom: 20px;
+
+        a {
+            .remove-hyperlink-styling();
+
+            &:active {
+                padding: 5px;
+                .offset-border-effect(2px, dotted, @ebony-clay);
+            }
+        }
+    }
+
+    nav {
+        a {
+            .remove-hyperlink-styling();
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 10px 2%;
+
+            @media @device-size[phone] {
+                font-size: 1.2rem;
+                font-weight: normal;
+                padding: 10px 3%;
+            }
+
+            &:hover {
+                background-color: darken(@white, 20%);
+                color: @wild-sand;
+                font-weight: bold;                    
+                #prefixed > .transition-control(500ms);
+            }
+
+            &:active {
+                .offset-border-effect(2px, dotted, @snow);
+            }
+        }
+    }
+}

@@ -1,1 +1,71 @@
-// Mixins Here
+// General reusable styles
+
+.container-centering() {
+    max-width: @container-max-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @device-size[tablet-dfirst] {
+        width: 95%;
+    }
+}
+
+.make-flex(@flex-direction: row, @justify-content: flex-start,@align-items: flex-start, @wrap: nowrap) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+.remove-hyperlink-styling() {
+    color: black;
+    text-decoration: none;
+}
+
+.offset-border-effect(@border-size, @border-type, @border-color) {
+    border: @arguments;
+    margin-left: @border-size / -2px;
+    margin-bottom: @border-size * -2px;
+}
+
+.full-mobile-width() {
+    @media @device-size[mobile] {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#prefixed {
+    .transition-control(@duration, @delay: 0) {
+        -webkit-transition-duration: @duration;
+        -moz-transition-duration: @duration;
+        -o-transition-duration: @duration;
+        -ms-transition-duration: @duration;
+        transition-duration: @duration;
+        -webkit-transition-delay: @delay;
+        -moz-transition-delay: @delay;
+        -o-transition-delay: @delay;
+        -ms-transition-delay: @delay;
+        transition-delay: @delay;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        -ms-transition-property: all;
+        transition-property: all;
+    }
+
+    .border-radius(@radius) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        -o-border-radius: @radius;
+        -ms-border-radius: @radius;
+        border-radius: @radius;
+    }
+
+    .box-shadow(...) {
+        -webkit-box-shadow: @arguments;
+        -moz-box-shadow: @arguments;
+        -o-box-shadow: @arguments;
+        -ms-box-shadow: @arguments;
+    }
+}
