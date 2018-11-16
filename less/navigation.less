@@ -3,9 +3,12 @@
 .nav-container {
   border-bottom: 1px @sea-shell;
   background-color: @wild-sand;
-  padding: 20px 20px 0;
+
   #mixins.layout(space-between, center);
   flex-direction: column;
+  @media @phone {
+    width: 100%;
+  }
 
   nav {
     #mixins.layout(space-between, center);
@@ -13,19 +16,20 @@
     margin: 0 auto;
     padding: 10px;
     color: @river-bend;
-
     h1 {
-      font-size: 10rem;
+      font-size: 3.2rem;
     }
-
     a {
-      padding: 0 20px;
       text-decoration: none;
       font-size: 1.6rem;
       color: @river-bend;
 
       &:hover {
         color: black;
+      }
+      @media @phone {
+        width: 100%;
+        font-size: 1.2rem;
       }
     }
   }
