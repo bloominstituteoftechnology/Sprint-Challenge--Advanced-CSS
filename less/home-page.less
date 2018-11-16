@@ -143,3 +143,64 @@
     }
   }
 }// home
+
+.signin {
+  padding-top:120px;
+
+  @media @phone {
+    padding-top:100px;
+  }
+
+  .splash {
+    display: flex;
+    justify-content: center;
+
+    img {
+      border-radius: 5px;
+      margin-bottom: 80px;
+    }
+  }
+
+  .signin-form {
+    display: flex;
+    margin-bottom: 100px;
+
+    form {
+      width: 40%;
+      margin: 0 auto;
+
+      @media @phone {
+        width: 60%;
+      }
+  
+      input{
+        padding: 8px;
+        font-size: 1.6rem;
+        border: 1px solid @main-border-color;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+  
+      label {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+      .signin-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+  
+      
+      }
+
+      input[type=submit] {
+       .btn-styles(@btn-bg-color, @porcelain, 50%, 10px, 5%);
+      }
+    }
+  }
+  
+
+}
