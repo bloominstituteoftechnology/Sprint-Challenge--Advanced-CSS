@@ -172,9 +172,9 @@ p {
 }
 @media (max-width: 500px) {
   .top-bar {
-    display: flex;
-    justify-content: start;
-    margin: 20px 0 600px 0;
+    width: 100%;
+    padding: 0;
+    background: red;
   }
 }
 .top-bar h1 {
