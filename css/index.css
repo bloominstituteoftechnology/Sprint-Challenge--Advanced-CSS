@@ -459,12 +459,30 @@ footer {
     opacity: 1;
   }
 }
-.blog .intro h2 {
+.blog .intro .blog-content {
+  display: flex;
+  justify-content: space-between;
+}
+.blog .intro .blog-content .dates {
+  padding-top: 60px;
+}
+.blog .intro .blog-content .dates p {
+  padding-bottom: 5px;
+  border-bottom: 1px solid silver;
+}
+.blog .intro .blog-content .dates .year {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.blog .intro .blog-content .blogitem {
+  width: 70%;
+}
+.blog .intro .blog-content .blogitem h2 {
   padding: 15px;
 }
-.blog .intro h3 {
+.blog .intro .blog-content .blogitem h3 {
   padding-bottom: 10px;
 }
-.blog .intro p {
+.blog .intro .blog-content .blogitem p {
   padding: 0 15px 20px 15px;
 }
