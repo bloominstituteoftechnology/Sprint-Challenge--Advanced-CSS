@@ -16,7 +16,14 @@ h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
-
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  @media @mobile {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+}
 h2 {
   font-size: 3.2rem;
 }
