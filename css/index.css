@@ -180,6 +180,10 @@ p {
   text-decoration: none;
   color: #5E6164;
   font-size: 1.8rem;
+  transition: 0.5s;
+}
+.navDiv nav a:hover {
+  transform: scale(1.1) perspective(1px);
 }
 @media (max-width:500px) {
   .navDiv nav {
@@ -195,6 +199,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home img {
+  transition: 0.5s;
+}
+.home img:hover {
+  transform: scale(1.02) perspective(1px);
 }
 @media (max-width:500px) {
   .home .intro {
@@ -321,4 +331,40 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .formToggle form {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home .formToggle form label {
+  font-size: 1.6rem;
+  margin: 10px 0 5px 0;
+}
+.home .formToggle form input {
+  margin: 10px 0;
+  height: 25px;
+}
+.home .formToggle .btn {
+  color: white;
+  background: #23293B;
+  width: 30%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+.home .formToggle .btn:hover {
+  color: #23293B;
+  background: white;
+}
+@media (max-width:500px) {
+  .home .formToggle .btn {
+    width: 92%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
 }
