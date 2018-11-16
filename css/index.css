@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +163,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 10rem;
+  border-bottom: solid 1px #F1F1F1;
+  background-color: #F6F6F6;
+  color: #454A59;
+}
+.nav-unit h2 {
+  padding: 20px 0;
+}
+.nav-unit nav {
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+}
+@media  {
+  .nav-unit nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+.nav-unit a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +205,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  border-bottom: solid 1px #dee2e6;
+  margin-bottom: 1.5rem;
+}
+.home .intro img {
+  border-radius: 5px;
+}
+@media  {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -187,6 +235,17 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media  {
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -203,6 +262,43 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media  {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem;
+  }
+}
+.home .walk .signup {
+  font-size: 1.8rem;
+  width: 100px;
+  height: 40px;
+  background-color: #22283B;
+  color: white;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.home .walk .signup:hover {
+  border: 1px solid #22283B;
+  background-color: white;
+  color: #22283B;
+}
+@media  {
+  .home .walk .signup {
+    font-size: 1.8rem;
+    width: 400px;
+    height: 50px;
+    background-color: #22283B;
+    color: white;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .home .walk .signup:hover {
+    border: 1px solid #22283B;
+    background-color: white;
+    color: #22283B;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -212,9 +308,20 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media  {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media  {
+  .home .walk .walk-img {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
