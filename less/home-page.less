@@ -30,26 +30,30 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+
+    .sky, .launch {
+        @media @mobile {
+          display:none;
+        }
+      }
+
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
 
-      .sky {
-        @media @mobile {
-          display: hide;
-        }
+      @media @mobile {
+        width: 100%;
+        
       }
-
-      .launch {
-        @media @mobile {
-          display: none;
-        }
+      
+      
+        
       }
     }
-  }
+  
 
   .visit-planets {
     padding: 15px;
@@ -97,8 +101,13 @@
       .btn {
         
         .button(@shuttle-gray, white);
-        text-align: center;
-        
+
+        @media @mobile {
+          margin: 0%;
+          padding: 6%;
+          margin-bottom: 4%;
+        }
+                
       }
     }
 
