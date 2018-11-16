@@ -1,11 +1,29 @@
 // Mixins Here
 
+.navareaset() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: @nav-bg;
+}
+
 .navlinkset() {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.btnsettings() {
-    
+.btnsettings(@wi, @he, @bgc, @br, @fs, @fc) {
+    width: @wi;
+    height: @he;
+    background-color: @bgc;
+    border-radius: @br;
+    font-size: @fs;
+    color: @fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
