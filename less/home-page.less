@@ -79,8 +79,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 0;
+      flex-wrap: wrap;
+      margin-top: 56px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -88,6 +98,10 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          widows: 97%;
+        }
       }
 
       .btn {
@@ -98,6 +112,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        order: -1;
+        margin: 0 4% 16px 0;
+      }
       
       img {
         width: 100%;
