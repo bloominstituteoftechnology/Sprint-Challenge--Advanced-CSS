@@ -1,1 +1,61 @@
 // Mixins Here
+
+
+#mixins() {
+    .layout(@j-content, @a-items ) {
+      display: flex;
+      justify-content: @j-content;
+      align-items: @a-items;
+      
+    }
+
+    .navigation-style(){
+        margin: 0px auto;
+        border-bottom: 2px solid  @nav-border;
+        flex-wrap: wrap; 
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-color: @nav-bg;
+    }
+
+    .border-radius(@radius) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        border-radius: @radius;
+    }
+
+    
+
+    .button-layout(){
+        color: @wild-sand;
+        background-color: @btn-bg-color;
+        font-size: 2rem; 
+        padding: 5px 20px;
+        margin: 10px;
+        width: 40%;
+
+        @media @phone {
+            padding: 15px 60px;
+            margin: 0 10px;
+            width: 100%;
+            
+            
+        }
+        
+    }
+
+       
+//  =======Parametric Button Mixin========= 
+      
+    .button-layout(@wild-sand, @btn-bg-color) {
+        color:@wild-sand;
+        background-color: @btn-bg-color;
+        font-size: 2rem; 
+        padding: 5px 20px;
+        
+        
+    }
+}
+
+
