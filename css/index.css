@@ -175,7 +175,7 @@ header h1 {
 @media (max-width:500px) {
   header h1 {
     font-size: 4rem;
-    padding: 13px 0px 0px 17px;
+    padding: 13px 0px 1px 27px;
   }
 }
 header nav {
@@ -188,10 +188,10 @@ header nav {
 }
 @media (max-width:500px) {
   header nav {
-    width: 87%;
+    width: 93%;
     font-size: 1.5rem;
     justify-content: space-around;
-    padding-left: 15px;
+    padding-left: 30px;
   }
 }
 header nav a {
@@ -213,6 +213,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:500px) {
+  .home .intro {
+    padding-top: 10px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -252,7 +257,7 @@ footer {
 }
 @media (max-width:500px) {
   .home .visit-planets {
-    padding-top: 26px;
+    padding-top: 15px;
   }
 }
 .home .visit-planets h3 {
@@ -275,8 +280,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column-reverse;
-    padding: 20px 0;
-    padding-left: 8px;
+    padding: 29px 0 0 8px;
   }
 }
 .home .walk .walk-text {
@@ -313,7 +317,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    padding: 26px 0px 28px 10px;
+    padding: 26px 0px 28px 23px;
     font-size: 1.7rem;
   }
 }
