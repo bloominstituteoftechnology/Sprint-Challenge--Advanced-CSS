@@ -58,6 +58,14 @@
       }
 
       .btn {
+
+        button {
+        #mixins.btn-style;
+
+        &:hover {
+          #mixins.btn-style(#222D3F, white, 6px 17px, 1.8rem, 6px)
+        }
+        }
       }
     }
 
