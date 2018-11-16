@@ -1,8 +1,6 @@
 // Home Content
 
 .home {
-  .ninety-five;
-
   .intro {
 
     h2 {
@@ -46,6 +44,10 @@
   .visit-planets {
     padding: 15px;
 
+    @media @phone {
+      padding-top: 26px;
+    }
+
     h3 {
       margin-top: 11px;
     }
@@ -63,11 +65,11 @@
     justify-content: center;
 
     @media @phone {
-      margin-top: 20px;
+      margin-top: 10px;
       .evenly-center;
       flex-direction: column-reverse;
-      .ninety-five;
       padding: 20px 0;
+      padding-left: 8px;
     }
 
     .walk-text {
@@ -90,7 +92,8 @@
 
         @media @phone {
           width: 100%;
-          padding: 25px 0;
+          padding: 26px 0px 28px 10px;
+          font-size: 1.7rem;
         }
       }
     }
