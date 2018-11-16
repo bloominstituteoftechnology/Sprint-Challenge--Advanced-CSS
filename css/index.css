@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.uptop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #F1F1F1;
+}
+.uptop h1 {
+  font-size: 3rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 30px;
+  width: 25%;
+}
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
