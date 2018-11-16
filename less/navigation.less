@@ -1,1 +1,26 @@
 // Navigation code here
+.nav-container {
+    background: #f4f4f4;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    .justify-flex(space-between, center);
+    flex-direction: column;
+    padding: 20px 0 12px;
+    @media @mobile {
+        .justify-flex(space-around);
+        flex-direction: column;
+        padding: 20px 0 10px 0;
+    }
+    nav {
+        width: 50%;
+        .justify-flex(space-around);
+        @media @mobile {
+            width: 100%;
+            .justify-flex(space-evenly);
+        }
+        a {
+            .link-style;
+        }//a 
+    }//nav
+}//.nav-container
