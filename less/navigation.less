@@ -7,6 +7,10 @@
     margin: 0 auto;
     background: @nav-bg;
     border-bottom: 1px double @nav-border;
+    @media @phone{
+        background: none;
+        padding: 10px 0;
+    }
     h1{
         font-size: 3.5rem;
         padding-bottom: 20px;
@@ -16,6 +20,10 @@
         margin: 0 auto;
         max-width: 800px;
         width: 30%;
+        @media @phone{
+            width: 90%;
+            .layout(space-evenly, center);
+        }
         a{
             color: @nav-font;
             font-size: 1.6rem;

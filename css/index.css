@@ -169,6 +169,12 @@ p {
   background: #F6F6F6;
   border-bottom: 1px double #F1F1F1;
 }
+@media (max-width: 500px) {
+  .navigation {
+    background: none;
+    padding: 10px 0;
+  }
+}
 .navigation h1 {
   font-size: 3.5rem;
   padding-bottom: 20px;
@@ -180,6 +186,14 @@ p {
   margin: 0 auto;
   max-width: 800px;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 .navigation nav a {
   color: #454A59;
