@@ -1,1 +1,17 @@
 // Mixins Here
+.flex-setup (@jc, @ai) {
+    display: flex;
+    margin: 0 auto;
+    justify-content: @jc;
+    align-items: @ai;
+}
+
+.links () {
+    color: @ebony-clay;
+    text-decoration: none;
+}
+
+.buttons (@text-color, @background-color) {
+    color: @text-color;
+    background-color: @background-color;
+}

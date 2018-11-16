@@ -3,6 +3,10 @@
 .home {
 
   .intro {
+    .header-img {
+      border-radius: 10px;
+      width: 100%;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +62,24 @@
       }
 
       .btn {
+        display: flex;
+        justify-content: flex-start;
+
+        a {
+          .links;
+          .buttons (@space-gray, @btn-bg-color);
+          font-size: 1.8rem;
+          width: 28%;
+          padding: 10px;
+          justify-content: center;
+          display: flex;
+          border-radius: 5px;
+        }
+
+        a:hover {
+          .buttons (@btn-bg-color, @space-gray);
+          border: 1px solid @border-real;
+        }
       }
     }
 
@@ -72,4 +94,5 @@
       }
     }
   }
-}// home
+}
+// home

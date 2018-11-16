@@ -1,1 +1,32 @@
 // Navigation code here
+
+.wrapper {
+    width: 100%;
+    background-color: @space-gray;
+    border-bottom: 1px solid @border-real;
+
+    .top-bar {
+        .flex-setup(center, center);
+        flex-direction: column;
+        
+        h1 {
+            font-size: 4rem;
+            margin: 10px 0px;
+        }
+
+        .nav-bar {
+            width: 40%;
+            .flex-setup(space-evenly, center);
+            margin-bottom: 10px;
+
+            a {
+                .links();
+                font-size: 1.4rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
