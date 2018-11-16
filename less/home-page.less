@@ -65,8 +65,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -80,12 +90,25 @@
         margin-top: -5px;
         font-size: 1.8rem;
         .create-btn(black, white, 9px, 19px, 5px);
+
+        @media @phone{
+          display: block;
+          margin-top: -2px;
+          text-align: center;
+          padding: 26px 0;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
       
       img {
         width: 100%;
