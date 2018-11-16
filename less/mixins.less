@@ -1,1 +1,18 @@
 // Mixins Here
+.center-img {
+    width: 51%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.border-radius-img {
+    border-radius: 5px;
+}
+
+.btn-creator(@border, @bg-color, @width, @height, @color) {
+    border: @border;
+    background: @bg-color;
+    width: @width;
+    height: @height;
+    color: @color;
+}
