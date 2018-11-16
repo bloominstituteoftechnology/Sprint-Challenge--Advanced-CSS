@@ -5,3 +5,18 @@
     justify-content: center;
     align-items: center;
 }
+
+.flex-column() {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.button(@background-color, @text-color) {
+    width: 30%;
+    color: @text-color;
+    background-color: @btn-bg-color;
+    font-size: 1.5rem;
+    .center;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
