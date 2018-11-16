@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,18 +55,25 @@
       }
 
       .btn {
-      }
-    }
+        #mixins.btn-style(@btn-bg-color, white);
+        #mixins.border-radius(5px);
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        &:hover {
+          color: @btn-bg-color;
+          background-color: white;
+        }
+      }
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
       }
     }
   }
-}// home
+} // home

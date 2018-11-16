@@ -1,1 +1,21 @@
 // Mixins Here
+
+#mixins() {
+  .layout(@j-content, @a-items) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+  }
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
+
+  .btn-style(@button-bg, @color) {
+    background-color: @button-bg;
+    color: @color;
+    padding: 7px 20px;
+    font-size: 14px;
+  }
+}
