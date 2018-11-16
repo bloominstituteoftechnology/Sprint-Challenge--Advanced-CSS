@@ -160,6 +160,42 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navarea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+.navarea .navhead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #454a59;
+}
+.navarea .navhead h1 {
+  font-size: 4em;
+  padding: 10px;
+}
+.navarea .navhead a {
+  text-decoration: none;
+}
+.navarea nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navarea nav a {
+  font-size: 1.6em;
+  display: flex;
+  padding: 15px;
+  text-decoration: none;
+  color: #454a59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,38 +205,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.navarea {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 800px;
-  width: 100%;
-  margin: auto;
-}
-.navarea .navhead {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.navarea .navhead h1 {
-  font-size: 4em;
-}
-.navarea .navhead a {
-  text-decoration: none;
-}
-.navarea nav {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.navarea nav a {
-  font-size: 1.6em;
-  display: flex;
-  text-decoration: none;
 }
 .home {
   max-width: 800px;
