@@ -299,6 +299,12 @@ footer {
   background-color: white;
   color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 35px 0;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
