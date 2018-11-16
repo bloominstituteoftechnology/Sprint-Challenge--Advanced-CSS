@@ -398,6 +398,9 @@ footer {
     text-align: center;
   }
 }
+.login form {
+  text-align: center;
+}
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
