@@ -99,13 +99,56 @@
 
     .form--submit-button() {
         background-color: @waterloo;
-        display:inline-block;
+        display: inline-block;
         color: @snow;
         font-family: Roboto;
         font-size: 1.5rem;
         font-weight: bold;
         cursor: pointer;
         padding: 10px 25px;
+        border: 1px solid @ebony-clay;
+        #prefixed > .border-radius(3px);
+        #prefixed > .box-shadow(inset 0px -3px 7px 0px @shuttle-gray);
+        margin-left: 1%;
+    
+        &:hover {
+            background-color: @shuttle-gray;
+            #prefixed > .transition-control(500ms);
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
+}
+
+#login-form {
+    .form--label() {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-family: "Russo One";
+        width: 10%;
+        margin-right: 10%;
+    }
+
+    .form--textfield() {
+        width: 50%;
+        padding: 10px 20px;
+        border: 1px solid @shuttle-gray;
+        #prefixed > .border-radius(5px);
+        margin: 10px 5% 20px;
+    }
+
+    .form--submit-button() {
+        background-color: @waterloo;
+        display: inline-block;
+        color: @snow;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px 25px;
         border: 1px solid @ebony-clay;
         #prefixed > .border-radius(3px);
         #prefixed > .box-shadow(inset 0px -3px 7px 0px @shuttle-gray);

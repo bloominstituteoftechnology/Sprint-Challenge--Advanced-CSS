@@ -207,7 +207,6 @@ img {
   position: fixed;
   top: 0;
   z-index: 1;
-  overflow: hidden;
 }
 .nav-area h1 {
   margin-bottom: 20px;
@@ -266,6 +265,93 @@ img {
   border: 2px dotted snow;
   margin-left: -1px;
   margin-bottom: -4px;
+}
+.subscription {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .subscription h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+}
+.subscription form {
+  margin-top: 15px;
+}
+.subscription form label {
+  display: block;
+  font-size: 1.8rem;
+  font-family: "Russo One";
+}
+@media (max-width: 500px) {
+  .subscription form label {
+    font-size: 1.8rem;
+  }
+}
+.subscription form input[type="text"],
+.subscription form input[type="email"],
+.subscription form select {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #5E6164;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 10px 0 20px;
+}
+.subscription form textarea {
+  display: block;
+  font-family: Roboto;
+  width: 90%;
+  height: 100px;
+  padding: 10px 20px;
+  margin: 10px 0 20px;
+}
+.subscription form input[type="submit"] {
+  background-color: #81848E;
+  display: inline-block;
+  color: snow;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: 1px solid #23293B;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px -3px 7px 0px #5E6164;
+  -moz-box-shadow: inset 0px -3px 7px 0px #5E6164;
+  -o-box-shadow: inset 0px -3px 7px 0px #5E6164;
+  -ms-box-shadow: inset 0px -3px 7px 0px #5E6164;
+  margin-left: 1%;
+}
+.subscription form input[type="submit"]:hover {
+  background-color: #5E6164;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -ms-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -ms-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all;
+  transition-property: all;
+}
+.subscription form input[type="submit"]:active {
+  position: relative;
+  top: 1px;
 }
 footer {
   color: #22283B;
@@ -445,22 +531,34 @@ footer {
     width: 87.5%;
   }
 }
-.home .subscription {
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 80%;
   padding-top: 20px;
-  margin-bottom: 20px;
+  margin: 15px auto 20px;
 }
-.home .subscription form {
-  margin-top: 15px;
+.login form {
+  width: 100%;
 }
-.home .subscription form label {
-  display: block;
+.login form label {
+  display: inline-block;
   font-size: 1.8rem;
   font-family: "Russo One";
+  width: 10%;
+  margin-right: 10%;
+  margin-left: 1%;
 }
-.home .subscription form input[type="text"],
-.home .subscription form input[type="email"],
-.home .subscription form select {
-  width: 100%;
+@media (max-width: 500px) {
+  .login form label {
+    display: block;
+  }
+}
+.login form input[type="text"],
+.login form input[type="password"] {
+  width: 50%;
   padding: 10px 20px;
   border: 1px solid #5E6164;
   -webkit-border-radius: 5px;
@@ -468,17 +566,15 @@ footer {
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  margin: 10px 0 20px;
+  margin: 10px 5% 20px;
 }
-.home .subscription form textarea {
-  display: block;
-  font-family: Roboto;
-  width: 90%;
-  height: 100px;
-  padding: 10px 20px;
-  margin: 10px 0 20px;
+@media (max-width: 500px) {
+  .login form input[type="text"],
+  .login form input[type="password"] {
+    width: 100%;
+  }
 }
-.home .subscription form input[type="submit"] {
+.login form input[type="submit"] {
   background-color: #81848E;
   display: inline-block;
   color: snow;
@@ -486,7 +582,7 @@ footer {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  padding: 10px 25px;
+  padding: 5px 25px;
   border: 1px solid #23293B;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -498,8 +594,9 @@ footer {
   -o-box-shadow: inset 0px -3px 7px 0px #5E6164;
   -ms-box-shadow: inset 0px -3px 7px 0px #5E6164;
   margin-left: 1%;
+  margin-top: 5px;
 }
-.home .subscription form input[type="submit"]:hover {
+.login form input[type="submit"]:hover {
   background-color: #5E6164;
   -webkit-transition-duration: 500ms;
   -moz-transition-duration: 500ms;
@@ -517,7 +614,23 @@ footer {
   -ms-transition-property: all;
   transition-property: all;
 }
-.home .subscription form input[type="submit"]:active {
+.login form input[type="submit"]:active {
   position: relative;
   top: 1px;
+}
+@media (max-width: 500px) {
+  .login form input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.login form a {
+  font-size: 1.6rem;
+  margin-left: 5%;
+}
+@media (max-width: 500px) {
+  .login form a {
+    font-size: 1.4rem;
+    margin: 0;
+  }
 }
