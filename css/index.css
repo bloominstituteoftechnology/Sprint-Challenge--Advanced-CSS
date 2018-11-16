@@ -354,3 +354,26 @@ footer {
     margin-top: 2.5%;
   }
 }
+.log-in .intro {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.log-in .intro h2 {
+  padding: 15px;
+}
+.log-in .intro p {
+  padding: 2% 2%;
+}
+.log-in .intro img {
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .log-in .intro img {
+    width: 98%;
+    margin-top: 5%;
+    margin-left: 1%;
+  }
+}
