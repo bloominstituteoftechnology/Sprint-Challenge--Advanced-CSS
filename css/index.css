@@ -154,6 +154,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -187,10 +190,10 @@ p {
 }
 .navigation header nav a {
   padding: 5px 10px;
-  text-decoration: none;
   color: #7C7175;
   font-size: 1.6rem;
   transition: 0.2s;
+  text-decoration: none;
 }
 .navigation header nav a:hover {
   transform: scale(1.1);
@@ -225,10 +228,10 @@ p {
 }
 .fixed-navigation header nav a {
   padding: 5px 10px;
-  text-decoration: none;
   color: #7C7175;
   font-size: 1.6rem;
   transition: 0.2s;
+  text-decoration: none;
 }
 .fixed-navigation header nav a:hover {
   transform: scale(1.1);
@@ -326,6 +329,7 @@ footer {
   border-radius: 5px;
   background-color: #22283A;
   transition: 0.2s;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   transform: scale(1.2);
@@ -343,6 +347,7 @@ footer {
     border-radius: 5px;
     background-color: #22283A;
     transition: 0.2s;
+    text-decoration: none;
   }
   .home .walk .walk-text .btn:hover {
     transform: scale(1.01);
@@ -394,9 +399,81 @@ footer {
   padding: 5px 15px;
   color: white;
   transition: 0.2s;
+  text-decoration: none;
 }
 #submit:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.about .intro {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+@media (max-width: 800px) {
+  .about .intro {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 500px) {
+  .about .intro {
+    flex-direction: column;
+  }
+}
+.about .intro img {
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .about .intro img {
+    width: 100%;
+  }
+}
+.about .intro h2 {
+  padding: 15px 0;
+}
+#about-header {
+  width: 100%;
+  height: auto;
+}
+.item-container {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .item-container {
+    flex-direction: column;
+  }
+}
+.item {
+  margin: 15px;
+  background-color: #F6F6F6;
+  border: 1px solid #dee2e6;
+  padding: 5%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.item p {
+  margin: 5px 0;
+}
+.item a {
+  width: 30%;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: #22283A;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.item a:hover {
+  transform: scale(1.1);
   background-color: black;
   color: white;
   cursor: pointer;
