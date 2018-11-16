@@ -209,17 +209,68 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.home .space-images .blast-img {
   width: 28%;
   margin: 20px 2.5%;
-  border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast-img {
+    width: 90%;
+    height: 80%;
+  }
+}
+.home .space-images .blast-img img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+.home .space-images .sky-img {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+}
+.home .space-images .sky-img img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky-img img {
+    display: none;
+    margin-bottom: 10px;
+  }
+}
+.home .space-images .launch-img {
+  width: 28%;
+  margin: 20px 2.5%;
+  height: 100%;
+}
+.home .space-images .launch-img img {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .home .space-images .launch-img img {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 0 15px;
+  }
+}
 .home .visit-planets h3 {
   margin-top: 11px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    margin-top: 0;
+  }
 }
 .home .visit-planets p {
   margin-top: 13px;
@@ -231,11 +282,29 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 15px 10px;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-top: 10px;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -251,16 +320,28 @@ footer {
   width: 95px;
   height: 35px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 95%;
+    height: 50px;
+  }
+}
 .home .walk .walk-text .btn :hover {
   color: #22283A;
   background-color: white;
   border: 1px solid #22283A;
 }
-.home .walk .walk-text .walk-img {
+.home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}
+.home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
