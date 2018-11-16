@@ -238,7 +238,8 @@ img {
   .nav-area nav a {
     font-size: 1.2rem;
     font-weight: normal;
-    padding: 5px 3%;
+    padding: 2.5px 3%;
+    margin-top: 5px;
   }
 }
 .nav-area nav a:hover {
