@@ -14,18 +14,29 @@
     border-radius: @radius;
   }
 
-
-  .btn-style(@btn-width, @btn-padding, @f-size, @b-radius) {
-    width: @btn-width;
-    // height: @btn-height;
-    padding: @btn-padding;
-    
-    .border-radius(@b-radius);
-
-    background-color: @btn-bg-color;
-
+  .btn-font-style(@f-size) {
     font-size: @f-size;
     font-weight: bold;
     color: @porcelain;
     text-align: center;
+  }
+
+  .btn-hover() {
+      &:hover {
+          background-color: @porcelain;
+          color: @btn-bg-color;
+      }
+  }
+
+  .btn-style(@btn-width, @btn-padding, @f-size, @b-radius) {
+    width: @btn-width;
+    padding: @btn-padding;
+    .border-radius(@b-radius);
+    background-color: @btn-bg-color;
+
+    .btn-font-style(@f-size);
+
+    .btn-hover;
+
+    
   }

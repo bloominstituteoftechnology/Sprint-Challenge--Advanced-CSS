@@ -263,6 +263,10 @@ header img {
   color: #F6F7F8;
   text-align: center;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
