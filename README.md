@@ -90,7 +90,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 Stretch goals are only available if you complete every task listed above. **Do not work on them until your pull request is in.**
 
-- [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
+- [x] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
 - [x] Introduce CSS animations to your site.
 
