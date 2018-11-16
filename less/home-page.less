@@ -16,7 +16,7 @@
         width: 100%;
 
         @media @device-size[phone] {
-            .make-flex(column, flex-start, center);
+            .make-flex(row, center, center, nowrap);
         }
 
         img {
@@ -25,7 +25,26 @@
             margin: 20px 2.5%;
 
             @media @device-size[phone] {
-                width: 87.5%;
+                width: 87.5%;            
+                margin: 20px 50%;    
+            }
+        }
+
+        .blast {
+            @media @device-size[phone] {
+                order: 0;
+            }
+        }
+
+        .sky {
+            @media @device-size[phone] {
+                order: -1;
+            }
+        }
+
+        .launc {
+            @media @device-size[phone] {
+                order: 1;
             }
         }
     }
