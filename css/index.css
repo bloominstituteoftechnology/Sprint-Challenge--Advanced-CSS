@@ -238,6 +238,8 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -323,11 +325,12 @@ footer {
   height: auto;
   border-radius: 20px;
 }
+/*---------------- Sign-in page styles -------------- */
 .form-container {
   margin: 30px;
 }
-.form-container legend {
-  font-size: 4rem;
+.form-container h2 {
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 .form-container label {
@@ -359,4 +362,73 @@ button {
 button:hover {
   color: #22283a;
   background-color: #f6f6f6;
+}
+.image-space-earth img {
+  width: 100%;
+  height: 300px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .image-space-earth img {
+    padding: 5px;
+  }
+}
+/*---------------- Contact page Styles -------------- */
+.contact-info {
+  padding: 40px 0;
+  margin: 30px;
+}
+.contact-info h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.contact-info address {
+  color: grey;
+  font-size: 1.8rem;
+}
+.contact-form {
+  margin: 30px;
+}
+.contact-form h3 {
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.contact-form label {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.contact-form input {
+  padding: 5px;
+  width: 500px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .contact-form input {
+    width: 100%;
+  }
+}
+.contact-form textarea {
+  margin-top: 10px;
+  width: 500px;
+  height: 200px;
+  font-size: 14px;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+.contact-form button {
+  padding: 10px;
+  width: 150px;
 }
