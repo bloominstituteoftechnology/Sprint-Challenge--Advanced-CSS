@@ -1,0 +1,35 @@
+.form-container {
+  margin: 30px;
+
+  legend {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    font-size: 1.8rem;
+  }
+  input {
+    padding: 5px;
+    width: 500px;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    @media @phone {
+      width: 100%;
+    }
+  }
+}
+button {
+  padding: 10px 30px;
+  font-size: 1.6rem;
+  background-color: @btn-bg-color;
+  color: @wild-sand;
+  #mixins.border-radius(5px);
+
+  &:hover {
+    color: @btn-bg-color;
+    background-color: @wild-sand;
+  }
+}

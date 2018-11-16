@@ -1,1 +1,39 @@
 // Navigation code here
+
+.nav-container {
+  border-bottom: 1px @sea-shell;
+  background-color: @wild-sand;
+  h1 {
+    font-size: 3.2rem;
+    margin: 1rem 0;
+    #mixins.animation(2.5s, 0.5s);
+  }
+
+  #mixins.layout(space-between, center);
+  flex-direction: column;
+  @media @phone {
+    width: 100%;
+  }
+
+  nav {
+    #mixins.layout(space-between, center);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    color: @river-bend;
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      margin: 0 20px;
+      color: @river-bend;
+
+      &:hover {
+        color: @ebony-clay;
+      }
+      @media @phone {
+        margin: 0 15px;
+      }
+    }
+  }
+}
