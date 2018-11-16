@@ -175,6 +175,7 @@ a {
   top: 0;
   left: 0;
   opacity: 0.9;
+  z-index: 1500;
 }
 .nav-container .nav-content {
   max-width: 800px;
@@ -182,6 +183,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  animation-duration: 3s;
 }
 .nav-container .nav-content h1 {
   margin: 14px 0;
