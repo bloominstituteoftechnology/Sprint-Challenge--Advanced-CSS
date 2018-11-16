@@ -9,14 +9,26 @@
     width: 100%;
     padding: 20px 0;
     background-color: @waterloo;
+ 
     
-}
+
+    @media @phone{
+          width: 100%;
+          padding: 0;
+        }
+
 
 h1{
     font-size: 3rem; 
     margin: 20px 0;
- 
 }
+    @media @phone{
+        width: 100%;
+        padding: 0;
+      }
+
+
+
 a{
     color: lightblue;
     font-size: 1.5rem;
@@ -28,4 +40,10 @@ a{
         color: #D30DD0;
         background-color: @ebony-clay;
         }
+
+        @media @phone{
+            width: 100%;
+            padding: 10px 20px;
+          }
+  }
 }
