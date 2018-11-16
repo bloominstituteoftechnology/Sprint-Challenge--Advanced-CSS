@@ -219,17 +219,20 @@ a {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 .navigation {
   display: flex;
+  position: fixed;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
   padding: 1.5rem 0;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.699);
 }
 .navigation h1 {
   margin-bottom: 1.55rem;
