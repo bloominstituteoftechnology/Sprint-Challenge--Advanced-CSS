@@ -1,1 +1,40 @@
 // Navigation code here
+
+.nav-container {
+    background: @nav-bg;
+    color: @nav-font;
+    border: 1px solid @nav-border;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+
+    
+    width: 41%;
+    margin: 1.3rem auto;
+
+    .link {
+        font-size:1.7rem;
+        margin-top:1.8rem;
+
+        //get rid of basic link styles
+        text-decoration: none;
+        color:black;
+    }
+
+    .text-logo-wrapper {
+        width: 100%;
+        text-align:center;
+
+        h1 {
+            font-size: 4rem;
+        }
+    } //logo wrapper
+
+
+} // nav

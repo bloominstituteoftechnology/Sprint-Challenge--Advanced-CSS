@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  background: #F6F6F6;
+  color: #454A59;
+  border: 1px solid #F1F1F1;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 41%;
+  margin: 1.3rem auto;
+}
+.nav .link {
+  font-size: 1.7rem;
+  margin-top: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.nav .text-logo-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.nav .text-logo-wrapper h1 {
+  font-size: 4rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
