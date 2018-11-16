@@ -166,6 +166,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  position: sticky;
 }
 header h1 {
   padding-top: 20px;
@@ -326,6 +327,13 @@ footer {
   background: white;
   border: 0.5px solid black;
 }
+.home .walk .walk-text .btn:hover a {
+  color: black;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -384,4 +392,18 @@ footer {
   100% {
     transform: translate(0px, -800px);
   }
+}
+.form {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.form h4 {
+  font-size: 2rem;
+  margin: 20px 0 5px 0;
+}
+.stick-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
