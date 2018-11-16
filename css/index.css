@@ -169,6 +169,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  background-color: rgba(246, 246, 246, 0.9);
 }
 @media (max-width: 500px) {
   .header-nav {
@@ -235,6 +237,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
   width: 100%;
+  margin-top: 101.31px;
 }
 .home .space-images {
   display: flex;
