@@ -161,6 +161,15 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  width: 100%;
+  height: 100%;
+}
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .navigation {
   display: flex;
   flex-direction: column;
@@ -179,6 +188,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   width: 45%;
+  position: relative;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -191,6 +201,9 @@ p {
   color: #454A59;
   margin: 15px 0 13px 0;
 }
+.navigation nav a:hover {
+  color: #81848E;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -200,6 +213,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 @media (max-width: 500px) {
   .home img {
