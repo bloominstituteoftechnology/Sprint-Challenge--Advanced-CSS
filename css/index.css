@@ -183,8 +183,11 @@ p {
 }
 .navigation {
   max-width: 100%;
+  width: 100%;
   background-color: #F6F6F6;
+  opacity: 0.95;
   border: 2px solid #F1F1F1;
+  position: fixed;
 }
 .navigation .navigation-wrapper {
   display: flex;
@@ -223,6 +226,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 11rem;
 }
 .home .intro img {
   max-width: 100%;
