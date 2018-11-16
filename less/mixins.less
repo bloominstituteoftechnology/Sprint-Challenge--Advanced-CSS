@@ -13,3 +13,19 @@
     -moz-border-radius: @radius;
     border-radius: @radius;
   }
+
+
+  .btn-style(@btn-width, @btn-padding, @f-size, @b-radius) {
+    width: @btn-width;
+    // height: @btn-height;
+    padding: @btn-padding;
+    
+    .border-radius(@b-radius);
+
+    background-color: @btn-bg-color;
+
+    font-size: @f-size;
+    font-weight: bold;
+    color: @porcelain;
+    text-align: center;
+  }
