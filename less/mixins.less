@@ -1,1 +1,20 @@
-// Mixins Here
+.background() {
+    background: @nav-bg;
+    border: 1px double @nav-border;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color: @font-color;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: @font-size;
+    border-radius: 6px;
+    
+    &:hover {
+      background: white;
+      color: @shuttle-gray;
+    }
+  }

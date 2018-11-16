@@ -180,6 +180,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .backgrounded {
+  max-width: 1500px;
+  background: #F6F6F6;
+  border: 1px double #F1F1F1;
+}
 .home .intro h1 {
   text-align: center;
   font-size: 4rem;
@@ -213,6 +218,20 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+.home button {
+  width: 10rem;
+  height: 3.6rem;
+  background-color: #5E6164;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: 6px;
+}
+.home button:hover {
+  background: white;
+  color: #5E6164;
 }
 .home .walk {
   margin-top: 60px;

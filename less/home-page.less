@@ -3,6 +3,11 @@
 .home {
 
   .intro {
+    .backgrounded {
+      max-width: 1500px;
+      .background();
+    }
+    
     h1 {
       text-align: center;
       font-size: 4rem;
@@ -47,6 +52,11 @@
       margin-top: 13px;
     }
   }
+
+  button {
+    .button-creator(10rem, 3.6rem, @shuttle-gray, white, 1.7rem);
+  }
+  
 
   .walk {
     margin-top: 60px;
