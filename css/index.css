@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +162,37 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1%;
+  padding-bottom: 2%;
+}
+.navigation .page-title {
+  width: 100%;
+  text-align: center;
+}
+.navigation nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1%;
+  padding-top: 1.5%;
+}
+.navigation nav a {
+  color: #23293B;
+  font-size: 1.6rem;
+  font-family: 'Russo One', sans-serif;
+  text-decoration: none;
+  padding-right: 3%;
 }
 footer {
   color: #22283B;
@@ -175,6 +209,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
