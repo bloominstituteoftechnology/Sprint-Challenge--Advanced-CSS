@@ -4,16 +4,26 @@
 
   header {
     color: @header-font-color;
+    div {
+      img {
+        @media @mobile {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .intro {
 
     h2 {
-      padding: 15px;
+      padding: 8px;
+      @media @mobile {
+        margin-top: 15px;
+      }
     }
 
     p {
-      padding:0 15px;
+      padding:0 8px;
     }
   
   }
@@ -26,6 +36,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        display: none;
+        &:first-of-type {
+          display: block;
+          width: 96.5%;
+          margin: 0 auto;
+          margin-top: 25px;
+        }
+      }
     }
   }
 
@@ -34,6 +54,9 @@
 
     h3 {
       margin-top: 11px;
+      @media @mobile {
+        margin-top: 33px;
+      }
     }
 
     p {
@@ -44,14 +67,30 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 30px 60px;
     .flex-center-rules();
+    @media @mobile {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0;
+      margin-top: 25px;
+      padding-top: 15px;
+      width: 100%;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 97.5%;
+        margin: 0 auto;
+        margin-top: 25px;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @mobile {
+          margin-top: -12px;
+        }
       }
 
       p {
@@ -63,6 +102,12 @@
         font-size: 1.65rem;
         border-radius: 4px;
         .button-rules(@btn-bg-color, @wild-sand, 10px, 100px);
+
+        @media @mobile {
+          .button-rules(@btn-bg-color, @wild-sand, 28px, 100%);
+          margin-top: 28px;
+          margin-bottom: 14px;
+        }
       }
     }
 
@@ -74,6 +119,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @mobile {
+        order: -1;
+        width: 100%;
+        margin: 0 auto;
       }
     }
   }
