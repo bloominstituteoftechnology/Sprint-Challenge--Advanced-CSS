@@ -1,1 +1,49 @@
 // Navigation code here
+
+
+.nav-head{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: @waterloo;
+ 
+    
+
+    @media @phone{
+          width: 100%;
+          padding: 0;
+        }
+
+
+h1{
+    font-size: 3rem; 
+    margin: 20px 0;
+}
+    @media @phone{
+        width: 100%;
+        padding: 0;
+      }
+
+
+
+a{
+    color: lightblue;
+    font-size: 1.5rem;
+    text-decoration: none;
+    // justify-content: space-evenly;
+    padding: 0 40px;
+
+    &:hover {
+        color: #D30DD0;
+        background-color: @ebony-clay;
+        }
+
+        @media @phone{
+            width: 100%;
+            padding: 10px 20px;
+          }
+  }
+}
