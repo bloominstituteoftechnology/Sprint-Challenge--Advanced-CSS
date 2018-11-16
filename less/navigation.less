@@ -3,6 +3,10 @@ header{
     .basicflex(center, center);
     flex-direction: column;
     padding: 13px 0 0 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -56px;
+    background-color: rgba(255, 255, 255, 0.897);
 
     h1{
         font-size: 4rem;
@@ -12,10 +16,18 @@ header{
     nav{
         .basicflex(space-evenly, center);
         max-width: 800px;
+        padding-bottom: 16px;
         
         a{
             .a-reset();
             margin: 0 16px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+            padding-bottom: 3px;
+
+            &:hover{
+                border-color: black;
+            }
         }
     }
 }
