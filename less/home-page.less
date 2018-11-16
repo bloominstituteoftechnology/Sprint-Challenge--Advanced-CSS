@@ -61,13 +61,18 @@
       }
 
       .btn {
-        font-size: 1.8rem;
+        #mixins.button(1.8rem, 100px)
         color: white;
-        width: 100px;
         text-align: center;
         padding: 8px 0;
         background-color: @btn-bg-color;
+        border: 1px solid  @btn-bg-color;
         border-radius: 5px;
+
+        &:hover {
+          color: @btn-bg-color;
+          background-color: white;          
+        }
       }
     }
 
