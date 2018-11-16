@@ -1,3 +1,66 @@
+@keyframes kenburns-bottom {
+  0% {
+    transform: scale(0.75) translateY(0);
+    transform-origin: 50% 84%;
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    transform-origin: bottom;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes heart-beat {
+  from {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes fad-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,6 +207,8 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+  animation-name: text-focus-in;
+  animation-duration: 6s;
 }
 h1 {
   font-size: 3.5rem;
@@ -186,12 +251,18 @@ p {
 }
 .nav-container .title-text {
   margin: 12px auto 20px;
+  animation-name: text-focus-in;
+  animation-duration: 6s;
 }
 .nav-container nav {
   display: flex;
   justify-content: center;
   margin: 0 30% 10px;
   justify-content: space-evenly;
+}
+.nav-container nav:hover {
+  animation-name: tracking-in-expand;
+  animation-duration: 2s;
 }
 .nav-container nav a {
   text-decoration: none;
@@ -218,6 +289,8 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  animation-name: kenburns-bottom;
+  animation-duration: 6s;
 }
 @media (max-width: 500px) {
   .home .intro img {
@@ -241,6 +314,10 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -309,6 +386,8 @@ footer {
   background-color: #F6F7F8;
   color: #22283A;
   border: 2px solid black;
+  animation-name: heart-beat;
+  animation-duration: 2s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -326,6 +405,8 @@ footer {
     background-color: #F6F7F8;
     color: #22283A;
     border: 2px solid black;
+    animation-name: heart-beat;
+    animation-duration: 2s;
   }
 }
 .home .walk .walk-img {
@@ -342,4 +423,8 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
 }

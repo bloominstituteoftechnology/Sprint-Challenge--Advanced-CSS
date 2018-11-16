@@ -13,6 +13,8 @@
 
   .title-text {
     margin: 12px auto 20px;;
+    animation-name: text-focus-in;
+    animation-duration: 6s;
   }
 
   nav {
@@ -20,10 +22,14 @@
     margin: 0 30% 10px;
     justify-content: space-evenly;
 
+    &:hover {
+      animation-name: tracking-in-expand;
+      animation-duration: 2s;
+    }
+
     a {
       text-decoration: none;
       color: black;
-      
       font-size: 1.6rem;
     }
 

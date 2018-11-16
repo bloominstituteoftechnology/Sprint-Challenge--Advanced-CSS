@@ -8,6 +8,8 @@
     img {
 
       border-radius: 5px;
+      animation-name: kenburns-bottom;
+      animation-duration: 6s;
 
       @media @phone {
         width: 100%;
@@ -36,6 +38,12 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
+
+      &:hover {
+        transform: scale(1.2);
+        transition: .3s ease-in-out;
+      }
 
       @media @phone {
         display: none;
@@ -116,6 +124,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        &:hover {
+          transform: scale(1.2);
+          transition: .3s ease-in-out;
+        }
       }
     }
   }
