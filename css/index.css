@@ -326,6 +326,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #f6f6f6;
   color: #23293b;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
