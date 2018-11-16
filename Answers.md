@@ -11,3 +11,4 @@ How would you describe preprocessing to someone new to CSS?
 I would say that preprocessing is like an extension of the CSS language. It enables features and new constructions of syntax that are not possible within CSS alone. A preprocessor is a software program that modifies data, compiles it, and formats it to be compatible with the CSS language. It generally allows programmers to write less code in a more organized fashion.
 
 What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept is preprocessing is the ability to nest selectors within other selectors. This makes the code much easier to read and write. One of the concepts that gives me the most trouble is using mixins -- I'm not sure I fully understand how to take advantage of them, even though I know they can be extremely useful!
