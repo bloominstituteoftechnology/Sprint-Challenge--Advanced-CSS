@@ -1,1 +1,15 @@
 // Mixins Here
+
+.layout(@f-direction, @j-content, @a-items) {
+    display: flex;
+    flex-direction: @f-direction;
+	justify-content: @j-content;
+	align-items: @a-items;
+  }
+
+
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
