@@ -240,6 +240,11 @@ footer {
   color: #F6F7F8;
   padding: 10px 30px;
   border-radius: 10px;
+  font-size: 1.5rem;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: #F6F7F8;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
