@@ -169,7 +169,8 @@ header {
 }
 header h1 {
   padding-top: 20px;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  padding: 13px 2px 0 0;
 }
 @media (max-width:500px) {
   header h1 {
@@ -178,9 +179,9 @@ header h1 {
   }
 }
 header nav {
-  font-size: 1.3rem;
-  padding: 20px 0;
-  width: 50%;
+  font-size: 1.6rem;
+  padding: 20px 0 11px 0;
+  width: 45%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -199,12 +200,14 @@ header nav a {
 }
 header img {
   width: 100%;
+  max-width: 800px;
   height: auto;
+  border-radius: 5px;
 }
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0 0 17px;
+  padding: 21px 19px 16px 17px;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
@@ -296,8 +299,8 @@ footer {
   background: #22283A;
   border-radius: 5px;
   width: 30%;
-  padding: 10px 25px;
-  font-size: 1.2rem;
+  padding: 11px 4px 10px 1px;
+  font-size: 1.6rem;
   font-weight: bold;
   letter-spacing: 1.2px;
   text-align: center;
