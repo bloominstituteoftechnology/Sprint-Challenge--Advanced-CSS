@@ -231,6 +231,18 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images .blast:hover {
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+.home .space-images .launch:hover {
+  animation-name: takeoff;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
 @media (max-width:500px) {
   .home .space-images .sky,
   .home .space-images .launch {
@@ -335,4 +347,41 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0px, 5px);
+  }
+  25% {
+    transform: translate(5px, 0px);
+  }
+  50% {
+    transform: translate(0px, -5px);
+  }
+  75% {
+    transform: translate(-5px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes takeoff {
+  0% {
+    transform: translate(0px, 5px);
+  }
+  10% {
+    transform: translate(5px, 0px);
+  }
+  20% {
+    transform: translate(0px, -5px);
+  }
+  30% {
+    transform: translate(-5px, 0px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -800px);
+  }
 }
