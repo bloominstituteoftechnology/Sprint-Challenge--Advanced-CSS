@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,23 @@
 <body>
 
  <!-- navigation code here -->
+ <div class="navigation">
+    <h1 class="page-title">Space Walkers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="sign-in.html">Sign In</a>
+    </nav>
+    
+ </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+      <img src="img/main-header.png" class="main-img" alt="Earth from above">
 
       <h2>Lift Off</h2>
     
@@ -51,6 +64,17 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
+        <div class="sign-up-form">
+          <form>
+            <label for="magazine">Sign up for our magazine here!</label>
+            <label for="name"></label>
+            <input type="text" id="name" name="entry-name" placeholder="Your name:">
+            
+            <label for="email"></label>
+            <input type="text" id="email" name="email-address" placeholder="Your email:">
+          </form>
+        </div>
+
         <div class="btn">
           Sign Up
         </div>
