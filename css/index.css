@@ -404,3 +404,96 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.sign-in-overlay-space {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.589);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.sign-in-overlay-space .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 5.5rem;
+}
+.sign-in-overlay-space .sign-in-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.sign-in-overlay-space .sign-in-cont .info {
+  background-color: white;
+  padding: 20px 20px;
+}
+.sign-in-overlay-space .sign-in-cont .info h2 {
+  margin-bottom: 10px;
+}
+.sign-in-overlay-space .sign-in-cont .info p {
+  font-size: 1.5rem;
+}
+.sign-in-overlay-space .sign-in-cont .info input {
+  margin-bottom: 15px;
+}
+.sign-in-overlay-space .sign-in-cont .info .login {
+  margin-top: 10px;
+  border: 2px solid black;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.sign-in-overlay-space .sign-in-cont .info .login:hover {
+  background-color: black;
+  color: white;
+}
+.sign-in-overlay-space .sign-in-cont .other {
+  background-image: linear-gradient(to left bottom, #5681c3, #00a0df, #00bde1, #00d7c8, #12eb9a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 246px;
+  padding: 20px;
+}
+.sign-in-overlay-space .sign-in-cont .other h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.sign-in-overlay-space .sign-in-cont .other .social-flex {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sign-in-overlay-space .sign-in-cont .other .social-flex .social {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  background-color: #1bf02d;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+.sign-in-overlay-space .sign-in-cont .other .social-flex .google {
+  background-color: #EA4335;
+}
+.sign-in-overlay-space .sign-in-cont .other .social-flex .twitter {
+  background-color: #1DA1F2;
+}
+.sign-in-overlay-space .sign-in-cont .other .social-flex .facebook {
+  background-color: #4867AA;
+}

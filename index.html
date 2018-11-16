@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
@@ -24,7 +27,7 @@
       <a href="#">About us</a>
       <a href="#">Blog</a>
       <a href="#">Contact</a>
-      <a href="#">Sign In</a>
+      <a href="#" class="sign-in-nav">Sign In</a>
     </nav>
   </header>
 
@@ -75,7 +78,31 @@
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
-
   </div>
+
+  <div class="sign-in-overlay-space">
+      <i class="fas fa-times close-btn"></i>
+      <div class="sign-in-cont">
+        <div class="info">
+          <h2>Sign In</h2>
+          <p>Username</p>
+          <input type="text">
+          <p>Passowrd</p>
+          <input type="text">
+          <div class="login">Log in</div>
+        </div>
+        <div class="other">
+          <h3>Or Continue With</h3>
+          <div class="social-flex">
+            <div class="social google"><i class="fab fa-google"></i> Google</div>
+            <div class="social twitter"><i class="fab fa-twitter"></i> Twitter</div>
+            <div class="social facebook"><i class="fab fa-facebook-square"></i> Facebook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
