@@ -1,3 +1,8 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +164,29 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation {
+  margin: 0 auto;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+}
+.navigation h1 {
+  padding-top: 10px;
+  font-size: 4rem;
+  text-align: center;
+}
+.navigation nav {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 13px;
+  text-align: center;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  font-family: #454A59;
+  margin: 10px 1% 0 2%;
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
