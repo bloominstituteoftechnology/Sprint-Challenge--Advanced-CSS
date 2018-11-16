@@ -1,1 +1,29 @@
 // Navigation code here
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 4rem;
+        padding: 14px 0;
+    }
+
+    nav {
+        #mixins.flex-between;
+        width: 376px;
+        padding: 4px 0px 12px 0px;
+
+        @media @phone {
+            width: 75%;
+        }
+
+        a {
+            color: @nav-font;
+            font-size: 1.6rem;
+            text-decoration: none;
+        }
+    }
+}
