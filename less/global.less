@@ -46,6 +46,13 @@ a {
 	color: @nav-font;
 	font-weight: bold;
 
+	&:hover {
+		animation-name: grow;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
 	@media @phone {
 		font-size: 1.4rem;
 	}
@@ -53,4 +60,16 @@ a {
 
 img {
 	max-width: 100%;
+}
+
+// Animations
+@keyframes grow {
+	from {
+		color: @nav-font;
+	}
+
+	to {
+		color: @btn-bg-color;
+		font-size: 3rem;
+	}
 }

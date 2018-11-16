@@ -165,6 +165,12 @@ a {
   color: #454a59;
   font-weight: bold;
 }
+a:hover {
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
 @media (max-width: 500px) {
   a {
     font-size: 1.4rem;
@@ -172,6 +178,15 @@ a {
 }
 img {
   max-width: 100%;
+}
+@keyframes grow {
+  from {
+    color: #454a59;
+  }
+  to {
+    color: #22283a;
+    font-size: 3rem;
+  }
 }
 nav {
   width: 100%;
