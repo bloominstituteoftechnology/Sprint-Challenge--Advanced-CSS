@@ -146,7 +146,7 @@ h5 {
   color: #23293B;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -164,11 +164,13 @@ p {
   margin: 0 auto;
 }
 .nav-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #F6F6F6;
 }
 .nav-section h1 {
   padding: 10px;
