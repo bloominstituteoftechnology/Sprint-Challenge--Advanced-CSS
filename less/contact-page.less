@@ -1,0 +1,48 @@
+
+.contact {
+    text-align: justify;
+    .display;
+    justify-content: center;
+    flex-direction: column;
+    
+    h2 {
+        font-size: 5rem;
+        margin: 50px 0;
+    }
+
+    .form {
+        font-size: 2rem;
+        width: 50%;
+
+        @media @phone {
+            width: 100%;
+        }
+        li{
+            .display;
+            justify-content: space-between;
+
+            @media @phone {
+                flex-direction: column;
+            }
+            .btn {
+                .btn(100px, 36px, 1.6rem);
+                margin-bottom: 36px;
+
+                @media @phone {
+                    .btn(100%, 65px, 2rem);
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        input, textarea{
+            width: 60%;
+            font-size: 1.5rem;
+            padding: 10px;
+            // .border(@shuttle-gray);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            // border: none;
+        }
+    }
+}
