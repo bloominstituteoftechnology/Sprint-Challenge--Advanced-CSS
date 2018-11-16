@@ -8,21 +8,23 @@
     justify-content: center;
     align-items: center;
     background-color: #f4f4f4;
+    border-bottom: 1px solid darkgrey;
     header{
         width: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
         nav{
             display: flex;
             justify-content: space-between;
             margin: 2%;
             width: 70%;
             a{
+                padding: 5px 10px;
                 text-decoration: none;
                 color: #7C7175;
                 font-size: @pSize;
+                .animation-mix(.2s, scale(1.1), black, white);
             }
         }  
     }

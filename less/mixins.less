@@ -1,1 +1,21 @@
 // Mixins Here
+
+.button-mixin(@x, @y, @textC){
+    width: @x; //30%
+    color: @textC;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: @y 0; //5px
+    border-radius: 5px;
+    background-color: @btn-bg-color;
+}
+
+.animation-mix(@time, @property, @bg-color, @text-color){
+    transition: @time;
+    &:hover{
+        transform: @property;
+        background-color: @bg-color;
+        color: @text-color;
+        cursor: pointer;
+    }
+}
