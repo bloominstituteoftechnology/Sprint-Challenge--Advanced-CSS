@@ -8,5 +8,7 @@ Designing a website mobile or desktop first refers to the way you write your mai
 Normally rem is equal to 16px, but this can be a difficult number to deal with. Setting the font-size to 62.5% allows us to have 1 rem equal to 10px, which is much more manageable and easy to convert. 
 
 4. How would you describe preprocessing to someone new to CSS?
+A preprocessor gives us abilities to code that aren't available to us when just using CSS. You need a language to write the code (in our case LESS), you need a compiler that converts this code (Node), and normal CSS is where this code is outputted from the compiler. It may seem like more work, but preprocessors give us the ability to nest and create functions, all of which aren't possible in normal CSS. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Nesting is my favorite concept. It makes my CSS much more manageable and easier to read. Mixins give me the most trouble, but I see the benefit and am sure they will come in handy to me. 
