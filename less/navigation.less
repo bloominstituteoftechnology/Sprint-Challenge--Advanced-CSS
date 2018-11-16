@@ -7,11 +7,13 @@ body {
 
         a {
             .nav-a-mixin;
+
+            @media @phone {
+                .phone-mixin-nav();
+            }
         }
 
-        @media(@phone) {
-            .phone-mixin-nav();
-        }
+       
 
     
 
