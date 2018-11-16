@@ -4,6 +4,14 @@
     height: 90px;
     padding: 2% 3%;
     background-color: @nav-bg;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+      }
   
     .nav-container {
       height: 100%;
@@ -12,11 +20,6 @@
       align-items: center;
       justify-content: space-between;
   
-      @media @mobile {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 10px;
-      }
       }
 
       h1 {
@@ -25,7 +28,7 @@
       }
   
       .nav {
-        margin-top: 1%;
+        margin: 1% 2%;
         width: 350px;
         display: flex;
         justify-content: space-between;
