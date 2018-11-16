@@ -6,6 +6,10 @@
   flex-direction: column;
   background-color: @nav-bg;
 
+    @media @phone {
+      background-color: @wild-sand;
+    }
+
   .title-text {
     margin: 12px auto 20px;;
   }
@@ -20,6 +24,10 @@
       color: black;
       
       font-size: 1.6rem;
+    }
+
+    @media @phone {
+      margin: 0 10% 10px;
     }
   }
 }
