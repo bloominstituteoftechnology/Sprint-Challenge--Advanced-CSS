@@ -178,20 +178,20 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 26%;
+  width: 24%;
   padding-top: 20px;
 }
 .top-nav nav a {
   text-decoration: none;
-  color: black;
+  color: #454a59;
   font-size: 1.6rem;
   transition: all 0.15s;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848e;
+  background: #f6f6f6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #dee2e6;
   border-radius: 10px;
   display: flex;
   justify-content: center;
