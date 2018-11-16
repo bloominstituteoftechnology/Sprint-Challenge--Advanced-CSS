@@ -186,26 +186,36 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 100px;
 }
 @media (max-width: 800px) {
   .container {
     width: 95%;
   }
 }
-.nav-area {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  margin: 15px auto 10px;
-}
-@media (max-width: 800px) {
-  .nav-area {
-    width: 95%;
+@media (max-width: 500px) {
+  .container {
+    margin-top: 65px;
   }
+}
+.nav-area {
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  overflow: hidden;
 }
 .nav-area h1 {
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .nav-area h1 {
+    margin-bottom: 10px;
+  }
 }
 .nav-area h1 a {
   color: black;
@@ -228,7 +238,7 @@ img {
   .nav-area nav a {
     font-size: 1.2rem;
     font-weight: normal;
-    padding: 10px 3%;
+    padding: 5px 3%;
   }
 }
 .nav-area nav a:hover {
