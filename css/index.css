@@ -1,5 +1,5 @@
 .nav-a-mixin {
-  color: gray;
+  color: #81848E;
   text-decoration: none;
   margin: 20px;
 }
@@ -173,7 +173,7 @@ body nav {
   font-size: 2rem;
 }
 body nav a {
-  color: gray;
+  color: #81848E;
   text-decoration: none;
   margin: 20px;
 }
