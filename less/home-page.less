@@ -31,6 +31,7 @@
       @media @phone {
         height: auto;
         width: 100%;
+        margin: 20px 5%;
       }
     }
     .sky, .launch {
@@ -51,6 +52,9 @@
     p {
       margin-top: 13px;
     }
+    @media @phone {
+      margin-bottom: 18px;
+    }
   }
 
   .walk {
@@ -60,9 +64,17 @@
     padding: 49px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-wrap: wrap-reverse;
+      padding: 49px 4%;
+      margin-top: 0px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -71,7 +83,7 @@
       p {
         margin-bottom: 24px;
       }
-
+    
       .btn {
         .button(12%, 30%)
       }
@@ -80,6 +92,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
