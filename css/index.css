@@ -234,6 +234,10 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  -webkit-animation: slide-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @media (max-width: 500px) {
   .home .space-images img {
     display: none;
@@ -334,4 +338,32 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  -webkit-animation: rotate-center 1s ease-in-out both;
+  animation: rotate-center 1s ease-in-out both;
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  30% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
