@@ -343,3 +343,22 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .BlogPost .DuoImg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.home .BlogPost .DuoImg img {
+  width: 40%;
+  height: 400px;
+}
+.home .BlogPost .DuoComment {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.home .BlogPost .DuoComment .Comment.Container {
+  width: 30%;
+}
