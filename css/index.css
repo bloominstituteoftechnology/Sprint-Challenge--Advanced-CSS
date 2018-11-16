@@ -374,6 +374,11 @@ footer {
   background-color: white;
   border: 1px double #22283A;
 }
+.home .walk .walk-text .form {
+  font-size: 1.8rem;
+  line-height: 2;
+  margin-bottom: 10px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
