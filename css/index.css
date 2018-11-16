@@ -248,6 +248,7 @@ a {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -267,7 +268,6 @@ a {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
-    order: 1;
   }
 }
 .home .walk .walk-text h3 {
@@ -275,27 +275,6 @@ a {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
-}
-.home .walk .walk-text .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #22283A;
-  color: white;
-  font-size: 1.8rem;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 1px solid #22283A;
-}
-.home .walk .walk-text .btn:hover {
-  background: white;
-  color: #22283A;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    padding: 25px 0;
-    width: 100%;
-    text-align: center;
-  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -311,6 +290,69 @@ a {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .sign-up {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+}
+.home .sign-up h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 342px;
+}
+.home .sign-up form {
+  width: 342px;
+  padding: 5px 15px 25px;
+  border: 1px solid #dee2e6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+@media (max-width: 500px) {
+  .home .sign-up form {
+    margin-top: 30px;
+  }
+}
+.home .sign-up form label {
+  padding: 15px 15px 15px 0;
+  font-size: 1.6rem;
+}
+.home .sign-up form input,
+.home .sign-up form select {
+  width: 100%;
+  padding: 15px;
+}
+.home .sign-up form select {
+  font-size: 1.6rem;
+  color: #5E6164;
+  height: 45px;
+  text-align-last: center;
+}
+.home .sign-up form .btn {
+  margin: 25px auto 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #22283A;
+  color: white;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #22283A;
+}
+.home .sign-up form .btn:hover {
+  background: white;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .sign-up form .btn {
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 footer {
   color: #22283B;

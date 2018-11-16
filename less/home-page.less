@@ -65,6 +65,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;  
 
     @media @phone {
       margin-top: 20px;
@@ -81,7 +82,7 @@
 
       @media @phone {
         width: 100%;
-        order: 1;
+        // order: ;
       }
 
       h3 {
@@ -92,18 +93,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background: @btn-bg-color;
-        .custom-btn(white, 1.8rem, 5px);
-
-        @media @phone {
-          padding: 25px 0;
-          width: 100%;
-          text-align: center;
-        }
-      }
     }
 
     .walk-img {
@@ -120,6 +109,68 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+
+    
+  }
+
+  .sign-up {
+    .col-center;
+    margin-top: 15px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      width: 342px;
+    }
+    form {
+      width: 342px;
+      padding: 5px 15px 25px;
+      border: 1px solid @border-real;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      
+
+      @media @phone {
+        margin-top: 30px; 
+        
+      }
+
+      label {
+        // text-align: right;
+        padding: 15px 15px 15px 0;
+        font-size: 1.6rem;
+      }
+      input, select {
+        width: 100%;
+        padding: 15px;
+      }
+
+      select {
+        font-size: 1.6rem;
+        color: @main-font-color;
+        height: 45px;
+        text-align-last: center;
+      }
+
+      .btn {
+        margin: 25px auto 0;
+        display: inline-block;
+        padding: 10px 20px;
+        background: @btn-bg-color;
+        .custom-btn(white, 1.8rem, 5px);
+        
+
+        @media @phone {
+          padding: 25px 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
     }
   }
 }// home
