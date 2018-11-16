@@ -10,6 +10,12 @@
     h1 {
         font-size: 3rem;
         margin: 20px 0;
+
+        @media @phone {
+            width: 100%;
+            padding: 0 90px;
+            justify-content: center;
+          }
      
     }
    
@@ -20,6 +26,16 @@
         padding: 0 20px;
         margin: 20px 0; 
 
+        @media @phone {
+            width: 100%;
+            padding: 0 5px;
+            align-content: center;
+          }
+
+          &:hover {
+              color: slategray;
+              background: white;
+          }
     }
     
 }

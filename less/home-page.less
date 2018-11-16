@@ -16,6 +16,13 @@
     p {
       padding:0 15px;
     }
+
+    .earth-logo {
+      @media @phone {
+        width: 100%;
+        padding: 0;
+      }
+    }
   
   }
 }
@@ -68,7 +75,8 @@
 
     @media @phone {
       width: 100%;
-      padding: 0;
+      padding: 0 10px;
+      justify-content: center;
     }
     h3 {
       margin-top: 11px;
@@ -88,15 +96,18 @@
 
     @media @phone {
       width: 100%;
+      justify-content: center;
       padding: 0;
+      flex-direction: column;
     }
 
     .walk-text {
       width: 50%;
 
       @media @phone {
-        width: 100%;
-        padding: 0;
+         width: 100%;
+        padding: 0 10px;
+
       }
 
       h3 {
@@ -108,7 +119,13 @@
       }
 
       .btn {
-          .button1(200px, 45px, @btn-bg-color, @wild-sand, 1.8rem);     
+          .button1(200px, 45px, @btn-bg-color, @wild-sand, 1.8rem);   
+          
+          @media @phone {
+            width: 100%;
+            padding: 0;
+            margin: 10px 0;
+         }
       }
     }
 
@@ -118,7 +135,6 @@
 
       @media @phone {
         width: 100%;
-        padding: 0;
         order: -1;
       }
       
@@ -129,4 +145,4 @@
       }
     }
   }
-}// home
+// home
