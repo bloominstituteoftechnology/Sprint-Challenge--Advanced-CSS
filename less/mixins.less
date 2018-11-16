@@ -8,7 +8,7 @@
     border-bottom: 2px solid @color;
 }
 
-.btn(@width, @height) {
+.btn(@width, @height, @font-size) {
     border-radius: 10px;
     width: @width;
     height: @height;
@@ -16,7 +16,7 @@
     color: @porcelain;
     .display;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: @font-size;
     &:hover {
         background-color: @porcelain;
         color: @btn-bg-color;
