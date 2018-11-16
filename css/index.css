@@ -235,14 +235,14 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
+.home .walk .walk-text .btn {
   background-color: #23293B;
   color: #F6F7F8;
   padding: 10px 30px;
   border-radius: 10px;
   font-size: 1.5rem;
 }
-.home .walk .walk-text .btn button:hover {
+.home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #23293B;
 }
