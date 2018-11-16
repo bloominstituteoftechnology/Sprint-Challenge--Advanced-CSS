@@ -170,6 +170,7 @@ body nav {
 body nav a {
   color: gray;
   text-decoration: none;
+  margin: 20px;
 }
 footer {
   color: #22283B;
