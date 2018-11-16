@@ -168,9 +168,14 @@ header {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 102px auto 0 auto;
 }
-nav {
+header.top-header {
+  position: fixed;
+  top: 0;
+  background-color: rgba(246, 246, 246, 0.8);
+}
+header.top-header nav {
   width: 38%;
   display: flex;
   justify-content: space-between;
@@ -178,13 +183,13 @@ nav {
   margin: 2px auto;
   padding: 5px 0;
 }
-nav a {
+header.top-header nav a {
   color: #454A59;
   text-decoration: none;
   font-size: 1.6em;
 }
 @media (max-width: 500px) {
-  nav {
+  header.top-header nav {
     width: 78%;
     margin: 0 auto;
     padding: 5px 0 8px 0;

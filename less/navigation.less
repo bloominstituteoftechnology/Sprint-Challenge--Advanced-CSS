@@ -1,18 +1,23 @@
 // Navigation code here
 
-nav {
-  width: 38%;
-  .flex-space-between;
-  margin: 2px auto;
-  padding: 5px 0;
-  a {
-    color: @nav-font;
-    text-decoration: none;
-    font-size: 1.6em;
-  }
-  @media @phone {
-    width: 78%;
-    margin: 0 auto;
-    padding: 5px 0 8px 0;
+header.top-header {
+  position: fixed;
+  top: 0;
+  background-color: fadeout(@nav-bg, 20%);
+  nav {
+    width: 38%;
+    .flex-space-between;
+    margin: 2px auto;
+    padding: 5px 0;
+    a {
+      color: @nav-font;
+      text-decoration: none;
+      font-size: 1.6em;
+    }
+    @media @phone {
+      width: 78%;
+      margin: 0 auto;
+      padding: 5px 0 8px 0;
+    }
   }
 }
