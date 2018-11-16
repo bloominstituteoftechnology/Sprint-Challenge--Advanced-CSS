@@ -18,14 +18,14 @@
     align-items: center;
 }
 
-.button(@width, @height, @bg-color, @font-color, @font-size) {
-    .border-radius(20px);
+.button-create(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(5px);
     .flex-center;
     width: @width;
     height: @height;
     background-color: @bg-color;
     color: @font-color;
-    border: 1px solid @silver;
     cursor: pointer;
     font-size: @font-size;
+    font-weight: bold;
 }
