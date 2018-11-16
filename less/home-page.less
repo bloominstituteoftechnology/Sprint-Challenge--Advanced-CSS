@@ -2,6 +2,12 @@
 
 .home {
   .CTA {
+    img {
+      @media @phone {
+        height: auto;
+        width: 100%;
+      }
+    }
     .lift-off {
       padding: 2px 15px;
       h2 {
@@ -22,6 +28,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        height: auto;
+        width: 100%;
+      }
+    }
+    .sky, .launch {
+      @media @phone {
+        display: none;
+        margin: 20px 4.5%;
+      }
     }
   }
 
