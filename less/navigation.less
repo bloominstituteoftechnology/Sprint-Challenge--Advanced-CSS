@@ -2,7 +2,7 @@
 header{
     .basicflex(center, center);
     flex-direction: column;
-    padding: 13px 0;
+    padding: 13px 0 0 0;
 
     h1{
         font-size: 4rem;
@@ -12,11 +12,9 @@ header{
     nav{
         .basicflex(space-evenly, center);
         max-width: 800px;
-        font-size: 1.6rem;
         
         a{
-            text-decoration: none;
-            color: black;
+            .a-reset();
             margin: 0 16px;
         }
     }

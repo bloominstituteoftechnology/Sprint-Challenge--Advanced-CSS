@@ -4,3 +4,24 @@
     justify-content: @jcont;
     align-items: @aitems;
 }
+
+.a-reset{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.create-btn(@color, @tcolor, @ptopbot, @pleftright, @borderr){
+    display: inline-block;
+    cursor: pointer;
+    background-color: @color;
+    color: @tcolor;
+    padding: @ptopbot @pleftright;
+    border-radius: @borderr;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover{
+        color: @color;
+        background-color: @tcolor;
+    }
+}

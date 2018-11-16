@@ -1,3 +1,8 @@
+.a-reset {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,7 +170,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 13px 0;
+  padding: 13px 0 0 0;
 }
 header h1 {
   font-size: 4rem;
@@ -176,10 +181,10 @@ header nav {
   justify-content: space-evenly;
   align-items: center;
   max-width: 800px;
-  font-size: 1.6rem;
 }
 header nav a {
   text-decoration: none;
+  font-size: 1.6rem;
   color: black;
   margin: 0 16px;
 }
@@ -195,6 +200,7 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  align-self: flex-start;
 }
 .home .intro p {
   padding: 0 15px;
@@ -234,6 +240,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  margin-top: -5px;
+  font-size: 1.8rem;
+  display: inline-block;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 9px 19px;
+  border-radius: 5px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
