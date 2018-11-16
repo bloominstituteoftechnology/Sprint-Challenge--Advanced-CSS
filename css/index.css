@@ -178,8 +178,8 @@ p {
   flex-wrap: nowrap;
 }
 .nav-container nav div {
-  margin: 20px 0 9px;
-  width: 47%;
+  margin: 19px 0 9px;
+  width: 75.2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -259,9 +259,9 @@ footer {
   border-radius: 5px;
   padding: 7px 2%;
   font-size: 1.8rem;
+  border: 1px solid #22283a;
   font-size: 1.9rem;
   width: 29.5%;
-  border: 1px solid #22283a;
 }
 .home .walk .walk-text .btn:hover {
   background: #f6f6f6;
