@@ -368,11 +368,12 @@ footer {
 }
 .blog {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .blog .blog-content {
-  margin-top: 100px;
+  margin-top: 115px;
+  width: 600px;
 }
 .blog .blog-content .top-story-container {
   margin: 10px 0 0 0;
@@ -402,4 +403,7 @@ footer {
 }
 .blog .advert-side-bar img {
   width: 63px;
+}
+footer {
+  width: 100%;
 }
