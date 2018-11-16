@@ -465,14 +465,19 @@ footer {
 }
 .blog .intro .blog-content .dates {
   padding-top: 60px;
-}
-.blog .intro .blog-content .dates p {
-  padding-bottom: 5px;
-  border-bottom: 1px solid silver;
+  display: flex;
+  flex-direction: column;
 }
 .blog .intro .blog-content .dates .year {
   font-weight: bold;
   font-size: 1.8rem;
+}
+.blog .intro .blog-content .dates a {
+  text-decoration: none;
+  color: #5E6164;
+  padding-bottom: 5px;
+  border-bottom: 1px solid silver;
+  font-size: 1.6rem;
 }
 .blog .intro .blog-content .blogitem {
   width: 70%;
