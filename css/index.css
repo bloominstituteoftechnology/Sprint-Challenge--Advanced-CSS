@@ -160,6 +160,16 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  border: 2px solid gold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2% 15%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -173,8 +183,21 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+.home .intro h1 {
+  border: 2px solid red;
+}
 .home .intro p {
   padding: 0 15px;
+}
+.home .btn {
+  width: 25%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  color: #F6F7F8;
+  border-radius: 10%;
 }
 .home .space-images {
   display: flex;

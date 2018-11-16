@@ -1,1 +1,21 @@
-// Mixins Here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image() {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+
+  .button-creator (@width: 25%; @height: 10%; @btn-bg-color: #22283A; @font-color: #F6F7F8;) {
+        width: @width;
+        height: @height;
+        
+        .center();
+        background-color: #22283A;
+        color: @porcelain;
+        border-radius: 10%;
+  }
