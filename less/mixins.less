@@ -1,1 +1,24 @@
 // Mixins Here
+
+.button(@width; @font-size; @padding) {
+    width: @width;
+    font-size: @font-size;
+    text-align: center;
+    padding: @padding;
+    border-radius: 5px;
+    background: @header-font-color;
+    color: white;
+
+    &:hover {
+        color: @header-font-color;
+        background: white;
+        border: 1px solid @header-font-color;
+        cursor: pointer;
+    }
+}
+
+.header-layout() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -2,28 +2,54 @@
 
 .home {
 
-  .intro {
-
-    h2 {
-      padding: 15px;
+.intro {
+  img {
+    @media @phone {
+      border-radius: 5px;
+      max-width: 100%;
+      height: auto;
     }
-
-    p {
-      padding:0 15px;
-    }
-  
   }
 
+  h2 {
+    padding: 15px;
+  }
+
+  p {
+    padding:0 15px;
+  }
+
+}
+
+
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+  }
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        height: 100%;
+        padding: 0 13px;
+        border-radius: 30px;
+    }
+
     }
   }
 
@@ -38,38 +64,61 @@
       margin-top: 13px;
     }
   }
+}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid @main-border-color;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
 
-    .walk-text {
-      width: 50%;
+  @media @phone {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-      h3 {
-        margin-bottom: 10px;
-      }
+  .walk-text {
+    width: 50%;
 
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
+    @media @phone {
+      width: 100%;
+      margin-top: 20px;
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 26px;
+    }
+
+    .btn {
+      .button(29%; 1.8rem; 9px);
+
+      @media @phone {
+        .button(100%; 1.8rem; 25px)
       }
+    }
+  }
+
+  .walk-img {
+    width: 46%;
+    margin-left: 4%;
+
+    @media @phone {
+      order: -1;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
   }
 }// home
