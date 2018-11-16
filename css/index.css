@@ -186,7 +186,7 @@ p {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 20px 0 12px;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -234,6 +234,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
