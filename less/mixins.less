@@ -1,1 +1,40 @@
 // Mixins Here
+
+
+#mixins() {
+    .layout(@j-content, @a-items ) {
+      display: flex;
+      justify-content: @j-content;
+      align-items: @a-items;
+      
+    }
+
+    .navigation-style(){
+        margin: 0px auto;
+        border-bottom: 2px solid  @nav-border;
+         flex-wrap: wrap; 
+        padding-bottom: 10px;
+       flex-direction: column;
+        align-items: center;
+        background-color: @nav-bg;
+    }
+
+    .button-layout(){
+        color: @btn-bg-color;
+        background-color: @wild-sand;
+        font-size: 2rem; 
+        padding: 5px 20px;
+        margin: 10px;
+    }
+    
+    //  =======Parametric Button Mixin========= 
+      
+    .button-layout(@white,  @eastern-blue){
+        color: @white;
+        background-color: @eastern-blue;
+        font-size: 2rem; 
+        padding: 5px 20px;
+
+       
+      }
+}
