@@ -476,6 +476,7 @@ footer {
 }
 .contact .subscribe-content {
   width: 100%;
+  margin-bottom: 30px;
 }
 .contact .subscribe-content h2 {
   padding: 15px;
@@ -521,6 +522,13 @@ footer {
   padding: 7px 2%;
   font-size: 1.8rem;
   border: 1px solid #22283a;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .contact .subscribe-content form input:last-child:hover {
   background: #f6f6f6;
