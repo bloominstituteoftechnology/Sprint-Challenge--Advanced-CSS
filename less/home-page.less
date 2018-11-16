@@ -62,6 +62,20 @@
       }
 
       .btn {
+        button {
+          .button-creator(29%, @btn-color, @btn-bg-color);
+          border: none;
+          border-radius: 5px;
+          font-size: 1.9rem;
+          padding: 8px 0;
+
+          &:hover {
+            cursor: pointer;
+            color: @btn-bg-color;
+            background-color: @btn-color;
+            border: 1px solid @btn-bg-color;
+          }
+        }
       }
     }
 
