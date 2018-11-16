@@ -15,9 +15,47 @@
   }
 
   .subscribe-content {
+    width: 100%;
     h2 {
       padding: 15px;
-      border: 1px solid black;
+    }
+
+    p {
+      padding: 0 15px;
+    }
+
+    form {
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+      font-size: 1.6rem;
+      line-height: 1.4;
+
+      .center(column, flex-start, flex-start, nowrap);
+
+      input {
+        padding: 5px 2% 5px 0.7%;
+      }
+
+      .address {
+        input {
+          margin-bottom: 0;
+        }
+      }
+
+      div {
+        width: 100%;
+        .center(column, flex-start, flex-start, nowrap);
+
+        textarea {
+          margin-bottom: 20px;
+          padding: 0 50% 200px 0.7%;
+        }
+      }
+
+      input:last-child {
+        .btn-template();
+      }
     }
   }
 }

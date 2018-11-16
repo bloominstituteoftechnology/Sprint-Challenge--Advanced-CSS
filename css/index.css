@@ -474,7 +474,56 @@ footer {
     opacity: 1;
   }
 }
+.contact .subscribe-content {
+  width: 100%;
+}
 .contact .subscribe-content h2 {
   padding: 15px;
-  border: 1px solid black;
+}
+.contact .subscribe-content p {
+  padding: 0 15px;
+}
+.contact .subscribe-content form {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.contact .subscribe-content form input {
+  padding: 5px 2% 5px 0.7%;
+}
+.contact .subscribe-content form .address input {
+  margin-bottom: 0;
+}
+.contact .subscribe-content form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.contact .subscribe-content form div textarea {
+  margin-bottom: 20px;
+  padding: 0 50% 200px 0.7%;
+}
+.contact .subscribe-content form input:last-child {
+  text-align: center;
+  background: #22283a;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 2%;
+  font-size: 1.8rem;
+  border: 1px solid #22283a;
+}
+.contact .subscribe-content form input:last-child:hover {
+  background: #f6f6f6;
+  border: 1px solid #454a59;
+  color: #454a59;
 }
