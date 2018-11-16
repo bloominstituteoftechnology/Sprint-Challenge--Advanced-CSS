@@ -160,6 +160,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  background-color: #F6F6F6;
+  font-family: #454A59;
+  border-bottom: 1px solid #F1F1F1;
+  margin: 0 auto;
+  padding-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+nav h1 {
+  font-size: 4rem;
+  width: 100%;
+}
+nav .nav-links {
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+nav .nav-links a {
+  font-size: 1.65rem;
+  text-decoration: none;
+  padding: 0 14px;
+}
+nav .nav-links a:visited {
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
