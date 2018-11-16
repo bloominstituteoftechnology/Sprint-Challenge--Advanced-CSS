@@ -2,20 +2,23 @@
   margin: 30px;
 
   legend {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 30px;
   }
   label {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   input {
     padding: 5px;
     width: 500px;
     font-size: 1.4rem;
     margin-top: 10px;
+    @media @phone {
+      width: 100%;
+    }
   }
 }
 button {

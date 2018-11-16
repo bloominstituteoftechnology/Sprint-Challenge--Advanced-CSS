@@ -327,20 +327,25 @@ footer {
   margin: 30px;
 }
 .form-container legend {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 30px;
 }
 .form-container label {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .form-container input {
   padding: 5px;
   width: 500px;
   font-size: 1.4rem;
   margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .form-container input {
+    width: 100%;
+  }
 }
 button {
   padding: 10px 30px;
