@@ -29,10 +29,10 @@
     }
 
     @media @phone {
-      .launch {
+      .sky {
         display: none;
       }
-      .blast {
+      .launch {
         display: none;
       }
       img {
@@ -86,9 +86,22 @@
         .btnsettings(25%, 40px, @btn-bg-color, 7px, 1.7em, white);
 
         @media @phone {
-          .btnsettings(100%, 40px, @btn-bg-color, 7px, 1.7em, white);
+          .btnsettings(100%, 60px, @btn-bg-color, 7px, 1.7em, white);
         }
     }
+
+
+    .btn:hover {
+      .btnsettings(25%, 40px, white, 7px, 1.7em, @btn-bg-color);
+      border: 1px solid @btn-bg-color;
+
+      @media @phone {
+        .btnsettings(100%, 60px, white, 7px, 1.7em, @btn-bg-color);
+         border: 1px solid @btn-bg-color;
+      }
+  }
+
+
   }
 
     .walk-img {
@@ -102,6 +115,7 @@
       }
 
       @media @phone {
+        padding: 2%;
         margin: auto;
         width: 100%;
 
