@@ -10,9 +10,13 @@ header.top-header {
     margin: 2px auto;
     padding: 5px 0;
     a {
-      color: @nav-font;
+      .color-btn(@nav-bg, @nav-font);
       text-decoration: none;
       font-size: 1.6em;
+      border-radius: 5px;
+      &:hover{
+        .color-btn(@nav-font, @nav-bg);
+      }
     }
     @media @phone {
       width: 78%;

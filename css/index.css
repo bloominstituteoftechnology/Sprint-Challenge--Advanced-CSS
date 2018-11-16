@@ -184,9 +184,17 @@ header.top-header nav {
   padding: 5px 0;
 }
 header.top-header nav a {
+  background-color: #F6F6F6;
   color: #454A59;
+  transition: background-color 0.5s;
   text-decoration: none;
   font-size: 1.6em;
+  border-radius: 5px;
+}
+header.top-header nav a:hover {
+  background-color: #454A59;
+  color: #F6F6F6;
+  transition: background-color 0.5s;
 }
 @media (max-width: 500px) {
   header.top-header nav {
@@ -264,6 +272,7 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: #F6F7F8;
+  transition: background-color 0.5s;
   font-size: 1.8em;
   text-align: center;
   padding: 8px;
@@ -273,6 +282,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #22283A;
+  transition: background-color 0.5s;
 }
 .home .walk .walk-img {
   width: 46%;
