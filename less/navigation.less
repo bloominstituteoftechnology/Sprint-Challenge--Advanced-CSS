@@ -1,1 +1,26 @@
 // Navigation code here
+.navigation {
+    .mixin-flex;
+    flex-direction: column;
+    align-items: center;
+    background: @nav-bg;
+    border: 1px solid @nav-border;
+    width: 100%;
+
+    h1 {
+        font-size: 4rem;
+
+    }
+
+    nav {
+        .mixin-flex;
+
+        a {
+            text-decoration: none;
+            margin: 15px 1.6rem;
+            color: @nav-font;
+            font-size: 1.6rem;
+
+        }
+    }
+}
