@@ -1,1 +1,54 @@
 // Mixins Here
+
+
+// GENERAL MIXINS
+.flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+// NAV MIXIN
+.nav-mixin() {
+    display: flex;
+    flex-direction: column;
+    background: @wild-sand;
+    color: @shuttle-gray;
+    font-style: @river-bend;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+// BORDER RADIUS 
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+  }
+
+// BUTTON PARA MIXIN
+
+.button1(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(15px);
+    .flex;
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: @wild-sand;
+    border: 1px solid @shuttle-gray;
+    cursor: pointer;
+    font-size: @font-size;
+  
+    // @media @mobile {
+    //   width: 100%;
+    // }
+    
+    &:hover {
+      background: @wild-sand;
+      color: @btn-bg-color;
+    }
+  }
