@@ -266,3 +266,29 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .walk .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  height: 38px;
+  background-color: #22283A;
+  color: #F1F1F1;
+  border: 1px solid #23293B;
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .home .walk .btn {
+    width: 100%;
+  }
+}
+.home .walk .btn:hover {
+  background: #F1F1F1;
+  color: #22283A;
+}
