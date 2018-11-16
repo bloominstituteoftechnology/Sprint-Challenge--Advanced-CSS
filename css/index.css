@@ -377,3 +377,75 @@ footer {
   -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
+.contact {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact h2 {
+  font-size: 5rem;
+  margin: 50px 0;
+}
+.contact .form {
+  font-size: 2rem;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .contact .form {
+    width: 100%;
+  }
+}
+.contact .form li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .contact .form li {
+    flex-direction: column;
+  }
+}
+.contact .form li .btn {
+  border-radius: 10px;
+  width: 100px;
+  height: 36px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 36px;
+}
+.contact .form li .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width:500px) {
+  .contact .form li .btn {
+    border-radius: 10px;
+    width: 100%;
+    height: 65px;
+    background-color: #22283A;
+    color: #F6F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .contact .form li .btn:hover {
+    background-color: #F6F7F8;
+    color: #22283A;
+  }
+}
+.contact .form input,
+.contact .form textarea {
+  width: 60%;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
