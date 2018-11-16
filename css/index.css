@@ -160,12 +160,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header.top {
+  width: 100%;
+  height: 100px;
+  color: #22283A;
+  background: #F6F6F6;
+  border: 1px double #dee2e6;
+}
+header.top h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  font-size: 4rem;
+}
+header.top nav {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+header.top nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
 footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
+  color: #22283A;
+  background: #F6F6F6;
+  border: 1px double #dee2e6;
   border-radius: 10px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +235,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  font-size: 1.725rem;
+  color: #F6F7F8;
+  border-radius: 5px;
+  padding: 8px 20px;
+  width: 100px;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F7F8;
+  color: #22283A;
+  border: 2px solid #22283A;
+  padding: 6px 18px;
 }
 .home .walk .walk-img {
   width: 46%;

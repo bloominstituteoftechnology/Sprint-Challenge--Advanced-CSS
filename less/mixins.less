@@ -1,1 +1,22 @@
 // Mixins Here
+
+.bar() {
+  color: @btn-bg-color;
+  background: @nav-bg;
+  border: 1px double @main-border-color;
+}
+
+.btn(@color-bg, @color-font) {
+    background: @color-bg;
+    font-size: 1.725rem;
+    color: @color-font;
+    border-radius: 5px;
+    padding: 8px 20px;
+    width: 100px;
+    &:hover {
+        background: @color-font;
+        color: @color-bg;
+        border: 2px solid @color-bg;
+        padding: 6px 18px;
+    }
+}
