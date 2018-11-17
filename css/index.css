@@ -426,7 +426,7 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 0 0;
+    padding-top: 20px;
   }
 }
 .home .walk .walk-text {
@@ -469,7 +469,6 @@ footer {
   -ms-border-radius: 7.5px;
   border-radius: 7.5px;
   margin: 10px;
-  margin-bottom: 20px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
