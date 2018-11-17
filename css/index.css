@@ -169,6 +169,9 @@ p {
   background-color: #F6F6F6;
   border-bottom: 1px double #F1F1F1;
   padding: 20px 0 10px;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
 }
 .nav-container h1 {
   font-size: 4rem;
@@ -248,6 +251,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  padding-top: 108px;
 }
 .home .intro h2 {
   padding: 15px;
