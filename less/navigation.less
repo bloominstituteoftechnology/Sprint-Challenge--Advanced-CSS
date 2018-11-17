@@ -1,46 +1,41 @@
 // Navigation code here
-body{
-    
-section{
+    .top-content{
+        background: rgb(190, 189, 189);
+        @media @phone{
+            background:white;
+        }
+        h1{
+            .flex-display();
+            .font-size(3rem);
+            .bottom-pad();
+        }
 
- h1{
-    .flex-display();
-    .font-size(2.8rem);
-    .bottom-pad();
-}
-nav{
-    .flex-display();
-    justify-content: space-evenly;
-    
+        nav{
+            .flex-display();
+            justify-content: space-evenly;
 
+        a{
+            .color(black);
+            text-decoration: none;
+        }
+        }
 
-}
-a{
-    .color(black);
-    text-decoration: none;
-}
-
-.grey-box{
-    background: rgb(190, 189, 189);
+        .clouds{
+             width: 100%;
+        }
     }
+        .btnc{
+            background: darkblue;
+            .color(white);
+            border-radius: 4px;
+            .font-size(1.6rem);
+            
+            &:hover{
+                text-decoration: underline;
+                .color(black);
+                background-color: white;
 
-}
-.clouds{
-    padding-left: 330px;
- }
-.btnc{
-    background: darkblue;
-    .color(white);
-    border-radius: 4px;
-    .font-size(1.6rem);
-    
-    &:hover{
-        text-decoration: underline;
-        .color(black);
-        background-color: white;
-
-    }
+            }
 
 
-}
-}
+        }
