@@ -211,7 +211,7 @@ footer {
   }
 }
 .home {
-  padding-top: 100px;
+  padding-top: 96px;
 }
 @media (max-width: 500px) {
   .home {
@@ -220,6 +220,7 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  border-radius: 5px;
   -webkit-animation: swing-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   -moz-animation: swing-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
   animation: swing-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
