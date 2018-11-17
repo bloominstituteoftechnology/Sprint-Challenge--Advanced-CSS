@@ -188,6 +188,9 @@ h1 {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -291,7 +294,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 500px;
   padding: 10px;
 }
 nav a {
@@ -302,6 +305,6 @@ nav a {
 }
 @media (max-width:500px) {
   nav {
-    width: 90%;
+    width: 100%;
   }
 }
