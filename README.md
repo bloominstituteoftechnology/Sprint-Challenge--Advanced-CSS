@@ -6,11 +6,11 @@ You will be updating a website using all your responsive web design and preproce
 
 ## Task 1: Set Up The Project With Git
 
-* [ ] Fork the project into your GitHub user account
+* [*] Fork the project into your GitHub user account
 
-* [ ] Clone the forked project into a directory on your machine
+* [*] Clone the forked project into a directory on your machine
 
-* [ ] You are now ready to build this project with your preferred IDE
+* [*] You are now ready to build this project with your preferred IDE
 
 ### Pro tip: Commit every time you complete a task or feature!
 
@@ -20,29 +20,39 @@ Answer the following questions to the best of your ability. You can exercise you
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+<!-- An adpative website reponds to browser changes at specific dimensions whereas a fully responsive website changes and responds to the browser size at any given time -->
+
 2. Describe what it means to be mobile first vs desktop first.
+
+<!-- In desktop first, the design and development are focused on the desktop view being the most detailed and dynamically responsive -- this means that some features may be hidden or lost in mobile view.  Mobile first development is quite the opposite where the sites or applications are built with a mobile user in mind (usually sites that derive most of their use from mobile users will implement this technique) and will start development from a mobile view with full features and functionality included.-->
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+<!-- It's used to convert to a base font size of 10 from the default of 16.  16 * 62.5 / 100 = 10 -->
+
 4. How would you describe preprocessing to someone new to CSS?
+
+<!-- Preprocessing baiscally lets you use a new form of syntax to code your CSS in a more efficient manner which in turn makes it more easier to read and manage on a large scale -->
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+<!-- My favorite concept thus far has been nesting.  It's totally changed how I setup my code and makes it so much easier for me to go back and locate code that may have a mistake in it.  The concept that gave me the hardest time was parametric mixins, but after yesterday I feel that I have a better grasp on it. -->
+
 ## Task 3: Set up your preprocessor
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [*] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [*] Open your terminal and navigate to your preprocessing project by using the `cd` command
 
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [*] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
 
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [*] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [*] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Task 4: Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [*] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 1.  `variables.less`
 
@@ -62,20 +72,20 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ## Task 5: Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [*] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [*] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [*] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [*] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [*] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [*] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
-	* [ ]  Use at least 2 parameters to create your button
+* [*] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+	* [*]  Use at least 2 parameters to create your button
 	* [ ] Create a hover state that swaps the background color and font color of the base button styles.
 
 ## Task 6: Home Page - Mobile HTML & LESS
