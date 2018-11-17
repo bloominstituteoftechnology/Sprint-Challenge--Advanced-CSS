@@ -1,33 +1,23 @@
 // Home Content
 
 .home {
-
   padding-top: 100px;
 
   @media @phone {
-    overflow: hidden;
+    // overflow: hidden;
     padding-top: 95px;
   }
 
   .intro {
-
     img {
       width: 100%;
 
-      .animation(swing-top 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both);
+      .animation(swing-top 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both);
 
-      .keyframes(swing-top;{
-        0% {
-          transform: rotateX(-100deg);
-          transform-origin: top;
-          opacity: 0;
-        }
-        100% {
-          transform: rotateX(0deg);
-          transform-origin: top;
-          opacity: 1;
-        }
-      });
+      .keyframes(
+        swing-top;{0% {transform: rotateX(-100deg) ; transform-origin: top; opacity:
+          0;} 100% {transform: rotateX(0deg) ; transform-origin: top; opacity: 1;}}
+      );
     }
 
     h2 {
@@ -35,22 +25,15 @@
 
       .animation(roll-in-left 0.6s ease-out both);
 
-      .keyframes(roll-in-left;{
-        0% {
-          transform: translateX(-800px) rotate(-540deg);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0) rotate(0deg);
-          opacity: 1;
-        }
-      })
+      .keyframes(
+        roll-in-left;{0% {transform: translateX(-800px) rotate(-540deg) ; opacity:
+          0;} 100% {transform: translateX(0) rotate(0deg) ; opacity: 1;}}
+      );
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -147,7 +130,7 @@
         height: auto;
         padding: 10px 10px 0 10px;
       }
-      
+
       img {
         width: 100%;
         height: auto;
@@ -155,4 +138,4 @@
       }
     }
   }
-}// home
+} // home

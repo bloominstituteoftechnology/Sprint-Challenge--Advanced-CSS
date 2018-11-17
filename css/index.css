@@ -215,7 +215,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home {
-    overflow: hidden;
     padding-top: 95px;
   }
 }
