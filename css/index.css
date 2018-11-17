@@ -251,7 +251,6 @@ footer {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
-  height: 100%;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -312,6 +311,10 @@ footer {
   padding: 10px 130px;
   border-radius: 10px;
   font-size: 2rem;
+}
+.home .walk .walk-text .btn button:hover {
+  background: white;
+  color: #22283A;
 }
 .walk-img {
   width: 46%;

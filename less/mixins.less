@@ -1,6 +1,6 @@
 // Mixins Here
 
-.button(@color:white, @background:@btn-bg-color,
+.button-mix(@color:white, @background:@btn-bg-color,
 @padding:10px 130px, @border-radius:10px, @font-size:2rem, ){
     color:@color;
     background:@background;
@@ -8,4 +8,9 @@
     border-radius: @border-radius;
     font-size: @font-size;
 
+    &:hover {
+        background:white;
+        color: @btn-bg-color;
+      }
 }
+
