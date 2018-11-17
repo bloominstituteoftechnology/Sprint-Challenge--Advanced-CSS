@@ -274,7 +274,7 @@ p {
   }
 }
 .wrapper .dad6 .son6 .btn {
-  width: 30%;
+  width: 35%;
   max-width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -298,8 +298,8 @@ p {
   grid-row: 1 / 2;
 }
 .wrapper .dad6 .son7 img {
-  max-width: 100%;
   width: 100%;
+  object-fit: cover;
   border-radius: 15px;
 }
 @media (max-width: 500px) {
@@ -313,18 +313,14 @@ p {
 }
 .wrapper #last-dad {
   display: grid;
-  justify-items: center;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 12px;
 }
 .wrapper #last-dad #last-son {
   justify-self: center;
-  margin-right: 0%;
-  padding-left: 27%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background: #F4F4F4;
-  max-width: 100%;
-  width: 100%;
-  border-radius: 15px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .wrapper hr {
   color: lightgrey;
