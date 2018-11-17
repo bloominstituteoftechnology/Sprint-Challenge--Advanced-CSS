@@ -1,1 +1,13 @@
 // Mixins Here
+.layout(@j-content, @a-items, @f-direction) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+    flex-direction: @f-direction;
+}
+
+.button-creator(@width, @color, @bg-color) {
+    width: @width;
+    color: @color;
+    background-color: @bg-color;
+}
