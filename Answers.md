@@ -1,0 +1,5 @@
+1) Adaptive web design has design files for multiple screen sizes and relies on predefined screen sizes, where as Responsive uses media queries to to be more flexible to other screen sizes.
+2) Mobile first means that you build the mobile page first then add media queries to adjust to tablet and/or desktop screen sizes for example, where as desktop first means you build the desktop page first then work down from there toward mobile.
+3) Font-size: 62.5% means it resizing the font to a default value of 10px, which is much easier to use when using rems to adjust font-size on the rest of the page.
+4) Preprocessers make CSS more user friendly and efficient by adding basically using short hand to code, which then is compiled into a CSS file.
+5) I think nesting would be my favorite thing about LESS. It makes the code shorter and more organized in my opinion. I think the thing that is giving me the most trouble are mixins. I understand how to use them, but I haven't found that they are very useful yet as our code is short compared to a large project that would benefit from using them.

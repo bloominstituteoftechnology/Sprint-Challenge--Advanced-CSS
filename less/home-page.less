@@ -4,12 +4,29 @@
 
   .intro {
 
+    img {
+      @media @mobile {
+        width: @width100;
+        margin-bottom: 10px;
+        height: 125px;
+      }
+    }
+
     h2 {
       padding: 15px;
+
+      @media @mobile {
+        padding: 5px 0 17px 10px;
+      }
     }
 
     p {
       padding:0 15px;
+
+      @media @mobile {
+        padding: 0 10px 0 10px;
+      }
+    }
     }
   
   }
@@ -19,24 +36,61 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .blast {
+      @media @mobile {
+        width: @width100;
+      }
+    }
+
+    .sky {
+      @media @mobile {
+        display: @img-none;
+      }
+    }
+
+    .launch {
+      @media @mobile {
+       display: @img-none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 15px;
+      }
+      }
     }
-  }
+  
 
   .visit-planets {
     padding: 15px;
 
+    @media @mobile {
+      padding: 15px 0 0 0;
+    }
+
     h3 {
       margin-top: 11px;
+
+      @media @mobile {
+        padding: 0 10px;
+      }
     }
 
     p {
       margin-top: 13px;
-    }
+
+      @media @mobile {
+        padding-left: 10px;
+      }
+  }
   }
 
   .walk {
@@ -46,11 +100,28 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 25px 0 15px 0;
+      width: @width100;
+      margin-top: 35px;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @mobile {
+        width: @width100;
+        padding: 0 15px;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @mobile {
+          margin-top: 10px;
+        }
       }
 
       p {
@@ -58,18 +129,44 @@
       }
 
       .btn {
+
+        button {
+        #mixins.btn-style;
+
+        &:hover {
+          #mixins.btn-style(#222D3F, white, 6px 17px, 1.8rem, 6px)
+        }
+
+        @media @mobile {
+          #mixins.btn-style(white, #222D3F, 25px 190px, 1.6rem, 6px);
+          white-space: nowrap;
+        }
+
+        @media @mobile {
+          &:hover {
+            #mixins.btn-style(#222D3F, white, 25px 190px, 1.7rem, 6px);
+            white-space: nowrap;
+          }
+        }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: @width100;
+        margin-left: 0;
+        padding: 0 15px 20px 15px;
+      }
       
       img {
-        width: 100%;
+        width: @width100;
         height: auto;
         border-radius: 10px;
       }
     }
   }
-}// home
+ // home

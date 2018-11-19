@@ -1,1 +1,16 @@
-// Mixins Here
+// ================================ Mixins ======================================
+
+@img-none: none;
+@width100: 100%;
+
+// ================================ Parametric Mixin ============================
+
+#mixins() {
+    .btn-style(@btn-color: white, @btn-background: #222D3F, @btn-padding: 6px 17px, @btn-fontsize: 1.8rem, @btn-radius: 6px) {
+        color: @btn-color;
+        background: @btn-background;
+        padding: @btn-padding;
+        font-size: @btn-fontsize;
+        border-radius: @btn-radius;
+    }
+}
