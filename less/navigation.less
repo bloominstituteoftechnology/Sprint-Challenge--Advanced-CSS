@@ -6,12 +6,20 @@
     h1 {
         font-size: 4rem;
         margin: 0 0 15px 0;
+
+        @media @mobile {
+            margin: 13px 0 18px 25px;
+        }
     }
 
     nav {
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 11px;
+
+        @media @mobile {
+            margin-left: 15px;
+        }
 
         a {
             margin: 0 16px;
