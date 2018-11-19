@@ -344,9 +344,10 @@ footer {
   .walk .walk-text .btn button:hover {
     color: #222D3F;
     background: white;
-    padding: 25px 200px;
+    padding: 25px 190px;
     font-size: 1.7rem;
     border-radius: 6px;
+    white-space: nowrap;
   }
 }
 .walk .walk-img {
