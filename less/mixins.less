@@ -1,1 +1,38 @@
 // Mixins Here
+.evenly-center() {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-btn(@color, @bg-color) {
+    color: @color;
+    background: @bg-color;
+    border-radius: 5px;
+    width: 30%;
+    padding: 11px 4px 10px 1px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    text-align: center;
+
+    &:hover {
+        color: @bg-color;
+        background: @color;
+        border: 0.5px solid black;
+
+        a {
+            color: @btn-bg;
+        }
+    }   
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.ninety-five() {
+    width: 95%;
+    margin: 0 auto;
+}
