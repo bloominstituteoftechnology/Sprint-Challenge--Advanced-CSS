@@ -1,60 +1,34 @@
-// Navigation code here
-.hnav{
-    #mixins.layout(space-between, center);
-    background: #F1F2F5;
-    display: flex;
-    padding: 2.8%;
-    flex-direction: column;
-    
-
-
-
+header {
     width: 100%;
-    height: 96px;
-    
-    border-bottom: #F1F1F1;
+    height: 100px;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
     position: fixed;
-
-
-
-
-
-
-
-
-
-
-
-    @media @mobile {
-      
-   
-      } 
-    
-    
-
-    .mtext h1{
-        font-size: 2.7rem;
+    top: 0;
+  
+    .nav-container {
+      height: 100%;
+      flex-wrap: wrap;
+      .center;
+  
+      .logo-heading {
+        width: 100%;
+        font-size: 4rem;
+        padding-top: 3px;
+        .center;
+        
+      }
+  
+      nav {
+        width: 440px;
+        display: flex;
+        justify-content: space-evenly;
+  
+        a {
+          font-size: 1.6rem;
+          color: @nav-font;
+          text-decoration: none;
+        }
+      }
     }
-
-   .mnav {
-      
-       width: 100%;
-       text-align: center;
-       font-size: 1.5rem;
-       margin: 4.8px;
-
-
- 
-
-
-    }
-
-    .mnav a{
-     
-        padding-right: 16.3px;
-        text-decoration: none
-    }
-
-
-
-}
+  } // .main-navigation
