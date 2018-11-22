@@ -1,1 +1,55 @@
 // Navigation code here
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: @nav-bg;
+  padding-top: 15px;
+  border-bottom: 2px solid @nav-border;
+
+
+
+  h1>a {
+    font-size: 4rem;
+    text-decoration: none;
+    color: @nav-font;
+
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    position: relative;
+
+    @media @mobile {
+      width: 90%;
+    }
+
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @nav-font;
+      margin: 15px 0 13px 0;
+
+      &:hover {
+        color: @waterloo;
+      }
+    }
+
+
+  }
+
+}

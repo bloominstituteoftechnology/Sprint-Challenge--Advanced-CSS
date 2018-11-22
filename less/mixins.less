@@ -1,1 +1,31 @@
 // Mixins Here
+
+#mixins() {
+  .btn-primary(@width, @top-bottom) {
+    display: block;
+    text-align: center;
+    width: @width;
+    padding: @top-bottom 0;
+    font-size: 1.6rem;
+    border: 1px solid @shuttle-gray;
+    font-weight: 600;
+    color: @sea-shell;
+    background: @shuttle-gray;
+
+    &:hover {
+      color: @wild-sand;
+      background: @ebony-clay;
+
+    }
+
+    &:active {
+      transform: translateY(4px);
+    }
+  }
+
+  .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+  }
+}
