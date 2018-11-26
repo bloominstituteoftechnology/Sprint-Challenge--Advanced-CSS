@@ -50,9 +50,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+      @media @phone{
+        display: flex;
+        flex-direction: column-reverse;
+      }
 
     .walk-text {
       width: 50%;
+        @media @phone{
+          width: 100%;
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -64,11 +71,13 @@
 
       .btnc {
         @media @phone{
-          background:rgba(10, 9, 61, 0.986);
+          background:rgba(25, 25, 51, 0.986);
           .color(white);
           width:100%;
-          font-size: 24px;
-          padding: 24px 200px;
+          font-size: 20px;
+          padding: 12px 175px;
+          display: flex;
+          flex-direction: column-reverse;
         }
       }
     }
@@ -76,13 +85,18 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+        @media @phone{
+          width: 100%;
+        }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+      }
     }
-  }
+  
+
 // home
 //finished 

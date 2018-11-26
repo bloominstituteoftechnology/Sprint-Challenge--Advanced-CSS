@@ -189,7 +189,7 @@ p {
   }
 }
 .top-content {
-  background: #bebdbd;
+  background: #dbd6d6;
 }
 @media (max-width: 500px) {
   .top-content {
@@ -206,6 +206,9 @@ p {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
+  font-size: 16px;
+  margin: 0 500px 0 500px;
+  padding-bottom: 10px;
 }
 .top-content nav a {
   color: black;
@@ -215,7 +218,7 @@ p {
   width: 100%;
 }
 .btnc {
-  background: darkblue;
+  background: #292952;
   color: white;
   border-radius: 4px;
   font-size: 1.6rem;
@@ -273,8 +276,19 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
 }
 .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -284,16 +298,23 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-text .btnc {
-    background: rgba(10, 9, 61, 0.986);
+    background: rgba(25, 25, 51, 0.986);
     color: white;
     width: 100%;
-    font-size: 24px;
-    padding: 24px 200px;
+    font-size: 20px;
+    padding: 12px 175px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .walk .walk-img {
+    width: 100%;
+  }
 }
 .walk .walk-img img {
   width: 100%;
