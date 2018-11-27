@@ -1,0 +1,30 @@
+body{
+	background:url("https://images.unsplash.com/photo-1462332420958-a05d1e002413?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c1afa104c52b0441abd7dcaf3da65146&auto=format&fit=crop&w=1340&q=80");
+	background-size:cover;
+	font-family: 'Lato', sans-serif;	font-family: bold;
+	color: white;
+}
+
+html{
+	height:100%;
+}
+
+.match{
+	text-align:center;
+	margin-top:25%;
+}
+
+h3{
+	font-size: 55px;
+}
+
+p{
+	font-family: 'Mukta Mahee', sans-serif;
+	font-size: 17px;
+}
+
+hr{
+	width: 400px;
+	border-bottom: 1px solid grey;
+	border-top: 2px solid #f8f8f8;
+}
