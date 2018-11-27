@@ -71,6 +71,7 @@ Your finished project must include all of the following requirements:
 
 * [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
+```markdown
 1.`variables.less`
 2.`mixins.less`
 3.`reset.less`
@@ -78,6 +79,7 @@ Your finished project must include all of the following requirements:
 5.`navigation.less`
 6.`footer.less`
 7.`home-page.less`
+```
 
 _You will know everything is working properly when you see the styles enabled for the provided content._  
 
