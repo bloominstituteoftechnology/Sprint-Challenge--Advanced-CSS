@@ -1,1 +1,204 @@
-// Mixins Here
+// General reusable styles
+
+.container-centering() {
+    max-width: @container-max-width;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @device-size[tablet-dfirst] {
+        width: 95%;
+    }
+}
+
+.make-flex(@flex-direction: row, @justify-content: flex-start,@align-items: flex-start, @wrap: nowrap) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+.remove-hyperlink-styling() {
+    color: black;
+    text-decoration: none;
+}
+
+.offset-border-effect(@border-size, @border-type, @border-color) {
+    border: @arguments;
+    margin-left: @border-size / -2px;
+    margin-bottom: @border-size * -2px;
+}
+
+.full-tablet-width() {
+    @media @device-size[tablet-dfirst] {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.full-mobile-width() {
+    @media @device-size[phone] {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.button-style(@font-size: 1.6rem, @desktop-height: 20px, @desktop-width: 7.5%, @bg-color: @btn-bg-color, @font-color: @btn-font-color, @hover-bg-color: @font-color, @hover-font-color: @bg-color) {
+    display: inline-block;
+    background-color: @bg-color;
+    color: @font-color;
+    cursor: pointer;
+    font-size: @font-size;
+    font-weight: bold;
+    padding: @desktop-height @desktop-width;
+    #prefixed > .border-radius(7.5px);
+    margin: 10px;
+
+    @media @device-size[phone] {
+        display: block;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: @hover-bg-color;
+        color: @hover-font-color;
+        border: 1px dashed @ebony-clay;
+        #prefixed > .transition-control(200ms);
+    }
+
+    &:active {
+        font-weight: normal;
+        border: 1px dotted @ebony-clay;
+    }
+}
+
+// Form styles
+
+#spacewalkers-sub-form {
+    .form--label() {
+        display: block;
+        font-size: 1.8rem;
+        font-family: "Russo One";
+    }
+
+    .form--textfield() {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid @shuttle-gray;
+        #prefixed > .border-radius(5px);
+        margin: 10px 0 20px;
+    }
+
+    .form--textarea() {
+        display: block;
+        font-family: Roboto;
+        width: 90%;
+        height: 100px;
+        padding: 10px 20px;
+        margin: 10px 0 20px;
+    }
+
+    .form--submit-button() {
+        background-color: @waterloo;
+        display: inline-block;
+        color: @snow;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 10px 25px;
+        border: 1px solid @ebony-clay;
+        #prefixed > .border-radius(3px);
+        #prefixed > .box-shadow(inset 0px -3px 7px 0px @shuttle-gray);
+        margin-left: 1%;
+    
+        &:hover {
+            background-color: @shuttle-gray;
+            #prefixed > .transition-control(500ms);
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
+}
+
+#login-form {
+    .form--label() {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-family: "Russo One";
+        width: 10%;
+        margin-right: 10%;
+    }
+
+    .form--textfield() {
+        width: 50%;
+        padding: 10px 20px;
+        border: 1px solid @shuttle-gray;
+        #prefixed > .border-radius(5px);
+        margin: 10px 5% 20px;
+    }
+
+    .form--submit-button() {
+        background-color: @waterloo;
+        display: inline-block;
+        color: @snow;
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px 25px;
+        border: 1px solid @ebony-clay;
+        #prefixed > .border-radius(3px);
+        #prefixed > .box-shadow(inset 0px -3px 7px 0px @shuttle-gray);
+        margin-left: 1%;
+    
+        &:hover {
+            background-color: @shuttle-gray;
+            #prefixed > .transition-control(500ms);
+        }
+
+        &:active {
+            position:relative;
+            top:1px;
+        }
+    }
+}
+
+// Vendor prefixing aids
+
+#prefixed {
+    .transition-control(@duration, @delay: 0) {
+        -webkit-transition-duration: @duration;
+        -moz-transition-duration: @duration;
+        -o-transition-duration: @duration;
+        -ms-transition-duration: @duration;
+        transition-duration: @duration;
+        -webkit-transition-delay: @delay;
+        -moz-transition-delay: @delay;
+        -o-transition-delay: @delay;
+        -ms-transition-delay: @delay;
+        transition-delay: @delay;
+        -webkit-transition-property: all;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        -ms-transition-property: all;
+        transition-property: all;
+    }
+
+    .border-radius(@radius) {
+        -webkit-border-radius: @radius;
+        -moz-border-radius: @radius;
+        -o-border-radius: @radius;
+        -ms-border-radius: @radius;
+        border-radius: @radius;
+    }
+
+    .box-shadow(...) {
+        -webkit-box-shadow: @arguments;
+        -moz-box-shadow: @arguments;
+        -o-box-shadow: @arguments;
+        -ms-box-shadow: @arguments;
+    }
+}
