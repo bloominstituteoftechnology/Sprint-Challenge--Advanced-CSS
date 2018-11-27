@@ -1,1 +1,65 @@
 // Navigation code here
+
+.nav-container {
+    //background: @nav-bg;
+    //adding opacity to background
+
+    background: fade(@nav-bg, 15%);
+    color: @nav-font;
+    border: 1px solid @nav-border;
+    
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+
+    
+}
+
+.nav {
+    .flexCenter();
+    //display: flex;
+    justify-content: space-around;
+    //align-items: center;
+    flex-wrap: wrap;
+    
+    width: 41%;
+    margin: 1.3rem auto 1rem auto;
+
+    @media @phone {
+        width:82%;
+    }
+
+    .link {
+        font-size:1.7rem;
+        margin-top:1.8rem;
+
+        //get rid of basic link styles
+        text-decoration: none;
+        color:black;
+
+        
+
+        &:hover {      
+            animation-duration: 3s;
+            animation-name: rotateAndBlink;
+
+            @keyframes rotateAndBlink {
+                
+                25%{transform: rotate(180deg); opacity: .8;}
+                60%{transform: rotate(300deg);  opacity:.4;}
+                100%{transform: rotate(360deg);  opacity: 1;}
+            }
+        }
+    }
+
+    .text-logo-wrapper {
+        width: 100%;
+        text-align:center;
+
+        h1 {
+            font-size: 4rem;
+        }
+    } //logo wrapper
+
+
+} // nav

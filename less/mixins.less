@@ -1,1 +1,32 @@
 // Mixins Here
+
+.responsiveImg() {
+    width: 100%;
+    height: auto;
+}
+
+.flexCenter() {
+    display:flex;
+    align-items: center;
+}
+/*
+.btnFactory() {
+    background: @btn-bg-color;
+    width: 30%;
+    border-radius: .5rem;
+    padding: .9rem 1.8rem;//9px 18px;
+    font-size:  1.9rem;//19px;
+    font-weight: bold;    
+}
+*/
+
+.btnFactory(@padTB; @padLR;) {
+    background: @btn-bg-color;
+    color:white;
+    //width: 30%;
+    border-radius: .5rem;
+    //padding: .9rem 1.8rem;//9px 18px;
+    padding: @padTB @padLR;
+    
+    font-weight: bold;    
+}
