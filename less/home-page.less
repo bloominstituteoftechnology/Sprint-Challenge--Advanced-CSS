@@ -1,19 +1,23 @@
 // Home Content
 
 .home {
-
-  .intro {
-
-    h2 {
-      padding: 15px;
+  .CTA {
+    img {
+      @media @phone {
+        height: auto;
+        width: 100%;
+      }
     }
-
-    p {
-      padding:0 15px;
+    .lift-off {
+      padding: 2px 15px;
+      h2 {
+        margin-top: 11px;
+      }
+      p {
+        margin-top: 13px;
+      }
     }
-  
   }
-
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +28,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        height: auto;
+        width: 100%;
+        margin: 20px 5%;
+      }
+    }
+    .sky, .launch {
+      @media @phone {
+        display: none;
+        margin: 20px 4.5%;
+      }
     }
   }
 
@@ -37,33 +52,54 @@
     p {
       margin-top: 13px;
     }
+    @media @phone {
+      margin-bottom: 18px;
+    }
   }
 
   .walk {
     margin-top: 60px;
+    margin-bottom: 16px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 49px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-wrap: wrap-reverse;
+      padding: 20px 4%;
+      margin-top: 0px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+        margin: 22px 0 33px;
+      }
 
       h3 {
         margin-bottom: 10px;
       }
 
       p {
-        margin-bottom: 26px;
+        margin-bottom: 24px;
       }
-
+    
       .btn {
+        .button(12%, 30%);
+        @media @phone {
+          .button(30%, 100%);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;

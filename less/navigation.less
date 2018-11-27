@@ -1,1 +1,24 @@
-// Navigation code here
+.intro {
+    .TopNav {
+        .either-flex(column, center);
+        margin-top: 12px;
+        background-color: @nav-bg;
+        border: 1px solid @nav-border;
+    h1 {
+        margin-bottom: 20px;
+    }
+    nav {
+        margin-bottom: 12px;
+        .either-flex(row, space-between);
+        width: 37%;
+        @media @phone {
+            width: 76%;
+        }
+            a {
+                color: @nav-font;
+                text-decoration: none;
+                font-size: 1.6rem;
+            }
+    }
+    }
+}
