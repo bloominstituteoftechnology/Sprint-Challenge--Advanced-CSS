@@ -1,1 +1,36 @@
 // Mixins Here
+
+.std-image(@w: 100%, @h: auto, @br: 5px) {
+  width: @w;
+  height: @h;
+  border-radius: @br;
+}
+
+.fade-in-animation(){
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.custom-button(@color, @width) {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 8px 0%;
+  border-radius: 3px;
+  background-color: @color;
+  width: @width;
+
+  &:hover {
+    color: @color;
+    background-color: white;
+  }
+}

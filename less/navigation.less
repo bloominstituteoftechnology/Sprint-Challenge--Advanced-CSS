@@ -1,1 +1,25 @@
 // Navigation code here
+
+.main-nav nav{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid @nav-border;
+  .fade-in-animation();
+
+  @media @phone {
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 82%;
+  }
+
+  a {
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 1.6rem;
+    padding: 0 2%;
+  }
+
+
+}
