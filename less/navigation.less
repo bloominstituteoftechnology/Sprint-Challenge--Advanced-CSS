@@ -1,1 +1,49 @@
 // Navigation code here
+//
+.navigation {
+  .flex-wrap-center();
+  padding: 15px 0;
+  font: @nav-font;
+  background-color: @nav-bg;
+  border-bottom: @nav-border;
+
+  .nav-container {
+    .flex-wrap-center();
+
+    h1 {
+      width: 100%;
+      font-size: 3.5rem;
+      text-align: center;
+    }
+
+    .links {
+      .flex-wrap-center();
+      width: 70%;
+      @media @phone {
+        width: 100%;
+      }
+      padding-top: 25px;
+
+      a {
+        .flex-wrap-center();
+        width: 20%;
+        color: @header-font-color;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font: @nav-font;
+      }
+    }
+  }
+}
+
+.btn-mine {
+  .btn-mix();
+  a {
+    .link-format();
+    color: white;
+  }
+
+  &:hover {
+    .btn--hover();
+  }
+}
