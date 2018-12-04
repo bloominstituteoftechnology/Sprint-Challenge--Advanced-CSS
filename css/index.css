@@ -198,8 +198,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  width: 30%;
-  border-radius: 25px;
+  width: 32%;
+  border-radius: 125px;
 }
 .bottom-content {
   padding-bottom: 5px;
@@ -217,6 +217,7 @@ h2 {
   background-color: lightblue;
   color: white;
   margin-top: 10px;
+  margin-left: 20%;
   border-radius: 5px;
   height: 40px;
   width: 15%;
