@@ -1,23 +1,61 @@
 // Home Content
 
 .home {
+  @media @phone {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
 
   .intro {
+    @media @phone {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+
+    }
+    img {
+      @media @phone {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+
+      }
+
+    }
 
     h2 {
       padding: 15px;
+
     }
 
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .blast {
+        width: 95%;
+      }
+      .sky, .launch {
+        display: none;
+      }
+
+    }
+
 
     img {
       width: 28%;
@@ -40,6 +78,17 @@
   }
 
   .walk {
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 0;
+      margin-top: 5%;
+      margin-bottom: 5%;
+
+    }
+
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -49,6 +98,14 @@
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+        margin-top: 5%;
+      }
+
       h3 {
         margin-bottom: 10px;
       }
@@ -57,18 +114,45 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      /* Used Mixin in mixins.less */
+
+
+      /* .btn {
+        border: 1px solid;
+        display: flex;
+        width: 100px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Russo One', sans-serif;
+        color: #fff;
+        background-color: @header-font-color;
+        border-radius: 5px;
+        font-size: 1.5rem;
+
+      } */
     }
 
     .walk-img {
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 95%;
+
+      }
+
       width: 46%;
       margin-left: 4%;
-      
+
       img {
+
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
   }
