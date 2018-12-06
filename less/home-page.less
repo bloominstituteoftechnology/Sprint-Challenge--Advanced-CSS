@@ -3,6 +3,31 @@
 .home {
 
   .intro {
+    .backgrounded {
+      .background();
+      .absolute();
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-top: 1rem;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    img {
+      width: 80rem;
+      height: auto;
+      margin-top: 10rem;
+
+      @media @phone {
+        width: 50rem;
+        height: auto;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -19,16 +44,41 @@
     flex-wrap: wrap;
     width: 100%;
 
+    
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
+
+    .rocket {
+      @media @phone {
+        width: 93%;
+        padding-left: 1.2rem;
+      }
+    }
+
+    .ring {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .shuttle {
+      @media @phone {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
     padding: 15px;
+
+    @media @phone {
+      padding-bottom: 0rem;
+    }
 
     h3 {
       margin-top: 11px;
@@ -39,6 +89,15 @@
     }
   }
 
+  button {
+    .button-creator(10rem, 3.6rem, @shuttle-gray, white, 1.7rem);
+
+    @media @phone {
+      .button-creator(38rem, 7rem, @shuttle-gray, white, 1.7rem);
+    }
+  }
+  
+
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -46,8 +105,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      margin-top: 3.1rem;
+      padding-top: 3rem;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        padding: 0rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,14 +126,17 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 122%;
+        margin-left: -4rem;
+        padding: 0;
+      }
       
       img {
         width: 100%;
@@ -72,4 +145,4 @@
       }
     }
   }
-}// home
+}
