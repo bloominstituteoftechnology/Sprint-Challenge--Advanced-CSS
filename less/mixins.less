@@ -1,23 +1,32 @@
 // Mixins Here
 
-.button(@width); {
-  background-color: black;
-  color: white;
-  margin: 0 auto;
-  width: @width;
-  height: 25px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  padding-top: 5px;
-}
-
-.nav-button(); {
-  display: block;
-  text-decoration: none;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-.flex(); {
+.flex(@justify, @align){
   display: flex;
+  justify-content: @justify;
+  align-items: @align;
+
+}
+
+.link() {
+  text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color:@river-bend;
+  font-weight: bolder;
+
+}
+.buttonizer(@color, @width, @padding){
+  border-radius: 5px;
+  background-color: @color;
+  width: @width;
+  padding: @padding;
+  font-family: 'Ubuntu', sans-serif;
+  color: @porcelain;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bolder;
+  &:hover {
+    background-color: @porcelain;
+    color: @color;
+  }
 }
