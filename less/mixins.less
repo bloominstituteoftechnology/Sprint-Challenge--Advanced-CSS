@@ -9,15 +9,15 @@
     
     }
 img {
-    .bckgrnd;
+    .bckgrnd();
 }
 
-.style {
-    border: 2px solid blue;
+.style(@width; @style; @color) {
+    border: @width @style @color;
 }
 
 .header-img {
-    .style;
+    .style(2px; solid; blue);
 }
 
 .btn {
@@ -42,5 +42,5 @@ img {
         }
 }
 button {
-    .btn;
+    .btn();
 }
