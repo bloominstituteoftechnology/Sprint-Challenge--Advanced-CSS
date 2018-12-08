@@ -1,1 +1,37 @@
-// Navigation code here
+.container {
+    .top {
+        #mixins.center-vertical;
+        
+        width: 150%;
+        padding: 2% 0;
+        margin-left: -25%;
+        background-color: @nav-bg;
+        margin-top: -1%;
+        margin-bottom: -7%;
+        @media @phone {
+            // padding-left: 20%;
+        }
+      
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 2%;
+            @media @phone {
+                margin-bottom: 3%;
+                margin-top: 1%;
+            }
+        }
+        nav {
+            font-size: 1.6rem;
+            width: 31%;
+            #mixins.space-between;
+            @media @phone {
+                display: flex;
+                width: 50%;
+            }
+            a {
+                text-decoration: none;
+                color: @header-font-color;
+            }
+        }
+    }
+}
