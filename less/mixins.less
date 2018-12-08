@@ -1,16 +1,14 @@
 // Mixins below variables
 
-.btn-creator(@bgcolor, @color) {
-  font-size: 1.6rem;
-  width: 175px;
-  height: 25px;
-  background-color: @bgcolor;
-  color: @color;
-  border-radius: 15px;
-  margin: 20px;
-  .flex-centered;
+.btn (@padding: 1%, @border-radius: 3px) {
+	padding: @padding;
+	border-radius: @border-radius;
+	color: @btn-font-color;
+	background: @btn-bg-color;
+	width: 15%;
+	text-align: center;
 }
 
-.btn {
-	.btn-creator(@shark, @white)
+.margin (@margin-left: 3.5%) {
+	margin-left: @margin-left;
 }

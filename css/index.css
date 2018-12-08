@@ -178,8 +178,7 @@ footer p {
 .container {
   max-width: 880px;
   width: 100%;
-  margin-left: 9%;
-  margin-right: 9%;
+  margin: auto;
 }
 .container .top-img {
   margin-left: 3.5%;
@@ -201,6 +200,11 @@ footer p {
   padding-top: 12px;
   line-height: 1.5;
 }
+@media (max-width:500px) {
+  .container .top-content {
+    width: 95%;
+  }
+}
 .container .three-imgs {
   margin-left: 5.1%;
   padding-top: 15px;
@@ -211,8 +215,25 @@ footer p {
   height: 174.75px;
   border-radius: 20px;
 }
+@media - (max-width:500px) {
+  .container .three-imgs .img:first-child {
+    display: block;
+    width: 85%;
+    height: 300px;
+  }
+}
+@media (max-width:500px) {
+  .container .three-imgs .middle {
+    display: none;
+  }
+}
 .container .three-imgs .img:last-child {
   margin-right: 0;
+}
+@media (max-width:500px) {
+  .container .three-imgs .img:last-child {
+    display: none;
+  }
 }
 .container .middle-content {
   margin-left: 3.5%;
@@ -252,8 +273,32 @@ footer p {
   width: 37%;
   line-height: 1.5;
 }
+.container .bottom-content .btn {
+  padding: 1%;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background: #34363A;
+  width: 15%;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .container .bottom-content .btn {
+    width: 90%;
+  }
+}
 .container .bottom-content .img2 {
   width: 42%;
   margin-right: 3%;
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .container .bottom-content .img2 {
+    width: 85%;
+  }
+}
+@media (max-width:500px) {
+  .container .bottom-content {
+    flex-direction: column;
+    align-items: center;
+  }
 }
