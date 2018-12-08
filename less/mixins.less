@@ -8,29 +8,16 @@
     align-items: center;
     
     }
-img {
-    .bckgrnd();
-}
+
 
 .style(@width; @style; @color) {
     border: @width @style @color;
 }
 
-.header-img {
-    .style(2px; solid; blue);
-}
 
-.btn {
-    width: 100%;
-    padding: 10px;
-    box-shadow: inset 0 0 10px white, 0 0 5px blue;
-    background: darkblue;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-
+.btn (@width; @padding; @box-shadow; @background; @font-size; @letter-spacing; @color; @cursor; @border-radius) {
+    border: @width @padding @box-shadow @background @font-size @letter-spacing @color @cursor @border-radius;
+    
     @media @phone {
         width: 100%;
         height: auto;
@@ -40,7 +27,4 @@ img {
             background: lightblue;
             color: black;
         }
-}
-button {
-    .btn();
 }
