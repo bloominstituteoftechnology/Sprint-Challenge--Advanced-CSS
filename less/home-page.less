@@ -44,14 +44,14 @@
 		}
 
 		.img:first-child {
-			@media-@phone {
+			@media @phone {
 				display: block;
 				width: 85%;
 				height: 300px;
 			}
 		}
 
-		.middle {
+		.img.img.middle {
 			@media @phone {
 				display: none;
 			}
@@ -91,7 +91,7 @@
 		width: 93%;
 	}
 
-	.bottom-content {
+	section.bottom-content {
 		margin-left: 10%;
 		display: flex;
 		flex-direction: column;
@@ -126,7 +126,8 @@
 			border-radius: 5px;
 
 			@media @phone {
-				width: 85%;
+				width: 90%;
+				.margin;
 			}
 
 		}
@@ -134,7 +135,20 @@
 		@media @phone {
 			flex-direction: column;
 			align-items: center;
+			width: 90%;
+			flex-wrap: nowrap;
+			height: 600px;
+			.margin;
 
+				h2 {
+					margin-left: 0;
+					margin-right: 125px;
+				}
+
+				p {
+					text-align: left;
+					width: 90%;
+				}
 		}
 	}
 }
