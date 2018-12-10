@@ -15,11 +15,15 @@
 }
 
 
-.btn (@width; @padding; @box-shadow; @background; @font-size; @letter-spacing; @color; @cursor; @border-radius) {
-    border: @width @padding @box-shadow @background @font-size @letter-spacing @color @cursor @border-radius;
-        
-        :hover {
-            background: lightblue;
-            color: black;
+.btn (@background, @color, @borderColor, @padding, @borderRadius) {
+    background: @background;
+    color: @color;
+    border: 1px solid @borderColor;
+    padding: @padding;
+    border-radius: @borderRadius;
+
+    &:hover {
+        background: lightblue;
+        color: black;
         }
-}
+    }

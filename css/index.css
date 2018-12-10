@@ -6,62 +6,6 @@
   display: flex;
   align-items: center;
 }
-img {
-  width: 100%;
-  border: 2px solid skyblue;
-  background: skyblue;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-}
-.style {
-  border: 2px solid blue;
-}
-.header-img {
-  border: 2px solid blue;
-}
-.btn {
-  width: 100%;
-  padding: 10px;
-  box-shadow: inset 0 0 10px white, 0 0 5px blue;
-  background: darkblue;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-@media (max-width: 500px) {
-  .btn {
-    width: 100%;
-    height: auto;
-  }
-}
-.btn :hover {
-  background: lightblue;
-  color: black;
-}
-button {
-  width: 100%;
-  padding: 10px;
-  box-shadow: inset 0 0 10px white, 0 0 5px blue;
-  background: darkblue;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-}
-@media (max-width: 500px) {
-  button {
-    width: 100%;
-    height: auto;
-  }
-}
-button :hover {
-  background: lightblue;
-  color: black;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -225,7 +169,9 @@ p {
   margin: 0 auto;
 }
 .navigation {
+  max-width: 1024px;
   width: 100%;
+  margin: 0 auto;
   padding: 20px;
   padding-bottom: 5px;
   display: flex;
@@ -244,7 +190,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 10px;
   font-size: 1.6rem;
   color: black;
 }
@@ -260,6 +206,9 @@ footer {
 }
 h1 {
   margin-bottom: 2%;
+}
+.home .header-img {
+  border: 2px solid blue;
 }
 .home .intro h2 {
   padding: 15px;
@@ -277,6 +226,12 @@ h1 {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  width: 100%;
+  border: 2px solid skyblue;
+  background: skyblue;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -342,4 +297,21 @@ h1 {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home button {
+  background: darkblue;
+  color: white;
+  border: 1px solid blue;
+  padding: 2.5%;
+  border-radius: 5px;
+}
+.home button:hover {
+  background: lightblue;
+  color: black;
+}
+@media (max-width: 500px) {
+  .home button {
+    width: 100%;
+    height: auto;
+  }
 }
