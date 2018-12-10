@@ -1,1 +1,29 @@
 // Mixins Here
+.bckgrnd {
+    width: 100%;
+    border: 2px solid skyblue;
+    background: skyblue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+    }
+
+
+.style(@width; @style; @color) {
+    border: @width @style @color;
+}
+
+
+.btn (@background, @color, @borderColor, @padding, @borderRadius) {
+    background: @background;
+    color: @color;
+    border: 1px solid @borderColor;
+    padding: @padding;
+    border-radius: @borderRadius;
+
+    &:hover {
+        background: lightblue;
+        color: black;
+        }
+    }
