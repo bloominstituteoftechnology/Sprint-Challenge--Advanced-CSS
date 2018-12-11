@@ -1,0 +1,360 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.signup-home {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-left: 0%;
+  background-color: #F6F6F6;
+  flex-direction: column;
+}
+.nav h2 {
+  margin-bottom: 20px;
+}
+.nav nav {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .nav nav {
+    width: 70%;
+  }
+}
+.nav nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #0d0d0d;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .top-img img {
+  border-radius: 8px;
+  width: 95%;
+  margin-left: 2%;
+}
+@media (max-width:500px) {
+  .home .top-img img {
+    width: 100%;
+    margin-left: inherit;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .home .walk {
+    width: 90%;
+    margin-left: 2%;
+    display: flex;
+    padding: inherit;
+    flex-direction: column-reverse;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-left: 3%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    margin-bottom: 20px;
+  }
+}
+.home .walk .walk-text .btn button {
+  font-size: 2rem;
+  padding: 8px 7.5% 8px 7.5%;
+  background-color: #22283A;
+  color: #F1F1F1;
+  border-radius: 8px;
+  font-family: monospace;
+}
+.home .walk .walk-text .btn button:hover {
+  color: #22283A;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn button {
+    padding-right: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40%;
+  }
+}
+.home .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk-img {
+    width: 100%;
+    margin-left: inherit;
+    margin-bottom: 20px;
+  }
+}
+.home .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.signup-home .video {
+  width: 100%;
+}
+.signup-home .video iframe {
+  width: 100%;
+}
+.signup-home .motivation {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.signup-home .tour-img img {
+  max-width: 780px;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .signup-home .tour-img img {
+    width: 100;
+  }
+}
+.signup-home .input form {
+  display: flex;
+  width: 40%;
+  font-size: 3rem;
+  flex-direction: column;
+}
+.signup-home .input form input {
+  font-size: 3rem;
+  border: 3px #5E6164;
+  background: #81848E;
+}
