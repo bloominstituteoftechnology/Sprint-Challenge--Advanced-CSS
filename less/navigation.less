@@ -1,1 +1,31 @@
 // Navigation code here
+
+.navigation {
+    .column-centered();
+    .nav-styling();
+
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            .link-styling(@header-font-color);
+        }
+
+        @media @phone {
+            width: 80%;
+        }
+    }
+}
+
+.contact-nav{
+    position: fixed;
+    width: 100%;
+    opacity: 0.85;
+}
