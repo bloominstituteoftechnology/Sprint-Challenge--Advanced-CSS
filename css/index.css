@@ -132,6 +132,8 @@ table {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
+  width: 800px;
+  margin: 0 auto;
 }
 h1,
 h2,
