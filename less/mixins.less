@@ -1,1 +1,16 @@
 // Mixins Here
+.no-link(@color){
+    text-decoration: none;
+    color:@color;
+}
+.btn-layout(@background, @color, @border-radius){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: @background;
+    color:@color;
+    border-radius: @border-radius;
+    font-size: 1.5rem;
+    font-weight: 1000;
+}
