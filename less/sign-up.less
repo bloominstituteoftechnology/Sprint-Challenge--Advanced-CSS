@@ -1,0 +1,76 @@
+header {
+    .header-img {
+        width: 100%;
+    }
+}
+.container-main {
+max-width: 800px;
+width: 95%;
+   margin-left: 15px;
+  
+}
+
+form {
+   .center();
+     width: 100%;
+     margin-bottom: 25px;
+
+    .sign-form {
+        font-size: @font-size;
+
+        h1 {
+            .center();
+        }
+
+        p {
+            .center();
+        }
+
+        input {
+            font-size: 1.3rem;
+        }
+      
+          input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: 1px solid @main-border-color;
+          background: white;
+          color: black;
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          outline: none;
+        }
+
+        hr {
+            border: 2px solid @nav-border;
+            margin-bottom: 25px;
+          }
+          
+          
+          button {
+              .custom-btn();
+              margin-top: 15px;
+              margin-bottom: 15px;
+              transition: 2s;
+          
+              &:hover {
+                background-color: white;
+                color: black;
+              }
+          } //button
+          
+         .cancelbtn {
+            padding: 14px 20px;
+            padding-top: 5px;
+           }
+          
+          .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+          }
+    }
+ } //form
+
