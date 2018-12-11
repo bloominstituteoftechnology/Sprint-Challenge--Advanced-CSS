@@ -1,1 +1,22 @@
 // Mixins Here
+
+//font
+
+
+
+//parametric mixen
+
+.button (@color, @width, @height, @backgroundColor) {
+	color: @color;
+	width: @width;
+	height: @height;
+	background-color: @backgroundColor;
+	&:hover {
+		color:black;
+		background-color: @shuttle-gray;
+	}
+}
+
+.borderRad (@radius: 10px) {
+	border-radius: @radius;
+}

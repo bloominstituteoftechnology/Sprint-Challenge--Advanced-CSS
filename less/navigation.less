@@ -1,1 +1,47 @@
 // Navigation code here
+.head_title {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+		.title {
+			margin: 10px 0px 15px 0px;
+			font-size: 4rem;
+		}
+}
+.navigation_contain {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px 0px 10px 0px;
+	width: 100%;
+
+		.links {
+			padding: 0px 20px 0px 20px;
+			width: 100%;
+			font-size: 1.6rem;
+			font-weight: 700;
+			color: @ebony-clay;
+			text-decoration: none;
+
+			@media @phone {
+				padding: 0px 10px 0px 10px;
+				margin: 0px 0px 5px 0px;
+			}
+
+		}
+}
+
+.header_img_contain {
+	display: flex;
+	justify-content: center;
+
+	.header_img {
+		.borderRad();
+		width: 100%;
+
+		@media @phone {
+			height: 95%;
+		}
+	}
+
+}
