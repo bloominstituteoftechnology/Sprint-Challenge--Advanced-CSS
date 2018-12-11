@@ -1,1 +1,38 @@
 // Mixins Here
+
+.navareaset() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @border-real;
+}
+
+.navlinkset() {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgrs(){
+    animation-name: imageresize;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.25s;
+}
+
+.btnsettings(@wi, @he, @bgc, @br, @fs, @fc) {
+    width: @wi;
+    height: @he;
+    background-color: @bgc;
+    border-radius: @br;
+    font-size: @fs;
+    color: @fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
