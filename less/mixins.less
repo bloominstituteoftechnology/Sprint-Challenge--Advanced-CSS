@@ -1,1 +1,26 @@
 // Mixins Here
+.smlImgStyle{
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+}
+.btmImgStyle{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.btnMainStyle(@bgcolor:@btn-bg-color,@color:white){
+    background-color: @bgcolor;
+    color:@color;
+    width:30%;
+    border-radius:5px;
+    font-size:1.8rem;
+    text-align: center;
+    padding:10px 0%;
+    &:hover{
+      background-color: @color;
+      color:@bgcolor;
+    }
+}
+@phone: ~"(max-width:500px)";
