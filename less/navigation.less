@@ -1,1 +1,31 @@
 // Navigation code here
+.nav-container{
+    .flex-center();
+    flex-wrap: wrap;
+    background-color: fade(@nav-bg,75%);
+
+    //fixed nav
+    position: fixed;
+    top:0;
+    width:100%;
+
+    @media @phone {
+        position: static;
+        
+    }
+
+    h1{
+        font-size: 4.2rem;
+        flex:1 1 100%;
+        text-align: center;
+        margin:1rem 0;
+    }
+
+    nav{
+        margin:1rem 0;
+        a{
+            .nav-links(black,1.6rem,0,1rem);
+        }
+    }
+
+}
