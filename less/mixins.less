@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flexJustifyCenter {
+  display:flex;
+  justify-content:center;
+}
+
+.linkStyles {
+  text-decoration: none;
+  color:black;
+}
+
+.buttonStyles (@padding, @color, @background-color, @font-size, @border-radius) {
+  padding: @padding;
+  color: @color;
+  background-color: @background-color;
+  font-size:@font-size;
+  border-radius: @border-radius;
+  
+  &:hover {
+    color:fuchsia;
+    background-color:lightgoldenrodyellow;
+  }
+}
