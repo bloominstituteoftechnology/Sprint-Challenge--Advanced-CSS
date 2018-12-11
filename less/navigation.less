@@ -1,1 +1,40 @@
 // Navigation code here
+.navContainer {
+  width: 100%;
+  background-color: @wild-sand;
+
+  margin: 0 auto;
+  text-align: center;
+
+  .navContainer__head {
+    font-size: 4.0rem;
+  }
+
+  .navContainer__navBar {
+    font-size: 1.8rem;
+
+    width: 100%;
+    max-width: 405px;
+    margin: 0 auto;
+    padding: 15px 0 8px 0;
+
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      color: @river-bend;
+      padding: 5px 10px;
+
+      &:hover {
+        background-color: @shuttle-gray;
+        color: @wild-sand;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  @media @phone {
+    padding-top: 25px;
+  }
+}

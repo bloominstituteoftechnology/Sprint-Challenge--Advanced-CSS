@@ -1,7 +1,6 @@
 // Home Content
 
 .home {
-
   .intro {
 
     h2 {
@@ -11,7 +10,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -24,6 +23,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      img:nth-child(2) {
+        display: none;
+      }
+
+      img:nth-child(3) {
+        display: none;
+      }
+
+      img {
+        width: 92%;
+      }
     }
   }
 
@@ -40,11 +53,10 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 20px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .centerFlex();
 
     .walk-text {
       width: 50%;
@@ -58,18 +70,47 @@
       }
 
       .btn {
+        .btnStyle(@btn-color, @btn-bg);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+
+      img:hover {
+        animation: spin 100s @spin-default;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column;
+      align-items: center;
+
+      padding: 10px 5px;
+
+      .walk-text {
+        width: 95%;
+        order: 1;
+
+        margin-top: 30px;
+      }
+
+      .walk-img {
+        width: 100%;
+        order: 0;
+
+        img:hover {
+          animation: none;
+        }
+      }
+
     }
   }
 }// home
