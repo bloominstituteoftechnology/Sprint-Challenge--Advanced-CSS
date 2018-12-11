@@ -1,0 +1,91 @@
+.about{
+  header {
+    margin-bottom: 30px;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.history {
+  .flex();
+  align-items: center;
+  @media @phone {
+    flex-direction: column;
+  }
+  div {
+    padding: 2%;
+  }
+  .history-text {
+    width: 60%;
+    @media @phone {
+      .width-100();
+    }
+  }
+  .history-img{
+    width: 40%;
+    @media @phone {
+      .width-100();
+    }
+    img{
+      .resp-img();
+      .border-rad-sm();
+    }
+  }
+}
+
+.philosophy {
+  .flex();
+  align-items: center;
+  @media @phone {
+    flex-direction: column;
+  }
+
+  div {
+    padding: 2%;
+  }
+  .philosophy-text {
+    width: 60%;
+    @media @phone {
+      .width-100();
+    }
+  }
+  .philosophy-img{
+    width: 40%;
+    @media @phone {
+      .width-100();
+    }
+    img{
+      .resp-img();
+      .border-rad-sm();
+    }
+  }
+}
+
+.mission {
+  .flex();
+  align-items: center;
+  margin-bottom: 20px;
+  @media @phone {
+    flex-direction: column-reverse;
+  }
+  div {
+    padding: 2%;
+  }
+  .mission-text {
+    width: 40%;
+    @media @phone {
+      .width-100();
+    }
+  }
+  .mission-img{
+    width: 60%;
+    @media @phone {
+      .width-100();
+    }
+    img{
+      .resp-img();
+      .border-rad-sm();
+    }
+  }
+}

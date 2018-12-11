@@ -1,1 +1,43 @@
 // Mixins Here
+
+//Border Radius
+.border-rad-sm () {
+  border-radius: 10px;
+}
+
+.border-rad-lg () {
+  border-radius: 20px;
+}
+
+.main-font-size () {
+  font-size: 1.6rem;
+}
+
+
+// Buttons
+.btn-signup (@color: #ffffff, @bg-color: @ebony-clay,@border-color: @ebony-clay) {
+  color: @color;
+  background: @bg-color;
+  width: 28%;
+  text-align: center;
+  padding: 5px 3%;
+  border-radius: 5px;
+  .main-font-size();
+  border: 1px solid @border-color;
+}
+
+
+// Flex
+.flex(@direction: row) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+// Width
+.width-100() {
+  width: 100%;
+}
+
+.resp-img() {
+  max-width: 100%
+}

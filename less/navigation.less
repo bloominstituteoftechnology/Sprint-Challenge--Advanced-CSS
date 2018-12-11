@@ -1,1 +1,25 @@
 // Navigation code here
+
+.nav-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: @nav-bg;
+  position: fixed;
+
+  h1 {
+    font-size: 4rem;
+    animation: slide 1s;
+  }
+
+  nav {
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      color: @ebony-clay;
+      padding: 0 2%;
+      .main-font-size();
+    }
+  }
+}

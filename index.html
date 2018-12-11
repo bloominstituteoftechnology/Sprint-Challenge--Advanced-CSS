@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <title>SpaceWalkers</title>
 
@@ -17,12 +19,25 @@
 <body>
 
  <!-- navigation code here -->
+  <div class="nav-container">
+    <h1>SpaceWalkers</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+        <a href="">Sign In</a>
+    </nav>
+  </div>
+ 
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
-
+      <div class="header-img">
+        <img src="img/main-header.png" alt="">
+      </div>
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -30,8 +45,8 @@
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="hide-for-mobile" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="hide-for-mobile" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -61,6 +76,45 @@
       </div>
 
     </section>
+    <section class="contact-form">
+        <div>
+          <h3>Subscribe to our Magazine</h3>
+          <p>Fill out the form below to subscribe to SpaceWalkers magazine. Allow 2-4 weeks for processing.</p>
+        </div>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user-name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="user-email">
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="user-phone">
+          </div>
+          <div>
+            <label for="street">Street Address:</label>
+            <input type="text" id="phone" name="user-street">
+          </div>
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="phone" name="user-city">
+          </div>
+          <div>
+            <label for="state">State</label>
+            <input type="text" id="phone" name="user-state">
+          </div>
+          <div>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="phone" name="user-zip">
+          </div>
+          <div>
+            <button type="Submit">Submit</button>
+          </div>
+        </form>
+      </section>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>

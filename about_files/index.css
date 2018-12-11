@@ -1,16 +1,3 @@
-@keyframes slide {
-  0% {
-    margin-left: 100%;
-    width: 300%;
-  }
-  50% {
-    margin-left: -30%;
-  }
-  100% {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -177,12 +164,10 @@ p {
   width: 100%;
   text-align: center;
   padding: 20px;
-  background-color: rgba(244, 244, 244, 0.8);
-  position: fixed;
+  background-color: #F4F4F4;
 }
 .nav-container h1 {
   font-size: 4rem;
-  animation: slide 1s;
 }
 .nav-container nav {
   margin-top: 20px;
@@ -205,11 +190,10 @@ footer {
 }
 .home .intro .header-img {
   width: 100%;
-  padding-top: 116px;
 }
 .home .intro .header-img img {
   border-radius: 10px;
-  width: 100%;
+  max-width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -314,122 +298,5 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-}
-.home .contact-form {
-  width: 100%;
-  max-width: 50%;
-  margin: 0 auto;
-}
-.home .contact-form form {
-  font-size: 1.6rem;
-}
-.home .contact-form form div {
-  padding: 5px 0;
-}
-.about header {
-  margin-bottom: 30px;
-}
-.about header h2 {
-  text-align: center;
-}
-.history {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .history {
-    flex-direction: column;
-  }
-}
-.history div {
-  padding: 2%;
-}
-.history .history-text {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .history .history-text {
-    width: 100%;
-  }
-}
-.history .history-img {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .history .history-img {
-    width: 100%;
-  }
-}
-.history .history-img img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-.philosophy {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-@media (max-width: 500px) {
-  .philosophy {
-    flex-direction: column;
-  }
-}
-.philosophy div {
-  padding: 2%;
-}
-.philosophy .philosophy-text {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .philosophy .philosophy-text {
-    width: 100%;
-  }
-}
-.philosophy .philosophy-img {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .philosophy .philosophy-img {
-    width: 100%;
-  }
-}
-.philosophy .philosophy-img img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-.mission {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 20px;
-}
-@media (max-width: 500px) {
-  .mission {
-    flex-direction: column-reverse;
-  }
-}
-.mission div {
-  padding: 2%;
-}
-.mission .mission-text {
-  width: 40%;
-}
-@media (max-width: 500px) {
-  .mission .mission-text {
-    width: 100%;
-  }
-}
-.mission .mission-img {
-  width: 60%;
-}
-@media (max-width: 500px) {
-  .mission .mission-img {
-    width: 100%;
-  }
-}
-.mission .mission-img img {
-  max-width: 100%;
   border-radius: 10px;
 }
