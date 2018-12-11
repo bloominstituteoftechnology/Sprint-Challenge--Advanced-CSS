@@ -1,1 +1,29 @@
 // Mixins Here
+
+.button(@color, @background) {
+  .center();
+  align-self: flex-start;
+  text-align: center;
+  color: @color;
+  background: @background;
+  border-radius: 5px;
+
+  &:hover {
+    background: @color;
+    color: @background;
+    border: 1px dashed @background;
+  }
+}
+
+.center() {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.mobile-column() {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+}

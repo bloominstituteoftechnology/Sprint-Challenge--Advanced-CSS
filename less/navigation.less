@@ -1,1 +1,54 @@
 // Navigation code here
+@import "variables.less";
+@import "mixins.less";
+
+
+
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  background-color: #5483ff;
+   
+
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin: 0px auto;
+    height: 100px;
+  
+    flex-direction: column;
+  
+    h1 {
+      font-size: 4.0rem;
+
+      // @media @phone {
+      //   font-size: 4rem;
+      // }
+    }
+
+    .nav {
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      @media @phone {
+        width: 90%;
+      }
+  
+      a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: black;
+
+        @media @phone {
+          font-size: 1.5rem;
+        }
+      }//a
+    }//nav
+  }//nav-container
+}//navigation
