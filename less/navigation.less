@@ -1,1 +1,53 @@
 // Navigation code here
+
+nav {
+  .flexCenter();
+  flex-wrap: wrap;
+  .paddingTop(13px);
+  background-color: @nav-bg;
+  border: 1px solid @nav-border;
+
+  a {
+    text-decoration: none;
+    color: @nav-font;
+  }
+
+  .logo {
+    font-size: 4rem;
+    padding-top:10px;
+
+    @media @phone {
+      margin-left: 4%;
+    }
+  }
+
+  .navLinks {
+    width: 100%;
+    text-align: center;
+    .paddingTop(18px);
+    padding-bottom: 10px;
+    .flexCenter();
+
+    a {
+      margin: 0 1.2%;
+      font-size: 1.6rem;
+
+      @media @phone {
+        font-size: 1.7rem;
+        margin-left: 5.4%;
+      }
+    }
+
+    @media @phone {
+      // justify-content: space-evenly;
+    }
+  }
+
+  .logo {
+
+    @media @phone {
+      font-size: 4rem;
+    }
+  }
+
+}

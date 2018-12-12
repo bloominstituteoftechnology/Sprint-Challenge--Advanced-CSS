@@ -1,1 +1,23 @@
 // Mixins Here
+
+//mixin for making a container display flex, and centered
+.flexCenter() {
+  display: flex;
+  justify-content: center;
+}
+
+//mixin for adding padding at top
+.paddingTop(@pixel) {
+  padding-top: @pixel;
+}
+
+//mixin for styling a button
+.button-sm(@bgColor, @fontColor) {
+  background-color: @bgColor;
+  color: @fontColor;
+
+  &:hover {
+    background-color: @fontColor;
+    color: @bgColor;
+  }
+}
