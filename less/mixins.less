@@ -1,1 +1,74 @@
 // Mixins Here
+
+
+
+//--------------------------------Font sizing
+.font-large() {
+    font-size: 5rem;
+}
+
+.font-small() {
+    font-size: 1.5rem;
+}
+
+.font-medium() {
+    font-size: 2.2rem;
+}
+
+
+
+//---------------------------------Page Centering
+.center-page() {
+    margin: 0 auto;
+}
+
+
+//-----------------------------------Flex column/centered
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+//----------------------------------Center Items in flex
+
+.flex-item-center() {
+    text-align: center;
+}
+
+
+//----------------------------------flex items space evenly
+
+.flex-even() {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+//-----------------------------------button styling
+.button-styling(@bgcolor; @padding; @bradius) {
+    background-color: @bgcolor;
+    border: 1px solid @btn-bg-color;
+    border-radius: @bradius;
+    padding: @padding;
+    width: 8.2rem;
+    color: white;
+    font-weight: bold;
+    .font-small();
+    .flex-item-center();
+}
+
+.button-hover-style(@bgcolor; @fcolor) {
+    background-color: @bgcolor;
+    color: @fcolor;
+}
+
+
+
+//--------------------------------Form Styling
+
+.form-shared-styles() {
+    padding: .5rem;
+    border-radius: .5rem;
+}
