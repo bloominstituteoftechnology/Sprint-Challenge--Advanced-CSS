@@ -1,0 +1,40 @@
+.navbar {
+  display: grid;
+  //   grid-template-columns: 1/-1;
+  //   padding: 2vh 8vw;
+  height: auto;
+  background-color: $nav-bg;
+  border-bottom: 1px solid $nav-border;
+
+  &__logo {
+    margin: 2rem;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, max-content));
+  grid-gap: 1rem;
+  justify-content: center;
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $nav-font;
+    text-decoration: none;
+    text-align: center;
+    padding: 2.5rem;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    transform: translateY(-3px);
+    font-weight: bold;
+  }
+}

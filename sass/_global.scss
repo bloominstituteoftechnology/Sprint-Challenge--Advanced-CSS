@@ -1,0 +1,65 @@
+// General Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(phone) {
+    // width < 600?
+    font-size: 37.5%;
+  }
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: $main-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: $header-font-color;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
