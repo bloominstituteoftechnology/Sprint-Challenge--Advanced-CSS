@@ -257,7 +257,8 @@ p {
     @media only screen and (max-width: 37.5em) {
       .home .walk .walk-img {
         width: 100%;
-        margin-left: 0; } }
+        margin-left: 0;
+        margin-top: 26px; } }
     .home .walk .walk-img img {
       width: 100%;
       height: auto;
