@@ -149,16 +149,15 @@ h1 {
   font-size: 85px;
   display: flex;
   justify-content: center;
-  background-color: #827b7b;
 }
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  background-color: gainsboro;
 }
 .navigation {
-  background-color: #827b7b;
   display: flex;
   justify-content: center;
   width: 800px;
@@ -166,14 +165,16 @@ header {
 .navigation .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  font-size: 2rem;
-  width: 100%;
+  justify-content: space-around;
+  font-size: 33px;
+  width: 77%;
+  margin-left: 12%;
+  text-decoration: none;
 }
 footer {
   display: flex;
   justify-content: center;
-  background-color: #827b7b;
+  background-color: gainsboro;
 }
 .container {
   width: 880px;
