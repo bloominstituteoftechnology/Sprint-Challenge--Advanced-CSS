@@ -1,18 +1,18 @@
 // Mixins Here
 
 
-.btn-hover(@width; @style; @btn-bg-color) {
+.btn-hover(@width; @style; @btn-bg-color; @parameter) {
     border: @width @style @btn-bg-color;
     width: 33%;
     padding: 10px;
     background: @btn-bg-color;
-    color: white;
+    color: @parameter;
     font-size: 1.6rem;
     text-align: center;
 
     &:hover {
         border: @width @style @btn-bg-color;
-        background: white;
+        background: @parameter;
         color: @btn-bg-color;
     }
  }
