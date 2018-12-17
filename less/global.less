@@ -33,28 +33,24 @@ p {
   line-height: 1.4;
 }
 
+header {
+  @media (max-width:1000px) {
+    min-width: @phone;
+  }
+}
+
+.nav {
+  @media (max-width:1000px) {
+    min-width: 360px;
+  }
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
-}
 
-@media (max-width: 1000px) {
-  // 500 - 0
-
-  // Header ----------------------->
-  header {
-    min-width: @phone;
-  }
-
-
-  // nav buttons ----------------------->
-  .nav {
-    min-width: 360px;
-  }
-
-  // container ----------------------->
-  .container {
+  @media (max-width:1000px) {
     width: @phone;
     margin: 0 auto;
 
@@ -105,4 +101,3 @@ p {
     }
   }
 }
-
