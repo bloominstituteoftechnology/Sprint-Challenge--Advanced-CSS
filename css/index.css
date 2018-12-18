@@ -201,6 +201,7 @@ p {
     width: 100%;
   }
   .container section.walk div.walk-text {
+    margin-top: 10px;
     width: 100%;
   }
   .container section.walk div.walk-text div.btn {
