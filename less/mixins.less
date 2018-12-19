@@ -1,23 +1,33 @@
 // Mixins below variables
-
-.button-maker(@color: @main-color, @bgColor: @secondary-color) {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: @color;
-  background-color: @bgColor;
-  border-radius: 5px;
-  border: 1px solid #157ffa;
-  text-align: center;
-  width: 100%;
-  max-width: 80px;
-  height: 40px;
-  font-size: 1.6rem;
 }
 
-.middle-images() {
-  border-radius: 15px;
-  height: 175px;
-  width: 100%;
-  max-width: 250px;
+.theme {
+  color: @theme;
+  background-color: whitesmoke;
+}
+.make-button() {
+  color:whitesmoke;
+  background-color: #22283a;
+  font-size: 1.6rem;
+  padding: 5px;
+  width: 90px;
+  height: 30px;
+  border: 1px solid #1770da;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media @phone {
+      margin: 15px auto;
+      width: 82.9%;
+  }
+  
+  &:hover {
+    color: #22283a;
+    background-color: whitesmoke;
+  }
 }
