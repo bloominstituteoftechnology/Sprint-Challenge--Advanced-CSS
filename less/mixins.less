@@ -1,54 +1,44 @@
 // Mixins Here
 
-.center(@direction-value, @justify-value, @align-value) {
-  display: flex;
-  flex-direction: @direction-value;
-  justify-content: @justify-value;
-  align-items: @align-value;
-}
-
-
-
-.display-flex(@flex-direction, @justify-content) {
+.navdiv-style() {
+    padding: 2px 0;
     display: flex;
-    flex-direction: @flex-direction;
-    justify-content: @justify-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.h2-styling{
-    font-size: 2.0rem;
-    font-weight: bold;
-    color: @main-font-color;
-
-    @media @mobile {
-        font-size: 3.0rem;
-    }
+.nav-style() {
+    width: 53%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.p-styling{
-    font-size: 1.4rem;
-    line-height: 1.5;
-    color: @main-font-color;
-
-    @media @mobile {
-        font-size: 1.6rem;
-    }
-}
-
-.button-creator(@height, @width){
-    height: @height;
+.btn-style(@size, @color, @weight, @align, @bgcolor, @width, @padding, @radius, @hovercolor, @hoverbg) {
+    font-size: @size;
+    color: @color;
+    font-weight: @weight;
+    text-align: @align;
+    background-color: @bgcolor;
     width: @width;
-    background-color: @button-bg;
-    border: 1px solid @button-border;
-    border-radius: 4px;
-    color: @main-color;
-    text-align: center;
-    font-size: 1.1rem;
-    padding-top: 7px;
-
-    @media @mobile {
-        font-size: 1.6rem;
-        padding-top: 14px;
-        border: 2px solid @button-border;
+    padding: @padding;
+    border-radius: @radius;
+    &:hover {
+        color: @hovercolor;
+        background-color: @hoverbg;
+        cursor: pointer;
     }
 }
+
+.centered-items() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .spaced-items() {
+    display: flex;
+    justify-content: space-between;
+  }

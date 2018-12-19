@@ -1,24 +1,4 @@
-.h2-styling {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #5E6164;
-}
-@media (max-width: 500px) {
-  .h2-styling {
-    font-size: 3rem;
-  }
-}
-.p-styling {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: #5E6164;
-}
-@media (max-width: 500px) {
-  .p-styling {
-    font-size: 1.6rem;
-  }
-}
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -179,62 +159,51 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
-* {
-  box-sizing: border-box;
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
-html,
-body {
-  font-family: 'Ubuntu', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Russo One', sans-serif;
-}
-.header {
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
+body .nav-div {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  justify-content: space-between;
 }
-.header h1 {
-  font-size: 3.4rem;
+body .nav-div h1 {
+  padding: 10px;
+  font-size: 4rem;
 }
-@media (max-width: 500px) {
-  .header h1 {
-    font-size: 4rem;
-  }
-}
-.header nav {
+body .nav-div nav {
+  width: 53%;
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 35%;
-  padding-top: 15px;
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #23293B;
+  justify-content: space-around;
 }
-@media (max-width: 500px) {
-  .header nav {
-    width: 80%;
-    font-size: 1.6rem;
+@media (max-width: 700px) {
+  body .nav-div nav {
+    width: 85%;
   }
 }
-.header nav a {
+@media (max-width: 500px) {
+  body .nav-div nav {
+    width: 85%;
+  }
+}
+body .nav-div nav a {
   text-decoration: none;
-  color: #23293B;
+  color: #000;
   font-size: 1.6rem;
 }
 footer {
-  color: #81848E;
+  color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -242,6 +211,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home img {
+  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
 }
 .home .intro h2 {
   padding: 15px;
@@ -260,6 +234,20 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img:nth-child(1) {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -276,8 +264,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin: 20px 0;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -285,20 +285,46 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text a {
+  text-decoration: none;
+}
+.home .walk .walk-text a a:hover {
+  text-decoration: none;
+}
+.home .walk .walk-text a .btn {
+  font-size: 1.85rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  background-color: #000000;
+  width: 100px;
+  padding: 2.5% 2%;
+  border-radius: 5px;
+}
+.home .walk .walk-text a .btn:hover {
+  color: #000000;
+  background-color: #DEDEDE;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text a .btn {
+    width: 100%;
+    padding: 6% 0;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 20px 0;
+    width: 100%;
+    order: -1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  width: 100%;
-  max-width: 880px;
-  margin: 0 auto;
 }
