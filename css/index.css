@@ -130,6 +130,9 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -141,92 +144,169 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
 }
-html {
-  font-size: 62.5%;
-}
-h1 {
-  font-size: 3.6rem;
-  color: #22283B;
-}
 h2 {
-  font-size: 2.6rem;
-  color: #22283B;
+  font-size: 2.4rem;
 }
 p {
-  font-size: 1.6rem;
-  margin: 10px 0;
-  line-height: 20px;
+  font-size: 2rem;
 }
-header {
+.flex-center {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 15px 0;
 }
-header h1 {
-  font-size: 3.6rem;
-  color: #22283B;
+.theme {
+  color: #444958;
+  background-color: whitesmoke;
 }
-header nav {
-  margin: 10px;
+.main-header {
+  color: #444958;
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
 }
-header nav a {
-  color: #22283B;
-  text-decoration: none;
+.main-header h1 {
+  font-size: 3.4rem;
+  color: #444958;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+.navcontent {
   font-size: 1.6rem;
-  padding: 15px;
-}
-header nav a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #444958;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   display: flex;
   justify-content: center;
-}
-body {
-  display: flex;
-  justify-content: center;
-}
-.container {
+  align-items: center;
+  color: #444958;
+  background-color: whitesmoke;
   width: 100%;
-  max-width: 800px;
+  margin: 0 auto;
+  border-top: 1px solid lightgray;
+  padding: 10px;
+  height: 85px;
 }
-main .section-content {
-  margin: 25px 15px 40px 15px;
+.main-content {
+  max-width: 880px;
+  margin: 0 auto;
 }
-main .section-content .middle-content {
+.main-content .main-header-img {
+  width: 100%;
+}
+.main-content .main-text {
+  padding: 12px;
+}
+.main-content .main-text h2 {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.main-content .liftoff-imgs {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
 }
-main .section-content .middle-content .middle-images {
-  border-radius: 15px;
-  height: 175px;
-  width: 250px;
+.main-content .liftoff-imgs .img {
+  border-radius: 10px;
+  width: 275px;
+  height: 183px;
 }
-main .bottom-content {
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img1 {
+    margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .liftoff-imgs .img3 {
+    display: none;
+  }
+}
+.main-text-bottom {
+  padding: 12px;
+  margin-bottom: 50px;
+}
+.main-text-bottom h2 {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.bottom-content {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
   display: flex;
-  margin: 60px;
+  justify-content: space-around;
+  padding: 70px 25px;
 }
-main .bottom-content .bottom-content-text {
-  padding: 0 25px;
+@media (max-width: 500px) {
+  .bottom-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-main .bottom-content .bottom-content-text a {
-  text-decoration: none;
-  padding: 5px 10px;
+.bottom-content .bottom-text {
+  width: 40%;
 }
-main .bottom-content .bottom-content-text a .sign-up {
-  color: #f4f4f4;
-  background-color: #22283B;
-  width: 100px;
+.bottom-content .bottom-text .btn {
+  color: whitesmoke;
+  background-color: #22283a;
+  font-size: 1.6rem;
+  padding: 5px;
+  width: 90px;
   height: 30px;
+  border: 1px solid #1770da;
   border-radius: 5px;
-  border: 1px solid #e0e0e0;
-  text-align: center;
-  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .bottom-content .space-walk-img {
-  border-radius: 5px;
-  height: 200px;
-  width: 300px;
+@media (max-width: 500px) {
+  .bottom-content .bottom-text .btn {
+    margin: 15px auto;
+    width: 82.9%;
+  }
+}
+.bottom-content .bottom-text .btn:hover {
+  color: #22283a;
+  background-color: whitesmoke;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-text {
+    width: 100%;
+  }
+}
+.bottom-content .bottom-img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-img {
+    margin: 0 auto;
+    width: 82.9%;
+    height: 290px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    width: 100%;
+  }
 }
   
