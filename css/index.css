@@ -329,11 +329,11 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
+    padding: 5%;
   }
   .home .walk .walk-text {
     width: 100%;
     height: 100%;
-    border: 4px solid blue;
     padding: 0;
   }
   .home .walk .walk-text h3 {
@@ -360,7 +360,7 @@ footer {
   }
   .home .walk .walk-img {
     width: 100%;
-    margin-left: 4%;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
   .home .walk .walk-img img {
