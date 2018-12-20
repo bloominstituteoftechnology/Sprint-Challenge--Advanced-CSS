@@ -133,8 +133,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   width: 1204px;
-  margin: 0 auto;
-  border: 1px solid black;
+  height: 1391px;
 }
 h1,
 h2,
@@ -146,11 +145,6 @@ h5 {
 * {
   font-size: 65%;
 }
-h1 {
-  font-size: 85px;
-  display: flex;
-  justify-content: center;
-}
 header {
   display: flex;
   flex-direction: column;
@@ -158,17 +152,29 @@ header {
   background-color: gainsboro;
   width: 100%;
 }
+header h1 {
+  font-size: 40px;
+  margin-top: 14px;
+  margin-left: -62px;
+  display: flex;
+  justify-content: center;
+}
 .navigation {
   display: flex;
   justify-content: center;
+  padding-bottom: 14px;
 }
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  font-size: 33px;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  padding-right: 29%;
+  padding-left: 13%;
+  font-size: 17px;
   width: 77%;
-  margin-left: 12%;
+  margin-left: 17%;
   text-decoration: none;
 }
 a {
@@ -181,8 +187,7 @@ footer {
   background-color: gainsboro;
 }
 .container {
-  width: 880px;
-  margin: auto 0;
+  width: 1266px;
 }
 p {
   line-height: 35px;
@@ -193,8 +198,11 @@ h2 {
   font-size: 40px;
 }
 .top-image {
-  width: 100%;
-  padding-bottom: 5%;
+  width: 63%;
+  height: 203px;
+  padding-right: -12px;
+  padding-right: -5%;
+  margin-left: 16%;
 }
 .top-content {
   padding-bottom: 5%;
@@ -208,8 +216,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 24px;
-  width: 37%;
+  width: 302px;
   border-radius: 39px;
+  height: 319px;
 }
 .bottom-content {
   padding-bottom: 5px;
@@ -220,6 +229,9 @@ h2 {
   justify-content: center;
   flex-direction: column;
 }
+.walk {
+  margin-left: 5%;
+}
 .sidebyside {
   display: flex;
 }
@@ -227,7 +239,6 @@ h2 {
   background-color: lightblue;
   color: white;
   margin-top: -50px;
-  margin-left: 20%;
   border-radius: 5px;
   height: 40px;
   width: 15%;
