@@ -233,10 +233,10 @@ footer {
   height: 100%;
   margin-left: -41px;
 }
-@media "(max-width: 500px)" {
-  .container #rockets #middle-rocket,
-  .container #rockets #last-rocket {
-    display: none;
+@media only screen and (max-width: 500px) {
+  .container #rockets img:nth-child(2),
+  .container #rockets img:nth-child(3) {
+    display: none !important;
   }
 }
 .container #first-rocket {

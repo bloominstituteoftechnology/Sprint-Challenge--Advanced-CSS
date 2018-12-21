@@ -56,12 +56,13 @@ h2{
     height: 100%;
     margin-left: -41px;
     }
-#middle-rocket , #last-rocket{
-    @media @phone {
-        display: none;
-      }
 
-}
+    img:nth-child(2), 
+    img:nth-child(3) {
+      @media only screen and (max-width: @phone) {
+        display: none !important;
+      }
+    }
 
 }
     
@@ -142,21 +143,5 @@ h2{
     display: flex;
     padding-bottom: 10px;
 }
-
-// @media only screen and (max-width: 500px) { 
-
-//     #middle-rocket{
-//       display: none;
-//     }
-
-//     #last-rocket{
-//         display:none;
-//     }
-
-//     .spaceman{
-//         display: flex;
-//         justify-content: center;
-//     }
-// }
 
 }
