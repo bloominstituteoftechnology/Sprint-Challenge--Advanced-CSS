@@ -190,7 +190,7 @@ footer {
   width: 1266px;
 }
 p {
-  line-height: 35px;
+  line-height: 29px;
 }
 h2 {
   padding-top: 2%;
@@ -228,33 +228,67 @@ h2 {
 }
 #rockets img {
   width: 28%;
-  margin: 23px 9.5%;
+  margin: 23px 3.5%;
   border-radius: 20px;
   height: 100%;
   margin-left: -41px;
+}
+#first-rocket {
+  margin-left: 5px;
+}
+.visitation {
+  margin-left: 213px;
+  font-size: 28px;
 }
 .bottom-content {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+.spaceman {
+  margin-left: 619px;
+  margin-top: -223px;
+  height: 250px;
+  width: 320px;
+}
 .foot-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: 35%;
+}
+.bottom-p {
+  width: 34%;
+  margin-left: -176px;
+  margin-top: 45px;
+  line-height: 26px;
+}
+.bottom-p2 {
+  width: 29%;
+  margin-left: -171px;
+  margin-top: 30px;
+}
+.bottom-content {
+  line-height: 27px;
+  width: 57%;
+  margin-left: 17%;
+  margin-top: -2%;
 }
 .walk {
-  margin-left: 5%;
+  margin-left: 21%;
+  font-size: 28px;
+  margin-top: 52px;
 }
 .sidebyside {
   display: flex;
+  margin-top: -42px;
 }
 .button {
   background-color: lightblue;
   color: white;
-  margin-top: -50px;
-  border-radius: 5px;
+  margin-top: -24px;
+  margin-left: 274px;
   height: 40px;
-  width: 15%;
+  width: 6%;
   text-align: center;
   display: flex;
   padding-bottom: 10px;
