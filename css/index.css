@@ -189,100 +189,106 @@ footer {
 .container {
   width: 1266px;
 }
-p {
+.container p {
   line-height: 29px;
 }
-h2 {
+.container h2 {
   padding-top: 2%;
   padding-bottom: 2%;
   font-size: 40px;
 }
-.top-image {
+.container .top-image {
   width: 63%;
   height: 203px;
   padding-right: -12px;
   padding-right: -5%;
   margin-left: 16%;
 }
-.lift-off {
+.container .lift-off {
   margin-left: 214px;
   margin-top: -9px;
   font-size: 33px;
 }
-.first-p {
+.container .first-p {
   line-height: 27px;
   width: 57%;
   margin-left: 17%;
   margin-top: -2%;
 }
-.top-content {
+.container .top-content {
   padding-bottom: 5%;
   padding-top: 5;
 }
-#rockets {
+.container #rockets {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin-top: -6%;
   margin-left: 15%;
 }
-#rockets img {
+.container #rockets img {
   width: 28%;
   margin: 23px 3.5%;
   border-radius: 20px;
   height: 100%;
   margin-left: -41px;
 }
-#first-rocket {
+@media "(max-width: 500px)" {
+  .container #rockets #middle-rocket,
+  .container #rockets #last-rocket {
+    display: none;
+  }
+}
+.container #first-rocket {
   margin-left: 5px;
 }
-.visitation {
+.container .visitation {
   margin-left: 213px;
   font-size: 28px;
 }
-.bottom-content {
+.container .bottom-content {
   padding-bottom: 5px;
   padding-top: 5px;
 }
-.spaceman {
+.container .spaceman {
   margin-left: 619px;
   margin-top: -223px;
   height: 250px;
   width: 320px;
 }
-.foot-content {
+.container .foot-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: 35%;
 }
-.bottom-p {
+.container .bottom-p {
   width: 34%;
   margin-left: -176px;
   margin-top: 45px;
   line-height: 26px;
 }
-.bottom-p2 {
+.container .bottom-p2 {
   width: 29%;
   margin-left: -171px;
   margin-top: 30px;
 }
-.bottom-content {
+.container .bottom-content {
   line-height: 27px;
   width: 57%;
   margin-left: 17%;
   margin-top: -2%;
 }
-.walk {
+.container .walk {
   margin-left: 21%;
   font-size: 28px;
   margin-top: 52px;
 }
-.sidebyside {
+.container .sidebyside {
   display: flex;
   margin-top: -42px;
 }
-.button {
+.container .button {
   background-color: lightblue;
   color: white;
   margin-top: -24px;
@@ -292,16 +298,4 @@ h2 {
   text-align: center;
   display: flex;
   padding-bottom: 10px;
-}
-@media only screen and (max-width: 500px) {
-  img#middle-rocket {
-    display: none;
-  }
-  img#last-rocket {
-    display: none;
-  }
-  .spaceman {
-    display: flex;
-    justify-content: center;
-  }
 }
