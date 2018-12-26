@@ -245,12 +245,6 @@ footer {
   height: 100%;
   margin-left: -41px;
 }
-@media only screen and (max-width: 500px) {
-  .container #rockets img:nth-child(2),
-  .container #rockets img:nth-child(3) {
-    display: none !important;
-  }
-}
 .container #first-rocket {
   margin-left: 5px;
 }
@@ -302,7 +296,7 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .container header {
-    margin-left: -700px;
+    margin-left: -754px;
   }
   .container .top-image {
     width: 40%;
@@ -312,4 +306,76 @@ footer {
     margin-left: 0%;
     margin-top: -14px;
   }
+  .container .top-content{
+    margin-left: 50px;
+  }
+  .container .lift-off{
+    margin-left: -42px;
+    margin-top: -9px;
+    font-size: 33px;
+  }
+
+  .container .first-p{
+    line-height: 27px;
+    width: 37%;
+    margin-left: -42px;
+    margin-top: -2%;
+    font-size: 14px;
+  }
+
+  .container #rockets #first-rocket{
+    margin-left: -19%;
+    width: 47%;
+}
+
+  
+  
+
+  #middle-rocket, #last-rocket{
+    display: none;
+  }
+
+  .container .visitation{
+    margin-left: 5px;
+  }
+
+.container .bottom-content{
+  line-height: 27px;
+    width: 37%;
+    margin-left: 5px;
+    margin-top: -2%;
+    font-size: 14px;
+}
+
+.container .walk{
+  margin-left:99px;
+}
+.container .sidebyside{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left:-258px;
+}
+
+.container .spaceman{
+    margin-left: 83px;
+    margin-top: 42px;
+    height: 250px;
+    width: 320px;
+
+}
+.button{
+  background-color: lightblue;
+    color: white;
+    margin-top: -295px;
+    margin-left: 82px;
+    /* border-radius: 10px; */
+    height: 40px;
+    width: 321px;
+    text-align: center;
+}
+
+footer{
+  margin-top: 5px;
+}
 }
