@@ -1,3 +1,13 @@
+.button {
+  background-color: lightblue;
+  color: white;
+  margin-top: 0px;
+  margin-left: 313px;
+  border-radius: 10px;
+  height: 40px;
+  width: 10%;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -185,6 +195,8 @@ footer {
   display: flex;
   justify-content: center;
   background-color: gainsboro;
+  margin-top: 55px;
+  width: 110%;
 }
 .container {
   width: 1266px;
@@ -288,14 +300,16 @@ footer {
   display: flex;
   margin-top: -42px;
 }
-.container .button {
-  background-color: lightblue;
-  color: white;
-  margin-top: -24px;
-  margin-left: 274px;
-  height: 40px;
-  width: 6%;
-  text-align: center;
-  display: flex;
-  padding-bottom: 10px;
+@media only screen and (max-width: 500px) {
+  .container header {
+    margin-left: -700px;
+  }
+  .container .top-image {
+    width: 40%;
+    height: 203px;
+    padding-right: -12px;
+    padding-right: -5%;
+    margin-left: 0%;
+    margin-top: -14px;
+  }
 }

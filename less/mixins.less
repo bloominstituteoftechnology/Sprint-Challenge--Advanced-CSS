@@ -1,1 +1,15 @@
 // Mixins below variables
+.button-maker(@bgcolor){
+    background-color: @bgcolor;
+    color: white;
+    margin-top: 0px;
+    margin-left:313px;
+    border-radius: 10px;
+    height:40px;
+    width: 10%;
+    text-align: center;
+  }
+
+  .button{
+    .button-maker(@btncolor);
+  }
