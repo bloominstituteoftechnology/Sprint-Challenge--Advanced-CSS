@@ -1,6 +1,42 @@
 @media (max-width: 500px) {
-  img {
-    width: 100%;
+  .home .space {
+    width: 500px;
+  }
+  .home .space-images img {
+    display: none;
+  }
+  .home .space-images .blast {
+    display: block;
+    width: 450px !important;
+    height: 350px !important;
+  }
+  .home .walk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 0 !important;
+    padding-top: 20px !important;
+  }
+  .home .walk .walk-text h3 {
+    width: 300px;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  .home .walk .walk-text p {
+    width: 440px;
+    margin-left: 20px;
+  }
+  .home .walk .walk-text .btn {
+    width: 470px;
+    padding: 25px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+  }
+  .home .walk .walk-img {
+    width: 440px !important;
+    height: 400px !important;
+    margin-left: 0;
+    padding-left: 0;
   }
 }
 .btn {

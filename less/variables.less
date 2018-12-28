@@ -26,8 +26,50 @@
 // Mobile var
 @phone: ~"(max-width: 500px)";
 
-img {
-    @media @phone {
-      width: 100%;  
+@media @phone {
+  .home {
+    .space {
+      width: 500px;
     }
+    .space-images {
+      img {
+        display: none;
+      }
+      .blast {
+        display: block;
+        width: 450px !important;
+        height: 350px !important;
+      }
+    }
+    .walk {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      padding: 0 !important;
+      padding-top: 20px !important;
+      .walk-text {
+        h3 {
+          width: 300px;
+          font-size: 30px;
+          margin-left: 20px;
+        }
+        p {
+          width: 440px;
+          margin-left: 20px;
+        }
+          .btn {
+            width: 470px;
+            padding: 25px;
+            margin-left: 13px;
+            margin-bottom: 15px;
+          }
+      }
+      .walk-img {
+        width: 440px !important;
+        height: 400px !important;
+         margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
 }
