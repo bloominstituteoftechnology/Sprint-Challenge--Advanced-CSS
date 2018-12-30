@@ -1,14 +1,25 @@
 @media (max-width: 500px) {
-  .home .space {
-    width: 500px;
+  body nav .items {
+    width: 100%;
+    text-align: center;
   }
-  .home .space-images img {
-    display: none;
+  body nav .items h1 {
+    width: 100%;
+    padding-left: 0;
+    font-size: 2em;
+    font-weight: Bold;
+  }
+  .home .space {
+    width: 100%;
   }
   .home .space-images .blast {
-    display: block;
-    width: 450px !important;
-    height: 350px !important;
+    width: 88% !important;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
   }
   .home .walk {
     display: flex;
@@ -18,25 +29,26 @@
     padding-top: 20px !important;
   }
   .home .walk .walk-text h3 {
-    width: 300px;
+    width: 170%;
     font-size: 30px;
     margin-left: 20px;
   }
   .home .walk .walk-text p {
-    width: 440px;
+    width: 170%;
     margin-left: 20px;
   }
   .home .walk .walk-text .btn {
-    width: 470px;
+    width: 177%;
     padding: 25px;
-    margin-left: 13px;
+    margin-left: 1em;
     margin-bottom: 15px;
   }
-  .home .walk .walk-img {
-    width: 440px !important;
-    height: 400px !important;
-    margin-left: 0;
-    padding-left: 0;
+  .home .walk .walk-img .walk {
+    width: 185% !important;
+    margin-bottom: 20px;
+  }
+  .home footer {
+    width: 100%;
   }
 }
 .btn {
@@ -288,6 +300,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .items {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -337,5 +352,5 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }

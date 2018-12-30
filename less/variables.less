@@ -27,18 +27,33 @@
 @phone: ~"(max-width: 500px)";
 
 @media @phone {
+  body {
+    nav {
+      .items {
+        width: 100%;
+        text-align: center;
+        h1 {
+          width: 100%;
+          padding-left: 0;
+          font-size: 2em;
+          font-weight: Bold;
+        }
+      }
+    }
+  }
   .home {
     .space {
-      width: 500px;
+      width: 100%;
     }
     .space-images {
-      img {
+      .blast {
+        width: 88% !important;
+      }
+      .sky {
         display: none;
       }
-      .blast {
-        display: block;
-        width: 450px !important;
-        height: 350px !important;
+      .launch {
+        display: none;
       }
     }
     .walk {
@@ -49,27 +64,30 @@
       padding-top: 20px !important;
       .walk-text {
         h3 {
-          width: 300px;
+          width: 170%;;
           font-size: 30px;
           margin-left: 20px;
         }
         p {
-          width: 440px;
+          width: 170%;
           margin-left: 20px;
         }
           .btn {
-            width: 470px;
+            width: 177%;
             padding: 25px;
-            margin-left: 13px;
+            margin-left: 1em;
             margin-bottom: 15px;
           }
       }
       .walk-img {
-        width: 440px !important;
-        height: 400px !important;
-         margin-left: 0;
-        padding-left: 0;
+        .walk {
+          width: 185% !important;
+          margin-bottom: 20px;
+        }
       }
+    }
+    footer {
+      width: 100%;
     }
   }
 }
