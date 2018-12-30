@@ -59,13 +59,13 @@
   justify-content: center;
   align-items: center;
   font-family: 'Russo One', sans-serif;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #23293B;
   border-radius: 5px;
   font-size: 1.5rem;
 }
 .btn:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #23293B;
 }
 .btn:hover {
@@ -73,6 +73,7 @@
   background-color: #fff;
 }
 button {
+  color: #ffffff;
   border: 1px solid;
   display: flex;
   width: 100px;
@@ -80,13 +81,13 @@ button {
   justify-content: center;
   align-items: center;
   font-family: 'Russo One', sans-serif;
-  color: #fff;
+  color: #FFFFFF;
   background-color: #23293B;
   border-radius: 5px;
   font-size: 1.5rem;
 }
 button:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #23293B;
 }
 button:hover {
