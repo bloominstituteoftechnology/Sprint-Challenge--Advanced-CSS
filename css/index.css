@@ -52,47 +52,17 @@
   }
 }
 .btn {
+  width: 100px;
+  color: #ffffff;
+  background-color: #23293B;
   border: 1px solid;
   display: flex;
-  width: 100px;
   height: 40px;
   justify-content: center;
   align-items: center;
   font-family: 'Russo One', sans-serif;
-  color: #FFFFFF;
-  background-color: #23293B;
   border-radius: 5px;
   font-size: 1.5rem;
-}
-.btn:hover {
-  color: #ffffff;
-  background-color: #23293B;
-}
-.btn:hover {
-  color: #23293B;
-  background-color: #fff;
-}
-button {
-  color: #ffffff;
-  border: 1px solid;
-  display: flex;
-  width: 100px;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Russo One', sans-serif;
-  color: #FFFFFF;
-  background-color: #23293B;
-  border-radius: 5px;
-  font-size: 1.5rem;
-}
-button:hover {
-  color: #ffffff;
-  background-color: #23293B;
-}
-button:hover {
-  color: #23293B;
-  background-color: #fff;
 }
 .SpaceWalkersLogo {
   position: absolute;

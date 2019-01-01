@@ -1,45 +1,29 @@
 // Mixins Here
-.btn(@width: 100px; @btn-color:#ffffff; @btn-bg-color: #23293B) {
-  width: @width;
+.button-creator(@btn-width; @btn-color; @btn-bg) {
+  width: @btn-width;
   color: @btn-color;
-  background-color: @btn-bg-color;
+  background-color: @btn-bg;
+  border: 1px solid;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  border-radius: 5px;
+  font-size: 1.5rem;
 }
 
 .btn {
-    border: 1px solid;
-    display: flex;
-    width: @width;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Russo One', sans-serif;
-    color: @btn-color;
-    background-color: @btn-bg-color;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    &:hover {
-      color: #ffffff;
-      background-color: @header-font-color;
-    }
-  }
-  .btn {
-    &:hover {
-      color: @header-font-color;
-      background-color: #fff;
-    }
-  }
+  .button-creator(100px, #ffffff, #23293B);
+}
 
-   button {
-    .btn
-   }
-
-   .SpaceWalkersLogo {
-    position: absolute;
-    font-size: 2.75rem;
-    font-family: 'Russo One', sans-serif;
-    color: @header-font-color;
-  }
+.SpaceWalkersLogo {
+  position: absolute;
+  font-size: 2.75rem;
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+}
   
-   .logo {
-    .SpaceWalkersLogo
-  }
+.logo {
+  .SpaceWalkersLogo
+}
