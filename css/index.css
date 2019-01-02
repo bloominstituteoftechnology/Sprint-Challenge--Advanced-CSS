@@ -185,6 +185,9 @@ img {
   border-bottom: solid 1px #e0e0e0;
   background-color: #f4f4f4;
   color: #22283B;
+  position: fixed;
+  top: 0;
+  left: 10%;
 }
 .header h1 {
   padding: 20px 0;
