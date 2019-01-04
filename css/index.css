@@ -214,6 +214,15 @@ p {
   color: black;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .top-content nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 0;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+}
 .top-content .clouds {
   width: 100%;
 }
@@ -222,6 +231,7 @@ p {
   color: white;
   border-radius: 4px;
   font-size: 1.6rem;
+  white-space: nowrap;
 }
 .btnc:hover {
   text-decoration: underline;
@@ -304,7 +314,8 @@ footer {
     font-size: 20px;
     padding: 12px 175px;
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    white-space: nowrap;
   }
 }
 .walk .walk-img {

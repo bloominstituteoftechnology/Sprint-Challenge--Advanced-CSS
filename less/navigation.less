@@ -21,6 +21,13 @@
             .color(black);
             text-decoration: none;
         }
+        @media @phone{
+            .flex-display();
+            justify-content: center;
+            margin: 0 0 0 0;
+            align-content: center;
+            justify-content: space-evenly;
+        }
         }
 
         .clouds{
@@ -32,7 +39,7 @@
             .color(white);
             border-radius: 4px;
             .font-size(1.6rem);
-            
+            white-space: nowrap;
             &:hover{
                 text-decoration: underline;
                 .color(black);
