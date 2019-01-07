@@ -1,5 +1,3 @@
-// Navigation code here
-//main: index.css
 /* 
 nav {
 
@@ -34,20 +32,19 @@ a {
 
 
 } */
-
 .navbar {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-
 .navbar h1 {
   font-size: 4rem;
   text-align: center;
   padding-top: 11px;
   padding-left: 2%;
-
-  @media (max-width: 500px) {
+}
+@media (max-width: 500px) {
+  .navbar h1 {
     padding-left: 3.5%;
   }
 }
@@ -56,17 +53,14 @@ a {
   display: flex;
   justify-content: space-around;
   padding: 19px 23% 10px 25%;
-
 }
 .navbar nav a {
   font-size: 1.6rem;
   text-decoration: none;
   font-family: #454A59, sans-serif;
   color: #23293B;
-
   transition: opacity .75s;
-
-  &:hover {
-      opacity: 0.5;
-  }
-} 
+}
+.navbar nav a:hover {
+  opacity: 0.5;
+}

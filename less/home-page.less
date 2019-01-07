@@ -1,13 +1,17 @@
 // Home Content
+//main: index.less
 
 .home {
 
   .intro {
 
     h1 {
+
+      font-size: 4rem;
       display: flex;
       justify-content: center;
       align-items: center;
+
     }
 
     h2 {
@@ -16,6 +20,15 @@
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      
+      @media (max-width: 500px) {
+        width: 100%;
+        padding-bottom: 3px;
+      }
+
     }
   
   }
@@ -30,7 +43,33 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        padding-bottom: 3px;
+      }
     }
+
+    .sky {
+      @media (max-width: 500px) {
+      display: none;
+      }
+    }
+
+    .launch {
+      @media (max-width: 500px) {
+      display: none;
+      }
+    }
+
+    .blast {
+      @media (max-width: 500px) {
+      width: 93%;
+      margin: 20px 0;
+      margin-left: 5%;
+      }
+    }
+
   }
 
   .visit-planets {
@@ -43,14 +82,26 @@
     p {
       margin-top: 13px;
     }
+
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding: 0;
+      margin-top: 22px;
+    }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    border-top: 1px solid #dee2e6;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column-reverse;
+      padding: 0;
+      margin-top: 22px;
+    }
 
     .walk-text {
       width: 50%;
@@ -63,7 +114,28 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn {     
+        .button(@padding, @bg) {
+          width: 30%;
+          font-size: 2rem;
+          padding: @padding;
+          border-radius: 6px;
+          text-align: center;
+          background: @bg;
+          color: @porcelain;
+      
+          &:hover {
+            background-color: @porcelain;
+            color: @btn-bg-color;
+          }
+      }
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+        padding-top: 16px;
+        padding-left: 4%;
+        padding-right: 4%;
       }
     }
 
@@ -71,6 +143,12 @@
       width: 46%;
       margin-left: 4%;
       
+      @media (max-width: 500px) {
+        width: 96%;
+        margin-left: 4%;
+        margin-top: 20px;
+      }
+
       img {
         width: 100%;
         height: auto;
