@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.6rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -155,10 +158,45 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+li {
+  font-size: 1.4rem;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+nav h1 {
+  align-self: center;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  padding: 5px 0 10px;
+}
+nav ul li a {
+  padding: 10px 20px;
+  color: #454A59;
+  background-color: #F6F6F6;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #F6F6F6;
+  background-color: #454A59;
+  font-weight: 600;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 footer {
   color: #22283B;
@@ -211,6 +249,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: #F6F7F8;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-align: center;
+  width: 30%;
+  padding: 8px 0;
+  border: 0;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: #0f1114;
+  background-color: #ffffff;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  transition-duration: 0.75s;
 }
 .home .walk .walk-img {
   width: 46%;
