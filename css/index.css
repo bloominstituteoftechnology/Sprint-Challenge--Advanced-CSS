@@ -1,3 +1,12 @@
+.nav-flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .display-none-mobile {
+    display: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +144,7 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +152,7 @@ h3,
 h4,
 h5 {
   font-family: "Russo One", sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +168,31 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav {
+  width: 100%;
+  background: #f6f6f6;
+  border-bottom: 2px solid #f1f1f1;
+}
+.nav .nav-container {
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav .nav-container h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.nav .nav-container nav {
+  width: 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav .nav-container nav a {
+  font-size: 1.5rem;
+  color: #454a59;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -176,6 +210,31 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -183,8 +242,8 @@ footer {
 }
 .home .space-images img {
   width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
+  margin: 2rem 2.5%;
+  border-radius: 1rem;
   height: 100%;
 }
 .home .visit-planets {
@@ -197,11 +256,18 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin-top: 6rem;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 5rem 6rem;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    flex-direction: column-reverse;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -212,6 +278,33 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: #22283a;
+  color: #f6f7f8;
+  border-radius: 0.5rem;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #5e6164;
+  color: #f6f7f8;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 5rem;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -220,4 +313,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
