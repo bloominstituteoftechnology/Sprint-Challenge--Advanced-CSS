@@ -170,6 +170,7 @@ p {
   width: 100%;
   height: 100px;
   background-color: #F6F6F6;
+  opacity: 0.8;
   padding-bottom: 20px;
   border-bottom: 1px solid #F1F1F1;
 }
@@ -183,7 +184,7 @@ p {
   height: 100px;
 }
 .nav-container .navbar h1 {
-  color: #454A59;
+  color: #000000;
 }
 .nav-container .navbar nav {
   display: flex;
@@ -204,7 +205,7 @@ p {
 .nav-container .navbar nav a {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #454A59;
+  color: #000000;
   text-decoration: none;
 }
 .nav-spacer {
