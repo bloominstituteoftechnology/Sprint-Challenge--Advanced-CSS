@@ -1,1 +1,25 @@
 // Mixins Here
+
+.buttonDesktop(@bgcolor:@btn-bg-color, @color:@porcelain, @width:30%, @height:37px, @fontsize:18px, @padding-top:5.5px,){
+    background: @bgcolor;
+    color: @color;
+    width: @width;
+    height: @height;
+    border-radius: 7px;
+    font-size: @fontsize;
+    padding-top: @padding-top;
+    text-align: center;
+    // font-weight: 500;
+}
+
+.a-style(@dec:none, @nav-color:@nav-font,){
+    text-decoration: @dec;
+    padding: 0 2%;
+    color: @nav-color;
+}
+
+.h-style(@dec, @color, @fontsize,){
+    text-decoration: @dec;
+    color: @color;
+    font-size: @fontsize;
+}
