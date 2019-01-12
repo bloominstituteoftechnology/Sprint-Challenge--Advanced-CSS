@@ -1,1 +1,44 @@
 // Navigation code here
+
+.nav-container {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	background-color: @nav-bg;
+	width: 100%;
+	height: @navbar-height;
+	padding-bottom: 20px;
+	border-bottom: 1px solid @nav-border;
+  
+	.navbar {
+		.flex(@dir: column; @main-axis: space-around);
+		height: @navbar-height;
+		
+		h1 {
+	    	color: @nav-font;
+	  	}
+
+	  	nav {
+			.flex(@main-axis: space-around; );
+	  		width: 50%;
+	  		min-width: 400px;
+			
+			@media @mobile {
+				width: 85%;
+				min-width: 0;
+			}
+
+		  	a {
+	  			font-size: 1.6rem;
+				font-weight: bold;
+	  			color: @nav-font;
+	  			text-decoration: none;
+			}
+	  	}
+	}
+}
+
+.nav-spacer {
+	width: 100%;
+	height: @navbar-height;
+}

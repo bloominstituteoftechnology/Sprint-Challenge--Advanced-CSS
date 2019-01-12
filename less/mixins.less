@@ -1,1 +1,21 @@
 // Mixins Here
+
+.flex(@dir: row; @main-axis: center; @cross-axis: center; @wrap: nowrap) {
+	display: flex;
+	flex-direction: @dir;
+	justify-content: @main-axis;
+	align-items: @cross-axis;
+	flex-wrap: @wrap;
+	align-content: @cross-axis;
+}
+
+.button(@bg: @button-bg; @color: @button-text; @fs: 1.8rem;
+		@ht: 40px; @wd: 80%; @br: 12px; ) {
+	background-color: @bg;
+	color: @color;
+	.flex();
+	font-size: @fs;
+	height: @ht;
+	width: @wd;
+	border-radius: @br;
+}
