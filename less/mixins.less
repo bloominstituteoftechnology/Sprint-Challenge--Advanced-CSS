@@ -1,1 +1,28 @@
 // Mixins Here
+.create-button(@btn-width:10rem, @btn-height:1rem) {
+    width: @btn-width;
+    padding: @btn-height 0;
+    border-radius: 1rem;
+    background-color: @btn-background;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    .hover-animation();
+  }
+  
+  .hover-animation(@transitionType:background-color, @durationTime:0.5s, @changeColorTo:lighten(rgb(@btn-background, 50%, 50%), 20%)) {
+    transition-property: @transitionType;
+    transition-duration: @durationTime;
+    &:hover {
+      transition-property: @transitionType;
+      transition-duration: @durationTime;
+      background-color: @changeColorTo;
+    }
+  }
+  .image-animation() {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
