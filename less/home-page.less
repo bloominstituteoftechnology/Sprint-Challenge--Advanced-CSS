@@ -20,6 +20,16 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .blast {
+        width: 100%;
+      }
+      .sky,
+      .launch {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -33,6 +43,10 @@
 
     h3 {
       margin-top: 11px;
+
+      @media @phone {
+        margin-top: 0;
+      }
     }
 
     p {
@@ -47,11 +61,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      margin-top: 15px;
+      flex-direction: column-reverse;
+      padding: 20px 15px;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+          margin-top: 15px;
+        }
       }
 
       p {
@@ -64,8 +92,14 @@
         .font(1.8rem, bold);
         width: 100px;
 
+        @media @phone {
+          height: 70px;
+          width: 100%;
+        }
+
         &:hover {
           .button(@waterloo, @ebony-clay);
+          height: 70px;
           cursor: pointer;
         }
       }
@@ -74,6 +108,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        margin-left: 0;
+        width: 100%;
+      }
 
       img {
         width: 100%;
