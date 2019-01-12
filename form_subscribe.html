@@ -16,20 +16,80 @@
   <![endif]-->
 </head>
 
-<body>
+  <body>
 
-<nav>
-  <h1>SpaceWalkers</h1>
+    <nav>
+      <h1>SpaceWalkers</h1>
 
-  <div class = "navbar">
-    <a href  = "index.html">Home</a>
-    <a href  = "#About">About Us</a>
-    <a href  = "#Blog">Blog</a>
-    <a href  = "form_subscribe.html">Contact</a> <!-- add STRETCH form link here -->
-    <a href  = "#signIN">Sign In</a>
-  </div>
+      <div class = "navbar">
+        <a href  = "index.html">Home</a>
+        <a href  = "#About">About Us</a>
+        <a href  = "#Blog">Blog</a>
+        <a href  = "form_subscribe.html">Contact</a> <!-- add STRETCH form link here -->
+        <a href  = "#signIN">Sign In</a>
+      </div>
 
-</nav>
+    </nav>
 
-</body>
+
+    <div class = "form_container">
+
+      <div class = "customer">
+
+        <h3> Provide some info and you will be subscribed to SpaceWalkers!</h3>
+
+        <div class = "contact">
+          <div class = "customerINFO name">
+            <label for =  "firstName"> First Name </label>
+            <input type = "text" id = "firstName" name = "firstName"> </input>
+          </div>
+
+          <div class = "customerINFO name">
+            <label for =  "lastName"> Last Name </label>
+            <input type = "text" id = "lastName" name = "lastName"> </input>
+          </div>
+
+          <div class = "customerINFO email">
+            <label for =  "email"> email </label>
+            <input type = "text" id = "email" name = "lastName"> </input>
+          </div>
+        </div>
+
+        <div class = " instruction">
+          <label for = "instruction"> Anyhing you would like to know ?</label>
+          <textarea id = "instruction" name = "instruction" placeholder = "please explain your question "></textarea>
+        </div>
+
+      </div>  <!-- end customer -->
+
+
+      <div class = "submit-container">
+        <button class = "submit_btn" onclick = "simpleAlert()">Subscribe</button>
+      </div>
+
+      <footer class="footer">
+        <p>Copyright Fun Bus 2018</p>
+      </footer>
+
+
+    </div> <!-- end form-container -->
+
+
+
+
+
+
+
+    <script>
+      function simpleAlert() {
+        alert("does nothing but reset form! ");
+
+      }
+
+    </script>
+
+
+
+
+  </body>
 </html>
