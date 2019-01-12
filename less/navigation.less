@@ -5,11 +5,21 @@
     flex-direction: column;
     padding: 1.8% 0;
     .nav-font;
+    @media @phone{
+        background: none;
+        padding: 10px 0;
+    }
+
+    h1 {
+    }
 
     nav {
         .display;
         margin-top: 1.6%;
-   
+        @media @phone{
+            width: 90%;
+            .layout(space-evenly, center);
+        }
         a{
             text-decoration: none;
             color: black;
