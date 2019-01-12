@@ -79,8 +79,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .flex(@direction:column-reverse);
+      padding: 15px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -102,12 +111,24 @@
           color: @btn-bg-color;
           background: @porcelain;
         }
+
+        @media @phone {
+          width: 100%;
+          padding: 20px 0;
+          margin: 0 auto;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+     }
       
       img {
         width: 100%;
@@ -115,5 +136,8 @@
         border-radius: 10px;
       }
     }
+
+
   }
+
 }// home
