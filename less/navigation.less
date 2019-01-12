@@ -12,16 +12,31 @@
       font-size: 3.5rem;
       width: 100%;
       text-align: center;
+      @media @phone {
+        padding-bottom: 5%;
+        font-size: 3.8rem;
+      }
     }
     .nav-el {
-      padding: 0 0 2% 24%;
+      padding:0 0 2% 6%;
       width: 100%;
       display: flex;
+      justify-content: space-between;
+      @media @phone {
+        padding: 0;
+        text-align: center;
+      }
       a {
         .smalltxt();
+        font-size: 1.35rem;
         justify-content: flex-end;
         text-decoration: none;
         width: 15%;
+        @media @phone {
+          text-shadow: 1px 1px lightslategray;
+          font-size: 1.40rem;
+          width: 15%;
+        }
       }
     }
   }

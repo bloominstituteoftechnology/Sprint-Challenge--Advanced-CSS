@@ -162,7 +162,8 @@ p {
 }
 @media (max-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 750
+    px;
   }
 }
 .nav-bar {
@@ -184,10 +185,23 @@ p {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .nav-bar .logo {
+    padding-bottom: 5%;
+    font-size: 3.8rem;
+  }
+}
 .nav-bar .nav-el {
-  padding: 0 0 2% 24%;
+  padding: 0 0 2% 6%;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-el {
+    padding: 0;
+    text-align: center;
+  }
 }
 .nav-bar .nav-el a {
   margin: 0.25%;
@@ -195,9 +209,17 @@ p {
   font-weight: bold;
   color: #5E6164;
   font-size: 1.25rem;
+  font-size: 1.35rem;
   justify-content: flex-end;
   text-decoration: none;
   width: 15%;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav-el a {
+    text-shadow: 1px 1px lightslategray;
+    font-size: 1.4rem;
+    width: 15%;
+  }
 }
 .home {
   max-width: 65%;
@@ -207,11 +229,50 @@ p {
     max-width: 85%;
   }
 }
+@media (max-width: 768px) and (max-width: 500px) {
+  .home {
+    max-width: 95%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .bg-img {
+  width: 100%;
+  height: 18rem;
+  background-image: url("../img/main-header.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .intro .bg-img:hover p {
+  vertical-align: bottom;
+  transition: 1s;
+  display: block;
+}
+.home .intro .bg-img:hover h2 {
+  text-align: center;
+  transition: 1s;
+  display: block;
+}
+.home .intro .bg-img p {
+  display: none;
+  margin: 0;
+  padding: 1.5% 2.5% 2.5% 1.5%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 768px) {
+  .home .intro .bg-img p {
+    font-size: 0.8rem;
+  }
+}
+.home .intro .bg-img h2 {
+  display: none;
 }
 .home .space-images {
   display: flex;
@@ -223,6 +284,20 @@ p {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    padding-top: 5%;
+    order: -1;
+    width: 95%;
+    margin: 0;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -240,8 +315,27 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .home .walk {
+    margin-top: 30px;
+    padding: 25px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 5px 5px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 95%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -265,9 +359,34 @@ p {
   background-color: lightgray;
   color: #23293B;
 }
+@media (max-width: 768px) {
+  .home .walk .walk-text .btn {
+    width: 95%;
+    height: 4rem;
+    padding-left: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 95%;
+    height: 4rem;
+    padding-left: 0;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 0;
+    order: -1;
+    width: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
