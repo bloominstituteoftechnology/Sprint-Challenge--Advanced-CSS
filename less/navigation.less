@@ -1,1 +1,31 @@
 // Navigation code here
+
+.nav {
+  border-bottom: 1px solid @main-border-color;
+  background-color: @nav-bg;
+  text-align: center;
+  padding: 10px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 15px;
+
+    @media @phone {
+      font-size: 4rem;
+    }
+  }
+  
+  ul {
+    width: 85%;
+    .space-between;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    color: @nav-font;
+    
+    @media @desk {
+      width: 45%;
+    }
+  }
+}
