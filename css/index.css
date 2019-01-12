@@ -313,3 +313,87 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.blog .intro {
+  padding-top: 120px;
+}
+.blog .intro h2 {
+  padding-top: 20px;
+}
+.blog .intro img {
+  width: 800px;
+  border-radius: 5px;
+}
+.blog .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .blog .walk {
+    flex-direction: column;
+    padding: 25px;
+  }
+}
+.blog .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .blog .walk .walk-text {
+    width: 100%;
+    order: 2;
+  }
+}
+.blog .walk .walk-text h3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.blog .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.blog .walk .walk-text .btn {
+  background-color: #22283A;
+  padding: 15px;
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+.blog .walk .walk-text .btn:hover {
+  background-color: #5E6164;
+  color: #F6F6F6;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .blog .walk .walk-text .btn {
+    background-color: #22283A;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .blog .walk .walk-text .btn:hover {
+    background-color: #5E6164;
+    color: #F6F6F6;
+    cursor: pointer;
+  }
+}
+.blog .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .blog .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    order: 1;
+    padding-bottom: 25px;
+  }
+}
+.blog .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
