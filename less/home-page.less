@@ -4,7 +4,7 @@
 
 
   .intro {
-
+    
     h2 {
       padding: 15px;
     }
@@ -19,16 +19,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-   
-
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
       @media @mobile{
-        width: 100%;
-        height: 100%;
+        justify-content: center;
+        order: 1;
+        width: 80%;
+        height: 80%;
       }
     }
 
@@ -65,22 +66,23 @@
       @media @mobile{
         order:1;
         width: 100%;
-        
-        
         }
       h3 {
         margin-bottom: 10px;
-      }
 
       p {
         margin-bottom: 26px;
 
     }
 
-      .btn  a{
+      .btn {
         .button(1.6rem , white, #22283a);
         text-decoration: none;
-        
+        @media @mobile{
+          .mobileButton(1.6rem, white, #22283a);
+          width: 100%;
+          
+        }
       
         &:hover{
           .button(1.6rem, #22283a, white);
@@ -94,6 +96,8 @@
       @media @mobile{
         width: 100%;
         height: auto;
+        margin: 0 auto;
+        
     }
       
       img {
@@ -118,4 +122,16 @@ h1{
       height: auto;
   }
 }
+}
 
+.sky{
+  @media @mobile{
+    display: none;
+  }
+}
+
+.launch{
+  @media @mobile{
+    display: none;
+  }
+}
