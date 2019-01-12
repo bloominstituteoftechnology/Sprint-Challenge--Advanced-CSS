@@ -1,6 +1,8 @@
 // Mixins Here
 
+////////////////////////
 // debugging
+///////////////////////
 .b_dp {
   border: 1px solid hotpink;
 }
@@ -16,5 +18,27 @@
 }
 .b_o {
   border: 1px solid orange;
+}
+
+
+
+////////////////////////
+// layout
+////////////////////////
+.flex-row(){
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flex-col(){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
 }
 

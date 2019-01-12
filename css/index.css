@@ -175,6 +175,39 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  border: 1px solid hotpink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+}
+nav h1 {
+  border: 1px solid forestgreen;
+  font-size: 4rem;
+  color: #23293B;
+  padding: 1%;
+}
+nav .navbar {
+  border: 1px solid rebeccapurple;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  width: 45%;
+  margin-bottom: 1.5%;
+  padding: 0;
+}
+nav .navbar a {
+  border: 1px solid orange;
+  color: #454A59;
+  font-size: 1.5rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -184,6 +217,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  border: 1px solid hotpink;
 }
 .home .intro h2 {
   padding: 15px;
