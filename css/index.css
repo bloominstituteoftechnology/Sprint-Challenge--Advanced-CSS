@@ -165,19 +165,32 @@ nav {
   flex-direction: column;
   justify-content: normal;
   align-items: center;
+  padding-top: 1%;
+  margin: 0 auto;
+  background-color: #F6F6F6;
+}
+nav div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 nav div h1 {
   font-size: 4rem;
+  padding-bottom: 3%;
 }
 nav div div {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: normal;
-  padding-top: 3%;
+  padding-bottom: 2%;
 }
 nav div div a {
-  font-size: 5rem;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
