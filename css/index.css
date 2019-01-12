@@ -167,10 +167,14 @@ li {
   margin: 0 auto;
 }
 nav {
+  background: linear-gradient(#F1F1F1, #cccfd9);
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
+  border-bottom: 1px solid #454A59;
+  box-shadow: 0px 3px 10px 1px #454A59;
+  position: sticky;
+  top: 0;
 }
 nav h1 {
   align-self: center;
@@ -182,31 +186,58 @@ nav ul {
 }
 nav ul li {
   padding: 5px 0 10px;
+  margin: 0 0 1px 0;
+}
+@media (max-width: 500px) {
+  nav ul li {
+    font-size: 1.2rem;
+    margin: 0;
+  }
 }
 nav ul li a {
   padding: 10px 20px;
   color: #454A59;
-  background-color: #F6F6F6;
+  background-color: none;
   font-weight: 600;
   text-decoration: none;
 }
 nav ul li a:hover {
-  color: #F6F6F6;
+  color: #cccfd9;
   background-color: #454A59;
   font-weight: 600;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  border-radius: 10px 10px 0 0;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+}
+@media (max-width: 500px) {
+  nav ul li a:hover {
+    border-radius: 5px 5px 0 0;
+  }
+}
+@media (max-width: 500px) {
+  nav ul li a {
+    padding: 10px 10px;
+  }
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #dee2e6;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    border-radius: 0;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -225,6 +256,24 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img.blast {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img.sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img.launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -241,8 +290,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -258,20 +320,33 @@ footer {
   font-weight: bolder;
   text-align: center;
   width: 30%;
+  min-width: 100px;
   padding: 8px 0;
   border: 0;
   cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
-  color: #0f1114;
-  background-color: #ffffff;
+  color: #22283A;
+  background-color: #F6F7F8;
   -webkit-transition-duration: 0.75s;
   -moz-transition-duration: 0.75s;
   transition-duration: 0.75s;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

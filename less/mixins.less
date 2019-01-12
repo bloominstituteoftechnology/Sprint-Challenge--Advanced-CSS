@@ -5,6 +5,12 @@
     -moz-transition-duration: @duration;
     transition-duration: @duration;
 }
+
+// Border
+.border-radius(@tl: 0; @tr: @tl; @bl: 0; @br: @bl) {
+    border-radius: @tl @tr @bl @br;
+}
+
 // Buttons
 .btn(@btn-bg-color; @btn-color; @btn-width: 50%; @btn-border-radius: 0; @btn-font-size: 1.8rem) {
     background-color: @btn-bg-color;
@@ -14,39 +20,41 @@
     font-weight: bolder;
     text-align: center;
     width: @btn-width;
+    min-width: 100px;
     padding: 8px 0;
     border: 0;
     cursor: pointer;
     &:hover{
-        color: darken(@btn-color, 90%);
-        background-color: lighten(@btn-bg-color, 90%);
+        color: @btn-bg-color;
+        background-color: @btn-color;
         .transition(0.75s);
+    }
+    @media @phone {
+        width: 100%;
+        padding: 20px;
     }
 }
 
 // Links
 .link(@link-fg-color; @link-bg-color; @link-bold: 600) {
     color: @link-fg-color;
-    background-color: @link-bg-color;
+    background-color: none;
     font-weight: @link-bold;
     text-decoration: none;
     &:hover{
         color: @link-bg-color;
         background-color: @link-fg-color;
         font-weight: @link-bold;
-        .transition(0.5s);
+        .border-radius(10px; 10px; 0; 0);
+        .transition(0.75s);
+        @media @phone {
+            .border-radius(5px; 5px; 0; 0);
+        }
     }
 }
 
-// Blinky animation
-.keyframes(@name; @arguments) {
-	@-moz-keyframes @name { @arguments(); }
-	@-webkit-keyframes @name { @arguments(); }
-	@keyframes @name { @arguments(); }
+// Positioning
+.sticky-top(@top-pos) {
+    position: sticky;
+    top: @top-pos;
 }
-.animation(@arguments) {
-	-webkit-animation: @arguments;
-	-moz-animation: @arguments;
-	animation: @arguments;
-}
-
