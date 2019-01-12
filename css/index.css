@@ -1,0 +1,30 @@
+.home {
+  max-width: 600px;
+  width: 100%;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bcbcbc;
+  font-size: 14px;
+  margin: 1.4em 0;
+  text-decoration: none;
+}
+#nav-home {
+  margin-left: 50px;
+}
+#nav-about {
+  margin-left: 50px;
+}
+#nav-portfolio {
+  margin-left: 50px;
+}
+#nav-contact {
+  margin-left: 50px;
+}
+#nav-signin {
+  margin-left: 50px;
+}
