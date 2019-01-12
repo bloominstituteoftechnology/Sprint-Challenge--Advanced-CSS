@@ -169,8 +169,9 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: #F1F1F1;
+  background-color: #F6F6F6;
   height: 80px;
+  font-family: #454A59;
 }
 .top-content h1 {
   padding: 7px 0 18px;
@@ -179,6 +180,7 @@ p {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
+  color: #23293B;
   padding: 0 10px;
 }
 footer {
@@ -238,6 +240,10 @@ footer {
   color: white;
   padding: 4px 11px;
   border-radius: 4px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
