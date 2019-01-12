@@ -45,7 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
 -Preprocessing allows the coder to style CSS dynamically. Instead of styling individual elements and hard coding values, preprocessers allow the coder to implement elements of programming languages like Javascript(the compiler) to automate and organize many of the styling functions.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-Namespacing, Mixins  and Variables. All of it basically, great segway in to Javascript.
+Namespacing, Mixins  and Variables. All of it basically, great segway in to Javascript. No major issues with this module. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -110,11 +110,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
