@@ -2,7 +2,7 @@
 
 .home {
   .intro {
-
+    
     h2 {
       padding: 15px;
     }
@@ -14,10 +14,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    
+    .center(center);
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -62,6 +59,7 @@
 
     .walk-text {
       width: 50%;
+      margin: 0 auto;
 
       @media @mobile{
         order:1;
@@ -75,21 +73,22 @@
 
     }
 
-      .btn {
-        .button(1.6rem , white, #22283a);
-        text-decoration: none;
-        @media @mobile{
-          .mobileButton(1.6rem, white, #22283a);
-          width: 100%;
-          
-        }
       
-        &:hover{
-          .button(1.6rem, #22283a, white);
-        }
+    }
+    .btn {
+      .button(1.6rem , white, #22283a);
+      text-decoration: none;
+      @media @mobile{
+        width: 100%;
+        margin-top: 3%
+      }
+      
+    
+      &:hover{
+        .button(1.6rem, #22283a, white);
+      }
       }
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -108,7 +107,7 @@
       }
     }
   }
-}// home
+// home
 
 h1{
   .center(center);
