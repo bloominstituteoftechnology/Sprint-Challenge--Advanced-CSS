@@ -1,7 +1,7 @@
 // Mixins Here
 
-.button(@width) {
-    background-color: @main-font-color;;
+.button(@width, @fontcolor) {
+    background-color: @fontcolor;
     color: #fff;
     width: @width;
     font-size: 1.6rem;
@@ -12,7 +12,7 @@
     cursor: pointer;
     &:hover {
         background-color: #fff;
-        color: @main-font-color;;
+        color: @fontcolor;
     }
 }
 
