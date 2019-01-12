@@ -1,1 +1,31 @@
 // Navigation code here
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: @nav-bg;
+    color: @nav-font;
+    border: 1px solid @nav-border;
+    opacity: 0.9;
+    .flex;
+
+    h1{
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    .navlinks{
+        width: 400px;
+        //add media viewport.
+        .flex-links; 
+        padding: 1rem;
+
+        a{
+               
+            font-size: 1.6rem;
+            color: @nav-font;
+            text-decoration: none;
+        }
+    }
+}
