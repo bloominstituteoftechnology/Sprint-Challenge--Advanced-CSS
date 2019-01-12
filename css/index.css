@@ -166,7 +166,12 @@ p {
 .navigation {
   width: 100%;
   max-width: 100%;
-  background-color: #F6F6F6;
+  margin: 0 auto;
+  border: 1px solid red;
+  background-color: rgba(246, 246, 246, 0.4);
+  position: fixed;
+  z-index: 1;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -178,20 +183,24 @@ p {
   margin-top: 20px;
 }
 .navigation nav {
+  border: 1px solid red;
+  margin: 0 auto;
   width: 100%;
   max-width: 800px;
   display: flex;
   justify-content: space-between;
-  padding: 0 27%;
+  padding: 0 25%;
 }
 @media (max-width: 500px) {
   .navigation nav {
     padding-bottom: 10px;
-    padding: 0 17%;
+    padding: 0 11%;
   }
 }
 .navigation nav a {
+  border: 1px solid red;
   text-decoration: none;
+  text-align: center;
   color: #454A59;
   padding: 5px;
   font-size: 1.4rem;
@@ -212,6 +221,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
   border: none;
+  margin-top: 105px;
 }
 @media (max-width: 500px) {
   .home .intro img {

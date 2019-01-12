@@ -3,29 +3,35 @@
 .navigation {
     width: 100%;
     max-width: 100%;
-    background-color: @nav-bg;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: rgba(@nav-bg, 0.4);
+    position: fixed;
+	z-index: 1;
+	top: 0;
     .flex();
     flex-direction: column;
     border-bottom: 1px solid @nav-border;
-    // @media @phone {
-    //     max-width: 500px;
-    // }
     h1 {
         margin-bottom: 20px;
         margin-top: 20px;
     }
     nav {
+        border: 1px solid red;
+        margin: 0 auto;
         width: 100%;
         max-width: 800px;
         display: flex;
         justify-content: space-between;
-        padding: 0 27%;
+        padding: 0 25%;
         @media @phone {
             padding-bottom: 10px;
-            padding: 0 17%;
+            padding: 0 11%;
         }
         a {
+            border: 1px solid red;
             text-decoration: none;
+            text-align: center;
             color: @nav-font;
             padding: 5px;
             font-size: 1.4rem;
