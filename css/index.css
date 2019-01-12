@@ -194,6 +194,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro .main-iheader {
+  background-image: url("../img/main-header.png");
+  height: 200px;
+  background-position: center;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
