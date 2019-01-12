@@ -85,11 +85,14 @@
 
       .btn {
         display: inline-block;
-        background-color: @btn-bg-color;
+        .btn-colors(#fff, @btn-bg-color, transparent);
         padding: 10px 20px;
         border-radius: 5px;
-        color: #fff;
         font-size: 1.8rem;
+
+        &:hover {
+          .btn-colors(@btn-bg-color, #fff, @btn-bg-color);
+        }
 
         @media @phone {
           display: block;

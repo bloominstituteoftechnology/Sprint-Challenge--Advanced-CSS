@@ -264,11 +264,17 @@ footer {
 }
 .home .walk .walk-text .btn {
   display: inline-block;
+  color: #fff;
   background-color: #22283A;
+  border: 1px solid transparent;
   padding: 10px 20px;
   border-radius: 5px;
-  color: #fff;
   font-size: 1.8rem;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #fff;
+  border: 1px solid #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
