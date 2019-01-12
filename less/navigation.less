@@ -1,1 +1,24 @@
 // Navigation code here
+
+.navigation {
+    max-width: 800px;
+    margin: 0 auto;
+    .flex();
+    flex-direction: column;
+    padding-top: 13px;
+
+    .nav__logo {
+        font-size: 4rem;
+        padding-bottom: 19px; 
+    }
+
+    .nav__link-container {
+        width: 47%;
+        .flex(@justify:space-between);
+    }
+
+    .nav__link {
+        .normalize(black);
+        font-size: 1.6rem;
+    }
+}

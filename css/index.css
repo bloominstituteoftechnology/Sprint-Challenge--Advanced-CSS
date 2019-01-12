@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 13px;
+}
+.navigation .nav__logo {
+  font-size: 4rem;
+  padding-bottom: 19px;
+}
+.navigation .nav__link-container {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.navigation .nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
