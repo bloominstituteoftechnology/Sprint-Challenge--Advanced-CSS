@@ -1,0 +1,19 @@
+1. What is the difference between an adaptive website and a fully responsive website?
+
+  An adaptive website has breakpoints and is only adaptive at these points, but not between them. A responsive website not only has breakpoints, but uses responsive units so that the website is responsible at all sizes.
+
+2. Describe what it means to be mobile first vs desktop first.
+
+  Mobile design is generally built functionality-first, making sure that the bare minimum need for the website is available on the smallest screen. Later, it will layer in 'extras' for larger resolutions. Desktop first layers in all of those 'extras' first, focusing on the main design for the website, and then pares down to become mobile-friendly.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+  Sets font-size to base ten, so rem units will logically reflect pixels (e.g., 16px = 1.6rem)
+
+4. How would you describe preprocessing to someone new to CSS?
+
+  Preprocessing is a way to introduce a different syntax to CSS based on preference that automatically compiles to standard CSS for a website to read.
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  I'm _really_ loving the nesting portion of LESS. I find this significantly easier to manage and organize. Media queries within LESS give me trouble - both nested and escaped, but especially as escapes. I think with time it'll come to me, but I'm struggling a little with navigating escapes within imported files. 
