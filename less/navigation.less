@@ -7,6 +7,9 @@
     .flex();
     flex-direction: column;
     border-bottom: 1px solid @nav-border;
+    // @media @phone {
+    //     max-width: 500px;
+    // }
     h1 {
         margin-bottom: 20px;
         margin-top: 20px;
@@ -16,7 +19,11 @@
         max-width: 800px;
         display: flex;
         justify-content: space-between;
-        padding: 0 17%;
+        padding: 0 27%;
+        @media @phone {
+            padding-bottom: 10px;
+            padding: 0 17%;
+        }
         a {
             text-decoration: none;
             color: @nav-font;
