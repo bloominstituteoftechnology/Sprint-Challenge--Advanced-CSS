@@ -59,11 +59,20 @@
                 margin-bottom: 26px;
             }
             .btn {
-                .btn-style();
+                .btn-style(70px, 30px, 1.7rem, 6px);
+                a { 
+                  text-decoration: none; 
+                  color: @sea-shell;
+                }
+                &:hover { 
+                  text-decoration: none; 
+                  background-color: @sea-shell; 
+                  color: @ebony-clay; 
+                }
             }
             @media @mobile {
                 .btn {
-                    .btn-style-mobile();
+                    .btn-style(100%, 60px, 2rem, 20px);
                 }
             }
         }

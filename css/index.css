@@ -257,11 +257,20 @@ footer {
   font-size: 1.7rem;
   color: #F1F1F1;
   background-color: #23293B;
-  width: 30%;
+  width: 70px;
   height: 30px;
   border-radius: 3px;
   text-align: center;
   padding-top: 6px;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+.home .walk .walk-text .btn:hover {
+  text-decoration: none;
+  background-color: #F1F1F1;
+  color: #23293B;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -272,7 +281,7 @@ footer {
     height: 60px;
     border-radius: 3px;
     text-align: center;
-    padding-top: 18px;
+    padding-top: 20px;
   }
 }
 @media (max-width: 500px) {
