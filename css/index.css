@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .top {
-  max-width: 850px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
 }
@@ -171,16 +171,21 @@ p {
   justify-content: space-around;
   align-items: center;
   background-color: #dee2e6;
-  height: 9rem;
+  height: 12.5rem;
+  position: fixed;
+  left: 300px;
 }
 .top .toph1 {
   font-size: 4rem;
 }
 .top a {
   font-size: 1.6rem;
-  padding: 1.4rem;
+  padding: 1.8rem;
   text-decoration: none;
   color: #5E6164;
+}
+.top a:hover {
+  background-color: darkcyan;
 }
 footer {
   color: #22283B;
@@ -222,6 +227,7 @@ footer {
 }
 .home .image1 {
   border-radius: 0.8rem;
+  margin-top: 15%;
 }
 .home .visit-planets {
   padding: 15px;
