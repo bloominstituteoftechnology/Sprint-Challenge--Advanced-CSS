@@ -1,3 +1,4 @@
+@phone (max-width: 500px);
 .b_dp {
   border: 1px solid hotpink;
 }
