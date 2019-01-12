@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +162,23 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.topbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: "";
+  align-items: center;
+  margin: "";
+  margin-top: "";
+  max-width: "";
+  background: #eee;
+}
+.topbar .logo {
+  margin: 1%;
+}
+.topbar .nav {
+  margin: 1%;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -175,6 +195,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 1%;
 }
 .home .space-images {
   display: flex;

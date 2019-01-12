@@ -1,1 +1,10 @@
 // Mixins Here
+.flex-set(@justify:"", @margin:"", @margin-top:"", @max-width:"", @alignitems:"", @flexdir:""){
+    display: flex;
+    flex-direction: @flexdir;
+    justify-content: @justify;
+    align-items: @alignitems;
+    margin: @margin;
+    margin-top: @margin-top;
+    max-width: @max-width;
+}
