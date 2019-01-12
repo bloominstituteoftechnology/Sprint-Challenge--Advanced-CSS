@@ -1,5 +1,14 @@
 // Home Content
 
+.btnmix(@width, @hieght) {
+  border: 1px solid black;
+  font-size: 1.4rem;
+  border-radius: 5%;
+  width: @width;
+  height: @hieght;
+}
+
+
 .home {
 
   .intro {
@@ -57,8 +66,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
     }
 
     .walk-img {
@@ -71,5 +78,22 @@
         border-radius: 10px;
       }
     }
+
+    button {
+      .btnmix(15rem, 3rem);
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+
+
   }
-}// home
+  footer {
+    border: 1px solid red;
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+  }
+
+
+}// homes
