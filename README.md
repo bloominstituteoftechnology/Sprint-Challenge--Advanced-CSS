@@ -33,14 +33,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    1A) Adaptive websites is the process of making different pages for the specific sizes needed for devices like desktops, tablets, and phones. Responsive design is making your website change for different devices with something called Media Queries. Thereby changing the size and even design of a page as a users screen grows smaller or larger.
+
+
 
 2. Describe what it means to be mobile first vs desktop first.
+    2A)  Mobile vs desktop first is the decision to build a website with the desktop specs as a priority or mobile as the priority. It will have to be decided to start the website from the maximum specs such as width for desktop or rather from the minimum specs and work your way up for mobile.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    3A) 62.5% is setting a percentage of the font size. Thereby setting everything at 10px
+
 
 4. How would you describe preprocessing to someone new to CSS?
+    4A) I would say a preprocessor like sass is a technology akin to javascript in some ways. We follow a set of rules and procedures of the program and it will then take our input and render it in regular CSS. It allows us to assign values to variables and use those variables in lieu of normal property values.
+
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    5A) My favorite concept in preprocessing would have to be the nesting ability. It allows us to use specificity but without using a large amount of time writing out long tag, ids, or class names. I’d say the concept that may cause the most trouble would be that of parametric mixing. It would help having some foreknowledge of javascript functions and parameters. Essentially a parametric mixin is a function with parameters that can be given default arguments, but also can be changed based on the arguments passed in.  
+
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -170,6 +170,7 @@ nav .nav-head {
   flex-direction: column;
   justify-content: center;
   font-size: 4rem;
+  margin-left: 8%;
 }
 .nav-top {
   display: flex;
@@ -182,8 +183,8 @@ nav .nav-head {
 .navver .a-tag {
   font-size: 1.6rem;
   text-decoration: none;
-  color: black;
-  margin: 1%;
+  color: #23293B;
+  margin: 1rem;
 }
 footer {
   color: #22283B;
@@ -195,6 +196,30 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-walk {
+    width: 100%;
+  }
+}
+.home .top-img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .top-img {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -205,6 +230,21 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 92.5%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -228,8 +268,23 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -9%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -239,17 +294,41 @@ footer {
 }
 .home .walk .walk-text .btn {
   width: 20%;
-  height: 9%;
-  padding: 2.5%;
+  height: 10%;
+  padding: 2%;
   padding-left: 4%;
   font-size: 1.3rem;
   border-radius: 5px;
-  background: #23293B;
+  background: #22283A;
   color: #F6F7F8;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 50px;
+    padding: 2.5%;
+    padding-left: 42%;
+    padding-top: 4.5%;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    background: #23293B;
+    color: #F6F7F8;
+  }
+}
+.home .walk .btn:hover {
+  background-color: #5E6164;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 125%;
+    margin-left: -13%;
+    order: -1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
