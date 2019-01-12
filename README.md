@@ -52,16 +52,16 @@ Follow these steps to set up your project:
 
 * [x] Fork the project into your GitHub user account
 * [x] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
