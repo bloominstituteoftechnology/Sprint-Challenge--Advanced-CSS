@@ -34,14 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features, and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics.
+
+Fully responsive websites are an approach to web design that uses a flexible design to make web pages render well on a variety of devices and window or screen sizes. Fully responsive websites combine features of fixed, adaptive, and fluid websites together into one seamless experience.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first implies you will design and code for a mobile device first using min-widths and expand layout or features as you gain more screen space toward desktop. 
+Desktop first is instead designed initially for a desktop screen and utilizes max-width to set the break points. In this case, the media queries are set at max-widths, so the screen adjusts as the browser shrinks.
+
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+Font-size: 62.5% adjusts the rem basis from 16px to 10px, so that 1 rem = 10px, making it easier to easily specify font size without doing extra calculations.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS is a language with specific rules regarding how code must be written, that often require us to write similar code multiple times. Preprocessing is like a translator, that allows us to write the code in a more concise way, writing shortcuts for code used multiples times and to organize affected elements in one area. The translation then turns what we write into CSS. In short, preprocessing is simply a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I enjoyed learning about media queries to build webpages that can adapt or respond with width changes and it was helpful to learn how to group styles using mixins. At times mobile view when condensing from desktop first gives me trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
