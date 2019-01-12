@@ -382,7 +382,6 @@ footer {
   width: 80%;
 }
 .customer h2 {
-  border: 1px solid rebeccapurple;
   text-align: center;
 }
 @media (max-width: 500px) {
