@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    -Adaptive: There are DIFFERENT layouts for the webpage when being viewed on different sized devices
+    -Responsive: ONE layout that is using fluid grids in order to grow and shrink to match any screen that views it
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    -It is describing the order in which a website is built. If a website is build "mobile first" it is built from the smallest screen out. If a website is build "desktop first" then it is build from the largest screen in. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    -When using rem units setting font size to 62.5% makes 1rem = the standard font size 16px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    -a personal 'college exam synthesizer' . . . it knows your specific not taking style and can develope a complete study/reference guide from your MANY pages of notes (LESS FILES) taken throughout the term (while building the webpage).
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    -Nesting is by FAR my favorite component of preprocessing
+        -makes it ALOT easier to understand everything that is happening with an element at every stage of the websites use. 
+    -Trouble:
+        -It is quite frustrating when you shut off the less-watch-compiler in order to push to git hub and forget to turn it back on when you get back to work. 
+        -I have also had an issue getting my newly compiled CSS to show up after saving in VS code. I have found that I need to save in VS (you see the live server 'refresh') BUT THEN I need to manually click the refresh on the live server to see my updates EVERYTIME (or at least least do this before concluding that what I tried has not worked). 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
