@@ -1,17 +1,28 @@
 // Home Content
 
 .home {
-
+  margin-top: 6px;
+  
   .intro {
+    .flexbox;
 
     h2 {
-      padding: 15px;
+      padding: 10px 15px;
+      align-self: flex-start;
+
+      @media @mobile {
+        padding: 11.5px 15px;
+      }
     }
 
     p {
-      padding:0 15px;
+      padding: 6px 15px;
+
+      @media @mobile {
+        padding: 5px 14px 20px 15px;
+      }
     }
-  
+    
   }
 
   .space-images {
@@ -21,9 +32,23 @@
 
     img {
       width: 28%;
-      margin: 20px 2.5%;
+      margin: 14px 2.5% 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    @media @mobile {
+      width: 500px;
+
+      .sky, 
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -36,6 +61,14 @@
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        padding-right: 0;
+        margin-right: -10px;
+      }
+    }
+
+    @media @mobile {
+      margin: 20px -7px 0 auto;
     }
   }
 
@@ -58,6 +91,26 @@
       }
 
       .btn {
+        .button(white, @btn-bg-color);
+        padding: 8.5px;
+        width: 100px;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        text-align: center;
+
+        &:hover {
+          .button(@btn-bg-color, white);
+          cursor: pointer;
+        }
+
+        @media @mobile {
+          width: 100%;
+          padding: 26px;
+        }
+      }
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto 0 20px;
       }
     }
 
@@ -70,6 +123,16 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 95%;
+        margin: 20px 0.8% 20px auto;
+      }
+    }
+    @media @mobile {
+      .flexbox-col-rev;
+      margin: 20px auto;
+      padding: 0;
     }
   }
 }// home

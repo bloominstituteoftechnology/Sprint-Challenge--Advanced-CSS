@@ -1,1 +1,34 @@
 // Mixins Here
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexbox-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexbox-col-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button(@color, @bgcolor) {
+    color: @color;
+    background-color: @bgcolor;
+}
+
+.function() when (@top = true) {
+    .full-scroll-container nav a {
+        background-color: black;
+        color: white;
+    }
+}
