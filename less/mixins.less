@@ -1,17 +1,19 @@
 // Mixins Here
+
+//Mixin for Flexbox
 .flex (@j-content: space-between; @a-items: center) {
     display: flex;
     justify-content: @j-content;
     align-items: @a-items;
 }
 
-
+//Mixin for border styling of images
 .ph-round (@radius, @border: none) {
     border-radius: @radius;
     border: @border;
 }
 
-//Button
+//Button styling
 .button (@color: white; @bg-color: @btn-bg-color; @radius: 10px) {
     width: 35%;
     background-color: @bg-color;

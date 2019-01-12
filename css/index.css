@@ -192,7 +192,7 @@ p {
 @media (max-width: 500px) {
   .navigation nav {
     padding-bottom: 10px;
-    padding: 0 11%;
+    padding: 0 3%;
   }
 }
 .navigation nav a {
@@ -217,14 +217,10 @@ footer {
   align-items: center;
 }
 .home .intro img {
+  max-width: 100%;
   border-radius: 5px;
   border: none;
   margin-top: 105px;
-}
-@media (max-width: 500px) {
-  .home .intro img {
-    max-width: 500px;
-  }
 }
 .home .intro h2 {
   padding: 15px;
