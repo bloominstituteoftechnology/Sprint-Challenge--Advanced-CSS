@@ -198,6 +198,7 @@ footer {
   background-image: url("../img/main-header.png");
   height: 200px;
   background-position: center;
+  border-radius: 10px;
 }
 .home .space-images {
   display: flex;
