@@ -167,6 +167,11 @@ p {
   max-width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .nav {
+    background-color: green;
+  }
+}
 .nav h1 {
   font-size: 3.5rem;
   margin-bottom: 15px;
@@ -233,6 +238,14 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: inline-block;
+  background-color: #22283A;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.8rem;
 }
 .home .walk .walk-img {
   width: 46%;
