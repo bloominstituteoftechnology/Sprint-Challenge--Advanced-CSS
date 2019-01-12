@@ -2,6 +2,18 @@
   border: @width @style @color;
 }
 
-.round-borders(@radius) {
+.round-borders(@radius: 7px) {
   border-radius: @radius;
+}
+
+.button() {
+  color: white;
+  font-size: 1.6rem;
+  .border(1px; solid; black);
+  background: #22283A;
+  height: 35px;
+  width: 25%;
+  .round-borders;
+  text-align: center;
+  padding-top: 8px;
 }
