@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dee2e6;
+  height: 9rem;
+}
+.top .toph1 {
+  font-size: 4rem;
+}
+.top a {
+  font-size: 1.6rem;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: #5E6164;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -186,6 +208,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .image1 {
+  border-radius: 0.8rem;
 }
 .home .visit-planets {
   padding: 15px;
