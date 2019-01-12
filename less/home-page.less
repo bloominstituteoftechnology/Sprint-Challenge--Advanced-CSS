@@ -1,6 +1,7 @@
 // Home Content
 
 .home {
+  
 
   .intro {
 
@@ -13,17 +14,35 @@
     }
   
   }
+  
+  .content {
+    width: 82%;
+    .center();
+    @media @phone {
+      width: 100%;
+    }
+  }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .center();
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+    
+    img:nth-child(n+2) {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -45,9 +64,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 15px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +84,24 @@
       }
 
       .btn {
+        .button();
+        @media @phone {
+          .button(100%);
+        }
+      }
+      //Swap color on hover
+      .btn:hover {
+        .button(@size, @porcelain, @btn-bg-color);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
