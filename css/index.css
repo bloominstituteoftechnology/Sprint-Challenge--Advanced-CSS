@@ -258,8 +258,10 @@ footer {
 h1 {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
 }
 .banner {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  width: 100%;
 }
