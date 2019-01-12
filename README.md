@@ -35,14 +35,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive website uses different distinct layouts for specific screen sizes, represented by a break in the code. A fully responsive website is fluid and changes styles using CSS media, which enables it to adapt to any screen size.
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be mobile first vs desktop first. 
+Mobile first means the site is initially developed for the smallest screen sizes, essentially prioritizing users who will be seeing the site on thei phones. On the other hand, desktop first prioritizes desktop computer users hence the site is first designed for the larger screen sizes first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Setting the font-size: 62.5% is a typical method because 62.5% of 16px is 10px, which is default browser font size. Setting it this way allows the font size to scale for the user, since 1rem = 10px.
 
-4. How would you describe preprocessing to someone new to CSS?
+4. How would you describe preprocessing to someone new to CSS? 
+Preprocessing lets you generate a CSS using pre-processor specific syntax, adding features that don't exist in traditional CSS such as nesting, mixin, inheritance selector, etc. These features allows you to code faster and makes the code more readable and functional.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept is nesting, simply because it makes the CSS file cleaner and it makes it easier to make small changes in the code without disturbing things that you don't want affected. The most troubling concept to me is mixins, because its confusing for me to mix classes together to create these "functions".
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
