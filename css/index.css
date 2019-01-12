@@ -209,10 +209,15 @@ p {
   font-weight: bold;
   color: #5E6164;
   font-size: 1.25rem;
+  cursor: pointer;
   font-size: 1.35rem;
   justify-content: flex-end;
   text-decoration: none;
   width: 15%;
+}
+.nav-bar .nav-el a:hover {
+  transition: 2s;
+  transform: scale(1.1) translateX(10px);
 }
 @media (max-width: 500px) {
   .nav-bar .nav-el a {
@@ -360,6 +365,7 @@ p {
   font-size: 1.5rem;
   width: 35%;
   height: 10%;
+  cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
   transition: 1s;

@@ -28,10 +28,15 @@
       }
       a {
         .smalltxt();
+        cursor: pointer;
         font-size: 1.35rem;
         justify-content: flex-end;
         text-decoration: none;
         width: 15%;
+        &:hover {
+          transition: 2s;
+          transform: scale(1.1) translateX(10px);
+        }
         @media @phone {
           text-shadow: 1px 1px lightslategray;
           font-size: 1.40rem;
