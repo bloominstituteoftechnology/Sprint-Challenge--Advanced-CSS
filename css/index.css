@@ -5,14 +5,17 @@
   margin: 0 auto;
 }
 h1 {
+  color: #202534;
   display: flex;
   justify-content: center;
-  margin: 0em;
+  margin: 1px;
   font-size: 2.2em;
   font-weight: bold;
 }
 h2 {
-  margin-left: 8px;
+  margin: 8px 0;
+  color: #202534;
+  margin-left: 4px;
   font-size: 1.6em;
   font-weight: bold;
 }
@@ -59,12 +62,14 @@ header p {
   border-bottom: 1px solid lightgray;
 }
 .visit-planets h3 {
+  color: #202534;
   margin-left: 8px;
+  margin: 1px;
   font-size: 1.6em;
   font-weight: bold;
 }
 .visit-planets p {
-  margin-left: 8px;
+  margin-left: px;
   font-size: 0.95em;
   justify-content: flex-start;
 }
@@ -89,8 +94,8 @@ header p {
 .btn {
   text-transform: capitalize;
   color: white;
-  background: black;
-  border: 1px solid black;
+  background: #202534;
+  border: 1px solid #202534;
   border-radius: 8px;
   padding: 5px 9px;
   margin-top: 10px;
@@ -101,4 +106,68 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #F3F3F3;
+  border: 1px solid #DDDDDD;
+  border-radius: 8px;
+  padding: 0px 9px;
+}
+/* At 500px (Phone) and below do the following: */
+@media screen and (max-width: 500px) {
+  .home {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .blast,
+  .sky,
+  .launch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 8px;
+    margin: 10px 5px;
+    margin-left: 10px;
+  }
+  .sky,
+  .launch {
+    display: none;
+  }
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .walk-text {
+    width: 90%;
+    margin: 10px 10px;
+    margin-bottom: 30px;
+  }
+  #walk-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 8px;
+    margin: 30px auto;
+  }
+  .btn {
+    text-transform: capitalize;
+    color: white;
+    background: #202534;
+    border: 1px solid #202534;
+    border-radius: 8px;
+    padding: 21px;
+    margin-top: 10px;
+    text-align: center;
+    width: 90%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+  }
 }
