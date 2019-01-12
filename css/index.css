@@ -311,3 +311,31 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .contact-form h2 {
+  text-align: center;
+}
+.home .contact-form form {
+  margin: 0 auto;
+  padding: 25px;
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  .home .contact-form form {
+    display: none;
+  }
+}
+.home .contact-form form input[type=text],
+.home .contact-form form select,
+.home .contact-form form textarea {
+  resize: vertical;
+  width: 100%;
+  font-size: 1.6rem;
+  border-radius: 2.5px;
+}
+.home .contact-form form .submit {
+  background-color: #22283A;
+  color: white;
+  padding: 4px 11px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}

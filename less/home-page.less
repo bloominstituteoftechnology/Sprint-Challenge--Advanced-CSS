@@ -2,6 +2,8 @@
 
 .home {
 
+  
+
   .intro {
 
     h2 {
@@ -125,5 +127,35 @@
         border-radius: 10px;
       }
     }
+
   }
+
+  .contact-form {
+
+    h2{
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      padding: 25px;
+      font-size: 20px;
+
+      @media @phone {
+        display: none;
+      }
+
+        input[type=text], select, textarea {
+          resize: vertical;
+          width: 100%;
+          font-size: 1.6rem;
+          border-radius: 2.5px;
+        }
+
+        .submit {
+          .main-button(@btn-bg-color, white, 4px 11px, 4px, 1.6rem);
+        }
+      }
+  }
+  
 }// home
