@@ -1,1 +1,32 @@
 // Navigation code here
+nav {
+    position: fixed;
+    z-index: 1;
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin: 1% 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: @nav-bg;
+    padding-bottom: 2rem;
+    width: 100%;
+    a:link,
+    a:visited {
+        color: @nav-font;
+        text-decoration: none;
+        margin-right: 4%;
+        font-size: 1.6rem;
+    }
+    @media @mobile {
+        a:link {
+            margin-left: 1%;
+            margin-top: 3%;
+        }
+        h1 {
+            margin-top: 3%;
+        }
+    }
+}
