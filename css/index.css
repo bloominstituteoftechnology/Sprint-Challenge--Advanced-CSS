@@ -178,6 +178,13 @@ header {
 h1 {
   font-size: 4rem;
 }
+nav {
+  margin: o auto;
+}
+a {
+  text-decoration: none;
+  display: flex;
+}
 .home .intro h2 {
   padding: 15px;
 }
