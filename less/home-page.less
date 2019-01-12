@@ -1,4 +1,28 @@
 // Home Content
+header {
+  display: flex;
+  border:1px solid red;
+  align-items: 
+
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+nav {
+  display: flex;
+  border: 5px blue;
+
+}
+
+a {
+      text-decoration: none;
+      display: flex;
+
+    
+    }
+
 
 .home {
 
@@ -58,6 +82,17 @@
       }
 
       .btn {
+        
+.btn-layout(@j-content, @a-items) {
+  display: flex;
+  justify-content: @j-content;
+  align-items: @a-items;
+  background: #008080;
+  height: 45px;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: @white;
+  width: 80%;
       }
     }
 
@@ -72,4 +107,4 @@
       }
     }
   }
-}// home
+// home

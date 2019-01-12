@@ -1,1 +1,37 @@
 // Mixins Here
+.sign-btn() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #008080;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: @white;
+    width: 80%;
+
+    &:hover {
+        color: @btnbackground;
+        background: @white;
+        border: 1px solid@btnbackground;
+    }
+}
+
+.btn-layout(@j-content, @a-items) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+    background: #008080;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 2rem;
+    color: @white;
+    width: 80%;
+
+    &:hover {
+        color: @btnbackground;
+        background: @white;
+        border: 1px solid@btnbackground;
+    }
+}
+

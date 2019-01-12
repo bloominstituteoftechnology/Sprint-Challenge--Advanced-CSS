@@ -32,15 +32,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website? Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. 
+
+Adaptive is about creating different pages in accordance with the specific size of a device. It will showcase corresponding page according to the screen resolution of the device. This will display different pages based on different screen resolution.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+the screen adapts to desktop first and mobile later or it adapts to mobile first and desktop later.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+It is responsive. It moves when the page moves and response to the side
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing can help you code CSS faster with mixins, and variables etc.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Right now I do not understand preprocessing well.  Everything gives me trouble mixins, parametric mixins, escaping all been a struggle for me.  Not comfortble this week like the last week.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -124,3 +134,4 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
