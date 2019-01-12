@@ -284,6 +284,11 @@ footer {
   background-color: #22283A;
   border: 1px solid black;
   border-radius: 5px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn.btn:hover {
+  color: #22283A;
+  background-color: white;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -297,8 +302,13 @@ footer {
     background-color: #22283A;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
     padding-top: 15px;
     width: 100%;
+  }
+  .home .walk .walk-text .btn.btn:hover {
+    color: #22283A;
+    background-color: white;
   }
 }
 .home .walk .walk-img {
