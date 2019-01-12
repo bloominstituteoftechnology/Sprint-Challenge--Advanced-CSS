@@ -4,7 +4,7 @@
     margin :0 auto;
     background-color: @nav-bg;
     .flex();
-    .flex-direction(row);
+    .flex-direction(column);
     flex-wrap: wrap;
     width: 100%;
     // align-content: center;
@@ -17,9 +17,9 @@
         align-self: center;
         .flex();
         flex-direction: row;
-        width: 28%;
+        width: 50%;
         margin: 10px;
-        justify-content: space-around;
+        justify-content: space-evenly;
         @media @phone {
             justify-content: space-evenly;
             width: 90%;

@@ -65,6 +65,7 @@
     justify-content: center;
     @media @phone{
       flex-direction: column-reverse;
+      padding: 10px 10px;
     }
     .walk-text {
       width: 50%;
@@ -75,6 +76,9 @@
 
       p {
         margin-bottom: 26px;
+      }
+      @media @phone {
+        width: 100%;
       }
 
       .btn {
@@ -87,8 +91,10 @@
         } 
         
         @media @phone {
-          width: 100%;
+     
+          width: 95%;
           height: 70px;
+          padding-top: 20px;
         }
       
       }
@@ -102,7 +108,10 @@
         height: auto;
         border-radius: 10px;
       }
-
+      @media @phone {
+        width: 470px;
+        margin-left: 0%;
+      }
     }
   }
 }// home
