@@ -11,7 +11,7 @@
     nav{
         .displayAndJustify(flex; space-around);
         margin: 0 auto;
-        width: 50%;
+        width: 100%;
         padding: 10px 90px;
 
         a{
@@ -19,4 +19,16 @@
             text-decoration: none;
         }
     }
+    @media @phone {
+        .navigation {
+          nav{
+            display: flex;
+            width: 100%;
+            
+            a{
+                padding-left: 10px;
+            }
+          }
+      }
+}
 }
