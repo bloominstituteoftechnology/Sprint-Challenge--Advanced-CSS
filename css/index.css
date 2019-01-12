@@ -239,16 +239,6 @@ footer {
   text-align: center;
   padding: 2% 4%;
   border-radius: 5px;
-  transition: 1s;
-}
-
-.home .walk .walk-text .btn:hover {
-  background-color: white;
-  color: #F6F7F8;
-  font-size: 1.6rem;
-  text-align: center;
-  padding: 2% 4%;
-  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
