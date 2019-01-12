@@ -1,1 +1,19 @@
 // Mixins Here
+
+#buttonMixins {
+    .homepage-btn(@bg;@pad;@width;@align;@color;@border-radius;){
+        background-color: @bg;
+        padding: @pad;
+        width: @width;
+        text-align: @align;
+        color: @color;
+        border-radius: @border-radius;
+
+        &:hover {
+            background-color: @shuttle-gray;
+            color: @wild-sand;
+            cursor: pointer;
+        }
+    }
+}
+
