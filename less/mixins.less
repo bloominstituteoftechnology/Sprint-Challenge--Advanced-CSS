@@ -1,1 +1,34 @@
 // Mixins Here
+
+#mixins() {
+    .border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    }
+
+    .hover() {
+        &:hover {
+            background: @porcelain;
+        }
+
+        &:hover a {
+            color: @btn-bg-color;
+        }
+    }
+
+   .keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+    }
+
+    .animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+    }
+
+
+    }
+ 
