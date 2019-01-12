@@ -412,44 +412,47 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+}
 @media (max-width: 500px) {
   .home .intro img {
     width: 100%;
     border-radius: 10px;
   }
 }
-.home .space-images {
+.space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images .blast {
+  .space-images .blast {
     width: 100%;
   }
-  .home .space-images .sky {
+  .space-images .sky {
     display: none;
   }
-  .home .space-images .launch {
+  .space-images .launch {
     display: none;
   }
 }
-.home .space-images img {
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -457,7 +460,7 @@ footer {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .walk {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
@@ -465,16 +468,16 @@ footer {
     padding: 0;
   }
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.walk .walk-text .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,7 +491,7 @@ footer {
   font-size: 1.6rem;
   background: #22283A;
 }
-.home .walk .walk-text .btn:hover {
+.walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   animation: animationFrames linear 1s;
   animation-iteration-count: 1;
@@ -506,37 +509,37 @@ footer {
   -ms-animation-iteration-count: 1;
   -ms-transform-origin: 50% 50%;
 }
-.home .walk .walk-text .btn:hover a {
+.walk .walk-text .btn:hover a {
   color: #22283A;
 }
-.home .walk .walk-text .btn a {
+.walk .walk-text .btn a {
   text-decoration: none;
   color: #F6F7F8;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .walk .walk-text .btn {
     width: 100%;
     height: 7rem;
     font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .walk .walk-text {
     width: 95%;
     margin: 4%;
   }
 }
-.home .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .walk .walk-img {
     width: 95%;
     margin: 4%;
   }
 }
-.home .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
