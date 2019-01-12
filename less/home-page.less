@@ -6,7 +6,7 @@
 
   @media @phone {
     width: 100%;
-    background-color: #ffffff;
+    max-widthbackground-color: #ffffff;
   }
   h1 {
     font-size: 3.6rem;
@@ -19,6 +19,11 @@
   }
 }
 .home {
+  @media @phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .intro {
     h2 {
       padding: 15px;
@@ -32,12 +37,28 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 
-    @media @phone {
-      flex-wrap: nowrap;
+    .blast {
+      @media @phone {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
     }
-
+    .sky {
+      @media @phone {
+        width: 0;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+    }
+    .launch {
+      @media @phone {
+        width: 0;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -48,6 +69,10 @@
 
   .visit-planets {
     padding: 15px;
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    }
 
     h3 {
       margin-top: 11px;
@@ -64,9 +89,28 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .walk-img {
+      @media @phone {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        justify-content: stretch;
+        border: 1px solid red;
+      }
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -83,6 +127,13 @@
         width: 100%;
         max-width: 80px;
         text-align: center;
+
+        @media @phone {
+          width: 100%;
+
+          border: 1px solid red;
+          padding: 10px 50%;
+        }
 
         &:hover {
           .button(#ffffff, 1.4rem, @btn-bg-color);
