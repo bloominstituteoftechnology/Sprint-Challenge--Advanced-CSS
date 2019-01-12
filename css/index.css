@@ -148,6 +148,11 @@ h5 {
 h2 {
   font-size: 3.2rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
 h3 {
   font-size: 2.8rem;
 }
@@ -174,12 +179,23 @@ p {
   font-size: 4rem;
   padding-bottom: 19px;
 }
+@media (max-width: 500px) {
+  .navigation .nav__logo {
+    font-size: 3.8rem;
+    padding-bottom: 15px;
+  }
+}
 .navigation .nav__link-container {
   width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+@media (max-width: 500px) {
+  .navigation .nav__link-container {
+    width: 355px;
+  }
 }
 .navigation .nav__link {
   text-decoration: none;
@@ -196,8 +212,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+  }
+}
 .home .intro img {
   padding-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 470px;
+  }
 }
 .home .intro h2 {
   padding: 15px;

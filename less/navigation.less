@@ -10,11 +10,20 @@
     .nav__logo {
         font-size: 4rem;
         padding-bottom: 19px; 
+
+        @media @phone {
+            font-size: 3.8rem;
+            padding-bottom: 15px;
+        }
     }
 
     .nav__link-container {
         width: 375px;
         .flex(@justify:space-between);
+
+        @media @phone {
+            width: 355px;
+        }
     }
 
     .nav__link {
