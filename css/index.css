@@ -222,8 +222,13 @@ nav {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
   width: 40%;
+  overflow: hidden;
+  margin-top: 80px;
+  background: #F6F6F6;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
 }
 @media (max-width: 500px) {
   nav {
@@ -256,6 +261,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: -30px;
+  }
 }
 @media (max-width: 500px) {
   .home .intro .header-img {
