@@ -165,20 +165,23 @@ a {
   color: #5E6164;
 }
 nav {
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
   text-align: center;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 nav h2 {
   font-size: 4rem;
 }
 nav .navlinks {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 nav .navlinks a {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
+  font-weight: bold;
   color: #454A59;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 footer {
   color: #22283B;
