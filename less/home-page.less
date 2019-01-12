@@ -15,9 +15,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+      .space-imgs; //Mixin
 
     img {
       width: 28%;
@@ -57,7 +55,13 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn { 
+          .button(black; white);  //Button mixin
+
+          &:hover {
+              .button(white; black);
+
+          }
       }
     }
 
