@@ -36,10 +36,11 @@
     }
 
     .blast {
-      width: 100%;
-      padding: 0 10px 0 10px;
+      @media @phone {
+        width: 100%;
+        padding: 0 10px 0 10px;
+      }
     }
-
     .sky {
       @media @phone {
         .hide;
@@ -100,7 +101,7 @@
       }
 
       .btn {
-        width: 30%;
+        width: 100px;
         .button(35px, @btn-bg-color, 1.8rem);
         .resetstyle(@wild-sand);
 
@@ -113,6 +114,17 @@
           width: 100%;
           height: auto;
           padding: 15px;
+        }
+
+        a {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: @wild-sand;
+
+          &:hover {
+            color: @btn-bg-color;
+          }
         }
       }
     }
