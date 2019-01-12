@@ -1,3 +1,13 @@
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .btn button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -203,6 +213,8 @@ footer {
 }
 .home .intro .header-image {
   padding: 1rem;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 .home .intro .header-image img {
   width: 100%;
