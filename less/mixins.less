@@ -1,1 +1,92 @@
 // Mixins Here
+.create-button(@btn-width:10rem, @btn-height:1rem) {
+    width: @btn-width;
+    padding: @btn-height 0;
+    border-radius: 1rem;
+    background-color: @btn-background;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    .hover-animation();
+  }
+  
+  .hover-animation(@transitionType:background-color, @durationTime:0.5s, @changeColorTo:lighten(rgb(@btn-background, 50%, 50%), 20%)) {
+    transition-property: @transitionType;
+    transition-duration: @durationTime;
+    &:hover {
+      transition-property: @transitionType;
+      transition-duration: @durationTime;
+      background-color: @changeColorTo;
+    }
+  }
+  .image-animation() {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  .mobile-display() {
+    // Mobile responsiveness for tablets and phones
+    @media (max-width: 920px) {
+      .navigation {
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+      }
+      .home {
+        .form-style {
+          width: 75%;
+        }
+      } 
+      @media @phone {
+        .navigation {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+        .home {
+          .space-images {
+            height: 30rem;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+    
+          .sky,
+          .launch {
+            display: none;
+          }
+          .walk {
+            flex-direction: column-reverse;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            .walk-text {
+              width: 96%;
+              margin: 2%;
+    
+              .btn {
+                .create-button(100%);
+              }
+            }
+            .walk-img {
+              width: 96%;
+              margin: 2%;
+            }
+          }
+          .form-style {
+            width: 100%;
+            border-top: 1px solid @main-border-color;
+            margin-top: 1rem;
+            h3 {
+              padding: 2rem;
+            }
+        }
+      } //Home
+    }
+  }
+}
