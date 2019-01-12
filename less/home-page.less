@@ -169,5 +169,40 @@ max-width: 65%;
       }
     }
   }
+  .signup {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 2.5rem;
+      width: 100%;
+      height: 40rem;
+      margin: 2.5% 0 2.5% 0;
+      .formlabel {
+        text-align: center;
+        height: 15%;
+        width: 100%;
+        .largetxt();
+        color: @sea-shell;
+      }
+      input {
+        .smalltxt();
+        font-size: 1.5rem;
+        text-align: center;
+        background: lightblue;
+        height: 15%;
+        width: 50%;
+        &:last-child {
+          margin-top: 2%;
+          background: @header-font-color;
+          color: lightblue;
+        }
+      }
+    }
+  }
 }// home
 
