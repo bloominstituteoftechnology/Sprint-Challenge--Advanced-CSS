@@ -1,1 +1,28 @@
 // Mixins Here
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.sign-up-btn {
+    border-radius: 5px;
+    background: @ebony-clay;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 30%;
+
+    &:hover {
+        border:1px solid @ebony-clay;
+        background: white;
+        color: @ebony-clay;
+        transition: .5s;
+    }
+}
