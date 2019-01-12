@@ -137,6 +137,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
   width: 800px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -259,8 +260,10 @@ footer {
   color: white;
   cursor: pointer;
 }
+.home .walk button:hover {
+  background-color: #1a1a1a;
+}
 .home footer {
-  border: 1px solid red;
   width: 90%;
   max-width: 90%;
   margin: auto;
