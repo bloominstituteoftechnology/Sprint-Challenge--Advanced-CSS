@@ -49,7 +49,7 @@ Edit this document to include your answers after each question. Make sure to lea
 (min-width: px) would be mobile first
 (max-width: px) would be desktop first
 
--The websites users would direct your usage of mobile or desktop first. For instance if the users were mostly on PCs you would probobaly want desktop first versus if your users were mostly mobile users you would want to use mobile first. Unless of course your web development team had a specific workflow and then you would use whatever your boss said.
+- The websites users would direct your usage of mobile or desktop first. For instance if the users were mostly on PCs you would probobaly want desktop first versus if your users were mostly mobile users you would want to use mobile first. Unless of course your web development team had a specific workflow and then you would use whatever your boss said.
 
 
 
