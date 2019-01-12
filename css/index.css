@@ -5,6 +5,12 @@
   background-color: #22283A;
   color: white;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  height: auto;
+  border: none;
+  width: 30%;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
