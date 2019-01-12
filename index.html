@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,12 +17,28 @@
 
 <body>
 
- <!-- navigation code here -->
+  <nav>
+    <div class="nav-bar">
+      <div class="nav-title">
+        <h1>SpaceWalkers</h1>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Sign In</a>
+        <a href="form.html">Forms</a>
+      </div>
+    </div>
+  </nav>
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+      <div class="header-img">
+        <img src="img/main-header.png">
+      </div>
 
       <h2>Lift Off</h2>
     
@@ -52,18 +69,19 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <a href="form.html">Sign Up</a>
         </div>
       </div>
       
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
+          <!-- <a href="form.html">Sign Up</a> -->
       </div>
 
     </section>
 
     <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+      <p>&copy; SpaceWalkers 2018</p>
     </footer>
 
   </div>
