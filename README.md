@@ -11,28 +11,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-* Adaptive design anticipates the users screen dimensions with multiple fixed layout sizes; applying the correct layout depending on screen detected.
+> Adaptive design anticipates the users screen dimensions with multiple fixed layout sizes; applying the correct layout depending on screen detected.
 
-Fully reponsive design responds to user screen size regardless of dimensions, providing a suitable layout at any size.
-
+> Fully reponsive design responds to user screen size regardless of dimensions, providing a suitable layout at any size.
+---
 2. Describe what it means to be mobile first vs desktop first.
 
-* The idea is a mobile first site is designed with mobile device screens in mind first, then scaled up to desktop sizes, second. What that translates into is @media queries that declare 'min-width' versus 'max-width', respectively. 
-
+> The idea is a mobile first site is designed with mobile device screens in mind first, then scaled up to desktop sizes, second. What that translates into is @media queries that declare 'min-width' versus 'max-width', respectively. 
+---
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-* Provides an easy way to denote font sizes while utilizing the benefits of rem accessibility. In more direct terms, it means 1.6rem would equal 16px (standard default font size), 1.4rem = 14px, 1rem = 10px, and so on.
-
+> Provides an easy way to denote font sizes while utilizing the benefits of rem accessibility. In more direct terms, it means 1.6rem would equal 16px (standard default font size), 1.4rem = 14px, 1rem = 10px, and so on.
+---
 4. How would you describe preprocessing to someone new to CSS (Assuming this person knows that CSS is (or a style sheet), at least)?
 
-* Preprocessors allow developers to write style sheets while leveraging some of the programming concepts (such as variables, math, and more) found in languages like Javascript.  
-
+> Preprocessors allow developers to write style sheets while leveraging some of the programming concepts (such as variables, math, and more) found in languages like Javascript.  
+---
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-* Nesting, Mixins, and Variables. Choosing one of those three concepts as a favorite is like choosing a favorite band, so very difficult when there are so many excellent options! 
+> Nesting, Mixins, and Variables. Choosing one of those three concepts as a favorite is like choosing a favorite band, so very difficult when there are so many excellent options! 
 
-What really confused me was the animation mixin I used in Preprocessing II. It utilized @keyframes in the mixin and the it was called with 'name' and 'arguments'. While the mixin worked like a charm, it took me a while to figure out why. What I didn't know was that @keyframes was a rule and that @keyframes statements are formed naturally like nested CSS. I was looking around for a mysteriously missing @keyframes variable! 
-
+> What really confused me was the animation mixin I used in Preprocessing II. It utilized @keyframes in the mixin and the it was called with 'name' and 'arguments'. While the mixin worked like a charm, it took me a while to figure out why. What I didn't know was that @keyframes was a rule and that @keyframes statements are formed naturally like nested CSS. I was looking around for a mysteriously missing @keyframes variable! 
+---
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
