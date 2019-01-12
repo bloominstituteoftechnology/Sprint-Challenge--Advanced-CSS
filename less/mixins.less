@@ -1,1 +1,142 @@
 // Mixins Here
+.setpage{
+    max-width:800px;
+    width: 100%;     
+    margin: 0 auto;
+}
+
+.setheader{    
+    .topheader{
+        display: flex;
+        flex-direction: column; 
+        justify-content:center;
+        align-items:center;
+        h1{
+            font-size: 3.5rem;
+            padding-top: 2.5%;
+            padding-bottom:2.5%;
+        }       
+    }
+    @media @phone{
+        .topheader{
+            max-width: 500px;
+            width: 100%;
+        }
+        
+    }
+}
+
+.fixnav{
+    nav{
+        width: 70%;
+        display:flex;
+        justify-content: space-evenly;
+        padding-bottom: 2%;
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color:black;            
+        }
+    }
+    @media @phone{
+        nav{
+            width:100%;
+        }
+    }
+}
+
+.btnfix(@btncolor, @txtcolor, @fontsize){
+    border: 1px solid black;
+    background-color:@btncolor;
+    color:@txtcolor;
+    font-size: @fontsize;
+    text-align: cener;
+    padding: 2%;
+    width: 28%;
+    border-radius: 5px 5px 5px 5px;
+    @media @phone{
+        width:100%;
+        font-size: 1.5rem;
+        padding: 4%;
+    }
+}
+
+//About Us Mixins 
+.animatenav{   
+    nav a{
+        animation-duration: 10000000000000s;
+        animation-name: grow;
+        animation-timing-function: ease;
+
+        @keyframes grow {
+            from{
+                border: 1px solid white;
+                padding: 3%;
+                width:25%;
+            }
+            to{
+                border: 1px solid black;
+                paddinging: 6%;
+                width: 30%;
+           }
+       }         
+
+    }
+
+    
+}
+
+.setmiddlecontent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid @main-border-color;
+    padding-top: 5%;
+    .firstp{
+        display: flex;
+        flex-direction: column;
+    }
+    .secondp{
+        display:flex;
+        flex-direction: column;
+    }
+    .thridp{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.setbottom{
+    display:flex;
+    justify-content: space-between; 
+    .walkers{
+        width: 60%;
+
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5%;
+        height: 100%;
+        h3{
+            justify-content: flex-start;          
+        }
+        p{
+            padding-top: 25%;
+            padding-bottom: 25%;
+        }  
+        .btn{
+            .btnfix(@btn-bg-color,white, 2rem);
+            width: 35%
+                       
+        }
+        .btn:hover{
+            background-color:white;
+            color:@btn-bg-color;        
+          }   
+
+    }
+}
