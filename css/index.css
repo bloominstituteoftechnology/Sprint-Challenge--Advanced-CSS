@@ -266,6 +266,8 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 0px;
   }
   .home .walk :nth-child(1) {
     order: 1;
