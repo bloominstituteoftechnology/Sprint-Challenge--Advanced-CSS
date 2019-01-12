@@ -242,7 +242,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images img {
-    width: 90%;
+    width: 93%;
+    margin: 20px 3.5%;
   }
 }
 @media (max-width: 500px) {
@@ -256,7 +257,7 @@ footer {
   }
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 0 15px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
