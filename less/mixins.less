@@ -1,1 +1,18 @@
 // Mixins Here
+
+.flex(@j-content:center; @a-items:center) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+}
+
+.btnStyle (@backgroundC; @textC) {
+    background-color: @backgroundC;
+    color: @textC;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    width: 24%;
+    height: 30px;
+    padding-top: 7.5px;
+    padding-left: 4.5%;
+}
