@@ -11,11 +11,15 @@
         margin: 0 auto;
         font-size: 2rem;
         justify-content: space-between;
+        @media @phone{
+            font-size: 1.6rem;
+        }
         .center();
         flex-direction: column;
         .title{
             font-size: 4rem;
             margin-top: 15px;
+        
             .nav-items{
                 display: flex;
                 justify-content: space-between;
@@ -23,6 +27,9 @@
                     margin: 0 10px;
                     text-decoration: none;
                     color: @river-bend;
+                    @media @phone {
+                        margin: 0 20px;
+                    }
 
                 }
             }
