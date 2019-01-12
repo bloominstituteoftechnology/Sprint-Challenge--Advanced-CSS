@@ -8,3 +8,21 @@
     align-items: @alignitems;
 }
 
+.button(@width, @height) {
+    background-color: @btn-bg-color;
+    width: @width;
+    height: @height;
+    border-radius: 4px;
+    .flexbox(@alignitems: center;);
+    font-size: 2rem;
+    letter-spacing: -.05em;
+    cursor: pointer;
+    color: white;
+    border: 2px solid @btn-bg-color;
+}
+
+.button-hover(){
+    background-color: white;
+    color: @btn-bg-color;
+}
+

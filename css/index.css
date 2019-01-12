@@ -244,7 +244,24 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  color: blue;
+  background-color: #22283A;
+  width: 30%;
+  height: 35px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: baseline;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+  color: white;
+  border: 2px solid #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
