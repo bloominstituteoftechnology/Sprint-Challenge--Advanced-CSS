@@ -207,6 +207,7 @@ header img {
   header img {
     width: 500px;
     margin: 5px auto;
+    border-radius: 5px;
   }
 }
 @media (max-width: 500px) {
