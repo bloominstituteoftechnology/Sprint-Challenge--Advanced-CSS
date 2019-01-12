@@ -1,0 +1,18 @@
+1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive websites only use breakpoints to change the DOM styling based on the viewport size. Responsive sites do this and
+adapt using percentages so that the entire page feels alive.
+
+2. Describe what it means to be mobile first vs desktop first.
+Mobile first is building around min-width, desktop first is building around max-width.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Makes it so that each rem is = to 10px.
+
+4. How would you describe preprocessing to someone new to CSS?
+A hybrid version to write css that increases workflow efficiency and could introduce programming concepts.
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+My favorite concept in preprocessing is definitely mixins/variables. I love to avoid repetition and these help alot.
+The concept that gives me the most trouble is probably escaping/importing. Sometimes it's hard to imagine the importing
+cascade. On both preprocessing I and II I didn't look at the instructions to see how to import, I just played around with it
+so that I could learn how important (haha "import" is in that word) importing order is.
