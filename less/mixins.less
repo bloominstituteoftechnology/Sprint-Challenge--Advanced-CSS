@@ -1,1 +1,29 @@
 // Mixins Here
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.width {
+  width: 100%;
+}
+
+.padding(@width) {
+  padding: @width;
+}
+
+
+// parametric mixin
+.font-size(@size) {
+  font-size: @size;
+}
+
+.border-radius(@width) {
+    border-radius: @width;
+}
+
+.border(@width; @style; @color){
+    border: @width @style @color;
+}
