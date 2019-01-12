@@ -1,0 +1,74 @@
+img {
+    max-width: 100%;
+    .ph-round(5px);
+    margin-top: 105px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    padding: 60px 40px;
+}
+
+.sign-in-form {
+    margin: 105px auto 0 auto;
+    display: flex;
+    border-right: 1px solid @nav-border;
+    border-left: 1px solid @nav-border;
+    .intro {
+        width: 50%;
+        .flex(space-between; flex-start);
+        flex-direction: column;
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+        padding: 60px 40px 30px 40px;
+        .text {
+            margin: 0 auto;
+            h2 {
+                padding: 15px;
+                color: white;
+                margin-bottom: 80px;
+              }
+              
+              p {
+                padding:0 15px;
+                color: white;
+                margin-bottom: 20px;
+              }
+        }
+        
+        h4 {
+            color: rgb(189, 193, 204);
+            // align-self: center;
+            padding: 15px;
+            font-size: 1.4rem;
+        }
+    }
+    
+    .form {
+        width: 50%;
+        // border: 1px solid red;
+        padding: 25px;
+        label {
+            display: block;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            .note {
+                text-transform: lowercase;
+                font-size: 1rem;
+            }
+        }
+        input {
+            font-size: 1.6rem;
+            border: none;
+            border-bottom: 1px solid @main-border-color;
+            width: 100%;
+            margin-bottom: 65px;
+        }
+        .btn {
+            .button;
+            width: 100%;
+        }
+    }
+}
