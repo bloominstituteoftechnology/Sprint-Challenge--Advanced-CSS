@@ -33,14 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive accomodates different devices at specific breakpoints using hardcoded pixels. Responsive uses media queries and responsive units (such as rem) to always accomodate 
+tons of devices so that as the viewport gets bigger or smaller, it still looks aesthetically pleasing.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first just means that the initial design will be towards mobile users first and with an increase in screen size, you'll add certain features/change layout as required.
+Desktop first is the same thing in that you'll design based on desktop users first and with a decrease in screen size, you'll add certain features/change layouts as required.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Makes all of our text within the html 10 pixels base so that when we use rem, it's easier to calculate in real time ie 1rem = 10 pixels.
 
 4. How would you describe preprocessing to someone new to CSS?
+Preprocessing is a way to organize your CSS and rewrite your CSS in a way that's more readable
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Mixins and variables! The concept that gives me most trouble would be finding those times where you'd want to include a mixin. I know it's used for repeatable code, but
+I personally feel like until I'm given enough experience and projects to find those times, I sometimes force myself to create a mixin for the assignment. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
