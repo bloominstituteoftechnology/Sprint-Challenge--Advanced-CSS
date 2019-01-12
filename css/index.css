@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 .nav {
+  border-bottom: 1px solid #dee2e6;
   background-color: #F6F6F6;
   text-align: center;
   padding: 10px 0;
@@ -177,7 +178,7 @@ p {
   }
 }
 .nav ul {
-  width: 55%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
