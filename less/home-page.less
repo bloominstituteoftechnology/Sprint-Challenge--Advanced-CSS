@@ -75,6 +75,7 @@
 
   .visit-planets {
     padding: 15px;
+
     @media @phone {
       display: flex;
       flex-direction: column;
@@ -86,6 +87,11 @@
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        color: @main-font-color;
+        font-weight: bold;
+      }
     }
   }
 
@@ -103,17 +109,27 @@
 
     .walk-text {
       width: 50%;
+
       @media @phone {
         width: 100%;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
       }
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          align-content: stretch;
+        }
       }
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          color: @main-font-color;
+          font-weight: 700;
+        }
       }
 
       .btn {
