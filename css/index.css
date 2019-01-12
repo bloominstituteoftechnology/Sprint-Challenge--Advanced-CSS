@@ -185,6 +185,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: sticky;
+  top: 0;
 }
 .nav-container .logo-text h1 {
   font-size: 3.6rem;
