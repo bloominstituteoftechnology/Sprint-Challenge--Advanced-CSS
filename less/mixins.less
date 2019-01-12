@@ -33,3 +33,14 @@
         outline: @outline;
     }
 }
+//OBJECTS
+.signup-btn(@bg-color; @text-color) {
+    .background(@color: @btn-bg-color);
+    .size(3.5rem, 10rem);
+    .border(@radius: 0.5rem);
+    .text(@color: @porcelain, @size: 1.8rem, @align: center, @line-height: 3.5rem);
+    &:hover {
+        background-color: @text-color;
+        color: @bg-color;
+    }
+}
