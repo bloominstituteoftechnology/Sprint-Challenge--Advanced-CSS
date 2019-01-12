@@ -1,1 +1,13 @@
 // Mixins Here
+.first-mixins () {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.p-button(@b-radius:5px; @b-color:@header-font-color; @clr:@footer-background; @f-size:2rem;) {
+  border-radius: @b-radius;
+  background-color: @b-color;
+  color: @clr;
+  font-size: @f-size;
+}
