@@ -1,10 +1,16 @@
 // Mixins Here
-.flex(@flex-direction:row; @justify-content:center; @align-items:center;) {
+.flex-settings(@flex-direction:row; @justify-content:center; @align-items:center;) {
     display: flex;
     flex-direction: @flex-direction;
     justify-content: @justify-content;
     align-items: @align-items;
 }
+
+.flex{
+    display: flex;
+}
+
+
 
 .btn-style(@br: 2px; @bgc: @btn-bg-color; @w: 7rem; @h: 2rem) {
     background: @bgc;

@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -179,10 +182,22 @@ header.navigation nav {
   width: 70%;
   margin: 11px 0;
 }
+@media (max-width: 500px) {
+  header.navigation nav {
+    width: 80%;
+    justify-content: space-between;
+  }
+}
 header.navigation nav a {
   text-decoration: none;
+  font-weight: bold;
   font-size: 1.6rem;
   color: #454A59;
+}
+@media (max-width: 500px) {
+  header.navigation nav a {
+    font-size: 1.4rem;
+  }
 }
 footer {
   color: #22283B;
@@ -208,11 +223,30 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 92%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img.sky,
+  .home .space-images img.launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -230,11 +264,31 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin: 11px 0;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -250,6 +304,21 @@ footer {
   width: 7rem;
   height: 2rem;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: #22283A;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 2%;
+    width: 100%;
+    height: 5rem;
+    padding-top: 5%;
+    font-size: 1.4rem;
+  }
+}
 .home .walk .walk-text .btn:hover {
   color: #22283A;
   background: white;
@@ -257,6 +326,16 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
