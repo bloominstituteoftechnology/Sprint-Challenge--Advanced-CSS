@@ -1,1 +1,37 @@
 // Mixins Here
+
+//flex center mixin
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//buttun mixin and parameter
+.myButton(@fontSize, @bgColor, @textColor){
+    font-size: @fontSize;
+    background-color: @bgColor;
+    color: @textColor;
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px;
+    text-align:center;
+    cursor:pointer;
+    &:hover{
+        background-color: @bgColor/1.5;
+        font-weight: bold;
+        color: @bgColor 8 8
+    }
+}
+
+.flexColCent(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contentWidths(@max, @width){
+    max-width: @max;
+    width: @width;
+}
