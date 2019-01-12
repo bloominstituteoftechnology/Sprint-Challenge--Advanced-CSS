@@ -14,39 +14,56 @@ img {
     display: flex;
     border-right: 1px solid @nav-border;
     border-left: 1px solid @nav-border;
+    @media @phone {
+        flex-direction: column;
+    }
     .intro {
         width: 50%;
         .flex(space-between; flex-start);
         flex-direction: column;
         background-image: linear-gradient(to right, @btn-bg-color, #454A59);
-        padding: 60px 40px 30px 40px;
+        padding: 60px 4% 30px 4%;
+        @media @phone {
+            width: 100%;
+            padding: 15px 4% 15px 4%;
+        }
         .text {
             margin: 0 auto;
             h2 {
                 padding: 15px;
                 color: white;
                 margin-bottom: 80px;
+                @media @phone {
+                    margin-bottom: 0;
+                }
               }
               
               p {
                 padding:0 15px;
                 color: white;
                 margin-bottom: 20px;
+                @media @phone {
+                    display: none;
+                }
               }
         }
         
         h4 {
             color: rgb(189, 193, 204);
-            // align-self: center;
             padding: 15px;
             font-size: 1.4rem;
+            @media @phone {
+                display: none;
+            }
         }
     }
     
     .form {
         width: 50%;
-        // border: 1px solid red;
         padding: 25px;
+        @media @phone {
+            width: 100%;
+        }
         label {
             display: block;
             font-size: 1.6rem;
