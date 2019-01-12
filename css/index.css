@@ -374,6 +374,10 @@ p {
   background-color: lightgray;
   color: #23293B;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 768px) {
   .home .walk .walk-text .btn {
     width: 95%;
