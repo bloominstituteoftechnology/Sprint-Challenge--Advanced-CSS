@@ -254,17 +254,19 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-.home .space-images img {
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-.home .space-images .sky {
-  display: none;
-}
-.home .space-images .launch {
-  display: none;
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .visit-planets {
   padding: 15px;
