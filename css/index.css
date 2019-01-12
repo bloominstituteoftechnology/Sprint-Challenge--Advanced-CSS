@@ -315,3 +315,55 @@ footer {
     padding-top: 25%;
   }
 }
+.signup {
+  padding-top: 5.5%;
+  margin-bottom: 5%;
+}
+.signup .register h2 {
+  margin: 3% 0;
+}
+.signup .register p {
+  margin-bottom: 3%;
+}
+.signup .signup-form {
+  background-color: #F6F6F6;
+  font-size: 1.6rem;
+  padding: 20px;
+  margin-bottom: 5%;
+}
+.signup .signup-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.signup .signup-form input[type=submit] {
+  background-color: #22283A;
+  border-radius: 5px;
+  color: #F6F6F6;
+  width: 90px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.signup .signup-form input[type=submit]:hover {
+  background-color: #4cd137;
+  color: #2f3640;
+}
+@media (max-width: 500px) {
+  .signup .signup-form input[type=submit] {
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .signup {
+    padding-top: 30%;
+  }
+  .signup .register {
+    padding: 0 3%;
+  }
+}

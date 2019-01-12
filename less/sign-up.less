@@ -1,0 +1,39 @@
+.signup {
+    padding-top: 5.5%;
+    margin-bottom: 5%;
+    .register {
+        h2 {
+            margin: 3% 0;
+        }
+        p {
+            margin-bottom: 3%;
+        }
+    }
+
+    .signup-form {
+        background-color: @nav-bg;
+        font-size: 1.6rem;
+        padding: 20px;
+        margin-bottom: 5%;
+       input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+       }
+
+       input[type=submit] {
+        .button(@btn-bg-color;
+        5px;
+        @wild-sand);
+       }
+    }
+    @media @mobile {
+        padding-top: 30%;
+        .register {
+            padding: 0 3%;
+        }
+    }
+}
