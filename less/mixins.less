@@ -43,6 +43,8 @@
 }
 
 
+
+
 // button
 .bround(@arguments) {
   border-radius: @arguments;
@@ -56,7 +58,7 @@
   color: @col;
   background: @bkgr;
   font-weight: @fw;
-  .bround(1rem); // this mixin is NOT a param
+  .bround(@rnd_desk); // this mixin is NOT a param
   text-align: center; // not a param
 }
 
