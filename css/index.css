@@ -329,6 +329,7 @@ p {
 }
 @media (max-width: 500px) {
   .home .walk {
+    margin: 0 2.5% 0 2.5%;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 10px;
