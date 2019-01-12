@@ -214,6 +214,11 @@ nav .navbar a {
   color: #454A59;
   font-size: 1.5rem;
   text-decoration: none;
+  height: 2rem;
+}
+nav .navbar a:hover {
+  color: #769BEB;
+  font-size: 2rem;
 }
 footer {
   color: #22283B;
@@ -226,7 +231,7 @@ footer {
   align-items: center;
 }
 .home {
-  padding-top: 90px;
+  padding-top: 96px;
 }
 .home .intro h2 {
   padding: 15px;
