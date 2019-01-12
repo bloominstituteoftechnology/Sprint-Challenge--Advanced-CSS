@@ -348,25 +348,34 @@ footer {
 @media (max-width:500px) {
   .home .walk {
     flex-direction: column-reverse;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
-.home .walk-text {
+.home .walk .walk-text {
   width: 50%;
 }
 @media (max-width:500px) {
-  .home .walk-text {
+  .home .walk .walk-text {
     width: 100%;
   }
 }
-.home .walk-text h3 {
+.home .walk h3 {
   margin-bottom: 10px;
 }
-.home .walk-text p {
+.home .walk p {
   margin-bottom: 26px;
 }
 .home .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk-img {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 .home .walk-img img {
   width: 100%;
