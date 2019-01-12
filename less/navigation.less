@@ -1,1 +1,26 @@
 // Navigation code here
+
+.sw-nav {
+    font-size: 1.6rem;
+    background-color: @nav-bg;
+    padding-top: 10px;
+    .flex(@flexdir: column; @alignitems: center);
+
+    .sw-h1 {
+        font-size: 4rem;
+        padding-bottom: 10px;
+    }
+
+    .nav-a {
+        .flex(@justify: space-around);
+        width: 30%;
+        padding-bottom: 10px;
+
+        a {
+            color: @nav-font;
+            text-decoration: none;
+        }
+    }
+    
+
+}
