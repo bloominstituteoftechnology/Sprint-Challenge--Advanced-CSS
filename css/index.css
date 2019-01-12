@@ -185,7 +185,7 @@ header.navigation nav {
 @media (max-width: 500px) {
   header.navigation nav {
     width: 80%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 }
 header.navigation nav a {
