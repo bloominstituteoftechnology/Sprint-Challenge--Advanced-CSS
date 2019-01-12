@@ -1,32 +1,30 @@
 // Millan Figueroa -- Sprint Challenege - Advanced CSS -- Navigation.less
 // Navigation code here
-.main-navigation {
-    width: 100%;
-    height: 90px;
+nav {
     background: @nav-bg;
-    position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 15px 0;
+   border-bottom: 2px solid @nav-border;
+
+   h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
 }
 
-.nav-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.nav {
-    width: 60%;
+.nav-links {
+    max-width: 450px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: @nav-font;
+    }
 }
 
-.nav-link {
-    font-size: 1.6rem;
-    color: @nav-font;
-    text-decoration: none;
-
-    &:hover {
-        color: #0099ff;
-    }
-}    
+}

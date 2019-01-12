@@ -145,10 +145,6 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
-h1 {
-  font-size: 4.2rem;
-  text-align: center;
-}
 h2 {
   font-size: 3.2rem;
 }
@@ -164,31 +160,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.main-navigation {
-  width: 100%;
-  height: 90px;
+nav {
   background: #F6F6F6;
-  position: fixed;
-}
-.nav-container {
-  height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 2px solid #F1F1F1;
 }
-.nav {
-  width: 60%;
+nav h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+nav .nav-links {
+  max-width: 450px;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
-a {
+nav .nav-links a {
+  text-decoration: none;
   font-size: 1.6rem;
   color: #454A59;
-  text-decoration: none;
-}
-a:hover {
-  color: #0099ff;
 }
 footer {
   color: #22283B;
@@ -200,15 +195,32 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .home .intro img {
   border-radius: 5px;
   width: 100%;
+  padding-bottom: 2px;
 }
 .home .intro h2 {
-  padding: 45px;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding-left: 9px;
+  }
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding-left: 9px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -221,8 +233,27 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  border: 4px solid black;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 93%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 15px 9px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -237,8 +268,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 0;
+    flex-direction: column-reverse;
+    padding: 40px 9px 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -249,15 +292,35 @@ footer {
 .home .walk .walk-text .btn {
   background: #22283A;
   color: #F6F7F8;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-align: center;
+  cursor: pointer;
   border-radius: 5px;
   width: 30%;
   padding: 10px 5%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: #22283A;
+    color: #F6F7F8;
+    font-size: 1.7rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    padding: 25px 5%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
