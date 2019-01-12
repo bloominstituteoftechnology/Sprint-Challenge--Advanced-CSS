@@ -301,6 +301,9 @@ footer {
           background: @bkgr;
           .bround(@rnding); is NOT a parameter*/
 }
+.home .walk .walk-text a {
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text {
     order: 1;
