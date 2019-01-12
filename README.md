@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will resize boxes, text, images, etc when the window is resized. This adaptation allows the website to render without horizontal scrolling when the window is either resized or displayed in a window that is less than the size intended by the developers. A responsive website will do the same, but it will also reformat the layout of the site to provide a better interface for the user. Such as vertically stacking boxes for a mobile view, when they may have been next to each other in the desktop view.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop-first design is how websites have historically been produced. This means creating the website for viewing specifically on larger desktop screens, then using media queries to reformat the website for mobile viewing. Now that mobile phones are the primary devices people browse the internet on, developers are switching to mobile-first designs. This means creating the website for mobile browsers, to cater to the majority of people who will view the site. Then, media queries are used to reformat the site for those who would view the site on much larger screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting the font-size to 62.5% in the html tag is important for ease of use in setting font-sizes for adaptive and responsive design. A font-size of 1rem is equal to the font-size of the html element. Most browsers will default a font-size of 16px, but pixel values aren’t very adaptive. So, when setting the html element’s font-size to 62.5%, it creates a relationship with rem units where 1rem will equal 10px. This means you can set an initial size of, for example, 1.6rem (meaning 16px), and it will scale with changes to the size of the browser window.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessers, like LESS are powerful tools that allow much more control and ease in CSS styling. One major benefit to using a preprocessor is the addition of mixins, variables, and functions. Let’s say your design team comes up with a color palette to use for your project. You could set the hex codes for each color to a variable name, then the team can use the variables to be sure everyone is using the same colors. Another useful tool is the ability to maintain each of your design rules in specific .less files. So instead of searching a long CSS document for certain style rules, you could have a separate file for these rules. You could have a variables.less file to keep variable names and values in a manageable file. Or if you have mixin classes that are useful across many pages, a mixin.less file to hold these mixin classes allow them to be found much easier. The ability of a preprocessor to import these rules into an index.less file makes combining the work of each developer on a team much easier than before. Nesting rules by inheritance helps your CSS resemble your html file much more closely, which makes navigating the stylesheet much easier. These are just a few of the many tools that preprocessors provide to make CSS styling much more intuitive.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the ability to import specific style rules held in multiple .less files. Files that may hold variables or mixing. I think this concept allows for greater ease in finding useful styles you’ve saved previously, or variable names to make sure everyone maintains the same design. I also really enjoy how nesting makes the stylesheet resemble the html document. The concept that gives me the most trouble is either parametric classes or functions. I understand parameters and functions just fine, but I haven’t been able to figure out a practical use for them in styling.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
