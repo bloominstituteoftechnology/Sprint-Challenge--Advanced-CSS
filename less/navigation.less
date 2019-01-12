@@ -1,1 +1,45 @@
 // Navigation code here
+
+.nav {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @phone {
+        max-width: 500px;
+    }
+    
+
+    .title {
+        width: 100%;
+        margin: 0 auto;
+        padding: 17px 0 25px 0;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 4.8rem;
+        }
+    }
+
+    .nav-items {
+        width: 47%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.8rem;
+
+        @media @phone {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        a {
+            .plain-links;
+            color: @main-font-color;
+            }
+    }
+}
