@@ -187,6 +187,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .header-image {
+  padding: 1rem;
+}
 .home .intro h2 {
   padding: 15px;
 }
