@@ -309,3 +309,60 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dee2e6;
+  height: 12.5rem;
+}
+.top .toph1 {
+  font-size: 4rem;
+}
+.top a {
+  font-size: 1.6rem;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: #5E6164;
+}
+.top a:hover {
+  background-color: darkcyan;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 225px;
+  width: 100%;
+}
+.form .signup {
+  position: relative;
+  bottom: 50px;
+}
+.form .input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-left: 150px;
+}
+.form .input li {
+  width: 25%;
+  font-size: 2.6rem;
+  position: relative;
+  padding: 2px;
+}
+.form .input .box {
+  width: 60%;
+  height: 27.5px;
+  position: relative;
+  left: 385px;
+  bottom: 83px;
+  border: 1px solid black;
+  padding: 2px;
+}
