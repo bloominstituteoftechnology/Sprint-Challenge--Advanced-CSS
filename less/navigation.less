@@ -1,7 +1,6 @@
 // Navigation code here
 
 .navigation {
-    width: 100%;
     .flex();
     padding-bottom: 20px; 
     background: @nav-bg;
@@ -11,8 +10,13 @@
         
     }
 
+
     a {
         .header-link();
+
+        @media @phone {
+            margin: 10px;
+        }
     }
 
 
