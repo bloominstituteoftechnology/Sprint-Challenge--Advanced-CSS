@@ -5,18 +5,91 @@
         
         margin-top: 20px;
 
+        h2 {
+            @media @phone {
+                margin-left: 5%;
+            }
+        }
+
         .post-content {
             .flexbox(@justify: space-between, @align: flex-start);
             margin-top: 20px;
             padding-bottom: 15px;
             border-bottom: 1px solid @main-border-color;
+
+            @media @phone {
+                .flexbox(@fdir: column)
+            }
         }
             img {
                 width: 48%;
+                .animate(4s, fadeIn);
+
+                @media @phone {
+                    width: 90%;
+                    margin-left: 5%;
+                    padding-bottom: 20px;
+                }
             }
 
             .blog-text {
                 width: 48%;
+
+                @media @phone {
+                    width: 90%;
+                    margin-left: 5%;
+                    padding-bottom: 20px;
+                }
+                    p {
+                        font-size: 1.6rem;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 1.6rem;
+                    }
+            }
+    }
+
+    .reverse-post {
+        
+        margin-top: 20px;
+
+        h2 {
+            @media @phone {
+                margin-left: 5%;
+            }
+        }
+
+        .post-content {
+            .flexbox(@justify: space-between, @align: flex-start);
+            margin-top: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid @main-border-color;
+
+            @media @phone {
+                .flexbox(@fdir: column-reverse);
+            }
+        }
+            img {
+                width: 48%;
+                .animate(4s, fadeIn);
+
+                @media @phone {
+                    width: 90%;
+                    margin-left: 5%;
+                    padding-bottom: 20px;
+                }
+            }
+
+            .blog-text {
+                width: 48%;
+
+                @media @phone {
+                    width: 90%;
+                    margin-left: 5%;
+                    padding-bottom: 20px;
+                }
                     p {
                         font-size: 1.6rem;
                         margin-bottom: 10px;

@@ -389,6 +389,11 @@ footer {
 .blog .post {
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  .blog .post h2 {
+    margin-left: 5%;
+  }
+}
 .blog .post .post-content {
   display: flex;
   flex-direction: row;
@@ -399,16 +404,95 @@ footer {
   padding-bottom: 15px;
   border-bottom: 1px solid #dee2e6;
 }
+@media (max-width: 500px) {
+  .blog .post .post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: baseline;
+    align-items: flex-start;
+  }
+}
 .blog .post img {
   width: 48%;
+  animation: fadeIn 4s;
+}
+@media (max-width: 500px) {
+  .blog .post img {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
 }
 .blog .post .blog-text {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .blog .post .blog-text {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
 }
 .blog .post .blog-text p {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
 .blog .post .blog-text a {
+  font-size: 1.6rem;
+}
+.blog .reverse-post {
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .blog .reverse-post h2 {
+    margin-left: 5%;
+  }
+}
+.blog .reverse-post .post-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+@media (max-width: 500px) {
+  .blog .reverse-post .post-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: baseline;
+    align-items: flex-start;
+  }
+}
+.blog .reverse-post img {
+  width: 48%;
+  animation: fadeIn 4s;
+}
+@media (max-width: 500px) {
+  .blog .reverse-post img {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
+}
+.blog .reverse-post .blog-text {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .blog .reverse-post .blog-text {
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 20px;
+  }
+}
+.blog .reverse-post .blog-text p {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.blog .reverse-post .blog-text a {
   font-size: 1.6rem;
 }
