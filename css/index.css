@@ -177,8 +177,22 @@ p {
   margin: 1%;
 }
 .topbar .nav {
+  display: flex;
+  flex-direction: "";
+  justify-content: "";
+  align-items: "";
+  margin: "";
+  margin-top: "";
+  max-width: "";
   margin: 1%;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+.topbar .nav a {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 footer {
   color: #22283B;
@@ -234,6 +248,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: white;
+  border: 1px solid black;
+  border-radius: 1%;
+  background: black;
+  padding: 1.5%;
+  margin: 1% 0;
+  max-width: 120px;
+  font-size: 1.8rem;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -6,11 +6,23 @@
     background: #eee;
 
     .logo {
-        margin: 1%;
+        .defaultMargin();
     }
 
     .nav {
-        margin: 1%;
-        font-size: 1.6rem;
+        .flex-set();
+        .defaultMargin();
+        font-size: 1.8rem;
+        width: 100%;
+        
+
+        a {
+            // .flex-set(@justify: space-around);
+            color: black;
+            text-decoration: none;
+            // margin-right: 1%;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
