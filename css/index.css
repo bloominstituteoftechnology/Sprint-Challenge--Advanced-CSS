@@ -199,7 +199,7 @@ p {
 }
 @media (max-width: 500px) {
   .nav-bar .nav-el {
-    padding: 0;
+    padding: 0 0 5% 0%;
     text-align: center;
   }
 }
@@ -231,7 +231,7 @@ p {
 }
 @media (max-width: 768px) and (max-width: 500px) {
   .home {
-    max-width: 95%;
+    max-width: 100%;
   }
 }
 .home .intro h2 {
@@ -244,7 +244,7 @@ p {
   width: 100%;
   height: 18rem;
   background-image: url("../img/main-header.png");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -279,6 +279,11 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -293,6 +298,7 @@ p {
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
+    border-radius: 20px;
     padding-top: 5%;
     order: -1;
     width: 95%;
@@ -348,7 +354,8 @@ p {
   border-radius: 5px;
   color: lightgray;
   font-weight: bold;
-  padding: 2% 0 0 7.5%;
+  padding: 2% 0 0 0;
+  text-align: center;
   font-size: 1.5rem;
   width: 35%;
   height: 10%;
@@ -365,7 +372,6 @@ p {
     height: 4rem;
     padding-left: 0;
     font-size: 3rem;
-    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -374,7 +380,6 @@ p {
     height: 4rem;
     padding-left: 0;
     font-size: 2.5rem;
-    text-align: center;
   }
 }
 .home .walk .walk-img {
