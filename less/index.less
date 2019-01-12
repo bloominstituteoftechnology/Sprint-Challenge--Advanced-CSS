@@ -9,7 +9,8 @@ html {
 	max-width: 600px;
 	width: 100%;
 	padding: 25px 0;
-	margin: 0 auto;
+    margin: 0 auto;
+    border: 1px solid black;
   }
 
 .center() {
@@ -18,31 +19,140 @@ html {
 	align-items: center;
 }
 
-nav {
-    .center();
-	color: rgb(188,188,188);
-    font-size: 14px;
-    margin: 1.4em 0;
+.margin() {
+    margin: auto;
+}
+
+.nav() {
+    margin-left: 20px;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.split2way() {
+    width: 40%;
+}
+
+.split3way() {
+    width: 30%;
+    }
+
+//--- headers start---//
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0em;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 8px;
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+//--- headers end---//
+
+//--- nav start ---//
+
+nav {
+    display: flex;
+	justify-content: center;
+    font-size: 14px;
+    margin: 10px 0;
 }
   
-#nav-home {
-    margin-left: 50px;
+#nav-home, #nav-about, #nav-portfolio, #nav-contact, #nav-contact, #nav-signin {
+    .nav();
 }
-  
-#nav-about {
-    margin-left: 50px;
+
+#header-img {
+    border-radius: 4px;
+    width: 100%;
+    .margin();
 }
-  
-#nav-portfolio {
-    margin-left: 50px;
+
+//--- nav end---//
+
+header {
+    margin: 8px 15px;
+
+    p{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1em;
+    }
 }
-  
-#nav-contact {
-    margin-left: 50px;
+
+
+.blast, .sky, .launch {
+    .split3way();
+    border-radius: 8px;
+    margin: 10px 5px;
+    margin-left: 10px;
+
+
+//--- visit planets start---//
+
+}.visit-planets {
+    margin: 10px 10px;
+    border-bottom: 1px solid lightgray;
+
+    h3{
+        margin-left: 8px;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    p{
+        margin-left: 8px;
+        font-size: 0.95em;
+        justify-content: flex-start;
+    }
 }
-  
-#nav-signin {
-    margin-left: 50px;
+
+//--- visit planets end---//
+
+
+//--- walk start ---//
+
+
+.walk {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
 }
-  
+
+.walk-text {
+    width: 50%;
+    margin: 10px 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#walk-img {
+    .center();
+    width: 90%;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: white;
+    background: black;
+    border: 1px solid black;
+    border-radius: 8px;
+	padding: 5px 9px;
+	margin-top: 10px;	
+    text-align: center;  
+    width: 20%;
+}
+
+//--- walk end ---//
+
+footer {
+    .center();
+}
