@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SpaceWalkers - Sign Up</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="nav-container">
+        <h1>SpaceWalkers</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">About Us</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="">Sign In</a>
+        </nav>
+    </div>
+
+    <div class="container form">
+        <h3>Weekly Newsletter - Sign Up</h3>
+        <p>You will receive a weekly customized newsletter with your preferred topics!</p>
+
+        <form>
+            <span>
+                <input type="text" name="firstname" value="First Name">
+            </span>
+            <span>
+                <input type="text" name="lastname" value="Last Name">
+            </span>
+            <br><br>
+            <input type="email" name="email" value="Email">
+            <input type="phone" name="phone" value="Phone Number">
+            <br><br>
+            <select name="topics" size="6" width="200px" cols="100">
+                    <option value="Tech">Tech</option>
+                    <option value="Spaceflight">Spaceflight</option>
+                    <option value="Science">Science</option>
+                    <option value="Astronomy">Astronomy</option>
+                    <option value="Skywatching">Skywatching</option>
+                    <option value="ufo">UFOs</option>
+            </select>
+            <br><br>
+            <textarea name="notes" rows="5" cols="50">
+                Anything we should know about?
+            </textarea>
+            <br><br>
+            <input type="submit" onclick="alert('Thank you for signing up! You will now receive a weekly newsletter.')">
+        </form>
+    </div>
+
+</body>
+</html>

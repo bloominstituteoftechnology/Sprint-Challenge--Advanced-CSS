@@ -1,1 +1,26 @@
 // Mixins Here
+.flex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.resetstyle(@color) {
+    text-decoration: none;
+    color: @color;
+}
+
+.button (@height, @bg-color, @font-size) {
+    height: @height;
+    background-color: @bg-color;
+    font-size: @font-size;
+    border-radius: 5px;
+    text-align: center;
+    line-height: @height;
+    vertical-align: middle;
+    border: 1px solid @bg-color;
+}
+
+.hide() {
+    display: none;
+}
+
