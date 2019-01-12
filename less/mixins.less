@@ -1,8 +1,22 @@
 // Mixins Here
+.btn-swap(@background, @color) {
+    margin-top: 4%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: @background;
+    color: @color;
+    font-size: 2.5rem;
+    font-family: 'Ubunto', sans-serif;
 
-.plain-link() {
-    a:link, a:hover, a:visited, a:active {
+    &:hover {
+        background-color: @color;
+        color: @background; 
+    }
+}
+
+.plain-links() {
+    &:link, &:hover, &:visited, &:active {
         text-decoration: none;
     }
-        color: @main-font-color;
 }
