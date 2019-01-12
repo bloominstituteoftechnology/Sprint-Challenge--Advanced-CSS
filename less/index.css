@@ -1,17 +1,3 @@
-.nav-set {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #F6F6F6;
-  font-family: #454A59;
-  display: flex;
-  flex-direction: column;
-}
-.anchor {
-  text-decoration: none;
-  color: #454A59;
-  font-weight: bold;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,9 +145,6 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
-h1 {
-  font-size: 4rem;
-}
 h2 {
   font-size: 3.2rem;
 }
@@ -176,34 +159,6 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-.head-nav {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #F6F6F6;
-  font-family: #454A59;
-  display: flex;
-  flex-direction: column;
-}
-.head-nav header {
-  padding-top: 11px;
-  text-align: center;
-}
-.head-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 275px;
-  padding-top: 20px;
-  padding-bottom: 15px;
-  width: 45%;
-  font-size: 1.6rem;
-}
-.head-nav a {
-  text-decoration: none;
-  color: #454A59;
-  font-weight: bold;
 }
 footer {
   color: #22283B;

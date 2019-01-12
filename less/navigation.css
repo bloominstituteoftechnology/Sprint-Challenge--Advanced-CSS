@@ -1,0 +1,26 @@
+.head-nav {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.head-nav header {
+  padding-top: 11px;
+  text-align: center;
+  border: 1px solid blue;
+}
+.head-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 178px;
+  padding-top: 15px;
+  width: 55%;
+  font-size: 1.6rem;
+  border: 1px solid green;
+}
+.head-nav a {
+  text-decoration: none;
+}
