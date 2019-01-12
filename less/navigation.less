@@ -1,1 +1,39 @@
 // Navigation code here
+
+.nav-wrapper {
+  background-color: @nav-bg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+nav {
+  .page-centering;
+  .flex-col(flex-end, center);
+  height: 90px;
+  z-index: 1;
+}
+
+.nav-item-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.nav-item {
+  color: @nav-font;
+  font-size: 1.7rem;
+  margin-right: 24px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}

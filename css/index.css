@@ -160,6 +160,42 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-wrapper {
+  background-color: #F6F6F6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.logo {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+nav {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 90px;
+  z-index: 1;
+}
+.nav-item-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.nav-item {
+  color: #454A59;
+  font-size: 1.7rem;
+  margin-right: 24px;
+  text-decoration: none;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

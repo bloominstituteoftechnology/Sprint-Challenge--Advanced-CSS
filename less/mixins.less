@@ -1,1 +1,14 @@
 // Mixins Here
+
+.page-centering() {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-col (@ju-content: center; @al-items: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: @al-items;
+  justify-content: @ju-content;
+}
