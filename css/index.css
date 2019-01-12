@@ -194,6 +194,20 @@ header.navigation nav a {
   font-size: 1.6rem;
   color: #454A59;
 }
+header.navigation nav a:hover {
+  animation-name: sliding-border;
+  animation-duration: 1.5s;
+}
+@keyframes sliding-border {
+  0% {
+    border-bottom: solid 2px #454A59;
+    opacity: 0;
+  }
+  100% {
+    border-bottom: solid 2px #454A59;
+    opacity: 1;
+  }
+}
 @media (max-width: 500px) {
   header.navigation nav a {
     font-size: 1.4rem;

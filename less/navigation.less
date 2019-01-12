@@ -22,6 +22,22 @@ header.navigation {
             font-weight: bold;
             font-size: 1.6rem;
             color: @nav-font;
+            &:hover {
+                animation-name: sliding-border;
+                animation-duration: 1.5s;
+                @keyframes sliding-border {
+                    0% {
+                        border-bottom: solid 2px @nav-font;
+                        opacity: 0;
+                    }
+                    100% {
+                        border-bottom: solid 2px @nav-font;
+                        opacity: 1;
+                    }
+                    
+                }
+            }
+
             @media @phone {
                 font-size: 1.4rem;
             }
