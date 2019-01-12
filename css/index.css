@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .navigation {
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -173,6 +173,7 @@ p {
   font-size: 3rem;
   text-align: center;
   margin-top: 2%;
+  color: #23293B;
 }
 .navigation nav {
   text-align: center;
@@ -193,6 +194,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -235,6 +241,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  border: none;
+  color: #F6F7F8;
+  width: 23%;
+  height: 10%;
+  padding-top: 3%;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.3rem;
+  transition-duration: 0.5s;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;

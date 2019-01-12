@@ -1,1 +1,33 @@
 // Mixins Here
+
+.heading-1(){
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2%;
+    color: @header-font-color;
+}
+
+.anchor-nav(){
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 1.4rem;
+    padding-right: 2%;
+}
+
+.btn-btn(@btn-font-size; @btn-color){
+    background-color: @btn-bg-color;
+    border: none;
+    color: @btn-color;
+    width: 23%;
+    height: 10%;
+    padding-top: 3%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: @btn-font-size;
+    transition-duration: 0.5s;
+}
+
+.btn-hover(){
+    background-color: @wild-sand;
+    color: @ebony-clay;
+}
