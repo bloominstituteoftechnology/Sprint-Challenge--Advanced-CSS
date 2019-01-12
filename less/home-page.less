@@ -97,11 +97,15 @@
       }
 
       .btn {
-        .main-button(@btn-bg-color, white, 4px 11px, 4px);
+        .main-button(@btn-bg-color, white, 4px 11px, 4px, 1.6rem);
 
         &:hover {
           background-color: white;
           color: @btn-bg-color;
+        }
+
+        @media @phone {
+          .main-button(@btn-bg-color, white, 25px 42%, 4px, 1.8rem);
         }
       }
     }
