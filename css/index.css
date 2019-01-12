@@ -10,6 +10,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.flexbox-col-rev {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +203,17 @@ header nav a {
 header img {
   margin: 6px auto;
 }
+@media (max-width: 500px) {
+  header img {
+    width: 500px;
+    margin: 5px auto;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -206,6 +223,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  footer {
+    padding-left: 14px;
+  }
 }
 .home .intro {
   display: flex;
@@ -217,8 +239,18 @@ footer {
   padding: 10px 15px;
   align-self: flex-start;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 11.5px 15px;
+  }
+}
 .home .intro p {
   padding: 6px 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 5px 15px 20px 15px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -231,6 +263,21 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    width: 500px;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -239,6 +286,17 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    padding-right: 0;
+    margin-right: -10px;
+  }
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    margin: 20px -7px 0 auto;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -270,6 +328,18 @@ footer {
   background-color: white;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 95%;
+    margin: 0 auto 0 20px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -278,4 +348,20 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+    margin: 20px 0.8% 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0;
+  }
 }

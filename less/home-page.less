@@ -8,10 +8,18 @@
     h2 {
       padding: 10px 15px;
       align-self: flex-start;
+
+      @media @mobile {
+        padding: 11.5px 15px;
+      }
     }
 
     p {
       padding: 6px 15px;
+
+      @media @mobile {
+        padding: 5px 15px 20px 15px;
+      }
     }
     
   }
@@ -26,6 +34,20 @@
       margin: 14px 2.5% 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    @media @mobile {
+      width: 500px;
+
+      .sky, 
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -38,6 +60,14 @@
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        padding-right: 0;
+        margin-right: -10px;
+      }
+    }
+
+    @media @mobile {
+      margin: 20px -7px 0 auto;
     }
   }
 
@@ -71,6 +101,15 @@
           .button(@btn-bg-color, white);
           cursor: pointer;
         }
+
+        @media @mobile {
+          width: 100%;
+          padding: 26px;
+        }
+      }
+      @media @mobile {
+        width: 95%;
+        margin: 0 auto 0 20px;
       }
     }
 
@@ -83,6 +122,16 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 95%;
+        margin: 20px 0.8% 20px auto;
+      }
+    }
+    @media @mobile {
+      .flexbox-col-rev;
+      margin: 20px auto;
+      padding: 0;
     }
   }
 }// home
