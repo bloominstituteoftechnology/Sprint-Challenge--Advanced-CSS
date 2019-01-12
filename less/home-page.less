@@ -14,16 +14,34 @@
 
   }
 
+  .lift-off-text {
+    @media @phone {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      &:not(:first-child) {
+        @media @phone {
+          display: none;
+        }
+      }
+    }
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 

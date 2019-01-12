@@ -11,11 +11,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media @phone {
+      border: 1px solid red;
+    }
     a {
       color: #000;
       font-size: 1.3rem;
       padding: 0 2%;
       text-decoration: none;
+      @media @phone {
+        padding: 0 4%;
+      }
     }
   }
 }
