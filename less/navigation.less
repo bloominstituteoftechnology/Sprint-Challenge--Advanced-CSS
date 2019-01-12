@@ -1,1 +1,32 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    max-width: 100%;
+    background-color: @nav-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid @nav-border;
+    h1 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    nav {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 17%;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            padding: 5px;
+            font-size: 1.4rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
