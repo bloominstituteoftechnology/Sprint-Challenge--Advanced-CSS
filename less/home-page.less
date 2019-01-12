@@ -13,11 +13,17 @@
     }
   
   }
+  
+  .content {
+    width: 82%;
+    .center ();
+  }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .center ();
 
     img {
       width: 28%;
@@ -58,7 +64,13 @@
       }
 
       .btn {
+        .button ();
       }
+      //Swap color on hover
+      .btn:hover {
+        .button (10px, @porcelain, @btn-bg-color);
+      }
+      
     }
 
     .walk-img {

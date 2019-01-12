@@ -1,1 +1,29 @@
 // Navigation code here
+.intro {
+    nav {
+        .flex();
+        flex-direction: column;
+        width: 100%;
+        .center();
+        background-color: @nav-bg;
+        border-bottom: 1px solid @nav-border;
+        padding: 10px;
+        h1 {
+            padding-bottom: 15px;
+        }
+        ul {
+            width: 43%;
+            // padding: 10px;
+            .flex(space-around);
+
+        }
+    }
+    .lift-off {
+        width: 82%;
+        .center();
+        #header-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
