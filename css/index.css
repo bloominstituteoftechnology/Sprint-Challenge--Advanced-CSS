@@ -176,6 +176,14 @@ p {
     transform: scale(1);
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .nav-container {
   width: 100%;
   height: 100px;
@@ -231,6 +239,7 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  animation: fadeIn 5s;
 }
 .home .intro h2 {
   padding: 15px;
