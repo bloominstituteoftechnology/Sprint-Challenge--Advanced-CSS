@@ -33,6 +33,12 @@
       padding: 0 15px;
     }
   }
+  .earth {
+    @media @phone {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
 
   .space-images {
     display: flex;
@@ -89,27 +95,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
     @media @phone {
       width: 100%;
-      display: flex;
       flex-direction: column-reverse;
-    }
-
-    .walk-img {
-      @media @phone {
-        width: 100%;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 100%;
-        justify-content: stretch;
-        border: 1px solid red;
-      }
     }
 
     .walk-text {
       width: 50%;
       @media @phone {
         width: 100%;
+        padding: 10px;
       }
 
       h3 {
@@ -145,10 +141,19 @@
       width: 46%;
       margin-left: 4%;
 
+      @media @phone {
+        width: 100%;
+        justify-content: flex-end;
+        border-radius: 10px;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
