@@ -39,11 +39,21 @@ An adaptive website can accomodate different devices by using breakpoints while 
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first means you will design and code for a mobile device first and then expand layout or features as you gain more screen space toward desktop. Desktop first is the other way around.
+
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+Im not actually sure I think it has something to do with the reset we apply so there are no pre set font sizes and you can style everything as desired.
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor accepts one input in its own syntax and converts it into another output in CSS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Preprocessors allow you to use features that don't exist in refular CSS like nesting and mixins. I'm still not very comfortable with it and I get confused keeping track of the changes cause I don't think the watch compiler always catches my changes.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
