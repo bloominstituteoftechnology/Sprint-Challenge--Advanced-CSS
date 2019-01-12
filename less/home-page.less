@@ -68,6 +68,13 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      :nth-child(1) {
+        order: 1;
+      } 
+    }
     .walk-text {
       width: 50%;
 
@@ -88,22 +95,18 @@
         }
 
       }
-
-      @media @phone {
-        display: flex;
-        flex-direction: column;
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+    
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
-    }
-  }
+  
 }// home
