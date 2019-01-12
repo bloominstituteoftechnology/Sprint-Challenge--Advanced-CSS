@@ -131,6 +131,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [x] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription

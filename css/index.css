@@ -173,6 +173,9 @@ p {
   align-content: baseline;
   align-items: center;
   border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
 }
 .nav-container nav {
   width: 28%;
