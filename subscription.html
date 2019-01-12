@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <nav class="navigation">
+    <h1 class="nav__logo">SpaceWalkers</h1>
+    <div class="nav__link-container">
+      <a href="#" class="nav__link">Home</a>
+      <a href="#" class="nav__link">About Us</a>
+      <a href="#" class="nav__link">Blog</a>
+      <a href="#" class="nav__link">Contact</a>
+      <a href="#" class="nav__link">Sign In</a>
+    </div>
+  </nav>
+
+  <div class="container home">
+
+    <header class="form-header">
+      <img src="img/main-header.png" alt="satellite-view">
+
+      <h2>SpaceWalkers Magazine Subscription</h2>    
+    </header>
+
+    <div class="form-container">
+        <div class="form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+    
+            <label for="pnumber">Phone Number</label>
+            <input type="text" id="pnumber" name="phonenumber" placeholder="Your phone number..">
+        
+            <label for="vpackage">Subscription Type</label>
+            <select id="vpackage" name="vpackage">
+              <option value="sun">1 Month Trial</option>
+              <option value="mountain">3 Month Trial</option>
+              <option value="island">Monthly</option>
+            </select>
+        
+            <input type="submit" value="Submit">
+        </div>
+    </div>
+
+    <footer>
+      <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+
+  </div>
+</body>
+</html>
