@@ -14,7 +14,6 @@
   .intro {
     h2 {
       .padding(15px);
-      // color: @ebony-clay;
     }
     p {
       .padding(0 15px);
@@ -46,7 +45,7 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @border-real;
+    border-top: 1px solid @main-border-color;
     .padding(50px 60px);
     justify-content: center;
       display: flex;
@@ -68,15 +67,15 @@
         .flex;
         width: 100px;
         height: 35px;
-        background-color: @btn-bg-color;
+        background-color: @btn-background;
         color: white;
         cursor: pointer;
-        .border(1px; solid; @btn-bg-color);
+        .border(1px; solid; @btn-background);
         .font-size(1.8rem);
       }
       .btn:hover {
-        background: @lightblue;
-        color: @btn-bg-color;
+        background: @btn-hover;
+        color: @btn-background;
       }
     }
 
