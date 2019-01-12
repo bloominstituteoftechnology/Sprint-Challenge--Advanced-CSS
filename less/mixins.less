@@ -17,7 +17,12 @@
     display: flex;
     justify-content: center;
     align-self: center;
-    width: 30%;
+    width: 100px;
+
+    @media @phone {
+        width: 100%;
+        padding: 25px;
+      }
 
     &:hover {
         border:1px solid @ebony-clay;
