@@ -1,6 +1,7 @@
 // Navigation code here
 nav {
     margin: 0 auto;
+    width: 100%;
 
     .title-nav {
         margin: 0 auto;
@@ -17,10 +18,11 @@ nav {
 
         section {
             margin-top: 1%;
-            width: 30%;
+            width: 50%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
 
             a {
                 text-decoration: none;
@@ -30,10 +32,27 @@ nav {
         }
     }
 
-        img {
-            margin: 0 auto;
-            width: 60%;
-            display: flex;
-            justify-content: center;
+    img {
+        margin: 0 auto;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media(max-width: 500px) {
+        .title-nav {
+            background-color: white;
+
+            section {
+                margin-top: 4%;
+                margin-bottom: 1%;
+                width: 75%;
+            }
         }
+
+        img {
+            width: 98%;
+            border-radius: 7px;
+        }
+    }
 }

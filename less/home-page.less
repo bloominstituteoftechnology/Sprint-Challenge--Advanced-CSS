@@ -82,3 +82,48 @@
     }
   }
 }// home
+
+@media(max-width: 500px) {
+
+  .space-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .space-images img[src="img/blast.png"] {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  img[src="img/sky.png"] {
+    display: none;
+  }
+
+  img[src="img/launch.png"] {
+    display: none;
+  }
+
+  .home .walk {
+    padding: 50px 0 0 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .walk-text {
+      width: 95%;
+
+      .btn {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .walk-img {
+      width: 95%;
+      margin-right: 4%;
+    }
+  }
+}

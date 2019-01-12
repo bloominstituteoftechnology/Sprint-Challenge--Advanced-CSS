@@ -171,6 +171,7 @@ p {
 }
 nav {
   margin: 0 auto;
+  width: 100%;
 }
 nav .title-nav {
   margin: 0 auto;
@@ -185,10 +186,11 @@ nav .title-nav h1 {
 }
 nav .title-nav section {
   margin-top: 1%;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 nav .title-nav section a {
   text-decoration: none;
@@ -200,6 +202,20 @@ nav img {
   width: 60%;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  nav .title-nav {
+    background-color: white;
+  }
+  nav .title-nav section {
+    margin-top: 4%;
+    margin-bottom: 1%;
+    width: 75%;
+  }
+  nav img {
+    width: 98%;
+    border-radius: 7px;
+  }
 }
 footer {
   color: #22283B;
@@ -275,4 +291,40 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .space-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .space-images img[src="img/blast.png"] {
+    margin: 0 auto;
+    width: 95%;
+  }
+  img[src="img/sky.png"] {
+    display: none;
+  }
+  img[src="img/launch.png"] {
+    display: none;
+  }
+  .home .walk {
+    padding: 50px 0 0 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .walk .walk-text {
+    width: 95%;
+  }
+  .home .walk .walk-text .btn {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+    margin-right: 4%;
+  }
 }
