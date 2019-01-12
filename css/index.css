@@ -12,6 +12,12 @@
   color: #454A59;
   font-weight: bold;
 }
+.anchor:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0 3px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -212,6 +218,12 @@ p {
   color: #454A59;
   font-weight: bold;
 }
+.head-nav a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 0 3px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -333,44 +345,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.focus-in-contract-bck {
-	-webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes focus-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes focus-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
 }
