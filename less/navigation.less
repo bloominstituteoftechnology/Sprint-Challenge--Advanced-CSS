@@ -1,1 +1,29 @@
 // Navigation code here
+
+.nav-container {
+  background: #f4f4f4;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  .flex();
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+
+  .logo-text {
+    h1 {
+      .font(3.6rem);
+    }
+  }
+
+  nav {
+    margin-top: 10px;
+    a {
+      .font(1.4rem);
+      text-decoration: none;
+      color: black;
+      margin: 0 1.5rem;
+    }
+  }
+}
