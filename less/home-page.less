@@ -99,8 +99,11 @@
 
         &:hover {
           .button(@waterloo, @ebony-clay);
-          height: 70px;
           cursor: pointer;
+
+          @media @phone {
+            height: 70px;
+          }
         }
       }
     }

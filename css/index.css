@@ -311,8 +311,12 @@ footer {
   height: 40px;
   border-radius: 5px;
   text-align: center;
-  height: 70px;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    height: 70px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
