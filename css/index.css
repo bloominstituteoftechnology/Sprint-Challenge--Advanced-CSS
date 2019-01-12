@@ -175,7 +175,7 @@ p {
   padding-bottom: 19px;
 }
 .navigation .nav__link-container {
-  width: 47%;
+  width: 375px;
   display: flex;
   justify-content: space-between;
   align-items: center;
