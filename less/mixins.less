@@ -1,1 +1,19 @@
 // Mixins Here
+.style(@justify) {
+    display: flex;
+    justify-content: @justify;
+}
+
+.button {
+    font-size: 2rem;
+    background-color: @button-color;
+    color: @porcelain;
+    border-radius: 10px; 
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @porcelain;
+        color: @button-color;
+    }
+}
