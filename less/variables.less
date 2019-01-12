@@ -24,29 +24,4 @@
 @border-real: #dee2e6;
 
 // Mobile var
-
-
-
-// What is the difference between an adaptive website and a fully responsive website?
-
-// An adaptive website consists of different layouts for different screen sizes. A responsive website adapts itself to different screen sizes.
-
-// Describe what it means to be mobile first vs desktop first.
-
-// Mobile-first design is "content-first", starting with putting out a core function and layering the extras incrementally for higher resolutions. With desktop-first, the design calls for more dynamic features, details, and information, all of which get scaled down by hiding and wrapping elements when going to smaller screens.
-
-// What does font-size: 62.5% in the html tag do for us when using rem units?
-
-// Setting font-size to 62.5% makes 1rem the equivalent of 10px, vs the default 16px.
-
-// How would you describe preprocessing to someone new to CSS?
-
-// Preprocessing allows a developer to write code that will do things such as reuse a definition, such as (a) defining a color code as, for example, main-text-color, which you can then reuse without having to look back through all your code to find that specific one; (b) use nesting to arrange elements in a more readable fashion, thus making inheritance easier to visualize; (c) use mesting to put media queries where you can immediately see the changes that are made when changing screen resolution; and (d) helps with organization, for example, by allowing for separate files for different elements, i.e., all variables in one file, a reset in another file, mixins in a third file, etc.. The preprocessor then rewrites it all into a single CSS file.
-
-// What is your favorite concept in preprocessing? 
-
-// My favorite concept is probably the separation of elements into separate files, closely followed by (if not tied with) nesting. The organizational possibilities seem far superior to having simply one LONG file of code. 
-
-// What is the concept that gives you the most trouble?
-
-// Mixins, for the moment, although I seem to be slowly taking in more of what can be done with them, a little bit at a time. 
+@max500: ~'only screen and (max-width: 500px)';
