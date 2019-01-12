@@ -211,6 +211,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .home .intro img {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -321,6 +338,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  animation: wiggle 2.5s infinite;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
