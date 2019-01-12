@@ -33,20 +33,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-    A fully responsive website uses percentages for values like width and height and is not based on creating break points like an adaptive website, 
-    which would have breakpoints based on the width of the page. The adaptive design would have a fixed with of 800px or there about and we would tailor the css towards that.
+
+    A fully responsive website uses percentages for width values, which will cause the site to adjust based on the width value 
+    Adaptive designs usually have a fixed with of 800px or there about and will change based on css break points and media queries.
 
 2. Describe what it means to be mobile first vs desktop first.
+    
     Mobile first is designing for mobile applications first and we would use min-wdith media queries instead of max-width
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-    This makes 1rem unit = to the same value of 10px so 1.6rem would be 16px
+    
+    This makes 1rem unit = to 10px so 1.6rem would be 16px
 
 4. How would you describe preprocessing to someone new to CSS?
-    Preprocessing using less/sass opens the door to creating a smooth and well documented workflow for css. It allows you to set variables, it has the effect of keeping your css well organized
-    eliminates some of the redundant aspects of css with the nesting feature. It is like an army knife that has tools you didn't even know you needed untill you started using it.
+    
+    Preprocessing using less/sass opens the door to creating a smooth and well documented workflow for css. It allows you to set variables and has the effect of keeping your css well organized. Preprocessors eliminates some of the redundant aspects of css with the nesting feature.
+    It is like an army knife that has tools you didn't even know you needed until you started using it.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    
     The nesting aspect and ability to include mixins/variables for redundant tasks.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
@@ -102,7 +107,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 * [X] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
@@ -112,11 +117,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -126,8 +131,8 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
 
-* [ ] Introduce CSS animations to your site.
+* [X] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [X] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
