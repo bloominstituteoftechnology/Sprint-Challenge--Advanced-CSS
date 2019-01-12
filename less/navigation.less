@@ -10,10 +10,19 @@ nav {
     h1 {
         align-self: center;
         padding: 10px;
+        @media @phone-small {
+            font-size: 10vw;
+        }
     }
     ul {
         display: flex;
         justify-content: center;
+        @media @phone-small {
+            flex-direction: column;
+            text-align: center;
+            margin-top: -20px;
+            margin-bottom: 17px;
+        }
         li {
             padding: 5px 0 10px;
             margin: 0 0 1px 0;
@@ -21,11 +30,22 @@ nav {
                 font-size: 1.2rem;
                 margin: 0;
             }
+            @media @phone-small {
+                padding: 10px;
+                margin: 5px;
+            }
             a {
                 padding: 10px 20px;
                 .link(@nav-font;@nav-bg;);
                 @media @phone {
                     padding: 10px 10px;
+                }
+                @media @phone-small {
+                    width: 100%;
+                    position: fixed;
+                    left: 0;
+                    text-transform: uppercase;
+                    letter-spacing: 0.25rem;
                 }
             }
         }

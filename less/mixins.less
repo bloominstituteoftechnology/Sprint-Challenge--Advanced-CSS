@@ -38,7 +38,7 @@
 // Links
 .link(@link-fg-color; @link-bg-color; @link-bold: 600) {
     color: @link-fg-color;
-    background-color: none;
+    background-color: unset;
     font-weight: @link-bold;
     text-decoration: none;
     &:hover{
@@ -49,6 +49,10 @@
         .transition(0.75s);
         @media @phone {
             .border-radius(5px; 5px; 0; 0);
+        }
+        @media @phone-small {
+            .border-radius(0; 0; 0; 0);
+            letter-spacing: 0.75rem;
         }
     }
 }
