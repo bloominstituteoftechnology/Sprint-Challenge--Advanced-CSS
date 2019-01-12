@@ -111,6 +111,8 @@ header {
     }
 
     p{
+        display: flex:
+        flex-wrap: wrap;
         margin-left: px;
         font-size: 0.95em;
         justify-content: flex-start;
@@ -129,6 +131,8 @@ header {
 }
 
 .walk-text {
+    display: flex:
+    flex-wrap: wrap;
     width: 50%;
     margin: 10px 10px;
     margin-left: 30px;
@@ -169,6 +173,8 @@ footer {
 
 @media screen and (max-width: 500px){ 
 
+//--- changes width ---//
+
 	.home {
 		width: 480px;
 		margin: 0 auto;
@@ -180,6 +186,7 @@ footer {
         margin: 10px auto;
         margin-left: 10px;
     }
+//--- makes pictures hidden ---//
 
     .sky, .launch {
         display: none;
@@ -197,11 +204,15 @@ footer {
         }
     
         p{
+            display: flex:
+            flex-wrap: wrap;
             margin-left: 1px;
             font-size: 0.95em;
             justify-content: flex-start;
         }
     }
+
+    //--- reverses order --//
 
     .walk {
         display: flex;
@@ -210,8 +221,10 @@ footer {
     }
 
     .walk-text {
+        display: flex:
+        flex-wrap: wrap;
         width: 90%;
-        margin: 10px 10px;
+        margin: 10px 20px;
         margin-bottom: 30px;
     }
     
@@ -222,6 +235,8 @@ footer {
         margin: 30px auto;
     }
     
+    //-- changes button---//
+
     .btn {
         text-transform: capitalize;
         color: white;
