@@ -1,39 +1,43 @@
 // Home Content
 
+// header
+.home .intro {
+  padding-top: 100px;
+}
+.home .intro img {
+  .width;
+  height: auto;
+  .border-radius(5px);
+}
+
 .home {
-
   .intro {
-
     h2 {
-      padding: 15px;
+      .padding(15px);
     }
-
     p {
-      padding:0 15px;
+      .padding(0 15px);
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(20px);
       height: 100%;
     }
   }
 
   .visit-planets {
-    padding: 15px;
-
+    .padding(15px);
     h3 {
       margin-top: 11px;
     }
-
     p {
       margin-top: 13px;
     }
@@ -42,9 +46,10 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
+    .padding(50px 60px);
     justify-content: center;
+      display: flex;
+   
 
     .walk-text {
       width: 50%;
@@ -58,18 +63,62 @@
       }
 
       .btn {
+        .border-radius(5px);
+        .flex;
+        width: 100px;
+        height: 35px;
+        background-color: @btn-background;
+        color: white;
+        cursor: pointer;
+        .border(1px; solid; @btn-background);
+        .font-size(1.8rem);
+      }
+      .btn:hover {
+        background: @btn-hover;
+        color: @btn-background;
       }
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+      width: 45%;
+      margin-left: 5%;
+
       img {
-        width: 100%;
+        .width;
         height: auto;
-        border-radius: 10px;
+        .border-radius(10px);
       }
     }
   }
-}// home
+} // home
+
+// mobile
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 90%;
+    margin: 20px 5%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    .padding(20px);
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .home .walk .walk-text {
+    .width;
+  }
+  .home .walk .walk-text .btn {
+    .width;
+    height: 70px;
+  }
+  .home .walk .walk-img {
+    .width;
+    order: -1;
+    margin: 0 0 20px 0;
+  }
+}
