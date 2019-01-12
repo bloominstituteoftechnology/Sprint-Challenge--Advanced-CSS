@@ -269,7 +269,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #5E6164;
+  background-color: #22283A;
   color: #fff;
   width: 30%;
   font-size: 1.6rem;
@@ -281,11 +281,11 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background-color: #fff;
-  color: #5E6164;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    background-color: #5E6164;
+    background-color: #22283A;
     color: #fff;
     width: 100%;
     font-size: 1.6rem;
@@ -297,7 +297,7 @@ footer {
   }
   .home .walk .walk-text .btn:hover {
     background-color: #fff;
-    color: #5E6164;
+    color: #22283A;
   }
 }
 .home .walk .walk-img {
