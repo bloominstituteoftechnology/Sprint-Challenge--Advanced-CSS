@@ -181,7 +181,7 @@ p {
   font-size: 1.4rem;
   text-decoration: none;
   color: black;
-  margin-left: 2.4rem;
+  margin: 0 1.5rem;
 }
 footer {
   color: #22283B;
@@ -192,6 +192,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
