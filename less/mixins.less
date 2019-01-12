@@ -1,7 +1,13 @@
 // Mixins Here
-.links {
+.links() {
 	text-decoration: none;
 	color: black;
+}
+
+.flex-box() {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .main-button(@background-color, @color, @padding, @border-radius) {

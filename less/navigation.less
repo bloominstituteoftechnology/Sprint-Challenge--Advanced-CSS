@@ -1,12 +1,14 @@
 // Navigation code here
 
 .top-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    .flex-box();
     background-color: @nav-bg;
     height: 80px;
     font-family: @nav-font;
+
+    @media @phone {
+    background-color: white;
+  }
     
 
     h1 {
