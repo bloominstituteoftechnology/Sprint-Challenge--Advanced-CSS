@@ -160,6 +160,11 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
 .container {
   max-width: 800px;
   width: 100%;
