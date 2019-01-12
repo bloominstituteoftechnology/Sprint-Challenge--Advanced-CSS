@@ -238,6 +238,12 @@ footer {
 .home .visit-planets {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom: 15px;
+  }
+}
 .home .visit-planets h3 {
   margin-top: 11px;
 }
@@ -265,6 +271,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 95%;
+    align-self: center;
   }
 }
 .home .walk .walk-text h3 {
@@ -318,6 +325,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    margin-bottom: 10px;
     margin-left: 0;
     order: -1;
   }
@@ -326,4 +334,50 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home h2 {
+  text-align: center;
+}
+.home form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home form .container {
+  width: 50%;
+}
+.home form .container input[type=text],
+.home form .container input[type=password] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  border: 1px solid darkgray;
+}
+.home form .container label {
+  font-size: 1.6rem;
+}
+.home form .img-container .avatar {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 100%;
+}
+.home form button {
+  height: 35px;
+  min-width: 100px;
+  width: 30%;
+  padding-top: 6px;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  background-color: #22283A;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding-top: 1px;
+}
+.home form button.btn:hover {
+  color: #22283A;
+  background-color: white;
 }
