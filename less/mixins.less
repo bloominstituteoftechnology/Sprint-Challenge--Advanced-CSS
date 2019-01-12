@@ -1,1 +1,42 @@
 // Mixins Here
+
+.display (@width) {
+    display: flex;
+    justify-content: center;
+    width: @width;
+}
+
+.nav-font {
+    h1 {
+        font-size: 3.5rem;
+    }
+    nav {
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.button (@bg:@btn-bg-color, @color:@porcelain){
+    color: @color;
+    background-color: @btn-bg-color;
+    border: 1px double @color;
+    border-radius: 5px;
+    width: 25%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%; 
+    transition: width 1s, height 1s, transform 1s;
+    transition: width 1s, height 1s, transform 1s;
+
+
+    
+    &:hover {
+        color: @bg;
+        background-color: @color;
+        border: 1px double @bg;
+        transform: rotate(360deg); 
+        transform: rotate(360deg);
+
+}
