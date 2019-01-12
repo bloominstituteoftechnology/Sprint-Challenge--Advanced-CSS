@@ -186,6 +186,7 @@ p {
   padding-bottom: 3px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to bottom, #ffffff 0%, rgba(125, 185, 232, 0) 100%);
 }
 .navigation h1 {
   color: #23293B;
