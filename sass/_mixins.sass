@@ -1,0 +1,42 @@
+// Mixins Here
+
+@mixin easeOut
+    transition: all 0.3s ease-Out
+
+
+
+@mixin buttons($btn-bg, $btn-fc, $width-percent)
+    background: $btn-bg
+    color: $btn-fc
+    border-radius: 5px
+    padding: 1rem
+    width: $width-percent
+    font-size: 1.6rem
+    text-align: center
+    &:hover
+        background: $btn-fc
+        color: $btn-bg
+        font-weight: 800px
+
+@mixin mediaSm
+    @media screen and (#{$phone})
+        @content
+        .home
+            .space-images
+                img
+                    width: 100%
+                    @for $i from 2 through 3
+                        &:nth-child(#{$i})
+                            display: none
+            .walk
+                flex-flow: column-reverse
+                padding: 1rem 1rem
+                width: 100%
+                .walk-text
+                    width: 100%
+                    .btn
+                        @include buttons($header-font-color,white,100%)
+                        padding: 2rem
+                .walk-img
+                    width: 100%
+                    margin: 1rem 0

@@ -1,0 +1,29 @@
+// Navigation code here
+.nav-container
+    display: flex
+    font-size: 1.6rem
+    flex-flow: row wrap
+    align-content: center
+    justify-content: center
+    background: $nav-bg
+    padding:  1rem 0 2rem 0
+    h1
+        width: 100%
+        text-align: center
+        padding: 0 0 2rem 0
+        font-size: 4rem
+    
+    .nav-link-container
+        display: flex
+        justify-content: center
+        li
+            a
+                text-decoration: none
+                padding: 1rem 2rem
+                color: $river-bend
+@include mediaSm
+    .nav-container
+        .nav-link-container
+            li
+                a
+                    padding: 1rem 1rem
