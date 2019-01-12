@@ -82,27 +82,16 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 blockquote:before, blockquote:after, q:before, q:after {
@@ -208,6 +197,7 @@ footer {
 
 .container-home{
     display: flex;
+    flex-direction: column;
 }
 
 body{
@@ -215,3 +205,33 @@ body{
 	width: 53%;
     padding: 10px;
 }
+
+.nav-header{
+    background-color: lightgray;
+}
+
+.intro{
+    margin: 15px;
+    padding: 15px;
+}
+
+.space-images{
+    width: 33%;
+}
+
+/* display phone sized */
+@phone(max-width: 500px) {
+    .container {
+      width: 500px;
+      background: gray;
+    }
+
+    .container header nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container header nav a {
+      margin-bottom: 20px;
+    }
+  }
