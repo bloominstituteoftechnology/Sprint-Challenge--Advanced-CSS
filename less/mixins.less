@@ -1,1 +1,24 @@
 // Mixins Here
+
+.row(@row, @justify){
+    display: flex;
+    flex-direction: @row;
+    justify-content: @justify;
+}
+
+.column (@direction, @align) {
+    display: flex;
+    flex-direction: @direction;
+    align-items: @align;
+}
+
+.button(@bgcolor, @color, ){
+    .column(column, center);
+    .row(row, center);
+    font-size: 2rem;
+    height: 50px;
+    width: 125px;
+    color: @color;
+    border-radius: 10px;
+    background-color: @bgcolor;
+}

@@ -73,3 +73,77 @@
     }
   }
 }// home
+
+.main-header {
+  width: 100%;
+}
+
+.btn {
+  .button(@btn-bg-color, white);
+  border: .5px solid black;
+  box-shadow: 4px 6px gray;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: @btn-bg-color;
+  box-shadow: 2px 4px gray;
+
+}
+
+.btn:active {
+  background-color: @sea-shell;
+  border: .5px solid black;
+  box-shadow: none;
+  top: 6px;
+}
+
+@media @phone {
+
+  body{
+
+    .space-images {
+      .column(column, center);
+      
+        .blast {
+          width: 100%;
+          margin-bottom: -250px;
+        }
+
+        .sky {
+          visibility: hidden;
+        }
+
+        .launch {
+          visibility: hidden;
+        }
+    }
+
+    .visit-planets {
+      width: 100%;
+    }
+
+    .walk {
+      .column(column-reverse, center);
+      margin: 0 -250px;
+      
+        .walk-text {
+          margin: 20px;
+           
+          .btn {
+              width: 100%;
+            }
+        }
+
+        .walk-img {
+          margin: 0 40px;
+
+        }
+      
+    }
+
+   
+  }
+}
+
