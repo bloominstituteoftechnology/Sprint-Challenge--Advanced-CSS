@@ -8,8 +8,12 @@
   margin: 0 auto;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     margin-bottom: 15px;
+
+    @media @phone {
+      font-size: 4rem;
+    }
   }
 }
 
@@ -18,15 +22,15 @@ nav {
 }
 
 ul {
-  // responsively there'll be a problem using width.
-  width: 45%;
+  // responsively might be issue here at some point.
+  width: 55%;
   .space-between;
   margin: 0 auto;
   font-size: 1.8rem;
   color: @nav-font;
 
   @media @phone {
-    width: 80%;
+    width: 85%;
     // padding: 10px;
   }
 }
