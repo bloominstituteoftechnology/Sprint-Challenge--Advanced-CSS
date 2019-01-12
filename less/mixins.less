@@ -1,1 +1,74 @@
 // Mixins Here
+
+@base-color: #10213d;
+@secondary-color: #5AC1E4;
+@size: 25px;
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-margin {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@media (max-width: 500px){
+
+ .headimg {
+ 	 width: 100%;
+ }
+
+ .space-images{
+
+	height: 450px;
+
+	img {
+		width: 100%;
+		margin: none;
+	}
+
+	.sky{
+		display: none;
+	}
+
+	.launch{
+		display: none;
+	}
+
+	.blast {
+		min-width: 95%;
+		
+		margin: none;
+	}}
+
+
+	.walk {
+		flex-direction: column;
+		flex-wrap: no-wrap;
+		height: 750px;
+		width: 100%;
+		align-items: center;
+
+		.walk-text {
+			min-width: 450px;
+			order: 1;
+			padding: 0 10% 0 10% ;
+
+			.btn {
+				min-width: 415px;
+				
+				p {
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.walk-img {
+			min-width: 450px;
+			order: 0;
+		}
+	}
+ 
+}
