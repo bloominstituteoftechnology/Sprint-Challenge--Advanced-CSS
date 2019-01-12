@@ -1,1 +1,30 @@
 // Navigation code here
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @sea-shell;
+
+    h1 {
+        font-size: 4rem;
+        margin: 16px 0 20px;;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        max-width: 800px;
+        padding: 0 100px 12px;
+        margin: 0 auto;
+        justify-content: space-around;
+        
+        a {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: @nav-font;
+        }
+    }
+}

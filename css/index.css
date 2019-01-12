@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+}
+.navigation h1 {
+  font-size: 4rem;
+  margin: 16px 0 20px;
+}
+.navigation nav {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 100px 12px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.navigation nav a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +195,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .headerimg img {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +242,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #22283A;
+  color: #F6F7F8;
+  font-size: 1.7rem;
+  font-weight: bold;
+  width: 100px;
+  padding: 10px 20px;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -4,6 +4,10 @@
 
   .intro {
 
+    .headerimg img {
+      #mixins.border-radius(5px);
+    }
+
     h2 {
       padding: 15px;
     }
@@ -58,6 +62,14 @@
       }
 
       .btn {
+        #mixins.border-radius(5px);
+        background-color: @btn-bg-color;
+        color: @porcelain;
+        font-size: 1.7rem;
+        font-weight: bold;
+        width: 100px;
+        padding: 10px 20px;
+
       }
     }
 
