@@ -1,5 +1,5 @@
 ## View the Index Page of Project
-1. <a href="https://davidaceves.github.io/UI-III-Flexbox/great-idea/index.html">PH</a>
+1. <a href="https://davidaceves.github.io/Sprint-Challenge--Advanced-CSS/index.html">PH</a>
 
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
