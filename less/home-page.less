@@ -2,6 +2,7 @@
 
 .home {
 
+    margin-top: 100px;
   .intro {
 
     h2 {
@@ -94,7 +95,7 @@
 
         @media @phone{
           .button(@btn-bg-color, 20px 43%, 100%, 60px, 5px);
-          font-weight: 600;
+          font-weight: bold;
         }
       }
     }
@@ -118,5 +119,36 @@
 
       }
     }
+  }
+
+  .subscribe{
+    padding: 10px 30px;
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    .input{
+      padding: 10px 0;
+      
+      input{
+        width: 300px;
+
+        @media @phone{
+          width 100%;
+        }
+      }
+    }
+
+    .btn{
+
+      .button(@btn-bg-color, 8px 35px, 140px, 35px, 5px);
+
+      @media @phone{
+        .button(@btn-bg-color, 20px 43%, 100%, 60px, 5px);
+        font-weight: bold;
+      }
+    }
+
+
   }
 }// home
