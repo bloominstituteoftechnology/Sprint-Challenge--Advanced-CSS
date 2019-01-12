@@ -1,18 +1,30 @@
 // Home Content
 
-.home {
+.container-home {
 
   .intro {
 
-    h2 {
-      padding: 15px;
-    }
+      img {
+      .radius5px;
+        width: 100%;        
+        padding-bottom: 10px;
+      }
+
+      h2 {
+        padding: 15px;
+
+        @media @phone {
+          padding-left: 9px;
+        }
+  }
 
     p {
       padding:0 15px;
+
+      @media @phone {
+        padding-left: 9px;
+      }
     }
-  
-  }
 
   .space-images {
     display: flex;
@@ -58,6 +70,7 @@
       }
 
       .btn {
+        .btn-styles(@btn-bg-color, @porcelain, 30%, 10px, 5%);
       }
     }
 
@@ -72,4 +85,4 @@
       }
     }
   }
-}// home
+  }}

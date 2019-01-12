@@ -145,6 +145,10 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4.2rem;
+  text-align: center;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -160,6 +164,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.main-navigation {
+  width: 100%;
+  height: 90px;
+  background: #F6F6F6;
+  position: fixed;
+}
+.nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  font-size: 1.6rem;
+  color: #454A59;
+  text-decoration: none;
+}
+a:hover {
+  color: #0099ff;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -170,8 +200,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  border-radius: 5px;
+  width: 100%;
+}
 .home .intro h2 {
-  padding: 15px;
+  padding: 45px;
 }
 .home .intro p {
   padding: 0 15px;
@@ -211,6 +245,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  color: #F6F7F8;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  width: 30%;
+  padding: 10px 5%;
 }
 .home .walk .walk-img {
   width: 46%;
