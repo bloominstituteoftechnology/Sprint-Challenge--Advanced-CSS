@@ -1,3 +1,7 @@
+.links {
+  text-decoration: none;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -144,6 +148,7 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+  font-size: 3.2rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +164,22 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #F1F1F1;
+  height: 80px;
+}
+.top-content h1 {
+  padding: 7px 0 18px;
+}
+.top-content nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
 }
 footer {
   color: #22283B;
