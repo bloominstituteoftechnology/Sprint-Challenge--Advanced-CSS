@@ -246,8 +246,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
   }
 }
@@ -259,6 +257,7 @@ footer {
   .home .walk-text {
     order: 1;
     width: 100%;
+    margin-top: 20px;
   }
 }
 .home .walk-text h3 {
@@ -280,7 +279,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk-text .btn {
     width: 100%;
-    margin-top: 3%;
+    margin-top: 20px;
   }
 }
 .home .walk-text .btn:hover {
