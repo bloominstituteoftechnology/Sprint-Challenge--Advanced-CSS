@@ -60,7 +60,13 @@
       }
 
       .btn {
-        .buttonMake(@btn-bg-color, white, 1.8rem, 30%, 20%, 9px, 5px, center);
+        .buttonMake(@btn-bg-color, white, 1.8rem, 30%, 12%, 5px, 5px, center);
+
+        &:hover{
+          background-color: white;
+          color: @btn-bg-color;
+          .border(1px, solid, @btn-bg-color);
+        } 
       }
     }
 
