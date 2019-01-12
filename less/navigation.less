@@ -2,7 +2,7 @@
     .flex(@justify: center, @align: center, @direction: column);
     .size(@height: 10rem);
     padding-bottom: 3px;
-    
+
     h1 {
         .text(@color: @header-font-color, @family: 'Russo One', @size: 4rem);
         margin-bottom: 1.4rem;
@@ -12,6 +12,10 @@
         .size(@width: 37.7rem);
         a {
             .text(@color: @nav-font, @size: 16px);
+        }
+        @media (max-width: @phone) {
+            justify-content: space-around;
+            width: 80%;
         }
     }
 }
