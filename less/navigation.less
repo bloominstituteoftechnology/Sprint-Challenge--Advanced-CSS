@@ -9,12 +9,17 @@ nav {
     }
     .navlinks {
         margin-top: 20px;
+        margin-bottom: 10px;
         a {
-            text-decoration: none;
-            font-size: 1.7rem;
+            .link();
+            font-size: 1.6rem;
             font-weight: bold;
             color: @nav-font;
             margin-right: 3%;
+        }
+
+        a:hover {
+            .linkhover();
         }
     }
 }

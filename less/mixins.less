@@ -1,1 +1,23 @@
 // Mixins Here
+.linkhover {
+    border-bottom: 2px solid @river-bend;
+    padding-bottom: 3px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+//These first two mixins aren't the best because I didn't really need any mixins to finish the project
+
+.button(@height, @width) {
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    border-radius: 5px;
+    height: @height;
+    width: @width;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
