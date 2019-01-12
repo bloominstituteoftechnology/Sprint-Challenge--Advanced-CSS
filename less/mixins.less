@@ -1,1 +1,19 @@
 // Mixins Here
+.flex(@direction: row; @wrap: nowrap; @justify: space-between) {
+  display: flex;
+  flex-direction: @direction;
+  flex-wrap: @wrap;
+  justify-content: @justify;
+}
+
+.responsive-width(@wd: 100%; @max: 400px) {
+  width: 100%;
+  max-width: @max;
+}
+
+.hp-button(@bg-color: black; @txt-color: white; @radius: 5px) {
+  background-color: @bg-color;
+  color: @txt-color;
+  border-radius: @radius;
+  text-align: center;
+}

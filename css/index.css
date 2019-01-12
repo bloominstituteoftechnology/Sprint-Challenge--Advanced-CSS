@@ -163,16 +163,21 @@ p {
 .navtainer {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   text-align: center;
+  margin-bottom: 10px;
 }
 .navtainer h1 {
   font-size: 4rem;
   margin: 10px;
 }
 .navtainer nav {
-  max-width: 400px;
   width: 100%;
+  max-width: 400px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -232,6 +237,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: 100px;
+  height: 25px;
 }
 .home .walk .walk-img {
   width: 46%;
