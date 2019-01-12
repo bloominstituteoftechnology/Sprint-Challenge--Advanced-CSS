@@ -167,6 +167,8 @@ p {
   border: 2px solid grey;
   width: 100%;
   background-color: #F6F6F6;
+  position: fixed;
+  opacity: 0.5;
 }
 .top nav {
   color: #454A59;
@@ -225,6 +227,11 @@ footer {
 
 .home .visit-planets {
   padding: 15px;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -275,6 +282,14 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+
+  
+
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
 .home .walk .walk-img img {
   width: 100%;
