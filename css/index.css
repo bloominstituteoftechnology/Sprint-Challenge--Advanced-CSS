@@ -232,7 +232,12 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text a {
+  color: white;
+  text-decoration: none;
+  align-items: baseline;
+}
+.home .walk .walk-text a .btn {
   padding-top: 5px;
   font-size: 1.3rem;
   height: 30px;
@@ -241,10 +246,11 @@ footer {
   background-color: #22283A;
   text-align: center;
 }
-.home .walk .walk-text .btn a {
-  color: white;
-  text-decoration: none;
-  align-items: baseline;
+.home .walk .walk-text a:hover {
+  color: #22283A;
+}
+.home .walk .walk-text a:hover .btn:hover {
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
