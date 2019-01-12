@@ -16,10 +16,20 @@ nav{
     width: 30%;
     margin-top: 15px;
     margin-bottom: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
 
     a {
+        .flex(space-between);
         font-size: 1.6rem;
         text-decoration: none;
         color: black;
+          
     }
+
+    @media @phone {
+        
+            width: 75%;
+            display: flex;
+    }    
 }

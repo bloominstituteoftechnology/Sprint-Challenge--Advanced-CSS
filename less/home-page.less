@@ -29,6 +29,11 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @phone {
+      flex-direction: column;
+    }
+
   }
 
   .visit-planets {
@@ -63,6 +68,12 @@
 
       .btn {
         .btnStyle (black; white);
+
+        &:hover {
+          background: white;
+          color: black;
+        }
+
       }
     }
 
