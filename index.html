@@ -25,7 +25,7 @@
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <a href="#contact-form">Contact</a>
       <a href="#">Sign In</a>
     </nav>
   </section>
@@ -80,13 +80,15 @@
 
     </section>
 
-    <section class="contact-form">
-      <h2>Contact</h2>
+    <section id="contact-form">
+      <h2>Sign Up For Newsletter!</h2>
       <form>
-        <label for="fname" class="label">Full Name</label>
+        <label for="fname" class="label">Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Full Name">
+        <label for="fname" class="label">Email</label>
+        <input type="text" id="fname" name="firstname" placeholder="Email Address">
         <label for="message" class="label">Message</label>
-        <textarea id="subject" name="message" placeholder="Share your thoughts" style="height:200px"></textarea>
+        <textarea id="subject" name="message" placeholder="(optional)" style="height:200px"></textarea>
         <input class="submit" type="submit" value="Submit">
       </form>
     </section>

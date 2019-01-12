@@ -130,7 +130,11 @@
 
   }
 
-  .contact-form {
+  #contact-form {
+
+    @media @phone {
+        display: none;
+      }
 
     h2{
       text-align: center;
@@ -141,9 +145,7 @@
       padding: 25px;
       font-size: 20px;
 
-      @media @phone {
-        display: none;
-      }
+      
 
         input[type=text], select, textarea {
           resize: vertical;
