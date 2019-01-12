@@ -10,15 +10,25 @@ nav {
     #spacingMixins.marginTopBottom;
 
     font-size: 3.2rem;
+
+    @media @phone {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+      font-size: 4.8rem;
+    }
   }
 
   .links {
     #spacingMixins.marginTopBottom;
 
-
     justify-content: space-around;
     display: flex;
     width: 50%;
+
+    @media @phone {
+      width: 90%;
+    }
   }
 
   a {
