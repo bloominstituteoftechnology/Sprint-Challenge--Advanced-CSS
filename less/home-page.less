@@ -2,7 +2,31 @@
 
 .home {
 
+  position: relative;
+  top:80px;
+  @media @phone {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:100%;
+  }
+
   .intro {
+
+    div.header-img{
+      display: flex;
+      flex-wrap: wrap;
+      max-width:100%;
+
+      img {
+        max-width:100%;
+        border-radius: 10px;
+        @media @phone {
+          height: 100px;
+          border-radius: 2px;
+        }
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,12 +42,33 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @keyframes slidein {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+    @media @phone {
+      width:100%;
+      animation: 1s ease-out 0s 1 slidein;
+      img.sky{
+        display:none;
+      }
+      img.launch{
+        display:none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -45,9 +90,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      margin-top:20px;
+      padding: 10px 10px;
+      display:flex;
+      flex-direction: column;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,13 +111,37 @@
         margin-bottom: 26px;
       }
 
+      
       .btn {
+        width:25%;
+        height: 25px;
+        .btn-layout(black,white,15%);
+        &:hover{
+          .btn-layout(grey,black,15%);
+        }
+        a{
+          .no-link(white);
+        }
+        @media @phone {
+          width:100%;
+          height: 75px;
+          .btn-layout(@river-bend,white,5%);
+          &:hover{
+            .btn-layout(black,white,5%);
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        order:-2;
+        width:100%;
+        margin-left:0px;
+        margin-bottom:10px;
+      }
       
       img {
         width: 100%;
@@ -72,4 +150,4 @@
       }
     }
   }
-}// home
+}
