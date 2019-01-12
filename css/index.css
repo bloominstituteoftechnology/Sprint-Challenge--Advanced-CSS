@@ -220,6 +220,16 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    height: 350px;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
