@@ -34,6 +34,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      // at phone-width, only display first image
+      @media @phone {
+        display: none;
+
+        &:first-child {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: 20px 5%;
+        }
+      }
+
     }
   }
 
@@ -56,8 +69,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      margin-top: 30px;
+      padding: 20px;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -75,12 +98,30 @@
           .button(@color: @btn-bg-color; @bg: @btn-text-color;
             @border-color: @btn-bg-color);
         }
+
+        @media @phone {
+          .button(@bg: @btn-bg-color; @color: @btn-text-color;
+            @ht: 70px; @wd: 100%);
+
+          &:hover {
+            cursor: pointer;
+            .button(@color: @btn-bg-color; @bg: @btn-text-color;
+              @border-color: @btn-bg-color;
+              @ht: 70px; @wd: 100%);
+          }
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
       
       img {
         width: 100%;
