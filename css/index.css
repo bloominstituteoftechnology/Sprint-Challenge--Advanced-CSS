@@ -173,6 +173,11 @@ p {
   font-size: 4.2rem;
   margin: 15px auto;
 }
+@media (max-width: 500px) {
+  .site-header .logo {
+    font-size: 4rem;
+  }
+}
 .site-header nav {
   display: flex;
   flex-direction: row;
@@ -208,6 +213,20 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .hero-image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .home .intro .hero-image-wrapper img {
+    border-radius: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro .hero-image-wrapper {
+    height: 30%;
+  }
 }
 .home .space-images {
   display: flex;
