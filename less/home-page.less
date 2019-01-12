@@ -58,15 +58,18 @@
       }
 
       .btn {
-        display: flex;
         .center;
-        width: 10rem;
-        height: 3rem;
+        .button-width-height();
+        .border-color();
+        .border-radius();
+        .button-font-size();
+        &:hover {
+          .swap-backgroundcolor-and-fontcolor;
+          .element-animation;
+        }
         background: @btn-bg-color;
         a {
-          font-size: 1.6rem;
-          text-decoration: none;
-          color: @porcelain;
+          .text-decoration-and-color();
         }
       }
     }
