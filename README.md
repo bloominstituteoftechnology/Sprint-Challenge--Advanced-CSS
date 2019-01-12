@@ -45,7 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
     | Advantages | Advantages |
     |----------|-----------|
     | Adaptive website design fits into different screen sizes and is user-friendly for the website visitors. |  A responsive website loads faster than an adaptive website design as there is only one master layout that has to be loaded across devices.
-    
+
     | Disadvantages | Disadvantages |
     |----------|-----------|
     | Adaptive designs are not very convenient to create as one has to create different layouts for different screen sizes. | It is slightly difficult to create a responsive website design, as compared to other formats. it requires a thorough development and testing process to ensure it is working correctly on all devices. The design has to planned well, so it can work on different screen sizes. |
@@ -54,11 +54,22 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Describe what it means to be mobile first vs desktop first.
 
+    In a **Mobile First** approach the page is originally and primarily designed for mobile screens and subsequent designs accommodate larger screens. Media breakpoints are typically designated with the `min-width` attribute.
+
+    In a **Desktop First** approach the page is originally and primarily designed for desktop screens and subsequent designs accommodate smaller screens. Media breakpoints are typically designated with the `max-width` attribute. 
+
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+   This sets the `1rem` to `10px`.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    I would describe preprocessing as a tool/program that facilitates organizing and creating CSS. It doesn't change the behavior of CSS just provides shortcuts to create CSS commands. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    Nesting CSS commands is my favorite because it allows me to create more modular CSS code. Mixins are helpful but I can see it also being a source difficulty if you create complicated mixins with numerous arguments and then having to debug the code if you use it a lot. At that point it's full blown programming.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
