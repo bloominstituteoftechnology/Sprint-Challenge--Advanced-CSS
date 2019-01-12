@@ -1,1 +1,28 @@
 // Mixins Here
+
+.largetxt(@family: 'Russo One', sans-serif; @weight: bold; @color: @header-font-color; @font-size: 2rem) {
+    margin: 1.5%;
+    font-family: @family;
+    font-weight: @weight;
+    color: @header-font-color;
+    font-size: @font-size;
+}
+
+.smalltxt(@family: 'Ubuntu', sans-serif; @weight: bold; @color: @main-font-color) {
+    margin: 0.25%;
+    font-family: @family;
+    font-weight: @weight;
+    color: @main-font-color;
+    font-size: 1.25rem;
+}
+
+.btn-style(@br: 5px; @bgc: @header-font-color; @w: 35%; @h: 10%) {
+    background: @bgc;
+    border-radius: @br;
+    color: lightgray;
+    font-weight: bold;
+    padding: 2.0% 0 0 7.5%;
+    font-size: 1.5rem;
+    width: @w;
+    height: @h;
+}

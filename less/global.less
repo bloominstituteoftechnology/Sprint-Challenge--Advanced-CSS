@@ -1,5 +1,6 @@
 // General Styles
 * {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -31,8 +32,10 @@ p {
 }
 
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    max-width: 750px;
+  }
 }
 

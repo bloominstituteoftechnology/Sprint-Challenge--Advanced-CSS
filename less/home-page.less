@@ -1,7 +1,13 @@
 // Home Content
 
 .home {
-
+max-width: 65%;
+@media (max-width: 768px) {
+  max-width: 85%;
+@media @phone {
+  
+}
+}
   .intro {
 
     h2 {
@@ -58,6 +64,13 @@
       }
 
       .btn {
+        .btn-style();
+        &:hover {
+          transition: 1s;
+          transform: scale(1.1);
+          background-color: lightgray;
+          color: @header-font-color;
+        }
       }
     }
 
@@ -73,3 +86,4 @@
     }
   }
 }// home
+

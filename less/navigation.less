@@ -1,1 +1,27 @@
 // Navigation code here
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+    .logo {
+      .largetxt();
+      font-size: 3.5rem;
+      width: 100%;
+      text-align: center;
+    }
+    .nav-el {
+      padding: 0 0 2% 24%;
+      width: 100%;
+      display: flex;
+      a {
+        .smalltxt();
+        justify-content: flex-end;
+        text-decoration: none;
+        width: 15%;
+      }
+    }
+  }
