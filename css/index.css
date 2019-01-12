@@ -178,16 +178,16 @@ p {
   }
 }
 .nav ul {
-  width: 50%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   font-size: 1.8rem;
   color: #454A59;
 }
-@media (max-width: 500px) {
+@media (min-width: 800px) {
   .nav ul {
-    width: 85%;
+    width: 50%;
   }
 }
 footer {
