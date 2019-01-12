@@ -20,6 +20,10 @@
         width: 28%;
         margin: 10px;
         justify-content: space-around;
+        @media @phone {
+            justify-content: space-evenly;
+            width: 90%;
+        }
         a {
             font-size:1.7rem;
             text-decoration: none;
@@ -29,8 +33,13 @@
                 color: @nav-font;
             }
         }
+        
+    }
+    @media @phone {
+        flex-direction: column;
     }
 
 
+    
 
 }
