@@ -24,6 +24,49 @@
         text-decoration: none;
         margin-left: 35px;
         color: black;
+
+        // ** -- ** -- ** -- ** -- ** -- ** --
+        // ** -- ** -- ** -- ** -- ** -- ** --
+        // FAILED 'COOL' CSS Animation
+            // &:before, &:after {
+            //     position: absolute;
+            //     left: 0px;
+            //     width: 100%;
+            //     height: 2px;
+            //     background: #FFF;
+            //     content: "";
+            //     opacity: 0;
+            //     transition: all 0.3s;
+
+
+            //     // transition: all .3s;
+            //     // opacity: 0;
+            // }
+
+            // &:before {
+            //     top: 0px;
+            //     transform: translateY(10px);
+            // }
+
+            // &:after {
+            //     bottom: 0px;
+            //     transform: translateY(-10px);
+            // }
+
+            // &:hover:before, &:hover:after {
+            //     opacity: 1;
+            //     transform: translateY(0px);
+            // }
+
+        // ** -- ** -- ** -- ** -- ** -- ** --
+        // ** -- ** -- ** -- ** -- ** -- ** --
+        // Easier CSS Animation
+        
+            &:hover {
+                animation-name: @navItemsAnimation;
+                animation-duration: 3s;
+
+            }
     }
 
     :first-child {
@@ -38,3 +81,16 @@
         border-radius: 5px;
     }
 }
+
+
+@keyframes navItemsAnimation {
+    0% {
+        
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: yellow;
+    }
+};

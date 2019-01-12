@@ -1,3 +1,6 @@
+.h1Font {
+  font-size: 3.6rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,11 +194,43 @@ a {
   margin-left: 35px;
   color: black;
 }
+.nav .navItems a:before,
+.nav .navItems a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav .navItems a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+.nav .navItems a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+.nav .navItems a:hover:before,
+.nav .navItems a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
 .nav .navItems :first-child {
   margin-left: 0;
 }
 .header img {
   border-radius: 5px;
+}
+@keyframes navItemsAnimation {
+  50% {
+    color: blue;
+  }
+  100% {
+    color: yellow;
+  }
 }
 footer {
   color: #22283B;
