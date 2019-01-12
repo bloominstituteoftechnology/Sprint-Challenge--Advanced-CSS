@@ -58,7 +58,7 @@ You are expected to be able to answer all these questions. Your responses contri
 
 Follow these steps to set up your project:
 
-### Git Set up
+### Git Set up - done
 
 * [ ] Fork the project into your GitHub user account
 * [ ] Clone the forked project into a directory on your machine
