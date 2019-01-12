@@ -4,6 +4,10 @@
   .flex(@direction: column; @align:center);
   background: @nav-bg;
   border-bottom: 2px solid @nav-border;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.9;
 
   .logo {
     font-size: 4.2rem;
@@ -25,6 +29,7 @@
       font-weight: semi-bold;
       color: @nav-font;
       white-space: nowrap;
+      .hoverEffect(@nav-bg;@nav-font);
 
       @media @phone {
         margin: 0 2.78vw;

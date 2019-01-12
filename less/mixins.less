@@ -26,4 +26,18 @@
   font-size: @fontSize;
   text-align: @textAlign;
   cursor: pointer;
+
+  .hoverEffect(@color; @bgColor);
+}
+
+//Animations
+.hoverEffect(@fontColor; @bgColor) {
+  &:hover {
+    //color: @bgColor;
+    color: @fontColor;
+    background: @bgColor;
+    border: 1px solid @bgColor;
+    transform: scale(1.5);
+    background: lighten(@bgColor, 10%);
+  }
 }

@@ -168,6 +168,10 @@ p {
   align-items: center;
   background: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  opacity: 0.9;
 }
 .site-header .logo {
   font-size: 4.2rem;
@@ -193,6 +197,13 @@ p {
   color: #454A59;
   white-space: nowrap;
 }
+.site-header nav a:hover {
+  color: #F6F6F6;
+  background: #454A59;
+  border: 1px solid #454A59;
+  transform: scale(1.5);
+  background: #5b6276;
+}
 @media (max-width: 500px) {
   .site-header nav a {
     margin: 0 2.78vw;
@@ -207,6 +218,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -303,6 +317,13 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.home .walk .walk-text .btn:hover {
+  color: #F6F7F8;
+  background: #22283A;
+  border: 1px solid #22283A;
+  transform: scale(1.5);
+  background: #353e5a;
 }
 .home .walk .walk-text .btn:hover {
   color: #22283A;
