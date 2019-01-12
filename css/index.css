@@ -167,7 +167,6 @@ p {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  border: 1px solid red;
   background-color: rgba(246, 246, 246, 0.4);
   position: fixed;
   z-index: 1;
@@ -183,13 +182,12 @@ p {
   margin-top: 20px;
 }
 .navigation nav {
-  border: 1px solid red;
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
   display: flex;
   justify-content: space-between;
-  padding: 0 25%;
+  padding: 0 15%;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -198,11 +196,11 @@ p {
   }
 }
 .navigation nav a {
-  border: 1px solid red;
   text-decoration: none;
   text-align: center;
   color: #454A59;
   padding: 5px;
+  margin: 0 1%;
   font-size: 1.4rem;
 }
 .navigation nav a:hover {
