@@ -1,1 +1,34 @@
 // Mixins Here
+
+.flexbox (@fdir: row; @justify: center; @align: baseline; @alignitems: flex-start;) {
+    display: flex;
+    flex-direction: @fdir;
+    justify-content: @justify;
+    align-content: @align;
+    align-items: @alignitems;
+}
+
+.button(@width, @height) {
+    background-color: @btn-bg-color;
+    width: @width;
+    min-width: 75px;
+    height: @height;
+    border-radius: 4px;
+    .flexbox(@alignitems: center;);
+    font-size: 2rem;
+    letter-spacing: -.05em;
+    cursor: pointer;
+    color: white;
+    border: 2px solid @btn-bg-color;
+}
+
+.button-hover(){
+    background-color: white;
+    color: @btn-bg-color;
+}
+
+.animate(@duration, @name) {
+    animation: @name @duration;
+}
+
+
