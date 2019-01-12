@@ -1,2 +1,40 @@
 // Navigation code here
 
+.nav {
+    margin: 0px;
+    color: @river-bend;
+    background: @wild-sand;
+
+    .container {
+        .displayMIXIN(column; center);
+    }
+    
+    .navTitle {
+    padding-top: 15px;
+    }
+
+    .navTitle, .navItems {
+    padding-bottom: 15px;
+    }
+
+    .navItems{
+    display: flex;
+
+    a {
+        text-decoration: none;
+        margin-left: 35px;
+        color: black;
+    }
+
+    :first-child {
+        margin-left: 0;
+    }
+
+    }
+}
+
+.header {
+    img {
+        border-radius: 5px;
+    }
+}
