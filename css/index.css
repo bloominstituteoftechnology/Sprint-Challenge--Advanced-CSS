@@ -171,9 +171,9 @@ p {
 }
 .navigation nav {
   display: flex;
+  justify-content: space-around;
   margin: 0 auto;
   width: 50%;
-  justify-content: space-around;
   padding: 10px 90px;
 }
 .navigation nav a {
