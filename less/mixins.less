@@ -1,1 +1,18 @@
 // Mixins Here
+.layout(@j-content: center, @a-items: center, @f-dir: row) {
+  display: flex;
+  justify-content: @j-content;
+  align-items: @a-items;
+  flex-direction: @f-dir;
+}
+
+.main-btn() {
+  color: white;
+  background-color: @btn-bg-color;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  width: 20%;
+  font-size: 1.2rem;
+  padding: 2%;
+}
