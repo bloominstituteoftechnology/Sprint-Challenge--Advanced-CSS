@@ -14,15 +14,11 @@
 
     h2 {
       padding: 15px;
-      // animation: bounceIn 1s ease-in;
-      //   animation-iteration-count: 3;
-      //   animation-direction: alternate;
+      .animation-H();
 
       &:hover{
         .h-style(@dec:underline, @color:coral, @fontsize:4rem,);
-        animation: bounceIn 1s ease-in;
-        animation-iteration-count: 2;
-        animation-direction: alternate;
+        
       }
     }
 
@@ -80,6 +76,8 @@
 
     h3 {
       margin-top: 11px;
+      .animation-H();
+
       &:hover{
         .h-style(@dec:underline, @color:coral, @fontsize:4rem,);
       }
@@ -123,6 +121,7 @@
  
       h3 {
         margin-bottom: 10px;
+        .animation-H();
 
         &:hover{
           .h-style(@dec:underline, @color:coral, @fontsize:4rem,);
