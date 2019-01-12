@@ -170,6 +170,19 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F1F1F1;
+  width: 100%;
+  margin: 0 auto;
+}
+.title h1 {
+  font-size: 3.6rem;
+  padding: 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
