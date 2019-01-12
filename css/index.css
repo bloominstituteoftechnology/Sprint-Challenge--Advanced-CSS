@@ -225,9 +225,20 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .btn a {
   background-color: #22283a;
   color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.6rem;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: white;
+  color: #22283a;
   text-align: center;
   padding: 10px;
   font-size: 1.6rem;

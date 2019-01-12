@@ -58,8 +58,12 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .button(1.6rem , white, #22283a)
+      .btn  a{
+        .button(1.6rem , white, #22283a);
+        text-decoration: none;
+        &:hover{
+          .button(1.6rem, #22283a, white);
+        }
       }
     }
 
@@ -85,3 +89,4 @@ h1{
 .banner{
   border-radius: 10px;
 }
+
