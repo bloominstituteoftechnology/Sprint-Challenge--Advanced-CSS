@@ -1,1 +1,29 @@
 // Mixins Here
+
+.display-flex(@flex-direction, @justify-content) {
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+}
+
+.h2-styling(){
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: @font-color;
+}
+
+.h3-styling(){
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: @font-color;
+}
+
+.button-creator(){
+    height: @height;
+    width: @width;
+    background-color: @button-bg;
+    border: 1px solid @button-border;
+    border-radius: 4px;
+    color: @main-color;
+    
+}
