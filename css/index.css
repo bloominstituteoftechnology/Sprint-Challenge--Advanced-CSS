@@ -108,10 +108,10 @@ p {
 }
 
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #dddddd;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 1px double #F1F1F1;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -186,6 +186,46 @@ footer {
 
 .intro img {
   border-radius: 7px;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img:nth-child(2) {
+    display: none;
+  }
+  .home .space-images img:nth-child(3) {
+    display: none;
+  }
+  .home .walk {
+    flex-flow: column-reverse;
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    background: #23293B;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: white;
+    color: #23293B;
+    font-weight: 800px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
