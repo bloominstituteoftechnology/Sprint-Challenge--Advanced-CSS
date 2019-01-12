@@ -358,6 +358,7 @@ footer {
   font-size: 1.6rem;
 }
 .home form .img-container .avatar {
+  border: 1px solid black;
   margin-top: 10px;
   width: 100%;
   border-radius: 100%;
