@@ -137,7 +137,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
-h1,
+h1 {
+  font-size: 4rem;
+},
 h2,
 h3,
 h4,
@@ -160,6 +162,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid grey;
+  width: 100%;
+
+}
+
+.top nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.top nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 0 1% 0 1%;
+}
+
+
 footer {
   color: #22283B;
   background: #f4f4f4;
