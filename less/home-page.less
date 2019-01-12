@@ -3,6 +3,10 @@
 .home {
 
   .intro {
+    img {
+      .img();
+      border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -22,8 +26,9 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border-radius(20px);
       height: 100%;
+  
     }
   }
 
@@ -58,6 +63,9 @@
       }
 
       .btn {
+        background-color: @btn-bg-color;
+        color:white;
+        .border-radius(10px);
       }
     }
 
@@ -66,9 +74,8 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        .img();
+        .border-radius(10px);
       }
     }
   }
