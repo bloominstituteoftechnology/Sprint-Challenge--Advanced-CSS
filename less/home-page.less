@@ -6,6 +6,7 @@
   h1 {
     font-size: 3.6rem;
     padding: 10px;
+    color: @header-font-color;
   }
 }
 .home {
@@ -63,6 +64,12 @@
       }
 
       .btn {
+        .button(@btn-bg-color, 1.4rem, #ffffff);
+        border-radius: 5px;
+        padding: 8px;
+        width: 100%;
+        max-width: 80px;
+        text-align: center;
       }
     }
 
