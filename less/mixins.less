@@ -1,1 +1,25 @@
 // Mixins Here
+.flex() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-link() {
+    text-decoration: none;
+    color: @header-font-color;
+    margin: 15px;
+    font-size: 1.6rem;
+    width: 75%;
+}
+
+//parametric mixin
+.btnmxn(@btnbg: @btn-bg-color; @btnclr: @porcelain) {
+    background-color: @btnbg;
+    color: @btnclr;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    width: 70px;
+  }
+

@@ -32,15 +32,57 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
+
 1. What is the difference between an adaptive website and a fully responsive website?
+
+- Answer:  Adaptive would be looking for break-points and make "snap" visual adjustments, while fully responsive would be always adjusting and transitioning with smooth movements.
+
+
+
+
+
 
 2. Describe what it means to be mobile first vs desktop first.
 
+- Answer: 
+
+(min-width: px) would be mobile first
+(max-width: px) would be desktop first
+
+- The websites users would direct your usage of mobile or desktop first. For instance if the users were mostly on PCs you would probobaly want desktop first versus if your users were mostly mobile users you would want to use mobile first. Unless of course your web development team had a specific workflow and then you would use whatever your boss said.
+
+
+
+
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+- Answer: `font-size: 62.5%` in the `html` tag would make `rem` units easier to understand and have matching px size in reference to rem ( rem * 10 = px).  For instance after making it `font-size: 62.5%` in the `html` it would be:
+
+- font-size: .5rem =  5px
+- font-size: 1rem  =  10px
+- font-size: 2rem  =  20px
+- font-size: 2.4rem = 24px
+- font-size: 3rem  =  30px
+- font-size: 3.2rem = 32px
+- etc...
+
+
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+- Answer: A CSS preprocessor is a program that lets you input a specific unique CSS code syntax to generate and output traditional CSS file.
+
+
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+- My favorite would be variables, it allows for easy re-use and also it allows easier changing of many lines of code after the fact if changes need to be made.
+
+- The concept that give me the most trouble is the functions like parametric mixins, I find it more difficult to read and interpret compared to traditional CSS.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -124,3 +166,4 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
