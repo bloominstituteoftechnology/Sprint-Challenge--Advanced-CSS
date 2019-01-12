@@ -1,0 +1,30 @@
+.blog {
+    padding-top: 100px;
+
+    .post {
+        
+        margin-top: 20px;
+
+        .post-content {
+            .flexbox(@justify: space-between, @align: flex-start);
+            margin-top: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid @main-border-color;
+        }
+            img {
+                width: 48%;
+            }
+
+            .blog-text {
+                width: 48%;
+                    p {
+                        font-size: 1.6rem;
+                        margin-bottom: 10px;
+                    }
+
+                    a {
+                        font-size: 1.6rem;
+                    }
+            }
+    }
+}

@@ -383,3 +383,32 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.blog {
+  padding-top: 100px;
+}
+.blog .post {
+  margin-top: 20px;
+}
+.blog .post .post-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+.blog .post img {
+  width: 48%;
+}
+.blog .post .blog-text {
+  width: 48%;
+}
+.blog .post .blog-text p {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.blog .post .blog-text a {
+  font-size: 1.6rem;
+}
