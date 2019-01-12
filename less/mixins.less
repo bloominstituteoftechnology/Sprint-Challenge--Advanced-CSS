@@ -44,5 +44,19 @@
 
 
 // button
+.bround(@arguments) {
+  border-radius: @arguments;
+}
 
+.paraButton(@bwid; @fsize; @bpad; @bmarg;  @col; @bkgr; @fw: normal){
+  width: @bwid;
+  font-size: @fsize;
+  padding: @bpad;
+  margin: @bmarg;
+  color: @col;
+  background: @bkgr;
+  font-weight: @fw;
+  .bround(1rem); // this mixin is NOT a param
+  text-align: center; // not a param
+}
 

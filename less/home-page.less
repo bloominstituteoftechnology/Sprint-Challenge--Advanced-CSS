@@ -58,7 +58,23 @@
         margin-bottom: 26px;
       }
 
+      // This is here as reminder of params
+      // using parametric mixin for button
+      /*  width: @bwid;
+          font-size: @fsize;
+          padding: @bpad;
+          margin: @bmarg;
+          color: @col;
+          background: @bkgr;
+          .bround(@rnding); is NOT a parameter*/
+
       .btn {
+        .paraButton(30%; 1.75rem; 1rem; 0rem; @porcelain; @btn-bg-color; bolder);
+        &:hover {
+          color: @btn-bg-color;
+          background: @porcelain;
+          border: 1px solid @river-bend;
+        }
       }
     }
 
