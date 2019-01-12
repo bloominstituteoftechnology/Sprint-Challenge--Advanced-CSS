@@ -161,8 +161,8 @@ p {
   margin: 0 auto;
 }
 .nav {
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
