@@ -248,11 +248,20 @@ footer {
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #22283A;
-  color: #F6F7F8;
   font-size: 1.7rem;
   font-weight: bold;
   width: 100px;
   padding: 10px 20px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn a:hover {
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

@@ -64,11 +64,22 @@
       .btn {
         #mixins.border-radius(5px);
         background-color: @btn-bg-color;
-        color: @porcelain;
         font-size: 1.7rem;
         font-weight: bold;
         width: 100px;
         padding: 10px 20px;
+
+        &:hover{
+          background-color: @porcelain;
+        }
+
+        a {
+          text-decoration: none;
+          color: @porcelain;
+          &:hover {
+            color: @btn-bg-color;
+          }
+        }
 
       }
     }
