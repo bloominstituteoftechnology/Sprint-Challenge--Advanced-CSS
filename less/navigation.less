@@ -1,16 +1,22 @@
 // Navigation code here
 .nav-container {
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
+    .flex(column);
+    align-items: center;
+    padding-top: 10px;
 
     h1 {
         font-size: 4rem;
     }
 
     nav {
-        display: flex;
+        .flex(row);
+        justify-content: space-between;
+
+        a {
+            padding: 20px 15px 15px 15px;
+            .resetstyle(@ebony-clay);
+            font-size: 1.6rem;
+        }
     }
 }
