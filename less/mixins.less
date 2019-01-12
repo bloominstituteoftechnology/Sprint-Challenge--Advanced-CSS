@@ -1,1 +1,32 @@
 // Mixins Here
+.flex (@j-content: space-between; @a-items: center) {
+    display: flex;
+    justify-content: @j-content;
+    align-items: @a-items;
+}
+.ph-round (@radius, @border: none) {
+    border-radius: @radius;
+    border: @border;
+}
+
+//Button
+
+.button (@color: white; @bg-color: @btn-bg-color; @radius: 10px) {
+    width: 35%;
+    // height: 36px;
+    background-color: @bg-color;
+    color: @color;
+    border: none;
+    border-radius: @radius;
+    border-bottom: 2px solid rgb(77, 98, 161);
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 10px 20px;
+    &:hover {
+        color: @bg-color;
+        background-color: @color;
+        border: 1px solid @bg-color;
+        border-top: 2px solid @bg-color;
+        cursor: pointer;
+    }
+}
