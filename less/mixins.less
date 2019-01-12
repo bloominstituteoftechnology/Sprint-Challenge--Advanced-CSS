@@ -6,24 +6,32 @@
     justify-content: @justify-content;
 }
 
-.h2-styling(){
-    font-size: 2.8rem;
+.h2-styling{
+    font-size: 2.0rem;
     font-weight: bold;
     color: @font-color;
 }
 
-.h3-styling(){
-    font-size: 2.6rem;
+.h3-styling{
+    font-size: 1.8rem;
     font-weight: bold;
     color: @font-color;
 }
 
-.button-creator(){
+.p-styling{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: @font-color;
+}
+
+.button-creator(@height, @width){
     height: @height;
     width: @width;
     background-color: @button-bg;
     border: 1px solid @button-border;
     border-radius: 4px;
     color: @main-color;
-    
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 7px;
 }
