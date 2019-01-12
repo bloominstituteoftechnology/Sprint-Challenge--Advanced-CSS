@@ -1,3 +1,6 @@
+## View the Index Page of Project
+1. <a href="https://davidaceves.github.io/Sprint-Challenge--Advanced-CSS/index.html">Click here</a>
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -34,13 +37,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website has set breakpoints where it changes the format of a website to better suit a specific screen size. A fully responsive website should scale well at *any* screen
+size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+A mobile first website occurs when a developer creates the mobile design of a website before the desktop version. Desktop first is basically the opposite of that. Depending on the 
+methodology used it can greatly change the outcome of the final design.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+`font size: 62.5%` allows the developer to use units of 10 when using `rem`. For example, `1.6 rem` is equal to `16 px`.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would describe preprocessing as a way to redefine how you use CSS. I would also explain how your preprocessed CSS needs to go through a compiler to work properly.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the use of nesting, which allows me to mirror my HTML's structure in my CSS. Importing gives me a bit of trouble because I have to jump around a lot 
+more between different files. That being said, I can definitely see the importance of importing.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
