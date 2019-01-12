@@ -5,6 +5,12 @@
     align-items: center;
     background-color: @nav-bg;
     border-bottom: 1px solid @sea-shell;
+    
+    #mixins.keyframes(fade-in;{
+		0% { opacity: 0; }
+		100% { opacity: 1; }
+        });
+        #mixins.animation(fade-in 4s);
 
     @media @phone {
         width: 100%;
