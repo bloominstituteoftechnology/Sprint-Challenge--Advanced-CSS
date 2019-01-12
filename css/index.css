@@ -1,3 +1,12 @@
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 30%;
+  height: 35px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -189,6 +198,9 @@ footer {
   font-size: 4rem;
   padding: 1rem;
 }
+.home .intro img {
+  border-radius: 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -230,6 +242,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: black;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 30%;
+  height: 35px;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
