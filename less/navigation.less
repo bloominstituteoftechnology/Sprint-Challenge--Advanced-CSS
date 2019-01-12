@@ -1,1 +1,26 @@
 // Navigation code here
+header.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: @nav-bg;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 3.4rem;
+        margin-top: 11px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        margin: 11px 0;
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @nav-font;
+        }
+    }
+}
