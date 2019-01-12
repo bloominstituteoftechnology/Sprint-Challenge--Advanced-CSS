@@ -4,9 +4,8 @@
 	position: fixed;
 	top: 0;
 	z-index: 2;
+	.navdim();
 	background-color: @nav-bg;
-	width: 100%;
-	height: @navbar-height;
 	padding-bottom: 20px;
 	border-bottom: 1px solid @nav-border;
   
@@ -39,6 +38,5 @@
 }
 
 .nav-spacer {
-	width: 100%;
-	height: @navbar-height;
+	.navdim();
 }

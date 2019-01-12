@@ -68,6 +68,13 @@
       }
 
       .btn {
+        .button(@bg: @btn-bg-color; @color: @btn-text-color);
+
+        &:hover {
+          cursor: pointer;
+          .button(@color: @btn-bg-color; @bg: @btn-text-color;
+            @border-color: @btn-bg-color);
+        }
       }
     }
 

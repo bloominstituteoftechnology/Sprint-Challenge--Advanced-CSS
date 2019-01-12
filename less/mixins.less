@@ -1,5 +1,10 @@
 // Mixins Here
 
+.navdim() {
+	width: 100%;
+	height: @navbar-height;
+}
+
 .flex(@dir: row; @main-axis: center; @cross-axis: center; @wrap: nowrap) {
 	display: flex;
 	flex-direction: @dir;
@@ -9,13 +14,14 @@
 	align-content: @cross-axis;
 }
 
-.button(@bg: @button-bg; @color: @button-text; @fs: 1.8rem;
-		@ht: 40px; @wd: 80%; @br: 12px; ) {
+.button(@bg: black; @color: white; @border-color: @bg;
+		@fs: 1.8rem; @ht: 35px; @wd: 100px; @br: 5px; ) {
 	background-color: @bg;
 	color: @color;
 	.flex();
 	font-size: @fs;
 	height: @ht;
 	width: @wd;
+	border: 1px solid @border-color;
 	border-radius: @br;
 }
