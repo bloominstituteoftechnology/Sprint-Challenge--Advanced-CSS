@@ -3,15 +3,17 @@
 .home {
 
   .intro {
+    .flexbox;
 
     h2 {
-      padding: 15px;
+      padding: 10px 15px;
+      align-self: flex-start;
     }
 
     p {
-      padding:0 15px;
+      padding: 6px 15px;
     }
-  
+    
   }
 
   .space-images {
@@ -21,7 +23,7 @@
 
     img {
       width: 28%;
-      margin: 20px 2.5%;
+      margin: 14px 2.5% 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
@@ -58,6 +60,17 @@
       }
 
       .btn {
+        .button(white, @btn-bg-color);
+        padding: 8.5px;
+        width: 100px;
+        border-radius: 5px;
+        font-size: 1.8rem;
+        text-align: center;
+
+        &:hover {
+          .button(@btn-bg-color, white);
+          cursor: pointer;
+        }
       }
     }
 
