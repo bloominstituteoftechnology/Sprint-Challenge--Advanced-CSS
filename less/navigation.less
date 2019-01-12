@@ -1,1 +1,36 @@
 // Navigation code here
+.nav {
+    height: 10%;
+    margin :0 auto;
+    background-color: @nav-bg;
+    .flex();
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    // align-content: center;
+    h1 {
+        align-self: center;
+        font-size: 4rem;
+        margin: 10px;
+    }
+    nav {
+        align-self: center;
+        .flex();
+        flex-direction: row;
+        width: 28%;
+        margin: 10px;
+        justify-content: space-around;
+        a {
+            font-size:1.7rem;
+            text-decoration: none;
+            color: @nav-font;
+            
+            &:visited {
+                color: @nav-font;
+            }
+        }
+    }
+
+
+
+}
