@@ -26,3 +26,67 @@
       transform: scale(0.9);
     }
   }
+
+  .mobile-display() {
+    // Mobile responsiveness for tablets and phones
+    @media (max-width: 920px) {
+      .navigation {
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+      }
+      .home {
+        .form-style {
+          width: 75%;
+        }
+      } 
+      @media @phone {
+        .navigation {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+        .home {
+          .space-images {
+            height: 30rem;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+    
+          .sky,
+          .launch {
+            display: none;
+          }
+          .walk {
+            flex-direction: column-reverse;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            .walk-text {
+              width: 96%;
+              margin: 2%;
+    
+              .btn {
+                .create-button(100%);
+              }
+            }
+            .walk-img {
+              width: 96%;
+              margin: 2%;
+            }
+          }
+          .form-style {
+            width: 100%;
+            border-top: 1px solid @main-border-color;
+            margin-top: 1rem;
+            h3 {
+              padding: 2rem;
+            }
+        }
+      } //Home
+    }
+  }
+}
