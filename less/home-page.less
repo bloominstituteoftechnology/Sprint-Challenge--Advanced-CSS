@@ -58,8 +58,26 @@
       }
 
       .btn {
+        #buttonMixins.border(2px; solid; black);
+        #buttonMixins.radius(10px);
+        #buttonMixins.background(@btn-bg-color);
+        #buttonMixins.color(white);
+        #buttonMixins.height(40px);
+        #buttonMixins.fontSize(1.6rem);  
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
       }
+
+      .btn:hover {
+        background: white;
+        color: @btn-bg-color;
     }
+    }
+
+    
 
     .walk-img {
       width: 46%;

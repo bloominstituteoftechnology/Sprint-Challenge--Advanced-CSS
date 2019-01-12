@@ -1,1 +1,29 @@
 // Navigation code here
+
+nav {
+  #flexMixins.nav;
+
+  background-color: @wild-sand;
+
+  h1 {
+    #fontMixins.bold;
+    #spacingMixins.marginTopBottom;
+
+    font-size: 3.2rem;
+  }
+
+  .links {
+    #spacingMixins.marginTopBottom;
+
+
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+  }
+
+  a {
+    #fontMixins.normalize;
+    #fontMixins.bold;
+    font-size: 1.6rem;
+  }
+}
