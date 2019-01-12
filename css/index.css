@@ -239,6 +239,17 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img:first-child {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img:nth-child(n+2) {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
