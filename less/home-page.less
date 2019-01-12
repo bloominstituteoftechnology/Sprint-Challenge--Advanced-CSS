@@ -1,24 +1,70 @@
 // Home Content
+.title {
+  .flex();
+  width: 100%;
+  margin: 0 auto;
 
+  @media @phone {
+    width: 100%;
+    max-widthbackground-color: #ffffff;
+  }
+  h1 {
+    font-size: 3.6rem;
+    padding: 10px;
+    color: @header-font-color;
+
+    @media @phone {
+      font-size: 3.8rem;
+    }
+  }
+}
 .home {
-
+  @media @phone {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+  }
+  .earth {
+    @media @phone {
+      width: 100%;
+      border-radius: 5px;
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 
+    .blast {
+      @media @phone {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+    }
+    .sky {
+      @media @phone {
+        width: 0;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+    }
+    .launch {
+      @media @phone {
+        width: 0;
+        flex-wrap: nowrap;
+        overflow: hidden;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -30,12 +76,22 @@
   .visit-planets {
     padding: 15px;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    }
+
     h3 {
       margin-top: 11px;
     }
 
     p {
       margin-top: 13px;
+
+      @media @phone {
+        color: @main-font-color;
+        font-weight: bold;
+      }
     }
   }
 
@@ -46,30 +102,73 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          align-content: stretch;
+        }
       }
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          color: @main-font-color;
+          font-weight: 700;
+        }
       }
 
       .btn {
+        .button(@btn-bg-color, 1.4rem, #ffffff);
+        border-radius: 5px;
+        padding: 8px;
+        width: 100%;
+        max-width: 80px;
+        text-align: center;
+
+        @media @phone {
+          width: 100%;
+          padding: 10px 50%;
+        }
+
+        &:hover {
+          .button(#ffffff, 1.4rem, @btn-bg-color);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+        justify-content: flex-end;
+        border-radius: 10px;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
-}// home
+} // home

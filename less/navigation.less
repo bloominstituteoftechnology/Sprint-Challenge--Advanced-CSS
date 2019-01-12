@@ -1,1 +1,20 @@
 // Navigation code here
+.navbar {
+  width: 100%;
+  max-width: 800px;
+
+  nav {
+    .nav();
+    padding: 5px;
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+
+      @media @phone {
+        font-size: 2rem;
+        padding: 5px;
+      }
+    }
+  }
+}
