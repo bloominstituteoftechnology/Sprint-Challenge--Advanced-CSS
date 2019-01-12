@@ -1,1 +1,35 @@
-// Mixins Here
+.background(@color: transparent; @image: none; @size: auto auto; @repeat: repeat; @position: center center) {
+    background-color: @color;
+    background-image: @image;
+    background-size: @size;
+    background-repeat: @repeat;
+    background-position: @position;
+}
+.border(@width: 0; @color: transparent; @radius: 0; @style: solid) {
+    border-color: @color;
+    border-radius: @radius;
+    border-style: @style;
+    border-width: @width;
+}
+.flex(@justify: start; @align: start; @direction: row) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+.size(@height: auto; @width: auto) {
+    height: @height;
+    width: @width;
+}
+.text(@color: inherit; @family: inherit; @size: inherit; @align: inherit; @weight: normal; @line-height: normal; @decoration: none; @outline: none) {
+    color: @color;
+    text-decoration: @decoration;
+    font-family: @family;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @line-height;
+    text-align: @align;
+    &:focus {
+        outline: @outline;
+    }
+}

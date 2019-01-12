@@ -160,6 +160,48 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: auto;
+  padding-bottom: 3px;
+}
+.navigation h1 {
+  color: #23293B;
+  text-decoration: none;
+  font-family: 'Russo One';
+  font-size: 4rem;
+  font-weight: normal;
+  line-height: normal;
+  text-align: inherit;
+  margin-bottom: 1.4rem;
+}
+.navigation h1:focus {
+  outline: none;
+}
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  height: auto;
+  width: 37.7rem;
+}
+.navigation ul a {
+  color: #454A59;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  text-align: inherit;
+}
+.navigation ul a:focus {
+  outline: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
