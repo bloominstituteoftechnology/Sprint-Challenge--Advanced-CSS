@@ -170,11 +170,19 @@ p {
   font-size: 4rem;
   padding-bottom: 2rem;
 }
+.nav .links {
+  padding-bottom: 2rem;
+}
 .nav .links a {
   text-decoration: none;
   font-size: 1.8rem;
   padding: 2rem;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  .nav .links a {
+    font-size: 1.4rem;
+  }
 }
 footer {
   color: #22283B;
@@ -241,7 +249,7 @@ footer {
   cursor: pointer;
 }
 .home .walk .walk-text .btn div:hover {
-  background-color: #191d2a;
+  background-color: #353e5a;
   cursor: pointer;
 }
 .home .walk .walk-img {
@@ -252,4 +260,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    flex-direction: column;
+  }
 }
