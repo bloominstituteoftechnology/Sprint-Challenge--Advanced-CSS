@@ -160,6 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  display: flex;
+  justify-content: center;
+  background-color: #F1F1F1;
+  color: #454A59;
+  flex-wrap: wrap;
+}
+.top .h-top {
+  flex: 1 1 100%;
+  text-align: center;
+}
+.top .h-top h1 {
+  font-size: 4rem;
+}
+.top nav ul {
+  display: flex;
+  font-size: 1.6rem;
+}
+.top nav ul li {
+  margin: 10px;
+}
+.top nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.top nav ul li a:hover {
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

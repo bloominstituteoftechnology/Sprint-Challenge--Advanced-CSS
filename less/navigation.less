@@ -1,1 +1,39 @@
 // Navigation code here
+
+
+.top {
+    display: flex;
+    justify-content: center;
+    background-color: @nav-border;
+    color: @nav-font;
+    flex-wrap: wrap;
+
+    .h-top {
+        flex: 1 1 100%;
+        text-align: center;
+    h1 {
+        font-size: 4.0rem;
+    }
+}
+
+    nav {
+        ul {
+            display: flex;
+            font-size: 1.6rem;
+
+            li {
+                margin: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        font-weight: bold;
+
+                    }
+                }
+            }
+        }
+    }
+}
