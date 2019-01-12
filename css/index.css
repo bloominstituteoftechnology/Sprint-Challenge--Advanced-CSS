@@ -176,12 +176,24 @@ p {
 }
 .nav-container nav {
   width: 28%;
+  min-width: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: baseline;
   align-items: flex-start;
   padding-top: 20px;
+}
+@media (max-width: 500px) {
+  .nav-container nav {
+    width: 85%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: baseline;
+    align-items: flex-start;
+  }
 }
 .nav-container nav a {
   font-size: 1.6rem;
@@ -204,8 +216,18 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding: 15px 5px;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0 5px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -217,6 +239,21 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -234,8 +271,19 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -246,6 +294,7 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   width: 30%;
+  min-width: 75px;
   height: 35px;
   border-radius: 4px;
   display: flex;
@@ -259,6 +308,25 @@ footer {
   color: white;
   border: 2px solid #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background-color: #22283A;
+    width: 100%;
+    min-width: 75px;
+    height: 75px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: baseline;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: -0.05em;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #22283A;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: #22283A;
@@ -266,6 +334,13 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 100%;
+    margin: 2px 0 15px 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

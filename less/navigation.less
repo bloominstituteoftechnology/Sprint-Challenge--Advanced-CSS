@@ -10,8 +10,15 @@
       nav {
   
         width: 28%;
+        min-width: 500px;
         .flexbox(@justify: space-between;);
         padding-top: 20px;
+
+        @media @phone {
+          width: 85%;
+          min-width: 300px;
+          .flexbox(@justify: space-around;)
+        }
         
           a {
             font-size: 1.6rem;
