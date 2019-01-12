@@ -176,7 +176,7 @@ p {
     font-size: 4rem;
   }
 }
-ul {
+.nav ul {
   width: 55%;
   display: flex;
   justify-content: space-between;
@@ -185,7 +185,7 @@ ul {
   color: #454A59;
 }
 @media (max-width: 500px) {
-  ul {
+  .nav ul {
     width: 85%;
   }
 }
