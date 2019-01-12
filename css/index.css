@@ -161,6 +161,7 @@ p {
   margin: 0 auto;
 }
 .navigation {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,6 +193,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .intro img {
