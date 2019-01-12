@@ -1,10 +1,7 @@
 // Navigation code here
 header.navigation {
-    display: flex;
-    flex-direction: column;
+    .flex(column);
     background-color: @nav-bg;
-    justify-content: center;
-    align-items: center;
 
     h1 {
         font-size: 3.4rem;
@@ -12,8 +9,7 @@ header.navigation {
     }
 
     nav {
-        display: flex;
-        justify-content: space-evenly;
+        .flex(@justify-content:space-evenly);
         width: 70%;
         margin: 11px 0;
 

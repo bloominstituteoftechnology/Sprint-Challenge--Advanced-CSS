@@ -163,9 +163,9 @@ p {
 header.navigation {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
+  background-color: #F6F6F6;
 }
 header.navigation h1 {
   font-size: 3.4rem;
@@ -173,7 +173,9 @@ header.navigation h1 {
 }
 header.navigation nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   width: 70%;
   margin: 11px 0;
 }
@@ -191,6 +193,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -233,6 +238,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: #22283A;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2%;
+  width: 7rem;
+  height: 2rem;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: white;
 }
 .home .walk .walk-img {
   width: 46%;
