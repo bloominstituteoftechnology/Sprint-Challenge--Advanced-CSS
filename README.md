@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+An adaptive website will change at media breakpoints to match the user's desktop screen, tablet screen, and mobile screen but based on fixed layout sizes.  Fully responsive websites use media breakpoints as well but use fluid designs which allow the website to change in relation to the screen size based on percentages. 
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+2. Describe what it means to be mobile first vs desktop first.  
 
-4. How would you describe preprocessing to someone new to CSS?
+This means you style your css for a mobile size screen first and then style larger screens from there vs styling for desktop first and then tablet down to mobile last. 
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?  
+
+It makes it easier for the designer to create font sizes using rems becuase it makes 1 rem equal 10 pixels.
+
+4. How would you describe preprocessing to someone new to CSS? 
+
+Preprocessing is using another language to create css.  There are various types of preprocessors with built in tools to allow you to write more complicated syntax to ultimately make your css code more organized, easier to use and read.  For example, Less allows you to nest, use variables, and mix-ins. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in pre-processing is the ability to nest.  It makes my code easier to go back to and understand what I am doing.  There isnt a concept that gives me that much trouble but if I would have to pick it would be mix-ins because I am still trying to figure out the best times to use them effectively.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
