@@ -236,26 +236,19 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: black;
+  background-color: #1F2433;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 35px;
   width: 30%;
   font-size: 1.6rem;
-  border-radius: 7%;
+  border-radius: 5%;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30%;
-  font-size: 1.6rem;
-  border-radius: 7%;
+  color: #1F2433;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -265,4 +258,47 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+  }
+  .home .space-images .blast {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .walk {
+    margin-top: 20px;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .home .walk .walk-text {
+    max-width: 400px;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    max-width: 500px;
+    background-color: #1F2433;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 5%;
+  }
+  .home .walk .walk-img {
+    max-width: 500px;
+    width: 100%;
+  }
 }
