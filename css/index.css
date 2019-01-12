@@ -228,8 +228,9 @@ footer {
 }
 .home .intro div.header-img {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .home .intro div.header-img img {
   max-width: 100%;
@@ -391,4 +392,87 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 1.6rem;
+}
+.form-container form {
+  width: 60%;
+  font-size: 1.6rem;
+  border: 1px solid black;
+  box-shadow: 0 10px 20px lightgrey;
+  padding: 10px;
+}
+.form-container form input {
+  width: 100%;
+  padding: 0 10px;
+  justify-content: flex-start;
+}
+.form-container form a {
+  width: 25%;
+  height: 25px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  border-radius: 15%;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+.form-container form a:hover {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  color: black;
+  border-radius: 15%;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+.form-container form a a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .form-container form a {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #454A59;
+    color: white;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+  .form-container form a:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 5%;
+    font-size: 1.5rem;
+    font-weight: 1000;
+  }
+}
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: 100px;
 }
