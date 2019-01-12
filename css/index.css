@@ -160,6 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}
 .nav {
   flex-direction: column;
   display: flex;
@@ -200,6 +205,14 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro p {
+    padding-bottom: 2rem;
+  }
+}
+.home .intro img {
+  width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -217,6 +230,7 @@ footer {
   }
   .home .space-images img {
     width: 100%;
+    margin: 0;
   }
   .home .space-images img:nth-child(2) {
     display: none;
@@ -279,9 +293,11 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0;
   }
   .home .walk .walk-img {
     width: 100%;
+    margin: 0;
     padding-bottom: 2rem;
   }
   .home .walk .walk-text {
