@@ -1,3 +1,19 @@
+@keyframes liftoff {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-500px);
+  }
+}
+@keyframes walkoff {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,8 +182,10 @@ p {
   justify-content: center;
   align-items: center;
   height: 10rem;
-  width: auto;
+  width: 100%;
   padding-bottom: 3px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .navigation h1 {
   color: #23293B;
@@ -181,6 +199,9 @@ p {
 }
 .navigation h1:focus {
   outline: none;
+}
+.navigation h1:hover {
+  animation: walkoff 5s linear;
 }
 .navigation ul {
   display: flex;
@@ -202,6 +223,10 @@ p {
 .navigation ul a:focus {
   outline: none;
 }
+.navigation ul a:hover {
+  color: #23293B;
+  font-weight: bold;
+}
 @media (max-width: 500px) {
   .navigation ul {
     justify-content: space-around;
@@ -221,6 +246,9 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+.home .intro h2:hover {
+  animation: liftoff 2s ease-in;
+}
 .home .intro p {
   padding: 0 15px;
 }
@@ -229,6 +257,7 @@ footer {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0;
+  margin-top: 10rem;
 }
 @media (max-width: 500px) {
   .home .intro img {

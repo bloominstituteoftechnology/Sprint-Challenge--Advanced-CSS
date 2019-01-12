@@ -2,12 +2,16 @@
   .intro {
     h2 {
       padding: 15px;
+      &:hover {
+        animation: liftoff 2s ease-in;
+      }
     }
     p {
       padding:0 15px;
     }
     img {
       .border(@radius: 0.5rem);
+      margin-top: 10rem;
       @media (max-width: @phone) {
         width: 100%;
       }
