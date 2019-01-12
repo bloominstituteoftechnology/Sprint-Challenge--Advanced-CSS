@@ -166,6 +166,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+  background-color: #F6F6F6;
 }
 .nav-container h1 {
   font-size: 4rem;
@@ -235,6 +236,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  height: 35px;
+  background-color: #22283A;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid #22283A;
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
