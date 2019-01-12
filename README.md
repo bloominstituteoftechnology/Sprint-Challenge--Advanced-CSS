@@ -34,15 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive design has several distinct layouts for multiple screen sizes. It's easier to make than responsive but it's less flexible and often requires more code and maintenance. A responsive design uses a single layout that changes dynamically to provide the best viewing experience. I think the difference between the two can best be visualized with water and styrofoam. You can cut styrofoam to fit any container; if the container changes you have to cut out a new design. On the other hand if you used water, it find a shape that best fits any container.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+In a mobile first you generally design for the smallest screen first, then add features and content as the screen gets bigger. It's the opposite for desktop first; starting with all the features and content and stripping it down to just the functionality as the screen gets smaller. Or (because I know you're looking for this the answer) mobile first your media queries include min-width; desktop first your media queries include max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the default font size to 10px (depending on the users browser settings) and gives us a base unit to work from in responsive design.
+
 4. How would you describe preprocessing to someone new to CSS?
+
+It's css with variables and functions. To further elaborate; it's an expanded library of possibilities for css that includes variables, functions, and trigonometry for the small cost of an extra layer of something possibly going wrong.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+
+Mixins. These things have saved me SO much time. SO MUCH. Instead of writing 5 lines for this or 10 lines for that, I can write a mixin for it. On the other hand I typed a variable name wrong and it took me 20 minutes to figure out what happened. I can't wait to play with the trig functions.
 
 ## Project Set Up
 
