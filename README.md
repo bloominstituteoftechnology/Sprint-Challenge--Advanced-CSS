@@ -33,14 +33,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    A fully responsive website uses percentages for values like width and height and is not based on creating break points like an adaptive website, 
+    which would have breakpoints based on the width of the page. The adaptive design would have a fixed with of 800px or there about and we would tailor the css towards that.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first is designing for mobile applications first and we would use min-wdith media queries instead of max-width
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    This makes 1rem unit = to the same value of 10px so 1.6rem would be 16px
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessing using less/sass opens the door to creating a smooth and well documented workflow for css. It allows you to set variables, it has the effect of keeping your css well organized
+    eliminates some of the redundant aspects of css with the nesting feature. It is like an army knife that has tools you didn't even know you needed untill you started using it.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    The nesting aspect and ability to include mixins/variables for redundant tasks.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,10 +57,10 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [X] Fork the project into your GitHub user account
+* [X] Clone the forked project into a directory on your machine
+* [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [X] You are now ready to build this project with your preferred IDE
 
 ### Preprocessor Set up
 
