@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will have break points to change how the site looks on different devices while a fully responsive website will use things like media queries and percent based widths to look good on any size screen.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means you design your website for mobile and then add media queries for how you want it to look on larger screens. Desktop first means you create the desktop version first and then adjust so everything looks good on a phone.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It makes it so 1 rem = 1 pixel so it's easier to make our text the size we want using rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+It gives you extra tools and formatting techniques when writing your CSS. You create your code and then the preprocessor will output regular CSS based on the code you've written.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like mixins. It also got me using variables more which has been really useful because it's so easy to change the color scheme of your site after you're done setting everything up. Honestly I like everything about it because it feels really organized and reusing styles is a lot easier than with just reusing classes. I feel like mixins make it easier for me to fix and refuse styles because of the multiple LESS files rather than having to scroll all over to find the class I want to reuse with regular CSS.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,8 +62,8 @@ Follow these steps to set up your project:
 
 * [x] Fork the project into your GitHub user account
 * [x] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ### Preprocessor Set up
 
