@@ -61,9 +61,13 @@
       .btn {
         .button;
         .flex;
-        font-size: 1.8rem;
-        font-weight: bold;
+        .font(1.8rem, bold);
         width: 100px;
+
+        &:hover {
+          .button(@waterloo, @ebony-clay);
+          cursor: pointer;
+        }
       }
     }
 

@@ -173,12 +173,14 @@ p {
 }
 .nav-container .logo-text h1 {
   font-size: 3.6rem;
+  font-weight: normal;
 }
 .nav-container nav {
   margin-top: 10px;
 }
 .nav-container nav a {
   font-size: 1.4rem;
+  font-weight: normal;
   text-decoration: none;
   color: black;
   margin: 0 1.5rem;
@@ -250,6 +252,14 @@ footer {
   font-size: 1.8rem;
   font-weight: bold;
   width: 100px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #81848E;
+  color: #23293B;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
