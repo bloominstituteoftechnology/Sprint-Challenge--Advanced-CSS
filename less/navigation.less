@@ -1,9 +1,7 @@
 // Navigation code here
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex();
     padding-bottom: 20px; 
     
     h1 {
@@ -13,9 +11,6 @@
     }
 
     a {
-       text-decoration: none;
-       color: @header-font-color;
-       margin: 15px;
-       font-size: 1.6rem;
+        .header-link();
     }
 }
