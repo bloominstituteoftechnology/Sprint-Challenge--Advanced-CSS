@@ -6,11 +6,17 @@ nav {
     padding-top: 1%; 
     margin: 0 auto;
     background-color: @wild-sand;
+    @media (@phone){
+        
+    }
     div {
-        width: 25%;
+        width: 23%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (@phone) {
+            width: 100%;
+        }
         h1 {
         font-size: 4rem;
         padding-bottom: 3%;

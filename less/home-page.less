@@ -3,7 +3,11 @@
 .home {
 
   .intro {
-
+      img {
+        @media (@phone) {
+          width: 100%;
+        }
+      }
     h2 {
       padding: 15px;
     }
@@ -18,6 +22,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media (@phone) {
+      .blast {
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -45,9 +60,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media (@phone) {
+      .flex(column-reverse; normal; center);
+      .walk-img {
+        width: 100%;
+      }
+    }
     .walk-text {
       width: 50%;
+      @media (@phone) {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +81,13 @@
       }
 
       .btn {
+        .button(white; @btn-bg-color);
+        border-radius: 8px;
+        border: none;
+        height: 13%;
+        width: 30%;
+        font-size: 2rem;
+        font-family: inherit;
       }
     }
 
