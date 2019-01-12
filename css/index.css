@@ -184,6 +184,9 @@ p {
   padding: 2rem;
   color: #23293B;
 }
+.nav .links a:hover {
+  color: #49557b;
+}
 @media (max-width: 500px) {
   .nav .links a {
     font-size: 1.4rem;
@@ -223,6 +226,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 @media (max-width: 500px) {
   .home .space-images {
