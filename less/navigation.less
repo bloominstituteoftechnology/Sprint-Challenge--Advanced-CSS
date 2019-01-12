@@ -4,7 +4,10 @@
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    // padding: 10px;
+
+    @media @phone {
+        max-width: 500px;
+    }
     
 
     .title {
@@ -27,6 +30,12 @@
         justify-content: space-between;
         align-items: center;
         font-size: 1.8rem;
+
+        @media @phone {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
         
         a {
             .plain-links;

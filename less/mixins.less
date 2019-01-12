@@ -8,15 +8,25 @@
     color: @color;
     font-size: 2.5rem;
     font-family: 'Ubunto', sans-serif;
-
+    width: 30%;
     &:hover {
         background-color: @color;
         color: @background; 
+    }
+    
+    @media @phone {
+        width: 100%;
     }
 }
 
 .plain-links() {
     &:link, &:hover, &:visited, &:active {
         text-decoration: none;
+    }
+}
+
+.hide-two() {
+    &:nth-last-child(-n + 2) {
+        display: none;
     }
 }
