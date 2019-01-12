@@ -1,12 +1,259 @@
+
 // Import your less files here:
 
+html {
+    // background-color: red;
+}
+
+.home {
+	max-width: 600px;
+	width: 100%;
+	padding: 25px 0;
+    margin: 0 auto;
+  }
+
+.center() {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.margin() {
+    margin: auto;
+}
+
+.nav() {
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.split2way() {
+    width: 40%;
+}
+
+.split3way() {
+    width: 30%;
+    }
+
+//--- headers start---//
+h1 {
+    color: #202534;
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 8px 0;
+    color: #202534;
+    margin-left: 4px;
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+//--- headers end---//
+
+//--- nav start ---//
+
+nav {
+    display: flex;
+	justify-content: center;
+    font-size: 14px;
+    margin: 10px 0;
+}
+  
+#nav-home, #nav-about, #nav-portfolio, #nav-contact, #nav-contact, #nav-signin {
+    .nav();
+}
+
+#header-img {
+    border-radius: 4px;
+    width: 100%;
+    .margin();
+}
+
+//--- nav end---//
+
+header {
+    margin: 8px 15px;
+
+    p{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 1em;
+    }
+}
 
 
+.blast, .sky, .launch {
+    .split3way();
+    border-radius: 8px;
+    margin: 10px 5px;
+    margin-left: 10px;
 
 
+//--- visit planets start---//
+
+.visit-planets {
+    margin: 10px 10px;
+    border-bottom: 1px solid lightgray;
+
+    h3{
+        color: #202534;
+        margin-left: 8px;
+        margin: 1px;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+
+    p{
+        display: flex:
+        flex-wrap: wrap;
+        margin-left: px;
+        font-size: 0.95em;
+        justify-content: flex-start;
+    }
+}
+
+//--- visit planets end---//
 
 
+//--- walk start ---//
 
 
+.walk {
+    display: flex;
+    justify-content: center;
+}
+
+.walk-text {
+    display: flex:
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 10px 10px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#walk-img {
+    .center();
+    width: 90%;
+    border-radius: 8px;
+    margin: 30px auto;
+}
+
+.btn {
+    text-transform: capitalize;
+    color: white;
+    background: #202534;
+    border: 1px solid#202534;
+    border-radius: 8px;
+	padding: 5px 9px;
+	margin-top: 10px;	
+    text-align: center;  
+    width: 20%;
+}
+
+//--- walk end ---//
+
+footer {
+    .center();
+    background: #F3F3F3;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+	padding: 0px 9px;
+}
 
 
+/* At 500px (Phone) and below do the following: */
+
+@media screen and (max-width: 500px){ 
+
+//--- changes width ---//
+
+	.home {
+		width: 480px;
+		margin: 0 auto;
+    }
+    
+    .blast {
+        width: 85%;
+        border-radius: 8px;
+        margin: 10px auto;
+        align-content: center;
+    }
+//--- makes pictures hidden ---//
+
+    .sky, .launch {
+        display: none;
+    }
+
+    .visit-planets {
+        margin: 10px 10px;
+    
+        h3{
+            color: #202534;
+            margin-left: 8px;
+            margin: 1px;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+    
+        p{
+            display: flex:
+            flex-wrap: wrap;
+            margin-left: 1px;
+            font-size: 0.95em;
+            justify-content: flex-start;
+        }
+    }
+
+    //--- reverses order --//
+
+    .walk {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .walk-text {
+        display: flex:
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 10px 20px;
+        margin-bottom: 30px;
+    }
+    
+    #walk-img {
+        .center();
+        width: 90%;
+        border-radius: 8px;
+        margin: 30px auto;
+    }
+    
+    //-- changes button---//
+
+    .btn {
+        text-transform: capitalize;
+        color: white;
+        background: #202534;
+        border: 1px solid#202534;
+        border-radius: 8px;
+        padding: 21px;
+        margin-top: 10px;	
+        text-align: center;  
+        width: 90%;
+    }
+    
+	footer {
+        .center();
+        width: 90%;
+        background: #F3F3F3;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+    }
+}
