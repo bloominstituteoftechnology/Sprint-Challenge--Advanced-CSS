@@ -1,1 +1,26 @@
 // Mixins Here
+.flex(@direction: row; @justify: normal; @align: normal ) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.size(@width:auto; @height:auto) {
+
+}
+
+.buttonIcon(@width:auto; @height:auto; 
+@color; @bgColor;
+@bRadius; @paddingHeight; @paddingWidth;
+@fontSize: 1rem; @textAlign: initial) {
+  width: @width;
+  height: @height;
+  padding: @paddingHeight @paddingWidth;
+  border-radius: @bRadius;
+  color: @color;
+  background: @bgColor;
+  font-size: @fontSize;
+  text-align: @textAlign;
+  cursor: pointer;
+}

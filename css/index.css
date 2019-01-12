@@ -160,6 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.site-header .logo {
+  font-size: 4.2rem;
+  margin: 15px auto;
+}
+.site-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: normal;
+  margin-bottom: 10px;
+}
+.site-header nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color: #454A59;
+  white-space: nowrap;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
