@@ -14,13 +14,14 @@
 	-webkit-background-clip: padding-box;
 	background-clip:         padding-box;
 }
-.buttonMake() {
-    background-color: @btn-bg-color;
-    color: white;
-    font-size: 1.8rem;
-    width: 30%;
-    height: 12%;
-    padding: 9px;
-    .border-radius(5px);
-    text-align: center;
+
+.buttonMake(@bgColor, @txtColor, @fontSize, @btnWidth, @btnHeight, @btnPadding, @btnBorderRadius, @btnTextAlignment){
+    background-color: @bgColor;
+    color:@txtColor;
+    font-size: @fontSize;
+    width: @btnWidth;
+    height: @btnHeight;
+    padding: @btnPadding;
+    border-radius: @btnBorderRadius;
+    text-align: @btnTextAlignment;
 }
