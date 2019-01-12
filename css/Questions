@@ -1,5 +1,9 @@
 1. What is the difference between an adaptive website and a fully responsive website?
 
+- Adaptive websites incorporate media queries for differnet widths but they are hard codes using specific pixels. This allows for a quick setup to see how a website will look but it will only for devices of the specific widths since it is hardcoded.
+
+- Responsive websites incorporate media queries as well but uses percents instead of pixels allowing the website too look great on multiple devices because the percents will respond to the width of the screen as opposed to the hard coded pixels used for adaptive websites.
+
 
 
 
@@ -27,6 +31,7 @@ That creates a convienet conversion factor when using rems. For example 16px wou
 
 4. How would you describe preprocessing to someone new to CSS?
 
+I would describe a preprocessor(specifically for css) as a program that allows for different syntax methods to create your css and then converts the syntax to normal css. By incorporating a new syntax it allows css to be applied much more faster by using tools such as nesting, variables, mixins, etc which are then converted to whatever the css would normally be.
 
 
 
