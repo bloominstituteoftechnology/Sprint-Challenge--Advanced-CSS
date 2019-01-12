@@ -301,6 +301,10 @@ footer {
   font-size: 2rem;
   font-family: inherit;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
