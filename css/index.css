@@ -301,6 +301,7 @@ footer {
   .home .walk {
     flex-direction: column;
     padding: 20px 5px 20px 15px;
+    margin-top: 20px;
   }
 }
 .home .walk .walk-text {
