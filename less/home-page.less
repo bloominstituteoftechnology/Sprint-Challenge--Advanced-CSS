@@ -3,10 +3,19 @@
   .flex();
   width: 100%;
   margin: 0 auto;
+
+  @media @phone {
+    width: 100%;
+    background-color: #ffffff;
+  }
   h1 {
     font-size: 3.6rem;
     padding: 10px;
     color: @header-font-color;
+
+    @media @phone {
+      font-size: 3.8rem;
+    }
   }
 }
 .home {
@@ -24,6 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      flex-wrap: ;
+    }
 
     img {
       width: 28%;
@@ -70,6 +83,10 @@
         width: 100%;
         max-width: 80px;
         text-align: center;
+
+        &:hover {
+          .button(#ffffff, 1.4rem, @btn-bg-color);
+        }
       }
     }
 
