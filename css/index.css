@@ -162,8 +162,12 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 nav {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -201,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 9.5%;
 }
 .home header img {
   width: 100%;
@@ -302,5 +309,10 @@ footer {
   .home .walk .walk-text {
     width: 100%;
     margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 25%;
   }
 }
