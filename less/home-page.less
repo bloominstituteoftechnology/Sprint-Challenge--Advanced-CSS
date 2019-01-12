@@ -19,6 +19,18 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -39,6 +51,18 @@
     }
   }
 
+  @media @phone {
+        .walk {
+          .layout;
+          width: 100%;
+  
+        }
+        .walk-img {
+          order: -1;
+          width: 100%;
+        }
+      }
+
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
@@ -58,8 +82,14 @@
       }
 
       .btn {
-        .main-btn();
+        .main-btn(@btn-bg-color, 5px);
       }
+      
+      @media @phone {
+          .btn {
+            width: 100%;
+          }
+        }
     }
 
     .walk-img {
@@ -74,3 +104,4 @@
     }
   }
 }// home
+
