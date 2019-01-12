@@ -1,25 +1,37 @@
 // Navigation code here
-header {
+.full-scroll-container {
     .flexbox-col;
-
+    position: relative;
     h1 {
         font-size: 4rem;
         padding: 13px;
     }
 
     nav {
+        position: sticky;
+        top: @top;
+        opacity: 0.8;
+        .function;
         .flexbox;
 
         a {
             text-decoration: none;
-            color: @ebony-clay;
+            color: @header-font-color;
             font-size: 1.6rem;
             padding: 6px 16px;
+
+            &:hover {
+                color: white;
+                border-radius: 10px;
+                background-color: @ebony-clay;
+                transition: color 0.8s ease-in;
+                transition: background-color 0.3s ease-out;
+            }
         }
     }
 
     img {
-        margin: 6px auto;
+        margin: 35px auto 0px auto;
 
         @media @mobile {
             width: 500px;
