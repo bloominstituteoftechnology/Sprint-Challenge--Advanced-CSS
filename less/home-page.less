@@ -5,7 +5,7 @@
   .intro {
     img {
       .img();
-      border-radius: 10px;
+      .border-radius(5px);
     }
 
     h2 {
@@ -65,10 +65,13 @@
       .btn {
         background-color: @btn-bg-color;
         color:white;
-        .border-radius(10px);
+        .border-radius(5px);
+        height: 25px;
+        width: 65px;
 
         &:hover {
           background-color: white;
+          font-weight: bold;
           color: @btn-bg-color;
         }
       }
