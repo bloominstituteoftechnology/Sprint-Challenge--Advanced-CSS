@@ -12,6 +12,7 @@
     color: @nav-font;
     font-size: 1.4rem;
     padding-right: 2%;
+    font-weight: bold;
 }
 
 .btn-btn(@btn-font-size; @btn-color){
@@ -30,4 +31,18 @@
 .btn-hover(){
     background-color: @wild-sand;
     color: @ebony-clay;
+}
+
+.btn-mobile(@btn-font-size; @btn-color){
+    background-color: @btn-bg-color;
+    border: none;
+    color: @btn-color;
+    width: 100%;
+    height: 100%;
+    padding-top: 8%;
+    padding-bottom: 6%;
+    text-align: center;
+    border-radius: 4px;
+    font-size: @btn-font-size;
+    transition-duration: 0.5s;
 }

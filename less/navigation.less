@@ -8,8 +8,12 @@
     background: @nav-bg;
     margin: 0 auto;
 
+
     h1{
         .heading-1();
+        @media @mobile{
+        font-size: 3.4rem;
+    }
     }
 
     nav {
@@ -18,6 +22,10 @@
 
         a{
             .anchor-nav();
+
+            @media @mobile{
+                padding-right: 6%;
+    }
         }
     }
 }
