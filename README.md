@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adpative sites have distinct layouts for each device from the start, while responsive has 1 distinct layout with built in adjustments for each device.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first means the distinct layout started with 500px aka mobile, building up through tablet and desktop. Desktop first is the reverse order of build.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Rounds 1Rem to 10px instead of 16px.
+
 
 4. How would you describe preprocessing to someone new to CSS?
+CSS is a 100 foot filing cabinet, Preprocessing is ten 10 foot filing cabinets, and comes with a few handy tools that let you split and centralize and reference page sections with classes and ID's. 
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Multiple sheets per page section -  I see it as a CSS file with 1000 lines of code or 10 files with 10-50 lines of code each. I can see having trouble with readability if another dev uses a different code organizing method, or deleting/ overwriting minimally used less files and not noticing until 4 versions later. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
