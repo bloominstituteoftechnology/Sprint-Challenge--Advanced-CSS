@@ -166,6 +166,9 @@ p {
   top: 0;
   width: 100%;
 }
+.nav-wrapper:hover {
+  opacity: 0.5;
+}
 .logo {
   font-size: 4rem;
   margin-bottom: 20px;
