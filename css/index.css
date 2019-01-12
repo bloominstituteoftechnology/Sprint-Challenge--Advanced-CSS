@@ -175,7 +175,7 @@ p {
   display: flex;
   width: 100%;
   max-width: 800px;
-  padding: 0 100px 12px;
+  padding: 0 200px 12px;
   margin: 0 auto;
   justify-content: space-around;
 }
