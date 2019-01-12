@@ -4,6 +4,14 @@
   flex-direction: column;
   text-align: center;
 }
+.second-mixins () {
+  display: flex;
+  flex-wrap: wrap;
+}
+.third-mixins() {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 .p-button(@b-radius:5px; @b-color:@header-font-color; @clr:@footer-background; @f-size:2rem;) {
   border-radius: @b-radius;
