@@ -1,3 +1,9 @@
+.button {
+  font-size: 1.6rem;
+  width: 30%;
+  padding: 2% 4% 2% 4%;
+  border-radius: 7px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -248,8 +254,18 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  text-decoration: none;
+  text-align: center;
   color: white;
   background-color: #22283A;
+  font-size: 1.6rem;
+  width: 30%;
+  padding: 2% 4% 2% 4%;
+  border-radius: 7px;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
