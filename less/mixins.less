@@ -1,5 +1,7 @@
 // Mixins Here
 
+@mobile : (max-width: 500px);
+
 .nav-set {
     max-width: 1000px;
     width: 100%;
@@ -16,11 +18,11 @@
     font-weight: bold;
 }
 
-.btn(@width; @align: center; @color; @pad1 @pad2) {
+.btn(@width; @align: center; @color) {
     width: @width;
     text-align: @align;
     color: @color;
-    padding: @pad1 @pad2;
+
 
 
 }
