@@ -184,6 +184,9 @@ nav {
   flex-wrap: wrap;
   background-color: #F6F6F6;
   border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  background: rgba(246, 246, 246, 0.5);
 }
 nav h1 {
   font-size: 4rem;
@@ -221,6 +224,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 90px;
 }
 .home .intro h2 {
   padding: 15px;
