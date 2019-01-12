@@ -239,7 +239,6 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
   }
   .home .walk-img {
     order: -1;
