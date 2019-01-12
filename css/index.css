@@ -236,6 +236,15 @@ footer {
   .home .space-images {
     flex-direction: column;
   }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -275,6 +284,12 @@ footer {
 .home .walk .walk-text .btn:hover {
   background: white;
   color: black;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

@@ -32,6 +32,19 @@
 
     @media @phone {
       flex-direction: column;
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+      }
+
     }
 
   }
@@ -74,6 +87,11 @@
           color: black;
         }
 
+      }
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
       }
     }
 
