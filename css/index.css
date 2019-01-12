@@ -165,12 +165,17 @@ p {
 }
 nav ul {
   display: flex;
+  border: 1px solid red;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 10rem;
 }
 nav ul li {
   list-style: none;
 }
 nav ul li a {
   text-decoration: none;
+  color: #454A59;
 }
 footer {
   color: #22283B;
@@ -182,9 +187,15 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.title {
+  margin-top: 10px;
+}
 .title h1 {
   border: 1px solid red;
   text-align: center;
+}
+.home .intro .headerIMG img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
