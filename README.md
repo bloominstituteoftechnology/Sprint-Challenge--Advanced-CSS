@@ -34,10 +34,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-    | Adaptive | Responsive|
+
+
+    | Adaptive | Responsive |
     |----------|-----------|
-    |Server preselects HTML based on device | Devices are detected on the client side and HTML/CSS is rules are applied based on media queries|
-    
+    | Server preselects HTML based on device | Devices are detected on the client side and HTML/CSS is rules are applied based on media queries |
+    | Informaiton is preselected and only specific device based information will be display | All content is downloaded whether device uses it or not|
+    | Different templates for each device | One template for all devices |
+    | Advantages | Advantages |
+    |----------|-----------|
+    | Adaptive website design fits into different screen sizes and is user-friendly for the website visitors. |  A responsive website loads faster than an adaptive website design as there is only one master layout that has to be loaded across devices.
+    | Disadvantages | Disadvantages |
+    |----------|-----------|
+    | Adaptive designs are not very convenient to create as one has to create different layouts for different screen sizes. | It is slightly difficult to create a responsive website design, as compared to other formats. it requires a thorough development and testing process to ensure it is working correctly on all devices. The design has to planned well, so it can work on different screen sizes. |
+    | While creating different layouts for different screen sizes, one cannot cover all the sizes for all the screen resolutions, especially the new ones. | |
+
 
 2. Describe what it means to be mobile first vs desktop first.
 
