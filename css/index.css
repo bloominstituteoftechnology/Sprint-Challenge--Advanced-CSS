@@ -160,6 +160,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 10px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.nav h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+ul {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
