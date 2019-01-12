@@ -275,6 +275,7 @@ footer {
   .home .walk {
     width: 100% display: flex; flex-direction: column-reverse; flex-wrap: nowrap; justify-content: space-between;;
     padding: 0;
+    margin-top: 0;
   }
 }
 .home .walk .walk-text {
