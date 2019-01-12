@@ -6,6 +6,9 @@
     background-color: @nav-bg;
     border-bottom: 1px solid @sea-shell;
 
+    @media @phone {
+        width: 100%;
+    }
     h1 {
         font-size: 4rem;
         margin: 16px 0 20px;;
@@ -19,6 +22,11 @@
         margin: 0 auto;
         justify-content: space-around;
         
+        @media @phone {
+        justify-content: space-between;
+        padding: 0 50px 12px;
+    }
+
         a {
             font-family: 'Ubuntu', sans-serif;
             font-size: 1.6rem;
