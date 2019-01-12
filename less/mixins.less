@@ -7,8 +7,9 @@
     flex-direction: @flexdir;
 }
 
-.button(@bgcolor: @btn-bg-color; @color: white) {
-    height: 35px;
+.button(@bgcolor: @btn-bg-color; @color: white; @height: 35px) {
+    height: @height;
+    min-width: 100px;
     width: 30%;
     padding-top: 6px;
     text-align: center;

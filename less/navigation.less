@@ -13,8 +13,12 @@
 
     .nav-a {
         .flex(@justify: space-around);
-        width: 30%;
+        width: 400px;
         padding-bottom: 10px;
+
+        @media @phone {
+            width: 85%;
+        }
 
         a {
             color: @nav-font;

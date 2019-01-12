@@ -4,6 +4,7 @@
 
   .header-img {
     border-radius: 10px;
+    width: 100%;
   }
 
   .intro {
@@ -23,11 +24,23 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      flex-direction: column;
+
+        .sky, .launch {
+          display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 95%;
+      }
     }
   }
 
@@ -50,8 +63,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 95%;
+      padding: 0;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 95%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -63,12 +87,25 @@
 
       .btn {
         .button();
+
+        @media @phone {
+          .button(@height: 50px);
+          padding-top: 15px;
+          width: 100%;
+          
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+        order: -1;
+      }
       
       img {
         width: 100%;
