@@ -162,7 +162,9 @@ p {
 }
 nav {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
+  z-index: 1;
+  position: fixed;
 }
 nav .nav {
   width: 800px;
@@ -203,7 +205,8 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  border-radius: 5px;
+  border-radius: 5px 5px;
+  padding-top: 105px;
 }
 @media only screen and (max-width:500px) {
   .home .intro img {
