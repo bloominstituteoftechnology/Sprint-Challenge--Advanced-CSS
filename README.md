@@ -33,14 +33,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive websites respond to width at specific points. & May have hard coded pixels.  
+ Responsive is fluid & responds to width at everybreakpoint.  Combines fixed, adaptive & responsive into one layout.
+
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first prioritizes the design code of smaller width/phone devices as the primary code, then adapts the rest of the device widths stylings (such as desktop or tablet) with additional media queries.  In mobile first, the priority is to optimize the code for mobile devices, while desktop first makes the dominant code for larger width devices.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+It allows the font size to equal and respect most people's default size of the browser (16px). Allowing it to be easier to calculate font size in rem.  For example 1 rem= 10px, 1.5 rem is 15px etc.
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors are a more robust library/ syntax system for styling/CSS written in a different language.  It is then compiled into normal CSS and allows developers the ability to organize (example name spaces), maintain/change/control (mixins, variables), and monitor errors (less watch compiler which flags syntax errors) easier.  This is very helpful when developers are working with teams, as it can help standardized styles used on the projects, create a quicker way to make massive changes when code databases are robust, as well as increase readiblity of the code.  Preprocessors essentially give increased features to CSS that normally wouldn't exist in pure/vanilla CSS.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is mixins (with parameters), variables, Less-watch & import.  It allows me to organize and change my code more quickly, especially when my code database becomes more robust.  The concept that gives me the most trouble is probably mix-ins.
+Because currently most of my projects don't have huge style databases, its hard to find good use-cases for mixins that would help 
+me to stylize my code more fully.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
