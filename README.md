@@ -59,13 +59,13 @@ The websites users would direct your usage of mobile or desktop first. For insta
 
 - Answer: `font-size: 62.5%` in the `html` tag would make `rem` units easier to understand and have matching px size in reference to rem ( rem * 10 = px).  For instance after making it `font-size: 62.5%` in the `html` it would be:
 
-font-size: .5rem =  5px
-font-size: 1rem  =  10px
-font-size: 2rem  =  20px
-font-size: 2.4rem = 24px
-font-size: 3rem  =  30px
-font-size: 3.2rem = 32px
-etc...
+- font-size: .5rem =  5px
+- font-size: 1rem  =  10px
+- font-size: 2rem  =  20px
+- font-size: 2.4rem = 24px
+- font-size: 3rem  =  30px
+- font-size: 3.2rem = 32px
+- etc...
 
 
 
@@ -81,7 +81,7 @@ etc...
 
 - My favorite would be variables, it allows for easy re-use and also it allows easier changing of many lines of code after the fact if changes need to be made.
 
-The concept that give me the most trouble is the functions like parametric mixins, I find it more difficult to read and interpret compared to traditional CSS.
+- The concept that give me the most trouble is the functions like parametric mixins, I find it more difficult to read and interpret compared to traditional CSS.
 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
