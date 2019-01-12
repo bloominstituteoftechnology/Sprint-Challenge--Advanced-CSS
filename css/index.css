@@ -179,8 +179,9 @@ header.navigation nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
-  margin: 11px 0;
+  width: 45%;
+  margin-top: 20px;
+  margin-bottom: 11px;
 }
 @media (max-width: 500px) {
   header.navigation nav {
