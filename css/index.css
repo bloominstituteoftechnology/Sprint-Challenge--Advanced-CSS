@@ -339,13 +339,14 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 94%;
-    margin-left: 3%;
+    width: 100%;
+    margin: 0%;
     order: -1;
   }
 }
 .home .walk .walk-img img {
-  width: 100%;
+  width: 92.5%;
   height: auto;
   border-radius: 10px;
+  margin: 20px 2.5%;
 }
