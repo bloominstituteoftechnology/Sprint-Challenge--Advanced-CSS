@@ -1,4 +1,4 @@
-.nav-evenly {
+.nav-flex-evenly {
   display: flex;
   justify-content: space-evenly;
 }
@@ -170,7 +170,7 @@ p {
   border-bottom: 2px solid #F1F1F1;
 }
 .nav .nav-container {
-  padding: 2rem 0 1rem 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,7 +180,7 @@ p {
   padding-bottom: 2rem;
 }
 .nav .nav-container nav {
-  width: 30rem;
+  width: 40rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -188,6 +188,7 @@ p {
   font-size: 1.5rem;
   color: #454A59;
   text-decoration: none;
+  display: flex;
 }
 footer {
   color: #22283B;
