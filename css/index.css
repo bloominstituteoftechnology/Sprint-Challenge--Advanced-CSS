@@ -284,6 +284,8 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 0;
   }
 }
 .home .walk .walk-text {
@@ -295,7 +297,7 @@ footer {
     flex-wrap: wrap;
     width: 100%;
     margin-top: 5%;
-    margin-left: -9%;
+    padding: 4%;
   }
 }
 .home .walk .walk-text h3 {
@@ -337,8 +339,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 125%;
-    margin-left: -13%;
+    width: 94%;
+    margin-left: 3%;
     order: -1;
   }
 }

@@ -93,16 +93,19 @@
     @media @mobile {
       display: flex;
       flex-direction: column;
+      .full-width();
+      padding: 0;
+
     }
 
     .walk-text {
       width: 50%;
       @media @mobile {
-        display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 5%;
-    margin-left: -9%;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 5%;
+      padding: 4%;
       }
 
       h3 {
@@ -145,8 +148,8 @@
       width: 46%;
       margin-left: 4%;
       @media @mobile {
-        width: 125%;
-        margin-left: -13%;
+        width: 94%;
+        margin-left: 3%; 
         order: -1;
       }
       
