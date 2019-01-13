@@ -239,6 +239,7 @@ footer {
   .home .walk {
     flex-direction: column-reverse;
     padding: 15px;
+    margin-top: 20px;
   }
 }
 .home .walk .walk-text {
