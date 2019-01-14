@@ -170,10 +170,26 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-container {
+  border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 nav {
   display: flex;
@@ -182,10 +198,9 @@ nav {
   align-items: center;
   align-content: space-evenly;
   flex-wrap: wrap;
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #F1F1F1;
-  position: fixed;
+  max-width: 800px;
   width: 100%;
+  margin: 0 auto;
   background: rgba(246, 246, 246, 0.5);
 }
 nav h1 {
@@ -199,20 +214,20 @@ nav .navbar {
   align-items: center;
   align-content: space-evenly;
   flex-wrap: wrap;
-  width: 45%;
-  margin-bottom: 1.5%;
-  padding: 0;
+  width: 56%;
+  padding: 1%;
+  font-size: 1.65rem;
 }
 @media (max-width: 500px) {
   nav .navbar {
+    border: 1px solid rebeccapurple;
     margin: 2% 0;
-    width: 100%;
-    flex-wrap: nowrap;
+    width: 80%;
+    font-size: 1.65rem;
   }
 }
 nav .navbar a {
   color: #454A59;
-  font-size: 1.5rem;
   text-decoration: none;
   height: 2rem;
 }
@@ -231,7 +246,12 @@ footer {
   align-items: center;
 }
 .home {
-  padding-top: 96px;
+  padding-top: 92px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 100px;
+  }
 }
 .home .intro h2 {
   padding: 15px;

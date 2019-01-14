@@ -1,32 +1,60 @@
 // Navigation code here
 
-nav {
-  .flex-col();
-  background-color: @nav-bg;
+
+.nav-container {
   border-bottom: 1px solid @nav-border;
   position: fixed;
   width: 100%;
+
+  @media @phone {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+}
+
+
+
+
+
+
+
+nav {
+  .flex-col();
+
+  // THIS FIXES overlap issue
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+
   background: rgba(246, 246, 246, .5);
+ // top: 0;
+ // height: 12%;
 
   h1{
 
     font-size: 4rem;
     color: @header-font-color;
-    padding: 1%
+    padding: 1%;
   }
   .navbar{
     .flex-row();
-    width: 45%;
-    margin-bottom: 1.5%;
-    padding: 0;
+    width: 56%;
+    padding:1%;
+    font-size: 1.65rem;
     @media @phone{
+      .b_rp();
       margin: 2% 0;
-      width: 100%;
-      flex-wrap: nowrap;
+      width: 80%;
+      font-size: 1.65rem;
+    //  flex-wrap: nowrap;
   }
     a{
       color: @nav-font;
-      font-size: 1.5rem;
+   //   font-size: 1.65rem;
       text-decoration: none;
       height: 2rem;
       &:hover{
