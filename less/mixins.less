@@ -1,1 +1,73 @@
 // Mixins Here
+
+////////////////////////
+// debugging
+///////////////////////
+.b_dp {
+  border: 1px solid hotpink;
+}
+
+.b_rp {
+  border: 1px solid rebeccapurple;
+}
+.b_fg {
+  border: 1px solid forestgreen;
+}
+.b_r {
+  border: 4px solid red;
+}
+.b_o {
+  border: 1px solid orange;
+}
+
+
+
+////////////////////////
+// layout
+////////////////////////
+.flex-row(){
+  display: flex;
+ //  justify-content: space-evenly;
+  justify-content: space-evenly;  // fixes overlap issue
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flex-col(){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+
+
+// button
+.bround(@arguments) {
+  border-radius: @arguments;
+}
+
+.paraButton(@bwid; @fsize; @bpad; @bmarg;  @col; @bkgr; @fw: normal){
+  width: @bwid;
+  font-size: @fsize;
+  padding: @bpad;
+  margin: @bmarg;
+  color: @col;
+  background: @bkgr;
+  font-weight: @fw;
+  .bround(@rnd_desk); // this mixin is NOT a param
+  text-align: center; // not a param
+}
+
+
+
+// navigation animation mixin
+.hov(@col, @fsize) {
+  color: @col;
+  font-size: @fsize;
+
+}

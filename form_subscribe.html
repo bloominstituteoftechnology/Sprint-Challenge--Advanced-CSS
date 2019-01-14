@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+  <body>
+
+    <nav>
+      <h1>SpaceWalkers</h1>
+
+      <div class = "navbar">
+        <a href  = "index.html">Home</a>
+        <a href  = "#About">About Us</a>
+        <a href  = "#Blog">Blog</a>
+        <a href  = "form_subscribe.html">Contact</a> <!-- add STRETCH form link here -->
+        <a href  = "#signIN">Sign In</a>
+      </div>
+
+    </nav>
+
+
+    <div class = "form_container">
+
+      <div class = "customer">
+
+        <h2> Provide some info and you will be subscribed to SpaceWalkers!</h2>
+
+        <div class = "contact">
+          <div class = "customerINFO name">
+            <label for =  "firstName"> First Name </label>
+            <input type = "text" id = "firstName" name = "firstName"> </input>
+          </div>
+
+          <div class = "customerINFO name">
+            <label for =  "lastName"> Last Name </label>
+            <input type = "text" id = "lastName" name = "lastName"> </input>
+          </div>
+
+          <div class = "customerINFO email">
+            <label for =  "email"> email </label>
+            <input type = "text" id = "email" name = "lastName"> </input>
+          </div>
+        </div>
+
+        <div class = " instruction">
+          <label for = "instruction"> Anything you would like to know ?</label>
+          <textarea id = "instruction" name = "instruction" placeholder = "please explain your question "></textarea>
+        </div>
+
+      </div>  <!-- end customer -->
+
+
+      <div class = "submit-container">
+        <button class = "submit_btn" onclick = "simpleAlert()">Subscribe</button>
+      </div>
+
+      <footer class="footer">
+        <p>Copyright Fun Bus 2018</p>
+      </footer>
+
+
+    </div> <!-- end form-container -->
+
+
+
+
+
+
+
+    <script>
+      function simpleAlert() {
+        alert("does nothing but reset form! ");
+
+      }
+
+    </script>
+
+
+
+
+  </body>
+</html>

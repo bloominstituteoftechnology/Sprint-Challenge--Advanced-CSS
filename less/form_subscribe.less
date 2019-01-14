@@ -1,0 +1,133 @@
+
+
+.form_container{
+  //  .b_dp();
+  font-size: 2rem;
+  background: @form_color;
+  font-family: 'Comfortaa', cursive;
+  @media @phone {
+    padding-top: 90px;
+  }
+
+}
+
+.customer{
+  //   .b_fg();
+  padding-top: 96px;
+  .flex-row();
+  justify-content: space-around;
+  margin: 1% auto;
+  width: 80%;
+  // padding: 1%;
+
+  h2{
+//    .b_rp();
+    text-align: center;
+  }
+
+  @media @phone {
+    width: 90%;
+
+  }
+  .contact{
+    //   .b_db();
+    .flex-row();
+    padding: 2%;
+  }
+  .instruction{
+    //  .b_fg();
+    .flex-col();
+    padding: 2%;
+    margin: 4%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.25rem;
+    textarea{
+      width: 90%;
+      height: 60px;
+    }
+  }
+
+
+}
+
+.customerINFO{
+  .flex-row();
+  width: 100%;
+  padding: 2%;
+  margin: 1%;
+  justify-content: center;
+  label, input{
+    width: 60%;
+    text-align: center;
+    @media @phone {
+      width: 80%;
+    }
+  }
+  label{
+    padding: 1%;
+  }
+
+}
+
+.options{
+  //  .b_rb();
+  .flex-row();
+  width: 80%;
+  margin: 4% auto;
+  text-align: center;
+
+  .vacation_options{
+    //    .b_dp();
+    margin: 0 auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .check{
+    //  .b_dp();
+    .flex-col();
+    font-size: 2rem;
+    width: 30%;
+    //  padding: 3%;
+    margin: 1%;
+    label{
+      //    .b_fg();
+      margin: 5%;
+    }
+    .chk{
+      border: 3px solid red;
+
+    }
+
+  }
+}
+
+.request{
+  //  .b_db();
+  width: 80%;
+  margin: 2% auto;
+  text-align: center;
+  .flex-col();
+  padding: 3%;
+  textarea{
+    width: 80%;
+    height: 50px;
+    @media @phone{
+      width: 100%;
+    }
+  }
+}
+
+.submit-container{
+  //  .b_fg();
+  width: 30%;
+  padding: 2%;
+  margin: 0 auto;
+  .submit_btn{
+    margin: 0 auto;
+    .paraButton(83%; 1.75rem; 1.25rem; 0rem; white; @btn_color; bolder);
+  }
+}

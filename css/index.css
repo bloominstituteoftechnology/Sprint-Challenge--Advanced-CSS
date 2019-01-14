@@ -1,0 +1,536 @@
+.b_dp {
+  border: 1px solid hotpink;
+}
+.b_rp {
+  border: 1px solid rebeccapurple;
+}
+.b_fg {
+  border: 1px solid forestgreen;
+}
+.b_r {
+  border: 4px solid red;
+}
+.b_o {
+  border: 1px solid orange;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-container {
+  border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(246, 246, 246, 0.5);
+}
+nav h1 {
+  font-size: 4rem;
+  color: #23293B;
+  padding: 1%;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  width: 56%;
+  padding: 1%;
+  font-size: 1.65rem;
+}
+@media (max-width: 500px) {
+  nav .navbar {
+    border: 1px solid rebeccapurple;
+    margin: 2% 0;
+    width: 80%;
+    font-size: 1.65rem;
+  }
+}
+nav .navbar a {
+  color: #454A59;
+  text-decoration: none;
+  height: 2rem;
+}
+nav .navbar a:hover {
+  color: #769BEB;
+  font-size: 2rem;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  padding-top: 92px;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 100px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+.home #headerIMG {
+  width: 100%;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 3%;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+  /*  width: @bwid;
+          font-size: @fsize;
+          padding: @bpad;
+          margin: @bmarg;
+          color: @col;
+          background: @bkgr;
+          .bround(@rnding); is NOT a parameter*/
+}
+.home .walk .walk-text a {
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 1;
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  font-size: 1.75rem;
+  padding: 1rem;
+  margin: 0rem;
+  color: #F6F7F8;
+  background: #22283A;
+  font-weight: bolder;
+  border-radius: 1rem;
+  text-align: center;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: #F6F7F8;
+  border: 1px solid #454A59;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    font-size: 1.75rem;
+    padding: 3rem;
+    margin: 0rem;
+    color: #F6F7F8;
+    background: #22283A;
+    font-weight: bolder;
+    border-radius: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: 0;
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.form_container {
+  font-size: 2rem;
+  background: #EBEDF0;
+  font-family: 'Comfortaa', cursive;
+}
+@media (max-width: 500px) {
+  .form_container {
+    padding-top: 90px;
+  }
+}
+.customer {
+  padding-top: 96px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1% auto;
+  width: 80%;
+}
+.customer h2 {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .customer {
+    width: 90%;
+  }
+}
+.customer .contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.customer .instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin: 4%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.25rem;
+}
+.customer .instruction textarea {
+  width: 90%;
+  height: 60px;
+}
+.customerINFO {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+  margin: 1%;
+  justify-content: center;
+}
+.customerINFO label,
+.customerINFO input {
+  width: 60%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .customerINFO label,
+  .customerINFO input {
+    width: 80%;
+  }
+}
+.customerINFO label {
+  padding: 1%;
+}
+.options {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 4% auto;
+  text-align: center;
+}
+.options .vacation_options {
+  margin: 0 auto;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2.5rem;
+  width: 90%;
+}
+.options .check {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  width: 30%;
+  margin: 1%;
+}
+.options .check label {
+  margin: 5%;
+}
+.options .check .chk {
+  border: 3px solid red;
+}
+.request {
+  width: 80%;
+  margin: 2% auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+.request textarea {
+  width: 80%;
+  height: 50px;
+}
+@media (max-width: 500px) {
+  .request textarea {
+    width: 100%;
+  }
+}
+.submit-container {
+  width: 30%;
+  padding: 2%;
+  margin: 0 auto;
+}
+.submit-container .submit_btn {
+  margin: 0 auto;
+  width: 83%;
+  font-size: 1.75rem;
+  padding: 1.25rem;
+  margin: 0rem;
+  color: white;
+  background: #008080;
+  font-weight: bolder;
+  border-radius: 1rem;
+  text-align: center;
+}
