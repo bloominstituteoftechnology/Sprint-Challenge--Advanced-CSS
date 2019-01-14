@@ -9,14 +9,15 @@
     max-width: @max-width;
 }
 
-.createButton(@color:""; @border:""; @borderradius:""; @backcolor:"") {
+.createButton(@color:""; @border:""; @borderradius:""; @backcolor:""; @maxwidth:"120px"; @width:"") {
     color: @color;
     border: @border;
     border-radius: @borderradius;
-    background: @backcolor;
+    background: @btn-bg-color;
     padding: 1.5%;
     margin: 1% 0;
-    max-width: 120px;
+    width: @width;
+    max-width: @maxwidth;
     font-size: 1.8rem;
     text-align: center;
 }
