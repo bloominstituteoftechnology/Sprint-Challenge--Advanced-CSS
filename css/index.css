@@ -374,6 +374,10 @@ footer {
   font-size: 4.2rem;
   margin: 15px auto;
 }
+.page-header .logo a {
+  color: inherit;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .page-header .logo {
     font-size: 4rem;
