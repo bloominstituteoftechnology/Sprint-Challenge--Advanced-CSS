@@ -13,3 +13,39 @@
     }
   }
 }
+
+.page-footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  .flex(@direction: column; @align:center);
+
+    nav {
+    .flex(@justify:space-evenly);
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media @phone {
+      .flex(@direction:column;@align:center);
+    }
+
+    a {
+      margin: 0 1.39vw;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      color: @nav-font;
+      white-space: nowrap;
+      .hoverEffect(@nav-bg;@nav-font);
+
+      @media @phone {
+        width: 95%;
+        padding: 20px 0;
+        margin: 0 2.78vw;
+        text-align: center;
+        border-bottom: 1px solid @main-border-color;
+      }
+
+    }
+  }
+}
