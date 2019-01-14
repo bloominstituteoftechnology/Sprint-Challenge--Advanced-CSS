@@ -89,8 +89,9 @@
       @fontSize: 1.8rem; @textAlign: center);
 
       a {
-        text-decoration: none;
         color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
       }
 
       &:hover {
@@ -98,6 +99,25 @@
         background: @porcelain;
         border: 1px solid @btn-bg-color; 
       }
+    }
+
+    .state-zip-container {
+      .flex(@direction:row;@justify:space-between);
+
+      @media @phone {
+        .flex(@direction:column)
+      }
+      
+      .state-zip-wrapper {
+        width: 48%;
+        .flex(@direction:column);
+      }
+    }
+
+    .previous-step {
+      color: @btn-bg-color;
+      text-align: center;
+      margin: 20px 0;
     }
   }
 
