@@ -425,7 +425,8 @@ footer {
   border-radius: 25px;
 }
 .signup-form-container {
-  margin: 20px 0;
+  width: 95%;
+  margin: 20px auto;
 }
 .signup-form-container form {
   display: flex;
