@@ -328,6 +328,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   color: #22283A;
   background: #F6F7F8;
+  border: 1px solid #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -373,10 +374,15 @@ footer {
   }
 }
 .form-container {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   border: 1px solid #dee2e6;
+}
+@media (max-width: 500px) {
+  .form-container {
+    padding: 0 5px;
+  }
 }
 .form-container .step-container {
   display: flex;
@@ -418,10 +424,56 @@ footer {
   background: #23293B;
   border-radius: 25px;
 }
+.signup-form-container {
+  margin: 20px 0;
+}
+.signup-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+}
+.signup-form-container form label {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.signup-form-container form input {
+  height: 30px;
+  width: 100%;
+  background: #F1F1F1;
+  margin-bottom: 25px;
+  border: 0;
+}
+.signup-form-container form .btn-signup {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #F6F7F8;
+  background: #22283A;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+.signup-form-container form .btn-signup:hover {
+  color: #F6F7F8;
+  background: #22283A;
+  border: 1px solid #22283A;
+  transform: scale(1.5);
+  background: #353e5a;
+}
+.signup-form-container form .btn-signup a {
+  text-decoration: none;
+  color: inherit;
+}
+.signup-form-container form .btn-signup:hover {
+  color: #22283A;
+  background: #F6F7F8;
+  border: 1px solid #22283A;
+}
 .page-footer {
   width: 100%;
-  bottom: 0;
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: normal;

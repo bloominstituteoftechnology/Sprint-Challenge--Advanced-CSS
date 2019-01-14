@@ -15,10 +15,14 @@
 }
 
 .form-container {
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   border: 1px solid @main-border-color;
+
+  @media @phone {
+    padding: 0 5px;
+  }
 
   .step-container {
     .flex(@direction:column);
@@ -56,10 +60,55 @@
   }
 }
 
+.signup-form-container {
+  margin: 20px 0;
+  //width: 95%;
+  
+  form {
+    //width: 100%;
+    .flex(@direction:column);
+  
+    label {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    input {
+      height: 30px;
+      width: 100%;
+      background: @sea-shell;
+      margin-bottom: 25px;
+      border: 0;
+    }
+
+    .btn-signup {
+      .buttonIcon(@width:100%;
+      @color:@porcelain;@bgColor:@btn-bg-color;
+      @bRadius: 5px; @paddingHeight: 10px; @paddingWidth: 0;
+      @fontSize: 1.8rem; @textAlign: center);
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:hover {
+        color: @btn-bg-color;
+        background: @porcelain;
+        border: 1px solid @btn-bg-color; 
+      }
+    }
+  }
+
+}
+
+
+
 .page-footer {
   width: 100%;
-  bottom: 0;
-  position: fixed;
+  //bottom: 0;
+  //position: fixed;
   .flex(@direction: column; @align:center);
 
     nav {
