@@ -495,9 +495,13 @@ footer {
   align-items: normal;
 }
 .signup-form-container form .previous-step {
-  color: #22283A;
   text-align: center;
   margin: 20px 0;
+}
+.signup-form-container form .previous-step a {
+  font-size: 1.3rem;
+  color: #22283A;
+  text-decoration: none;
 }
 .page-footer {
   width: 100%;
