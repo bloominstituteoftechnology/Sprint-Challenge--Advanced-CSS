@@ -500,6 +500,28 @@ footer {
     width: 100%;
   }
 }
+.signup-form-container form .agreement-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: normal;
+  margin-bottom: 20px;
+}
+.signup-form-container form .agreement-container input {
+  width: 10%;
+  margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .signup-form-container form .agreement-container input {
+    width: 20%;
+  }
+}
+.signup-form-container form .agreement-container p {
+  font-size: 1.3rem;
+}
+.signup-form-container form .agreement-container p a {
+  text-decoration: none;
+}
 .signup-form-container form .previous-step {
   text-align: center;
   margin: 20px 0;
