@@ -57,7 +57,7 @@
       }
     }
 
-    .agreement-container, .keep-signin-container {
+    .agreement-container {
       .flex(@align:flex-start);
       margin-bottom: 20px;
 
@@ -77,6 +77,16 @@
           text-decoration: none;
         }
       }
+    }
+
+    .keep-signin-container {
+      .flex(@align: stretch);
+
+      input[type=checkbox] {
+        width: auto;
+        margin-right: 10px;
+      }
+
     }
 
     .previous-step, .forgotten-password {

@@ -584,32 +584,37 @@ footer {
     width: 100%;
   }
 }
-.signup-form-container form .agreement-container,
-.signup-form-container form .keep-signin-container {
+.signup-form-container form .agreement-container {
   display: flex;
   flex-direction: row;
   justify-content: normal;
   align-items: flex-start;
   margin-bottom: 20px;
 }
-.signup-form-container form .agreement-container input,
-.signup-form-container form .keep-signin-container input {
+.signup-form-container form .agreement-container input {
   width: 5%;
 }
 @media (max-width: 500px) {
-  .signup-form-container form .agreement-container input,
-  .signup-form-container form .keep-signin-container input {
+  .signup-form-container form .agreement-container input {
     width: 20%;
   }
 }
-.signup-form-container form .agreement-container p,
-.signup-form-container form .keep-signin-container p {
+.signup-form-container form .agreement-container p {
   font-size: 1.3rem;
   width: 90%;
 }
-.signup-form-container form .agreement-container p a,
-.signup-form-container form .keep-signin-container p a {
+.signup-form-container form .agreement-container p a {
   text-decoration: none;
+}
+.signup-form-container form .keep-signin-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  align-items: stretch;
+}
+.signup-form-container form .keep-signin-container input[type=checkbox] {
+  width: auto;
+  margin-right: 10px;
 }
 .signup-form-container form .previous-step,
 .signup-form-container form .forgotten-password {
