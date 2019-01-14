@@ -325,6 +325,10 @@ footer {
   transform: scale(1.5);
   background: #353e5a;
 }
+.home .walk .walk-text .btn a {
+  color: inherit;
+  text-decoration: none;
+}
 .home .walk .walk-text .btn:hover {
   color: #22283A;
   background: #F6F7F8;
@@ -423,6 +427,78 @@ footer {
   height: inherit;
   background: #23293B;
   border-radius: 25px;
+}
+.purchase-confirmation-container {
+  width: 95%;
+  margin: 0 auto;
+}
+.purchase-confirmation-container .closing-title {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  font-size: 4.2rem;
+  text-align: center;
+}
+.purchase-confirmation-container .closing-text {
+  margin: 20px 0;
+}
+.purchase-confirmation-container .closing-text p {
+  margin-bottom: 10px;
+}
+.purchase-confirmation-container .go-home {
+  text-align: center;
+  margin: 20px 0;
+}
+.purchase-confirmation-container .go-home a {
+  font-size: 1.3rem;
+  color: #22283A;
+  text-decoration: none;
+}
+.page-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+}
+.page-footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: normal;
+  width: 100%;
+  margin-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .page-footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+}
+.page-footer nav a {
+  margin: 0 1.39vw;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color: #454A59;
+  white-space: nowrap;
+}
+.page-footer nav a:hover {
+  color: #F6F6F6;
+  background: #454A59;
+  border: 1px solid #454A59;
+  transform: scale(1.5);
+  background: #5b6276;
+}
+@media (max-width: 500px) {
+  .page-footer nav a {
+    width: 95%;
+    padding: 20px 0;
+    margin: 0 2.78vw;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+  }
 }
 .signup-form-container {
   width: 95%;
@@ -530,51 +606,4 @@ footer {
   font-size: 1.3rem;
   color: #22283A;
   text-decoration: none;
-}
-.page-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: normal;
-  align-items: center;
-}
-.page-footer nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: normal;
-  width: 100%;
-  margin-bottom: 50px;
-}
-@media (max-width: 500px) {
-  .page-footer nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: center;
-  }
-}
-.page-footer nav a {
-  margin: 0 1.39vw;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: semi-bold;
-  color: #454A59;
-  white-space: nowrap;
-}
-.page-footer nav a:hover {
-  color: #F6F6F6;
-  background: #454A59;
-  border: 1px solid #454A59;
-  transform: scale(1.5);
-  background: #5b6276;
-}
-@media (max-width: 500px) {
-  .page-footer nav a {
-    width: 95%;
-    padding: 20px 0;
-    margin: 0 2.78vw;
-    text-align: center;
-    border-bottom: 1px solid #dee2e6;
-  }
 }

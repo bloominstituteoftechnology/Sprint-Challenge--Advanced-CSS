@@ -60,102 +60,37 @@
   }
 }
 
-.signup-form-container {
+.purchase-confirmation-container {
   width: 95%;
-  margin: 20px auto;
-  
-  form {
-    //width: 100%;
-    .flex(@direction:column);
-  
-    label {
-      display: block;
-      font-size: 1.5rem;
-      line-height: 1.4;
-    }
+  margin: 0 auto;
 
-    input {
-      height: 30px;
-      width: 100%;
-      background: @sea-shell;
-      margin-bottom: 25px;
-      border: 0;
-    }
+  .closing-title {
+    .headerFontStyle(@fontSize:4.2rem);
+    text-align: center;
+  }
 
-    .btn-signup {
-      .buttonIcon(@width:100%;
-      @color:@porcelain;@bgColor:@btn-bg-color;
-      @bRadius: 5px; @paddingHeight: 10px; @paddingWidth: 0;
-      @fontSize: 1.8rem; @textAlign: center);
+  .closing-text {
+    margin: 20px 0;
 
-      a {
-        color: inherit;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-
-      &:hover {
-        color: @btn-bg-color;
-        background: @porcelain;
-        border: 1px solid @btn-bg-color; 
-      }
-    }
-
-    .state-zip-container {
-      .flex(@direction:row;@justify:space-between);
-
-      @media @phone {
-        .flex(@direction:column)
-      }
-      
-      .state-zip-wrapper {
-        width: 48%;
-        .flex(@direction:column);
-
-        @media @phone {
-          width: 100%;
-        }
-      }
-    }
-
-    .agreement-container {
-      .flex();
-      margin-bottom: 20px;
-
-      input {
-        width: 10%;
-        margin-right: 10px;
-
-        @media @phone {
-          width: 20%;
-        }
-      }
-
-      p {
-        font-size: 1.3rem;
-
-        a {
-          text-decoration: none;
-        }
-      }
-    }
-
-    .previous-step {
-      text-align: center;
-      margin: 20px 0;
-
-      a {
-        font-size: 1.3rem;
-        color: @btn-bg-color;
-        text-decoration: none;
-        
-      }
+    p {
+      margin-bottom: 10px;
     }
   }
 
-}
+  .go-home {
+    text-align: center;
+    margin: 20px 0;
+
+    a {
+      font-size: 1.3rem;
+      color: @btn-bg-color;
+      text-decoration: none;
+      
+    }
+  }
 
 
+} //purchase-confirmation-container
 
 .page-footer {
   width: 100%;
