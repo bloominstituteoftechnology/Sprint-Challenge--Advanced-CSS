@@ -22,7 +22,7 @@
 .buttonIcon(@width:auto; @height:auto; 
 @color; @bgColor;
 @bRadius; @paddingHeight; @paddingWidth;
-@fontSize: 1rem; @textAlign: initial) {
+@fontSize: 1rem; @textAlign: initial; @textCase) {
   width: @width;
   height: @height;
   padding: @paddingHeight @paddingWidth;
@@ -31,6 +31,8 @@
   background: @bgColor;
   font-size: @fontSize;
   text-align: @textAlign;
+  text-decoration: none;
+  text-transform: @textCase;
   cursor: pointer;
 
   .hoverEffect(@color; @bgColor);

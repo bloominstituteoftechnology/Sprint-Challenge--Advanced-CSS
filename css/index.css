@@ -312,6 +312,8 @@ footer {
   background: #22283A;
   font-size: 1.8rem;
   text-align: center;
+  text-decoration: none;
+  text-transform: initial;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -531,6 +533,8 @@ footer {
   background: #22283A;
   font-size: 1.8rem;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .signup-form-container form .btn-signup:hover {
