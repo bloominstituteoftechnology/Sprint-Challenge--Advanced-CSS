@@ -57,14 +57,13 @@
       }
     }
 
-    .agreement-container {
-      .flex();
+    .agreement-container, .keep-signin-container {
+      .flex(@align:flex-start);
       margin-bottom: 20px;
 
       input {
-        width: 10%;
-        margin-right: 10px;
-
+        width: 5%;
+    
         @media @phone {
           width: 20%;
         }
@@ -72,6 +71,7 @@
 
       p {
         font-size: 1.3rem;
+        width: 90%;
 
         a {
           text-decoration: none;
@@ -79,9 +79,13 @@
       }
     }
 
-    .previous-step {
+    .previous-step, .forgotten-password {
       text-align: center;
       margin: 20px 0;
+
+      p {
+        font-size: 1.3rem;
+      }
 
       a {
         font-size: 1.3rem;
@@ -90,6 +94,40 @@
         
       }
     }
-  }
+
+    .subscribe-cta-container {
+      .flex(@direction:column;@align:center);
+      width: 100%;
+      margin: 10px 0;
+      border-top: 1px solid @main-border-color;
+
+      .subscribe-cta-text {
+          font-size: 2rem;
+          margin: 20px auto;
+      }
+
+    .btn-subscribe {
+      .buttonIcon(@width:100%;
+      @color:@btn-bg-color;@bgColor:transparent;
+      @bRadius: 5px; @paddingHeight: 10px; @paddingWidth: 0;
+      @fontSize: 1.8rem; @textAlign:center; @textCase:uppercase);
+      margin-bottom: 20px;
+      border: 1px solid @btn-bg-color;
+      
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: @btn-bg-color;
+        background: @porcelain;
+        border: 1px solid @btn-bg-color; 
+      }
+    }
+    }
+  } //form
 
 } //signup-form-container

@@ -580,34 +580,90 @@ footer {
     width: 100%;
   }
 }
-.signup-form-container form .agreement-container {
+.signup-form-container form .agreement-container,
+.signup-form-container form .keep-signin-container {
   display: flex;
   flex-direction: row;
   justify-content: normal;
-  align-items: normal;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
-.signup-form-container form .agreement-container input {
-  width: 10%;
-  margin-right: 10px;
+.signup-form-container form .agreement-container input,
+.signup-form-container form .keep-signin-container input {
+  width: 5%;
 }
 @media (max-width: 500px) {
-  .signup-form-container form .agreement-container input {
+  .signup-form-container form .agreement-container input,
+  .signup-form-container form .keep-signin-container input {
     width: 20%;
   }
 }
-.signup-form-container form .agreement-container p {
+.signup-form-container form .agreement-container p,
+.signup-form-container form .keep-signin-container p {
   font-size: 1.3rem;
+  width: 90%;
 }
-.signup-form-container form .agreement-container p a {
+.signup-form-container form .agreement-container p a,
+.signup-form-container form .keep-signin-container p a {
   text-decoration: none;
 }
-.signup-form-container form .previous-step {
+.signup-form-container form .previous-step,
+.signup-form-container form .forgotten-password {
   text-align: center;
   margin: 20px 0;
 }
-.signup-form-container form .previous-step a {
+.signup-form-container form .previous-step p,
+.signup-form-container form .forgotten-password p {
+  font-size: 1.3rem;
+}
+.signup-form-container form .previous-step a,
+.signup-form-container form .forgotten-password a {
   font-size: 1.3rem;
   color: #22283A;
   text-decoration: none;
+}
+.signup-form-container form .subscribe-cta-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  border-top: 1px solid #dee2e6;
+}
+.signup-form-container form .subscribe-cta-container .subscribe-cta-text {
+  font-size: 2rem;
+  margin: 20px auto;
+}
+.signup-form-container form .subscribe-cta-container .btn-subscribe {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #22283A;
+  background: transparent;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid #22283A;
+}
+.signup-form-container form .subscribe-cta-container .btn-subscribe:hover {
+  color: #22283A;
+  background: transparent;
+  border: 1px solid transparent;
+  transform: scale(1.5);
+  background: rgba(26, 26, 26, 0);
+}
+.signup-form-container form .subscribe-cta-container .btn-subscribe a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.signup-form-container form .subscribe-cta-container .btn-subscribe:hover {
+  color: #22283A;
+  background: #F6F7F8;
+  border: 1px solid #22283A;
 }
