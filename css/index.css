@@ -232,6 +232,7 @@ footer {
 }
 .home .top-img {
   width: 100%;
+  margin-top: 4.5%;
 }
 @media (max-width: 500px) {
   .home .top-img {
@@ -269,6 +270,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  transform: scale(1.1);
 }
 .home .visit-planets {
   padding: 15px;
