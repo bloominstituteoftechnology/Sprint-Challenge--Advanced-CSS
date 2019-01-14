@@ -191,11 +191,17 @@ nav .nav-head {
 .navver {
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  background-color: #23293B;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
 }
 .navver .a-tag {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #23293B;
+  color: #F6F7F8;
   margin: 1rem;
 }
 footer {
