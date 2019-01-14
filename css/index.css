@@ -365,13 +365,58 @@ footer {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
   font-size: 4.2rem;
-  font-weight: semi-bold;
   margin: 15px auto;
 }
 @media (max-width: 500px) {
   .page-header .logo {
     font-size: 4rem;
   }
+}
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #dee2e6;
+}
+.form-container .step-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  width: 95%;
+  margin: 20px auto;
+}
+.form-container .step-container .step-title {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  font-size: 2rem;
+  text-align: center;
+}
+.form-container .step-container .progress-meter-border {
+  height: 20px;
+  /* Can be anything */
+  border: 1px solid #dee2e6;
+  border-radius: 25px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  margin: 20px 0;
+}
+.form-container .step-container .progress-meter-border .progress-meter-step2 {
+  width: 30%;
+  height: inherit;
+  background: #23293B;
+  border-radius: 25px;
+}
+.form-container .step-container .progress-meter-border .progress-meter-step3 {
+  width: 60%;
+  height: inherit;
+  background: #23293B;
+  border-radius: 25px;
+}
+.form-container .step-container .progress-meter-border .progress-meter-complete {
+  width: 100%;
+  height: inherit;
+  background: #23293B;
+  border-radius: 25px;
 }
 .page-footer {
   width: 100%;

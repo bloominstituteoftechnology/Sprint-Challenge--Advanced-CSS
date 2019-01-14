@@ -14,6 +14,48 @@
   }
 }
 
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid @main-border-color;
+
+  .step-container {
+    .flex(@direction:column);
+    width: 95%;
+    margin: 20px auto;
+
+    .step-title {
+      .headerFontStyle(@fontSize:2rem);
+      text-align: center;
+    }
+
+    .progress-meter-border {
+      	height: 20px;  /* Can be anything */
+        border: 1px solid @main-border-color;
+        border-radius: 25px;
+        //padding: 10px;
+        box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+        margin: 20px 0;
+
+      .progress-meter-step2 {
+        .progress-meter(@width:30%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+
+      .progress-meter-step3 {
+        .progress-meter(@width:60%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+
+      .progress-meter-complete {
+        .progress-meter(@width:100%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
 .page-footer {
   width: 100%;
   bottom: 0;

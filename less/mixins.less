@@ -10,7 +10,6 @@
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
   font-size: @fontSize;
-  font-weight: semi-bold;
 }
 
 .center() {
@@ -35,6 +34,12 @@
   cursor: pointer;
 
   .hoverEffect(@color; @bgColor);
+}
+
+.progress-meter(@width;@height:inherit;@bgColor) {
+  width: @width;
+  height: @height;
+  background: @bgColor;
 }
 
 //Animations
