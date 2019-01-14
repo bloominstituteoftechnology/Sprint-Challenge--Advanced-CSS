@@ -495,6 +495,11 @@ footer {
   justify-content: normal;
   align-items: normal;
 }
+@media (max-width: 500px) {
+  .signup-form-container form .state-zip-container .state-zip-wrapper {
+    width: 100%;
+  }
+}
 .signup-form-container form .previous-step {
   text-align: center;
   margin: 20px 0;
