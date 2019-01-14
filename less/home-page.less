@@ -1,4 +1,9 @@
 // Home Content
+.header-img {
+  border-radius: 3px;
+  width: 100%;
+}
+
 
 .home {
 
@@ -58,6 +63,12 @@
       }
 
       .btn {
+        .button-style;
+      }
+
+      .btn:hover {
+        color: black;
+        background: white;
       }
     }
 
@@ -72,4 +83,19 @@
       }
     }
   }
+
+@media (max-width: 500px) { 
+  .home .space-images img {
+    display: none;
+    }
+
+  .home .space-images .launch {
+    display: none;
+  }
+
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+
 }// home

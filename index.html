@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--Sprint Challenge Questions
 1. What is the difference between an adaptive website and a fully responsive website?
@@ -13,7 +14,7 @@
   Mobile first means your designing the webpage based on the sizes of a mobile display first, then adding changes for a desktop. Desktop is the opposite.
 
 3. What does font-size: 62.5% in the html tag do for us when using rem units?
-  This sets the incremements to 1 REM = 10px. Making it easier to calculate. 
+  This sets the incremements to 1 REM = 10px. Making it eas                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ier to calculate. 
 
 4. How would you describe preprocessing to someone new to CSS?
   Preprocessing makes layouts easier to implement and read because you can use mixins, nesting selector, inheritance selector, and so on.
@@ -33,12 +34,26 @@
 
 <body>
 
+
+
  <!-- navigation code here -->
+ <nav>
+    <h1>SpaceWalkers</h1>
+    <ul>
+      <li class="nav-links"><a href="#">Home</a></li>
+      <li class="nav-links"><a href="#">About Us</a></li>
+      <li class="nav-links"><a href="#">Blog</a></li>
+      <li class="nav-links"><a href="#">Contact</a></li>
+      <li class="nav-links"><a href="#">Sign In</a></li>
+     </ul>
+  </nav>
 
   <div class="container home">
 
+
     <header class="intro">
        <!-- image code here -->
+       <img class="header-img" src="img/main-header.png" alt="Space">
 
       <h2>Lift Off</h2>
     
@@ -69,7 +84,7 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <button>Sign Up</button>
         </div>
       </div>
       
