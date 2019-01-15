@@ -11,13 +11,25 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -38,6 +50,15 @@
       margin-top: 13px;
     }
   }
+  @media @phone {
+        .walk {
+          .layout;
+        }
+        .walk-img {
+          order: -1;
+          width: 100%;
+        }
+      }
 
   .walk {
     margin-top: 60px;
@@ -58,13 +79,20 @@
       }
 
       .btn {
+        .main-btn(@btn-bg-color, 5px);
       }
+
+      @media @phone {
+          .btn {
+            width: 100%;
+          }
+        }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -73,3 +101,4 @@
     }
   }
 }// home
+

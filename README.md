@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  Responsive websites have a “smoother” layout that changes and adapts regardless
+  Of screen size being used.
+  Adaptive websites use fixed sizes based on pre-determined break points to deliver the most appropriate layout version for the screen size that is detected when the page loads.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+  Mobile first is an approach to responsive design, where you make a site for mobile screens or smaller screens first. Then you add features and elements for larger screens.
+  Desktop first is the reverse approach. Designing with higher specification and then going down to smaller resolutions.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+  rem values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements. If font-size is not explicitly defined in root element then 1rem will be equal to the default font-size provided by the browser (usually 16px).
+  Setting the font-size to 62.5% is a shortcut calculation. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+  A preprocessor is a program that takes one type of data and converts it to another type of data. A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+  My favorite concept is the reusability of mixins to plug-in to multiple selectors. Which saves time in rewriting repetitive code.
+  In the same vein, creating the appropriate universal mixin to be placed in to different elements is a challenge.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
