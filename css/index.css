@@ -176,6 +176,20 @@ p {
   background-color: #F6F6F6;
   border: 1px solid #F1F1F1;
 }
+.nav-bar:hover {
+  background-color: #81848E;
+  transition: 1.25s;
+}
+.nav-bar:hover .nav-el a {
+  color: #22283A;
+  transition: 1s;
+  transform: scale(1.025);
+}
+.nav-bar:hover .logo {
+  transform: rotate(2deg);
+  color: #22283A;
+  transition: 1s;
+}
 .nav-bar .logo {
   margin: 1.5%;
   font-family: 'Russo One', sans-serif;
@@ -216,10 +230,6 @@ p {
   text-decoration: none;
   width: 15%;
 }
-.nav-bar .nav-el a:hover {
-  transition: 2s;
-  transform: scale(1.1) translateX(10px);
-}
 @media (max-width: 500px) {
   .nav-bar .nav-el a {
     text-shadow: 1px 1px lightslategray;
@@ -230,6 +240,11 @@ p {
 .home {
   max-width: 65%;
 }
+.home:hover {
+  background-color: #F1F1F1;
+  transition: 1s;
+  transform: scale(1.005);
+}
 @media (max-width: 768px) {
   .home {
     max-width: 85%;
@@ -238,6 +253,11 @@ p {
 @media (max-width: 768px) and (max-width: 500px) {
   .home {
     max-width: 100%;
+  }
+  .home:hover {
+    background-color: #dee2e6;
+    transition: 1s;
+    transform: scale(1);
   }
 }
 .home .intro h2 {
@@ -284,6 +304,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-content: flex-start;
 }
 @media (max-width: 500px) {
   .home .space-images {
@@ -295,6 +316,12 @@ p {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  box-shadow: 5px 10px #5E6164;
+  opacity: 1;
+  transition: 1.5s;
+  transform: scale(1.075);
 }
 @media (max-width: 500px) {
   .home .space-images .sky,
@@ -309,6 +336,12 @@ p {
     order: -1;
     width: 95%;
     margin: 0;
+  }
+  .home .space-images .blast:hover {
+    box-shadow: 5px 10px #5E6164;
+    opacity: 1;
+    transition: 1.5s;
+    transform: scale(1.01);
   }
 }
 .home .visit-planets {
@@ -335,7 +368,7 @@ p {
 }
 @media (max-width: 500px) {
   .home .walk {
-    margin: 0 2.5% 0 2.5%;
+    margin: 0 0 0 2.5%;
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -380,7 +413,7 @@ p {
 }
 @media (max-width: 768px) {
   .home .walk .walk-text .btn {
-    width: 95%;
+    width: 100%;
     height: 4rem;
     padding-left: 0;
     font-size: 3rem;
@@ -388,7 +421,7 @@ p {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 95%;
+    width: 100%;
     height: 4rem;
     padding-left: 0;
     font-size: 2.5rem;
@@ -409,6 +442,20 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-img img:hover {
+  box-shadow: 5px 10px #5E6164;
+  opacity: 1;
+  transition: 1.5s;
+  transform: scale(1.075);
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img:hover:hover {
+    box-shadow: 5px 10px #5E6164;
+    opacity: 1;
+    transition: 1.5s;
+    transform: scale(1.01);
+  }
 }
 .home .signup {
   width: 100%;
@@ -462,4 +509,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer:hover {
+  background-color: #81848E;
+  transition: 1.25s;
+}
+footer:hover p {
+  color: #22283A;
+  transition: 1s;
 }

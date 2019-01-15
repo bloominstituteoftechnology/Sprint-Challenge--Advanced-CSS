@@ -14,7 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-
 <body class="container">
     <style>
         .container {
@@ -23,6 +22,9 @@
             background-position: center;
             background-repeat: no-repeat;
             opacity: 25%;
+        }
+        .home:hover {
+            transform: scale(1.00);
         }
         .nav-bar {
             background: lightblue;
@@ -40,15 +42,15 @@
                 <a href="#">About us</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
-                <a href="signup.html">Sign in</a>
+                <a href="signup.html" id="username">Sign in</a>
             </nav>
     </header>
     <div class="container home">
         <div class="intro">
         <!-- navigation code here -->
             <div class="bg-img">
-                <h2>Welcome to Space Walkers!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <h2 id='bgtxth1'>Welcome to Space Walkers!</h2>
+                <p id='bgtxtp'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Sunt architecto illo vel officia tempora qui maiores fuga, 
                     nulla quo placeat minus rerum voluptas. 
                     Ab quasi vel recusandae distinctio omnis modi!
@@ -56,13 +58,13 @@
             </div>
         </div>
         <div class="signup">
-            <form>
+            <form id='form'>
                 <label class="formlabel">Name</label>
-                <input name="name" placeholder="Type Here">
+                <input name="name" placeholder="Type Here" id="box1">
                 <label class="formlabel">Email</label>
-                <input name="email" placeholder="Type Here">
+                <input name="email" placeholder="Type Here" id="box2">
                 <label class="formlabel">Address</label>
-                <input name="Address" placeholder="Type Here">
+                <input name="Address" placeholder="Type Here" id="box3">
                 <input id="submit" name="submit" type="submit">
             </form>
         </div>
@@ -70,4 +72,5 @@
     <footer>
             <p>Copyright SpaceWalkers 2018</p>
     </footer>
+<script src="script.js"></script>
 </body>
