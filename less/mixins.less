@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flex-spacearound(){
+  display: flex;
+  // border: @border;
+  justify-content: center;
+  // width: 800px;
+  font-size: 1.4rem;
+}
+
+.anchorNavs(){
+  text-decoration: none;
+  color: @river-bend;
+  // padding: 5px;
+}
+
+.btnMixin(@bgColor, @width, @height, @color){
+  background: @bgColor;
+  width: @width;
+  height: @height;
+  color: @color;
+}
+
+.center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
