@@ -1,1 +1,37 @@
-// Navigation code here
+//NAVITGATION
+.navigation {
+    .flex(@justify: center, @align: center, @direction: column);
+    .size(@height: 10rem, 100%);
+
+    background-color: rgba(256,256,256,.5);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(125,185,232,0) 100%);
+    padding-bottom: 3px;
+    position: fixed;
+
+    h1 {
+        .text(@color: @header-font-color, @family: 'Russo One', @size: 4rem);
+
+        margin-bottom: 1.4rem;
+
+        &:hover {
+            animation: walkoff 5s linear;
+        }
+    }
+    ul {
+        .flex(@justify: space-between);
+        .size(@width: 37.7rem);
+        
+        a {
+            .text(@color: @nav-font, @size: 16px);
+            &:hover {
+                color: @header-font-color;
+                font-weight: bold;
+            }
+        }
+        //navigation > ul
+        @media (max-width: @phone) {
+            justify-content: space-around;
+            width: 80%;
+        }
+    }
+}
