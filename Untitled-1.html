@@ -13,9 +13,10 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class='form-body'>
+<body class='container'>
     <nav>
         <div class="nav-top">
             <div class="nav-head">
@@ -38,25 +39,33 @@
                     <input type='text' placeholder="UserName">
                     <input type='text' placeholder="Password">
                     <input type='text' placeholder="Address">
+                    <input type='text' placeholder="Phone-Number">
                     <button id='createButton'>Create</button>
                     <p class="register ">Already Registered? <a href="index.html ">Login</a></p>
-
-                </form>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-tumblr"></a </form>
             </div>
         </div>
-    </form>
+        </form>
 
 
-    <script>
-        var createButton = document.getElementById('createButton')
-        var form = document.getElementsByClassName('form')
-        createButton.addEventListener('click', function() {
-            form.animate({
-                height: 'toggle',
-                opacity: 'toggle'
-            }, slow)
-        })
-    </script>
+
+        <script>
+            var createButton = document.getElementById('createButton')
+            var form = document.getElementsByClassName('form')
+            createButton.addEventListener('click', function() {
+                form.animate({
+                    height: 'toggle',
+                    opacity: 'toggle'
+                }, slow)
+            })
+        </script>
 </body>
 
 </html>
