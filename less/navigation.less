@@ -1,1 +1,44 @@
 // Navigation code here
+.main-header {
+    display: flex;
+    width: 100%;
+    background: #f4f4f4;
+    
+    .inside-header {
+        .flex-header(column, center, center);
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto; 
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+h1 {
+    .flex-nav-header(center);
+    font-size: 4.5rem;
+    width: 100%;
+    padding-bottom: 30px;
+    @media @phone {
+        width: 90%;
+        font-size: 3rem;
+        padding-bottom: 20px; 
+    }
+}
+
+
+nav{
+    .flex-nav-header(space-around);
+    height: 20px;
+    line-height: 25px;
+    width: 50%;
+    @media @phone {
+        width: 85%;
+        
+    }
+    a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: black;
+    }
+}
+}

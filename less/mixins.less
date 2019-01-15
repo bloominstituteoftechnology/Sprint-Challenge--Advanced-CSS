@@ -1,1 +1,41 @@
 // Mixins Here
+.flex-header (@flex-direction, @justify-content, @align){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify-content;
+    align-items: @align;
+}
+.flex-nav-header (@justify-content){
+    display: flex;
+    justify-content: @justify-content;
+}
+.flex-centered {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.button-creator (@bgcolor, @width, @height) {
+    font-size: 1.6rem;
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    .flex-centered;
+    
+    &:hover{
+        background-color: white;
+        color: @bgcolor;
+
+    }
+}
+.btn {
+    .button-creator(#22283A, 180px, 40px);
+    @media @phone {
+        .button-creator(#22283A, 360px, 50px);
+}
+}
+
+

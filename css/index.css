@@ -1,0 +1,394 @@
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  font-size: 1.6rem;
+  width: 180px;
+  height: 40px;
+  background-color: #22283A;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover {
+  background-color: white;
+  color: #22283A;
+}
+@media (max-width:500px) {
+  .btn {
+    font-size: 1.6rem;
+    width: 360px;
+    height: 50px;
+    background-color: #22283A;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
+    background-color: white;
+    color: #22283A;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+.main-header {
+  display: flex;
+  width: 100%;
+  background: #f4f4f4;
+}
+.main-header .inside-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.main-header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4.5rem;
+  width: 100%;
+  padding-bottom: 30px;
+}
+@media (max-width:500px) {
+  .main-header h1 {
+    width: 90%;
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+}
+.main-header nav {
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+  line-height: 25px;
+  width: 50%;
+}
+@media (max-width:500px) {
+  .main-header nav {
+    width: 85%;
+  }
+}
+.main-header nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-header {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  .pic-header {
+    width: 100%;
+    height: 100px;
+  }
+}
+@media (max-width:500px) {
+  .home {
+    width: 90%;
+    margin: auto;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+@media (max-width:500px) {
+  .home .intro h2 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width:500px) {
+  .home .intro p {
+    padding: 0px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width:500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images .blast {
+    width: 95%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk h3 {
+  margin-bottom: 10px;
+}
+@media (max-width:500px) {
+  .home .walk h3 {
+    margin-top: 15px;
+  }
+}
+.home .walk p {
+  margin-bottom: 26px;
+}
+.home .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk-img {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.home .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
