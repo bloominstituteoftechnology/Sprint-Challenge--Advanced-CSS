@@ -1,1 +1,35 @@
 // Mixins Here
+
+@mobile : (max-width: 500px);
+
+.nav-set {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;  
+    background-color: @nav-bg;
+    font-family: @nav-font;
+    display: flex;
+    flex-direction: column;
+}
+
+.anchor {
+    text-decoration: none;
+    color: @nav-font;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        padding: 0 3px;
+    }
+}
+
+.btn(@width; @align: center; @color) {
+    width: @width;
+    text-align: @align;
+    color: @color;
+
+
+
+}
