@@ -136,8 +136,6 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
-  width: 800px;
-  margin: 0 auto;
 }
 h1,
 h2,
@@ -174,20 +172,19 @@ header h1 {
 header nav {
   margin-top: 2%;
   font-size: 1.8rem;
-  width: 100%;
-  max-width: 100%;
   display: flex;
   align-content: center;
   text-align: center;
+  justify-content: center;
+  width: 50rem;
 }
 header nav a {
   text-decoration: none;
   color: black;
-  width: 100%;
-  max-width: 50%;
   align-content: center;
   align-items: center;
   margin-bottom: 2%;
+  padding: 0 2%;
 }
 footer {
   color: #22283B;
@@ -198,6 +195,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    background: red;
+  }
 }
 .home .intro h2 {
   padding: 15px;
