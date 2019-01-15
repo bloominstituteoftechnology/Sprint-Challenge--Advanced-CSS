@@ -194,29 +194,9 @@ a {
   margin-left: 35px;
   color: black;
 }
-.nav .navItems a:before,
-.nav .navItems a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: #FFF;
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
-.nav .navItems a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
-.nav .navItems a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
-}
-.nav .navItems a:hover:before,
-.nav .navItems a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
+.nav .navItems a:hover {
+  animation-name: navItemsAnimation;
+  animation-duration: 3s;
 }
 .nav .navItems :first-child {
   margin-left: 0;
@@ -293,7 +273,14 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .walk-text .container:hover .btn {
+  height: 80px;
+  width: 50%;
+  border-radius: 50px;
+  background: yellow;
+  color: black;
+}
+.home .walk .walk-text .container .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,15 +290,8 @@ footer {
   background: #454A59;
   color: white;
 }
-.home .walk .walk-text .btn p {
+.home .walk .walk-text .container .btn p {
   margin: 0px;
-}
-.home .walk .walk-text .btn:hover {
-  height: 80px;
-  width: 50%;
-  border-radius: 50px;
-  background: yellow;
-  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -339,7 +319,7 @@ footer {
     flex-direction: column;
     padding-top: 15px;
   }
-  .home .walk .walk-text .btn {
+  .home .walk .walk-text .container .btn {
     width: 100%;
   }
 }

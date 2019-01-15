@@ -66,31 +66,35 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        //width: 33%;
-
-        .signUpBtnMIXIN(60px;33%;5px;@river-bend;white);
-
-        // height: 60px;
-        // border-radius: 5px;
-
-        // background: @river-bend;
-        // color: white;
-        
-        p {
-          margin: 0px;
-        }
-
+      .container {
         &:hover {
-          .signUpBtnMIXIN(80px;50%;50px;yellow;black);
+          .btn {
+            .signUpBtnMIXIN(80px;50%;50px;yellow;black);
+          }
         }
 
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          //width: 33%;
+
+          .signUpBtnMIXIN(60px;33%;5px;@river-bend;white);
+
+          // height: 60px;
+          // border-radius: 5px;
+
+          // background: @river-bend;
+          // color: white;
+          
+          p {
+            margin: 0px;
+          }
+        }
       }
     }
+
 
     .walk-img {
       width: 46%;
@@ -118,7 +122,7 @@
         padding-top: 15px;
         //align-items: center; 
 
-        .btn {
+        .container .btn {
           width: 100%;
         }
       }
