@@ -1,6 +1,9 @@
+
+
 // Home Content
 
 .home {
+
 
   .intro {
 
@@ -11,7 +14,20 @@
     p {
       padding:0 15px;
     }
+
+    .earth {
+      max-width: 100%;
+      height: auto;
+    }
   
+    @media @phone {
+      .intro {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
   }
 
   .space-images {
@@ -24,6 +40,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+      .blast {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        margin-top: 2%; 
+      }
     }
   }
 
@@ -46,20 +77,25 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 0;
+      flex-direction: column;
+    }
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+      }
 
       h3 {
         margin-bottom: 10px;
       }
-
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
+
 
     .walk-img {
       width: 46%;
@@ -71,5 +107,44 @@
         border-radius: 10px;
       }
     }
+
+    button {
+      .btnmix(15rem, 3rem);
+      &:hover {
+        background-color: red;
+        color: black;
+      }
+
+      @media @phone {
+        width: 90%;
+      }
+    }
+
+
+      .walk-img {
+      order: -1;
+      width: 90%;
+      height: 90%;
+      }
+      .walk-text {
+        order: 1;
+      }
+      button {
+        order: 2;
+      }
+    
   }
-}// home
+
+  footer {
+    width: 90%;
+    max-width: 90%;
+    margin: auto;
+
+    @media @phone {
+      footer {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
