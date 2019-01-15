@@ -309,19 +309,33 @@ footer {
   body .visit-planets {
     width: 100%;
   }
-  body .walk {
+  body #walk {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin: 0 -250px;
   }
-  body .walk .walk-text {
-    margin: 20px;
+  body #walk .walk-text {
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
   }
-  body .walk .walk-text .btn {
+  body #walk .walk-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+  }
+  body #walk .walk-img .walking {
     width: 100%;
   }
-  body .walk .walk-img {
-    margin: 0 40px;
+  body #walk .btn {
+    margin: 20px 0px;
+    width: 100%;
+    padding: 15px;
   }
 }

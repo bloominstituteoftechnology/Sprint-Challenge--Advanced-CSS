@@ -100,7 +100,7 @@
 }
 
 @media @phone {
-
+  
   body{
 
     .space-images {
@@ -124,26 +124,42 @@
       width: 100%;
     }
 
-    .walk {
+    #walk {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+
       .column(column-reverse, center);
-      margin: 0 -250px;
-      
-        .walk-text {
-          margin: 20px;
            
+          .walk-text {
+            width: 100%;
+            padding: 15px;
+            margin: 10px;
+          }
+
+          .walk-img {
+            .row(row, center);
+            width: 100%;
+            margin: 0;
+            padding: 0px;
+            
+              .walking {
+                width: 100%;
+              }
+          }
+
           .btn {
+            margin: 20px 0px;
               width: 100%;
+              padding: 15px;
             }
-        }
-
-        .walk-img {
-          margin: 0 40px;
-
-        }
-      
     }
+  
+  }
+      
+}
 
    
-  }
-}
+
+
 
