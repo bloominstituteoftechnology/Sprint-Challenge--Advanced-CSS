@@ -176,10 +176,10 @@ nav {
 }
 @media (max-width:500px) {
   nav {
-    position: static;
     font-size: 1.6rem;
     width: 100%;
-    top: -50;
+    top: 60;
+    left: 10px;
   }
 }
 nav ul {
