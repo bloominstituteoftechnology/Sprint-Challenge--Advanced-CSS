@@ -9,6 +9,18 @@ img {
     padding: 60px 40px;
 }
 
+@keyframes reverse {
+    0% {
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+    }
+    50% {
+        background-image: linear-gradient(to left, @btn-bg-color, #454A59);
+    }
+    100% {
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+    }
+}
+
 .sign-in-form {
     margin: 105px auto 0 auto;
     display: flex;
@@ -21,6 +33,9 @@ img {
         width: 50%;
         .flex(space-between; flex-start);
         flex-direction: column;
+        animation-name: reverse;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
         background-image: linear-gradient(to right, @btn-bg-color, #454A59);
         padding: 60px 4% 30px 4%;
         @media @phone {
@@ -81,7 +96,10 @@ img {
             border: none;
             border-bottom: 1px solid @main-border-color;
             width: 100%;
-            margin-bottom: 65px;
+            margin-bottom: 57px;
+            &:focus {
+                outline: 2px solid @main-border-color;
+            }
         }
         .btn {
             .button;
