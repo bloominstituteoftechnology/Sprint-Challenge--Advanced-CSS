@@ -223,7 +223,6 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .home .space-images .sky {
@@ -254,7 +253,6 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -288,6 +286,9 @@ footer {
   color: black;
 }
 @media (max-width: 500px) {
+  .home .walk .walk {
+    padding: 0;
+  }
   .home .walk .walk-img {
     order: -1;
     width: 90%;
@@ -308,7 +309,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home footer footer {
-    width: 100%;
-    max-width: 100%;
+    color: red;
   }
 }

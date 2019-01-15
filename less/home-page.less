@@ -40,7 +40,6 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      border: 1px solid red;
     }
 
     @media @phone {
@@ -77,7 +76,6 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 
     .walk-text {
       width: 50%;
@@ -109,6 +107,9 @@
     }
 
     @media @phone {
+      .walk {
+        padding: 0;
+      }
       .walk-img {
       order: -1;
       width: 90%;
@@ -131,8 +132,7 @@
 
     @media @phone {
       footer {
-        width: 100%;
-        max-width: 100%;
+        color: red;
       }
     }
   }
