@@ -191,11 +191,11 @@ nav .nav-head {
 .navver {
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  background-color: #23293B;
-  position: fixed;
+  opacity: 0.6;
   top: 0;
   left: 0px;
+  background-color: #23293B;
+  position: fixed;
   width: 100%;
 }
 .navver .a-tag {
@@ -203,6 +203,12 @@ nav .nav-head {
   text-decoration: none;
   color: #F6F7F8;
   margin: 1rem;
+}
+.form-1 {
+  margin-top: 20%;
+}
+.form-body {
+  background-image: url("lifeinspace.jpeg");
 }
 footer {
   color: #22283B;
@@ -359,4 +365,7 @@ footer {
   height: auto;
   border-radius: 10px;
   margin: 20px 2.5%;
+}
+.form-body {
+  background-image: url('lifeinspace.jpeg');
 }

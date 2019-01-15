@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+#navver-2 {
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    margin-top: -1.2%;
+    background-color: #F6F7F8;
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.a-tag {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #23293B;
+    margin: 1rem;
+}
+
+.a-tag:hover {
+    background: #F6F7F8;
+    color: black;
+    text-decoration: underline;
+}
+
+.form-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/lifeinspace.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form {
+    margin-right: 10%;
+    background: #F6F7F8;
+    padding: 5%;
+    padding-right: 19%;
+}
+
+input {
+    background: #F6F7F8;
+    width: 100%;
+    margin: 4%;
+    padding: 6.5%;
+    font-size: 1.2rem;
+}
+
+.form button {
+    background: #23293B;
+    width: 275px;
+    margin-left: 3.75%;
+    padding: 6%;
+    color: #F6F7F8;
+    font-size: 1.2rem;
+}
+
+.form button:hover {
+    background: black
+}
+
+.register {
+    font-size: 1.2rem;
+    margin-left: 5.1%;
+}
