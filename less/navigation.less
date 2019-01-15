@@ -5,20 +5,35 @@ nav {
   top: 70px;
   background: #fff;
   opacity: 0.9;
-  // border: 1px solid red;
+  border: 1px solid red;
   width: 80%;
   overflow-x: hidden;
   // text-align: center;
   // padding-bottom: 20px;
+
+  @media @phone {
+    position: sticky;
+    font-size: 1.6rem;
+    position: initial;
+    width: 100%;
+  }
   ul {
     .flex-spacearound;
 
+    @media @phone {
+      // justify-content: space-around;
+    }
     li {
       list-style: none;
       padding: 10px 0;
       padding-right: 30px;
       // margin: 5px;
       // flex-basis: 1;
+
+      @media @phone{
+        padding-right: 20px;
+        font-style: bold;
+      }
       a {
         transition: 1s;
        .anchorNavs;
