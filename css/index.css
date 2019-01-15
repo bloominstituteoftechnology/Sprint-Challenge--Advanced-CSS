@@ -495,10 +495,13 @@ p {
   height: 15%;
   width: 50%;
 }
-.home .signup form input:last-child {
+.home .signup form button {
   margin-top: 2%;
   background: #23293B;
   color: lightblue;
+  font-size: 2rem;
+  width: 50%;
+  height: 15%;
 }
 footer {
   color: #22283B;
