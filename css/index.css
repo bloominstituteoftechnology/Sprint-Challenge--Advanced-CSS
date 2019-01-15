@@ -172,6 +172,7 @@ nav {
   opacity: 0.9;
   width: 80%;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 @media (max-width:500px) {
   nav {
@@ -203,7 +204,6 @@ nav ul li a {
   transition: 1s;
   text-decoration: none;
   color: #454A59;
-  padding: 5px;
 }
 nav ul li a:hover {
   background: #454A59;
@@ -238,6 +238,7 @@ footer {
 @media (max-width:500px) {
   .home .intro .headerIMG img {
     width: 100%;
+    max-width: 500px;
   }
 }
 .home .intro h2 {
@@ -254,12 +255,13 @@ footer {
 .home .space-images {
   display: flex;
   width: 100%;
+  max-width: 800px;
 }
 @media (max-width:500px) {
   .home .space-images {
     flex-direction: column;
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
   }
 }
 .home .space-images img {
@@ -272,7 +274,8 @@ footer {
 }
 @media (max-width:500px) {
   .home .space-images .blast {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin: 0 20px;
   }
 }
@@ -286,7 +289,7 @@ footer {
     display: none;
   }
 }
-.home .walk-img img {
+.home .walk-img .walk-image {
   width: 100%;
   max-width: 450px;
   margin: 0 20px;

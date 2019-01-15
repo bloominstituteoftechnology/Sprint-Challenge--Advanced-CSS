@@ -26,6 +26,7 @@
 
         @media @phone {
           width: 100%;
+          max-width: 500px;
         }
       }
     }
@@ -47,11 +48,12 @@
     display: flex;
     // flex-wrap: wrap;
     width: 100%;
+    max-width: 800px;
 
     @media @phone {
       flex-direction: column;
       width: 100%;
-      max-width: 400px;
+      max-width: 800px;
     }
 
     img {
@@ -69,8 +71,8 @@
 
     .blast{
       @media @phone {
-        width: 450px;
-        // max-width: 460px;
+        width: 100%;
+        max-width: 450px;
         margin: 0 20px;
       }
     }
@@ -97,11 +99,15 @@
   // }
 
   .walk-img {
-    img {
+    .walk-image {
       width: 100%;
       max-width: 450px;
       margin: 0 20px;
       border-radius: 10px;
+      
+      @media @phone {
+
+      }
     }
    
   }
