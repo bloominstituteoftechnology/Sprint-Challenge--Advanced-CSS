@@ -1,3 +1,6 @@
+body {
+  background: #e9fbff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +148,10 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4.2rem;
+  text-align: center;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -178,7 +185,6 @@ nav .nav-links {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
 }
 nav .nav-links a {
   text-decoration: none;
@@ -195,11 +201,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
+.home {
+  padding-top: 100px;
+}
 .home .intro img {
   border-radius: 5px;
   width: 100%;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -216,11 +224,6 @@ footer {
   .home .intro p {
     padding-left: 9px;
   }
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .home .space-images {
   display: flex;
