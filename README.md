@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive has several distinct layouts for different screen sizes while responsive is done by using fluid grids making it
+perfect for all screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is starting with mobile devices and designing for them first then adjust the @media queries for each breakpoint to fit tablet sizes along with desktop sizes. While desktop first is the oppisite, designing for mobile and tablets last.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The tag `font-size: 62.5%` in the `html` tag makes the `rem` units ten-based. So if you had `font-size: 1.6rem` it would be like using `16px` though when you shrink the page down it will respond to the screen size as well.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a great tool to use to help you write good css. It will convert what you write in a less file into a nice css with proper selectors based on what you select and nest in your less file.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is nesting. If I know something is a child of the parent I want to use I can style it by nesting and looking at the finished css to see the end product. The concept that gives me the most trouble is the output of the css. I can easily get lost looking at it but I know I have to take a deep breath and look away from it and to my less files. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,18 +61,18 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -69,7 +80,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -85,23 +96,23 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
