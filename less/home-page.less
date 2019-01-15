@@ -1,7 +1,15 @@
 // Home Content
 
-.home {
-  padding-top: 100px;
+.container {  
+  
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; 
+
+    @media @phone {      
+      padding-left: 5px;
+    }
+  }
 
   .intro {
 
@@ -13,10 +21,8 @@
 
       h2 {
         padding: 15px;
+        
 
-        @media @phone {
-          padding-left: 9px;
-        }
   }
 
     p {
@@ -75,13 +81,13 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    border-top: 2px solid rgb(168, 168, 168);
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
     @media @phone {
-      margin-top: 0;
+      margin-top: 0;      
       flex-direction: column-reverse;
       padding: 40px 9px 20px;
     }
@@ -127,4 +133,4 @@
       }
     }
   }
-}
+
