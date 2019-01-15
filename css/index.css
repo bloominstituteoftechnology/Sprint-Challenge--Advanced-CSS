@@ -1,3 +1,16 @@
+.li_mixin {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -231,20 +244,27 @@ footer {
   margin-top: 13px;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .trying_again .walk {
     margin-top: 10px;
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     padding: 0px;
   }
-  .home .walk-img {
-    width: 100%;
+  .home .trying_again .walk .walk-img {
+    width: 89%;
+    padding: 10px 0 10px 0;
+    margin: 0px;
   }
-  .home .walk-text {
-    width: 100%;
+  .home .trying_again .walk .walk-text {
+    width: 89%;
   }
-  .home .walk-text .btn {
+  .home .trying_again .walk .walk-text .btn {
     width: 98%;
+    border-radius: 2px;
+    height: 4rem;
+    margin-bottom: 10px;
+    padding-top: 1rem;
   }
 }
 .home .walk {
@@ -280,12 +300,12 @@ footer {
 .btn {
   width: 30%;
   background: #22283A;
-  color: white;
   height: 35px;
-  border-radius: 5px;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 6px;
+  border-radius: 5px;
+  color: white;
 }
 .btn:hover {
   background-color: white;

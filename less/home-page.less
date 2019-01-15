@@ -66,30 +66,40 @@
 
 
   @media @phone {
-    .walk{
+    .trying_again .walk
+   {
      margin-top: 10px;
+     display: flex;
      flex-direction: column-reverse;
      align-items: center;
+  
      padding: 0px;
     
     }
 
-     .walk-img {
+    .trying_again .walk .walk-img {
 
-     width:100%;
+     width:89%;
+     padding: 10px 0 10px 0;
+     margin: 0px;
 
      }
 
-     .walk-text {
+     .trying_again .walk .walk-text {
 
-      width:100%;
+      width:89%;
+      
  
       }
 
 
-     .walk-text .btn {
+      .trying_again .walk  .walk-text .btn {
 
       width: 98%;
+      border-radius: 2px;
+      height: 4rem;
+      margin-bottom: 10px;
+      padding-top: 1rem;
  
       }
     }
@@ -106,6 +116,7 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
 
     .walk-text {
       width: 50%;
@@ -147,13 +158,12 @@
 
   width: 30%;
   background: @btn-bg-color;
-  color: white;
   height: 35px;
   border-radius: 5px;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 6px;
-  
+  .btn_mixin(5px;white);
 }
 
 .btn:hover {
