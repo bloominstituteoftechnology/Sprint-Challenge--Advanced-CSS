@@ -83,18 +83,8 @@
       }
 
       .btn {
-        background-color: @btn-bg-color;
-        color:white;
-        .border-radius(5px);
-        height: 25px;
-        width: 65px;
-
-        &:hover {
-          background-color: white;
-          font-weight: bold;
-          color: @btn-bg-color;
-        }
-
+        .btn(@btn-bg-color, white);
+        
         @media @phone {
           margin: 12.125px 0px;
           width: 100%;
