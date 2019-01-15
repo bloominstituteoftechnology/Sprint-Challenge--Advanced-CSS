@@ -1,0 +1,406 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+h3 {
+  font-size: 2.8rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 2.6rem;
+  }
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 13px;
+}
+.navigation .nav__logo {
+  font-size: 4rem;
+  padding-bottom: 19px;
+}
+@media (max-width: 500px) {
+  .navigation .nav__logo {
+    font-size: 3.8rem;
+    padding-bottom: 15px;
+  }
+}
+.navigation .nav__link-container {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  .navigation .nav__link-container {
+    width: 355px;
+  }
+}
+.navigation .nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  transition: 1.5s;
+}
+.navigation .nav__link:hover {
+  transform: scale(1.2);
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 500px;
+  }
+}
+.home .intro img {
+  padding-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 470px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-bottom: 31px;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+    width: 92%;
+    margin-left: 20px;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text #last {
+  margin-bottom: 45px;
+}
+.home .walk .walk-text .btn {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    padding: 25px 185px;
+    margin-top: 100px;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: slategray;
+  color: silver;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 92%;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home footer {
+    margin-top: 43px;
+  }
+}
+.form-header img {
+  margin-top: 15px;
+}
+.form-header h2 {
+  padding: 25px 0;
+}
+.form-container {
+  margin-bottom: 30px;
+}
+.form-container .form {
+  font-size: 1.6rem;
+}
+.form-container .form input[type=text],
+.form-container .form select,
+.form-container .form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form-container .form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-container .form input[type=submit]:hover {
+  background-color: #45a049;
+}
+.form-container .form .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

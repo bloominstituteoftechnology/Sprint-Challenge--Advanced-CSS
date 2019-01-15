@@ -1,1 +1,40 @@
 // Navigation code here
+
+.navigation {
+    max-width: 800px;
+    margin: 0 auto;
+    .flex();
+    flex-direction: column;
+    padding-top: 13px;
+
+    .nav__logo {
+        font-size: 4rem;
+        padding-bottom: 19px; 
+
+        @media @phone {
+            font-size: 3.8rem;
+            padding-bottom: 15px;
+        }
+    }
+
+    .nav__link-container {
+        width: 375px;
+        .flex(@justify:space-between);
+
+        @media @phone {
+            width: 355px;
+            // max-width: 355px;
+            // width: 100%;
+        }
+    }
+
+    .nav__link {
+        .normalize(black);
+        font-size: 1.6rem;
+        transition: 1.5s;
+    }
+
+    .nav__link:hover {
+        transform: scale(1.2);
+    }
+}

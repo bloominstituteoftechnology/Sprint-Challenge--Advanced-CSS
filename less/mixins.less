@@ -1,1 +1,26 @@
-// Mixins Here
+// Mixins in here
+
+.flex(@justify:space-between;@a-items:center;@a-content:center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @a-items;
+    align-content: @a-content;
+}
+
+.normalize(@color) {
+    text-decoration: none;
+    color: @color;
+}
+
+.buttonize(@color;@fontsize) {
+    background-color: @color;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: @fontsize;
+}
+
+.hover(@color1;@color2) {
+    background-color: @color1;
+    color: @color2;
+}
