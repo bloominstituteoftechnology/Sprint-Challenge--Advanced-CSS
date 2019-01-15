@@ -353,7 +353,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
     width: 100%;
-    max-width: 460px;
+    max-width: 470px;
     height: 80px;
     padding: 15px;
   }
