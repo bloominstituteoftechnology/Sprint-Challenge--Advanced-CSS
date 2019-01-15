@@ -1,18 +1,33 @@
 // Navigation code here
 nav {
-
+  position: fixed;
+  left: 100px;
+  top: 70px;
+  background: #fff;
+  opacity: 0.9;
+  // border: 1px solid red;
+  width: 80%;
+  overflow-x: hidden;
+  // text-align: center;
+  // padding-bottom: 20px;
   ul {
     .flex-spacearound;
 
     li {
       list-style: none;
-
+      padding: 10px 0;
+      padding-right: 30px;
+      // margin: 5px;
+      // flex-basis: 1;
       a {
+        transition: 1s;
        .anchorNavs;
-
+        
        &:hover {
          background: @river-bend;
          color: @sea-shell;
+        //  padding: 20px;
+        transition: 1s;
        }
       }
     }

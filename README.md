@@ -34,16 +34,17 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
--adaptive involves breakpoints and fully responsive is more fluid percentage base.
+-adaptive involves breakpoints and fully responsive is a combination of adaptaive and fluid websites.
 
 2. Describe what it means to be mobile first vs desktop first.
 
--mobile first is using @media min-width and using desktop first is using @media max-width, to be mobile first is start the design performance in columns then as the site expands, we can have it fill out the max width of device screen
+-mobile first is using @media min-width and using desktop first is using @media max-width, 
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
--it helps sets all of the fonts to the same default styling before using rem measurements
+-it allows us to use rem units in similar way to px e.g. 16px = 1.6rem, 32px = 3.2rem, 100px = 10rem
+
 
 
 4. How would you describe preprocessing to someone new to CSS?

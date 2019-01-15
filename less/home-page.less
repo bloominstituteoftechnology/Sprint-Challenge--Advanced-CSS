@@ -2,6 +2,8 @@
 
 .title {
   margin-top: 10px;
+  // padding-bottom: 30px;
+  margin-bottom:50px;
   h1 {
     // border: @border;
     text-align: center;
@@ -58,8 +60,11 @@
         display: none;
       }
     }
+
     img:nth-child(3) {
-      display: none;
+      @media @phone {
+        display: none;
+      }
     }
 
   }
@@ -105,21 +110,27 @@
         margin-bottom: 26px;
       }
 
+        .btn {
+          .btnMixin(@river-bend, 110px, 40px, white);
+          font-size: 1.6rem;
+          // padding: 15px 10px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          transition: 1s;
 
+          &:hover{
+            color: @river-bend;
+            background: white;
+          }
 
-      .btn {
-        .btnMixin(@river-bend, 160px, 20px, white);
-        font-size: 1.6rem;
-        padding: 20px;
-        text-align: center;
-        @media @phone {
-          // display: block;
-          width: 100%;
-          height: 80px;
-          padding: 25px;
+          @media @phone {
+            // display: block;
+            width: 100%;
+            height: 80px;
+            padding: 25px; 
+          }
         }
-      }
-
     }
 
     .walk-img {

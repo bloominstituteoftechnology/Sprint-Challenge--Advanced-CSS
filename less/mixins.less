@@ -3,15 +3,15 @@
 .flex-spacearound(){
   display: flex;
   // border: @border;
-  justify-content: space-around;
+  justify-content: center;
   // width: 800px;
-  padding: 10px;
-  margin: 0 10rem;
+  font-size: 1.4rem;
 }
 
 .anchorNavs(){
   text-decoration: none;
   color: @river-bend;
+  padding: 5px;
 }
 
 .btnMixin(@bgColor, @width, @height, @color){
@@ -19,4 +19,10 @@
   width: @width;
   height: @height;
   color: @color;
+}
+
+.center(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
