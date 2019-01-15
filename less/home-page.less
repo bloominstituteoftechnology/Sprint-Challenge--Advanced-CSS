@@ -20,12 +20,16 @@
     width: 100%;
 
     img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+      width: 100%;
+      height: auto;
+      
+      @media @phone {
+        border-radius: 5px;
+      }
     }
   }
+
+
 
   .visit-planets {
     padding: 15px;
@@ -58,7 +62,7 @@
       }
 
       .btn {
-        
+        .btn-basic()
       }
     }
 
