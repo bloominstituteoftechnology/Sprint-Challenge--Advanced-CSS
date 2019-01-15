@@ -8,6 +8,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,13 +16,26 @@
 </head>
 
 <body>
-
- <!-- navigation code here -->
+    <div class="trying">
+    <nav>
+          <div class="logo">
+            <h2>SpaceWalkers<h2>
+          </div>
+        <ul class="navy">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li>Sign In</li>
+        </ul>
+      </nav>
+    </div>
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+
+       <img class="header_img" src="img/main-header.png">
 
       <h2>Lift Off</h2>
     
@@ -29,9 +43,9 @@
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class ="img_show"  src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img class = "img_hide" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class = "img_hide" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -52,7 +66,7 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <strong>Sign Up</strong>
         </div>
       </div>
       
