@@ -1,1 +1,28 @@
 // Navigation code here
+.navtainer {
+  .flex(column);
+  text-align: center;
+  margin-bottom: 10px;
+  h1 {
+    font-size: 4rem;
+    margin: 10px;
+  }
+  nav {
+    .responsive-width();
+    .flex(row);
+    //border: 1px solid black;
+    margin: 0 auto;
+    @media @phone {
+      padding: 0 10px;
+      margin-top: 10px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.8rem;
+      @media @phone {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
