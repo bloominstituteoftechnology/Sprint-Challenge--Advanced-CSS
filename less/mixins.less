@@ -5,4 +5,28 @@
     border-radius: 5%;
     width: @width;
     height: @hieght;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar(@width: 50rem) {
+    margin-top: 2%;
+    font-size: 1.8rem;
+    // width: 100%;
+    // max-width: 100%;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    width: @width;
+}
+
+.nava(@a-content, @a-items) {
+    text-decoration: none;
+    color: black;
+    align-content: @a-content;
+    align-items: @a-items;
+    margin-bottom: 2%;
+    padding: 0 2%;
 }
