@@ -1,3 +1,4 @@
+//MIXINS GENERIC
 .background(@color: transparent; @image: none; @size: auto auto; @repeat: repeat; @position: center center) {
     background-color: @color;
     background-image: @image;
@@ -33,7 +34,7 @@
         outline: @outline;
     }
 }
-//OBJECTS
+//MIXIN OBJECTS
 .signup-btn(@bg-color; @text-color) {
     .background(@color: @btn-bg-color);
     .size(3.5rem, 10rem);
