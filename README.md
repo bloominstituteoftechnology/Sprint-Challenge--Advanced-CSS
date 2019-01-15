@@ -50,7 +50,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
   
-  **I like being able to nest my media queries, as I feel this is more intuitive and keeps the styles in the area that they are effecting.**
+  **I like being able to nest my media queries, as I feel this is more intuitive and keeps the styles in the area that they are effecting. The most challenging aspect so far has been creating mobile styles for code that has been provided. Sometimes it can be tricky finding where various margins and paddings are being set in order to adjust them.**
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
