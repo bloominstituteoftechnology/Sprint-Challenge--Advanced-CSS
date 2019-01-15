@@ -171,14 +171,14 @@ p {
 }
 .navigation nav {
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
+  justify-content: center;
   width: 100%;
   padding: 10px 90px;
 }
 .navigation nav a {
   color: #454A59;
   text-decoration: none;
+  padding: 0 10px;
 }
 @media (max-width: 500px) {
   .navigation .navigation nav {
