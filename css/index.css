@@ -4,30 +4,6 @@
   align-content: center;
   align-items: center;
 }
-.sign-up-btn {
-  border-radius: 5px;
-  background: #23293B;
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 100px;
-}
-@media (max-width: 500px) {
-  .sign-up-btn {
-    width: 100%;
-    padding: 25px;
-  }
-}
-.sign-up-btn:hover {
-  border: 1px solid #23293B;
-  background: white;
-  color: #23293B;
-  transition: 0.5s;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

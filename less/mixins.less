@@ -7,10 +7,10 @@
     align-items: center;
 }
 
-.sign-up-btn {
+.sign-up-btn (@background, @color) {
     border-radius: 5px;
-    background: @ebony-clay;
-    color: white;
+    background: @background;
+    color: @color;
     font-size: 1.8rem;
     font-weight: bold;
     padding: 10px;
@@ -25,9 +25,9 @@
       }
 
     &:hover {
-        border:1px solid @ebony-clay;
-        background: white;
-        color: @ebony-clay;
+        border:1px solid @background;
+        background: @color;
+        color: @background;
         transition: .5s;
     }
 }
