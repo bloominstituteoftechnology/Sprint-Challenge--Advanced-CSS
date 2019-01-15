@@ -1,7 +1,34 @@
 // Home Content
 
 .home {
+ @media @mobile {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ 
+ .walk {
+   @media @mobile {
+    //  width: 100%;
+    .full-width();
+   }
+ }
 
+ .space-walk {
+   @media @mobile {
+    //  width: 100%; 
+    .full-width();
+   }
+ }
+ 
+.top-img {
+  .full-width();
+  margin-top: 4.5%; 
+  @media @mobile {
+    .full-width();
+    
+  }
+}
   .intro {
 
     h2 {
@@ -19,13 +46,37 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    .blast {
+      @media @mobile {
+        width: 92.5%;
+      }
+    }
+
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
+    img:hover {
+      transform: scale(1.1); 
+     }
+   
   }
+
+ 
 
   .visit-planets {
     padding: 15px;
@@ -43,11 +94,26 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex();
+    
+    
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      .full-width();
+      padding: 0;
+
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 5%;
+      padding: 4%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +124,52 @@
       }
 
       .btn {
+        width: 20%;
+        height: 10%;
+        padding: 2%;
+        padding-left: 4%;
+        font-size: 1.3rem;
+        .btn-mixin(5px, @btn-bg-color, @porcelain);
+        
+        @media @mobile {
+          width: 100%;
+          height: 50px;
+          padding: 2.5%;
+          padding-left: 42%;
+          padding-top: 4.5%;
+          font-size: 1.3rem;
+          border-radius: 5px;
+          background: #23293B;
+          color: #F6F7F8;
+        }
       }
     }
+   
+    .btn:hover {
+        background-color: @shuttle-gray;
+        color: black;
+    }
+  
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        width: 100%;
+        margin: 0%;
+        order: -1;
+      }
       
       img {
-        width: 100%;
+        width: 92.5%;
         height: auto;
         border-radius: 10px;
+        margin: 20px 2.5%;
       }
     }
   }
 }// home
+
+.form-body {
+  background-image: url('lifeinspace.jpeg')
+}

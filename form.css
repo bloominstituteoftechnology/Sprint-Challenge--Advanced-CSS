@@ -1,0 +1,135 @@
+html {
+    font-size: 62.5%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-facebook,
+{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-tumblr {
+    background: #2c4762;
+    color: white;
+}
+
+#navver-2 {
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    margin-top: -1.2%;
+    background-color: #F6F7F8;
+    position: fixed;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.a-tag {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #23293B;
+    margin: 1rem;
+}
+
+.a-tag:hover {
+    background: #F6F7F8;
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/lifeinspace.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-page {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form {
+    margin-right: 10%;
+    background: #F6F7F8;
+    padding: 5%;
+    padding-right: 19%;
+}
+
+input {
+    background: #23293B;
+    width: 100%;
+    margin: 4%;
+    padding: 6.5%;
+    font-size: 1.2rem;
+}
+
+.form button {
+    background: #23293B;
+    width: 272px;
+    margin-left: 4%;
+    padding: 6%;
+    color: #F6F7F8;
+    font-size: 1.2rem;
+}
+
+.form button:hover {
+    background: black
+}
+
+.register {
+    font-size: 1.2rem;
+    margin-left: 5.1%;
+}
+
+.fa {
+    width: 17px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class='container'>
+    <nav>
+        <div class="nav-top">
+            <div class="nav-head">
+                <!-- <h1>SpaceWalkers</h1> -->
+            </div>
+            <div id='navver-2' class="navver">
+                <a class='a-tag' href="index.html">Home</a>
+                <a class='a-tag' href="#">About Us</a>
+                <a class='a-tag' href="#">Blog</a>
+                <a class='a-tag' href="#">Contact</a>
+                <a class='a-tag' href="Untitled-1.html">Sign In</a>
+            </div>
+    </nav>
+
+    <form class="form-1">
+        <div class="login-page">
+            <div class="form">
+                <form action="" class="register">
+                    <input type='text' placeholder="Email">
+                    <input type='text' placeholder="UserName">
+                    <input type='text' placeholder="Password">
+                    <input type='text' placeholder="Address">
+                    <input type='text' placeholder="Phone-Number">
+                    <button id='createButton'>Create</button>
+                    <p class="register ">Already Registered? <a href="index.html ">Login</a></p>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-snapchat-ghost"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-tumblr"></a </form>
+            </div>
+        </div>
+        </form>
+
+
+
+        <script>
+            var createButton = document.getElementById('createButton')
+            var form = document.getElementsByClassName('form')
+            createButton.addEventListener('click', function() {
+                form.animate({
+                    height: 'toggle',
+                    opacity: 'toggle'
+                }, slow)
+            })
+        </script>
+</body>
+
+</html>

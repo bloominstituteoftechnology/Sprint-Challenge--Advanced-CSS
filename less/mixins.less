@@ -1,1 +1,18 @@
 // Mixins Here
+.btn-mixin(@border-radius, @background-color, @color){
+    border-radius: @border-radius;
+    background: @background-color;
+    color: @color;
+}
+
+.none(@none) {
+    display: @none;
+}
+
+.flex() {
+    display: flex;
+    justify-content: center;
+}
+.full-width() {
+    width: 100%;
+}
