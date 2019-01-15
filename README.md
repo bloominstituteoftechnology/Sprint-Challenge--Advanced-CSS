@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive is a page that uses breakpoints and and media query to allow the site to change based on the screen size using it.
+Adaptive queues different pages based on the screen accessing it. Desktop gets a page, mobile gets a page, tablets get a page. Each one is designed for the respective screen it displays on.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Design strategies that offer benefits based on your project objective. 
+
+Mobile-first will focus on designing a site with functionality on the smallest screens first. Afterwords, you can add extras as the resolution increases. Also referred to as a content first design, as each piece of content must be structured in order of importance to the UX, with the most vital bits available from the smallest screens.
+
+Desktop first is the opposite. The design is structured around users accessing the site from a laptop or desktop pc. As such the mobile scaling is usually less refined. Often, elements will be hidden, wrapped, and transformed to try and fit as many funtions into the mobile experience as possible. 
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the rem unit 0.1 equivalent to 1pt in a font size. As such 1.6rem would equal 16pt font.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Essentially, a preprocessor will allow you to utilize differnt syntax to manipulate the styling on your site. It can also allow various amounts of extra functionality. (eg. Mixins.)
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Well, I imagine something like LESS provides a nice place for people that prefer JS syntax. I think I will grow to like it. Also, assigning variables is always a good thing to be able to do.
+
+Trouble? Mixins. It is difficult for me to identify when a mixin would really help me. But I'm committed to figuring it out. Eventually.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
