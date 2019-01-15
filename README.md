@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-   A responsive website dynamically re-arranges its contents optimally as the screen size changes. An adaptive website has a variety of fixed layouts that are enabled when the appropriate screen size is detected.
+   A responsive website dynamically re-arranges its contents optimally as the screen size changes. An adaptive website has a variety of fixed layouts that are enabled when the appropriate screen size is detected. Responsive = fluid + adaptive.
 
 2. Describe what it means to be mobile first vs desktop first.
 
@@ -42,7 +42,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-    The typical default browser font-size is 16px and 62.5% of 16px is 10px. This would then make 1.6rem = 16px and allow users to smoothly change their default browser's font-size.
+    The typical default browser font-size is 16px and 62.5% of 16px is 10px. This would then make 1.6rem = 16px and allow users to smoothly change their default browser's font-size. 1 rem = 10px, etc. The convention is used to help developers easily understand rem font sizing.
 
 4. How would you describe preprocessing to someone new to CSS?
 
