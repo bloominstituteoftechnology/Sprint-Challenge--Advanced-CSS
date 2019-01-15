@@ -77,8 +77,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 0;
+      flex-direction: column;
+    }
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 90%;
+      }
+
       h3 {
         margin-bottom: 10px;
       }
@@ -86,6 +95,7 @@
         margin-bottom: 26px;
       }
     }
+
 
     .walk-img {
       width: 46%;
@@ -104,25 +114,25 @@
         background-color: red;
         color: black;
       }
+
+      @media @phone {
+        width: 90%;
+      }
     }
 
-    @media @phone {
-      .walk {
-        padding: 0;
-      }
+
       .walk-img {
       order: -1;
       width: 90%;
       height: 90%;
       }
       .walk-text {
-        width: 40%;
         order: 1;
       }
       button {
         order: 2;
       }
-    }
+    
   }
 
   footer {
@@ -132,7 +142,8 @@
 
     @media @phone {
       footer {
-        color: red;
+        width: 100%;
+        max-width: 100%;
       }
     }
   }
