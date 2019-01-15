@@ -1,0 +1,109 @@
+img {
+    max-width: 100%;
+    .ph-round(5px);
+    margin-top: 105px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    padding: 60px 40px;
+}
+
+@keyframes reverse {
+    0% {
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+    }
+    50% {
+        background-image: linear-gradient(to left, @btn-bg-color, #454A59);
+    }
+    100% {
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+    }
+}
+
+.sign-in-form {
+    margin: 105px auto 0 auto;
+    display: flex;
+    border-right: 1px solid @nav-border;
+    border-left: 1px solid @nav-border;
+    @media @phone {
+        flex-direction: column;
+    }
+    .intro {
+        width: 50%;
+        .flex(space-between; flex-start);
+        flex-direction: column;
+        animation-name: reverse;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+        background-image: linear-gradient(to right, @btn-bg-color, #454A59);
+        padding: 60px 4% 30px 4%;
+        @media @phone {
+            width: 100%;
+            padding: 15px 4% 15px 4%;
+        }
+        .text {
+            margin: 0 auto;
+            h2 {
+                padding: 15px;
+                color: white;
+                margin-bottom: 80px;
+                @media @phone {
+                    margin-bottom: 0;
+                }
+              }
+              
+              p {
+                padding:0 15px;
+                color: white;
+                margin-bottom: 20px;
+                @media @phone {
+                    display: none;
+                }
+              }
+        }
+        
+        h4 {
+            color: rgb(189, 193, 204);
+            padding: 15px;
+            font-size: 1.4rem;
+            @media @phone {
+                display: none;
+            }
+        }
+    }
+    
+    .form {
+        width: 50%;
+        padding: 25px;
+        @media @phone {
+            width: 100%;
+        }
+        label {
+            display: block;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            .note {
+                text-transform: lowercase;
+                font-size: 1rem;
+            }
+        }
+        input {
+            font-size: 1.6rem;
+            border: none;
+            border-bottom: 1px solid @main-border-color;
+            width: 100%;
+            margin-bottom: 57px;
+            &:focus {
+                outline: 2px solid @main-border-color;
+            }
+        }
+        .btn {
+            .button;
+            width: 100%;
+        }
+    }
+}
