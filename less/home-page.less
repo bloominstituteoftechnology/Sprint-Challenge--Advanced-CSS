@@ -80,12 +80,17 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        border: 2px solid black;
+        width: 100%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
   }
-}// home
+}
