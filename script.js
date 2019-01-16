@@ -1,13 +1,22 @@
-const imghead = document.getElementById('bgtxth1');
-const imgparagraph = document.getElementById('bgtxtp');
+let imghead = document.getElementById('bgtxth1');
+let imgparagraph = document.getElementById('bgtxtp');
+let name = document.getElementById('box1');
+let email = document.getElementById('box2');
+
+function flexcenter(component) {
+    component.style.justifyContent = "center";
+    component.style.display = "flex";
+    component.innerHTML = (name.value.length < 20 ? `Thanks, ${name.value}` : `Thanks for signing up!`);
+}
+
+function block(component) {
+    component.style.display = "block";
+    component.innerHTML = `Hi, ${name.value}`;
+}
+
 document.getElementById('submitbtn').addEventListener('click', function(e){
-    e.preventDefault();
-    imghead.innerHTML = (document.getElementById('box1').value.length < 20 ? `Thanks, ${document.getElementById('box1').value}` : `Thanks for signing up!`);
-    imghead.style.display = "flex";
-    imghead.style.justifyContent = "center";
-    imgparagraph.innerHTML = `You will receive updates at your email: ${document.getElementById('box2').value}.`;
-    imgparagraph.style.display = "block";
-    document.getElementById('username').innerHTML = `Hi, ${document.getElementById('box1').value}`;
-    console.log;
-    // return false;
+    flexcenter(imghead);
+    block(imgparagraph);
+    imgparagraph.innerHTML = `You will receive updates at your email: ${email.value}.`;
+    document.getElementById('username').innerHTML = `Hi, ${name.value}`;
 });
