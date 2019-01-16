@@ -26,7 +26,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your we
 
 [Click here to review the mobile design](design-files/home-mobile.png)
 
-## Self-Study Questions
+## Self-Study Questions..
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
 
