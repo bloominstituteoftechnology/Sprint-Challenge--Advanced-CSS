@@ -3,6 +3,7 @@
 @base-color: #10213d;
 @secondary-color: #5AC1E4;
 @size: 25px;
+@phone: (max-width: 500px);
 
 .center {
 	display: flex;
@@ -14,61 +15,25 @@
 	margin-right: 10px;
 }
 
-@media (max-width: 500px){
-
- .headimg {
- 	 width: 100%;
- }
-
- .space-images{
-
-	height: 450px;
-
-	img {
-		width: 100%;
-		margin: none;
-	}
-
-	.sky{
-		display: none;
-	}
-
-	.launch{
-		display: none;
-	}
-
-	.blast {
-		min-width: 95%;
-		
-		margin: none;
-	}}
-
-
-	.walk {
-		flex-direction: column;
-		flex-wrap: no-wrap;
-		height: 750px;
-		width: 100%;
+.btnStyle (@color: "@base-color"; @text-color: "white"){
+	display: flex;
 		align-items: center;
+		padding-left: 20px;
+		font-size: 25px;
+		text-align: center;
+		width: 125px;
+		height: 40px;
+		color: @text-color;
+		background-color: @color;
+		border-radius: 7.5px;
 
-		.walk-text {
-			min-width: 450px;
-			order: 1;
-			padding: 0 10% 0 10% ;
-
-			.btn {
-				min-width: 415px;
-				
-				p {
-					margin: 0 auto;
-				}
-			}
+		&:hover {
+			color: @base-color;
+			background-color: @secondary-color;
 		}
 
-		.walk-img {
-			min-width: 450px;
-			order: 0;
+		p {
+			padding-top: 20px;
+			font-size: 25px;
 		}
-	}
- 
 }

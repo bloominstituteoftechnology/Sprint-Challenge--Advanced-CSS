@@ -6,50 +6,6 @@
   margin-left: 10px;
   margin-right: 10px;
 }
-@media (max-width: 500px) {
-  .headimg {
-    width: 100%;
-  }
-  .space-images {
-    height: 450px;
-  }
-  .space-images img {
-    width: 100%;
-    margin: none;
-  }
-  .space-images .sky {
-    display: none;
-  }
-  .space-images .launch {
-    display: none;
-  }
-  .space-images .blast {
-    min-width: 95%;
-    margin: none;
-  }
-  .walk {
-    flex-direction: column;
-    flex-wrap: no-wrap;
-    height: 750px;
-    width: 100%;
-    align-items: center;
-  }
-  .walk .walk-text {
-    min-width: 450px;
-    order: 1;
-    padding: 0 10% 0 10% ;
-  }
-  .walk .walk-text .btn {
-    min-width: 415px;
-  }
-  .walk .walk-text .btn p {
-    margin: 0 auto;
-  }
-  .walk .walk-img {
-    min-width: 450px;
-    order: 0;
-  }
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -244,6 +200,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .headimg {
+  width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -254,6 +213,25 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    height: 450px;
+  }
+  .home .space-images img {
+    width: 100%;
+    margin: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    min-width: 95%;
+    margin: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -308,4 +286,29 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    height: 750px;
+    width: 100%;
+    align-items: center;
+  }
+  .home .walk .walk-text {
+    min-width: 450px;
+    order: 1;
+    padding: 0 10% 0 10% ;
+  }
+  .home .walk .walk-text .btn {
+    min-width: 415px;
+  }
+  .home .walk .walk-text .btn p {
+    padding-bottom: 5%;
+    margin: 0 auto;
+  }
+  .home .walk .walk-img {
+    min-width: 450px;
+    order: 0;
+  }
 }
