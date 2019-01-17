@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .top {
-  max-width: 850px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
 }
@@ -262,25 +262,23 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  text-align: center;
+  margin-right: 23.5rem;
   border-radius: 0.5rem;
-  width: 28%;
-  height: 10%;
+  padding: 10px 10px;
   background-color: #22283A;
   color: #F6F6F6;
   font-size: 2rem;
-  padding-left: 13px;
-  padding-top: 3px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
+    text-align: center;
+    margin-right: 0px;
     border-radius: 0.5rem;
-    width: 98%;
-    height: 65px;
+    padding: 25px 25px;
     background-color: #22283A;
     color: #F6F6F6;
     font-size: 2rem;
-    padding-left: 40%;
-    padding-top: 5%;
   }
 }
 .home .walk .walk-text .btn:hover {
@@ -302,4 +300,61 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dee2e6;
+  height: 12.5rem;
+}
+.top .toph1 {
+  font-size: 4rem;
+}
+.top a {
+  font-size: 1.6rem;
+  padding: 1.8rem;
+  text-decoration: none;
+  color: #5E6164;
+}
+.top a:hover {
+  background-color: darkcyan;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 225px;
+  width: 100%;
+}
+.form .signup {
+  position: relative;
+  bottom: 50px;
+}
+.form .input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-left: 150px;
+}
+.form .input li {
+  width: 25%;
+  font-size: 2.6rem;
+  position: relative;
+  padding: 2px;
+}
+.form .input .box {
+  width: 60%;
+  height: 27.5px;
+  position: relative;
+  left: 385px;
+  bottom: 83px;
+  border: 1px solid black;
+  padding: 2px;
 }

@@ -12,10 +12,11 @@
 }
 
 
-.buttondesign(@width, @height, @bg-color, @font-color, @font-size) {
+.buttondesign(@padding, @margin, @bg-color, @font-color, @font-size) {
+    text-align: center;
+    margin-right: @margin;
     border-radius: .5rem;
-    width: @width;
-    height: @height;
+    padding: @padding;
     background-color: @bg-color;
     color: @font-color;
     font-size: @font-size;
