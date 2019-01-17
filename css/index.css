@@ -321,40 +321,29 @@ footer {
 .top a:hover {
   background-color: darkcyan;
 }
-.form {
+.input {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 225px;
-  width: 100%;
-}
-.form .signup {
-  position: relative;
-  bottom: 50px;
-}
-.form .input {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 100%;
-  margin-bottom: 25px;
-  margin-left: 150px;
+  margin: 25rem 2rem;
+  height: 25rem;
 }
-.form .input li {
-  width: 25%;
+.input .key {
+  width: 20%;
+}
+.input .key li {
+  margin: 1.2rem;
   font-size: 2.6rem;
-  position: relative;
-  padding: 2px;
+  padding: 2rem;
 }
-.form .input .box {
-  width: 60%;
-  height: 27.5px;
-  position: relative;
-  left: 385px;
-  bottom: 83px;
+.input .boxes {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+.input .boxes .box {
   border: 1px solid black;
-  padding: 2px;
+  margin: 2rem;
+  height: 30%;
 }

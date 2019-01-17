@@ -28,45 +28,35 @@
 //     top: 125px;
 // }
 
-.form {
+.input {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 225px;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 25rem 2rem;
+    height: 25rem;
 
-    .signup {
-        position: relative;
-        bottom: 50px;
-    }
 
-    .input {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 100%;
-        margin-bottom: 25px;
-        margin-left: 150px;
-
-        li {
-            width: 25%;
-            font-size: 2.6rem;
-            position: relative;
-            padding: 2px;
+        .key {
+            width: 20%;
+            li {
+                margin: 1.2rem;
+                font-size: 2.6rem;
+                padding: 2rem;
+            }
         }
+        
 
-        .box {
-            width: 60%;
-            height: 27.5px;
-            position: relative;
-            left: 385px;
-            bottom: 83px;
-            border: 1px solid black;
-            padding: 2px;
-        }
+        .boxes {
+            display: flex;
+            width: 80%;
+            flex-direction: column;
 
-    }
+            .box {
+                border: 1px solid black;
+                margin: 2rem;
+                height: 30%;
+            }
+        }       
+
 }
