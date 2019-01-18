@@ -164,6 +164,20 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+button {
+  width: 30%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  height: 40px;
+  background: #23293b;
+  color: #ffffff;
+  border: 1px solid lightgray;
+  font-size: 2rem;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #23293b;
+}
 header {
   max-width: 800px;
   width: 100%;
@@ -200,7 +214,7 @@ header nav {
 header nav a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: black;
+  color: #5e6164;
   margin: auto 0;
   padding: 0 1rem;
 }

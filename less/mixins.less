@@ -1,1 +1,28 @@
 // Mixins Here
+
+
+// button mixin (no parameters)
+.cstm-button (@width, @font-color) {		
+    width: @width;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 40px;
+    background: @header-font-color;
+    color: @font-color;
+    border: 1px solid lightgray;
+    font-size: 2rem;
+
+    &:hover {
+        //background-color: @font-color;
+        background-color: lighten(@font-color, 25%);
+        color: @header-font-color;
+      }
+}
+
+// .custom-layout(center, center);
+.custom-layout(@justify, @flex-direction) {
+    display: flex;
+    justify-content: @justify;
+    // align-items: @align;
+    flex-direction: @flex-direction;
+  }
