@@ -174,7 +174,13 @@ nav a {
   font-size: 1.5rem;
   text-decoration: none;
 }
-nav a:hover {
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.3rem;
+    align-items: flex-end;
+  }
+}
+nav:hover {
   color: #454A59;
   font-size: 1.7rem;
 }
@@ -196,11 +202,23 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -244,9 +262,9 @@ footer {
   background-color: #22283A;
   color: #F1F1F1;
   border: 1px #23293B;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,6 +275,37 @@ footer {
   color: #F6F6F6;
   background-color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 300px;
+    height: 50px;
+    background-color: #22283A;
+    color: #F1F1F1;
+    border: 1px #23293B;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0;
+  }
+  .home .walk .walk-text .btn:hover {
+    color: #F6F6F6;
+    background-color: #22283A;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 1;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -266,7 +315,36 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.container {
-  width: 800px;
-  margin: 0 auto;
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    order: 1;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .space-images .blast {
+    justify-content: center;
+  }
 }

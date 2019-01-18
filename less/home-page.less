@@ -1,6 +1,8 @@
 // Home Content
 
 .home {
+  
+  
 
   .intro {
 
@@ -10,6 +12,11 @@
 
     p {
       padding:0 15px;
+    }
+    img {
+      @media @mobile {
+        width: 100%;
+      }
     }
   
   }
@@ -45,12 +52,14 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
 
     .walk-text {
       width: 50%;
 
       h3 {
         margin-bottom: 10px;
+        
       }
 
       p {
@@ -59,25 +68,68 @@
 
       .btn {
         .custom-btn(80px, 50px, @btn-bg-color, @sea-shell);
+
+        @media @mobile {
+          .custom-btn(300px, 50px, @btn-bg-color, @sea-shell);
+        }
   
+      }
+      @media @mobile{
+        order: 0;
+      }
+      @media @mobile{
+        order: 1;
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile{
+          order: 1;
+        }
       }
+    }
+    @media @mobile{
+      flex-direction: column;
+      justify-items: center;
+      
+      
     }
   }
 }// home
 
 
 .container {
-  width: 800px;
+  
+  @media @mobile {
+    width: 100%;
   margin: 0 auto;
+  justify-items: center;
+  }
+}
+
+.space-images {
+  .sky {
+    @media @mobile {
+      display: none;
+    }
+  }
+  .launch {
+    @media @mobile{
+    display: none;
+  }
+}
+.blast {
+  @media @mobile {
+   justify-content: center;
+  }
+}
 }

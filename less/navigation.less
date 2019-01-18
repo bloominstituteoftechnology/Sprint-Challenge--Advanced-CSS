@@ -7,18 +7,27 @@ nav {
     justify-content: center;
     color: @river-bend;
     border: @sea-shell;
+    
     a {
         color: @ebony-clay;
         padding: 20px;
         font-size: 1.5rem;   
         text-decoration: none;
+        @media @mobile {
+            font-size: 1.3rem; 
+            align-items: flex-end;
+        }
+    }
+    
+        
       
         &:hover {
             color: @river-bend;
             font-size: 1.7rem;
             
         }
-    }
+        
+    
 }
 h1 {
     color: @ebony-clay;
