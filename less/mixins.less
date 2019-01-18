@@ -25,3 +25,24 @@
         background-color: lighten(@background, 25%);
     }
 }
+
+.grow() {
+    trasition: all .5s ease-in-out;
+    &:hover {transform: scale(1.1);}
+}
+
+.awaken() {
+    animation-duration: 3s;
+    animation-name: awaken;
+}
+
+@keyframes awaken {
+    from {
+        background-color: darken(@nav-font, 10%);
+        color: darken(@nav-font, 10%);
+    }
+    to {
+        background-color: #f6f6f6;
+        color: @nav-font;
+    }
+}

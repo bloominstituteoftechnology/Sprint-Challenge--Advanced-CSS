@@ -1,3 +1,13 @@
+@keyframes awaken {
+  from {
+    background-color: #2f323c;
+    color: #2f323c;
+  }
+  to {
+    background-color: #f6f6f6;
+    color: #454A59;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,6 +174,8 @@ p {
 .nav {
   width: 100%;
   background-color: #f6f6f6;
+  animation-duration: 3s;
+  animation-name: awaken;
 }
 .nav .container h1 {
   font-size: 4rem;
@@ -182,8 +194,10 @@ p {
 }
 .menu a {
   text-decoration: none;
-  color: #23293B;
+  color: #454A59;
   font-size: 1.61rem;
+  animation-duration: 3s;
+  animation-name: awaken;
 }
 footer {
   color: #22283B;
@@ -246,7 +260,7 @@ footer {
   .home .walk {
     flex-direction: column-reverse;
     margin-top: 20px;
-    padding: 20px 0px;
+    padding: 20px 0px 0px 0px;
   }
 }
 .home .walk .walk-text {
@@ -275,9 +289,13 @@ footer {
   align-items: center;
   font-weight: bold;
   border-radius: 5px;
+  trasition: all 0.5s ease-in-out;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #60598b;
+}
+.home .walk .walk-text .btn:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 515px) {
   .home .walk .walk-text .btn {
