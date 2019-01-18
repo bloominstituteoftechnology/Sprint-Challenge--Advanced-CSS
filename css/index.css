@@ -211,10 +211,16 @@ p {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
-  transition: 1.5s;
+  transition: 1s;
+  padding-bottom: 2px;
+  padding-top: 5px;
 }
 .navigation .nav__link:hover {
-  transform: scale(1.2);
+  font-size: 1.8rem;
+  border-bottom: 2px solid gray;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 8px 20px;
 }
 footer {
   color: #22283B;
