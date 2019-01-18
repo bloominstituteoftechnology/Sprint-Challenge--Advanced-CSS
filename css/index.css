@@ -177,6 +177,11 @@ table {
   height: auto;
   border-radius: 10px;
 }
+.logo-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 General Styles * {
   box-sizing: border-box;
 }
@@ -220,4 +225,36 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  width: 100%;
+  border-bottom: 1px solid #F1F1F1;
+}
+.main-navigation h1 {
+  font-size: 45px;
+}
+.main-navigation nav {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main-navigation nav {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 15px;
+  }
+}
+.main-navigation nav a {
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0 20px;
+  color: #23293B;
+  font-weight: bold;
 }

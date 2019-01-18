@@ -1,0 +1,34 @@
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @nav-bg;
+    width: 100%;
+    border-bottom: 1px solid @nav-border;
+
+    h1 {
+        font-size: 45px;
+
+    }
+
+    nav {
+        padding: 20px;
+        .center();
+        @media @phone {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            padding: 15px;
+        }
+        
+   
+        a {
+            font-size: 15px;
+            text-decoration: none;
+            padding: 0 20px;
+            color: @ebony-clay;
+            font-weight: bold;
+            
+        }
+    }
+}
