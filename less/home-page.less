@@ -12,13 +12,29 @@
 
   @media @phone {
     .custom-layout(center, column);
+    // border: 5px solid red;
 
+  }
+   
+  .earth {
+
+    @media @phone {
+      height: 11rem;
+  
+    }
+
+    
   }
 
   .intro {
 
     
-    
+    @media @phone {
+      .custom-layout(center, column);
+      // border: 5px dotted red;
+      height: 20rem;
+  
+    }
 
     h2 {
       padding: 15px;
@@ -33,39 +49,20 @@
 
   .space-images {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 
 
      @media @phone {
-    //   flex-wrap: nowrap;
-      padding: 10px;
-      border: 5px solid gray;
-      width: 300%;
-      margin: 20px auto;
-      margin-top: 50px;
+      // flex-wrap: nowrap;
+      // border: 5px solid gray;
+      display: none;
+      
+      // margin-top: 50px;
      }
     /************ Added options for mobile   ******/
-    .sky {
-
-      // border: solid black;
-
-      @media @phone {
-        display: none;
-        width: 1%;
-        // border: 5px solid pink;
-      }
-    }
-
-    .launch {
-
-      // border: solid black;
-      
-      @media @phone {
-        display: none;
-        width: 1%;
-      }
-    }  // launch
+    
 
 
 
@@ -79,10 +76,28 @@
       height: 100%;
     }
   } // space-images
+
+ 
 } // intro-container
 
+.plast {
+
+    .custom-layout(center, row);
+
+    display: none;
+
+    @media @phone {
+
+      display: flex;
+      margin: 0 auto;
+      width: 95%;
+      border-radius: 10px;
+    }
+
+}
   .visit-planets {
-    padding: 15px;
+    // padding: 15px;
+    padding: 0 10px;
 
     h3 {
       margin-top: 11px;
@@ -106,10 +121,10 @@
 
     @media @phone {
       .custom-layout(space-between, column-reverse);
-      border: 6px solid red;
+      // border: 6px solid red;
       // padding: 5px 5px;
-      padding-top: 10px;
-      margin: 0 auto;
+      padding: 10px;
+      // margin: 0 auto;
 
     }
 
@@ -138,6 +153,7 @@
       
       @media @phone {
         width: 100%;
+        margin: 0 auto;
       }
 
       img {
