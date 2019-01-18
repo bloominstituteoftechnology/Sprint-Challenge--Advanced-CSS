@@ -116,13 +116,17 @@
         transition: 1s;
 
         @media @phone {
-          padding: 25px 185px;
+          padding: 25px 40%;
           margin-top: 100px;
         }
       }
 
       .btn:hover {
-        .elegant-transform(1.8rem;25px 185px;gray;lightskyblue;black)
+        .elegant-transform(1.8rem;8px 10%;gray;lightskyblue;black);
+
+        @media @phone {
+          .elegant-transform(1.8rem;25px 40%;gray;lightskyblue;black);
+        }
       }
     }
 

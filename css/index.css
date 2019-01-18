@@ -230,7 +230,7 @@ p {
   border-bottom: 2px double #e0e0e0;
   background-color: lightskyblue;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 5px 3%;
 }
 footer {
   color: #22283B;
@@ -348,7 +348,7 @@ footer {
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 8px 20px;
+  padding: 8px 10%;
   border-radius: 5px;
   text-align: center;
   font-size: 1.8rem;
@@ -356,7 +356,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    padding: 25px 185px;
+    padding: 25px 40%;
     margin-top: 100px;
   }
 }
@@ -367,7 +367,18 @@ footer {
   border-bottom: 2px double gray;
   background-color: lightskyblue;
   border-radius: 5px;
-  padding: 25px 185px;
+  padding: 8px 10%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    font-size: 1.8rem;
+    color: black;
+    border-top: 2px double gray;
+    border-bottom: 2px double gray;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 25px 40%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
