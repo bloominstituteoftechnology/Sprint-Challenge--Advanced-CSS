@@ -1,3 +1,4 @@
+@import "mixins.less";
 // Home Content
 
 .home {
@@ -10,6 +11,12 @@
 
     p {
       padding:0 15px;
+    }
+
+    img {
+      max-width: 800px;
+      width: 100%;
+      .borderRadius();
     }
   
   }
@@ -24,6 +31,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      :nth-child(n+2){
+        display: none;
+      }
+      justify-content: center;
+      img {
+        width: 90%;
+      }
     }
   }
 
@@ -46,6 +63,12 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      padding: 0px;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,13 +81,34 @@
       }
 
       .btn {
+        .buttonColors();
+        font-size: 1.6rem;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        .borderRadius();
+        &:hover{
+          .buttonColors(@btn-bg-color, @wild-sand);
+          cursor: pointer;
+      }
+      @media @phone {
+        width: 100%;
+      }
+      }
+      @media @phone {
+        width: 90%;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        order: -1;
+        width: 90%;
+        margin: 0px;
+      }
       img {
         width: 100%;
         height: auto;

@@ -1,1 +1,35 @@
 // Navigation code here
+@import "variables.less";
+
+nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    a {
+        text-decoration: none;
+        color: @header-font-color;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    ul{
+        display: flex;
+        margin-bottom: 10px;
+        max-width: @half-header-width;
+        width: 100%;
+        min-width: 300px;
+        justify-content: space-between;
+
+        li{
+            font-size: 1.6rem;
+        }
+    }
+}
