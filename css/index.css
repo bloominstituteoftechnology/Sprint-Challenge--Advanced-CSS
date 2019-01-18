@@ -255,7 +255,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro img {
-    width: 470px;
+    width: 100%;
   }
 }
 .home .intro h2 {
