@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    The difference between an adaptive website and a fully responsive website is that an adaptive website has multiple breakpoints with hard coded widths.  A fully responsive website has percentage based widths that will respond to the width of the viewport so there is less of a need to have as many breakpoints and it is far more adaptable.
+
 2. Describe what it means to be mobile first vs desktop first.
+    
+    Mobile first is to start your CSS (and design) with the phone view of the website and to work your breakpoints up (through using min-width) to the desktop view.  Desktop first is to start with a desktop view of a website and to work down to the mobile view using max-width media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    changing the font size of the html tag will line rem units up to a standard pixel based font system because rems are based off of the font size from the html tag.  So 1.6rem would be equivalent to 16px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    A CSS preprocessor is CSS with some extra perks.  The language is typically very similar to CSS or even the same with some extra syntax that will give you extra functionality that makes life easier.  The extra functions are things like variables, reusable modules of code and more readable selectors.  The preprocessor will compile or translate, the other language plain old css. It's kind of like a hand drill versus an electric drill, they both do the same job, but one has some extra features to make things faster.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept in preprocessing are mixins.  I was already using variables in CSS and found them wonderful, but to essentially be able to use variables for whole chunks of code is awesome!  As for the most trouble, I main have trouble remembering the right syntax occasionally, but I'll get it with practice.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
