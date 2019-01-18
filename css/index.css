@@ -220,16 +220,17 @@ p {
   color: black;
   font-size: 1.6rem;
   transition: 1s;
-  padding-bottom: 2px;
+  padding-bottom: 5px;
   padding-top: 5px;
 }
 .floating-navigation-container .navigation .nav__link:hover {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: black;
-  border-bottom: 2px solid gray;
+  border-top: 2px double #e0e0e0;
+  border-bottom: 2px double #e0e0e0;
   background-color: lightskyblue;
   border-radius: 5px;
-  padding: 8px 20px;
+  padding: 5px 20px;
 }
 footer {
   color: #22283B;
@@ -361,7 +362,8 @@ footer {
 .home .walk .walk-text .btn:hover {
   font-size: 1.8rem;
   color: black;
-  border-bottom: 2px solid gray;
+  border-top: 2px double gray;
+  border-bottom: 2px double gray;
   background-color: lightskyblue;
   border-radius: 5px;
   padding: 8px 20px;
