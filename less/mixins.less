@@ -1,1 +1,13 @@
 // Mixins Here
+.cust-flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
