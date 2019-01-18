@@ -86,10 +86,10 @@
 
       .btn {
         button {
-          .signup(@wild-sand, @btn-bg-color);
+          .signup(@wild-sand, @ebony-clay);
         }
         button:hover {
-          .signup(@btn-bg-color, @wild-sand);
+          .signup(@ebony-clay, @wild-sand);
         }
       }
     }
@@ -119,6 +119,19 @@
       }
     .walk-text {
       width: 100%;
+      .btn {
+        display: flex;
+        button {
+          height: 69px;
+          font-weight: bold;
+          flex-grow: 1;
+          .signup(@wild-sand, @ebony-clay);
+        }
+        button:hover {
+          flex-grow: 1;
+          .signup(@ebony-clay, @wild-sand);
+        }
+    }
     }
     .walk-img {
       width: 100%;

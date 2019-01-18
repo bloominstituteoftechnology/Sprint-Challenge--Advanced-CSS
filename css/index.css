@@ -269,17 +269,19 @@ footer {
 }
 .home .walk .walk-text .btn button {
   color: #F6F6F6;
-  background-color: #22283A;
-  border-color: #22283A;
+  background-color: #23293B;
+  border-color: #23293B;
   font-weight: bold;
+  font-size: 2rem;
   border-radius: 5px;
   padding: 6px 12px;
 }
 .home .walk .walk-text .btn button:hover {
-  color: #22283A;
+  color: #23293B;
   background-color: #F6F6F6;
-  border-color: #22283A;
+  border-color: #F6F6F6;
   font-weight: bold;
+  font-size: 2rem;
   border-radius: 5px;
   padding: 6px 12px;
 }
@@ -307,6 +309,30 @@ footer {
   }
   .home .walk .walk-text {
     width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    display: flex;
+  }
+  .home .walk .walk-text .btn button {
+    height: 69px;
+    flex-grow: 1;
+    color: #F6F6F6;
+    background-color: #23293B;
+    border-color: #23293B;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 6px 12px;
+  }
+  .home .walk .walk-text .btn button:hover {
+    flex-grow: 1;
+    color: #23293B;
+    background-color: #F6F6F6;
+    border-color: #F6F6F6;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 6px 12px;
   }
   .home .walk .walk-img {
     width: 100%;
