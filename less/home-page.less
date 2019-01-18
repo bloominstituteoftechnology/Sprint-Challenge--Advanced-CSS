@@ -60,17 +60,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    .mob();
 
-    @media @phone{
-      width: auto;
-      
-      flex-wrap: wrap;
+    @media @phone {
+      margin-top: 25px;
+      flex-flow: column;
+    }
+  }
     .walk-text {
       width: 50%;
-      @media @phone{
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
+      @media @phone {
+        margin-top: 25px;
+        flex-flow: column;
+      }
       }
       h3 {
         margin-bottom: 10px;
