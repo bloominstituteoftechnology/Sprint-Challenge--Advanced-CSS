@@ -126,6 +126,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* 
+
+1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive website is necessarily set on a fluid grid; targets specific device resolutions.
+Responsive website is built on a fluid grid; will change with the browser, no matter what the screen resolution and content can break apart and realign.
+Fluid(%) + Adaptive = Responsive
+
+
+2. Describe what it means to be mobile first vs desktop first.
+
+Mobile First:
+Base styles are for mobile
+Media queries use min-width
+Media queries go from lowwer to higher numbers
+
+Desktop First:
+Base styles are for desktop
+Media queries use max-width
+Media queries go from higher to lower numbers
+
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+It is a trick recommended by Josh. It can be used on webpage if you use rem units.
+
+4. How would you describe preprocessing to someone new to CSS?
+Syntax(lESS) --> Compiler --> CSS
+Preprocesing compiles LESS into CSS nesting structure.
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? 
+@mobile: ~"(max-width: 500px)"; Escaping is the best part so far fot the responsive design.
+Mixins still gives me trouble but I am learning it though.
+
+
+
+*/
 * {
   box-sizing: border-box;
 }
@@ -176,7 +210,7 @@ nav a {
 }
 @media (max-width: 500px) {
   nav a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     align-items: flex-end;
   }
 }
@@ -201,13 +235,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 500px) {
-  footer p {
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 20px;
-  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -255,6 +282,12 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text p {
+    flex-direction: column;
+    justify-items: center;
+  }
 }
 .home .walk .walk-text .btn {
   width: 80px;
@@ -344,7 +377,7 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  .space-images .blast {
+  .space-images {
     justify-content: center;
   }
 }

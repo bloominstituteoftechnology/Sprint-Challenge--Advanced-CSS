@@ -46,3 +46,39 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+//QAs
+/* 
+
+1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive website is necessarily set on a fluid grid; targets specific device resolutions.
+Responsive website is built on a fluid grid; will change with the browser, no matter what the screen resolution and content can break apart and realign.
+Fluid(%) + Adaptive = Responsive
+
+
+2. Describe what it means to be mobile first vs desktop first.
+
+Mobile First:
+Base styles are for mobile
+Media queries use min-width
+Media queries go from lowwer to higher numbers
+
+Desktop First:
+Base styles are for desktop
+Media queries use max-width
+Media queries go from higher to lower numbers
+
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+It is a trick recommended by Josh. It can be used on webpage if you use rem units.
+
+4. How would you describe preprocessing to someone new to CSS?
+Syntax(lESS) --> Compiler --> CSS
+Preprocesing compiles LESS into CSS nesting structure.
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? 
+@mobile: ~"(max-width: 500px)"; Escaping is the best part so far fot the responsive design.
+Mixins still gives me trouble but I am learning it though.
+
+
+
+*/

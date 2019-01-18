@@ -1,9 +1,6 @@
 // Home Content
 
 .home {
-  
-  
-
   .intro {
 
     h2 {
@@ -20,7 +17,7 @@
     }
   
   }
-
+  
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +61,11 @@
 
       p {
         margin-bottom: 26px;
+        @media @mobile{
+          flex-direction: column;
+          justify-items: center;
+          
+        }
       }
 
       .btn {
@@ -99,8 +101,7 @@
     }
     @media @mobile{
       flex-direction: column;
-      justify-items: center;
-      
+      justify-items: center; 
       
     }
   }
@@ -124,12 +125,15 @@
   }
   .launch {
     @media @mobile{
-    display: none;
+      display: none;
   }
 }
 .blast {
   @media @mobile {
-   justify-content: center;
+  
   }
+}
+@media @mobile {
+  justify-content: center;
 }
 }
