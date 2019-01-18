@@ -175,7 +175,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
+.floating-navigation-container {
+  width: 100%;
+  position: fixed;
+  background: rgba(244, 244, 244, 0.98);
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+}
+.floating-navigation-container .navigation {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -184,18 +191,19 @@ p {
   align-content: center;
   flex-direction: column;
   padding-top: 13px;
+  padding-bottom: 10px;
 }
-.navigation .nav__logo {
+.floating-navigation-container .navigation .nav__logo {
   font-size: 4rem;
   padding-bottom: 19px;
 }
 @media (max-width: 500px) {
-  .navigation .nav__logo {
+  .floating-navigation-container .navigation .nav__logo {
     font-size: 3.8rem;
     padding-bottom: 15px;
   }
 }
-.navigation .nav__link-container {
+.floating-navigation-container .navigation .nav__link-container {
   width: 375px;
   display: flex;
   justify-content: space-between;
@@ -203,11 +211,11 @@ p {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .navigation .nav__link-container {
+  .floating-navigation-container .navigation .nav__link-container {
     width: 355px;
   }
 }
-.navigation .nav__link {
+.floating-navigation-container .navigation .nav__link {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -215,7 +223,7 @@ p {
   padding-bottom: 2px;
   padding-top: 5px;
 }
-.navigation .nav__link:hover {
+.floating-navigation-container .navigation .nav__link:hover {
   font-size: 1.8rem;
   color: black;
   border-bottom: 2px solid gray;
@@ -237,6 +245,9 @@ footer {
   .home {
     max-width: 500px;
   }
+}
+.home .intro {
+  padding-top: 120px;
 }
 .home .intro img {
   padding-top: 13px;
