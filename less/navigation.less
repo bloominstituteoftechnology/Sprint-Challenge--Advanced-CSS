@@ -1,1 +1,27 @@
 // Navigation code here
+
+.top-content {
+    .flex-box();
+    background-color: @nav-bg;
+    height: 80px;
+    font-family: @nav-font;
+
+    @media @phone {
+    background-color: white;
+  }
+    
+
+    h1 {
+        padding: 7px 0 18px;
+    }
+
+    nav {
+        
+        a {
+            font-size: 1.6rem;
+            .links();
+            color: @header-font-color;
+            padding: 0 10px;
+        }
+    }
+}

@@ -1,1 +1,19 @@
 // Mixins Here
+.links() {
+	text-decoration: none;
+	color: black;
+}
+
+.flex-box() {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main-button(@background-color, @color, @padding, @border-radius, @font-size) {
+    background-color: @background-color;
+    color: @color;
+    padding: @padding;
+    border-radius: @border-radius;
+    font-size: @font-size;
+}
