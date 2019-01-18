@@ -22,7 +22,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width: 100%;
+        }
     }
+    .sky, .launch{
+      @media @phone{
+        display: none;
+      }
+    }
+    
   }
 
   .visit-planets {
@@ -56,6 +65,8 @@
       }
 
       .btn {
+
+
       }
     }
 
@@ -74,4 +85,13 @@
 
 .logo-heading{
   .center();
+  margin-top: 2rem;
+}
+
+.liftbox{
+  margin: 15px 0;
+  line-height: 1.25;
+  h1{
+    margin-bottom: 1rem;
+  }
 }

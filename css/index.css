@@ -143,6 +143,17 @@ table {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -181,6 +192,14 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+}
+.liftbox {
+  margin: 15px 0;
+  line-height: 1.25;
+}
+.liftbox h1 {
+  margin-bottom: 1rem;
 }
 General Styles * {
   box-sizing: border-box;
