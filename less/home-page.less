@@ -1,9 +1,9 @@
+// Home Content
+
 .home {
 
   .intro {
-   display: flex;
-   flex-direction: column;
-   padding: 90px 0 10px;
+
     h2 {
       padding: 15px;
     }
@@ -18,22 +18,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-      @media @phone{
-        width: 100%;
-        }
-    }
     .sky, .launch{
       @media @phone{
         display: none;
       }
     }
-    
+    .blast{
+      @media @phone{
+        width: 100%;
+      }
+    }
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
   }
 
   .visit-planets {
@@ -41,99 +41,12 @@
 
     h3 {
       margin-top: 11px;
-      @media @phone{
-
-      }
     }
 
     p {
       margin-top: 13px;
-      @media @phone{
-
-      }
     }
   }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-    .mob();
-
-    @media @phone {
-      margin-top: 25px;
-      flex-flow: column;
-    }
-  }
-    .walk-text {
-      width: 50%;
-      @media @phone {
-        margin-top: 25px;
-        flex-flow: column;
-      }
-      }
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-        .hoverDarken();
-        .hoverGrow();
-        padding: 10px 10px;
-        border-radius: 10px;
-        border: solid black 1px;
-        background-color: rgb(255, 255, 255);
-
-      
-        
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-right: 4%;
-      
-      }
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        @media @phone{
-          width: 100%;
-          flex-direction: column; 
-          flex-wrap: wrap;
-      }
-    }
-  }
-}
-
-.logo-heading{
-  .center();
-  margin-top: 2rem;
-}
-
-.liftbox{
-  margin: 15px 0;
-  line-height: 1.25;
-  h1{
-    margin-bottom: 1rem;
-    
-  }
-  @media @phone{
-    padding: 1rem 1.4rem;;
-
-  }
-}
-
-.header-img{
   
-  @media @phone{
-   
-    .center();
-  }
-}
+
+  
