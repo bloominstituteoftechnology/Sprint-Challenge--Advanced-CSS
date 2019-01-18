@@ -1,1 +1,17 @@
 // Mixins Here
+
+.btn-main(@width, @height, @bg-color, @font-color) {
+    width: @width;
+    height: @height;
+    background: @bg-color;
+    color: @font-color;
+    border-radius: 7px;
+    border: 1px solid black;
+    font-size: 18px;
+    cursor: pointer;
+    
+      &:hover {
+        background: @font-color;
+        color: @bg-color;
+      }
+    }
