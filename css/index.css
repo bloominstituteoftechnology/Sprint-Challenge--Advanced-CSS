@@ -352,6 +352,7 @@ footer {
   border-radius: 5px;
   text-align: center;
   font-size: 1.8rem;
+  transition: 1s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
