@@ -154,6 +154,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  font-weight: 600;
 }
 .container {
   max-width: 800px;
@@ -214,6 +215,16 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 515px) {
+  .home .space-images .blast {
+    width: 100%;
+    margin: 20px 5%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
