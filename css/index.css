@@ -242,6 +242,9 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+.home .intro #magazine-title {
+  padding-bottom: 0;
+}
 .home .intro p {
   padding: 0 15px;
 }
@@ -364,14 +367,10 @@ footer {
     margin-top: 43px;
   }
 }
-.form-header img {
-  margin-top: 15px;
-}
-.form-header h2 {
-  padding: 25px 0;
-}
 .form-container {
   margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 0 15px;
 }
 .form-container .form {
   font-size: 1.6rem;
