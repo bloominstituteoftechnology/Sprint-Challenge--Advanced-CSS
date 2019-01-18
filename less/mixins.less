@@ -1,1 +1,16 @@
 // Mixins Here
+.btn-style(@width, @height, @font-size, @toppad) {
+    font-size: @font-size; 
+    color: @sea-shell; 
+    background-color: @ebony-clay; 
+    width: @width; 
+    height: @height; 
+    border-radius: 3px;
+    text-align: center;
+    padding-top: @toppad; 
+}
+
+.btn-hover() {
+    background-color: @sea-shell; 
+    color: @ebony-clay;
+}
