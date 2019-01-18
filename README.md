@@ -123,7 +123,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: @phone` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: @phone` media query string. Use the `@phone` variable for all your nested mobile styling.
 
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
