@@ -160,6 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #454A59;
+  border: #F1F1F1;
+}
+nav a {
+  color: #23293B;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #454A59;
+  font-size: 1.7rem;
+}
+h1 {
+  color: #23293B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -220,4 +246,8 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
 }
