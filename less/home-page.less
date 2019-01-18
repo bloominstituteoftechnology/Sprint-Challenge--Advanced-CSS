@@ -61,9 +61,14 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      width: auto;
+      
+      flex-wrap: wrap;
     .walk-text {
       width: 50%;
       @media @phone{
+        flex-wrap: wrap;
         display: flex;
         flex-direction: column;
       }
@@ -76,22 +81,30 @@
       }
 
       .btn {
+        .hoverDarken();
+        .hoverGrow();
         padding: 10px 10px;
         border-radius: 10px;
         border: solid black 1px;
         background-color: rgb(255, 255, 255);
 
-      }
+      
+        
     }
 
     .walk-img {
       width: 46%;
       margin-right: 4%;
       
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone{
+          width: 100%;
+          flex-direction: column; 
+          flex-wrap: wrap;
       }
     }
   }

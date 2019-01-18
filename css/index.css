@@ -200,10 +200,16 @@ table {
   width: 46%;
   margin-right: 4%;
 }
-.home .walk .walk-img img {
+.home .walk img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk img {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .logo-heading {
   display: flex;

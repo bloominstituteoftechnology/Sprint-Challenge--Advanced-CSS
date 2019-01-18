@@ -15,19 +15,20 @@
       font-size: 2em;
   }
   
-  .button-creator(@width, @height, @bg-color, @font-color) {
-    width: @width;
-    height: @height;
-    background-color: @bg-color;
-    color: @font-color;
-    cursor: pointer;
-    border-radius: 3px;
-    border: 1px solid @bg-color;
-    font-size: 1.8rem;
-    .center;
-    
+  @color: #4C5C97;
+  @rightAnalogous: spin(@color, 30);
+  @leftAnalogous: spin(@color, -30);
+
+  .hoverGlow(@color: @color, @lightenNumber: 25%){
+    &:hover{
+      background-color: lighten(@color, @lightenNumber);
+    }
+  
+  }
+  
+  .hoverDarken(@color: @color, @darkenNumber: 25%, @textColor: white){
     &:hover {
-      background-color: @font-color;
-      color: @bg-color;
+      background-color: darken(@color, @darkenNumber);
+      color: @textColor;
     }
   }
