@@ -104,7 +104,7 @@
 
       @media @phone{
         width: 100%;
-        padding-top: 50px;
+        padding-top: 20px;
       }
 
       h3 {
@@ -130,8 +130,13 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 100%;
-        margin-left: 0;
+        /*width: 100%;
+        margin-left: 0;*/
+        background-image: url('img/space-walk.png');
+        background-size: 400px 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 0%;
       }
       
       img {
@@ -139,6 +144,12 @@
         height: auto;
         border-radius: 10px;
 
+        @media @phone{
+          height: 345px;
+          width: 485px;
+          padding-right: 25px;
+          border-radius: 5px;
+        }
       }
     }
   }
