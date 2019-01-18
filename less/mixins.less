@@ -1,1 +1,48 @@
 // Mixins Here
+.cust-flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn(@height, @width, @color, @background, @font-size){
+    height: @height;
+    width: @width;
+    color: @color;
+    background-color: @background;
+    font-size: @font-size;
+    .center;
+    font-weight: bold;
+    border-radius: 5px;
+    &:hover {
+        background-color: lighten(@background, 25%);
+    }
+}
+
+.grow() {
+    trasition: all .5s ease-in-out;
+    &:hover {transform: scale(1.1);}
+}
+
+.awaken() {
+    animation-duration: 3s;
+    animation-name: awaken;
+}
+
+@keyframes awaken {
+    from {
+        background-color: darken(@nav-font, 10%);
+        color: darken(@nav-font, 10%);
+    }
+    to {
+        background-color: #f6f6f6;
+        color: @nav-font;
+    }
+}
