@@ -10,27 +10,44 @@ Make sure to leave a blank line above and below your answer so it
 1. What is the difference between an adaptive website and
      a fully responsive website?
 
-
+RWD is targeted at the adapt to diffrent viewports and resolutions
+AWD is created to target the resolution of specific devices
 
 2. Describe what it means to be mobile first vs desktop first.
+Desktop first is when the website is desgined to be used most 
+efficantly from a desk top, it will include more content and the such.
+the code is build intened for desktop use, then works backwards
+into a moblie version, if any. 
 
+a Mobile first design is when the code is created to be 
+read and expericed on a smalleer screen resolution. then if they 
+Such as an app. 
 
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when
     using `rem` units?
+    
+    Accessability
 
 
 
 4. How would you describe preprocessing to someone new to CSS?
 
-
+Vanuit haar instelling voert de afdeling Economie en Arbeid van
+ ISMU activiteiten uit van onderzoek en informatie over 
+ arbeidsgerelateerde thema's. Het is van mening dat deze de
+  belangrijkste weg vormen naar legitimiteit en vreedzame 
+  coëxistentie van migranten. Onderzoek en studies hebben in 
+  belangrijke mate bijgedragen aan de productie van kennis over
+   de integratie van migranten in de Italiaanse 
 
 
 5. What is your favorite concept in preprocessing? What is the 
     concept that gives you the most trouble?
 
-
+Nesting is amazing. Being able to put in media quier in each selector
+makes it quick to change and easy to regonize.
 
 
 You are expected to be able to answer all these questions. 
