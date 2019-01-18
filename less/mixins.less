@@ -25,10 +25,11 @@
     color: @color2;
 }
 
-.elegant-transform(@scale) {
+.elegant-transform(@scale;@padding;@bordercolor;@color;@fontcolor) {
     font-size: @scale;
-    border-bottom: 2px solid gray;
-    background-color: lightskyblue;
+    color: @fontcolor;
+    border-bottom: 2px solid @bordercolor;
+    background-color: @color;
     border-radius: 5px;
-    padding: 8px 20px;
+    padding: @padding;
 }

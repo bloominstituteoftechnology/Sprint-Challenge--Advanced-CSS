@@ -217,6 +217,7 @@ p {
 }
 .navigation .nav__link:hover {
   font-size: 1.8rem;
+  color: black;
   border-bottom: 2px solid gray;
   background-color: lightskyblue;
   border-radius: 5px;
@@ -347,8 +348,12 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: slategray;
-  color: silver;
+  font-size: 1.8rem;
+  color: black;
+  border-bottom: 2px solid gray;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 8px 20px;
 }
 .home .walk .walk-img {
   width: 46%;
