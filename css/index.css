@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.home .intro {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0 10px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -173,11 +178,23 @@ table {
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: solid black 1px;
+  background-color: #ffffff;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -200,6 +217,13 @@ table {
 }
 .liftbox h1 {
   margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .header-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 General Styles * {
   box-sizing: border-box;
