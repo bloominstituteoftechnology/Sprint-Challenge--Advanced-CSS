@@ -160,6 +160,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.nav .container h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 13px 0;
+}
+.menu {
+  max-width: 408px;
+  width: 100%;
+  margin: 5px auto 0px;
+  padding-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #23293B;
+  font-size: 1.61rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
