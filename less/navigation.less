@@ -1,1 +1,100 @@
 // Navigation code here
+
+header {
+
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+        // height: 80px;
+    // padding: 1rem 0;
+    // margin: 0;
+    // border: solid black;
+    // border-bottom: 2px dashed gray;
+
+    @media @mobile {
+
+        flex-direction: column;
+        height: 100px;
+        justify-content: stretch;
+        // border: solid black;
+
+        margin: 0 auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+    }
+} // header
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    // height: 20px;
+    width: 55%;
+    //  border: solid pink;
+    padding: 5px 1rem;
+
+    @media @mobile {
+
+     width: 90%;
+    //  font-size: 1.6rem;
+
+     margin: 0 auto;
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+
+    }
+
+}
+
+header nav a {
+
+    text-decoration: none;
+    font-size: 1.6rem;
+    // text-decoration-style: solid; 
+    color: black;
+    margin: auto 0;
+    padding: 0 1rem;
+    // border: solid red;
+
+    @media @mobile {
+
+        
+        font-size: 1.6rem;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+   
+       }
+}
+
+// .funbus {
+
+//     // border: solid red;
+//     height: 25rem;
+//     padding: 0;
+//     margin: 0px;
+
+//     @media @mobile {
+//         width: 100%;
+//         padding: 0 5%;
+//         // padding-left: 10%;
+//         // align-self: stretch;
+//       }
+// }
+
+// .top-content {
+//     border-bottom: 4px dotted gray;
+//     margin-bottom: 2rem;
+
+//     @media @mobile {
+//         width: 100%;
+//         padding: 0 5%;
+//         padding-left: 10%;
+//         // align-self: stretch;
+//       }
+// }
