@@ -36,3 +36,21 @@ p {
   margin: 0 auto;  
 }
 
+button {
+  font-size: 1.4rem;
+  border-radius: 5px;
+  font-weight: 700;
+
+  .btn-size(10px, 20px);
+  .btn-color();
+
+  &:focus {
+    outline: none;
+  }
+  
+  @media @phone {
+    display: block;
+    width: 100%;
+  }
+}
+
