@@ -219,6 +219,11 @@ table {
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
+  .liftbox {
+    padding: 1rem 1.4rem;
+  }
+}
+@media (max-width: 500px) {
   .header-img {
     display: flex;
     justify-content: center;
