@@ -1,0 +1,43 @@
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @nav-bg;
+    width: 100%;
+    border-bottom: 1px solid @nav-border;
+    @media @phone {
+        max-width: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    
+
+    nav {
+        padding: 20px;
+    
+        
+        
+   
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 0 20px;
+            color: @ebony-clay;
+            font-weight: bold;
+            @media @phone {
+                max-width: 200px;
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                padding: 15px;
+            }
+            }
+            
+        }
+    }
+}
