@@ -51,7 +51,20 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
+    margin: 5px;
+    width: 95%;
+    @media @phone {
+      // flex-wrap: nowrap;
+      // border: 5px solid gray;
+      .blast {
+        width: 95%;
+      };
+      .sky {
+      display: none;
+      };
+      .launch {
+        display: none;
+      }
 
 
      @media @phone {
