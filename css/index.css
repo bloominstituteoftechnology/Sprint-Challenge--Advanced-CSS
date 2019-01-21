@@ -147,7 +147,7 @@ Media queries use max-width
 Media queries go from higher to lower numbers
 
 3. What does font-size: 62.5% in the html tag do for us when using rem units?
-It is a trick recommended by Josh. It can be used on webpage if you use rem units.
+It is a trick recommended by Josh. It can be used on a webpage if you use rem units.
 
 4. How would you describe preprocessing to someone new to CSS?
 Syntax(lESS) --> Compiler --> CSS
@@ -194,6 +194,13 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+  }
+}
 nav {
   width: 100%;
   display: flex;
@@ -203,10 +210,13 @@ nav {
   border: #F1F1F1;
 }
 nav a {
-  color: #23293B;
-  padding: 20px;
-  font-size: 1.5rem;
+  color: #F6F6F6;
+  background: #22283A;
+  padding: 10px;
+  font-size: 1.3rem;
   text-decoration: none;
+  border-radius: 15px;
+  margin: 1%;
 }
 @media (max-width: 500px) {
   nav a {
@@ -214,9 +224,10 @@ nav a {
     align-items: flex-end;
   }
 }
-nav:hover {
-  color: #454A59;
-  font-size: 1.7rem;
+nav a:hover {
+  color: #22283A;
+  background: #F6F6F6;
+  font-weight: bold;
 }
 h1 {
   color: #23293B;
@@ -225,6 +236,12 @@ h1 {
   justify-content: center;
   font-size: 3rem;
   margin-top: 20px;
+  animation: pulse 1.2s infinite;
+}
+@keyframes pulse {
+  50% {
+    color: goldenrod;
+  }
 }
 footer {
   color: #22283B;
@@ -239,12 +256,25 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .home .intro h2 {
+    font-size: 2.4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 @media (max-width: 500px) {
   .home .intro img {
     width: 100%;
+    padding: 2px;
+    height: 150px;
+    border-radius: 10px;
   }
 }
 .home .space-images {
@@ -258,14 +288,44 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    font-size: 2.2rem;
+  }
+}
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding-bottom: 20px;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -274,27 +334,40 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 2.2rem;
+  }
+}
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text p {
-    flex-direction: column;
-    justify-items: center;
-  }
-}
 .home .walk .walk-text .btn {
-  width: 80px;
+  width: 100px;
   height: 50px;
   background-color: #22283A;
   color: #F1F1F1;
-  border: 1px #23293B;
+  border: 1px #5E6164;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -305,8 +378,13 @@ footer {
   margin: 20px 0;
 }
 .home .walk .walk-text .btn:hover {
-  color: #F6F6F6;
-  background-color: #22283A;
+  color: #23293B;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.home .walk .walk-text .btn a {
+  color: #F6F7F8;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -314,7 +392,7 @@ footer {
     height: 50px;
     background-color: #22283A;
     color: #F1F1F1;
-    border: 1px #23293B;
+    border: 1px #5E6164;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -325,8 +403,13 @@ footer {
     margin: 20px 0;
   }
   .home .walk .walk-text .btn:hover {
-    color: #F6F6F6;
-    background-color: #22283A;
+    color: #23293B;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .home .walk .walk-text .btn a {
+    color: #F6F7F8;
+    text-decoration: none;
   }
 }
 @media (max-width: 500px) {
@@ -343,6 +426,11 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
@@ -351,33 +439,55 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img img {
     order: 1;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column;
-    justify-items: center;
-  }
-}
-@media (max-width: 500px) {
-  .container {
     width: 100%;
-    margin: 0 auto;
-    justify-items: center;
   }
 }
-@media (max-width: 500px) {
-  .space-images .sky {
-    display: none;
-  }
+.home .register {
+  padding: 20px;
+  background-color: #F6F6F6;
 }
-@media (max-width: 500px) {
-  .space-images .launch {
-    display: none;
-  }
+.home .register input[type=text],
+.home .register input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  font-size: 1.2rem;
+  border: none;
+  background: #81848E;
 }
-@media (max-width: 500px) {
-  .space-images {
-    justify-content: center;
-  }
+.home .register input[type=text]:focus,
+.home .register input[type=password]:focus {
+  background-color: #F6F7F8;
+}
+.home .register hr {
+  border: 1px solid #F1F1F1;
+  margin-bottom: 25px;
+}
+.home .register label {
+  font-size: 1.6rem;
+  color: #5E6164;
+}
+.home .register .registerbtn {
+  background-color: #22283A;
+  color: #F6F6F6;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 10px;
+  font-size: 1.6rem;
+}
+.home .register .signin {
+  background-color: #F1F1F1;
+}
+.home .register .registerbtn:hover {
+  opacity: 1;
 }
