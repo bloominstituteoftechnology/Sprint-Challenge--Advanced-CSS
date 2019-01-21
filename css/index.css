@@ -342,11 +342,12 @@ footer {
   }
 }
 .home .walk .walk-text {
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    order: 1;
   }
 }
 .home .walk .walk-text h3 {
@@ -401,6 +402,7 @@ footer {
     align-items: center;
     cursor: pointer;
     margin: 20px 0;
+    order: 0;
   }
   .home .walk .walk-text .btn:hover {
     color: #23293B;
@@ -410,16 +412,6 @@ footer {
   .home .walk .walk-text .btn a {
     color: #F6F7F8;
     text-decoration: none;
-  }
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    order: 0;
-  }
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    order: 1;
   }
 }
 .home .walk .walk-img {

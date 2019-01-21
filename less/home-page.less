@@ -94,10 +94,10 @@
     }
   
     .walk-text {
-      width: 50%;
+      width: 100%;
       @media @mobile {
         width: 100%;
-        
+        order: 1;
       }
 
       h3 {
@@ -120,17 +120,11 @@
       
         @media @mobile {
           .custom-btn(300px, 50px, @btn-bg-color, @sea-shell);
-          
+          order: 0;
         }
   
       }
-      @media @mobile{
-        order: 0;
-      }
-      @media @mobile{
-        order: 1;
-        
-      }
+      
     }
 
     .walk-img {
