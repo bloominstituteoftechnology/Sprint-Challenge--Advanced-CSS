@@ -1,31 +1,78 @@
 // Navigation code here
 .top-nav {
-    display: flex;
+    display:        flex;
     width: @mobile;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    align-items:    center;
+    margin:         0 auto;
 }
 
 .top-image {
-    display: block;
-    margin-left:  auto;
-    margin-right: auto;
-    width: 100%;
+    display:        block;
+    margin-left:    auto;
+    margin-right:   auto;
+    width:          100%;
 
 }
 
 .top-nav a {
-    text-decoration: none;
+    text-decoration:    none;
     font-size: 14px;
-    justify-content: flex-end;
-    font-family: "Ubuntu";
-    margin: 20px;
+    justify-content:    flex-end;
+    font-family:        "Ubuntu";
+    margin:             20px;
 }
 
 .top-text {
-    display: flex;
-    font-family: "Russo One"; 
-    font-size: 50px; 
-    justify-content: center;
+    display:        flex;
+    font-family:    "Russo One"; 
+    font-size:      50px; 
+    justify-content:center;
+}
+
+// Expermental Code
+h1 { margin: 0; }
+.marker, #a1, #a2, #a3, #a4, #e5 {
+  animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.marker {
+  position: absolute; top: 4rem; left: -3rem;
+  height: 3rem; width: 5rem;
+  background-color: dodgerblue;
+  animation-name: marker;
+}
+
+#a1 { margin-left: 1rem;   animation-name: a1; }
+#a2 { margin-left: 7rem; animation-name: a2; }
+#a3 { margin-left: 16rem; animation-name: a3; }
+#a4 { margin-left: 21rem; animation-name: a4; }
+#a5 { margin: 0 36rem 0 42rem; animation-name: a5; }
+
+@keyframes a1 { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(35rem); }
+}
+@keyframes a2 { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(75rem); }
+}
+@keyframes a3 { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(81rem); }
+}
+@keyframes a4 { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(71rem); }
+}
+@keyframes a5 { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(34rem); }
+}
+@keyframes marker { 
+  0%, 20% { transform: translateX(0); }
+  50%, 70% { transform: translateX(337rem); }
 }

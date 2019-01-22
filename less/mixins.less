@@ -1,7 +1,19 @@
 // Mixins Here
-.custom-btn(@height, @width, @backgroundcolor, @foregroundcolor){
-    width:  @width;
-    height: @height;
-    background-color: @backgroundcolor;
-    color:  @foregroundcolor;
+.custom-btn(@height: 30px, @width: 80px , @backgroundcolor: dodgerblue, @foregroundcolor: white){
+        width:            @width;
+        height:           @height;
+        background-color: @backgroundcolor;
+        color:            @foregroundcolor;   
+}
+
+.btn button {
+    .custom-btn();    
+    
+
+}
+
+.btn button:hover {
+    background-color:  white;
+    color:             dodgerblue;
+    cursor:             pointer;
 }
