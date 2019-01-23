@@ -1,0 +1,389 @@
+.btn button {
+  width: 80px;
+  height: 30px;
+  background-color: dodgerblue;
+  color: white;
+}
+.btn button:hover {
+  background-color: white;
+  color: dodgerblue;
+  cursor: pointer;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-nav {
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.top-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.top-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  justify-content: flex-end;
+  font-family: "Ubuntu";
+  margin: 20px;
+}
+.top-text {
+  display: flex;
+  font-family: "Russo One";
+  font-size: 50px;
+  justify-content: center;
+}
+h1 {
+  margin: 0;
+}
+.marker,
+#a1,
+#a2,
+#a3,
+#a4,
+#e5 {
+  animation-timing-function: cubic-bezier(0.15, -0.01, 0.58, 1);
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+.marker {
+  position: absolute;
+  top: 4rem;
+  left: -3rem;
+  height: 3rem;
+  width: 5rem;
+  background-color: dodgerblue;
+  animation-name: marker;
+}
+#a1 {
+  margin-left: 1rem;
+  animation-name: a1;
+}
+#a2 {
+  margin-left: 7rem;
+  animation-name: a2;
+}
+#a3 {
+  margin-left: 16rem;
+  animation-name: a3;
+}
+#a4 {
+  margin-left: 21rem;
+  animation-name: a4;
+}
+#a5 {
+  margin: 0 36rem 0 42rem;
+  animation-name: a5;
+}
+@keyframes a1 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(35rem);
+  }
+}
+@keyframes a2 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(75rem);
+  }
+}
+@keyframes a3 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(81rem);
+  }
+}
+@keyframes a4 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(71rem);
+  }
+}
+@keyframes a5 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(34rem);
+  }
+}
+@keyframes marker {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  50%,
+  70% {
+    transform: translateX(337rem);
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 28%;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  width: 80px;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: auto;
+  border-radius: 10px;
+}
+@media ( max-width: 500px ) {
+  .home .space-images {
+    display: flex;
+    height: 25%;
+  }
+  .home .space-images img .blast {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  .home .sky,
+  .home .launch {
+    visibility: hidden;
+  }
+  .home .btn button {
+    width: 100%;
+  }
+  .home .walk-img img {
+    margin-left: 0px;
+  }
+}

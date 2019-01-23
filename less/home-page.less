@@ -23,7 +23,7 @@
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+      height: 28%;
     }
   }
 
@@ -47,8 +47,10 @@
     justify-content: center;
 
     .walk-text {
-      width: 50%;
-
+      width: 100%;
+      flex-flow: row wrap;
+      justify-content: center;
+      
       h3 {
         margin-bottom: 10px;
       }
@@ -57,7 +59,9 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button {
+        width: 80px;
+
       }
     }
 
@@ -66,10 +70,38 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
+        width: auto;
         border-radius: 10px;
       }
     }
+  }
+
+  @media @phone-normal {
+    
+    .space-images {
+      display:              flex;
+      height:               25%;
+      img .blast {
+        width:              50%;
+        height:             200px;
+        border-radius:      10px;
+        justify-content:    center;
+      }
+      
+    }
+
+    .sky, .launch {
+      visibility:           hidden;
+    }
+
+    .btn button {
+      width:                100%; 
+
+    }
+
+    .walk-img img {
+      margin-left:          0px;  
+    }
+
   }
 }// home
