@@ -11,12 +11,24 @@
     p {
       padding:0 15px;
     }
-  
+
+    img{
+
+      @media @phone {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        border-radius: 4px;
+      }
+    }
+    
+
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
+    .flexAndWrap ();
     width: 100%;
 
     img {
@@ -24,6 +36,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+      }
+    }
+
+    @media @phone { 
+      img:nth-child(2) {
+        display: none;
+      }
+      img:last-child{
+        display:none;
+      }
     }
   }
 
@@ -43,11 +70,25 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    .flexAndCenter ();
+
+
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 10px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 450px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,7 +99,24 @@
       }
 
       .btn {
+        font-size: 1.8rem;
+        color: white;
+        padding-top: 4px;
+        .button(30px; 100px; 3px;
+        #22283A);
+        text-align: center;
+
+        @media @phone {
+          .button(60px; 450px; 5px;
+          #22283A);
+          padding-top: 20px;
+        }
       }
+    }
+    .btn:hover {
+      color: #22283A;
+      background-color: white;
+      border: 1px solid #22283A;
     }
 
     .walk-img {
@@ -69,7 +127,16 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+
+      }
+      @media @phone {
+        width: 120%;
+        height: 120%;
+        align-items: center;
+        margin: 0;
       }
     }
+
   }
 }// home
