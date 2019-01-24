@@ -141,10 +141,11 @@ table {
 }
 html body {
   font-family: 'Ubuntu', sans-serif;
-  max-width: 900px;
   width: 100%;
   font-size: 62.5%;
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h1,
 h2,
@@ -220,9 +221,9 @@ h4 {
   color: blue;
 }
 .home {
-  justify-content: center;
   margin: 6.1rem 0 0 0;
   background-color: red;
+  max-width: 1000px;
   width: 100%;
 }
 .home .lift-off {
