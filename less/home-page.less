@@ -105,7 +105,8 @@
       .nav-container{
         flex-direction:column;
         justify-content: space-around;
-        height: 10rem;
+        align-content: space-between;
+        height: 5rem;
         .logo-heading{
           width:100%;
           .center();
@@ -113,49 +114,39 @@
         }
         .nav{
           width:100%;
-          justify-content: space-evenly;
+          justify-content: space-around;
           a{
-            font-size: 1.5rem;
+            font-size: 1rem;
           }
-        }
-        
-
-     }
-        
+        }        
+      }        
     }
     .home{
       margin:70px 0;
       padding:0 5px;
-      .content-section{
-        .center();
-        .text-content{
-     
-          width:100%;
-        }
-        .img-content{
-          .center();
-          .clearPaddingMargin();
-          width:100%;
-        }
-      } 
-      .inverse-content{
-        .center();
-        flex-direction:column-reverse;
-        width:100%;
-        .img-content{
-          width:100%;
+      .rocket-imgs{
+        justify-content: left;
+        img{
+          border-radius:5px;
+          padding:0 2rem;
+          height: 300px;
+          width: 475px;
         }
       }
-      .content-destination{
-        width:100%;
-      }
-      .content-pick {
-        .center();
-        width:100%;
+      .bottom{
         flex-direction: column;
-        .destination{
-          padding: 0 2rem;
-          width:100%;
+        padding: 3rem;
+        .bottom-text{
+          width:375px;
+          .btn{          
+            // width:100%;
+            .button-creator(100%, 50px, @footer-bg-color,@footer-text-color,0);
+          }
+        }
+        .walk-img img{
+          margin: 1rem 0;
+          width: 375px;
+          height: 300px;
         }
       }
     }

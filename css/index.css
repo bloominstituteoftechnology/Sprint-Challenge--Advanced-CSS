@@ -348,7 +348,8 @@ h4 {
   body .main-navigation .nav-container {
     flex-direction: column;
     justify-content: space-around;
-    height: 10rem;
+    align-content: space-between;
+    height: 5rem;
   }
   body .main-navigation .nav-container .logo-heading {
     width: 100%;
@@ -360,53 +361,55 @@ h4 {
   }
   body .main-navigation .nav-container .nav {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   body .main-navigation .nav-container .nav a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   body .home {
     margin: 70px 0;
     padding: 0 5px;
   }
-  body .home .content-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  body .home .rocket-imgs {
+    justify-content: left;
   }
-  body .home .content-section .text-content {
-    width: 100%;
+  body .home .rocket-imgs img {
+    border-radius: 5px;
+    padding: 0 2rem;
+    height: 300px;
+    width: 475px;
   }
-  body .home .content-section .img-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  body .home .bottom {
+    flex-direction: column;
+    padding: 3rem;
+  }
+  body .home .bottom .bottom-text {
+    width: 375px;
+  }
+  body .home .bottom .bottom-text .btn {
     padding: 0;
     margin: 0;
-    width: 100%;
-  }
-  body .home .inverse-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-  body .home .inverse-content .img-content {
-    width: 100%;
-  }
-  body .home .content-destination {
-    width: 100%;
-  }
-  body .home .content-pick {
+    justify-content: flex-start;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    flex-direction: column;
+    height: 50px;
+    background-color: #81848E;
+    color: #F4F4F4;
+    font-size: 1rem;
   }
-  body .home .content-pick .destination {
-    padding: 0 2rem;
-    width: 100%;
+  body .home .bottom .bottom-text .btn:hover {
+    background-color: #F4F4F4;
+    color: #81848E;
+    cursor: pointer;
+  }
+  body .home .bottom .walk-img img {
+    margin: 1rem 0;
+    width: 375px;
+    height: 300px;
   }
 }
