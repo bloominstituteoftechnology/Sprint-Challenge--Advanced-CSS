@@ -170,11 +170,11 @@ h4 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 1px solid #F1F1F1;
   background-color: #F6F6F6;
   position: fixed;
   top: 0;
-  height: 10rem;
+  height: 6.1rem;
 }
 .main-navigation .nav-container {
   display: flex;
@@ -182,6 +182,7 @@ h4 {
   align-items: center;
   max-width: 900px;
   width: 100%;
+  line-height: 2.6rem;
   flex-direction: column;
   padding: 0;
   margin: 0;
@@ -190,25 +191,23 @@ h4 {
 }
 .main-navigation .nav-container .logo-heading {
   width: 100%;
-  padding: 0;
-  margin: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .main-navigation .nav-container .logo-heading a {
   color: #454A59;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .main-navigation .nav-container .nav {
-  width: 100%;
+  width: 375px;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .main-navigation .nav-container .nav a {
   text-decoration: none;
@@ -221,7 +220,8 @@ h4 {
   color: blue;
 }
 .home {
-  margin: 10rem 0 0 0;
+  justify-content: center;
+  margin: 6.1rem 0 0 0;
   background-color: red;
   width: 100%;
 }
@@ -252,6 +252,22 @@ h4 {
 .home .planet-text {
   width: 100%;
   margin: 1rem 0;
+}
+.home .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.home .bottom .bottom-text {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .bottom .bottom-img {
+  width: 48%;
 }
 .home .content-pick {
   padding-top: 30px;

@@ -1,0 +1,9 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clearPaddingMargin {
+  padding: 0;
+  margin: 0;
+}
