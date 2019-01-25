@@ -69,25 +69,30 @@
     @media @phone {
       display: flex;
       flex-direction: column;
-      border: 1px solid red;
-      height: 700px;
+      padding: 0;
     }
   
 
     .walk-text {
       width: 50%;
       @media @phone {
-        border: 1px solid red;
         order: 2;
         width: 100%;
+        margin-top: 20px;
       }
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          margin-left: 10px;
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @phone {
+          margin-left: 10px;
+        }
       }
 
       .btn button {
@@ -102,9 +107,9 @@
       width: 46%;
       margin-left: 4%;
       @media @phone {
-        border: 1px solid red;
-        width: 100%;
+        width: 95%;
         order: 1;
+        margin: 0 auto;
       }
 
       

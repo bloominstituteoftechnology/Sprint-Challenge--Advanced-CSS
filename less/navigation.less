@@ -5,6 +5,9 @@
     width: 100%;
     height: 70px;
     background: @footer-background;
+    @media @phone {
+        width: 100%;
+    }
 
     h1 {
         display: block;
@@ -15,12 +18,6 @@
     nav {
         text-align: center;
         padding-top: 10px;
-        @media @phone {
-            nav {
-                width: 100%;
-                text-align: center;
-            }
-        }
     }
     a {
         text-decoration: none;
