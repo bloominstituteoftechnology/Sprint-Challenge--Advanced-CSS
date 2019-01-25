@@ -1,13 +1,89 @@
 // Mixins Here
 
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+.custom-btn(@width: 300px, @height: 200px, @bgcolor: white, @font-color: black) {
+    width: @width;
+    height: @height;
+    background-color: @bgcolor;
+    color: @font-color;
+    border: 1px solid black;
+    .border-radius(10px);
+    .center;
+    cursor: pointer;
+    margin: 20px 0;
+    
+    @media @tablet {
+        font-size: 18px;
+    }
+    
+    @media @mobile {
+        font-size: 20px;
+    }
+}    
+
+.topper() {
+    width: 33%;   
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+    margin: 0 53.7% 0;
+    font-size: 1.6rem;
+}
+
+.navs() {
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 1.6rem;
+}
+
 .button() {
     border: 1px solid @btn-bg-color;
     background: @btn-bg-color;
-    .border-radius(15px);
+    .border-radius(5px);
     width: 100px;
-    height: 40px;
+    height: 35px;
     .center();
-    color: @white;
-    font-size: 1.8rem;
+    color: @porcelain;
+    font-size: 1.6rem;
 }  
+
+.top() {
+
+    .top-section {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        .center()
+    }
+
+    nav {
+    border: 1px solid green;    
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 0 10px 0; 
+
+    }
+    
+    .top-section h2 {
+        border: 1px solid blue;
+        width: 160px;
+        padding: 0 15px 0px;
+        font-size: 3rem;
+
+    }
+}
+
+  
 
