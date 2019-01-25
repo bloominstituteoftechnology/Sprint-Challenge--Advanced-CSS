@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive is built from the ground up to be accessible to different devices with different sizes/resolutions.
+
+Adaptive targets a specific size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop first prioritizes desktop resolutions. Mobile first prioritizes mobile resolutions.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Allows easier conversion oto rem units when choosing various sizes.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Troublesome to set up, but allows for more intuitive implementation of CSS. Also provides more functionality.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting and mixins are useful. Need to make more of an effort to implement thing like name spacing. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
