@@ -20,9 +20,16 @@
     margin: 0 20px 0 1px;
   }
 }
-@media (max-width: 500px) and screen and (min-width: 500px) {
-  .sky {
+@media (max-width: 500px) and (max-width: 500px) {
+  .sky,
+  .launch {
     display: none;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .blast {
+    width: 99%;
+    height: 40px;
   }
 }
 @media (max-width: 900px) {
