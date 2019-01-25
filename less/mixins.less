@@ -1,11 +1,20 @@
 // Mixins Here
-.btn(@width, @height) {
+.btn(@width, @height, @radius) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: @width;
     height: @height;
     background: black;
     color: white;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: @radius;
+
+    &:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
  }
 center {
     display: flex;
