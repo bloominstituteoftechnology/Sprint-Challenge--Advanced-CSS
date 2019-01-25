@@ -221,11 +221,3 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-header nav a{
-    display: inline-block;
-    margin: 0 80px;
-  }
-  @phone {
-    max-width: 500px;
-    width: 100%;
-}
