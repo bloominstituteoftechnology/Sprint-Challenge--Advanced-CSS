@@ -1,5 +1,5 @@
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
-
+ 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
 ## Instructions
@@ -33,15 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-
+Fully responsive smoothly changes layout width while adaptive adjusts layouts to predefined widths.
 2. Describe what it means to be mobile first vs desktop first.
-
+Mobile first designs with mobile view as the primary focus instead of an afterthought wher desktop first designs with the desktop views as its primary focus.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+Making this change sets each unit of rem to 10px -- making it easier set sizes.
 4. How would you describe preprocessing to someone new to CSS?
-
+Preprocessing allows you to use enhanced syntax (mixins, variables, nesting...) which then compiles down to regular css.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+My favorite concept of preprocessing are mixins. The concept that gave me the most trouble was the syntax for setting escape 'variables'.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
@@ -108,7 +108,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [ ] LESS : create a parametric mixin that is used to create the `sign up` button styles.
 
 * [ ]  Use at least 2 parameters to create your button
 
