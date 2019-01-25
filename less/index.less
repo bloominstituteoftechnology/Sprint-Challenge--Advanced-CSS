@@ -28,9 +28,29 @@
 @border-real: #dee2e6;
 
 // Mobile var
-@phone: max-width 500px;
+@phone{
+  max-width: 500px;
+  width: 100%;
+}
+header nav a{
+  display: block;
+}
+
 
 // Mixins Here
+header nav a{
+  display: block;
+  margin-top:35px;
+}
+@phone {
+  max-width: 500px;
+  width: 100%;
+}
+
+button:hover {
+    border: 1px solid black;
+    color:white;
+}
 
 
 // Reset Here
@@ -123,6 +143,35 @@ table {
   }
   
 // Navigation code here
+header nav a{
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 13px;
+  margin-left: 10em;
+  padding: 0 1em;
+}
+#main-content{
+  display:inline-block;
+  font-family: 'Comic Sans MS','Times New Roman';
+  font-size: 13px;
+  margin-left: 17em;
+  padding: 0 1em;
+}
+@phone header nav a{
+  width:100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 3px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 
 // Footer Styles
 footer {
