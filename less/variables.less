@@ -30,8 +30,9 @@
  
 .intro h2{
     @media @mobile {
-        background: red;}
+        background: red;
     }
+}
 
 @media @mobile {
    
@@ -57,36 +58,46 @@
     }
 
     @media @mobile {
-        .blast {
+        
+        img.main {
+            height: 121px;
+        }        
+       
+        img.blast {
+            border: 1px solid blue;
             width: 99%;
-            height: 40px;
+            height: 120px;
         }
     }
 
+    @media @mobile {
+        
+        .walk {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            margin: 0 0px;
+            padding: 0 0 10px 0;
+
+            h3 {
+              width: 180%;
+            }
+      
+            p {
+              width: 250%;
+            }
+      
+            .walk-text .btn {
+                border: 1px solid red;
+                width: 3px; 
+            }
+        }
 
 
+    }
 
 }
 
-@media @tablet {
-    body{
-        background: blue;
-    }
-}
-
-@media @mobile {
-    nav {
-        .topper();
-        margin: 10px 33.5% 11px;
-    }
-}
-
-@media @tablet {
-    nav {
-        .topper();
-        margin: 33px 33.5% 11px;
-    }
-}        
 
 
 

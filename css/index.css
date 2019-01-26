@@ -27,36 +27,32 @@
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
-  .blast {
+  img.main {
+    height: 121px;
+  }
+  img.blast {
+    border: 1px solid blue;
     width: 99%;
-    height: 40px;
+    height: 120px;
   }
 }
-@media (max-width: 900px) {
-  body {
-    background: blue;
-  }
-}
-@media (max-width: 500px) {
-  nav {
-    width: 33%;
+@media (max-width: 500px) and (max-width: 500px) {
+  .walk {
+    border: 1px solid red;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 53.7% 0;
-    font-size: 1.6rem;
-    margin: 10px 33.5% 11px;
+    flex-direction: column;
+    margin: 0 0px;
+    padding: 0 0 10px 0;
   }
-}
-@media (max-width: 900px) {
-  nav {
-    width: 33%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 53.7% 0;
-    font-size: 1.6rem;
-    margin: 33px 33.5% 11px;
+  .walk h3 {
+    width: 180%;
+  }
+  .walk p {
+    width: 250%;
+  }
+  .walk .walk-text .btn {
+    border: 1px solid red;
+    width: 3px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
