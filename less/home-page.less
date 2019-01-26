@@ -11,7 +11,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -56,15 +56,59 @@
       p {
         margin-bottom: 26px;
       }
+      // button style and animations
+      .button {
+          border-radius: 4px;
+          background-color: @ebony-clay;
+          border: none;
+          color: white;
+          text-align: center;
+          font-size: 15px;
+          padding: 10px;
+          width: 25%;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
 
-      .btn {
+          @media  (max-width: 500px) {
+            color: orange;
+      }
+
+      .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+      }
+
+      .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+      }
+
+      .button:hover span {
+          padding-right: 15px;
+          color: black;
+      }
+
+      .button:hover span:after {
+          opacity: 1;
+          right: 0;
+      }
+
+      .button:hover {
+        background-color: @river-bend;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
