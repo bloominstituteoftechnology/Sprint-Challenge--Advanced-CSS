@@ -256,6 +256,10 @@ footer {
   padding: 2%;
   width: 100px;
 }
+.btn:hover {
+  background: white;
+  color: #22283A;
+}
 @media (max-width:500px) {
   .header-img img {
     width: 100%;
