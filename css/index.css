@@ -177,6 +177,9 @@ p {
   text-decoration: none;
   color: #23293B;
 }
+.nav-con ul li a a:hover after {
+  text-decoration: underline;
+}
 .nav-con h1 {
   font-size: 40px;
 }
@@ -231,6 +234,44 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .button {
+  border-radius: 4px;
+  background-color: #23293B;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.home .walk .walk-text .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.home .walk .walk-text .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.home .walk .walk-text .button:hover span {
+  padding-right: 15px;
+  color: black;
+}
+.home .walk .walk-text .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.home .walk .walk-text .button:hover {
+  background-color: #454A59;
 }
 .home .walk .walk-img {
   width: 46%;
