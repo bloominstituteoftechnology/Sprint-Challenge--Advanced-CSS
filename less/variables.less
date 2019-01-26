@@ -44,10 +44,10 @@
      h2 {
         .center();
      }
-      nav a{
-        border: 1px solid green;
-        margin: 0 20px 0 1px;
-        
+      nav {
+        border: 1px solid red;
+        width: 80%;
+        justify-content: space-evenly;
       }  
     }
 
@@ -60,7 +60,7 @@
     @media @mobile {
         
         img.main {
-            height: 121px;
+            height: 120px;
         }        
        
         img.blast {
@@ -76,24 +76,32 @@
             border: 1px solid red;
             display: flex;
             flex-direction: column;
+            
             margin: 0 0px;
             padding: 0 0 10px 0;
 
-            h3 {
-              width: 180%;
-            }
+            .walk-text {
+                border: 1px solid blue; 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 0 40px 0 0;
+
+                h3 {
+                    width: 180%;
+                }
       
-            p {
-              width: 250%;
-            }
+                p {
+                    width: 250%;
+                }
       
-            .walk-text .btn {
-                border: 1px solid red;
-                width: 3px; 
+                .btn {
+                    border: 1px solid red;
+                    width: 80px; 
+                }
             }
         }
-
-
     }
 
 }
