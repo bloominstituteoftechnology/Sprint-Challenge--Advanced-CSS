@@ -46,6 +46,8 @@ It makes it easier to adjust our font-sizes because the default size is changed 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor has its own syntax that makes it easier for a developer to style a webpage and then it recompiles that syntax into acceptable CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
