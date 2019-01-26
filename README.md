@@ -42,6 +42,8 @@ Mobile first uses min-width to build a websites mobile layout first and then exp
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It makes it easier to adjust our font-sizes because the default size is changed from 16px to 10. So our rem units are in multiples of 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
