@@ -175,7 +175,6 @@ img {
   height: 90px;
   background: #f6f6f6;
   border-bottom: 1px none #f6f6f6;
-  position: fixed;
 }
 .main-navigation .nav-container {
   height: 100%;
@@ -350,4 +349,58 @@ div.uppers{
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+
+/*.home {
+
+  .intro {
+    padding: 40px 0px 15px;
+    
+
+    h2 {
+      
+    }
+
+    p {
+
+    }
+  
+  }
+  */
+}
+  .uppers{
+    padding-left: 2%;
+  }
+
+  section#space-images {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+
+     img {
+      width: 33%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+section.visit-planets {
+  margin-bottom: 15%;
+  padding-top: 30px;
+  border-bottom: @cloudy;
+}
+
+
+h3.question {
+  margin-top: 15px;
+  font-size: 3.2em;
+}
+
+.visit-planets p {
+    margin-top: 15px;
+  }
 }
