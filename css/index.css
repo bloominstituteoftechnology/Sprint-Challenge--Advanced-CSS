@@ -1,22 +1,15 @@
 @media (max-width: 500px) {
-  .intro h2 {
-    background: red;
-  }
-}
-@media (max-width: 500px) {
   .top-section {
-    border: 1px solid red;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .top-section h2 {
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 100px;
     height: 200px;
   }
   .top-section nav {
@@ -260,25 +253,19 @@ p {
   font-size: 1.6rem;
   margin: 33px 33.5% 11px;
 }
+@media (max-width: 500px) {
+  .top-section nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+}
 .top-section nav a {
   text-decoration: none;
   color: #454A59;
   font-size: 1.6rem;
-}
-@media (max-width: 500px) {
-  .top-section {
-    border: 1px solid green;
-  }
-  .top-section nav {
-    width: 33%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 53.7% 0;
-    font-size: 1.6rem;
-    width: 40px;
-    margin: 30px 33.5% 11px;
-  }
 }
 footer {
   color: #22283B;
@@ -356,17 +343,25 @@ footer {
   color: #F6F7F8;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 450px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background: #F6F7F8;
   color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .walk {
+    border: 1px solid red;
     margin-top: 50px;
     border-top: 1px solid #dee2e6;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .home .walk .walk-img {
