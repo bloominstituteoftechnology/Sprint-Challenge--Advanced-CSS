@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive is automatically adjusted based on the size  of the user's  screen and Adaptive will adapt to the width of the user's screen.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile begins with designing for he main function of the site then aims for the higher resolutions often called progressive enhancement.
+Desktop first means designing for the highest specifications then going down to smaller resolutions often called graceful degradation.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+it will make the 'rem' units easier to use because 100% font-size in html converts to 16px and 1 'rem' unit is equivalent to 10px, so if you change it to 62.5%, the px will be 10 which is 1 rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+very powerful and the most interesting part of web development so far. best tools to design css.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+my favorite concept is the variables because it is very easy to use and very useful.
+The concept that gives me the most trouble is the parameters because it was confusing at first.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,27 +64,27 @@ Because you are using a preprocessor, there are two parts to setting up your pro
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -80,7 +92,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
