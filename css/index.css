@@ -247,3 +247,12 @@ footer {
 .header-img img {
   border-radius: 10px;
 }
+.btn {
+  background-color: #22283A;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding: 2%;
+  width: 100px;
+}
