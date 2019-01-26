@@ -50,6 +50,8 @@ A preprocessor has its own syntax that makes it easier for a developer to style 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+My favorite concept is nesting and variables because it really helps me to section off my styling to specific sections of the page and to keep track of certain properties that I need to use over and over again.
+
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
