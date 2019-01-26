@@ -272,3 +272,22 @@ footer {
     height: 100%;
   }
 }
+@media (max-width:500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 2%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    padding: 5%;
+  }
+}
