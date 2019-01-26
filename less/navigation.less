@@ -1,1 +1,26 @@
 // Navigation code here
+
+.top{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid @nav-border;
+    background: @nav-bg;
+
+    .logo{
+        font-size: 3rem;
+        margin-bottom:12px;
+        font-family: 'Russo One', sans-serif;
+        color:@header-font-color;
+    }
+
+    nav a{
+        text-decoration:none;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        margin:10px;
+        color:@nav-font;
+    }
+}
