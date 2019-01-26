@@ -5,48 +5,47 @@
 }
 @media (max-width: 500px) {
   .top-section {
+    border: 1px solid red;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .top-section h2 {
+    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 200px;
   }
   .top-section nav {
-    border: 1px solid red;
-    width: 80%;
-    justify-content: space-evenly;
+    margin: 10px;
+  }
+  .top-section nav a {
+    padding: 2px 10px;
   }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .sky,
   .launch {
     display: none;
   }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+@media (max-width: 500px) {
   img.main {
-    height: 120px;
-  }
-  img.blast {
-    border: 1px solid blue;
-    width: 99%;
-    height: 120px;
+    width: 100%;
+    border-radius: 5px;
   }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .walk {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin: 0 0px;
     padding: 0 0 10px 0;
   }
   .walk .walk-text {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,8 +59,19 @@
     width: 250%;
   }
   .walk .walk-text .btn {
-    border: 1px solid red;
-    width: 80px;
+    border: 1px solid #22283A;
+    background: #22283A;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 258%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6F7F8;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -250,15 +260,25 @@ p {
   font-size: 1.6rem;
   margin: 33px 33.5% 11px;
 }
-@media (max-width: 500px) {
-  .top-section nav {
-    margin: 33px 13.5% 11px;
-  }
-}
 .top-section nav a {
   text-decoration: none;
   color: #454A59;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .top-section {
+    border: 1px solid green;
+  }
+  .top-section nav {
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 53.7% 0;
+    font-size: 1.6rem;
+    width: 40px;
+    margin: 30px 33.5% 11px;
+  }
 }
 footer {
   color: #22283B;
@@ -289,6 +309,13 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -333,6 +360,15 @@ footer {
   background: #F6F7F8;
   color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .walk {
+    margin-top: 50px;
+    border-top: 1px solid #dee2e6;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -341,4 +377,12 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 255%;
+    margin-right: 1%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
