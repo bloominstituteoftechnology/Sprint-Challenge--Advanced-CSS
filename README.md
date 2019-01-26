@@ -38,6 +38,8 @@ An adaptive website is styled to be responsive at certain breakpoints while a fu
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first uses min-width to build a websites mobile layout first and then expand into the desktop version. Desktop first uses max-width to build the desktop version first.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 4. How would you describe preprocessing to someone new to CSS?
