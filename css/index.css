@@ -181,6 +181,7 @@ p {
   font-size: 1.5rem;
   margin: 10px;
   color: #454A59;
+  padding: 4px;
 }
 footer {
   color: #22283B;
@@ -241,5 +242,8 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+.header-img img {
   border-radius: 10px;
 }
