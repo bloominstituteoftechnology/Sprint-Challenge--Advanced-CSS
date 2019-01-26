@@ -390,8 +390,7 @@ div.uppers{
 
 section.visit-planets {
   margin-bottom: 15%;
-  padding-top: 30px;
-  border-bottom: @cloudy;
+  padding-top: 30px; 
 }
 
 
