@@ -83,8 +83,8 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -158,23 +158,23 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0% auto;
 }
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
+  padding: 2% 0%;
   border: 1px double #e0e0e0;
-  border-radius: 10px;
+  border-radius: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 1%;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0% 1%;
 }
 .home .space-images {
   display: flex;
@@ -183,12 +183,12 @@ footer {
 }
 .home .space-images img {
   width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
+  margin: 2% 2.5%;
+  border-radius: 2%;
   height: 100%;
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 1%;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -199,7 +199,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 6% 7%;
   display: flex;
   justify-content: center;
 }
