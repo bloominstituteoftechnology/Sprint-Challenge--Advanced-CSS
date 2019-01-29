@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+  Adaptive design has multiple layouts for different screen sizes while responsive has one layout that works across multiple screen sizes.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+  A mobile first design is designing a website with mobile phone first in mind.
+  It is most popular because most people browse the web from their phones, so its important to design mobile first so you can reach most of the market.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+  It sets the fonts size to 10px which equals 1rem
+
 4. How would you describe preprocessing to someone new to CSS?
 
+  It allows you to use a different syntax that is different from the basic css syntax.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like using variables, but I have a hard time with mixins and im struggling with getting basic code to work when using the less compiler
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -58,13 +69,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
