@@ -205,6 +205,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .top-image {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -269,7 +272,14 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn .walk-btn {
+  padding: 10px 0;
+  width: 100%;
   display: flex;
   border: 1px solid;
   width: 30%;
@@ -279,14 +289,15 @@ footer {
   color: white;
   background: black;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text .btn .walk-btn:hover {
   color: black;
   background: white;
 }
-.home .walk .walk-text .btn .walk-btn {
-  padding: 10px 0;
-  width: 100%;
-  font-size: 1.5rem;
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn .walk-btn {
+    width: 100%;
+    padding: 2rem 0;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

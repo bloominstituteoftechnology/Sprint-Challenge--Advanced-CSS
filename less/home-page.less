@@ -4,6 +4,11 @@
 
   .intro {
 
+    .top-image{
+      width: 100%
+    }
+
+
     h2 {
       padding: 15px;
     }
@@ -76,11 +81,18 @@
       }
 
       .btn {
-        .button-maker(white, black);
+        @media @mobile{
+          width: 100%;
+        }
         .walk-btn {
           padding: 10px 0;
           width: 100%;
           font-size: 1.5rem;
+          .button-maker(white, black);
+          @media @mobile{
+            width: 100%;
+            padding: 2rem 0;
+          }
         }
         
       }
