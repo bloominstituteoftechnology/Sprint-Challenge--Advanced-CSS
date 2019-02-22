@@ -2,6 +2,12 @@
 
 .home {
 
+  .main-img{
+    img{
+      max-width: 100%;
+    }
+  }
+
   .intro {
 
     h2 {
@@ -57,7 +63,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button{
+        width: 75px;
+        height: 30px;
+        border-radius: 6px;
+        .button-colors(@front-color; @back-color);
+      }
+
+      .btn button:hover{
+        .button-colors(@back-color; @front-color);
       }
     }
 
