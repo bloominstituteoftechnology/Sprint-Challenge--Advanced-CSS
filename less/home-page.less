@@ -4,6 +4,7 @@
 
   .intro {
 
+
     h2 {
       padding: 15px;
     }
@@ -18,6 +19,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .keep {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+    .erase {
+      @media @mobile {
+        display: none;
+      }
+    }
+    
 
     img {
       width: 28%;
@@ -45,9 +57,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @mobile{
+      flex-flow: column-reverse;
+      padding: 50px 12px;
+    }
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 100%;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +77,30 @@
       }
 
       .btn {
+        @media @mobile{
+          width: 100%;
+        }
+        .walk-btn {
+          padding: 10px 0;
+          width: 100%;
+          font-size: 1.5rem;
+          .button-maker(white, black);
+          @media @mobile{
+            width: 100%;
+            padding: 2rem 0;
+          }
+        }
+        
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;

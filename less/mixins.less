@@ -1,1 +1,24 @@
 // Mixins Here
+
+.flex-box(@a, @b){
+    display: flex;
+    justify-content: @a;
+    align-items: @b;
+}
+
+
+.button-maker(@color, @background) {
+    display: flex;
+    border: 1px solid;
+    width: 30%;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: @color;
+    background: @background;
+    &:hover {
+        color: @background;
+        background: @color;
+        cursor: pointer;
+    }
+}
