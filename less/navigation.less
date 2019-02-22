@@ -1,1 +1,27 @@
 // Navigation code here
+.navi {
+    max-width: 1000px;
+    width: 100%;
+    margin: 10px auto 0px auto;
+    .flexmix(column, center, center);
+    background-color: whitesmoke;
+    text-align: center;
+    h1 {
+        font-size: 4rem;
+    }
+    nav {
+        margin: 15px 0px;
+
+        a {
+            text-decoration: none;
+            margin-left:20px;
+            font-size: 1.6rem;
+            color: black;  
+        }
+    }
+}
+@media @mobile {
+    .navi {
+        margin: 10px 0px 0px 0px
+    }
+}
