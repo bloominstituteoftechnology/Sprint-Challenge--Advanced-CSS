@@ -56,9 +56,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @mobile{
+      flex-flow: column-reverse;
+      padding: 50px 12px;
+    }
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 100%;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -82,6 +89,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
