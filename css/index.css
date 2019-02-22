@@ -1,3 +1,22 @@
+.btn {
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+  padding: 12px;
+  padding-right: 16px;
+  background: blue;
+  color: white;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+}
+.btn:hover {
+  background: #ffffff;
+  color: #17a2b8;
+}
 .space-images {
   display: flex;
   flex-direction: row;
@@ -220,16 +239,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn {
-  border: 1px solid black;
-  height: 40px;
-  width: 100px;
-  padding: 12px;
-  padding-right: 16px;
-  background: blue;
-  color: white;
-  font-size: 16px;
 }
 .home .intro {
   padding: 90px 0 10px;

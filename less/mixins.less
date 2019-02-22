@@ -1,38 +1,31 @@
 // Mixins Here
 
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
- 
-  
-  .button-creator(@width, @height, @bg-color, @font-color, @font-size) {
-    .border-radius(15px);
-    .center;
-    width: @width;
-    height: @height;
-    background-color: @bg-color;
-    color: @font-color;
-    border: 0px solid @silver;
-    cursor: pointer;
-    font-size: @font-size;
-  
+.btn {
+    border: 1px solid black;
+    height: 40px;
+    width: 100px;
+    padding: 12px;
+    padding-right: 16px;
+    background: blue;
+    color: white;
+    font-size: 16px;
+
     @media @mobile {
-      width: 100%;
+        width: 100%;
     }
     
     &:hover {
-      background: @white;
-      color: @button-bg;
+        background: @white;
+        color: @button-bg;
     }
+    
   }
+  
+  
+.space-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  .space-images {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      
-      
-  }
+
+}
