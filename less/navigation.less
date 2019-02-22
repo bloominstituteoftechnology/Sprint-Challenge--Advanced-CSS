@@ -1,10 +1,10 @@
 // Navigation code here
 .top-nav {
-    display:        flex;
-    width: @mobile;
+    display:         flex;
+    width:           @phone;
     justify-content: center;
-    align-items:    center;
-    margin:         0 auto;
+    align-items:     center;
+    margin:          0 auto;
 }
 
 .top-image {
@@ -12,15 +12,25 @@
     margin-left:    auto;
     margin-right:   auto;
     width:          100%;
+   
 
 }
 
 .top-nav a {
     text-decoration:    none;
-    font-size: 14px;
-    justify-content:    flex-end;
+    font-size:          14px;
+    justify-content:    center;
     font-family:        "Ubuntu";
-    margin:             20px;
+    margin:             10px;
+}
+
+@media @phone-normal {
+  .top-nav a {
+    text-decoration:    none;
+    font-size:          12px;
+    align-items:        center;
+    font-family:        "Ubuntu";
+  }
 }
 
 .top-text {
@@ -34,16 +44,16 @@
 h1 { margin: 0; }
 .marker, #a1, #a2, #a3, #a4, #e5 {
   animation-timing-function: cubic-bezier(0.15,-0.01, 0.58, 1);
-  animation-duration: 5s;
+  animation-duration:        5s;
   animation-iteration-count: infinite;
-  will-change: transform;
+  will-change:               transform;
 }
 
 .marker {
-  position: absolute; top: 4rem; left: -3rem;
-  height: 3rem; width: 5rem;
+  position:           absolute; top: 4rem; left: -3rem;
+  height:             3rem; width: 5rem;
   background-color: dodgerblue;
-  animation-name: marker;
+  animation-name:     marker;
 }
 
 #a1 { margin-left: 1rem;   animation-name: a1; }

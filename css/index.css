@@ -187,9 +187,17 @@ p {
 .top-nav a {
   text-decoration: none;
   font-size: 14px;
-  justify-content: flex-end;
+  justify-content: center;
   font-family: "Ubuntu";
-  margin: 20px;
+  margin: 10px;
+}
+@media ( max-width: 500px ) {
+  .top-nav a {
+    text-decoration: none;
+    font-size: 12px;
+    align-items: center;
+    font-family: "Ubuntu";
+  }
 }
 .top-text {
   display: flex;
@@ -207,18 +215,26 @@ h1 {
 #a4,
 #e5 {
   animation-timing-function: cubic-bezier(0.15, -0.01, 0.58, 1);
-  animation-duration: 5s;
+  animation-duration:        5s;
   animation-iteration-count: infinite;
-  will-change: transform;
+  will-change:               transform;
 }
 .marker {
-  position: absolute;
-  top: 4rem;
-  left: -3rem;
-  height: 3rem;
-  width: 5rem;
+  position:           absolute;
+  top:                4rem;
+  left:              -3rem;
+  height:             3rem;
+  width:              5rem;
   background-color: dodgerblue;
-  animation-name: marker;
+  animation-name:     marker;
+}
+
+@media ( max-width: 500px ) {
+    .marker {
+        width:              3rem;
+        background-color: red;
+        height:             1rem;
+    }
 }
 #a1 {
   margin-left: 1rem;
@@ -344,37 +360,42 @@ footer {
   justify-content: center;
 }
 .home .walk .walk-text {
-  width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
+  width:          100%;
+  flex-flow:      row wrap;
+  flex-direction: row-reverse;
+
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
-  margin-bottom: 26px;
+  margin-bottom:  26px;
+  display:        flex;
+  flex-direction: column-reverse;
 }
 .home .walk .walk-text .btn button {
   width: 80px;
 }
 .home .walk .walk-img {
-  width: 46%;
+  width: 100%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
   width: auto;
   border-radius: 10px;
 }
+
 @media ( max-width: 500px ) {
   .home .space-images {
     display: flex;
     height: 25%;
   }
   .home .space-images img .blast {
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     justify-content: center;
+    align-items: center;
   }
   .home .sky,
   .home .launch {
