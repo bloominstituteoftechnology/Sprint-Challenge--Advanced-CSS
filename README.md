@@ -57,8 +57,8 @@ whereas transpiling compiles the syntax into a different language.
 
 My favorite concept is nesting code, this is the way css should have been designed from the 
 beginning as it represents the nested structure of the layout. My least favorite concept
-is mixins simply because I dont understand it well enough as I fell behind on doing my project
-work.
+is media queries. I was never able to finish them in any of the projects as I ran out of time 
+doing other stuff. Now in this project I am having trouble making them work.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

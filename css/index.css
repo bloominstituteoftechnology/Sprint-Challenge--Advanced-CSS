@@ -226,32 +226,37 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.home .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.home .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
+.home .walk-text .btn button {
   width: 75px;
   height: 30px;
   border-radius: 6px;
   color: white;
   background: black;
 }
-.home .walk .walk-text .btn button:hover {
+.home .walk-text .btn button:hover {
   color: black;
   background: white;
 }
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media max-width: 500px {
+  p {
+    background: red;
+  }
 }
