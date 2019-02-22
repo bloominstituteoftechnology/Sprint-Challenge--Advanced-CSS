@@ -1,3 +1,14 @@
+.nav-styling {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  color: #454A59;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +170,47 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.navigation-container {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  background: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  color: #454A59;
+}
+.navigation-container h1.home-title {
+  font-size: 3.2rem;
+  padding: 1.5rem 0 0.75rem 0;
+}
+@media ( max-width: 500px ) {
+  .navigation-container h1.home-title {
+    font-size: 3.5rem;
+  }
+}
+.navigation-container nav {
+  padding: 0.75rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 40%;
+}
+@media ( max-width: 500px ) {
+  .navigation-container nav {
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.navigation-container nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.6rem;
 }
 footer {
   color: #22283B;

@@ -1,1 +1,18 @@
 // Mixins Here
+
+.column-center() {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-styling {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    background: @wild-sand;
+    .column-center();
+    border-bottom: 1px solid @sea-shell;
+    color: @river-bend;
+
+}
