@@ -67,7 +67,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -75,4 +75,41 @@
       }
     }
   }
-}// home
+} // home
+
+@media @phone {
+  .space-images {
+    .sky,
+    .launch {
+      display: none;
+    }
+
+    .blast {
+      flex-basis: 100%;
+    }
+  }
+  .walk {
+    padding: 15px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .walk-img {
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-bottom: 0.25rem !important;
+    flex-basis: 100%;
+  }
+  .walk-text {
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+  }
+  .btn {
+    min-width: 100%;
+    padding: 1.5rem !important;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
