@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+In responsive design, the site will adjust to the size of the browser at any given point, while adaptive design looks for more specific break points and screen sizes. Responsive also has one template for all devices, while adaptive design is optimized for each chosen device. Responsive design also uses more responsive units (like %) to set the experience within media queries, while adaptive design uses more specific, hard coded widths in media queries.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that an experience will be designed and coded for a mobile device first and then gradually expand the layout towards desktop. For this, min-width media query is used.
+Desktop first means that an experience is first designed for a full screen experience and then gradually going down smaller resolutions. This approach makes use of the max-width media query.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This sets the base font size as 10px, so that it’s easier for developers to set rem units based on 1rem = 10px;
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to generate CSS in a more organized, efficient manner in its own syntax, but then later gets compiled into regular CSS. Processors are also used because it makes CSS easier to use and also extends its capability.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is Mixins. I love that is pulls from JS structuring, and also reduces the amount of code shown in a single file, and that you can always reference a mixin. I also like how nesting is introduced to Better organize and find selectors.
+The one concept I am not 100% understanding is the hierarchy of importing less files. I’m still not sure which ones to import over others at times and which file is at risk to override the other. 
+
+## END OF ANSWERS ABOVE 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
