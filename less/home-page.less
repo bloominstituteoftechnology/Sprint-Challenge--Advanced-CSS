@@ -18,6 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .keep {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+    .erase {
+      @media @mobile {
+        display: none;
+      }
+    }
+    
 
     img {
       width: 28%;
@@ -58,6 +69,13 @@
       }
 
       .btn {
+        .button-maker(white, black);
+        .walk-btn {
+          padding: 10px 0;
+          width: 100%;
+          font-size: 1.5rem;
+        }
+        
       }
     }
 

@@ -190,6 +190,11 @@ p {
 .top-of-page .nav-bar nav a {
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  .top-of-page .nav-bar nav {
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -210,6 +215,16 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .keep {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .erase {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -241,6 +256,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  border: 1px solid;
+  width: 30%;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: white;
+  background: black;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background: white;
+}
+.home .walk .walk-text .btn .walk-btn {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1.5rem;
 }
 .home .walk .walk-img {
   width: 46%;
