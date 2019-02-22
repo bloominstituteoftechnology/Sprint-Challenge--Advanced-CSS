@@ -1,24 +1,28 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
+  .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -57,8 +61,7 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .btn(white, black 0.25rem);
     }
 
     .walk-img {
