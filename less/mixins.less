@@ -7,12 +7,11 @@
 	align-items: center;
 }
 
-.nav-styling {
+.nav-styling(@t, @b, @l, @r) {
     width: 100%;
-    margin: 1.5rem 0 0 0;
+    margin: @t @b @l @r;
     background: @wild-sand;
     .column-center();
     border-bottom: 1px solid @sea-shell;
-    color: @river-bend;
 
 }

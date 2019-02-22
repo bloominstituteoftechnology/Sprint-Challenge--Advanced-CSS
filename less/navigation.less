@@ -1,6 +1,13 @@
 // Navigation code here
 .navigation-container {
-    .nav-styling();
+    .nav-styling(1.5rem, 0, 0, 0,);
+
+    @media @phone {
+        position: fixed;
+        background: @nav-bg;
+        margin: 0;
+    }
+
 
     h1.home-title {
         font-size: 3.2rem;
