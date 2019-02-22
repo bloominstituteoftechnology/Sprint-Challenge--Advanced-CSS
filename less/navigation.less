@@ -1,1 +1,30 @@
 // Navigation code here
+
+.navigation {
+  background: @wild-sand;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  nav {
+    justify-content: space-between;
+    align-self: center;
+  }
+  text-align: center;
+  .navbar-brand {
+    font-size: 3rem;
+  }
+  a {
+    text-decoration: none;
+    color: @nav-font;
+  }
+  .navbar-brand {
+    font-family: @heading;
+  }
+  .nav-links {
+    margin: 0.5rem 0;
+    a:not(last-child) {
+      margin-right: 1.25rem;
+    }
+  }
+}
