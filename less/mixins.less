@@ -1,1 +1,24 @@
 // Mixins Here
+.btn(@color: white, @background: black, @border-radius: 0.25rem) {
+  .btn {
+    color: @color;
+    background: @background;
+    border-radius: @border-radius;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.btn-full(@color: white, @background: black, @border-radius: 0.25rem) {
+  .btn {
+    color: @color;
+    background: @background;
+    border-radius: @border-radius;
+    padding: 2rem;
+  }
+}
+
+.padding-x(@padding: 1rem) {
+  padding-left: @padding;
+  padding-right: @padding;
+}
