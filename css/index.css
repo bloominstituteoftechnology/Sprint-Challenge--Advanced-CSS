@@ -455,7 +455,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
-.contact .main-contact-form .get-in-touch .title {
+.contact .main-contact-form .get-in-touch .contact-title {
   text-align: center;
   font-family: Raleway, sans-serif;
   text-transform: uppercase;
@@ -463,6 +463,7 @@ footer {
   font-size: 36px;
   line-height: 48px;
   padding-bottom: 48px;
+  padding-top: 5rem;
 }
 .contact .main-contact-form .contact-form .form-field {
   position: relative;
