@@ -217,10 +217,37 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+.home .intro {
+  padding: 0 4rem 0 4rem;
+}
+@media ( max-width: 500px ) {
+  .home .intro {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.home .intro .intro-image img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+@media ( max-width: 500px ) {
+  .home .intro .intro-image img {
+    width: 100%;
+    height: 100%;
+    padding: 9.5rem 0 0 0 !important;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .intro .intro-text-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+.home .intro .intro-text-content h2 {
   padding: 15px;
 }
-.home .intro p {
+.home .intro .intro-text-content p {
   padding: 0 15px;
 }
 .home .space-images {
