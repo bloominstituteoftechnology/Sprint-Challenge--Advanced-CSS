@@ -168,15 +168,15 @@ p {
 }
 .container {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  width:     100%;
+  margin:    0 auto;
 }
 .top-nav {
   display: flex;
-  width: 500px;
+  width:   auto;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  align-items:     center;
+  margin:          0 auto;
 }
 .top-image {
   display: block;
@@ -187,9 +187,17 @@ p {
 .top-nav a {
   text-decoration: none;
   font-size: 14px;
-  justify-content: flex-end;
+  justify-content: center;
   font-family: "Ubuntu";
-  margin: 20px;
+  margin: 10px;
+}
+@media ( max-width: 500px ) {
+  .top-nav a {
+    text-decoration: none;
+    font-size: 12px;
+    align-items: center;
+    font-family: "Ubuntu";
+  }
 }
 .top-text {
   display: flex;
@@ -216,10 +224,19 @@ h1 {
   top: 4rem;
   left: -3rem;
   height: 3rem;
-  width: 5rem;
+  width: 3rem;
   background-color: dodgerblue;
   animation-name: marker;
 }
+
+@media ( max-width: 500px ) {
+    .marker {
+        background-color:  red;
+        height:              1rem;
+        width:               1rem;
+    }
+}
+
 #a1 {
   margin-left: 1rem;
   animation-name: a1;
@@ -345,8 +362,8 @@ footer {
 }
 .home .walk .walk-text {
   width: 100%;
-  flex-flow: row wrap;
-  justify-content: center;
+  order: 2;
+  margin: 10px 10px;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -358,12 +375,14 @@ footer {
   width: 80px;
 }
 .home .walk .walk-img {
-  width: 46%;
+  width: 100%;
   margin-left: 4%;
+  display: flex;
 }
 .home .walk .walk-img img {
-  width: auto;
+  width: 50%;
   border-radius: 10px;
+  margin: 0 -1rem;
 }
 @media ( max-width: 500px ) {
   .home .space-images {
@@ -371,10 +390,11 @@ footer {
     height: 25%;
   }
   .home .space-images img .blast {
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     justify-content: center;
+    align-items: center;
   }
   .home .sky,
   .home .launch {
