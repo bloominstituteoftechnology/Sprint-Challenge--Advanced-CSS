@@ -1,3 +1,13 @@
+.img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -225,6 +235,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -238,6 +249,7 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  display: block;
 }
 .home .walk .walk-img img {
   width: 100%;
