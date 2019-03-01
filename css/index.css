@@ -1,12 +1,19 @@
 .img {
   width: 28%;
   margin: 20px 2.5%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
+  o-border-radius: 20px;
+  ms-border-radius: 20px;
   height: 100%;
 }
 .center {
   display: flex;
   justify-content: center;
+}
+.default {
+  text-align: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -188,6 +195,9 @@ header nav a {
   color: black;
   padding: 0 15px;
 }
+header nav a:hover {
+  color: #1a242f;
+}
 header img {
   width: 100%;
   margin: 20px 2.5%;
@@ -217,7 +227,11 @@ footer {
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border-radius: 20px;
+  o-border-radius: 20px;
+  ms-border-radius: 20px;
   height: 100%;
 }
 .home .visit-planets {
@@ -246,6 +260,13 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -254,5 +275,9 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border-radius: 10px;
+  o-border-radius: 10px;
+  ms-border-radius: 10px;
 }

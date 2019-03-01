@@ -2,10 +2,43 @@
 .img {
   width: 28%;
   margin: 20px 2.5%;
-  border-radius: 20px;
+  .border-radius(20px);
   height: 100%;
 }
 .center {
   display: flex;
   justify-content: center;
+}
+.default {
+   text-align: center;
+}
+.border-radius(@radius:10px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  o-border-radius: @radius;
+  ms-border-radius: @radius;
+}
+
+//variables
+@phone:(max-width:500px);
+@base-color: #E5F5FB;
+@font-size: 16px;
+@size: 4px;
+@midnight_blue: #2c3e50;
+@midnight_blue_light: lighten(@midnight_blue, 40%);
+
+@dark: #000;
+@light: #fff;
+@template_color: @midnight_blue;
+
+
+.set-text-color (@bg-color) when (lightness(@bg-color) >= 50%) {
+  color: @dark;
+  background: @bg-color;
+}
+
+.set-text-color (@bg-color) when (lightness(@bg-color) < 50%) {
+  color: @light;
+  background: @bg-color;
 }
