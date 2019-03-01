@@ -1,55 +1,53 @@
-@media (max-width: 500px) {
-  .intro h2 {
-    background: red;
-  }
+.center {
+  display: flex;
+  justify-content: center;
+}
+.nav-margin {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 @media (max-width: 500px) {
-  .top-section {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .headimg {
+    width: 100%;
   }
-  .top-section h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .space-images {
+    height: 450px;
   }
-  .top-section nav a {
-    border: 1px solid green;
-    margin: 0 20px 0 1px;
+  .space-images img {
+    width: 100%;
+    margin: none;
   }
-}
-@media (max-width: 500px) and screen and (min-width: 500px) {
-  .sky {
+  .space-images .sky {
     display: none;
   }
-}
-@media (max-width: 900px) {
-  body {
-    background: blue;
+  .space-images .launch {
+    display: none;
   }
-}
-@media (max-width: 500px) {
-  nav {
-    width: 33%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 53.7% 0;
-    font-size: 1.6rem;
-    margin: 10px 33.5% 11px;
+  .space-images .blast {
+    min-width: 95%;
+    margin: none;
   }
-}
-@media (max-width: 900px) {
-  nav {
-    width: 33%;
-    display: flex;
-    justify-content: space-evenly;
+  .walk {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    height: 750px;
+    width: 100%;
     align-items: center;
-    margin: 0 53.7% 0;
-    font-size: 1.6rem;
-    margin: 33px 33.5% 11px;
+  }
+  .walk .walk-text {
+    min-width: 450px;
+    order: 1;
+    padding: 0 10% 0 10% ;
+  }
+  .walk .walk-text .btn {
+    min-width: 415px;
+  }
+  .walk .walk-text .btn p {
+    margin: 0 auto;
+  }
+  .walk .walk-img {
+    min-width: 450px;
+    order: 0;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -214,39 +212,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.top-section {
-  border-bottom: 1px solid #F1F1F1;
-  background: #F6F6F6;
+h1 {
+  font-size: 32px;
+  text-align: center;
 }
-.top-section h2 {
-  width: 15%;
-  height: 50px;
-  margin: 10px 20% 0;
-  font-size: 4rem;
+nav {
+  height: 25px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 30px 260px 0;
-  color: #454A59;
+  margin: 17px 0px 3px 0px;
 }
-.top-section nav {
-  width: 33%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 53.7% 0;
-  font-size: 1.6rem;
-  margin: 33px 33.5% 11px;
-}
-@media (max-width: 500px) {
-  .top-section nav {
-    margin: 33px 13.5% 11px;
-  }
-}
-.top-section nav a {
+nav a {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   text-decoration: none;
-  color: #454A59;
-  font-size: 1.6rem;
 }
 footer {
   color: #22283B;
@@ -257,9 +237,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home .intro img {
-  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -304,29 +281,28 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border: 1px solid #22283A;
-  background: #22283A;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  width: 100px;
-  height: 35px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: #F6F7F8;
-  font-size: 1.6rem;
+  padding-left: 20px;
+  font-size: 25px;
+  text-align: center;
+  width: 125px;
+  height: 40px;
+  color: white;
+  background-color: #10213d;
+  border-radius: 7.5px; 
+    animation-duration: 3s;
+  animation-name: slidein;
 }
-.home .walk .walk-text .btn:hover {
-  background: #F6F7F8;
-  color: #22283A;
-}
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
