@@ -36,11 +36,20 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first means you start with the minimum width percentage and increase to the max width percentage. Desk top first means you start with a maximum width and reduce to the min width.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+It means that a coder uses 62.5% of the default settings for a webpage.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing extends the ability of CSS by nitions which increase productivity. in lame man words its like having a turbo in a toyota prius.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting is my favourite but i am struggling with mixins.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
