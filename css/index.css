@@ -256,6 +256,11 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: #23293B;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
