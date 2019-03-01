@@ -7,32 +7,43 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-  font-family: 'Ubuntu', sans-serif;
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
   color: @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Russo One', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
   color: @header-font-color;
 }
 
 h2 {
   font-size: 3.2rem;
+  padding-bottom: 10px;
 }
 
 h3 {
   font-size: 2.8rem;
+  padding-bottom: 10px;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  line-height: 1.5;
 }
 
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  @media @mobile {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
-
