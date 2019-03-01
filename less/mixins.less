@@ -39,11 +39,16 @@
 
 	.blast {
 		min-width: 95%;
-		
-		margin: none;
+		.flex-parametic(flex-end, auto, row);
+		margin: auto;
 	}}
 
-
+	.flex-parametic (@justify, @align, @direction) {
+		display: flex; 
+		justify-content: @justify;
+		align-items: @align;
+		flex-direction: @direction;
+}
 	.walk {
 		flex-direction: column;
 		flex-wrap: no-wrap;
