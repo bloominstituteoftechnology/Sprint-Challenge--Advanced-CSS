@@ -5,31 +5,16 @@
 .home {
 
   .headerSW{
-    padding:0px;
     flex-direction: column;
     align-items: space-evenly;
-    display: flex;
-    width: 100%;
+    .flex100();
 
   .spacewalkers{
     padding:10px 0;
-    display: flex;
-    justify-content: center;
+    .flex-center();
     font-size: 50px;
   }
 
-  .nav-bar{
-    padding:10px 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font: @nav-font;
-  }
-  
-  .nav-font{
-    color: @nav-font;
-    font-size: 12px;
-  }
   }
 
   .intro {
@@ -45,9 +30,8 @@
   }
 
   .space-images {
-    display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .flex100();
 
     img {
       width: 28%;
@@ -73,8 +57,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex-center();
 
     .walk-text {
       width: 50%;
@@ -92,8 +75,7 @@
         width:  100px;
         border-radius: 5px;
         height: 30px;
-        display: flex;
-        justify-content: center;
+        .flex-center();
         align-items: center;
         font-size: 20px;
       }
