@@ -2,6 +2,7 @@
 
 .home {
 
+
   .intro {
 
     h2 {
@@ -58,6 +59,26 @@
       }
 
       .btn {
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		font-size: 25px;
+		text-align: center;
+		width: 125px;
+		height: 40px;
+		color: white;
+		background-color: @base-color;
+		border-radius: 7.5px;
+
+		&:hover {
+			color: @base-color;
+			background-color: @secondary-color;
+		}
+
+		p {
+			padding-top: 20px;
+			font-size: 25px;
+		}
       }
     }
 
