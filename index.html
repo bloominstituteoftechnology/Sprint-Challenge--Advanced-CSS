@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -15,14 +15,27 @@
 </head>
 
 <body>
+      <header class="main-navigation">
+        <div class="container nav-container">
+          <h1 class="logo-heading">SpaceWalkers</h1>
+          <nav class="nav">
+            <a class="nav-link" href="#">home</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Sign In</a>
+          </nav>
+        </div>
+      </header>
 
  <!-- navigation code here -->
 
-  <div class="container home">
-
+  
+ <div class="container home">
+      <section class="content-section">
     <header class="intro">
        <!-- image code here -->
-
+<img src="/Users/Dmwanik/Documents/Git/Sprint-Challenge--Advanced-CSS/img/main-header.png" alt="">
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
@@ -33,7 +46,9 @@
         <img src="img/sky.png" class="sky" alt="Space sky image">
         <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
+  </section>
    
+  <div class="mid-texts">
     <section class="visit-planets">
      
       <h3>Can We Visit Planets?</h3>
@@ -42,8 +57,8 @@
     
       <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
     </section>
-    
-    <section class="walk">
+  </div>   
+    <div class="walk">
       <div class="walk-text">
         <h3>Let's Go For A Walk</h3>
 
@@ -52,18 +67,22 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
+
+  </div>
+          
+  <section class="content-section inverse-content"> 
           Sign Up
         </div>
-      </div>
       
-      <div class="walk-img">
+      <div class="walk-text">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
+  </div>
+    
+</section>
 
-    </section>
-
-    <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+    <footer class="footer">
+      <p>Copyright SpaceWalkers 2019</p>
     </footer>
 
   </div>
