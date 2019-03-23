@@ -1,1 +1,24 @@
 // Navigation code here
+.navigation {
+    .navMixin();
+    
+    h1 {
+        .h1Mixin();
+    }
+
+    nav {
+        font-size: 15px;
+        
+
+        a {
+            text-decoration: none;
+            margin: 20px 30px 0 30px;
+
+            @media @phone {
+                margin: 10px;
+            }
+        }
+
+
+    }
+}

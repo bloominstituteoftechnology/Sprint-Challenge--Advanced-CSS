@@ -1,1 +1,25 @@
 // Mixins Here
+
+.navMixin {
+    height: 120px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.h1Mixin {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.signUpButton(@radius, @bgColor) {
+    border-radius: @radius;
+    background-color: @bgColor;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
