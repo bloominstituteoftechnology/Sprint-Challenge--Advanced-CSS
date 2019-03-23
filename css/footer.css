@@ -8,3 +8,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer p {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
