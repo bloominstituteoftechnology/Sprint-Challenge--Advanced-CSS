@@ -23,12 +23,16 @@
 
 .b-style(){
     width:25%;
-  height:50%;
-  font-size:16px;
-  padding:20px;
+  height:25%;
+  font-size:13px;
+  padding:10px;
   border-radius: 10px;
   align-items:center;
   justify-content: center;
+  @media @mobile{
+      width:100%;
+      font-size: 16px;
+  }
 }
 .buttonie(@color,@textColor){
     display:flex;
