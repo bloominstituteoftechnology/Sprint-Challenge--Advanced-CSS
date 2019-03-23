@@ -1,17 +1,22 @@
 // Mixins Here
-@media @mobile {
+@media (max-width:500px) {
     header{
         align-items: center;
         font-size: 5rem;
     }
 }
-@media @mobile {
+@media (max-width:500px) {
     nav {
         font-size: 3rem;
     }
 }
-@media @mobile {
+@media (max-width:500px) {
     .walk {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;   
+    }
+}
+@media (max-width:500px) {
+    .home .space-images img {
+        display:none;
     }
 }
