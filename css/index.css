@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -170,11 +170,23 @@ p {
 nav {
   font-size: 1.7rem;
   padding: 1rem;
+  animation-name: animate;
+  animation-duration: 4s;
 }
 nav a {
   margin: 1.6rem;
   text-decoration: none;
   color: black;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0.05rem);
+  }
 }
 footer {
   color: #22283b;
