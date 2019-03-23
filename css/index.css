@@ -160,6 +160,13 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-section {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.9;
+}
 nav {
   font-size: 1.7rem;
   padding: 1rem;
@@ -178,6 +185,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header {
+  margin-top: 138px;
 }
 .top-section {
   background-color: #f4f4f4;
