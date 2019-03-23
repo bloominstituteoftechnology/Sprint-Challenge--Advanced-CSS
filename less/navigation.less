@@ -3,15 +3,18 @@
     height: 100px;
     width: 100%;
     background-color: @wild-sand;
-    .border-padding(); //mixin
+    .border-padding(); //mixin 1
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     .nav-content {
-        flex-direction: space-evenly;
+        height: 100%;
+        flex-direction: space-between;
         margin: auto 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
 
     }
 
@@ -19,7 +22,8 @@
 
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 nav li {
@@ -28,5 +32,5 @@ nav li {
 
 
 nav a {
-    .nav-a(); // mixin
+    .nav-a(); // mixin 2
 }

@@ -11,17 +11,14 @@
     padding-right: 20px;
 }
 
-//Here are my two mixins for the sprint
-
-//parametric mixins
+//parametric mixin for mobile button style
 .border-radius(@radius, @fontsize) {
-    background-color: black;
+    background-color: @btn-bg-color;
     padding: 20px;
     display: flex;
     justify-content: center;
     color: white;
     font-size: @fontsize;
     border-radius: @radius;
-
-
+    margin: 10px 20px 10px 20px;
 }
