@@ -145,6 +145,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.5rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -219,7 +222,7 @@ footer {
   border-radius: 20px;
   padding: 20px 0;
   margin: 10px 30px 20px;
-  background-color: navy;
+  background-color: #22283A;
   color: whitesmoke;
 }
 .home .walk .walk-img {
