@@ -160,11 +160,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.nav {
+nav {
   font-size: 1.7rem;
   padding: 1rem;
 }
-.nav a {
+nav a {
   margin: 1.6rem;
   text-decoration: none;
   color: black;
