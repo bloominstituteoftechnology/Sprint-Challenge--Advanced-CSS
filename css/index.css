@@ -1,7 +1,17 @@
-@media "(max-width: 500px)" {
+@media (max-width: 500px) {
   header {
     align-items: center;
     font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
