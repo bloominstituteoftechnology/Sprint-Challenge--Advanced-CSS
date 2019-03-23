@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+
+A: Responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout (and perhaps functionality) in a way that is optimized to the screen. Is the browser 300px wide or 30000px wide? It doesn't matter because the layout will respond accordingly. Well, at least if it's done correctly!
+Adaptive websites adapt to the width of the browser at a specific points. In other words, the website is only concerned about the browser being a specific width, at which point it adapts the layout.
+
+
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop first is most appropriate when desktop hits are more than 80% of your traffic or hits from desktop are at %0%, but your sales are significantly higher on desktop, site interface is feature-rich. You focus on complex and enhanced visuals
+
+Mobile first is designed mainly for functionality. It’s a very focused approach starting with putting out a core function and layering the extras incrementally for higher resolutions (often called progressive enhancement). The mobile-first strategy is often referred to as a content-first strategy because your website’s content must be carefully researched and structured to be categorized based on importance. This method can be much more expensive due to the more extended preparation phase and the expertise needed to create the platform’s versatility.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+it makes it so that 2.4 rem = 24px
+
 4. How would you describe preprocessing to someone new to CSS?
+It makes it a lot easier and semantic using variables and mixins, much cleaner code!
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love using the variables and the parametric mixins, i was having trouble if something was wrong on one of the less files like missing a variable it would keep other pages from working, using the less-watch-compiler for errors has helped with this.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
