@@ -1,6 +1,6 @@
 @media "(max-width: 500px)" {
   header {
-    width: 100%;
+    align-items: center;
     font-size: 5rem;
   }
 }
@@ -171,11 +171,16 @@ p {
 }
 nav {
   font-size: 1.5rem;
-  padding: 15px 0;
+  padding-top: 15px;
 }
 .Top {
   text-align: center;
   padding: 10px;
+}
+nav a {
+  text-decoration: none;
+  border-color: #F1F1F1;
+  color: #23293B;
 }
 footer {
   color: #22283B;
@@ -247,4 +252,10 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+header {
+  background-color: #F6F6F6;
+}
+img {
+  width: 100%;
 }
