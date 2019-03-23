@@ -87,7 +87,7 @@ Your finished project must include all of the following requirements:
 2.mixins.less
 3.reset.less
 4.global.less
-5.navigation.less
+5.navigation.less 
 6.footer.less
 7.home-page.less
 ```
