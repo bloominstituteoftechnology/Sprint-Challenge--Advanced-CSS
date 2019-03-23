@@ -1,1 +1,27 @@
 // Mixins Here
+.border-padding {
+    border: 1px solid @sea-shell;
+    padding-top: 10px;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: @river-bend;
+    font-size: 1.5rem;
+    padding-right: 20px;
+}
+
+//Here are my two mixins for the sprint
+
+//parametric mixins
+.border-radius(@radius, @fontsize) {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: @fontsize;
+    border-radius: @radius;
+
+
+}

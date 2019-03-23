@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-container {
+    height: 100px;
+    width: 100%;
+    background-color: @wild-sand;
+    .border-padding(); //mixin
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-content {
+        flex-direction: space-evenly;
+        margin: auto 0;
+
+    }
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+nav a {
+    .nav-a(); // mixin
+}

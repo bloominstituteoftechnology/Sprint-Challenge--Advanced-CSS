@@ -1,3 +1,13 @@
+.border-padding {
+  border: 1px solid #F1F1F1;
+  padding-top: 10px;
+}
+.nav-a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +170,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  height: 100px;
+  width: 100%;
+  background-color: #F6F6F6;
+  border: 1px solid #F1F1F1;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container .nav-content {
+  flex-direction: space-evenly;
+  margin: auto 0;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +207,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.logo {
+  font-size: 4.5rem;
+}
+img.space-img {
+  width: 100%;
+  height: auto;
 }
 .home .intro h2 {
   padding: 15px;
@@ -181,11 +226,24 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+    margin: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -203,8 +261,23 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    align-items: center;
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -212,12 +285,35 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 50px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 0px;
+    width: 90%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  img.launch {
+    display: none;
+  }
+  img.sky {
+    display: none;
+  }
 }
