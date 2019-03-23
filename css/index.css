@@ -15,8 +15,23 @@
   }
 }
 @media (max-width: 500px) {
-  .home .space-images img {
+  .home .space-images .sky {
     display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .home .walk .walk-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
