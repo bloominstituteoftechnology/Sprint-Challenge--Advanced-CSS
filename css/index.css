@@ -163,6 +163,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  font-size: 1.5rem;
+  padding: 15px 0;
+}
+.Top {
+  text-align: center;
+  padding: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
