@@ -1,1 +1,34 @@
 // Mixins Here
+
+.btn-basic {
+    text-transform: uppercase;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height:5px;
+
+}
+
+
+
+
+// Parametric Button mixin //
+.btn-effect(@background, @color) {
+    background: @background;
+    color: @color;
+
+    &:hover,
+    &:focus {
+        background: lighten(@background, 10%);
+        color: @color;
+    }
+
+    &:active {
+        background: lighten(@background, 20%);
+        color: @color;
+    }
+}
+
+
