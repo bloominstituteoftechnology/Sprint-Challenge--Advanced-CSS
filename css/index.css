@@ -313,3 +313,26 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.form-wrapper {
+  background-color: rgba(60, 60, 60, 0.7);
+  border: 3px solid black;
+  color: white;
+  margin: 0 auto;
+  width: 60%;
+  height: 500px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2;
+  box-shadow: 8px 8px 8px grey;
+}
+.form-wrapper h2 {
+  width: 100%;
+  text-align: center;
+}
+.form-wrapper p {
+  width: 80%;
+  text-align: center;
+}
