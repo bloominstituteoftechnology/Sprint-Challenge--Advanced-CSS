@@ -1,1 +1,12 @@
 // Mixins Here
+
+.nav-setup{
+    color: @nav-font;
+    font-size: @nav-text-size;
+    text-decoration: none;
+}
+
+.flex-apply(@orientation: row){
+    display:flex;
+    flex-flow: @orientation wrap;
+}
