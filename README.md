@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+	An adaptive website uses the viewport to manage multiple device screen layouts and accommodate content to fit these screens using media queries. A responsive website uses  the viewport and targets breakpoints with media queries along with percentages to work on a broader array of non-device screen specific screens. This allows for faster code times and  better continuity of content.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+	Mobile first starts the design process from the viewport of a mobile(width) screen which means targeting breakpoints with the min-width media query property and allowing your content to grow up to a full scale view. With desktop first the design process is the opposite of mobile first which uses the max-width property of the media query to scale design and content from a full scale site down to a mobile site.
+
+    
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+	Because r in rem stands for root, the root element being the html tag that the rem will be nested in from other html tags. Setting this ratio will scale and allow us to the use rem in a base 10 number for ease of use and intuitive syntactical meaning.  
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows us to better organize and code our CSS in a more DRY method. Preprocessing Is coded like CSS but with key difference such as the use of variables, mix-ins, and nesting that when compiled is output to standard CSS. This can lead to faster more compartmentalized code. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the use of variables and mix-in and especially parametric mix-ins. The are super useful and honestly a fundament asset that I fell css has been missing for a long time. This really lets you make solid reusable prototypes that can have great global impact of our code where multiple adjustments can be made one area. These are strong tools to utilize. My most troubling concept in the form of not understanding it rather having to get used to it is the somewhat reverse use of media queries in different tags/ classes/ id. I feel like with practice though, I will get used to the idea of this method of coding.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
