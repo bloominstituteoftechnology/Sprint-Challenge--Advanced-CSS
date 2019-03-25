@@ -160,6 +160,27 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.intro {
+  padding: 20px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.intro h1 {
+  font-size: 3.5rem;
+}
+.intro nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.intro a {
+  margin: 5px 10px;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,12 +190,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
 }
 .home .space-images {
   display: flex;
