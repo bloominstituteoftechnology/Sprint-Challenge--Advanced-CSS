@@ -1,4 +1,5 @@
 // Home Content
+@import 'mixins.less';
 
 .home {
 
@@ -56,9 +57,26 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
+      .btnContainer{
+        display: flex; 
+        justify-content: left; 
       }
+      .btn {
+        display: flex; 
+        align-items: center; 
+        padding: 12px;
+        margin-right: 0px; 
+        border-radius: 10px; 
+        font-size: 1.5em; 
+        overflow: hidden;
+        .sign-up-button();
+        
+      }
+      .btn:hover{
+        background-color: white;
+        color: black; 
+      }
+      
     }
 
     .walk-img {
@@ -72,4 +90,5 @@
       }
     }
   }
+
 }// home
