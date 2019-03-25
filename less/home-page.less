@@ -64,6 +64,11 @@
       }
 
       .btn {
+        .button-prototype(@btn-bg-color, @porcelain);
+        &:hover{
+          background-color: lighten(@btn-bg-color, 30%);
+          color: black;
+        }
       }
     }
 
