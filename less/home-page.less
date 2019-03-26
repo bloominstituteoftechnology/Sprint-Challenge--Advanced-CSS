@@ -1,5 +1,7 @@
 // Home Content
-
+html{
+  background-color:red;
+}
 .home {
 
   .intro {
@@ -25,7 +27,6 @@
       border-radius: 20px;
       height: 100%;
     }
-
   }
 
   .visit-planets {
@@ -56,9 +57,6 @@
 
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
       }
     }
 
@@ -92,42 +90,8 @@
 
 //Mobile
 
-@media @phone {  
-  .sky{
-    display:none;
+@media (@phone){
+  html{
+    background-color: white;
   }
-  .launch{
-    display:none;
-  }
-
-  .walk{
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    margin: none;
-    padding: none;
-    align-content: flex-end;
-
-  }
-  .walk-img{
-    order: -1;
-    padding: none;
-    margin: auto;
-  }
-
-  .walk-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-start;
-    padding: 0px;
-    margin: 10px;
-    
-  }
-  .Sign-up{
-    width:350px;
-  
-   
-  }
-
 }

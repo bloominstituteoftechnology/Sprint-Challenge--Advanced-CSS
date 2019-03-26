@@ -188,6 +188,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+html {
+  background-color: red;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -250,35 +253,8 @@ footer {
   color: #23293B;
   background-color: white;
 }
-@media (max-width: 500px) {
-  .sky {
-    display: none;
-  }
-  .launch {
-    display: none;
-  }
-  .walk {
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    margin: none;
-    padding: none;
-    align-content: flex-end;
-  }
-  .walk-img {
-    order: -1;
-    padding: none;
-    margin: auto;
-  }
-  .walk-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-content: flex-end;
-    align-items: flex-start;
-    padding: 0px;
-    margin: 10px;
-  }
-  .Sign-up {
-    width: 350px;
+@media ((max-width: 500px)) {
+  html {
+    background-color: white;
   }
 }
