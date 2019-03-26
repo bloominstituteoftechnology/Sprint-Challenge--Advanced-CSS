@@ -259,10 +259,29 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
   }
 }
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .walk-img {
+    width: 100%;
+    margin-top: 100px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -292,6 +311,11 @@ footer {
 .home .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk-img {
+    width: 100%;
+  }
 }
 .home .walk-img img {
   width: 100%;
