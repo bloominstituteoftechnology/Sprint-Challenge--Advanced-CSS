@@ -1,3 +1,7 @@
+.walk-class {
+  margin-top: 0px;
+  padding: 0px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -279,8 +283,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .walk-img {
-    width: 100%;
-    margin-top: 100px;
+    margin-top: 0px;
+    padding: 0px;
   }
 }
 .home .walk .walk-text h3 {
