@@ -1,7 +1,5 @@
 // Home Content
-html{
-  background-color:red;
-}
+
 .home {
 
   .intro {
@@ -91,7 +89,49 @@ html{
 //Mobile
 
 @media @phone{
-  html{
-    background-color: white;
+  h3{
+    margin: none;
+  }
+  p{
+    margin: none;
+  }
+  .sky{
+    display: none;
+  }
+  .launch{
+    display: none;
+  }
+  .space-images{
+    img{
+      width: 100%;
+      height: 200%;
+    }
+  }
+
+  .walk{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: none;
+    padding: none;
+
+    .walk-text{
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 600px;
+      width: 50px;
+      
+      p{
+        justify-content: flex-start;
+      }
+    }
+    .Sign-up{
+      width:300px;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
