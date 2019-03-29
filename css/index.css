@@ -181,7 +181,7 @@ p {
   align-items: space-around;
   text-align: center;
   background: #F6F6F6;
-  padding: 0 0 12px 0 ;
+  padding: 17px 0;
 }
 .intro .header-area h1 {
   font-size: 4rem;
@@ -191,8 +191,8 @@ p {
 .intro .header-area a {
   text-decoration: none;
   color: #454A59;
-  font-size: 1.75rem;
-  padding: 1.75%;
+  font-size: 1.5rem;
+  padding: 2%;
 }
 footer {
   color: #22283B;
