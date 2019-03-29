@@ -304,10 +304,10 @@ footer {
   border-radius: 10px;
   width: 200px;
   background-color: #0b0c1d;
-  color: #ffffff;
+  color: #c2eeff;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: #ffffff;
+  background-color: #c2eeff;
   color: #0b0c1d;
 }
 @media (max-width: 500px) {
