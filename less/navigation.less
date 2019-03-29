@@ -1,1 +1,33 @@
 // Navigation code here
+
+.intro{
+    width: 100%;
+ 
+    .header-area{
+        .flex-layout(column, center, space-around);
+        text-align: center;
+        background: @nav-bg;
+
+        h1{
+            font-size: 4rem;
+            padding: 2%;
+            color: @header-font-color;
+        }
+
+        a{
+            text-decoration: none;
+            color:@nav-font;
+            font-size: 1.5rem;
+            padding: 2%;
+        }
+
+        .earth{
+            width: 100%;
+
+            margin: 1% 0;
+            .earth-image{
+                border-radius: 2%;
+            }
+        }
+    }
+}
