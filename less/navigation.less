@@ -1,1 +1,43 @@
 // Navigation code here
+
+.main-nav {
+    width: 104%;
+    height: 91px;
+    background: @nav-bg;
+    margin-left: 35px;
+    
+    .nav-c {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+        @media @phone {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .title {
+            margin: 0px -306px 38px 2px;
+            font-size: 4rem;
+            display: flex;
+            
+            @media @phone {
+                font-size: 3 rem;
+            }
+        }
+
+        .nav-b {
+            width: 350px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            font-size: 1.6rem;
+            color: @nav-font;
+            text-decoration: none;
+        }
+}
