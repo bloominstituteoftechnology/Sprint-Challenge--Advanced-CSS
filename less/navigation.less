@@ -9,6 +9,7 @@
 
     div {
         padding-bottom: .6%;
+        @media @phone-down{padding-bottom:2.5%;}
 
         h1 {
             font-size: 4rem;
@@ -22,9 +23,12 @@
 
     nav {
         width: 800px;
+        @media @phone-down{width:100%;}
         display: flex;
         justify-content: space-between;
         padding:0 11%;
+        @media @phone-down{padding-bottom:2%;}
+
 
         a {
             text-decoration: none;
