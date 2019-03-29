@@ -1,1 +1,44 @@
 // Navigation code here
+.intro {
+    width: 100%;
+  
+    .nav-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(241, 241, 241);
+  
+      @media @phone {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+        
+      }
+  
+      .logo-heading {
+        @media @phone {
+          font-size: 3rem;
+        }
+      }
+  
+      .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+  
+        @media @phone {
+          width: 100%;
+          justify-content: space-around;
+        }
+        
+        
+        a {
+            font-size: 1.7rem;
+            color: black;
+            text-decoration: none;
+            margin: 2%;
+          
+        }
+      }
+    }
+  } // .intro
