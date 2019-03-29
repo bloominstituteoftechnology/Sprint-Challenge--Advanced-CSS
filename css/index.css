@@ -182,6 +182,7 @@ p {
   text-align: center;
   background: #F6F6F6;
   padding: 17px 0;
+  opacity: 0.9;
 }
 .intro .header-area h1 {
   font-size: 4rem;
