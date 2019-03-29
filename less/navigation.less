@@ -6,6 +6,14 @@
     padding: .5% 0;
     align-items: center;
     background: @nav-bg;
+    animation-name:shake-horizontal;
+    animation-duration: 1.1s;
+    animation-iteration-count: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+
 
     div {
         padding-bottom: .6%;
@@ -31,9 +39,9 @@
 
 
         a {
-            text-decoration: none;
-            font-size:1.6rem;
-            color: @nav-font;
+          .A-STYLE (@nav-font);
         }
     }
 }
+    
+

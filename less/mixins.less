@@ -1,8 +1,8 @@
 // Mixins Here
 
-.SW-BTN () {
-    background: @btn-bg-color;
-    color: white;
+.SW-BTN (@MXbtn-font-color:black; @MXbtn-bg-color:white) {
+    background: @MXbtn-bg-color;
+    color: @MXbtn-font-color;
     border-radius: 5px;
     width: 30%;
     font-size: 1.6rem;
@@ -11,4 +11,12 @@
     padding: 3% 0;
     @media @phone-down{width:100%;}
     @media @phone-down{padding:5% 0;}
+    &:hover {color: @MXbtn-bg-color;}
+    &:hover {background: @MXbtn-font-color;}
+}
+
+.A-STYLE (@A-color:black){
+    text-decoration: none;
+    font-size:1.6rem;
+    color: @A-color;
 }

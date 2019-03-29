@@ -1,6 +1,9 @@
 // Home Content
 
 .home {
+  margin-top: 110px;
+  @media @fixing{margin-top: 88.3px;}
+  @media @phone-down{margin-top: 99.78px;}
 
   header {
     img {
@@ -76,7 +79,13 @@
       }
 
       .btn {
-        .SW-BTN ();
+        .SW-BTN (@btn-font-color, @btn-bg-color);
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+       
       }
     }
 
