@@ -1,8 +1,16 @@
 // Home Content
 
+
+
 .home {
 
   .intro {
+    
+    .space {
+      width: 116%;
+      height: auto;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -10,14 +18,17 @@
 
     p {
       padding:0 15px;
+      margin-bottom: 20px;
+
     }
   
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flx();
+    .wrp();
     width: 100%;
+    
 
     img {
       width: 28%;
@@ -43,7 +54,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flx();
     justify-content: center;
 
     .walk-text {
@@ -58,6 +69,7 @@
       }
 
       .btn {
+        .csm-bbtn(2.1rem, 99.1px )
       }
     }
 

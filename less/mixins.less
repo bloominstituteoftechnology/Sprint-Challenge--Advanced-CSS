@@ -1,1 +1,29 @@
 // Mixins Here
+
+
+.flx(){
+    display: flex;
+}
+
+.wrp (){
+    flex-wrap: wrap;
+}
+
+
+
+.csm-bbtn( @ftn-size:2rem, @wd:99px, @bd:6px) {
+    display: block;
+    font-size:@ftn-size;
+    cursor: pointer;
+    width: 99px;
+    background:@btn-bg-color;
+    color: @border-real;
+    padding: 9px 13px;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: @border-real;
+        color: @btn-bg-color;
+    }
+}
+

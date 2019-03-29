@@ -1,20 +1,20 @@
 // Navigation code here
 
 .main-nav {
-    width: 104%;
-    height: 91px;
-    background: @nav-bg;
-    margin-left: 35px;
+    width: 106%;
+    height: 98px;
     
-    .nav-c {
+        .nav-c {
         height: 100%;
-        display: flex;
+        .flx();
         align-items: flex-end;
         justify-content: center;
+        padding-bottom: 10px;
+        background: @nav-bg;
     }
 
         @media @phone {
-            flex-wrap: wrap;
+            .wrp();
             justify-content: center;
             padding-top: 10px;
         }
@@ -22,7 +22,7 @@
         .title {
             margin: 0px -306px 38px 2px;
             font-size: 4rem;
-            display: flex;
+            .flx();
             
             @media @phone {
                 font-size: 3 rem;
@@ -31,7 +31,7 @@
 
         .nav-b {
             width: 350px;
-            display: flex;
+            .flx();
             justify-content: space-between;
         }
 
@@ -41,3 +41,4 @@
             text-decoration: none;
         }
 }
+

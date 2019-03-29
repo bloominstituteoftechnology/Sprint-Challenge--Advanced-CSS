@@ -161,16 +161,16 @@ p {
   margin: 0 auto;
 }
 .main-nav {
-  width: 104%;
-  height: 91px;
-  background: #F6F6F6;
-  margin-left: 35px;
+  width: 106%;
+  height: 98px;
 }
 .main-nav .nav-c {
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  padding-bottom: 10px;
+  background: #F6F6F6;
 }
 @media (max-width: 500px) {
   .main-nav {
@@ -209,11 +209,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .space {
+  width: 116%;
+  height: auto;
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+  margin-bottom: 20px;
 }
 .home .space-images {
   display: flex;
@@ -250,6 +256,20 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  font-size: 2.1rem;
+  cursor: pointer;
+  width: 99px;
+  background: #22283A;
+  color: #dee2e6;
+  padding: 9px 13px;
+  border-radius: 6px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #dee2e6;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
