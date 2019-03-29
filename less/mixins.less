@@ -1,5 +1,27 @@
 // Mixins Here
-.btn{
+// .btn{
+//     display: flex;
+//     font-size: 1.6rem;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100px;
+//     height: 30px;
+//     padding: -1 35px;
+//     border-radius: 5px;
+//     background-color: black;
+//     color: white;
+//     cursor: pointer;
+
+//     &:hover{
+//         background-color: @waterloo;
+//         color: black;
+//     }
+//     @media @mobile{
+//         width: 90%;
+//         height: auto;
+//     }
+}
+.btn(){
     display: flex;
     font-size: 1.6rem;
     align-items: center;
@@ -15,5 +37,9 @@
     &:hover{
         background-color: @waterloo;
         color: black;
+    }
+    @media @mobile{
+        width: 90%;
+        height: auto;
     }
 }
