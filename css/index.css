@@ -325,3 +325,24 @@ footer {
     width: 100%;
   }
 }
+.home .shuttle {
+  position: fixed;
+  margin: auto;
+  top: 90%;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.home .shuttle:hover {
+  animation-name: blastoff;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+@keyframes blastoff {
+  from {
+    top: 90%;
+  }
+  to {
+    top: 0;
+  }
+}
