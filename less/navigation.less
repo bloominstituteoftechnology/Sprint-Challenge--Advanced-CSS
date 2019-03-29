@@ -1,1 +1,35 @@
 // Navigation code here
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    padding: .5% 0;
+    align-items: center;
+    background: @nav-bg;
+
+    div {
+        padding-bottom: .6%;
+
+        h1 {
+            font-size: 4rem;
+            color: @nav-font;
+            padding: 3% 0;
+        }
+
+    }
+
+
+
+    nav {
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        padding:0 11%;
+
+        a {
+            text-decoration: none;
+            font-size:1.6rem;
+            color: @nav-font;
+        }
+    }
+}
