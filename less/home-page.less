@@ -23,14 +23,10 @@
     width: 100%;
 
     .space2{
-      @media @phone{
-        display:none;
-      }
+      .MediaDisplayNone;
     }
     .space3{
-      @media @phone{
-        display:none;
-      }
+      .MediaDisplayNone;
     }
 
     img {
@@ -85,7 +81,7 @@
       }
 
       .btn {
-        .custom-btn();
+        .custom-btn(200px, rgb(11, 12, 29), rgb(255, 255, 255));
         @media @phone {
           width: 100%;
         }

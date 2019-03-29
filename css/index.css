@@ -1,3 +1,12 @@
+.flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .MediaDisplayNone {
+    display: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,8 +177,8 @@ p {
 }
 .intro .nav-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #f1f1f1;
 }
 @media (max-width: 500px) {
@@ -294,12 +303,12 @@ footer {
   font-size: 2rem;
   border-radius: 10px;
   width: 200px;
-  background-color: #0c0c1f;
-  color: white;
+  background-color: #0b0c1d;
+  color: #ffffff;
 }
 .home .walk .walk-text .btn:hover {
-  background-color: white;
-  color: #0c0c1f;
+  background-color: #ffffff;
+  color: #0b0c1d;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {

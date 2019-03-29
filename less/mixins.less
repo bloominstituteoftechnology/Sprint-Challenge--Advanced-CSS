@@ -1,5 +1,7 @@
-// Mixins Here
-.custom-btn(@width: 200px, @bgColor: rgb(12, 12, 31), @fontColor: white ) {
+// James Mixins Here
+
+// James parametric mixin to allow changing button parameters easily.
+.custom-btn(@width: 200px, @bgColor: lightgrey, @fontColor: black ) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,4 +17,17 @@
       background-color: @fontColor;
       color: @bgColor;
     }
+  }
+
+  //Flex and Justify content to center
+  .flexJustifyCenter{
+      display:flex;
+      justify-content: center;
+  }
+
+  // Will hide content on mobile
+  .MediaDisplayNone{
+    @media @phone{
+        display:none;
+      }
   }
