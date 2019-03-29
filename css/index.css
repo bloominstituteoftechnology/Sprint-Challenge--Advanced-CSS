@@ -130,7 +130,6 @@ table {
   box-sizing: border-box;
 }
 html {
-  max-width: 800px;
   font-size: 62.5%;
 }
 html,
@@ -160,35 +159,40 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
 }
 .intro {
   width: 100%;
 }
 .intro .header-area {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: space-around;
   text-align: center;
   background: #F6F6F6;
+  padding: 0 0 12px 0 ;
 }
 .intro .header-area h1 {
   font-size: 4rem;
-  padding: 2%;
+  padding: 20px;
   color: #23293B;
 }
 .intro .header-area a {
   text-decoration: none;
   color: #454A59;
-  font-size: 1.5rem;
-  padding: 2%;
-}
-.intro .header-area .earth {
-  width: 100%;
-  margin: 1% 0;
-}
-.intro .header-area .earth .earth-image {
-  border-radius: 2%;
+  font-size: 1.75rem;
+  padding: 1.75%;
 }
 footer {
   color: #22283B;
@@ -200,11 +204,26 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .earth-image {
+  border-radius: 5px;
+}
+.home .lift-off {
+  padding: 2% 2% 0% 2%;
+}
+.home .lift-off h2 {
+  padding-bottom: 2%;
 }
 .home .space-images {
   display: flex;
@@ -241,6 +260,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  background: #22283A;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  padding: 3% 0%;
 }
 .home .walk .walk-img {
   width: 46%;
