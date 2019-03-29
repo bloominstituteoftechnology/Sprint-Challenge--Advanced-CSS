@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+1. Adaptive: adapt the layout of the site based on the screen size, but keep the original sizes, this is not 100% user friendly.
+   Fully Responsive: adapt 100 % to different screen sizes, it has set break points to be 100% user friendly. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+2. Desktop first: you design your code based on desktop's screen siaze an set the break points max-size for the somaller screens.
+   Mobile first: design yor code based on the mobile's screen size and set the break points min-size for biger screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+3. set the font-size in 1rem = 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+4. Allow you to write css cleaner, and organized, also you can re-use yor properties, with less lines of code.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+5. Mixins is my favorite. My biger blocker was the @media query.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,10 +64,10 @@ Because you are using a preprocessor, there are two parts to setting up your pro
 
 Follow these steps to set up your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
  
