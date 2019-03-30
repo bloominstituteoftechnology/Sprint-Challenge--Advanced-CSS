@@ -1,1 +1,25 @@
-// Mixins Here
+
+
+.custom-btn(@width, @height){
+    display: flex;
+    font-size: 1.6rem;
+    .custom-layout(center, center);
+    width: @width;
+    height: @height;
+    // padding: -1 35px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    &:hover{
+        background-color: @waterloo;
+        color: black;
+    }
+}
+
+.custom-layout(@align, @justify){
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
+}

@@ -1,1 +1,59 @@
 // Navigation code here
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color: @porcelain;
+    width: 100%;
+    max-width: 900px;
+    margin: 3px auto;
+    @media @mobile{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        // nav{
+        //     display: flex;            
+        //     width: 80%;
+        //     height: auto;
+        //     margin: 5px auto;
+           
+        // }
+    }
+    
+    
+    nav{ 
+        display: flex;
+        .custom-layout(center,center);
+        margin: 5px auto;
+        width: 80%;
+       
+        
+    }
+    h1{
+        display: flex;
+        .custom-layout(center,center);
+        margin: 10px auto;
+        
+        // @media @mobile{
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // width: 100%;
+        // }
+    }  
+    
+
+    a{
+        display: flex;
+        justify-content: center;
+        margin: 12px auto;
+        width: 100%;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: black;
+        align-content: space-between; 
+      
+    }
+}
+
