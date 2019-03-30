@@ -1,34 +1,12 @@
-// Mixins Here
-// .btn{
-//     display: flex;
-//     font-size: 1.6rem;
-//     align-items: center;
-//     justify-content: center;
-//     width: 100px;
-//     height: 30px;
-//     padding: -1 35px;
-//     border-radius: 5px;
-//     background-color: black;
-//     color: white;
-//     cursor: pointer;
 
-//     &:hover{
-//         background-color: @waterloo;
-//         color: black;
-//     }
-//     @media @mobile{
-//         width: 90%;
-//         height: auto;
-//     }
-}
-.btn(){
+
+.custom-btn(@width, @height){
     display: flex;
     font-size: 1.6rem;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 30px;
-    padding: -1 35px;
+    .custom-layout(center, center);
+    width: @width;
+    height: @height;
+    // padding: -1 35px;
     border-radius: 5px;
     background-color: black;
     color: white;
@@ -38,8 +16,10 @@
         background-color: @waterloo;
         color: black;
     }
-    @media @mobile{
-        width: 90%;
-        height: auto;
-    }
+}
+
+.custom-layout(@align, @justify){
+    display: flex;
+    align-items: @align;
+    justify-content: @justify;
 }

@@ -2,6 +2,7 @@
 
 
 .home {
+  border: 1px solid green;
   @media @mobile{
     width: 100%;
     .sky{
@@ -31,21 +32,33 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+    .sky{
+      @media @mobile{
+        display: none;
+      }
+    }
+    .launch{
+      @media @mobile{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;  
-     
+      height: 100%;
+      @media @mobile{
+        width: 100%;
+        margin-top:30px;
+      }
+      
+            
     }
-
-    img .blast{
-      width: 100%;
-    }
-    }
+    
+ 
   
+  }  
 
   .visit-planets {
     padding: 15px;
@@ -57,20 +70,31 @@
     p {
       margin-top: 13px;
     }
+    @media @mobile{
+      margin-top: 20px;
+    }
   }
 
-  .walk {
+  .walk {    
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
-
-    
+    justify-content: space-between;
+    @media @mobile{
+      flex-direction: column-reverse;
+      // flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 50px 0;
+    }    
 
     .walk-text {
       width: 50%;
-
+      @media @mobile{
+        width: 100%;
+        padding-top: 50px;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -79,26 +103,32 @@
         margin-bottom: 26px;
       }
 
-      @media @mobile{
-        width: 100%;
-        display: flex;
-        flex-direction: column;      
+      .btn{
+        border: 1px solid black;
+        .custom-btn(100px, 40px);
+         @media @mobile{
+        .custom-layout(center, center);
+        .custom-btn(100%, 80px);  
       }
+      }
+
+     
     }
 
     .walk-img {
-      width: 46%;
+      width: 50%;
       margin-left: 4%;
       @media @mobile{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;      
+        width: 100%; 
+        margin: 0;  
       }
-      img {
+      img {        
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile{
+          width: 100%;
+        }
       }
     }
   }

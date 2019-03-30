@@ -12,36 +12,37 @@
         width: 100%;
         height: auto;
         margin: 0;
-        nav{
-            display: flex;            
-            width: 80%;
-            // height: auto;
-            margin: 5px auto;
+        // nav{
+        //     display: flex;            
+        //     width: 80%;
+        //     height: auto;
+        //     margin: 5px auto;
            
-        }
+        // }
     }
     
     
     nav{ 
         display: flex;
-        justify-content: center;
+        .custom-layout(center,center);
         margin: 5px auto;
-        width: 50%;
+        width: 80%;
        
         
     }
     h1{
         display: flex;
-        justify-content: center;
+        .custom-layout(center,center);
         margin: 10px auto;
         
+        // @media @mobile{
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // width: 100%;
+        // }
     }  
-    // @media @mobile{
-    //     display: flex;
-    //     flex-direction: column;
-    //     flex-wrap: wrap;
-    //     width: 100%;
-    //     }
+    
 
     a{
         display: flex;
@@ -52,11 +53,7 @@
         text-decoration: none;
         color: black;
         align-content: space-between; 
-        // @media @mobile{
-        //     font-size: 2rem;
-        //     display: flex;
-        //     width: 20%;
-        // }  
+      
     }
 }
 
