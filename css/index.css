@@ -1,5 +1,9 @@
-.all-img {
-  border-radius: 5px;
+@charset "UTF-8";
+.center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -163,147 +167,348 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.main-navigation {
-  width: 100%;
-  height: 90px;
-  background: #c1c4c9;
-  border-bottom: 2px none;
-  position: relative;
-  top: 0;
-}
-.main-navigation .nav-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-@media (max-width: 500px) {
-  .main-navigation .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
+@media only screen and (min-width: 500px) {
+  .main-navigation {
+    width: 100%;
+    height: 90px;
+    background: #c1c4c9;
+    border-bottom: 2px none;
+    position: relative;
+    top: 0;
   }
-}
-.main-navigation .nav-container .logo-heading {
-  font-size: 3rem;
-}
-@media (max-width: 500px) {
-  .main-navigation .nav-container .logo-heading {
+  .main-navigation .nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-navigation .nav-container h1.logo-heading {
     font-size: 3rem;
   }
-}
-.main-navigation .nav-container .nav {
-  width: 350px;
-  display: flex;
-  justify-content: space-evenly;
-}
-@media (max-width: 500px) {
   .main-navigation .nav-container .nav {
-    width: 100%;
-    justify-content: space-around;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-navigation .nav-container .nav a {
+    font-size: 1.6rem;
+    color: #26292d;
+    text-decoration: none;
   }
 }
-.main-navigation .nav-container .nav a {
-  font-size: 1.6rem;
-  color: #26292d;
-  text-decoration: none;
+@media only screen and (min-width: 500px) {
+  footer {
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 18px 0;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 }
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (min-width: 500px) {
+  .container {
+    position: relative;
+  }
+  .container .home .uppers {
+    position: absolute;
+  }
+  div.intro {
+    position: relative;
+  }
+  div.intro h2 {
+    margin-top: 20px;
+  }
+  div.intro img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    padding: 0 3px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  section#space-images {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  section#space-images img {
+    width: 33%;
+    height: 100%;
+    margin: 20px 0;
+    padding: 0 3px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  .visit-planets {
+    padding-top: 15px;
+    margin-bottom: 15%;
+    border-bottom: 1.5px solid #c1c4c9;
+  }
+  .visit-planets p:last-child {
+    margin-bottom: 10%;
+  }
+  h3.question {
+    margin-top: 15px;
+    font-size: 1.75em;
+  }
+  p {
+    margin-top: 18px;
+  }
+  section.walk {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  section.walk .walk-text {
+    margin-right: 5%;
+  }
+  section.walk .walk-text :nth-last-child(2) {
+    margin-bottom: 30px;
+  }
+  section.walk .walk-text :nth-last-child(1) {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+    height: 30px;
+    background-color: #26292d;
+    color: #c1c4c9;
+    font-size: 1.38rem;
+    margin: auto;
+  }
+  section.walk .walk-text :nth-last-child(1):hover {
+    background: #c1c4c9;
+    color: #26292d;
+  }
+  section.walk .walk-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 3.5%;
+    padding: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  section.walk .walk-img img {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+  }
+  section.walk div {
+    width: 50%;
+  }
 }
-footer p {
-  display: inline-flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+@media only screen and (min-width: 500px) and only screen and (max-width: 500px) {
+  section.walk .walk-text :nth-last-child(1) {
+    width: 100%;
+  }
 }
-.container {
-  position: relative;
+@media only screen and (max-width: 500px) {
+  .main-navigation {
+    width: 100%;
+    height: 90px;
+    background: #c1c4c9;
+    border-bottom: 2px none;
+    position: relative;
+    top: 0;
+  }
+  .main-navigation .nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .main-navigation .nav-container h1.logo-heading {
+    font-size: 3.5rem;
+  }
+  .main-navigation .nav-container .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .main-navigation .nav-container .nav a {
+    font-size: 1.6rem;
+    color: #26292d;
+    text-decoration: none;
+  }
+  .container {
+    padding: 0 5;
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+  }
+  div.container.home {
+    margin: 0;
+  }
+  div.intro {
+    position: relative;
+  }
+  div.intro h2 {
+    margin: 20px 10px 0px;
+  }
+  div.intro p {
+    margin: 15px 10px;
+  }
+  div.intro img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0;
+    padding: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  section#space-images {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  section#space-images img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 30px;
+    padding: 0 1.5%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  section#space-images img.sky {
+    display: none;
+  }
+  section#space-images img.launch {
+    display: none;
+  }
+  .visit-planets {
+    padding-top: 15px;
+    margin-bottom: 15%;
+    border-bottom: 1.5px solid #c1c4c9;
+  }
+  .visit-planets h3 {
+    margin: 0 2.5% 0;
+  }
+  .visit-planets p {
+    margin: 2.5% 2% 2%;
+  }
+  .visit-planets p:last-child {
+    margin-bottom: 10%;
+  }
+  section.walk {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: space-between;
+    padding-bottom: 5%;
+  }
+  section.walk .walk-text {
+    width: inherit;
+  }
+  section.walk .walk-text h3,
+  section.walk .walk-text p {
+    text-align: left;
+    margin-bottom: 2.3%;
+  }
+  section.walk .walk-text :nth-last-child(2) {
+    margin-bottom: 30px;
+  }
+  section.walk .walk-text :nth-last-child(1) {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 5.3rem;
+    background-color: #26292d;
+    color: #c1c4c9;
+    font-size: 1.38rem;
+    margin: auto;
+  }
+  section.walk .walk-text :nth-last-child(1):hover {
+    background: #c1c4c9;
+    color: #26292d;
+  }
+  section.walk .walk-img {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 2.3%;
+    padding: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    max-width: inherit;
+  }
+  section.walk .walk-img img {
+    margin: 0 0 2.3%;
+    width: inherit;
+    max-width: inherit;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+  }
+  section.walk div {
+    width: 50%;
+  }
+  footer {
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 18px 0;
+    border: 1px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 }
-.container .home .uppers {
-  position: absolute;
-}
-div.intro {
-  position: relative;
-}
-div.intro h2 {
-  margin-top: 20px;
-}
-div.intro img {
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-section#space-images {
-  width: inherit;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-section#space-images img {
-  width: 33%;
-  margin: 20px 0;
-  border-radius: 20px;
-  height: 100%;
-  padding-left: 2px;
-  padding-right: 2px;
-}
-.visit-planets {
-  padding-top: 15px;
-  margin-bottom: 15%;
-  border-bottom: 1.5px solid #c1c4c9;
-}
-.visit-planets p:last-child {
-  margin-bottom: 10%;
-}
-h3.question {
-  margin-top: 15px;
-  font-size: 1.75em;
-}
-p {
-  margin-top: 18px;
-}
-section.walk {
-  width: 85%;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-section.walk .walk-text {
-  margin-right: 5%;
-}
-section.walk .walk-text :nth-last-child(2) {
-  margin-bottom: 30px;
-}
-section.walk .walk-text :nth-last-child(1) {
-  display: inline-flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  background: #26292d;
-  color: #c1c4c9;
-  width: 50%;
-  height: 30px;
-  border-radius: 5px;
-}
-section.walk .walk-img {
-  margin-left: 3.5%;
-}
-section.walk div {
-  width: 50%;
+@media only screen and (max-width: 500px) and only screen and (max-width: 500px) {
+  section.walk .walk-text :nth-last-child(1) {
+    width: 100%;
+  }
 }

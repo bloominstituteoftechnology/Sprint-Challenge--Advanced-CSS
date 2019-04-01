@@ -1,22 +1,22 @@
 // Home Content
-
-.container{
-  position: relative;
-
-  .home {
-    .uppers{
-      position: absolute;
+@media @regular {
+  .container {
+    position: relative;
+    .home {
+      .uppers {
+        position: absolute;
+      }
     }
   }
-}
+
   div.intro {
     position: relative;
-    h2{
+    h2 {
     margin-top: 20px;
-  }
-    img{
-      .all-img;
-      margin-bottom: 20px;
+    }
+    img {
+      .image-format(100%, 100%, 20px 0, 0 3px);
+      .border-radius(5px);
     }
   }
   
@@ -28,66 +28,55 @@
     width: 100%;
     justify-content: space-between;
     margin-top: 20px;
-
-     img {
-      width: 33%;
-      margin: 20px 0;
-      border-radius: 20px;
-      height: 100%;
-      padding-left: 2px;
-      padding-right: 2px;
+    img {
+      .image-format(33%, 100%, 20px 0, 0 3px);  
     }
   }
 
-.visit-planets {
-    padding-top: 15px;
-    margin-bottom: 15%;
-    border-bottom: 1.5px solid @nav-bg;
-    p:last-child{
-      margin-bottom: 10%;
+  .visit-planets {
+      padding-top: 15px;
+      margin-bottom: 15%;
+      border-bottom: 1.5px solid @nav-bg;
+      p:last-child {
+        margin-bottom: 10%;
+      }
     }
-}
 
-h3.question {
-  margin-top: 15px;
-  font-size: 1.75em;
-}
+  h3.question {
+    margin-top: 15px;
+    font-size: 1.75em;
+  }
 
-p{
-      margin-top: 18px;
-}
+  p {
+    margin-top: 18px;
+  }
 
-section.walk {
-  width: 85%;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  .walk-text{
-    margin-right: 5%;
-    :nth-last-child(2){
-      margin-bottom: 30px;
+  section.walk {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+    .walk-text {
+      margin-right: 5%;
+      :nth-last-child(2){
+        margin-bottom: 30px;
+      }
+      :nth-last-child(1){
+        .button-creator(70%, 30px, @body-font-color, @main-bg, 1.38rem);
+      }
     }
-    :nth-last-child(1){
-      display: inline-flex;
-      align-items: center;
-      align-content: center;
-      flex-direction: row;
-      justify-content: center;
-      margin: auto;
-      background: @body-font-color;
-      color: @main-bg;
+    .walk-img {
+      .image-format(100%, 100%, 0 0 0 3.5%, 0);
+      img {
+        .border-radius(15px);
+      }
+    }
+    div {
       width: 50%;
-      height: 30px;
-      border-radius: 5px;
-    }
+      }
   }
-  .walk-img{
-    margin-left: 3.5%;
-  }
-  div{
-    width: 50%;
-    }
-  }
+}
