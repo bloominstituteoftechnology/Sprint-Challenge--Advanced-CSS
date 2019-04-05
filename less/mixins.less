@@ -22,16 +22,16 @@
   height: @height;
   background-color: @bg-color;
   color: @font-color;
-  border: 1px solid @silver;
+  border: 1px solid @shuttle-gray;
   cursor: pointer;
   font-size: @font-size;
 
-  @media @mobile {
+  @media (max-width: 500px) {
     width: 100%;
   }
   
   &:hover {
-    background: @white;
-    color: @button-bg;
+    background: @sea-shell;
+    color: @btn-bg;
   }
 }

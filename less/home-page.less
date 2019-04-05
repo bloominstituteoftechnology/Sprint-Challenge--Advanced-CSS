@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
 
-    @media @mobile {
+    @media (max-width: 500px) {
       flex-wrap: wrap;
     }
 
@@ -62,13 +62,13 @@
         margin-bottom: 26px;
       }
 
-      @media @mobile {
+      @media (max-width: 500px) {
         width: 80%;
         margin: 0 auto 30px;
       }
 
       .btn {
-        .button-creator(200px, 45px, @button-bg-black, @wild-sand, 1.8rem);
+        .button-creator(200px, 45px, @btn-bg-color, @wild-sand, 1.8rem);
       }
     }
   
