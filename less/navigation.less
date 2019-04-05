@@ -1,11 +1,9 @@
 // Navigation code here
-
-header {
-  background: @wild-sand;
+.nav-container {
   h1 {
-    // .center();
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 4rem;
     padding: 15px 0 0 0;
   }
@@ -13,15 +11,21 @@ header {
   @media @mobile {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
+  background: @wild-sand;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   nav {
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: -20px 0;
-    // .center();
     a {
       margin: 10px 1rem;
       text-decoration: none;
@@ -31,7 +35,7 @@ header {
       color: @ebony-clay;
     }
     img {
-      border-radius: 10px;
+      border-radius: 20px;
     }
     @media @mobile {
       display: flex;
