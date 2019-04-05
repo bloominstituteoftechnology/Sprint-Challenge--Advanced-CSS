@@ -46,10 +46,15 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-wrap: wrap;
+    }
+
     .walk-text {
       width: 50%;
 
       h3 {
+        .test;
         margin-bottom: 10px;
       }
 
@@ -57,10 +62,16 @@
         margin-bottom: 26px;
       }
 
+      @media @mobile {
+        width: 80%;
+        margin: 0 auto 30px;
+      }
+
       .btn {
+        .button-creator(200px, 45px, @button-bg-black, @wild-sand, 1.8rem);
       }
     }
-
+  
     .walk-img {
       width: 46%;
       margin-left: 4%;
