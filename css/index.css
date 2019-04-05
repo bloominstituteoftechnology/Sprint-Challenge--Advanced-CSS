@@ -164,17 +164,6 @@ img {
   height: auto;
   width: 100%;
 }
-.h1 {
-  animation: pulse 3s infinite;
-}
-@keyframes pulse {
-  0% {
-    background-color: #001f3f;
-  }
-  100% {
-    background-color: #ff4136;
-  }
-}
 .nav-container {
   background: #f6f6f6;
 }
@@ -230,14 +219,14 @@ img {
   }
 }
 a {
-  animation: pulse 5s infinite;
+  animation: pulse 3s infinite;
 }
 @keyframes pulse {
   0% {
-    background-color: #001f3f;
+    background-color: #c3dadd;
   }
   100% {
-    background-color: #ff4136;
+    background-color: #3686ff;
   }
 }
 footer {
@@ -401,16 +390,5 @@ footer {
   .btn:hover {
     background-color: white;
     color: #22283a;
-  }
-}
-.h1 {
-  animation: pulse 3s infinite;
-}
-@keyframes pulse {
-  0% {
-    background-color: #001f3f;
-  }
-  100% {
-    background-color: #ff4136;
   }
 }
