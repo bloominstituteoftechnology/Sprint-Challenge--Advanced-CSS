@@ -164,6 +164,17 @@ img {
   height: auto;
   width: 100%;
 }
+.h1 {
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  100% {
+    background-color: #ff4136;
+  }
+}
 .nav-container {
   background: #f6f6f6;
 }
@@ -216,6 +227,17 @@ img {
   .nav-container nav {
     display: flex;
     justify-content: center;
+  }
+}
+a {
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  100% {
+    background-color: #ff4136;
   }
 }
 footer {
@@ -379,5 +401,16 @@ footer {
   .btn:hover {
     background-color: white;
     color: #22283a;
+  }
+}
+.h1 {
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001f3f;
+  }
+  100% {
+    background-color: #ff4136;
   }
 }
