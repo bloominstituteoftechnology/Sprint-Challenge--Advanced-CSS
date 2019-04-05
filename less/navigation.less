@@ -1,1 +1,45 @@
 // Navigation code here
+.nav-container {
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 15px 0 0 0;
+  }
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  background: @wild-sand;
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      margin: 10px 1rem;
+      text-decoration: none;
+      font-size: 1.7rem;
+      padding: 5px;
+      font-family: @nav-font;
+      color: @ebony-clay;
+    }
+    img {
+      border-radius: 20px;
+    }
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
