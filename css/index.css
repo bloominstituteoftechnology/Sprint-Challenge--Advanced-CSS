@@ -170,8 +170,19 @@ p {
 .main-navigation .nav-container {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 70%;
+}
+.main-navigation .nav-container h1 {
+  font-size: 4rem;
+  margin-left: 35%;
+  margin-bottom: 3%;
+}
+.main-navigation .nav-container nav {
+  margin-left: 31%;
+  align-content: space-around;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {
@@ -212,6 +223,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .world {
+  margin-top: 12%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -255,7 +269,6 @@ footer {
   width: 50%;
 }
 .home .walk .walk-text h3 {
-  border: 1px solid red;
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
@@ -277,7 +290,7 @@ footer {
   width: 200px;
   height: 45px;
   background-color: #22283A;
-  color: #F6F6F6;
+  color: #F6F7F8;
   border: 1px solid #5E6164;
   cursor: pointer;
   font-size: 1.8rem;
@@ -289,7 +302,12 @@ footer {
 }
 .home .walk .walk-text .btn:hover {
   background: #F1F1F1;
-  color: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

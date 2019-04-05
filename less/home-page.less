@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .world{
+      margin-top: 12%;
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +27,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media (max-width: 500px){
+
     }
   }
 
@@ -54,7 +61,6 @@
       width: 50%;
 
       h3 {
-        .test;
         margin-bottom: 10px;
       }
 
@@ -68,7 +74,11 @@
       }
 
       .btn {
-        .button-creator(200px, 45px, @btn-bg-color, @wild-sand, 1.8rem);
+        .button-creator(200px, 45px, @btn-bg-color, @btn-bg, 1.8rem);
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
       }
     }
   
