@@ -17,18 +17,14 @@
   border: 1px solid red;
 }
 
-// .custom-btn() {
-//   background-color: @ebony-clay;
-// }
-
-.custom-btn() {
+.custom-btn(@width: 70px, @color: white) {
   background-color: @btn-bg-color;
   height: 25px;
-  width: 70px;
+  width: @width;
   padding: 6px;
   .center();
   border-radius: 3px;
-  color: white;
+  color: @color;
   font-size: 15px;
 }
 
