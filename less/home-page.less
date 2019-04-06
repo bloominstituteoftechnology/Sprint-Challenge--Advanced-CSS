@@ -6,16 +6,22 @@
   }
 
   .intro {
+    padding-top: 110px;
+    
     img {
       padding-top: 13px;
 
       @media @phone {
-        width: 470px;
+        width: 100%;
       }
     }
 
     h2 {
       padding: 15px;
+    }
+
+    #magazine-title {
+      padding-bottom: 0;
     }
 
     p {
@@ -107,15 +113,20 @@
       .btn {
         .normalize(white);
         .buttonize(black;1.8rem);
+        transition: 1s;
 
         @media @phone {
-          padding: 25px 185px;
+          padding: 25px 40%;
           margin-top: 100px;
         }
       }
 
       .btn:hover {
-        .hover(slategray;silver)
+        .elegant-transform(1.8rem;8px 10%;gray;lightskyblue;black);
+
+        @media @phone {
+          .elegant-transform(1.8rem;25px 40%;gray;lightskyblue;black);
+        }
       }
     }
 

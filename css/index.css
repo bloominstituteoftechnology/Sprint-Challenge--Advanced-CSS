@@ -175,7 +175,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.navigation {
+.floating-navigation-container {
+  width: 100%;
+  position: fixed;
+  background: rgba(244, 244, 244, 0.98);
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+}
+.floating-navigation-container .navigation {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -184,18 +191,19 @@ p {
   align-content: center;
   flex-direction: column;
   padding-top: 13px;
+  padding-bottom: 10px;
 }
-.navigation .nav__logo {
+.floating-navigation-container .navigation .nav__logo {
   font-size: 4rem;
   padding-bottom: 19px;
 }
 @media (max-width: 500px) {
-  .navigation .nav__logo {
+  .floating-navigation-container .navigation .nav__logo {
     font-size: 3.8rem;
     padding-bottom: 15px;
   }
 }
-.navigation .nav__link-container {
+.floating-navigation-container .navigation .nav__link-container {
   width: 375px;
   display: flex;
   justify-content: space-between;
@@ -203,18 +211,26 @@ p {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .navigation .nav__link-container {
+  .floating-navigation-container .navigation .nav__link-container {
     width: 355px;
   }
 }
-.navigation .nav__link {
+.floating-navigation-container .navigation .nav__link {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
-  transition: 1.5s;
+  transition: 1s;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
-.navigation .nav__link:hover {
-  transform: scale(1.2);
+.floating-navigation-container .navigation .nav__link:hover {
+  font-size: 1.6rem;
+  color: black;
+  border-top: 2px double #e0e0e0;
+  border-bottom: 2px double #e0e0e0;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 5px 3%;
 }
 footer {
   color: #22283B;
@@ -231,16 +247,22 @@ footer {
     max-width: 500px;
   }
 }
+.home .intro {
+  padding-top: 110px;
+}
 .home .intro img {
   padding-top: 13px;
 }
 @media (max-width: 500px) {
   .home .intro img {
-    width: 470px;
+    width: 100%;
   }
 }
 .home .intro h2 {
   padding: 15px;
+}
+.home .intro #magazine-title {
+  padding-bottom: 0;
 }
 .home .intro p {
   padding: 0 15px;
@@ -326,20 +348,37 @@ footer {
   text-decoration: none;
   color: white;
   background-color: black;
-  padding: 8px 20px;
+  padding: 8px 10%;
   border-radius: 5px;
   text-align: center;
   font-size: 1.8rem;
+  transition: 1s;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    padding: 25px 185px;
+    padding: 25px 40%;
     margin-top: 100px;
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: slategray;
-  color: silver;
+  font-size: 1.8rem;
+  color: black;
+  border-top: 2px double gray;
+  border-bottom: 2px double gray;
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 8px 10%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    font-size: 1.8rem;
+    color: black;
+    border-top: 2px double gray;
+    border-bottom: 2px double gray;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    padding: 25px 40%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -364,14 +403,10 @@ footer {
     margin-top: 43px;
   }
 }
-.form-header img {
-  margin-top: 15px;
-}
-.form-header h2 {
-  padding: 25px 0;
-}
 .form-container {
   margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 0 15px;
 }
 .form-container .form {
   font-size: 1.6rem;
