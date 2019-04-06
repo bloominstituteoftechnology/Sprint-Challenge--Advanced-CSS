@@ -46,11 +46,9 @@ You are expected to be able to answer all these questions. Your responses contri
 
 ## Project Set Up
 
-Because you are using a preprocessor, there are two parts to setting up your project.  Be sure to run through the git set up first and then set up the preprocessor.
+Follow these steps to set up your project:
 
 ### Git Set up
-
-Follow these steps to set up your project:
 
 - [ ] Create a forked copy of this project.
 - [ ] Add your project manager as collaborator on Github.
