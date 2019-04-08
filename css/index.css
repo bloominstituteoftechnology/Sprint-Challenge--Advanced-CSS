@@ -162,57 +162,36 @@ p {
 }
 .main-navigation {
   width: 100%;
-  height: 90px;
   background: #F6F6F6;
-  border-bottom: 2px dashed #F1F1F1;
-  position: fixed;
-}
-.main-navigation .nav-container {
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  font-family: #454A59;
+  margin: 0 auto;
+  height: 90px;
+}
+.main-navigation .nav-bar {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   flex-direction: column;
-  margin-right: 70%;
+  font-size: 2rem;
+  justify-content: space-between;
 }
-.main-navigation .nav-container h1 {
+.main-navigation .logo {
   font-size: 4rem;
-  margin-left: 35%;
-  margin-bottom: 3%;
+  margin-top: 13px;
 }
-.main-navigation .nav-container nav {
-  margin-left: 31%;
-  align-content: space-around;
-}
-@media (max-width: 500px) {
-  .main-navigation .nav-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .main-navigation .nav-container .logo-heading {
-    font-size: 3rem;
-  }
-}
-.main-navigation .nav-container .nav {
-  width: 350px;
+.main-navigation .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .main-navigation .nav-container .nav {
-    width: 100%;
-    justify-content: space-around;
-  }
-}
-.main-navigation .nav-container .nav a {
-  font-size: 1.6rem;
-  color: #23293B;
+.main-navigation .nav a {
+  margin: 0 1rem;
   text-decoration: none;
-  display: flex;
-  justify-content: flex-end;
+  color: black;
+  white-space: nowrap;
 }
 footer {
   color: #22283B;
@@ -225,7 +204,9 @@ footer {
   align-items: center;
 }
 .home .intro .world {
-  margin-top: 12%;
+  margin-top: 2%;
+  height: auto;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -284,6 +265,7 @@ footer {
   width: 50%;
 }
 .home .walk .walk-text h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
@@ -310,6 +292,7 @@ footer {
   border: 1px solid #5E6164;
   cursor: pointer;
   font-size: 1.8rem;
+  margin-bottom: 50px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -326,6 +309,7 @@ footer {
   }
 }
 .home .walk-img {
+  margin-top: 10px;
   width: 46%;
   margin-left: 4%;
 }
