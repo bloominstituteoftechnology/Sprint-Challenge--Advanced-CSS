@@ -1,1 +1,112 @@
 // Navigation code here
+// .main-navigation {
+//   width: 100%;
+//   height: 90px;
+//   background: @nav-bg;
+//   border-bottom: 2px dashed @nav-border;
+//   position: fixed;
+
+  // @media (max-width: 500px) {
+  //   .nav-container{
+  //     display: none;
+  //   }
+
+  // .nav-container {
+  //   // .test;
+  //   height: 100%;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   flex-direction: column;
+  //   margin-right: 70%;
+
+    // @media (max-width: 500px) {
+    //   .nav-container{
+        
+    //   }
+    // }
+
+  
+//     h1{
+//       font-size: 4rem;
+//       margin-left: 35%;
+//       margin-bottom: 3%;
+//     }
+
+//     nav{
+//       margin-left: 31%;
+//       align-content: space-around;
+//     }
+
+//     @media (max-width: 500px) {
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       padding-top: 10px;
+//     }
+
+//     .logo-heading {
+//       @media (max-width: 500px) {
+//         font-size: 3rem;
+//       }
+//     }
+
+//     .nav {
+//       width: 350px;
+//       display: flex;
+//       justify-content: space-evenly;
+
+
+//       @media (max-width: 500px) {
+//         width: 100%;
+//         justify-content: space-around;
+//       }
+      
+      
+//       a {
+//         font-size: 1.6rem;
+//         color: @header-font-color;
+//         text-decoration: none;
+//         display: flex;
+//         justify-content: flex-end;
+//       }
+
+
+//     }
+//   }
+// }  
+
+.main-navigation {
+  width: 100%;
+  background: @nav-bg;
+  display: flex;
+  font-family: @river-bend;
+  margin: 0 auto;
+  height: 90px;
+
+  .nav-bar{
+    width: 100%;
+    max-width: 800px;
+    .center();
+    // .test;
+    margin: 0 auto; 
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 4rem;
+    margin-top: 13px;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: black;
+      white-space: nowrap;
+    }
+  }
+}
