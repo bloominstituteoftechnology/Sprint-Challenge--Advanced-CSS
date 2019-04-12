@@ -1,1 +1,14 @@
 // Mixins Here
+.custombutton(@btn-bg-color; @wild-sand){
+ width: 100px;
+ height: 30px;
+ border-radius: 10px;
+}
+.hover(@wild-sand; @btn-bg-color;){
+    &:hover{
+        background: @wild-sand;
+        color: @btn-bg-color;
+    }
+    
+
+  }
