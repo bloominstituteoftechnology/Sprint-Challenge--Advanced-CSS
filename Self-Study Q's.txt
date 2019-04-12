@@ -1,0 +1,14 @@
+1. Adaptive website will be the same as a desktop, but on mobile devices, you will
+have to zoom in and out of the screen to see stuff. A fully responsive website will
+let you be on any device and it will bring the website to the correct size for viewing.
+
+2. Mobile first will be a website mainly made for mobile users, while a desktop first
+website is mainly made for desktop users.
+
+3. It will set the element to 62.5% of what ever rem you used.
+
+4. Preprocessing in css makes it easier for a team to know what everyone is coding and can make it easier to code;
+
+5. My favorite concept is the variable. A concept that gives me the most trouble is
+trying to apply mixins in small projects. it seems over kill but if you are working
+on a huge website with muliple pages, mixins would be very useful.
