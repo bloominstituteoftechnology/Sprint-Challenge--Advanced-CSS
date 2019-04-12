@@ -160,6 +160,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 60%;
+}
+.nav a {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 20px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +184,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .top-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+.home .top-content h2 {
+  padding: 20px;
+}
+.home .top-content img {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
