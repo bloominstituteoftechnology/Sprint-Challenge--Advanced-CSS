@@ -1,1 +1,57 @@
 // Mixins Here
+.flex(@direction: row; @justify: normal; @align: normal ) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.headerFontStyle(@fontSize) {
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+  font-size: @fontSize;
+}
+
+.center() {
+  .flex(@justify: center; @align: center );
+}
+
+.size(@width:auto; @height:auto) {
+}
+
+.buttonIcon(@width:auto; @height:auto; 
+@color; @bgColor;
+@bRadius; @paddingHeight; @paddingWidth;
+@fontSize: 1rem; @textAlign: initial; @textCase) {
+  width: @width;
+  height: @height;
+  padding: @paddingHeight @paddingWidth;
+  border-radius: @bRadius;
+  color: @color;
+  background: @bgColor;
+  font-size: @fontSize;
+  text-align: @textAlign;
+  text-decoration: none;
+  text-transform: @textCase;
+  cursor: pointer;
+
+  .hoverEffect(@color; @bgColor);
+}
+
+.progress-meter(@width;@height:inherit;@bgColor) {
+  width: @width;
+  height: @height;
+  background: @bgColor;
+}
+
+//Animations
+.hoverEffect(@fontColor; @bgColor) {
+  &:hover {
+    //color: @bgColor;
+    color: @fontColor;
+    background: @bgColor;
+    border: 1px solid @bgColor;
+    transform: scale(1.5);
+    background: lighten(@bgColor, 10%);
+  }
+}

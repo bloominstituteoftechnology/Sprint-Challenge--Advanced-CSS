@@ -1,0 +1,132 @@
+.page-header {
+  width: 100%;
+  .flex(@direction: column; @align:center);
+  background: @nav-bg;
+  border-bottom: 2px solid @nav-border;
+
+  .logo {
+  .headerFontStyle(4.2rem);
+  margin: 15px auto;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    @media @phone {
+      font-size: 4rem;
+    }
+  }
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid @main-border-color;
+
+  @media @phone {
+    padding: 0 5px;
+  }
+
+  .step-container {
+    .flex(@direction:column);
+    width: 95%;
+    margin: 20px auto;
+
+    .step-title {
+      .headerFontStyle(@fontSize:2rem);
+      text-align: center;
+    }
+
+    .progress-meter-border {
+      	height: 20px;  /* Can be anything */
+        border: 1px solid @main-border-color;
+        border-radius: 25px;
+        //padding: 10px;
+        box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+        margin: 20px 0;
+
+      .progress-meter-step2 {
+        .progress-meter(@width:30%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+
+      .progress-meter-step3 {
+        .progress-meter(@width:60%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+
+      .progress-meter-complete {
+        .progress-meter(@width:100%;@bgColor:@ebony-clay);
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+.purchase-confirmation-container {
+  width: 95%;
+  margin: 0 auto;
+
+  .closing-title {
+    .headerFontStyle(@fontSize:4.2rem);
+    text-align: center;
+  }
+
+  .closing-text {
+    margin: 20px 0;
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .go-home {
+    text-align: center;
+    margin: 20px 0;
+
+    a {
+      font-size: 1.3rem;
+      color: @btn-bg-color;
+      text-decoration: none;
+      
+    }
+  }
+
+
+} //purchase-confirmation-container
+
+.page-footer {
+  width: 100%;
+  //bottom: 0;
+  //position: fixed;
+  .flex(@direction: column; @align:center);
+
+    nav {
+    .flex(@justify:space-evenly);
+    width: 100%;
+    margin-bottom: 50px;
+
+    @media @phone {
+      .flex(@direction:column;@align:center);
+    }
+
+    a {
+      margin: 0 1.39vw;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: semi-bold;
+      color: @nav-font;
+      white-space: nowrap;
+      .hoverEffect(@nav-bg;@nav-font);
+
+      @media @phone {
+        width: 95%;
+        padding: 20px 0;
+        margin: 0 2.78vw;
+        text-align: center;
+        border-bottom: 1px solid @main-border-color;
+      }
+
+    }
+  }
+}

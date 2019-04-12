@@ -1,0 +1,143 @@
+.signup-form-container {
+  width: 95%;
+  margin: 20px auto;
+  
+  form {
+    //width: 100%;
+    .flex(@direction:column);
+  
+    label {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    input {
+      height: 30px;
+      width: 100%;
+      background: @sea-shell;
+      margin-bottom: 25px;
+      border: 0;
+    }
+
+    .btn-signup {
+      .buttonIcon(@width:100%;
+      @color:@porcelain;@bgColor:@btn-bg-color;
+      @bRadius: 5px; @paddingHeight: 10px; @paddingWidth: 0;
+      @fontSize: 1.8rem; @textAlign:center; @textCase:uppercase);
+      
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: @btn-bg-color;
+        background: @porcelain;
+        border: 1px solid @btn-bg-color; 
+      }
+    }
+
+    .state-zip-container {
+      .flex(@direction:row;@justify:space-between);
+
+      @media @phone {
+        .flex(@direction:column)
+      }
+      
+      .state-zip-wrapper {
+        width: 48%;
+        .flex(@direction:column);
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+    }
+
+    .agreement-container {
+      .flex(@align:flex-start);
+      margin-bottom: 20px;
+
+      input {
+        width: 5%;
+    
+        @media @phone {
+          width: 20%;
+        }
+      }
+
+      p {
+        font-size: 1.3rem;
+        width: 90%;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .keep-signin-container {
+      .flex(@align: stretch);
+
+      input[type=checkbox] {
+        width: auto;
+        margin-right: 10px;
+      }
+
+    }
+
+    .previous-step, .forgotten-password {
+      text-align: center;
+      margin: 20px 0;
+
+      p {
+        font-size: 1.3rem;
+      }
+
+      a {
+        font-size: 1.3rem;
+        color: @btn-bg-color;
+        text-decoration: none;
+        
+      }
+    }
+
+    .subscribe-cta-container {
+      .flex(@direction:column;@align:center);
+      width: 100%;
+      margin: 10px 0;
+      border-top: 1px solid @main-border-color;
+
+      .subscribe-cta-text {
+          font-size: 2rem;
+          margin: 20px auto;
+      }
+
+      .btn-subscribe {
+        .buttonIcon(@width:100%;
+        @color:@btn-bg-color;@bgColor:transparent;
+        @bRadius: 5px; @paddingHeight: 10px; @paddingWidth: 0;
+        @fontSize: 1.8rem; @textAlign:center; @textCase:uppercase);
+        margin-bottom: 20px;
+        border: 1px solid @btn-bg-color;
+        
+
+        a {
+          color: inherit;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+
+        &:hover {
+          color: @porcelain;
+          background: @btn-bg-color;
+          border: 1px solid @btn-bg-color; 
+        }
+      } //.btn-subscribe 
+    } // .subscribe-cta-container
+  } //form
+
+} //signup-form-container
