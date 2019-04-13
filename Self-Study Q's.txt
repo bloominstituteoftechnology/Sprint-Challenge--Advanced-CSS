@@ -11,4 +11,4 @@ website is mainly made for desktop users.
 
 5. My favorite concept is the variable. A concept that gives me the most trouble is
 trying to apply mixins in small projects. it seems over kill but if you are working
-on a huge website with muliple pages, mixins would be very useful.
+on a huge website with muliple pages, mixins would be very useful. 
