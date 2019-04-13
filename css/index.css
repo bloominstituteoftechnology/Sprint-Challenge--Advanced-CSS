@@ -263,14 +263,19 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text button {
-  background-color: #22283A;
-  border: none;
   height: 40px;
   width: 30%;
-  border-radius: 10px;
+  background-color: #23293B;
+  border: 2px solid #23293B;
+  border-radius: 15px;
   font-size: 17px;
   color: white;
   font-weight: bold;
+}
+.home .walk .walk-text button:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -279,7 +284,7 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 @media (max-width: 515px) {
   .home .walk {
