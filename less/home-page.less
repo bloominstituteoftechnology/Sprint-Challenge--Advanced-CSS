@@ -80,3 +80,41 @@
     }
   }
 }
+@media @phone {
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  
+    .walk-text {
+      width: 100% !important;
+
+      .btn {
+        .btn-layout(@btn-bg-color,white);
+        width:100% !important;
+        height:50px!important;
+      }
+    
+
+      .walk-img {
+        width: 100% !important;
+
+        img {
+          width: 100% !important;
+          height: auto;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .blast{
+    width:100% !important;
+    height:auto;
+  }
+  .sky {
+    display:none;
+  }
+  .launch{
+    display: none;
+  }
+}
