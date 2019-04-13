@@ -240,6 +240,16 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text button {
+  background-color: #22283A;
+  border: none;
+  height: 40px;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
