@@ -119,7 +119,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
