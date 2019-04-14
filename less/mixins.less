@@ -1,1 +1,24 @@
 // Mixins Here
+
+.custom-button (@width, @padding) {
+    padding: @padding;
+    background-color: rgb(34, 47, 58);
+    margin-right: 1rem;
+    border-radius: 12px;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: @width;
+
+    &:hover { 
+        cursor: pointer;
+        color: lightcoral;
+        background-color: darken(rgb(101, 101, 165), 5%)
+      }
+    }
+
+.text-style (@fontSize, @margin) {
+    font-size: @fontSize;
+    margin: @margin;
+}
