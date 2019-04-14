@@ -1,0 +1,59 @@
+
+  <!--viewport allows the content to scale to screen size!-->
+<head viewport: content="width=device-width, initial-scale=1">
+
+OR
+
+  <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+
+// Import files
+
+@import "variables.less";
+@import "mixins.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+@import "header.less";
+@import "buttons.less";
+
+
+/****** Variables  ********/
+// Color assignments 
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-bg:  @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+
+// Colors
+@white: #FFFFFF;
+@silver: #C0C0C0;
+@shark: #212529;
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;
+@light-gray: rgb(226, 206, 206);
+
+
+/****** Also variable ?? *****/
+@mobile: ~"(max-width: 500px)";		// invoke with @media @mobile { .. }
+
+
+
+
+
+
+
+.cstm-button () {		// button mixin (no parameters)
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    height: 40px;
+    background: rgb(5, 145, 145);
+    color: white;
+    border: 1px solid lightgray;
+}
+
+
+.cstm-button () ;  // calling buttons mixin (no parameters)
