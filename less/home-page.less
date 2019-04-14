@@ -73,3 +73,70 @@
     }
   }
 }// home
+
+// Header Image //
+
+.header-img{
+
+  img{
+      .edges();
+}
+}
+
+// Button Styling// 
+
+.btn{
+  .style();
+}
+  .btn:hover{
+    background: white;
+    color:@btn-bg-color;
+
+}
+
+// Mobile styling //
+
+@media @phone{
+  .header-img{
+
+    img{
+        width:100%;
+  }
+  }
+  .sky{
+    display:none;
+  }
+  .launch{
+    display:none;
+  }
+  .home .space-images img {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+}
+  }
+
+
+  @media @phone{
+   .home .walk{
+   display: flex;
+   flex-direction: column-reverse;
+   width:100%;
+   padding:2%;
+   
+   }
+
+  .home .walk .walk-img {
+    width:100%;
+    margin-left:0;
+  }
+
+  .home .walk .walk-text{
+    width:100%;
+  }
+    .btn{
+      width:100%;
+      padding:5%;
+    }
+  }
+  
