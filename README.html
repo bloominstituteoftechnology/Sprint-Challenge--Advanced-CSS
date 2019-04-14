@@ -1,0 +1,134 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h1 id="sprint-challenge-advanced-css-space-walkers-web-page">Sprint Challenge: Advanced CSS - Space Walkers Web Page</h1>
+<p>This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.</p>
+<h2 id="instructions">Instructions</h2>
+<p><strong>Read these instructions carefully. Understand exactly what is expected <em>before</em> starting this Sprint Challenge.</strong></p>
+<p>This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.</p>
+<p>You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in advanced css and your command of the concepts and techniques in responsive web design and preprocessing.</p>
+<p>You have three hours to complete this challenge. Plan your time accordingly.</p>
+<h2 id="commits">Commits</h2>
+<p>Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager.</p>
+<h2 id="description">Description</h2>
+<p>The client for this challenge is <em>Spacewalkers Magazine</em>. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.</p>
+<p>In meeting the minimum viable product (MVP) specifications listed below, your web page should look like the solution design files of the desktop and mobile views:</p>
+<p><a href="design-files/home-desktop.png">Click here to review the home design</a></p>
+<p><a href="design-files/home-mobile.png">Click here to review the mobile design</a></p>
+<h2 id="self-study-questions">Self-Study Questions</h2>
+<p>Demonstrate your understanding of this week&#39;s concepts by answering the following free-form questions.</p>
+<p>Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager</p>
+<ol>
+<li>What is the difference between an adaptive website and a fully responsive website?</li>
+</ol>
+<p>adaptive adapts to the width of the users screens</p>
+<p>responsive adjusted based on the size of users screens</p>
+<ol>
+<li>Describe what it means to be mobile first vs desktop first.</li>
+</ol>
+<p>mobile first is to build a website based around device size first</p>
+<p>desktop first is to build a website for a desktop and then adapt it to mobile</p>
+<ol>
+<li>What does <code>font-size: 62.5%</code> in the <code>html</code> tag do for us when using <code>rem</code> units?</li>
+</ol>
+<p>sets font size to 10px</p>
+<ol>
+<li>How would you describe preprocessing to someone new to CSS?</li>
+</ol>
+<p>Preprocessing is using an external processor to make css easier to write and read </p>
+<ol>
+<li>What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?</li>
+</ol>
+<p>Favorite concept- nesting</p>
+<p>Most trouble- Media queries</p>
+<p>You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section <em>will</em> prevent you from passing this challenge.</p>
+<h2 id="project-set-up">Project Set Up</h2>
+<p>Because you are using a preprocessor, there are two parts to setting up your project.  Be sure to run through the git set up first and then set up the preprocessor.</p>
+<h3 id="git-set-up">Git Set up</h3>
+<p>Follow these steps to set up your project:</p>
+<ul>
+<li>[ ] Create a forked copy of this project.</li>
+<li>[ ] Add your project manager as collaborator on Github.</li>
+<li>[ ] Clone your OWN version of the repository (Not Lambda&#39;s by mistake!).</li>
+<li>[ ] Create a new branch: git checkout -b <code>&lt;firstName-lastName&gt;</code>.</li>
+<li>[ ] Implement the project on your newly created <code>&lt;firstName-lastName&gt;</code> branch, committing changes regularly.</li>
+<li>[ ] Push commits: git push origin <code>&lt;firstName-lastName&gt;</code>.</li>
+</ul>
+<p>Follow these steps for completing your project.</p>
+<ul>
+<li>[ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student&#39;s  Repo). <strong>Please don&#39;t merge your own pull request</strong></li>
+<li>[ ] Add your project manager as a reviewer on the pull-request</li>
+<li>[ ] Your project manager will count the project as complete by merging the branch back into master.</li>
+</ul>
+<h3 id="preprocessor-set-up">Preprocessor Set up</h3>
+<ul>
+<li>[ ] Verify that you have LESS installed correctly by running <code>lessc -v</code> in your terminal, if you don&#39;t get a version message back, reach out to your project manager for help.</li>
+<li>[ ] Open your terminal and navigate to your preprocessing project by using the <code>cd</code> command</li>
+<li>[ ] Once in your project&#39;s root folder, run the following command <code>less-watch-compiler less css index.less</code></li>
+<li>[ ] Verify your compiler is working correctly by changing the <code>background-color</code> on the <code>html</code> selector to <code>red</code> in your <code>index.less</code> file.</li>
+<li>[ ] Once you see the red screen, you can delete that style and you&#39;re ready to start on the next task</li>
+</ul>
+<h2 id="minimum-viable-product">Minimum Viable Product</h2>
+<p>Your finished project must include all of the following requirements:</p>
+<h3 id="import-less-files">Import LESS Files</h3>
+<ul>
+<li>[ ] Navigate to your <code>index.less</code> file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:</li>
+</ul>
+<pre><code class="lang-markdown">1.variables.less
+2.mixins.less
+3.reset.less
+4.global.less
+5.navigation.less
+6.footer.less
+7.home-page.less
+</code></pre>
+<p><em>You will know everything is working properly when you see the styles enabled for the provided content.</em>  </p>
+<h3 id="home-page-desktop-html-less">Home Page - Desktop HTML &amp; LESS</h3>
+<ul>
+<li><p>[ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.</p>
+</li>
+<li><p>[ ] Add a viewport meta tag to the head of your index.html page</p>
+</li>
+<li><p>[ ] <a href="design-files/home-desktop.png">Review the provided home desktop design file</a>. You are to build the missing navigation system and header image. You have been provided all content necessary in the <a href="index.html">index.html file</a></p>
+</li>
+<li><p>[ ] Navigation Styles: Use the <code>navigation.less</code> file for styling.</p>
+</li>
+<li><p>[ ] Main Content Styles: Use the <code>home-page.less</code> file for styling</p>
+</li>
+<li><p>[ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the <code>mixins.less</code> file for your mixins</p>
+</li>
+<li><p>[ ] LESS Parametric Mixin: create a parametric mixin that is used to create the <code>sign up</code> button styles.</p>
+</li>
+<li><p>[ ]  Use at least 2 parameters to create your button</p>
+</li>
+<li><p>[ ] Create a hover state that swaps the background color and font color of the base button styles.</p>
+</li>
+</ul>
+<h3 id="mobile-design">Mobile Design</h3>
+<ul>
+<li><p>[ ] Create a <code>@phone</code> variable that contains a <code>max-width: 500px</code> media query string. Use the <code>@phone</code> variable for all your nested mobile styling.</p>
+</li>
+<li><p>[ ] <a href="design-files/home-mobile.png">Review the provided home mobile design file</a>. Match your mobile styling the best you can using the design file.</p>
+</li>
+<li><p>[ ] Push your changes and create a pull request if you haven&#39;t already.</p>
+</li>
+</ul>
+<p>In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.</p>
+<h2 id="stretch-problems">Stretch Problems</h2>
+<p>After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:</p>
+<ul>
+<li><p>[ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.</p>
+</li>
+<li><p>[ ] Introduce CSS animations to your site.</p>
+</li>
+<li><p>[ ] Create a fixed navigation and add some opacity to the background</p>
+</li>
+<li><p>[ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription</p>
+</li>
+</ul>
+
+      </body>
+    </html>
