@@ -211,6 +211,11 @@ footer {
   align-items: center;
 }
 @media (max-width: 500px) {
+  footer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
   .home {
     width: 100%;
   }
@@ -302,6 +307,7 @@ footer {
   .home .walk .walk-text .btn button {
     width: 100%;
     padding: 20px 0;
+    background: #22283A;
   }
 }
 .home .walk .walk-text .btn button:hover {
