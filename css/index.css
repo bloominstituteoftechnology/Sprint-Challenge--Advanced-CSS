@@ -139,7 +139,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -147,7 +147,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -165,31 +165,79 @@ p {
   margin: 0 auto;
 }
 .navbar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   padding-top: 13px;
-  border: 1px solid #F1F1F1;
-  background-color: #F6F6F6;
+  border: 1px solid #f1f1f1;
+  background-color: #f6f6f6;
 }
 .navbar h1 {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 18px;
-  color: #23293B;
+  color: #23293b;
 }
 .navbar nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
   display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
-  width: 880px;
-  align-content: center;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
   margin-bottom: 11px;
-  color: #454A59;
+  color: #454a59;
+  width: 85%;
+}
+@media (max-width: 500px) {
+  .navbar nav {
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: stretch;
+    -ms-align-items: stretch;
+    align-items: stretch;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+  }
 }
 .navbar nav a {
   font-size: 1.6rem;
   margin: 0 1.75%;
+}
+@media (max-width: 500px) {
+  .navbar nav a {
+    margin: 0;
+  }
 }
 .navbar nav a:hover {
   text-decoration: underline;
@@ -207,16 +255,33 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
+    height: auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro p {
+    padding: 0;
+    padding-left: 15px;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -224,8 +289,23 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 93%;
+    margin: 20px 5%;
+  }
+}
+.home .space-images .sky,
+.home .space-images .launch {
+  display: none;
+}
 .home .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    padding: 15px 0 0 15px;
+  }
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -240,8 +320,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 54px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 20px 0 0 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -252,20 +345,33 @@ footer {
 .home .walk .walk-text .btn {
   width: 100px;
   height: 35px;
-  background-color: #22283A;
+  background-color: #22283a;
   font-size: 1.8rem;
-  padding: 2% 0 0 5%;
+  text-align: center;
   border-radius: 5px;
   color: white;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 99%;
+    height: 70px;
+    padding-top: 26px;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: white;
-  color: #22283A;
+  color: #22283a;
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+    order: -1;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
