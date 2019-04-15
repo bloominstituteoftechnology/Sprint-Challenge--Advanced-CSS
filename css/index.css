@@ -191,6 +191,9 @@ p {
 .container #header-img {
   border-radius: 10px;
 }
+.container strong {
+  color: brown;
+}
 nav {
   display: flex;
   justify-content: center;
