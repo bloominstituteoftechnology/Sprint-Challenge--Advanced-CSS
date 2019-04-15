@@ -169,6 +169,22 @@ nav {
   padding: 20px 0;
   background: #F6F6F6;
   border: 1px solid #F1F1F1;
+  animation-name: nav-color;
+  animation-duration: 4s;
+}
+@keyframes nav-color {
+  0% {
+    background-color: #F6F6F6;
+  }
+  25% {
+    background-color: #dddddd;
+  }
+  50% {
+    background-color: #bbbbbb;
+  }
+  100% {
+    background-color: #333333;
+  }
 }
 nav .nav-title {
   width: 100%;

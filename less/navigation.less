@@ -8,6 +8,14 @@ nav{
  padding:20px 0;
 .nav-base(@nav-bg,@nav-border);
 
+animation-name: nav-color;
+animation-duration: 4s;
+ @keyframes nav-color {
+  0%   {background-color: @nav-bg}
+  25%  {background-color: #dddddd;}
+  50%  {background-color: #bbbbbb;}
+  100% {background-color: #333333;}
+}
 
  .nav-title{
   width:100%;
@@ -36,6 +44,8 @@ a{
  .nav-elements();
  
  margin-right:40px;
+
+
 
 }
 }
