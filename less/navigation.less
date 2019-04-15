@@ -1,6 +1,6 @@
 // Navigation code here
 nav{
-
+ 
  width:100%;
   .wrap();
  .justify(space-evenly,center);
@@ -21,10 +21,21 @@ nav{
   width:100%;
   text-align: center;
  
-  
+  @media @mobile{
+   .row-col(@flex,@row);
+   .justify(space-around,center);
+   margin:20px 20px 0;
+   
+ }
  }
 
 a{
+ @media @mobile{
+  margin-right:0;
+ }
  .nav-elements();
+ 
+ margin-right:40px;
+
 }
 }
