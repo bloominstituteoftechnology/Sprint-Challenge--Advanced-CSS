@@ -1,1 +1,36 @@
 // Mixins Here
+
+
+button {
+    // padding: 0.7em 1.2em;
+    border: 0.1em solid rgb(10, 10, 10);
+    // margin: 0 0.4em 0.4em 0;
+    border-radius: 0.62em;
+    font-family: 'Russo One', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    transition: all 0.2s;
+    width: 10em;
+    height: 3em;
+    background-color: black;
+
+
+    @media all and (max-width: 30em) {
+        button {
+            display: block;
+            margin: 0.4em auto;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(116, 111, 111);
+    }
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
