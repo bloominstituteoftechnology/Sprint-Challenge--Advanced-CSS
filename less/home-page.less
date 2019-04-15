@@ -3,13 +3,9 @@
 .home {
 	.intro {
 		img {
-			border-radius: 5px;
-
-			@media @phone {
-				width: 100%;
-				height: auto;
-			}
+			.image;
 		}
+
 		h2 {
 			padding: 15px;
 		}
@@ -25,27 +21,27 @@
 	}
 
 	.space-images {
-		display: flex;
-		flex-wrap: wrap;
+		.flex(flex-start,stretch,row,wrap);
 		width: 100%;
 
 		@media @phone {
-			flex-direction: column;
+			.flex-params(flex-start, stretch, column);
 		}
+
 		img {
-			width: 28%;
+			.image(28%, 100%, 20px);
 			margin: 20px 2.5%;
-			border-radius: 20px;
-			height: 100%;
 
 			@media @phone {
 				width: 93%;
 				margin: 20px 5%;
 			}
 		}
-		.sky,
-		.launch {
-			display: none;
+		@media @phone {
+			.sky,
+			.launch {
+				display: none;
+			}
 		}
 	}
 
@@ -69,11 +65,10 @@
 		margin-top: 60px;
 		border-top: 1px solid @main-border-color;
 		padding: 50px 60px;
-		display: flex;
-		justify-content: center;
+		.flex(center);
 
 		@media @phone {
-			flex-direction: column;
+			.flex-params(center, stretch, column);
 			padding: 0;
 			margin-top: 54px;
 		}
@@ -99,15 +94,16 @@
 				background-color: @btn-bg-color;
 				font-size: 1.8rem;
 				text-align: center;
+				padding-top: 10px;
 				border-radius: 5px;
 				color: white;
 				cursor: pointer;
 
 				@media @phone {
-					width: 99%;
-					height: 70px;
+					.button(99%, 70px);
 					padding-top: 26px;
 				}
+
 				&:hover {
 					background-color: white;
 					color: @btn-bg-color;
@@ -123,10 +119,9 @@
 				width: 95%;
 				order: -1;
 			}
+
 			img {
-				width: 100%;
-				height: auto;
-				border-radius: 10px;
+				.image(100%, auto, 10px);
 			}
 		}
 	}
