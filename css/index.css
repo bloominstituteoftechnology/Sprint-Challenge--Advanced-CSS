@@ -164,6 +164,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.dim-nav-bar {
+  opacity: 0.5;
+}
 .navbar {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,6 +187,10 @@ p {
   padding-top: 13px;
   border: 1px solid #f1f1f1;
   background-color: #f6f6f6;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
 }
 .navbar h1 {
   font-size: 4rem;
@@ -251,6 +258,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro img {
   width: 100%;
