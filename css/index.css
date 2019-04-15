@@ -528,3 +528,108 @@ footer {
   display: table;
   clear: both;
 }
+.contact {
+  margin-top: 100px;
+}
+.contact .intro img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.contact .intro h2 {
+  padding: 15px;
+}
+.contact .intro p {
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .contact .intro p {
+    padding: 0;
+    padding-left: 15px;
+  }
+}
+.contact .content-form {
+  border-top: 1px solid #dee2e6;
+  padding: 20px;
+}
+.contact .content-form h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+.contact .content-form form {
+  margin-bottom: 10px;
+}
+@media (max-width: 690px) {
+  .contact .content-form form {
+    width: 79%;
+    margin: 0 auto;
+  }
+}
+.contact .content-form input[type=text],
+.contact .content-form input[type=tel],
+.contact .content-form input[type=email],
+.contact .content-form select,
+.contact .content-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  resize: vertical;
+}
+.contact .content-form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.contact .content-form input[type=submit] {
+  height: 45px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #22283a;
+  color: white;
+  font-size: 1.7rem;
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+}
+.contact .content-form input[type=submit]:hover {
+  background-color: white;
+  color: #22283a;
+}
+@media (max-width: 690px) {
+  .contact .content-form input[type=submit] {
+    width: 100%;
+  }
+}
+.contact .content-form .left-side {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+@media (max-width: 690px) {
+  .contact .content-form .left-side {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contact .content-form .right-side {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+@media (max-width: 690px) {
+  .contact .content-form .right-side {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.contact .content-form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
