@@ -330,3 +330,22 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .about-main {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+}
+.home .about-main .take-off-text {
+  margin-top: 20px;
+  width: 48%;
+}
+.home .about-main .take-off-text p {
+  padding-top: 30px;
+}
+.home .about-main .take-off {
+  width: 100%;
+  margin-top: 20px;
+}
+.home .about-main .take-off img {
+  width: 100%;
+}
