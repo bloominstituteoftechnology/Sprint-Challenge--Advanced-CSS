@@ -403,13 +403,19 @@ footer {
 .home .walk .walk-text .btn {
   width: 100px;
   height: 35px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   background-color: #22283a;
+  color: white;
   font-size: 1.8rem;
   text-align: center;
   padding-top: 10px;
-  border-radius: 5px;
-  color: white;
   cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283a;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -436,4 +442,89 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .content-form {
+  border-top: 1px solid #dee2e6;
+  padding: 20px;
+}
+.home .content-form h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+.home .content-form form {
+  margin-bottom: 10px;
+}
+@media (max-width: 690px) {
+  .home .content-form form {
+    width: 79%;
+    margin: 0 auto;
+  }
+}
+.home .content-form input[type=text],
+.home .content-form input[type=tel],
+.home .content-form input[type=email],
+.home .content-form select,
+.home .content-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  resize: vertical;
+}
+.home .content-form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.home .content-form input[type=submit] {
+  height: 45px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #22283a;
+  color: white;
+  font-size: 1.7rem;
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+}
+.home .content-form input[type=submit]:hover {
+  background-color: white;
+  color: #22283a;
+}
+@media (max-width: 690px) {
+  .home .content-form input[type=submit] {
+    width: 100%;
+  }
+}
+.home .content-form .left-side {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+@media (max-width: 690px) {
+  .home .content-form .left-side {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.home .content-form .right-side {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+@media (max-width: 690px) {
+  .home .content-form .right-side {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.home .content-form .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

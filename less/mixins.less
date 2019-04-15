@@ -1,8 +1,17 @@
 // Mixins Here
 
-.button(@w: 100px, @h: 20px) {
+.button(@w: 100px, @h: 20px, @r: 5px, @bg: white, @c: black, @fs: 1.6rem) {
 	width: @w;
 	height: @h;
+	.border-radius(@r);
+	background-color: @bg;
+	color: @c;
+	font-size: @fs;
+
+	&:hover {
+		background-color: @c;
+		color: @bg;
+	}
 }
 
 .flex(@j: flex-start; @a: stretch; @d: row; @w: nowrap;) {
@@ -50,4 +59,14 @@
 	width: @w;
 	height: @h;
 	border-radius: @r;
+}
+.border-radius(@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+.form-align(@w: 100%, @f:left, @m: 0) {
+	float: @f;
+	width: @w;
+	margin-top: @m;
 }

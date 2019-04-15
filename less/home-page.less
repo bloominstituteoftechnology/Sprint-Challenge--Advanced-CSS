@@ -91,17 +91,14 @@
 			}
 
 			.btn {
-				.button(100px, 35px);
-				background-color: @btn-bg-color;
-				font-size: 1.8rem;
+				.button(100px, 35px, 5px, @btn-bg-color, white, 1.8rem);
 				text-align: center;
 				padding-top: 10px;
-				border-radius: 5px;
-				color: white;
 				cursor: pointer;
 
 				@media @phone {
-					.button(99%, 70px);
+					width: 99%;
+					height: 70px;
 					padding-top: 26px;
 				}
 
@@ -124,6 +121,70 @@
 			img {
 				.image(100%, auto, 10px);
 			}
+		}
+	}
+	.content-form {
+		border-top: 1px solid @main-border-color;
+		padding: 20px;
+		h3 {
+			padding: 20px 0;
+			text-align: center;
+		}
+		form {
+			margin-bottom: 10px;
+			@media (max-width: 690px) {
+				width: 79%;
+				margin: 0 auto;
+			}
+		}
+
+		input[type=text],
+		input[type=tel],
+		input[type=email],
+		select,
+		textarea {
+			width: 100%;
+			padding: 12px;
+			border: 1px solid #ccc;
+			.border-radius(4px);
+			resize: vertical;
+		}
+
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+			font-size: 1.6rem;
+		}
+
+		input[type=submit] {
+			.button(75%, 45px, 15px, @btn-bg-color, white, 1.7rem);
+			.form-align(75%, right, 6px);
+
+			@media (max-width: 690px) {
+				width: 100%;
+			}
+		}
+
+		.left-side {
+			.form-align(25%, left, 6px);
+
+			@media (max-width: 690px) {
+				.form-align;
+			}
+		}
+
+		.right-side {
+			.form-align(75%, left, 6px);
+
+			@media (max-width: 690px) {
+				.form-align;
+			}
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
 		}
 	}
 } // home
