@@ -1,1 +1,36 @@
 // Mixins Here
+.nav-base(@nav-bg, @nav-border){
+ 
+ background:@nav-bg;
+ border:1px solid @nav-border;
+}
+
+.row-col(@flex,@row){
+ display:@flex;
+ flex-direction: @row;
+
+}
+.wrap(){
+ display:flex;
+ flex-wrap: wrap;
+}
+.justify(@justify,@align){
+ justify-content: @justify;
+ align-items: @align;
+}
+
+.nav-elements(){
+ font-size:1.7rem;
+ text-decoration: none;
+ color:@nav-font;
+ margin-left:40px;
+}
+.btn-sign-up(@btn-color,@btn-bg){
+ color:@btn-color;
+ background:@btn-background;
+ border:none;
+ border-radius:5px;
+ font-size:1.6rem;
+ 
+ 
+}

@@ -1,6 +1,9 @@
 // Home Content
 
 .home {
+  @media @mobile{
+    width:100%;
+  }
 
   .intro {
 
@@ -11,7 +14,12 @@
     p {
       padding:0 15px;
     }
-  
+
+    .header-img{
+      img{
+      border-radius: 5px;
+      }
+    }
   }
 
   .space-images {
@@ -58,7 +66,18 @@
       }
 
       .btn {
+        button{
+        .btn-sign-up(@btn-color,@btn-background);
+        padding:5px 15px;
+        font-weight: 900;
+
+        &:hover{
+          color:black;
+          background:white;
+         }
+        }
       }
+
     }
 
     .walk-img {
