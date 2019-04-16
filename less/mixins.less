@@ -1,6 +1,5 @@
 // Mixins Here
 
-
 button {
     // padding: 0.7em 1.2em;
     border: 0.1em solid rgb(10, 10, 10);
@@ -19,8 +18,11 @@ button {
 
     @media all and (max-width: 30em) {
         button {
-            display: block;
+            width: 2em;
+            display: flex;
+            flex-direction: column;
             margin: 0.4em auto;
+
         }
     }
 

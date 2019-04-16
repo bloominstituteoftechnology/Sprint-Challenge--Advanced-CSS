@@ -13,7 +13,9 @@ button {
 }
 @media all and (max-width: 30em) {
   button button {
-    display: block;
+    width: 2em;
+    display: flex;
+    flex-direction: column;
     margin: 0.4em auto;
   }
 }
@@ -293,4 +295,5 @@ footer {
   transform: rotateZ(-30deg);
   border-radius: 50%;
   transition: 0.53s;
+  z-index: -1;
 }
