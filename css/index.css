@@ -13,7 +13,7 @@ button {
 }
 @media all and (max-width: 30em) {
   button button {
-    width: 2em;
+    width: 4em;
     display: flex;
     flex-direction: column;
     margin: 0.4em auto;
@@ -206,6 +206,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 nav h1 {
   padding: 0px 10px ;
@@ -295,5 +296,4 @@ footer {
   transform: rotateZ(-30deg);
   border-radius: 50%;
   transition: 0.53s;
-  z-index: -1;
 }
