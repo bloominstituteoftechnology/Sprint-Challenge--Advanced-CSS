@@ -1,1 +1,40 @@
 // Navigation code here
+.nav-container {
+        // max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        color: @nav-font;
+        border: @nav-border;
+        background-color: @nav-bg;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+      
+
+    h1 {
+        font-size: 4rem;
+        padding-top: 1.3rem;
+        text-align: center;
+        width: 100%; 
+
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px;
+
+        @media @phone {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+    nav a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+
+    
+    }
+    }
