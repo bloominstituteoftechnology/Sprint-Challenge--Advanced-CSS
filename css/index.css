@@ -297,3 +297,9 @@ footer {
   border-radius: 50%;
   transition: 0.53s;
 }
+#walk-img:hover {
+  box-shadow: 1px 1px #313538, 2px 2px #2c2f31, 3px 3px #222324;
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-3px);
+  transition: 0.53s;
+}
