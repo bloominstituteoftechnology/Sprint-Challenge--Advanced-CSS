@@ -1,8 +1,18 @@
 // Home Content
 
-.home {
+.home { 
+    @media @phone {
+      width: 100%
+    }
 
   .intro {
+
+    img {
+      width: 100%;
+      margin: 0px auto 20px auto;
+      height: 100%;
+      border-radius: 5px;
+    }
 
     h2 {
       padding: 15px;
@@ -57,9 +67,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .signup-btn {
+        .btn-layout();
+
       }
     }
+      .signup-btn:hover{
+        background-color: white;
+        color:black;
+      }
 
     .walk-img {
       width: 46%;
