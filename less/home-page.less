@@ -1,7 +1,10 @@
 // Home Content
+@import 'mixins.less';
 
 .home {
-
+ @media @phone{
+   width: 100%; 
+ }
   .intro {
 
     h2 {
@@ -18,18 +21,43 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+    display: flex; 
+    flex-direction: column;
+    margin-left: 12px;  
+    }
+    .sky{
+      @media @phone{
+      display: none; 
+      }
+    }
+    .launch{
+    @media @phone{
+    display: none; 
+    }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width: 95%;  
+        margin: 0;
+        display: flex; 
+        justify-content: center; 
+       
+        
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
-
+    @media @phone{
+    order: 1; 
+    }
     h3 {
       margin-top: 11px;
     }
@@ -45,9 +73,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{ 
+      display: flex; 
+      flex-direction: column-reverse; 
+      width: 100%; 
+      margin: 0; 
+      padding: 6px;
+    }
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%; 
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,15 +93,45 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
+      .btnContainer{
+        display: flex; 
+        justify-content: left;
+        @media @phone{
+          display: flex; 
+          justify-content: center; 
+          width: 100%;
+          height: 50px;  
+        }
       }
+      .btn {
+        display: flex; 
+        justify-content: center; 
+        padding: 12px;
+        margin-right: 0px; 
+        border-radius: 10px; 
+        font-size: 1.5em; 
+        .sign-up-button();
+        @media @phone{
+          display: flex; 
+          width: 100%;
+          align-items: center; 
+        }
+      }
+      .btn:hover{
+        background-color: white;
+        color: black; 
+      }
+      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        width: 95%; 
+        margin-bottom: 12px; 
+        margin-right: 12px; 
+      }
       img {
         width: 100%;
         height: auto;
@@ -72,4 +139,5 @@
       }
     }
   }
-}// home
+
+}
