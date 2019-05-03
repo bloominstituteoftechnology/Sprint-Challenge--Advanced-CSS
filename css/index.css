@@ -1,3 +1,14 @@
+.topmix {
+  width: 100%;
+  background-color: #f2f2f2;
+  line-height: 47px;
+  padding: 8px;
+}
+.mid-topmix {
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -233,6 +244,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #454A59;
+  color: white;
+  border-radius: 0.7rem;
+  padding: 11px;
+  text-align: center;
+  font-size: 1.7em;
+  width: 120px;
 }
 .home .walk .walk-img {
   width: 46%;
