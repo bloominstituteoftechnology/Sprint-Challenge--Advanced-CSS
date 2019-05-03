@@ -183,11 +183,6 @@ nav .links {
   width: 300px;
   justify-content: space-between;
 }
-nav span {
-  font-size: 3rem;
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
-}
 nav a {
   padding: 10px;
   text-decoration: none;
