@@ -184,6 +184,10 @@ header nav a {
   padding-right: 30px;
   color: #23293B;
 }
+header nav a b {
+  font-size: 2rem;
+  font-weight: bold;
+}
 @media (max-width: 500px) {
   header nav a {
     padding-right: 20px;
