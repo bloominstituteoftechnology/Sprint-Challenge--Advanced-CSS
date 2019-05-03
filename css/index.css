@@ -160,6 +160,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  border: 1px dashed orange;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -168,6 +171,16 @@ footer {
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+header {
+  border: 1px solid teal;
+}
+h1 {
+  border: 2px dotted pink;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .home .intro h2 {
