@@ -1,0 +1,24 @@
+{
+    "name": "advanced-css-sprint",
+    "version": "0.1.0",
+    "description": "Lambda School - Advanced CSS Sprint Project",
+    "private": true,
+    "scripts": {
+        "watch": "less-watch-compiler less css index.less",
+        "build": "rm -rf css; mkdir css; touch css/index.css; find less/ -name '*.less' -exec lessc -x {} ; > css/index.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Miikis/Sprint-Challenge--Advanced-CSS.git"
+    },
+    "author": "Mikis Woodwinter",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Miikis/Sprint-Challenge--Advanced-CSS/issues"
+    },
+    "homepage": "https://github.com/Miikis/Sprint-Challenge--Advanced-CSS#readme",
+    "devDependencies": {
+        "less": "^3.9.0",
+        "less-watch-compiler": "^1.13.0"
+    }
+}
