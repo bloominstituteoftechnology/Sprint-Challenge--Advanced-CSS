@@ -4,14 +4,14 @@
   display: block;
   padding: 10px;
   border-radius: 7px;
-  width: 30%;
-  height: 15%;
+  width: 35%;
+  height: 12%;
   font-size: 2rem;
   text-align: center;
   font-weight: bold;
 }
 .btn:hover {
-  background-color: #65ffcb;
+  background-color: #8165ff;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
