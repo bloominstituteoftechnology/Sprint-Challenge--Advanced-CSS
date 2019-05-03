@@ -164,6 +164,19 @@ p {
   display: flex-column;
   justify-content: center;
   text-align: center;
+  background-color: #F6F6F6;
+  line-height: 4rem;
+}
+.heading h2 {
+  margin: 0.5%;
+}
+.heading nav {
+  font-size: 1.5rem;
+}
+.heading nav a {
+  text-decoration: none;
+  color: #454A59;
+  padding: 0.7%;
 }
 footer {
   color: #22283B;
