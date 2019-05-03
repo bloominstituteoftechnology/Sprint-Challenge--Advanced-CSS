@@ -195,6 +195,14 @@ h1 {
   align-items: center;
   padding-top: 5px;
 }
+.home .intro .head-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .intro .head-img img {
+  border-radius: 7px;
+}
 .home .intro h2 {
   padding: 15px;
 }
