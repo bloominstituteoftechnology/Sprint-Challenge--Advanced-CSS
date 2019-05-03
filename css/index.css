@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top {
+  width: 100%;
+  background-color: #f2f2f2;
+  line-height: 47px;
+  padding: 8px;
+}
+.top .mid-top {
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}
+.top .mid-top h1 {
+  font-size: 4em;
+}
+.top .mid-top nav {
+  font-size: 1.7em;
+}
+.top .mid-top nav a {
+  text-decoration: none;
+  padding: 12px;
+  color: #262c40;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
