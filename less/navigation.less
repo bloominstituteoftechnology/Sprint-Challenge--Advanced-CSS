@@ -5,6 +5,7 @@
     align-items: center;
     height: 60px;
     background-color: @wild-sand;
+    border-bottom: 2px solid @sea-shell;
     .links {
       display: flex;
       width: 300px;
@@ -16,5 +17,12 @@
     }
     a{
       .nav-links();
+      color: @river-bend;
+    }
+    @media @phone {
+      span {
+        font-size: 4rem;
+      }
+      margin-bottom: 10px;
     }
   }
