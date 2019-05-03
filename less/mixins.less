@@ -1,1 +1,25 @@
-// Mixins Here
+.rounded-corners {
+    border-radius: 4px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.primary-btn(@bg-color; @font-color; @width;) {
+    background: @bg-color;
+    font-size: 1.6rem;
+    width: @width;
+    color: @font-color;
+    text-align: center;
+    padding: 0.8rem;
+    .cursor-pointer();
+    .rounded-corners();
+
+    &:hover {
+        background: @font-color;
+        color: @bg-color;
+        border: 2px solid @bg-color;
+        padding: 0.6rem;
+    }
+}
