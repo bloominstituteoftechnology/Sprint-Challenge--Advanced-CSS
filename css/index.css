@@ -162,6 +162,15 @@ p {
 }
 nav {
   border: 1px dashed orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+nav a {
+  align-content: space-between;
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
@@ -178,7 +187,7 @@ header {
 }
 h1 {
   border: 2px dotted pink;
-  font-size: 5rem;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
