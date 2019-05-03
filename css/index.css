@@ -276,6 +276,7 @@ footer {
 .home .walk .walk-text .btn:hover {
   background-color: #F1F1F1;
   color: #23293B;
+  border: 1px solid #23293B;
   cursor: pointer;
 }
 @media (max-width: 500px) {
@@ -312,4 +313,17 @@ footer {
     margin: 0 auto;
     padding: 50px 2.5%;
   }
+}
+.home .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+}
+.home .header h1 {
+  padding: 20px 0;
+}
+.home .forms {
+  display: flex;
+  flex-direction: column;
 }
