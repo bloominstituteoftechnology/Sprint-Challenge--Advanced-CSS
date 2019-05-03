@@ -1,1 +1,35 @@
 // Mixins Here
+
+// Mixins Here
+
+.nav-default(){
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 15px;
+}
+//godd i hate Mixins
+.border-rounded(@size, @style, @color, @radius){
+    border:@size @style @color;
+    border-radius: @radius;
+}
+
+.btn-signup(){
+    background-color: @btn-bg-color;
+}
+
+.button-create(){
+    height: 25px;
+    width: 30%;
+    background-color: @ebony-clay;
+    .border-rounded(2px, solid, @ebony-clay, 7px);
+}
+
+.btn-text(){
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+}
