@@ -1,12 +1,37 @@
 // Import your less files here:
 
+@import "variables";
 
+@import "mixins";
 
+@import "reset";
 
+@import "global";
 
+@import "navigation";
+header {
+  text-align: center;
+  .top-heading {
+    background-color: #f4f4f4;
+  }
+  img {
+    border-radius: 6px;
+  }
+  h1 {
+    font-size: 3.6rem;
+    padding: 10px 0 15px 0;
+  }
+  nav {
+    padding-bottom: 8px;
+    a {
+      text-decoration: none;
+      padding: 0 15px;
+      font-size: 1.4rem;
+      color: #6a6d70;
+    }
+  }
+}
 
+@import "footer";
 
-
-
-
-
+@import "home-page";
