@@ -11,6 +11,8 @@
     p {
       padding:0 15px;
     }
+
+    }
   
   }
 
@@ -24,6 +26,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+  
+    }
     }
   }
 
@@ -71,11 +76,20 @@
         color: orange;
         background-color: blue;
       }
+
+      @media @mobile {
+       flex-direction: column;
+    }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+        width: 100%;
+
+    }
       
       img {
         width: 100%;
