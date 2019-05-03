@@ -11,3 +11,8 @@ nav a {
   font-size: 1.4rem;
   text-decoration: none;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+  }
+}
