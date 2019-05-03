@@ -1,1 +1,30 @@
 // Mixins Here
+.flex-mixin(@display: row, @wrap: nowrap, @alignment: flex-start){
+    display: flex;
+    flex-flow: @display @wrap;
+    justify-content: @alignment;
+}
+
+.flex-img (@border: 0, @width: 100%){
+    border-radius: @border;
+    width: @width;
+}
+
+.btn-class(@width: 100px, @height: 35px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    width: @width;
+    height: @height;
+    color: @wild-sand;
+    background-color:  @btn-bg-color;
+    border: 1px solid @main-border-color;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: @wild-sand;
+        color: @btn-bg-color;
+    }
+}

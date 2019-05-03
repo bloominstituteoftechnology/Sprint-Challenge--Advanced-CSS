@@ -1,1 +1,31 @@
 // Navigation code here
+.nav {
+    .flex-mixin(column, nowrap,);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    div, nav{
+        .flex-mixin(row, nowrap, center);
+        width: 100%;
+        padding: 1%;
+        h2 {
+            color: @header-font-color;
+        }
+    }
+    nav {
+        width: 55%;
+        justify-content: space-evenly;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem; 
+            color: @nav-font;
+            white-space: nowrap;
+        }
+    }
+
+}
+.nav-bg{
+    background-color: @nav-bg;
+    border: 2px solid @nav-border;
+}
