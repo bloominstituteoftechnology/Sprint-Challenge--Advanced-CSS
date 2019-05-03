@@ -1,1 +1,19 @@
 // Mixins Here
+.btn {
+    background-color: #22283A;
+    color: white;
+    padding: 10px;
+    width: 30%;
+    border-radius:5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@phone (max-width: 500px) {
+    .headsup {
+        width: 60%;
+    }
+    .container {
+        width: 60%;
+    }
+}
