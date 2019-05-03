@@ -46,9 +46,11 @@ Desktop first: (max-width) - Designing for full sized screens
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+relative to the root - we can define a single font size on the html element and define all rem units to be a percentage of that
+
 4. How would you describe preprocessing to someone new to CSS?
 
-relative to the root - we can define a single font size on the html element and define all rem units to be a percentage of that
+Preprocessing is an approach to CSS that is sort of like meal prep.  Essentially, you prepare a meal and save it for use later.  You're not creating the same meal over and over.  Rather it's already made for you and you just use it whenever you need it. In CSS those meal preps are - mixins, variables, parametric mixins - you prepared them beforehand - insert where needed. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
