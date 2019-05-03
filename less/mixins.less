@@ -1,1 +1,27 @@
 // Mixins Here
+.bold-header {
+  font-size: 3rem;
+  font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+}
+
+.nav-links {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.button(@height; @width; @radius; @bg-color; @color; @padding; @font-size) {
+  height: @height;
+  width: @width;
+  border-radius: @radius;
+  background-color: @bg-color;
+  color: @color;
+  text-align: center;
+  padding: @padding;
+  font-size: @font-size;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
