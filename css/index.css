@@ -1,11 +1,3 @@
-.button {
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-}
-.button:hover {
-  background-color: white;
-  color: black;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,10 +168,6 @@ p {
   height: 40px;
   font-weight: bolder;
 }
-.btn button:hover .btn:hover {
-  background-color: white;
-  color: black;
-}
 body {
   max-width: 960px;
   height: auto;
@@ -269,4 +257,29 @@ footer {
 }
 img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  body {
+    max-width: width 490px;
+    width: 100%;
+    margin: 0;
+  }
+  body body h1 {
+    font-size: 43px;
+  }
+  body body h1 .container .home {
+    display: flex;
+    flex-direction: row;
+  }
+  body body h1 .container .home .space-images {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  body body h1 .container .home .space-images .blast,
+  body body h1 .container .home .space-images .sky,
+  body body h1 .container .home .space-images .launch {
+    width: 100%;
+  }
+
 }
