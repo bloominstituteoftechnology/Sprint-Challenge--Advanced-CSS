@@ -4,6 +4,7 @@
     text-align: center;
     align-items: center;
     background: @nav-bg;
+    color: @header-font-color;
 
     .header-logo {
         font-size: 3.2rem;
@@ -15,6 +16,10 @@
         width: 50%;
         justify-content: space-around;
         padding-bottom: 0.8rem;
+
+        @media @phone {
+            width: 85%;
+        }
     }
 
     .nav-link {
