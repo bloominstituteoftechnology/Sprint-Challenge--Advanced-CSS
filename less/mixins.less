@@ -1,1 +1,19 @@
 // Mixins Here
+
+.custom-button (@width: 100px, @bgColor: @ebony-clay, @fontColor: @sea-shell) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @fontColor;
+    background: @bgColor;
+    width: @width;
+    height: 35px;
+    font-size: 2rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+
+    &:hover {
+        background-color: @fontColor;
+        color: @bgColor;
+      }
+}
