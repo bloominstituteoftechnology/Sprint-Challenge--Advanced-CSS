@@ -11,6 +11,11 @@
     p {
       padding:0 15px;
     }
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
   
   }
 
@@ -18,6 +23,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +64,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 10px;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -64,6 +91,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin: 0px;
+      }
       
       img {
         width: 100%;
