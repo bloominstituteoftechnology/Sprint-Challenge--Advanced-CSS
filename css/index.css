@@ -1,3 +1,11 @@
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +168,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.btn button {
+  border-radius: 8px;
+  color: white;
+  background-color: black;
+  width: 90px;
+  height: 40px;
+  font-weight: bolder;
+}
+.btn button:hover .btn:hover {
+  background-color: white;
+  color: black;
+}
 body {
   max-width: 960px;
   height: auto;
@@ -180,6 +200,8 @@ body .navbar {
 }
 body a {
   padding-right: 40px;
+  text-decoration: none;
+  color: #23293B;
 }
 footer {
   color: #22283B;
