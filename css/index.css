@@ -170,7 +170,10 @@ header {
   padding-bottom: 20px;
   padding-right: 2.5%;
   align-items: center;
-  background: #F1F1F1;
+  background: rgba(241, 241, 241, 0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 header nav {
   padding-top: 15px;
@@ -181,6 +184,9 @@ header nav a {
   padding-right: 15px;
   color: #23293B;
 }
+header nav a:hover {
+  color: #db6220;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -190,6 +196,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 113px;
 }
 .home .intro img {
   border-radius: 5px;

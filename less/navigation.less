@@ -7,18 +7,25 @@ header {
     padding-bottom: 20px;
     padding-right: 2.5%;
     align-items: center;
-    background: @sea-shell;
+    background: rgba(241, 241, 241, 0.9);
+    position: fixed;
+    width: 100%;
+    top:0;
+    // opacity: 0.5;
 
+    
     nav {
         padding-top: 15px;
     }
-
     nav a {
-    
         font-size: 1.8rem;
         text-decoration: none;
         padding-right:15px; 
         color: @ebony-clay; 
+
+        &:hover {
+            color: @shuttle-orange;
+        }
     }
 
 }
