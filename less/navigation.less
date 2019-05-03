@@ -1,1 +1,39 @@
 // Navigation code here
+
+nav {
+  #flexMixins.nav;
+
+  background-color: @wild-sand;
+
+  h1 {
+    #fontMixins.bold;
+    #spacingMixins.marginTopBottom;
+
+    font-size: 3.2rem;
+
+    @media @phone {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+      font-size: 4.8rem;
+    }
+  }
+
+  .links {
+    #spacingMixins.marginTopBottom;
+
+    justify-content: space-around;
+    display: flex;
+    width: 400px;
+
+    @media @phone {
+      width: 90%;
+    }
+  }
+
+  a {
+    #fontMixins.normalize;
+    #fontMixins.bold;
+    font-size: 1.6rem;
+  }
+}
