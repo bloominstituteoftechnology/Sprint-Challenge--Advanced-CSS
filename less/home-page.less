@@ -34,6 +34,13 @@ h1 {
 
 .home {
 
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
   .intro {
     border: none;
 
@@ -44,7 +51,21 @@ h1 {
 
       img {
         border-radius: 7px;
+
+
+        @media @phone {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
       }
+    }
+
+
+    .lift-off {
+
+
     }
 
 
@@ -102,6 +123,13 @@ h1 {
         margin-bottom: 26px;
       }
 
+      @media @phone {
+        width: 100%;
+      }
+
+
+
+
      .btn {
 
      }
@@ -110,11 +138,17 @@ h1 {
     .walk-img {
       width: 46%;
       margin-left: 4%;
+    
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
   }

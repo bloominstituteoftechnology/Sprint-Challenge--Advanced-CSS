@@ -231,6 +231,12 @@ h1 {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .intro {
   border: none;
 }
@@ -241,6 +247,13 @@ h1 {
 }
 .home .intro .head-img img {
   border-radius: 7px;
+}
+@media (max-width: 500px) {
+  .home .intro .head-img img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -284,9 +297,20 @@ h1 {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
