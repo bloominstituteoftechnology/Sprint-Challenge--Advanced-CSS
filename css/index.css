@@ -183,12 +183,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+header {
+  border: 1px double #e0e0e0;
+}
 h1 {
   font-size: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5px;
+}
+.home .intro {
+  border: none;
 }
 .home .intro .head-img {
   display: flex;
