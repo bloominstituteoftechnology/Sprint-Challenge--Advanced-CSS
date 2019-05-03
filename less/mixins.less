@@ -1,1 +1,40 @@
 // Mixins Here
+
+@media(max-width: 500px) {
+    
+@phone: ~"(max-width: 500px)";
+}
+
+
+
+
+.btn {
+    background-color: @btn-bg-color;
+    color: @sea-shell;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 7px;
+    width: 35%;
+    height: 12%;
+    font-size: 2rem;
+    font-weight: bold;
+    
+
+    &:hover {
+        background-color: darken(rgb(150, 127, 255), 5%);
+
+    }
+
+    @media @phone {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+
+
+    }
+
+}
+
+
