@@ -181,8 +181,14 @@ header nav {
 header nav a {
   font-size: 1.8rem;
   text-decoration: none;
-  padding-right: 15px;
+  padding-right: 30px;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding-right: 20px;
+    font-size: 1.6rem;
+  }
 }
 header nav a:hover {
   color: #db6220;
@@ -345,6 +351,7 @@ footer {
   font-size: 1.6rem;
   color: #81848e;
   opacity: 0.7;
+  border: 2px solid #23293B;
 }
 .home button {
   display: flex;

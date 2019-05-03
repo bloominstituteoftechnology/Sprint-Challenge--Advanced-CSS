@@ -12,17 +12,20 @@ header {
     position: sticky; 
     width: 100%;
     top:0;
-    // opacity: 0.5;
 
-    
     nav {
         padding-top: 15px;
     }
     nav a {
         font-size: 1.8rem;
         text-decoration: none;
-        padding-right:15px; 
+        padding-right:30px; 
         color: @ebony-clay; 
+
+        @media @phone {
+            padding-right: 20px;
+            font-size: 1.6rem;
+        }
 
         &:hover {
             color: @shuttle-orange;
