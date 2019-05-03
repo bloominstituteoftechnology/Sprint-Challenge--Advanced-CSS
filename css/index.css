@@ -193,6 +193,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 5px;
 }
 .home .intro h2 {
   padding: 15px;
