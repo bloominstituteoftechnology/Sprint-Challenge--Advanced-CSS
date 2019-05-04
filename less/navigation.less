@@ -1,1 +1,39 @@
 // Navigation code here
+
+h1 {
+  color: @header-font-color;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+
+  @media @mobile {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+  }
+
+    a {
+      text-decoration: none;
+      color: @header-font-color;
+      font-size: 1.9rem;
+      font-weight: 650;
+    }
+
+   
+}
+
+@media @mobile {
+  width: 100%;
+  margin: auto;
+}
