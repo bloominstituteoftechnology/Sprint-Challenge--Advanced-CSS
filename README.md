@@ -1,4 +1,4 @@
-<center><img src="img/Screen Shot 2019-05-04 at 9.57.41 PM.png"></center>
+<img src="img/spacewalkerss.png">
 
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
