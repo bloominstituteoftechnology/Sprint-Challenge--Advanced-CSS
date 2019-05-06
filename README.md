@@ -1,3 +1,4 @@
+Preview of final assignment:
 <img src="img/spacewalkerss.png">
 
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
