@@ -1,9 +1,3 @@
-.topmix {
-  width: 100%;
-  background-color: #f2f2f2;
-  line-height: 47px;
-  padding: 8px;
-}
 .mid-topmix {
   margin: auto;
   width: 800px;
@@ -180,7 +174,7 @@ p {
   width: 100%;
   background-color: #f2f2f2;
   line-height: 47px;
-  padding: 8px;
+  padding-top: 1.8em;
 }
 .top .mid-top {
   margin: auto;
@@ -194,15 +188,15 @@ p {
   }
 }
 .top .mid-top h1 {
-  font-size: 4em;
+  font-size: 4.5em;
 }
 .top .mid-top nav {
   font-size: 1.7em;
 }
 .top .mid-top nav a {
   text-decoration: none;
-  padding: 12px;
-  color: #262c40;
+  padding: 1em 1em;
+  color: #394260;
 }
 footer {
   color: #22283B;
@@ -273,13 +267,14 @@ footer {
   margin-bottom: 26px;
 }
 .walk .walk-text .btn {
-  background-color: #454A59;
+  background-color: #262c40;
   color: white;
   border-radius: 0.7rem;
   padding: 11px;
   text-align: center;
   font-size: 1.7em;
-  width: 120px;
+  width: 100px;
+  height: 38px;
 }
 @media (max-width: 500px) {
   .walk .walk-text .btn {
