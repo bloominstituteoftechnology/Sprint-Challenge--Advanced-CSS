@@ -167,7 +167,7 @@ p {
 }
 @media (max-width: 500px) {
   .container {
-    width: 90%;
+    max-width: 470px;
   }
 }
 .top {
@@ -175,6 +175,12 @@ p {
   background-color: #f2f2f2;
   line-height: 47px;
   padding-top: 1.8em;
+}
+@media (max-width: 500px) {
+  .top {
+    padding-top: 1em;
+    line-height: 43px;
+  }
 }
 .top .mid-top {
   margin: auto;
@@ -184,18 +190,17 @@ p {
 @media (max-width: 500px) {
   .top .mid-top {
     width: 500px;
-    background: yellow;
   }
 }
 .top .mid-top h1 {
-  font-size: 4.5em;
+  font-size: 3.9em;
 }
 .top .mid-top nav {
   font-size: 1.7em;
 }
 .top .mid-top nav a {
   text-decoration: none;
-  padding: 1em 1em;
+  padding: 0.9em 0.9em;
   color: #394260;
 }
 footer {
@@ -208,16 +213,37 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    width: 480px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 474px;
+    border-radius: 0.5em;
+  }
+}
 .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .space-images .launch {
+    display: none;
+  }
 }
 .space-images img {
   width: 28%;
@@ -227,11 +253,17 @@ footer {
 }
 @media (max-width: 500px) {
   .space-images img {
-    width: 100%;
+    width: 500px;
   }
 }
 .visit-planets {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .visit-planets {
+    width: 488px;
+    padding: 1em 1em;
+  }
 }
 .visit-planets h3 {
   margin-top: 11px;
@@ -249,7 +281,13 @@ footer {
 @media (max-width: 500px) {
   .walk {
     flex-direction: column-reverse;
-    padding: 0;
+    padding: 2em 2em;
+  }
+  .walk img {
+    width: 100%;
+    border-radius: 3em;
+    padding-top: 1.7em;
+    padding-bottom: 2.3em;
   }
 }
 .walk .walk-text {
@@ -267,19 +305,24 @@ footer {
   margin-bottom: 26px;
 }
 .walk .walk-text .btn {
-  background-color: #262c40;
+  background-color: #1d2130;
   color: white;
   border-radius: 0.7rem;
   padding: 11px;
   text-align: center;
   font-size: 1.7em;
-  width: 100px;
+  width: 95px;
   height: 38px;
 }
 @media (max-width: 500px) {
   .walk .walk-text .btn {
+    box-sizing: border-box;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 2.4em;
+    background: #262c40;
+    font-size: 18px;
   }
 }
 .walk .walk-text .btn .btn:hover {
@@ -290,27 +333,8 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width: 500px) {
-  .walk .walk-text .walk-img {
-    width: 100%;
-  }
-}
 .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .sky {
-    display: none;
-  }
-  .launch {
-    display: none;
-  }
-  .blast {
-    width: 100%;
-  }
-  .spaceguy {
-    border-radius: 5px;
-  }
 }

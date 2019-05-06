@@ -3,6 +3,10 @@
 .home {
 
   .intro {
+    @media @mobile {
+      width: 480px;
+     
+    }
 
     h2 {
       padding: 15px;
@@ -12,15 +16,36 @@
       padding:0 15px;
     }
 
+    img {
+      @media @mobile {
+        width: 474px;
+        border-radius: .5em;
+      }
+
+     
+      }
+
     }
-  
   }
+
+  
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 
+  .sky {
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  .launch {
+    @media @mobile {
+      display: none;
+    }
+  }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -28,16 +53,22 @@
       height: 100%;
 
       @media @mobile {
-        width: 100%;
+        width: 500px;
       }
-
+    }
   
     }
-    }
+    
   
 
   .visit-planets {
     padding: 15px;
+
+    @media @mobile {
+      width: 488px;
+      padding: 1em 1em; 
+     
+    }
 
     h3 {
       margin-top: 11px;
@@ -54,10 +85,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+   
 
     @media @mobile {
       flex-direction: column-reverse;
-      padding: 0;
+      padding: 2em 2em;
+
+      img {
+         width: 100%;
+        border-radius: 3em;
+        padding-top: 1.7em;
+        padding-bottom: 2.3em;
+      }
     }
 
     .walk-text {
@@ -76,18 +115,23 @@
       }
 
       .btn {
-        .btn-color(#262c40, white);
+        .btn-color(#1d2130, white);
         border-radius: .7rem; 
         padding: 11px; 
         text-align: center; 
         font-size: 1.7em;
-        width: 100px; 
+        width: 95px; 
         height: 38px;
     
 
         @media @mobile {
+          box-sizing: border-box;
           flex-direction: column;
-          width: 400px; 
+         width: 100%;
+         padding-top: 21px;
+         padding-bottom: 2.4em;
+         background: #262c40;
+         font-size: 18px;
        }
 
       .btn:hover {
@@ -104,40 +148,28 @@
       width: 46%;
       margin-left: 4%;
 
-      @media @mobile {
-        width: 100%;
+      
+      
+      
 
-    }
+    
+  
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
 
-       
+
+      
      
       }
     }
-    }
   }
+
 // home
 
-@media @mobile {
-  .sky  {
-  display: none; 
-  }
 
-  .launch {
-    display: none; 
-  }
-
-  .blast {
-    width: 100%;
-  }
-
-  .spaceguy {
-    border-radius: 5px; 
-  }
-  }
   
 
+}
