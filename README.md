@@ -33,14 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+Adaptive web design uses distinct layouts for multiple screen sizes, the layout largely depends on the screen size being used so with each of these sizes in mind a layout would have to be designed for it.
+Response web design adapts to the size of the screen no matter what the target device screen size is. The layout is ‘fluid’ and uses CSS media to change styles, this ‘fluid’ grid enables the page to resize its width and height to adapt to different screen sizes and show correctly.
 
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first is designed mainly for functionality. It’s a very focused approach starting with putting out a core function and layering the extras incrementally for higher resolutions (often called progressive enhancement). The mobile-first strategy is often referred to as a content-first strategy because your website’s content must be carefully researched and structured to be categorized based on importance.
+Desktop first design approach means designing for the highest specifications — the best achievable by design- and then going down to smaller resolutions (often called graceful degradation).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Shrinks the default font to 10px. Scaling from 10px with rem is much easier.
 
 4. How would you describe preprocessing to someone new to CSS?
+CSS preprocessors add functionality to CSS files, with the aim of saving developer time and effort. If you have written in any CSS preprocessing language, then you can convert it into another type of data.
+
+Preprocessors can enhance the functionality of CSS with assets like variables, operators, interpolations, functions, mixins to name a few. All these assets are integrated to the regular CSS syntax for increased efficiency and productivity.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Nesting is my favorite concept in preproccing as it cleans up code nicely. Mixins took me a while to learn.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
