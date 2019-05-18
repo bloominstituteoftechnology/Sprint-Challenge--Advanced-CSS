@@ -238,7 +238,8 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
-    width: 93%;
+    width: 90%;
+    padding-left: 2%;
   }
   .home .space-images .sky {
     display: none;
