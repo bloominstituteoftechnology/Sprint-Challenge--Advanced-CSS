@@ -5,6 +5,7 @@
     flex-flow: @direction @wrap;
 }
 
+
 .button(@bg-color: black, @m-width: 100px) {
     font-size: 1.9rem;
     padding: 5px 15px;
@@ -16,6 +17,7 @@
     border-radius: .5rem;
 }
 
+// auto adjust width based on screen size
 .dynamic-width(@m-width:800px, @p-width:100%){
     max-width: @m-width;
     width: @p-width;
