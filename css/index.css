@@ -162,13 +162,26 @@ p {
 }
 nav {
   color: #454A59;
+  height: 100px;
   background-color: #F6F6F6;
   border-color: #F1F1F1;
   text-align: center;
 }
 h1 {
   font-size: 4rem;
-  padding: 10px;
+  padding: 15px;
+}
+a {
+  color: #23293B;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  padding: 5px 1.75%;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.earth {
+  width: 100%;
+  border-radius: 5px;
 }
 footer {
   color: #22283B;
