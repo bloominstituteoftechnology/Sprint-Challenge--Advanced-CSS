@@ -44,7 +44,7 @@ Desktop first-Start your designs for full screen and requires more detailing.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-It allows the use of easier tracking/sizing of the fonts throught the document since the rem unit would equate to a more approachable number;ie 16px being 1.6rem
+It allows the use of easier tracking/sizing of the fonts throught the document since the rem unit would equate to a more approachable number;ie 16px being 1.6rem.
 
 4. How would you describe preprocessing to someone new to CSS?
 
