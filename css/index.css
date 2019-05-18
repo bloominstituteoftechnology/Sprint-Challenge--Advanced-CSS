@@ -237,11 +237,17 @@ footer {
 }
 .home .walk .walk-text .btn button {
   font-size: 18px;
+  font-weight: bold;
   color: #F6F7F8;
   background-color: #22283A;
   width: 30%;
   height: 40px;
   border-radius: 8px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn button:hover {
+  color: #22283A;
+  background-color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;

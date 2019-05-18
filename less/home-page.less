@@ -60,12 +60,20 @@
       .btn {
         
         button {
-        font-size: 18px;
+        font-size: @font-s;
+        font-weight: bold;
         color: @porcelain;
         background-color: @btn-bg-color;
-        width: 30%;
-        height: 40px;
-        border-radius: 8px;        
+        width: @font-w;
+        height: @font-h;
+        border-radius: @bord-rad;  
+        cursor: pointer;  
+
+          &:hover {
+            
+            color: @btn-bg-color;
+            background-color: @porcelain;
+          }
         }
       }
     }
