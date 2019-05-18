@@ -1,26 +1,43 @@
 // Navigation code here
-.header-nav{
+.header-nav {
     .flex(column, wrap);
     align-content: center;
     text-align: center;
     background: @nav-bg;
-    
-    h1{
-        margin-top:15px;
+
+    h1 {
+        margin-top: 15px;
         font-size: 4rem;
     }
-    nav{
+
+    nav {
         .flex();
-        margin-top:16px;
+        margin-top: 16px;
         justify-content: space-between;
         max-width: 400px;
         width: 100%;
         margin-bottom: 11px;
-        a{
-            font-size:2rem;
+
+        a {
+            font-size: 2rem;
             text-decoration: none;
             color: black;
         }
     }
 
+}
+
+//mobile media query
+@media @mobile {
+    .header-nav {
+        max-width: 500px;
+        width: 100%;
+        background: @nav-bg;
+        nav {
+            justify-content: space-around;
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }

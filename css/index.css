@@ -160,6 +160,10 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  max-width: 500px;
+  width: 100%;
+}
 .header-nav {
   display: flex;
   flex-flow: column wrap;
@@ -184,6 +188,19 @@ p {
   font-size: 2rem;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 500px) {
+  .header-nav {
+    max-width: 500px;
+    width: 100%;
+    background: #F6F6F6;
+  }
+  .header-nav nav {
+    justify-content: space-around;
+  }
+  .header-nav nav a {
+    font-size: 1.5rem;
+  }
 }
 footer {
   color: #22283B;
@@ -255,4 +272,50 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home {
+    max-width: 450x;
+    width: 100%;
+  }
+  .home .intro {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .intro img {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    max-width: 500px;
+    width: 100%;
+    margin: 21px 25px;
+  }
+  .home .walk {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    padding: 10px 10px;
+    margin: auto 10px;
+  }
+  .home .walk .walk-text {
+    max-width: 500px;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    max-width: 500px;
+    width: 100%;
+    padding: 27px;
+    text-align: center;
+  }
+  .home .walk .walk-img {
+    max-width: 500px;
+    width: 100%;
+    margin: 26px auto;
+  }
 }

@@ -4,3 +4,19 @@
     display: flex;
     flex-flow: @direction @wrap;
 }
+
+.button(@bg-color: black, @m-width: 100px) {
+    font-size: 1.9rem;
+    padding: 5px 15px;
+    border: 1px solid black;
+    max-width: @m-width;
+    width: 100%;
+    color: white;
+    background: @bg-color;
+    border-radius: .5rem;
+}
+
+.dynamic-width(@m-width:800px, @p-width:100%){
+    max-width: @m-width;
+    width: @p-width;
+}
