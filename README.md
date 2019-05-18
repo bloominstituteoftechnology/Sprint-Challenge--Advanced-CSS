@@ -33,15 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-
+Layout widths in an adaptive layout are still hardcoded making it not user friendly for thousands of devices
 2. Describe what it means to be mobile first vs desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+allows for easier mental conversion. 1px per 10rem rather than 1px to 16rem which is more taxing to convert
 4. How would you describe preprocessing to someone new to CSS?
-
+Preprocessing is a combination of tools that improve CSS readability and make is more managible in a team setting or for large projects
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+Importing is absolutely amazing. It improves my understanding of the overall code and makes projects less intimidating initially.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
@@ -56,13 +56,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
