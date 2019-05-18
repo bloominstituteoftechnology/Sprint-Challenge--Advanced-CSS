@@ -9,3 +9,27 @@
 @height: 40px;
 @border-radius: 8px;
 
+.btn {
+        
+    button {
+    font-size: @font-s;
+    font-weight: bold;
+    color: @porcelain;
+    background-color: @btn-bg-color;
+    width: @font-w;
+    height: @font-h;
+    border-radius: @bord-rad;  
+    cursor: pointer;  
+
+        @media @phone {
+            width: 100%;
+            height: 7.5rem;
+        }
+
+      &:hover {
+        
+        color: @btn-bg-color;
+        background-color: @porcelain;
+      }
+    }
+  }
