@@ -1,1 +1,53 @@
 // Navigation code here
+
+.navigation{
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: @sea-shell;
+    
+        .nav-container{
+            height: 100%;   
+            display: block;
+            align-items: center;
+            align-content: space-between;
+
+            h1{
+                font-size: 4.5rem;
+                margin-left: 210px; 
+    
+                @media @mobile {
+                    font-size: 4rem;
+                    margin-left: 100px;
+                    
+                  }
+            }
+    
+            nav  {
+                width: 500px;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 30px;
+                margin-left: 130px;
+    
+                @media @mobile {
+                    width: 100%;
+                    justify-content: space-around;
+                    margin-left: 50px;
+                    width: 400px;
+                  }
+    
+                a {
+                    text-decoration: none;
+                    color: @river-bend;
+                    font-size:2rem;
+                }
+            }
+        }
+    
+            
+    
+    }
+    
+        
+
