@@ -58,7 +58,13 @@
       }
 
       .btn {
-        .button()
+        .button();
+        cursor: pointer;
+
+        &:hover {
+          background: grey;
+        }
+
       }
     }
 
@@ -77,7 +83,7 @@
 
 // home
 
-@media @mobile {
+@media @phone {
   .home {
     max-width: 450x;
     width: 100%;
@@ -117,6 +123,10 @@
           .dynamic-width(500px);
           padding: 27px;
           text-align: center;
+
+          &:hover {
+            background-color:grey;
+          }
         }
       }
 

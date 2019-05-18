@@ -263,6 +263,10 @@ footer {
   color: white;
   background: black;
   border-radius: 0.5rem;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background: grey;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -312,6 +316,9 @@ footer {
     width: 100%;
     padding: 27px;
     text-align: center;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: grey;
   }
   .home .walk .walk-img {
     max-width: 500px;
