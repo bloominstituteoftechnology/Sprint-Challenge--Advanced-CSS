@@ -12,6 +12,10 @@
       padding: 0 15px;
     }
 
+    img {
+      .dynamic-width(800px);
+    }
+
   }
 
   .space-images {
@@ -85,8 +89,6 @@
 
 @media @phone {
   .home {
-    max-width: 450x;
-    width: 100%;
 
     .intro {
       .dynamic-width(500px);
@@ -125,7 +127,7 @@
           text-align: center;
 
           &:hover {
-            background-color:grey;
+            background-color: grey;
           }
         }
       }
