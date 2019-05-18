@@ -5,6 +5,7 @@
 
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 
 html, body {
@@ -35,4 +36,28 @@ p {
   width: 100%;
   margin: 0 auto;  
 }
+
+@media @phone {
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+}
+
+@media @phone {
+  .container {
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+}
+
+@media @phone {
+  .blast {
+    width: 100%;
+  }
+}
+
 
