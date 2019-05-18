@@ -1,1 +1,36 @@
 // Navigation code here
+
+body{
+
+
+        .navigation-wrapper{
+        
+        max-width: @max-span-width;
+        width: 100%;
+        margin: 2% auto;
+        .flex-apply(@orientation:column);
+        align-items:  center;
+        
+
+            h1{
+                font-size: 3.5rem;
+                margin: 2% auto;
+            }
+        
+            .top-nav{
+            width: 50%;
+            .flex-apply;
+            justify-content: space-between;
+            
+            @media @phone{
+                width:75%
+            }
+
+                a{
+            .nav-setup;
+        }
+    }
+    
+    }
+
+}
