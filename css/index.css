@@ -185,7 +185,7 @@ a {
 }
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
@@ -234,6 +234,14 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  font-size: 18px;
+  color: #F6F7F8;
+  background-color: #22283A;
+  width: 30%;
+  height: 40px;
+  border-radius: 8px;
 }
 .home .walk .walk-img {
   width: 46%;
