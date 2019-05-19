@@ -1,0 +1,11 @@
+.topmix {
+  width: 100%;
+  background-color: #f2f2f2;
+  line-height: 47px;
+  padding: 8px;
+}
+.mid-topmix {
+  margin: auto;
+  width: 800px;
+  text-align: center;
+}

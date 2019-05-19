@@ -1,3 +1,6 @@
+Preview of final assignment:
+<img src="img/spacewalkerss.png">
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -34,13 +37,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive:  use fixed unit like pixels; multiple fixed widths defined by specific media queries.
+
+Fully Responsive: automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first: (min-width) -the website is modified to adapt to different devices, including smartphones and tablets; the site is scaled down
+
+Desktop first: (max-width) - Designing for full sized screens 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+relative to the root - we can define a single font size on the html element and define all rem units to be a percentage of that
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is an approach to CSS that is sort of like meal prep.  Essentially, you prepare a meal and save it for use later.  You're not creating the same meal over and over.  Rather it's already made for you and you just use it whenever you need it. In CSS those meal preps are - mixins, variables, parametric mixins - you prepared them beforehand - insert where needed. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite: Mixins
+Trouble: at first was Parametric Mixins
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
