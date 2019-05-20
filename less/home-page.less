@@ -84,16 +84,20 @@
       }
 
       .btn {
-        background-color: @btn-bg-color;
+        .btn-style(@btn-bg-color,4px,1.6rem);
         color: #fff;
         padding: 10px 10px;
-        border-radius: 4px;
-        font-size: 1.6rem;
         text-align: center;
         width: 30%;
+        transition: 0.5s;
         @media @phone {
           width: 100%;
           padding: 20px 0;
+        }
+
+        &:hover {
+          background-color:rgb(14, 12, 12);
+          cursor: pointer;
         }
       }
     }
@@ -111,6 +115,24 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  form {
+    width: 100%;
+    .center(space-between,center);
+    flex-direction:column;
+    color:#000;
+    font-size:1.2rem;
+    label{
+      margin-top:15px;
+      input{
+        padding:5px 20px;
+      }
+    }
+    textarea{
+      margin-left:2%;
+      margin-top:20px;
+      height:100px;
     }
   }
 } // home
