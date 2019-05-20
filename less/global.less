@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1 {
+  font-size: 5.3rem;
+}
+
 h2 {
   font-size: 3.2rem;
 }
@@ -32,7 +36,53 @@ p {
 
 .container {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  .wd100();
+  margin: 0 auto;
 }
 
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 500px){
+    h1 {
+      font-size: 4.2rem;
+     }
+    img {
+      .wd100;
+     }
+   }
+
+  nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media (max-width: 500px){
+      margin-top: 20px;
+      }
+
+    a {
+      margin: 30px;
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: black;
+      font-weight: bold;
+
+      @media (max-width: 500px){
+        margin: 20px;
+       }
+     }
+  }
+
+  h2 {
+  align-self: flex-start;
+  }
+
+  img {
+   border-radius: 5px;
+  }
+
+}
