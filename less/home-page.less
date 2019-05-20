@@ -56,11 +56,11 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin: 60px auto;
     border-top: 1px solid @main-border-color;
+    border-bottom: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center(center,center);
     @media @phone {
       flex-direction: column-reverse;
       padding: 0;
@@ -119,6 +119,7 @@
   }
   form {
     width: 100%;
+
     .center(space-between,center);
     flex-direction:column;
     color:#000;

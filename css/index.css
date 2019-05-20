@@ -216,11 +216,13 @@ a {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
+  margin: 60px auto;
   border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width:500px) {
   .home .walk {
