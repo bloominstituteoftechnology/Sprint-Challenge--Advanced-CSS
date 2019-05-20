@@ -319,10 +319,6 @@ footer {
   border-radius: 4px;
   font-size: 1.6rem;
 }
-.home .walk .walk-text .btnhover {
-  background-color: #F1F1F1;
-  color: #22283A;
-}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     height: 70px;
