@@ -1,1 +1,31 @@
 // Mixins Here
+
+.custom-button(){
+    display: block;
+    background-color: @btn-bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    font: white;
+}
+
+.custom-layout (@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-buttonmobile(){
+    display: block;
+    background-color: @btn-bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    font: white;
+}
