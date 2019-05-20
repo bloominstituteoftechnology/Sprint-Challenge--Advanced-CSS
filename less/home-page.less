@@ -10,9 +10,14 @@
 
     p {
       padding:0 15px;
+      //@media @phone {
+      //display:flex;
+      //flex-direction: column-reverse;
+      //justify-content: center;
+      //align-items:center;
+      //width: 100%
     }
-    
-}
+  }
 
   .space-images {
     display: flex;
@@ -24,9 +29,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      }
     }
-  }
-
+  
 
 
   .visit-planets {
@@ -75,14 +80,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-
-
-        //phone 
-        @media(max-width:500px){
-          
-          display:none;
-        }
       }
-    }
+      }
   }
 }// home
