@@ -162,6 +162,7 @@ p {
 }
 a {
   text-decoration: none;
+  text-transform: capitalize;
 }
 .home .intro h2 {
   padding: 15px;
@@ -205,6 +206,13 @@ a {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn a {
+  background-color: #22283A;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -235,7 +243,6 @@ nav .nav-bar {
 nav .nav-bar a {
   color: #454A59;
   font-size: 1.4rem;
-  text-transform: capitalize;
 }
 footer {
   color: #22283B;
