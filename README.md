@@ -40,7 +40,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?  It is a way to write CSS faster and easier with slightly different coding.
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?  My favorite is variables.  The use of so many files is a bit rough at first.
+5.5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?  My favorite is variables.  The use of so many files is a bit rough at first.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
