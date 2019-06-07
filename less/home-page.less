@@ -2,9 +2,17 @@
 
 .home {
   .earth {
-    padding: 10px 10px;
-    margin-top: 15px;
-    width: 50%;
+    display: flex;
+    margin-top: 1px;
+
+    img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    @media @phone {
+      width: 100%;
+    }
   }
   .intro {
     h2 {
@@ -30,8 +38,12 @@
 
     @media @phone {
       justify-content: center;
+      img {
+        width: 65%;
 
-      img:nth-child(2) {
+        &:nth-child(n + 2) {
+          display: none;
+        }
       }
     }
   }
@@ -74,13 +86,20 @@
     }
 
     .walk-img {
-      width: 46%;
+      width: 80%;
       margin-left: 4%;
 
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+      @media @phone {
+        img {
+          width: 100%;
+          justify-content: center;
+          margin: 0 0;
+        }
       }
     }
 
@@ -91,10 +110,13 @@
 
       .walk-text {
         width: 100%;
-      }
-      .walk-img {
-        width: 100%;
+
+        .btn {
+          .button-genie(100%; 25px);
+        }
       }
     }
   }
-} // home
+
+  // home
+}
