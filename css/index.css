@@ -394,3 +394,83 @@ footer {
     padding: 0 5px;
   }
 }
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact header .contact-header-img {
+  width: 100%;
+}
+.contact header .contact-header-img img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-animation: fade-in 2s ease-out 1 normal;
+  -moz-animation: fade-in 2s ease-out 1 normal;
+  animation: fade-in 2s ease-out 1 normal;
+}
+
+
+.contact .subscribe-content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact .subscribe-content h2 {
+  padding: 15px;
+}
+.contact .subscribe-content p {
+  padding: 0 15px;
+}
+.contact .subscribe-content form {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.contact .subscribe-content form input {
+  padding: 5px 2% 5px 0.7%;
+}
+.contact .subscribe-content form .address input {
+  margin-bottom: 0;
+}
+.contact .subscribe-content form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.contact .subscribe-content form div textarea {
+  margin-bottom: 20px;
+  padding: 0 50% 200px 0.7%;
+}
+.contact .subscribe-content form input:last-child {
+  text-align: center;
+  background: #22283a;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 2%;
+  font-size: 1.8rem;
+  border: 1px solid #22283a;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.contact .subscribe-content form input:last-child:hover {
+  background: #f6f6f6;
+  border: 1px solid #454a59;
+  color: #454a59;
+}
