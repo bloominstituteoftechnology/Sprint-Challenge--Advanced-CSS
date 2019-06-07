@@ -52,6 +52,8 @@ Preprocessing adds additional features to CSS to simplify development by allowin
 
 I like that you can create variables and easily change multiple elements at once that share the same properties by modifying the variable in one place instead of having to search and change each instance individually.  Also, it's nice that you can adjust colors for example, based on the desire to lighten or darken by a certain percentage rather than looking up a color each time.
 
+I'm still getting the hang of the entire concept so right now I would have to say figuring out when I should use preprocessing and when I should modify the CSS directly.
+
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
