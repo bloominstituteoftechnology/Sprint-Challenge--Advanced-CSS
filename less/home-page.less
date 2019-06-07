@@ -9,21 +9,22 @@
     }
 
     p {
-      padding:0 15px;
+margin-top: 2rem;
     }
-  
+  h4 {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-
+    .wh();
     img {
-      width: 28%;
+      .wh(28%);
       margin: 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
     }
   }
 
@@ -47,7 +48,7 @@
     justify-content: center;
 
     .walk-text {
-      width: 50%;
+      .wh(50%);
 
       h3 {
         margin-bottom: 10px;
@@ -58,16 +59,22 @@
       }
 
       .btn {
+        .btnmix(100px,1.6rem);
+        transition-duration: 0.4s;
       }
+      .btn:hover {
+          background-color: #4CAF50; /* Green */
+          color: black;
+        }
+
     }
 
     .walk-img {
-      width: 46%;
+      .wh(46%);
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
+        .wh(100%,auto);
         border-radius: 10px;
       }
     }
