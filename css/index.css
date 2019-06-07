@@ -244,6 +244,9 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img:hover {
+  transform: scale(1.1);
+}
 .home .visit-planets {
   padding: 15px;
 }
