@@ -297,6 +297,9 @@ footer {
     height: 5.5rem;
   }
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #363f5b;
+}
 @media (max-width: 600px) {
   .home .walk .walk-text {
     display: flex;
@@ -321,6 +324,5 @@ footer {
     height: auto;
     border-radius: 10px;
     padding-bottom: 20px;
-    justify-content: center;
   }
 }
