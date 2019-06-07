@@ -7,6 +7,10 @@
 
     h1 {
         font-size: 4rem;
+
+        @media @phone {
+            font-size: @mobile-logo;
+        }
     }
 
     nav a {
@@ -20,26 +24,28 @@
             color: white;
         }
 
-        .links-phone() {
-            font-size: @phone-link-font-size;
+        @media @phone {
+
+            .links-phone();
+            padding: 8px;
+            ;
+
+
+
         }
-
-
-
     }
 
 
 
-    .nav1 {
-        .custom-layout-row(row, @align, @justify, no-wrap);
-        height: 50px;
-        width: @width;
-        margin-top: 10px;
+}
 
 
-    }
 
-
+.nav1 {
+    .custom-layout-row(row, @align, @justify, no-wrap);
+    height: 50px;
+    width: @width;
+    margin-top: 10px;
 
 
 }

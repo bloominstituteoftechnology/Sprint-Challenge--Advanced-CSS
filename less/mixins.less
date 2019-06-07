@@ -2,8 +2,13 @@
 
 .links-nav() {
     color: @gray;
-    font-size: 1.5rem;
+    font-size: @nav-links-font-size;
     text-decoration: @no-text-decoration;
+
+}
+
+.links-phone() {
+    font-size: @phone-link-font-size;
 }
 
 //Parametric Mixins
@@ -36,13 +41,6 @@
     flex-wrap: @row-wrap;
 }
 
-// .custom-layout-row(@direction: row; @justify: space-around; @row-wrap: wrap) {
-//     display: flex;
-//     flex-direction: @direction;
-//     //align-items: @align;
-//     justify-content: @justify;
-//     flex-wrap: @row-wrap;
-// }
 
 //buttons
 

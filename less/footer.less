@@ -8,4 +8,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media @phone {
+    .custom-layout-column(@direction, @align, @justify);
+    width: 100%;
+    margin-top: 15px;
+
+  }
 }

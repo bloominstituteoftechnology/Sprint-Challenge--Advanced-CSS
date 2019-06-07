@@ -6,7 +6,14 @@
 
     @media @phone {
       .custom-layout-column(@direction, @align, @justify);
+      margin: 0 20px;
 
+    }
+  }
+
+  header {
+    .header-img {
+      width: 100%;
     }
   }
 
@@ -17,6 +24,7 @@
 
       @media @phone {
         margin: 0 2.5%;
+        font-size: @mobile-h2;
 
       }
     }
@@ -48,6 +56,11 @@
 
       .blast {
         display: none;
+      }
+
+      .launch {
+        width: 90%;
+        height: 350px;
       }
 
       .inverse-contents {
@@ -86,7 +99,8 @@
     margin-top: 11px;
 
     @media @phone {
-      margin: 0 2.5%;
+      margin: 0 2.5% 15px 0;
+      font-size: 2.5rem;
 
     }
   }
@@ -132,7 +146,9 @@
       margin-bottom: 10px;
 
       @media @phone {
-        margin: 0 2.5%;
+        margin: 0 2.5% 15px 0;
+        font-size: 2.5rem;
+
 
       }
     }
@@ -164,7 +180,7 @@
     margin-left: 4%;
 
     @media @phone {
-      width: 100%;
+      width: 95%;
 
 
       margin: 0 2.5% 15px 2.5%;
