@@ -169,8 +169,9 @@ p {
   width: 100vw;
   height: 12rem;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.8);
   align-content: center;
+  position: fixed;
 }
 .topNav .navBrand {
   font-size: 4.3rem;
@@ -202,6 +203,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  margin-top: 12rem;
 }
 .home .intro h2 {
   padding: 15px;
