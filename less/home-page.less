@@ -57,9 +57,46 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
+      
+
+        .btn {
+          padding: 10px 30px;
+          border-radius: 10px;
+          background-color: #24292e;
+          color: white;
+          cursor: pointer;
+        
+          &:hover {
+            // The compiled color returned is #006667 
+            background-color: darken(teal, 5%)
+          }
+        }
+      
+
+    // .btn3 (@background-clr; @pad-left; @pad-right; @pad-top; @pad-bottom; @radius) {
+    //   background-color: @background-clr;
+    //   padding-left: @pad-left;
+    //   padding-right: @pad-right;
+    //   padding-top: @pad-top;
+    //   padding-bottom: @pad-bottom;
+    //   border-radius: @radius;
+  } 
+  
+  //.btn3(blue,10,10,10,10,10,)
+  
+  // .btn {
+  //     padding: 10px 40px;
+  //     border-radius: 10px;
+  //     background-color: teal;
+  //     color: white;
+  //     cursor: pointer;
+    
+  //     &:hover {
+  //       // The compiled color returned is #006667 
+  //       background-color: darken(teal, 5%)
+  //     }
+  //   }
+
 
     .walk-img {
       width: 46%;
