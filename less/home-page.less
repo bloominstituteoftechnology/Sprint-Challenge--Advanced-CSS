@@ -27,17 +27,14 @@ margin-top: 2rem;
   }
 
   .space1-images {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     .wh(0%,0%);
     @media @phone {
+      display: flex;
       .wh(100%,10%);
                   }  
     img {
-      visibility: hidden;
-      @media @phone {
-        visibility: visible;
-      }
       margin: 20px 2.5%;
       border-radius: 20px;
     }
@@ -48,15 +45,12 @@ margin-top: 2rem;
     flex-wrap: wrap;
     .wh();
     @media @phone {
+  display: none;
       .wh(0%,0%);
     }
     
     img {
       .wh(28%);
-      visibility: visible;
-      @media @phone {
-        visibility: hidden;
-      }
       margin: 20px 2.5%;
       border-radius: 20px;
     }
