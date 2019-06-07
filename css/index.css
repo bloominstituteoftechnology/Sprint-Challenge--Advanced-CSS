@@ -162,8 +162,7 @@ p {
 }
 .navigation-bar {
   background: #F1F1F1;
-  width: 100%;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 1%;
   flex-direction: column;
   display: flex;
@@ -191,6 +190,12 @@ p {
   font-size: 1.5rem;
   color: #454A59;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .navigation-bar a {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 footer {
   color: #22283B;
@@ -287,6 +292,10 @@ footer {
   font-size: 1.5rem;
   text-align: center;
   padding: 1.5%;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F6F6F6;
+  color: #23293B;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
