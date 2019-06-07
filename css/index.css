@@ -165,7 +165,6 @@ p {
   width: 100%;
   padding-top: 5%;
   padding-bottom: 1%;
-  justify-content: space-between;
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -178,7 +177,17 @@ p {
     background: none;
   }
 }
+.navigation-bar nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navigation-bar a {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
   font-size: 1.5rem;
   color: #454A59;
   text-decoration: none;
