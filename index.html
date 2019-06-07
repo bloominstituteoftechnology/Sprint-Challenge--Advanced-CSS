@@ -26,7 +26,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li><button class="sign-in" onclick="myFunction()">Sign In</button></li>
+            <li><button class="sign-in" onclick="signIn()">Sign In</button></li>
         </ul>
     </nav>
 
@@ -65,7 +65,7 @@
 
             <div>
               <!-- <button type="button" class="btn">Sign Up</button> -->
-              <button class="btn" onclick="myFunction()">Sign Up</button>
+              <button class="btn" onclick="signUp()">Sign Up</button>
             </div>
         </div>
 
@@ -74,10 +74,15 @@
         </div>
 
 <script>
-function myFunction() {
+function signIn() {
     prompt("Please enter your User ID:", "");
-    prompt("Please enter your Password:", "");
-    alert("Error! Invalid credentials");
+    prompt("Please enter your password:", "");
+    alert("HTTP Error 408 - Request Timeout");
+}
+function signUp() {
+    prompt("Please enter your email address:", "");
+    prompt("Please confirm your email address:", "");
+    alert("Thank you for subscribing to SpaceWalkers magazine!");
 }
 </script>
 
