@@ -5,7 +5,7 @@
   .intro {
 
     h2 {
-      padding: 15px;
+      .paddingmix();
     }
 
     p {
@@ -19,8 +19,7 @@
     .headerpic {
       margin: 0 auto;
       width: 100%;
-      display:flex;
-      flex-wrap: wrap;
+      .flexmix();
       border-radius: 10px;
       @media @mobile {
         // margin: 0 auto 30px;
@@ -32,8 +31,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flexmix();
     width: 100%;
 
     img {
@@ -62,7 +60,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    .paddingmix();
 
     h3 {
       margin-top: 11px;
@@ -81,8 +79,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    flex-wrap: wrap;
+    .flexmix();
     justify-content: center;
     @media @mobile {
       margin-top: 20px;
@@ -94,7 +91,7 @@
 
     .walk-text {
       width: 50%;
-      padding: 15px;
+      .paddingmix();
       @media @mobile {
         width: 100%;
         order: 2;
