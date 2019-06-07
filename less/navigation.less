@@ -1,8 +1,14 @@
 // Navigation code here 
 
 .navigation-bar{
+   background: @sea-shell;
    width: 100%;
    padding-top: @standard-padding;
+   padding-bottom: 1%;
+
+   @media @mobile{
+    background: none;
+   }
 
    justify-content: space-between;
   

@@ -161,8 +161,10 @@ p {
   margin: 0 auto;
 }
 .navigation-bar {
+  background: #F1F1F1;
   width: 100%;
   padding-top: 5%;
+  padding-bottom: 1%;
   justify-content: space-between;
   flex-direction: column;
   display: flex;
@@ -170,6 +172,11 @@ p {
   align-items: center;
   font-size: 3.5rem;
   color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  .navigation-bar {
+    background: none;
+  }
 }
 .navigation-bar a {
   font-size: 1.5rem;
