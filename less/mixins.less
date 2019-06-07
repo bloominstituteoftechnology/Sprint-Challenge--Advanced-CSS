@@ -1,1 +1,39 @@
 // Mixins Here
+
+@base-color: #10213d;
+@secondary-color: #5AC1E4;
+@size: 25px;
+@phone: (max-width: 500px);
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-margin {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.btnStyle (@color: "@base-color"; @text-color: "white"){
+	display: flex;
+		align-items: center;
+		padding-left: 20px;
+		font-size: 25px;
+		text-align: center;
+		width: 125px;
+		height: 40px;
+		color: @text-color;
+		background-color: @color;
+		border-radius: 7.5px;
+
+		&:hover {
+			color: @base-color;
+			background-color: @secondary-color;
+		}
+
+		p {
+			padding-top: 20px;
+			font-size: 25px;
+		}
+}
