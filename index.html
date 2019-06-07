@@ -26,7 +26,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Sign In</a></li>
+            <li><button class="sign-in" onclick="myFunction()">Sign In</button></li>
         </ul>
     </nav>
 
@@ -63,29 +63,23 @@
 
             <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
 
-            <div class="btn">
-              Sign Up
+            <div>
+              <!-- <button type="button" class="btn">Sign Up</button> -->
+              <button class="btn" onclick="myFunction()">Sign Up</button>
             </div>
         </div>
-
-        <!-- <div class="sign-up">
-            <form action="/action_page.php" class="form-container">
-                <h1>Login</h1>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-        </div> -->
 
         <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
         </div>
+
+<script>
+function myFunction() {
+    prompt("Please enter your User ID:", "");
+    prompt("Please enter your Password:", "");
+    alert("Error! Invalid credentials");
+}
+</script>
 
     </section>
 
