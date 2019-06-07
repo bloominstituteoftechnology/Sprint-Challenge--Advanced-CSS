@@ -1,1 +1,57 @@
 // Navigation code here
+nav {
+    opacity: 1;
+    background: @wild-sand;
+    flex-direction: column;
+    padding-top: 2rem;
+    flex-grow: .4;
+    .flex(space-around, center);
+    .navbar {
+        .flex(space-between, center);
+      }
+    h2 {
+    .keys(fade-in;{
+		0% { color: @color; opacity: 0; }
+        50% { color: @color; opacity: .5; }
+		100% { color: @color; opacity: 1; }
+		});
+    padding-bottom: 2rem;
+
+	.anim(fade-in 1s linear infinite alternate)
+    }
+    .nav-links {
+        list-style: none;
+        .flex(space-around, center);
+        flex-grow: .1;
+        padding-bottom: 1rem;
+        @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: center;
+    }
+      }
+    .nav-item a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        padding-left: 4rem;
+        font-size: 1.6rem;
+        @media @phone {
+            padding-left: 1.1rem;
+            font-size: 1.45rem;
+        }
+      }
+    .nav-item:hover a {
+        color: @color;
+        font-size: 18px;
+        transition: font-size 0.3s ease;
+        @media @phone {
+            font-size: 1.7rem;
+    }
+    }
+    .nav ul {
+        list-style: none;
+    }
+      }
+nav:hover {
+    opacity: .7;
+}

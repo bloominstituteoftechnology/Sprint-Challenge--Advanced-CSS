@@ -11,6 +11,13 @@
     p {
       padding:0 15px;
     }
+      
+    img {
+        border-radius: 4px;
+        @media @phone {
+          width: 100%;
+        }
+      }
   
   }
 
@@ -24,7 +31,23 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+            width: 100%;
+            margin: 1rem;
+        }
     }
+    #A1 {
+        visibility: visible;
+        @media @phone {
+            display: none;
+        }
+      }
+    #A2 {
+        visibility: visible;
+        @media @phone {
+            display: none;
+        }
+      }
   }
 
   .visit-planets {
@@ -45,9 +68,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+        flex-direction: column-reverse;
+        padding: 0px;
+        align-items: center; 
+        margin-top: 2rem;
+      }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+           width: 100%; 
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -58,8 +90,22 @@
       }
 
       .btn {
+        .butn(@color, white, 12rem, 4rem);
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 8px;
+        @media @phone {
+            .butn(@color, white, 12rem, 4rem);
+        width:100%;
       }
+
     }
+        button:hover {
+          .butn(white, @color, 12rem, 4rem);
+          @media @phone {
+             width: 100%;   
+            }
+        }
 
     .walk-img {
       width: 46%;
@@ -72,4 +118,33 @@
       }
     }
   }
+ }
 }// home
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+    font-size: 2rem;
+ }
+    .textB input {
+        width:100%;
+    }
+    h3 {
+    .keys(fade-in;{
+		0% { color: @color; opacity: 0; }
+        50% { color: @color; opacity: .5; }
+		100% { color: @color; opacity: 1; }
+		});
+    padding-bottom: 2rem;
+	.anim(fade-in 1s linear infinite alternate);
+        @media @phone {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            text-align: center;
+        }
+}
+}
+#A5 {
+    padding-bottom: 2rem;
+    }

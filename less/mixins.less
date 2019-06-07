@@ -1,1 +1,19 @@
 // Mixins Here
+.flex(@justify , @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.keys(@name; @arguments) {
+    @keyframes @name { @arguments(); }
+}
+
+.anim(@arguments) {
+    animation: @arguments;
+}
+.butn(@bgcolor; @color; @width; @height) {
+    background-color: @bgcolor; color: @color;
+    width: @width;
+    height: @height;
+}
