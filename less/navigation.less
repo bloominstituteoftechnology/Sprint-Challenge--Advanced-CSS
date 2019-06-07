@@ -1,1 +1,27 @@
 // Navigation code here
+.navig {
+  text-align: center;
+  color: @main-color;
+
+  .logo h1 {
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    font-size: 3.2rem;
+  }
+  .nav-links a {
+    font-size: 1.5rem;
+    padding: 1rem;
+
+    a :hover {
+      color: grey;
+    }
+  }
+  border-bottom: 2px solid @second-color;
+
+  @media @phone {
+    .nav-links a {
+      font-size: 1.5rem;
+    }
+    margin-bottom: 2rem;
+  }
+}
