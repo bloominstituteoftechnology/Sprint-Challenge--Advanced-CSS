@@ -167,9 +167,8 @@ p {
 nav {
   display: flex;
   width: 32.5%;
-  margin: -1.872% 0 0% 36%;
+  margin: -1.872% 0 1% 36%;
   justify-content: flex-start;
-  border: 1px solid blue;
 }
 nav a {
   font-size: 1.75rem;
@@ -263,4 +262,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .walk-text .walk-img img footer {
+  padding-top: 1.5%;
 }
