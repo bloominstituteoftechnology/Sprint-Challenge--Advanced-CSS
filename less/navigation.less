@@ -1,1 +1,14 @@
 // Navigation code here
+.nav-container {
+    .flexed(column, space-around; center);
+    background-color: @nav-bg;
+    border: .5px solid @nav-border;
+
+    nav {
+        .flexed(row, space-around; center);
+        a {
+            text-decoration: none;
+            color: @nav-font;
+        }
+    }
+}
