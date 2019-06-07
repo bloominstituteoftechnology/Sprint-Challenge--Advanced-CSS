@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -160,33 +160,56 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.navig {
-  text-align: center;
-  color: #222844;
-  border-bottom: 2px solid #81848e;
+@media (max-width:500px) {
+  .container {
+    width: 80%;
+    margin: 0;
+  }
 }
-.navig .logo h1 {
-  margin-top: 1.2rem;
-  margin-bottom: 2rem;
-  font-size: 3.2rem;
+.header-nav {
+  width: 100%;
+  background-color: #f6f6f6;
 }
-.navig .nav-links a {
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.navig .nav-links a a :hover {
-  color: grey;
+.header-nav .nav-wrapper {
+  width: 100%;
+  justify-content: space-between;
 }
 @media (max-width:500px) {
-  .navig {
-    margin-bottom: 2rem;
-  }
-  .navig .nav-links a {
-    font-size: 1.5rem;
+  .header-nav .nav-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
   }
 }
+.header-nav .nav-wrapper .main-name {
+  text-align: center;
+  font-size: 4rem;
+  padding: 8px 0 8px 0;
+}
+@media (max-width:500px) {
+  .header-nav .nav-wrapper .main-name {
+    font-size: 3rem;
+  }
+}
+.header-nav .nav-wrapper .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+}
+@media (max-width:500px) {
+  .header-nav .nav-wrapper .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.header-nav .nav-wrapper .nav a {
+  font-size: 2rem;
+  color: #454a59;
+  text-decoration: none;
+}
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -195,54 +218,154 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
+.home .intro {
   width: 100%;
 }
-.home .space-images img {
+.home .image1 {
+  width: 100%;
+}
+@media (max-width:500px) {
+  .home .image1 {
+    padding: 0;
+  }
+}
+.home img {
+  width: 100%;
+}
+@media (max-width:500px) {
+  .home img {
+    width: 100%;
+  }
+}
+.home h2 {
+  padding: 10px 0;
+}
+.home p {
+  padding: 10px 0;
+}
+@media (max-width:500px) {
+  .home {
+    width: 100%;
+    padding: 10px 5px 5px 15px;
+  }
+}
+.space-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  width: 100%;
+}
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
-  padding: 15px;
+@media (max-width:500px) {
+  .space-images {
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 5px 20px 5px;
+  }
+  .space-images .blast {
+    width: 100%;
+    height: auto;
+  }
+  .space-images .sky {
+    display: none;
+  }
+  .space-images .launch {
+    display: none;
+  }
 }
-.home .visit-planets h3 {
+.visit-planets {
+  max-width: 100%;
+  padding: 10px 0 10px 0;
+}
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
+  padding: 0;
   margin-top: 13px;
 }
-.home .walk {
-  margin-top: 60px;
+.walk {
+  margin-top: 20px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 10px 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
+  text-align: left;
 }
-.home .walk .walk-text h3 {
+@media (max-width:500px) {
+  .walk .walk-text {
+    width: 100%;
+  }
+}
+@media (max-width:500px) {
+  .walk {
+    align-items: center;
+    padding: 10px 5px 5px 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    order: 2;
+    width: 100%;
+  }
+}
+.walk h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
+.walk .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 45px;
+  background-color: #22283a;
+  color: #f6f7f8;
+  font-size: 2rem;
+  border-radius: 5px;
 }
-.home .walk .walk-img img {
-  width: 100%;
+@media (max-width:500px) {
+  .walk .btn {
+    width: 100%;
+  }
+}
+.walk .btn:hover {
+  background-color: #f6f7f8;
+  color: #22283a;
+}
+.walk-img {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  padding: 10px 0 0 20px;
+}
+@media (max-width:500px) {
+  .walk-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+}
+.walk-img img {
+  width: 80%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+@media (max-width:500px) {
+  .walk-img img {
+    width: 185%;
+    padding: 10px 5px 20px 5px;
+    border-radius: 35px;
+    order: 1;
+  }
 }

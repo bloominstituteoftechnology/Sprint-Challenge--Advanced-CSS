@@ -1,75 +1,145 @@
 // Home Content
 
 .home {
-
   .intro {
+    width: @full-width;
+  }
+  .image1 {
+    width: @full-width;
+    //padding: 0px 0 10px 0;
 
-    h2 {
-      padding: 15px;
+    @media @phone {
+      padding: 0;
     }
-
-    p {
-      padding:0 15px;
-    }
-  
   }
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
+  img {
+    width: @full-width;
+
+    @media @phone {
+      width: @full-width;
+    }
+  }
+
+  h2 {
+    padding: 10px 0;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  @media @phone {
     width: 100%;
+    padding: 10px 5px 5px 15px;
+  }
+}
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
+.space-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  width: @full-width;
+
+  img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: @full-width;
   }
 
-  .visit-planets {
-    padding: 15px;
+  @media @phone {
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 5px 20px 5px;
 
-    h3 {
-      margin-top: 11px;
+    .blast {
+      width: @full-width;
+      height: auto;
     }
-
-    p {
-      margin-top: 13px;
+    .sky {
+      display: none;
+    }
+    .launch {
+      display: none;
     }
   }
+}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+.visit-planets {
+  max-width: @full-width;
+  padding: 10px 0 10px 0;
+
+  h3 {
+    margin-top: 11px;
+  }
+
+  p {
+    padding: 0;
+    margin-top: 13px;
+  }
+}
+
+.walk {
+  margin-top: 20px;
+  border-top: 1px solid @main-border-color;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+
+  .walk-text {
+    width: 50%;
+    text-align: left;
+
+    @media @phone {
+      width: 100%;
+    }
+  }
+  @media @phone {
+    align-items: center;
+    padding: 10px 5px 5px 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
+    order: 2;
+    width: @full-width;
+  }
 
-    .walk-text {
-      width: 50%;
+  h3 {
+    margin-bottom: 10px;
+  }
 
-      h3 {
-        margin-bottom: 10px;
-      }
+  p {
+    margin-bottom: 26px;
+  }
+  .btn {
+    .button-creator(100px, 45px, @porcelain, @btn-bg-color, 2rem);
+  }
+}
 
-      p {
-        margin-bottom: 26px;
-      }
+.walk-img {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  padding: 10px 0 0 20px;
 
-      .btn {
-      }
-    }
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
+  img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+
+    @media @phone {
+      width: 185%;
+      padding: 10px 5px 20px 5px;
+      border-radius: 35px;
+      order: 1;
     }
   }
-}// home
+}
