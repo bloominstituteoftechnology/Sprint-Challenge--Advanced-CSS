@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+
+
 2. Describe what it means to be mobile first vs desktop first.
 
+You develp the webpage with the mobile platform in mind and when that is complete you focus on the desktop.  The reason for this is the proliferation of mobile devices as a way to consume the web has superceded desktop use.  Also, it's easier to make sure your mobile site works correctly when done first so you can see if the elements all fit on the page and work correctly.  You can then scale up to the desktop view.  For this you want to use responsive design and media queries to make sure the content appears and disappears as screen sizes increase or decrease depending on the device and browser being used.  Mobile first directly translates into min-width
+being the target you shoot for to begin your media queries, starting with the viewport of the smallest phone or device that is commonly used such as an iphone 5s or lower.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+This is a way of dealing with the default font size which is 16px and it allows developers to use simpler arithmetic when calculating rem units.  I forget exactly the calculation.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing adds additional features to CSS to simplify development by allowing you to make calculations, use variables, functions, mixins, and more so you can avoid repeating yourself in your code.  Also, this allows you to write modular code where you keep your various preprocessing sections separate and this can help developers work together collaboratively without getting confused and possibly overwriting each others' work.  It's more tidy, and since the files do not require additional https calls it does not slow down web page loading.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like that you can create variables and easily change multiple elements at once that share the same properties by modifying the variable in one place instead of having to search and change each instance individually.  Also, it's nice that you can adjust colors for example, based on the desire to lighten or darken by a certain percentage rather than looking up a color each time.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
