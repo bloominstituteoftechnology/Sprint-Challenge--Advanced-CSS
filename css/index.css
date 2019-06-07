@@ -264,7 +264,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    margin: 20px 2.5%;
+    margin: 20px 0;
   }
   .home .space-images .sky {
     display: none;
@@ -275,6 +275,7 @@ footer {
   .home .space-images .launch {
     width: 90%;
     height: 350px;
+    margin: 0 3% 0 2.5%;
   }
   .home .space-images .inverse-contents {
     order: -1;
@@ -299,6 +300,7 @@ footer {
 @media (max-width: 500px) {
   .visit-planets {
     width: 100%;
+    padding: 15;
   }
 }
 .visit-planets h3 {
@@ -402,6 +404,6 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-img img {
-    margin: 0 2.5%;
+    margin: 0 3.5% 0 0;
   }
 }
