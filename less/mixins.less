@@ -1,1 +1,15 @@
 // Mixins Here
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// usage
+// .center();
+
+.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
