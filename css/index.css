@@ -296,12 +296,17 @@ footer {
 .visit-planets {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .visit-planets {
+    width: 100%;
+  }
+}
 .visit-planets h3 {
   margin-top: 11px;
 }
 @media (max-width: 500px) {
   .visit-planets h3 {
-    margin: 0 2.5% 15px 0;
+    margin: 0 2.5% 15px 2.5%;
     font-size: 2.5rem;
   }
 }
@@ -339,6 +344,7 @@ footer {
 @media (max-width: 500px) {
   .walk .walk-text {
     width: 100%;
+    margin: 0 2.5%;
   }
 }
 .walk .walk-text h3 {
@@ -346,7 +352,7 @@ footer {
 }
 @media (max-width: 500px) {
   .walk .walk-text h3 {
-    margin: 0 2.5% 15px 0;
+    margin: 0 2.5% 15px 2.5%;
     font-size: 2.5rem;
   }
 }
