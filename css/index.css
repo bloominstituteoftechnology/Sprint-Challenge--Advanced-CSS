@@ -223,7 +223,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .intro p {
-    width: 70%;
+    width: 50%;
     height: 100%;
   }
 }
@@ -285,6 +285,12 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets p {
+    width: 50%;
+    height: 10%;
+  }
 }
 .home .walk {
   margin-top: 60px;
