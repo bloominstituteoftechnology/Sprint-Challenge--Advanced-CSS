@@ -23,7 +23,12 @@
     }
   
   }
-
+ .sky, .launch{
+  @media @mobile {
+    display: none;
+      }
+   
+ }
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +60,11 @@
 
   .walk {
     margin-top: 60px;
+    @media @mobile {
+      margin-top: 20px;
+      display: inherit;
+      padding: 20px;
+         }
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
@@ -62,6 +72,9 @@
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 100%;
+           }
 
       h3 {
         margin-bottom: 10px;

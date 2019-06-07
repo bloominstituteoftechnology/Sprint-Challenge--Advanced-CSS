@@ -214,6 +214,12 @@ footer {
     margin: 15px;
   }
 }
+@media (max-width: 500px) {
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -246,8 +252,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 20px;
+    display: inherit;
+    padding: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
