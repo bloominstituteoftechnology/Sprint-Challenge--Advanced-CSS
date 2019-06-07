@@ -1,1 +1,24 @@
 // Mixins Here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-maker(@width, @height, @bg-color, @font-color, @font-size) {
+  .center;
+  width: @width;
+  height: @height;
+  background-color: @font-color;
+  color: @bg-color;
+  font-size: @font-size;
+  border-radius: 5px;
+
+  @media @phone {
+    width: @full-width;
+  }
+  &:hover {
+    background-color: @bg-color;
+    color: @font-color;
+  }
+}
