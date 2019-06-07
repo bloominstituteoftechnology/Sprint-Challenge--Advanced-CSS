@@ -1,10 +1,22 @@
 // Navigation code here
 
+header{
+
+    @media mobile {
+        width: 50%;
+        margin: 0 auto;
+        background: yellow;
+      }
+    
+}
+
 nav{
     text-align: center;
     background: @wild-sand;
     padding: 20px;
     margin: 20px;
+
+    
 
     h1{
         font-size: 40px;
@@ -16,5 +28,9 @@ nav{
         text-decoration: none;
         color: black;
         font-size: 1.6rem;
+
+        @media @mobile {
+            padding: 10px;
+          }
     }
 }
