@@ -165,6 +165,12 @@ p {
     width: 500px;
   }
 }
+.about {
+  display: flex;
+}
+.about a {
+  font-size: 4rem;
+}
 nav {
   display: flex;
   width: 40rem;
