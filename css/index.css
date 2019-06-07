@@ -1,3 +1,8 @@
+.disFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,10 +172,6 @@ nav {
   background-color: #F6F6F6;
   align-content: center;
 }
-nav .navContent {
-  width: 50%;
-  margin: 0 auto;
-}
 nav .navBrand {
   font-size: 4.3rem;
   padding: 2rem 0;
@@ -238,6 +239,27 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 7.5rem;
+  height: 2.7rem;
+  background-color: #000;
+  padding: 0.7rem 1rem;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.home .walk .walk-text .btn:hover {
+  width: 7.5rem;
+  height: 2.7rem;
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  color: black;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.3rem;
+  border: 1px solid black;
 }
 .home .walk .walk-img {
   width: 46%;
