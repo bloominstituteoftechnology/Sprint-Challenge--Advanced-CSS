@@ -1,0 +1,19 @@
+What is the difference between an adaptive website and a fully responsive website?
+
+Describe what it means to be mobile first vs desktop first.
+Mobile First:
+Start designing the mobile site first with media queries set to min-width.
+Desktop First:
+Start designing the desktop site first with media queries set to max-width.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+Allows us to change default browser size from 16px to 10px.
+Then by using rem units, the font size will scale if browser size is increased.
+
+How would you describe preprocessing to someone new to CSS?
+It allows you to more efficiently style your documents through nesting, organization, variables, and multi-line styles confined to a single line called mixins.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Nesting 100%.
+Parametric mixins took me a minute to understand.
+I found Ihad to write out the full style first, and then format it as a parametric mixin to really see what was happening and what it was doing.

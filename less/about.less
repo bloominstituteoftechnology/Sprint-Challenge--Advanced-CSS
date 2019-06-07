@@ -78,6 +78,7 @@
 
   .bigger {
     margin-top: 0px;
+    width: 100;
     padding: 50px 60px;
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@
         padding: 15px;
     }
 
-    .bigger-text {
+    .bigger-text, .btn-div {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -125,15 +126,13 @@
           cursor: pointer;
           @media @phone {
               width: 100%;
-              padding: 20px 0;
-              margin-bottom: 20px;
+              padding: 20px;
           }
       }
     }
 
     .bigger-img {
       width: 100%;
-      margin-left: 4%;
       @media @phone {
           width: 95%;
           margin: auto;
@@ -141,10 +140,12 @@
       }
 
       img {
-        width: 100%;
-        padding-top: 30px;
+        width: 75%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
         height: auto;
-        border-radius: 10px;
+        border-radius: 15px;
         @media @phone {
             width: 100%;
         }
