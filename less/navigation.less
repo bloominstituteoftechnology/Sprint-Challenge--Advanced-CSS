@@ -4,9 +4,14 @@
 .main-container {
     display:flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     border: orange 3px solid;
+
+    @media (max-width: 500px) {
+        border: green 1px solid;
+    }
+        
 
 
     .title {
@@ -18,8 +23,13 @@
         width:100%;
         padding-bottom: 20px;
 
-
+        @media (max-width: 500px) {
+            padding: 5px;
+            font-size: 25px;
+        }
+            
     }
+
     nav {
         display:flex;
         flex-wrap: wrap;
@@ -27,7 +37,15 @@
         justify-content: space-around;
         font-size: 20px;
         width:50%;
+        padding-top: 15px;
         padding-bottom: 10px;
+
+        @media (max-width: 500px) {
+            font-size: 15px;
+            width:80%;
+
+
+        }
     }
 
     a {
