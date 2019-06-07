@@ -3,7 +3,7 @@
     max-width: 100%;
     // width: 1000px;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     // justify-content: space-evenly;
@@ -18,27 +18,27 @@
 }
 
 .welcome {
-    border: 1px solid plum;
+    // border: 1px solid plum;
     width: 30%;
     display: flex;
     // align-items: center;
     justify-content: center;
     margin: 0.5rem;
     font-size: 3.5rem;
-    h1{
-        @media @mobile {
-            // width: 100%;
-            display: flex;
-            margin: 0;
-            font-size: 1rem;
-            flex-direction: column;
-        }
+    
+    @media @mobile {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        font-size: 1rem;
+        flex-direction: row;
+        font-size: 3rem;
     }
 
 }
 
 nav {
-    border: 1px solid purple;
+    // border: 1px solid purple;
     width: 30%;
     display: flex;
     align-items: center;
@@ -46,19 +46,24 @@ nav {
     font-size: 1.4rem;
     margin: 1rem;
     @media @mobile {
-        // width: 100%;
+        width: 100%;
         display: flex;
         margin: 0;
         font-size: 1rem;
-        flex-direction: column;
+        flex-direction: row;
+        // justify-content: space-around;
+        align-items: center;
     }
 }
 nav a {
-    border: 1px solid lightseagreen; 
+    // border: 1px solid lightseagreen; 
     text-decoration: none;
     color: @river-bend;
     @media @mobile {
-        // width: 100%;
+        width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: space-around;
+        // flex-direction: row;
     }
 }
