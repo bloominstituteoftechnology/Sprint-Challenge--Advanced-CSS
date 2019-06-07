@@ -168,20 +168,29 @@ p {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  background-color: #F1F1F1;
 }
 .welcome {
   border: 1px solid plum;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
   margin: 0.5rem;
+  font-size: 3.5rem;
 }
 nav {
   border: 1px solid purple;
-  width: 40%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+nav a {
+  border: 1px solid lightseagreen;
+  text-decoration: none;
+  color: #454A59;
 }
 footer {
   color: #22283B;

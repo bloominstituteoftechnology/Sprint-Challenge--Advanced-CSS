@@ -9,22 +9,43 @@
     // justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    background-color: @sea-shell;
+
+    @media @mobile {
+        // flex-direction: row;
+        // align-items: center;
+    }
 }
 
 .welcome {
     border: 1px solid plum;
-    width: 40%;
+    width: 30%;
     display: flex;
     // align-items: center;
     justify-content: center;
     margin: 0.5rem;
+    font-size: 3.5rem;
+    @media @mobile {
+        width: 100%;
+        display: flex;
+    }
 
 }
 
 nav {
     border: 1px solid purple;
-    width: 40%;
+    width: 30%;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin: 1rem;
+    @media @mobile {
+        width: 100%;
+    }
+}
+nav a {
+    border: 1px solid lightseagreen; 
+    text-decoration: none;
+    color: @river-bend;
 }
