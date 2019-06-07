@@ -170,7 +170,6 @@ nav {
   padding-bottom: 1rem;
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid cyan;
 }
 @media (max-width: 500px) {
   nav {
@@ -181,7 +180,6 @@ nav a {
   font-size: 1.5rem;
   color: #454A59;
   align-content: center;
-  border: 2px solid #96e796;
 }
 footer {
   color: #22283B;
@@ -205,40 +203,31 @@ footer {
 .home .header-container {
   width: 100%;
   padding-top: 1rem;
-  border: 2px solid orange;
 }
 .home .header-container h1 {
   text-align: center;
   padding-bottom: 1rem;
-  border: 2px solid #e29de2;
 }
 .home .header-img {
   width: 100%;
   padding-right: 5rem;
 }
-.home .intro {
-  border: 2px solid gray;
-}
 .home .intro h2 {
   padding: 15px;
-  border: 2px solid green;
 }
 .home .intro p {
   padding: 0 15px;
-  border: 2px solid blue;
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 2px solid red;
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-  border: 3px solid pink;
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -257,7 +246,6 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
-  border: 2px solid yellow;
 }
 @media (max-width: 500px) {
   .home .visit-planets {
@@ -266,11 +254,9 @@ footer {
 }
 .home .visit-planets h3 {
   margin-top: 11px;
-  border: 2px solid purple;
 }
 .home .visit-planets p {
   margin-top: 13px;
-  border: 2px solid coral;
 }
 .home .walk {
   margin-top: 60px;
@@ -278,7 +264,6 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-  border: 2px solid brown;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -295,7 +280,6 @@ footer {
 }
 .home .walk .walk-text {
   width: 50%;
-  border: 2px solid teal;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text {
@@ -304,11 +288,9 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
-  border: 2px solid #ee7287;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
-  border: 2px solid #ce5dce;
 }
 .home .walk .walk-text .btn {
   border-radius: 6px;
@@ -340,14 +322,13 @@ footer {
   color: #F6F7F8;
   border: 2px solid pink;
 }
-.home .walk .walk-text .btn a .btn a:hover {
+.home .walk .walk-text .a:hover {
   color: #22283A;
   background-color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-  border: 3px solid #ecbfec;
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
@@ -360,5 +341,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 3px solid #83dddd;
 }
