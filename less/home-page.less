@@ -108,11 +108,21 @@
         margin-bottom: 26px;
       }
 
+      .btn:hover {
+        background-color: cornflowerblue;
+        color: red;
+        }
+
       .btn{
         .button(@ebony-clay, @porcelain, 1.4rem);
+        font-weight: bold;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
         @media @mobile {
           width: 100%;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
+          cursor: not-allowed;
         }
       }
     }
