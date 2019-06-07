@@ -1,1 +1,37 @@
 // Mixins Here
+
+.btn(@padding, @background, @color) 
+{
+
+    // padding: @padding; 
+    // border-radius: @radius; 
+    // // background: @background; 
+    // // color: @color; 
+    // border: @border;
+
+    background: @background;
+            color: @color;
+            .width-height(39%, 15%);
+            text-align: center;
+            font-size: 2rem;
+            border-radius: 10px;
+            padding: @padding;
+
+            &:hover{
+                background: @color;
+                color: @background;
+            }
+            @media @phone {
+              width: 100%;
+              padding: 23px;
+              margin-bottom: 10px;
+
+              
+               }
+
+    }
+
+    .width-height(@width, @height){
+        width: @width;
+        height: @height;
+    }
