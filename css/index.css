@@ -183,18 +183,20 @@ p {
   align-items: center;
 }
 .navigation-bar a {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
+  padding-left: 1%;
+  padding-right: 2%;
   padding-bottom: 2%;
   padding-top: 2%;
   font-size: 1.5rem;
   color: #454A59;
   text-decoration: none;
+  float: none;
 }
 @media (max-width: 500px) {
   .navigation-bar a {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    float: none;
   }
 }
 footer {
