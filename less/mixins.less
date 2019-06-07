@@ -1,7 +1,12 @@
 // Mixins Here
 
-.flexed (@direction, @justify, @align) {
+.flexed(@direction, @justify, @align) {
+    display: flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
+}
+
+.outline() {
+    border: 3px solid black;
 }

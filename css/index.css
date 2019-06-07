@@ -163,6 +163,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  margin: 0 auto;
+  padding: rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F6F6F6;
+  border: 0.5px solid #F1F1F1;
+}
+.nav-container .comp-name {
+  margin: 0.5% auto;
+}
+.nav-container nav {
+  width: 50%;
+  margin: 1% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-container nav a {
+  text-decoration: none;
+  color: #454A59;
+  font-size: 3.8rem;
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
