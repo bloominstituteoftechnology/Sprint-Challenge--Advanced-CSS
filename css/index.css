@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,6 +160,49 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.outside-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+.outside-nav nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  background-color: lightgray;
+  padding: 15px 0;
+}
+.outside-nav nav div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.outside-nav nav h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.outside-nav nav div {
+  display: flex;
+  justify-content: space-between;
+}
+.outside-nav nav div a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+@media (max-width: 500px) {
+  .outside-nav nav {
+    width: 100%;
+  }
+  .outside-nav nav div {
+    width: 85%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +212,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .earth {
+  padding: 10px 10px;
+  margin-top: 15px;
+  width: 50%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -186,6 +234,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    justify-content: center;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -212,6 +265,19 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border: 1px solid black;
+  background: #22283a;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 25px;
+  cursor: pointer;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -220,4 +286,17 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 15px;
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+  }
 }
