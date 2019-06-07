@@ -8,11 +8,15 @@
       display: flex;
       justify-content: space-evenly;
       border: 2px solid cyan;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     nav a {
       font-size: 1.5rem;
-      color: black;
+      color: @nav-font;
       align-content: center;
       border: 2px solid rgb(150, 231, 150);
     }

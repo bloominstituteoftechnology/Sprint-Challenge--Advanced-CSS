@@ -1,7 +1,20 @@
 // Mixins Here
 
+//button
+.btn-dimensions(@h, @w) {
+    height: @h;
+    width: @w;
+}
 
-.btn-dimensions(@height, @width) {
-    width: @width;
-    height: @height;
+.btn-style(@c, @b) {
+    color: @c;
+    background-color: @b;
+}
+
+//mobile
+.mobile-layout(@d, @j, @a) {
+    display: flex;
+    flex-direction: @d;
+	justify-content: @j;
+    align-items: @a;
 }
