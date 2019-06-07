@@ -164,6 +164,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  width: 32.5%;
+  margin: -1.872% 0 0% 36%;
+  justify-content: flex-start;
+  border: 1px solid blue;
+}
+nav a {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: black;
+  padding-right: 4%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -181,6 +194,12 @@ footer {
 }
 #main-title h3 {
   font-size: 4em;
+}
+.home .intro {
+  margin: 1% 0 6% 10;
+}
+.home .intro img {
+  border-radius: 10px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -218,7 +237,7 @@ footer {
 .home .walk .walk-text {
   width: 50%;
   margin-left: -3.1375%;
-  border: 1px solid red;
+  order: 1px solid red;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -226,13 +245,21 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text b img {
+  position: relative;
+  right: 3%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 .home .walk .walk-text .walk-img {
+  display: none;
+  justify-content: flex-end;
   width: 46%;
   margin-left: 4%;
 }
 .home .walk .walk-text .walk-img img {
-  position: relative;
-  right: 3%;
+  justify-content: flex-end;
   width: 100%;
   height: auto;
   border-radius: 10px;
