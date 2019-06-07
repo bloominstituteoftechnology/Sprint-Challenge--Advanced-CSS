@@ -1,1 +1,37 @@
 // Navigation code here
+
+.nav-container {
+    .custom-layout-column(@direction, @align, @justify);
+    width: @width;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    nav a {
+        .links-nav();
+        width: 100px;
+        padding: 0 20px;
+        text-align: center;
+
+        .links-phone() {
+            font-size: @phone-link-font-size;
+        }
+
+    }
+
+
+
+    .nav1 {
+        .custom-layout-row(row, @align, @justify, no-wrap);
+        height: 50px;
+        width: @width;
+        margin-top: 10px;
+
+
+    }
+
+
+
+
+}
