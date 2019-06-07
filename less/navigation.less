@@ -46,6 +46,11 @@ nav {
     justify-content: space-between;
     font-size: 1.4rem;
     margin: 1rem;
+    // position: sticky;
+    // top: 50px;
+    // background: @sea-shell;
+    // height: 50px;
+    // width: 100%;
     @media @mobile {
         width: 100%;
         display: flex;
@@ -60,6 +65,7 @@ nav a {
     // border: 1px solid lightseagreen; 
     text-decoration: none;
     color: @river-bend;
+    font-weight: bold;
     @media @mobile {
         width: 100%;
         display: flex;
@@ -67,4 +73,10 @@ nav a {
         justify-content: space-around;
         // flex-direction: row;
     }
+}
+nav a:hover{
+    color: cornflowerblue;
+    text-shadow: -1px 0 rgb(54, 110, 215), 0 1px rgb(54, 110, 215), 1px 0 rgb(54, 110, 215), 0 -1px rgb(54, 110, 215);
+    -webkit-transition-duration: 1.5s; /* Safari */
+    transition-duration: 1.5s;
 }
