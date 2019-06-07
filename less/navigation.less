@@ -8,19 +8,20 @@
     border: .5px solid @nav-border;
 
     .comp-name {
-        margin: .5% auto;
+        margin: 1.5% auto;
     }
 
     nav{
-        width: 50%;
-        margin: 1% auto;
-        .flexed(row, space-evenly, center);
+        border: 1px solid red;
+        width: 400px;
+        margin: 1.5% auto;
+        .flexed(row, between, center);
         a {
-            text-decoration: none;
-            color: @nav-font;
-            font-size: 3.8rem;
-            font-weight: bold;
-        }    
+          .nav-font();  
+          font-size: 14px;
+
+        }
+           
     }
 
  
