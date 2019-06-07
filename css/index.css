@@ -1,3 +1,12 @@
+.nav-mixin {
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6164;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background: gray;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +168,17 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.font-class {
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6164;
+  text-align: center;
+}
+.box-class {
+  width: 100px;
+  height: 100px;
+  background: gray;
 }
 footer {
   color: #22283B;
