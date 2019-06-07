@@ -5,13 +5,16 @@
   @media @phone {
     width: 100%;
     display: flex;
-    
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;  
   }
   .intro {
-    padding: 120px 0 10px;
+    padding: 90px 0 10px;
    
+    @media @phone {
+      width: 100%;
+      
+    }
     h2 {
       padding: 15px;
     }
@@ -28,19 +31,45 @@
     flex-wrap: wrap;
     width: 100%;
     
+    
+    @media @phone {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      
+
+    }
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
       
+      @media @phone {
+        width: 100%;
+        height: 250px;
+        align-items: center;
+      }
+      
       
       }
     }
   }
 
+  @media @phone {
+    .sky { display: none; }
+    .launch { display: none; }
+  }
+
   .visit-planets {
     padding: 15px;
+    @media @phone {
+      padding: 25px;
+    }
 
     h3 {
       margin-top: 11px;
@@ -60,16 +89,19 @@
    
     @media @phone {
       width: 100%;
-      display: block;
+      display: flex;
       justify-content: center;
       flex-direction: column-reverse;
-      padding: 5px;
+      padding: 10px;
 
     }
     .walk-text {
       width: 50%;
       @media @phone {
         width: 100%;
+        padding: 20px;
+        
+        
       }
       h3 {
         margin-bottom: 10px;
@@ -81,6 +113,9 @@
 
       .btn {
         .button-creator(100px, 40px, @btn-bg-color, @btn-font-color, 2rem);
+        @media @phone {
+          .button-creator(90%, 40px, @btn-bg-color, @btn-font-color, 2rem);
+        }
       }
       
     }
@@ -88,14 +123,16 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 80%;
+        align-items: center;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        @media @phone {
-          width: 100%;
-        }
+        
       }
     }
     
