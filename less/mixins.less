@@ -1,1 +1,23 @@
 // Mixins Here
+.flexy(@jc: center, @ai: center) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+}
+.button-maker(@w, @bg, @c) {
+    width: @w;
+    background: @bg;
+    color: @c;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.8rem;
+    &:hover {
+        background: @c;
+        color: @bg;
+    }
+}
+.nav-regulizer {
+    text-decoration: none;
+    color: black;
+}
