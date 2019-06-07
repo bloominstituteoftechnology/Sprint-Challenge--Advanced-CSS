@@ -167,6 +167,11 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+#B1 {
+  background-image: url(https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+  background-repeat: no-repeat;
+  background-size: 150rem 59rem;
+}
 nav {
   opacity: 1;
   background: #F6F6F6;
@@ -243,7 +248,7 @@ nav .nav ul {
 nav:hover {
   opacity: 0.7;
 }
-footer {
+.homeF {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
@@ -253,6 +258,15 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+}
+.contactF {
+  color: #22283B;
+  background: #f4f4f4;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .intro h2 {
   padding: 15px;
