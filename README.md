@@ -1,3 +1,29 @@
+Jay Wood
+Sprint 2 Self-Study Questions:
+
+What is the difference between an adaptive website and a fully responsive website?
+--Adaptive layout utilizes breaks (media queries) to fit to different sized screens. A responsive layout takes an adaptive framework and adds in full responsiveness, so that the page looks good on various size screens, not just those at the specific break points. E.g., if we use break points at 500px and 800px, the site may look wonky round 650, but responsiveness will be used to make this middle-ground fluid. 
+
+Describe what it means to be mobile first vs desktop first.
+--Mobile first means we're designing for small screens (500px-ish) first, and then manipulating that layout as screen sizes get larger. We'll use min-width in mobile-first design.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+--It renders standard font size to be 10px, which makes life easier when we're trying to get specific font sizes to match a design. E.g., 1.5rem would be 15 px. If our base was 16px, getting something to 15px would require too much math. 
+
+How would you describe preprocessing to someone new to CSS?
+--Preprocessing means we're converting our CSS before it gets into our index.css file. It's a sort of translator that let's us code in a more intuitive and efficient manner. Then, our preprocessor translates our code into 'proper' or traditional CSS. 
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+--Mixins are the jam. They make styling so much easier and more efficient. The most trouble I'm having is with simply understanding the inner workings of LESS. For example, I'm not even sure how to tell if it's running or not, so I'm having to quit VS Code, reopen everything, and then restart the compiler, just to be sure. 
+
+
+
+
+
+
+
+
+
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
