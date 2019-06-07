@@ -180,6 +180,7 @@ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
+  margin: 20px;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
