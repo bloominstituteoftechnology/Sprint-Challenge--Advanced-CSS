@@ -104,6 +104,12 @@ margin-top: 2rem;
       .btn {
         .btnmix(100px,1.6rem);
         transition-duration: 0.4s;
+        @media @phone {
+          .btnmix(100%,1.8rem);
+          height: 20%;
+          padding: 25px;
+        }
+  
       }
       .btn:hover {
           background-color: #4CAF50; /* Green */
