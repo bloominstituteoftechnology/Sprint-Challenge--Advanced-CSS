@@ -1,5 +1,6 @@
 // Mixins Here
 
+//Flexbox 
 .flexed(@direction, @justify, @align) {
     display: flex;
     flex-direction: @direction;
@@ -7,6 +8,7 @@
     align-items: @align;
 }
 
+//Nav Fonts
 .nav-font() {
     text-decoration: none;
     color: @nav-font;
@@ -14,12 +16,9 @@
     font-weight: bold;
 }
 
+//button styling (excluding hover)
 .button(@font, @background, @radius) {
     color: @font;
     background-color: @background;
     border-radius: @radius;
-    
-    
 }
-
-.button
