@@ -166,6 +166,7 @@ p {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  margin-top: 15px;
 }
 .nav-container h1 {
   font-size: 4rem;
