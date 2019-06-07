@@ -2,16 +2,34 @@
 
 .home {
 
+  .container {
+
+    @media @phone {
+      .custom-layout-column(@direction, @align, @justify);
+
+    }
+  }
+
   .intro {
 
     h2 {
       padding: 15px;
+
+      @media @phone {
+        margin: 0 2.5%;
+
+      }
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+
+      @media @phone {
+        margin: 0 2.5%;
+
+      }
     }
-  
+
   }
 
   .space-images {
@@ -19,57 +37,152 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .custom-layout-column(@direction, @align, @justify);
+      margin: 20px 2.5%;
+
+
+      .sky {
+        display: none;
+      }
+
+      .blast {
+        display: none;
+      }
+
+      .inverse-contents {
+
+        order: -1;
+
+
+      }
+
+    }
+
+
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+
+        width: 100%;
+        height: 400px;
+        margin: 0 2.5%;
+
+      }
+
+    }
+  }
+}
+
+.visit-planets {
+  padding: 15px;
+
+  h3 {
+    margin-top: 11px;
+
+    @media @phone {
+      margin: 0 2.5%;
+
     }
   }
 
-  .visit-planets {
-    padding: 15px;
+  p {
+    margin-top: 13px;
+
+    @media @phone {
+      margin: 0 2.5%;
+
+    }
+  }
+}
+
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid @main-border-color;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+
+  @media @phone {
+    .custom-layout-column(@direction, @align, @justify);
+    padding: 0px;
+    margin: 0px 2.5%;
+
+    .inverse-contents {
+
+      order: 1;
+    }
+
+  }
+
+  .walk-text {
+    width: 50%;
+
+    @media @phone {
+      width: 100%;
+
+    }
 
     h3 {
-      margin-top: 11px;
+      margin-bottom: 10px;
+
+      @media @phone {
+        margin: 0 2.5%;
+
+      }
     }
 
     p {
-      margin-top: 13px;
+      margin-bottom: 26px;
+
+      @media @phone {
+        margin: 0 2.5%;
+
+      }
+    }
+
+    .btn {
+      .btn-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, @btn-width, @btn-radius, @btn-align);
+
+      @media @phone {
+        .btn-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, 100%, @btn-radius, @btn-align);
+        margin-top: 15px;
+
+
+      }
+
     }
   }
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+  .walk-img {
+    width: 46%;
+    margin-left: 4%;
 
-    .walk-text {
-      width: 50%;
+    @media @phone {
+      width: 100%;
 
-      h3 {
-        margin-bottom: 10px;
-      }
 
-      p {
-        margin-bottom: 26px;
-      }
+      margin: 0 2.5% 15px 2.5%;
 
-      .btn {
-      }
+
+
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+
+      @media @phone {
+        margin: 0 2.5%;
+
       }
+
     }
   }
-}// home
+}

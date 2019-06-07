@@ -1,1 +1,60 @@
+//links
+
+.links-nav() {
+    color: @gray;
+    font-size: 1.5rem;
+    text-decoration: @no-text-decoration;
+}
+
+//Parametric Mixins
+
+//default space-around, center
+.custom-layout1(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+// usage
+// .custom-layout1(flex-end, center);
+
+//default: column, center, space-around
+
+.custom-layout-column(@direction, @align, @justify) {
+    display: flex;
+    align-items: @align;
+    flex-direction: @direction;
+    justify-content: @justify;
+}
+
+//default: column, center, space-around, wrap
+.custom-layout-row(@direction, @align, @justify, @row-wrap) {
+    display: flex;
+    flex-direction: @direction;
+    align-items: @align;
+    justify-content: @justify;
+    flex-wrap: @row-wrap;
+}
+
+// .custom-layout-row(@direction: row; @justify: space-around; @row-wrap: wrap) {
+//     display: flex;
+//     flex-direction: @direction;
+//     //align-items: @align;
+//     justify-content: @justify;
+//     flex-wrap: @row-wrap;
+// }
+
+//buttons
+
+.btn-design(@btn-color, @btn-txt-color, @btn-font-size, @btn-padding, @btn-width, @btn-radius, @btn-align) {
+    background: @btn-color;
+    color: @btn-txt-color;
+    font-size: @btn-font-size;
+    padding: @btn-padding;
+    width: @btn-width;
+    border-radius: @btn-radius;
+    text-align: @btn-align;
+
+}
+
 // Mixins Here
