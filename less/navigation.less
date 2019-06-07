@@ -1,1 +1,42 @@
 // Navigation code here
+
+    nav {
+        background-color: @wild-sand;
+        .column(column, center);
+        border: solid @sea-shell;
+        width: 100%;
+        
+            .logo {
+
+                a {
+                    text-decoration: none;
+                    font-size: 4rem;
+                    color: @river-bend;
+                }
+            }
+
+        .nav-bar {
+            .row(row, space-between);
+
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                width: 100%;
+                color: black;
+                padding: 10px;
+                color: @river-bend;
+
+            }
+         
+        }
+    }
+
+    @media @phone {
+        nav {
+            .column(column, center);
+            width: 100%;
+                .nav-bar {
+                    .row(row, center);
+                }
+        }
+    }
