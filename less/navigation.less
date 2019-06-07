@@ -4,6 +4,14 @@
     background: @wild-sand;
     border-bottom: 1px double @sea-shell;
     position: fixed;
+    @media @phone {
+      width: 500px;
+      flex-wrap: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 10px;
+      height: 120px;
+    }
   
     .nav-container {
       height: 100%;
@@ -12,39 +20,32 @@
       justify-content: space-between;
       flex-direction: column;
   
-    //   @media @mobile {
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     padding-top: 10px;
-    //   }
-  
-    //   .logo-heading {
-    //     @media @mobile {
-    //       font-size: 3rem;
-    //     }
-    //   }
+      
     
     h1 {
         font-size: 3.5rem;
         margin-top: 10px;
         margin-bottom: 10px;
+        @media @phone {
+          font-size: 5rem;
+          margin-bottom: 20px;
+        }
     }
       .nav {
         width: 500px;
         display: flex;
         justify-content: space-evenly;
-  
-        // @media @mobile {
-        //   width: 100%;
-        //   justify-content: space-around;
-        // }
-        
         
         a {
           font-size: 2rem;
           color: @river-bend;
           text-decoration: none;
           margin-bottom: 10px;
+
+          @media @phone {
+            font-size: 2.5rem;
+            
+          }
         }
       }
     }
