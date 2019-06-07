@@ -25,6 +25,16 @@
       border-radius: 20px;
       height: 100%;
     }
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
@@ -61,10 +71,10 @@
         .button(@river-bend, @porcelain, 1.3rem);
       }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+      }
       img {
         width: 100%;
         height: auto;
