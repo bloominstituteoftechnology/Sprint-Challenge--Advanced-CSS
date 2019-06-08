@@ -163,14 +163,8 @@ p {
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
   justify-content: center;
-  border: orange 3px solid;
-}
-@media (max-width: 500px) {
-  .main-container {
-    border: green 1px solid;
-  }
+  width: 90%;
 }
 .main-container .title {
   display: flex;
@@ -218,39 +212,56 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    align-items: center;
+  }
+}
 .home .space-images img {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 80%;
+  width: 90%;
   margin-left: 15px;
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 0px 15px;
+  font-size: 10px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
+  font-size: 25px;
 }
 .home .visit-planets p {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 60px;
-  border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
   display: flex;
   justify-content: center;
-  border: pink 3px dotted;
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-left: 20px;
+  }
 }
 .home .walk .walk-text {
   width: 100%;
-  border: yellow 3px solid;
+  margin-right: 40px;
+  padding-top: 15px;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+  font-size: 25px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .home .walk .walk-text h3 .walk h3 {
-    border: tan 1px solid;
     width: 100%;
     font-size: 10px;
   }
@@ -258,74 +269,76 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  border-radius: 5px;
+.home .walk .walk-text .button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   color: white;
-  width: 20%;
-  height: 5%;
+  width: 25%;
+  height: 10%;
   text-align: center;
+  margin-bottom: 80px;
 }
-@media (max-width: 600px) {
-  .home .walk .walk-text .btn {
+.home .walk .walk-text .button:hover {
+  background: #5E6164;
+  color: #23293B;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .button {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    border: pink 1px solid;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 40px;
-    font-size: 10px;
+    height: 60px;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
 }
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
+.home .walk .walk-text .walk-img {
+  width: 40%;
+  border-radius: 90px;
 }
-@media (max-width: 600px) {
-  .home .walk .walk-img .walk-img {
+@media (max-width: 500px) {
+  .home .walk .walk-text .walk-img {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    border: purple solid 1px;
     width: 20%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   img {
     width: 100%;
-    height: 5%;
+    height: 80%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   h2 {
     font-size: 30px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   p {
     font-size: 15px;
   }
 }
-@media (max-width: 600px) {
-  .space-images {
-    width: 100%;
-    border: yellow 3px solid;
-  }
-  .space-images .launch {
+@media (max-width: 500px) {
+  .launch {
     display: none;
   }
-  .space-images .sky {
+  .sky {
     display: none;
-  }
-}
-@media (max-width: 600px) {
-  .walk {
-    border: purple 1px solid;
-    width: 100%;
   }
 }
 footer {
-  border: green solid 1px;
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
