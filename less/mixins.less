@@ -3,9 +3,7 @@
 
 
 .idiot-box (@color) {
-    border-width: 1px;
-    border-type: solid;
-    color: @color;
+border: 1px solid @color; 
 }
 
 .bordered {
@@ -30,4 +28,11 @@
         background-color: darken(teal, 5%);
         }
     }
+
+// @mobile (max-width: 500px);
+
+@mobile: ~'(max-width: 500px)';
+
+
+
 

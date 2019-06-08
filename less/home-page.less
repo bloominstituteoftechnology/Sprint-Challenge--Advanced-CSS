@@ -1,53 +1,55 @@
 // Home Content
 
 
+  #main-title {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 1.125% 0 3% 0;
 
+      h3 {
+        font-size: 4rem;
+      }
 
-#main-title {
+      // mobile viewport
 
-  display: flex;
-  justify-content: center;
-  margin: 1.1250% 0 3% 0;
-  
-    h3 {
-      font-size: 4em;
-      
+      @media @mobile {
+        h3 {
+          font-size: 1.5rem;
+          margin-top:1.5%;
+        }
+      }
     }
-}
-
-
-
+  
 
 .home {
-
   .intro {
     margin: 1% 0 6% 10;
 
     img {
-
       border-radius: 10px;
-
     }
-  
-    
 
     h2 {
       padding: 15px;
-     
-
     }
 
     p {
-      padding:0 15px;
-      
-   
+      padding: 0 15px;
     }
-  
+
+    // for a mobile viewport
+    @media @mobile {
+      img {
+        height: 50%;
+        width: auto;
+      }
+    }
   }
 
   .space-images {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     width: 100%;
 
     img {
@@ -56,80 +58,127 @@
       border-radius: 20px;
       height: 100%;
     }
+    // breakpoint for mobile
+    @media @mobile {
+      display: flex;
+
+      .blast {
+        margin-left: 5%;
+        width: 112%;
+      }
+
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
+   
+    .idiot-box(red);
+   
     padding: 15px;
-    
 
     h3 {
       margin-top: 11px;
-      
     }
 
     p {
       margin-top: 13px;
-     
-     
+    }
+
+    //mobile breakpoint
+    @media @mobile {
+      p {
+        font-size: medium;
+      }
     }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    width: 100%;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: space-between;;
+         
+        @media @mobile {
+          .walk {
+            width: 100%;
+            margin: 0;
+          padding: 0;
+        }
 
+        }
+
+          
     .walk-text {
-      width: 50%;
-      margin-left: -3.1375%;
+      width: 100%;
+      margin-bottom: 5%;
+      
+        @media @mobile {
+        
+          width: 100%;
+          padding: 0%;
+          margin: 0;
+          .idiot-box(blue);
+          }
 
       h3 {
-        margin-bottom: 10px;
+        margin-left: -1%;
+        bottom: 10px;
+        margin-bottom: 3%;
       }
 
       p {
-        margin-bottom: 26px;
+        margin-bottom: 2rem;
       }
-
+      margin-left: 0;
       .btn {
-        .button ();
-
+        .button();
       }
-          img {
-        position: relative;
-        right: 3%;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        
-                
-        }
+
      
-    .walk-img {
-      display: none;
-      justify-content: flex-end;
-      width: 46%;
-      margin-left: 4%;
-      
-      
-        img {
-          justify-content: flex-end;
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-          
-
-          footer {
-
-          padding-top: 1.5%; 
-
-          }
-
-                  
-          }
-      }
     } //walk text
-  } //.walk
+
+    .walk-img {
+      display: flex;
+      width: 100%;
+      margin-top: -1.5%;
+      margin-left: 5.75%;
+      
+      @media @mobile {
+     
+          display: flex;
+          margin: 0;
+          width: 100%;
+          .idiot-box(red);
+          height: auto;
+          padding: 0%
+             
+        }  
+
+      img {
+        width: 100%;
+        margin-top: 2%;
+        border-radius: 10px;
+      
+
+        @media @mobile {
+              margin-left: 2%;
+              width: 100%;
+              //height: auto;
+              padding: 0%;
+              }
+            }
+        
+    } //walk-img
+  } //walk
+
+  footer {
+    padding-top: 1.5%;
+  }
 } // home
