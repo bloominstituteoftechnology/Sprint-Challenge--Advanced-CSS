@@ -48,6 +48,23 @@
 
     .walk-text {
       width: 50%;
+      .btn {
+        padding: 10px 30px;
+        border-radius: 10px;
+        .bcolor(#24292e, white);
+        cursor: pointer;
+
+        @media @phone {
+              width: 100%;
+            }
+        
+      
+        &:hover {
+          // The compiled color returned is #006667 
+          background-color: darken(red, 5%)
+        }
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -55,26 +72,28 @@
 
       p {
         margin-bottom: 26px;
+
+
       }
 
       
 
-        .btn {
-          padding: 10px 30px;
-          border-radius: 10px;
-          .bcolor(#24292e, white);
-          cursor: pointer;
+        // .btn {
+        //   padding: 10px 30px;
+        //   border-radius: 10px;
+        //   .bcolor(#24292e, white);
+        //   cursor: pointer;
 
-          @media @phone {
-                width: 100%;
-              }
+        //   @media @phone {
+        //         width: 100%;
+        //       }
           
         
-          &:hover {
-            // The compiled color returned is #006667 
-            background-color: darken(teal, 5%)
-          }
-        }
+        //   &:hover {
+        //     // The compiled color returned is #006667 
+        //     background-color: darken(teal, 5%)
+        //   }
+        // }
       
         // .btn(@100px, @100px, @bg-color, @font-color, @font-size) {
         //   .border-radius(15px);
