@@ -1,15 +1,32 @@
 // Mixins Here
 
 
+@mobile: ~'(max-width: 500px)';
+
 
 .idiot-box (@color) {
 border: 1px solid @color; 
 }
 
-.bordered {
+.bordered (){
     border-top: dotted 1px black;
     border-bottom: solid 2px black;
   }
+
+  .marg-dec (@top, @right, @bottom, @left) {
+
+   margin: unit(@top, ~"%") unit(@right, ~"%") unit(@bottom, ~"%") unit(@left,~"%");
+
+  }
+
+  .marg-rem (@top, @right, @bottom, @left) {
+
+    margin: unit(@top, rem) unit(@right, rem) unit(@bottom, rem) unit(@left, rem);
+ 
+   }
+ 
+  
+
 
   .button (){ 
     display: flex;
@@ -19,19 +36,22 @@ border: 1px solid @color;
     color: white;
     border-radius: .5rem;
     padding: 1rem 2rem;
-    width: 10rem;
-    height: 3rem;
+    margin: 13% 100% 20% 0;
+    width: 10.5rem;
+    height: 4rem;
     font-size: medium;
     cursor: pointer;
-
+    
+   
     &:hover {
         background-color: darken(teal, 5%);
+            }
+            
+            
         }
-    }
 
-// @mobile (max-width: 500px);
+        
 
-@mobile: ~'(max-width: 500px)';
 
 
 

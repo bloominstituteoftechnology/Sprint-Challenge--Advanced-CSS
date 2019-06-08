@@ -1,30 +1,34 @@
 // Home Content
 
+#main-title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1.125% 0 3% 0;
 
-  #main-title {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin: 1.125% 0 3% 0;
+  h3 {
+    font-size: 4rem;
+  }
 
-      h3 {
-        font-size: 4rem;
-      }
+  // mobile viewport
 
-      // mobile viewport
-
-      @media @mobile {
-        h3 {
-          font-size: 1.5rem;
-          margin-top:1.5%;
-        }
-      }
+  @media @mobile {
+    width: 98%;
+    margin-left: 1.5%;
+    margin-bottom: 5%;
+    h3 {
+      font-size: 4rem;
+      margin-top: 1.5%;
     }
-  
+  }
+}
 
 .home {
+  @media @mobile {
+    width: 98%;
+  }
   .intro {
-    margin: 1% 0 6% 10;
+    margin: 1% 0 0% 1%;
 
     img {
       border-radius: 10px;
@@ -40,31 +44,36 @@
 
     // for a mobile viewport
     @media @mobile {
+      margin: 13% 1% 4.625% 1%;
+      width: 98%;
+      height: auto;
+
       img {
-        height: 50%;
-        width: auto;
+        width: 100%;
+        height: auto;
       }
     }
   }
 
   .space-images {
     display: flex;
-    // flex-wrap: wrap;
     width: 100%;
+    //.marg-dec(2,0,0,0);
 
     img {
       width: 28%;
+      height: auto;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
-    // breakpoint for mobile
+
     @media @mobile {
       display: flex;
 
       .blast {
-        margin-left: 5%;
-        width: 112%;
+        margin: 0 0 10% 1%;
+        width: 96.5%;
       }
 
       .sky {
@@ -77,9 +86,6 @@
   }
 
   .visit-planets {
-   
-    .idiot-box(red);
-   
     padding: 15px;
 
     h3 {
@@ -92,6 +98,9 @@
 
     //mobile breakpoint
     @media @mobile {
+      margin: 5% 0 0% 0%;
+      width: 98%;
+
       p {
         font-size: medium;
       }
@@ -99,33 +108,34 @@
   }
 
   .walk {
+    display: inline-flex;
     margin-top: 60px;
     width: 100%;
     padding: 50px 60px;
-    display: inline-flex;
-    justify-content: space-between;;
-         
-        @media @mobile {
-          .walk {
-            width: 100%;
-            margin: 0;
-          padding: 0;
-        }
+    justify-content: flex-start;
 
-        }
+    @media @mobile {
+      display: inline-block;
+      width: 98%;
+      //flex-direction: column;
+      //margin: 0 2% 0 2%;
+      .marg-dec(20, 2, 1, 2);
+      padding: 0;
+    }
 
-          
     .walk-text {
-      width: 100%;
-      margin-bottom: 5%;
-      
-        @media @mobile {
-        
-          width: 100%;
-          padding: 0%;
-          margin: 0;
-          .idiot-box(blue);
-          }
+      width: 50%;
+
+      @media @mobile {
+        display: inline-block;
+        position: relative;
+        top: 30.5rem;
+        width: 99%;
+        padding: 0%;
+        margin: 5% 0% 0% 0%;
+        //.meg-dec(0 0 2 0);
+        margin: 0 0 2% 0;
+      }
 
       h3 {
         margin-left: -1%;
@@ -134,51 +144,58 @@
       }
 
       p {
-        margin-bottom: 2rem;
+        margin-bottom: 1%;
       }
       margin-left: 0;
+
       .btn {
         .button();
-      }
 
-     
-    } //walk text
+        @media @mobile {
+          margin: 0% 1% 2%;
+          padding: 2% 0 0 3%;
+          width: 99%;
+          height: 7rem;
+          font-weight: bold;
+        }
+      }
+    }
 
     .walk-img {
       display: flex;
-      width: 100%;
-      margin-top: -1.5%;
-      margin-left: 5.75%;
-      
+      width: 45%;
+      height: 55%;
+      .marg-dec(-1.5, 0, 14%, 4%);
+
       @media @mobile {
-     
-          display: flex;
-          margin: 0;
-          width: 100%;
-          .idiot-box(red);
-          height: auto;
-          padding: 0%
-             
-        }  
+        display: inline-block;
+        position: relative;
+        bottom: 35rem;
+      
+        width: 100%;
+        height: 75%;
+
+        margin: 10% 10% 10% 0%;
+      }
 
       img {
         width: 100%;
-        margin-top: 2%;
+        height: 100%;
+        margin: 2% 0 0 2%;
         border-radius: 10px;
-      
 
         @media @mobile {
-              margin-left: 2%;
-              width: 100%;
-              //height: auto;
-              padding: 0%;
-              }
-            }
-        
-    } //walk-img
-  } //walk
+          width: 95%;
+          height: auto;
+          padding: 0%;
+        }
+      }
+    }
+  }
 
   footer {
-    padding-top: 1.5%;
+    .marg-dec(1, 1, 10, 2);
+
+    width: 98%;
   }
-} // home
+}
