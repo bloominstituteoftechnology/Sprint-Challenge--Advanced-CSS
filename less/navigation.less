@@ -3,10 +3,20 @@
 .nav-container {
     .custom-layout-column(@direction, @align, @justify);
     width: @width;
-    margin-top: 15px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.5%;
+    background-color: @white;
+
+
+
 
     h1 {
         font-size: 4rem;
+        margin-top: 15px;
 
         @media @phone {
             font-size: @mobile-logo;

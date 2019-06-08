@@ -166,10 +166,17 @@ p {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0.5%;
+  background-color: #FFFFFF;
 }
 .nav-container h1 {
   font-size: 4rem;
+  margin-top: 15px;
 }
 @media (max-width: 500px) {
   .nav-container h1 {
@@ -235,6 +242,7 @@ footer {
 }
 .home header .header-img {
   width: 100%;
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
