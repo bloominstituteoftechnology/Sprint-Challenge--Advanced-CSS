@@ -1,22 +1,47 @@
-// Home Content
+ // Home Content
 
 .home {
 
   .intro {
+    
 
     h2 {
-      padding: 15px;
+      .paddingmix();
     }
 
     p {
       padding:0 15px;
+
+      @media @mobile {
+        max-width: 100%;
+        font-size: 1.5rem;
+      }
     }
-  
+    .headerpic {
+      margin: 0 auto;
+      width: 100%;
+      .flexmix();
+      border-radius: 10px;
+      @media @mobile {
+        // margin: 0 auto 30px;
+        // max-width: 100%;
+        border-radius: 10px;
+        // height: 100%;
+      }
+    }
+    .headerpictwo {
+      margin: 0 auto;
+      width: 100%;
+      .flexmix();
+      border-radius: 10px;
+      @media @mobile {
+        border-radius: 10px;
+      }
+    }
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flexmix();
     width: 100%;
 
     img {
@@ -25,10 +50,27 @@
       border-radius: 20px;
       height: 100%;
     }
+    .blast {
+      @media @mobile {
+        display: flex;
+        width: 100%;
+        margin: 1rem 2rem;
+      }
+    }
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
-    padding: 15px;
+    .paddingmix();
 
     h3 {
       margin-top: 11px;
@@ -36,6 +78,10 @@
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        max-width: 100%;
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -43,11 +89,23 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .flexmix();
     justify-content: center;
+    @media @mobile {
+      margin-top: 20px;
+      padding: 0px 0px;
+      justify-content: baseline;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
     .walk-text {
       width: 50%;
+      .paddingmix();
+      @media @mobile {
+        width: 100%;
+        order: 2;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +115,46 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn:hover {
+        background-color: cornflowerblue;
+        color: rgb(228, 60, 60);
+        }
+
+      .btn{
+        .button(@ebony-clay, @porcelain, 1.4rem);
+        font-weight: bold;
+        cursor: pointer;
+        -webkit-transition-duration: 1.5s; /* Safari */
+        transition-duration: 1.5s;
+        box-shadow: 0px 2px 3px 1px; 
+        @media @mobile {
+          width: 100%;
+          font-size: 1.8rem;
+          cursor: not-allowed;
+        }
       }
     }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        order: -1;
+        margin-top: 15px;
+        margin-right: 4%;
+        border-radius: 10px;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile {
+          border-radius: 10px;
+          margin-top: 15px;
+          width: 100%;
+        }
       }
     }
   }
-}// home
+}
