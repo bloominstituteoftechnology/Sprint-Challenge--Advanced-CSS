@@ -62,9 +62,12 @@
         .btn {
           padding: 10px 30px;
           border-radius: 10px;
-          background-color: #24292e;
-          color: white;
+          .bcolor(#24292e, white);
           cursor: pointer;
+
+          @media @phone {
+                width: 100%;
+              }
           
         
           &:hover {
@@ -84,7 +87,7 @@
         //   cursor: pointer;
         //   font-size: @font-size;
         
-        //   @media @mobile {
+        //   @media @phone {
         //     width: 100%;
         //   }
           
@@ -92,7 +95,7 @@
         //     background: @white;
         //     color: @button-bg;
         //   }
-        }
+      //  }
 
     // .btn3 (@background-clr; @pad-left; @pad-right; @pad-top; @pad-bottom; @radius) {
     //   background-color: @background-clr;
@@ -101,7 +104,7 @@
     //   padding-top: @pad-top;
     //   padding-bottom: @pad-bottom;
     //   border-radius: @radius;
-  } 
+//  } 
   
   //.btn3(blue,10,10,10,10,10,)
   
@@ -131,3 +134,5 @@
     }
   }
 // home
+  }
+}
