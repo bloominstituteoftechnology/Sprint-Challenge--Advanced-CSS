@@ -1,3 +1,42 @@
+.title {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.main-title {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.pic {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.big-pic {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+  width: 46%;
+}
+.signup-button {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90px;
+  text-align: center;
+  font-size: 20px;
+}
+.signup-button:hover {
+  background: white;
+  color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,7 +209,7 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  width: 40%;
+  width: 30%;
   font-size: 16px;
 }
 .header {
@@ -242,4 +281,32 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .header {
+    background: lightgrey;
+  }
+  .blast-pic {
+    width: 500px !important;
+  }
+  .big-pic {
+    width: 500px !important;
+  }
+  .sky-pic {
+    display: none;
+  }
+  .launch-pic {
+    display: none;
+  }
+  .walk {
+    flex-direction: column-reverse;
+  }
+  .walk .walk-text {
+    width: 100% !important;
+  }
+  .signup-button {
+    padding-top: 15px;
+    width: 400px;
+    height: 50px;
+  }
 }

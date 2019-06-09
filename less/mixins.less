@@ -1,1 +1,63 @@
 // Mixins Here
+
+//Header
+.title {
+    font-family: 'Russo One', sans-serif;
+    color: #23293B;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    .title();
+    font-size:30px;
+}
+
+
+//Images
+.pic {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.big-pic {
+    .pic();
+    width:46%;
+}
+
+//Sign-Up Button PARAMETRIC
+
+.signup-button{
+    background:black;
+    color:white;
+    border-radius:5px;
+    padding: 10px;
+    width:90px;
+    text-align:center;
+    font-size:20px;
+    &:hover {
+        background:white;
+        color:black;
+    }
+}
+
+.signup-button(@color:black; @padding:10px){
+    background:@color;
+    color:white;
+    border-radius:5px;
+    padding: @padding;
+    width:90px;
+    text-align:center;
+    font-size:20px;
+    &:hover {
+        background:white;
+        color:black;
+    }
+}
+
+// Variables
+@phone: ~"(max-width: 500px)";
+
+
