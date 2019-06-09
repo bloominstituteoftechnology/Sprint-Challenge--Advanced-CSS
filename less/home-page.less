@@ -4,6 +4,9 @@
 
   .intro {
 
+
+    
+
     h2 {
       padding: 15px;
     }
@@ -19,7 +22,36 @@
     flex-wrap: wrap;
     width: 100%;
 
+
+    @media (max-width: 500px) {
+
+    
+      .space-images {
+
+            
+        .displayflex();
+        .blast {    
+          margin: 0 auto;    
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+    
+    
+    }
+    
+     
+    }
+
     img {
+
+      @media (max-width: 500px){
+        width: 100%;
+      }
+      
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
@@ -46,7 +78,29 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 500px) {
+
+      
+       
+        margin: 0 auto;
+        padding: 1rem;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;  
+        
+      
+    
+    
+    }
+
     .walk-text {
+
+      @media (max-width: 500px){
+        width: 100%;
+      }
+
       width: 50%;
 
       h3 {
@@ -59,25 +113,61 @@
 
       .btn {
 
+
         button {
+
+          
+
+          @media (max-width: 500px){
+            text-align: center;
+            margin: 0 auto;
+            display: flex;        
+            
+            width: 99%;
+            padding: 2rem;
+            border-radius: 1%;
+            align-content: center;
+            justify-content: center;
+
+          }
 
           .mixin2 (white, black);
           &:hover {
             color: darken(black, 30%);
             background-color: lighten(white, 30%);
+
+           
           }
 
         }
 
         
       }
+
+
     }
 
     .walk-img {
+
+      @media (max-width: 500px){
+
+        width: 100%;
+      }
+        
+
       width: 46%;
       margin-left: 4%;
       
       img {
+
+        @media (max-width: 500px){
+
+          width: 100%;
+          height: 100%;
+          padding: 1rem;
+          
+        }
+
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -94,5 +184,35 @@
 
 }// home
 
+@media (max-width: 500px) {
+
+  .intro {
+
+    img {
+
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+  }
+
+  .space-images {
+
+    .displayflex();
+    .blast {    
+      margin: 0 auto;    
+  }
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+
+
+}
+
+ 
+}
 
 
