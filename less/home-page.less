@@ -73,3 +73,38 @@
     }
   }
 }// home
+
+@phone: ~"(max-width: 500px)";
+@media @phone {
+  .header {
+    background:lightgrey;
+  }
+  .blast-pic {
+    width:500px !important;
+  }
+  .big-pic{
+    width:500px !important;
+  }
+
+  .sky-pic{
+    display:none;
+
+  }
+  .launch-pic{
+    display:none;
+  }
+  
+  .walk {
+    flex-direction: column-reverse;
+    .walk-text {
+      width:100% !important;
+    }
+  }
+  
+  .signup-button{
+    padding-top:15px;
+    width:400px;
+    height:50px;
+  }
+
+}
