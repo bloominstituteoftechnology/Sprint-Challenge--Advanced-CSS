@@ -20,7 +20,20 @@
 </head>
 
 <body>
+  <script>
+    window.onscroll = function() {myFunction()};
 
+    var nav = document.getElementById("nav");
+    var sticky = nav.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        nav.classList.add("sticky")
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
  <!-- navigation code here -->
  <section class="main-container">
     <div class= "title">
@@ -58,7 +71,7 @@
     </section>
     <section class="visit-planets">
      
-      <h3>Can We Visit Planets?</h3>
+      <h3 class= "title-size">Can We Visit Planets?</h3>
     
       <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
     
