@@ -207,6 +207,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@phone (max-width: 500px);
 .home .intro h2 {
   padding: 15px;
 }

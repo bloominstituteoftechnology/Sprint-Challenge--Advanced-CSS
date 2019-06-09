@@ -1,11 +1,15 @@
 // Navigation code here
 
+@phone ~"(max-width: 500px)";
 
 
 
 nav {
     
-   
+    @media @phone {
+        
+
+    }
 
     .displayflex();
     font-size: 1.5rem;
@@ -31,6 +35,13 @@ nav {
     }
 
     ul {
+
+        @media @phone {
+               
+                width: 90%;
+        
+        }
+
         .displayflex();
         justify-content: space-evenly;
         width: 70%;
@@ -45,16 +56,5 @@ nav {
     
   
       
-@media (max-width: 500px) {
 
-    nav {
-        width: 100%;
-
-
-        ul {
-            
-            width: 90%;
-        }
-    }
-}
 
