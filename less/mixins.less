@@ -1,1 +1,32 @@
 // Mixins Here
+
+.center(){
+	display: flex;
+	justify-content: center;
+    // align-items: center;
+    
+}
+// usage
+// .center();
+
+.fontsize(){
+font-size: 20px;
+    line-height: 1.5;
+}
+
+.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+.bcolor(@background, @color){
+	
+    background-color: @background;
+    color: @color 
+   
+    
+}
+
+// background-color: #24292e;
+//           color: white
