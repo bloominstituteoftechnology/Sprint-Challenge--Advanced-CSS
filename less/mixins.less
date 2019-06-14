@@ -1,1 +1,11 @@
 // Mixins Here
+.button(@radius: 5px, @bg-color, @pad:1.2rem) {
+    border-radius: @radius;
+    background-color: @bg-color;
+    padding: @pad;
+}
+
+.flex-center(@j-content) {
+    display: flex;
+    justify-content: @j-content;
+}
