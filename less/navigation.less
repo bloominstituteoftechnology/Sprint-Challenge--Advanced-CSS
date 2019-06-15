@@ -1,1 +1,43 @@
 // Navigation code here
+.displayFlex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header{
+    width: 100%;
+    background-color: lightgrey;
+    height: 100px;
+}
+
+h1{
+    displayFlex();
+    font-size: 35px;
+    margin-bottom: 15px;
+    .blackTest();
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+    font-size: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    
+    margin: 10px;
+    .blackText();
+    .displayFlex();
+    
+    
+    &:hover {
+        color: linghten(@backgroundblack, 10%);
+    }
+}
