@@ -46,6 +46,11 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display: flex;
+      flex-flow: column wrap;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -55,9 +60,14 @@
 
       p {
         margin-bottom: 26px;
+        color: white;
       }
 
       .btn {
+        @media @phone{
+          width: 100%;
+          .displayFlex()
+        }
       }
     }
 
@@ -72,4 +82,4 @@
       }
     }
   }
-}// home
+}
