@@ -44,6 +44,17 @@ Edit this document to include your answers after each question. Make sure to lea
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
+1a. An adaptive website is an website that is designed to use @media styles to make it fit properly on the page. A fully repsonsive website is a website that is designed to use media styles, and percentages for widths to make sure that it can fit a bunch of different sizes for the website outside of the hard coded dimensions you specify with the media tags.
+
+2a. A mobile first design is a website that is built by starting from the way the site will look for mobile generally, and then will create different versions of page using the mobile page as a base. The desktop first design is a website that is built by starting from building the desktop version of the site, and then scaling the site down to the mobile version.
+
+3a. Setting the font-size to 62.5% changes the default size used by CSS/HTML to base 10 instead of base 16. This is because 10/16=62.5%.
+
+4a. Preprocessing is a process by which you can write CSS in a different way than CSS is typically generated. It's a method to create a mapping that will make the code easier to write an organize. I suppose it could be compared to using a translater. 
+
+5a. My favorite concept in preprocessing are the mixins. The mixins allow you to have a functionality similiar to variables, which is great, because variables make it much easier to reuse and organize code. The concept that gives me the most trouble are the parametric mixins, but only because they are supposed to be used with @media typically, and unforunately, @media still gives me some trouble.
+
+
 ## Project Set Up
 
 Follow these steps to set up your project:
