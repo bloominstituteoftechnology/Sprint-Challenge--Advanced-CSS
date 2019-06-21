@@ -4,7 +4,11 @@
 .button-styler {
   border-radius: 10px;
   background-color: #23293B;
-  padding-top: 20px;
+  color: #F6F7F8;
+  padding-top: 5px;
+  width: 140px;
+  height: 50px;
+  font-size: 2.5rem;
 }
 .display-flex {
   display: flex;
@@ -156,6 +160,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.2rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -174,11 +181,14 @@ p {
 header nav {
   display: flex;
   background-color: #5E6164;
+  justify-content: space-around;
+  text-align: center;
 }
 header nav a {
   text-decoration: none;
   color: #23293B;
   padding-bottom: 10px;
+  font-size: 2rem;
 }
 footer {
   color: #22283B;
