@@ -34,14 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    1-Adaptive has media break points; i.e. screen size of max-width of 800 or 500px, so you can make different rules for different screen sizes.
+    Responsive combines all 3 pieces of fixed (hard-coded px), fluid (margins) and adaptive and uses an @media query which you can use for desktop, tablet and mobile @media queries max or min-width.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    2- Desktop first takes the max-width of the longest screen sizes and fits images inside of that screen, set at a max-width of 800px or more. Your initial CSS styling is for desktop. 
+    A mobile first implies you will code for a mobile device first, (min-width 500px or less), your smallest size screen, then expand layout as you move toward desktop. Go from lowest px to highest px width. Cascade matters! Desktop first, then mobile.   
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    3- 62.5% is the relative font size to the users settings. 62.5% === 10px of the users choice of fonts (small, medium large, etc.).
+
 4. How would you describe preprocessing to someone new to CSS?
+
+    4-Preprocessing is pre Java-script, to me, at least. It is a stronger way of wording (syntax) CSS into different languages. That language is then compiled, or put into, normal CSS which helps incorporate the DRY method and cleaner CSS code.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+    5- My favorite part of preprocessing is the parametric mixins and escaping. I also like the less compiling because it will tell me when there is a break or mistake and what I can do to resolve it. My hardest concept to grasp is nesting, parent to child and what picks up what, where. I know to go only four levels deep, so that is helpful to visualize. I’m learning HTML is crucial to styling good CSS. 
+    
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
