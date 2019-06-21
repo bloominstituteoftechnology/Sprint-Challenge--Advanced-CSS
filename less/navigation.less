@@ -1,14 +1,16 @@
 // Navigation code here
 header nav {
-    .display-flex();
     background-color: @shuttle-gray;
-    justify-content: space-around;
-    .text-center();
+    text-align: center;
+    padding-bottom: 20px;
 
     a {
        text-decoration: none;
+       .display-flex();
+       justify-content: left;
+       flex-direction: row;
+       justify-content: space-around;
        color: @ebony-clay;
-       padding-bottom: 10px;
        font-size: 2.0rem;
     }
 }

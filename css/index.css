@@ -179,15 +179,17 @@ p {
   margin: 0 auto;
 }
 header nav {
-  display: flex;
   background-color: #5E6164;
-  justify-content: space-around;
   text-align: center;
+  padding-bottom: 20px;
 }
 header nav a {
   text-decoration: none;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  justify-content: space-around;
   color: #23293B;
-  padding-bottom: 10px;
   font-size: 2rem;
 }
 footer {
