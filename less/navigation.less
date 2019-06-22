@@ -1,16 +1,20 @@
 // Navigation code here
 header nav {
-    background-color: @shuttle-gray;
+    background: #f4f4f4;
     text-align: center;
-    padding-bottom: 20px;
 
     a {
-       text-decoration: none;
-       .display-flex();
-       justify-content: left;
-       flex-direction: row;
-       justify-content: space-around;
-       color: @ebony-clay;
-       font-size: 2.0rem;
+        text-decoration: none;
+        /* display: flex; */
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding-right: 50px;
+        justify-content: space-evenly;
+        color: @ebony-gray;
+        font-size: 2rem;
     }
+}
+
+.image-padding {
+   padding-top: 20px;
 }

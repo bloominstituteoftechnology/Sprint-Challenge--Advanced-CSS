@@ -162,6 +162,7 @@ h5 {
 }
 h1 {
   font-size: 3.2rem;
+  padding-bottom: 10px;
 }
 h2 {
   font-size: 3.2rem;
@@ -181,14 +182,14 @@ p {
 header nav {
   background-color: #5E6164;
   text-align: center;
-  padding-bottom: 20px;
 }
 header nav a {
   text-decoration: none;
-  display: flex;
-  justify-content: left;
-  flex-direction: row;
-  justify-content: space-around;
+  /* display: flex; */
+  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-right: 50px;
+  justify-content: space-evenly;
   color: #23293B;
   font-size: 2rem;
 }
