@@ -1,0 +1,255 @@
+* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+/* Header Styles */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+header nav {
+    margin: 40px 45px 0 90px;
+    width: 610px;
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+header .logo {
+    margin: 20px 0 0 0;
+}
+
+img.Top-picture{
+    margin:0 0 30px 0;
+}
+header{
+    margin:0 0 100px 0;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xx-large;
+}
+div.textwidget{
+    display: flex;
+    justify-content: center
+        }
+input[name="Customer"] { 
+width: 300px;
+height: 150px;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+    
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      body {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header h1 {
+        width: 100% 20%;
+        font-size: 4.5rem;
+        color: #22283B;
+        background: #f4f4f4;
+        padding: 20px 0;
+        border-top: 1px double #e0e0e0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header nav {
+        width: 100% 20%;
+        font-size: 4.5rem;
+        color: #22283B;
+        background: #f4f4f4;
+        padding: 20px 0;
+        border: 0px double #e0e0e0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header a {
+        font-size: 2.5rem;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @media (max-width: 500px) {
+        body {
+          width: 100%;
+          height: auto;
+        }
+        header {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header h1 {
+          width: 62.5%;
+          font-size: 2.5rem;
+          color: #22283B;
+          background: #f4f4f4;
+          padding: 10px 0;
+          border-top: 1px double #e0e0e0;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        header nav {
+          width: 62.5%;
+          font-size: 2.5rem;
+          color: #22283B;
+          background: #f4f4f4;
+          padding: 10px 0;
+          border: 0px double #e0e0e0;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header section {
+          font-size: 1.5rem;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      @media (max-width: 500px) {
+        img.sky {
+          display: none;
+        }
+        img.launch {
+          display: none;
+        }
+        .space-images {
+        width: 100%;
+        }
+        img.blast {
+        width: 100%;
+        }
+        section.walk {
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          border-top: 1px solid #dee2e6;
+          padding: 20px 20px;
+        }
