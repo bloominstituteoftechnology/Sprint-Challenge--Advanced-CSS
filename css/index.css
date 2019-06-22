@@ -1,3 +1,15 @@
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,7 +184,7 @@ header {
   align-items: center;
 }
 header h1 {
-  width: 100%;
+  width: 100% 20%;
   font-size: 4.5rem;
   color: #22283B;
   background: #f4f4f4;
@@ -184,7 +196,7 @@ header h1 {
   align-items: center;
 }
 header nav {
-  width: 100%;
+  width: 100% 20%;
   font-size: 4.5rem;
   color: #22283B;
   background: #f4f4f4;
@@ -203,6 +215,106 @@ header a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    width: 62.5%;
+    font-size: 2.5rem;
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 10px 0;
+    border-top: 1px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    width: 62.5%;
+    font-size: 2.5rem;
+    color: #22283B;
+    background: #f4f4f4;
+    padding: 10px 0;
+    border: 0px double #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header section {
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  img.sky {
+    display: none;
+  }
+  img.launch {
+    display: none;
+  }
+  .space-images {
+  width: 100%;
+  }
+  img.blast {
+  width: 100%;
+  }
+  section.walk {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 20px;
+  }
+  .walk {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #dee2e6;
+    padding: 20px 20px;
+  }
+  div.walk-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .walk .walk-text {
+    width: 100%;
+  }
+  .walk .walk-img {
+    width: 100%;
+    margin-left: 4%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -213,53 +325,62 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+h2 {
   padding: 15px;
 }
-.home .intro p {
+p {
   padding: 0 15px;
 }
-.home .space-images {
+.space-images {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  flex-direction: row;
 }
-.home .space-images img {
-  width: 28%;
+.space-images img {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
+.walk .walk-text {
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
-  width: 46%;
+.walk .walk-text .btn {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.walk .walk-img {
+  width: 100%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
