@@ -1,1 +1,11 @@
-// Mixins Here
+// Parametric Mixins //
+
+.displayFlex(@flex-flow, @align, @justify) {
+    display: flex;
+    flex-flow: @flex-flow;
+    align-items: @align;
+    justify-content: @justify;
+}
+
+
+
