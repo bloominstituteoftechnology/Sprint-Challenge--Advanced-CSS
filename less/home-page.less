@@ -68,6 +68,8 @@
 
       @media @phone {
         width: 100%;
+        display: flex;
+        flex-direction: column;
 
         p {
           font-size: 3.2rem;
@@ -92,6 +94,7 @@
 
         @media @phone {
           width: 100%;
+          height: auto;
         }
       }
     }
@@ -102,6 +105,10 @@
     btn:hover { 
       color: @ebony-clay;  
       background-color: @porcelain;
+    }
+    @media @phone {
+      width: 100%;
+      height: auto;
     }
   }
 

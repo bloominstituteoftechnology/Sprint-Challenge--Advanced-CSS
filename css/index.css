@@ -177,18 +177,18 @@ p {
     width: 100;
   }
 }
-@media only screen and (max-width: 500px) {
-  header {
-    width: 100%;
-    background: #f4f4f4;
-    text-align: center;
-  }
-}
-header header nav {
+/*header {
+
+    @media @phone {
+        width: 100%;
+        background: #f4f4f4;
+        text-align: center;
+    } */
+header nav {
   background: #f4f4f4;
   text-align: center;
 }
-header header nav a {
+header nav a {
   text-decoration: none;
   /* display: flex; */
   flex-wrap: nowrap;
@@ -199,7 +199,7 @@ header header nav a {
   font-size: 2rem;
 }
 @media only screen and (max-width: 500px) {
-  header header nav {
+  header nav {
     width: 100%;
   }
 }
@@ -274,6 +274,8 @@ footer {
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .home .walk .walk-text p {
     font-size: 3.2rem;
@@ -295,6 +297,7 @@ footer {
 @media only screen and (max-width: 500px) {
   .home .walk .walk-img img {
     width: 100%;
+    height: auto;
   }
 }
 .home .btn {
@@ -310,4 +313,10 @@ footer {
 .home .btn btn:hover {
   color: #23293B;
   background-color: #F6F7F8;
+}
+@media only screen and (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    height: auto;
+  }
 }
