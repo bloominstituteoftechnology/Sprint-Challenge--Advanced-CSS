@@ -19,11 +19,27 @@
     flex-wrap: wrap;
     width: 100%;
 
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+
+      img .blast {
+        width: 100%;
+        margin: auto;
+      }
+      img .sky {
+        display: none;
+      }
+
+      img .launch {
+        display: none;
+      
     }
   }
 
@@ -46,8 +62,13 @@
     display: flex;
     justify-content: center;
 
+    
     .walk-text {
       width: 50%;
+      
+      @media @phone {
+        flex-direction: column-reverse;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +78,41 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      border-radius: 20px;
+    
+      @media @phone {
+        flex-direction: column-reverse;
+      }
       
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        
+      }
+
+        .btn { 
+            background-color: #22283A;
+            cursor: pointer;
+            width: 50%;
+            height: 20px;
+            font-size: 2rem;
+            border-radius: 20px;
+
+            @media @phone {
+               width: 100%;
+               
+                 &:hover {
+                   background-color: white;
+                   color: @btn-bg-color;
+                 }
+         
+             }
+        }
+        }
       }
     }
   }
-}// home
+}
