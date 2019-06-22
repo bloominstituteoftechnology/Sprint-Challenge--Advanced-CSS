@@ -88,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -112,7 +112,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 

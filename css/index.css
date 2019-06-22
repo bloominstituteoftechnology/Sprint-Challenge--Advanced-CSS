@@ -160,13 +160,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.top-header {
-  font-size: 45px;
-}
 .nav-container {
   display: flex;
-  flex-direction: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav-container .top-header {
+  font-size: 45px;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-container .top-header nav .a .a .a .a .a {
+  font-size: 20px;
 }
 footer {
   color: #22283B;
@@ -183,6 +188,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  margin-top: 30px;
 }
 .home .space-images {
   display: flex;
@@ -226,6 +234,7 @@ footer {
   border-radius: 5px;
   height: 30px;
   width: 90px;
+  font-size: 15px;
 }
 .home .walk .walk-img {
   width: 46%;
