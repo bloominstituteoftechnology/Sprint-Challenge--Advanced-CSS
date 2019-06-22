@@ -237,10 +237,10 @@ footer {
     width: 100%;
   }
   .home .space-images .sky {
-    visibility: hidden;
+    display: none;
   }
   .home .space-images .launch {
-    visibility: hidden;
+    display: none;
   }
 }
 .home .space-images img {
@@ -273,9 +273,6 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
-  margin-bottom: 10px;
-}
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
@@ -286,6 +283,9 @@ footer {
     font-size: 1.6rem;
     line-height: 1.4;
   }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
