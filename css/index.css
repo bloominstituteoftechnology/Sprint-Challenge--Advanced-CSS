@@ -160,12 +160,13 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-header {
+  font-size: 45px;
+}
 .nav-container {
   display: flex;
-  flex-direction: row;
-}
-nav .a {
-  justify-content: center;
+  flex-direction: center;
+  justify-content: space-between;
 }
 footer {
   color: #22283B;
@@ -218,6 +219,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn .sign-up-btn {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
 }
 .home .walk .walk-img {
   width: 46%;
