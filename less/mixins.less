@@ -3,10 +3,11 @@
     text-align: center;
 }
 
-.button-styler {
-    border-radius: 10px;
-    background-color: @ebony-clay;
+.button-styler(@width; @height) {
+    button-styler: @width, @height;
+    background: @ebony-clay;  
     color: @porcelain;
+    border-radius: 10px;
     padding-top: 5px;
     width: 140px;
     height: 50px;
@@ -17,4 +18,4 @@
     display: flex;
 }
 
-@phone: ~"(max-width: 500px)";
+@phone:    ~"only screen and (max-width: 500px)";
