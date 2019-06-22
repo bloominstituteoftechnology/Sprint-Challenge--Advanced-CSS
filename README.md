@@ -44,18 +44,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
+1a. An adaptive website is an website that is designed to use @media styles to make it fit properly on the page. A fully repsonsive website is a website that is designed to use media styles, and percentages for widths to make sure that it can fit a bunch of different sizes for the website outside of the hard coded dimensions you specify with the media tags.
+
+2a. A mobile first design is a website that is built by starting from the way the site will look for mobile generally, and then will create different versions of page using the mobile page as a base. The desktop first design is a website that is built by starting from building the desktop version of the site, and then scaling the site down to the mobile version.
+
+3a. Setting the font-size to 62.5% changes the default size used by CSS/HTML to base 10 instead of base 16. This is because 10/16=62.5%.
+
+4a. Preprocessing is a process by which you can write CSS in a different way than CSS is typically generated. It's a method to create a mapping that will make the code easier to write an organize. I suppose it could be compared to using a translater. 
+
+5a. My favorite concept in preprocessing are the mixins. The mixins allow you to have a functionality similiar to variables, which is great, because variables make it much easier to reuse and organize code. The concept that gives me the most trouble are the parametric mixins, but only because they are supposed to be used with @media typically, and unforunately, @media still gives me some trouble.
+
+
 ## Project Set Up
 
 Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
+- [X ] Create a forked copy of this project.
 - [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X ] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [X ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X ] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
@@ -66,10 +77,10 @@ Follow these steps for completing your project.
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [X ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [X ] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [X ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [X ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
 * [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
@@ -94,21 +105,21 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [X ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [X ] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ X ] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [X ] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [X ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [ X ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [X ]  Use at least 2 parameters to create your button
 
 * [ ] Create a hover state that swaps the background color and font color of the base button styles.
 
