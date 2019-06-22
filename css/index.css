@@ -1,3 +1,9 @@
+@media (max-width: 500px) {
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,6 +172,18 @@ p {
 }
 .intro img {
   border-radius: 5px;
+}
+.walk-text .btn {
+  height: 30px;
+  width: 35%;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 20px 0px;
+  color: white;
+  display: flex;
+  background-color: #22283A;
+  justify-content: center;
+  align-items: center;
 }
 .alpha {
   display: block;

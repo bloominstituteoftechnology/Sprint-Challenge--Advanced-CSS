@@ -1,1 +1,24 @@
 // Mixins Here
+.btn-blue (){
+    height: 30px;
+    width: 35%;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    padding: 20px 0px;
+    color: @wild-sand;
+    display: flex;
+    background-color: @btn-bg-color;
+    justify-content: @alignment;
+    align-items: @alignment;
+    &:hover {
+        color: @btn-bg-color;
+        background-color: @wild-sand;
+      }
+}
+
+@media(max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
