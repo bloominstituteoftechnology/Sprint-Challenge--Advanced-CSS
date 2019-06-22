@@ -145,6 +145,10 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4rem;
+  margin: 10px auto 10px auto;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +163,33 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.intro img {
+  border-radius: 5px;
+}
+.alpha {
+  display: block;
+  background-color: #dee2e6;
+  padding-bottom: 20px;
+}
+.alpha .beta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.alpha .beta nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  width: 42%;
+  margin-top: 10px;
+}
+.alpha .beta nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #23293B;
+  display: flex;
+  justify-content: space-around;
 }
 footer {
   color: #22283B;
@@ -220,8 +251,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-h1 {
-  font-size: 3.5rem;
-  margin: 20px auto;
 }
