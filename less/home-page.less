@@ -23,9 +23,19 @@
     flex-wrap: wrap;
     width: 100%;
 
-    @media @phone {
-      width: 100%;
+    @media @phone  {
+
+      .blast {
+        width: 100%;
+      }
+
+     .sky {
       visibility: hidden;
+     }
+
+     .launch {
+       visibility: hidden;
+     }
     }
 
     img {
@@ -72,7 +82,7 @@
         flex-direction: column;
 
         p {
-          font-size: 3.2rem;
+          font-size: 1.6rem;
           line-height: 1.4;
         }
       }
@@ -87,15 +97,15 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        width: 100%;
+      }
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
 
-        @media @phone {
-          width: 100%;
-          height: auto;
-        }
       }
     }
   }
