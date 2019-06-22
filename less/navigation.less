@@ -1,1 +1,42 @@
 // Navigation code here
+.nav-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vw;
+    height: 16vh;
+    background-color: rgba(232,232,232);
+    transition: all .4s;
+
+    @media @phone {
+        width: 90vw;
+    }
+    
+    .spaceWalkers {
+        font-size: 4rem;
+    }
+
+    .nav-bar-top {
+        display: flex;
+        justify-content: space-around;
+        width: 34%;
+        font-size: 1.6rem;
+
+        @media @phone {
+            width: 85%;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: @river-bend;
+        }
+    }
+}
+
+.nav-bar:hover{ 
+    background-color: rgb(168,168,168);
+    transition: all .4s;
+}
