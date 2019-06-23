@@ -1,0 +1,20 @@
+{
+  "name": "preprocessing-ii",
+  "version": "1.0.0",
+  "description": "Lambda School Project - Advanced CSS - Preprocessing II",
+  "scripts": {
+    "compile-less": "lessc less/index.less css/index.css",
+    "devserver": "live-server",
+    "watch-less": "less-watch-compiler less css index.less",
+    "start": "npm-run-all --parallel devserver watch-less"
+  },
+  "author": "Mikey Nichols",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0",
+    "npm-run-all": "^4.1.1"
+  },
+  "dependencies": {
+    "lessc": "^1.0.2"
+  }
+}
