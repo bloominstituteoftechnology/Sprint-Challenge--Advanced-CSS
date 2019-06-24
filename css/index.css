@@ -1,0 +1,508 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4.8rem;
+  line-height: 0;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.5s all;
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 2000px;
+    padding: 0 15%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 15%;
+  }
+}
+@media only screen and (min-width: 51px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
+@keyframes flyIn {
+  0% {
+    transform: perspective(1em) rotateX(1deg) rotateY(79deg) translate(25%, 25%);
+  }
+  25% {
+    transform: perspective(2em) rotateX(1deg) rotateY(79deg) translate(20%, 20%);
+  }
+  35% {
+    transform: perspective(3em) rotateX(1deg) rotateY(79deg) translate(15%, 15%);
+  }
+  50% {
+    transform: perspective(4em) rotateX(-3deg) rotateY(74deg) translate(10%, 10%);
+  }
+  75% {
+    transform: perspective(6em) rotateX(-3deg) rotateY(74deg) translate(5%, 5%);
+  }
+  100% {
+    transform: perspective(0) rotateX(0) rotateY(0);
+  }
+}
+.flex {
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .flex {
+    flex-direction: column;
+  }
+  .flex-no-response {
+    flex-direction: row;
+  }
+}
+.flex > * {
+  padding: 0.5em;
+}
+.flex-inline {
+  display: inline-flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-justify-start {
+  justify-content: flex-start;
+}
+.flex-justify-end {
+  justify-content: flex-end;
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+.flex-justify-around {
+  justify-content: space-around;
+}
+.flex-justify-even {
+  justify-content: space-evenly;
+}
+.flex-content-start {
+  align-content: flex-start;
+}
+.flex-content-end {
+  align-content: flex-end;
+}
+.flex-content-center {
+  align-content: center;
+}
+.flex-content-stretch {
+  align-content: stretch;
+}
+.flex-content-around {
+  align-content: space-around;
+}
+.flex-content-between {
+  align-content: space-between;
+}
+.flex-items-start {
+  align-items: flex-start;
+}
+.flex-items-end {
+  align-items: flex-end;
+}
+.flex-items-center {
+  align-items: center;
+}
+.flex-items-stretch {
+  align-items: stretch;
+}
+.flex-items-baseline {
+  align-items: baseline;
+}
+.flex-shrink {
+  flex-shrink: 2;
+}
+.flex-shrink-more {
+  flex-shrink: 3;
+}
+.flex-grow {
+  flex-grow: 2;
+}
+.flex-grow-more {
+  flex-grow: 3;
+}
+.flex-self-start {
+  align-self: flex-start;
+}
+.flex-self-end {
+  align-self: flex-end;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-text-right {
+  text-align: right;
+}
+.u-text-left {
+  text-align: left;
+}
+.u-margin-auto {
+  margin: auto;
+}
+.u-margin-1 {
+  margin: 1em;
+}
+.u-margin-top-2 {
+  margin-top: 1.5em;
+}
+@media screen and (max-width: 900px) {
+  .u-margin-top-2 {
+    margin-top: 18em;
+  }
+}
+.u-margin-top-5 {
+  margin-top: 5rem;
+}
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem;
+}
+.u-margin-bottom-md {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-lg {
+  margin-bottom: 8rem;
+}
+.u-top-lg {
+  margin-top: 8rem;
+}
+.u-top-xl {
+  margin-top: 10rem;
+}
+.u-float-right {
+  float: right;
+}
+.u-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.u-width-100 {
+  width: 100%;
+}
+.u-width-90 {
+  width: 90%;
+}
+.u-width-80 {
+  width: 80%;
+}
+.u-width-75 {
+  width: 75%;
+}
+@media only screen and (max-width: 460px) {
+  .u-width-75 {
+    width: 100%;
+  }
+}
+.u-width-50 {
+  width: 50%;
+}
+.u-width-45 {
+  width: 45%;
+}
+.u-width-40 {
+  width: 40%;
+}
+.u-width-33 {
+  width: 33%;
+}
+.u-width-25 {
+  width: 25%;
+}
+.u-padding-default {
+  padding: 5%;
+}
+.u-padding-1 {
+  padding: 1em;
+}
+.u-border-1 {
+  border: 1px solid black;
+}
+.u-border-radius-1 {
+  border-radius: 1em;
+}
+.u-font-large {
+  font-size: 400%;
+}
+.u-max-width-4 {
+  max-width: 4em;
+}
+.color-invert {
+  filter: invert(1);
+}
+.color-black {
+  color: #000;
+}
+nav {
+  height: 8.5em;
+}
+nav div {
+  background: linear-gradient(#f6f6f6b4, #ffffffef);
+  border-bottom: 1px inset #f1f1f1;
+}
+nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #000;
+  padding: 0 2em;
+}
+h1 {
+  animation: flyIn 3s;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.btn {
+  background: teal;
+  color: #fff;
+  border-radius: 1.3rem;
+  padding: 1.2rem;
+  border: 0;
+  transition: 0.2s all;
+  width: 30%;
+  font-weight: 700;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #00b3b3;
+}
+.btn:active {
+  transform: translateY(2px);
+  background: #00999a;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
+}
+.btn:focus,
+.btn:active {
+  outline: none;
+}

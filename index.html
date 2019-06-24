@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -17,7 +17,25 @@
 <body>
 
  <!-- navigation code here -->
-
+  <nav class="u-width-100">
+    <div class="u-fixed-top flex flex-column flex-justify-center flex-items-center container">
+      <h1>SpaceWalkers</h1>
+        <ul class="flex flex-items-center flex-no-response flex-justify-around">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+  </nav>
+  <header class="container">
+    <img src="img/main-header.png" alt="Super Aerial photograph of Earth" class="img-content flex u-width-100 u-border-radius-1">
+    <div class="text-content">
+        <h2></h2>
+        <p></p>
+    </div>
+  </header>
   <div class="container home">
 
     <header class="intro">
@@ -62,8 +80,8 @@
 
     </section>
 
-    <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+    <footer class="container flex flex-justify-center flex-items-center u-margin-1">
+      <p>&copy; Copyright SpaceWalkers <script>document.write(new Date().getFullYear())</script></p>
     </footer>
 
   </div>

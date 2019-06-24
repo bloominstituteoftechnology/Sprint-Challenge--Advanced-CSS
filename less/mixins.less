@@ -1,1 +1,30 @@
-// Mixins Here
+// Mixins in here
+.transition(@dur: .5s, @prop: all) {
+    transition: @dur @prop;
+}
+.button(@color,@pos){
+background: @color;
+color: #fff;
+border-radius: 1.3rem;
+padding: 1.2rem;
+border: 0;
+.transition(.2s);
+width: 30%;
+font-weight: 700;
+font-size: 1.8rem;
+cursor: pointer;
+
+&:hover {
+    background: lighten(@color, 10%);
+}
+&:active {
+    transform: translateY(@pos);
+    background: lighten(@color, 5%);
+    box-shadow: 0 2px 1rem rgba(black, .5);
+}
+&:focus, &:active {
+    outline: none;
+}
+}
+
+
