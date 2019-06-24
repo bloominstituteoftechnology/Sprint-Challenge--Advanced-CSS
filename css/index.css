@@ -164,14 +164,17 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 .nav-container .top-header {
   font-size: 45px;
   flex-direction: row;
   justify-content: center;
 }
-.nav-container .top-header nav .a .a .a .a .a {
-  font-size: 20px;
+.nav-container .top-header .anchors {
+  text-decoration: none;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -227,14 +230,6 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
-}
-.home .walk .walk-text .btn .sign-up-btn {
-  background: black;
-  color: white;
-  border-radius: 5px;
-  height: 30px;
-  width: 90px;
-  font-size: 15px;
 }
 .home .walk .walk-img {
   width: 46%;
