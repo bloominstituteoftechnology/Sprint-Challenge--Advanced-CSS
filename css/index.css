@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-weight: 700;
 }
 html,
 body {
@@ -148,6 +149,8 @@ h5 {
 h1 {
   font-size: 4.8rem;
   line-height: 0;
+  font-weight: 800;
+  text-shadow: 0 0 1rem rgba(255, 255, 255, 0.25);
 }
 h2 {
   font-size: 3.2rem;
@@ -421,12 +424,20 @@ nav {
 nav div {
   background: linear-gradient(#f6f6f6b4, #ffffffef);
   border-bottom: 1px inset #f1f1f1;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #000;
   padding: 0 2em;
+  font-weight: 700;
+  transition: 0.5s all;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+  text-shadow: 0 0 2rem black;
 }
 h1 {
   animation: flyIn 3s;
@@ -482,8 +493,14 @@ h1 {
   height: auto;
   border-radius: 10px;
 }
+footer {
+  color: #000;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  padding: 2em 0;
+}
 .btn {
-  background: teal;
+  background: #22283a;
   color: #fff;
   border-radius: 1.3rem;
   padding: 1.2rem;
@@ -493,13 +510,15 @@ h1 {
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
+  text-align: center;
 }
 .btn:hover {
-  background: #00b3b3;
+  background: #353e5a;
+  filter: invert(1);
 }
 .btn:active {
   transform: translateY(2px);
-  background: #00999a;
+  background: #2b334a;
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
 }
 .btn:focus,
