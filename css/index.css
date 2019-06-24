@@ -592,15 +592,25 @@ form .btn {
     width: 100%;
   }
 }
-footer {
+footer.container {
   color: #000;
   background: #f4f4f4;
   border: 1px solid #e0e0e0;
-  padding: 2em 0;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+@media only screen and (min-width: 1400px) {
+  footer.container {
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  footer.container {
+    max-width: 75%;
+  }
 }
 @media only screen and (max-width: 500px) {
   footer.container {
-    margin: 2rem auto;
     width: 98%;
   }
 }
