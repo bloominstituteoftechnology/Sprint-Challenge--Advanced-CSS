@@ -25,7 +25,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Sign In</a></li>
+          <li><a href="#signup">Sign Up</a></li>
         </ul>
     </div>
   </nav>
@@ -79,6 +79,40 @@
       </div>
 
     </section>
+
+    <section class="content-inquire" id="#signup">
+        <h2>Magazine Subscription</h2>
+        <p>Does space intrigue you as much as it does us? Provide us your mailing address below to get your very first magazine from us for free! $249.99 monthly subscription after. No refunds, unless you are on Mars.</p>
+        <form>
+          <h4>Sign Me Up!</h4>
+          
+          <input name="name" type="text" placeholder="Full Name" required>
+          <label for="name">Full Name</label>          
+
+          <input name="address1" type="email" placeholder="Address Line 1" required>
+          <label for="address1">Address Line 1</label>
+
+          <input name="address2" type="email" placeholder="Address Line 2" required>
+          <label for="address2">Address Line 2</label>
+
+      
+          <input name="city" type="text" placeholder="City" required>
+          <label for="email">City</label>
+
+          <input name="state" type="text" placeholder="State" required>
+          <label for="email">State</label>
+
+          <input name="zip" type="number" placeholder="Zip Code" required>
+          <label for="zip">Zip Code</label>
+
+          
+          <div class="flex flex-items-center flex-justify-center flex-no-response ">
+          <input type="checkbox" required>
+          <label for="optin">I agree to being billed for a monthly subscription of $249.99 after first free magazine.</label>
+          <button type="submit" onclick="alert('Your subscription has been confirmed. Thanks for your money! (NOT REALLY THIS IS A TEST!)')">Submit</button>
+           </div>
+        </form>
+      </section>
   </div>
   <footer class="container flex flex-justify-center flex-items-center u-margin-1 u-border-radius-1">
       <p>&copy; Copyright SpaceWalkers <script>document.write(new Date().getFullYear())</script></p>

@@ -102,6 +102,61 @@ header.container{
   }
 }// home
 
+
+.content-inquire{
+  margin: 30px 0;
+}
+
+
+form {
+  display:grid;
+  border: 2px inset @nav-border;
+  padding: 5%;
+  padding-bottom: 2%;
+  border-radius: 2rem;
+  background: #ccc;
+
+  input, select, textarea{
+
+      font-family: inherit;
+      color:inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      border:none;
+      background-color: rgba(white, .5);
+      border-bottom: 3px solid transparent;
+      display:block;
+      .transition(.2s);
+      &:focus {
+          outline: none;
+          box-shadow: 0 1rem 2rem rgba(black, .1);
+          border-bottom: 3px solid teal;
+          &:invalid {
+              border-bottom: 3px solid maroon;
+          }
+      }     
+      &::-webkit-input-placeholder {
+          color: darkgrey;
+      }
+  }
+  & label {
+      font-size: 1.2rem;
+      font-weight: 700;
+      .transition(.2s);
+  }
+  
+  & .btn {
+      width: 30%;
+      @media @phone {
+          width: 100%;
+      }
+  }
+
+}
+
+
+
+
 footer {
   color: #000;
   background:  #f4f4f4;

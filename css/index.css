@@ -538,6 +538,60 @@ h1 {
   height: auto;
   border-radius: 10px;
 }
+.content-inquire {
+  margin: 30px 0;
+}
+form {
+  display: grid;
+  border: 2px inset #F1F1F1;
+  padding: 5%;
+  padding-bottom: 2%;
+  border-radius: 2rem;
+  background: #ccc;
+}
+form input,
+form select,
+form textarea {
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid transparent;
+  display: block;
+  transition: 0.2s all;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid teal;
+}
+form input:focus:invalid,
+form select:focus:invalid,
+form textarea:focus:invalid {
+  border-bottom: 3px solid maroon;
+}
+form input::-webkit-input-placeholder,
+form select::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: darkgrey;
+}
+form label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.2s all;
+}
+form .btn {
+  width: 30%;
+}
+@media only screen and (max-width: 500px) {
+  form .btn {
+    width: 100%;
+  }
+}
 footer {
   color: #000;
   background: #f4f4f4;
@@ -550,6 +604,7 @@ footer {
     width: 98%;
   }
 }
+button,
 .btn {
   background: #22283a;
   color: #fff;
@@ -563,16 +618,20 @@ footer {
   cursor: pointer;
   text-align: center;
 }
+button:hover,
 .btn:hover {
   background: #353e5a;
   filter: invert(1);
 }
+button:active,
 .btn:active {
   transform: translateY(2px);
   background: #2b334a;
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.5);
 }
+button:focus,
 .btn:focus,
+button:active,
 .btn:active {
   outline: none;
 }
