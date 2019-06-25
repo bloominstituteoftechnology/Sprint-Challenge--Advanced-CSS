@@ -13,15 +13,11 @@
       padding: 0 15px;
     }
     .main-img {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
+      .image-style();
     }
   }
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .image-style();
 
     img {
       width: 28%;
@@ -76,7 +72,8 @@
         width: 100%;
       }
       &:hover {
-        background: @waterloo;
+        background: white;
+        color: @btn-bg-color;
         cursor: pointer;
       }
     }
@@ -93,12 +90,12 @@
        transition: all 0.8s;
      }
 
-    // button:active:after {
-    //   padding: 0;
-    //   margin: 0;
-    //   opacity: 1;
-    //   transition: 0s;
-    // }
+    button:active:after {
+       padding: 0;
+       margin: 0;
+       opacity: 1;
+       transition: 0s;
+     }
 
     .walk-img {
       width: 46%;

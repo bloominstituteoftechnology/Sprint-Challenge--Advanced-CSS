@@ -302,7 +302,8 @@ footer {
   }
 }
 .home .walk button:hover {
-  background: #81848E;
+  background: white;
+  color: #22283A;
   cursor: pointer;
 }
 .home .walk button:after {
@@ -315,6 +316,12 @@ footer {
   margin-top: -120%;
   opacity: 0;
   transition: all 0.8s;
+}
+.home .walk button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
 .home .walk .walk-img {
   width: 46%;
