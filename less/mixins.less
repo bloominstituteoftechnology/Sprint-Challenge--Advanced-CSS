@@ -2,7 +2,7 @@
 
 .displayFlex (@justify, @align, @direction) {
     display: flex;
-    flex-direction: row;
+    flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
@@ -31,16 +31,17 @@
     cursor: @cursor;
     width: @width;
     height: @height;
-    font-size: 2 rem;
+    font-size: 2rem;
     border-radius: @border-radius;
     color: white;
 }
 
       
 .btn {
-    .button-mixin(#22283A; pointer, 50%, 50px, 20px);
 
-    @media @mobile {
+    .btn-mixin(#22283A, pointer, 15%, 50px, 20px);
+
+    @media @phone {
        width: 100%;
        
          &:hover {

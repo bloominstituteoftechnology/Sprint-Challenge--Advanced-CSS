@@ -1,3 +1,25 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  margin: auto;
+  cursor: pointer;
+  width: 15%;
+  height: 50px;
+  font-size: 2rem;
+  border-radius: 20px;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
+  .btn:hover {
+    background-color: white;
+    color: #22283A;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,6 +209,7 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
 }
 nav ul a {
   text-decoration: none;
@@ -200,6 +223,11 @@ nav ul a:hover {
 }
 .intro img {
   border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  width: 100%;
 }
 footer {
   color: #22283B;
@@ -217,87 +245,134 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
+@media only screen and (max-width: 500px) {
+  .home .intro .intro img {
+    width: 100%;
+  }
+}
+.space-images {
   width: 100%;
 }
-.home .space-images img {
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media only screen and (max-width: 500px) {
-  .home .space-images img .blast {
-    width: 100%;
-    margin: auto;
-  }
-  .home .space-images img .sky {
+  .space-images .sky {
     display: none;
   }
-  .home .space-images img .launch {
+  .space-images .launch {
     display: none;
   }
+  .space-images .blast {
+    width: 95%;
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
-.home .space-images .visit-planets {
-  padding: 15px;
+.visit-planets {
+  padding-top: 15px;
+  padding-bottom: 0px;
 }
-.home .space-images .visit-planets h3 {
+@media only screen and (max-width: 500px) {
+  .visit-planets {
+    width: 95%;
+    padding: 0 5px 0;
+  }
+}
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .space-images .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .space-images .walk {
+.walk {
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
 }
-.home .space-images .walk .walk-text {
+@media only screen and (max-width: 500px) {
+  .walk {
+    width: 98%;
+    margin: auto;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+.walk .walk-text {
   width: 50%;
 }
 @media only screen and (max-width: 500px) {
-  .home .space-images .walk .walk-text {
-    flex-direction: column-reverse;
+  .walk .walk-text {
+    width: 100%;
+    margin: auto;
   }
 }
-.home .space-images .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
+  margin-top: 10px;
 }
-.home .space-images .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .space-images .walk .walk-text .walk-img {
+.walk-img {
   width: 46%;
   margin-left: 4%;
   border-radius: 20px;
 }
 @media only screen and (max-width: 500px) {
-  .home .space-images .walk .walk-text .walk-img {
+  .walk-img {
+    width: 100%;
+    margin-left: 0;
     flex-direction: column-reverse;
+    margin-top: 20px;
   }
 }
-.home .space-images .walk .walk-text .walk-img img {
+.walk-img img {
   width: 100%;
   height: auto;
-}
-.home .space-images .walk .walk-text .walk-img .btn {
-  background-color: #22283A;
-  cursor: pointer;
-  width: 50%;
-  height: 20px;
-  font-size: 2rem;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 500px) {
-  .home .space-images .walk .walk-text .walk-img .btn {
+  .walk-img img {
     width: 100%;
   }
-  .home .space-images .walk .walk-text .walk-img .btn:hover {
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22283A;
+  margin: auto;
+  cursor: pointer;
+  width: 30%;
+  height: 30px;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .btn {
+    width: 95%;
+    background-color: #22283A;
+    padding: 30px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
     background-color: white;
+    color: #22283A;
+  }
+  .btn:hover:hover {
+    background-color: skyblue;
     color: #22283A;
   }
 }
