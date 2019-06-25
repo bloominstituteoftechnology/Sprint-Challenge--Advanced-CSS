@@ -179,11 +179,15 @@ p {
   border-radius: 5px;
   font-size: 1.8rem;
   padding: 20px 0px;
-  color: white;
+  color: #F6F6F6;
   display: flex;
   background-color: #22283A;
   justify-content: center;
   align-items: center;
+}
+.walk-text .btn div.btn:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
 }
 .alpha {
   display: block;
