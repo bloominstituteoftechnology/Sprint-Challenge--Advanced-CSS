@@ -15,7 +15,7 @@ header nav {
     align-items: center;
     flex-direction: column;
     .links {
-        width: 100%;
+        .maximum-width();
         display: flex;
         justify-content: space-evenly;
     }
@@ -27,7 +27,7 @@ header nav {
         font-size: 2rem;
     }
     @media @phone {
-        width: 100%;
+        .maximum-width();
     }
  
 }
@@ -35,5 +35,5 @@ header nav {
 .image-padding {
    padding-top: 20px;
   
-   width: 100%;
+   .maximum-width();
 }

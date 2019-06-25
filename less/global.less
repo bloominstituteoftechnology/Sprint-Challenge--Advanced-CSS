@@ -37,12 +37,12 @@ p {
 
 .container {
   max-width: 800px;
-  width: 100%;
+  .maximum-width();
   margin: 0 auto;
   
   @media @phone {
     .display-flex();
     flex-direction: column;
-    width: 100%;
+    .maximum-width();
   }
 }
