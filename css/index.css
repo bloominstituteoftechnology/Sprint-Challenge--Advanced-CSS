@@ -134,18 +134,24 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5E6164;
   height: 100%;
   width: 80%;
   margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    width: 100%;
+  }
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293B;
 }
 h2 {
@@ -166,6 +172,12 @@ header .logo {
   color: #23293B;
   padding-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  header .logo {
+    display: flex;
+    flex-direction: row;
+  }
+}
 header div {
   display: flex;
   flex-direction: column;
@@ -174,12 +186,10 @@ header div {
   width: 100%;
   max-width: 800px;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   header div {
     display: flex;
     flex-direction: column;
-    align-self: center;
-    width: 80%;
     padding-bottom: 1rem;
   }
 }
@@ -189,31 +199,32 @@ header div nav {
   justify-content: space-between;
   margin: 0 auto;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   header div nav {
-    align-content: center;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-  }
-  header div nav :first-child {
-    margin-left: 1rem;
-  }
-  header div nav :last-child {
-    margin-right: 1rem;
+    margin: 0 auto;
   }
 }
-header div nav a {
+header div a {
   color: #454A59;
   text-decoration: none;
   font-size: 1.6rem;
 }
-header div nav a:hover {
+@media (max-width: 500px) {
+  header div a {
+    font-size: 13px;
+  }
+}
+header div a:hover {
   color: #81848E;
   text-decoration: underline;
   cursor: pointer;
 }
-@media only screen and (max-width: 500px) {
-  header div nav a:hover {
-    color: purple;
+@media (max-width: 500px) {
+  header div a:hover {
+    color: blue;
     background-color: #81848E;
   }
 }
@@ -231,6 +242,11 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -242,16 +258,34 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .intro .main-img {
+    width: 100%;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -269,8 +303,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0.9rem;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -292,11 +339,11 @@ footer {
   transition-duration: 0.4s;
   text-decoration: none;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   padding-top: 1rem;
   position: relative;
 }
-@media only screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .home .walk button {
     width: 100%;
   }
@@ -326,6 +373,11 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
