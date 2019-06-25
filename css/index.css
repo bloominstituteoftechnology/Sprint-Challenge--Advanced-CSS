@@ -166,11 +166,13 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  text-decoration: pink;
 }
 .nav-container .top-header {
   font-size: 45px;
   flex-direction: row;
   justify-content: center;
+  text-decoration: none;
 }
 .nav-container .top-header .anchors {
   text-decoration: none;
@@ -231,6 +233,15 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+
+.home .walk .walk-text .button .styled-btn {
+  background: #5E6164;
+  height: 40px;
+  color: white;
+  width: 150px;
+  border-radius: 5PX;
+}
+
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
