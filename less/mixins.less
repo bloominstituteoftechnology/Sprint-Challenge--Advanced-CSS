@@ -1,28 +1,38 @@
-// Mixins below variables
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+// Mixins Here
 
-.button-creator(@width, @height, @bg-color, @font-color) {
-    .border-radius(20px);
-    .center;
-    width: @width;
-    height: @height;
-    background-color: grey;
-    color:black;
-    border: 1px solid gold;
-  }
+.navareaset() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: @nav-bg;
+  border-bottom: 1px solid @border-real;
+}
 
-  .border-radius(@radius) {
-    -webkit-border-radius: @radius;
-       -moz-border-radius: @radius;
-            border-radius: @radius;
-  }
-  
-  .btn {
-    .button-creator(150px, 45px, teal, white);
-    .border-radius(20px);
-    
-  }
+.navlinkset() {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.imgrs() {
+  animation-name: imageresize;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-duration: 0.25s;
+}
+
+.btnsettings(@wi, @he, @bgc, @br, @fs, @fc) {
+  width: @wi;
+  height: @he;
+  background-color: @bgc;
+  border-radius: @br;
+  font-size: @fs;
+  color: @fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
