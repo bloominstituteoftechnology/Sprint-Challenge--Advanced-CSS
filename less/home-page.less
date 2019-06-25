@@ -19,7 +19,7 @@
   }
 
   .space-images {
-    display: flex;
+    .display-flex();
     flex-wrap: wrap;
     width: 100%;
 
@@ -66,11 +66,11 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .display-flex();
     justify-content: center;
 
     @media @phone {
-      display: flex;
+      .display-flex();
       justify-content: flex-start;
       flex-direction: column-reverse;
     }
@@ -80,7 +80,7 @@
 
       @media @phone {
         width: 100%;
-        display: flex;
+        .display-flex();
         flex-direction: column;
 
         p {
