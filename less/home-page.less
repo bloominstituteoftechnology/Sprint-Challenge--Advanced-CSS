@@ -1,5 +1,9 @@
 // Home Content
+
 .home {
+  width: 90%;
+  margin: 0 auto;
+
   .intro {
     h2 {
       padding: 15px;
@@ -8,9 +12,12 @@
     p {
       padding: 0 15px;
     }
+    .main-img {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
   }
-  body {
-
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +30,7 @@
       height: 100%;
     }
   }
+
   .visit-planets {
     padding: 15px;
 
@@ -44,7 +52,6 @@
 
     .walk-text {
       width: 50%;
-      border: 1px red solid;
 
       h3 {
         margin-bottom: 10px;
@@ -53,49 +60,45 @@
       p {
         margin-bottom: 26px;
       }
-
-  
-      }
-      button{
-        .custom-buttons(80%, 4rem, row, @font-color, #22283a, center);
-        border: none;
-        padding: 2rem;
-        text-align: center;
-        transition-duration: 0.4s;
-        text-decoration: none;
-        overflow: hidden;
-        border-radius: 10px;
-        padding-top: 1rem;
-        position: relative;
-        @media only screen and (max-width:500px){
-            width: 100%;
-          }
-          &:hover{ 
-            background: @sandy-beach;
-            cursor: pointer;
-          }
-        }
-        
-        
-        button:after {
-          content: "";
-            background: #90EE90;
-            position: absolute;
-            padding-top: 300%;
-            padding-left: 350%;
-            margin-left: -20px!important;
-            margin-top: -120%;
-            opacity: 0;
-            transition: all 0.8s
-          }
-          
-          button:active:after {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
-            transition: 0s
-          }
     }
+    button {
+      .custom-buttons(30%, 2rem, row, white, @btn-bg-color, center);
+      border: none;
+      padding: 2rem;
+      text-align: center;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      border-radius: 10px;
+      padding-top: 1rem;
+      position: relative;
+      @media only screen and (max-width: 500px) {
+        width: 100%;
+      }
+      &:hover {
+        background: @waterloo;
+        cursor: pointer;
+      }
+    }
+
+     button:after {
+      content: "";
+       background: #90ee90;
+       position: absolute;
+       padding-top: 300%;
+       padding-left: 350%;
+       margin-left: -20px !important;
+       margin-top: -120%;
+       opacity: 0;
+       transition: all 0.8s;
+     }
+
+    // button:active:after {
+    //   padding: 0;
+    //   margin: 0;
+    //   opacity: 1;
+    //   transition: 0s;
+    // }
 
     .walk-img {
       width: 46%;
@@ -108,8 +111,9 @@
       }
     }
   }
+} // home
 header {
-  max-width: 80%;
+  max-width: 100%;
   display: flex;
   flex-wrap: row top;
   font-size: 7;
@@ -117,8 +121,5 @@ header {
   text-align: center;
   padding: 0 7.5rem;
   margin-bottom: 10rem;
-  vertical-align: center;
-  border: 1px red solid;
+  margin: 0 auto;
 }
-
-} // home

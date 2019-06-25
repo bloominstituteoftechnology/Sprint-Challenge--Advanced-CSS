@@ -1,25 +1,56 @@
 // Navigation code here
+header{
+    .border-bottom();
+.logo{
+    font-size: 25px;
+    color: @header-font-color;
+    padding-bottom: 2rem;
+}
+
 div {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
-
+   @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    padding-bottom: 1rem;
+  }
   nav {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-  }
+    margin: 0 auto;
+    @media only screen and (max-width: 500px) {
+      align-content: center;
+      width: 100%;
+      :first-child {
+        margin-left: 1rem;
+      }
+      :last-child {
+        margin-right: 1rem;
+      }
+    }
 
-  a {
-    color: black;
-    text-decoration: none;
-    font-size: 2rem;
+    a {
+      color: @nav-font;
+      text-decoration: none;
+      font-size: 1.6rem;
+    }
+    a:hover {
+      color: @waterloo;
+      text-decoration: underline;
+      cursor: pointer;
+      @media only screen and (max-width: 500px) {
+        color: purple;
+        background-color: @waterloo;
+      }
+    }
   }
-  a:hover {
-    color: @eastern-blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+}
 }
