@@ -5,7 +5,7 @@
   .intro {
 
     h2 {
-      padding: 15px;
+      padding: 15px 1.5rem; 
     }
 
     @media @phone {
@@ -13,7 +13,7 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 15px 1.5rem;
     }
   
   }
@@ -47,10 +47,10 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    padding: 15px 1.5rem;
 
     h3 {
-      margin-top: 11px;
+      margin-top: 11px 1.1rem;
     }
 
     @media @phone {
@@ -58,7 +58,7 @@
     }
 
     p {
-      margin-top: 13px;
+      margin-top: 13px 1.3rem;
     }
   }
 
@@ -69,13 +69,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
       @media @phone {
-        width: 300%;
-       /* display: flex;
-        flex-direction: column; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
         p {
           font-size: 1.6rem;
@@ -100,8 +106,8 @@
       @media @phone {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
+        margin-left: 0;
+        padding-bottom: 10px;
       }
       
       img {
@@ -114,8 +120,6 @@
   }
   .btn{
     .button-styler(140px; 50px);
-
-    
 
     @media @phone {
       width: 100%;
