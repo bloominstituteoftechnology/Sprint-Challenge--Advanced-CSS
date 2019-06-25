@@ -4,7 +4,7 @@
 }
 
 .button-styler(@width; @height) {
-    button-styler: @width, @height;
+    button-styler: @width @height;
     background: @ebony-clay;  
     color: @porcelain;
     border-radius: 10px;
@@ -12,6 +12,15 @@
     width: 140px;
     height: 50px;
     font-size: 2.5rem;
+
+    .button-styler:hover { 
+        color: @ebony-clay;  
+        background-color: @porcelain;
+        cursor: pointer;
+        transition-duration: 0.4s;
+
+        
+      }
 }
 
 .display-flex {

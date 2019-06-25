@@ -280,9 +280,9 @@ footer {
 }
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 300%;
+    /* display: flex;
+        flex-direction: column; */
   }
   .home .walk .walk-text p {
     font-size: 1.6rem;
@@ -302,6 +302,9 @@ footer {
 @media only screen and (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .walk .walk-img img {
@@ -310,7 +313,7 @@ footer {
   border-radius: 10px;
 }
 .home .btn {
-  button-styler: 140px, 50px;
+  button-styler: 140px 50px;
   background: #23293B;
   color: #F6F7F8;
   border-radius: 10px;
@@ -319,9 +322,11 @@ footer {
   height: 50px;
   font-size: 2.5rem;
 }
-.home .btn btn:hover {
+.home .btn .button-styler:hover {
   color: #23293B;
   background-color: #F6F7F8;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 @media only screen and (max-width: 500px) {
   .home .btn {
