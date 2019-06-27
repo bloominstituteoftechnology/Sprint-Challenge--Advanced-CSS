@@ -1,1 +1,18 @@
-// Mixins Here
+// Parametric Mixins //
+
+// Used on .walk -- homepage.less -- line 76 //
+// Used on .nav-container -- navigation.less -- line 5 //
+.flexStyle(@direction, @justify, @align) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+// Used on .btn -- homepage.less -- line 97 //
+.btn(@radius, @padding) {
+	background-color: @btn-bg-color;
+	color: @nav-bg;
+	padding: @padding;
+	border-radius: @radius;
+}

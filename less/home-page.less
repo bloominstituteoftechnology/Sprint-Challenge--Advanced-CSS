@@ -1,75 +1,128 @@
-// Home Content
-
 .home {
+	max-width: 800px;
+	margin: 0 auto;
 
-  .intro {
+	// HTML Lines 36-40 //
+	.intro {
+		.mainImg {
+			border-radius: 5px;
+			max-width: 800px;
+			width: 100%;
+			margin: 0 auto;
 
-    h2 {
-      padding: 15px;
-    }
+			@media @phone {
+				max-width: 500px;
+				width: 100%;
+			}
+		}
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+		h2 {
+			padding: 15px;
+		}
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+		p {
+			padding: 0 15px;
+		}
+	}
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
+	// HTML Lines 43-47 //
+	.space-images {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 800px;
+		width: 98%;
 
-  .visit-planets {
-    padding: 15px;
+		@media @phone {
+			.sky,
+			.launch {
+				display: none;
+			}
 
-    h3 {
-      margin-top: 11px;
-    }
+			.blast {
+				width: 98%;
+			}
+		}
 
-    p {
-      margin-top: 13px;
-    }
-  }
+		img {
+			width: 28%;
+			margin: 20px 2.5%;
+			border-radius: 20px;
+			height: 100%;
+		}
+	}
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+	// HTML Lines 50-56 //
+	.visit-planets {
+		padding: 15px;
 
-    .walk-text {
-      width: 50%;
+		h3 {
+			margin-top: 11px;
+		}
 
-      h3 {
-        margin-bottom: 10px;
-      }
+		p {
+			margin-top: 13px;
+		}
+	}
 
-      p {
-        margin-bottom: 26px;
-      }
+	// HTML Lines 59-69 //
+	.walk {
+		margin-top: 60px;
+		border-top: 1px solid @main-border-color;
+		padding: 50px 60px;
+		display: flex;
+		justify-content: center;
 
-      .btn {
-      }
-    }
+		@media @phone {
+			.flexStyle(column-reverse, spaced-evenly, center);
+			padding: 0px;
+			width: 98%;
+		}
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+		.walk-text {
+			width: 46%;
+
+			@media @phone {
+				width: 98%;
+			}
+
+			h3 {
+				margin-bottom: 10px;
+			}
+
+			p {
+				margin-bottom: 26px;
+			}
+
+			.btn {
+				.btn(10px, 10px 15px);
+				font-family: 'Ubuntu';
+				font-weight: 600;
+
+				@media @phone {
+					width: 100%;
+				}
+
+				&:hover {
+					background-color: @nav-bg;
+					color: @btn-bg-color;
+				}
+			}
+		}
+
+		.walk-img {
+			width: 46%;
+			margin-left: 4%;
+
+			@media @phone {
+				width: 100%;
+				padding-bottom: 5px;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+		}
+	}
+}
