@@ -1,1 +1,27 @@
 // Mixins Here
+.padding {
+  padding: 10px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flexbox(@justify: center, @align: center) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.custom-btn(@color: white, @bgColor: #22283a, @bRadius: 10px, @height: 45px, @width: 200px, @fontSize: 1.8rem, @fontWeight: bold) {
+  color: @color;
+  background: @bgColor;
+  border-radius: @bRadius;
+  height: @height;
+  width: @width;
+  font-size: @fontSize;
+  font-weight: @fontWeight;
+  .flexbox(@justify: center, @align: center);
+}
