@@ -1,7 +1,10 @@
 // Mixins Here
 
+.width(@width: 100%) {
+  width: @width;
+}
 
-.button(@backColor:@btn-bg-color, @color:@wild-sand, @padding:10px 25px, @text-align:center, @decoration:none, @font-size:20px) {
+.button(@backColor: @btn-bg-color, @color: @wild-sand, @padding: 10px 25px, @text-align: center, @decoration: none, @font-size: 20px) {
 
   background-color: @backColor;
   color: @color;
@@ -13,7 +16,7 @@
 
 .buttonTransition(@webkit: 0.4s, @transition: 0.4s) {
   -webkit-transition-duration: @webkit;
-    transition-duration: @transition;
+  transition-duration: @transition;
 }
 
 
