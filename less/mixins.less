@@ -1,1 +1,23 @@
 // Mixins Here
+.flexed() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-button(@bg-color: black, @width: 300px, @font: white) {
+  background-color: @bg-color;
+  margin: 10px;
+  padding: 10px;
+  width: @width;
+  height: 50px;
+  border-radius: 5px;
+  color: @font;
+  font-size: 1.8rem;
+  text-decoration: none;
+
+  &:hover {
+    background-color: @font;
+    color: @bg-color;
+  }
+}

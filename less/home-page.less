@@ -1,17 +1,23 @@
 // Home Content
 
+.space-nav {
+  .flexed();
+  flex-direction: column;
+  h1 {
+    font-size: 4.5rem;
+    margin: 30px 0;
+  }
+}
+
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,13 +64,16 @@
       }
 
       .btn {
+        a {
+          .sign-button();
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +81,4 @@
       }
     }
   }
-}// home
+} // home
