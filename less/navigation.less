@@ -1,4 +1,6 @@
 .navigation {
+
+
     nav {
         direction: column;
         width: 100%;
@@ -16,6 +18,10 @@
         .nav-links {
             display: flex;
             justify-content: space-around;
+            @media @mobile {
+                width: 100%;
+                justify-content: space-around;
+            }
             width: 50%;
             font-size: 2rem;
             font-weight: bold;
