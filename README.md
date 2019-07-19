@@ -32,15 +32,18 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website?  Adaptive design uses custom made code to to resize and change layout to ensure the best UX/UI to whichever device the site is being viewed on. 
+  Responsive design flows the design and allows the layout to respond accordingly to screen size.  
 
 2. Describe what it means to be mobile first vs desktop first.
+Designing your webpage for smaller mobile device first and then add media queries for larger screens to alter the layout of page(s).
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?  default size 16px - 62.5% of 16px is 10px and 10px is easier math to calculate when using rem units.  1.2rem = 12px.
 
 4. How would you describe preprocessing to someone new to CSS?
+    preprocessing is a headache but for larger projects preprocessing allows you to build functions to reuse repetive lines of code in a much more slim line effective way.  One line vs. 12 lines of code scattered about in a 1000 areas inside your css code.  
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?  Variables are my favorite.  Still struggling with Mixins...
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
