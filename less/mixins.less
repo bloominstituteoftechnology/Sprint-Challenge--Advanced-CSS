@@ -1,1 +1,32 @@
 // Mixins Here
+
+
+.button(@backColor:@btn-bg-color, @color:@wild-sand, @padding:10px 25px, @text-align:center, @decoration:none, @font-size:20px) {
+
+  background-color: @backColor;
+  color: @color;
+  padding: @padding;
+  text-align: @text-align;
+  text-decoration: @decoration;
+  font-size: @font-size;
+}
+
+.buttonTransition(@webkit: 0.4s, @transition: 0.4s) {
+  -webkit-transition-duration: @webkit;
+    transition-duration: @transition;
+}
+
+
+.round-borders {
+  border-radius: 7px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.border {
+  border: 2px solid @btn-bg-color;
+}
+
+.hover(@cursor: pointer) {
+  cursor: @cursor;
+}

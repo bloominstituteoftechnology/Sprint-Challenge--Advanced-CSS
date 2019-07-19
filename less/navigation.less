@@ -1,1 +1,64 @@
 // Navigation code here
+
+
+.nav() {
+  padding: 5%;
+}
+
+.navigation {
+  display: block;
+  text-align: center;
+  background-color: @nav-bg;
+  padding: 20px 0;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    font-size: 1.8rem;
+    margin-left: 20px;
+
+    @media @small {
+      font-size: 1.3rem;
+      margin-left: 10px;
+    }
+  }
+
+  h1 {
+    @media @small {
+      font-size: 2.7rem;
+    }
+  }
+
+  @media @phone {
+    display: block;
+    text-align: center;
+
+    nav {
+      margin: 5% 0 0;
+    }
+  }
+}
+
+
+.navigation nav .first {
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: @crimson;
+    transition: 0.5s;
+  }
+}
+
+a.active {
+  color: @crimson;
+}

@@ -36,3 +36,24 @@ p {
   margin: 0 auto;  
 }
 
+
+.btn {
+  .button();
+  .buttonTransition();
+
+  text-decoration: none;
+  font-size: 20px;
+  .border();
+  .round-borders();
+
+  btn:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    color: darken(white, 5%);
+    background-color: lighten(@btn-bg-color, 40%);
+    
+    .hover();
+  }
+}
