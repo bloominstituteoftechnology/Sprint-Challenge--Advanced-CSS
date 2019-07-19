@@ -4,7 +4,7 @@
   .intro {
     img {
       .rounded(15px);
-      margin-top: 90px;
+      margin-top: 10px;
 
       @media screen and @mobile {
         width: 100%;
@@ -47,7 +47,7 @@
   }
 
   .visit-planets {
-    padding: 15px;
+    padding: 10px 15px;
 
     h3 {
       margin-top: 11px;
@@ -61,7 +61,7 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 30px 60px;
     .flex(row, center, flex-start, no-wrap);
 
     @media screen and @mobile {
@@ -86,6 +86,10 @@
 
       .btn {
         .btn-sm(@btn-bg-color, @porcelain);
+        @media screen and @mobile {
+          width: 800px;
+          height: 70px;
+        }
       }
     }
 
