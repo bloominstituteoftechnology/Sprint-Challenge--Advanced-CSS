@@ -164,12 +164,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 40%;
   font-size: 2rem;
   margin-bottom: 10px;
 }
 nav a {
   text-decoration: none;
+  color: black;
 }
 nav a:hover {
   color: #999;
@@ -280,5 +281,41 @@ footer {
   }
   .walk .walk-text {
     width: 90%;
+  }
+  .walk-img {
+    width: 100%;
+    margin-left: 4%;
+  }
+  .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .space-images .launch {
+    width: 100%;
+  }
+  .space-images .sky {
+    display: none;
+  }
+  .space-images .launch {
+    display: none;
+  }
+  .walk {
+    width: 100%;
+  }
+  .btn a {
+    background-color: black;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  .btn a:hover {
+    background-color: white;
+    color: black;
   }
 }
