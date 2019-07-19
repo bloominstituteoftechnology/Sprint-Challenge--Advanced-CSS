@@ -25,8 +25,19 @@
             
             a {
                 text-align: center;
-                color: @river-bend
+                color: @river-bend;
+
+                &:hover {
+                    @keyframes fadein {
+                      0% {opacity:0;}
+                      100% {opacity:1;}
+                    }
+                    
+                    .fade-in();
+                  }
             }
+
+            
             
         }
     }

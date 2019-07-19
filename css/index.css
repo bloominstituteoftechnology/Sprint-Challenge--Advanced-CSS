@@ -7,12 +7,24 @@
   }
 }
 @media (max-width:500px) {
-  .home .space-images {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container .home .space-images {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    align-items: center;
   }
-  .home .space-images img {
+  .container .home .space-images img {
+    width: 100%;
+  }
+  .container .home .space-images p {
+    width: 100%;
+  }
+  .container .home .walk {
+    flex-direction: column-reverse;
     width: 100%;
   }
 }
@@ -21,7 +33,7 @@
   justify-content: center;
 }
 .basic-btn-style {
-  color: white;
+  color: #F6F7F8;
   text-align: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -211,6 +223,17 @@ p {
   text-align: center;
   color: #454A59;
 }
+.navigation .nav-links a:hover {
+  animation: 2s linear fadein;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -271,9 +294,14 @@ footer {
   background-color: #22283A;
   height: 2rem;
   border-radius: 4px;
-  color: white;
+  color: #F6F7F8;
   text-align: center;
   padding: 1%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  font-weight: bold;
 }
 .home .walk .walk-img {
   width: 46%;

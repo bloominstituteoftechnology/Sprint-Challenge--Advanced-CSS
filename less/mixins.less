@@ -3,8 +3,12 @@
     justify-content: center;
 }
 
+.fade-in(@duration: 2s, @timing:linear, @name:fadein) {
+    animation: @duration @timing @name
+}
+
 .basic-btn-style {
-    color: white;
+    color: @porcelain;
     text-align: center;
 }
 
@@ -12,3 +16,4 @@
     width: @width;
     background-color: @bg-color;
 }
+
