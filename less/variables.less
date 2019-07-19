@@ -24,3 +24,31 @@
 @border-real: #dee2e6;
 
 // Mobile var
+
+@mobile: ~'(max-width:500px)';
+
+@media @mobile {
+     .launch {
+         display: none;
+     }   
+     .sky {
+         display: none;
+     }
+}
+
+@media @mobile {
+    .home  {
+        .space-images {
+
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 100%;
+        }
+        }
+
+      
+    }    
+}
