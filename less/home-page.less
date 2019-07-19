@@ -16,6 +16,12 @@
       .round-borders();
     }
 
+    margin-top: 15%;
+
+    @media @phone {
+      margin-top: 130px;
+    }
+
   }
 
   .space-images {
@@ -70,6 +76,7 @@
       margin-top: 20px;
     }
 
+
     .walk-text {
       width: 50%;
 
@@ -82,12 +89,18 @@
       }
 
       .btn {
-        width: 130px;
-        .width();
-        height: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .button(@btn-bg-color, @wild-sand, 10px, center, none, 20px);
+      }
+
+      @media @phone {
+        .btn {
+          width: 130px;
+          .width();
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
       @media @phone {
@@ -119,8 +132,9 @@
       .width();
     }
   }
-  @media @phone{
-    footer{
+
+  @media @phone {
+    footer {
       margin-bottom: 2%;
     }
   }

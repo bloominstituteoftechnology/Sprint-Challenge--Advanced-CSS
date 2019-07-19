@@ -8,11 +8,20 @@
 .navigation {
   display: block;
   text-align: center;
-  background-color: @nav-bg;
+  // background-color: @nav-bg;
+  background: rgba(@wild-sand, 0.7);
   padding: 20px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  // opacity: 0.7;
 
   h1 {
     font-size: 4rem;
+    
   }
 
   nav {
