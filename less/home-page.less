@@ -1,23 +1,23 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
+      width: 100%;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile {
+      width: 100%;
 
     img {
       width: 28%;
@@ -58,13 +58,19 @@
       }
 
       .btn {
+        .custom-btn();
+
+        &:hover {
+          text-decoration: underline;
+          background-color: black;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +78,4 @@
       }
     }
   }
-}// home
+} // home
