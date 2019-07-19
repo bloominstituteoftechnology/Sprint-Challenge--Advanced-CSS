@@ -1,10 +1,44 @@
 // Home Content
+.hero {
+  height: 80vh;
+  max-width: 100%;
+  width: 100%;
+  background-image: url(../img/main-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .flex(row, center, center, no-wrap);
 
+  @media screen and @mobile {
+    height: 70vh;
+  }
+
+  .hero-text {
+    .flex(column, center, center, no-wrap);
+    h1 {
+      color: darken(@sea-shell, 50%);
+      font-size: 6rem;
+      text-shadow: 4px 2px 3px rgba(94, 97, 100, 0.4);
+      text-decoration-style: solid;
+    }
+    h3 {
+      color: darken(@sea-shell, 50%);
+      font-size: 4rem;
+      text-shadow: 4px 2px 3px rgba(94, 97, 100, 0.4);
+      @media screen and @mobile {
+        text-align: center;
+      }
+    }
+  }
+}
 .home {
+  margin-top: 8.5vh;
+  @media screen and @mobile {
+    margin-top: 15vh;
+  }
   .intro {
     img {
       .rounded(15px);
-      margin-top: 10px;
 
       @media screen and @mobile {
         width: 100%;
@@ -32,6 +66,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      transition: ease-in-out;
+      transition-duration: 0.25s;
+      &:hover {
+        transform: scale(1.07, 1.07);
+      }
       @media screen and @mobile {
         width: 90%;
         .margin-horizontal(5%);
@@ -86,6 +125,10 @@
 
       .btn {
         .btn-sm(@btn-bg-color, @porcelain);
+        &:hover {
+          color: @btn-bg-color;
+          background: @porcelain;
+        }
         @media screen and @mobile {
           width: 800px;
           height: 70px;
