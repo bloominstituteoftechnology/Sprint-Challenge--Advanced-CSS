@@ -168,6 +168,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: #5E6164;
 }
 .container {
   max-width: 800px;
@@ -180,7 +181,7 @@ p {
   text-align: center;
   font-size: 4rem;
   height: 10rem;
-  padding: 1.2rem;
+  padding: 1.3rem;
 }
 .navigation a {
   text-decoration: none;
@@ -274,7 +275,7 @@ footer {
     width: 100%;
     height: auto;
     margin: 0;
-    padding: 2.5%;
+    padding: 1.5rem;
   }
 }
 .visit-planets {
@@ -360,7 +361,7 @@ footer {
   .walk .walk-img {
     width: 100%;
     margin: 0;
-    padding: 1.3rem;
+    padding: 1.5rem;
   }
 }
 .walk .walk-img img {
