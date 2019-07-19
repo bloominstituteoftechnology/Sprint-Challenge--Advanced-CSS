@@ -174,6 +174,17 @@ nav a {
 nav a:hover {
   color: #999;
 }
+@media screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -259,4 +270,15 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .walk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .walk .walk-text {
+    width: 90%;
+  }
 }
