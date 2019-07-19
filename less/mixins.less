@@ -1,1 +1,53 @@
 // Mixins Here
+.flex(@direction, @justify, @align, @wrap) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+  flex-wrap: @wrap;
+}
+
+.padding-vertical (@num) {
+  padding-top: @num;
+  padding-bottom: @num;
+}
+
+.padding-horizontal (@num) {
+  padding-left: @num;
+  padding-right: @num;
+}
+
+.margin-vertical(@num) {
+  margin-top: @num;
+  margin-bottom: @num;
+}
+
+.margin-horizontal(@num) {
+  margin-left: @num;
+  margin-right: @num;
+}
+.link(@color) {
+  text-decoration: none;
+  transition: ease-in-out;
+  transition-duration: 0.2s;
+  color: @color;
+}
+
+.rounded(@num) {
+  border-radius: @num;
+}
+
+.btn-sm (@background, @text) {
+  height: 37px;
+  width: 103px;
+  background-color: @background;
+  color: @text;
+  margin: 0 auto;
+  .rounded(5px);
+  padding: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
