@@ -1,1 +1,46 @@
 // Navigation code here
+
+.header {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: @nav-bg;
+    
+   
+
+    h1 {
+        font-size: 5rem;
+        .margin-bottom-small();
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+      
+      
+       
+        
+
+        nav {
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            .margin-bottom-small();
+
+            @media @mobile {
+                width:500px;
+                justify-content: space-around;
+
+            }
+          
+                
+        }
+
+        a {
+            text-decoration: none;
+            color:@nav-font; 
+            font-size: 2.3rem;
+        }
+    }
+
+}

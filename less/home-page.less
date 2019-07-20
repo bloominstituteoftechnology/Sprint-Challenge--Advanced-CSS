@@ -4,6 +4,14 @@
 
   .intro {
 
+    img{
+      width:100%;
+
+      @media(max-width: 500px){
+        width: 100%;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -18,6 +26,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    .sky{
+      @media @mobile{
+        display:none;
+      }
+    }
+    .blast{
+      @media @mobile{
+        display:none;
+      }
+    }
+    .launch{
+      @media @mobile{
+        width: 100%
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +70,18 @@
     display: flex;
     justify-content: center;
 
+      @media @mobile{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile{
+        width: 100%;
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +92,35 @@
       }
 
       .btn {
+        width: 80px;
+        height:40px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top:10px;
+        font-size: 1.8rem;
+        border-radius: 5px;
+        transition: all 0.2s;
+        @media @mobile{
+          width: 100%;
+          }
+      
+
+          &:hover{
+            background-color: white;
+            color:black;
+          }
       }
     }
+
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+      width: 100%;
+      margin-left: 0;
+      }
       
       img {
         width: 100%;
