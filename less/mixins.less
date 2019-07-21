@@ -1,1 +1,22 @@
 // Mixins Here
+.flex(@rule1,row){
+    display:flex;
+    flex-direction:@rule1;
+
+}
+
+.button (@width: 20px, @color: white, @bgcolor: @btn-bg-color, @fontsize: 20px){
+    width:@width;
+    color: @color;
+    background-color:@bgcolor;
+    font-size: @fontsize;
+    }
+
+.button_border (@radius:30px, @border:2px solid green){
+        border-radius:@radius;
+        border:@border;
+        }
+
+.mob-width (@width: 100%){
+    width:@width;
+    }
