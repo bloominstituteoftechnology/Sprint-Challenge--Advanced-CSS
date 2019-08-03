@@ -5,3 +5,18 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.button-style(@font-color, @background-color){
+    width: 30%;
+    font-size: 1.75rem;
+    padding: 1rem 2rem;
+    color: @font-color;
+    background-color: @background-color;
+    border-radius: .5rem;
+    
+
+    &:hover{
+      background-color: @font-color;
+      color: @background-color;
+    }
+  }

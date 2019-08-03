@@ -1,4 +1,3 @@
-@font-color color: #444958;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -235,6 +234,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.75rem;
+  padding: 1rem 2rem;
+  color: #F6F7F8;
+  background-color: #23293B;
+  border-radius: 0.5rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
