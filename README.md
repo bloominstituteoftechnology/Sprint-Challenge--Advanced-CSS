@@ -56,7 +56,8 @@ This makes using rem so much easier to calculate.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 My favorite concept is imports. I can use imports to control the chaos by building smaller 
-files that flow into one file that is then compiled into CSS. They make everything so much easier and organized.
+files that flow into one file that is then compiled into CSS. 
+They make everything so much easier and organized.
 The most troubles I have is using media queries.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
