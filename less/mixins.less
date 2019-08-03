@@ -1,14 +1,23 @@
 // Mixins Here
-@display: flex;
-@justify-content: flex-start;
-.btn{
+@width: 90px;
+.btn(@width: 90px; @background: #22283B; @color: white; @display: flex; @justify-content: flex-start;){
     display: @display;
     justify-content: @justify-content;
-    height: 20%;
-    .btn2 {
-    background: #22283B;
-    width: 40%;
-    color: white;
-    border-radius: 8px;
 }
+    @background: #22283B;
+    .btn2 {
+    background: @background;
+    width: @width;
+    color: white;
+    height: 40px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(63, 208, 252);
+        color: rgb(209, 56, 107);
+    }
+    .pad {
+        padding: 3px;
+    }
 }

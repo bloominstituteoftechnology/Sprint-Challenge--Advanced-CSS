@@ -1,16 +1,18 @@
-/*
-@phone: ~"(max-width: 500px)";
-*/
-.btn {
-  display: flex;
-  justify-content: flex-start;
-  height: 20%;
-}
-.btn .btn2 {
+.btn2 {
   background: #22283B;
-  width: 40%;
+  width: 90px;
   color: white;
+  height: 40px;
+  font-size: 1.8rem;
   border-radius: 8px;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: #3fd0fc;
+  color: #d1386b;
+}
+.btn2 .pad {
+  padding: 3px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -256,54 +258,46 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-/*
-@width: 92%;
 @media (max-width: 500px) {
   .containerhome {
-    width: @width;
-    margin: 0px 20px 0px 20px;
-  .Spacewalkers{
-
- display: flex;
-    .navi, a {
-    display: flex;
-  flex-direction: row;
- }
-}
-@display: none;
-.headerimg {
-  width: 100%;
-}
-.skyimg { 
-  display: none;
-}
-.walk, .walk-text, .walk-img {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  margin-top: 40px;
-  h3 {
-    display: flex;
-    position: absolute;
-    bottom: -310px;
+    width: 99%;
   }
-  .btn {
+  .navi,
+  .Spacewalkers {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+  }
+  .navi a,
+  .Spacewalkers a {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .headerimg {
+    width: 100%;
+  }
+  .sky,
+  .launch {
+    display: none;
+  }
+  .space-images,
+  .blast {
+    display: flex;
+    width: 190%;
+    height: 300px;
+  }
+  .walk,
+  .walk-text,
+  .walk-img {
+    display: flex;
+    flex-direction: column;
+    width: 110%;
+    height: 50%;
   }
   .btn2 {
-    margin: 15px 0px 10px 10px;
     display: flex;
-    flex-wrap: wrap;
-    font-size: 1.7rem;
-    text-decoration: none;
-    background: #22283B;
-    color: white;
-    width: 95%;
+    width: 190%;
+    height: 300px;
     height: 60px;
-    justify-content: center;
-    border-radius: 10px;
-    border: 1px solid black;
   }
 }
-*/

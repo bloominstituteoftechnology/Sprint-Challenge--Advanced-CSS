@@ -1,5 +1,4 @@
 // Home Content
-
 .home {
 
   .intro {
@@ -57,8 +56,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
     }
 
     .walk-img {
@@ -73,54 +70,40 @@
     }
   }
 }// home
-/*
-@width: 92%;
-@media (max-width: 500px) {
+@media @phone {
   .containerhome {
-    width: @width;
-    margin: 0px 20px 0px 20px;
-  .Spacewalkers{
-
- display: flex;
-    .navi, a {
+    width: 99%;
+  }
+    .navi, .Spacewalkers {
     display: flex;
-  flex-direction: row;
- }
+    flex-direction: row;
+    width: 40%;
+    a {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
 }
 @display: none;
 .headerimg {
   width: 100%;
 }
-.skyimg { 
-  display: none;
+
+.sky, .launch { 
+  display: @display;
+}
+.space-images, .blast {
+  display: flex;
+  width: 190%;
+  height: 300px;
 }
 .walk, .walk-text, .walk-img {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  margin-top: 40px;
-  h3 {
-    display: flex;
-    position: absolute;
-    bottom: -310px;
-  }
-  .btn {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .btn2 {
-    margin: 15px 0px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.7rem;
-    text-decoration: none;
-    background: #22283B;
-    color: white;
-    width: 95%;
-    height: 60px;
-    justify-content: center;
-    border-radius: 10px;
-    border: 1px solid black;
-  }
+  display: flex; 
+  flex-direction: column;
+  width: 110%;
+  height: 50%;
 }
-*/
+.btn2 {
+  .blast() ;
+  height: 60px;
+}
+}
