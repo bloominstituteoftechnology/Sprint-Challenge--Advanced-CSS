@@ -73,3 +73,37 @@
     }
   }
 }// home
+@media @phone {
+  .containerhome {
+    width: 100%;
+  }
+  .navi {
+    display: flex;
+    /*come back to width:*/
+  .nav, .spacewalkers, a {
+    flex-direction: row;
+  }
+  
+}
+.headerimg {
+  display: none;
+}
+.skyimg { 
+  display: none;
+}
+.walk, .walk-text, .walk-img {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-top: 40px;
+  h3 {
+    display: flex;
+    position: absolute;
+    bottom: -290px;
+  }
+  .btn {
+    display: flex;
+    position: inherit;
+  }
+}
+}
