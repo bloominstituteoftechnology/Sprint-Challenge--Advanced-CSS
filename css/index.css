@@ -204,6 +204,63 @@ footer {
     width: 500px;
   }
 }
+.header1 h1 {
+  position: relative;
+  animation-name: header1;
+  animation-duration: 10s;
+}
+@keyframes header1 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  10% {
+    background-color: yellow;
+    left: 40px;
+    top: 0px;
+  }
+  20% {
+    background-color: blue;
+    left: 40px;
+    top: 80px;
+  }
+  30% {
+    background-color: green;
+    left: 0px;
+    top: 80px;
+  }
+  40% {
+    background-color: gold;
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    background-color: purple;
+    left: 40px;
+    top: 0px;
+  }
+  60% {
+    background-color: #005180;
+    left: 40px;
+    top: 80px;
+  }
+  70% {
+    background-color: #804900;
+    left: 0px;
+    top: 80px;
+  }
+  80% {
+    background-color: aqua;
+    left: 0px;
+    top: 40px;
+  }
+  100% {
+    background-color: silver;
+    left: 0px;
+    top: 0px;
+  }
+}
 @media (max-width: 500px) {
   .home {
     width: 500px;
