@@ -1,1 +1,23 @@
 // Mixins Here
+
+
+.center(){
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#body{
+    text-decoration: none;
+    color:black;
+}
+
+.button-layout(@font, @border){
+    display:flex;
+    width:25%;
+    background-color:black;
+    padding:0.5rem;
+    font-size: 2rem;
+    color:@font;
+    border-radius:@border;   
+    
+}
