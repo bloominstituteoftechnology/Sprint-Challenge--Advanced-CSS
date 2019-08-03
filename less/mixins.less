@@ -1,1 +1,25 @@
 // Mixins Here
+.atag{
+  text-decoration: none;
+  color:dimgrey;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  }
+  a{
+    .atag();
+  }
+.headerstyle{
+  margin-top: 10px;
+  padding-top: 15px;
+  display: block;
+  max-width: 100%;
+  height: 100px;
+  background-color: #f2f7f7;
+  text-align: center;
+
+}
+.button(@backgroundColor, @fontColor){
+  background-color: @backgroundColor;
+  color: @fontColor;
+}
