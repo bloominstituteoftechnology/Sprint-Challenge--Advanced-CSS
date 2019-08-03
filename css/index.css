@@ -287,12 +287,21 @@ footer {
     height: 300px;
   }
   .walk,
-  .walk-text,
-  .walk-img {
-    display: flex;
-    flex-direction: column;
+  .walk-text {
     width: 110%;
     height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+  }
+  .walk .walk-img,
+  .walk-text .walk-img {
+    display: flex;
+    position: absolute;
+    bottom: -590px;
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
   }
   .btn2 {
     display: flex;
