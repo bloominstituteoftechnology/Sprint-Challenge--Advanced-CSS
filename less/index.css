@@ -282,19 +282,17 @@ html {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home header,
-  .home p,
-  .home .container.home,
-  .home .intro,
-  .home .header-image,
-  .home .visit-planets,
-  .home .walk,
-  .home .walk-text,
-  .home .btn {
+  .home .header-image {
     width: 450px;
   }
-  .home .space-images img .sky,
-  .home .space-images img .launch {
-    display: hidden;
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .blast {
+    background-size: contain;
+  }
+  .home .walk {
+    flex-direction: column;
   }
 }

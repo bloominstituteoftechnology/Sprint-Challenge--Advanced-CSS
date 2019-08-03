@@ -101,15 +101,16 @@ body, html
 	
 	@media @phone
 	{
-		header, p, .container.home, .intro, .header-image, .visit-planets, .walk, .walk-text, .btn { width: 450px; }
 		
-		.space-images
+		.header-image { width: 450px; }
+		
+		.sky, .launch { display: none; }
+		
+		.blast { background-size: contain; }
+		
+		.walk
 		{
-			img
-			{
-				.sky, .launch { display: hidden; }
-			}
-			
+			flex-direction: column;
 		}
 	}
 }// home
