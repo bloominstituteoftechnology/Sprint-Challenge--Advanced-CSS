@@ -11,13 +11,24 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      .blast{
+        width: 100%;
+      }
+      .sky{
+        display:none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -45,9 +56,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      flex-direction: column-reverse;
+      margin-top: 10px;
+      padding: 0px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        max-width: 100%;
+        width:100%;
+        margin-left: 20px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -64,7 +85,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -73,3 +99,35 @@
     }
   }
 }// home
+//my code
+header{
+  img{
+    border-radius: 10px;
+    @media @phone{
+     max-width: 100%;
+    }
+
+  }
+}
+.btn{
+  width: 10rem;
+  height: 4.2rem;
+  border: 1px dotted black;
+  font-size: 2.2rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  .button(#0e2333;white);
+  border-radius: 10px;
+  @media @phone{
+    max-width: 100%;
+    width: 100%;
+    height: 7rem;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+}
+.btn:hover{
+  .button(white,#0e2333);
+}
