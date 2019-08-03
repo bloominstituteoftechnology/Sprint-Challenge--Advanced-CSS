@@ -160,6 +160,41 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header h1 {
+  font-size: 75px;
+  display: flex;
+  align-content: center;
+  margin-left: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 35px;
+  border: 5px solid darkorange;
+}
+header nav a {
+  margin-right: 65px;
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  padding: 20px 20px;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav a:first-child {
+  margin-left: 0;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
+.services-header-img {
+  padding-top: 20px;
+  width: 100%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
