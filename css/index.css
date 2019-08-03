@@ -270,7 +270,17 @@ header img {
   border-radius: 10px;
 }
 .btn {
-  width: 3.8rem;
-  height: 2.8rem;
+  width: 10rem;
+  height: 4.2rem;
   border: 1px dotted black;
+  font-size: 2.2rem;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #0e2333;
+  color: white;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: white;
+  color: #0e2333;
 }
