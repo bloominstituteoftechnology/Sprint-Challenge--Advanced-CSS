@@ -160,6 +160,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header nav {
+  flex-direction: row;
+}
+header nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #23293B;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +177,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  max-width: 900px;
+}
+.home .header {
+  max-width: 100%;
+  background: #5E6164;
+  display: inline;
+  align-content: center;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +228,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 28%;
+  margin-top: 3%;
+  float: right;
+  background-color: solid white;
+  padding: 2%;
+  border: 0.5px solid black;
+  border-radius: 5%;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
