@@ -1,3 +1,4 @@
+@font-color color: #444958;
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +160,29 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e0e0;
+}
+nav h1 {
+  font-size: 3.2rem;
+}
+nav div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-evenly;
+}
+nav div a {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+  padding: 1rem ;
+  color: black;
 }
 footer {
   color: #22283B;
