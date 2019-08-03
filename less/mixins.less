@@ -1,1 +1,23 @@
 // Mixins Here
+.title {
+  justify-content: center;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.topnav {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+//Parametric Mixins
+.display(@align,@justify) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  background-color: @btn-bg-color;
+  color: @porcelain;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 8px 25px;
+}
