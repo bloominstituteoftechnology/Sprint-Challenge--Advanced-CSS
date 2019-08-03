@@ -1,1 +1,18 @@
 // Mixins Here
+.create-buttons(@font-size, @textdec, @color, @bg-color, @border, @border-radius, @margin, @padding)
+{
+	font-size: @font-size;
+	text-decoration: @textdec;
+	color: @color;
+	background: @bg-color;
+	border: @border;
+	border-radius: @border-radius;
+	margin: @margin;
+	padding: @padding;
+}
+
+.hover-state(@text-color, @background-color)
+{
+	color: @text-color;
+	background: @background-color;
+}
