@@ -1,1 +1,19 @@
 // Mixins Here
+.hoverfun(@color1,@color2){
+      
+    &:hover {
+        color:@color2;
+        
+        background-color: lighten(@color1,10%)
+      }
+    }
+    .sbutton(@pad,@radius,@bkcolor,@txtcolor,@width,@size) {
+        padding: @pad;
+        border-radius: @radius;
+        background-color: @bkcolor;
+        color: @txtcolor;
+        width: @width;
+        font-size:@size; 
+        .hoverfun(blue,red);
+     
+      }

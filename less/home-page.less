@@ -1,7 +1,35 @@
 // Home Content
-
+.header1 {
+  background: #f4f4f4;
+  width:100%;
+  text-align: center;
+  margin:0 auto;
+  margin-top: 2%;
+  padding: 1% 0;
+  @media @phone {
+    width:500px;
+    // padding:4%;
+  } 
+  
+}
 .home {
-
+  @media @phone {
+    width:500px;
+  
+  } 
+  .main-header
+      {
+        width:100%;
+        
+    img {
+    
+    border-radius: 5px;
+    @media @phone {
+      max-width:500px;
+    
+    } 
+    }
+  }
   .intro {
 
     h2 {
@@ -18,12 +46,33 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media @phone {
+      max-width:500px;
+      .sky {
+        
+        display:none;
+        
+      }
+      .launch {
+        
+        display:none;
+        
+      } 
+      
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width:100%;
+      }
+
+      
+      
+      
+      
     }
   }
 
@@ -45,9 +94,20 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      
+      flex-direction: column-reverse;
+      margin:1% auto;
+      padding:0 2%;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width:100%;
+        
+       
+      }      
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +118,51 @@
       }
 
       .btn {
+        
+        .sbutton{
+          @media @phone {
+            
+          @btnwidth: 100%;
+            
+           .sbutton(@btnpadding,
+                   @btnborder-radius,
+                  @btnbackground-color,
+                 @btntxtcolor,
+                 @btnwidth,
+                @btnfont-size) ;
+            
+           
+         }   
+          border:@btnborder;
+          .sbutton(@btnpadding,
+                   @btnborder-radius,
+                   @btnbackground-color,
+                   @btntxtcolor,
+                   @btnwidth,
+                  @btnfont-size) ;
+         
+        }
+                     
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width:100%;
+        margin:0 auto;
+       }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+       
+          
+        }
+      
     }
   }
 }// home
+
