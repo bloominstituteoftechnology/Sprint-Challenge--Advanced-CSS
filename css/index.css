@@ -186,6 +186,13 @@ nav div a {
   padding: 1rem;
   color: #22283A;
 }
+nav div a .pointer {
+  cursor: pointer;
+}
+nav div a:hover {
+  color: red;
+  opacity: 0.4;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -295,13 +302,17 @@ footer {
   width: 30%;
   font-size: 1.75rem;
   padding: 1rem 2rem;
-  color: #F6F7F8;
+  color: white;
   background-color: black;
+  text-decoration: none;
   border-radius: 0.5rem;
 }
 .walk .walk-text .btn:hover {
-  background-color: #F6F7F8;
+  background-color: white;
   color: black;
+}
+.walk .walk-text .btn:hover .pointer {
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .walk .walk-text .btn {
