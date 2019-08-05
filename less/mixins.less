@@ -10,3 +10,23 @@
 .round-corners(){
     border-radius: 5px; 
 }
+
+.sign-up(@bg-color, @text-color) {
+    background-color: @bg-color;
+    color: @text-color;
+    padding: 7px 8px 7px 8px;
+    .round-corners();
+    width: 90px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.sign-up-hover(@bg-color, @text-color) {
+    background-color: @text-color;
+    color: @bg-color;
+    padding: 7px 8px 7px 8px;
+    .round-corners();
+    width: 90px;
+    text-align: center;
+    font-size: 1.4rem;
+}
