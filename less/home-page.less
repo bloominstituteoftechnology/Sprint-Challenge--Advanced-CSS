@@ -2,10 +2,21 @@
 
 .home {
 
+  @media @phone {
+    .center();
+    flex-wrap: wrap;
+
+  }
+
   .intro {
     .main-header {
       .border-radius(5px);
+
+      @media @phone {
+        width: 100%;
+      }
     }
+
 
     h2 {
       padding: 15px;
@@ -27,6 +38,24 @@
       margin: 20px 2.5%;
       height: 100%;
       .border-radius(20px);
+
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media phone {
+        display: none;
+      }
+    }
+
+    @media @phone {
+      .center();
+      flex-direction: column;
     }
   }
 

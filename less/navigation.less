@@ -5,15 +5,18 @@
     background: @nav-bg;
     border-color: @nav-border;
 
+    @media @phone {
+        width: 100%;
+        .center();
+    }
+
 
     .nav-container {
         flex-direction: column;
         text-align: center;
         .center();
 
-        @media @phone {
-            width: 100%;
-        }
+
 
         .logo {
             font-size: 4rem;
