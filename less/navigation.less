@@ -1,1 +1,50 @@
 // Navigation code here
+header {
+  text-align: center;
+  
+  .nav-container {
+    padding: 20px;
+    background: @nav-bg;
+    font-family: @nav-font;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0.6;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+  
+  nav {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+    a {
+      margin: 20px 0;
+      font-size: 2rem;
+      color: black;
+      text-decoration: none;
+      font-family: @nav-font;
+      
+      &:hover {
+        color: dodgerblue;
+      }
+    }
+  }
+
+  @media @phone {
+    img {
+      width: 100%;
+    }
+  }
+
+}
+.header-img {
+  padding-top: 160px;
+  width: 800px;
+  margin: 0 auto;
+}

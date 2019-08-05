@@ -1,1 +1,14 @@
 // Mixins Here
+
+.btn-style(@text-color, @bg-color) {
+  color: @text-color;
+  background: @bg-color;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.btn-sizes(@pad, @width, @b-radius) {
+  padding: @pad;
+  width: @width;
+  border-radius: @b-radius;
+}
