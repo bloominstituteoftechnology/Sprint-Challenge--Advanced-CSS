@@ -167,6 +167,10 @@ header .nav-container {
   padding: 20px;
   background: #F6F6F6;
   font-family: #454A59;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.6;
 }
 header h1 {
   font-size: 6rem;
@@ -191,6 +195,11 @@ header nav a:hover {
   header img {
     width: 100%;
   }
+}
+.header-img {
+  padding-top: 160px;
+  width: 800px;
+  margin: 0 auto;
 }
 footer {
   color: #22283B;
