@@ -1,4 +1,5 @@
 // General Styles
+
 * {
   box-sizing: border-box;
 }
@@ -7,12 +8,17 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+body,
+html {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
@@ -40,29 +46,27 @@ p {
   margin: 0 auto;
 }
 
-
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     h1 {
       font-size: 4.2rem;
-     }
+    }
+
     img {
       .wd100;
-     }
-   }
+    }
+  }
 
   nav {
     margin-top: 10px;
     margin-bottom: 10px;
-
-    @media (max-width: 500px){
+    @media (max-width: 500px) {
       margin-top: 20px;
-      }
+    }
 
     a {
       margin: 30px;
@@ -70,19 +74,17 @@ header {
       font-size: 1.6rem;
       color: black;
       font-weight: bold;
-
-      @media (max-width: 500px){
+      @media (max-width: 500px) {
         margin: 20px;
-       }
-     }
+      }
+    }
   }
 
   h2 {
-  align-self: flex-start;
+    align-self: flex-start;
   }
 
   img {
-   border-radius: 5px;
+    border-radius: 5px;
   }
-
 }
