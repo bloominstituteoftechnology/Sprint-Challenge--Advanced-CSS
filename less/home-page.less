@@ -60,6 +60,15 @@
       }
 
       .btn {
+        .btn-style(#fff, @btn-bg-color);
+        .btn-sizes(10px 0, 100px, 10px);
+
+        &:hover {
+          color: @btn-bg-color;
+          background: #fff;
+          padding: 8px 0;
+          border: 2px solid @btn-bg-color;
+        }
       }
     }
 
