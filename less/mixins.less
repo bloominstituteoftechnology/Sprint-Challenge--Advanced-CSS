@@ -3,9 +3,29 @@
 .center() {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .border-radius(@radius) {
     border-radius: @radius;
+}
+
+.custom-btn(@width, @height) {
+    .center();
+    .border-radius(7px);
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: white;
+    border: 1px solid black;
+    font-size: 1.8rem;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    &:hover {
+        background: white;
+        color: @btn-bg-color;
+    }
 }

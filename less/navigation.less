@@ -5,10 +5,15 @@
     background: @nav-bg;
     border-color: @nav-border;
 
+
     .nav-container {
         flex-direction: column;
         text-align: center;
         .center();
+
+        @media @phone {
+            width: 100%;
+        }
 
         .logo {
             font-size: 4rem;
@@ -24,4 +29,6 @@
             }
         }
     }
+
+
 }

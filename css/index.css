@@ -171,7 +171,12 @@ p {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container {
+    width: 100%;
+  }
 }
 .main-navigation .nav-container .logo {
   font-size: 4rem;
@@ -237,6 +242,27 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 100px;
+  height: 35px;
+  background-color: #22283A;
+  color: white;
+  border: 1px solid black;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
