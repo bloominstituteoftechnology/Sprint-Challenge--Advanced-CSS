@@ -194,9 +194,11 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  text-align: left;
 }
 .home .intro p {
   padding: 0 15px;
+  text-align: left;
 }
 .home .space-images {
   display: flex;
