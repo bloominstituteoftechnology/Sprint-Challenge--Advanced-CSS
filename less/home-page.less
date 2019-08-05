@@ -13,6 +13,10 @@
       padding:0 15px;
       text-align: left;
     }
+
+    @media @phone {
+      width: 100%;
+    }
   
   }
 
@@ -26,6 +30,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      img  {
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -69,12 +85,42 @@
           padding: 8px 0;
           border: 2px solid @btn-bg-color;
         }
+
       }
+      @media @phone {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          padding: 25px;
+
+          &:hover {
+            padding: 23px;
+            border: 2px solid @btn-bg-color;
+          }
+        }
+      }
+
+    }
+    @media @phone {
+      width: 100%;
+      flex-direction: column-reverse;
+      padding: 3%; 
+
+      h3 {
+        margin-top: 20px;
+      }
+      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin: 0;
+      }
       
       img {
         width: 100%;
