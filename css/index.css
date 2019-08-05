@@ -3,6 +3,11 @@
   justify-content: center;
   align-items: center;
 }
+.btnstyling {
+  background-color: #22283A;
+  color: #F6F7F8;
+  border-radius: 12px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -176,12 +181,12 @@ p {
 }
 .container .NavSection h1 {
   font-size: 4rem;
-  align-items: baseline;
   padding: 1rem;
 }
-.container .NavSection h1 nav {
-  font: #454A59;
+.container .NavSection h1 nav a {
   text-decoration: none;
+  font-size: 2.5rem;
+  justify-content: space-evenly;
 }
 footer {
   color: #22283B;
@@ -193,56 +198,69 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+.container .intro h2 {
   padding: 15px;
 }
-.home .intro p {
+.container .intro p {
   padding: 0 15px;
 }
-.home .space-images {
+.container .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.container .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+@media (max-width: 500px) {
+  .container .space-images img .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container .space-images img .sky .launch {
+    display: none;
+  }
+}
+.container .visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.container .visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.container .visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.container .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.container .walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.container .walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.container .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn button {
-  font-size: 1rem;
+.container .walk .walk-text .btn button {
+  width: 8rem;
+  background-color: #22283A;
+  color: #F6F7F8;
+  border-radius: 12px;
 }
-.home .walk .walk-text .walk-img {
+.container .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.container .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;

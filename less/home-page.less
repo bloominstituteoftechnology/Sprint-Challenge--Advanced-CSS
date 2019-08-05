@@ -1,6 +1,6 @@
 // Home Content
 
-.home {
+.container {
 
   .intro {
 
@@ -24,6 +24,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .sky {
+        @media @mobile {
+          display: none;
+        }
+      .launch {
+        @media @mobile {
+          display: none;
+        }
+      }
+      }
     }
   }
 
@@ -57,9 +67,11 @@
         margin-bottom: 26px;
       }
 
-    .btn{
-      button{
-        font-size: 1rem;
+      .btn {
+        button{
+          width: 8rem;
+          .btnstyling();
+        }
       }
     }
 
@@ -74,5 +86,4 @@
       }
     }
   }
-}
-}
+}// home
