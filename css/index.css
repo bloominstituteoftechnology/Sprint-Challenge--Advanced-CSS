@@ -198,7 +198,7 @@ p {
 .nav-container {
   display: flex;
   flex-direction: column;
-  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.5);
   position: fixed;
   /* Set the navbar to fixed position */
   top: 0;
@@ -300,7 +300,6 @@ footer {
 .home .intro .header-image {
   border-radius: 5px;
   margin-top: 112px;
-  opacity: 0.5;
 }
 @media (max-width: 500px) {
   .home .intro .header-image {
