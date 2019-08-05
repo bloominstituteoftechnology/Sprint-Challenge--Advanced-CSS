@@ -1,1 +1,31 @@
 // Navigation code here
+nav {
+    .flex-style(column, center, center);
+    background-color: rgb(228, 224, 224);
+
+    h1 {
+        .h-font-size;
+
+    }
+
+
+    div {
+        .flex-style(row, center, space-evenly);
+
+        a {
+            .pointer {
+                cursor: pointer;
+            }
+            font-size: 1.9rem;
+            line-height: 1.4;
+            text-decoration: none;
+            padding: 1rem;
+            color: @btn-bg-color;
+            &:hover{
+                color:red;
+                opacity:0.4;
+            }
+        }
+
+    }
+}
