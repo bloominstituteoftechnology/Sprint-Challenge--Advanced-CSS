@@ -1,3 +1,8 @@
+.center {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +164,24 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.container .NavSection {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.container .NavSection h1 {
+  font-size: 4rem;
+  align-items: baseline;
+  padding: 1rem;
+}
+.container .NavSection h1 nav {
+  font: #454A59;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
