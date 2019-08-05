@@ -1,1 +1,27 @@
 // Mixins Here
+
+.round-borders (@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+  }
+
+.button (@background, @color: white) {
+    padding: 3%;
+    text-align: center;
+    margin-top: 1.5%;
+    .round-borders(8px);
+    font-size: 25px;
+    width: 35%;
+    background: @background;
+    color: @color;
+
+    &:hover, &:focus {
+        background: lighten(@background, 25%); // We'll cover this in the next lesson. Just to tease this out
+    }
+
+    @media (max-width:@phone) {
+
+        width: 100%;
+      }
+}

@@ -1,75 +1,100 @@
-// Home Content
 
 .home {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   flex-direction: column;
 
-  .intro {
+   .intro {
+       h2 {
+           padding: 1.5%;
+       }
 
-    h2 {
-      padding: 15px;
-    }
+       p {
+        padding: 1.5%; 
+        margin-bottom: 3%; 
+       }
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
+       @media (max-width:@phone) {
+       
+        p {
+            font-size: 1.5em;
+            width: 100vw; 
+        }
 
-  .space-images {
+        img {
+            width: 100vw;
+        }
+      }
+   }
+
+   .space-images {
+       display: flex;
+       justify-content: space-around;
+       margin-bottom: 5%;
+       img {
+           .round-borders(20px);
+       }
+
+       @media (max-width:@phone) {
+
+        img {
+            width: 100vw;
+            height: 30vh;
+        }
+
+        .sky {
+            display: none;
+        }
+
+        .launch {
+            display: none;
+        }
+      }
+   }
+
+   .visit-planets {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 5%;
+       
+       h3 {
+        padding: 1.5%;
+        }
+
+        p {
+        padding: 1.5%; 
+        margin-bottom: 1.5%; 
+        }
+
+   }
+
+   .walk {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    margin-bottom: 5%;
+    justify-content: space-around;
 
     .walk-text {
-      width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.5%;
+    }
+    .btn {
+        .button(@ebony-clay, white)
+    }
+   }
 
-      h3 {
-        margin-bottom: 10px;
-      }
+   @media (max-width:@phone) {
 
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
+    img {
+        width: 100vw;
+        height: 30vh;
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
+    .walk {
+        flex-direction: column;
     }
   }
-}// home
+   
+}
