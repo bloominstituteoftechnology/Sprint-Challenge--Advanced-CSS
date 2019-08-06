@@ -1,3 +1,11 @@
+@phone {
+  @media (max-width: 500px) {
+    #sky,
+    #launch {
+      visibility: hidden;
+    }
+  }
+}
 .displayFlex {
   display: flex;
   justify-content: center;
@@ -171,22 +179,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.static-nav-bar {
+nav {
+  background-color: #F6F6F6;
+}
+nav .nav-links {
   display: flex;
   justify-content: center;
   padding: 2rem;
-  background-color: #F6F6F6;
 }
-.static-nav-bar a {
+nav a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
   margin: 2rem;
 }
-.static-nav-bar .header-title {
+nav .header-title {
   display: flex;
   flex-direction: column;
-  font-size: 4rem;
+  text-align: center;
+  font-size: 6rem;
 }
 footer {
   color: #22283B;
@@ -259,11 +270,11 @@ footer {
   color: #22283A;
   background-color: white;
 }
-.walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
