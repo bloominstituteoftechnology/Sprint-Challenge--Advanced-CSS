@@ -19,11 +19,24 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone{
+      #sky, #launch {
+       display: none;
+      }
+
+
     #sky, #blast, #launch {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+          height: 30rem;
+          width: 98%;
+          }
+        }
+      }
     }
   }
 
@@ -58,14 +71,21 @@
       }
 
       .btn{
-    background-color:@btn-bg-color;
-    border-radius: .8rem;
-    padding: .8rem 1.8rem;
-    display: inline-block;
-    font-size: 1.8rem;
-    margin: .4rem .2rem; 
+        background-color:@btn-bg-color;
+        border-radius: .8rem;
+        padding: .8rem 1.8rem;
+        display: inline-block;
+        font-size: 1.8rem;
+        margin: .4rem .2rem; 
 
+        @media @phone {
+          padding: 1.8rem 20rem;
+          white-space: nowrap;
+        }
 
+          &:hover{
+            background-color: white;
+          }
             a{
               color: white;
               text-align: center;
@@ -74,7 +94,6 @@
             
             a:hover {
               color: @btn-bg-color;
-              background-color: white;
               }
             }
           }
@@ -84,10 +103,16 @@
       width: 46%;
       margin-left: 4%;
       
+      // @media @phone {
+     
+      //  }
+
+      
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
-  }
+  
