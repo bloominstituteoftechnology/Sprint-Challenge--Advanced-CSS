@@ -11,6 +11,12 @@
     p {
       padding:0 15px;
     }
+
+    @media @phone {
+      img {
+        width: 100%; 
+      }
+    }
   
   }
 
@@ -24,6 +30,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
     }
   }
 
@@ -58,6 +78,18 @@
       }
 
       .btn {
+        .signUpButton(10px, #000);
+
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+
+        @media @phone {
+          width: 100%;
+          height: 50px;
+          padding: 15px;
+        }
       }
     }
 
@@ -70,6 +102,24 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+
+    @media @phone {
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+
+
+      .walk-img {
+        width: 100%;
+        margin: 20px 10px;
+      }
+
+      .walk-text {
+        width: 100%;
+        margin: 10px;
+      }
+
     }
   }
 }// home
