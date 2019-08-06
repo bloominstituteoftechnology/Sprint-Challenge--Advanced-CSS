@@ -177,6 +177,7 @@ p {
   margin: 0 auto;
 }
 .navi,
+.Spacewalkers,
 h1 {
   display: flex;
   font-size: 3.2rem;
@@ -186,10 +187,10 @@ h1 {
   justify-content: center;
 }
 .navi .nav,
+.Spacewalkers .nav,
 h1 .nav,
-.navi .spacewalkers,
-h1 .spacewalkers,
 .navi a,
+.Spacewalkers a,
 h1 a {
   font-size: 1.8rem;
   flex-direction: row;
@@ -259,54 +260,60 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .containerhome {
-    width: 99%;
+  #container {
+    width: 100%;
   }
-  .navi,
-  .Spacewalkers {
+  intro {
+    width: 100%;
+  }
+  .navi {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    width: 40%;
   }
-  .navi a,
-  .Spacewalkers a {
-    flex-direction: row;
-    justify-content: flex-start;
+  .Spacewalkers,
+  h1 {
+    width: 30%;
+    text-align: center;
+  }
+  .nav,
+  a {
+    width: 100%;
+    display: flex;
+    background: rebeccapurple;
   }
   .headerimg {
-    width: 100%;
+    display: flex;
+    width: 80%;
   }
   .sky,
   .launch {
     display: none;
   }
-  .space-images,
-  .blast {
+  .containerhome {
     display: flex;
-    width: 190%;
-    height: 300px;
+    flex-wrap: wrap;
+    width: 170%;
   }
-  .walk,
-  .walk-text {
-    width: 110%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 170px;
+  .containerhome h2,
+  .containerhome h3,
+  .containerhome p {
+    width: 60%;
   }
-  .walk .walk-img,
-  .walk-text .walk-img {
+  .walk {
     display: flex;
-    position: absolute;
-    bottom: -590px;
     width: 100%;
     flex-direction: column-reverse;
-    margin-bottom: 50px;
   }
+  .walk .walk-img {
+    width: 100%;
+    justify-content: center;
+    margin: 0px 0px 15px 0px;
+  }
+  .btn,
   .btn2 {
     display: flex;
-    width: 190%;
-    height: 300px;
-    height: 60px;
+    width: 200px;
+    height: 40px;
   }
 }
