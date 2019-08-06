@@ -1,13 +1,3 @@
-.displayFlex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.btn:hover {
-  background-color: #F6F7F8;
-  box-shadow: inset 0 0 0 1px #f0e3e3;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +126,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.displayFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
@@ -213,135 +209,134 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-.home .header h1 {
+.home h1 {
   font-size: 40px;
   text-align: center;
   padding-bottom: 2%;
 }
-.home .intro {
+.intro {
   min-width: 95%;
 }
-.home .intro .earth {
+@media (max-width: 500px) {
+  .intro {
+    min-width: 70%;
+  }
+}
+.intro .earth {
   min-width: 100%;
   border-radius: 1.5%;
 }
-.home .intro h2 {
+@media (max-width: 500px) {
+  .intro .earth {
+    max-width: 70%;
+  }
+}
+.intro h2 {
   padding: 15px;
 }
-.home .intro p {
+.intro p {
   padding: 0 15px;
 }
-.home .space-images {
+.space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+@media (max-width: 500px) {
+  .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .launch {
+    display: none;
+  }
+}
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
-  width: 50%;
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
 }
-.home .walk .walk-text h3 {
+.walk .walk-text {
+  width: 50%;
+  padding-top: 5%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    min-width: 100%;
+  }
+}
+.walk h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.btn {
   width: 20%;
-  margin-top: 1%;
-  float: left;
+  border-radius: 5%;
   background-color: #23293B;
   padding: 2%;
-  border-radius: 5%;
+  margin-top: 1%;
+  float: left;
   font-size: 14px;
   font-weight: 500;
   color: white;
   text-decoration: none;
   text-align: center;
 }
-.home .walk .walk-text .btn .btn:hover {
-  background-color: #F6F7F8;
-  box-shadow: inset 0 0 0 1px #f0e3e3;
+.btn:hover {
+  background-color: #F1F1F1;
+  color: black;
+  border: 1px solid black;
 }
-.home .walk .walk-img {
+@media (max-width: 500px) {
+  .btn:hover {
+    width: 100%;
+    padding: 4%;
+    border-radius: 3%;
+  }
+}
+.walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+@media (max-width: 500px) {
+  .walk-img {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+}
+.walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .header {
-    width: 50%;
-  }
-  .earth {
-    width: 50%;
-  }
-  img {
-    min-width: 80%;
-    margin: 0 auto;
-    border-radius: 20px;
-    height: 100%;
-  }
-  .sky {
-    display: none;
-  }
-  .launch {
-    display: none;
-  }
-  .walk {
-    margin: 0 auto;
-    padding: 0%;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .walk-img {
-    width: 100%;
-    padding: 0%;
-    margin: 0 auto;
-  }
-  .walk-text {
-    width: 80%;
-    padding: 0%;
-    margin: 0 auto;
-  }
-  .btn {
-    width: 100%;
-    margin-top: 1%;
-    background-color: #23293B;
-    padding: 2%;
-    border-radius: 5%;
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-  .btn:hover {
-    background-color: #F6F7F8;
-    box-shadow: inset 0 0 0 1px #f0e3e3;
-  }
 }

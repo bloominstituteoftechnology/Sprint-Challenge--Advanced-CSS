@@ -6,7 +6,26 @@
     align-items:center;
 }
 
-.btn:hover {
-    background-color:@porcelain;
-    box-shadow:inset 0 0 0 1px	rgb(240, 227, 227);
+.btnChange() {
+    background-color:@sea-shell;
+    color: black;
   }
+
+.style (@width; @radius; @color; @padding; @mt; @float;){
+    width:@width;
+    border-radius:@radius;
+    background-color:@color;
+    padding:@padding;
+    margin-top:@mt; 
+    float:@float; 
+
+}
+
+.btn-text (@size; @weight; @f-color; @dec; @align;){
+        font-size:@size; 
+        font-weight:@weight;
+        color:@f-color; 
+        text-decoration:@dec; 
+        text-align:@align; 
+}
+  
