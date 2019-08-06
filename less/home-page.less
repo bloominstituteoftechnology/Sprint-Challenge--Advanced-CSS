@@ -3,13 +3,13 @@
 .home {
   @media @phone {
     width: 100%;
-    padding: 20px;
   }
   .intro {
     .space {
       @media @phone {
         width: 100%;
-        padding: 20px;
+        border-radius: 8px;
+        margin: 0 auto;
       }
     }
   }
@@ -41,10 +41,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      width: 100%;
+
       @media @phone {
         width: 100%;
-        padding: 20px;
         border-radius: 8px;
       }
     }
@@ -55,7 +54,6 @@
 
     @media @phone {
       width: 100%;
-      padding: 20px;
     }
 
     h3 {
@@ -74,10 +72,23 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    @media @phone {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      align-content: center;
+      width: 100%;
+    }
 
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin-top: 3rem;
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -90,7 +101,6 @@
         button {
           .display(center, center);
           @media @phone {
-            width: 100%;
             padding: 20px;
             width: 400px;
           }
@@ -105,17 +115,13 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-
+      @media @phone {
+        width: 100%;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        @media @phone {
-          width: 100%;
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-        }
       }
     }
   }
