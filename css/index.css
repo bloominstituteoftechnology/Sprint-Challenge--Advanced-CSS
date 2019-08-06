@@ -1,0 +1,342 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.displayFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header nav {
+  min-width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2%;
+}
+.header nav a {
+  text-decoration: none;
+  color: #23293B;
+  font-size: 14px;
+  margin-left: 100px;
+}
+@media (max-width: 500px) {
+  .header nav {
+    width: 50%;
+  }
+  .header nav a {
+    margin-left: 25px;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.home .header {
+  min-width: 100%;
+  background-color: #F6F6F6;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.intro {
+  min-width: 95%;
+}
+@media (max-width: 500px) {
+  .intro {
+    min-width: 70%;
+  }
+}
+.intro .earth {
+  min-width: 100%;
+  border-radius: 1.5%;
+}
+@media (max-width: 500px) {
+  .intro .earth {
+    max-width: 70%;
+  }
+}
+.intro h2 {
+  padding: 15px;
+}
+.intro p {
+  padding: 0 15px;
+}
+.space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .launch {
+    display: none;
+  }
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+}
+.walk .walk-text {
+  width: 50%;
+  padding-top: 5%;
+}
+@media (max-width: 500px) {
+  .walk .walk-text {
+    min-width: 100%;
+  }
+}
+.walk h3 {
+  margin-bottom: 10px;
+}
+.walk p {
+  margin-bottom: 26px;
+}
+.btn {
+  width: 20%;
+  border-radius: 5%;
+  background-color: #23293B;
+  padding: 2%;
+  margin-top: 1%;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #F1F1F1;
+  color: black;
+  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .btn:hover {
+    width: 100%;
+    padding: 4%;
+    border-radius: 3%;
+  }
+}
+.walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .walk-img {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+}
+.walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

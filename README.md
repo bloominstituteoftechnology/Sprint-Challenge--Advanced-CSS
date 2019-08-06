@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive vs responsive web design. ... Response web design adapts to the size of the screen no matter what the target device screen size is. The layout is 'fluid' and uses CSS media to change styles, this 'fluid' grid enables the page to resize its width and height to adapt to different screen sizes and show correctly.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+The mobile first strategy refers to companies' tendency to design their products for mobile phones or devices before making correlate designs for traditional desktop and laptop computers.
+A desktop first approach would be the opposite. Designing their products for desktop devices before making a correlate design for mobile phones or devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+When things are in rem, (font sizes, padding, margins etc) you can change the body font-size from 62.5% to 50%, for example, and everything is scaled proportionately across the site according to the user's settings.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+ CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. ... These features make the CSS structure more readable and easier to maintain. To use a CSS preprocessor, you must install a CSS compiler on your web server.
+By using preprocessor (less,sass,etc) it allows you to keep your files neater and more organized for the next developer coming behind you who will have to read, decipher, and possibly change your code.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I don't like any of it, honestly. I think it is more headache than it's worth. I have spent hours trying to troubleshoot why the compiler isn't running properly, why it has suddenly stopped, why changes aren't taking effect. Instead of working on the project like I know to do, I've spent hours just trying to get the preprocessor to behave as it should. Having to go between files to include css seems to also be more trouble than it's worth. Instead of writing it all in one place, I now have to go between 5-7 files and make sure I can keep up with what I've done. The only positive it seems to have is for the person coming behind me.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

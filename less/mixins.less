@@ -1,1 +1,31 @@
 // Mixins Here
+.displayFlex {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.btnChange() {
+    background-color:@sea-shell;
+    color: black;
+  }
+
+.style (@width; @radius; @color; @padding; @mt; @float;){
+    width:@width;
+    border-radius:@radius;
+    background-color:@color;
+    padding:@padding;
+    margin-top:@mt; 
+    float:@float; 
+
+}
+
+.btn-text (@size; @weight; @f-color; @dec; @align;){
+        font-size:@size; 
+        font-weight:@weight;
+        color:@f-color; 
+        text-decoration:@dec; 
+        text-align:@align; 
+}
+  
