@@ -1,3 +1,4 @@
+@phone : max-width: 500px;
 #body {
   text-decoration: none;
   color: black;
@@ -174,12 +175,21 @@ body h1 {
   font-size: 4rem;
   padding: 1rem;
 }
+@media (max-width: 500px) {
+  body nav {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  body nav a {
+    width: 17%;
+  }
+}
 body nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body nav a {
+body a {
   width: 7%;
   padding: 0.7rem;
   align-content: center;
@@ -198,6 +208,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .upper-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home .intro .upper-image img {
+  max-width: 100%;
+  height: auto;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -208,6 +226,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    max-width: 100%;
+    height: auto;
+  }
+  .home .space-images .blast .launch {
+    display: none;
+  }
+  .home .space-images .blast .launch .sky {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -230,6 +260,14 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk nav {
+    flex-directiondisplay: flex;
+  }
+  .home .walk nav a {
+    width: 17%;
+  }
 }
 .home .walk .walk-text {
   width: 50%;

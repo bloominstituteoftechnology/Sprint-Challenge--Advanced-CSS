@@ -3,6 +3,15 @@
 .home {
 
   .intro {
+    .upper-image{
+      display: flex;
+    flex-wrap: wrap;
+    
+      img{
+        max-width: 100%;
+        height:auto;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,7 +27,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+ @media(max-width: 500px){
+            
+       .blast{
+          max-width: 100%;
+          height:auto;
+           .launch{
+            display:none;
+           
+        
+          .sky{
+                 display:none;
+               }  
 
+               }
+            }
+        } 
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -46,6 +70,15 @@
     display: flex;
     justify-content: center;
 
+    @media(max-width: 500px){
+            nav {
+        flex-direction
+        display:flex;
+                a{
+            width:17%;
+                }
+            }
+        } 
     .walk-text {
       width: 50%;
 
