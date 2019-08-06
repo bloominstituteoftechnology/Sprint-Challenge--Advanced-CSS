@@ -165,6 +165,8 @@ p {
   height: 100px;
   background: #F6F6F6;
   border-color: #F1F1F1;
+  position: fixed;
+  opacity: 0.7;
 }
 @media (max-width: 500px) {
   .main-navigation {
