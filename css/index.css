@@ -164,6 +164,8 @@ p {
   background: #F6F6F6;
   width: 100%;
   margin: 0 auto;
+  position: fixed;
+  opacity: 0.9;
 }
 .main-navigation .nav-container {
   height: 100%;
