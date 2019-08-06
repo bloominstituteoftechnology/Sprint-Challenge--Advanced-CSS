@@ -181,6 +181,9 @@ nav a {
   color: black;
   text-decoration: none;
 }
+nav a:hover {
+  opacity: 0.4;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -198,6 +201,8 @@ footer {
   margin: 0 auto;
   margin-top: 2%;
   padding: 1% 0;
+  position: fixed;
+  z-index: 9999;
 }
 @media (max-width: 500px) {
   .header1 {
@@ -261,12 +266,17 @@ footer {
     top: 0px;
   }
 }
+.home {
+  margin-top: 9%;
+}
 @media (max-width: 500px) {
   .home {
     width: 500px;
+    margin-top: 23%;
   }
 }
 .home .main-header {
+  position: relative;
   width: 100%;
 }
 .home .main-header img {
