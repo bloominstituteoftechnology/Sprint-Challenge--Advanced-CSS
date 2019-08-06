@@ -1,1 +1,23 @@
 // Mixins Here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.button-creator(@width, @height){
+  width: @width;
+  height: @height;
+  cursor: pointer;
+  
+}
+
+.test() {
+  border: 2px solid red;
+}
