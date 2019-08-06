@@ -75,22 +75,30 @@
     width: 100%;
   }
   intro {
+    display: flex;
     width: 100%;
   }
   .navi {
     display: flex;
+    width: 220%;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-  }
     .Spacewalkers, h1 {
-      width: 30%;
       text-align: center;
+      margin-left: 10px;
     }
-    .nav, a {
-      width: 100%;
+    .nav {
       display: flex;
-      background: rebeccapurple;
     }
+    a {
+      padding: 15px;
+      font-size: 18px;
+      margin-left: -25px;
+      justify-items: flex-start;
+      text-align: left;
+  }
+}
     //variable vv
 @display: none;
 .headerimg {
@@ -99,23 +107,26 @@
 }
 
 .sky, .launch { 
-  display: @display;
+  display: none;
 }
 .containerhome {
   display: flex;
   flex-wrap: wrap;
   width: 170%;
   h2, h3, p {
-    width: 60%;
+    width: 58%;
   }
-.blast() {
-  width: 170%;
+}
+.space-images {
+  .blast {
+  width: 200%;
   display: flex;
+  align-self: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
 }
 }
-
 .walk {
   display: flex;
   .walk-text();
@@ -125,7 +136,7 @@
   }
   .walk-img {
     .walk-text();
-    justify-content: center;
+    align-content: center;
     margin: 0px 0px 15px 0px;
   }
 }
@@ -133,5 +144,8 @@
   display: flex;
   width: 200px;
   height: 40px;
+}
+footer {
+  width: 60%;
 }
 }

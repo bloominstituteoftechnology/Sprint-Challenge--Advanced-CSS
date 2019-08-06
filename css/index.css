@@ -264,23 +264,30 @@ footer {
     width: 100%;
   }
   intro {
+    display: flex;
     width: 100%;
   }
   .navi {
     display: flex;
+    width: 220%;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .Spacewalkers,
-  h1 {
-    width: 30%;
+  .navi .Spacewalkers,
+  .navi h1 {
     text-align: center;
+    margin-left: 10px;
   }
-  .nav,
-  a {
-    width: 100%;
+  .navi .nav {
     display: flex;
-    background: rebeccapurple;
+  }
+  .navi a {
+    padding: 15px;
+    font-size: 18px;
+    margin-left: -25px;
+    justify-items: flex-start;
+    text-align: left;
   }
   .headerimg {
     display: flex;
@@ -298,7 +305,15 @@ footer {
   .containerhome h2,
   .containerhome h3,
   .containerhome p {
-    width: 60%;
+    width: 58%;
+  }
+  .space-images .blast {
+    width: 200%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   .walk {
     display: flex;
@@ -307,7 +322,7 @@ footer {
   }
   .walk .walk-img {
     width: 100%;
-    justify-content: center;
+    align-content: center;
     margin: 0px 0px 15px 0px;
   }
   .btn,
@@ -315,5 +330,8 @@ footer {
     display: flex;
     width: 200px;
     height: 40px;
+  }
+  footer {
+    width: 60%;
   }
 }

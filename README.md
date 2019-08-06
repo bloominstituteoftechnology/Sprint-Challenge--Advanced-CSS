@@ -46,7 +46,7 @@ It is a default in browsers equalling out to be 10px
 
 4. How would you describe preprocessing to someone new to CSS?
 
-preprocessing is a structure more readable to all users while also being really helpful to people with certain disabilities making it easier for them to navigate the internet
+preprocessing is a structure more readable to all users
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
