@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Responsive design allows for fluid transition between sizes, if you are using one device but you change the size of your display your page will respond with each adjustment whereas if you are using an adaptive model, you can make adjustments based on size but you must reload or change the screen completely in order to see changes there is no seemless transitioning.
+
 2. Describe what it means to be mobile first vs desktop first.
+      Depending which you choose to be "first" you will design your code around that model. Example if I decide I am designing for desktop first I will produce code that ensures everything looks fine on that sized screen. If I wanted it to adapt to another size, say mobile, I then have to add specificity for that size.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+      'rem' is a sizing that is relative to a browsers base font-size
+      so by declaring '62.5%' you are instructing for your text to be
+      that percentage of the browsers default size.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+        A preprocessor takes organization and usability to another level.
+        It makes your code, more user friendly by allowing to be more readable, adaptable and less time consuming by implementing things like variable, mixins, and function that allow you to organize certain data and change certain data by allowing you to alter only a few lines of code in order to change several outputs or displays tied to those lines.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I love imports and mixins, mostly because I get distracted easily and I get lost in lines of code even easier. Functions I appreciate equally, but there is something about it that makes me confused when I'm declaring and allocating variables.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +67,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
