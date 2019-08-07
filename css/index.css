@@ -199,6 +199,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  color: #5E6164;
+  font-weight: bolder;
+}
 .home .intro img {
   border-radius: 5px;
 }
@@ -221,6 +225,8 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  color: #5E6164;
+  font-weight: bolder;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
