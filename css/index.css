@@ -198,6 +198,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bolder;
 }
 .home .intro {
   color: #5E6164;
@@ -243,12 +244,23 @@ footer {
 }
 .home .walk .walk-text {
   width: 50%;
+  font-weight: bolder;
+  color: #5E6164;
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  color: #F6F7F8;
+  background-color: #22283A;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 1.7rem;
 }
 .home .walk .walk-img {
   width: 46%;
