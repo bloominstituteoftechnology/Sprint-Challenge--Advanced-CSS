@@ -161,23 +161,25 @@ p {
   margin: 0 auto;
 }
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: #F6F6F6;
   width: 100%;
+  border: 1px solid #F1F1F1;
 }
 header h1 {
   font-size: 5rem;
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  text-align: center;
   margin-top: 15px;
 }
 header nav {
   display: flex;
   justify-content: center;
-  margin: 15px;
-  margin-bottom: 0px;
+  flex-direction: row;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 0px;
 }
 header nav a {
   color: #454A59;
@@ -196,6 +198,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;

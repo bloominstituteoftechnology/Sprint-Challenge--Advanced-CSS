@@ -1,33 +1,30 @@
 // Navigation code here
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
     background-color: @wild-sand;
     width: 100%;
+    border: 1px solid @sea-shell;
 
     h1 {
         font-size: 5rem;
-        display: flex;
-        justify-content: center;
+        .displayFlex (center, row);
         margin-top: 15px;
+        
     }
 
     nav {
-        display: flex;
-        justify-content: center;
-        margin: 15px;
-        margin-bottom: 0px;
-        
+        .displayFlex (center, row);
+        padding: 15px;
+        padding-bottom: 0px;
 
         a {
             color: @river-bend;
             text-decoration: none;
             font-size: 1.7rem;
-            font-weight: bolder;
+            .fontWeight();
             padding: 25px;
             padding-top: 0px;
+
         }
-    
     }
 }
