@@ -1,8 +1,30 @@
 // Home Content
 
 .home {
+  @media @phone{
+    .width-mobile(90%);
+  }
+  .space-images{
+    @media  @phone{
+      .sky,
+      .launch {
+        display: none;
+      }
+
+      .blast{
+        width: 90%;
+      }
+    }
+  }
 
   .intro {
+
+    .nav-moon{
+      @media @phone{
+        .width-mobile(100%);
+        border-radius: 10px;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -46,8 +68,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      .width-mobile()
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        .width-mobile(120%);
+        margin: 20px -30px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,13 +90,29 @@
         margin-bottom: 26px;
       }
 
+      button{
+        .button-mix();
+
+        @media @phone{
+          .width-mobile();
+          .hover();
+        }
+
+      }
+
       .btn {
+        .hover();
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        .width-mobile(127%);
+        margin: 20px -40px;
+      }
       
       img {
         width: 100%;
