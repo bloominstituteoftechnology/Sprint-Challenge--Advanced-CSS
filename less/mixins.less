@@ -1,8 +1,10 @@
 // Mixins Here
+.customButton(@justify-content; @align-content; @align-items) {
+    customButton: @justify-content @align-content @align-items;
+}
+
 .bestButton(){
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    .customButton(center; center; center);
     background-color: @spaceblue;
     border-radius: 5px;
     text-align: center;
@@ -10,11 +12,17 @@
     height: 60px;
     padding-top: 25px;
     color: white;
+    font-size: 4rem;
+    line-height: 0;
+
+    @media @desk{
+        width: 50%;
+        font-size: 3rem;
+        line-height: 0;
+    }
 }
 .betterButton(){
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    .customButton(center; center; center);
     background-color: black;
     border-radius: 5px;
     text-align: center;
@@ -22,6 +30,17 @@
     height: 60px;
     padding-top: 25px;
     color: red;
+    font-size: 4rem;
+    line-height: 0;
+
+    @media @desk{
+        width: 51%;
+        font-size: 3.1rem;
+        line-height: 0;
+    }
+}
+.border(@width; @style; @color) {
+    border: @width @style @color;
 }
 
 .btn {
@@ -30,4 +49,5 @@
 
 .btn:hover {
     .betterButton();
+    .border(1px; dashed; red);
 }

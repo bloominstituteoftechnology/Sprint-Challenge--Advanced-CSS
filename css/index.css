@@ -1,7 +1,5 @@
 .btn {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  customButton: center center center;
   background-color: #22283B;
   border-radius: 5px;
   text-align: center;
@@ -9,11 +7,18 @@
   height: 60px;
   padding-top: 25px;
   color: white;
+  font-size: 4rem;
+  line-height: 0;
+}
+@media screen and (min-width: 501px) {
+  .btn {
+    width: 50%;
+    font-size: 3rem;
+    line-height: 0;
+  }
 }
 .btn:hover {
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  customButton: center center center;
   background-color: black;
   border-radius: 5px;
   text-align: center;
@@ -21,6 +26,16 @@
   height: 60px;
   padding-top: 25px;
   color: red;
+  font-size: 4rem;
+  line-height: 0;
+  border: 1px dashed red;
+}
+@media screen and (min-width: 501px) {
+  .btn:hover {
+    width: 51%;
+    font-size: 3.1rem;
+    line-height: 0;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
