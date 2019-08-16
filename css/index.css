@@ -1,9 +1,20 @@
-.button {
-  btn: 100px black;
-}
-.btn:hover {
+.button .btn:hover {
   background-color: aqua !important;
   color: black !important;
+}
+@media (max-width: 500px) {
+  .button {
+    width: 100%;
+  }
+}
+.button .container home {
+  display: flex;
+}
+.button .img .main-header {
+  width: 90%;
+}
+.button .intro p {
+  margin: 15px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -167,23 +178,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-ul {
+.home .nav-bar {
   display: flex;
-  align-items: stretch;
-  justify-content: center;
-  padding-bottom: 15px;
+  justify-content: space-around;
+  width: 100%;
+  line-height: 0.8;
 }
 .home .nav-bar a {
   text-decoration: none;
   color: black;
-  justify-content: stretch;
-  width: 60%;
-}
-.home .header h1 {
-  font-size: 4rem;
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
+  padding-bottom: 15px;
+  margin-left: 1.7%;
+  line-height: 0.7;
 }
 footer {
   color: #22283B;
@@ -196,11 +202,12 @@ footer {
   align-items: center;
 }
 .home h1 {
+  display: flex;
   text-align: center;
   align-items: center;
-  margin-left: 240px;
   padding: 15px;
-  font-size: 3.6rem;
+  font-size: 3.5rem;
+  margin-left: 35%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -246,9 +253,11 @@ footer {
 }
 .home .walk .walk-text .btn {
   background-color: black;
+  justify-content: center;
   color: white;
   width: 100px;
   height: 30px;
+  margin-top: 5px;
   text-align: center;
   align-items: center;
   border-radius: 15px;
