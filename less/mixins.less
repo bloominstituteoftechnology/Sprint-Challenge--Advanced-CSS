@@ -1,1 +1,32 @@
 // Mixins Here
+.btn (@color, @bgColor, @borderRadius) {
+
+    min-height: 3.4rem;
+  
+    width: 80%;
+  
+    color: @color;
+  
+    background: @bgColor;
+  
+    padding: 0.5rem;
+  
+    border: none;
+  
+    border-radius: @borderRadius;
+  
+    cursor: pointer;
+  
+  
+  
+    &:hover {
+  
+      color: @bgColor;
+  
+      background-color: transparent;
+  
+      border: 1.2px solid @bgColor;
+  
+    }
+  
+  }
