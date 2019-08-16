@@ -1,1 +1,33 @@
 // Mixins Here
+.bestButton(){
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: @spaceblue;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    height: 60px;
+    padding-top: 25px;
+    color: white;
+}
+.betterButton(){
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    width: 91%;
+    height: 60px;
+    padding-top: 25px;
+    color: red;
+}
+
+.btn {
+    .bestButton();
+}
+
+.btn:hover {
+    .betterButton();
+}
