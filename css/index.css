@@ -160,6 +160,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  width: 100%;
+  backgroundcolor: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+}
+.nav-cont {
+  padding: 2rem 0 1rem 0;
+  width: 100%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
