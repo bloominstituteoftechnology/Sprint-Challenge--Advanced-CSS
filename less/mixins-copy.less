@@ -1,0 +1,28 @@
+.custom-btn (@width: 120px, @height: 40px, @background-color: @ebony-clay, @font-color: @sea-shell){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: @font-color;
+    background-color: @background-color;
+    height: @height;
+    width: @width;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: @font-color;
+        color: @background-color;
+        border: solid @ebony-clay 1px;
+        cursor: pointer;
+    }
+}
+
+
+.image-radius () {
+    border-radius: 10px;
+}
+
+.section-border() {
+    border-top: 1.5px solid @main-border-color;
+}
