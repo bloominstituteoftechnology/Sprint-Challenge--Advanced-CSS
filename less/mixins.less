@@ -7,24 +7,30 @@
 @link-color: black;
 @switchColor: whitesmoke;
 @link-color-hover : darken(@switchColor, 1%);
- 
 @border-radius: 8px;
 
 .btn {
     border-radius: @border-radius;
     border: 1px solid white;
     background-color: @link-color;
-    color: white;
     padding: 20px;
     text-align: center;
     font-size: 1.7rem;
+    a {
+    text-decoration: none;
+    color: white;
+}
+
     @media @phone {
         width: 100%;
 }
 
     &:hover {
         .btnColorSwitch();
+        a{
+        color: black;
     }
+}
 
 
 }

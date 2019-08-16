@@ -2,10 +2,13 @@
   border-radius: 8px;
   border: 1px solid white;
   background-color: black;
-  color: white;
   padding: 20px;
   text-align: center;
   font-size: 1.7rem;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 @media (max-width:500px) {
   .btn {
@@ -14,6 +17,9 @@
 }
 .btn:hover {
   background-color: #f2f2f2;
+  color: black;
+}
+.btn:hover a {
   color: black;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
