@@ -1,8 +1,21 @@
 // Home Content
 
 .home {
+  margin-top:9.3rem;
+
+  @media @mobile{
+    margin-top:10.4rem
+  }
 
   .intro {
+    @media @mobile{
+      display:flex;
+      .mobile-column();
+    }
+    img{
+      widows: 100%;
+      border-radius:.5rem;
+    }
 
     h2 {
       padding: 15px;
@@ -19,11 +32,25 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @mobile{
+      .mobile-column();
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @mobile @media{
+        width:93%;
+      }
+    }
+
+    .sky{
+      @mobile @media{
+        display:none;
+      }
     }
   }
 
@@ -46,6 +73,11 @@
     display: flex;
     justify-content: center;
 
+    @mobile @media{
+      width: 100%;
+      padding-top:2rem;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,12 +90,25 @@
       }
 
       .btn {
+        .custom-button(13rem, @btn-bg-color);
+
+        @mobile @media{
+          font-size:1.9rem;
+          padding:3.2rem;
+          .center();
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @mobile @media{
+        order:-1;
+        width:100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
