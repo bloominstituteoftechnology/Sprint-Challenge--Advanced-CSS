@@ -1,1 +1,23 @@
 // Mixins Here
+
+// flex space between
+.space-between {
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display:flex;
+    justify-content: center;
+}
+
+.buttons(@color,@background) {
+    background:@background;
+    color:@color;
+    width:110px;
+    padding:13px 25px;
+    text-align:center;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:1.5rem;
+}

@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-section {
+    background-color: @wild-sand;
+    color:@nav-font;
+    padding:10px 0;
+    @media @mobile {
+          width:100%;
+    }
+    h2 {
+        .flex-center();
+        padding:10px 0;
+    }
+
+    div {
+        display:flex;
+        justify-content: center;
+        padding:10px 0;
+    }
+    nav {
+        width:500px;
+        .space-between();
+        @media @mobile {
+          display: flex;
+          justify-content: space-around;
+        //   width:400px;
+        }
+
+        a {
+            font-size:2rem;
+        }
+    }
+}
