@@ -227,7 +227,7 @@ footer {
 .home .walk-text .btn {
   display: flex;
   justify-content: center;
-  background-color: #22283A;
+  background-color: #22283a;
   padding: 10px;
   margin-bottom: 10px;
   width: 80px;
@@ -236,6 +236,10 @@ footer {
   border-radius: 10px;
   color: white;
   cursor: pointer;
+}
+.home .walk-text .btn:hover {
+  background-color: aqua;
+  color: black;
 }
 .home .walk-text .walk-img {
   width: 46%;
