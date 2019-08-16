@@ -1,1 +1,26 @@
 // Mixins Here
+.navStyle2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width:500px;
+}
+.btnStyle(@ebony-clay, @align){
+    background-color: @ebony-clay;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: @align;
+    padding: 15px;
+    width: 35%;
+    &:hover{
+        background-color:white;
+        color: @ebony-clay;
+    }
+}
+.alinks{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
