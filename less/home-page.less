@@ -37,7 +37,18 @@
   }
 
   .walk {
+    @media only screen and (max-width:@phone){
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    .btn{
+      width:80%;
+    }
+    }
+
+    
     .walker();
+  
   }
 
   .walk-text {
@@ -63,13 +74,15 @@
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
+      margin-left: 75%;
 
+         }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+    
     }
   }
-} // home
+ // home

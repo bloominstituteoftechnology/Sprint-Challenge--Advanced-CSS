@@ -215,6 +215,16 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: - "500px") {
+  .home .walk {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .home .walk .btn {
+    width: 80%;
+  }
+}
 .home .walk-text {
   width: 50%;
 }
@@ -243,9 +253,9 @@ footer {
 }
 .home .walk-text .walk-img {
   width: 46%;
-  margin-left: 4%;
+  margin-left: 75%;
 }
-.home .walk-text .walk-img img {
+.home .walk-text img {
   width: 100%;
   height: auto;
   border-radius: 10px;
