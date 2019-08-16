@@ -165,7 +165,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   Height: 8rem;
-  background-color: red;
 }
 .navbarlinks {
   display: flex;
@@ -181,6 +180,7 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: center;
 }
 footer {
   color: #22283B;
@@ -242,4 +242,17 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .walk .btn {
+  display: flex;
+  box-sizing: border-box;
+  height: 2em;
+  width: 5em;
+  align-items: center;
+  font-size: 2em;
+  border: 1px solid black;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 0.8em;
 }
