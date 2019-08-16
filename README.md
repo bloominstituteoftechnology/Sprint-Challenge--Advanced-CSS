@@ -34,13 +34,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A responsive website provides the optimal viewing experience no matter what type of device the user is seeing it on. This is done by using a design technique that works no matter what the screen size is.
+Responsive websites respond to the size of the browser at any given point. No matter what the browser width may be, the site adjusts its layout and functionality in a way that is optimized to the screen
+In the case of adaptive website, there are several distinct layouts for multiple screen sizes. And the layout used depends on the screen size used. For example, there could be a specific layout for mobile phones, tablets, and desktop computers – each of which are made in advance. These three designs wait on standby until someone visits the site. The site detects the type of device used, and delivers the pre-set layout for that device.  
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+`mobile first`
+In this scenario, designers and developers initially design a website for the smallest mobile devices possible and then scale upwards to adapt to desktop computers.
+The user experience is optimized for mobile and it’s enough to be merely functional on a desktop.
+
+`desktop first`
+Ihe design is often based on the assumption that visitors will browse it on a desktop computer. Then, the website is modified to adapt to different devices, including smartphones and tablets. In other words, the site is scaled down.
+The user experience needs to be highly refined on the desktop and it’s enough to be merely functional on mobile
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Rem units affects the property (font-size, padding, margin) of every element within the html tag. At 62.5% , the pixel size translates to 10px. 
+So a div of 1rem will be equal to 10px. While that of 2rem will be equal to 20px.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+In order to save time and promote flexibility when it comes to design and web development, preprocessors where invented. 
+CSS preprocessor is a program that takes one type of data and converts it to another type of data. In this instance, syntaxes similar to that of javascript is used to group code in frameworks such as Less, Sass etc and them compiled into css files
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept – `parametric mixins`.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
