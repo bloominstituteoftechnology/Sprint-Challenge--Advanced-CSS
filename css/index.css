@@ -201,6 +201,9 @@ p {
   text-decoration: none;
   color: black;
 }
+.nav1 .navList a:hover {
+  color: dodgerblue;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
