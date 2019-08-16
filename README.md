@@ -57,8 +57,6 @@ I think preprocessing has a ton to offer a developer, making it so much easier t
 
 I have the most trouble with mixins. I know they are very cool, but I think I struggle with the parameters on it mostly. More practice will help me with this! 
 
-
-
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up

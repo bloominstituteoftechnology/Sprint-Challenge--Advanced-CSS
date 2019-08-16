@@ -1,5 +1,12 @@
 // Mixins Here
 
-.btn(@width(), @color()){
+.btn(@width; @color;){
     btn: @width @color;
+}
+.button{ 
+    .btn(100px; black;);
+}
+.btn:hover{
+    background-color: aqua !important;
+    color: black !important;
 }
