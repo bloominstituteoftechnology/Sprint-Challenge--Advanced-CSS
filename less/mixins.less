@@ -1,1 +1,36 @@
 // Mixins Here
+
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobilecolumn() {
+  flex-direction: column;
+}
+
+.btn(@width: 10rem, @bgcolor: @btn-bg-color, @font-color: white) {
+  width: @width;
+  background-color: @bgcolor;
+  color: @font-color;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid @btn-bg-color;
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    background-color: @font-color;
+    color: @btn-bg-color;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  @media @phone {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
