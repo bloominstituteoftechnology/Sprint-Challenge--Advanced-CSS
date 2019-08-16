@@ -1,1 +1,36 @@
 // Mixins Here
+
+.btnStyle(@color, @background-color, @font-size){
+
+    display: flex;
+    justify-content: center;
+    background-color: @background-color;
+    border-radius: 5px;
+    color: @color;
+    padding: 3%;
+    font-size: @font-size;
+    width: 40%;
+    border: grey 1px solid;
+    &:hover {
+        background-color: @color;
+        color: @background-color;
+      }
+    @media @phone{
+        width: 100%;
+    }
+
+    .navStyle(){
+        display: flex;
+        margin: 3%;
+        justify-content: space-around;
+        width: 60%;
+    }
+
+    .linkStyle(){
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+
+}
