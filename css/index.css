@@ -168,6 +168,9 @@ header {
   align-items: center;
   background-color: #F6F6F6;
   width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(246, 246, 246, 0.8);
 }
 header h1 {
   font-size: 3.2rem;
