@@ -1,32 +1,68 @@
 // Home Content
 
 .home {
-
+ 
+ 
   .intro {
-
-    h2 {
+     color: black;
+     padding: 20px;
+     margin: 0 auto;
+     width: 50;
+     border-radius: 20px;
+      
+    .main-header{
+      display: flex;
+      flex-direction: center;
+      align-items: flex-start;
+      width: 60;
+      margin: 10px 2.5%;
+      border-radius: 10px;
+      height: auto;
+     }
+      
+      }
+    h1 {
+      color:black;
+      display:flex;
+      flex-direction:center;
+      justify-content: center;
+      text-align:center;
       padding: 15px;
+      font-size: 50px;
     }
-
+    .nav{
+      display: flex;
+      flex-direction: center;
+      justify-content:space-evenly;
+      align-items: flex-end;
+    }
+     a {
+       color: black;
+       padding: 20px;
+       display: flex;
+       align-items: baseline;
+       
+     }
     p {
-      padding:0 15px;
+      padding:15px;
+      margin: 0 auto;
     }
   
   }
 
   .space-images {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: row-reverse;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     border-radius: 100%;
 
     img {
-      width: 100;
-      margin: 20px 2.5%;
-      border-radius: 10px;
-      height: auto;
+      width: 50;
+      margin: 10px 2.5%;
+      border-radius: 20px;
+      height: 0 auto;
     }
   }
 
@@ -38,13 +74,14 @@
     }
 
     p {
+      
       margin-top: 13px;
     }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    border-top: 1px solid black;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -53,7 +90,9 @@
       width: 50%;
 
       h3 {
+        padding: 20px;
         margin-bottom: 10px;
+        
       }
 
       p {
@@ -61,27 +100,35 @@
       }
 
       .btn {
-        background-color: red; 
-        border-radius: 100%;
+        background-color:blue;
+        color: white; 
+        padding: 30px,0;
         display:flex;
         flex-direction: center;
-        align-items: baseline;
+        margin-top:2%;
+        border-radius: 10%;
+        width:46%;
+        height: 0 auto;
+        
     }
-    @media @phone { 
-      border-radius: 0px;  
-      width: 100% !important;   
+   
   }
 
-    .walk-img {
+     .walk-img {
+      justify-content: center;
+      align-items:baseline;
       width: 46%;
       margin-left: 4%;
       
       
       img {
+        display: flex;
+        flex-direction: space-around;
+        align-items: flex-start;
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
   }
-}// home
+

@@ -34,21 +34,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-responsive site designs are guaranteed to work well on any screen size, adaptive designs only work on as many screens as its layouts are able to.
+A) responsive site designs are guaranteed to work well on any screen size, adaptive designs only work on as many screens as its layouts are able to.
 
 
 2. Describe what it means to be mobile first vs desktop first.
 
-Going down to smaller resolutions (often called graceful degradation) means hiding and wrapping elements while trying to support as many original features as possible.
+ A) Going down to smaller resolutions (often called graceful degradation) means hiding and wrapping elements while trying to support as many original features as possible.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when 
 using `rem` units?
 
-Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
+  A) Usually default font-size of the browser is 16px. Setting font-size: 100% will make 1rem = 16px. But it will make calculations a little difficult. A better way is to set font-size: 62.5%. Because 62.5% of 16px is 10px. Which makes 1rem = 10px.
 
 4. How would you describe preprocessing to someone new to CSS?
 
-A preprocessor is a program that takes one type of data and converts it to another type of data. In the case of HTML and CSS, some of the more popular preprocessor languages include Haml and Sass . Haml is processed into HTML and Sass is processed into CSS.
+A)  A preprocessor is a program that takes one type of data and converts it to another type of data. In the case of HTML and CSS, some of the more popular preprocessor languages include Haml and Sass . Haml is processed into HTML and Sass is processed into CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
