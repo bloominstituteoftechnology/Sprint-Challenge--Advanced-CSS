@@ -18,12 +18,15 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media(max-width: 500px) {
+      flex-direction: column;
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      
     }
   }
 
@@ -45,7 +48,9 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media(max-width: 500px) {
+      flex-direction: column;
+    }
     .walk-text {
       width: 50%;
 
@@ -57,19 +62,20 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+    
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+    }
+    .btn{
+      .button(black, white);
     }
   }
 }// home
