@@ -1,4 +1,8 @@
 @import 'variables.less';
+@media (max-width: 800px) {
+  padding: 20px;
+  margin: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -200,6 +204,7 @@ footer {
 .home .intro .main-header {
   display: flex;
   flex-direction: center;
+  justify-content: center;
   align-items: flex-start;
   width: 60;
   margin: 10px 2.5%;
