@@ -1,1 +1,25 @@
 // Mixins Here
+
+.button(@radius){
+
+    border-radius:@radius;
+    background-color: @btn-bg-color;
+    border: 1px solid @border-real;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    &:hover{
+    border-radius:@radius;
+    background-color: white;
+    border: 1px solid @border-real;
+    color:  @btn-bg-color;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    }
+}
+

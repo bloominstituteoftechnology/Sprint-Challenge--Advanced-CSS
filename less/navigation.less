@@ -1,1 +1,31 @@
 // Navigation code here
+@import "variables.less";
+.nav-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: @nav-bg;
+    height: 80px;
+h1{
+    font-size: 4.0rem;
+    margin: 2px 0 10px 0;
+
+}
+   
+}
+.nav-container nav{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    margin: 6px 0 10px 0;
+    justify-content: space-between;
+    a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: @nav-font;
+    }
+}
+
