@@ -228,6 +228,13 @@ footer {
   background-color: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
 }
+@media (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .navigation .navTitle {
   display: flex;
   flex-direction: row;
@@ -257,6 +264,38 @@ footer {
   text-decoration: none;
   background: #22283A;
   border-radius: 5px;
-  display: inline-block;
+  display: inline;
   border-width: 80px 40px;
+}
+.btn:hover {
+  color: #22283A;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #F1F1F1;
+}
+@media (max-width: 500px) {
+  .btn {
+    color: #F1F1F1;
+    font-size: 2rem;
+    text-decoration: none;
+    background: #22283A;
+    border-radius: 5px;
+    display: block;
+    border-width: 80px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .space-images img:nth-child(n+2) {
+    display: none;
+  }
+  .space-images img:nth-child(n+1) {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 }

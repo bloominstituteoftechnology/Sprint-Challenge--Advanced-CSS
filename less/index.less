@@ -12,19 +12,23 @@
     .flexDisplayMethod(column, space-evenly);
     background-color: @nav-bg;
     border-bottom: 2px solid @nav-border;
+    @media @phone {
+        .flexDisplayMethod(column, center);
+    }
     .navTitle{
         .flexDisplayMethod(row, center);
         .navTitleDesign();
-        
     }
     .navBar{
         .flexDisplayMethod(row, center);
+        @media @phone {
+            .navBarDesign(0px);
+        }
         a{
-            .navBarDesign();
+            .navBarDesign(40px);
+
         }
     }
-        
-
 }
 
 //header image
@@ -36,9 +40,45 @@
 
 //button 
 .btn {
-    .niceButtonStyle(@sea-shell, 5px );
+    .niceButtonStyle(@sea-shell, 5px, inline );
+    &:hover{
+        .inverseButtonStyle(@sea-shell)
+    }
+
+    @media @phone{
+        .niceButtonStyle(@sea-shell, 5px, block);
+    }
 }
 
+//phone
 
+.space-images {
+    @media @phone{
+        img:nth-child(n+2){
+            display: none;
+        }
 
+        img:nth-child(n+1){
+            width: 100%;
+        }
+    }
+}
+
+//walk section
+
+.walk{
+    @media @phone{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    }
+
+    .walk-img{
+        img{
+        @media @phone{
+        }
+    }
+}
+
+}
 

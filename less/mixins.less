@@ -1,5 +1,8 @@
-// Mixins Here
+// Mixins 
 
+.mobileButtonStyle(){
+
+}
 
 
 //Parametric Mixins
@@ -10,12 +13,19 @@
     justify-content: @justify;
 }
 
-.niceButtonStyle(@btnColor, @border-radius){
+.niceButtonStyle(@btnColor, @border-radius, @btnDisplay){
     color: @btnColor;
     font-size: 2rem;
 	text-decoration: none;
 	background: @btn-bg-color;
     border-radius: @border-radius;
-    display: inline-block;
+    display: @btnDisplay;
     border-width: 80px 40px;
+}
+
+.inverseButtonStyle(@btnColor){
+    color: @btn-bg-color;
+    font-size: 2rem;
+    text-decoration: none;
+    background: @btnColor;
 }
