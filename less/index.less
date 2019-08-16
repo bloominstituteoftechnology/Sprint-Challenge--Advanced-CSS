@@ -1,11 +1,43 @@
 // Import your less files here:
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
 
 
+.navigation{
+    .flexDisplayMethod(column, space-evenly);
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    .navTitle{
+        .flexDisplayMethod(row, center);
+        .navTitleDesign();
+        
+    }
+    .navBar{
+        .flexDisplayMethod(row, center);
+        a{
+            .navBarDesign();
+        }
+    }
+        
 
+}
 
+//header image
+.intro{
+    .introImage {
+    .imageBorderStyle();
+    }
+}
 
-
-
+//button 
+.btn {
+    .niceButtonStyle(@sea-shell, 5px );
+}
 
 
 
