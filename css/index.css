@@ -1,0 +1,10 @@
+.btn {
+  display: flex;
+  flex-direction: center;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.walk-img {
+  display: flex;
+  flex-direction: row-reverse;
+}
