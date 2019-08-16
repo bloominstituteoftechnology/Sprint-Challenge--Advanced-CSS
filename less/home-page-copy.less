@@ -4,12 +4,24 @@
 
   .intro {
 
+    img {
+      .image-radius();
+    }
+
     h2 {
       padding: 15px;
     }
 
     p {
       padding:0 15px;
+    }
+
+    @media @phone {
+
+      img {
+        width: 95%;
+        margin-left: 2.5%;
+      }
     }
   
   }
@@ -22,8 +34,22 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .image-radius();
       height: 100%;
+    }
+
+    @media @phone {
+      .sky {
+        display:none;
+      }
+
+      .launch {
+        display:none;
+      }
+
+      .blast {
+        width: 95%;
+      }
     }
   }
 
@@ -41,7 +67,7 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    .section-border();
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -59,6 +85,14 @@
 
       .btn {
         .custom-btn();
+
+        @media @phone {
+          width: 100%;
+        }
+      }
+
+      @media @phone {
+        width: 95%;
       }
     }
 
@@ -69,8 +103,20 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .image-radius();
+      }
+
+      @media @phone {
+        width: 100%;
+        order: -1;
+        padding-bottom: 10px;
+        margin: 0 auto;
       }
     }
+
+    @media @phone {
+      flex-direction: column;
+      padding: 2.5%;
+    }//ends .walk
   }
 }// home
