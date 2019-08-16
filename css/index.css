@@ -176,7 +176,7 @@ p {
 }
 .nav-container nav {
   display: flex;
-  width: 50%;
+  width: 60%;
   flex-direction: row;
   margin: 6px 0 10px 0;
   justify-content: space-between;
@@ -196,6 +196,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -206,6 +209,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -229,6 +241,17 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 60px;
+    border-top: 1px solid #dee2e6;
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -248,9 +271,53 @@ footer {
   text-decoration: none;
   font-size: 1.5rem;
 }
+.home .walk .walk-text .btn:hover {
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  color: #22283A;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    border-radius: 0px;
+    background-color: #22283A;
+    border: 1px solid #dee2e6;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .home .walk .walk-text .btn:hover {
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    color: #22283A;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
