@@ -1,8 +1,10 @@
-// window.onload = init;
+window.onload = init;
 
-// function init() {
-//     alert("loaded");
-//     document.querySelector(".")
-// }
+function init() {
+    const nav = document.querySelector(".nav-section");
+    window.addEventListener('scroll',function(e) {
+    nav.classList.add("lighten-nav");
+    if(window.scrollY === 0) nav.classList.remove("lighten-nav");
+    })
+}
 
-alert("showing!")

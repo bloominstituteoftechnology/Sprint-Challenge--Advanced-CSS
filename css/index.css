@@ -202,12 +202,17 @@ p {
   .nav-section nav {
     display: flex;
     justify-content: space-around;
+    width: 100%;
   }
 }
 .nav-section nav a {
   font-size: 2rem;
   text-decoration: none;
   color: #454A59;
+}
+.lighten-nav {
+  background: rgba(246, 246, 246, 0.6);
+  transition: 1s ease-in;
 }
 footer {
   color: #22283B;
@@ -221,6 +226,8 @@ footer {
 }
 .home .intro .main-header-banner img {
   border-radius: 5px;
+  margin-top: 93px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .intro .main-header-banner img {
