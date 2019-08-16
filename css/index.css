@@ -170,7 +170,11 @@ p {
 }
 .nav-section {
   background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
   color: #454A59;
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 10px 0;
 }
 @media (max-width: 500px) {
@@ -183,13 +187,14 @@ p {
   justify-content: center;
   padding: 10px 0;
 }
-.nav-section div {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+.nav-section .nav-container {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
 }
 .nav-section nav {
   width: 500px;
+  color: #454A59;
   display: flex;
   justify-content: space-between;
 }
@@ -201,6 +206,8 @@ p {
 }
 .nav-section nav a {
   font-size: 2rem;
+  text-decoration: none;
+  color: #454A59;
 }
 footer {
   color: #22283B;
