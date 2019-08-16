@@ -32,15 +32,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+# 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+    ### A: An adaptive website will have different designs for different screen sizes/devices while a reponsive website will use the same design with media queries/breakpoints to display the same website with slight differences for mobile vs desktop.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+# 2. Describe what it means to be mobile first vs desktop first.
 
-4. How would you describe preprocessing to someone new to CSS?
+    ### A: With Mobile first you're prioritizing mobile users specifically by writting your base CSS for a mobile screens display while on desktop first you're making a more traditional website that will presummedbly either have a "mobile first" design for mobile or be responsive and adjust as it is accessed from different screen sizes.  
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+# 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+    ### A: "font-size: 62.%" is a way to normalize your font size (The equivilent of 10px) so that you can use rem units in order to increase accesibililty for users who need to have a large font size. The text is more dynamic and based off the users broswer settings. 
+
+# 4. How would you describe preprocessing to someone new to CSS?
+
+    ### A: Pre-processing is a way to keep your CSS cleaner/easier to read while working on it because of nesting. Your preprocessor will take your nested css and create "vanilla" css out of it. This allows you to use features called mixin's and variables in your CSS so that you can create ways that a possible 5 lines of code could be written in one in your preprocessor.
+
+# 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    ### A: My favorite concept and the one that gives me the most trouble would have to be variables. I understand how it works but I can't seem to think about the proper way to make a referencable variable quickly. I tend to have to think about it for a few seconds to figure out exactly what i'm accomplising when making a variable. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
