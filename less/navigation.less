@@ -1,1 +1,30 @@
 // Navigation code here
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding:16px;
+  
+    @media (max-width:500px){
+      width:100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-bus{
+      margin-left: 3%;
+
+    @media (max-width:500px){
+        margin:0;
+      }
+    }
+    .nav-links{
+      width:50%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+    @media (max-width:500px){
+        width:100%;
+      }
+    }
+  }
