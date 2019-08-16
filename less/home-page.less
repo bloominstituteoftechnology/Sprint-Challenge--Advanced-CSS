@@ -75,7 +75,7 @@
         border-radius: 10px;
       
         .btn{
-          background:color rgb(10, 8, 15)
+          background-color: @btn-bg-color;
           .btn-style();
           .btn-flex();
         }
@@ -83,3 +83,29 @@
     }
   }
 }// home
+
+/***********mobile design media query*****************/
+
+@media (max-width:500px){
+  width:100%;
+  display-flex:flex;
+  justify-content:space-evenly;
+  margin:0;}
+
+  @media(max-width:500px){
+    .blast {
+      display:none;}
+    .sky {
+      display:none;}
+      } 
+  @media (max-width:500px){
+    .walk{
+      display:flex;
+      flex-direction: column-reverse;
+      width:100%;
+    .visit-planets{
+      display:flex;
+      flex-direction: column;
+      width:100%;}
+      }
+  }
