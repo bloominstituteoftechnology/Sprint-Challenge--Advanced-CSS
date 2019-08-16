@@ -1,5 +1,5 @@
 // Mixins Here
-.button(@color, @textcolor){
+.button (@color, @textcolor){
     display: flex;
     box-sizing:border-box;
     height: 2em;
@@ -11,5 +11,8 @@
     background-color: @color;
     color: @textcolor;
     border-radius: 0.8em;
-
+    &:hover {
+        background-color:green;
+    color: red;
+    }
 }

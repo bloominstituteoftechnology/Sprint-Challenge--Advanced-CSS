@@ -163,24 +163,29 @@ p {
 .navbar {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   Height: 8rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
 }
 .navbarlinks {
   display: flex;
-  height: 30%;
-  justify-content: space-evenly;
-  align-items: baseline;
+  height: 50%;
+  width: 50%;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 1.4rem;
+  padding: 0.8rem;
 }
 .navbarlinks a {
   text-decoration: none;
   color: black;
 }
-.h1 {
+h1 {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  font-size: center;
+  font-size: 4rem;
+  padding: 0.4rem;
 }
 footer {
   color: #22283B;
@@ -203,6 +208,11 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -224,6 +234,11 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -255,4 +270,8 @@ footer {
   background-color: black;
   color: white;
   border-radius: 0.8em;
+}
+.home .walk .btn:hover {
+  background-color: green;
+  color: red;
 }
