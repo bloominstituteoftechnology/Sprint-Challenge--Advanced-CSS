@@ -1,1 +1,29 @@
 // Mixins Here
+
+.btn(@width; @color;){
+    button: @width @color;
+}
+.button{ 
+    .btn(100px; black;){
+
+}
+.btn:hover{
+    background-color: aqua !important;
+    color: black !important;
+}
+
+@media (max-width: 500px){
+    width: 100%;
+}
+    .container home{
+        display: flex;
+    }
+    .img .main-header{
+        width: 90%;
+    }
+    .intro p {
+        margin: 15px;
+    }
+    
+
+}
