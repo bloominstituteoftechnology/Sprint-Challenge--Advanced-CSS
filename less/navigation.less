@@ -1,32 +1,46 @@
 // Navigation code here
 
 .navDiv {
+    border: 2px solid @sea-shell;
+    background: @wild-sand;
     display: flex;
     flex-direction: column;
-    padding: 2%;
+    align-items: center;
+    color: @river-bend;
 
 
     .heading {
-        font-size: 3rem;
-        text-align: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 4rem;
+        margin-bottom: 5px;
     }
 
-    nav {
-        display: flex;
+    a {
+        padding-right: 20px;
+        margin-bottom: 5px;
+        text-decoration: none;
+        font-size: 2rem;
 
-        a {
-            // .center();
-            .align();
-            text-decoration: none;
-            padding: 1.5%;
+    }
+
+    /*****************************MEDIA***********************************/
+    @media @phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .heading {
+            font-size: 3rem;
         }
 
+        a {
+            padding-right: 4px;
+            margin-bottom: 2px;
+            text-decoration: none;
+            font-size: 2.2rem;
+        }
 
     }
 
-    @media @phone {
-        flex-direction: column;
-        align-items: center;
-    }
 
 }
