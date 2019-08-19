@@ -1,6 +1,6 @@
-/* :hover {
+:hover {
   background: color: blanchedalmond;
-} */
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -176,6 +176,37 @@ nav.a {
   display: flex;
   justify-content: space-between;
 }
+.space-header {
+  margin: 0 auto;
+  background: white;
+}
+.space-header nav {
+  margin: auto;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 2%;
+  font-size: 14px;
+}
+.space-header nav a {
+  color: black;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+img {
+  border-radius: 7px;
+}
+.blast,
+.sky {
+  margin-right: 34px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -193,7 +224,7 @@ footer {
   align-items: center;
 }
 h1 {
-  display: flex;
+  /* display: flex; */
   padding: 15px;
 }
 .home {
@@ -217,28 +248,22 @@ h1 {
 }
 .visit-planets {
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  height: 1px;
 }
 .visit-planets h3 {
   margin-top: 11px;
 }
-p {
+.visit-planets p {
   margin-top: 13px;
-  display: flex;
-  justify-items: center;
-  padding: 10px;
 }
 .walk {
   margin-top: 60px;
+  border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
 .walk .walk-text {
-  display: flex;
-  justify-content: space-between;
+  width: 50%;
 }
 .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -246,68 +271,15 @@ p {
 .walk .walk-text p {
   margin-bottom: 26px;
 }
-.walk .walk-text .Sign-up-btn {
-  display: block;
-  margin: 0 10px 20px;
-  cursor: pointer;
-  width: 200px;
-  height: 45px;
-  font-size: 2rem;
-  border-radius: 10px;
-}
-@media (max-width: 515px) {
-  .walk .walk-text {
-    width: 90%;
-    height: 50px;
-    font-size: 2.5rem;
-  }
-}
-.walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 body {
   display: flex;
-}
-
-*header {
-margin: 0 auto;
-width: 68%;
-background: lightgrey;
-}
-
-.header nav {
-margin: auto;
-width: 45%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 2%;
-font-size: 14px;
-}
-
-.header nav a {
-color: black;
-text-decoration: none;
-}
-
-.heading{
-text-align: center;
-font-size: 2.2rem;
-font-weight: 700;
-margin-block-start: 8px;
-margin-block-end: 8px;
-}
-
-img{
-border-radius: 7px;
-}
-
-.blast, .sky{
-margin-right: 34px;
 }

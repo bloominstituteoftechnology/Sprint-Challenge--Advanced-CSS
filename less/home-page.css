@@ -42,47 +42,6 @@ p {
   justify-items: center;
   padding: 10px;
 }
-.walk {
-  margin-top: 60px;
-  padding: 50px 60px;
-  display: flex;
-  justify-content: center;
-}
-.walk .walk-text {
-  display: flex;
-  justify-content: space-between;
-}
-.walk .walk-text h3 {
-  margin-bottom: 10px;
-}
-.walk .walk-text p {
-  margin-bottom: 26px;
-}
-.walk .walk-text .Sign-up-btn {
-  display: block;
-  margin: 0 10px 20px;
-  cursor: pointer;
-  width: 200px;
-  height: 45px;
-  font-size: 2rem;
-  border-radius: 10px;
-}
-@media (max-width: 515px) {
-  .walk .walk-text {
-    width: 90%;
-    height: 50px;
-    font-size: 2.5rem;
-  }
-}
-.walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
 body {
   display: flex;
 }
