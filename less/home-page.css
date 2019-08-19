@@ -1,0 +1,88 @@
+.header {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  display: flex;
+  padding: 15px;
+}
+.home {
+  display: flex;
+  justify-content: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.space-images {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.space-images img {
+  display: flex;
+  justify-content: center;
+}
+.visit-planets {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  height: 1px;
+}
+.visit-planets h3 {
+  margin-top: 11px;
+}
+p {
+  margin-top: 13px;
+  display: flex;
+  justify-items: center;
+  padding: 10px;
+}
+.walk {
+  margin-top: 60px;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.walk .walk-text {
+  display: flex;
+  justify-content: center;
+}
+.walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text .Sign-up-btn {
+  display: block;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+@media (max-width: 515px) {
+  .walk .walk-text {
+    width: 90%;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+}
+.walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+body {
+  display: flex;
+}
