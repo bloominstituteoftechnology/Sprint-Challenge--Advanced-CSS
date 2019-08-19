@@ -34,6 +34,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+a fully responsive website will look the same on any  size screen. A adaptive website still has hard coded margins, widiths, and pixel sizes that
+
 2. Describe what it means to be mobile first vs desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
