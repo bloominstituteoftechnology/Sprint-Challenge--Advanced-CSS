@@ -1,1 +1,52 @@
 // Navigation code here
+.nav-section {
+    background-color: @wild-sand;
+    border-bottom:1px solid @sea-shell;
+    color:@nav-font;
+    position: fixed;
+    top: 0;
+    width:100%;
+    padding:10px 0;
+    @media @mobile {
+          width:100%;
+    }
+    & > div {
+        
+    // background-color: @wild-sand;
+    }
+
+    h2 {
+        .flex-center();
+        padding:10px 0;
+    }
+
+    .nav-container {
+        max-width:500px;
+        text-align:center;
+        margin:0 auto;
+    }
+    nav {
+        width:500px;
+        color:@river-bend;
+        .space-between();
+        @media @mobile {
+          display: flex;
+          justify-content: space-around;
+          width:100%;
+        //   width:400px;
+        }
+
+        a {
+            font-size:2rem;
+            text-decoration:none;
+            color:@river-bend;
+
+        }
+    }
+}
+
+.lighten-nav {
+    // background:lighten(@wild-sand,10%);
+        background:rgba(246,246,246,0.6);
+        transition: 1s ease-in;
+}
