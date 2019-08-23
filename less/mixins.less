@@ -1,1 +1,46 @@
 // Mixins Here
+
+.horizontal-flex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round-corners(){
+    border-radius: 5px; 
+}
+
+.sign-up(@bg-color, @text-color) {
+    background-color: @bg-color;
+    color: @text-color;
+    padding: 7px 8px 7px 8px;
+    .round-corners();
+    width: 90px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.sign-up-hover(@bg-color, @text-color) {
+    background-color: @text-color;
+    color: @bg-color;
+    padding: 7px 8px 7px 8px;
+    .round-corners();
+    width: 90px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
