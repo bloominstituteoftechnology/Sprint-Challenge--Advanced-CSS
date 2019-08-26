@@ -169,16 +169,17 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: 'Livvic', sans-serif;
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'DM', serif;
   color: #23293B;
+  font-weight: bold;
 }
 h2 {
   font-size: 3.2rem;
@@ -191,26 +192,24 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 .nav-container {
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(220, 220, 220, 0.5);
-  position: fixed;
-  /* Set the navbar to fixed position */
+  background-color: #eee3dd;
+  /*position: fixed; Set the navbar to fixed position */
   top: 0;
   /* Position the navbar at the top of the page */
-  width: 100%;
-  /* Full width */
 }
 .nav-container nav {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  max-width: 800px;
+  max-width: 100%;
 }
 .nav-container nav a {
   color: black;
@@ -298,8 +297,7 @@ footer {
   }
 }
 .home .intro .header-image {
-  border-radius: 5px;
-  margin-top: 112px;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .home .intro .header-image {
