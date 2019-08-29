@@ -1,17 +1,9 @@
 // Home Content
 
 .home {
-  @media @phone {
-    max-width: 100%;
-  }
-
   .intro {
     .header-image {
-      width: 100%;
-      @media @phone {
-        max-width: 100%;
-      }
-     
+      width: 100%;    
     }
 
     .intro-text {
@@ -21,10 +13,6 @@
       margin-top: 42px;
       border-left: 1px black solid;
       border-right: 1px black solid;
-      @media @phone {
-        max-width: 100%;
-        border: none;
-      }
     }
 
     h2 {
@@ -36,61 +24,16 @@
     }
   
   }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    .blast {
-      @media @phone {
-        width: 100%;
-      }
-    }
-
-    .sky {
-      @media @phone {
-        display: none;
-      }
-    }
-
-    .launch {
-      @media @phone {
-        display: none;
-      }
-    }
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
   .about-section {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     display: flex;
     justify-content: center;
-
     @media @phone {
-      flex-direction: column; 
-    }
+      flex-direction: column;
+      }
 
-    .walk-text {
+    .about-text-1 {
       width: 50%;
       display: flex;
       align-items: center;
@@ -99,8 +42,7 @@
       color: white;
       @media @phone {
         width: 100%;
-        margin-top: 20px; 
-
+        padding-top: 11px;
       }
 
       h3 {
@@ -109,19 +51,11 @@
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 10px;
-        color: white;
-        @media @phone {
-          border: none;
-        }
+        color: white; 
       }
-
-      
-
-
-
     }
 
-    .walk-img {
+    .about-text-2 {
       width: 50%;
       align-items: center;
       justify-content: center;
@@ -129,7 +63,6 @@
       background-color: #cdd3c2;
       @media @phone {
         width: 100%;
-        margin-top: 20px; 
       }
       
       p {
@@ -137,24 +70,85 @@
         padding: 10px; 
         border-left: 1px black solid;
         border-right: 1px black solid; 
-      }    
-      
+      }     
 
       .btn {
         .sign-up(black, white);
-        @media @phone {
-          width: 100%;          
-          padding: 15px 0px 15px 0px;
-        }
       }
 
       .btn:hover {
         .sign-up-hover(black, white);
-        @media @phone {
-          width: 100%;
-          padding: 15px 0px 15px 0px;
-        }
       }
     }
+    
+  }
+
+  .about-section-2 {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    display: flex;
+    justify-content: center;
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
+
+    .about-text-1 {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:black;
+      color: rgb(255, 255, 255);
+      @media @phone {
+        width: 100%;
+        padding-top: 11px;
+      }
+
+      h3 {
+        border-top: 1px white solid;
+        border-bottom: 1px white solid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        color: white;        
+      }
+    }
+
+    .about-text-2 {
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      background-color: #eec9b7;
+      @media @phone {
+        width: 100%;
+      }
+      
+      p {
+        margin-bottom: 26px;
+        padding: 10px; 
+        border-left: 1px black solid;
+        border-right: 1px black solid; 
+        color: black;
+        font-size: 2rem;
+      }   
+      
+      li {
+        padding: 10px; 
+        font-size: 1.8rem; 
+        color: black;
+      }
+      
+
+      .btn {
+        .sign-up(white, black);
+      }
+
+      .btn:hover {
+        .sign-up-hover(black, white);
+      }
+    }
+    
   }
 }// home

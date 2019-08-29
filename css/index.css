@@ -192,6 +192,9 @@ p {
   line-height: 1.4;
   font-family: 'Open Sans';
 }
+li {
+  font-family: 'Open Sans';
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -215,7 +218,7 @@ p {
 .nav-container nav a {
   color: black;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: 'Poiret';
 }
 .nav-container nav .logo {
@@ -223,7 +226,7 @@ p {
   font-size: 2.6rem;
   margin: 10px 0px 20px 0px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .nav-container nav .logo {
     width: 100%;
     text-align: center;
@@ -239,7 +242,7 @@ p {
 .nav-container nav .nav-element {
   padding: 5px 20px 5px 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .nav-container nav .nav-element {
     width: 19.6%;
     margin: 5px;
@@ -249,24 +252,14 @@ p {
 }
 footer {
   color: #22283B;
-  background: #d89279;
+  background: #eee3dd;
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 500px) {
-  .home {
-    max-width: 100%;
-  }
-}
 .home .intro .header-image {
   width: 100%;
-}
-@media (max-width: 500px) {
-  .home .intro .header-image {
-    max-width: 100%;
-  }
 }
 .home .intro .intro-text {
   max-width: 50%;
@@ -276,52 +269,11 @@ footer {
   border-left: 1px black solid;
   border-right: 1px black solid;
 }
-@media (max-width: 500px) {
-  .home .intro .intro-text {
-    max-width: 100%;
-    border: none;
-  }
-}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .home .space-images .blast {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .sky {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .launch {
-    display: none;
-  }
-}
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
-}
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
 }
 .home .about-section {
   margin-top: 60px;
@@ -329,12 +281,12 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .home .about-section {
     flex-direction: column;
   }
 }
-.home .about-section .walk-text {
+.home .about-section .about-text-1 {
   width: 50%;
   display: flex;
   align-items: center;
@@ -342,13 +294,13 @@ footer {
   background-color: black;
   color: white;
 }
-@media (max-width: 500px) {
-  .home .about-section .walk-text {
+@media (max-width: 600px) {
+  .home .about-section .about-text-1 {
     width: 100%;
-    margin-top: 20px;
+    padding-top: 11px;
   }
 }
-.home .about-section .walk-text h3 {
+.home .about-section .about-text-1 h3 {
   border-top: 1px white solid;
   border-bottom: 1px white solid;
   padding-top: 10px;
@@ -356,31 +308,25 @@ footer {
   margin-bottom: 10px;
   color: white;
 }
-@media (max-width: 500px) {
-  .home .about-section .walk-text h3 {
-    border: none;
-  }
-}
-.home .about-section .walk-img {
+.home .about-section .about-text-2 {
   width: 50%;
   align-items: center;
   justify-content: center;
   padding: 50px;
   background-color: #cdd3c2;
 }
-@media (max-width: 500px) {
-  .home .about-section .walk-img {
+@media (max-width: 600px) {
+  .home .about-section .about-text-2 {
     width: 100%;
-    margin-top: 20px;
   }
 }
-.home .about-section .walk-img p {
+.home .about-section .about-text-2 p {
   margin-bottom: 26px;
   padding: 10px;
   border-left: 1px black solid;
   border-right: 1px black solid;
 }
-.home .about-section .walk-img .btn {
+.home .about-section .about-text-2 .btn {
   background-color: black;
   color: white;
   padding: 7px 8px 7px 8px;
@@ -389,13 +335,7 @@ footer {
   text-align: center;
   font-size: 1.4rem;
 }
-@media (max-width: 500px) {
-  .home .about-section .walk-img .btn {
-    width: 100%;
-    padding: 15px 0px 15px 0px;
-  }
-}
-.home .about-section .walk-img .btn:hover {
+.home .about-section .about-text-2 .btn:hover {
   background-color: white;
   color: black;
   padding: 7px 8px 7px 8px;
@@ -404,9 +344,79 @@ footer {
   text-align: center;
   font-size: 1.4rem;
 }
-@media (max-width: 500px) {
-  .home .about-section .walk-img .btn:hover {
-    width: 100%;
-    padding: 15px 0px 15px 0px;
+.home .about-section-2 {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .home .about-section-2 {
+    flex-direction: column-reverse;
   }
+}
+.home .about-section-2 .about-text-1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  .home .about-section-2 .about-text-1 {
+    width: 100%;
+    padding-top: 11px;
+  }
+}
+.home .about-section-2 .about-text-1 h3 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.home .about-section-2 .about-text-2 {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #eec9b7;
+}
+@media (max-width: 600px) {
+  .home .about-section-2 .about-text-2 {
+    width: 100%;
+  }
+}
+.home .about-section-2 .about-text-2 p {
+  margin-bottom: 26px;
+  padding: 10px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  color: black;
+  font-size: 2rem;
+}
+.home .about-section-2 .about-text-2 li {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: black;
+}
+.home .about-section-2 .about-text-2 .btn {
+  background-color: white;
+  color: black;
+  padding: 7px 8px 7px 8px;
+  border-radius: 5px;
+  width: 90px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.home .about-section-2 .about-text-2 .btn:hover {
+  background-color: white;
+  color: black;
+  padding: 7px 8px 7px 8px;
+  border-radius: 5px;
+  width: 90px;
+  text-align: center;
+  font-size: 1.4rem;
 }
