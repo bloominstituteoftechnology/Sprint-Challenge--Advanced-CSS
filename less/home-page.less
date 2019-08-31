@@ -1,5 +1,21 @@
 // Home Content
-
+// Mobile var
+@media(max-width: 500px){
+  
+  .space-images .sky{
+    display: none;
+  }
+  .space-images .launch{
+    display: none;
+  }
+  .space-images{
+    .center();
+  }
+  .walk{
+    .center();
+    flex-direction: column;
+  }
+}//Media Ends
 .home {
 
   .intro {
@@ -58,6 +74,18 @@
       }
 
       .btn {
+        .center();
+        border: 1px solid black;
+        width: 25%;
+        background-color: @ebony-clay;
+        color: @porcelain;
+        font-size: 1.7rem;
+        height: 12%;
+        border-radius: 5px;
+      }
+      .btn:hover {
+        background-color: pink;
+        color: black;
       }
     }
 
