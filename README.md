@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+- The difference between an adaptive website and a fully responsive website is that responsive designs change the size of the web page to adapt to the user's screen, and adaptive design creates different web pages for different devices. 
 
 2. Describe what it means to be mobile first vs desktop first.
+- A mobile first design is focused for mobile users and their devices. Mobile first designs are designed for Devices such as mobile phones and tablets. Desktop first designs are web pages that are designed to be viewed on full sized screens such as computers or laptops. The mobile versions of these pages are then created later. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+- A font size of 62.5% is used in the HTML tag when using rem units to have the convenience of sizing rems in a way that is similar to using pixels. This is helpful for when someone increases the font size on their browser settings. 
 
 4. How would you describe preprocessing to someone new to CSS?
+- Preprocessing is a different language that uses CSS to better organize your files while developing. Languages such as SASS or LESS allow you to style your pages in different files, and the preprocessor will import all of those styles into the main CSS file. Proprocessing also offers you different tools and techniques that make styling easier to do / read.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+- Definitely nesting and variables. I find it very intuitive to style like that and not have to constantly re-write the same things over and over. I still need to work on parametric mixins and understand them more before I can use them on a day-to-day basis. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

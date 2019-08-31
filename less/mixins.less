@@ -1,1 +1,15 @@
 // Mixins Here
+
+.column(){
+	display: flex;
+    flex-direction: column-reverse;
+}
+
+.center(){
+    text-align: center;
+}
+
+// Parametric Mixins
+.round-borders (@radius: 10px) {
+    border-radius: @radius;
+}

@@ -1,1 +1,41 @@
 // Navigation code here
+
+.navbar {
+    background: #F6F6F6;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    
+    .logo {
+        font-size: 4rem;
+        .center();
+        padding: 10px 0;
+    }
+
+    .links {
+        .center();
+        padding-bottom: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #454A59;
+    font-size: 18px;
+    padding: 0 20px;
+
+    &:hover {
+        color: blue;
+      }
+
+    @media @mobile {
+        padding: 0 10px;
+    }
+}
