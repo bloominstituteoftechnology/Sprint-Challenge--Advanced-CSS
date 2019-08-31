@@ -45,7 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
 4. How would you describe preprocessing to someone new to CSS?
 <!-- Answer --> A preprocessor is when you take one type of data, and it's converted into a different type of data. If you use the LESS Preprocessor, you can write in the unique syntax
 of LESS, and a compiler will automatically compile that into the syntax of vanilla CSS. 
-
+ 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 <!-- Answer --> My favorite concept in preprocessing is being able to create mixins/parametric mixins. A concept I struggle with is nesting. Not so much HOW to nest, but how to set up the code properly. 
 
