@@ -1,3 +1,10 @@
+.center {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +152,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 3.8rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -160,6 +170,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: #f4f4f4;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  background: #f4f4f4;
+  border-bottom: 1px solid gray;
+}
+nav a {
+  padding: 15px;
+  text-decoration: none;
+}
+nav a:visited {
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +204,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home img {
+  width: 100%;
+  border-radius: 4px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +250,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid #22283A;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 28%;
+  color: white;
+  background-color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
