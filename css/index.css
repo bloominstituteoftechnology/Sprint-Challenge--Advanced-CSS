@@ -148,6 +148,9 @@ h5 {
 h2 {
   font-size: 3.2rem;
 }
+html {
+  font-size: 62.5%;
+}
 h3 {
   font-size: 2.8rem;
 }
@@ -179,6 +182,10 @@ p {
   color: black;
   font-weight: bold;
   padding: 15px;
+}
+.nav-container h1 {
+  font-size: 4.5rem;
+  padding-bottom: 10px;
 }
 footer {
   color: #22283B;
