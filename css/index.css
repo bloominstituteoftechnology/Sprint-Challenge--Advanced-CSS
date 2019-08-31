@@ -162,6 +162,8 @@ p {
 }
 .navbar {
   background: #F6F6F6;
+  position: sticky;
+  top: 0;
 }
 nav {
   max-width: 800px;
@@ -185,6 +187,9 @@ a {
   font-size: 18px;
   padding: 0 20px;
 }
+a:hover {
+  color: blue;
+}
 @media (max-width: 500px) {
   a {
     padding: 0 10px;
@@ -207,7 +212,7 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
-  border-radius: 10px;
+  border-radius: [object Object];
   width: 100%;
   margin: 0 auto;
 }
@@ -286,6 +291,9 @@ footer {
   font-size: 1.6rem;
   color: white;
   border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #3e496a;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
