@@ -13,12 +13,15 @@
     padding: 5px 10px;
     width: 30%;
     text-align: center;
+}
 
+.mixin-btn(@header-font-color, white);     
+@media @phone {
+  width: 100%;
+  padding: 20px 0;
+}
     &:hover {
         background: @font-clr;
         color: @bgd-clr;
         border: 1px solid @bgd-clr;
     }
-.mixin-btn(@bgd-color) {
-
-}
