@@ -1,4 +1,37 @@
 // Variables
+// button animation 
+@keyframes colorcycle {
+    0%   {background-color:red; left:0px; top:0px;}
+    0%   {color: black;}
+    15%  {background-color: orange; left: 0px; top:0px;}
+    15%  {color: black;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    35%  {color: white;}
+	35%  {background-color: blue; left:200px; top:0px;}
+	50%  {background-color: blueviolet; left:200px; top:200px;}
+    65%  {background-color: purple; left:200px; top:200px;}
+    65%  {color: black;}
+	75%  {background-color:green; left:0px; top:200px;}
+	95%  {background-color: greenyellow; left:0px; top:150px;}
+    100% {background-color:black; left:0px; top:0px;}
+    100% {color: white;}
+  }
+// Nav animation
+  @keyframes slidein{ 
+	from{
+	  margin-left: 100%;
+	 width: 100%;
+	}
+	
+	to{
+	  margin-left: 0%;
+	width: 100%;
+	}
+  }
+
+  @accent-color: white;
+  @main-color: black;
+  @nav-background: #f4f4f4;
 
 // Color pointers
 @nav-bg: @wild-sand;
@@ -24,3 +57,4 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@phone: ~"(max-width: 500px)";
