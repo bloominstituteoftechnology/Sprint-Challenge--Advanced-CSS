@@ -13,12 +13,12 @@ nav {
     
     .logo {
         font-size: 4rem;
-        text-align: center;
+        .center();
         padding: 10px 0;
     }
 
     .links {
-        text-align: center;
+        .center();
         padding-bottom: 10px;
     }
 }
@@ -28,4 +28,8 @@ a {
     color: #454A59;
     font-size: 18px;
     padding: 0 20px;
+
+    @media @mobile {
+        padding: 0 10px;
+    }
 }
