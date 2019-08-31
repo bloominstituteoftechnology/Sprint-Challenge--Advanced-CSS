@@ -1,5 +1,6 @@
 /*nav*/
 /*button*/
+/*phone*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -161,12 +162,24 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  /*phone*/
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
 }
 nav {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 500px;
+  }
 }
 nav a {
   font-size: 1.3rem;
@@ -192,8 +205,24 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  /*phone*/
+}
+@media (max-width: 500px) {
+  .home .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+}
 .home .intro h2 {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    padding-right: 325px;
+  }
 }
 .home .intro p {
   padding: 0 15px;
@@ -202,6 +231,18 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  /*phone*/
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -241,9 +282,15 @@ footer {
   color: white;
   cursor: pointer;
   font-size: 1.5rem;
+  /*phone*/
 }
 .home .walk .walk-text button:hover {
   background-color: #676767;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text button {
+    width: 100%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
@@ -256,4 +303,9 @@ footer {
 }
 .header-img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .header-img {
+    width: 100%;
+  }
 }
