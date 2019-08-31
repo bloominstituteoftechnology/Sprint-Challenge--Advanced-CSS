@@ -60,6 +60,16 @@
     color: white;
   }
 }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .center {
   display: flex;
   flex-wrap: wrap;
@@ -249,6 +259,8 @@ nav {
   font-size: 1.8rem;
   background: #f4f4f4;
   border-bottom: 1px solid gray;
+  animation-name: slidein;
+  animation-duration: 4s;
 }
 @media (max-width: 500px) {
   nav {
@@ -286,6 +298,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  animation-name: slidein;
+  animation-duration: 6s;
 }
 @media (max-width: 500px) {
   .home .space-images :nth-child(2) {
