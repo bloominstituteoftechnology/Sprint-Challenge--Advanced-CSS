@@ -4,6 +4,30 @@
 /* Color Vars */
 /* Mobile var */
 /* Mixins Here */
+.box {
+  background-color: #22283A;
+  padding: 10px;
+  max-width: 30%;
+  border-radius: 5px;
+  text-align: center;
+}
+.box2 {
+  background-color: white;
+  padding: 10px;
+  max-width: 30%;
+  border-radius: 5px;
+  text-align: center;
+}
+.buttonfont {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.buttonfont2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #22283A;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -258,6 +282,26 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  padding: 10px;
+  max-width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  padding: 10px;
+  max-width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

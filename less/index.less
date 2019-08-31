@@ -29,6 +29,34 @@
 
 /* Mixins Here */
 
+.box {
+	background-color: @btn-bg-color;
+	padding: 10px;
+	max-width: 30%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.box2 {
+	background-color: white;
+	padding: 10px;
+	max-width: 30%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.buttonfont{
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+.buttonfont2{
+	font-size: 16px;
+	font-weight: bold;
+	color: @btn-bg-color;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -231,7 +259,13 @@ footer {
       }
 
       .btn {
-      	
+      	.box();
+      	.buttonfont();
+      }
+
+      .btn:hover {
+      	.box2();
+      	.buttonfont2();
       }
     }
 
