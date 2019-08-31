@@ -1,1 +1,33 @@
 // Mixins Here
+
+/*nav*/
+.center(){
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+@nav-font-color: #1B0D0D;
+
+.navigation() {
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: @nav-font-color;
+	padding: 20px;
+
+}
+
+/*button*/
+.button-layout(@padding, @color) {
+  padding: @padding;
+  border-radius: 10px;
+  background-color: @nav-font-color;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover {
+	background-color: darken(grey, 10%)
+  }
+}
+
