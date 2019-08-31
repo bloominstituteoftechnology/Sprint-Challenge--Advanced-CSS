@@ -201,6 +201,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  border-radius: 10px;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -238,7 +241,12 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  color: red;
+  background-color: #22283A;
+  padding: 10px 0 10px 25px;
+  margin-right: 235px;
+  font-size: 1.6rem;
+  color: white;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;
