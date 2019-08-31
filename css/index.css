@@ -193,6 +193,11 @@ p {
   font-size: 4.5rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .nav-container {
+    min-width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
