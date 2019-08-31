@@ -168,6 +168,16 @@ p {
   margin: 0 auto;
 }
 /* Navigation code here */
+.container-header {
+  background-color: #F6F6F6;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-header h1 {
+  color: #454A59;
+  border-bottom: 2px solid #F1F1F1;
+}
 /* Footer Styles */
 footer {
   color: #22283B;
