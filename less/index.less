@@ -124,8 +124,27 @@ p {
 }
 
 .container-header h1 {
-	color: @nav-font;
-	border-bottom: 2px solid @nav-border;
+	color: @header-font-color;
+	font-size: 45px;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.container-header nav {
+	display: flex;
+    justify-content: center;
+    border-bottom: 2px solid @nav-border;
+    font-size: 16px;
+    margin-top: 1%;
+    color: @nav-font;
+}
+
+.container-header nav ul {
+	display: flex;
+}
+
+.container-header nav ul li {
+	padding: 20px;
 }
 
 /* Footer Styles */
@@ -146,12 +165,20 @@ footer {
 
   .intro {
 
+  	img {
+  		max-width: 100%;
+    	padding: 0% 4%;
+    	border-radius: 5%;
+  	}
+
     h2 {
       padding: 15px;
+      margin: 0px 45px;
     }
 
     p {
       padding:0 15px;
+      margin: 0px 45px;
     }
   
   }
@@ -174,10 +201,14 @@ footer {
 
     h3 {
       margin-top: 11px;
+      margin-left: 45px;
+      margin-right: 45px;
     }
 
     p {
       margin-top: 13px;
+      margin-left: 45px;
+      margin-right: 45px;
     }
   }
 
@@ -200,6 +231,7 @@ footer {
       }
 
       .btn {
+      	
       }
     }
 
