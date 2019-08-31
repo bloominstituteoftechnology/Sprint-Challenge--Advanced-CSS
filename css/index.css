@@ -160,6 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  display: flex;
+  font-family: #454A59;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 15px 0;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #F1F1F1;
+  position: fixed;
+  top: 0;
+}
+.nav-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 15px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
