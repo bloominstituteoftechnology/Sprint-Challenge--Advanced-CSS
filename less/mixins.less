@@ -1,1 +1,28 @@
 // Mixins Here
+.flex(@justify:center; @align:center; @direction:row; @wrap:wrap;){ //make flex calling super easy hopefully
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-flow: @direction @wrap;
+
+}
+
+.button(@color; @fsize; @fcolor;@bthick;@bstyle;@bcolor:@fcolor;){ //color is button background color, fsize is font size, fcolor is font color, bstyle is border type, bcolor is color of border defaults to font color if not entered,bthick is line thickness
+
+  background-color: @color;
+  font-size: @fsize;
+  color: @fcolor;
+  border: @bthick @bstyle @bcolor;
+  border-radius: 5px;
+  padding:10px;
+  text-align: center;
+  font-weight: bold;
+
+
+
+  //@media @phone{
+  //  background-color: lighten(@color, 8%);
+  //}
+
+
+}

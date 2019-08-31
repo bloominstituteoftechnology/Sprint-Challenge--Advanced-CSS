@@ -1,1 +1,36 @@
 // Navigation code here
+
+.header-cont{
+  width:100%;
+  background-color: @nav-bg;
+  .flex(center,center,column,nowrap);
+  border-bottom: 2px solid @nav-border;
+
+  h1{
+    margin-top: 20px;
+  }
+
+}
+nav a{
+  //.flex(space-between, center, row, nowrap);
+  margin: 25px 15px;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
+  @media @phone{
+
+    margin: 25px 20%;
+  }
+}
+
+nav{
+  .flex(space-between, center, row, nowrap);
+
+  @media @phone{
+    .flex(flex-start, center, row, nowrap);
+    position: relative;
+    right: 135px;
+  }
+
+}
