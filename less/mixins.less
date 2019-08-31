@@ -1,1 +1,38 @@
 // Mixins Here
+
+.column() {
+   display: flex;
+   flex-direction: column;
+}
+
+.width-height (@width2, @height) {
+    width:@width2 ;
+    height: @height;
+
+}
+
+.button(@align, @color, @background-color) {
+    display: flex;
+   justify-content: @align;
+   align-items: center;
+   color: @color;
+   width: @width;
+   height: 70px;
+   background: @background-color;
+   border-radius: 5px;
+   font-size: 2em;
+   
+
+}
+
+.button1() {
+    background: @btn-bg-color;
+    width: 25%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: @porcelain;
+    font-size: 125%;
+}
