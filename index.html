@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-sacle=1">
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,25 @@
 <body>
 
  <!-- navigation code here -->
+ <nav>
+   <h2>SpaceWalkers</h2>
+   <ul class="nav-links">
+     <a href="#"><li>Home</li></a>
+     <a href="#"><li>About Us</li></a>
+     <a href="#"><li>Blog</li></a>
+     <a href="#"><li>Contact</li></a>
+     <a href="#"><li>Sign In</li></a>
+   </ul>
+ </nav>
+ 
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <div class="image-container">
+          <img class="header-img" src="img/main-header.png" alt="earth from above header image">
+         </div>
 
       <h2>Lift Off</h2>
     
@@ -57,10 +72,21 @@
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img class="space-man" src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
     </section>
+
+    <form>
+      <h3>Subscribe!</h3>
+      <div class="form-container">
+      Name:<input type="text" name="firstname" placeholder="First Name"><br>
+      Lastname: <input type="text" name="lastname" placeholder="Last Name"><br>
+      Email Address:<input type="email" name="Email" placeholder="Email"><br>
+      Confirm Email Address:<input type="email" placeholder="Confirm Email">
+    </div>
+
+    </form>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
