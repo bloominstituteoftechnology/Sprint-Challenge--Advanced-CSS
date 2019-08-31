@@ -250,6 +250,11 @@ nav {
   background: #f4f4f4;
   border-bottom: 1px solid gray;
 }
+@media (max-width: 500px) {
+  nav {
+    font-size: 1.5rem;
+  }
+}
 nav a {
   padding: 15px;
   text-decoration: none;
@@ -282,6 +287,21 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images :nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images :nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images :nth-child(1) {
+    width: 95%;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -297,6 +317,12 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    width: 100%;
+    padding: 10px;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -304,8 +330,25 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    padding: 0px;
+    margin-left: -10px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 94%;
+    margin-top: 5%;
+    padding-left: 0px;
+    margin-left: 25px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -324,13 +367,36 @@ footer {
   color: white;
   background-color: #22283A;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    border: 1px solid #22283A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 20px 20px;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    background-color: #22283A;
+    margin-left: -5px;
+    margin-bottom: 10px;
+  }
+}
 .home .walk .walk-text .btn:hover {
   animation-name: colorcycle;
   animation-duration: 20s;
 }
 .home .walk .walk-img {
   width: 46%;
-  margin-left: 4%;
+  margin: 0 auto;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

@@ -20,10 +20,28 @@
   
   }
 
+  
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      
+    }
+   
+      :nth-child(2){
+       @media @phone {display: none;}
+     }
+
+      :nth-child(3){
+        @media @phone {display: none;}
+      }
+    
+      :nth-child(1){
+        @media @phone {width: 95%;}
+      }
+
+     
 
     img {
       width: 28%;
@@ -43,6 +61,11 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone{
+      width: 100%;
+      padding: 10px;
+    }
   }
 
   .walk {
@@ -51,9 +74,26 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      padding: 0px;
+      margin-left: -10px;
+      
+    
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 94%;
+        margin-top: 5%;
+        padding-left: 0px;
+        margin-left: 25px;
+        
+        
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -64,10 +104,19 @@
       }
 
       .btn {
+        @media @phone{
+          
+          
+          .button-mobile(100%;@accent-color; @btn-bg-color;);
+          margin-left: -5px;
+          margin-bottom: 10px;
+          
+        }
         .button(28%;@accent-color; @btn-bg-color;)
-        
+
         
       }
+      
       
     
       .btn:hover{
@@ -75,12 +124,21 @@
         animation-duration: 20s;
       }
 
+     
 
     }
 
     .walk-img {
       width: 46%;
-      margin-left: 4%;
+      margin: 0 auto;
+      padding: 10px;
+      @media @phone{ 
+        width:95%;
+        margin-top: 20px;
+        padding-left: 20px;
+        
+      
+      }
       
       img {
         width: 100%;
@@ -90,3 +148,7 @@
     }
   }
 }// home
+
+
+
+  
