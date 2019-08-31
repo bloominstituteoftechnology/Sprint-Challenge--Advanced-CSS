@@ -1,1 +1,19 @@
 // Mixins Here
+
+.Flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.FlexC{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+.SignMeUp(@color:darkblue; @w: 100%;){
+    background-color: @color;
+    width: @w;
+    color: white;
+}
