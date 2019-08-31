@@ -1,1 +1,27 @@
-// Mixins Here
+// Mixins 
+.mobile-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-width () {
+    min-width: 100%;
+}
+
+// Parametric Mixin
+.btn-mixin (@btn-bg-color, @btn-padding) {
+    background-color: @btn-bg-color;
+    padding: @btn-padding;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    cursor: pointer;
+    &:hover {
+        color: red;
+        background-color: black;
+        font-weight: bold;
+    }
+}
