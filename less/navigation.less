@@ -1,1 +1,43 @@
 // Navigation code here
+
+header{
+    margin: 0 auto;
+    width:100%;
+
+    .logo{
+        text-align:center;
+        font-size:40px;
+    }
+
+    @media @phone {
+    width:100%;
+    
+    }
+
+}
+
+nav{
+    .center();
+    margin-top:1em;
+    margin-bottom:1em;
+    border-color: @nav-border;
+    background-color: @nav-bg;
+    color:@nav-font;
+    a{
+        color:@nav-font;
+       padding-left:1em;
+       padding-right:1em;
+       font-size:12px;
+       text-decoration: none;
+
+
+    }
+}
+
+.main{
+    .bordered();
+
+    @media @phone {
+        width: 100%;
+    }
+}
