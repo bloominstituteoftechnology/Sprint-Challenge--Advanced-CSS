@@ -180,14 +180,10 @@ p {
   font-size: 1.8rem;
   padding: 20px 0px;
   color: #F6F6F6;
-  display: flex;
   background-color: #22283A;
+  display: flex;
   justify-content: center;
   align-items: center;
-}
-.walk-text .btn div.btn:hover {
-  color: #22283A;
-  background-color: #F6F6F6;
 }
 .alpha {
   display: block;
@@ -212,6 +208,11 @@ p {
   color: #23293B;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .alpha .beta nav {
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;
@@ -264,6 +265,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  height: 30px;
+  width: 35%;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  padding: 20px 0px;
+  color: #F6F6F6;
+  background-color: #22283A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk div.btn:hover {
+  color: #F6F6F6;
+  background-color: #6678ae;
 }
 .home .walk .walk-img {
   width: 46%;

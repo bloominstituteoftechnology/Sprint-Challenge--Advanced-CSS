@@ -1,19 +1,23 @@
 // Mixins Here
-.btn-blue (){
+//.btn-blue (@pad1, @sizeFont) {
+.btn-blue (@pad, @sizeFont) {
     height: 30px;
     width: 35%;
     border-radius: 5px;
-    font-size: 1.8rem;
-    padding: 20px 0px;
+    //font-size: @sizeFont || 1.8rem;
+    font-size: @sizeFont;
+    //padding: @pad1 0px;
+    padding: @pad 0px;
     color: @wild-sand;
-    display: flex;
     background-color: @btn-bg-color;
+    display: flex;
     justify-content: @alignment;
     align-items: @alignment;
-    
 }
 
-@media(max-width: 500px) {
+//@media(max-width: 500px)
+//@media(max-width: @phone) 
+@media(max-width: @phone) {
     flex-direction: column;
     width: 100%;
     padding-left: 1%;
