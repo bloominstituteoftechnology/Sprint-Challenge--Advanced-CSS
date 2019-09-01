@@ -34,11 +34,16 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive webiste will move with the screen no matter the pixels it is. A fully responsive website will adapt to the size of the screen at a certain amount of pixels.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 4. How would you describe preprocessing to someone new to CSS?
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
