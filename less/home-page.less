@@ -2,6 +2,12 @@
 
 .home {
 
+  h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center; 
+  }
+
   .intro {
 
     h2 {
@@ -13,7 +19,7 @@
     }
   
   }
-
+  
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -56,10 +62,10 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
       }
-    }
+      .btn {
+        .buttonfun(white, black);
+        }
 
     .walk-img {
       width: 46%;
@@ -70,6 +76,23 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  .space-images{
+    @media @phone{
+      .sky{
+        display: none;
+      }
+      .launch{
+        display:none;
+      }
+    }
+  }
+  .walk-text{
+    @media @phone{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
   }
 }// home
