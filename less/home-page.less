@@ -19,7 +19,7 @@
     }
   
   }
-
+  
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -62,15 +62,11 @@
       p {
         margin-bottom: 26px;
       }
-
+      }
       .btn {
         .buttonfun(white, black);
-        a:hover{
-          .buttonfun(black, pink);
         }
-        }
-      }
-      
+
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -80,6 +76,23 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  .space-images{
+    @media @phone{
+      .sky{
+        display: none;
+      }
+      .launch{
+        display:none;
+      }
+    }
+  }
+  .walk-text{
+    @media @phone{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
   }
 }// home
