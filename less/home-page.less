@@ -1,9 +1,28 @@
 // Home Content
 
+
+.container {
+  
+  width: 100%
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (max-width: 800px) {
+  .container {
+    width: 75%;
+  }
+}
+
 .home {
 
   .intro {
 
+    .main-header{
+      padding: 10px;
+
+    
     h2 {
       padding: 15px;
     }
@@ -57,9 +76,15 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
+      .btn1 {
+        .btn(@btn-bg-color: #22283a; @width; height;) 
+
+        }
+         
+     }
+          
+        
+      
 
     .walk-img {
       width: 46%;
