@@ -33,15 +33,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-	Responsive websites adapt to whatever device it is being displayed on regardless of its size.Adaptive websites have specific screen sizes fixed into the code.
+
+	Responsive websites adapt to whatever device it is being displayed on regardless of its size.Adaptive websites have specific screen sizes fixed into the code, using media queries such us max-width:500px for mobile.
+
 2. Describe what it means to be mobile first vs desktop first.
-	Desktop first is what the code is written for, then adding media queries to create a mobile version and vise versa. It just depends what you're working around/what comes first.
+
+	Desktop first is what the code is mainly written for, then adding media queries to create a mobile version or tablet version. It just depends what you're working around/what comes first.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-	62.5 is known as 10px, this way it is a jumping off point to measure rem units.
+
+	62.5 is known as 10px, ths is a jumping off point to measure rem units.
+
 4. How would you describe preprocessing to someone new to CSS?
-	An easier way to write code! Compiling/nesting code in itself and producing the same result using variables/syntax/new language that still relates to css.
+
+	An easier way to write code! Nesting code in itself and producing the same result using variables/syntax/new language that still relates to css. If you're a complete beginner, I would say it is a way to take very long code and shorten it using variable and values.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-	My personal favorite concept, is the fact that we can use a compiler to make LESS into CSS. The concept that gives me the most trouble is parametric mixins. 
+
+	My personal favorite concept, is the fact that we can use a compiler to make LESS into a CSS document. The concept that gives me the most trouble is parametric mixins.
+ 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
