@@ -278,6 +278,7 @@ footer {
   height: 45px;
   border-radius: 10px;
   padding-top: 13px;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
@@ -310,6 +311,7 @@ footer {
 .home {
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 .home h2 {
   text-align: center;

@@ -278,6 +278,7 @@ footer {
   height: 45px;
   border-radius: 10px;
   padding-top: 13px;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn:hover {
   cursor: pointer;
