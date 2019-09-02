@@ -1,9 +1,25 @@
 // Home Content
 
 .home {
-
+  width: 800px;
+  margin: 0 auto;
+}
+.background {
+  background-color: lightgray;
+  height: 120px;
+  width: 100%
+}
+.home h1{
+  display: flex;
+  justify-content: center;
+  font-size: 3.25rem;
+ 
+}
+.main-image{
+  margin-top: 35px;
+}
   .intro {
-
+      
     h2 {
       padding: 15px;
     }
@@ -48,16 +64,14 @@
 
     .walk-text {
       width: 50%;
-
+      
       h3 {
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
+       
       }
     }
 
@@ -70,6 +84,15 @@
         height: auto;
         border-radius: 10px;
       }
+       .btn{
+         color: white
+       } 
+       @media @phone{
+        .container{
+          width: 100%;
+          margin: 0 auto;
+          flex-direction: column;
+        }
+     }
     }
   }
-}// home

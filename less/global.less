@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
@@ -33,6 +33,14 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  } 
+   @media @phone{
+     .container{
+       width: 98%;
+       margin: 0 auto;
+       flex-direction: column;
+     }
+    
 }
 
