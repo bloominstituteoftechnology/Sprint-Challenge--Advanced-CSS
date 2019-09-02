@@ -97,11 +97,20 @@
       .buttonsize(40%,40px,2rem);
       .displayflex(none,center,center);
       .buttonstyle(@btn-bg-color,@porcelain,0.5rem);
+
+      &:hover{
+        background: @porcelain;
+        color: @btn-bg-color;
+      }
       
+      @media @phone {
+        .buttonsize(100%,40px,2rem);
+      }
     }
 
     @media @phone{
       flex-direction: column-reverse;
+      padding: 15px;
 
       .walk-text{
         width: 100%;
@@ -109,7 +118,7 @@
 
       .walk-img{
         width: 100%;
-        margin-left: 0;
+        margin: 0px;
       }
       
     }
