@@ -307,3 +307,62 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home {
+  width: 100%;
+  margin: 0 auto;
+}
+.home h2 {
+  text-align: center;
+}
+.home p {
+  width: 100%;
+}
+@media (max-width:515px) {
+  .home p {
+    padding: 20px;
+  }
+}
+.home img {
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+@media (max-width:515px) {
+  .home img {
+    width: 100%;
+  }
+}
+.home form {
+  padding: 30px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+}
+.home .btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  background: #22283a;
+  text-align: center;
+  width: 100px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 13px 0 20px 0;
+  margin: 0 auto;
+}
+.home .btn:hover {
+  cursor: pointer;
+  color: #22283a;
+  background: white;
+}
+@media (max-width:515px) {
+  .home .btn {
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    border-radius: 5px;
+  }
+}

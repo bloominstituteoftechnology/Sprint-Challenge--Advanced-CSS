@@ -1,1 +1,21 @@
 // Mixins Here
+
+.mainflex(@direction:none;@contentj:none;@acontent:none;@aitems:none){
+    display:flex;
+    flex-direction:@direction;
+    justify-content:@contentj;
+    align-content:@acontent;
+    align-items:@aitems;
+
+}
+
+.signUp(@fsize,@weight,@fontcolor,@bgkcolor,@alignt,@buttonwidth,@buttonheight,@radiusborder){
+    font-size:@fsize;
+    font-weight:@weight;
+    color:@fontcolor;
+    background:@bgkcolor;
+    text-align:@alignt;
+    width:@buttonwidth;
+    height:@buttonheight;
+    border-radius:@radiusborder;
+}
