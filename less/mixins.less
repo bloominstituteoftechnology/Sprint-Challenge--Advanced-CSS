@@ -1,1 +1,19 @@
 // Mixins Here
+.displayflex(@direction,@justify,@align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.buttonsize(@width,@height,@font){
+    width: @width;
+    height: @height;
+    font-size: @font;
+}
+
+.buttonstyle(@bg,@color,@corners){
+    background: @bg;
+    color: @color;
+    border-radius: @corners;
+}
