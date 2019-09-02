@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Put simply, responsive is fluid and adapts to the size of the screen no matter what the target device. Responsive uses CSS media queries to change styles based on the target device such as display type, width, height etc., and only one of these is necessary for the site to adapt to different screens.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile First means that when we design a product, first we build a version for the relatively lower browser (like that on a mobile phone). This version includes the most basic functions & features. After that, we tend to the advanced version for a tablet or PC, which is created by adding interactions, more complicated effects, etc. on the basic version for a better user experience.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It means that the font size will be reduced from the kind of standard of about 16px. Although that translates into a size of about 10px which seems rather small to me instead of a 12-14px size. This translates into being more adaptive for mobile or phone use.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing enables one to be able to create variables to be able to make changes or adjustments to the css without having to search for every class or tag with that attribute. Also a preprocesser compiles the css into a more browser readable form.
+
+For example, you can assign CSS values to variables, meaning that annoying hex color #91ea42 can now be set as a variable for you to reuse whenever you want. If you want to change said color, all you have to do is update the variable in one place and it’s updated everywhere! 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The use of mixins for more ability to DRY code.
+
+Still just basically the proper use of CSS in general making sure things are in the right order.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

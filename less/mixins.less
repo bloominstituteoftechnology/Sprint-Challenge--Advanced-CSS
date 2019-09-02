@@ -1,1 +1,16 @@
 // Mixins Here
+
+.btn1(@btn-bg-color: #22283a; @height: 40px; @width: 150px; @mq-height: 90%; ) {
+  display: block;
+  background-color: @btn-bg-color;
+  margin: 0 10px 20px;
+  width: @width;
+  height: @height;
+  font-size: 2rem;
+  border-radius: 10px;
+
+  @media @phone {
+    background: blue;
+    scolor: white;
+  }
+}
