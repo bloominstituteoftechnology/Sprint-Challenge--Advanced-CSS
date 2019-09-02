@@ -35,13 +35,13 @@ Edit this document to include your answers after each question. Make sure to lea
 1. What is the difference between an adaptive website and a fully responsive website?
 
 2. Describe what it means to be mobile first vs desktop first.
-
+Mobile first means that designers design their website with a mobile device's functionality, capability, and maneuverabilty in mind first.  Then, those functions are incorporated or translated to a desktop environment.  If a designer builds for desktop first, making it complicated with functions that might not work on a mobile, then when they translate the website into mobile format some of the functions might not work or will get lost.  I've also read that Google bases a website's rank based on how mobile friendly they can be but I'm not sure this is true. 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+62.5% as a solution makes calculations easier as the font sizes in px are 10 times their rem values.
 4. How would you describe preprocessing to someone new to CSS?
-
+Typewriter:Wordprocessor as CSS:Preprocessor.  A preprocessor is like the advent of Microsoft Word after people were used to typewriters.  In a typewriter things are very manual and there is very little in creating commonly used themes like font spacing, letter spacing, 1.5 paragraph spacing, italics at a click, shortcuts etc.  The word processor knows that there are certain "themes" that are relevant and creates logic to help the writer apply these commonly used designs at ease.  Such is a preprocessor that utilizes things like variables to make repetitive coding shorter.  That's my idea at least.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+My favorite concept in preprocessing are variables and mix-ins.  The thing that gives me the most trouble is nesting.  
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up

@@ -1,15 +1,18 @@
 // Home Content
 
 .home {
-
+  
   .intro {
 
     h2 {
       padding: 15px;
+      @media (max-width: @phone) { font-size: 2.4rem }
     }
 
     p {
       padding:0 15px;
+      @media (max-width: @phone) { font-size: 1.2rem }
+      @media (max-width: @phone) { margin-bottom: 14px }
     }
   
   }
@@ -18,6 +21,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .sky{
+      @media (max-width: @phone) { display: none }
+    }
+   
+    .launch{
+      @media (max-width: @phone) { display: none }
+    }
+
+    .blast{
+      @media (max-width: @phone) { width: 87% }
+      display:flex;
+      justify-content: center;
+      
+      @media (max-width: @phone) { margin: 0px auto; }
+    }
+    
 
     img {
       width: 28%;
@@ -29,41 +48,89 @@
 
   .visit-planets {
     padding: 15px;
+    
 
     h3 {
       margin-top: 11px;
+      @media (max-width: @phone) { font-size: 2.4rem }
     }
 
     p {
       margin-top: 13px;
+      
+      @media (max-width: @phone) { font-size: 1.2rem }
+      @media (max-width: @phone) { margin-bottom: 14px }
     }
   }
 
   .walk {
+    
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 50px 50px;
     display: flex;
     justify-content: center;
-
+    // @media (max-width: @phone) { margin-top: 10px }
+    @media (max-width: @phone) { padding: 0px }
+    @media (max-width: @phone) { width: 100% }
+    @media (max-width: @phone) { margin: 0px auto }
+    @media (max-width: @phone) { margin-top: 0px }
+    @media (max-width: @phone) { display: flex }
+    @media (max-width: @phone) { flex-direction: column-reverse }
     .walk-text {
       width: 50%;
+      @media (max-width: @phone) { width: 93% }
+      @media (max-width: @phone) { margin: auto }
 
       h3 {
         margin-bottom: 10px;
+        @media (max-width: @phone) { font-size: 2.4rem }
       }
 
       p {
         margin-bottom: 26px;
+        @media (max-width: @phone) { font-size: 1.2rem }
+        @media (max-width: @phone) { margin-bottom: 14px }
       }
 
-      .btn {
+      .btn{
+        color: @porcelain;
+        background-color: @ebony-clay;
+        display:block;
+        // &:hover, &:active {color:@ebony-clay;}
+        // &:hover, &:active {background-color:@porcelain;}  
+        //Parametric change below
+        .hoverColor(@ebony-clay, @porcelain);  
+        // margin: 10px 250px 10px 0px;
+        padding: 2% 0% 2% 0%;
+        width: 25%;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        font-size: 150%;
+        font-style: bold;
+        @media (max-width: @phone) { display:flex }
+        @media (max-width: @phone) { justify-content: center }
+        @media (max-width: @phone) { margin: 20px auto }
+        @media (max-width: @phone) { padding: 20px }
+        @media (max-width: @phone) { font-size: 1.4rem }
+        @media (max-width: @phone) { width: 100% }
+      
+        // @media (max-width: @phone) { padding: 7px 0px 7px 0px;}
       }
     }
 
     .walk-img {
-      width: 46%;
+      width: 39%;
       margin-left: 4%;
+      // @media (max-width: @phone) { margin: auto }
+      @media (max-width: @phone) { width: 87% }
+      @media (max-width: @phone) { margin-bottom: 20px }
+      @media (max-width: @phone) { margin-top: 20px }
+      @media (max-width: @phone) { display:flex }
+      @media (max-width: @phone) { justify-content: center }
+      @media (max-width: @phone) { margin-left: 6% }
+      
       
       img {
         width: 100%;
@@ -73,3 +140,22 @@
     }
   }
 }// home
+
+
+//Stretch goal
+p {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

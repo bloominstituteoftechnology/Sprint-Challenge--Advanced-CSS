@@ -1,1 +1,18 @@
 // Mixins Here
+
+.displayFlex(){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imgRadius(){
+    border-radius: 10px;
+}
+
+//Parametric mix-in
+
+.hoverColor(@mainColor, @backgroundColor){
+    &:hover, &:active {color:@mainColor;}
+    &:hover, &:active {background-color:@backgroundColor;}  
+}
