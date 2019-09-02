@@ -160,7 +160,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.navigation nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -169,7 +169,8 @@ nav {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-nav a.link {
+.navs {
+  color: black;
   text-decoration: none;
 }
 footer {
@@ -231,10 +232,15 @@ footer {
 }
 .home .walk .walk-text .btn {
   color: white;
+  text-decoration-line: none;
   background-color: black;
   width: 70px;
   padding: 16px;
   border-radius: 8px;
+}
+.home .walk .buttons {
+  color: white;
+  text-decoration: none;
 }
 .home .walk .walk-img {
   width: 46%;
