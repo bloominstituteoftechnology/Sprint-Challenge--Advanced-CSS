@@ -1,38 +1,98 @@
-@phone (max-width: 500px)
-
-// nav {
-  @media (max-width: 500px) {
-    .btn {
-      border-radius: 1rem;
-      border: none;
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      padding: 1.3rem;
-      width: 100%;
-      height: 6rem;
-      position: absolute;
-      height: 45px;
-      width: 400px;
-    }
-  }
+@media (max-width: 500px) {
   .sky {
     display: none;
   }
-  .sky .launch {
+  .launch {
     display: none;
   }
-  .sky body {
+  .space-images {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .space-images .blast {
+    width: 92%;
+  }
+  header .main {
+    display: flex;
     width: 100%;
   }
 }
-.blast {
-  width: 50%;
-  margin: 0 auto;
+body {
+  width: 100%;
 }
-.walk-text {
+@media (max-width: 500px) {
+  body .space-nav a {
+    padding-right: 1.6rem;
+    text-decoration: none;
+  }
+}
+body .btn {
+  position: absolute;
+  background: #22283a;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+  width: 100%;
+  height: 6rem;
+}
+@media (max-width: 500px) {
+  body .home .walk .walk-text {
+    width: 124%;
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  body .home .walk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative;
+    right: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  body .home .walk .walk-img {
+    width: 115%;
+  }
+}
+@media (max-width: 500px) {
+  body .home .walk .walk-text .btn {
+    background: #22283b;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    width: 100%;
+    height: 6rem;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  body .walk-text {
+    align-items: center;
+  }
+}
+body footer {
+  margin: 15%;
+}
+body .home .walk .walk-text h3 {
+  margin: 5%;
+}
+body .walk-text {
   width: 70%;
   margin-right: 39px;
+}
+body .home .walk .walk-text .btn:hover {
+  background: #4e3cf1;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -207,7 +267,7 @@ p {
 .top nav {
   display: flex;
   width: 50%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 11px;
 }
 .top nav a {
