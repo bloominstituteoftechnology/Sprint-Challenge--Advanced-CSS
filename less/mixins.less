@@ -1,9 +1,19 @@
 // Mixins Here
-.borderbottom{
-    border-bottom: 2px dashed lightgrey;
-}
 
 .margin{
     margin-left: 7rem;
     margin-top: 1rem;
 }
+
+
+.button(@btn-color:@btn-bg-color,@btn-font-size: 1.3rem,@btn-padding:15px,@btn-radius:5px,@btn-width:250px){
+    background-color: @btn-color;
+    font-size: @btn-font-size;
+    padding:@btn-padding ;
+    border-radius: @btn-radius;
+    width: @btn-width;
+    text-align: center;
+    color: @porcelain;
+    justify-content: center;
+    align-content: center;
+ }
