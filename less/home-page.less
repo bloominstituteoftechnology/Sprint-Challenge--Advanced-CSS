@@ -5,6 +5,27 @@
 .home {
 
   .intro {
+
+    .Lift{
+      animation: Flying 3s 1;
+        @keyframes Flying{
+
+          10%{
+            margin-top: 500px;
+          }
+          90%{
+            margin-top: 1000px;
+            transform: rotate(90deg);
+            border: 1px dashed gray;
+            margin-top: 0;
+            width: 200px;
+            
+          }
+        }
+
+      }
+    }
+
     .main {
       width: 100%;
     }
@@ -17,7 +38,6 @@
       padding:0 15px;
     }
   
-  }
 
   .space-images {
     display: flex;
@@ -115,4 +135,4 @@
         border-radius: 10px;
       }
     }
-}// home
+  }// home

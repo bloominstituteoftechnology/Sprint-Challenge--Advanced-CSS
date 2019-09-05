@@ -203,13 +203,28 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro .main {
+.home .intro .Lift {
+  animation: Flying 3s 1;
+}
+@keyframes Flying {
+  10% {
+    margin-top: 500px;
+  }
+  90% {
+    margin-top: 1000px;
+    transform: rotate(90deg);
+    border: 1px dashed gray;
+    margin-top: 0;
+    width: 200px;
+  }
+}
+.home .main {
   width: 100%;
 }
-.home .intro h2 {
+.home h2 {
   padding: 15px;
 }
-.home .intro p {
+.home p {
   padding: 0 15px;
 }
 .home .space-images {
