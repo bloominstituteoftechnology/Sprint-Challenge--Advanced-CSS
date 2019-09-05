@@ -5,7 +5,10 @@
   margin: 20px 0;
 }
 .home nav :hover {
-  color: #e6ffe6;
+  color: wild-sand;
+}
+.home nav :hover {
+  background-color: #F1F1F;
 }
 .home a {
   text-decoration: none;

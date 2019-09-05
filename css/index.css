@@ -177,7 +177,15 @@ p {
   margin: 20px 0;
 }
 .home nav :hover {
-  color: #e6ffe6;
+  color: #F6F6F6;
+}
+.home nav :hover {
+  background-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home nav {
+    margin-right: 250px;
+  }
 }
 .home a {
   text-decoration: none;
@@ -200,6 +208,11 @@ footer {
   width: 800px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .home {
+    margin-right: 60px;
+  }
+}
 .background {
   background-color: lightgray;
   height: 120px;
@@ -213,16 +226,42 @@ footer {
 .main-image {
   margin-top: 35px;
 }
+@media (max-width: 500px) {
+  .main-image {
+    padding: 0;
+    margin-right: 100px;
+    width: 60%;
+  }
+}
 .intro h2 {
   padding: 15px;
 }
 .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .intro p {
+    margin: 0 15px;
+    padding: 0;
+    width: 460px;
+  }
+}
 .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .space-images {
+    flex-direction: column;
+    width: 200%;
+  }
+  .space-images .sky {
+    display: none;
+  }
+  .space-images .launch {
+    display: none;
+  }
 }
 .space-images img {
   width: 28%;
@@ -239,6 +278,13 @@ footer {
 .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .visit-planets p {
+    margin: 0 15px;
+    padding: 0;
+    width: 460px;
+  }
+}
 .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -246,29 +292,48 @@ footer {
   display: flex;
   justify-content: center;
 }
-.walk .walk-text {
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+button {
+  color: white;
+  border: none;
+  width: 7.8125rem;
+  height: 30px;
+  background-color: #22283A;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+    height: 100px;
+    border-radius: none;
+  }
+}
+button .walk-text {
   width: 50%;
 }
-.walk .walk-text h3 {
+button .walk-text h3 {
   margin-bottom: 10px;
 }
-.walk .walk-text p {
+button .walk-text p {
   margin-bottom: 26px;
 }
-.walk .walk-img {
+button .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.walk .walk-img img {
+button img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.walk .walk-img .btn {
-  color: white;
-}
 @media (max-width: 500px) {
-  .walk .walk-img .container {
+  button .container {
     width: 100%;
     margin: 0 auto;
     flex-direction: column;
