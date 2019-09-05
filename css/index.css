@@ -1,3 +1,7 @@
+@media ( max-width: 500px ) {
+  background: blue;
+  scolor: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,16 +138,19 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h1 {
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,8 +167,25 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.nav-header .nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 100%;
+}
+.nav-header .nav a {
+  text-decoration: none;
+  color: #454a59;
+}
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -170,11 +194,28 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
+@media ( max-width: 500px ) {
+  footer {
+    width: 100%;
+  }
+}
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home .intro .main-header {
+  padding: 10px;
+}
+.home .intro .main-header h2 {
   padding: 15px;
 }
-.home .intro p {
+.home .intro .main-header p {
   padding: 0 15px;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -211,6 +252,16 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #22283a;
+  margin: 0 10px 20px;
+  width: 150px;
+  height: 40px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: white;
 }
 .home .walk .walk-img {
   width: 46%;
