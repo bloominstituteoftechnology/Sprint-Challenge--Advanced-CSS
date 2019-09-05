@@ -15,9 +15,8 @@
   }
 
   .space-images {
-    display: flex;
+    .displayFlex();
     flex-wrap: wrap;
-    width: 100%;
 
     img {
       width: 28%;
@@ -56,19 +55,18 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        .btn();
-        // background-color: #2f3636;;
-        // font-size: 18px;
-        border: 1px solid #2f3636;
-        color: white;
-        display: inline-block;
-        border-radius: 10px;
-        width: 85px;
-        text-align: center;
-        padding: 5px 10px;
-      }
+    }
+    .btn {
+      .buttonStyle(5px, 110px);
+      font-size: 18px;
+      border: 1px solid #2f3636;
+      color: white;
+      padding: 5px 10px;
+      background-color: #2f3636;
+      &:hover{
+        color: #2f3636;
+        background-color: white;
+      } 
     }
     
     .walk-img {
@@ -79,6 +77,20 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone {
+        max-width: 500px;
+        width: 100%;
+        justify-content: center;
+        margin: 20ox;
+       btn {
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 385px;
+        }
       }
     }
   }

@@ -1,7 +1,11 @@
-@phone max-width: 500px;
-.btn {
-  background-color: #2f3636;
-  font-size: 18px;
+.displayFlex {
+  display: flex;
+  width: 100%;
+}
+.footerstyling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -169,23 +173,32 @@ p {
   flex-direction: column;
 }
 .nav {
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-flow: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 .nav h1 {
-  width: 80%;
+  width: 100%;
   font-size: 5.5rem;
   text-align: center;
-  padding-inline-end: 25%;
-  padding-inline-start: 25%;
 }
-.nav a {
+.nav .nav-bar {
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  width: 70%;
+  width: 100%;
+  font-size: 2rem;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+  padding: 0px 50px;
+}
+@media (max-width: 500px) {
+  .nav {
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 20ox;
+  }
 }
 footer {
   color: #22283B;
@@ -197,6 +210,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 20ox;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -205,8 +226,8 @@ footer {
 }
 .home .space-images {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  flex-wrap: wrap;
 }
 .home .space-images img {
   width: 28%;
@@ -239,16 +260,20 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  background-color: #2f3636;
+.home .walk .btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  width: 110px;
   font-size: 18px;
   border: 1px solid #2f3636;
   color: white;
-  display: inline-block;
-  border-radius: 10px;
-  width: 85px;
-  text-align: center;
   padding: 5px 10px;
+  background-color: #2f3636;
+}
+.home .walk .btn:hover {
+  color: #2f3636;
+  background-color: white;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -258,4 +283,19 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    margin: 20ox;
+  }
+  .home .walk .walk-img btn {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 385px;
+  }
 }

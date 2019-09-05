@@ -1,26 +1,30 @@
 // Navigation code here
 
 .nav{
-    width: 100%;
-    // display: flex;
-    // flex-flow: wrap;
-   .displayFelx();
+    .displayFlex();
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
    
-    h1 {
-        display: flex;
+    h1{
         width: 100%;
         font-size: 5.5rem;
-        text-align: center;
-        padding-inline-end: 25%;
-        padding-inline-start: 25%;
+        text-align: center
     }
 
-    .nav-bar a {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
-        font-size: 1.5rem;
-        margin: 15px;
+    .nav-bar{
+        .displayFlex();
+        font-size: 2rem;
+        justify-content: space-evenly;
+        margin: 10px 0px;
+        padding: 0px 50px;
+    }
+
+    @media @phone{
+      max-width: 500px;
+      width: 100%;
+      justify-content: center;
+      margin: 20ox;
     }
 }
+
