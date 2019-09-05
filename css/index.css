@@ -186,14 +186,19 @@ footer {
 }
 .home .space-images {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
 }
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
-  border-radius: 20px;
+  border-radius: 15px;
   height: 100%;
+}
+.home .space-images .blast {
+  border-radius: 15px;
 }
 .home .visit-planets {
   padding: 15px;
