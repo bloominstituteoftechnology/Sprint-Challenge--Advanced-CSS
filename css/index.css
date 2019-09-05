@@ -252,35 +252,22 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    background-color: #22283A;
-    font-size: 1.3rem;
-    padding: 15px;
-    border-radius: 5px;
-    width: 250px;
-    text-align: center;
-    color: #F6F7F8;
-    justify-content: center;
-    align-content: center;
-  }
-}
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .walk-img {
     width: 100%;
   }
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img img {
+  .home .walk-img img {
     width: 100%;
   }
 }
@@ -299,6 +286,15 @@ footer {
 @media (max-width: 500px) {
   .btn {
     width: 25rem;
+    background-color: #22283A;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    color: #F6F7F8;
+    justify-content: center;
+    align-content: center;
   }
 }
 .btn:hover {
