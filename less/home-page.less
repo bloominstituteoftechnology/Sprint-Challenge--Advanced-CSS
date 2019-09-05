@@ -24,9 +24,25 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media(max-width: @phone) {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding-left: 1%;
+        padding-right: 1%;
+      }
     }
   }
-
+.sky {
+  @media(max-width: @phone) {
+    display: none;
+  }
+}
+.launch {
+  @media(max-width: @phone) {
+    display: none;
+  }
+}
   .visit-planets {
     padding: 15px;
 
@@ -50,6 +66,7 @@
       width: 100%;
       padding-left: 1%;
       padding-right: 1%;
+      margin-top: 20px;
   }
 
     .walk-text {
@@ -70,6 +87,11 @@
       .btn {
         .btn-blue(20px, 1.8rem);
         margin-bottom: 15px;
+        @media(max-width: @phone) {
+          width: 100%;
+          padding-left: 1%;
+          padding-right: 1%;
+        }
         }
       }
       div.btn:hover {
@@ -83,8 +105,10 @@
       @media(max-width: @phone) {
         width: 100%;
         margin: auto;
+        margin-bottom: 25px;
         padding-left: 1%;
         padding-right: 1%;
+        order:-1;
       }
       img {
         width: 100%;
