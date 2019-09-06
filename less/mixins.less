@@ -1,1 +1,41 @@
 // Mixins Here
+
+/*nav*/
+.center(){
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+
+@nav-font-color: #1B0D0D;
+@phone: ~"( max-width: 500px )";
+.navigation() {
+	font-size: 1.3rem;
+	text-decoration: none;
+	color: @nav-font-color;
+	padding: 20px;
+
+}
+
+/*button*/
+.button-layout(@padding, @color) {
+  padding: @padding;
+  border-radius: 10px;
+  background-color: @nav-font-color;
+  color: @color;
+  cursor: pointer;
+  font-size: 1.5rem;
+
+  &:hover {
+	background-color: darken(grey, 10%)
+  }
+}
+
+
+/*phone*/
+
+.phone() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
