@@ -183,9 +183,8 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 35%;
-  padding-right: 35%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 @media (max-width:500px) {
   header nav {
@@ -200,6 +199,7 @@ header nav a {
   color: black;
   font-size: 1.8rem;
   font-style: bold;
+  padding: 0 2%;
 }
 footer {
   color: #22283B;
