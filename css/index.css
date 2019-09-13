@@ -183,8 +183,8 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 @media (max-width:500px) {
   header nav {
@@ -195,11 +195,13 @@ header nav {
   }
 }
 header nav a {
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
   font-size: 1.8rem;
   font-style: bold;
-  padding: 0 2%;
+  padding: 0 1%;
 }
 footer {
   color: #22283B;
@@ -229,7 +231,7 @@ footer {
 }
 @media (max-width:500px) {
   .home .intro img {
-    width: 500px;
+    width: 100%;
     height: auto;
     border-radius: 5px;
   }
