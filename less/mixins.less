@@ -1,4 +1,15 @@
 // Mixins Here
 
+.custom-layout(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+//escaping
+
+@phone: ~'(max-width:500px)';
+
+
 
 

@@ -1,7 +1,8 @@
 // Home Content
 
 .home {
-
+  
+    
   .intro {
 
     h2 {
@@ -56,9 +57,30 @@
       p {
         margin-bottom: 26px;
       }
+    }
+   
+      .btn{
+        display:flex;
+        background-color: @btn-bg-color;
+        margin:0 10px 20px;
+        cursor: pointer;
+        width: 180px;
+        height: 40px;
+        font-size: 2rem;
+        border-radius: 10px;
+        color:white;
+        justify-content: center;
+        padding-top: 10px;
 
-      .btn {
-      }
+        &:hover{
+          background-color: black
+        }
+
+        @phone {
+          .btn {
+            width: 80%;
+          }
+        }
     }
 
     .walk-img {

@@ -172,7 +172,8 @@ a {
 }
 .navigation {
   max-width: 100%;
-  background-color: #eee6fc;
+  background-color: #F6F6F6;
+  font: #454A59;
 }
 .navigation h1 {
   font-size: 4rem;
@@ -238,6 +239,27 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .btn {
+  display: flex;
+  background-color: #22283A;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  justify-content: center;
+  padding-top: 10px;
+}
+.home .walk .btn:hover {
+  background-color: black;
+}
+@phone {
+  .btn {
+    width: 80%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
