@@ -20,6 +20,12 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media(max-width:500px){
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      max-width: 100%;}
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -30,6 +36,12 @@
 
   .visit-planets {
     padding: 15px;
+
+    @media(max-width:500px){
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
 
     h3 {
       margin-top: 11px;
@@ -47,6 +59,13 @@
     display: flex;
     justify-content: center;
 
+    @media(max-width:500px){
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+
+
     .walk-text {
       width: 50%;
 
@@ -59,7 +78,7 @@
       }
     }
    
-      .btn{
+      button{
         display:flex;
         background-color: @btn-bg-color;
         margin:0 10px 20px;
@@ -70,15 +89,17 @@
         border-radius: 10px;
         color:white;
         justify-content: center;
+        padding-bottom: 30px;
         padding-top: 10px;
 
         &:hover{
           background-color: black
         }
 
-        @phone {
-          .btn {
+        @media (max-width: 500px) {
+          .button {
             width: 80%;
+            background-color: green;
           }
         }
     }
