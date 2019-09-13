@@ -2,8 +2,7 @@
 header {
   padding: 2% 2%;
   height: 10%;
-  display: flex;
-  justify-content: center;
+  .flexCenter();
   width: 100%;
   background-color: @nav-bg;
   h1 {
@@ -11,8 +10,7 @@ header {
     text-align: center;
 
     .header-items {
-      display: flex;
-      justify-content: center;
+      .flexCenter();
     }
   }
 }
@@ -61,8 +59,7 @@ header {
   margin-top: 60px;
   border-top: 1px solid @main-border-color;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
+  .flexCenter();
 
   .walk-text {
     width: 50%;
@@ -76,6 +73,13 @@ header {
     }
 
     .btn {
+      .button(@button-bg, @button-color, @button-padding, @button-borderRadius, @button-fontSize);
+      width: 30%;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
     }
   }
 

@@ -1,3 +1,11 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.flexBetwn {
+  display: flex;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -247,6 +255,19 @@ header h1 .header-items {
 }
 .walk .walk-text p {
   margin-bottom: 26px;
+}
+.walk .walk-text .btn {
+  background-color: black;
+  color: white;
+  padding: 2% 3%;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 30%;
+}
+.walk .walk-text .btn:hover {
+  background-color: white;
+  color: black;
 }
 .walk .walk-img {
   width: 46%;
