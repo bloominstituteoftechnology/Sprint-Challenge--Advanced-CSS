@@ -181,6 +181,9 @@ p {
   background: #f4f4f4;
   margin-top: 1.5%;
 }
+.nav-wrap2 {
+  margin-top: 10%;
+}
 @media (max-width:500px) {
   .header-img {
     width: 100%;
@@ -211,6 +214,28 @@ a {
   font: #454A59;
   font-size: 1.3rem;
   color: black;
+}
+#stick {
+  overflow: hidden;
+  background-color: #8f8f8f;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#stick a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #0c0c0c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#stick a:hover {
+  background: #141414;
+  color: #f1f0f0;
 }
 footer {
   color: #22283B;
