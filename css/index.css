@@ -1,3 +1,12 @@
+.nav-style {
+  background-color: #F5F5F5;
+  color: black;
+}
+.body-size {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,9 +173,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F5F5F5;
   width: 67%;
   margin: 1% 19% 1% 17%;
+  background-color: #F5F5F5;
+  color: black;
 }
 #navigation h1 {
   font-size: 4.3rem;
@@ -242,6 +252,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text #button {
+  background-color: black;
+  width: 30%;
+  color: white;
+  padding: 4% 6%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12%;
+}
+.home .walk .walk-text #button :hover {
+  background-color: lightgrey;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
