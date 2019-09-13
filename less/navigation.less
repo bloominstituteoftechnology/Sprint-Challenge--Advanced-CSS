@@ -1,1 +1,56 @@
 // Navigation code here
+.navigation{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: @nav-bg;
+    border-bottom: 1px dashed @nav-border;
+    
+    @media @mobile{
+        width:100%;
+        .flex-column();
+    }
+
+    h1{
+        width: 30%;
+        margin: 0 auto;
+        text-align:center;
+        font-size: 4.5rem;
+
+        @media @mobile{
+            width: 90%;
+            font-size: 4rem;
+            padding: 2%;
+        }
+    }
+
+    nav{
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 85%;
+        padding: 1.5% 0;
+
+        @media @mobile{
+            width: 100%;
+        }
+
+        a{
+
+            font-size: 1.8rem;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            color:@nav-font;
+
+            @media @mobile{
+                font-size: 1.3rem;
+                padding: 1%;
+            }
+        }
+    }
+}
