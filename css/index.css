@@ -203,6 +203,69 @@ p {
   margin-top: 60px;
   margin-bottom: 30px;
 }
+.walk {
+  display: flex;
+}
+.walk .walk-img {
+  margin-top: 63px;
+  margin-left: 30px;
+}
+.walk img {
+  border-radius: 15px;
+}
+.btn {
+  border-radius: 12px;
+  width: fit-content;
+  padding: 20px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+footer {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .space {
+    width: 137%;
+  }
+  .space a {
+    margin: -3px;
+  }
+  .container-home {
+    width: 60%;
+  }
+  .main-header {
+    width: 100%;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+  .space-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .visit-planets {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk-img {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    width: 100%;
+  }
+}
 .space {
   background: gainsboro;
   width: 100%;
@@ -240,11 +303,6 @@ footer {
 .home .space-images {
   display: flex;
   width: 100%;
-}
-.home .space-images .blast {
-  border-radius: 14px;
-  margin-right: 25px;
-  margin-bottom: 35px;
 }
 .home .space-images img {
   width: 28%;
