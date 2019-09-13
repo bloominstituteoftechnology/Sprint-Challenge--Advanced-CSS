@@ -1,1 +1,22 @@
 // Mixins Here
+.btn-custom(@btn-width:30%, @btn-border-radius:10px, @btn-padding:3%, @btn-bg:@btn-bg-color, @btn-color:white ){
+    text-align:center;
+    font-weight: bold;
+    font-size: 2rem;
+    width:@btn-width;
+    border-radius:@btn-border-radius;
+    padding:@btn-padding;
+    background-color: @btn-bg;
+    color:@btn-color;
+    
+}
+
+.walk-padding(@padding-walk:50px 60px, @margin-top-walk:60px){
+    padding:@padding-walk;
+    margin-top:@margin-top-walk;
+}
+
+.flex-column(){
+    display: flex;
+    flex-flow: column wrap;
+}

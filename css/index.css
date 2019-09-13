@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background-color: #F6F6F6;
+  border-bottom: 1px dashed #F1F1F1;
+}
+@media (max-width:500px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+.navigation h1 {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4.5rem;
+}
+@media (max-width:500px) {
+  .navigation h1 {
+    width: 90%;
+    font-size: 4rem;
+    padding: 2%;
+  }
+}
+.navigation nav {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 85%;
+  padding: 1.5% 0;
+}
+@media (max-width:500px) {
+  .navigation nav {
+    width: 100%;
+  }
+}
+.navigation nav a {
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #454A59;
+}
+@media (max-width:500px) {
+  .navigation nav a {
+    font-size: 1.3rem;
+    padding: 1%;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
+}
+@media (max-width:500px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+@media (max-width:500px) {
+  .home .intro p {
+    font-size: 1.5rem;
+    width: 98%;
+    text-align: left;
+    padding-bottom: 3%;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images {
+    visibility: hidden;
+  }
+}
+.home .space-images .blast-off {
+  visibility: visible;
+  margin: 0 auto;
+  margin-top: 17px;
+}
+@media (max-width:500px) {
+  .home .space-images .blast-off {
+    margin-bottom: -80%;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 90%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+@media (max-width:500px) {
+  .home .visit-planets {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -80%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: left;
+  }
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+@media (max-width:500px) {
+  .home .visit-planets p {
+    width: 98%;
+    font-size: 1.5rem;
+  }
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  .home .walk {
+    margin: 0 auto;
+    width: 100%;
+    flex-flow: column-reverse wrap;
+    align-content: center;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 120%;
+    padding-top: 15px;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text p {
+    width: 95%;
+    font-size: 1.5rem;
+  }
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 30%;
+  border-radius: 10px;
+  padding: 3%;
+  background-color: #22283A;
+  color: white;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    padding: 6%;
+    background-color: #22283A;
+    color: white;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    align-content: center;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img img {
+    width: 117%;
+    margin-left: -15px;
+  }
+}
