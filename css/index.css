@@ -83,7 +83,7 @@ time,
 mark,
 audio,
 video {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -156,38 +156,37 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;
-}
-img {
-  max-width: 100%;
-  height: auto;
 }
 .navigation {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
   width: 100%;
   height: 15rem;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #f4f4f4;
-  flex-direction: column;
 }
 .navigation nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 .navigation nav a {
-  font-size: 2rem;
-  text-decoration: none;
+  font-size: 1.5rem;
   color: #22283A;
-  padding: 0 10px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  padding: 0;
+  justify-content: space-evenly;
+}
+.navigation nav a:hover {
+  color: #23293B;
 }
 .navigation h1 {
-  text-align: center;
-  padding: 10px 10px 10px 10px;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 footer {
   color: #22283B;
@@ -227,7 +226,7 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #050d14;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -249,4 +248,16 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.new-btn button {
+  background-color: darkslateblue;
+  border-radius: 4px;
+  width: 30%;
+  height: 4.5rem;
+}
+@media (max-width: 430px) {
+  .new-btn button {
+    width: 100%;
+    height: 4.5rem;
+  }
 }
