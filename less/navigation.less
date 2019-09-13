@@ -1,1 +1,53 @@
 // Navigation code here
+header{
+    width:100%;
+    .custom-layout(center,center);
+    flex-direction:column;
+    .headerPadding(2%,0);
+    background-color:whitesmoke;
+
+    
+
+    @media @phone{
+        .headerPadding(2%,1%);
+    }
+
+    h2{
+        @media @phone{
+           
+        }
+    }
+
+    nav{
+        padding-top:2%;
+        padding-bottom:2%;
+        width:100%;
+        .custom-layout(center,center);
+        padding-left:4%;
+        padding-right:4%;
+
+    //position: fixed; /* Set the navbar to fixed position */
+   // top: 0; /* Position the navbar at the top of the page */
+   // width: 100%; /* Full width */
+
+        @media @phone{
+            width:100%;
+            padding-top:4%;
+            padding-left:10%;
+            padding-right:10%;
+        }
+        a{
+            justify-content:center;
+            align-items:center;
+            text-decoration:none;
+            color:black;
+            font-size: @headerLinkSize;
+            font-style:bold;
+            padding:0 1%;
+
+            
+            
+        }
+    }
+}
+
