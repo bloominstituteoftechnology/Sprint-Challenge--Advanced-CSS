@@ -1,1 +1,20 @@
 // Mixins Here
+
+.button (@button-bg, @button-color, @button-padding, @button-borderRadius, @button-fontSize) {
+  background-color: @button-bg;
+  color: @button-color;
+  padding: @button-padding;
+  border-radius: @button-borderRadius;
+  font-size: @button-fontSize;
+  text-align: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexBetwn {
+  display: flex;
+  justify-content: space-between;
+}
