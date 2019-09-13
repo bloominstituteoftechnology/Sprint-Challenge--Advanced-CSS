@@ -270,6 +270,8 @@ footer {
   padding: 15px;
 }
 .home .visit-planets h3 {
+  font-size: 290%;
+  font-weight: bold;
   margin-top: 11px;
 }
 .home .visit-planets p {
@@ -299,6 +301,8 @@ footer {
   }
 }
 .home .walk .walk-text h3 {
+  font-size: 290%;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 @media (max-width: 500px) {
