@@ -129,6 +129,11 @@ table {
 * {
   box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 html {
   font-size: 62.5%;
 }
@@ -159,6 +164,18 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width:500px) {
+  .container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-wrap {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 footer {
   color: #22283B;
