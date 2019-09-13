@@ -9,6 +9,10 @@
     background-color: @btn-bg;
     color:@btn-color;
     
+    &:hover{
+        background-color:@btn-color;
+        color:@btn-bg;
+    }
 }
 
 .walk-padding(@padding-walk:50px 60px, @margin-top-walk:60px){
@@ -19,4 +23,9 @@
 .flex-column(){
     display: flex;
     flex-flow: column wrap;
+}
+
+.mobile-margin(){
+    margin:0 auto;
+    width: 100%;
 }
