@@ -160,11 +160,16 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header span {
+  background-color: #ebebeb;
+  width: 100%;
+}
 header h1 {
   display: flex;
   justify-content: center;
   font-size: 3.2rem;
   margin: 10px 0;
+  padding-top: 10px;
 }
 header nav {
   display: flex;
@@ -237,6 +242,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.home .walk .walk-text .btn button {
+  background-color: dimgrey;
+  color: white;
+  border: 1px solid dimgrey;
+  border-radius: 5px;
+  width: 75px;
+  height: 30px;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  color: dimgrey;
 }
 .home .walk .walk-img {
   width: 46%;
