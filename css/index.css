@@ -157,17 +157,32 @@ p {
 }
 .container-home {
   max-width: 800px;
-  width: 100%;
-  margin: 40px;
+  width: 60%;
+  margin: auto;
+}
+.container-home .main-header {
+  margin-bottom: 10px;
+}
+.intro p {
+  margin-top: 15px;
 }
 .space {
-  background: lightgray;
+  background: gainsboro;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+.space h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 .space a {
   text-decoration: none;
+  font-size: 20px;
+  color: dimgray;
+  margin: 30px;
 }
 footer {
   color: #22283B;
