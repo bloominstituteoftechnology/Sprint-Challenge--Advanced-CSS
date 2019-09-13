@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -17,11 +18,23 @@
 <body>
 
  <!-- navigation code here -->
+ <div id="navigation">
+  <h1><div id="last-resort">Spacewalkers</div></h1>
+
+   <nav>
+   <a href="#">Home</a>
+   <a href="#">About Us</a>
+   <a href="#">Blog</a>
+   <a href="#">Contact</a>
+   <a href="#">Sign In</a>
+  </nav>
+</div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img id="main-header" src="img\main-header.png" alt="Image of planet Earth">
 
       <h2>Lift Off</h2>
     
@@ -30,8 +43,8 @@
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img class="mobile-hide" src="img/sky.png" class="sky" alt="Space sky image">
+        <img class="mobile-hide"src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -51,9 +64,10 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
+        <button id="button">
           Sign Up
-        </div>
+        </button>
+
       </div>
       
       <div class="walk-img">
