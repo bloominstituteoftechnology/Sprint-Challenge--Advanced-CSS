@@ -168,8 +168,19 @@ nav {
   padding-left: 10%;
   padding-bottom: 3%;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    padding-left: 0%;
+  }
+}
 nav a {
   color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 65%;
+  }
 }
 footer {
   color: #22283B;
@@ -187,6 +198,11 @@ footer {
   justify-content: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .topHeader {
+    width: 100%;
+  }
+}
 .topHeader .topHead {
   display: flex;
   flex-direction: column;
@@ -194,10 +210,28 @@ footer {
   -ms-flex-align: center;
   padding: 4% 0% 0% 5%;
 }
+@media (max-width: 500px) {
+  .topHeader .topHead {
+    width: 100%;
+    justify-content: center;
+  }
+}
 .topHeader .topHead h1 {
   font-size: 450%;
   padding-left: 23%;
   padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .topHeader .topHead h1 {
+    font-size: 330%;
+    padding-left: 15%;
+  }
+}
+.topHeader .botHead {
+  width: 100%;
+}
+.topHeader .botHead img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -209,6 +243,22 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -232,11 +282,30 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    Padding: 5% 0% 5% 5%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 91%;
+  }
+}
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    margin-right: 5%;
+    width: 80%;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
@@ -259,12 +328,30 @@ footer {
   color: black;
   background-color: White;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding-bottom: 4%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    padding: 5% 8% 5% 0%;
+    margin-left: 0%;
+    width: 90%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 110%;
+  }
 }

@@ -7,18 +7,46 @@
   justify-content: center;
   width: 100%;
 
+  @media @phone{
+    width: 100%;
+
+  }
+
     .topHead{
         .displayCM();
       justify-content: space-evenly;
       -ms-flex-align: center;
       padding: 4% 0% 0% 5%;
+      
+      
+      @media @phone{
+          width: 100%;
+          justify-content: center;
+        }
 
         h1{
           font-size: 450%;
           padding-left: 23%;
           padding-bottom: 3%;
-        } // h1 ends here
+
+        @media @phone{
+          font-size: 330%;
+          padding-left: 15%;
+          
+          
+        }
+
+        
+
+           } // h1 ends here
   } //topHead ends here
+
+  .botHead{
+    width:100%;
+    img{
+      width: 100%;
+    }
+  }
 
 } //topHeader ends here
 
@@ -45,6 +73,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+   @media @phone{
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+
+     .blast{
+       width: 100%;
+     }
+
+     .sky{
+       display: none;
+     }
+
+     .launch{
+       display: none;
+     }
+   }
 
     img {
       width: 28%;
@@ -73,11 +119,27 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display:flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      Padding: 5% 0% 5% 5%;
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone{
+        width: 91%;
+      }
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone{
+          margin-right: 5%;
+          width: 80%;
+        }
       }
 
       p {
@@ -85,19 +147,38 @@
       }
 
       .btn { 
-        .custom-btn(black, 25%, White)
-      }
-    }
+        .custom-btn(black, 25%, White);
 
+        @media @phone{
+            width: 100%;
+            padding-bottom:4%;
+        }
+    }
+  }
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+    
+
+      @media @phone{
+        padding: 5% 8% 5% 0%;
+        margin-left: 0%;
+        width: 90%;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone{
+          width: 110%;
+
+        }
       }
     }
-  }
-}// home
+  
+}
+}
+// home
