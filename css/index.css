@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,15 +160,16 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header span {
+header .header-color {
   background-color: #ebebeb;
   width: 100%;
+  height: 100px;
 }
 header h1 {
   display: flex;
   justify-content: center;
   font-size: 3.2rem;
-  margin: 10px 0;
+  margin-bottom: 10px;
   padding-top: 10px;
 }
 header nav {
@@ -182,13 +183,16 @@ header nav a {
   font-size: 1.2rem;
   text-decoration: none;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 5px;
 }
 header nav a:hover {
   text-decoration: underline;
 }
 header img {
+  display: flex;
+  margin-left: 18px;
+  width: 95%;
   border-radius: 3px;
 }
 footer {
@@ -200,6 +204,36 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  .home .container p {
+    display: flex;
+    justify-content: start;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+  }
+  .home .container h4 {
+    border: 1px solid red;
+  }
+  .home .container .walk-image,
+  .home .container .walk-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+  .home .container div .btn button {
+    width: 100vw;
+    height: 50px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
