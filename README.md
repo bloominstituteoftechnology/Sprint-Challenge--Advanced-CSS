@@ -33,15 +33,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive site detects the screen size and responds with the right page layout for that spasific size.
+Hoever, a responsive site is able to adapt to any size and works on all devices.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+mobile first means you start to design your site for mobile devices first, which means its more basic and more about the content. then as you add to it and add details , it becomes the website verson later. 
+
+Desktop first means you work from the top to the bottom, You build the site designed for full exposure, on the desktop verson, then work your way down, making it simpler most content only to display the needed information only due to the lack of space on devices. 
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+it basicly allows us to define a single font size on the html and then sets all units of the rem to be a percentage of that defined font size which we set in the the html.
 4. How would you describe preprocessing to someone new to CSS?
-
+preprocessing is using the differnet css generators which add certin features to normal css that makes the css structure more readable and understandable. expamples include nesting and varables and mixins
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+my fav concept is varables because it saves alot of work and can replace longer peices of repeated code. 
+my least fav concept is nesting and i have a hard time understanding where to nest what.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
