@@ -1,1 +1,42 @@
 // Navigation code here
+header{
+    width:100%;
+    .custom-layout(center,center);
+    flex-direction:column;
+    .headerPadding(2%,0);
+    background-color:whitesmoke;
+
+    @media @phone{
+        .headerPadding(2%,1%);
+    }
+
+    h2{
+        @media @phone{
+           
+        }
+    }
+
+    nav{
+        padding-top:2%;
+        padding-bottom:2%;
+        width:100%;
+        .custom-layout(center,center);
+        justify-content:space-between;
+        padding-left:35%;
+        padding-right:35%;
+
+        @media @phone{
+            width:100%;
+            padding-top:4%;
+            padding-left:10%;
+            padding-right:10%;
+        }
+        a{
+            text-decoration:none;
+            color:black;
+            font-size: @headerLinkSize;
+            font-style:bold;
+            
+        }
+    }
+}
