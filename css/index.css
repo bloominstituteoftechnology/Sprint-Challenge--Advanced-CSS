@@ -176,6 +176,11 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+  .nav-wrap2 {
+    max-width: 450px;
+    width: 100%;
+    margin-top: 0;
+  }
 }
 .nav-wrap {
   background: #f4f4f4;
@@ -194,6 +199,7 @@ p {
   .header-img .header-img2 {
     width: 100%;
     border-radius: 20px;
+    margin-top: 5%;
   }
   .nav-wrap h1 {
     margin-bottom: 2%;
@@ -218,7 +224,7 @@ a {
 #stick {
   overflow: hidden;
   background-color: #8f8f8f;
-  opacity: 0.8;
+  opacity: 0.5;
   filter: alpha(opacity=50);
   position: fixed;
   top: 0;
@@ -246,6 +252,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.aboutfoot {
+  color: #22283B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:500px) {
+  .aboutfoot {
+    color: #22283B;
+    margin-top: 2%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 h1 {
   display: flex;
@@ -380,6 +402,9 @@ h1 {
   text-align: center;
   padding-top: 8%;
 }
+.regformtext {
+  margin-bottom: 2%;
+}
 .swirl-in-fwd {
   -webkit-animation: swirl-in-fwd 2s ease-out both;
   animation: swirl-in-fwd 2s ease-out both;
@@ -407,4 +432,56 @@ h1 {
     transform: rotate(0) scale(1);
     opacity: 1;
   }
+}
+* {
+  box-sizing: border-box;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #363836;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity: 1;
+}
+/* Add a blue text color to links */
+.form {
+  color: #4e4f50;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
 }
