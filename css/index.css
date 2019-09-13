@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,6 +160,19 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav .nav-items {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -170,11 +183,34 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.home .intro h2 {
-  padding: 15px;
+header {
+  padding: 2% 2%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f6f6f6;
 }
-.home .intro p {
-  padding: 0 15px;
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+header h1 .header-items {
+  display: flex;
+  justify-content: center;
+}
+.home {
+  width: 90%;
+}
+.home .liftOff {
+  width: 100%;
+}
+.home .liftOff h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .liftOff .topPhoto {
+  max-width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -187,36 +223,36 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
