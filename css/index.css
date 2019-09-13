@@ -1,3 +1,11 @@
+.spaceimages {
+  border-radius: 14px;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+.pmargin {
+  margin-bottom: 18px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,6 +173,35 @@ p {
 }
 .intro p {
   margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blast {
+  border-radius: 14px;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+.sky {
+  border-radius: 14px;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+.launch {
+  border-radius: 14px;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+.visit-planets h3 {
+  margin-bottom: 20px;
+}
+.p-two {
+  margin-bottom: 80px;
+}
+.p-one {
+  margin-bottom: 18px;
+}
+.walk-text h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .space {
   background: gainsboro;
@@ -202,8 +239,12 @@ footer {
 }
 .home .space-images {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+}
+.home .space-images .blast {
+  border-radius: 14px;
+  margin-right: 25px;
+  margin-bottom: 35px;
 }
 .home .space-images img {
   width: 28%;
