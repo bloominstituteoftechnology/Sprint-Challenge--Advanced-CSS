@@ -1,6 +1,9 @@
-// General Styles
 * {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html {
@@ -36,3 +39,24 @@ p {
   margin: 0 auto;  
 }
 
+@media @mobile {
+  .container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;  
+  }
+
+  .nav-wrap {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto; 
+  }
+
+  .nav-wrap2 {
+    
+      max-width:450px;
+      width: 100%;
+      margin-top: 0; 
+  }
+
+  }
