@@ -131,6 +131,8 @@ table {
 }
 html {
   font-size: 62.5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 html,
 body {
@@ -160,33 +162,27 @@ p {
 }
 .navigation {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f4f4f4;
+  max-width: 1480px;
   width: 100%;
-  height: 15rem;
-}
-.navigation nav {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-}
-.navigation nav a {
-  font-size: 1.5rem;
-  color: #22283A;
-  text-decoration: none;
-  transition: 0.5s ease;
-  padding: 20px;
-  justify-content: space-evenly;
-}
-.navigation nav a:hover {
-  color: #23293B;
+  height: 100px;
+  font-size: 2.6rem;
 }
 .navigation h1 {
-  font-size: 3.5rem;
+  text-align: center;
+  font-size: 3.6rem;
+  width: 100%;
+}
+.navigation nav {
+  width: 100%;
+  height: 40px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.navigation nav a {
+  text-decoration: none;
+  width: 100%;
 }
 footer {
   color: #22283B;
@@ -203,6 +199,10 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro .main-header {
+  border-radius: 2%;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -254,10 +254,12 @@ footer {
   border-radius: 4px;
   width: 30%;
   height: 4.5rem;
+  opacity: 1.5;
 }
-@media (max-width: 430px) {
+@media (max-width: 500px) {
   .new-btn button {
     width: 100%;
     height: 4.5rem;
+    opacity: 2;
   }
 }
