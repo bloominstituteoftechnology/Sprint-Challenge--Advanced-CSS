@@ -26,6 +26,26 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 150%;
+    
+      .blast {
+        justify-content: center;
+        width: 50%;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      .sky {
+        display: none;
+      }
+   }
+
     img {
       width: 28%;
       margin: 20px 2.5%;

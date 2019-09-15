@@ -216,6 +216,24 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150%;
+  }
+  .home .space-images .blast {
+    justify-content: center;
+    width: 50%;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
