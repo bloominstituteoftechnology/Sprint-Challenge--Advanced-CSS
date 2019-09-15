@@ -50,7 +50,7 @@ are scaled down using max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
--The font-size of 65.5% allows in to count by power of 10, making it easier to calculate rem scaling. For example,
+-The font-size of 62.5% allows us to count by power of 10, making it easier to calculate rem scaling. For example,
 if 65.5% is font-size, we can assume 1rem = 10px, so 2rem naturally equals 20px.
 
 4. How would you describe preprocessing to someone new to CSS?
