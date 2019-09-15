@@ -59,7 +59,7 @@ if 62.5% is font-size, we can assume 1rem = 10px, so 2rem naturally equals 20px.
 
 5. What is your favorite concept in preprocessing? 
 
--My favorite concep in preprocessing is compiler initializing to track changes.
+-My favorite concept in preprocessing is compiler initializing to track changes.
 
 What is the concept that gives you the most trouble?
 
