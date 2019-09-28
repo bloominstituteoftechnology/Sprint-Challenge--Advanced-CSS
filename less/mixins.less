@@ -1,1 +1,21 @@
 // Mixins Here
+.sign-up(@blackcolor: black, @whitecolor: white) {
+    border: 2px solid @blackcolor;
+    background-color: @blackcolor;
+    color: @whitecolor;
+    padding: 5px;
+    display: inline;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+    @:hover {
+        background-color: @whitecolor;
+        color: @blackcolor;
+    }
+}
+
+@media @phone {
+    width: 100%;
+}
+
+
