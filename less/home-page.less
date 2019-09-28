@@ -44,7 +44,7 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     .walk-text {
       width: 50%;
@@ -57,7 +57,23 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn{
+        button {
+          border: 1px solid #0E4068;
+          padding: 5px;
+          font-size: 1.7rem;
+          border-radius: 8px;
+          .btn(white, 100px, #0E4068);
+
+          &:hover {
+          border: 1px solid #0E4068;
+          padding: 5px;
+          font-size: 1.7rem;
+          border-radius: 8px;
+          .btn(#0E4068, 100px, white);
+          }
+        }
+          
       }
     }
 
@@ -71,18 +87,78 @@
         border-radius: 10px;
       }
     }
+  }
 
-    .mbl-blast-img {
-        width: 100%;
-        text-align: center;
+  .mbl-blast-img {
         img {
-            
-            width: 92%;
-            margin-top: 20px;
-            border-radius: 15px;
-            padding-top: 10px;
-            padding-bottom: 20px;
-        }
+            .display-none();
+              }
+    }
+
+@media @phone {
+  .display-none {
+    display: none;
+  }
+
+  .mbl-blast-img {
+    text-align: center;   
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 15px;
+      margin: 20px 0 5px 0;
     }
   }
+  .space-images {
+
+    .blast {
+      .display-none();
+    }
+
+    .sky {
+      .display-none();
+    }
+
+    .launch {
+      .display-none();
+    }
+  }
+
+ .walk {
+   flex-direction: column-reverse;
+   width: 100%;
+
+   .walk-text {
+     .text-width();
+
+     .btn {
+       button {
+         border: 1px solid #0E4068;
+         padding: 20px;
+         font-size: 1.7rem;
+         border-radius: 8px;
+         .btn(white, 400px, #0E4068);
+
+         &:hover {
+           border: 1px solid #0E4068;
+           padding: 20px;
+           font-size: 1.7rem;
+           border-radius: 8px;
+           .btn(#0E4068, 400px, white);
+         }
+       }
+     }
+   }
+
+   .walk-img {
+     width: 100%;
+     margin-bottom: 20px;
+     
+     img {
+       width: 100%;
+       border-radius: 9px;
+     }
+   }
+ }
+}
 }// home

@@ -1,3 +1,9 @@
+.display-none {
+  display: none;
+}
+.text-width {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -189,9 +195,6 @@ p {
 .desktop-img img {
   border-radius: 10px;
 }
-.mbl-blast-img img {
-  display: none;
-}
 @media (max-width: 500px) {
   .mbl-header-container {
     background: #F4F4F4;
@@ -264,7 +267,6 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  justify-content: center;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -275,6 +277,24 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn button {
+  border: 1px solid #0E4068;
+  padding: 5px;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  color: white;
+  width: 100px;
+  background: #0E4068;
+}
+.home .walk .walk-text .btn button:hover {
+  border: 1px solid #0E4068;
+  padding: 5px;
+  font-size: 1.7rem;
+  border-radius: 8px;
+  color: #0E4068;
+  width: 100px;
+  background: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -284,14 +304,62 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.home .walk .mbl-blast-img {
-  width: 100%;
-  text-align: center;
+.home .mbl-blast-img img {
+  display: none;
 }
-.home .walk .mbl-blast-img img {
-  width: 92%;
-  margin-top: 20px;
-  border-radius: 15px;
-  padding-top: 10px;
-  padding-bottom: 20px;
+@media (max-width: 500px) {
+  .home .display-none {
+    display: none;
+  }
+  .home .mbl-blast-img {
+    text-align: center;
+  }
+  .home .mbl-blast-img img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0 5px 0;
+  }
+  .home .space-images .blast {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn button {
+    border: 1px solid #0E4068;
+    padding: 20px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    color: white;
+    width: 400px;
+    background: #0E4068;
+  }
+  .home .walk .walk-text .btn button:hover {
+    border: 1px solid #0E4068;
+    padding: 20px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    color: #0E4068;
+    width: 400px;
+    background: white;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+    border-radius: 9px;
+  }
 }
