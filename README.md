@@ -38,6 +38,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Describe what it means to be mobile first vs desktop first.
 
+    A desktop first approach means designing the site around the desktop viewing experience, then adapting it down to fit smaller devices. A mobile first approach is the exact opposite of the desktop approach. In mobile first, you design the site around a mobile viewing experience and scale it up to larger devices.
+    
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 4. How would you describe preprocessing to someone new to CSS?
