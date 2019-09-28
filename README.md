@@ -46,7 +46,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    It’s the best thing since sliced bread! Think about how repetitive vanilla CSS is to write with all the repeated properties and values, tricky psudo-classes and animations you may want to write, and lets not forget those loveable vendor prefixes we sometimes have to use. Using a preprocessor, instead of writing CSS line by line and repeating ourselves all the time like animals, we can create variables for commonly used properties or mixins for sets of those properties. Functions are also fantastic for doing complex CSS and calculations in just a few lines. Preprocessors are great because they make CSS easier to write and easier to understand.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I love mixins and variables! They make things much less repetitive and allow for better consistency across the project. Functions on the other hand are rather difficult in some instances. There are just so many of them and its difficult at times to determine whether I should use one or not. The difficulty boils down to me just not being familiar with them though.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
