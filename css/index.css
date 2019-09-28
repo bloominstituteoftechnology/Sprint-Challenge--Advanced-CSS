@@ -4,6 +4,15 @@
   margin: 20px;
   display: flex;
   justify-content: center;
+  border: #F1F1F1;
+  font-size: 1.5em;
+}
+.bttt {
+  border-radius: 5px ;
+  background: darkblue;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -167,9 +176,6 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.first {
-  color: #454A59;
-}
 h1 {
   margin-top: 15px;
   text-align: center;
@@ -181,6 +187,8 @@ h1 {
   margin: 20px;
   display: flex;
   justify-content: center;
+  border: #F1F1F1;
+  font-size: 1.5em;
 }
 .navigation a {
   text-decoration: none;
@@ -238,6 +246,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn a {
+  border-radius: 5px ;
+  background: darkblue;
+  font-size: 3em;
+  color: white;
+  text-decoration: none;
 }
 .home .walk .walk-img {
   width: 46%;
