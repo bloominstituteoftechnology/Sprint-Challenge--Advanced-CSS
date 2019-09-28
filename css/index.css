@@ -184,10 +184,14 @@ p {
 }
 .navigation div a {
   font-family: 'Ubuntu', sans-serif;
-  color: #454A59;
   font-size: 1.6rem;
   text-decoration: none;
   margin: 10px;
+  color: #454A59;
+  transition: 0.2s;
+}
+.navigation div a:hover {
+  color: #727a92;
 }
 .navigation div #logo {
   width: 100%;
@@ -200,7 +204,10 @@ footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border-top: 1px double #e0e0e0;
+  border-right: 1px double #e0e0e0;
+  border-bottom: 1px double #e0e0e0;
+  border-left: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -215,6 +222,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -230,6 +238,17 @@ footer {
   border-left: 0 none none;
   border-radius: 20px;
   height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -251,8 +270,22 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 15px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-text {
+    margin-top: 15px;
+    width: 100%;
+    order: 1;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -261,12 +294,14 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  color: #fff;
   text-align: center;
   width: 100px;
   font-size: 1.8rem;
   background: #23293B;
   padding: 10px;
+  color: #F6F6F6;
+  cursor: pointer;
+  transition: 0.2s;
   border-top: 0 none none;
   border-right: 0 none none;
   border-bottom: 0 none none;
@@ -274,11 +309,34 @@ footer {
   border-radius: 5px;
 }
 .home .walk .walk-text .btn:hover {
-  background: #49557b;
+  background: #F6F6F6;
+  color: #23293B;
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    background: #23293B;
+    padding: 20px;
+    color: #F6F6F6;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: #F6F6F6;
+    color: #23293B;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media screen and (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
