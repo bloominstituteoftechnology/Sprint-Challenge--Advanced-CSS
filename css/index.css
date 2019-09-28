@@ -247,7 +247,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn a {
+.home .walk .walk-text .btn {
   border-radius: 5px ;
   background: darkblue;
   font-size: 3em;
