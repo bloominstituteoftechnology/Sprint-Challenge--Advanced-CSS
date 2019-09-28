@@ -159,13 +159,15 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .navigation {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.9);
   border-bottom: 1px solid #F1F1F1;
 }
 .navigation div {
@@ -199,12 +201,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
