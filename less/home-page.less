@@ -26,7 +26,7 @@
     img {
       width: 28%;
       margin: 20px 2.5%;
-      border-radius: 20px;
+      .border(0, 0, 0, 0, none, none, 20px);
       height: 100%;
     }
   }
@@ -45,7 +45,7 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    .border(1px, 0, 0, 0, solid, @main-border-color, none);
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -62,6 +62,9 @@
       }
 
       .btn {
+        color: #fff;
+        .button(100px, 1.8rem, @ebony-clay, 10px);
+        .border(0, 0, 0, 0, none, none, 5px);
       }
     }
 
@@ -72,7 +75,7 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .border(0, 0, 0, 0, none, none, 10px);
       }
     }
   }

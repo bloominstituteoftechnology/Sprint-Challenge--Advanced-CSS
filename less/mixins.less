@@ -1,1 +1,20 @@
 // Mixins Here
+.button(@width, @fSize, @bg, @pad) {
+    text-align: center;
+    width: @width;
+    font-size: @fSize;
+    background: @bg;
+    padding:@pad;
+
+    &:hover {
+        background: lighten(@bg, 20%);
+    }
+}
+
+.border(@top, @right, @bottom, @left, @style, @color, @rad) {
+    border-top: @top @style @color;
+    border-right: @right @style @color;
+    border-bottom: @bottom @style @color;
+    border-left: @left @style @color;
+    border-radius: @rad;
+}
