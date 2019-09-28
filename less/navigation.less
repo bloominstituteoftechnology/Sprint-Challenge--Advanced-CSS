@@ -1,5 +1,48 @@
 // Navigation code here
+.desktop-container {
+    background: #F4F4F4;
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    height: 90px;
+    text-align: center;
+
+    .desktop-header-title {
+        h2 {
+            font-size: 4rem;
+            padding-top: 10px;
+        }
+    }
+
+    .desktop-nav-flex-container {
+        display: flex;
+        justify-content: center;
+
+        a {
+            font-size: 1.5rem;
+            margin-left: 30px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+ .desktop-img {
+        text-align: center;
+        
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .mbl-blast-img {
+        img {
+            display: none;
+        }
+    }
 @media @phone {
+
     .mbl-header-container {
         background: #F4F4F4;
         margin: 0 auto;
@@ -17,7 +60,7 @@
         .mbl-nav-flex-container {
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
 
             a {
                 font-size: 1.6rem;
@@ -33,6 +76,6 @@
                 padding-top: 10px;
                 border-radius: 6px;
             }
-        }
+        }  
     }
 }
