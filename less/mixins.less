@@ -1,1 +1,38 @@
 // Mixins Here
+
+.botton(@bg-color, @font-color){
+	background-color: @bg-color;
+    color: @font-color;
+    width: 120px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border: 1px solid @btn-bg-color;
+    border-radius: 10px;    
+    
+    @media @phone {
+        .mobile-enlarge;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+.btn-hover(@bg-color, @font-color) {
+    background-color: @bg-color;
+    color: @font-color
+}
+
+.mobile-flex(@flex-direction) {
+        display: flex;
+        flex-direction: @flex-direction;
+        justify-content: center;
+}
+
+.mobile-none {
+        display: none;
+}
+
+.mobile-enlarge {
+    width: 98%;
+    padding: 1%;
+}

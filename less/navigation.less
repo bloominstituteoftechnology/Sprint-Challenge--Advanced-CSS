@@ -1,1 +1,34 @@
 // Navigation code here
+
+.navigation {
+    width: 100%;
+    background-color: @nav-bg;
+    display: flex;
+    flex-direction: column;
+    
+    .nav-title {
+        margin: 0 auto;
+        font-size: 5rem;
+        padding: 1%;
+    }
+
+    nav {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+
+        a {            
+            text-decoration: none;
+            color: @nav-font;
+            padding: 1% 2% 1% 2%;
+
+            @media @phone {
+                justify-content: space-between;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

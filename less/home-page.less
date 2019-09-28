@@ -3,6 +3,13 @@
 .home {
 
   .intro {
+    .main-img {      
+      border-radius: 10px;
+
+      @media @phone {
+        width: 100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -24,6 +31,16 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        .mobile-enlarge
+      }
+    }
+    
+    @media @phone {
+      .remove-img {
+        .mobile-none;
+      }
     }
   }
 
@@ -46,6 +63,11 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .mobile-flex(column-reverse);
+      padding: 2.5%;
+    }
+    
     .walk-text {
       width: 50%;
 
@@ -58,6 +80,16 @@
       }
 
       .btn {
+        .botton(@ebony-clay,@sea-shell);
+      }
+
+      .btn:hover{
+        .btn-hover(@sea-shell,@ebony-clay)
+      }
+
+      @media @phone {
+        .mobile-enlarge;
+        margin: 1%;
       }
     }
 
@@ -69,6 +101,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone {
+        .mobile-enlarge;
+        margin: 1%;
       }
     }
   }

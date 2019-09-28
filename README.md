@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive design is made for specific screen sizes while responsive adjust to all screens in a fluid way.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Design the interface for the mobile viewpoints and then adapt the page to desktop second.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the font size at the root element and then allows fonts to add up by increments of 10px when using rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+It allows the use of nesting and variables in a JS style fashion. It makes for better readability.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like nesting. It makes reading and troubleshooting code so much easier. I can’t say it’s trouble but I really have to think about how and why I am created parametric mixins.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -96,7 +106,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [X] Add a viewport meta tag to the head of your index.html page
 
 * [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
@@ -106,11 +116,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [X] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [X]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [X] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
