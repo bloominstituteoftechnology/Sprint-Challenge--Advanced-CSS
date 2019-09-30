@@ -1,1 +1,75 @@
 // Navigation code here
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @media @phone {
+        padding: 3% 0;
+    }
+    
+
+    @media @desktop {
+        padding: 1.5% 0;
+    }
+
+    @media @tablet {}
+    // end of navigation bar class styling
+.navigation-bar {
+    @media @desktop {
+        background-color: @porcelain;
+    }
+    
+}
+h1 {
+    font-size: 4.5rem;
+
+    @media @phone {
+        font-size: 3rem;
+    }
+}
+
+
+nav {
+    @media @phone {
+        padding: 3% 0;
+    }
+
+    @media @desktop {
+        padding: 4% 0;
+        
+    }
+}
+
+a{
+    text-decoration: none;
+    color: @ebony-clay;
+
+    @media @phone{
+        padding: 0 2%;
+        font-size: 1.1rem;
+    }
+
+    @media @tablet{}
+
+    @media @desktop{
+        text-decoration: none;
+        padding: 0 3%;
+        font-size: 1.3rem;
+    }
+}
+
+img{
+    @media @phone {
+        // border: 2px solid red;
+        width: 98%;
+        height: 60%;
+        border-radius: 8px;
+    }
+
+    @media @desktop {
+      width: 80%;
+    }
+}
+}
+ 
