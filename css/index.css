@@ -355,8 +355,9 @@ footer {
   }
 }
 .walk .walk-text .btn:hover {
-  background-color: yellow;
-  color: red;
+  background-color: #81848E;
+  color: #F6F6F6;
+  font-weight: bolder;
 }
 @media (max-width: 500px) {
   .walk .walk-text .btn {
