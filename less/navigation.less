@@ -1,1 +1,32 @@
 // Navigation code here
+nav {
+  .flex();
+  flex-direction: column;
+  width: 100%;
+  background: rgba(246, 246, 246, 0.75);
+  padding-bottom: 15px;
+  position: fixed;
+  margin-bottom: 12%;
+  @media @phone {
+    width: 100%;
+  }
+  h1 {
+    color: @main-font-color;
+    font-size: 3.5rem;
+    margin: 15px;
+  }
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: @nav-font;
+    padding: 15px 15px;
+    &:hover {
+      color: silver;
+    }
+    @media @phone {
+      padding: 10px;
+    }
+  }
+}
+//**************HEADER-IMG****************//
