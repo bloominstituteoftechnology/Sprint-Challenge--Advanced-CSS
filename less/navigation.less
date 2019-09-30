@@ -1,6 +1,7 @@
-// Navigation code here
+//*****************NAV**************//
+
 nav {
-  .flex();
+  .flex-top();
   flex-direction: column;
   width: 100%;
   background: rgba(246, 246, 246, 0.75);
@@ -11,11 +12,10 @@ nav {
     width: 100%;
   }
   h1 {
-    color: @main-font-color;
-    font-size: 3.5rem;
+    color: @header-font-color;
+    font-size: 3.7rem;
     margin: 15px;
   }
-
   a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -29,4 +29,15 @@ nav {
     }
   }
 }
-//**************HEADER-IMG****************//
+//****************HEADER-IMG*****************//
+header {
+  img {
+    padding-top: 12%;
+    border-radius: 5px;
+    @media @phone {
+      width: 100%;
+      height: auto;
+      padding-top: 24%;
+    }
+  }
+}
