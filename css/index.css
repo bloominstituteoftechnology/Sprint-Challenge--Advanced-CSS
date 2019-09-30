@@ -1,3 +1,16 @@
+.header-style {
+  text-align: center;
+  font-size: 4.4rem;
+  padding-top: 10px;
+}
+.atrib-style {
+  justify-content: space-between;
+  padding: 1px;
+  margin: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -193,6 +206,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .img-main-header img {
+  border-radius: 5px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -234,6 +250,24 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn a {
+  width: 100px;
+  height: 30px;
+  background-color: #22283A;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: white;
+  color: black;
 }
 .home .walk .walk-img {
   width: 46%;
