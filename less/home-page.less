@@ -1,5 +1,7 @@
 // Home Content
 
+
+
 .home {
 
   .intro {
@@ -58,6 +60,12 @@
       }
 
       .btn {
+        .btncustom(4px, 0, 2% 4% 2% 4%, @btn-bg-color, 16px, 'Ubuntu', white);
+
+        &:hover{
+          background-color: white;
+          color: @btn-bg-color;
+        }
       }
     }
 
@@ -73,3 +81,7 @@
     }
   }
 }// home
+
+.main-header{
+  .imgrounded;
+}
