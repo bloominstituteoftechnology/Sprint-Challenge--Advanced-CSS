@@ -1,0 +1,18 @@
+1. An adaptive website is usually used for a specific or a certain layout of a website, where the website is interactive and scales to 
+different screen sizes at specific breakpoints for desktops, tablets, or mobile. It keeps the content fairly similar to keep a cetain feel to the website or 
+a more specific UI design vs a responsive relies for on something like a grid layout and divs and content scaled by precentages so the page changes at any
+size if needed to fit the screen.
+
+2. Mobile first is when the developer starts out developing the website for mobile size screens/layout and then scaling up with breakpoints to larger sizes
+such as tablet and then desktop. 
+
+3. The default font size in html is 16px, adding the font-size: 62.5% adjusts the REM usit to be like this: 1rem is equal to 10px. so 1.6 rem would be 16px, this makes
+it easier to do math on font sizes vs having to do multiply odd numbers to get a specific font size. It adds responsiveness to the website.
+
+4.Preprocessing is when there is a compiler such as NODE that allows the use of new syntax such as LESS or SASS giving the web developer
+ a more neat and easier way to layout their css with nesting. It also adds a few tools that make it easier to write CSS and keep
+ the code DRY. It provides a way of using variables, mixins, and paramixins. It allows you to use some operations and functions in your
+ CSS as well.
+
+5. I like the nesting part, its a lot easier to target the CSS tags and read the CSS. I like how it makes media queries easy to use and keeps
+me from having to write a lot of extra 

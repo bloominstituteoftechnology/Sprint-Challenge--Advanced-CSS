@@ -1,1 +1,32 @@
 // Mixins Here
+.header-style {
+    text-align: center;
+        font-size: 4.4rem;
+        padding-top:10px;
+}
+
+.atrib-style {
+    justify-content: space-between;
+    padding: 1px;
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.button-style(@fontsize, @fontcolor) {
+    width: 100px;
+    height: 30px;
+    background-color: @btn-bg-color;
+    border-radius: 5px;
+    color: @fontcolor;
+    text-align: center;
+    font-weight: bold;
+    font-size: @fontsize;
+    line-height:30px;
+    padding:10px 20px 10px 20px;
+    text-decoration: none;
+    border:1px solid black;
+    
+    
+}
