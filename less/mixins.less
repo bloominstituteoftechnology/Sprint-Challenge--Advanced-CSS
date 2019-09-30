@@ -1,1 +1,22 @@
-// Mixins Here
+//*************MIXINS************************//
+.hover-b() {
+  color: @btn-bg-color;
+  background: @nav-border;
+}
+
+.flex-top() {
+  display: flex;
+  align-items: center;
+}
+
+//************** PARAMETRIC ******************//
+.button (@color, @background) {
+  height: 4rem;
+  width: 30%;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  color: @nav-border;
+  background: @btn-bg-color;
+  font-family: "Ubuntu", sans-serif;
+}

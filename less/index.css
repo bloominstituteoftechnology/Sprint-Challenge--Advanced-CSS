@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5e6164;
+  color: #5E6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293b;
+  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,51 +159,6 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-}
-nav {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  background: rgba(246, 246, 246, 0.75);
-  padding-bottom: 15px;
-  position: fixed;
-  margin-bottom: 12%;
-}
-@media (max-width: 500px) {
-  nav {
-    width: 100%;
-  }
-}
-nav h1 {
-  color: #23293b;
-  font-size: 3.7rem;
-  margin: 15px;
-}
-nav a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #454a59;
-  padding: 15px 15px;
-}
-nav a:hover {
-  color: silver;
-}
-@media (max-width: 500px) {
-  nav a {
-    padding: 10px;
-  }
-}
-header img {
-  padding-top: 12%;
-  border-radius: 5px;
-}
-@media (max-width: 500px) {
-  header img {
-    width: 100%;
-    height: auto;
-    padding-top: 24%;
-  }
 }
 footer {
   color: #22283B;
@@ -232,17 +187,6 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 500px) {
-  .home .space-images .sky,
-  .home .space-images .launch {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .blast {
-    width: 100%;
-  }
-}
 .home .visit-planets {
   padding: 15px;
 }
@@ -253,18 +197,11 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
-  margin-top: 30px;
+  margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-}
-@media (max-width: 500px) {
-  .home .walk {
-    width: 100%;
-    padding: 20px;
-    flex-direction: column-reverse;
-  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -275,48 +212,9 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-    flex-direction: column;
-  }
-}
-.home .walk .walk-text .btn {
-  height: 4rem;
-  width: 30%;
-  font-size: 2rem;
-  border-radius: 10px;
-  border: none;
-  color: #f1f1f1;
-  background: #22283a;
-  font-family: "Ubuntu", sans-serif;
-}
-.home .walk .walk-text .btn p {
-  text-align: center;
-  padding-top: 8px;
-}
-.home .walk .walk-text .btn:hover {
-  color: #22283a;
-  background: #f1f1f1;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    width: 100%;
-    margin: 0;
-  }
 }
 .home .walk .walk-img img {
   width: 100%;
