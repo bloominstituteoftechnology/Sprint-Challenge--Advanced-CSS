@@ -2,6 +2,7 @@
 .flex{
     display : flex;
     flex-wrap : wrap;
+    
 }
 
 .button {
@@ -17,5 +18,11 @@
     font-size :@size;
 }
 }
+
+.flex1(@justify-content; @align-items ){
+    display: flex;
+    justify-content: @justify-content;
+    align-items: @align-items;
+  }
 
 
