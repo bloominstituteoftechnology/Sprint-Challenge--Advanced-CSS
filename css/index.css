@@ -160,39 +160,72 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header h1 {
+.other {
+  display: flex;
+  flex-direction: column;
+}
+.other h1 {
   font-size: 75px;
   display: flex;
   align-content: center;
   margin-left: 100px;
 }
-header nav {
+.other nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
   width: 100%;
   vertical-align: top;
   margin-top: 35px;
+  margin-left: 100px;
 }
-header nav a {
+.other nav a {
   margin-right: 65px;
   font-size: 17px;
   color: black;
   text-decoration: none;
   padding: 20px 20px;
 }
-header nav a:hover {
+.other nav a:hover {
   text-decoration: underline;
 }
-header nav a:first-child {
+.other nav a:first-child {
   margin-left: 0;
 }
-header nav a:last-child {
+.other nav a:last-child {
   margin-right: 0;
 }
 .services-header-img {
   padding-top: 20px;
   width: 100%;
+}
+.home {
+  width: 100%;
+}
+.home .other {
+  width: 40%;
+}
+.home h1 {
+  width: 40%;
+  padding: 0 auto;
+}
+.home nav {
+  width: 40%;
+}
+.home .other nav {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+.home nav {
+  width: 40%;
+}
+.home nav a {
+  display: flex;
+  align-content: center;
+  font-size: 16px;
+  width: 40%;
+  text-align: center;
 }
 footer {
   color: #22283B;
@@ -264,37 +297,25 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media screen and (max-width: 500px) {
-  header {
-    width: 40%;
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
   }
-  .container home {
-    width: 40%;
-  }
-  h1 {
-    width: 40%;
-    padding: 0 auto;
-  }
-  nav {
-    width: 40%;
-  }
-  header nav {
-    width: 40%;
-    align-items: center;
-  }
-  nav {
-    width: 40%;
-  }
-  nav a {
-    align-content: center;
-    font-size: 1px;
-    width: 40%;
-    text-align: center;
-  }
-  .sky {
+  .home .sky {
     display: none;
   }
-  .launch {
+  .home .launch {
     display: none;
+  }
+  .home .walk-img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .walk {
+    flex: display;
+    flex-direction: column-reverse;
+  }
+  .walk-text {
+    width: 100%;
   }
 }
