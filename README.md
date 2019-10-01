@@ -2,7 +2,7 @@
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
 
-## Instructions
+## Instructions 888888foot
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -12,7 +12,7 @@ You are not allowed to collaborate during the Sprint Challenge. However, you are
 
 You have three hours to complete this challenge. Plan your time accordingly.
 
-## Commits
+## Commits..
 
 Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager.
 
@@ -34,13 +34,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+**Adaptive changes from the px sizes. 
+fully respinsive can handle it all. 
+
+2. Describe what it means to be mobile first vs desktop first.***
+****So you start with min with and build up to desktop- everyone is on their mobiles now days. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+***I know that 1 rem is 16px its like the standard size;
 
 4. How would you describe preprocessing to someone new to CSS?
+****it is a complier that makes you have to type less code - so you can just nest everything as you go 4 lvls at a time. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+****I really like the way you can type the css. 
+the mixins and the variables are kicking my but at the moment. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
