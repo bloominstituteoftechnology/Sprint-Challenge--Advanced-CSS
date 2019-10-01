@@ -73,3 +73,78 @@
     }
   }
 }// home
+
+.home {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left:  10px;
+
+
+
+
+.header-img {
+  margin-top :auto;
+  width : 100%;
+
+}
+}
+
+
+.btn {
+  .button(); // Using Mixins
+  .button1(50%,center,white,10px,red , 2vh);
+  &:hover {
+      background-color: darken(teal, 5%);
+      color: black;
+    }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border : 1px solid white; ;
+  border-radius : 8px;
+  background:rgb(214, 209, 209);
+  padding : 3%;
+  color : black;
+  font-size : 2vh;
+  
+}
+@media @phone {
+  .navigation {
+    display : flex;
+    flex-wrap : wrap ;
+    justify-content : center;
+    align-items: center;
+    border : 1px solid green;
+    }
+    .header-img {
+      display : flex; 
+      justify-content: center;
+    }
+  .space-images {
+      display : flex;
+      flex-wrap : wrap;
+      width : 100%;
+
+      .blast {
+        width :100%;
+        flex-grow: 1;
+      }
+      .sky {
+        display : none;
+      }
+      .launch {
+        display :none;
+      }
+    }
+
+  
+    .walk {
+      width : 100%;
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+    }
+  }

@@ -1,1 +1,28 @@
 // Mixins Here
+.flex{
+    display : flex;
+    flex-wrap : wrap;
+    
+}
+
+.button {
+    background : @btn-bg-color;
+    border-radius:8px;
+
+.button1 (@width,@center,@color,@padding,@border,@size) {
+    width : @width;
+    text-align : @center;
+    color : @color;
+    padding : @padding ;
+    border :@border;
+    font-size :@size;
+}
+}
+
+.flex1(@justify-content; @align-items ){
+    display: flex;
+    justify-content: @justify-content;
+    align-items: @align-items;
+  }
+
+
