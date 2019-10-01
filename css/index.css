@@ -211,6 +211,11 @@ header a {
   text-decoration: none;
   color: #23293B;
 }
+header a:hover {
+  background-color: #22283A;
+  color: #F6F6F6;
+  font-weight: bolder;
+}
 @media (max-width: 500px) {
   header a {
     padding: 0 2%;
