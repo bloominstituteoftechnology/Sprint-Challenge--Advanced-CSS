@@ -2,6 +2,8 @@
 
 .home {
 
+  //-----//
+
   .intro {
 
     h2 {
@@ -10,22 +12,55 @@
 
     p {
       padding:0 15px;
+      .boldtext;
     }
   
   }
+
+  //----//
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      width: auto;
+      height: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      .blast {
+        @media @phone{
+          width: auto;
+          height: auto;
+        }
+      }
 
+      .sky {
+        @media @phone{
+          display: none;
+        }
+      }
+    
+      .launch {
+        @media @phone{
+          display: none;
+        }
+      }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width: 100%;
+      }
     }
   }
+
+  //-------//
 
   .visit-planets {
     padding: 15px;
@@ -36,40 +71,93 @@
 
     p {
       margin-top: 13px;
+      .boldtext;
     }
   }
+
+  //----//
 
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
-
+    
+      @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 1rem;
+      width: 100%;    
+    }
     .walk-text {
-      width: 50%;
+      width: 100%;
+        @media @phone {
+        width: 100%;
+        }
+
 
       h3 {
         margin-bottom: 10px;
+        @media @phone {
+          margin-top: 2rem;
+          width: 500px;
+          }
       }
 
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
-      }
+        .boldtext;
+      }      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        display: flex;
+        margin-left: 0;
+        width: auto;
+        
+        
+      }
       
-      img {
+      .spacewalk {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone{
+          widows: 100%;
+          
+        }
       }
     }
   }
-}// home
+
+  button {
+    width: 12.5rem;
+    height: 5.0rem;
+    border-radius: 10px;
+    .buttoncolor(black,white);
+    font-family: 'Russo One', sans-serif;
+    &:hover {
+      color:black;
+      background-color:white;
+    }
+    @media @phone{
+      width: 80%;
+      border-radius: 5px;
+      margin-left:10%;
+      &:hover {
+        color:black;
+        background-color:white;
+      }
+      
+    }
+
+    
+
+  }
+ 
+  
+}// home//
+
