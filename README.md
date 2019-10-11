@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+1A. responsive design is fluid and uses media queries while adaptive design is static and is made specifically for certain screen sizes and will not change once loaded.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+2A. Its really scale up vs scale down and will affect how you will build your website.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+3A. llows us to easily compute rem units by tenths as 1 rem would equal 10px and 2 rem would equal 20px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+4A. preprocessing allows you to easily maintain your styles by allowing for variables to be assigned and CSS's very own classes.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+5A. using less to nest makes a lot more sense than vanilla CSS but using nested media queries does not. Using vanilla media queries and having all the changes take place under it makes more sense than peppering it across the code.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
