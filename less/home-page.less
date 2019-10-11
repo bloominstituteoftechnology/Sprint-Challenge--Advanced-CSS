@@ -36,14 +36,26 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 7%;
+    @media @phone {
+      .displayColumn
+    }
+    
+    .sky, .launch {
+      display: none;
+
+    }
 
     img {
       width: 28%;
       margin: 2% 2%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+      @media @phone {
+        max-width: 100%;
+
+      }//closes media query
+    }//closes img
+  }//closes space-images
 
   .visit-planets {
     padding: 15px;
@@ -76,8 +88,9 @@
       }
 
       .btn {
+        .custom-btn(@font-color: white, @btn-bg-color); 
       }
-    }
+    }//closes walk-text
 
     .walk-img {
       width: 46%;
