@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive design is creating multiple layouts of a page for specific device sizes where responsive design allows for one layout to seamlessly transition between devices regardless of their size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    A desktop first approach means designing the site around the desktop viewing experience, then adapting it down to fit smaller devices. A mobile first approach is the exact opposite of the desktop approach. In mobile first, you design the site around a mobile viewing experience and scale it up to larger devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    A browsers default font size is typically 16px. By setting the root font size to 62.5%, i.e. 62.5% of the browsers default font size, the standard font size for the page becomes 10px. So when the size of a text element is set to 1.6rem the measurement equates to 16px just as 2rem would equate to 20px or 1.2rem to 12px and so on.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    It’s the best thing since sliced bread! Think about how repetitive vanilla CSS is to write with all the repeated properties and values, tricky psudo-classes and animations you may want to write, and lets not forget those loveable vendor prefixes we sometimes have to use. Using a preprocessor, instead of writing CSS line by line and repeating ourselves all the time like animals, we can create variables for commonly used properties or mixins for sets of those properties. Functions are also fantastic for doing complex CSS and calculations in just a few lines. Preprocessors are great because they make CSS easier to write and easier to understand.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I love mixins and variables! They make things much less repetitive and allow for better consistency across the project. Functions on the other hand are rather difficult in some instances. There are just so many of them and its difficult at times to determine whether I should use one or not. The difficulty boils down to me just not being familiar with them though.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

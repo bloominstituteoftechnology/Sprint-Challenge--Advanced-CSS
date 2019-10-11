@@ -1,1 +1,40 @@
 // Mixins Here
+.button(@width, @pad, @bg, @fColor, @fSize) {
+    text-align: center;
+    width: @width;
+    font-size: @fSize;
+    background: @bg;
+    padding: @pad;
+    color: @fColor;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: @fColor;
+        color: @bg;
+    }
+}
+
+.border(@top, @right, @bottom, @left, @style, @color, @rad) {
+    border-top: @top @style @color;
+    border-right: @right @style @color;
+    border-bottom: @bottom @style @color;
+    border-left: @left @style @color;
+    border-radius: @rad;
+}
+
+.lighten-bg(@bg) {
+    background: @bg;
+    transition: 0.2s;
+    &:hover {
+        background: lighten(@bg, 20%);
+    }
+}
+
+.lighten-text(@color) {
+    color: @color;
+    transition: 0.2s;
+    &:hover {
+        color: lighten(@color, 20%);
+    }
+}

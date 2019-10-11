@@ -1,1 +1,35 @@
 // Navigation code here
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: @nav-bg;
+    .border(0, 0, 1px, 0, solid, @nav-border, 0);
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+
+        a {
+            font-family: @font-body;
+            font-size: 1.6rem;
+            text-decoration: none;
+            margin: 10px;
+
+            .lighten-text(@nav-font);
+        }
+        #logo {
+            width: 100%;
+            margin-bottom: 0;
+            text-align: center;
+            font-family: @font-heading;
+            font-size: 3.2rem;
+        }
+    }
+}
