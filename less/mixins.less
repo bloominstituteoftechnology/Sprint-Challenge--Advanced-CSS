@@ -1,29 +1,37 @@
 // Mixins Here
-.mixin-flex() {
-    display: flex;
-    justify-content: center;
-}
-.mixin-btn(@bgd-color) {
-.mixin-btn(@bgd-clr, @font-clr) {
-    background: @bgd-clr;
-    color: @font-clr;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 5px 10px;
-    width: 30%;
-    text-align: center;
+.nav a {
+    text-decoration:none;
+    font-size: 1.5em;
+    margin:20px;
+    color:@nav-font;
 
-    &:hover {
-        background: @font-clr;
-        color: @bgd-clr;
-        border: 1px solid @bgd-clr;
-
+    @media @phone {
+        margin: 5px
     }
 }
-
-.mixin-none() {
-    @media @phone  {}
-        display: none;
-    }
+.nav {
+    text-align:center;
+    background:@nav-bg;
+    color:@nav-font;
+    border:@border-border;
+    height:100%;
+    max-width:900px;
+    width:100px;
+    margin-top:40px;
+    margin:auto;
 }
+.sign-up(@fontsize, @border-radius, @padding, @text, @height, @width, @color, @bg-color){
+    background-color: @bg-color;
+    color: @color;
+    height: @height;
+    width: @width;
+    text-align: @text;
+    padding: @padding;
+    border-radius: @border-radius;
+    font-size: @font-size;
+  }
+
+
+
+
+   

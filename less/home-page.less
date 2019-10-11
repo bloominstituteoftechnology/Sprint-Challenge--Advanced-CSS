@@ -22,22 +22,45 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
+    @media @phone{
+      flex-direction:column;
+    }
+    .sky {
+      @media @phone {
+        display:none;
+      }
+    }
+    .launch {
+      @media @phone {
+        display:none;
+      }
+    }
+    .blast {
+      @media @phone {
+        width:94%
+      }
+    }
+
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-      @media @phone {
-        width: 90%;
-        margin: 0 5%;
-      }
-    
-    }
-    .sky, .launch {
-      .mixin-none
-    }
+     }
+     .space-Images.launch{
+       @media @phone{
+         display:none
+       }
+     }
 
+
+     img{
+       width:100%
+     }
+
+    
   .visit-planets {
     padding: 15px;
 
@@ -47,6 +70,20 @@
 
     p {
       margin-top: 13px;
+    }
+  }
+  .btn {
+    .sig-up(1.5rem, 3%,12px,center,40px,8rem, @sea-shell, @ebony);
+    margin-left: 10px;
+
+    &hover {
+      cursor:pointer;
+      color: lighten(@ebony-clay, 20%);
+      background-color: darken(@sea-shell,20%);
+    }
+    @media @phone {
+      width: 300px;
+      margin: auto;
     }
   }
 
@@ -59,15 +96,14 @@
 
     @media @phone {
       flex-direction: column-reverse;
-      margin-top: 15px;
-      padding: 15px 5%;
+      width:100%;
     }
 
     .walk-text {
       width: 50%;
+      
       @media @phone {
         width: 100%;
-        margin-top: 15px;
       }
 
       h3 {
@@ -78,25 +114,17 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .mixin-btn(@header-font-color, white);
-        
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      @media @phone {
-        width: 100%;
-        margin-left: 0;
+      .walk-img{
+        width:46%;
+        margin-left: 4%;
+      
+      img{
+        width:100%;
+        height:auto;
+        border-radius:10px
       }
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
       }
-    }
+  }
   }
 }
-}
-}
-}
+}//home
