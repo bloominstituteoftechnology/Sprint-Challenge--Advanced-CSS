@@ -1,1 +1,33 @@
 // Mixins Here
+
+.displayFlex(@justify, @flex-direction, @align)
+{
+    display:flex;
+    justify-content: @justify;
+    flex-direction: @flex-direction;
+    align-items: @align;
+
+}
+
+
+.ctaBtn (@size: 1.5rem, @txt-color:@porcelain, @width: 200px)
+    {
+        background-color: @btn-bg-color;
+        color: @txt-color;
+        width: @width;
+        border-radius: 5px;
+        border: 1px solid @btn-bg-color;
+        padding: 5px;
+        text-align: center;
+        font-size: @size;
+        
+
+        &:hover{
+            background-color: @porcelain;
+            color: @btn-bg-color           
+        }
+
+    }
+
+
+

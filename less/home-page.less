@@ -2,6 +2,10 @@
 
 .home {
 
+  @media @phone {
+    align-content: center;
+  }
+
   .intro {
 
     h2 {
@@ -24,6 +28,12 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+        @media @phone {
+          display: block;
+          width: 100%;
+          overflow-x: hidden;
+        }
     }
   }
 
@@ -45,9 +55,21 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    width: 100%;
+
+      @media @phone {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
 
     .walk-text {
       width: 50%;
+
+      @media @phone{
+
+        width: 100%;
+
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,8 +80,15 @@
       }
 
       .btn {
-      }
-    }
+        .ctaBtn(1.7rem, @porcelain ,11rem);
+    
+            @media @phone {
+                padding: 20px 100px 20px 100px;
+                width: 200%;
+                align-content: center;
+            }
+          }
+
 
     .walk-img {
       width: 46%;
@@ -69,7 +98,9 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+
       }
     }
   }
-}// home
+}
+}
