@@ -206,8 +206,8 @@ p {
 .walk {
   display: flex;
 }
-.walk .walk-img {
-  margin-top: 63px;
+.walk img {
+  margin-top: 40px;
   margin-left: 30px;
 }
 .walk img {
@@ -216,8 +216,8 @@ p {
 .btn {
   border-radius: 12px;
   width: fit-content;
-  padding: 20px;
-  font-size: 15px;
+  padding: 2rem;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
 }
@@ -227,15 +227,15 @@ footer {
 }
 @media (max-width: 500px) {
   .space {
-    width: 137%;
+    width: 100%;
   }
   .space a {
-    margin: -3px;
+    display: flex;
   }
   .container-home {
-    width: 60%;
+    width: 90%;
   }
-  .main-header {
+  .main-header img {
     width: 100%;
   }
   .intro {
@@ -250,20 +250,20 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .walk-text {
+  .walk {
     display: flex;
-    flex-direction: column;
-  }
-  .walk-img {
-    display: flex;
-    justify-content: center;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
   }
   footer {
     width: 100%;
+  }
+  .btn {
+    border-radius: 1.2rem;
+    width: auto;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
   }
 }
 .space {
@@ -280,9 +280,11 @@ footer {
 }
 .space a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2rem;
   color: dimgray;
-  margin: 30px;
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
 }
 footer {
   color: #22283B;
