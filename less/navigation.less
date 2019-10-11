@@ -1,9 +1,20 @@
+@keyframes rocket{
+    0% {left: 0%; top: 0px;}
+    25% {left: 25%; top: 0px;}
+    50% {left: 50%; top: 0px;}
+    75% {left: 75%; top: 0px;}
+    100% {left: 100%; top: 0px;}
+}
+
 nav{
     .flex();
     flex-direction: column;
     align-items: center;
     background-color: @nav-bg;
     border: 1px solid @nav-border;
+    position: fixed;
+    width: 100%;
+    z-index: 998;
 
     h1{
         font-size: 4rem;

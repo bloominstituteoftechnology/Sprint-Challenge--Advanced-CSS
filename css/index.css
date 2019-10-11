@@ -165,13 +165,49 @@ p {
     max-width: 500px;
   }
 }
+.astronaut {
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 0px;
+  position: relative;
+  animation-name: rocket;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  z-index: 999;
+}
+@keyframes rocket {
+  0% {
+    left: 0%;
+    top: 0px;
+  }
+  25% {
+    left: 25%;
+    top: 0px;
+  }
+  50% {
+    left: 50%;
+    top: 0px;
+  }
+  75% {
+    left: 75%;
+    top: 0px;
+  }
+  100% {
+    left: 100%;
+    top: 0px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.8);
   border: 1px solid #F1F1F1;
+  position: fixed;
+  width: 100%;
+  z-index: 998;
 }
 nav h1 {
   font-size: 4rem;
@@ -208,6 +244,14 @@ footer {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+.home .intro {
+  padding-top: 16%;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    padding-top: 20%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
