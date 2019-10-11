@@ -255,6 +255,10 @@ footer {
   font-weight: bold;
   font-size: 1.5rem;
 }
+.home .walk .walk-text .btn:hover {
+  background: coral;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
