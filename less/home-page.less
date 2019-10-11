@@ -83,10 +83,17 @@
     .displayCenter();
     @media @phone {
       .displayColumn(@flexD: column-reverse);
+      width: 90%;
+      margin: 2%;
+      padding: 2%;
     }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+        margin-left: 4%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -97,13 +104,22 @@
       }
 
       .btn {
-        .custom-btn(@font-color: white, @btn-bg-color); 
+        .custom-btn(@font-color: white, @btn-bg-color);
+          @media @phone {
+            width: 100%;
+            height: 8vh;
+            border-radius: 9px;
+          } 
       }
     }//closes walk-text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        
+      }
       
       img {
         width: 100%;
