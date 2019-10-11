@@ -30,9 +30,144 @@ p {
   line-height: 1.4;
 }
 
-.container {
+.container-home {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;  
+  width: 60%;
+  margin: auto; 
+
+  .main-header {
+        margin-bottom: 10px;
+  }  
+}
+.intro p {
+     margin-top: 15px;
+     margin-bottom: 15px;
 }
 
+// .space{
+//   display: flex;
+//   flex-direction: column;
+   
+//   nav{
+//     display: flex;
+//     justify-content: space-evenly;
+//   }
+// }
+
+.blast{
+  .spaceimages();
+}
+
+.sky {
+  .spaceimages();
+}
+.launch {
+  .spaceimages();
+}
+
+.visit-planets h3 {
+   margin-bottom: 20px;
+  
+}
+
+.p-two {
+  margin-bottom: 80px;
+}
+  
+ .p-one{
+   .pmargin();
+ }
+
+ .walk-text h3 {
+   margin-top: 60px;
+   margin-bottom: 30px;
+
+ }
+ 
+ .walk {
+    display: flex;
+
+    img {
+      margin-top: 40px;
+      margin-left: 30px;
+    }
+    img {
+      border-radius: 15px;
+    }
+ }
+
+.btn{
+  .buttonstyle(12px,fit-content, 2rem, 1.5rem, black, white);
+  
+}
+
+ footer {
+   margin-top: 50px;
+   margin-bottom: 40px;
+ }
+
+ @media(max-width:@phone){
+  //  .space{
+  //    width: 100%;
+  //    a {
+  //     //  margin:;
+  //    display: flex;
+  //    }
+  //  }
+   .container-home{
+      width: 90%;
+   }
+
+   .main-header img{
+     width: 100%;
+   }
+
+   .intro{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .space-images{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .visit-planets{
+     display: flex;
+     flex-direction: column;
+   }
+
+   .walk {
+    display: flex;
+    flex-direction: column-reverse;
+     
+    img{
+      width: 100%;
+    }
+
+   }
+    
+
+  //  .walk-text {
+  //    display: flex;
+  //    flex-direction: column;
+  //  }
+
+  //  .walk-img{
+  //    display: flex;
+  //    justify-content: center;
+  //  }
+
+  // .btn{
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  footer {
+    width: 100%;
+  }
+  .btn{
+    .buttonstyle(1.2rem, auto, 2rem, 1.5rem, black, white, center);
+    
+  }
+ }
