@@ -342,7 +342,7 @@ footer p {
 }
 .home button:hover {
   color: black;
-  background-color: white;
+  background: white;
 }
 @media (max-width: 500px) {
   .home button {
