@@ -26,6 +26,12 @@
       margin: 20px 2.5%;
       height: 100%;
       .width-boda(28%, 20px);
+     .sky{
+       @media @phone {
+        display: none;
+       }
+     }
+
     }
   }
 
@@ -66,6 +72,12 @@
         font-size: 1.8rem;
         color: white;
         .width-boda(30%, 1rem);
+
+        &:hover {
+          
+            background-color: white;
+          }
+        
               }
     }
 
@@ -74,9 +86,8 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
         height: auto;
-        border-radius: 10px;
+        .width-boda(100%, 1rem);
       }
     }
   }

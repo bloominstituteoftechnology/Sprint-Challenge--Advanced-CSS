@@ -165,6 +165,7 @@ p {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
+  width: 100%;
 }
 .navigation h1 {
   text-align: center;
@@ -213,6 +214,11 @@ footer {
   width: 28%;
   border-radius: 20px;
 }
+@media (max-width: 500px) {
+  .home .space-images img .sky {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -247,12 +253,15 @@ footer {
   width: 30%;
   border-radius: 1rem;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 .home .walk .walk-img img {
-  width: 100%;
   height: auto;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 1rem;
 }
