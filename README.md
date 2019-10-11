@@ -34,7 +34,6 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-There is no big difference between responsive and adaptive web design, but the responsive layout is better than adaptive, because adaptive design can make your design more managable. 
 The adaptive design can be easier implemented and tested.
 Using adaptive design, gives you an experience that looks and functions beautifully across thousands of devices and screen sizes.
 
