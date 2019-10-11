@@ -104,7 +104,12 @@
       }
 
       .btn {
-        .custom-btn(@font-color: white, @btn-bg-color);
+        .custom-btn(@porcelain, @btn-bg-color);
+          &:hover{
+          background-color: @porcelain;
+          color: @btn-bg-color;
+        }
+        
           @media @phone {
             width: 100%;
             height: 8vh;
