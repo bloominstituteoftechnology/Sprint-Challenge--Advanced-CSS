@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    The difference between adaptive design and fully responsive design is responsive is fluid and adapts to the size of the screen no matter what the  device. Responsive uses CSS media queries to change styles based on the type device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.  Adaptive design, on the other hand, uses static layouts based on breakpoints which don’t respond once they’re initially loaded.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+When designing a mobile first layout you first design the layout to respond to different types of device the site may be viewed upon. This is done due to the rising amount of websites that are first viewed and then utilized using a mobile device in comparrison to a desktop computer.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    This allows the font to be viewed consistently across all devices. It is a key to  a responsived website
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is the act of a compiler reading the stlyings created by normally in CSS and allowing the code to read and organized better within the system by nesting stylings for a specific area within the website for easier reading by the machine and by humans. It also helps to detect errors within your terminal and that can help with productivity,
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The ability to writer a dryer code and with mixins and parametric mixins in can reduce the amount of errors that may be produced when changing  a specific item within the code.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +66,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -90,7 +100,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
