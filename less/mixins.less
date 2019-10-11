@@ -1,1 +1,29 @@
 // Mixins Here
+.mixin-flex() {
+    display: flex;
+    justify-content: center;
+}
+
+.mixin-btn(@bgd-clr, @font-clr) {
+    background: @bgd-clr;
+    color: @font-clr;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 30%;
+    text-align: center;
+
+    &:hover {
+        background: @font-clr;
+        color: @bgd-clr;
+        border: 1px solid @bgd-clr;
+
+    }
+}
+
+.mixin-none() {
+    @media @phone {
+        display: none;
+    }
+}
