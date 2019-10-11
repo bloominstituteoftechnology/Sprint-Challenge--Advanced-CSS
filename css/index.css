@@ -1,3 +1,15 @@
+.a-fontclass {
+  color: #454A59;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.img-margin {
+  padding: 10px 20px 20px 20px;
+  margin: 10px 10px 10px 10px;
+}
+.main-font {
+  color: #5E6164;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -166,6 +178,11 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.nav-top {
+  background-color: #F6F6F6;
+  width: 100%;
+  margin-left: -8px;
+}
 .navigation {
   display: flex;
   margin: 1em 0 0.5em;
@@ -174,9 +191,34 @@ p {
 a {
   display: inline-block;
   padding: 0.5em 1.5em;
-  color: #454A59;
   text-decoration: none;
-  font-size: 1.55em;
+  color: #454A59;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.btn {
+  color: #23293B;
+  background-color: #81848E;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4em;
+  text-align: center;
+}
+.btn:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
+}
+
+  
+  .navigation .nav-head {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .navigation .nav-head a {
+    align-content: flex-end;
+    text-align: center;
+  }
 }
 footer {
   color: #22283B;
@@ -230,25 +272,28 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.container {
+.home .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-.top-title {
+.home .top-title {
   text-align: center;
   font-size: 4em;
 }
-.container-1 {
+.home .header-font {
+  color: #23293B;
+}
+.home .container-1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,52 +301,67 @@ footer {
   height: auto;
   padding: 0px 15px 25px 0px;
 }
-.intro {
+.home .intro {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 25px 25px 0px;
+  color: #5E6164;
 }
-.space-images {
+.home .space-images {
   display: flex;
   justify-content: space-between;
   padding: 0px 25px 25px 0px;
 }
-.visit-planets {
+.home .visit-planets {
   display: flex;
   flex-wrap: wrap;
   padding: 0px 25px 25px 0px;
+  color: #5E6164;
 }
-.visit-planets2 {
+.home .visit-planets2 {
   display: flex;
   flex-wrap: wrap;
   padding: 25px 25px 25px 0px;
+  color: #5E6164;
 }
-.horizontal_dotted_line {
+.home .horizontal_dotted_line {
   border: 0 none;
   border-top: 2px solid #d1d0d0;
   background: none;
   height: 0;
 }
-.walk {
+.home .walk {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
 }
-.walk-img {
+.home .walk-img {
   padding: 10px 20px 20px 20px;
   margin: 10px 10px 10px 10px;
 }
-.blast {
+.home .blast {
   border-radius: 16px;
 }
-.sky {
+.home .sky {
   border-radius: 16px;
 }
-.launch {
+.home .launch {
   border-radius: 16px;
 }
-.walk1 {
+.home .walk1 {
   border-radius: 16px;
+}
+.home .footer {
+  background-color: #F6F6F6;
+  color: #81848E;
+}
+.home .btn {
+  color: #22283A;
+  background-color: darkgrey;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.4em;
+  text-align: center;
 }
