@@ -1,1 +1,39 @@
 // Navigation code here
+.nav {
+    background-color: @nav-bg;
+    border-bottom: @nav-border solid 1px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: .7;
+ .navbar {
+     .displayflex();
+     max-width: 800px;
+     margin: 0 auto;
+
+     h1 {
+         font-size: 4rem ;
+         margin: 2% 0;
+     }
+     nav {
+         display: flex;
+         justify-content: space-evenly;
+         width:60%;
+         margin: auto;
+         
+
+         a {
+             text-decoration: none;
+             font-size: 1.5rem;
+             padding-bottom: 2%;
+             .font1();
+         }
+         @media @phone {
+             width: 100%;
+         }
+     }
+ }
+
+ animation: slide 2s 1;
+
+}

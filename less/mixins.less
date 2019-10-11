@@ -1,1 +1,18 @@
 // Mixins Here
+.font1(){
+    font-family:'Russo One', sans-serif ;
+    color: @header-font-color;
+}
+
+.displayflex(){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button(@ht, @wdt){
+    height: @ht;
+    width: @wdt;
+    background: @header-font-color;
+    color: @nav-border;
+}
