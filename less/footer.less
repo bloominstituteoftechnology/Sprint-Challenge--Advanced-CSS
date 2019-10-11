@@ -2,10 +2,19 @@
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 20px 0;
+  padding: 10px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
+ .flexcenter();
   align-items: center;
+
+  @media @phone{
+    .flexcenter();
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 430px;
+    height: 50px;
+  }
 }
