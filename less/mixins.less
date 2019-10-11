@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 }
-
+.mixin-btn(@bgd-color) {
 .mixin-btn(@bgd-clr, @font-clr) {
     background: @bgd-clr;
     color: @font-clr;
@@ -23,7 +23,7 @@
 }
 
 .mixin-none() {
-    @media @phone {
+    @media @phone  {}
         display: none;
     }
 }
