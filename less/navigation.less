@@ -2,12 +2,15 @@
 .bg-top {
     background: #FBF6F5;
     border-bottom: 2px solid @main-border-color;
+    
     nav {
         display: flex;
         justify-content: space-evenly;
         width: 50%;
         padding-bottom: 1%;
-        
+        @media @phone {
+            width: 100%;
+        }
         
         a {
             text-decoration: none;
@@ -20,7 +23,6 @@
         text-align: center;
         padding-bottom: 2%;
         padding-top: 2%;
-
     }
 
 }

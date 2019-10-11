@@ -177,6 +177,11 @@ a {
   width: 50%;
   padding-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .bg-top nav {
+    width: 100%;
+  }
+}
 .bg-top nav a {
   text-decoration: none;
   font-weight: bold;
@@ -271,22 +276,28 @@ footer {
   color: white;
   text-align: center;
   padding-top: 2%;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     background-color: #22283A;
     cursor: pointer;
     width: 300px;
-    height: 5px;
+    height: 501px;
     font-size: 1.9rem;
     border-radius: 5px;
     color: white;
     text-align: center;
     padding-top: 2%;
-    justify-content: center;
-    align-items: center;
+    border: 1px solid #22283A;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: white;
+    color: #22283A;
   }
 }
 .home .walk .walk-img {
