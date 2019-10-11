@@ -1,1 +1,53 @@
-// Navigation code here
+nav {
+    display: flex;
+    flex-direction: column;
+    .center();
+
+    .fixed-nav {
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        .center();
+        background-color: rgba(156, 155, 155, 0.589);
+        border-radius: @round-border;
+    }
+
+    @media @phone {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 2% 0;
+    }
+
+    div {
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+        margin-bottom: 1%;;
+
+        @media @phone {
+            width: 77%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 0 1%;
+        }
+    }
+}// Nav end
+
+
+header {
+        
+    img {
+        border-radius: @round-border;
+        margin-top: 2%;
+        width: 100%;
+    }
+}// Header end
