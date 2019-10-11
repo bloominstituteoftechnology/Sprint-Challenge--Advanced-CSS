@@ -38,6 +38,8 @@ Responsive websites and adaptive websites are the same in that they both change 
 
 2. Describe what it means to be mobile first vs desktop first.
 
+ if a project is started from a smaller screen  design and later some designs are added  so it can fit to a bigger screen is what is know as mobile first and vice versa is what is known by desktop first.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
 4. How would you describe preprocessing to someone new to CSS?
