@@ -1,1 +1,19 @@
 // Mixins Here
+
+.border-top() {
+    border-top: 1px solid @main-border-color;
+}
+
+.button(@bg-color, @txt-color, @width) {
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 1.9rem;
+    border-radius: 5px;
+    color: @txt-color;
+    text-align: center;
+    padding-top: 2%;
+    // padding-bottom: 10%;
+    
+}
