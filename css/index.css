@@ -164,6 +164,7 @@ p {
 nav {
   width: 100%;
   background: #F6F6F6;
+  border-bottom: #F1F1F1;
   display: flex;
   flex-direction: column;
 }
@@ -178,6 +179,7 @@ nav .nav-wrapper {
 nav .nav-wrapper a {
   text-decoration: none;
   padding: 2%;
+  color: #5E6164;
 }
 footer {
   color: #22283B;
@@ -192,7 +194,6 @@ footer {
 .home .intro {
   margin: 0 7%;
   max-width: 100vw;
-  border: 1px solid orangered;
 }
 .home .intro .earth-wrapper .earth {
   max-width: 100%;
@@ -206,16 +207,17 @@ footer {
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  margin: 0 7%;
 }
 .home .space-images img {
   width: 28%;
-  margin: 20px 2.5%;
+  margin: 2% 2%;
   border-radius: 20px;
   height: 100%;
 }
 .home .visit-planets {
   padding: 15px;
+  margin: 0 7%;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
