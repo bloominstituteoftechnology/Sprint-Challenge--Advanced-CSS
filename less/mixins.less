@@ -1,1 +1,42 @@
 // Mixins Here
+
+.btnparameters(@width,@height,@scale1,@scale2,@scale3) {
+	width: @width;
+	height: @height;
+	font-size: 1.6rem;
+	text-align: center;
+	border-radius: 5px;
+
+	background: black;
+	color: white;
+
+	&:hover {
+		background-color: gold;
+		color: black;
+		animation: sign-up 1s infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes sign-up {
+		0% {
+			transform: @scale1;
+		}
+		50% {
+			transform: @scale2;
+		}
+		100% {
+			transform: @scale3;
+		}
+	}
+}
+
+// more mixins
+.flexstart() {
+	display: flex;
+	justify-content: flex-start;
+}
+.flexcenter() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
