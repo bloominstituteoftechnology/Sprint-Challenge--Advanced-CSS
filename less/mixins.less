@@ -1,1 +1,26 @@
 // Mixins Here
+.devborder() {
+    border: 1px solid red;
+}
+
+.flexcenter() {
+    display: flex;
+    justify-content: center;
+}
+
+.button(@width, @height, @brdcolor, @bgcolor, @color) {
+    width: @width;
+    height: @height;
+    border: 1px solid @brdcolor;
+    background-color: @bgcolor;
+    color: @color;
+    .flexcenter();
+    align-items: center;
+}
+
+.swap(@button-color, @button-bgcolor) {
+    color: @button-bgcolor;
+    background-color: @button-color;
+    cursor: pointer;
+    border: 1px solid black;
+}
