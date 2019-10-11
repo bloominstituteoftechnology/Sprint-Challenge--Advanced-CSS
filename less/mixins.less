@@ -1,1 +1,13 @@
 // Mixins Here
+.displayflex(){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button(@ht, @wdt){
+    height: @ht;
+    width: @wdt;
+    background: @header-font-color;
+    color: @nav-border;
+}

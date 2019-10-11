@@ -1,5 +1,4 @@
 // Home Content
-
 .home {
 
   .intro {
@@ -11,9 +10,13 @@
     p {
       padding:0 15px;
     }
-  
+    .header-img {
+      width: 100%;
+      border-radius: 10px;
+    }
   }
 
+ 
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +28,7 @@
       border-radius: 20px;
       height: 100%;
     }
+    
   }
 
   .visit-planets {
@@ -58,6 +62,16 @@
       }
 
       .btn {
+        .button(@ht, @wdt);
+        justify-content: center;
+        text-align: center ;
+        align-content: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        &:hover {
+          background: coral;
+          color: black;
       }
     }
 
