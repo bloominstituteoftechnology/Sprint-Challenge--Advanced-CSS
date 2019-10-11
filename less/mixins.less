@@ -1,1 +1,30 @@
 // Mixins Here
+
+.buttonMan(@textColor, @backColor, @width: 12rem) {
+  color: @textColor;
+  background-color: @backColor;
+  display: block;
+  border-radius: 0.8rem;
+  width: @width;
+  font-size: 60px;
+  padding: 1rem;
+
+  &:hover {
+    background-color: @textColor;
+    color: @backColor;
+  }
+}
+
+.centerFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@phone: ~"(max-width: 500px)";
