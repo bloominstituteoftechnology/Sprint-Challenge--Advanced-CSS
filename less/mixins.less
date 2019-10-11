@@ -1,1 +1,11 @@
 // Mixins Here
+.flexer (@direction: column, @ori: center){
+    flex-direction: @direction;
+    justify-content: @ori;
+    align-items: @ori;
+}
+
+.button(@bkg-color: red, @color: yellow){
+    background-color: @bkg-color;
+    color: @color;
+}
