@@ -160,6 +160,85 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.makingSpace {
+  background-color: #454a59;
+  color: #f6f7f8;
+  padding: 2rem;
+}
+.Sun {
+  width: 76rem;
+  height: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-right: 2rem solid #454a59;
+  border-left: 2rem solid #454a59;
+  background-color: black;
+}
+.moon {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.buttonArray {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2rem;
+}
+.buttonArray .but1 {
+  color: #f6f7f8;
+  background-color: #454a59;
+  display: block;
+  border-radius: 0.8rem;
+  width: 25rem;
+  font-size: 60px;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.buttonArray .but1:hover {
+  background-color: #f6f7f8;
+  color: #454a59;
+}
+.buttonArray .but2 {
+  color: white;
+  background-color: black;
+  display: block;
+  border-radius: 0.8rem;
+  width: 25rem;
+  font-size: 60px;
+  padding: 1rem;
+  font-size: 2.3rem;
+}
+.buttonArray .but2:hover {
+  background-color: white;
+  color: black;
+}
+.buttonArray .but3 {
+  color: #f6f7f8;
+  background-color: #454a59;
+  display: block;
+  border-radius: 0.8rem;
+  width: 25rem;
+  font-size: 60px;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.buttonArray .but3:hover {
+  background-color: #f6f7f8;
+  color: #454a59;
+}
+.moon-img {
+  width: 48%;
+  margin: 0 41rem;
+}
+.moon-content {
+  width: 45%;
+  margin: 2rem 4rem 2rem 4rem;
+  color: #f6f7f8;
+}
+.intro-blog {
+  background-color: grey;
+}
 h1 {
   font-size: 6rem;
   margin: 0 auto;
@@ -201,6 +280,11 @@ h1 {
     font-size: 1.2rem;
     font-weight: bolder;
   }
+}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
 }
 footer {
   color: #22283B;
@@ -320,7 +404,8 @@ footer {
 @media (max-width: 500px) {
   .walk-img img {
     width: 48rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
+    margin-top: -4rem;
     margin-right: 10%;
   }
 }

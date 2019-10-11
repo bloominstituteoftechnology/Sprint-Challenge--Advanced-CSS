@@ -40,3 +40,62 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+
+//begin blog
+
+.makingSpace {
+  background-color: @river-bend;
+  color: @porcelain;
+  padding: 2rem;
+}
+
+.Sun {
+  width: 76rem;
+  height: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-right: 2rem solid @river-bend;
+  border-left: 2rem solid @river-bend;
+  background-color: black;
+}
+
+.moon {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.buttonArray {
+  .buttonBoy();
+  padding: 2rem;
+
+  .but1 {
+    .buttonMan(@porcelain, @river-bend, 25rem);
+    font-size: 3rem;
+  }
+
+  .but2 {
+    .buttonMan(white, black, 25rem);
+    font-size: 2.3rem;
+  }
+
+  .but3 {
+    .buttonMan(@porcelain, @river-bend, 25rem);
+    font-size: 3rem;
+  }
+}
+
+.moon-img {
+  width: 48%;
+  margin: 0 41rem;
+}
+
+.moon-content {
+  width: 45%;
+  margin: 2rem 4rem 2rem 4rem;
+  color: @porcelain;
+}
+
+.intro-blog {
+  background-color: grey;
+}
