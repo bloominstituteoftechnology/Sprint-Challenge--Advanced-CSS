@@ -3,6 +3,17 @@ nav {
     flex-direction: column;
     .center();
 
+    .fixed-nav {
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        .center();
+        background-color: rgba(156, 155, 155, 0.589);
+        border-radius: @round-border;
+    }
+
     @media @phone {
         max-width: 100%;
     }
@@ -17,9 +28,10 @@ nav {
         font-size: 1.5rem;
         width: 50%;
         text-align: center;
+        margin-bottom: 1%;;
 
         @media @phone {
-            width: 57%;
+            width: 77%;
         }
 
         a {
