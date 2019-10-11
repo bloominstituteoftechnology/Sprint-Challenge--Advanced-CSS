@@ -15,14 +15,21 @@
     background-color: @btn-bg-color; /* Green */
     border: @border;
     color: @color;
-    padding: 1rem 1rem;
+    padding: 0.8rem;
     text-align: center;
     text-decoration: none;
     width: 30%;
     font-size: 1.9rem;
-    border-radius: .8rem;
+    border-radius: .5rem;
     &:hover{
         background-color: @color;
         color: @btn-bg-color;
     }
+
+    @media @mobile{
+        width: 100%;
+        padding:5%;
+    }
+
+
 }

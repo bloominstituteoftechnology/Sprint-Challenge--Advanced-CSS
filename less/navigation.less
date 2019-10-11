@@ -8,12 +8,21 @@ Nav{
         font-family: 'Russo One', sans-serif;
         color: @header-font-color;
         padding: 1%;
+
+        @media @mobile{
+            font-size: 4.0rem;
+            padding:2%;
+        }
     }
     .Nave{
         .FlexRow();  
         font-size: 1.5rem;
         width: 40%;
         padding: 1%;
+        @media @mobile{
+            width: 85%;
+            padding:2%;
+        }
         a{
             width:100%;
             text-decoration: none;
