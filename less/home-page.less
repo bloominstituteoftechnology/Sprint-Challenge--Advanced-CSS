@@ -32,6 +32,26 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+
+
+      
+    }
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -66,7 +86,10 @@
       }
 
       .btn {
-        .button(#22283A,white, 100px);
+        .button(#22283A,white, 100px, 35px);
+        @media @phone {
+          .button( #22283A, white, 300px, 5px);
+        }
       }
     }
 
@@ -81,4 +104,5 @@
       }
     }
   }
+
 }// home
