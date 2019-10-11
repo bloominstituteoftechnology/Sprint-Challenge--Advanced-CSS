@@ -1,1 +1,41 @@
-// Navigation code here
+nav {
+    display: flex;
+    flex-direction: column;
+    .center();
+
+    @media @phone {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 2% 0;
+    }
+
+    div {
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        width: 50%;
+        text-align: center;
+
+        @media @phone {
+            width: 57%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 0 1%;
+        }
+    }
+}// Nav end
+
+
+header {
+        
+    img {
+        border-radius: @round-border;
+        margin-top: 2%;
+        width: 100%;
+    }
+}// Header end
