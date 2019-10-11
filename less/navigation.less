@@ -3,6 +3,32 @@
 Nav{
     .Flexcolumn();
     background: @nav-bg;
+
+    -webkit-animation-name: BG; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: BG;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes BG {
+        0%   {background-color: red;}
+        25%  {background-color: @nav-bg;}
+        50%  {background-color: green;}
+        100% {background-color:  red;}
+        
+    }
+
+    /* Standard syntax */
+    @keyframes BG {
+        0%   {background-color: red;}
+        25%  {background-color: @nav-bg;}
+        50%  {background-color: green;}
+        100% {background-color: red;}
+    }
+
+
+
     .log{
         font-size: 3.5rem;
         font-family: 'Russo One', sans-serif;
