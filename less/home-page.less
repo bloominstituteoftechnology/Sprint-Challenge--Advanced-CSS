@@ -9,12 +9,24 @@
   .intro {
     margin: 0 7%;
     max-width: 100vw;
+    @media @phone {
+      width: 100%;
+    }
+  
     
     .earth-wrapper {
+      @media @phone {
+        // width: 100%;
+        margin-left: -7%;
+      }
      
       .earth {
         max-width: 100%;
       }
+        @media @phone {
+          width: 100%;
+          
+        }
      
       
     }//closes earthwrapper
