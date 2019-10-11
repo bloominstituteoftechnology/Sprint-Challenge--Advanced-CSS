@@ -34,15 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+[x]fully rsponsive webistes adapts to any screen size and adaptive has break points and at certain points the webiste isnt responsive.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+[x] mobile first means we designn a website with a smaller sceeen size and apapt the layout into despktop and vise versa with desktop first.(all deaks with responsiveness) 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+[x] it makes it easier beacause its relative to 1px so 2.1 rem would be 21 px 
+
 4. How would you describe preprocessing to someone new to CSS?
+
+[x]preprocessing lets us work on one file or idex flex ,it also compilers our css to make it more meaninful
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+[x] mixins are awesome! variables sometimes gets confusing but im getting used to them
+Yoxu are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
@@ -50,7 +59,7 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
+- [x] Create a forked copy of this project.
 - [ ] Add your project manager as collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
