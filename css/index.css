@@ -154,11 +154,38 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  font-weight: 600;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+Nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F6F6F6;
+}
+Nav .log {
+  font-size: 3.5rem;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  padding: 1%;
+}
+Nav .Nave {
+  display: flex;
+  align-content: space-between;
+  font-size: 1.5rem;
+  width: 40%;
+  padding: 1%;
+}
+Nav .Nave a {
+  width: 100%;
+  text-decoration: none;
+  color: #454A59;
+  font-weight: bold;
+  text-align: center;
 }
 footer {
   color: #22283B;
@@ -175,6 +202,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .headerimg {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -211,6 +241,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  width: 30%;
+  font-size: 1.9rem;
+  border-radius: 0.8rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

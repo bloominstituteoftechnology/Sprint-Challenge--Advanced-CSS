@@ -1,1 +1,28 @@
 // Mixins Here
+
+.FlexRow(){
+    display: flex;
+    align-content: space-between;
+}
+.Flexcolumn(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.buttonStyle(@border,@color){
+    background-color: @btn-bg-color; /* Green */
+    border: @border;
+    color: @color;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 30%;
+    font-size: 1.9rem;
+    border-radius: .8rem;
+    &:hover{
+        background-color: @color;
+        color: @btn-bg-color;
+    }
+}
