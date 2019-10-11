@@ -161,11 +161,12 @@ p {
   margin: 0 auto;
 }
 .nav {
-  background-color: #F6F6F6 0.5;
+  background-color: #F6F6F6;
   border-bottom: #F1F1F1 solid 1px;
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.7;
 }
 .nav .navbar {
   display: flex;
