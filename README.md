@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites and adaptive websites are the same in that they both change appearance based on the browser environment they are being viewed on but the difference is just the way they responded to the change.Responsive websites respond to the size of the browser at any given point by by responding in a fliud form no matter what the browser width may be, the site adjusts its layout a way that is optimized to the screen While Adaptive websites adapt to the width of the browser at a specific points i.e when it get to a perticuler width it will change then layout once. in short Responsive website fluidly expand, whereas adaptive website hitch as you expand a browser or viewport.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+ if a project is started from a smaller screen  design and later some designs are added  so it can fit to a bigger screen is what is know as mobile first and vice versa is what is known by desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+if  HTML font-size is set to 62.5% will make  font-size of 16px (typical default browser font-size) equal to 10px that means 1.6rem = 16px. This now means that if the user’s default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is the concept which make us write long CSS in shot time by means of writing some code in a program that will translate it back to normal CSS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is Nesting and the concept that give me trouble is  Parametric Mixin.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,15 +104,15 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [/] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [/] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [/] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [/] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [/] Main Content Styles: Use the `home-page.less` file for styling
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
