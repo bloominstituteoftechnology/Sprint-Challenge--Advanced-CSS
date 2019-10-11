@@ -67,13 +67,26 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    .border-top();
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      padding: 5% 0 0 0;
+      flex-direction: column-reverse;
+      .centered();
+      width: 100%;
+      margin-top: 5%;
+    
+
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 90%;
+        margin-top: 2%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -86,7 +99,8 @@
       .btn {
         .button(#22283A,white, 100px, 35px);
         @media @phone {
-          .button( #22283A, white, 300px, 501px);
+          .button( #22283A, white, 100%, 65px);
+          margin-bottom: 2%;
         }
       }
     }
@@ -94,6 +108,10 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        margin: 0;
+        width: 90%;
+      }
       
       img {
         width: 100%;
