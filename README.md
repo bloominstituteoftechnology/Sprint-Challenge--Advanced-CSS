@@ -42,8 +42,10 @@ Responsive websites and adaptive websites are the same in that they both change 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-4. How would you describe preprocessing to someone new to CSS?
+if  HTML font-size is set to 62.5% will make  font-size of 16px (typical default browser font-size) equal to 10px that means 1.6rem = 16px. This now means that if the user’s default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px.
 
+4. How would you describe preprocessing to someone new to CSS?
+    
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
