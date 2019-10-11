@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+*Responsive is fluid and adapts to the size of the screen no matter what the target device. Responsive uses CSS media queries to change styles based on the target device such as display type, width, height, etc.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+*Mobile first implies you will design and code for a mobile device first and expand layout or features as you gain more screen space toward desktop.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+*Using 62.5% as the base value  you can convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would equate to 10px throughout the document and it is much easier for styling fonts!
+
 4. How would you describe preprocessing to someone new to CSS?
 
+*Pre-processing consists of 3 parts, Syntax that we write code in, a compiler and the outputted CSS. Preprocessing can increase productivity and decrease errors. Once you learn how to use a preprocessor, you won’t want to use CSS without it ever again!
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+*My favorite concept is Escaping. Configuring the nesting is the hardest part to me.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,14 +104,14 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.*DONE*
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [ ] Add a viewport meta tag to the head of your index.html page *DONE*
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html) *DONE*
 
+* [ ] Navigation Styles: Use the `navigation.less` file for styling. 
 * [ ] Main Content Styles: Use the `home-page.less` file for styling
 
 * [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
