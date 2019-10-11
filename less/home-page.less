@@ -37,13 +37,18 @@
     flex-wrap: wrap;
     margin: 0 7%;
     @media @phone {
-      .displayColumn
-    }
-    
-    .sky, .launch {
+      .displayColumn();
+      height: 40vh;
+      width: 80vw;
+      
+      .sky, .launch {
       display: none;
-
     }
+
+      
+      
+    } //closes media query
+
 
     img {
       width: 28%;
@@ -51,7 +56,8 @@
       border-radius: 20px;
       height: 100%;
       @media @phone {
-        max-width: 100%;
+        width: 100%;
+          
 
       }//closes media query
     }//closes img
@@ -75,6 +81,9 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     .displayCenter();
+    @media @phone {
+      .displayColumn(@flexD: column-reverse);
+    }
 
     .walk-text {
       width: 50%;

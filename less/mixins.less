@@ -3,9 +3,9 @@
     display: flex;
     justify-content: center;
 } 
-.displayColumn() {
+.displayColumn(@flexD: column) {
     display: flex;
-    flex-direction: column;
+    flex-direction: @flexD;
 }
 .custom-btn(@font-color: white, @btn-bg-color) {
     width: 30%;
