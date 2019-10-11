@@ -185,6 +185,8 @@ p {
   text-decoration: none;
   font-size: 1.5rem;
   padding-bottom: 2%;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
 }
 footer {
   color: #22283B;
@@ -201,6 +203,9 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .space-images {
   display: flex;
@@ -237,6 +242,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  height: 40px;
+  width: 100px;
+  background: #23293B;
+  color: #F1F1F1;
+  justify-content: center;
+  text-align: center ;
+  align-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .home .walk .walk-img {
   width: 46%;
