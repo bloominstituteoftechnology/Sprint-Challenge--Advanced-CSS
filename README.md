@@ -39,7 +39,7 @@ ANSWER: Responsive design uses responsive units (%'s, rem, etc.) for smooth tran
 ANSWER: mobile first starts with mobile in mind and works up from min-width media queries. Desktop works down using (max-width) media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-ANSWER: It sets our font size to 10px.
+ANSWER: It sets our font size to 10px, making it easier to calculate rem units.
 
 4. How would you describe preprocessing to someone new to CSS?
 ANSWER: I would describe it as a way to nest CSS similar to HTML and to compartmentalize different sections of the CSS as well as add more functionality.
