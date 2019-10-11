@@ -161,8 +161,11 @@ p {
   margin: 0 auto;
 }
 .nav {
-  background-color: #F6F6F6;
+  background-color: #F6F6F6 0.5;
   border-bottom: #F1F1F1 solid 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav .navbar {
   display: flex;
@@ -202,6 +205,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 10%;
 }
 .home .intro h2 {
   padding: 15px;
