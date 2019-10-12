@@ -57,19 +57,21 @@
         margin-bottom: 26px;
       }
     }
+  }
       .btn { 
       .btn-style(1rem, 1rem);
-      width: 100%;
+      width: 80%;
       font-size: 1.5rem;
       color:@wild-sand;
       background-color: @btn-bg-color;
-    margin-right:80px;}
   
       &:hover {
         background-color: @wild-sand;
         color: @btn-bg-color;
   
       }
+    }
+    
     
     
       
@@ -160,19 +162,10 @@
    
   }
       }
-      // .btn {
-      //   @media @phone {
-      //     display:block;
-      //     background-color: @background;
-      //     margin: 100px;
-      //     cursor: pointer;
-      //     width: 300px;
-      //     height: 20px;
-      //     font-size: .7rem;
-      //     border-radius: 2px;
-      //     color:@color;
-      // }
-      // } 
+     .btn{
+       @media @phone{
+       width:100%;
+     }} 
 
       
 
@@ -188,4 +181,3 @@
 
   }
 
-}
