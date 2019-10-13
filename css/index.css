@@ -135,7 +135,6 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
 }
 h1,
 h2,
@@ -143,7 +142,6 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
@@ -176,7 +174,7 @@ p {
   justify-content: space-between;
   padding: 0 30%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .main-navigation .nav-container .nav {
     padding: 0 10%;
   }
@@ -197,6 +195,15 @@ footer {
   align-items: center;
 }
 @media (max-width: 500px) {
+  .home .home .walk .walk-img img {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 500px) {
   .home .intro .jumbo {
     height: 125px;
   }
@@ -218,7 +225,7 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .space-images .blast {
     width: 100%;
     margin: 20px 5% 20px 5%;
@@ -230,7 +237,7 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .space-images .sky {
     display: none;
   }
@@ -241,7 +248,7 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .space-images .launch {
     display: none;
   }
@@ -262,7 +269,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .walk {
     width: 100%;
     padding: 15px;
@@ -277,7 +284,7 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
   }
@@ -304,7 +311,7 @@ footer {
   cursor: pointer;
   letter-spacing: -1px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .walk .walk-text .sign-up-btn {
     width: 100%;
     height: 50px;
@@ -318,7 +325,7 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
     margin: 20px 0 20px 0;
@@ -333,7 +340,7 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .home .walk .walk-img img {
     width: 100%;
     margin: 20px 0 20px 0;
