@@ -2,10 +2,15 @@
 //Button Mixin:
 .btn-mixin {
     background-color: @btn-bg-color;
-    color: @borderreal;
+    color: @border-real;
     padding: 1rem;
     font-size: 1.6rem;
     text-align: center;
     width: 30%;
     border-radius: 5px;
+
+    &:hover {
+        background-color: @border-real;
+        color: @btn-bg-color;
+    }
 }
