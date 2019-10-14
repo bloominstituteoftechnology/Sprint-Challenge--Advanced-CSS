@@ -1,1 +1,27 @@
 // Mixins Here
+.displayCenter() {
+    display: flex;
+    justify-content: center;
+} 
+.displayColumn(@flexD: column) {
+    display: flex;
+    flex-direction: @flexD;
+}
+.custom-btn(@porcelain, @btn-bg-color) {
+    width: 38%;
+    height: 12%;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    background: @btn-bg-color;
+    color: @porcelain;
+    &:hover{
+        background-color: @porcelain;
+        color: @btn-bg-color;
+    }
+
+}
+    // &:hover{
+    //     background-color: @porcelain;
+    //     color: @btn-bg-color;
+    // }
+

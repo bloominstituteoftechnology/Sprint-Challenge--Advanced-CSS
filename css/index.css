@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+  }
+}
+nav {
+  width: 100%;
+  background: #F6F6F6;
+  border-bottom: #F1F1F1;
+  font-family: #454A59;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  nav {
+    padding: 3%;
+  }
+}
+nav h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    font-size: 4rem;
+  }
+}
+nav .nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+nav .nav-wrapper a {
+  text-decoration: none;
+  padding: 1%;
+  color: #5E6164;
+}
+@media (max-width: 500px) {
+  nav .nav-wrapper a {
+    font-size: 2rem;
+    padding-top: 4%;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro {
+  margin: 0 7%;
+  max-width: 100vw;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .intro .earth-wrapper {
+    max-width: 100%;
+    margin-left: -7%;
+  }
+}
+.home .intro .earth-wrapper .earth {
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro .earth-wrapper {
+    width: 100%;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  font-size: 1.4rem;
+  padding: 2% 2%;
+}
+@media (max-width: 500px) {
+  .home .intro p {
+    max-width: 450px;
+  }
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 7%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 80vw;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images img {
+  width: 28%;
+  margin: 2% 2%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+  margin: 0 7%;
+  font-size: 1.4rem;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 2%;
+    padding: 4%;
+  }
+}
+.home .walk .walk-text {
+  width: 41%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 4%;
+    font-size: 1rem;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 38%;
+  height: 12%;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  background: #22283A;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 8vh;
+    border-radius: 9px;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
