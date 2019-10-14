@@ -3,7 +3,13 @@ nav {
     width: 100%;
     background: @nav-bg;
     border-bottom: @nav-border;
+    font-family: @river-bend;
     .displayColumn();
+//////////////////////////////// 
+// @nav-bg: @wild-sand;        /
+//@nav-font: @river-bend;      /
+//@nav-border: @sea-shell;     /
+////////////////////////////////   
     @media @phone {
         padding: 3%;
     }
@@ -13,8 +19,9 @@ nav {
     
     
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
+     ///////////////////// 
       @media @phone {
           font-size: 4rem;
 
@@ -25,10 +32,11 @@ nav {
      .displayCenter();
       a {
         text-decoration: none;
-        padding: 2%;
+        padding: 1%;
         color: @shuttle-gray;
+       //////////////////////// 
         @media @phone {
-            font-size: 1.9rem;
+            font-size: 2rem;
             padding-top: 4%;
 
 
@@ -36,4 +44,4 @@ nav {
       }//closes A
   
     }//closes nav wrapper
-}
+}//closes nav 
