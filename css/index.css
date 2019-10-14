@@ -166,23 +166,26 @@ p {
 h1 {
   font-size: 4rem;
   text-align: center;
-  padding: 1rem;
   margin: 1rem;
 }
-.nav-links {
+.nav-container {
+  border: solid 1px #F1F1F1;
+}
+.nav-container .nav-links {
   padding: 1rem;
   margin: 1rem;
   display: flex;
   justify-content: space-evenly;
   flex-basis: 80%;
 }
-.nav-links a {
-  font-size: 1.8rem;
-  font-family: #454A59;
+.nav-container .nav-links a {
   text-decoration: none;
+  font-size: 1.6rem;
+  color: #454A59;
+  padding: 0 1rem 0;
 }
-.nav-links a:hover {
-  color: #22283A;
+.nav-container .nav-links a:hover {
+  color: #5E6164;
 }
 footer {
   color: #22283B;
@@ -235,6 +238,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #23293B;
+  color: #F6F7F8;
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 30%;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;

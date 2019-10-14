@@ -9,9 +9,18 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+  }
+
+  .header-image {
+    display: flex;
+
+    img {
+      border-radius: 20px;
+      flex: 1;
+    }
   }
 
   .space-images {
@@ -57,14 +66,17 @@
         margin-bottom: 26px;
       }
 
+      //Button Styling -----
       .btn {
+        .btn-mixin;
       }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +84,12 @@
       }
     }
   }
-}// home
+}
+
+// home
+
+// Mobile Adjustments
+//Calling Up Phone Version when media query reaches.
+@media (max-width: 500px) {
+  @phone;
+}
