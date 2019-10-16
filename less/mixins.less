@@ -1,1 +1,23 @@
 // Mixins Here
+.flex-width-mixin {
+    display: flex;
+    width: 100%;
+}
+
+.button(@buttoncolor,@textcolor){
+    background: @buttoncolor;
+    color: @textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 2% 4%;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.phone-width-margin {
+    width: 95%;
+    margin-left: 2%;
+}
