@@ -33,15 +33,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
-
+Adaptive web design has designs that are adapted to different screen sizes such that it can function on different sized devices but the layouts for each are relatively fixed. On the other hand, with fully responsive web design, there is a lot more flexibility since flexible layouts, image styles and CSS media queries are used. 
 2. Describe what it means to be mobile first vs desktop first.
-
+This is basically referring to whether the original design strategy was focused on being built for a mobile interface or a desktop view first. Generally, this decision is made based on what the company/creator assumes the user will be more likely to be viewing the website on.
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+The given tag basically sets the font size to 10px (62.5% of 16px is 10px) for us, and then by using rem units, we can accordingly change the font size in a more responsive manner.
 4. How would you describe preprocessing to someone new to CSS?
-
+I would describe it as a tool which allows us to improve upon CSS and the output is ultimately CSS. Preprocessing allows us to do more with CSS and extend its functionality.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-
+I love the concept of parametric mixins. I feel like I can really understand how useful they can be in terms of adaptability and woring with large codebases or products which go through multiple iterations. Ironically, I struggled with this concept the most, but I ultimately was able to figure it out.
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
