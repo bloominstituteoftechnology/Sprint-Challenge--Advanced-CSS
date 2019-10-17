@@ -1,13 +1,17 @@
 // Mixins Here
 //Button Mixin:
-.btn-mixin {
+.btn-mixin (@width, @height, @border-radius) { 
     background-color: @btn-bg-color;
     color: @border-real;
-    padding: 1rem;
+    vertical-align: middle;
     font-size: 1.6rem;
-    text-align: center;
-    width: 30%;
-    border-radius: 5px;
+    font-weight: bold;
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    p {
+        text-align: center;
+    }
 
     &:hover {
         background-color: @border-real;

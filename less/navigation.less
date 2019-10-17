@@ -20,6 +20,9 @@ h1 {
         display: flex;
         justify-content: space-evenly;
         flex-basis: 80%;
+        @media @phone {
+            flex-basis: 40%;
+        }
 
         //Link-items Styling
         a {
@@ -27,6 +30,9 @@ h1 {
             font-size: 1.6rem;
             color: @river-bend;
             padding: 0 1rem 0;
+            @media @phone {
+                padding: 0 0.3rem 0;
+            }
 
             &:hover {
                 color: @shuttle-gray;

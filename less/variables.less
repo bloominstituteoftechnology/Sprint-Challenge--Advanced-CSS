@@ -25,23 +25,5 @@
 
 // Mobile var
 
-//Phone Variable
-@phone: {
-    .hidden-on-mobile {
-        display: none;
-    }
-
-    .walk {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-
-        .walk-text {
-            width: 100%;
-        }
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
+//Phone Variable - Escaped Value
+@phone: ~"(max-width: 500px)";

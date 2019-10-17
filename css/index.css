@@ -1,16 +1,3 @@
-.btn-mixin {
-  background-color: #22283A;
-  color: #dee2e6;
-  padding: 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  width: 30%;
-  border-radius: 5px;
-}
-.btn-mixin:hover {
-  background-color: #dee2e6;
-  color: #22283A;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,11 +178,21 @@ h1 {
   justify-content: space-evenly;
   flex-basis: 80%;
 }
+@media (max-width: 500px) {
+  .nav-container .nav-links {
+    flex-basis: 40%;
+  }
+}
 .nav-container .nav-links a {
   text-decoration: none;
   font-size: 1.6rem;
   color: #454A59;
   padding: 0 1rem 0;
+}
+@media (max-width: 500px) {
+  .nav-container .nav-links a {
+    padding: 0 0.3rem 0;
+  }
 }
 .nav-container .nav-links a:hover {
   color: #5E6164;
@@ -221,12 +218,36 @@ footer {
 }
 .home .header-image img {
   border-radius: 20px;
-  flex: 1;
+}
+@media (max-width: 500px) {
+  .home .header-image img {
+    width: -webkit-fill-available;
+    border-radius: 5px;
+  }
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .hidden-on-mobile {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 93%;
+    margin: 20px 3%;
+    border-radius: 20px;
+    height: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -250,8 +271,20 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0 3%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -262,11 +295,38 @@ footer {
 .home .walk .walk-text .btn {
   background-color: #22283A;
   color: #dee2e6;
-  padding: 1rem;
+  vertical-align: middle;
   font-size: 1.6rem;
-  text-align: center;
-  width: 30%;
+  font-weight: bold;
+  width: 50%;
+  height: 3rem;
   border-radius: 5px;
+  padding: 0.5rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background-color: #22283A;
+    color: #dee2e6;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 100%;
+    height: 4rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    padding: 1rem;
+  }
+  .home .walk .walk-text .btn p {
+    text-align: center;
+  }
+  .home .walk .walk-text .btn:hover {
+    background-color: #dee2e6;
+    color: #22283A;
+  }
+}
+.home .walk .walk-text .btn p {
+  text-align: center;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #dee2e6;
@@ -275,6 +335,12 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 10% auto;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
