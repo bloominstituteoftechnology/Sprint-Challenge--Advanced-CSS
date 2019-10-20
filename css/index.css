@@ -179,7 +179,7 @@ nav {
   }
 }
 nav h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 @media (max-width: 500px) {
@@ -193,12 +193,13 @@ nav .nav-wrapper {
 }
 nav .nav-wrapper a {
   text-decoration: none;
-  padding: 1%;
+  padding: 1.7%;
   color: #5E6164;
+  font-size: 1.2rem;
 }
 @media (max-width: 500px) {
   nav .nav-wrapper a {
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-top: 4%;
   }
 }
@@ -211,6 +212,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .home .intro {
   margin: 0 7%;
