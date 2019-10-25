@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is a design that uses the information provided by the program e.g screen size to load the appropirate one for each size. Responsive is more fluid and uses media queries within the CSS to help know what to adpat to automatically. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+mobile first you are designing the  site to be mobile compatible and work its way up to desktop using min-width. With desktop first you are designing the desktop version down to the mobile version using max-width both use media queries to accomplish this. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+the font size is given to make it easier to alter the size of the font later CSS using rems because they can help change the size easier than pixels; pixels are something that typically cant be  so using a rem helps make the size larger or smaller with a lot more ease, and the 62.5% is given as the standard text font of 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS is the language that helps the browser show styles and other features to the person using the site, preprocessors are a another language tool that extends CSS and gets compiled back into CSS so that the browser can read it. In a sense its like a translator of one language for the CSS to understand and in turn use. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I believe that using the preprocessing concepts are great in matter of time and keepiny code more oraginzed and DRY. Some thing that are a bit tricky are the nesting and mixins of some of the code that you can create, because if its not created right then you run into issues that may seem simple but sometimes hard to catch. One example would be if you nest too many features into each other then the code itself wont translate what you hope to achieve on the site itself.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
