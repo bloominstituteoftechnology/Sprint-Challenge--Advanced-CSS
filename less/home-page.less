@@ -58,6 +58,19 @@
       }
 
       .btn {
+        .btn-mix(@btn-bg-color, 30%);
+        font-size: 1.8rem;
+        margin-left: 1%;
+        text-align: center;
+        padding: 2% 2%;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+        }
       }
     }
 

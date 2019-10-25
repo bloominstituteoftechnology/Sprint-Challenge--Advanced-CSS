@@ -163,11 +163,12 @@ p {
 .nav-bar {
   border-bottom: 1px solid #F1F1F1;
   padding-bottom: 1%;
+  background-color: #F6F6F6;
 }
 .nav-bar h1 {
   font-size: 3.8rem;
   text-align: center;
-  margin: 1% 0;
+  padding: 1% 0;
 }
 .nav-bar nav {
   text-align: center;
@@ -229,6 +230,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  width: 30%;
+  font-size: 1.8rem;
+  margin-left: 1%;
+  text-align: center;
+  padding: 2% 2%;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
