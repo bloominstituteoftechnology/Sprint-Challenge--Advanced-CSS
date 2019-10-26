@@ -12,3 +12,16 @@
     border-radius: 10px;
     color: @wild-sand;
 }
+
+
+// Parametric Mixins
+.displayflex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.displaydirection(@fd){
+    display:flex;
+    flex-direction: @fd;
+}

@@ -186,10 +186,10 @@ footer {
 }
 h1 {
   display: flex;
-  font-family: 'Russo One', sans-serif;
-  font-size: 4rem;
   justify-content: center;
   align-items: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 4rem;
   padding-bottom: 1%;
 }
 .main-header {

@@ -4,11 +4,10 @@
   height: 100px;
   padding: 2%;
 }
-  h1{ display:flex;
+  h1{
+.displayflex(center, center);
     font-family: 'Russo One', sans-serif;
     font-size: 4rem;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 1%;
 
   } 
@@ -40,8 +39,7 @@ p{
 }
 
 .space-images {
-  display: flex;
-  flex-direction: row;
+  .displaydirection(row);
   width: 100%;
   justify-content:center;
 img {
@@ -126,8 +124,7 @@ img {
   width: 100%;
       }
       .walk{
-        display: flex;
-        flex-direction: column-reverse;
+        .displaydirection(column-reverse);
         padding: 30px 40px;
         margin: 20px;
         .walk-img{
