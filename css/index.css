@@ -166,6 +166,14 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@keyframes nav-anmtn {
+  from {
+    color: #454A59;
+  }
+  to {
+    color: crimson;
+  }
+}
 .nav-bar {
   border-bottom: 1px solid #F1F1F1;
   padding-bottom: 1%;
@@ -188,6 +196,10 @@ p {
   font-size: 1.8rem;
   padding: 0.8%;
 }
+.nav-bar nav a:hover {
+  animation-name: nav-anmtn;
+  animation-duration: 2s;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -209,11 +221,6 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-@media (max-width: 500px) {
-  .home .space-images {
-    display: block;
-  }
-}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -221,12 +228,17 @@ footer {
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img .sky {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .home .space-images img .launch {
+  .home .space-images .launch {
     display: none;
   }
 }
@@ -246,8 +258,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -255,7 +280,7 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk .btn {
   background-color: #22283A;
   width: 30%;
   font-size: 1.8rem;
@@ -266,16 +291,34 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .btn:hover {
   background-color: white;
   color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .btn {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 3%;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100;
+  }
 }
