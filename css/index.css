@@ -181,6 +181,9 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
 }
 .nav-bar h1 {
   font-size: 3.8rem;
