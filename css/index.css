@@ -126,3 +126,133 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+}
+nav a {
+  font-family: #454A59;
+  text-decoration: none;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  margin: 4px;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  font-family: 'Russo One', sans-serif;
+}
+.home .intro {
+  display: flex;
+  justify-content: center;
+}
+.home .intro h2 {
+  font-family: 'Russo One', sans-serif;
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.space-images {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+.visit-planets {
+  padding: 15px;
+}
+.visit-planets h3 {
+  font-family: 'Russo One', sans-serif;
+  margin-top: 11px;
+}
+.visit-planets p {
+  margin-top: 13px;
+}
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.walk .walk-text {
+  width: 50%;
+}
+.walk .walk-text h3 {
+  font-family: 'Russo One', sans-serif;
+  margin-bottom: 10px;
+}
+.walk .walk-text p {
+  margin-bottom: 26px;
+}
+.walk .walk-text .btn {
+  padding: 2%;
+}
+.walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
