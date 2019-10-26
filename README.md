@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+   An adaptive website is stationary and is not responsive to the user on any device. A fully responsive website allows the user to see the content on any device with minimul interference in the interaction.
 
 2. Describe what it means to be mobile first vs desktop first.
+    mobile first will use the @media (min-width:) design and the design is to start with a mobile device and work up to a desktop for the final design. The desktop first design will use @media (max-width:) and the design is started at the desktop and goes down to the mobile size for the final design.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    This helps to set a baseline of 10px when designing for the @media syntax so mutilple devices can be designed for the website and not just the one use for the desktop.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessing is the use of a compiler to ensure the files are syncing into one css file using less. This will enable you to utilize more engaging functions and not have to hard code in the styling on multiple CSS files.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   The concept I favor the most with prprocessing is the use of the compiler to combine the syntax into one file. There is little code per file and with the compiler sending it to one you can watch the work come together and it will tell you if there is an error. I eventually figure out what the issue is but ensuring the styke that will match the look of what is requested at times give me difficulty.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +61,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -90,7 +95,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 
