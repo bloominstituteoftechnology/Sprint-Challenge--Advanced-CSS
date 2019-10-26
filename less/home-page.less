@@ -19,14 +19,30 @@
     flex-wrap: wrap;
     .width();
 
+    @media @mobile {
+      display: block;
+    }
+ 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      .sky {
+        @media @mobile {
+          display: none;
+        }
+      }
+
+      .launch {
+        @media @mobile {
+          display: none;
+        }
+      }
     }
   }
-
+   
   .visit-planets {
     padding: 15px;
 
