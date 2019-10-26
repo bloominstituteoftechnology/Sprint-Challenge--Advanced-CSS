@@ -50,7 +50,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
- - I like the LESS concept because it will organize my code. I do not have much trouble in this concept.
+ - I like the LESS concept because it will organize my code. I have most trouble in media queries using less.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
