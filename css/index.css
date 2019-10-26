@@ -1,3 +1,15 @@
+.btn-opt {
+  background-color: #22283A;
+  margin: 10px 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  height: 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #F6F6F6;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -183,9 +195,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-* {
-  margin: 2px;
-}
 .top-content {
   display: flex;
   flex-direction: column;
@@ -246,7 +255,20 @@ footer {
   margin-bottom: 26px;
 }
 .walk .walk-text .btn {
-  padding: 2%;
+  background-color: #22283A;
+  margin: 10px 20px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  height: 25px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: #F6F6F6;
+}
+.walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #F6F6F6;
 }
 .walk .walk-img {
   width: 46%;

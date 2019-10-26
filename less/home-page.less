@@ -1,8 +1,5 @@
 // Home Content
 
-*{
-  margin: 2px;
-}
 .top-content{
   display:flex;
   flex-direction: column;
@@ -77,8 +74,12 @@ img {
       margin-bottom: 26px;
     }
 
-    .btn {
-      padding: 2%;
+      .btn {
+        .btn-opt();
+        &:hover{
+          color:@btn-bg-color;
+          background-color:@wild-sand;
+        }
     }
   }
 
