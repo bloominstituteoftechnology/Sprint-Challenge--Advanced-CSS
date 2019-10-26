@@ -164,14 +164,14 @@ p {
   display: flex;
   flex-direction: column;
 }
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: space-around;
+.top-content nav {
+  justify-content: center;
 }
-nav a {
+.top-content nav a {
   font-family: #454A59;
   text-decoration: none;
+  font-size: 2rem;
+  align-items: space-evenly;
 }
 footer {
   color: #22283B;
@@ -184,15 +184,16 @@ footer {
   align-items: center;
 }
 * {
-  margin: 4px;
+  margin: 2px;
 }
 .top-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-h1 {
+.top-content h1 {
   font-family: 'Russo One', sans-serif;
+  font-size: 3.2rem;
+  justify-content: center;
 }
 .home .intro {
   display: flex;
@@ -211,7 +212,7 @@ h1 {
   width: 100%;
   justify-content: center;
 }
-img {
+.space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
