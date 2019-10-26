@@ -167,6 +167,14 @@ p {
   justify-content: center;
   align-items: center;
 }
+.navbar h1 {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.navbar a {
+  justify-content: space-around;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -176,6 +184,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -218,6 +229,13 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: #f6f7f8;
+  background: #22283a;
+  width: 35%;
+  border-radius: 10px;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
