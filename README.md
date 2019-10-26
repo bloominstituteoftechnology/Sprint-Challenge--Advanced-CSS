@@ -39,7 +39,7 @@ Responsive sites adjust to the browser @ ANY given point. Adaptive sites adjust 
 Mobile first is designed for a smaller device,(IE. phone),and then is adapted for larger devices. This is best if site has few core features. Desktop first is designed for larger devices,(IE. laptop, desktop), first and then adapted for smaller devices. This is beeter for feature rich sites.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-62.5% is bring the html font from the normal 16px to 10px. This makes the math easier,(base10 vs base16)the rem is better for scaling ,(vs. px), and gives people with imparments an easier way to scale up the resolution. Everything increases in proportion.
+62.5% is bring the html font from the normal 16px to 10px. This makes the math easier,(base10 vs base16)the rem is better for scaling ,(vs px), and gives people with imparments an easier way to scale up the resolution. Everything increases in proportion.
 
 4. How would you describe preprocessing to someone new to CSS?
 Preprocessors add increased functionaility to vanilla css by adding programming tools such as varaibles, functions etc. It makes it easier to organize and keep your code DRY.

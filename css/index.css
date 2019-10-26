@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -161,7 +161,7 @@ p {
   margin: 0 auto;
 }
 .main-navigation {
-  background: #F6F6F6;
+  background: #f6f6f6;
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -211,7 +211,7 @@ p {
   color: #000;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
