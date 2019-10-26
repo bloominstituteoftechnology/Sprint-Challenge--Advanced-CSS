@@ -203,6 +203,10 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+p {
+  margin-left: 2% auto;
+  flex-wrap: wrap;
+}
 .space-images {
   display: flex;
   flex-direction: row;
@@ -286,6 +290,8 @@ footer {
   }
   .walk {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    padding: 30px 40px;
+    margin: 20px;
   }
 }

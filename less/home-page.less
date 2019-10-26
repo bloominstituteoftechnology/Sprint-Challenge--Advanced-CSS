@@ -27,6 +27,12 @@
   }
 }// home
 
+p{
+  margin-left: 2% auto;
+
+  flex-wrap: wrap;
+}
+
 .space-images {
   display: flex;
   flex-direction: row;
@@ -109,12 +115,14 @@ img {
   }
  
 }
-@media(max-width:500px){
+@media(max-width: 500px){
   .blast{
     width: 100%;
       }
       .walk{
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
+        padding: 30px 40px;
+        margin: 20px;
       }
 }
