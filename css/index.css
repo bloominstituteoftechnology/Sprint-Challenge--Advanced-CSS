@@ -317,16 +317,17 @@ footer {
 }
 @media ( max-width: 500px ) {
   .home .walk .walk-text .btn {
-    border: 2px solid red;
     width: 100%;
-    height: 30%;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media ( max-width: 500px ) {
   .home .walk .walk-text {
     width: 100%;
-    margin-left: 2%;
+    margin-left: 3%;
   }
 }
 .home .walk .walk-img {
