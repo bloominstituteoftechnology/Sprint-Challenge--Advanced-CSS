@@ -13,3 +13,29 @@
            
        }
 }
+
+.flex(@fd, @ai){
+    display:flex;
+    flex-direction:@fd ;
+    align-items:@ai ;
+}
+
+
+.media-btn(@bg,@col){
+    background:@bg;
+    margin: 0 auto;
+       ;
+       text-align: center;
+       width:100%;
+       padding:30px 0;
+       font-size: 2rem;
+       color:@col;
+       border-radius:5px;
+       display:flex;
+       justify-content:center;
+       align-items: center;
+       &:hover{
+           opacity: 0.6;
+           
+       }
+}
