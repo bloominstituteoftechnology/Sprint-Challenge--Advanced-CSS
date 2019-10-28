@@ -1,0 +1,30 @@
+.home nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0;
+}
+.home nav :hover {
+  color: #F6F6F6;
+}
+.home nav :hover {
+  background-color: #23293B;
+}
+@media (max-width: 500px) {
+  .home nav {
+    justify-content: flex-start;
+    align-content: center;
+    margin-left: 40px;
+  }
+}
+.home a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0 20px;
+  color: darkslategrey;
+}
+@media (max-width: 500px) {
+  .home h1 {
+    margin-right: 280px;
+  }
+}

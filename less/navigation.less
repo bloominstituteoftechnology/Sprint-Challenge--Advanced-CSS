@@ -1,1 +1,32 @@
 // Navigation code here
+@import "variables";
+.home nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0;
+    & :hover {
+        color: @wild-sand;
+    }
+   & :hover {
+        background-color: @ebony-clay;  
+    }
+    @media @phone{
+        justify-content: flex-start;
+        align-content: center;
+        margin-left: 40px;
+        }
+    } 
+.home a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0 20px;
+    color: darkslategrey;
+    
+   } 
+ @media @phone{
+    .home h1{
+        margin-right: 280px;
+    }
+   }    
+  

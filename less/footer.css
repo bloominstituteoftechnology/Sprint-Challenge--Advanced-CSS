@@ -1,7 +1,4 @@
-// Footer Styles
-@import "variables";
 footer {
-  
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
@@ -11,10 +8,12 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  @media @phone{
-    justify-content: flex-start;
-p{
-  margin-left: 100px;
 }
+@media (max-width: 500px) {
+  footer {
+    justify-content: flex-start;
+  }
+  footer p {
+    margin-left: 100px;
   }
 }
