@@ -9,3 +9,11 @@ footer {
   align-items: center;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  footer {
+    justify-content: flex-start;
+  }
+  footer p {
+    margin-left: 100px;
+  }
+}

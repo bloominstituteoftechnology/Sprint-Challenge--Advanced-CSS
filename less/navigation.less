@@ -1,4 +1,5 @@
 // Navigation code here
+@import "variables";
 .home nav{
     display: flex;
     justify-content: center;
@@ -10,15 +11,22 @@
    & :hover {
         background-color: @ebony-clay;  
     }
-@media @phone{
-    margin-right:250px;
-}
-}
+    @media @phone{
+        justify-content: flex-start;
+        align-content: center;
+        margin-left: 40px;
+        }
+    } 
 .home a{
     text-decoration: none;
     font-size: 1.25rem;
     padding: 0 20px;
     color: darkslategrey;
     
-   }     
+   } 
+ @media @phone{
+    .home h1{
+        margin-right: 280px;
+    }
+   }    
   
