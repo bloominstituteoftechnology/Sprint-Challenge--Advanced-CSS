@@ -32,15 +32,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website? 
+
+Responsive sites can work on any size screen. Whereas an adaptive website is only able to be responsice according to the layouts that have been developed for the website.
 
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Mobile first is when the first layout is built for phones and then scaled up for tablets and computers. Desktop first is the opposite.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? It makes the font 10 pixels.    
 
 4. How would you describe preprocessing to someone new to CSS?
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Preprocessing is a tool to make CSS more powerful. It allows us to use variables and other useful functions in our css code. The best thing so far about CSS is the nesting, which is similar to the HTML nesting. It is also easier to keep track of and work on your LESS files than it is to work on a massive CSS file as the nav, main content, footer, and other places in websites can be separated into LESS documents. It is a bit difficult at first, but an upgrade from vanilla css.
+
+
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? 
+
+Acutally now that I have gotten the hang of media queries, they are pretty easy to implement. I had struggled a bit with them. Parametric mixins were a bit tricky to get working properly. Right now they seem like more effort then they are worth, but as websites get more complex I am sure they have their place. It seems to be the nesting I was having problems with.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
