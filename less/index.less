@@ -1,4 +1,11 @@
 // Variables
+// @desktop: 900px;
+// @tablet: 740px;
+// @mobile: 450px;
+
+@desktop: ~'( max-width: 900px )';
+@tablet: ~"( max-width: 740px )";
+@mobile: ~"( max-width: 450px )";
 
 // Color pointers
 @nav-bg: @wild-sand;
@@ -24,6 +31,14 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@media @mobile {
+    width: 60%;
+    height: 40px;
+    font-size: 2rem;
+  } 
+  .btn{
+      width:100%;}}
+// end media query
 
 // Mixins Here
 .flex-layout(@justify, @align) {
@@ -141,6 +156,7 @@ nav a{
     font-size: 1.8rem;
     color: #22283A;
 }
+
 // Footer Styles
 footer {
     color: #22283B;

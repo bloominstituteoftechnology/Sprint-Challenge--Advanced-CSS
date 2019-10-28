@@ -1,3 +1,11 @@
+@media ( max-width: 450px ) {
+  width: 60%;
+  height: 40px;
+  font-size: 2rem;
+}
+.btn {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
