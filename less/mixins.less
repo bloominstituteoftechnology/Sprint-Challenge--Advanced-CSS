@@ -1,1 +1,15 @@
-// Mixins Here
+.btmixin(@bg,@col){
+    background:@bg;
+       margin: 10px 20px;
+       padding: 10px;
+       text-align: center;
+       width:120px;
+       height: 25px;
+       font-size: 1.5rem;
+       color:@col;
+       border-radius:5px;
+       &:hover{
+           opacity: 0.6;
+           
+       }
+}

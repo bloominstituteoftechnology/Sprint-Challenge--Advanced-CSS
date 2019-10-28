@@ -1,12 +1,24 @@
 // Home Content
 
-.home {
 
+.nav{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background:@wild-sand;
+  h1{
+    margin:20px;
+    font-size: 4rem;
+  }
+  
+}
+.home {
+  
   .intro {
 
     h2 {
       padding: 15px;
-      background: red;
+      
     }
 
     p {
@@ -58,10 +70,17 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
+      h4{
+        color:red;
       }
-    }
+      .btn{
+        .btmixin(@btn-bg-color,@wild-sand);
+    
+      }
+
+}
+    
+    
 
     .walk-img {
       width: 46%;
