@@ -1,11 +1,11 @@
 // Variables
 // @desktop: 900px;
 // @tablet: 740px;
-// @mobile: 450px;
+// @mobile: 500px;
 
 @desktop: ~'( max-width: 900px )';
 @tablet: ~"( max-width: 740px )";
-@mobile: ~"( max-width: 450px )";
+@phone: ~"( max-width: 500px )";
 
 // Color pointers
 @nav-bg: @wild-sand;
@@ -31,7 +31,7 @@
 @border-real: #dee2e6;
 
 // Mobile var
-@media @mobile {
+@media @phone {
     width: 60%;
     height: 40px;
     font-size: 2rem;
@@ -237,6 +237,10 @@ footer {
             justify-content: center;
             width: 35%;
             font-size: 1.8rem;
+        }
+        .btn:hover{
+            background-color: #5E6164;
+            color: black;
         }
       }
   
