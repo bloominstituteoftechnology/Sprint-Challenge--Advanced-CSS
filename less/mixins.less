@@ -1,1 +1,31 @@
 // Mixins Here
+
+.display-flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@bg-color, @color){
+    //margin: 10px 20px;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    background-color: @bg-color;
+    color: @color;
+
+    &:hover {
+        opacity: 0.5;
+        color: black;
+        background-color: @river-bend;
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+}
