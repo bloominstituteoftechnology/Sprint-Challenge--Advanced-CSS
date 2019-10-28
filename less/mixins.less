@@ -1,1 +1,37 @@
 // Mixins Here
+
+.nav-a {
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 20px;
+    color: @nav-font;
+
+    @media @phone {
+        margin: 5px;
+    }
+
+}
+
+
+.nav {
+    text-align: center;
+    background: @nav-bg;
+    color: @nav-font;
+    border: @nav-border;
+    height: 100px;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 40px;
+    margin: auto;
+}
+
+.sign-up (@font-size, @border-radius, @padding, @text, @height, @width, @color, @bg-color) {
+    background-color: @bg-color;
+    color: @color;
+    height: @height;
+    width: @width;
+    text-align: @text;
+    padding: @padding;
+    border-radius: @border-radius;
+    font-size: @font-size;
+  }
