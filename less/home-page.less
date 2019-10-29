@@ -11,7 +11,34 @@
     p {
       padding:0 15px;
     }
-  
+
+    img {
+      width: 100%;
+      margin-left: 5%;
+    }
+
+      @media @phone {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+
+          h2{
+            width: 95%;
+            margin-left: 15%;
+          }
+
+          p{
+            width: 95%;
+            margin-left: 10%;
+          }
+
+          img {
+            width: 98%;
+          }
+    }
+
   }
 
   .space-images {
@@ -25,6 +52,22 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @phone {
+      .blast {
+        width: 90%;
+        height: 350px;
+        margin-left: 5%;
+      }
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
   }
 
   .visit-planets {
@@ -37,15 +80,26 @@
     p {
       margin-top: 13px;
     }
+
+    @media @phone{
+      width: 100%;
+    }
+
   }
 
   .walk {
-    margin-top: 60px;
+    margin-top: 4%;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 2%;
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+
+    }
     .walk-text {
       width: 50%;
 
@@ -58,18 +112,45 @@
       }
 
       .btn {
+        .button();
+
+        @media @phone{
+          width: 95%;
+          height: 65px;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(33, 40, 57);
+        }
       }
+    @media @phone {
+      width: 100%;
+      margin-left: 3%;
+    }
+
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+
+        @media @phone {
+
+          img {
+            width: 100%;
+            height: 300px;
+            border-radius: 5px;
+            margin-bottom: 5%;
+            padding: 2%;
+          }
+        }
+
+
     }
   }
 }// home

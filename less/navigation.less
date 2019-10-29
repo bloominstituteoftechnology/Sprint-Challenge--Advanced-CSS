@@ -1,1 +1,46 @@
 // Navigation code here
+.menubar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 2%;
+
+        .h1nav {
+            width: 100%;
+            background-color: rgb(236, 240, 243);
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            padding-bottom: 1%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+
+        a {
+            width: 25%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+    @media @phone {
+        .h1nav {
+            width: 100%;
+            background-color: rgb(236, 240, 243);
+            margin-top: 3%;
+        }
+
+        a {
+            padding: 15px;
+            margin-top: 2%;
+        }
+
+
+    }
+}
