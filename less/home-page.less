@@ -1,5 +1,6 @@
 // Home Content
 // Mobile var
+@import 'variables.less';
 @media(max-width: 500px){
   
   .space-images .sky{
@@ -13,7 +14,18 @@
   }
   .walk{
     .center();
-    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: initial;
+    padding: initial;
+  }
+  .walk-img{
+    img{
+      width: 95%;
+    }
+  }
+  .walk-text{
+    width: 95%;
   }
 }//Media Ends
 .home {
