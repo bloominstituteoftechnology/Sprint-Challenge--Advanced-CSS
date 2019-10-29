@@ -217,10 +217,11 @@ footer {
 }
 .home .intro img {
   width: 100%;
+  margin-left: 5%;
 }
 @media ( max-width: 500px ) {
   .home .intro {
-    width: 100%;
+    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
