@@ -1,1 +1,53 @@
-// Navigation code here
+
+.main-navigation {
+  width: 100%;
+//   height: 100px;
+  background-color: @nav-bg;
+
+  .nav-container {
+      display: flex;
+    .header
+    h1 {
+      .size-color-font(4rem, @header-font-color);
+      padding: 12px 0 20px;
+      text-align: center;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0 30%;
+      overflow: hidden;
+      background-color: whitesmoke;
+
+
+      @media (max-width: 800px;) {
+        padding: 0 10% ;
+      }
+
+
+      a {
+        .size-color-font(1.6rem, @nav-font);
+        text-decoration: none;
+            float: left;
+            display: flex;
+            justify-content: space-around;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+            }
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+      }
+    }
+  }
