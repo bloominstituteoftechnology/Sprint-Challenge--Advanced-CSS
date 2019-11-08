@@ -162,9 +162,13 @@ p {
 }
 nav {
   width: 85%;
-  margin-top: 3em;
+  margin-top: 1%;
   margin-left: 9em;
   background-color: #F1F1F1;
+  margin-bottom: auto;
+  position: fixed;
+  top: 0;
+  opacity: 0.5;
 }
 @media (max-width: 500px) {
   nav {
@@ -176,7 +180,6 @@ nav {
 nav h1 {
   text-align: center;
   font-size: 3em;
-  margin-bottom: 10px;
   padding: 18px;
 }
 nav div {
@@ -190,9 +193,9 @@ nav div {
 }
 nav a {
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #454A59;
-  text-align: right;
+  text-align: center;
   padding: 0.5%;
   margin-bottom: 1%;
 }
@@ -214,6 +217,7 @@ footer {
 .earthPic {
   display: flex;
   justify-content: center;
+  padding-top: 130px;
 }
 .earthPic img {
   border-radius: 10px;
