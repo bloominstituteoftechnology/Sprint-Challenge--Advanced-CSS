@@ -207,6 +207,11 @@ p {
   background-size: cover;
   margin-top: 7%;
 }
+@media (max-width: 500px) {
+  .header-image img {
+    margin-top: 16%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
