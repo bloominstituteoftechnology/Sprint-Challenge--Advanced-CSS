@@ -1,1 +1,40 @@
 // Navigation code here
+
+.nav {
+    .displayFlexColumn();
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background: rgba(247, 247, 247, 0.548);
+    
+    
+
+    h2 {
+        margin:1% 0;
+        font-size:4rem;
+    }
+
+    nav {
+     .displayFlexEdit(row, center);
+     
+
+     a {
+         width:5%;
+         text-decoration: none;
+         font-size: 1.8rem;
+         padding-bottom: 1%;
+
+         @media @phone {
+             width:100%;
+             padding-bottom:1.5%;
+         }
+     }
+       
+     @media @phone {
+         .displayFlexEdit(row, space-around);
+     }
+
+    }
+} //End of the nav section
