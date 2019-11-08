@@ -15,8 +15,9 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-wrap: wrap;
+    .display-wrap();
     width: 100%;
 
     img {
@@ -57,7 +58,19 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        a  {
+          text-decoration: none;
+          .button-color;  
+          border-radius: 5px;
+          padding: 9px 60px;
+          font-size: 1.5rem;      
+          
+        }
       }
     }
 
@@ -73,3 +86,17 @@
     }
   }
 }// home
+
+@media (max-width: 500px) {
+  body  {
+    color: red;
+    font-size: smaller;
+    width: 500px;
+  }
+
+  a {
+    background: blue;
+  }
+
+ 
+}
