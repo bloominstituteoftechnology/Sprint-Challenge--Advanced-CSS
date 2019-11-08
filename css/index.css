@@ -156,28 +156,66 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
-.navContainer {
-  background-color: #F6F6F6;
+body {
+  padding-top: 10.5em;
 }
-.navContainer h1 {
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.home .navContainer {
+  width: 220%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(240, 239, 239, 0.6);
+}
+.home .navContainer h1 {
   text-align: center;
-  padding: 10px;
-  font-size: 5rem;
+  padding: 10px 0;
+  font-size: 4rem;
 }
-.navContainer nav {
+.home .navContainer nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  padding: 15px;
+  justify-content: center;
+  padding: 15px 0;
+  width: 11%;
+  align-items: center;
 }
-.navContainer a {
-  font-size: 2rem;
+@media (max-width: 1024px) {
+  .home .navContainer nav {
+    width: 25%;
+  }
+}
+@media (max-width:500px) {
+  .home .navContainer nav {
+    width: 40%;
+    justify-content: space-evenly;
+  }
+}
+.home .navContainer a {
+  font-size: 1.45rem;
   text-decoration: none;
-  padding: 2;
+  width: 100%;
+  color: #454A59;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .home .navContainer a {
+    font-size: 1.3rem;
+    margin-right: 0px;
+    margin-left: 5px;
+  }
 }
 footer {
   color: #22283B;
@@ -188,74 +226,160 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width:500px) {
-  .home {
-    align-content: center;
-  }
-}
-.home .intro h2 {
-  padding: 15px;
-}
-.home .intro p {
-  padding: 0 15px;
-}
-.home .space-images {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
-  width: 28%;
-  margin: 20px 2.5%;
-  border-radius: 20px;
-  height: 100%;
+.container .intro {
+  padding: 0 2%;
+}
+.container .intro img {
+  display: block;
+  border-radius: 10px;
+  border-radius: 0px;
+  width: 100%;
+}
+.container .intro h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .intro h2 p {
+  padding: 0 15px;
 }
 @media (max-width:500px) {
-  .home .space-images img {
-    display: block;
+  .container .intro h2 p {
     width: 100%;
-    overflow-x: hidden;
   }
 }
-.home .visit-planets {
-  padding: 15px;
+.container .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px;
+  padding: 2%;
 }
-.home .visit-planets h3 {
+.container .space-images .blast {
+  width: 30%;
+  display: block;
+  border-radius: 10px;
+}
+.container .space-images .blast:hover {
+  transition: all 0.6s;
+  box-shadow: 0px 6px 5px 5px rgba(175, 0, 0, 0.75);
+}
+@media (max-width:500px) {
+  .container .space-images .blast {
+    margin: 2rem;
+    width: 80%;
+    align-self: center;
+  }
+}
+.container .space-images .sky {
+  width: 30%;
+  display: block;
+  border-radius: 10px;
+}
+.container .space-images .sky:hover {
+  transition: all 0.6s;
+  box-shadow: 0px 6px 5px 5px rgba(71, 165, 28, 0.75);
+}
+@media (max-width:500px) {
+  .container .space-images .sky {
+    display: none;
+  }
+}
+.container .space-images .launch {
+  width: 30%;
+  display: block;
+  border-radius: 10px;
+}
+.container .space-images .launch:hover {
+  transition: all 0.6s;
+  box-shadow: 0px 6px 5px 5px rgba(0, 52, 175, 0.75);
+}
+@media (max-width:500px) {
+  .container .space-images .launch {
+    display: none;
+  }
+}
+.container .visit-planets {
+  padding: 2%;
+}
+.container .visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.container .visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.container .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 @media (max-width:500px) {
-  .home .walk {
+  .container .walk {
     flex-direction: column-reverse;
     align-items: center;
+    padding: 2%;
   }
 }
-.home .walk .walk-text {
+.container .walk .walk-text {
   width: 50%;
 }
 @media (max-width:500px) {
-  .home .walk .walk-text {
+  .container .walk .walk-text {
     width: 100%;
   }
 }
-.home .walk .walk-text h3 {
+.container .walk .walk-text h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.container .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.container .walk .walk-text .formField {
+  display: flex;
+  height: 28em !important;
+}
+.container .walk .walk-text .formField form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.container .walk .walk-text .formField form #info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.container .walk .walk-text .formField form #info input {
+  border: 1.6px solid black;
+}
+.container .walk .walk-text .formField form .radioButtons {
+  font-size: 2rem;
+  font-weight: 600;
+  border: 2px solid black;
+  padding-top: 1em;
+}
+.container .walk .walk-text .formField form input,
+.container .walk .walk-text .formField form select,
+.container .walk .walk-text .formField form textarea {
+  margin-bottom: 2em;
+}
+.container .walk .walk-text .formField form #choose {
+  font-weight: 900;
+  font-size: 2rem;
+  border: 2px solid black;
+  text-align: center;
+  margin-bottom: -0.1em;
+}
+.container .walk .walk-text .formField form .field {
+  padding: 0.8em;
+}
+.container .walk .walk-text .btn {
   background-color: #22283A;
   color: #F6F7F8;
   width: 11rem;
@@ -265,23 +389,70 @@ footer {
   text-align: center;
   font-size: 1.7rem;
 }
-.home .walk .walk-text .btn:hover {
+.container .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   color: #22283A;
 }
 @media (max-width:500px) {
-  .home .walk .walk-text .btn {
-    padding: 20px 100px 20px 100px;
-    width: 200%;
+  .container .walk .walk-text .btn {
+    padding: 15px 100px 15px 100px;
+    width: 100%;
     align-content: center;
   }
 }
-.home .walk .walk-text .walk-img {
-  width: 46%;
+.container .walk .walk-img {
+  width: 40%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+@media (max-width:500px) {
+  .container .walk .walk-img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.container .walk .walk-img .walkImg {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+}
+.container .walk .walk-img .walkImg:hover {
+  transition: all 0.6s;
+  box-shadow: 0px 6px 5px 5px rgba(0, 0, 0, 0.75);
+}
+.blogContainer {
+  width: 1200px;
+  max-width: 100%;
+}
+.blogContainer h2 {
+  padding-bottom: 1em;
+}
+.blogContainer p {
+  font-size: 1.7rem;
+  line-height: 2em;
+}
+.blogContainer img {
+  width: 30em;
+}
+.blogContainer #blogHeader h1 {
+  font-size: 5rem;
+  padding: 1.5em;
+}
+.blogContainer .blogContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  height: 442px;
+}
+.blogContainer .blogContent .blogText {
+  padding: 0 0 0 10em;
+}
+.blogContainer .reverseContent {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  height: 442px;
+}
+.blogContainer .reverseContent .blogText {
+  padding: 0 10em 0 0;
 }

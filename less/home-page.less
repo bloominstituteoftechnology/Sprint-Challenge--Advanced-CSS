@@ -1,44 +1,81 @@
 // Home Content
 
-.home {
+.container {
 
-  @media @phone {
-    align-content: center;
-  }
-
-  .intro {
-
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
   
-  }
+    .intro {
+      padding: 0 2%;
+      
+      img{
+        .images(100%, block);
+        border-radius: 0px;
+        width: 100%
+      }
+    
+
+
+      h2 {
+        padding-top: 20px;
+        padding-bottom:20px;
+
+
+      p {
+        padding:0 15px;
+      
+        @media @phone {
+          width: 100%;
+        }
+      }
+    }
+    }//END OF INTRO
+  
+
+
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
+    margin: 5px;
+    padding: 2%;
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+
+    .blast {
+      
+       .images(30%, block);
+
+      .imgAnim(rgba(175, 0, 0, 0.75));
+  
 
         @media @phone {
-          display: block;
-          width: 100%;
-          overflow-x: hidden;
+          margin: 2rem;
+          width: 80%;
+          align-self: center;
         }
     }
-  }
+
+    .sky {
+      .imgAnim(rgba(71, 165, 28, 0.75));
+      .images(30%, block);
+
+        @media @phone {
+          display: none;
+        }
+    }
+
+    .launch {
+      .images(30%, block);
+      .imgAnim(rgba(0, 52, 175, 0.75));
+
+        @media @phone {
+          display: none;
+        }
+    }
+  }//END OF SPACE IMAGES
 
   .visit-planets {
-    padding: 15px;
+    padding: 2%;
 
     h3 {
       margin-top: 11px;
@@ -54,24 +91,25 @@
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 
       @media @phone {
         flex-direction: column-reverse;
         align-items: center;
+        padding: 2%;
       }
 
     .walk-text {
       width: 50%;
 
       @media @phone{
-
         width: 100%;
 
       }
 
       h3 {
+        margin-top: 10px;
         margin-bottom: 10px;
       }
 
@@ -79,28 +117,83 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        .ctaBtn(1.7rem, @porcelain ,11rem);
-    
-            @media @phone {
-                padding: 20px 100px 20px 100px;
-                width: 200%;
-                align-content: center;
+      .formField {
+        display: flex;
+
+        height: 28em !important;
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          flex-wrap: wrap;
+
+          #info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2em;
+
+            input{
+              border: 1.6px solid black;
             }
           }
 
 
+          .radioButtons {
+            font-size: 2rem;
+            font-weight: 600;
+            border: 2px solid black;
+            padding-top: 1em;
+          }
+
+          input, select, textarea {
+
+            margin-bottom: 2em;
+          }
+          #choose {
+            font-weight: 900;
+            font-size: 2rem;
+            border: 2px solid black;
+            text-align: center;
+            margin-bottom: -0.1em;
+          }
+
+
+
+          .field {
+            padding: 0.8em;
+          }
+
+        }
+      }
+
+      .btn {
+        .ctaBtn(1.7rem, @porcelain ,11rem);
+    
+            @media @phone {
+               padding: 15px 100px 15px 100px;
+                width: 100%;
+                align-content: center;
+            }
+          }
+        }
+
     .walk-img {
-      width: 46%;
+      width: 40%;
       margin-left: 4%;
       
-      img {
+      @media @phone {
+        margin-left: 0;
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+      }
+
+      .walkImg {
+        width: 100%;
+        .imgAnim(rgba(0, 0, 0, 0.75));
+
 
       }
     }
-  }
+  
 }
-}
+}//CONTAINER CLOSE

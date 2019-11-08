@@ -29,5 +29,16 @@
 
     }
 
+.imgAnim (@var) {
+    &:hover {
+        transition: all .6s;
+        box-shadow: 0px 6px 5px 5px @var;
+    }
+}
 
 
+.images(@width, @display) {
+    width: @width;
+    display: @display;
+    border-radius: 10px;
+}

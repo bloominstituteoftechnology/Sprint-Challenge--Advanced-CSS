@@ -46,9 +46,9 @@
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+        <img id="red" src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img id="yellow" src="img/sky.png" class="sky" alt="Space sky image">
+        <img id="blue" src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
    
     <section class="visit-planets">
@@ -67,14 +67,28 @@
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
+        <div class ="formField">
+          <form>            
+            <input id="choose" type="text" name="package" value="Choose Subscription" readonly>           
+            <div class="radioButtons">  
+              <input class="radio" type= "radio" name="spaceJam" value="Space Jam"> Space Jam ($4.95/month) <br> 
+              <input class="radio" type="radio" name="skyWalker" value="Sky Walker"> Sky Walker ($9.95/3 months) <br>
+              <input class="radio" type="radio" name="buzzBugle" value="Buzz Bugle"> Buzz Bugle ($29.95/year) <br>
+            </div> 
+            <div id="info">
+              <input class="field" type="text" name="name" placeholder="Name">          
+              <input class="field" type="text" name="email" placeholder="E-Mail"> 
+            </div>
+
+          </form>
+        </div>
         <div class="btn">
           Sign Up
         </div>
       </div>
       
       <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+          <img src="img/space-walk.png" class="walkImg" alt="Space walking astronaut">
       </div>
 
     </section>
