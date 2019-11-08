@@ -1,26 +1,45 @@
 // Navigation code here
-.navDiv{
-    max-width: 52.5%;
-    margin: 0 auto;
-    padding: .7% 0;
-    .flexV();
-    background: #f4f4f4;
+.navDiv {
+  // width: 52.5%;
+  width: 100rem;
+  margin: 0 auto;
+  padding: 0.7% 0;
+  .flexV();
+  background: @nav-bg;
+  border: 1px solid @sea-shell;
 
-    h1 {
-        margin-bottom: 1.5%;
-    }//end h1
+  @media (max-width: 1070px) {
+    width: 100%;
+  }
 
-    nav {
-        width: 40%;
-        .flexH(space-around, center);
-        margin-top: 1.5%;
-        font-size: 1.7rem;
-        
-        a {
-            text-decoration: none;
-            color: black;
-            // letter-spacing: .1rem;
-        }//end a
-    }//end nav
+  @media @phone {
+    padding-top: 2.5%;
+  }
 
-}//end navDiv
+  h1 {
+    margin-bottom: 1.5%;
+  } //end h1
+
+  nav {
+    width: 40%;
+    .flexH(space-around, center);
+    margin-top: 1.5%;
+    font-size: 1.7rem;
+
+    @media (max-width: 910px) {
+      width: 70%;
+    }
+
+    @media @phone {
+      margin: 3% 0;
+      width: 90%;
+      .flexH(space-evenly, center);
+    }
+
+    a {
+      text-decoration: none;
+      color: @nav-font;
+      // letter-spacing: .1rem;
+    } //end a
+  } //end nav
+} //end navDiv

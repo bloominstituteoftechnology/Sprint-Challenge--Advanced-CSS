@@ -164,14 +164,25 @@ p {
   margin: 0 auto;
 }
 .navDiv {
-  max-width: 52.5%;
+  width: 100rem;
   margin: 0 auto;
   padding: 0.7% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4;
+  background: #F6F6F6;
+  border: 1px solid #F1F1F1;
+}
+@media (max-width: 1070px) {
+  .navDiv {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .navDiv {
+    padding-top: 2.5%;
+  }
 }
 .navDiv h1 {
   margin-bottom: 1.5%;
@@ -184,19 +195,42 @@ p {
   margin-top: 1.5%;
   font-size: 1.7rem;
 }
+@media (max-width: 910px) {
+  .navDiv nav {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .navDiv nav {
+    margin: 3% 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .navDiv nav a {
   text-decoration: none;
-  color: black;
+  color: #454A59;
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
+  color: #81848E;
+  background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  color: #5E6164;
+}
+.home .intro {
+  color: #23293B;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -215,11 +249,31 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets h3 {
+    margin-top: 1%;
+  }
 }
 .home .visit-planets p {
   margin-top: 13px;
@@ -231,8 +285,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    padding: 3% 4%;
+    margin-top: 5%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    margin-top: 7%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -242,6 +309,11 @@ footer {
 }
 .home .walk .walk-text .bottomPara {
   margin-bottom: 7.5%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .bottomPara {
+    margin-bottom: 5%;
+  }
 }
 .home .walk .walk-text .btn {
   border: 1px solid #22283A;
@@ -253,6 +325,12 @@ footer {
   color: #F6F7F8;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: #F6F7F8;
   text-align: center;
@@ -262,9 +340,21 @@ footer {
   color: #22283A;
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
