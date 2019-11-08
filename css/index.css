@@ -318,8 +318,14 @@ footer {
   width: 50%;
   margin: 1%;
 }
+@media (max-width: 500px) {
+  .blog img {
+    display: none;
+  }
+}
 .blog .planets {
   display: flex;
+  margin: 4% 2%;
 }
 .blog .planets p {
   margin: 2%;
