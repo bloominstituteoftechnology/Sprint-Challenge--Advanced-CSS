@@ -21,14 +21,21 @@
 
     img {
       width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
+      margin: 2rem 2.5%;
+      border-radius: 2rem;
       height: 100%;
+      @media @phone {
+        width: 100%;
+        margin: 2rem;
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
+    @media @phone {
+
+    }
 
     h3 {
       margin-top: 11px;
@@ -45,9 +52,22 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0px;
+      padding-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      position: relative;
+      bottom: 3.5rem;
+    }
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,19 +76,24 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        display: flex;
+        width: 100%;
+        margin-left: 0%;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @phone {
+          display: flex;
+        }
       }
     }
   }
@@ -82,18 +107,9 @@ h1 {
   display: flex;
   justify-content: center;
   font-size: 4rem;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  margin-left: 36%;
-  max-width: 30%;
-  padding: 1rem;
-    a {text-decoration: none;
-      color: black;
-    }
+  @media @phone {
+    padding: 1rem;
+  }
 }
 .mainheaderpic {
   display: flex;
@@ -104,7 +120,21 @@ nav {
   border-radius: .5rem;
   width: 75%;
   margin-left: 12%;
+    @media @phone {
+      width: 100%;
+      margin-left: 0%;
+    }
 }
 button {
-  .buttonsettings();
+  .buttonsettings;
+}
+.sky {
+  @media @phone {
+    display: none;
+  }
+}
+.launch {
+  @media @phone {
+    display: none;
+  }
 }
