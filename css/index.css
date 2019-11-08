@@ -214,7 +214,7 @@ p {
   color: #454A59;
 }
 footer {
-  color: #81848E;
+  color: #23293B;
   background: #F6F6F6;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -266,6 +266,7 @@ footer {
 }
 .home .visit-planets {
   padding: 15px;
+  color: #23293B;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -284,6 +285,7 @@ footer {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+  color: #23293B;
 }
 @media (max-width: 500px) {
   .home .walk {
