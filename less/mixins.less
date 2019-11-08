@@ -31,4 +31,26 @@
     color: white;
 }
 
+
+@keyframes sizeup {
+    0% {
+        font-size: 1.6rem;
+    }
+    25% {
+        top: 2.8rem;
+    }
+    75% {
+        top: 3.2rem;
+    }
+    100% {
+        top: 4rem;
+    }
+}
+
+.font-animation(@name,@duration,@count){
+    animation: @name @duration @count;
+}
+
+    
+
 @mobile: ~"(max-width: 500px)";

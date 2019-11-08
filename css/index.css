@@ -1,3 +1,17 @@
+@keyframes sizeup {
+  0% {
+    font-size: 1.6rem;
+  }
+  25% {
+    top: 2.8rem;
+  }
+  75% {
+    top: 3.2rem;
+  }
+  100% {
+    top: 4rem;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -188,6 +202,7 @@ header.nav {
 }
 header.nav h1 {
   padding-top: 2%;
+  animation: sizeup 5s 1;
 }
 header.nav nav {
   display: flex;
@@ -212,6 +227,20 @@ header.nav nav a:hover {
   background-color: #000000;
   color: white;
 }
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 200px;
+  }
+  75% {
+    top: 50px;
+  }
+  100% {
+    top: 100px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -228,6 +257,11 @@ footer:hover {
 }
 .home {
   margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 17%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -334,4 +368,58 @@ footer:hover {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .contact-form {
+  text-align: center;
+  padding: 5%;
+}
+.home .contact-form form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+}
+.home .contact-form form .half {
+  text-align: left;
+  width: 50%;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .home .contact-form form .half {
+    width: 100%;
+  }
+}
+.home .contact-form form .full {
+  width: 100%;
+  text-align: left;
+  padding: 2%;
+}
+.home .contact-form form input[type=text],
+.home .contact-form form input[type=phone],
+.home .contact-form form input[type=email],
+.home .contact-form form textarea {
+  width: 100%;
+  border: 1px solid grey;
+  margin: 2% 0%;
+  height: 25px;
+}
+.home .contact-form form .btn {
+  background: #22283A;
+  width: 25%;
+  border-radius: 2px;
+  color: white;
+  text-align: center;
+  padding: 4%;
+}
+@media (max-width: 500px) {
+  .home .contact-form form .btn {
+    background: #22283A;
+    width: 100%;
+    border-radius: 2px;
+    color: white;
+    text-align: center;
+    padding: 4%;
+  }
 }

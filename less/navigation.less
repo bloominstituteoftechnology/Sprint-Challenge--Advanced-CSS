@@ -13,6 +13,8 @@ header.nav {
         
         padding-top:2%;
         
+        .font-animation(sizeup,5s,1);
+        
     }
 
 
@@ -35,6 +37,21 @@ header.nav {
         }//a end
 
     }//nav end
+
+    @keyframes mymove {
+        0% {
+          top: 0px;
+        }
+        25% {
+          top: 200px;
+        }
+        75% {
+          top: 50px;
+        }
+        100% {
+          top: 100px;
+        }
+      }
 
 
 }
