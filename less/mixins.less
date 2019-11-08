@@ -1,1 +1,11 @@
 // Mixins Here
+.flexer (@direction: column, @ori: center){
+    flex-direction: @direction;
+    justify-content: @ori;
+    align-items: @ori;
+}
+
+.styler (@font: 'Ubuntu', @decore: none){
+    font-family: @font, sans-serif;
+    text-decoration: @decore;
+}

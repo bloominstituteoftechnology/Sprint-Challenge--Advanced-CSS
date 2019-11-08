@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    adaptive respondes to the screen size, while fully responsives takesin more variables
+    such as screen size, orientation, & browser info (so if its a mobile ver it displays mobile ver by default)
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    As the number of humans that consume content on the internet grows, you have to create your content to fit the medium they use which is mobile; From americans that have a wide range of devices to view content from to emerging markets like india and africa.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+     something, something sets a base line pixil count something, something, rem adjusts itself from the parent yada yada,
+    math is hard! far as im aware it just adjusts the pixel count dynamically based on the parents set values and "62.5%" seems to be the industry default currently.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    " the guys who made the life blood of the internet decided "nah is good enough" and havent updated it in years and some dudes where like "...hold my micro-brewed vegan, cage free, grain free, ale while I make a resource package among all resource packages that will never be forked or improved on or copied and this will be the industry standared.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+     uhhh my favorite concept is that someone managed to convince and entire industry to accept this roundabout method of making css usable instead of just updating css.
+
+    most trouble... preprocessing itself, its like putting flex seal on a leaking cruise ship
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
