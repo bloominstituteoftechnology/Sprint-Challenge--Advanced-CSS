@@ -10,7 +10,7 @@
       @media @phone{
         // max-width: 500px
         width: 100%;
-        padding: 0;
+        
         }
       }
     }
@@ -21,6 +21,7 @@
 
       @media @phone{
         .padding();
+        margin: 0 2%;
       }
     }
 
@@ -30,6 +31,7 @@
 
       @media @phone{
         .padding();
+        margin: 0 2%;
       }
     }
   
@@ -54,7 +56,7 @@
 
       img{
         width:100%;
-        
+        margin: 2% 5%;
       }
     }
   }
@@ -63,7 +65,7 @@
     padding: 15px;
     @media @phone{
       padding: 15px 0 0 0;
-      margin: 0;
+      margin: 0 2.5%;
       
     }
     h3 {
@@ -94,6 +96,7 @@
       border-top: 1px solid @main-border-color;
       flex-direction: column-reverse;
       align-items: center;
+      justify-content: flex-start;
     }
     .walk-text {
       width: 50%;
@@ -108,6 +111,10 @@
 
       p {
         margin-bottom: 26px;
+        @media @phone{
+          width: 100%;
+          margin: 0;
+        }
       }
 
       .btn {
@@ -125,13 +132,17 @@
       
       @media @phone{
         width: 100%;
-        margin: 3% 2%;
+        margin: 2% 4%;
       }
 
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+        @media @phone{
+          // margin: 2% 6%
+        }
       }
     }
   }
