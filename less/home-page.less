@@ -1,75 +1,79 @@
-// Home Content
-
-.home {
-
-  .intro {
-
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
+// Home Content//
+  #banner {
+    display:flex;
+    flex-direction: column;
     justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
+    width: 100%;
+    padding-top:15px;
+    padding-bottom: 40px;
+      .title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+          h1 {
+            font-size: 50px; 
+          }//closes h1//
+      }//closes .title//
+      .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }//closes nav//
+    }//closes #banner//
+  .home {
+    .intro {
+      h2 {
+        padding: 15px;
+      }//closes h2//
       p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
+        padding:0 15px;
+      }//closes p//
+    }//closes intro//
+    .space-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-    }
-  }
-}// home
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }//closes img//
+    }//closes space-images//
+    .visit-planets {
+      padding: 15px;
+      h3 {
+        margin-top: 11px;
+      }//closes h3//
+      p {
+        margin-top: 13px;
+      }//closes p//
+    }//closes visit-planets//
+    .walk {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+      .walk-text {
+        width: 50%;
+        h3 {
+          margin-bottom: 10px;
+        }//closes h3//
+        p {
+          margin-bottom: 26px;
+        }//closes p//
+        .btn {
+        }//closes btn//
+      }//closes walk-text//
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }//closes img//
+      }//closes walk-img
+    }//closes walk//
+  }// home//
