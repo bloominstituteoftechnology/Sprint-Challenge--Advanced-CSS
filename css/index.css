@@ -222,6 +222,71 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.signIn {
+  padding: 3%;
+}
+.signIn form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.signIn form label {
+  margin-bottom: 0.5%;
+  font-size: 1.4rem;
+}
+.signIn form input {
+  width: 40%;
+  margin-bottom: 5%;
+}
+.signIn form div {
+  margin-bottom: 5%;
+  width: 40%;
+}
+.signIn form div label {
+  font-size: 1.6rem;
+}
+.signIn form div #check {
+  width: 10%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .signIn form div #check {
+    margin-right: 8%;
+  }
+}
+.signIn form .submitBtn {
+  border: 1px solid #22283A;
+  background-color: #22283A;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #F6F7F8;
+  border-radius: 5px;
+  padding: 2% 0.5%;
+}
+@media (max-width: 500px) {
+  .signIn form .submitBtn {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
+.signIn form .submitBtn:hover {
+  background-color: #F6F7F8;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #22283A;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .signIn form .submitBtn:hover {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
 .home {
   color: #5E6164;
 }
