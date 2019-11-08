@@ -22,9 +22,37 @@
 .hovereffect(@color){
     font-weight: bold;
     color: @color;
-    font-size: 1.8rem;
+    font-size: 120%;
 }
+// ANSWERS TO QUESTIONS //
 /*
+What is the difference between an adaptive website and a fully responsive website?
+
+Adaptive web design uses distinct layouts for multiple screen sizes, the layout largely depends on the screen size being used so with each of these sizes in mind a layout would have to be designed for it.
+Response web design adapts to the size of the screen no matter what the target device screen size is. The layout is ‘fluid’ and uses CSS media to change styles, this ‘fluid’ grid enables the page to resize its width and height to adapt to different screen sizes and show correctly.
+
+Describe what it means to be mobile first vs desktop first.
+
+Mobile first would use things like @media (min-width: 500px) and build it based on that, where as desktop first would build everything based on a desktop view, and use the max width keywords in media queries like this --> @media (max-width: xxxx px)
+
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+
+Setting it to 62.5% makes it so that every 1 rem = 10px, so it's easy to make things more responsive. 
+
+
+How would you describe preprocessing to someone new to CSS?
+
+I'd say it's a set of syntax that increase your quality of life when coding-- it simplifies things and makes your work easier to do. 
+
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love using variables and mixins, they've made my code WAY better and I can finish projects alot faster now. 
+*/
+
+// 2 STAR MVPS BELOW //
+/* 
 DONE --Navigation Styles: Use the navigation.less file for styling.
 
 DONE --Main Content Styles: Use the home-page.less file for styling
