@@ -34,20 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2) Describe what it means to be mobile first vs desktop first.
+!! adaptive desgin uses fixed layouts that snap into place at different screen sizes. Fully responsive websites adust to the width of any viewport for optimal display on any device.
 
-mobile first is web desgin focusing on small device screens then working up through larger screens. Desktop first places emphasis on larger screens and works down towards smaller devices.
+2. Describe what it means to be mobile first vs desktop first.
+
+!! mobile first is web desgin focusing on small device screens then working up through larger screens. Desktop first places emphasis on larger screens and works down towards smaller devices.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-   62.5% in the HTML tag makes 1rem equivalent to 10px
+!! 62.5% in the HTML tag makes 1rem equivalent to 10px
 
 4. How would you describe preprocessing to someone new to CSS?
-   preprocessing simplifies the process of writing CSS by adding options to the web developers toolkit. These options range from simple "escapes" which are commonly used to aid in design for different screen sizes, as well as pre JS options such as parametric mix-ins and variables that offer more control over styles with less hard coding.
+
+!! preprocessing simplifies the process of writing CSS by adding options to the web developers toolkit. These options range from simple "escapes" which are commonly used to aid in design for different screen sizes, as well as pre JS options such as parametric mix-ins and variables that offer more control over styles with less hard coding.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-the simplicity of writing media queries and psuedo classes are by and far my favorite aspects of pre-processors. Sometimes I have difficulty getting the pre-processor set up correctly.
+!! the simplicity of writing media queries and psuedo classes are by and far my favorite aspects of pre-processors. Sometimes I have difficulty getting the pre-processor set up correctly.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 

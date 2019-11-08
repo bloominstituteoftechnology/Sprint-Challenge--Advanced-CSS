@@ -11,13 +11,31 @@
 
 .navBar {
   .navFlex();
-  padding-bottom: 2rem;
+
+  @media @desktop {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-left: 55.2rem;
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 215, 0, 0.7);
+  }
+
+  @media @phone {
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgba(255, 215, 0, 0.7);
+  }
 
   a {
     text-decoration: none;
     font-size: 2rem;
-    color: @river-bend;
     padding: 2rem;
+    color: @river-bend;
 
     @media @phone {
       padding: 1rem;
@@ -28,4 +46,5 @@
 .cloudImg {
   .centerFlex();
   border-top: 1px solid @main-border-color;
+  margin-top: 5.8rem;
 }
