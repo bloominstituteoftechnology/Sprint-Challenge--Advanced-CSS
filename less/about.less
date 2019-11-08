@@ -1,0 +1,125 @@
+// About Content
+
+.home {
+    .main-header-img{
+      .warped();
+      @media @phone{
+        width: 100%;
+        border-radius: none;
+      }
+    }
+  
+    .intro {
+      background-color: none;
+      h2 {
+        padding: 15px;
+      }
+  
+      p {
+        padding:0 15px;
+      }
+    
+    }
+  
+    .space-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+     // .toy-rocket{
+      //    transform: rotate(270deg);
+      //    margin-top: 5%;
+      //  @media @phone {
+      //    width: 100%;
+      //  }
+     // }
+      .astro-kid{
+          width: 45%;
+        @media @phone {
+          width: 100%;
+        }
+      }
+      .star{
+          width: 45%;
+        @media @phone {
+          display: none;
+        }
+      }
+  
+      img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+    }
+  
+    .goal {
+      padding: 15px;
+  
+      h3 {
+        margin-top: 11px;
+      }
+  
+      p {
+        margin-top: 13px;
+      }
+    }
+  
+    .Staff {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+      @media @phone {
+        flex-direction: column-reverse;
+        padding: 20px;
+      }
+  
+      .Staff-text {
+        width: 50%;
+        @media @phone {
+          width: 100%;
+        }
+        h3 {
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 26px;
+        }
+  
+        .btn {
+          .new-btn(@btn-bg-color, 25%, white);
+          &:hover{
+            background: white;
+            color: @btn-bg-color;
+          }
+          @media @phone {
+            width: 100%;
+            padding: 6.5%;
+  
+          }
+        }
+      }
+  
+      .Staff-img {
+        width: 46%;
+        margin-left: 4%;
+        @media @phone {
+          width: 100%;
+          margin-left: 0%;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+          .warped();
+        }
+      }
+      .motto{
+          font-weight: bolder;
+          font-color: gold;
+      }
+    }
+  }// About
