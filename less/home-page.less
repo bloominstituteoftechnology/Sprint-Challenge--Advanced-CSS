@@ -64,6 +64,7 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    border-bottom: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -113,5 +114,25 @@
         .warped();
       }
     }
+  }
+  .earth{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg);
+    border-radius: 50%;
+    background-size:cover;
+    box-shadow: -20px -20px 50px 2px #000000 inset, 0 0 20px 2px #000000;
+    animation: spin 30s linear alternate infinite;
+  }
+
+  @keyframes spin{
+    100%{background-position: 100%;}
   }
 }// home

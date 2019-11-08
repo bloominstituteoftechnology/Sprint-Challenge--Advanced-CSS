@@ -273,6 +273,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -333,6 +334,27 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .earth {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000000 inset, 0 0 20px 2px #000000;
+  animation: spin 30s linear alternate infinite;
+}
+@keyframes spin {
+  100% {
+    background-position: 100%;
+  }
+}
 .home .main-header-img {
   border-radius: 10px;
 }
@@ -390,6 +412,7 @@ footer {
 .home .Staff {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
@@ -453,4 +476,25 @@ footer {
 .home .Staff .motto {
   font-weight: bolder;
   font-color: gold;
+}
+.home .neptune {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url(http://solarviews.com/browse/nep/neptunecyl1.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  box-shadow: -20px -20px 50px 2px #000000 inset, 0 0 20px 2px #000000;
+  animation: spin 30s linear alternate infinite;
+}
+@keyframes spin {
+  100% {
+    background-position: 100%;
+  }
 }
