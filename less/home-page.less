@@ -3,6 +3,11 @@
 .home {
 
   .intro {
+    
+    img{    
+        width: 100%;
+        border-radius: 10px;
+    }
 
     h2 {
       padding: 15px;
@@ -11,7 +16,10 @@
     p {
       padding:0 15px;
     }
-  
+    
+    @media @phone{
+      margin:1%;
+    }//media
   }
 
   .space-images {
@@ -19,13 +27,32 @@
     flex-wrap: wrap;
     width: 100%;
 
+    .sky{
+      @media @phone{
+        display:none;
+      }//media
+    }//sky
+
+    .launch{
+      @media @phone{
+        display:none;
+      }//media
+    }//launch
+
+    .blast{
+      @media @phone{
+        width:100%;
+      }//media
+    }//blast
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+    }//img
+
+  }//space img
 
   .visit-planets {
     padding: 15px;
@@ -46,8 +73,18 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      flex-direction: column-reverse;
+    
+    }
+
     .walk-text {
-      width: 50%;
+      width: 50%; 
+
+      @media @phone{
+        width: 97%;
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +95,26 @@
       }
 
       .btn {
+        .button(rgb(3, 3, 53), white, 70%);
+
+        &:hover{
+          .button(white, rgb(3,3,53), 70%);
+        }
+
+        @media @phone{
+          width: 97%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone{
+        width: 100%;
+        margin: 1%;
+      }
       
       img {
         width: 100%;
@@ -73,3 +124,28 @@
     }
   }
 }// home
+
+
+//BLOG
+
+.blog{
+  max-width: 100%;
+
+  img{
+    width: 50%;
+    margin:1%;
+
+    @media @phone{
+      display:none;
+    }
+  }//img
+
+  .planets{
+    display:flex;
+    margin: 4% 2%;
+
+    p{
+      margin: 2%;
+    }
+  }
+}//blog container

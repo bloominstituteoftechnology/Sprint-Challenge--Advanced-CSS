@@ -1,1 +1,25 @@
 // Mixins Here
+.button(@back, @color, @width){
+    display: block;
+    border-radius: 7%;
+    font-size: 2rem;
+    padding: 3%;
+    background-color:@back;
+    color:@color;
+    text-align: center;
+    width: @width;
+}
+
+.header-font(){
+color: @header-font-color;
+font-size: 4rem;
+margin:5% 0% 2% 0%;
+
+}
+
+.nav-item(){
+    font-size: 1.6rem;
+    color:@header-font-color;
+    margin-bottom: 1%;
+    font-weight: bold;
+}
