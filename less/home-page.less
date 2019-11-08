@@ -1,7 +1,25 @@
 // Home Content
 
 .home {
+  h3:hover{
+    animation: slide 10s infinite;
+  }
+    
+    @keyframes slide{
+      0%, 75% {
+        background-color: red;
+        color:@porcelain
+      }
+      25%, 100%{
+        background-color: @porcelain;
+        color: blue;
+      }
+      50%{
+        background-color: blue;
+        color:@porcelain;
 
+    }
+  }
   .intro {
     
     img{

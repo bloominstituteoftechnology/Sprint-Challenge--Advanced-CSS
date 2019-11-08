@@ -200,6 +200,25 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home h3:hover {
+  animation: slide 10s infinite;
+}
+@keyframes slide {
+  0%,
+  75% {
+    background-color: red;
+    color: #F6F7F8;
+  }
+  25%,
+  100% {
+    background-color: #F6F7F8;
+    color: blue;
+  }
+  50% {
+    background-color: blue;
+    color: #F6F7F8;
+  }
+}
 .home .intro img {
   border-radius: 10px;
 }
