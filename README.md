@@ -42,9 +42,11 @@ mobile first is designing the site for mobile experience before designing it for
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets rem to equal 10px, it makes it easier, and you don't have to do as much math. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
-It sets rem to equal 10px, it makes it easier, and you don't have to do as much math. 
+Preprocessing is a language that is similar to css but it is cleaner and you have more flexibility.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
