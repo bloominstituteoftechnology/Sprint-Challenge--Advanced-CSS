@@ -160,6 +160,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  margin-bottom: 1%;
+}
+nav h1 {
+  color: #454A59;
+  font-size: 4em;
+  text-align: center;
+  margin: 3% 0 2%;
+}
+nav .links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+nav .links a {
+  text-decoration: none;
+  font-size: 1.7em;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +192,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +237,15 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #23293B;
+  color: #F6F7F8;
+  font-size: 2em;
+  width: 30%;
+  padding: 2% 4%;
+  border-radius: 5px;
+  text-align: center;
 }
 .home .walk .walk-img {
   width: 46%;
