@@ -64,7 +64,10 @@
           margin-bottom: 26px;
         }//closes p//
         .btn {
-        }//closes btn//
+          button {
+            .btnclass(#F6F6F6 ,#5E6164, 40px);
+            }//closes mixin//
+          }//closes btn//
       }//closes walk-text//
       .walk-img {
         width: 46%;
@@ -73,7 +76,11 @@
           width: 100%;
           height: auto;
           border-radius: 10px;
-        }//closes img//
-      }//closes walk-img
-    }//closes walk//
-  }// home//
+        }
+      }
+    }
+    @media @mobile  {
+      display: flex;
+      flex-direction: column;
+    }
+  }
