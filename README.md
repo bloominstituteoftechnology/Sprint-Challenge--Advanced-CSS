@@ -133,3 +133,20 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
+
+*Answers to questions*
+1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive website needs to load every possible layouts, but responsive websites only need to load the one that works across all platforms.
+
+2. Describe what it means to be mobile first vs desktop first.
+ Mobile first means it is designed for mobile first, and Desktop first is designed for desktop first. 
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+It means that is would be 62.5% of the root element. 
+
+4. How would you describe preprocessing to someone new to CSS?
+It allows you to seperate styling in different sections while your terminal compiles it all into one for you. 
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+ I really like the mixins. I struggle a bit with the variables. 
+You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
