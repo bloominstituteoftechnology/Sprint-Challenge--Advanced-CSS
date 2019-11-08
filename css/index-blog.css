@@ -194,6 +194,7 @@ nav h1 {
   font-size: 4em;
   text-align: center;
   margin: 3% 0 2%;
+  animation: siteName 6s ease infinite alternate;
 }
 @media (max-width: 500px) {
   nav h1 {
