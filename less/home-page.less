@@ -139,4 +139,56 @@
       }
     }
   }
+
+  .form {
+    padding: 3%;
+    form {
+    
+    .flexV(space-between, center);
+        label{
+          margin-bottom: .5%;
+          font-size: 1.4rem;
+        }//end label
+        input{
+          width: 40%;
+          margin-bottom: 5%;
+        }//end input
+
+        div{
+          margin-bottom: 5%;
+          label{
+            font-size: 1.6rem;
+          }//end label
+          .flexH(center, center);
+          width: 40%;
+          #check{
+            width: 10%;
+            margin: 0 auto;
+          }
+        }//end div
+        .submitBtn {
+          border: 1px solid @btn-bg-color;
+          .signUp(@btn-bg-color, @porcelain, 30%);
+          padding: 2% .5%;
+          @media @phone {
+            width: 100%;
+            padding: 5.5% 0;
+          }
+  
+          &:hover {
+            .signUp(@porcelain, @btn-bg-color, 30%);
+            @media @phone {
+              width: 100%;
+              padding: 5.5% 0;
+            }
+          }
+        } 
+    }//end form
+
+
+}//end form section
+
+  .hide {
+    display: none;
+  }
 } // home

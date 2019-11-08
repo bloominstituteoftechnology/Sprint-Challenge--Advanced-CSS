@@ -52,7 +52,6 @@ ol,
 ul,
 li,
 fieldset,
-form,
 label,
 legend,
 table,
@@ -362,4 +361,70 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .form {
+  padding: 3%;
+}
+.home .form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .form form label {
+  margin-bottom: 0.5%;
+  font-size: 1.4rem;
+}
+.home .form form input {
+  width: 40%;
+  margin-bottom: 5%;
+}
+.home .form form div {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.home .form form div label {
+  font-size: 1.6rem;
+}
+.home .form form div #check {
+  width: 10%;
+  margin: 0 auto;
+}
+.home .form form .submitBtn {
+  border: 1px solid #22283A;
+  background-color: #22283A;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #F6F7F8;
+  border-radius: 5px;
+  padding: 2% 0.5%;
+}
+@media (max-width: 500px) {
+  .home .form form .submitBtn {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
+.home .form form .submitBtn:hover {
+  background-color: #F6F7F8;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #22283A;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .form form .submitBtn:hover {
+    width: 100%;
+    padding: 5.5% 0;
+  }
+}
+.home .hide {
+  display: none;
 }
