@@ -1,9 +1,12 @@
 // Home Content
 
 .home {
+  .main-header-img{
+    border-radius: 10px;
+  }
 
   .intro {
-
+    background-color: none;
     h2 {
       padding: 15px;
     }
@@ -58,6 +61,11 @@
       }
 
       .btn {
+        .new-btn(@btn-bg-color, 25%, white);
+        &:hover{
+          background: white;
+          color: @btn-bg-color;
+        }
       }
     }
 
