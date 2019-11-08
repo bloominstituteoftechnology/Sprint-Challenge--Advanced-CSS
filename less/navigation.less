@@ -4,20 +4,34 @@ nav {
 	display: flex;
 	flex-direction: column;
 	background-color: @wild-sand;
-	margin-bottom: 1%;
+	width: 800px;
+	margin: 0 auto 1%;
+
+	@media @mobile {
+		width: 100%;
+	}
 
 	h1 {
 		color: @river-bend;
 		font-size: 4em;
 		text-align: center;
 		margin: 3% 0 2%;
+
+		@media @mobile {
+			font-size: 4em;
+		}
 	}
 
 	.links {
-		width: 40%;
+		width: 50%;
 		display: flex;
 		justify-content: space-around;
 		margin: 0 auto;
+
+		@media @mobile {
+			width: 80%;
+		}
+
 		a {
 		text-decoration: none;
 		font-size: 1.7em;
