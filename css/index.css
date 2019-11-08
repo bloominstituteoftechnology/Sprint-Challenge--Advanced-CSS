@@ -302,12 +302,25 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
-    width: 97%;
-    margin-bottom: 2%;
+    width: 100%;
+    margin: 1%;
   }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.blog {
+  max-width: 100%;
+}
+.blog img {
+  width: 50%;
+  margin: 1%;
+}
+.blog .planets {
+  display: flex;
+}
+.blog .planets p {
+  margin: 2%;
 }
