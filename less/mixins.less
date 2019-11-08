@@ -1,1 +1,10 @@
-// Mixins Here
+// Mixins Here//
+.btnclass (@color, @bgcolor, @ftsz){
+    color: @color;
+    background-color: @bgcolor;
+    font-size: @ftsz;
+    &:hover {
+        background-color: @bc;
+        color: @clr;
+    }
+}
