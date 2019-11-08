@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website uses completely separate website designs in order to accomodate different specific device sizes. Responsive websites accomodate all devices by allowing a website to grow and shrink fluidly.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile or desktop first refers to the starting point for styling a responsive website. To be desktop first means to first create css that looks good on a desktop size screen, and adding media breakpoints for max-width at smaller pixel sizes. Mobile first is the opposite, styling first for a mobile sized screen, then adding media breakpoints for min-width at larger screen sizes.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default browser font-size is 16 pixels. Since rem is a relative unit of measurement, it will refer back to and multiply that default font-size. Setting the overall font-size to 62.5% lowers the font in pixels to 10, making the calculations for rem much simpler, since they will all be a multiples of 10.
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to add some JavaScript-like functionality to your CSS. It will allow you to use variables and mixins, which can take parameters similar to JavaScript functions.
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love the idea of being able to use variables in CSS. I have no issues conceptually with preprocessing, but I find the nesting and the way media queries are split up by element instead of all gathered in one place frustrating. I much preferred the way this was done in vanilla CSS. 
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
