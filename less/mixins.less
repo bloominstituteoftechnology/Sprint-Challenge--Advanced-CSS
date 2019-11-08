@@ -1,1 +1,29 @@
 // Mixins Here
+.flex-column(){
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-links(){
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding-bottom: 2%;
+}
+
+.button(@w, @a){
+    background-color:@btn-bg-color;
+    width: @w;
+    font-size: 2rem;
+    text-align: @a;
+    color: @wild-sand;
+    padding: 2%;
+    border-radius: 5px;
+
+    &:hover{
+        background-color:@wild-sand;
+        color: @btn-bg-color;
+    }
+}

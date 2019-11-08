@@ -1,1 +1,25 @@
 // Navigation code here
+.nav-bg{
+    background-color:@nav-bg;
+    
+}
+.navigate{
+    .flex-column();
+    
+    .logo{
+        font-size:4rem;
+        color: @nav-font;
+        padding: 2%
+    }
+
+    .links{
+        .flex-links(); 
+        
+        a{ 
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @nav-font;
+        }
+        
+    }
+}
