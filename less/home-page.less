@@ -26,6 +26,10 @@
       border-radius: 20px;
       height: 100%;
 
+      &:active {
+        transform: translate(260px);
+      }
+
       @media @phone {
         width: 100%;
       }
@@ -81,6 +85,12 @@
 
       .button {
         .buttonMan(@sea-shell, @btn-bg-color, 13rem);
+        transition-duration: 1000ms;
+        transition-property: all;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
 
         @media @phone {
           width: 100%;

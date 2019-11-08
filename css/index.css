@@ -202,7 +202,7 @@ p {
   text-decoration: none;
   font-size: 2rem;
   padding: 2rem;
-  color: #454A59;
+  color: crimson;
 }
 @media (max-width: 500px) {
   .navBar a {
@@ -249,6 +249,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:active {
+  transform: translate(260px);
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -308,10 +311,15 @@ footer {
   width: 13rem;
   font-size: 20px;
   padding: 1rem;
+  transition-duration: 1000ms;
+  transition-property: all;
 }
 .home .walk .walk-text .button:hover {
   background-color: #F1F1F1;
   color: #22283A;
+}
+.home .walk .walk-text .button:hover {
+  transform: rotate(360deg);
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .button {
