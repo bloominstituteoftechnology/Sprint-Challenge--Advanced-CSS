@@ -164,27 +164,39 @@ p {
   margin: 0 auto;
 }
 .navDiv {
-  max-width: 800px;
-  margin: 0.7% auto;
+  max-width: 52.5%;
+  margin: 0 auto;
+  padding: 0.7% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #f4f4f4;
 }
 .navDiv h1 {
   margin-bottom: 1.5%;
 }
 .navDiv nav {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 1.5%;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 .navDiv nav a {
   text-decoration: none;
   color: black;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .intro h2 {
   padding: 15px;
@@ -228,6 +240,28 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .bottomPara {
+  margin-bottom: 7.5%;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid #22283A;
+  background-color: #22283A;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #F6F7F8;
+  border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  text-align: center;
+  width: 30%;
+  padding: 2.3% 0;
+  font-size: 1.8rem;
+  color: #22283A;
+  border-radius: 5px;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -236,14 +270,4 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-footer {
-  color: #22283B;
-  background: #f4f4f4;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

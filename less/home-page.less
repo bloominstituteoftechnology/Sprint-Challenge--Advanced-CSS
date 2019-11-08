@@ -57,7 +57,17 @@
         margin-bottom: 26px;
       }
 
+      .bottomPara{
+        margin-bottom: 7.5%;
+      }
+
       .btn {
+        border: 1px solid @btn-bg-color;
+        .signUp(@btn-bg-color, @porcelain, 30%);
+        
+        &:hover{
+          .signUp(@porcelain, @btn-bg-color, 30%);
+        }
       }
     }
 
