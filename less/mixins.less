@@ -1,1 +1,24 @@
 // Mixins Here
+.customButton (@size, @font-color){
+    display: block;
+    background-color: @ebony-clay;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 42px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    text-align: center;
+    padding: 3%;
+}
+.hoverAnim () {
+    &:hover {
+        color: @ebony-clay;
+        background-color: white;
+        border: 1px solid @ebony-clay;
+    }
+}
+.wSize () {
+    width: 100%;
+}

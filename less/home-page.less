@@ -1,7 +1,24 @@
 // Home Content
 
-.home {
+.earthPic {
+  display: flex;
+  justify-content: center;
+  padding-top: 130px;
+  
 
+  img {
+    border-radius: 10px;
+
+    @media @phone {
+      .wSize();
+      
+    }
+  }
+}
+
+.home {
+  
+  
   .intro {
 
     h2 {
@@ -11,19 +28,38 @@
     p {
       padding:0 15px;
     }
-  
+    @media @phone {
+      padding: 5%;
+      text-align: justify;
+      margin-top: 0;
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .wSize();
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+    @media @phone {
+      display: block;
+      
+      img {
+        width: 86%;
+        margin-left: 7%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+     
     }
   }
 
@@ -37,6 +73,14 @@
     p {
       margin-top: 13px;
     }
+    @media @phone {
+      padding: 7%;
+      text-align: justify;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
   }
 
   .walk {
@@ -46,8 +90,21 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 0;
+      padding: 3%;
+      margin-right: 6%;
+      margin-bottom: -7%;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+       .wSize();
+        padding: 3%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +115,15 @@
       }
 
       .btn {
+        .customButton(113px,white);
+        .hoverAnim();
+        @media @phone {
+          .customButton(17em, white);
+          height: 3em;
+          padding: 5%;
+          margin-left: 0;
+        }
+
       }
     }
 
@@ -65,11 +131,15 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        .wSize();
+      }
       img {
-        width: 100%;
+        .wSize();
         height: auto;
         border-radius: 10px;
       }
     }
   }
-}// home
+}
+// home
