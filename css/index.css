@@ -245,6 +245,7 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  font-family: 'Ubuntu', sans-serif;
   background: #22283A;
   padding: 7px 16px;
   text-align: center;
@@ -274,14 +275,14 @@ footer {
     border-radius: 2%;
     max-width: 80%;
   }
-  body .intro nav {
-    display: flex;
+  body .container nav {
+    margin: auto 2%;
   }
-  body .intro nav a {
+  body .container nav a {
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     font-size: 1.6rem;
-    margin: 1% 5%;
+    margin: 1% 3%;
     color: #23293B;
   }
   body .container .about .space-image {
@@ -313,6 +314,14 @@ footer {
     width: 120%;
     justify-content: center;
     align-items: center;
+  }
+  body .home .walk .walk-text .btn {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 30px 40px;
   }
   body .home .walk .walk-img {
     width: 120%;
