@@ -1,1 +1,13 @@
 // Mixins Here
+.flexH (@j: center, @a: center){
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+
+.flexV (@j: center, @a: center){
+    display: flex;
+    flex-direction: column;
+    justify-content: @j;
+    align-items: @a;
+}
