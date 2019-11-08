@@ -1,9 +1,16 @@
 // Home Content
 
 .home {
+  .main-header-img{
+    .warped();
+    @media @phone{
+      width: 100%;
+      border-radius: none;
+    }
+  }
 
   .intro {
-
+    background-color: none;
     h2 {
       padding: 15px;
     }
@@ -18,6 +25,21 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .blast{
+      @media @phone {
+        width: 100%;
+      }
+    }
+    .sky{
+      @media @phone {
+        display: none;
+      }
+    }
+    .launch{
+      @media @phone {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -42,13 +64,20 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    border-bottom: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 20px;
+    }
 
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,18 +87,52 @@
       }
 
       .btn {
+        .new-btn(@btn-bg-color, 25%, white);
+        &:hover{
+          background: white;
+          color: @btn-bg-color;
+        }
+        @media @phone {
+          width: 100%;
+          padding: 6.5%;
+
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        margin-left: 0%;
+      }
       
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        .warped();
       }
     }
+  }
+  .earth{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 300px;
+    height: 300px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg);
+    border-radius: 50%;
+    background-size:cover;
+    box-shadow: -20px -20px 50px 2px #000000 inset, 0 0 20px 2px #000000;
+    animation: spin 30s linear alternate infinite;
+  }
+
+  @keyframes spin{
+    100%{background-position: 100%;}
   }
 }// home
