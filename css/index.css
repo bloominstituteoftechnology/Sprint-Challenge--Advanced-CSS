@@ -251,7 +251,7 @@ footer {
   height: 100%;
 }
 .home .space-images img:active {
-  transform: translate(260px);
+  transform: translate(264px);
 }
 @media (max-width: 500px) {
   .home .space-images img {
