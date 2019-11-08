@@ -1,1 +1,40 @@
 // Navigation code here
+
+header.nav {
+    .flex-layout(column,center,center);
+    width:100%;
+    background:@wild-sand;
+    font:@header-font-color;
+    .fixed-nav();
+    opacity:.8;
+
+  
+    h1{//h1 begin
+        
+        padding-top:2%;
+        
+    }
+
+
+    nav {//nav begin
+        .flex-layout(row,space-between,center);
+        width:40%;
+        padding:2%;
+
+        @media @mobile {
+            width:100%;
+        }
+        a {//a begin
+            text-decoration: none;
+            color:@header-font-color;
+            font-size: 1.6rem;
+            &:hover {
+                // The compiled color returned is #006667 
+                  .bg-font-color();
+                }
+        }//a end
+
+    }//nav end
+
+
+}

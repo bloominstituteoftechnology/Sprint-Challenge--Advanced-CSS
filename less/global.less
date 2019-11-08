@@ -10,11 +10,22 @@ html {
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+  
+
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+  
+  &:hover {
+    // The compiled color returned is #006667 
+      color: darken(red, 5%)
+    }
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
@@ -28,6 +39,10 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  &:hover {
+    // The compiled color returned is #006667 
+      color: darken(green, 5%)
+    }
 }
 
 .container {
@@ -36,3 +51,4 @@ p {
   margin: 0 auto;  
 }
 
+//escaping

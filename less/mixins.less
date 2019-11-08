@@ -1,1 +1,34 @@
 // Mixins Here
+.flex-layout(@direction,@justify,@align){
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:@direction;
+    justify-content:@justify;
+    align-items: @align;
+}
+
+.signup-btn(@bg-color,@width,@padding){
+    background: @bg-color;
+    width:@width;
+    border-radius:2px;
+    color:white;
+    text-align:center;
+    padding:@padding;
+}
+
+.img-sizer(@width,@radius){
+    width:@width;
+    border-radius:@radius;
+}
+
+.fixed-nav(){
+    position: fixed;
+    top: 0;
+}
+
+.bg-font-color(){
+    background-color: darken(black, 5%);
+    color: white;
+}
+
+@mobile: ~"(max-width: 500px)";
