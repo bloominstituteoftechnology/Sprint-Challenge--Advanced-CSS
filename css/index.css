@@ -168,7 +168,7 @@ p {
 .nav h1 {
   color: #23293B;
   font-size: 4rem;
-  margin: 2%;
+  margin: 5% 0% 2% 0%;
 }
 .nav nav {
   display: flex;
@@ -178,6 +178,9 @@ p {
   color: #23293B;
   margin-bottom: 1%;
   font-weight: bold;
+  position: fixed;
+  background-color: rgba(127, 255, 212, 0.432);
+  padding: 1%;
 }
 .nav nav a {
   text-decoration: none;
