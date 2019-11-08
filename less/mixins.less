@@ -1,1 +1,25 @@
 // Mixins Here
+
+.p-styles {
+    color: rgb(71, 70, 70);
+    font-size: 16px;
+  }
+  
+  .h3-styles {
+    color: rgb(15, 5, 71);
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
+
+  .button (@color, @font-size) {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+	width: 10rem;
+    border-radius: 1rem;
+    font-size: @font-size;
+    padding: 5px 16px 5px 16px;
+    background-color: darkblue;
+    color: @color;
+}
