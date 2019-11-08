@@ -1,11 +1,11 @@
 // Mixins Here
-.buttonsettings(){ 
+.buttonsettings(@background-color, @color){ 
     width: 10rem;
     height: 3.5rem;
     border-radius: .7rem;
-    color: white;
+    color: @color;
     font-weight: bold;
-    background-color: black;
+    background-color: @background-color;
     @media @phone {
         width: 100%;
         display: flex;
@@ -15,20 +15,25 @@
         height: 7rem;
     }
 }
-.hovereffect(){
-    opacity: .8;
+.buttonhoversettings(@hovbg, @hovcol){
+    color: @hovcol;
+    background-color: @hovbg;
+}
+.hovereffect(@color){
     font-weight: bold;
+    color: @color;
+    font-size: 1.8rem;
 }
 /*
 DONE --Navigation Styles: Use the navigation.less file for styling.
 
 DONE --Main Content Styles: Use the home-page.less file for styling
 
-LESS Mixins: Create and use 2 different mixins to aid your styling. Use the mixins.less file for your mixins
+DONE --LESS Mixins: Create and use 2 different mixins to aid your styling. Use the mixins.less file for your mixins
 
-LESS Parametric Mixin: create a parametric mixin that is used to create the sign up button styles.
+DONE --LESS Parametric Mixin: create a parametric mixin that is used to create the sign up button styles.
 
-Use at least 2 parameters to create your button
+DONE --Use at least 2 parameters to create your button
 
-Create a hover state that swaps the background color and font color of the base button styles.
+DONE --Create a hover state that swaps the background color and font color of the base button styles.
 */

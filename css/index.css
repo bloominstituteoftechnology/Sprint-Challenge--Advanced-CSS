@@ -3,13 +3,13 @@ DONE --Navigation Styles: Use the navigation.less file for styling.
 
 DONE --Main Content Styles: Use the home-page.less file for styling
 
-LESS Mixins: Create and use 2 different mixins to aid your styling. Use the mixins.less file for your mixins
+DONE --LESS Mixins: Create and use 2 different mixins to aid your styling. Use the mixins.less file for your mixins
 
-LESS Parametric Mixin: create a parametric mixin that is used to create the sign up button styles.
+DONE --LESS Parametric Mixin: create a parametric mixin that is used to create the sign up button styles.
 
-Use at least 2 parameters to create your button
+DONE --Use at least 2 parameters to create your button
 
-Create a hover state that swaps the background color and font color of the base button styles.
+DONE --Create a hover state that swaps the background color and font color of the base button styles.
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -196,8 +196,9 @@ nav a {
   color: black;
 }
 nav a:hover {
-  opacity: 0.8;
   font-weight: bold;
+  color: #00264d;
+  font-size: 1.8rem;
 }
 footer {
   color: #22283B;
@@ -329,7 +330,7 @@ button {
   border-radius: 0.7rem;
   color: white;
   font-weight: bold;
-  background-color: black;
+  background-color: #00264d;
 }
 @media (max-width: 500px) {
   button {
@@ -340,6 +341,10 @@ button {
     margin-bottom: 0rem;
     height: 7rem;
   }
+}
+button:hover {
+  color: black;
+  background-color: grey;
 }
 @media (max-width: 500px) {
   .sky {
