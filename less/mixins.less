@@ -1,1 +1,43 @@
-// Mixins Here
+// Parametric Mixins Here
+.buttonMan(@textColor, @backColor, @width: 12rem) {
+  color: @textColor;
+  background-color: @backColor;
+  display: block;
+  border-radius: 1rem;
+  width: @width;
+  font-size: 20px;
+  padding: 1rem;
+
+  &:hover {
+    background-color: @textColor;
+    color: @backColor;
+  }
+}
+
+//Mixins Here
+.centerFlex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerColumn() {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.mainColumn() {
+  display: flex;
+  justify-contetn: center;
+  flex-direction: column;
+}
+
+.navFlex() {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+//Media Escapes
+@phone: ~"(max-width: 500px)";
+@desktop: ~"(min-width: 800px)";
