@@ -1,15 +1,20 @@
 // Home Content
-
-.home {
-
-  .intro {
+.space{
+  padding-bottom: 2%;
+  text-align: center;
+  font-size: 33px;
+}
+.intro {
 
     h2 {
-      padding: 15px;
+        padding: 15px;
+        font-weight: bold;
+        .bold();
+        font-size: 25px;
     }
 
-    p {
-      padding:0 15px;
+    .p-intro {
+      padding:1% 0;
     }
   
   }
@@ -32,6 +37,7 @@
 
     h3 {
       margin-top: 11px;
+      .bold();
     }
 
     p {
@@ -51,6 +57,7 @@
 
       h3 {
         margin-bottom: 10px;
+        .bold();
       }
 
       p {
@@ -58,6 +65,36 @@
       }
 
       .btn {
+          display: flex;
+          text-align: center;
+          height: 30%;
+          align-items: center;
+          justify-content: center;
+          /*width: 30%;
+          margin: 5% 5%;
+          height: 20%;
+          width: 50%;
+          border-radius: 8px;*/
+      
+      }
+      .sign-up(@width, @color) {
+        margin-left: 18%;
+        margin-top: 7%;
+        background-color: @btn-bg-color;
+        color: white;
+        width: 50%;
+        margin: 5% 5%;
+        height: 50%;
+        border-radius: 8px;
+        justify-content: center;
+        height: 70%;
+        font-size: 30px;
+              
+        &:hover{
+          background-color: white;
+          color: @btn-bg-color;
+
+        }
       }
     }
 
@@ -72,4 +109,4 @@
       }
     }
   }
-}// home
+// home
