@@ -160,27 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-header h1 {
+.header h1 {
   font-size: 5rem;
   padding: 21px 0;
 }
-header nav {
+.header nav {
   font-size: 1.5rem;
   padding-bottom: 12px;
 }
-header nav a {
+.header nav a {
   text-decoration: none;
   padding: 0 21px;
   color: black;
 }
 /*  @color: blue;
-   @bg-color: red;
-*/
+   @bg-color: red;  */
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -240,11 +239,11 @@ footer {
 }
 .home .walk .walk-text .btn a {
   text-decoration: none;
-  color: white;
-  background-color: #333333;
   border-radius: 5px;
   padding: 9px 60px;
   font-size: 1.5rem;
+  color: white;
+  background: #222222;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -256,12 +255,51 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  body {
-    color: red;
-    font-size: smaller;
-    width: 500px;
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    max-width: 500px;
   }
   a {
-    background: blue;
+    font-size: 1.3rem;
+  }
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+  .space-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .space-images img.blast {
+    max-width: 500px;
+    width: 94%;
+  }
+  .home .walk {
+    margin: 0;
+    border-top: 1px solid;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .home .walk .walk-img {
+    max-width: 500px;
+    width: 94%;
+    display: flex;
+    order: 1;
+  }
+  .home .walk .walk-text {
+    max-width: 500px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    padding: 5px 10px;
   }
 }
