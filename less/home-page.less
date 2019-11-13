@@ -1,5 +1,8 @@
 // Home Content
+// Mobile var
+@import 'variables.less';
 
+@phone: ~'(max-width:500px)';
 .home {
 
   .intro {
@@ -45,8 +48,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      .center();
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: 0px;
+      padding: initial;
+    }
 
     .walk-text {
+      @media @phone{
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
@@ -58,6 +71,18 @@
       }
 
       .btn {
+        .center();
+        border: 1px solid black;
+        width: 25%;
+        background-color: @ebony-clay;
+        color: @porcelain;
+        font-size: 1.7rem;
+        height: 12%;
+        border-radius: 5px;
+      }
+      .btn:hover {
+        background-color: pink;
+        color: black;
       }
     }
 
@@ -73,3 +98,30 @@
     }
   }
 }// home
+@media(max-width: 500px){
+  
+  .space-images .sky{
+    display: none;
+  }
+  .space-images .launch{
+    display: none;
+  }
+  .space-images{
+    .center();
+  }
+  .walk{
+    .center();
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0px;
+    padding: initial;
+  }
+  .walk-img{
+    img{
+      width: 95%;
+    }
+  }
+  .walk-text{
+    width: 95%;
+  }
+}//Media Ends

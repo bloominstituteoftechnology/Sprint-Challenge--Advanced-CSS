@@ -1,1 +1,24 @@
 // Navigation code here
+@import 'variables.less';
+.Page-head{
+    background-color: @porcelain;
+  }
+  .top-header{
+    .center();
+    h2{
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+  }
+  nav{
+    display: flex;
+    .custom-layout(center, center);
+    justify-content: space-evenly;
+     a {
+      .hover();
+      text-decoration: none;
+      color: @ebony-clay;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+     }
+    }
