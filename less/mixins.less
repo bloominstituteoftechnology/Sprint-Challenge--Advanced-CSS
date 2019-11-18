@@ -1,1 +1,51 @@
 // Mixins Here
+
+
+
+.btn-format(@size, @bord-rad) { // mixin para 1
+    color: @porcelain;
+    background-color: @btn-bg-color;
+    width: @size;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: @bord-rad;
+    text-align: center;
+    font-weight: bold;
+        &:hover {
+        cursor: pointer;
+        color: @btn-bg-color;
+        background-color: @porcelain;
+    }
+}
+
+.spin(@color) { // mixin para 2
+    &:hover {
+    cursor: pointer;
+    transform: rotateY(-360deg);
+    transition-duration: 1000ms;
+    color: @color;
+    }    
+}
+
+.for-mobile(@flex-dir, @just) { // mixin para 3
+    display: flex;
+    flex-direction: @flex-dir;
+    justify-content: @just;
+}
+
+.mob-pad(){ // mixin 1
+    width: 100%;
+    padding: 0 3%;
+}
+
+.hide() { // mixin 2
+    display: none;
+}
+
+.hover() {
+    &:hover {
+        cursor: pointer;
+        color: @porcelain;
+        background-color: @btn-bg-color;
+    }
+}

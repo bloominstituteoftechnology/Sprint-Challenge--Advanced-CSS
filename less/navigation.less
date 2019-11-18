@@ -1,1 +1,50 @@
 // Navigation code here
+
+
+.test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin: 1% 0 0 0;
+      
+      
+      
+
+      @media @phone {
+          margin: 1% 0;
+      }
+  }
+
+  .nav {
+      display: flex;
+      justify-content: center;
+      margin: 1% 0;
+      
+      @media @phone {
+          margin: 3% 0;
+      }
+      
+      a {
+          margin: 0 1.5%;
+          text-decoration: none;
+          color: @main-font-color;
+          font-weight: bold;
+          font-size: 1.5rem;
+          .hover();
+
+      }
+
+  }
+
+
+}
