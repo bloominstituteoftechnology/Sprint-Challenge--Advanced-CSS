@@ -209,6 +209,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  /*.sky, .lunch{
+  .mixins-none
+}
+*/
 }
 .home .space-images img {
   width: 28%;
@@ -220,12 +224,6 @@ footer {
   .home .space-images img {
     width: 90%;
     margin: 0 5%;
-  }
-}
-@media (max-width:500px) {
-  .home .space-images .sky,
-  .home .space-images .lunch {
-    display: none;
   }
 }
 .home .visit-planets {
@@ -299,6 +297,6 @@ footer {
 }
 .home .walk-img img {
   width: 100%;
-  height: 0px;
+  height: auto;
   border-radius: 10px;
 }
