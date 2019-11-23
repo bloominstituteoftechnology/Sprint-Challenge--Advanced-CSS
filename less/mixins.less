@@ -1,1 +1,30 @@
 // Mixins Here
+.margin{
+    margin: 0 auto; 
+   padding-left:200px;
+   max-width: 800px;
+}
+.nav{
+    opacity: .70;
+    background-color: #eee; 
+    font-size: large;
+}
+
+@bgcolor: darkblue;
+@padding: 10px;
+@border-radius: 10px;
+@color: white;
+@font: 2rem;
+
+.btn{
+    max-width: 100px;
+    background:@bgcolor;
+    padding:@padding;
+    border-radius:@border-radius;
+    color:@color;
+    font-size: @font;
+     }
+     .btn:hover{
+         background: blue;
+         color:salmon;
+     }
