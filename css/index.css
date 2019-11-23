@@ -92,14 +92,10 @@ p {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border-radius: 5px;
   border: 2px solid black;
   width: 8rem;
   height: 2rem;
-  text-align: center;
   padding-top: 0.4rem;
-  background-color: #23293B;
-  color: #F6F6F6;
 }
 .home .walk .walk-img {
   width: 46%;
