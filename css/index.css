@@ -85,6 +85,16 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  border-radius: 5px;
+  border: 2px solid black;
+  width: 8rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 0.4rem;
+  background-color: #23293B;
+  color: #F6F6F6;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -93,6 +103,36 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.flexaround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sidepadding {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+nav p {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav .navbar {
+  font-size: 1.3rem;
+  padding-top: 2rem;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-bottom: 1rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -222,3 +262,4 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@headers : font-size=5rem;
