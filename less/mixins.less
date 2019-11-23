@@ -27,12 +27,20 @@
     padding: 10px;
 }
 
-.btn-style() {
+.btn-style(@font-color, @btn-bg-color) {
+    color: @font-color;
+    background-color: @btn-bg-color;
     font-size: 2rem;
-    color: white;
     padding: 10px;
     width: 100px; 
-    background-color: @btn-bg-color;
     border-radius: 5px;
-}
 
+    @media @phone {
+        font-size: 1.5rem;
+        padding: 20px;
+        margin: 0 auto;
+        width: 350px; 
+        height: 60px;
+        border-radius: 5px;
+    }
+}
