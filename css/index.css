@@ -94,8 +94,12 @@ p {
 .home .walk .walk-text .btn {
   border: 2px solid black;
   width: 8rem;
-  height: 2rem;
+  height: 2.5rem;
   padding-top: 0.4rem;
+  text-align: center;
+  background: black;
+  color: white;
+  border-radius: 10px;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -105,6 +109,26 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .btn {
+    padding-left: 100%;
+    padding-right: 100%;
+    color: white;
+    padding-bottom: 2.5rem;
+  }
+}
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 .flexaround {
   display: flex;
