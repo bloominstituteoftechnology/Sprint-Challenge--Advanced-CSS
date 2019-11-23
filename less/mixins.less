@@ -1,1 +1,16 @@
 // Mixins Here
+// ---------------parametric mixins
+
+// flex 
+.display-flex(@justify-content,@align-items){
+    display: flex;
+     justify-content: @justify-content;
+     align-items: @align-items;
+    }
+    
+    // button
+    .button(@width,@bg,@color){
+        width: @width;
+        background: @bg;
+        color: @color;
+    }

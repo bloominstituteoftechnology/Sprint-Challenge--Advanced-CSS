@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -17,19 +18,30 @@
 <body>
 
  <!-- navigation code here -->
+ <section class="nav">
+    <h1>SpaceWalkers</h1>
+    <nav class="nav-bar">
+     <a href="index.html">Home</a>
+     <a href="#">About Us</a>
+     <a href="Blog.html">Blog</a>
+     <a href="#">Contact</a>
+     <a href="#">Sign In</a>
+   </nav>
+ </section> 
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
-
+      <section class="header-img">
+        <img src="img/main-header.png" alt="header-space img">
+      </section>
+      
       <h2>Lift Off</h2>
-    
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
     </header>
 
     <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
+        <img src="img/blast.png" class="blast" alt="Space sky image">
         <img src="img/sky.png" class="sky" alt="Space sky image">
         <img src="img/launch.png" class="launch" alt="Launching rocket">
     </section>
@@ -51,20 +63,56 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
+        <div class="btn" onclick="showDiv()">
           Sign Up
         </div>
-      </div>
       
+      
+     
+      <div id="sign-up" class="login" style="display: none; margin:3rem; ">
+        <form>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group inline-form">
+                <input type="email" class="form-control" id="email" Placeholder="email">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group inline-form">
+                <input type="password" class="form-control" id="pwd"  Placeholder="password">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-default onclick="alert()">Submit</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
       <div class="walk-img">
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
+         
+      
 
     </section>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
+    <script>  /*js for subcription signup*/
+      function showDiv() {
+         document.getElementById('sign-up').style.display = "block";
+       }
+      function alert(){
+         alert("thankyou for subscribing");
+      }
+    </script>
 
   </div>
 </body>
