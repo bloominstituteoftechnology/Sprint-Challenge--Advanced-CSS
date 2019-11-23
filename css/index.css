@@ -166,6 +166,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  border: #F1F1F1;
   height: 80%;
 }
 .navigation h1 {
@@ -194,7 +195,7 @@ footer {
   align-items: center;
 }
 .home .intro .mainheaderpng {
-  border-radius: 10px;
+  border-radius: px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -218,6 +219,7 @@ footer {
 }
 .home .visit-planets h3 {
   margin-top: 11px;
+  color: #22283A;
 }
 .home .visit-planets p {
   margin-top: 13px;
@@ -234,12 +236,13 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+  color: #22283A;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #3d3d3d;
+  background-color: #22283A;
   padding: 9px;
   width: 100px;
   height: 40px;
