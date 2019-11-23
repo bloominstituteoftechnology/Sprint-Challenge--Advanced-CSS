@@ -10,21 +10,9 @@
     font-size: large;
 }
 
-@bgcolor: darkblue;
-@padding: 10px;
-@border-radius: 10px;
-@color: white;
-@font: 2rem;
 
-.btn{
-    max-width: 100px;
-    background:@bgcolor;
-    padding:@padding;
-    border-radius:@border-radius;
-    color:@color;
-    font-size: @font;
-     }
-     .btn:hover{
-         background: blue;
-         color:salmon;
-     }
+
+.btn(@bgcolor, @padding){
+    background: @bgcolor;
+    padding: @padding;
+}
