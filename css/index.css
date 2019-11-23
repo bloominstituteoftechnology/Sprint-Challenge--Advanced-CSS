@@ -188,17 +188,6 @@ p {
   font-size: 1.5rem;
   padding: 10px;
 }
-@media (max-width: 500px) {
-  .blast {
-    width: 300px;
-  }
-  .sky {
-    visibility: none;
-  }
-  .launch {
-    visibility: none;
-  }
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -217,6 +206,11 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 500px;
+  }
 }
 .home .space-images {
   display: flex;
@@ -245,16 +239,16 @@ footer {
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.home .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.home .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.home .walk-text .btn {
   color: white;
   background-color: #22283A;
   font-size: 2rem;
@@ -266,16 +260,16 @@ footer {
   align-items: center;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .walk-text .btn {
     font-size: 1.5rem;
     padding: 20px;
-    margin: 0 auto;
-    width: 350px;
+    margin-right: 20px;
+    width: 450px;
     height: 60px;
     border-radius: 5px;
   }
 }
-.home .walk .walk-text .btn:hover {
+.home .walk-text .btn:hover {
   color: #22283A;
   background-color: white;
   font-size: 2rem;
@@ -284,20 +278,20 @@ footer {
   border-radius: 5px;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn:hover {
+  .home .walk-text .btn:hover {
     font-size: 1.5rem;
     padding: 20px;
-    margin: 0 auto;
-    width: 350px;
+    margin-right: 20px;
+    width: 450px;
     height: 60px;
     border-radius: 5px;
   }
 }
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -317,5 +311,20 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
+  }
+  .home .walk {
+    margin-top: 10px;
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+  }
+  .home .walk .walk-img {
+    width: 450px;
+    margin: auto 0;
+    margin-right: 10px;
+  }
+  .home .walk .walk-text {
+    width: 475px;
+    padding-right: 10px;
+    padding-top: 10px;
   }
 }
