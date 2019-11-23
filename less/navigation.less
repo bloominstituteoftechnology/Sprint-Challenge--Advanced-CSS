@@ -1,1 +1,33 @@
 // Navigation code here
+.navbar {
+    height: 7vw;
+    width: 100%;
+    color: @nav-font;
+    background: @nav-bg;
+    border-bottom: @nav-border;
+    font-family: "Russo One", sans-serif;
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        font-size: 25px;
+        color: @nav-font;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            color: grey;
+            padding: 5px;
+            margin-right: 10px;
+            margin-top: 5px;
+            &:hover {
+                color: black;
+                // border-bottom: 1px solid black;
+                background: lightgrey;
+                border-radius: 10px;
+            }
+        }
+    }
+}
