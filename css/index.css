@@ -95,11 +95,12 @@ p {
   border: 2px solid black;
   width: 8rem;
   height: 2.5rem;
-  padding-top: 0.4rem;
+  padding-top: 0.6rem;
   text-align: center;
   background: black;
   color: white;
   border-radius: 10px;
+  background-color: #454A59;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -120,7 +121,6 @@ p {
 }
 nav {
   overflow: hidden;
-  background-color: #333;
 }
 nav a {
   float: left;
