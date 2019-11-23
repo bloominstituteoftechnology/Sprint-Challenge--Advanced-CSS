@@ -1,5 +1,11 @@
 // Mixins Here
 
+.center-content() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-container-position() {
     display: flex;
     flex-direction: column;
@@ -19,5 +25,14 @@
     color: black;
     font-size: 1.5rem;
     padding: 10px;
+}
+
+.btn-style() {
+    font-size: 2rem;
+    color: white;
+    padding: 10px;
+    width: 100px; 
+    background-color: @btn-bg-color;
+    border-radius: 5px;
 }
 
