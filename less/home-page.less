@@ -3,7 +3,7 @@
 .home {
     .intro {
         .mainheaderpng {
-            border-radius: px;
+            border-radius: 1px;
         }
 
         h2 {
@@ -63,20 +63,20 @@
             .btn {
                 background-color: @btn-bg-color;
                 padding: 9px;
-                width: 100px;
+                width: @lineheightandwidth;
                 height: 40px;
                 border-radius: 4px;
                 text-align: center;
                 vertical-align: middle;
-                line-height: 100px;
+                line-height: @lineheightandwidth;
                 box-shadow: 4px 4px 4px #999;
                 p {
                     font-size: 1.5em;
                     font-weight: bold;
-                    color: rgb(253, 250, 250);
+                    color: @buttonparacolor;
                 }
                 &:hover {
-                    background: (253, 250, 250);
+                    background: @buttonparacolor;
                     color: @btn-bg-color;
                 }
             }
@@ -94,3 +94,15 @@
         }
     }
 } // home
+
+@media (max-width: 500px) {
+    .space-images {
+        display: block;
+
+        img.sky {
+            display: none; 
+            margin: 0 auto; 
+       
+        }
+    }
+}

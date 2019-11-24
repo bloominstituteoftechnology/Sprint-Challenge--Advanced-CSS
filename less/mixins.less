@@ -1,3 +1,39 @@
 // Mixins Here
 
-.walk, 
+.nav-tags () {
+    background: @navbackground; 
+    border: @seashell; 
+    height: 80%; 
+}
+
+.center () {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+
+/* my-hover-mixin()  {
+    &:hover {
+        background: @buttonparacolor;
+        color: @btn-bg-color; 
+    }
+    button () {
+        
+    }
+} */ 
+
+
+
+
+
+//parametric mixins here 
+
+.navigation(.nav-tags (), .center()) 
+
+.btn (.btn p(),) .center()) 
+
+
+
+
