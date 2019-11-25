@@ -1,1 +1,25 @@
 // Mixins Here
+
+
+.bstyle(@border-radius:4px, @background-color:black, @color:white , @text-align:center, @font-size:16px ,  @padding:5px,  @width:30% ){
+ 	border-radius: @border-radius ;
+ 	background-color: @background-color ;
+ 	color: @color ;
+ 	text-align: @text-align;
+ 	font-size: @font-size;
+ 	padding:  @padding;
+ 	width:  @width;
+
+ &:hover{
+         background: yellow;
+         color: red; 
+        }
+  @media(max-width: 500px)
+  		{
+       
+
+    }
+	
+}
+
+
