@@ -283,6 +283,7 @@ footer {
   }
 }
 .home .walk .walk-text form input {
+  border-radius: 5px;
   margin-right: 5px;
   font-size: 1.6rem;
   padding: 5px;
@@ -292,6 +293,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text form input {
     padding: 30px;
+    margin: 0px 0px 5px;
   }
 }
 .home .walk .walk-text .btn {
