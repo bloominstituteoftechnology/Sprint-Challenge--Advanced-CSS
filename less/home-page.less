@@ -1,7 +1,9 @@
 // Home Content
 
-.home {
 
+
+.home {
+  
   .intro {
 
     h2 {
@@ -15,6 +17,7 @@
   }
 
   .space-images {
+   
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -58,6 +61,10 @@
       }
 
       .btn {
+        .button(@btn-bg-color,@porcelain);
+        &:hover {
+        background-color: @porcelain;
+        color: @btn-bg-color;
       }
     }
 
@@ -73,3 +80,12 @@
     }
   }
 }// home
+
+// @media @phone {
+//   .space-images{
+//   display: none;
+//  }
+// }
+body {
+  background-color: red;
+}
