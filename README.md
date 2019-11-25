@@ -38,11 +38,19 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Describe what it means to be mobile first vs desktop first.
 
+>A desktop first website begins with a desktop design which is modified to become mobile-friendly, typically using `max-width` media queries. A mobile first website does the opposite, starting mobile and becoming more desktop-friendly using `min-width` media queries instead.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+>62.5% is 10/16. Using that percentage changes the default size from 16 px to 10px, simplifying the usage of math with `rem` units. For example, it makes `2.5rem` = `25px`. If a user manually specifies a larger font size, the webpage will still scale up accurately.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+>A preprocessor adds additional features to base CSS, but will still be converted to vanilla CSS before being read by the browser. These include nested selectors, conditionals, variables, and extra functions.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+>I have most enjoyed using variables to save effort on repeated colors, font sizes, etc. Nesting has given me the most trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
