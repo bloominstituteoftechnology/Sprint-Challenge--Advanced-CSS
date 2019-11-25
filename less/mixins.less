@@ -1,11 +1,12 @@
 // Mixins Here
-.button-mixin {
-	background-color:@btn-bg-color;
-	border-radius:5px;
+.button-mixin(@color; @size) {
+	background-color:@color;
+	border-radius:@size;
 	display:inline-block;
 	color: white;
     padding:12px 44px;
     font-size: 1.75rem;
+    cursor: pointer;
 
 }
 .img-size{

@@ -39,8 +39,14 @@
 
 .walk{
     .btn {
-        .button-mixin()
+        .button-mixin(@btn-bg-color; 5px);
+
+        &:hover { 
+            background-color: darken(teal, 5%);
+            color: red;
+          }
     }
+    
 }
 
 @media @mobile{
