@@ -1,6 +1,21 @@
 html {
   background: red;
 }
+.btn {
+  border: 1px solid gray;
+  padding: 8px;
+  width: 4px 90%;
+}
+.btn button.dk-btn {
+  color: red;
+  background: blue;
+  width: 80%;
+  margin-left: 10%;
+}
+.btn:hover {
+  background: green;
+  color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)

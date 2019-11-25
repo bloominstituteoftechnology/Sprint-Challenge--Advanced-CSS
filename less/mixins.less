@@ -1,1 +1,19 @@
 // Mixins Here
+@dk-var: 5;
+
+.btn {
+  border: 1px solid gray;
+  padding: 8px;
+  width: 4px (@dk-var*2) * 9%;
+
+  button.dk-btn {
+    color: red;
+    background: blue;
+    width: (@dk-var*4) * 4%;
+    margin-left: @dk-var*2%;
+  }
+  &:hover {
+    background: green;
+    color: white;
+  }
+}
