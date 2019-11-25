@@ -1,1 +1,27 @@
 // Mixins Here
+
+.button-box(@background-color, @width, @height, @border-radius, @font-size, @color, @display, @justify-content, @align-items) {
+    background-color: @background-color;
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    font-size: @font-size;
+    color: @color;
+    display: @display;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background: lightgray;
+}
+
+.space-pic {
+    font-family: 'Russo One', sans-serif;
+    color: @header-font-color;
+    font-size: 40px;
+    text-align: center;
+}
