@@ -1,1 +1,85 @@
 // Navigation code here
+.navigation{
+    display: flex;
+    justify-content: center;
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            align-self: center;
+            font-size: 3.75rem;
+            margin: 10px auto;
+            padding: 0 0 0 0;
+        }
+    
+        ul {
+            display: inline-block;
+           // justify-content: space-between;
+            //align-content: center;
+            font-size: 1.50rem;
+            font-family: 'Russo One', sans-serif;
+            color: @header-font-color;
+            li {
+                display: inline;
+            //justify-content: space-between;
+            color: @header-font-color;
+            margin: 10px 30px;
+            padding: 0 0 0 0;
+                a {
+                    display: inline;
+                    text-decoration: none;
+                    color: @header-font-color;
+                }
+            }
+        }
+    }
+
+}
+
+.walk{
+    .btn {
+        .button-mixin(@btn-bg-color; 5px);
+
+        &:hover { 
+            background-color: darken(teal, 5%);
+            color: red;
+          }
+    }
+    
+}
+
+@media @mobile{
+    body{
+        .home{
+            .space-images{
+                .blast{
+                    .img-size()
+        
+                }
+                .sky{
+                    display: none;
+                }
+                .launch{
+                    display: none;
+                }
+        
+            }
+    
+            .walk{
+                display: flex;
+                flex-direction: column-reverse;
+                height: 100%;
+                width: 100%;
+                .walk-text{
+                    width: 100%;
+                }
+                .walk-img{
+                    width: 100%;
+                    margin-left: 4%;
+                }
+            }
+        }
+    }
+
+}
