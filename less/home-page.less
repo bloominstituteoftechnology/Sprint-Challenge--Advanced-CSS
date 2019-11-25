@@ -79,7 +79,22 @@
       p {
         margin-bottom: 26px;
       }
-
+      form {
+        flex-flow: row nowrap;
+        @media @phone {
+          flex-flow: column nowrap;
+        }
+      input {
+        @media @phone {
+          padding:30px;
+        }
+        margin-right:5px;
+        font-size: 1.6rem;
+        padding:5px;
+        border:1px solid @button-background;
+        background:#f4f4f4;
+      }
+    }
       .btn {
         width:auto;
         padding:10px 20px;
@@ -111,5 +126,8 @@
         border-radius: 10px;
       }
     }
+  }
+  form {
+    display:none;
   }
 }// home

@@ -82,7 +82,8 @@ summary,
 time,
 mark,
 audio,
-video {
+video,
+input {
   margin: 0;
   padding: 0;
   border: 0;
@@ -161,9 +162,15 @@ p {
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
+  margin: 108px auto;
 }
 nav {
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: #ffffffdd;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -267,6 +274,26 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text form {
+  flex-flow: row nowrap;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text form {
+    flex-flow: column nowrap;
+  }
+}
+.home .walk .walk-text form input {
+  margin-right: 5px;
+  font-size: 1.6rem;
+  padding: 5px;
+  border: 1px solid #23293B;
+  background: #f4f4f4;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text form input {
+    padding: 30px;
+  }
+}
 .home .walk .walk-text .btn {
   width: auto;
   padding: 10px 20px;
@@ -307,4 +334,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home form {
+  display: none;
 }
