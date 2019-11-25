@@ -34,6 +34,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+>An adaptive website typically includes different static versions of the page for mobile, desktop, and tablet views. Whereas a responsive website will adjust its appearance dynamically through a wide range of display widths.
+
 2. Describe what it means to be mobile first vs desktop first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
