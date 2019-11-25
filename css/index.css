@@ -248,3 +248,12 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+@media (max-width: 501px) {
+  .home .walk .home {
+    display: flex ;
+    flex-direction: column;
+  }
+  .home .walk .blast {
+    width: 100%;
+  }
+}
