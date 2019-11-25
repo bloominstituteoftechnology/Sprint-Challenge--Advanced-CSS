@@ -11,6 +11,9 @@
     p {
       padding:0 15px;
     }
+    img {
+      border-radius: 5px;
+    }
   
   }
 
@@ -58,6 +61,12 @@
       }
 
       .btn {
+        .button(@button-text,@button-background);
+        border:1px solid @button-background;
+        &:hover {
+          .button(@button-background,@button-text);
+          border:1px solid @button-background;
+        }
       }
     }
 
