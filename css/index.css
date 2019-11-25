@@ -184,6 +184,15 @@ p {
 @media (max-width: 500px) {
   .topheader {
     font-size: 4rem;
+    justify-content: center;
+  }
+}
+.home .intro img {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 100%;
   }
 }
 footer {
