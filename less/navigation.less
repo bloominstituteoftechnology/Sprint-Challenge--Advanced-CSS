@@ -6,22 +6,31 @@
     background: @nav-bg;
     border-bottom: @nav-border;
     font-family: "Russo One", sans-serif;
+
     h1 {
         display: flex;
         justify-content: center;
-        margin: 0px;
-        font-size: 25px;
+        font-size: 30px;
         color: @nav-font;
+        position: relative;
+        top: 10%;
+        transition: lefttoright 2s ease;
     }
+
     nav {
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 25%;
+        bottom: auto;
+
         a {
             text-decoration: none;
             color: grey;
             padding: 5px;
-            margin-right: 10px;
+            margin-right: 20px;
             margin-top: 5px;
+
             &:hover {
                 color: black;
                 // border-bottom: 1px solid black;

@@ -1,1 +1,13 @@
 // Mixins Here
+
+.buttonstyles (@color, @bgcolor, @height, @width){
+  color: @color;
+  background: @bgcolor;
+  height: @height;
+  width: @width;
+  &:hover{
+    background: @color;
+    color: @bgcolor;
+    border: 1px solid black;
+  }
+}

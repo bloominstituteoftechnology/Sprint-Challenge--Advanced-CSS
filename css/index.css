@@ -9,19 +9,24 @@
 .navbar h1 {
   display: flex;
   justify-content: center;
-  margin: 0px;
-  font-size: 25px;
+  font-size: 30px;
   color: #454A59;
+  position: relative;
+  top: 10%;
+  transition: lefttoright 2s ease;
 }
 .navbar nav {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 25%;
+  bottom: auto;
 }
 .navbar nav a {
   text-decoration: none;
   color: grey;
   padding: 5px;
-  margin-right: 10px;
+  margin-right: 20px;
   margin-top: 5px;
 }
 .navbar nav a:hover {
@@ -151,16 +156,20 @@ p {
   width: 90%;
 }
 .container .sign-up {
-  color: white;
+  color: salmon;
   background: #23293B;
-  padding: 8px;
+  height: 35px;
   width: 100px;
   border: none;
   border-radius: 5px;
 }
 .container .sign-up:hover {
+  background: salmon;
+  color: #23293B;
+  border: 1px solid black;
+}
+.container .sign-up:hover {
   cursor: pointer;
-  background: #5E6164;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -289,4 +298,81 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+@keyframes lefttoright {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  body p {
+    width: 100%;
+  }
+  body .navbar {
+    height: 18vw;
+  }
+  body .navbar nav {
+    border-bottom: 2px solid #F1F1F1;
+  }
+  body .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .container .intro {
+    max-width: 100%;
+  }
+  body .space-images {
+    display: flex;
+    justify-content: center;
+  }
+  body .space-images .blast {
+    min-width: 400px;
+  }
+  body .space-images .sky {
+    display: none;
+  }
+  body .space-images .launch {
+    display: none;
+  }
+  body .walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .walk img {
+    min-width: 400px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  body .walk .walk-text {
+    min-width: 400px;
+  }
+  body .btn {
+    display: flex;
+    justify-content: center;
+  }
+  body .btn .sign-up {
+    outline: none;
+    color: salmon;
+    background: #23293B;
+    height: 60px;
+    width: 100%;
+  }
+  body .btn .sign-up:hover {
+    background: salmon;
+    color: #23293B;
+    border: 1px solid black;
+  }
+  body footer {
+    width: 100%;
+    height: 60px;
+  }
 }
