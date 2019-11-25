@@ -13,7 +13,9 @@
   color: #454A59;
   position: relative;
   top: 10%;
-  transition: lefttoright 2s ease;
+}
+.navbar h1:hover {
+  color: red;
 }
 .navbar nav {
   display: flex;
