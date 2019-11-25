@@ -1,18 +1,25 @@
 // Navigation code here
 .navigation .nav1 {
+    @media @phone {
+        width: 95%;
+    }
+   margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
+    width: 70%;
 }
 .navigation .nav1 a {
     color: black; 
     padding:5px;
     text-decoration: none;
-    text-align: center;    
-   
-
+}
+       
 
 .topheader {
-   text-align: center;
-   font-size: 5rem;
+    @media @phone {
+        font-size: 4rem;
+    }
+display: flex;
+justify-content: center;
+font-size: 5rem;
 }

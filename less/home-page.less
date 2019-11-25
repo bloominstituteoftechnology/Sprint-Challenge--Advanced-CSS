@@ -4,6 +4,11 @@
 
 .home {
   
+  @media @phone {
+    margin: 0 auto;
+    padding: 2%;
+  }
+ 
   .intro {
 
     h2 {
@@ -17,7 +22,9 @@
   }
 
   .space-images {
-   
+   @media @phone {
+    //  display: ;
+   }
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -43,6 +50,11 @@
   }
 
   .walk {
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 80%;
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -50,6 +62,9 @@
     justify-content: center;
 
     .walk-text {
+      @media @phone {
+        width: 100%
+      }
       width: 50%;
 
       h3 {
@@ -61,14 +76,20 @@
       }
 
       .btn {
+        @media @phone {
+          width: 95%;
+        }
         .button(@btn-bg-color,@porcelain);
-        &:hover {
+       &:hover {
         background-color: @porcelain;
         color: @btn-bg-color;
       }
     }
 
     .walk-img {
+      @media @phone {
+        width: 95%
+      }
       width: 46%;
       margin-left: 4%;
       
@@ -79,13 +100,7 @@
       }
     }
   }
+}
 }// home
 
-// @media @phone {
-//   .space-images{
-//   display: none;
-//  }
-// }
-body {
-  background-color: red;
-}
+
