@@ -1,3 +1,16 @@
+/* my-hover-mixin()  {
+    &:hover {
+        background: @buttonparacolor;
+        color: @btn-bg-color; 
+    }
+    button () {
+        
+    }
+} */
+/* 
+.navigation(.nav-tags (), .center()) 
+
+.btn (.btn p(),) .center()) */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,7 +148,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +156,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -166,7 +179,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border: #F1F1F1;
+  border: #f1f1f1;
   height: 80%;
 }
 .navigation h1 {
@@ -195,7 +208,7 @@ footer {
   align-items: center;
 }
 .home .intro .mainheaderpng {
-  border-radius: px;
+  border-radius: 1px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -219,7 +232,7 @@ footer {
 }
 .home .visit-planets h3 {
   margin-top: 11px;
-  color: #22283A;
+  color: #22283a;
 }
 .home .visit-planets p {
   margin-top: 13px;
@@ -236,13 +249,13 @@ footer {
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
-  color: #22283A;
+  color: #22283a;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: #22283A;
+  background-color: #22283a;
   padding: 9px;
   width: 100px;
   height: 40px;
@@ -257,6 +270,10 @@ footer {
   font-weight: bold;
   color: #fdfafa;
 }
+.home .walk .walk-text .btn:hover {
+  background: #fdfafa;
+  color: #22283a;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -265,4 +282,13 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .space-images {
+    display: block;
+  }
+  .space-images img.sky {
+    display: none;
+    margin: 0 auto;
+  }
 }
