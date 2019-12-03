@@ -164,12 +164,31 @@ h1 {
   justify-content: center;
   font-size: 3.6rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
-  align-content: center;
-  font-size: 15px;
+  align-items: center;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  background-color: #F6F6F6;
   color: #454A59;
+  border: #F1F1F1;
 }
 footer {
   color: #22283B;
@@ -180,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro h1 {
+  text-align: center;
 }
 .home .intro img {
   width: 100%;
@@ -212,11 +234,11 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -229,8 +251,9 @@ footer {
 }
 .home .walk .walk-text .btn {
   width: 33%;
+  text-align: center;
   font-size: 1.5rem;
-  padding: 11px 11px;
+  padding: 11px;
   border-radius: 10px;
   background-color: #22283A;
   color: #F6F6F6;
@@ -248,4 +271,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .walk {
+    flex-direction: column-reverse;
+  }
 }

@@ -1,12 +1,13 @@
 // Navigation code here
 
-
-
 nav {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 15px;
-    color: #454A59;
-    }
+    .custom-layout(center, center);
 
+    a {
+        padding: 20px;
+        text-decoration: none;
+        background-color: @nav-bg;
+        color: @nav-font;
+        border: @nav-border;
+    }
+}

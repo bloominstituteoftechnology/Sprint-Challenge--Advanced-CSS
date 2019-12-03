@@ -1,9 +1,18 @@
 // Mixins Here
 
-.custom-layout(@justify, @align){
+
+.custom-layout(@justify, @align) {
 	display: flex;
 	justify-content: @justify;
 	align-items: @align;
 }
-// usage
-// .custom-layout(flex-end, center);
+
+.custom-button(@btn-font, @btn-pad) {
+	font-size: @btn-font;
+	padding: @btn-pad;
+}
+
+
+// usage:
+// .custom-layout(center, center);
+// .custom-button(1.5rem, 10px);
