@@ -223,6 +223,16 @@ footer {
   width: 100%;
 }
 @media (max-width: 500px) {
+  .home .space-images .blast {
+    display: block;
+    width: 95%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -250,7 +260,7 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
-    width: 80%;
+    width: 95%;
   }
 }
 .home .walk .walk-text {
