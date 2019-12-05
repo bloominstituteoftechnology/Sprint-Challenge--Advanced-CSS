@@ -1,3 +1,9 @@
+# [NOTICE: this is an old fork]
+
+This repository has been left intact for posterity.
+
+WIP continues here: https://github.com/joepound/ACSS-Sprint
+
 # Assessing Your Advanced CSS Learning
 
 You will be updating a website using all your responsive web design and preprocessing skills from the sprint. The theme of this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
