@@ -1,3 +1,26 @@
+img {
+  animation-duration: 8s;
+  animation-delay: 0s;
+  animation-name: blast;
+  animation-timing-function: ease-in;
+}
+@keyframes blast {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,11 +187,9 @@ html {
   box-sizing: border-box;
   width: 80%;
   font-size: 62.5%;
-  border: 1px solid red;
 }
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 .walkers {
   font-size: 4rem;
@@ -190,6 +211,11 @@ nav a {
 img {
   width: 88%;
   margin-left: 5%;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-name: blast;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 h2 {
   margin-left: 3%;
@@ -203,6 +229,55 @@ section .space-images {
 }
 section.visit-planets {
   margin-left: 3%;
+}
+@media (max-width: 500px) {
+  .links {
+    font-size: 1.8rem;
+    width: 86%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images img.blast {
+    width: 93%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  img.sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  img.launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  section.walk {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .walk-img {
+    width: 100%;
+    margin-top: -30%;
+  }
+}
+@media (max-width: 500px) {
+  .walk {
+    margin-bottom: 5%;
+    width: 123%;
+  }
+}
+@media (max-width: 500px) {
+  .walk-text {
+    margin-right: 5%;
+    width: 90%;
+    margin-left: -5%;
+  }
 }
 footer {
   color: #22283B;
@@ -258,7 +333,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   border-radius: 5px;
-  width: 40%;
+  width: 70%;
   height: 50px;
   text-align: center;
   padding-top: 4%;
@@ -274,4 +349,12 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+img {
+  border-radius: 10px;
+  animation-duration: 7s;
+  animation-delay: 0s;
+  animation-name: blast;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
 }
