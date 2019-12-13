@@ -1,1 +1,30 @@
 // Mixins Here
+
+// Used in home-page.less
+.buttons(@b, @c, @hb, @hc){
+    text-align: center;
+    background-color: @b;
+    color: @c;
+    font-size: 1.5rem;
+    padding: 2% 5%;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    &:hover{
+        background-color: @hb;
+        color: @hc;
+        border: 1px solid black;
+    }
+}
+
+// Used in global.less
+.hAndP(@hc, @pc){
+    h1, h2, h3, h4, h5 {
+        font-family: 'Russo One', sans-serif;
+        color: @hc;
+      }
+      
+    p{
+        color: @pc;
+    } 
+}

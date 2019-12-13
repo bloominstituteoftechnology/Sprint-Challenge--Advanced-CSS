@@ -1,1 +1,48 @@
 // Navigation code here
+.top{
+    margin-left: 25%;
+    width: 50%;
+    position: fixed;    
+    padding: 0.2%;
+    @media @mobile{
+        background: #f4f4f4;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .company-logo {
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 2%;
+        @media @mobile{
+            background: #f4f4f4;
+        }
+    }
+
+    nav {
+        margin: 0 auto;
+        width: 42%;
+        display: flex;
+        margin-bottom: 1%;
+        justify-content: space-between;
+        @media @mobile{
+            width: 100%;
+            justify-content: space-around;
+            background: #141414;
+        }
+
+    
+        a {
+            font-size: 1.5rem;
+            color: black;
+            text-decoration: none;
+            @media @mobile{
+                color: white;
+
+            }
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}

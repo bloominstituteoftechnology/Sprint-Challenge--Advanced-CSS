@@ -14,10 +14,29 @@
   
   }
 
+  .img-space{
+    margin-top: 11%;
+    border-radius: 10px;
+    @media @mobile{
+      margin-top: 15%;
+      width: 100%;
+    }
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile{
+      flex-direction: column;
+      .sky, .launch{
+        display: none;
+      }
+      .blast{
+        width: 90%;
+        margin: 2% auto;
+      }
+    }
 
     img {
       width: 28%;
@@ -45,9 +64,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 0;
+      margin: 2% auto;
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile{
+        width: 90%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -57,13 +85,24 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn a{
+        .buttons(black,white, white,black); //Mixin
+        @media @mobile{
+          width: 100%;
+          padding: 2% 43%;
+          margin-bottom: 3%;
+          background-color: rgb(25, 25, 56);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile{
+        width: 90%;
+        margin: 2% auto;
+      }
       
       img {
         width: 100%;
