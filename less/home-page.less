@@ -71,14 +71,16 @@
     display: flex;
     justify-content: center;
     @media @phone{
-      display:flex;
+      // display:flex;
+      .flex(@display);
       flex-direction:column-reverse;
-      
+      padding:0;
     }
     .walk-text {
       width: 50%;
       @media @phone{
         width:100%;
+        
       }
     }
 
@@ -112,7 +114,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
-        
+       
       }
       @media @phone{
         width:95%;
