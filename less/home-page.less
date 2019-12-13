@@ -56,18 +56,18 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-        border-radius: 5px;
-        width: 70%;
-        height: 50px;
-        text-align: center;
-        padding-top: 4%;
-        background-color: black;
-        color: white;
-        font-size: 2rem;
-      }
     }
+    .custom-button(@btn-bg-color, @width, @height){
+      background-color: @btn-bg-color;
+      width: @width;
+      height: @height;
+      }
+      div .btn:hover{
+        background-color: blue;
+        color: red;
+      }
+      
+
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -75,16 +75,12 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 10px; 
       }
     }
   }
 }// home
-@media(max-width: 500px){
-  .btn{
-    
-  }
-} 
+@phone: ~'(max-width: 500px)';
 img {
   border-radius: 10px;
     animation-duration: 7s;
