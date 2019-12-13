@@ -6,7 +6,27 @@
                 grid-gap:5px;
           }
   .intro {
+    
+    @media (max-width:@phone){
 
+
+  }
+              
+    h2{
+      width:100%;
+      font-size:4rem;
+      display:flex;
+      text-align:center;
+      justify-content:center;
+      align-items:center;
+      padding:0% 40%;
+      @media (max-width:@phone){
+        font-size:3rem;
+
+
+    }
+      
+    }
 
     .topp{
       background-color:#efefef;
@@ -14,9 +34,17 @@
         justify-content:space-around;
         grid-gap:10px;
         padding:3% 0%;
+              @media(max-width@phone){
+                   nav {width:500px;
+                    padding:0;}
+              }
+
           h1{
             font-size:4rem;
             .flexCross();
+            text-align:center;
+            justify-content:center;
+            align-items:center;
 
             @media (max-width:@phone){
               font-size:3rem;
@@ -39,6 +67,10 @@
       .flexCross();
       @media (max-width:@phone){
                padding-bottom:5%;
+
+               img{
+                 display:none;
+               }
              }
  
  }
@@ -76,6 +108,7 @@
                       img:nth-child(3){
                         display:none;
                       }
+                      
 
             }
 
@@ -104,17 +137,42 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
+    padding: 50px 30%;
+    .flexDwn();
     justify-content: center;
+    grid-gap:3%;
 
                     @media (max-width:@phone){
-                        flex-direction:column-reverse;
                         padding:0;
                         margin:0;
                   }
-        
-            
+
+
+
+
+                    .pBtn();
+                     label{
+                       width:100%;
+                       .flexDwn();
+                           flex:1;
+                           font-size:3rem;
+
+                                input{
+                                  flex:1;
+                                  width:100%;
+                                  height:100%;
+                                }
+                     }
+
+                     .btn {
+
+                      .pBtn();
+      
+      
+                      button{
+                        .cBtn();
+                      }
+      
             }
 
     .walk-text {
@@ -134,16 +192,7 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-
-                .pBtn();
-
-
-                button{
-                  .cBtn();
-                }
-
-      }
+      
     }
 
     .walk-img {
