@@ -19,6 +19,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
   }
 
   img {
@@ -26,12 +31,27 @@
     margin: 20px 2.5%;
     border-radius: 20px;
     height: 100%;
+  }
 
-    @media @phone {
-      .sky img {
-        width: 0%;
-        display: none;
-      }
+  @media @phone {
+    .space-images .blast {
+      width: 95%;
+      margin: 0 auto;
+      height: 160px;
+      // padding-top:20%;
+      // padding-bottom: 20%;
+    }
+  }
+
+  @media @phone {
+    .space-images .sky {
+      display: none;
+    }
+  }
+
+  @media @phone {
+    .space-images .launch {
+      display: none;
     }
   }
 
@@ -63,55 +83,59 @@
 
     .walk-text {
       width: 50%;
-      @media@phone{
-        width:100%;
-      }
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-        display: block;
-        width: 30%;
-        height: 30px;
-        padding: 2.5%;
-        margin: 4%;
-        text-align: center;
-        font-size: 1.3rem;
-        border-radius: 5px;
-
-        .font-button(@btn-bg-color:#22283A, @main-border-color:#dee2e6);
-        @media @phone{
-        width:95%;
-        }
-
-        &:hover {
-          background-color: #dee2e6;
-          color: #22283a;
-        }
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      @media @phone {
-        display: box;
-        width: 95%;
-        margin:0 auto;
-        
-      }
-
-      img {
+      @media@phone {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
       }
     }
   }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 26px;
+  }
+
+  .btn {
+    display: block;
+    width: 30%;
+    height: 30px;
+    padding: 2.5%;
+    margin: 4%;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 5px;
+
+    .font-button(@btn-bg-color:#22283A, @main-border-color:#dee2e6);
+    @media @phone {
+      width: 95%;
+    }
+
+    &:hover {
+      background-color: #dee2e6;
+      color: #22283a;
+    }
+  }
+
+  .walk-img {
+   
+    width: 46%;
+    margin-left: 4%;
+  }
+
+      img {
+      width: 100%;
+      height: auto;
+      //   border-radius: 10px;
+      @media @phone {
+        width: 200%;
+        
+        margin: 0, auto;
+        height: 150px;
+       
+    
+      }
+    }
+  
 } // home
