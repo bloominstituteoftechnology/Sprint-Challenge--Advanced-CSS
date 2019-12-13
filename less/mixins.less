@@ -1,1 +1,27 @@
 // Mixins Here
+
+.flex(){
+    display: flex;
+    flex-direction: column;
+}
+
+
+.custom-button(@bg-color, @width, @font-color){
+    display: block;
+    background-color: @bg-color;
+    cursor: pointer;
+    padding-top: 10px;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    text-align: center;
+
+    &:hover{
+        background-color: @font-color;
+        color: black;
+    }
+
+}
+
