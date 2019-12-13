@@ -33,14 +33,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+   A: Responsive websites respond to the size of the browser at any given point(%-Smooth).
+      Where Adaptive websites adapt to the width of the browser at a specific points(px-Snap).
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be mobile first vs. desktop first.
+   A: A design strategy for a project based on the audience (desktop vs. mobile hits) and product type,
+      and user experience. Desktop->Mobile (Max-Width) vs. Mobile->Desktop (Min-Width)
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+   A: A font-size adjustment technique that scale an entire project by changing the root font-size.
+      As the default browser font size is 16px and 62.5% of 16px is 10px, this gives developers a
+      simple conversion to work with, as 1 rem = 10px; 
 
 4. How would you describe preprocessing to someone new to CSS?
+   A: Pre-processing helps developers to writing reusable, maintainable and codes in CSS.
+      Features such as (Variable, Nest(visual hierarchy), Mixin(set of rules(definitions) that compiles 
+      According its parameters) 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+   A: Favorite concept - Preprocessing (Convenience and ease of use)
+      Most trouble - Preprocessing.(When to use it and its efficiency for later reusability)
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -118,7 +131,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -130,6 +143,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [x] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
