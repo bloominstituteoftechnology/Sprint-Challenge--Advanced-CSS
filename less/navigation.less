@@ -3,24 +3,24 @@
     width:100%;
     height:100%;
     background: @nav-bg;
-}
+
 
 .nav-container {
     display: flex;
     height: 100%;
-    align-content: center;
+.center();
 }
 
 .logo-heading {
     display: flex;
     justify-content: center;
-    font-size: 7rem;
+    font-size: 7.5rem;
     padding: 20px 0;
 
-    @media @phone {
-        width:100%;
-        font-size: 4rem;
-    }
+@media @phone {
+    width:100%;
+    font-size: 5rem;
+}
 }
 
 .nav {
@@ -31,7 +31,8 @@
 
 a {
     font-size: 2rem;
-    color: nav-font;
+    color: @nav-font;
     text-decoration: none;
     padding-bottom: 15px;
+}
 }
