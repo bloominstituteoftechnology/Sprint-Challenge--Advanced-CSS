@@ -18,6 +18,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    border: 1px solid black;
+    @media @phone{
+      height: 20vh;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .sky, .launch{
+      @media @phone{
+        display: none;
+        width: 1%;
+        border: 1px solid black;
+      }
+    }
 
     img {
       width: 28%;
@@ -57,8 +71,9 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .btn{
+          .custom-button(black, 10rem, white);
+        }
     }
 
     .walk-img {
