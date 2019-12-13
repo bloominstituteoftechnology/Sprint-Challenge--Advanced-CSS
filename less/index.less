@@ -1,9 +1,45 @@
 // Import your less files here:
+@import "home-page.less";
+@import "global.less";
+@import "mixins.less";
+@import "navigation.less";
+@import "reset.less";
+@import "variables.less";
+@import "footer.less";
 
 
+h1, h2, h3 {
+    font-family: @header-style;
+}
+
+p {
+    font-family: @paragraph-style;
+}
 
 
+@media (max-width: @phone) {
+    .space-images {
+        display: flex;
+        flex-direction: column;
 
+        .sky {
+            display: none;
+        }
+    
+        .launch {
+            display: none;
+        }
+
+        .blast {
+            width: 100%;
+        }
+}
+
+.walk-img {
+    display: flex;
+    align-content: center;
+    flex-direction: column
+}
 
 
 
