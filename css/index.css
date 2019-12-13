@@ -1,3 +1,20 @@
+.h1-parent {
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+  padding: 0.5em;
+}
+.btn {
+  text-align: center;
+  background-color: red;
+  margin: 0 10 20 px;
+  cursor: pointer ;
+  width: 150px;
+  height: 30px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 10px  10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,12 +186,6 @@ nav a {
   font-size: 15px;
   text-decoration: none;
   margin: 1em 1em 0.5em 1em;
-}
-.h1-parent {
-  display: flex;
-  justify-content: center;
-  border: 1px solid green;
-  padding: 0.5em;
 }
 h1 {
   font-size: 30px;

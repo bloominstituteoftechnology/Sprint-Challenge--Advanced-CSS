@@ -1,1 +1,54 @@
-// Mixins Here
+//Mixins is here//
+
+    .navigation(){
+
+        display:flex;
+        justify-content: center;
+        border:1px solid green;
+        padding:0.5em;;
+
+}
+
+    
+
+.h1-parent{
+
+    .navigation()
+
+
+}
+        
+
+           
+        
+
+
+
+    .custom-button(@tx-align, @bg-color ){
+        text-align:@tx-align;
+        background-color: @bg-color;
+         margin:0 10 20 px;
+         cursor:pointer ;
+         width:150px;
+         height: 30px;
+         font-size: 1.5rem;
+         border-radius: 20px;
+         padding:10px  10px;
+
+
+
+    }
+
+
+
+
+
+
+    .btn{
+
+       
+    .custom-button(center,red);
+    
+    
+    }
+
