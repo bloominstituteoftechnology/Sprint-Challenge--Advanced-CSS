@@ -163,17 +163,14 @@ p {
 .navigation {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   align-items: center;
   text-align: center;
 }
 .navigation h1 {
   font-family: 'Russo One';
-  border: 1px solid red;
   font-size: 5rem;
 }
 .navigation .links {
-  border: 1px solid red;
   text-decoration: none;
   padding: 2%;
   width: 100%;
@@ -289,12 +286,17 @@ footer {
 }
 .home button {
   width: 30%;
-  padding: 2%;
+  padding: 3%;
   border: none;
   border-radius: 5px;
   background-color: none;
   background-color: #22283A;
   color: white;
+}
+@media ( max-width: 500px ) {
+  .home button {
+    width: 100%;
+  }
 }
 .home button:hover {
   background-color: white;
