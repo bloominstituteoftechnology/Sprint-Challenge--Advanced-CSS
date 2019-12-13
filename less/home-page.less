@@ -12,7 +12,8 @@
   }
 
   .spaceview {
-    width: 100%;
+    width: 98%;
+    height:130px;
   }
 
   .space-images {
@@ -65,6 +66,10 @@
     p {
       margin-top: 13px;
     }
+    @media @phone {
+      margin-bottom:0 auto  ;
+      
+    }
   }
 
   .walk {
@@ -75,16 +80,19 @@
     justify-content: center;
 
     @media @phone {
-      display: flex;
       flex-direction: column-reverse;
-      padding: 0;
-      align-content: space-evenly;
+      width:100%;
+       margin:2% auto;
+       padding:0;
+    //   align-content: space-evenly;
     }
 
     .walk-text {
       width: 50%;
       @media@phone {
         width: 100%;
+        margin:1%;
+        padding-top:8%;
       }
     }
   }
@@ -109,7 +117,7 @@
 
     .font-button(@btn-bg-color:#22283A, @main-border-color:#dee2e6);
     @media @phone {
-      width: 95%;
+      width: 100%;
     }
 
     &:hover {
@@ -119,23 +127,25 @@
   }
 
   .walk-img {
-   
     width: 46%;
     margin-left: 4%;
-  }
-
-      img {
-      width: 100%;
-      height: auto;
-      //   border-radius: 10px;
-      @media @phone {
-        width: 200%;
-        
-        margin: 0, auto;
-        height: 150px;
-       
-    
-      }
+    @media @phone {
+      // width: 95%;
+      // padding:4%;
+      //  margin: 2% auto;
+       width: 96%;
+      margin: 0 auto;
+      height: 118px;
+      margin-right: 2%;
+      padding-bottom: 1px;
+      
     }
-  
+
+    img {
+      width: 100%;
+      // height: auto;
+      //   border-radius: 10px;
+      // }
+    }
+  }
 } // home
