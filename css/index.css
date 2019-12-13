@@ -165,9 +165,11 @@ p {
   font-family: #454A59;
   height: 10vh;
   text-align: center;
+  font-weight: bold;
+  padding-top: 2%;
 }
 .navigation h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .navigation a {
@@ -227,17 +229,22 @@ footer {
 .home .walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.home .walk h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .walk p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home button {
+  padding: 1.5%;
+  background-color: #22283A;
+  color: #F1F1F1;
+}
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
