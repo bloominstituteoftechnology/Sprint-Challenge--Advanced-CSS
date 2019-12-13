@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -58,13 +55,28 @@
       }
 
       .btn {
+        display: block;
+        width: 30%;
+        height: 30px;
+        padding: 2.5%;
+        margin: 4%;
+        text-align: center;
+        font-size: 1.3rem;
+        border-radius: 5px;
+
+        .font-button(@btn-bg-color:#22283A, @main-border-color:#dee2e6);
+
+        &:hover {
+          background-color: #dee2e6;
+          color: #22283a;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +84,4 @@
       }
     }
   }
-}// home
+} // home
