@@ -1,1 +1,23 @@
 // Mixins Here
+.custom-button(@height: 45px, @width: 100%){
+    display: block;
+    background-color: @button;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    border-radius: 7px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &:hover{
+      background-color:white;
+      color:black;
+    }
+}
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
