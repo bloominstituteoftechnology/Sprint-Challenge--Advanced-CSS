@@ -4,10 +4,14 @@
 	width: 80%;
 	margin: 0 auto;
 }
+
 .home {
 
   .intro {
-
+@media @phone{
+  img{
+    width:99.5%;}
+}
     h2 {
       padding: 15px;
       
@@ -23,7 +27,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  @media @phone{
+    .sky, .launch{
+      display:none;
+      
+    }
+.blast{
+  @media @phone{
+    width: 90%;
+  }
+}
 
+}
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -43,6 +58,10 @@
       margin-top: 13px;
      
     }
+    @media @phone{
+      display:flex;
+      flex-direction:column;
+    }
   }
 
   .walk {
@@ -51,10 +70,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{
+      display:flex;
+      flex-direction:column-reverse;
+      
+    }
     .walk-text {
       width: 50%;
-      
+      @media @phone{
+        width:100%;
+      }
     }
 
       h3 {
@@ -72,7 +97,9 @@
       button {
       
       .customButton(@btn-bg-color,@sea-shell ) ;
-      
+      @media @phone{
+        width: 100%;
+      }
      
     }
     
@@ -85,6 +112,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
+      }
+      @media @phone{
+        width:95%;
+       
       }
     }
   }
