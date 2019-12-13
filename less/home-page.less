@@ -1,22 +1,24 @@
 // Home Content
 .header {
 
-//  color: black;
-//   background: #f4f4f4;
-//   padding: 20px 0;
-//   border: 1px double #e0e0e0;
+  //  color: black;
+  //   background: #f4f4f4;
+  //   padding: 20px 0;
+  //   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 h1 {
-display: flex;
+  display: flex;
   padding: 15px;
 }
+
 .home {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 
 
   .intro {
@@ -27,131 +29,144 @@ justify-content: center;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
   }
-  }
-      // @media @phone {
-      // flex-direction: column;
-      // align-items: center;
-      // }
-  .space-images {
+}
+
+// @media @phone {
+// flex-direction: column;
+// align-items: center;
+// }
+.space-images {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+
+  img {
     display: flex;
-    justify-content:space-between;
-    padding: 10px;
+    justify-content: center;
+  }
+}
+
+.visit-planets {
+  padding: 15px;
+  // display: flex;
+  // justify-content: space-between;
+  //  height: 1px;
 
 
-    img {
-   display: flex;
-   justify-content: center;
-    }
+  h3 {
+    margin-top: 11px;
   }
 
-  .visit-planets {
-    padding: 15px;
+
+  p {
+    margin-top: 13px;
     // display: flex;
-    // justify-content: space-between;
-    //  height: 1px;
+    // justify-items:  center;
+    // padding: 10px;
 
-
-     h3 {
-      margin-top: 11px;
-    }
-
-
-    p {
-      margin-top: 13px;
-      // display: flex;
-      // justify-items:  center;
-      // padding: 10px;
-
-    }
   }
+}
 
-
-  // // .walk {
-  // //   margin-top: 60px;
-  // //   // border-top: 1px solid @main-border-color;
-  // //   padding: 50px 60px;
-  // //   display: flex;
-  // //   justify-content: center;
-
-  // //   // .walk-text {
-  // //   //   display: flex;
-  // //   //   justify-content: space-between;
-
-  // //   //   h3 {
-  // //   //     margin-bottom: 10px;
-  // //   //   }
-
-  // //   //   p {
-  // //   //     margin-bottom: 26px;
-  // //   //   }
-
-  // //   //   .Sign-up-btn {
-  // //   //        display: block;
-  // //   //       // background-color: @main-color;
-  // //   //        margin: 0 10px 20px;
-  // //   //        cursor: pointer;
-  // //   //        width: 200px;
-  // //   //        height: 45px;
-  // //   //        font-size: 2rem;
-  // //   //       border-radius: 10px;
-  // //   //   }
-
-  @media( max-width: 515px ) {
-    width: 90%;
-    height: 50px;
-    font-size: 2.5rem;
-  // }// this closes the media query
-  //     }
-  //   }
-
-    // .walk-img {
-    //   width: 46%;
-    //   margin-left: 4%;
-
-    //   img {
-    //     width: 100%;
-    //     height: auto;
-    //     border-radius: 10px;
-    //   }
-    // }
 
 .walk {
-margin-top: 60px;
-border-top: 1px solid @main-border-color;
-padding: 50px 60px;
-display: flex;
-justify-content: center;
+  margin-top: 60px;
+  // border-top: 1px solid @main-border-color;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: space-evenly;
 
-.walk-text {
-width: 50%;
+  .walk-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-h3 {
-margin-bottom: 10px;
+    h3 {
+      margin-bottom: 10px;
+
+
+    @media(max-width: 800px) {
+      min-width: 500px;
+    }
+  }
+}
 }
 
-p {
-margin-bottom: 26px;
-}
+//   p {
+//     margin-bottom: 26px;
 
-.btn {
-}
-}
 
-.walk-img {
-width: 46%;
-margin-left: 4%;
-img {
-width: 100%;
-height: auto;
-border-radius: 10px;
+.Sign-up-btn {
+  display: block;
+  // background-color: @main-color;
+  margin: 0 10px 20px;
+  //  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+
+@media(max-width: 515px) {
+  width: 90%;
+  height: 50px;
+  font-size: 2.5rem;
 }
 }
-}
+// }// this closes the media query
+//     }
+//   }
+
+// .walk-img {
+//   width: 46%;
+//   margin-left: 4%;
+
+//   img {
+//     width: 100%;
+//     height: auto;
+//     border-radius: 10px;
+//   }
+// }
+
+.walk {
+  margin-top: 60px;
+  border-top: 1px solid;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+
+  .walk-text {
+    width: 50%;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+    p {
+      margin-bottom: 26px;
+    }
+
+    // .btn {
+    //   @bg-color
+    // }
+  }
+
+  .walk-img {
+    width: 46%;
+    margin-left: 4%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
 
 body {
   display: flex;
-font-size: 62.5%;
+  font-size: 62.5%;
 }
