@@ -146,7 +146,6 @@ html h4,
 body h4,
 html h5,
 body h5 {
-  font-family: 'Russo One', sans-serif;
   color: black;
 }
 html p,
@@ -258,9 +257,46 @@ footer {
   }
 }
 .home .space-images {
+  margin-top: 2%;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    margin-top: 0;
+  }
+}
+.home .space-images .blast {
+  opacity: 0.5;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    opacity: 1;
+  }
+}
+.home .space-images .blast:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+@media (max-width: 500px) {
+  .home .space-images .blast:hover {
+    transform: none;
+  }
+}
+.home .space-images .sky {
+  opacity: 0.5;
+}
+.home .space-images .sky:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+.home .space-images .launch {
+  opacity: 0.5;
+}
+.home .space-images .launch:hover {
+  opacity: 1;
+  transform: scale(1.3);
 }
 @media (max-width: 500px) {
   .home .space-images {
