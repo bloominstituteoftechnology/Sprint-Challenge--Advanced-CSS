@@ -1,5 +1,14 @@
 // Navigation code here
+.phone (@phone) {
+min-width: 500px;
+max-width: 800px;
 
+}
+
+  @media (max-width: 800px){
+        flex-direction: column;
+        align-items: center;
+    }
 h1 {
    //   display: flex;
    //  justify-content: space-around;
@@ -42,6 +51,9 @@ justify-content: space-between;
 align-items: center;
 padding: 20px 2%;
 font-size: 14px;
+@media screen {
+    max-width: 800px;
+}
 }
 
 .space-header nav a {
@@ -61,14 +73,17 @@ img{
 border-radius: 7px;
 }
 
-.blast, .sky{
+.blast .sky{
 margin-right: 34px;
 }
 
 
 
-    //  @media @phone {
-    //     flex-direction: column;
-    //     align-items: center;
-    // }
+     @phone(min-width: 500px ) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
 
