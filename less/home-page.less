@@ -11,16 +11,27 @@
     }
   }
 
+  .spaceview{
+    width:100%;
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+  img {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+
+    @media @phone{
+      .sky img{
+        width:0%;
+        display: none;
+      }
     }
   }
 
@@ -65,6 +76,9 @@
         border-radius: 5px;
 
         .font-button(@btn-bg-color:#22283A, @main-border-color:#dee2e6);
+        // @media @phone{
+        //   width:240%;
+        // }
 
         &:hover {
           background-color: #dee2e6;
@@ -72,10 +86,24 @@
         }
       }
     }
+     .walk div{
+        @media @phone{
+          flex-direction:column;
+          // display: flex;
+          // // flex-direction: column;
+          // flex-wrap:nowrap;
+          margin:0;
+        
+      }
+     } 
+    
+    
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      
+  
 
       img {
         width: 100%;
