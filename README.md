@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will fit in different screen sizes but has preset screens sizes inside the code. A fully responsive website will adapt to all screen sizes across all devices. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is where the developer starts their code for a mobile device and then makes it compatible with a desktop device. Desktop first means the developer creates a site for the desktop then arranges to work on a mobile device. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The 62.5% font size in HTML makes it easier for the developer to convert sizes to rems by making everything 10 based. 30px would be 3rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+It arms the developer with more tools inside CSS and makes the developers job easier when styling. It can reduce the amount of coding required when styling a page.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The best is variables as you can reduce the amount of lines you can code. It's hard enough to type in font, font-size, color, etc. Don't @ me when it comes to using variables! Nesting is my biggest issue probably. I over use div and nesting 3-4 deep can somewhat be challenging. I've overcome this some by writing all the code out in sections to help me find what is necessary easier. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -59,9 +69,9 @@ Follow these steps to set up your project:
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your project manager as a reviewer on the pull-request
+- [X] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
@@ -94,7 +104,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [X] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
 * [X] Add a viewport meta tag to the head of your index.html page
 
@@ -114,11 +124,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [X] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [X] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -130,6 +140,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [X] Create a fixed navigation and add some opacity to the background
 
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [X] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription

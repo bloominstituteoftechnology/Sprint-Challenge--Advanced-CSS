@@ -265,6 +265,7 @@ footer {
 }
 @media "(max-width: 500px" {
   .home .walk {
+    diplay: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 20px 15px;
@@ -319,6 +320,8 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 .home .walk .walk-img img {
