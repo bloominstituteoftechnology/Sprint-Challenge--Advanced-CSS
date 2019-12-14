@@ -34,6 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+
 a fully responsive website will look the same on any  size screen. A adaptive website still has hard coded margins, widiths, and pixel sizes that can change and then in
 
 2. Describe what it means to be mobile first vs desktop first.
@@ -55,6 +56,25 @@ Preprocessing is the way in which developers make the code in which they write m
 
 My favorite concept in preprocessing is the premetric mixins. I like how the parameters are easily callable and they behave a lot like functions.
 Preprocessing didn't give me very much trouble it was setting up the boxes or containers in css but i believe i have a good handle on the concept now
+
+
+    The difference between adaptive design and fully responsive design is responsive is fluid and adapts to the size of the screen no matter what the  device. Responsive uses CSS media queries to change styles based on the type device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.  Adaptive design, on the other hand, uses static layouts based on breakpoints which don’t respond once they’re initially loaded.
+
+2. Describe what it means to be mobile first vs desktop first.
+
+When designing a mobile first layout you first design the layout to respond to different types of device the site may be viewed upon. This is done due to the rising amount of websites that are first viewed and then utilized using a mobile device in comparrison to a desktop computer.
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+    This allows the font to be viewed consistently across all devices. It is a key to  a responsived website
+
+4. How would you describe preprocessing to someone new to CSS?
+
+    Preprocessing is the act of a compiler reading the stlyings created by normally in CSS and allowing the code to read and organized better within the system by nesting stylings for a specific area within the website for easier reading by the machine and by humans. It also helps to detect errors within your terminal and that can help with productivity,
+
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The ability to writer a dryer code and with mixins and parametric mixins in can reduce the amount of errors that may be produced when changing  a specific item within the code.
 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
