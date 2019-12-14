@@ -1,13 +1,24 @@
 .home .intro h2 {
   padding: 15px;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 .home .intro p {
   padding: 0 15px;
+  font-family: 'Ubuntu Mono', monospace;
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    max-width: 100%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -15,14 +26,21 @@
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 .home .visit-planets p {
   margin-top: 13px;
+  font-family: 'Ubuntu Mono', monospace;
 }
 .home .walk {
   margin-top: 60px;
@@ -31,23 +49,61 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+}
 .home .walk .walk-text {
+  font-family: 'Ubuntu Mono', monospace;
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    font-family: 'Ubuntu Mono', monospace;
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text h3 {
+    font-family: 'Rubik Mono One', sans-serif;
+  }
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn button {
+  background-color: #5E6164;
+  color: #F6F7F8;
+  padding: 5% 15%;
+  font-size: larger;
+  border-radius: 10px;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: #F6F7F8;
+  color: #5E6164;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    align-items: center;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-}
-.home .walk .walk-img img {
-  width: 100%;
-  height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+  }
 }
 * {
   box-sizing: border-box;
@@ -90,6 +146,8 @@ p {
 }
 .navigation h1 {
   text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.9rem;
 }
 .navigation ul {
   display: flex;
@@ -98,9 +156,13 @@ p {
 }
 .navigation li {
   margin: 1% 2%;
+  color: 'Ubuntu Mono', monospace;
+}
+.navigation a {
+  text-decoration: none;
 }
 .intro img {
-  border-radius: 2%;
+  border-radius: 10px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -253,35 +315,4 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-button {
-  margin: 2% 4%;
-  width: 50%;
-  height: 20%;
-  background-color: #5E6164;
-  color: #F6F7F8;
-}
-button:hover {
-  background-color: #F6F7F8;
-  color: #5E6164;
-}
-h1,
-h2,
-h3 {
-  font-family: 'Rubik Mono One', sans-serif;
-}
-p {
-  font-family: 'Ubuntu Mono', monospace;
-}
-@media (max-width: 500px) {
-  .space-images {
-    display: flex;
-    flex-direction: column;
-  }
-  .space-images .sky {
-    display: none;
-  }
-  .space-images .launch {
-    display: none;
-  }
 }
