@@ -1,1 +1,91 @@
 // Navigation code here
+html{
+    box-sizing: border-box;
+    width: 80%;
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+.walkers{
+    font-size: 4rem;
+    text-align: center;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 2% auto;
+    color: black;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+img{
+    width: 88%;
+    margin-left: 5%;
+    .animation();
+}
+h2{
+
+    margin-left: 3%;
+}
+.p-lift{
+    margin-left: 3%;
+}
+section .space-images{
+    width: 88%;
+    margin-left: 4%;
+}
+section.visit-planets{
+    margin-left: 3%;
+}
+@phone(max-width: 500px){
+    .links{ 
+        font-size: 1.8rem;
+        width: 86%;
+    }
+
+    .home .space-images img.blast{
+        width: 93%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    img.sky{
+        display: none;
+        }
+    
+    img.launch{
+        display: none;
+            }
+        
+    section.walk{
+        display: flex;
+        flex-direction: column-reverse;
+       }
+
+    .walk-img{
+        width: 100%;
+
+    }
+
+    .walk{
+        margin-bottom: 5%;
+        width: 123%;
+    }
+
+    .walk-text{
+    margin-right: 5%;
+    width: 90%;
+    margin-left: -5%;
+    }
+} 
+ 
+
+
+

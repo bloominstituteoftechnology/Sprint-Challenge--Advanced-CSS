@@ -56,10 +56,17 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
+    .custom-button(@btn-bg-color, @width, @height){
+      background-color: @btn-bg-color;
+      width: @width;
+      height: @height;
+      }
+      div .btn:hover{
+        background-color: blue;
+        color: red;
+      }
+      
 
     .walk-img {
       width: 46%;
@@ -68,8 +75,18 @@
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 10px; 
       }
     }
   }
 }// home
+@phone: ~'(max-width: 500px)';
+img {
+  border-radius: 10px;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-name: blast;
+    animation-timing-function: ease-in;            
+    animation-direction: alternate;
+    
+}
