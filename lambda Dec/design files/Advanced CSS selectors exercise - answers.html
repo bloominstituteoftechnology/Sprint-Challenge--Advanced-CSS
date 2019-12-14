@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://codepen.io/Amberlowe40/pen/bGNNgbO -->
+<html lang="en" class="pc chrome78 js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Advanced CSS selectors exercise - answers</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="Advanced CSS selectors exercise - answers">
+<meta name="twitter:description" content="...">
+<meta name="twitter:image" content="https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-large.png">
+<meta property="og:image" content="https://codepen.io/Amberlowe40/pen/bGNNgbO/image/large.png" itemprop="thumbnailUrl">
+<meta property="og:title" content="Advanced CSS selectors exercise - answers">
+<meta property="og:url" content="https://codepen.io/Amberlowe40/details/bGNNgbO">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https://codepen.io/Amberlowe40/pen/bGNNgbO&amp;format=json" title="Advanced CSS selectors exercise - answers">
+<link href="./Advanced CSS selectors exercise - answers_files/css" rel="stylesheet">
+<link rel="stylesheet" media="all" href="./Advanced CSS selectors exercise - answers_files/global-9e9de10da25eedee266b2dd7025c841e34a0a4eff03c01db90039707eb326069.css">
+<link rel="stylesheet" media="screen" href="./Advanced CSS selectors exercise - answers_files/2-42b156ea.chunk.css">
+<link rel="stylesheet" media="screen" href="./Advanced CSS selectors exercise - answers_files/everypage-e8bb70ea.css">
+<link rel="stylesheet" media="all" href="./Advanced CSS selectors exercise - answers_files/editor-6207ba2bdbbe4c8a18e71ad3c39626f6c89af1193575dc96cd1f6ce5b639f894.css">
+<meta name="description" content="...">
+<link rel="stylesheet" media="screen" href="./Advanced CSS selectors exercise - answers_files/duotone-dark-35fc919b9a74eeec773475a2a49b6a7dce3e9401eb9201fc0d4fd5042b965ba4.css" id="cm-theme">
+<style id="cm-font-family" class="cm-font-family">
+  @font-face {
+        font-family: 'gintronic';
+        src: url('https://static.codepen.io/assets/gintronic/Gintronic-Regular-0ecfe1ded1ca3b976f2d1255955788090be3f54af086383189758c3df638434d.woff2') format('woff2'),
+             url('https://static.codepen.io/assets/gintronic/Gintronic-Regular-3f1a5fb2768bad2fd355e072c7700017ca93e8ff9a8a5cdfde4a3ef63d42031e.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'gintronic';
+        src: url('https://static.codepen.io/assets/gintronic/Gintronic-Italic-9585101dec9b7b17c05bb3ea9039c7fc853a8cbd4b96b2f52037a3b95af6291f.woff2') format('woff2'),
+             url('https://static.codepen.io/assets/gintronic/Gintronic-Italic-663fae30dac20ad39740a3df38746bedfbcd817713c15e213e9be08922c3b57b.woff') format('woff');
+        font-weight: 400;
+        font-style: italic;
+      }
+      .cm-comment {
+        font-style: italic;
+      }
+      
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: 'gintronic', MonoSpace;
+  }
+</style>
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 16px;
+  }
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+<script type="text/javascript" async="" src="./Advanced CSS selectors exercise - answers_files/analytics.js.download"></script><script async="" src="./Advanced CSS selectors exercise - answers_files/js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="I5Xia5u7c0fMta3nfp5IyIhNpmgGTGkPEf2Cim2g1goIWM/M2kcYyF0Pqe3FM1ZSRQbz7scsG33jkrtUpsgzqg==">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script>/* Firefox needs this to prevent FOUC. */</script>
+<script charset="utf-8" src="./Advanced CSS selectors exercise - answers_files/21-783792a0b2a16d30e18a.chunk.js.download"></script><script charset="utf-8" src="./Advanced CSS selectors exercise - answers_files/firebase-f47e8322db0be8ac15eb.chunk.js.download"></script></head>
+<body class="room-editor editor state-htmlOn-cssOn-jsOn sidebar-false   layout-top  logged-in">
+<header class="main-header" id="main-header"><div class="header-wrap ItemHeader_headerWrap-2WdNj"><h1 class="Logo_root-3XNFn" data-test-id="logo"><a href="https://codepen.io/" class="Logo_small-3i6l6"><svg width="20" height="20" class=" icon icon-codepen-box"><use xlink:href="/svg_sprite?v=8885a907#codepen-box"></use></svg><span class="screen-reader-text">CodePen Home</span></a><a href="https://codepen.io/" class="Logo_large-3FckA"><svg width="20" height="20" class=" icon icon-logo" title="CodePen"><use xlink:href="/svg_sprite?v=8885a907#logo"></use></svg><span class="screen-reader-text">CodePen Home</span></a></h1><div class="ItemTitle_root-3FqLB" data-test-id="item-title-area"><div class="ItemTitle_text-2ho1f"><h1 class="ItemTitle_title-3OkGi" id="item-title"><a href="https://codepen.io/Amberlowe40/pen/bGNNgbO" class="ItemTitle_titleLink-mr9H4" id="editable-title-span" title="Advanced CSS selectors exercise - answers">Advanced CSS selectors exercise - answers</a><svg width="20" height="20" class="ItemTitle_iconEdit-jPjlp icon icon-edit"><use xlink:href="/svg_sprite?v=8885a907#edit"></use></svg></h1><div class="ItemTitle_by-24dz8" data-test="AnItemBy">A Pen By <a class="ItemTitle_ownerLink-tMhWC" href="https://codepen.io/Amberlowe40">Amber lowe </a></div></div></div><div class="navigation-wrap editor-actions-menu"><button class="footer-button invisible-button " aria-expanded="false"><div class="toggle-actions-button" aria-hidden="true"><span></span><svg width="20" height="20" class=" icon icon-arrow-down-mini"><use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use></svg></div><span class="screen-reader-text">Pen Editor Menu</span></button><div class="editor-actions" data-expanded="false" aria-hidden="true"><button class="button loves heart-button button-editor-outline loved-0" data-item="PEN" data-hashid="bGNNgbO" title="Love"><span class="screen-reader-text">Love</span><svg width="16" height="16" class=" icon icon-heart"><use xlink:href="/svg_sprite?v=8885a907#heart"></use></svg></button><button id="run" title="Com/Ctrl - Shift - 7 to Run" class="button icon-button button-editor-outline run"><svg width="20" height="20" class=" icon icon-rerun"><use xlink:href="/svg_sprite?v=8885a907#rerun"></use></svg><span class="label">Run</span></button><button id="update" data-test-id="save-button" title="Save this Pen" class="button icon-button button-editor-outline"><svg width="20" height="20" class=" icon icon-cloud"><use xlink:href="/svg_sprite?v=8885a907#cloud"></use></svg><span class="label">Save</span></button><button data-test-id="fork-button" title="Fork this Pen" class="button icon-button button-editor-outline fork-button"><svg width="20" height="20" class=" icon icon-branch"><use xlink:href="/svg_sprite?v=8885a907#branch"></use></svg><span class="label">Fork</span></button><button id="edit-settings" data-test-id="edit-settings" title="Pen Settings" class="button icon-button button-editor-solid"><svg width="20" height="20" class=" icon icon-gear"><use xlink:href="/svg_sprite?v=8885a907#gear"></use></svg><span class="label">Settings</span></button><button id="view-switcher-button" data-test-id="view-switcher-button" title="Change View" class="button icon-button button button-editor-solid view-switcher-button"><svg width="20" height="20" class=" icon icon-viewswitcher"><use xlink:href="/svg_sprite?v=8885a907#viewswitcher"></use></svg><span class="label">Change View</span></button><div class="view-switcher" style="left: 918.441px;"><div class="ViewSwitcher_switch-1Ih20"><h3>Open this Pen in:</h3><nav class="link-list"><a id="pen-link" href="https://codepen.io/Amberlowe40/pen/bGNNgbO" class="view-switcher-row editor-link pen-link active">Editor View<span class="view-meta">/pen/<span data-href="https://blog.codepen.io/documentation/views/editor-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="details-link" href="https://codepen.io/Amberlowe40/details/bGNNgbO" class="view-switcher-row editor-link details-link">Details View<span class="view-meta">/details/<span data-href="https://blog.codepen.io/documentation/views/details-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="full-link" href="https://codepen.io/Amberlowe40/full/bGNNgbO" class="view-switcher-row editor-link full-link">Full Page View<span class="view-meta">/full/<span data-href="https://blog.codepen.io/documentation/views/full-page-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="debug-link" href="https://codepen.io/Amberlowe40/debug/bGNNgbO" class="view-switcher-row editor-link debug-link" target="_blank" rel="noopener">Debug mode<span class="view-meta">/debug/<span data-href="https://blog.codepen.io/documentation/views/debug-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="live-link" href="https://codepen.io/Amberlowe40/live/bGNNgbO" class="view-switcher-row editor-link live-link" target="_blank" rel="noopener"><span class="badge badge-pro">PRO</span> Live View<span class="view-meta">/live/<span data-href="http://blog.codepen.io/documentation/pro-features/live-view/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="collab-link" href="https://codepen.io/Amberlowe40/collab/bGNNgbO" class="view-switcher-row editor-link collab-link"><span class="badge badge-pro">PRO</span> Collab Mode<span class="view-meta">/collab/<span data-href="https://blog.codepen.io/documentation/pro-features/collab-mode/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="professor-link" href="https://codepen.io/Amberlowe40/professor/bGNNgbO" class="view-switcher-row editor-link professor-link"><span class="badge badge-pro">PRO</span> Professor Mode<span class="view-meta">/professor/<span data-href="http://blog.codepen.io/documentation/pro-features/professor-mode/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a><a id="pres-link" href="https://codepen.io/Amberlowe40/pres/bGNNgbO" class="view-switcher-row editor-link pres-link"><span class="badge badge-pro">PRO</span> Presentation Mode<span class="view-meta">/pres/<span data-href="http://blog.codepen.io/documentation/pro-features/presentation-mode/" class="learn-more inline-q"><svg width="13" height="13" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></span></span></a></nav></div><div class="ViewSwitcher_switch-1Ih20"><h3>Direct Code Links:</h3><div class="share-static share-section"><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Amberlowe40/pen/bGNNgbO.html">.html</a><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Amberlowe40/pen/bGNNgbO.css">.css</a><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Amberlowe40/pen/bGNNgbO.js">.js</a></div></div><div class="ViewSwitcher_switch-1Ih20 editor-layout-section"><h3>Editor Layout:</h3><div class="editor-layout-buttons"><a id="left-layout" href="https://codepen.io/Amberlowe40/pen/bGNNgbO/left/" class="layout-change-icon" data-layout-type="left"><span class="screen-reader-text">Use Left Layout</span><svg width="20" height="20" class="editor-left rotate-cc90 icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a><a id="top-layout" href="https://codepen.io/Amberlowe40/pen/bGNNgbO/top/" class="layout-change-icon" data-layout-type="top"><span class="screen-reader-text">Use Top Layout</span><svg width="20" height="20" class="new-pen icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a><a id="right-layout" href="https://codepen.io/Amberlowe40/pen/bGNNgbO/right/" class="layout-change-icon" data-layout-type="right"><span class="screen-reader-text">Use Right Layout</span><svg width="20" height="20" class="editor-right rotate-c90 icon icon-icon-new-pen"><use xlink:href="/svg_sprite?v=8885a907#icon-new-pen"></use></svg></a></div></div></div><div class="multi-button multi-button-outline multi-button-pin"><button class="button button-editor-outline pin-button" title="Pin"><svg width="20" height="20" class=" icon icon-icon-pin"><use xlink:href="/svg_sprite?v=8885a907#icon-pin"></use></svg></button><button class="button button-editor-outline pin-dropdown-button" title="View Pins"><svg width="20" height="20" class=" icon icon-arrow-down-mini"><use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use></svg></button></div><div class="drawer PinsDrawer_drawer-1Qbdu PinsDrawer_headerDrawer-1EhwY Drawer_root-3dt6g"><h3>Pinned Items</h3><p class="no-pins-yet">You don't have any <a href="https://blog.codepen.io/documentation/features/pinned-items/" class="docs-link" target="_blank" rel="noopener noreferrer">pinned items</a> yet. You can pin any Pen, Post, or Collection (from their respective pages) for easy access here.</p></div></div></div><div class="UserMenu_userMenuDropdownParent-5tsjj"><nav title="User Menu"><button class="UserMenu_userMenuButton-38sVN invisible-button" aria-haspopup="true" aria-expanded="false" data-test-id="user-menu-button"><img src="./Advanced CSS selectors exercise - answers_files/169adec0ebbf4d00d9a864986f6bbf4d" width="44" height="44" class="user-avatar" alt="User Avatar" data-test-id="user-avatar"><span class="screen-reader-text">User Menu</span></button><ul class="UserMenu_userMenu-3E8E-" data-open="false" data-test-id="user-menu"></ul></nav></div></div></header>
+<div class="item-settings-modal pen " id="item-settings-modal">
+<header class="item-settings-modal-header">
+<h2 class="item-settings-modal-header-title">Pen Settings</h2>
+<div class="save-and-close-wrap">
+<input type="submit" class="button green save-and-close" value="Save &amp; Close" id="save-details">
+</div>
+</header>
+<div class="tabs settings-tabs-wrapper">
+<nav id="settings-tabs" class="explore-tabs no-mobile-nav item-settings-tabs">
+<a id="settings-html-tab" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#settings-html" class="settings-tab-html" data-type="html">HTML</a>
+<a id="settings-css-tab" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#settings-css" class="settings-tab-css" data-type="css">CSS</a>
+<a id="settings-js-tab" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#settings-js" class="settings-tab-js" data-type="js">JavaScript</a>
+<a id="settings-behavior-tab" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#settings-behavior" class="settings-tab-behavior" data-type="behavior">Behavior</a>
+<a id="settings-details-tab" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#settings-details" class="settings-tab-details active" data-type="details">Pen Details</a>
+</nav>
+<div class="settings" id="settings-html">
+<form class="settings-row top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="html-preprocessor">HTML Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About HTML Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>HTML preprocessors can make writing HTML more powerful or convenient. For instance, Markdown is designed to be easier to write and read for text documents and you could write a loop in Pug.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-html-preprocessors/" target="_blank" rel="noopener">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank" rel="noopener">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="html-preprocessor" id="html-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="haml">Haml</option>
+<option value="markdown">Markdown</option>
+<option value="slim">Slim</option>
+<option value="pug">Pug</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="html-classes">Add Class(es) to &lt;html&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>Adding Classes</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. So you don't have access to higher-up elements like the <code>&lt;html&gt;</code> tag. If you want to add classes there that can affect the whole document, this is the place to do it.</p>
+</div>
+</div>
+<input type="text" id="html-classes" name="html-classes" class="fullwidth" placeholder="e.g. single post post-1234" maxlength="250">
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="head-content">Stuff for &lt;head&gt;</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About the &lt;head&gt;</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body&gt;</code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. If you need things in the <code>&lt;head&gt;</code> of the document, put that code here.</p>
+</div>
+</div>
+<div class="head-content-wrapper">
+<textarea id="head-content" name="head-content" class="fullwidth is-code head-content" placeholder="e.g. &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;"></textarea>
+<span class="insecure-resource-tooltip">
+<div class="help-flyout-link">
+<span class="icon-help">!</span>
+<div class="help-flyout help-flyout-reverse">
+<svg class="icon-x">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<h5>Insecure Resource</h5>
+<p>The resource you are linking to is using the 'http' protocol, which may not work when the browser is using https.</p>
+</div>
+</div>
+</span>
+</div>
+<button class="button mini-button button-medium" id="meta-tag-insert">↑ Insert the most common viewport meta tag</button>
+</form>
+</div>
+<div class="settings" id="settings-css">
+<form class="settings-row settings-row-1 top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="css-preprocessor">CSS Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>CSS preprocessors help make authoring CSS easier. All of them offer things like variables and mixins to provide convenient abstractions.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-css-preprocessors/" target="_blank">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="css-preprocessor" id="css-preprocessor" class="fullwidth css-preprocessor">
+<option value="none">None</option>
+<option value="less">Less</option>
+<option value="scss">SCSS</option>
+<option value="sass">Sass</option>
+<option value="stylus">Stylus</option>
+<option value="postcss">PostCSS</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div id="need-an-addon" class="align-right hide">
+<a id="css-need-an-addon-button" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="button button-medium mini-button need-an-addon-button">
+Need an add-on?
+</a>
+</div>
+<div class="add-ons add-ons-scss hide" id="add-ons"></div>
+</form>
+<form id="startercss-options-form" class="settings-row settings-row-2 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+CSS Base
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Base</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>It's a common practice to apply CSS to a page that styles elements such that they are consistent across all browsers. We offer two of the most popular choices: <a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener">normalize.css</a> and a <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">reset</a>. Or, choose <b>Neither</b> and nothing will be applied.</p>
+</div>
+</div>
+<input type="radio" id="startercss-normalize" name="startercss" checked="" value="normalize">
+<label for="startercss-normalize" class="small-inline">Normalize</label>
+ 
+<input type="radio" id="startercss-reset" name="startercss" checked="" value="reset">
+<label for="startercss-reset" class="small-inline">Reset</label>
+ 
+<input type="radio" id="startercss-neither" name="startercss" checked="" value="neither">
+<label for="startercss-neither" class="small-inline">Neither</label>
+ 
+</form>
+<form id="prefix-options-form" class="settings-row settings-row-3 top-label-form">
+<h4>
+Vendor Prefixing
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About Vendor Prefixing</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>To get the best cross-browser support, it is a common practice to apply vendor prefixes to CSS properties and values that require them to work. For instance <code>-webkit-</code> or <code>-moz-</code>.</p>
+<p>We offer two popular choices: <a href="https://github.com/postcss/autoprefixer" target="blank" rel="noopener">Autoprefixer</a> (which processes your CSS server-side) and <a href="https://leaverou.github.io/prefixfree/" target="_blank" rel="noopener">-prefix-free</a> (which applies prefixes via a script, client-side).</p>
+</div>
+</div>
+<input type="radio" id="prefix-autoprefixer" name="prefix" value="autoprefixer">
+<label for="prefix-autoprefixer" class="small-inline">Autoprefixer</label>
+ 
+<input type="radio" id="prefix-prefixfree" name="prefix" value="prefixfree">
+<label for="prefix-prefixfree" class="small-inline">Prefixfree</label>
+ 
+<input type="radio" id="prefix-neither" name="prefix" value="neither">
+<label for="prefix-neither" class="small-inline">Neither</label>
+ 
+</form>
+<form id="external-css-resources" class="settings-row settings-row-4 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Stylesheets/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;link&gt;</code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag">
+<use xlink:href="/svg_sprite?v=8885a907#mag"></use>
+</svg>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="external-css-search" type="text" value="" placeholder="Search for resources (Bootstrap, Foundation, Animate.css...)" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Tahoma, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="aa-dataset-1"></div><div class="aa-dataset-2"></div></span></span>
+</div>
+<div class="algolia-shoutout"><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">Powered by <img alt="Algolia" src="./Advanced CSS selectors exercise - answers_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg"></a></div>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About External Resources</h5>
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>You can apply CSS to your Pen from any stylesheet on the web. Just put a URL to it here and we'll apply it, in the order you have them, before the CSS in the Pen itself.</p>
+<p>If the stylesheet you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the CSS from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/adding-external-resources/" target="_blank" rel="noopener">Learn more</a></p>
+</div>
+</div>
+<div id="css-external-resources" class="external-resource-wrapper ui-sortable">
+<div data-view-id="11410745" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-11410745" class="fullwidth css-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-css" placeholder="https://yourwebsite.com/style.css" value="" data-view-id="11410745">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="11410745">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-11410745" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="11410745" href="https://codepen.io/Amberlowe40/pen/bGNNgbO">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div><div data-view-id="14475440" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-14475440" class="fullwidth css-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-css" placeholder="https://codepen.io/username/pen/aBcDef" value="" data-view-id="14475440">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="14475440">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-14475440" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="14475440" href="https://codepen.io/Amberlowe40/pen/bGNNgbO">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div></div>
+<script id="css-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth css-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-css"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-css-resource" class="button mini-button button-medium add-resource" data-type="css">
+<span data-type="css">+ add another resource</span>
+</span>
+</div>
+</form>
+ </div>
+<div class="settings" id="settings-js">
+<div class="item-settings-javascript normal-labels">
+<div class="item-settings-javascript-preprocessor settings-row">
+<h4>
+<label for="js-preprocessor">JavaScript Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About JavaScript Preprocessors</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>JavaScript preprocessors can help make authoring JavaScript easier and more convenient. For instance, CoffeeScript can help prevent easy-to-make mistakes and offer a cleaner syntax and Babel can bring ECMAScript 6 features to browsers that only support ECMAScript 5.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-js-preprocessors/" target="_blank" rel="noopener">Learn more</a> · <a href="https://codepen.io/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="js-preprocessor" id="js-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="babel">Babel</option>
+<option value="typescript">TypeScript</option>
+<option value="coffeescript">CoffeeScript</option>
+<option value="livescript">LiveScript</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div class="preprocessing-with-npm-message hide" id="preprocessing-with-npm-message">
+You're using npm packages, so we've auto-selected Babel for you here, which we require to process imports and make it all work. If you need to use a different JavaScript preprocessor, remove the packages in the npm tab.
+</div>
+</div>
+<div id="external-js-resources" class="item-settings-javascript-external settings-row external-js-resources top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Scripts/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;script&gt;</code>s in order, and run <em>before</em> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag" width="18" height="18">
+<use xlink:href="/svg_sprite?v=8885a907#mag"></use>
+</svg>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="external-js-search" type="text" value="" placeholder="Search CDNjs (jQuery, Lodash, React, Angular, Vue.js, Ember...)" class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-3" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, &quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Tahoma, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-3" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="aa-dataset-4"></div><div class="aa-dataset-5"></div></span></span>
+</div>
+<div class="algolia-shoutout"><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">Powered by <img alt="Algolia" src="./Advanced CSS selectors exercise - answers_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg"></a></div><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">
+</a><div class="help-flyout-link"><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+</a><div class="help-flyout help-flyout-reverse"><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">
+<h5>About External Resources</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>You can apply a script from anywhere on the web to your Pen. Just put a URL to it here and we'll add it, in the order you have them, before the JavaScript in the Pen itself.</p>
+<p>If the script you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the JavaScript from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+</a><p><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank"></a><a href="https://blog.codepen.io/documentation/editor/adding-external-resources/" target="_blank">Learn more</a></p>
+</div>
+</div>
+<div id="js-external-resources" class="external-resource-wrapper ui-sortable">
+<div data-view-id="97017455" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-97017455" class="fullwidth js-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-js" placeholder="https://yourwebsite.com/script.js" value="" data-view-id="97017455">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="97017455">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-97017455" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="97017455" href="https://codepen.io/Amberlowe40/pen/bGNNgbO">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div><div data-view-id="70541431" class="external-resource-url-row ">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle"></use>
+      </svg>
+    </span>
+
+    <input id="external-resource-input-70541431" class="fullwidth js-resource external-resource" type="text" pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&amp;%@!\-\/]))?$" name="external-js" placeholder="https://codepen.io/username/pen/aBcDef" value="" data-view-id="70541431">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="70541431">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x"></use>
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-70541431" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="70541431" href="https://codepen.io/Amberlowe40/pen/bGNNgbO">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye"></use>
+        </svg>
+      </a>
+    </div>
+
+  </div></div>
+<script id="js-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svg_sprite?v=8885a907#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth js-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-js"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg_sprite?v=8885a907#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>The resource you are linking to is using the HTTP protocol, which may not work when the browser is using HTTPS.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-js-resource" class="button button-medium mini-button add-resource" data-type="js">
+<span data-type="js">+ add another resource</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="settings" id="settings-npm">
+<div class="item-settings-javascript-npm settings-row" id="item-settings-javascript-npm">
+<h4>Use npm Packages</h4>
+<p>We can make <a href="https://www.npmjs.com/" target="blank" rel="noopener">npm</a> packages available for you to use in your JavaScript. We use <a href="https://webpack.js.org/" target="blank" rel="noopener">webpack</a> to prepare them and make them available to <code>import</code>. We'll also process your JavaScript with <a href="https://babeljs.io/" target="_blank" rel="noopener">Babel</a>.</p>
+<p class="cant-use-npm-message bar message bar-message-ask">
+You're using a JavaScript preprocessor other than Babel, so npm is unavailable right now. If you want to use npm modules, we require Babel at this time.
+</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag" width="18" height="18">
+<use xlink:href="/svg_sprite?v=8885a907#mag"></use>
+</svg>
+<input id="npm-search" type="text" value="" placeholder="Search npm and add package...">
+</div>
+<div class="algolia-shoutout"><a href="https://www.algolia.com/?utm_source=react-instantsearch&amp;utm_medium=website&amp;utm_content=codepen.io&amp;utm_campaign=poweredby" target="_blank">Powered by <img alt="Algolia" src="./Advanced CSS selectors exercise - answers_files/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg"></a></div>
+<div id="npm-packages" class="external-resource-wrapper">
+</div>
+<script id="npm-package-template" type="text/template">
+
+  <div class="npm-row" data-name="<%= name %>">
+
+    <div class="package-and-version">
+      <%= name %> @ <%= version %>
+    </div>
+
+    <div class="resource-actions">
+      <button class="remove-npm-package external-url-option">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svg_sprite?v=8885a907#x" />
+        </svg>
+      </button>
+
+      <a class="open-external-url external-url-option" target="_blank" rel="noopener" href="<%= url %>" title="Open this URL in a new tab">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svg_sprite?v=8885a907#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+
+</script>
+<div id="packages-building-message-settings" class="bar-message bar-message-ask hide">
+🕑 One or more of the npm packages you are using needs to be built. You're the first person to ever need it! We're building it right now and your preview will start updating again when it's ready.
+</div>
+</div>
+</div>
+<div class="settings pen-settings-panel" id="settings-behavior">
+<form id="editor-settings-form" class="settings-row settings-row-1 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Code Indentation</h4>
+<div>
+<input type="radio" id="indent-with-spaces" name="indent-with" value="spaces" checked="">
+<label for="indent-with-spaces" class="small-inline">Spaces</label>
+&nbsp;
+<input type="radio" id="indent-with-tabs" name="indent-with" value="tabs">
+<label for="indent-with-tabs" class="small-inline">Tabs</label>
+&nbsp;&nbsp;&nbsp;
+<input type="range" min="0" max="6" id="tab-size" name="tab-size" value="2" list="tab-width-options">
+<datalist id="tab-width-options">
+<option>0</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+</datalist>
+<label for="tab-size" class="small-inline">Width of Indent</label>
+</div>
+</form>
+<form class="settings-row settings-row-2 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Save Automatically?</h4>
+<div>
+<input type="checkbox" id="auto-save" name="auto-save" checked="">
+<label for="auto-save" class="small-inline">Autosave</label>
+<p class="hint">If active, Pens will autosave every 30 seconds after being saved once.</p>
+</div>
+</form>
+<form class="settings-row settings-row-3 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>Auto-Updating Preview</h4>
+<div>
+<input type="checkbox" id="auto-run" name="auto-run" checked="">
+<label for="auto-run" class="small-inline">Enabled</label>
+<p class="hint">If enabled, the preview panel updates automatically as you code. If disabled, use the "Run" button to update.</p>
+</div>
+</form>
+</div>
+<div class="settings pen-settings-panel active" id="settings-details">
+<div id="pen-details" class="pen-details">
+<form id="pen-details-form" class="pen-details-form top-label-form">
+<div class="checkbox-row public-private-checkbox-row">
+<div class="disabled-feature-prompt">
+Private Pens are a <span class="badge badge-pro">PRO</span> feature. <a href="https://codepen.io/pro" target="_blank" class="upgrade-upsell" data-upsell-type="privacy">Upgrade</a> to unlock this feature!
+</div>
+<div class="ios-toggle-wrap public-private-wrap
+          disabled-cover
+        ">
+<div class="ios-toggle-mega-label-wrap">
+Public
+<span class="ios-toggle">
+<input type="checkbox" name="item-details-private" id="item-details-private">
+<label for="item-details-private"></label>
+</span>
+Private
+<label for="item-details-private" class="ios-toggle-mega-label"></label>
+</div>
+<span class="badge badge-pro">PRO</span>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About Private Pens</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>Private Pens are hidden from everywhere on CodePen, except to you. You can still share them and other people can see them, they just can't find them through searching or browsing.</p>
+<p>As a PRO member, you can turn on Private by Default in your user settings under the Privacy and Safety tab.</p>
+<a href="https://blog.codepen.io/documentation/pro-features/private-pens/">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+<div class="checkbox-row">
+<div class="ios-toggle-wrap template-wrap">
+<div class="ios-toggle-mega-label-wrap">
+Regular Pen
+<span class="ios-toggle ios-toggle-ambiguous">
+<input type="checkbox" name="item-details-template" id="item-details-template">
+<label for="item-details-template"></label>
+</span>
+Template
+<label for="item-details-template" class="ios-toggle-mega-label"></label>
+</div>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svg_sprite?v=8885a907#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse help-flyout-up">
+<h5>About Templates</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+<p>Templates are Pens that can be used to start other Pens. <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/api/templates/">See documentation.</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="settings-row normal-labels">
+<h4><label for="item-details-title">Pen Title</label></h4>
+<input type="text" id="item-details-title" class="item-details-title" name="item-details-title" value="Advanced CSS selectors exercise - answers" maxlength="255">
+</div>
+<div class="settings-row normal-labels">
+<h4><label for="item-details-description">Pen Description</label></h4>
+<textarea class="item-details-description" id="item-details-description" placeholder="Explain what’s going on in your Pen here. This text is searchable, so it can also help others find your work. Remember to credit others where credit is due. Markdown supported."></textarea>
+</div>
+<div class="tags settings-row normal-labels">
+<h4><label for="pen-tags" class="tags-label">Tags <em>comma separated, <span id="max-tags-label">max of five</span></em></label></h4>
+<input type="text" id="pen-tags" class="pen-tags">
+<div class="active-tags" id="active-tags"></div>
+</div>
+<div class="thumnail-upload-section settings-row top-label-form normal-labels">
+<h4><label>Screenshot / Custom Thumbnail</label></h4>
+<p>Screenshots of Pens are shown in mobile browsers, RSS feeds, to users who chose images instead of iframes, and in social media sharing.</p>
+<div id="settings-screenshot-wrap" class="settings-screenshot-wrap">
+<div id="screenshot-type" class="screenshot-description">
+<div class="screenshot-area-screenshot screenshot-image" id="custom-screenshot" style="background-image: url(https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-large.png);">
+<a id="delete-screenshot" class="button mini-button button-dark delete-screenshot" style="display: none;">× Delete</a>
+</div>
+<div class="uploading-message expand-right action-button in-action">
+<span class="spinner"></span>
+Uploading
+</div>
+<div class="screenshot-description-container">
+<div class="screenshot-description-copy">
+<p>This Pen is using the default Screenshot, generated by CodePen.</p>
+</div>
+<div class="screenshot-description-links">
+</div>
+</div>
+</div>
+</div>
+<p>PRO users can create Custom Screenshots for their Pens and Projects. <a href="https://codepen.io/pro/" class="upgrade-upsell" data-upsell-type="general">Go Pro</a>.</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="tour-modals">
+<div id="tour-intro-modal" class="tour-modal tour-intro-modal">
+<h2 id="tour-intro-modal-heading" class="tour-intro-modal-heading"></h2>
+<p id="tour-intro-modal-description" class="tour-intro-modal-description"></p>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-intro-start-btn" class="tour-intro-start-btn button green"></a>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-intro-cancel-link" class="tour-cancel-link"></a>
+</div>
+<div id="tour-step-modal" class="tour-modal tour-step-modal">
+<div class="tour-modal-instructions">
+<p id="tour-step-modal-instruction" class="tour-modal-instruction">HTML Settings</p>
+<p id="tour-step-modal-info" class="tour-modal-further-info">Here you can Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
+</div>
+<div id="tour-progress" class="tour-progress">
+<div id="tour-progress-indicator" class="tour-progress-indicator"></div>
+</div>
+<div class="tour-next-step">
+<a id="tour-step-next-btn" class="tour-next-step-btn button green">Next Step</a>
+<a id="tour-step-cancel" class="tour-cancel-link" href="https://codepen.io/Amberlowe40/pen/bGNNgbO#">Leave tour</a>
+</div>
+<div id="tour-step-modal-arrow" class="tour-step-modal-arrow"></div>
+</div>
+<div id="tour-complete-modal" class="tour-modal tour-complete-modal">
+<h2 id="tour-complete-modal-heading" class="tour-intro-complete-heading"></h2>
+<p id="tour-complete-modal-description" class="tour-intro-complete-description"></p>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-complete-option-1" class="tour-intro-start-btn button green"></a>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-complete-option-2" class="tour-cancel-link"></a>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-complete-option-3" class="tour-cancel-link"></a>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#" id="tour-complete-option-4" class="tour-cancel-link"></a>
+</div>
+</div>
+<div id="tour-overlay" class="tour-overlay">
+<div id="tour-overlay-section-0" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-1" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-2" class="tour-overlay-section"></div>
+<div id="tour-overlay-section-3" class="tour-overlay-section"></div>
+</div>
+<div class="page-wrap duotone-dark">
+<div class="boxes">
+<div class="mobile-editor-nav">
+<button id="html-toggle" class="selected"><span>HTML</span></button>
+<button id="css-toggle"><span>CSS</span></button>
+<button id="js-toggle"><span>JS</span></button>
+<button id="result-toggle" class="selected"><span>Result</span></button>
+</div>
+<div class="top-boxes editor-parent">
+<div class="editor-resizer html-editor-resizer" title="Double-click to expand."><h2 class="box-title html-editor-title none box-title--resizer" id="html-editor-title"><span class="box-title-name">HTML</span></h2></div>
+<div id="box-html" class="box box-html none" data-type="html" style="width: 32.197%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-html" class="button button-medium mini-button settings-nub" data-type="html" title="Open HTML Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title html-editor-title none" id="html-editor-title"><span class="box-title-name">HTML</span></h2>
+<div class="unsaved-editor-message"><b>0</b> unsaved changes <span class="dismiss"><svg class="icon-x"><use xlink:href="/svg_sprite?v=8885a907#x"></use></svg></span></div></div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-html" data-dropdown="#editor-dropdown-html" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+HTML Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-html" class="link-list is-dropdown editor-dropdown editor-dropdown-html" data-dropdown-position="css" data-dropdown-type="html">
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" id="html-tidy-code-button" class="tidy-code-button" data-type="html">
+Tidy HTML
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="view-compiled-button" id="html-view-compiled" data-type="html">
+View Compiled HTML
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="analyze" id="analyze-html" data-type="html">
+Analyze HTML
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Maximize HTML Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Minimize HTML Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="html">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="html">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.99618px; left: 44.9865px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 57.336px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: -24px; border-right-width: 6px; min-height: 1741px; padding-right: 8px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 265.26px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>24</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 3.99618px; top: 0px; height: 23.741px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">1</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"container"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">2</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">header</span><span class="cm-tag cm-bracket">&gt;</span> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">3</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Learning How to Code<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">4</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"info"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">5</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam earum mollitia enim pariatur atque asperiores, deserunt fuga iure distinctio! Amet iste facilis odio rerum maiores neque laboriosam non aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius officia reprehenderit dicta molestiae, excepturi inventore aut officiis! Perspiciatis, molestias tempora et nesciunt amet sint blanditiis eos voluptatibus ut facilis!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">header</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">8</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">section</span> <span class="cm-attribute">class</span>=<span class="cm-string">"first-section"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">9</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>I'm a title<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">10</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minima porro, aspernatur esse iure quas vero totam ea cupiditate numquam accusamus enim, eius neque molestiae minus. Aliquam non repudiandae, sunt!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">11</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo expedita ducimus incidunt similique voluptatum, error minus tenetur accusamus modi perferendis libero inventore quo, tempora. Repellendus quam eligendi, aliquid nobis.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">section</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">13</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">section</span> <span class="cm-attribute">class</span>=<span class="cm-string">"second-section"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -41.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">14</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>This is another section<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 6px; width: 1px; border-bottom: 0px solid transparent; top: 1741px;"></div><div class="CodeMirror-gutters" style="height: 1747px; left: -0.990334px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-html">
+<span class="error-icon" data-type="html">
+!
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer css-editor-resizer" title="Drag to resize.
+Double-click to expand."><h2 class="box-title css-editor-title none box-title--resizer" id="css-editor-title"><span class="box-title-name">CSS</span></h2></div>
+<div id="box-css" class="box box-css none neither" data-type="css" style="width: 32.197%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Drag to resize.
+Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-css" class="button button-medium mini-button settings-nub" data-type="css" title="Open CSS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title css-editor-title none" id="css-editor-title"><span class="box-title-name">CSS</span></h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-css" data-dropdown="#editor-dropdown-css" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+CSS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-css" class="link-list is-dropdown editor-dropdown editor-dropdown-css" data-dropdown-position="css" data-dropdown-type="css">
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" id="css-tidy-code-button" class="tidy-code-button" data-type="css">
+Tidy CSS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="view-compiled-button" id="css-view-compiled" data-type="css">
+View Compiled CSS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="analyze" id="analyze-css" data-type="css">
+Analyze CSS
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Maximize CSS Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Minimize CSS Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="css">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="css">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.99618px; left: 44.9865px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 62.4087px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: -24px; border-right-width: 6px; min-height: 1599px; padding-right: 8px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation" style="padding-bottom: 265.26px;"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>56</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 3.99615px; top: 0px; height: 23.741px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">1</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">body</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">border</span>: <span class="cm-number">20px</span> <span class="cm-atom">solid</span> <span class="cm-atom">#00CED1</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">font-size</span>:<span class="cm-number">20px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">color</span>:<span class="cm-atom">#2F4F4F</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">6</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">div</span><span class="cm-qualifier">.container</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">width</span>:<span class="cm-number">80%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">margin</span>:<span class="cm-number">0</span> <span class="cm-atom">auto</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">10</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">h1</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">color</span>:<span class="cm-atom">#778899</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">text-align</span>:<span class="cm-atom">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">14</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">h1</span>:<span class="cm-variable-3">hover</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">color</span>:<span class="cm-atom">#BC8F8F</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">17</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">div</span><span class="cm-qualifier">.info</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">background-color</span>:<span class="cm-atom">#7FFFD4</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">padding</span>:<span class="cm-number">5%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">21</div><div class="CodeMirror-gutter-elt" style="left: 30px; width: 11px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag">div</span><span class="cm-qualifier">.info</span>:<span class="cm-variable-3">hover</span>{</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">background-color</span>:<span class="cm-atom">#DEB887</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9903px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 22px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 6px; width: 1px; border-bottom: 0px solid transparent; top: 1599px;"></div><div class="CodeMirror-gutters" style="height: 1605px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 30px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-css">
+<span class="error-icon" data-type="css">
+!
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer js-editor-resizer" title="Drag to resize.
+Double-click to expand."><h2 class="box-title js-editor-title none box-title--resizer" id="js-editor-title"><span class="box-title-name">JS</span></h2></div>
+<div id="box-js" class="box box-js none" data-type="js" style="width: 32.197%;">
+<div class="powers">
+<div class="powers-drag-handle" title="Drag to resize.
+Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-js" class="button button-medium mini-button settings-nub" data-type="js" title="Open JS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#gear"></use>
+</svg>
+</button>
+<h2 class="box-title js-editor-title none" id="js-editor-title"><span class="box-title-name">JS</span></h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-js" data-dropdown="#editor-dropdown-js" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+JS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-js" class="link-list is-dropdown editor-dropdown editor-dropdown-js" data-dropdown-position="css" data-dropdown-type="js">
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" id="js-tidy-code-button" class="tidy-code-button" data-type="js">
+Tidy JS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="view-compiled-button" id="js-view-compiled" data-type="js">
+View Compiled JS
+</a>
+</li>
+<li>
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="analyze" id="analyze-js" data-type="js">
+Analyze JS
+</a>
+</li>
+<li class="maximize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Maximize JS Editor
+</a>
+</li>
+<li class="minimize">
+<a href="https://codepen.io/Amberlowe40/pen/bGNNgbO#0">
+Minimize JS Editor
+</a>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button fold-all-button" data-editor-type="js">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-folding-list-item">
+<button class="invisible-button unfold-all-button" data-editor-type="js">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.99618px; left: 43.9917px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 40px; margin-bottom: -24px; border-right-width: 6px; min-height: 31px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 3.99615px; top: 0px; height: 23.741px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.9955px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 6px; width: 1px; border-bottom: 0px solid transparent; top: 31px;"></div><div class="CodeMirror-gutters" style="height: 37px; left: -0.995544px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+<div class="error-bar" id="error-bar-js">
+<span class="error-icon" data-type="js">
+!
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="resizer" class="resizer"><span></span><div id="width-readout" class="width-readout">1409px</div></div>
+<section id="drawer" class="drawer comments">
+</section>
+<div class="output-container">
+<div class="output-sizer">
+<div id="result_div" class="result">
+<div class="bar-message bar-message-ask hide" id="packages-building-message">
+🕑 One or more of the npm packages you are using needs to be built. You're the first person to ever need it! We're building it right now and your preview will start updating again when it's ready.
+</div>
+<iframe id="result" name="CodePen" src="./Advanced CSS selectors exercise - answers_files/bGNNgbO.html" sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" scrolling="auto" allowtransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe ">
+          </iframe>
+<div id="asset-bin-goes-here"></div>
+<div id="editor-drag-cover" class="drag-cover"></div>
+</div>
+<div id="box-console" class="box box-console">
+<div class="editor-resizer editor-resizer-console" title="Drag to resize. Double-click to expand."></div>
+<div class="powers">
+<div class="powers-drag-handle" title="Drag to resize. Double-click to expand."></div>
+<div class="editor-actions-left">
+<h2 class="box-title"><span class="box-title-name">Console</span></h2>
+</div>
+<div class="editor-actions-right">
+<button class="button button-medium mini-button console-clear-button" title="Clear">
+Clear
+</button>
+<button class="button button-medium mini-button close-editor-button" data-type="console" title="Close">
+<svg class="icon-x">
+<use xlink:href="/svg_sprite?v=8885a907#x"></use>
+</svg>
+</button>
+</div>
+</div>
+<div class="console-wrap">
+<div class="console-entries short-no-scroll"></div>
+<div class="console-command-line">
+<span class="console-arrow forwards"></span>
+<textarea class="console-command-line-input auto-expand" rows="1" data-min-rows="1"></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer id="react-pen-footer" class="site-footer editor-footer"><div class="footer-left"><div class="footer-actions-menu"><button id="footer-button" aria-expanded="false" class="button icon-button button button-medium toggle-footer-menu-button
+              
+            "><svg width="20" height="20" class=" icon icon-arrow-down-mini"><use xlink:href="/svg_sprite?v=8885a907#arrow-down-mini"></use></svg></button><div class="footer-actions" data-expanded="false"><button class="button mini-button console-toggle-button">Console</button><button id="assets-link" class="button mini-button assets-button">Assets</button><button class="button mini-button" data-id="editor-comments-button">Comments</button><button title="Keyboard Shortcuts" class="button mini-button keyboard-commands-button"><span>Ctrl</span></button></div><select name="zoom-choice" data-placeholder="Zoom Scale..." class="button mini-button zoom-select"><option value="1.0" class="option-green" selected="">1.0×</option><option value="0.5" class="option-green">0.5×</option><option value="0.25" class="option-green">0.25×</option></select></div><div id="bsa-footer" class="FooterAd_root-1wuVr" data-test-id="bsa-footer"><div class="FooterAd_adWrapper-1mgNF"><a href="https://srv.buysellads.com/ads/click/x/GTND42QUCWBDT2QJCEYLYKQMCABDL5QMCVADVZ3JCWSIPK3JCA7IL2QKC6BI52QIF6AIKK3EHJNCLSIZ" class="FooterAd_searchAd-3MV_e"><div class="FooterAd_image-20y-l" style="background-color: rgb(255, 255, 255);"><img src="./Advanced CSS selectors exercise - answers_files/1573165286-1564440919-SquareSupport_Twitter.jpg" alt=""></div><div class="FooterAd_text-2_g_8"><div class="FooterAd_company-2Iy4W">Square for Developers: Deep dive into how to take online payments</div></div></a></div><img src="./Advanced CSS selectors exercise - answers_files/B23320140.259448969" alt="" class="FooterAd_pixel-rqi9q"></div></div><div class="footer-right"><span class="last-saved-message">Last saved <time id="last-saved-time-ago" datetime="2019-12-03 19:38:20 UTC" title="2019-12-03 19:38:20 UTC">less than a minute</time> ago</span><button id="live-view-popout-button" title="Open Live View in a New Window" class="button icon-button mini-button live-view-popout-button"><svg width="20" height="20" class=" icon icon-pop-out"><use xlink:href="/svg_sprite?v=8885a907#pop-out"></use></svg></button><button class="button mini-button delete-button roll-red">Delete</button><button data-id="add-to-collection-button" class="button mini-button">Add to Collection</button><button class="button mini-button embed-builder-button">Embed</button><button data-test-id="export-panel-button" class="button mini-button export-button">Export </button><div id="export-panel" data-test-id="export-panel" class="export-panel ExportPanel_root-2-_BS"><section class="share-actions share-section"><h4>Export <a href="https://blog.codepen.io/documentation/features/exporting-pens/" class="inline-q" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></a></h4><button id="share-gist" data-test-id="export-gist" class="button button-fullwidth"><svg width="20" height="20" class=" icon icon-github"><use xlink:href="/svg_sprite?v=8885a907#github"></use></svg>Save as GitHub Gist</button><button data-test-id="export-zip" class="button button-fullwidth"><svg width="16" height="16" class=" icon icon-zip-badge"><use xlink:href="/svg_sprite?v=8885a907#zip-badge"></use></svg>Export .zip</button><div class="ExportPanel_fancyProArea-2Axi4"><span class="badge badge-pro ExportPanel_badgePro-3S1Gy" data-test-id="pro-badge">PRO</span></div><button data-test-id="export-zip-with-build" class="button button-fullwidth"><svg width="16" height="16" class=" icon icon-zip-badge"><use xlink:href="/svg_sprite?v=8885a907#zip-badge"></use></svg>.zip with Build Process </button></section></div><button class="button mini-button sharing-button">Share</button><div id="sharing-panel" class="sharing-panel"><ul id="share-buttons" class="share-buttons share-section"><li><a class="button " href="https://twitter.com/intent/tweet?text=Advanced%20CSS%20selectors%20exercise%20-%20answers&amp;url=https://codepen.io/Amberlowe40/pen/bGNNgbO&amp;via=CodePen" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-twitter"><use xlink:href="/svg_sprite?v=8885a907#twitter"></use></svg>Share on Twitter</a></li><li><a class="button " href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/Amberlowe40/pen/bGNNgbO" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-facebook"><use xlink:href="/svg_sprite?v=8885a907#facebook"></use></svg>Share on Facebook</a></li><li><a class="button " href="https://dev.to/new?prefill=---%5Cn%20title:%20Advanced%20CSS%20selectors%20exercise%20-%20answers%5Cn%20published:%20false%5Cn%20tags:%20codepen%5Cn%20---%5Cn%20%5Cn%20%5Cn%20%5Cn%20%7B%25%20codepen%20https://codepen.io%2FAmberlowe40%2Fpen%2FbGNNgbO%20%25%7D%5Cn" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-dev"><use xlink:href="/svg_sprite?v=8885a907#dev"></use></svg>Share on DEV</a></li></ul><form id="send-to-phone-form" name="send-to-phone-form" action="https://codepen.io/Amberlowe40/pen/bGNNgbO#0" class="send-to-phone share-section"><h5>Send SMS with Full Page URL to your phone<a href="http://blog.codepen.io/documentation/features/sms/" class="inline-q" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" class=" icon icon-help"><use xlink:href="/svg_sprite?v=8885a907#help"></use></svg></a></h5><div id="sms-phone"><input type="tel" id="send-to-phone" placeholder="1-555-555-5555" name="send-to-phone" required="" title="Phone number in international format" class="send-to-phone-input fullwidth"><input id="sms-send-button" type="submit" class="button green button-small button-fullwidth" value="Send"><span class="mobile-sms-left"><strong id="texts-left" class="texts-left">10</strong> left this month</span></div></form></div></div></footer>
+<div id="keycommands" class="modal modal-neutral">
+<section class="editor-commands" style="padding-right: 10px;">
+<h2>Editor Commands</h2>
+<div class="key-group">
+<kbd class="command-no-mod">
+<span class="pc_only">Ctrl</span>
+<span class="mac_only">Ctrl</span>
+Space
+</kbd>
+Autocomplete (if available)
+</div>
+<div class="key-group">
+<kbd class="command">F</kbd>
+Find
+</div>
+<div class="key-group">
+<kbd class="command">G</kbd>
+Find Next
+</div>
+<div class="key-group">
+<kbd class="command">⇧G</kbd>
+Find Previous
+</div>
+<div class="key-group">
+<span class="command pc_only">Shift F</span>
+<span class="command mac_only">Opt F</span>
+Find &amp; Replace
+</div>
+<div class="key-group">
+<kbd class="command">[</kbd>
+Indent Code Right
+</div>
+<div class="key-group">
+<kbd class="command">]</kbd>
+Indent Code Left
+</div>
+<div class="key-group">
+<kbd class="command-no-mod">⇧ Tab</kbd>
+Auto Indent Code
+</div>
+<div class="key-group">
+<kbd class="command">/</kbd>
+Line Comment
+</div>
+<div class="key-group">
+<kbd class="command">
+<span class="pc_only">⇧</span>
+<span class="mac_only">Opt</span>
+/
+</kbd>
+Block Comment
+</div>
+<p style="margin: 20px 0 0 0;">Also see: <a href="https://blog.codepen.io/documentation/features/tab-triggers/" target="_blank" rel="noopener">Tab Triggers</a></p>
+</section>
+<section class="editor-commands">
+<h2>HTML Specific</h2>
+<div class="key-group">
+<kbd class="command">⇧A</kbd>
+Wrap With...
+</div>
+<h2>Misc</h2>
+<div class="key-group">
+<kbd class="command">⇧7</kbd>
+Re-run Preview
+</div>
+<div class="key-group">
+<kbd class="command">⇧8</kbd>
+Clear All Analyze Errors
+</div>
+<div class="key-group">
+<kbd class="command">⇧9</kbd>
+Open This Dialog
+</div>
+<h2>Pen Actions</h2>
+<div class="key-group">
+<kbd class="command">P</kbd>
+Create New Pen
+</div>
+<div class="key-group">
+<kbd class="command">S</kbd>
+Save
+</div>
+<div class="key-group">
+<kbd class="command">I</kbd>
+Info Panel (if owned)
+</div>
+</section>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay" style="display: none;"></div>
+<div id="react-popups" class="react-popups"></div>
+<noscript>
+
+  <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+
+  <div class="overlay noscript-overlay" style="display: block;"></div>
+
+  <div class="modal modal-message group modal-warning">
+
+    <div class="modal-title">CodePen requires JavaScript to render the code and preview areas in this view.</div>
+
+    <p>Trying <a href="https://codepen.io/Amberlowe40/debug/bGNNgbO">viewing this Pen in Debug Mode</a>, which is the preview area without any iframe and does not require JavaScript. Although what the preview is of might!</p>
+
+    <p>Need to know how to enable JavaScript? <a href="http://enable-javascript.com/" target="_blank" rel="noopener">Go here.</a></p>
+
+    <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
+
+  </div>
+
+</noscript>
+<input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:null,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;78&quot;},&quot;__analytics&quot;:{&quot;controllerActionName&quot;:&quot;show&quot;,&quot;controllerName&quot;:&quot;pen&quot;,&quot;enabled&quot;:true},&quot;__remote_addr&quot;:&quot;50.91.1.108&quot;,&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media&quot;,&quot;iframe_sandbox&quot;:&quot;allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts&quot;},&quot;__env&quot;:&quot;production&quot;,&quot;__turnOffJS&quot;:false,&quot;__constants&quot;:{&quot;grid_iframe_sandbox_attributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__svg_sprite&quot;:&quot;/svg_sprite?v=8885a907&quot;,&quot;__user&quot;:{&quot;anon&quot;:false,&quot;base_url&quot;:&quot;/Amberlowe40/&quot;,&quot;current_team_id&quot;:0,&quot;hashid&quot;:&quot;yNqgaq&quot;,&quot;id&quot;:3173632,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Amber lowe&quot;,&quot;owner_id&quot;:&quot;yNqgaqYdEzGn&quot;,&quot;paid&quot;:false,&quot;session_hash&quot;:&quot;6dd5c07bc5fd59823c6f7fbf34da0023&quot;,&quot;tier&quot;:0,&quot;username&quot;:&quot;Amberlowe40&quot;},&quot;__firestore&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoieU5xZ2FxWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNTc1NDA1NTAxLCJpYXQiOjE1NzU0MDE5MDEsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6InlOcWdhcSJ9.cOA0dNQUsFYcziNf2FkVZQ-Na2S67JOPGKzxTlCh8qnvSPWpbxpG0uUR2nCKHmX-Oi6XDxVhEOn1aQR9fyVzm7N5lblShapM0K3A49utH14k_ITzCaPpJCj6CM1tTQ80fEWSfI0iGGdaGPqNqszTD6S0kZD0v3djB-nef7CdWTg0HWupGck2htmCySGfRUUaOxPz-hM16vgVkst5YM2G_gMk3cgyVEKm4vV6T8zYmLUYcplRteLVDrc2aiL2vuzKgaKGXw0ligcE01q_qDB4dEQScDoexMNWHcwEhU0O1c5jWIH4SJAYlRjXEzzL6S9_2r2s8aIvrvSaKsPBgDRp7g&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;yNqgaq&quot;,&quot;name&quot;:&quot;Amber lowe&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/169adec0ebbf4d00d9a864986f6bbf4d?s=80&amp;d=https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/169adec0ebbf4d00d9a864986f6bbf4d?s=512&amp;d=https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;canCreatePosts&quot;:true,&quot;currentContext&quot;:{&quot;id&quot;:&quot;yNqgaq&quot;,&quot;baseUrl&quot;:&quot;/Amberlowe40&quot;,&quot;title&quot;:&quot;Amber lowe&quot;,&quot;name&quot;:&quot;Amber lowe&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/169adec0ebbf4d00d9a864986f6bbf4d?s=80&amp;d=https://static.codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/169adec0ebbf4d00d9a864986f6bbf4d?s=512&amp;d=https://static.codepen.io/assets/avatars/user-avatar-512x512-6e240cf350d2f1cc07c2bed234c3a3bb5f1b237023c204c782622e80d6b212ba.png&quot;,&quot;username&quot;:&quot;Amberlowe40&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:1,&quot;usedProjects&quot;:1,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/Amberlowe40&quot;,&quot;username&quot;:&quot;Amberlowe40&quot;,&quot;admin&quot;:false,&quot;anon&quot;:false,&quot;pro&quot;:false,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__pageType&quot;:&quot;pen&quot;,&quot;__jwt&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhaWQiOmZhbHNlLCJ0ZWFtX2lkIjoiWWRFekduIiwidXNlcl9pZCI6InlOcWdhcSIsInVzZXJuYW1lIjoiQW1iZXJsb3dlNDAifSwiZXhwIjoxNTc1NDg4MzAxfQ.WEFPw2LtYnFb2pYttZbUSzgqJr-FOywopr5xiOyGZTs&quot;,&quot;__boomboom&quot;:{&quot;serve_url&quot;:&quot;https://cdpn.io/boomboom/v2/index.html&quot;,&quot;store_url&quot;:&quot;https://cdpn.io/boomboom/v2/store&quot;},&quot;__preprocessors_url&quot;:&quot;https://wfwf9k3tn7.execute-api.us-west-2.amazonaws.com/production&quot;,&quot;__layoutType&quot;:null,&quot;__rtData&quot;:&quot;{\&quot;maxMembers\&quot;:0,\&quot;roomID\&quot;:\&quot;bGNNgbO/live\&quot;,\&quot;roomType\&quot;:\&quot;live\&quot;,\&quot;updatedAt\&quot;:1575401900,\&quot;user\&quot;:{\&quot;id\&quot;:\&quot;yNqgaq\&quot;,\&quot;hashid\&quot;:\&quot;yNqgaq\&quot;,\&quot;name\&quot;:\&quot;Amber lowe\&quot;,\&quot;username\&quot;:\&quot;Amberlowe40\&quot;,\&quot;role\&quot;:\&quot;editor\&quot;}}&quot;,&quot;__item&quot;:&quot;{\&quot;custom_screenshot\&quot;:null,\&quot;editor_settings\&quot;:{\&quot;theme\&quot;:\&quot;duotone-dark\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;font_type\&quot;:\&quot;gintronic\&quot;,\&quot;font_size\&quot;:\&quot;16\&quot;,\&quot;key_bindings\&quot;:\&quot;normal\&quot;,\&quot;indent_with\&quot;:\&quot;spaces\&quot;,\&quot;tab_size\&quot;:\&quot;2\&quot;,\&quot;auto_run\&quot;:true,\&quot;line_numbers\&quot;:true,\&quot;line_wrapping\&quot;:true,\&quot;code_folding\&quot;:true,\&quot;match_brackets\&quot;:true,\&quot;autocomplete\&quot;:false,\&quot;emmet_active\&quot;:true,\&quot;snippets\&quot;:{\&quot;markupSnippets\&quot;:{},\&quot;stylesheetSnippets\&quot;:{}}},\&quot;hashid\&quot;:\&quot;bGNNgbO\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;npm_packages\&quot;:{},\&quot;owner_id\&quot;:\&quot;yNqgaqYdEzGn\&quot;,\&quot;resources\&quot;:[],\&quot;tags\&quot;:[],\&quot;id\&quot;:41590025,\&quot;user_id\&quot;:3173632,\&quot;html\&quot;:\&quot;&lt;div class=\\\&quot;container\\\&quot;&gt;\\n&lt;header&gt;  \\n  &lt;h1&gt;Learning How to Code&lt;/h1&gt;\\n  &lt;div class=\\\&quot;info\\\&quot;&gt;\\n    &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam earum mollitia enim pariatur atque asperiores, deserunt fuga iure distinctio! Amet iste facilis odio rerum maiores neque laboriosam non aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eius officia reprehenderit dicta molestiae, excepturi inventore aut officiis! Perspiciatis, molestias tempora et nesciunt amet sint blanditiis eos voluptatibus ut facilis!&lt;/p&gt;\\n  &lt;/div&gt;\\n&lt;/header&gt;\\n&lt;section class=\\\&quot;first-section\\\&quot;&gt;\\n  &lt;h2&gt;I&#39;m a title&lt;/h2&gt;\\n  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minima porro, aspernatur esse iure quas vero totam ea cupiditate numquam accusamus enim, eius neque molestiae minus. Aliquam non repudiandae, sunt!&lt;/p&gt;\\n  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo expedita ducimus incidunt similique voluptatum, error minus tenetur accusamus modi perferendis libero inventore quo, tempora. Repellendus quam eligendi, aliquid nobis.&lt;/p&gt;\\n&lt;/section&gt;\\n&lt;section class=\\\&quot;second-section\\\&quot;&gt;\\n  &lt;h2&gt;This is another section&lt;/h2&gt;\\n  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto possimus, reiciendis consequatur inventore mollitia ipsa sed quibusdam! Aut nemo voluptatibus modi iste repudiandae ea beatae suscipit. Officia omnis laudantium quasi.&lt;/p&gt;\\n  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, ratione doloribus nam officia reiciendis eligendi architecto maxime quisquam unde non, illo libero iure aut ad consequuntur animi modi, recusandae voluptatum!&lt;/p&gt;\\n&lt;/section&gt;\\n&lt;section class=\\\&quot;gallery\\\&quot;&gt;\\n&lt;img src=\\\&quot;https://unsplash.it/200/200\\\&quot;&gt;\\n&lt;img src=\\\&quot;https://unsplash.it/200/200\\\&quot;&gt;\\n&lt;img src=\\\&quot;https://unsplash.it/200/200\\\&quot;&gt; \\n&lt;img src=\\\&quot;https://unsplash.it/200/200\\\&quot;&gt;\\n&lt;/section&gt;\\n&lt;/div&gt;\&quot;,\&quot;css\&quot;:\&quot;body{\\n  border: 20px solid #00CED1;\\n  font-size:20px;\\n  color:#2F4F4F;\\n}\\ndiv.container{\\n  width:80%;\\n  margin:0 auto;\\n}\\nh1{\\n  color:#778899;\\n  text-align:center;\\n}\\nh1:hover{\\n  color:#BC8F8F;\\n}\\ndiv.info{\\n  background-color:#7FFFD4;\\n  padding:5%;\\n}\\ndiv.info:hover{\\n  background-color:#DEB887;\\n}\\n.first-section{\\n  color:#00CED1;\\n  background-color:#2F4F4F;\\n  padding:10%;\\n}\\n.first-section:hover{\\n  color:#FFA07A;\\n  background-color:#696969;\\n}\\n.second-section{\\n  line-height:1.5;\\n  letter-spacing:2px;\\n}\\n.second-section:hover{\\n  color:#FF8C00;\\n}\\n.second-section h2{\\n  color:#778899;\\n  text-transform:uppercase;\\n}\\n.second-section h2:hover{\\n  color:#FF8C00;\\n  text-transform:capitalize;\\n}\\n.gallery{\\n  display:flex;\\n  flex-direction:row;\\n  justify-content:space-between;\\n  padding:10% 0;\\n}\\n.gallery img:hover{\\n  border:10px dotted #DC143C;\\n}\&quot;,\&quot;parent\&quot;:39588462,\&quot;js\&quot;:\&quot;\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;html_classes\&quot;:\&quot;\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;css_prefix_free\&quot;:null,\&quot;css_external\&quot;:null,\&quot;js_library\&quot;:null,\&quot;js_modernizr\&quot;:null,\&quot;js_external\&quot;:null,\&quot;created_at\&quot;:\&quot;2019-12-03T19:38:20.000Z\&quot;,\&quot;updated_at\&quot;:\&quot;2019-12-03T19:38:20.000Z\&quot;,\&quot;session_hash\&quot;:null,\&quot;title\&quot;:\&quot;Advanced CSS selectors exercise - answers\&quot;,\&quot;description\&quot;:\&quot;\&quot;,\&quot;slug_hash\&quot;:\&quot;bGNNgbO\&quot;,\&quot;head\&quot;:\&quot;\&quot;,\&quot;private\&quot;:false,\&quot;slug_hash_private\&quot;:\&quot;149dd9ba4a5e6e92b92ca041d6964b9e\&quot;,\&quot;has_animation\&quot;:true,\&quot;css_pre_processor_lib\&quot;:\&quot;\&quot;,\&quot;checksum\&quot;:0,\&quot;screenshot_uuid\&quot;:null,\&quot;team_id\&quot;:0,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;template\&quot;:false,\&quot;js_module\&quot;:null}&quot;,&quot;__profiled&quot;:{&quot;id&quot;:3173632,&quot;hashid&quot;:&quot;yNqgaq&quot;,&quot;name&quot;:&quot;Amber lowe&quot;,&quot;username&quot;:&quot;Amberlowe40&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/Amberlowe40&quot;},&quot;__preprocessors&quot;:{&quot;html&quot;:{&quot;default&quot;:&quot;none&quot;,&quot;preprocessors&quot;:[&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;haml&quot;:&quot;Haml&quot;,&quot;markdown&quot;:&quot;Markdown&quot;,&quot;slim&quot;:&quot;Slim&quot;,&quot;pug&quot;:&quot;Pug&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;html&quot;,&quot;markdown&quot;,&quot;slim&quot;,&quot;haml&quot;,&quot;pug&quot;]},&quot;css&quot;:{&quot;bases&quot;:[&quot;normalize&quot;,&quot;reset&quot;,&quot;neither&quot;],&quot;default_base&quot;:&quot;neither&quot;,&quot;default_prefix&quot;:&quot;neither&quot;,&quot;default&quot;:&quot;none&quot;,&quot;exclude_emmet_syntaxes&quot;:[&quot;none&quot;,&quot;postcss&quot;],&quot;par_suffixes&quot;:[&quot;less&quot;,&quot;scss&quot;,&quot;sass&quot;,&quot;styl&quot;],&quot;prefixes&quot;:[&quot;autoprefixer&quot;,&quot;prefixfree&quot;,&quot;neither&quot;],&quot;preprocessors&quot;:[&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;less&quot;:&quot;Less&quot;,&quot;scss&quot;:&quot;SCSS&quot;,&quot;sass&quot;:&quot;Sass&quot;,&quot;stylus&quot;:&quot;Stylus&quot;,&quot;postcss&quot;:&quot;PostCSS&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;css&quot;,&quot;sass&quot;,&quot;scss&quot;,&quot;less&quot;,&quot;stylus&quot;,&quot;postcss&quot;]},&quot;js&quot;:{&quot;default&quot;:&quot;none&quot;,&quot;par_suffixes&quot;:[&quot;babel&quot;,&quot;ts&quot;,&quot;coffee&quot;,&quot;ls&quot;],&quot;preprocessors&quot;:[&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;],&quot;pretty_syntaxes&quot;:{&quot;none&quot;:&quot;None&quot;,&quot;babel&quot;:&quot;Babel&quot;,&quot;typescript&quot;:&quot;TypeScript&quot;,&quot;coffeescript&quot;:&quot;CoffeeScript&quot;,&quot;livescript&quot;:&quot;LiveScript&quot;},&quot;syntaxes&quot;:[&quot;none&quot;,&quot;js&quot;,&quot;coffee&quot;,&quot;coffeescript&quot;,&quot;livescript&quot;,&quot;typescript&quot;,&quot;babel&quot;]}},&quot;__debug_redirect&quot;:&quot;https://codepen.io/Amberlowe40/debug/bGNNgbO&quot;,&quot;__npm_base_url&quot;:&quot;https://bundles-development.cdpn.io&quot;,&quot;__feature_npm_enabled&quot;:false,&quot;__export_service_url&quot;:&quot;https://codepen.io/api/export&quot;,&quot;__embed_modal_script&quot;:&quot;https://static.codepen.io/assets/embed/modal/embed_modal-91f474f198a6556c76f90a8b4970140a3897edf2193e4c0061f7abc280ea9341.js&quot;,&quot;__path_to_details_comment_js&quot;:&quot;https://static.codepen.io/assets/details/comment.js&quot;,&quot;__syntax_highlighting_script&quot;:&quot;https://static.codepen.io/assets/comments/syntax_highlight_comments-ff741bfb41e47c54cf10587b2077a02714ff1431aaf97e915fb28c921d70daa6.js&quot;,&quot;__run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-a1b10d795398a6e7f6700fed41feef1bee599b1755976a6a35b8de396c37439b.js&quot;,&quot;__standalone_run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-standalone-a0b9adb0804f1fa2d16a43744bb3f58365b5e3a74bfb3b5d98dcc30a17de4ad6.js&quot;,&quot;__eijs&quot;:&quot;https://static.codepen.io/assets/embed/ei.js&quot;,&quot;__favicon_mask_icon&quot;:&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot;,&quot;__favicon_shortcut_icon&quot;:&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot;,&quot;__path_to_console_runner_js&quot;:&quot;https://static.codepen.io/assets/editor/live/console_runner-35ce412171641ff1bf5aafef664326622ab85fdc72688d6861505d88ff7e036f.js&quot;,&quot;__path_to_live_reloader_js&quot;:&quot;https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js&quot;,&quot;__path_to_processor_worker&quot;:&quot;https://static.codepen.io/assets/packs/router.js&quot;,&quot;__path_to_stop_execution_on_timeout&quot;:&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js&quot;,&quot;__pen_normalize_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;,&quot;__pen_prefix_free_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js&quot;,&quot;__pen_reset_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;,&quot;__cdn_css_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdncss_data-b2a6b09b819f5d5cad330bde53c28db816c78598cbec7c82693642c0f8198d81.json&quot;,&quot;__cdn_js_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdnjs_data-1ba370c14f6d31ca1535a87b2e3e151cf4b60d08485aba18ef86b137051f0175.json&quot;,&quot;__theme_url_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/twilight-1384711dde26dace772d921a7aec83b44bfe4bfda4f990cf1c049737be68ea70.css&quot;,&quot;__theme_url_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-dark-fb063fc30fc6a9df248c256ebf03ea7d75a032d61e69adb3ade1705ded9b9822.css&quot;,&quot;__theme_url_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/tomorrow-night-27afa0d3af123785b826e3b55356805a6a96a2d861d3b906a0fd24b1a02d6456.css&quot;,&quot;__theme_url_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-dark-87d91cae725b6ecb7ca7e42a58974a2b0d2ac490adc8e4d6930d0ab81cc2b997.css&quot;,&quot;__theme_url_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/panda-b14f355bdaff2b6e80f6e4829c8dbd08e68723c3b50636e2409f230f11afd234.css&quot;,&quot;__theme_url_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-dark-35fc919b9a74eeec773475a2a49b6a7dce3e9401eb9201fc0d4fd5042b965ba4.css&quot;,&quot;__theme_url_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-dark-ef436ca908e609443cab2eb294588a92486768b5819c605bff7d8efd6af79d77.css&quot;,&quot;__theme_url_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/classic-05042b5cc4a28e9593f75ad99a94fe6c8d36f29e7351f393fb933c4abb35d6e6.css&quot;,&quot;__theme_url_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-light-be5e762cbb1cab202df693ab602b7f812e67b6cce30b1f49ce356b8ddc7dd221.css&quot;,&quot;__theme_url_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/xq-light-5b54d7fd03a215a68c4dea5e667bf5331c07c7b031308f35e5b8c5c31bd3c0c1.css&quot;,&quot;__theme_url_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-light-33e1f388ae6f409d3db8b91762decdd6c4c9b16d35df6f954b4c1e2b9f2577ac.css&quot;,&quot;__theme_url_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/mdn-like-024fe15a67dbdf35d7a2305cadc8fc18d643dd2d403b25f0be7b2039ced52f90.css&quot;,&quot;__theme_url_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-light-47bec10fc5a49a2b900effeb0b1b1177226f0fa1342b4e80a2e10345fb52de92.css&quot;,&quot;__theme_url_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-light-0f8cf3c8895f52adeab2cdee02cb171fc64de459bfd0be2df98733f46c82c4ca.css&quot;,&quot;__theme_url_scoped_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/twilight-9c51d766f1e78475a9b3c9e394d4d03137dfda0a96b44baa8191deb143562cca.css&quot;,&quot;__theme_url_scoped_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-dark-e77de3c5c42818438b0bc3d796bb4e0be755c3704012949293288feade9f4649.css&quot;,&quot;__theme_url_scoped_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/tomorrow-night-c678af8fa96920aaec0489063234332c9ff8a25465ff6cb0d7d80f9d3b03965d.css&quot;,&quot;__theme_url_scoped_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-dark-f007150cbb94758d4ffa5c8f4f1cc497ce87450a59ada9ef8b5509ce89550453.css&quot;,&quot;__theme_url_scoped_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/panda-e3ddae9383628060c4a38185582057f48efe3a5d242e19be01613ca3c0b35b8e.css&quot;,&quot;__theme_url_scoped_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-dark-354e680ae1137926effc7bec4c40012abfa5282d4c91a1b6444e6240832da061.css&quot;,&quot;__theme_url_scoped_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-dark-4283b418e0ad8a736f5e815bde556d1213c93c157cfdac1676c763be6f09bf81.css&quot;,&quot;__theme_url_scoped_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/classic-c5247e483fb3edda6bc1108f0949417746504df3bf55bc4e2d2168917974fd86.css&quot;,&quot;__theme_url_scoped_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-light-33066eae3fdb81bae24a964a0c3861a585619ad6e9a05b57c5b0fca9b48df0c3.css&quot;,&quot;__theme_url_scoped_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/xq-light-cbe4cf2b9d3ce1ca3c1ac7662123e2279955bd57b995d9bb43e7fb85e1d68d23.css&quot;,&quot;__theme_url_scoped_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-light-2d91b93eac98568d3a806fa7f75ec4f2b438d57975a38b0f377defe58d2568bf.css&quot;,&quot;__theme_url_scoped_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/mdn-like-7937b9601fdb856fcaaf57770c0a8a07ee2c1188ae3062f782e4e1f9946d8ad5.css&quot;,&quot;__theme_url_scoped_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-light-9db2f93e247af2cbc8da9013a84612c79ea15571d2b0d3ed24560e3dfa8d06bc.css&quot;,&quot;__theme_url_scoped_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-light-f8c33683a831f7b3c24cfcee878df2c852cdd8b44a75d1081a95073ed543e10a.css&quot;}">
+<script src="./Advanced CSS selectors exercise - answers_files/browser_support-f97f3ef9d187e4d0436e96e4d002603225517239e71f56f5a0441cce3a0d5be4.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/everypage-9ab73946e0e7bdf61ba70b8388c769aa1aa644ca2c377232dd419c0d516fe499.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/vendor-664f562babcaade4f8bb.chunk.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/2-b78ff8c4d82543b8d6fb.chunk.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/everypage-3707960881c74c8527b2.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/processorRouter-9b2369db6f0994e190d3.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/commonLibs-f5489cf690cbd8eeac55398b1729b3033fad1b38546322969bb251fad3795ce3.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/codemirror-41b003ba7076ac1285f386080f36114ec6e4c72796832faf66404c01df1eb104.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/emmet-codemirror-plugin-222bd3cb88c16bb29433e34064a6dce2845b15c040718116c240719eaafc143f.js.download"></script>
+<script src="./Advanced CSS selectors exercise - answers_files/index-30d5a6a4baf63d2669095d1502c0169d4aa8e4867abd4a6e84bc489e621f475b.js.download"></script>
+
+
+<div id="speechnotesx_mirror_container"><div id="speechnotesx_mirror"></div></div></body></html>
