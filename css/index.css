@@ -265,8 +265,38 @@ footer {
   .home .walk {
     border: 1px solid #c71212;
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .home footer p {
-    margin-right: 15em;
+    width: 450px;
+  }
+  .home .walk-img {
+    width: 500px;
+  }
+  .home .walk-text {
+    width: 500px;
+  }
+  .home .space-images {
+    flex-direction: column;
+    width: 500px;
+    border: 2px solid goldenrod;
+  }
+  .home .space-images .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .visit-planets {
+    flex-direction: column;
+    width: 300px;
+    border: 3px solid darkviolet;
+    justify-content: stretch;
+  }
+  .home nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+  }
+  .home nav a {
+    margin-left: 10em;
   }
 }
