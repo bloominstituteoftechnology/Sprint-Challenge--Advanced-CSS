@@ -1,3 +1,18 @@
 // Mixins Here
+.walk {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    .navigation();
+}
+
+.btn button (@background-color, @text-color, @hover-background-color, @hover-text-color) {
+    background: @background-color;
+    color: @text-color;
+
+    &:hover {
+        color: @hover-text-color;
+        background: @hover-background-color;
+    }
 
     
