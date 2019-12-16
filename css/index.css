@@ -261,3 +261,12 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    border: 1px solid #c71212;
+    flex-direction: column-reverse;
+  }
+  .home footer p {
+    margin-right: 15em;
+  }
+}
