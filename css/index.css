@@ -159,6 +159,7 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  border: solid dotted 3px;
 }
 nav {
   display: flex;
@@ -173,11 +174,13 @@ nav h1 {
   font-size: 4rem;
   margin: 20px 0;
   color: #23293B;
+  border: green dotted 3px;
 }
 nav .nav-links {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
+  border: yellow dotted 3px;
   width: 65%;
   justify-content: center;
 }
@@ -292,6 +295,7 @@ footer {
   border: 1px solid silver;
   cursor: pointer;
   font-size: 2rem;
+  border: green solid 3px;
   /* Safari 3-4, iOS 1-3.2, Android 1.6- */
   -webkit-border-radius: 5px;
   /* Firefox 1-3.6 */
@@ -310,6 +314,7 @@ footer {
   border: 1px solid silver;
   cursor: pointer;
   font-size: 2rem;
+  border: green solid 3px;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -320,6 +325,7 @@ footer {
     border: 1px solid silver;
     cursor: pointer;
     font-size: 1.5rem;
+    border: green solid 3px;
   }
   .home .walk .walk-text .btn:hover {
     width: 100%;
@@ -329,6 +335,7 @@ footer {
     border: 1px solid silver;
     cursor: pointer;
     font-size: 1.5rem;
+    border: green solid 3px;
   }
 }
 .home .walk .walk-img {
