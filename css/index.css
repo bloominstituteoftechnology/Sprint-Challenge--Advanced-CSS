@@ -11,12 +11,16 @@
   color: rgba(30, 143, 255, 0.644);
   background: aquamarine;
 }
+.btn:hover {
+  background: red;
+  color: aquamarine;
+}
 .h1-parent {
   display: flex;
   justify-content: center;
   border: 1px solid #f4f4f4;
   padding: 0.5em;
-  background: #f4f4f4;
+  background: #b5c712;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
