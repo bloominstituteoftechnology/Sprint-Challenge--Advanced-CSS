@@ -207,11 +207,65 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    max-width: 500px;
+  }
+  .home .walk {
+    border: 1px solid #12c7a0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .home footer p {
+    width: 450px;
+  }
+  .home .h1-parent {
+    justify-content: left;
+    width: 250px;
+  }
+  .home .walk-img {
+    width: 100%;
+  }
+  .home .walk-text {
+    width: 500px;
+  }
+  .home .space-images {
+    flex-direction: column;
+    width: 500px;
+    border: 2px solid goldenrod;
+  }
+  .home .space-images .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .visit-planets {
+    flex-direction: column;
+    width: 280px;
+    border: 3px solid darkviolet;
+    justify-content: stretch;
+  }
+  .home nav-bar a {
+    display: block;
+    width: 200px;
+  }
+  .home nav a {
+    justify-content: left;
+  }
+  .home .intro {
+    width: 100%;
+    border: 2px solid tomato;
+  }
+}
+.home .intro img {
+  width: 100%;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -260,50 +314,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width: 500px) {
-  .home .walk .walk {
-    border: 1px solid #c71212;
-    flex-direction: column-reverse;
-    justify-content: center;
-  }
-  .home .walk footer p {
-    width: 450px;
-  }
-  .home .walk .intro .header-image {
-    width: 300px;
-  }
-  .home .walk .h1-parent {
-    justify-content: left;
-    width: 250px;
-  }
-  .home .walk .walk-img {
-    width: 500px;
-  }
-  .home .walk .walk-text {
-    width: 500px;
-  }
-  .home .walk .space-images {
-    flex-direction: column;
-    width: 500px;
-    border: 2px solid goldenrod;
-  }
-  .home .walk .visit-planets {
-    flex-direction: column;
-    width: 280px;
-    border: 3px solid darkviolet;
-    justify-content: stretch;
-  }
-  .home .walk nav-bar a {
-    display: block;
-    margin-left: 20em;
-    width: 200px;
-  }
-  .home .walk nav a {
-    justify-content: left;
-  }
-  .home .walk .intro {
-    width: 280px;
-    border: 2px solid tomato;
-  }
 }

@@ -1,13 +1,80 @@
 // Home Content
 
 .home {
+	@media @phone {
+		width: 100%;
+		max-width: 500px;
+
+		.walk {
+			border: 1px solid rgb(18, 199, 160);
+			flex-direction: column-reverse;
+			justify-content: center;
+		}
+
+		footer p {
+			width: 450px;
+		}
+
+		// .intro .header-image {
+		// 	width: 300px;
+		// }
+
+		.h1-parent {
+			justify-content: left;
+			width: 250px;
+		}
+
+		.walk-img {
+			width: 100%;
+		}
+		.walk-text {
+			width: 500px;
+		}
+		.space-images {
+			flex-direction: column;
+			width: 500px;
+			border: 2px solid goldenrod;
+		}
+
+		.space-images .sky,
+		.launch {
+			display: none;
+		}
+		.visit-planets {
+			flex-direction: column;
+			width: 280px;
+			border: 3px solid darkviolet;
+			justify-content: stretch;
+		}
+		nav-bar a {
+			display: block;
+			// margin-left: 20em;
+
+			width: 200px;
+		}
+
+		nav a {
+			justify-content: left;
+		}
+
+		.intro {
+			width: 100%;
+			border: 2px solid tomato;
+		}
+	}
+
 	.intro {
+		img {
+			width: 100%;
+		}
+
 		h2 {
 			padding: 15px;
 		}
 
 		p {
 			padding: 0 15px;
+			width: 100%;
 		}
 	}
 
@@ -69,64 +136,6 @@
 				}
 			}
 		}
-
-		@media @phone {
-			.walk {
-				border: 1px solid rgb(199, 18, 18);
-				flex-direction: column-reverse;
-				justify-content: center;
-			}
-
-			footer p {
-				width: 450px;
-			}
-
-			.intro .header-image {
-				width: 300px;
-			}
-
-			.h1-parent {
-				justify-content: left;
-				width: 250px;
-			}
-
-			.walk-img {
-				width: 500px;
-			}
-			.walk-text {
-				width: 500px;
-			}
-			.space-images {
-				flex-direction: column;
-				width: 500px;
-				border: 2px solid goldenrod;
-			}
-
-			// .space-images .sky,
-			// .launch {
-			// 	display: none;
-			// }
-			.visit-planets {
-				flex-direction: column;
-				width: 280px;
-				border: 3px solid darkviolet;
-				justify-content: stretch;
-			}
-			nav-bar a {
-				display: block;
-				margin-left: 20em;
-
-				width: 200px;
-			}
-
-			nav a {
-				justify-content: left;
-			}
-
-			.intro {
-				width: 280px;
-				border: 2px solid tomato;
-			}
-		}
-	} // home
+	}
 }
+// home
