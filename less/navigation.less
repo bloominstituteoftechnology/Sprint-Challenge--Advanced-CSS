@@ -6,6 +6,10 @@
     align-items: center;
     margin-top: 1rem;
 
+    @media @phone {
+        margin-top: 2.5rem;
+    }
+
     h1{
         font-size:4.5rem;
     }
@@ -13,8 +17,15 @@
     a{
         text-decoration: none;
         font-size:1.8rem;
-        margin:2rem 1rem 1.3rem 1rem;
+        margin:2rem 0rem 1.3rem 0rem;
         color:black;
+        text-align: center;
+
+        @media @phone{
+            width:60%;
+            font-size:1.7rem;
+
+        }
 
     }
 
@@ -22,6 +33,10 @@
         width:70%;
         display: flex;
         justify-content: space-around;
+
+        @media @phone {
+            width:85%;
+        }
     }
 }
 
