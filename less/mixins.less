@@ -1,1 +1,26 @@
 // Mixins Here
+// btn paramixin---
+.displayflex(@justify,@align){
+display: flex;
+justify-content: @justify;
+align-items: @align;
+}
+//btn specs mixin
+.btnspecs{
+    font-size: 2.5rem;
+    background-color:@header-font-color;
+    color: white;
+    border-radius: 5%;
+    width: 35%;
+    height: 15%;
+}
+//random mixin
+.navspecs{
+    display: flex;
+    width: 25%;
+    height: 50%;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+

@@ -1,3 +1,19 @@
+.btnspecs {
+  font-size: 2.5rem;
+  background-color: #23293B;
+  color: white;
+  border-radius: 5%;
+  width: 35%;
+  height: 15%;
+}
+.navspecs {
+  display: flex;
+  width: 25%;
+  height: 50%;
+  justify-content: space-evenly;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +176,9 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+img {
+  border-radius: 20px;
+}
 .navcontainer {
   display: flex;
   align-items: center;
@@ -169,18 +188,31 @@ p {
 nav {
   display: flex;
   width: 25%;
+  height: 50%;
   justify-content: space-evenly;
   margin-top: 1%;
   margin-bottom: 1%;
+  width: 80%;
+  font-size: 1rem;
 }
 nav a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   font-family: 'Ubuntu', sans-serif;
   color: #23293B;
 }
 nav a:hover {
   color: #041536;
+}
+.navcontainerhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+  font-size: 5rem;
+  margin-top: 1%;
 }
 footer {
   color: #22283B;
@@ -235,16 +267,15 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 35%;
-  height: 15%;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   font-size: 2.5rem;
   background-color: #23293B;
   color: white;
   border-radius: 5%;
+  width: 35%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #041536;

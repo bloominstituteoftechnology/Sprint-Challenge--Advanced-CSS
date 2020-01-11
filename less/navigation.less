@@ -6,19 +6,31 @@
     width: 100%;
 }
 nav{
-    display: flex;
-    width: 25%;
-    justify-content: space-evenly;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    .navspecs;
 
+    @media(@phone){}
+    width: 80%;
+    font-size: 1rem;
 a{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
     color: @header-font-color;
-  &:hover{
+
+    &:hover{
       color:@hover-color;
+   }
   }
  }
+
+.navcontainerhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Russo One', sans-serif;
+    color: @header-font-color;
+    font-size: 5rem;
+    margin-top: 1%;
+
 }
