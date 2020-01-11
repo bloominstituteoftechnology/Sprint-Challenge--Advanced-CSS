@@ -167,6 +167,17 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signup span {
+  text-align: center;
+}
+.signup form {
+  text-align: center;
+}
 .heading {
   text-align: center;
   font-size: 30px;
