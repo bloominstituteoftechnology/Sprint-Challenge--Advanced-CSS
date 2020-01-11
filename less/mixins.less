@@ -1,1 +1,22 @@
 // Mixins Here
+
+// Parametric Mixin
+.btn-style(@C, @B){
+    color:@C;
+    background:@B;
+    .hoverStyle();
+}
+
+// Mixin
+
+.hoverStyle{
+
+    &:hover{
+        color:darken(dodgerblue , 20%);
+        background:lighten(black, 25%);
+      }
+
+}
+
+
+// Mixin
