@@ -1,0 +1,27 @@
+
+
+    1. What is the difference between an adaptive website and a fully responsive website?
+	Adaptive websites adapt to the width of the browser at a specific points. In other words, the website is only concerned about the browser being a specific width,
+	at which point it adapts the layout and fully responsive websites respond to the size of the browser at any given point. No matter what the browser width may be,
+	the site adjusts its layout (and perhaps functionality) in a way that is optimized to the screen. the difference between smooth and snap design. Responsive design
+	is smooth because the layout fluidly adjusts regardless of what device it is viewed on. Adaptive design, on the other hand, snaps into place because the page is 
+	serving something different because of the browser or device it is viewed on.
+
+	
+    2. Describe what it means to be mobile first vs desktop first.
+	Going down to smaller resolutions (often called graceful degradation) means hiding and wrapping elements while trying to support as many original features as possible.
+	In this case, the mobile experience is functional rather than refined.
+
+	
+    3. What does font-size: 62.5% in the html tag do for us when using rem units?
+       A typical method is to set the HTML font-size to 62.5%. That's because 62.5% of 16px (typical default browser font-size) is 10px. 
+	   That would still make 1.6rem = 16px. This now means that if the user's default browser font-size is changed to, for example, 20px, 1.6rem would now equal 20px.
+	   
+	   
+    4. How would you describe preprocessing to someone new to CSS?
+	A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, 
+	however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.
+
+	
+    5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+	   Nesting is the favorite concept.  parametric mixin gives most trouble.
