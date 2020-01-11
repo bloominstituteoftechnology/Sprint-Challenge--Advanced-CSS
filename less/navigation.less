@@ -1,1 +1,43 @@
 // Navigation code here
+
+.header{
+   
+    .nav-layout-desktop(center, center);
+    background-color: @nav-bg;
+    border-color: @nav-border;
+    h1 {
+        margin: 2%;
+        font-size: 4rem;
+    }
+    
+        
+    
+    .navigation {
+        
+        
+        margin-bottom: 2%;
+        width: 50%;
+        height: 4vh;
+        display: flex;
+        justify-content: space-evenly;
+      
+       
+        
+        background-color: @nav-bg;
+
+
+
+       
+        a{
+            color: @nav-font;
+            text-decoration: none;
+            font-size: 1.5rem;
+        
+          
+    }
+    @media @phone {
+          width: 80%;     
+    }
+  
+    }
+}
