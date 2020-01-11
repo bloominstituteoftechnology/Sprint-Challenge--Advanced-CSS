@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+The difference between an adaptive website and a fully responsive website is that adaptive uses static layouts based on created breakpoints which do not always work well.  It detects the screen size and then adapts to the size.  You would desgin an adaptive site for about 6 screen sizes.  A fully responsive website uses media queries inorder to create a fluid layout to adapts with the device.  Only one media query needed rather then designing for 6 adaptive sites.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means you desgin the website to fit mobile screens first.  It will be designed to fit smaller screens using media queires it then can change to a new design to fit desktop needs.  
+Desktop first is the same but vice versa.  You desgin the page for a desktop view.  Then usually using media quieries you can can some features to change the design to a moile view or smaller screen view. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+a font-size of 62.5% in the html makes it a bit more difficult to convert to rem units  This is equal to about 10px or 0.625rem.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would discribe preprocessing as an advanced form of css.  It is a basis needed before implementing javascript.  It helps developers make DRY code which is always import.  Preprocessing makes code easier to write and read when for future users.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting was definitely easy to learn and a favorite to use.  I also like using mix-ins. Parametric mixins are doable, but mixins helped make code so much easier.  Escaping with media queries was also neat as well.  Parametric mixins gave me the most trouble.  I did alot of review and practicing to add to this project.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
