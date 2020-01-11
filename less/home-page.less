@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      width: 100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -17,16 +21,34 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-
+    .width();
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
     }
-  }
 
+    .blast {
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @mobile {
+        display: none;
+      }
+    }
+  }
+   
   .visit-planets {
     padding: 15px;
 
@@ -46,8 +68,19 @@
     display: flex;
     justify-content: center;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+      margin-top: 30px;
+      padding: 20px;
+      .width();
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        .width(); 
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,20 +89,90 @@
       p {
         margin-bottom: 26px;
       }
+    }
+     
+    .btn {
+      .btn-mix(@btn-bg-color, 30%);
+      font-size: 1.8rem;
+      margin-left: 1%;
+      text-align: center;
+      padding: 2% 2%;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
 
-      .btn {
+      &:hover {
+        background-color: white;
+        color: @btn-bg-color;
+      }
+
+      @media @mobile {
+        .width();
+        padding: 5%;
       }
     }
+    
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @mobile {
+        .width();
+        margin: 0;
+        padding-bottom: 3%;
+      }
+
       img {
-        width: 100%;
+        .width();
         height: auto;
         border-radius: 10px;
+      
+        @media @mobile {
+          width: 100;
+        }
       }
     }
   }
 }// home
+
+//signin
+
+form {
+  input {
+    margin-left: 2%;
+  }
+} 
+
+.signup {
+  h2 {
+    margin: 5% 0 0 2%;
+  }
+
+  p {
+    margin: 5% 0 0 2%;
+  }
+}
+
+.form {
+  p {
+    margin-left: 2%;
+  }
+}
+
+.btn {
+  .btn-mix(@btn-bg-color, 30%);
+  font-size: 1.8rem;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: @btn-bg-color;
+  }
+}
