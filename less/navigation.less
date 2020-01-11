@@ -1,1 +1,24 @@
 // Navigation code here
+.navcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+nav{
+    display: flex;
+    width: 25%;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: @header-font-color;
+  &:hover{
+      color:@hover-color;
+  }
+ }
+}
