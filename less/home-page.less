@@ -24,6 +24,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .blast{
+      @media@max500{
+        width:90%;
+        
+      }
+      .sky{
+        @media@max500{
+          width:0px;
+        }
+        .launch{
+          @media@max500{
+            width:0px
+          }
+        }
+      }
     }
   }
 
@@ -56,6 +71,14 @@
       p {
         margin-bottom: 26px;
       }
+      .btn {
+        .btn-layout(flex-end,center);
+        .btn-border();
+        .btn-color();
+      }
+      .btn:hover {
+        .hover-state();
+      }
     }
 
     .walk-img {
@@ -70,8 +93,9 @@
     }
   }
 }// home
-.btn {
-  .btn-layout(flex-end,center);
-  .btn-border();
-  .btn-color();
+footer {
+  .footer-background();
+  margin-left:2%;
+  margin-right:2%;
+  padding:0 2px 0 2px;
 }

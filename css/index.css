@@ -162,12 +162,19 @@ p {
 }
 .heading {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
+  background-color: lightgrey;
 }
 nav {
-  border: solid red;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 1%;
+}
+nav a {
+  color: black;
+  font-size: 20px;
+  padding-left: 7%;
+  padding-right: 2%;
 }
 footer {
   color: #22283B;
@@ -221,6 +228,22 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn {
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 25px;
+  background-color: darkslategrey;
+  border: 1px solid white;
+  font-size: 15px;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: red;
+  font-color: green;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -230,12 +253,10 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-.btn {
-  justify-content: flex-end;
-  align-items: center;
-  margin: 1%;
-  padding: 2%;
-  background-color: darkslategrey;
-  border: 1px solid white;
-  border-radius: 10px;
+footer {
+  background-color: lightgrey;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
