@@ -14,6 +14,27 @@
   
   }
 
+  .main-header-image {
+
+    img {
+        border-radius: 15px;
+        @media @small{
+          max-width: 100%;
+        } 
+
+        
+        }
+        @media @small{
+          max-width: 500px;
+        } 
+       
+    }
+     
+     
+    
+    
+  
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -58,6 +79,11 @@
       }
 
       .btn {
+        .bth-layout(@porcelain, @btn-bg-color)
+        width: 25%;
+        height: 5vh;
+        border-radius: 5px;
+        
       }
     }
 
@@ -66,10 +92,12 @@
       margin-left: 4%;
       
       img {
+
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+    
     }
   }
 }// home
