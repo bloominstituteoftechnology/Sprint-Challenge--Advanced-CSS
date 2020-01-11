@@ -14,6 +14,7 @@
     
     .navigation {
         
+        
         margin-bottom: 2%;
         width: 50%;
         height: 4vh;
@@ -23,11 +24,20 @@
        
         
         background-color: @nav-bg;
+
+
+
+       
+        a{
+            color: @nav-font;
+            text-decoration: none;
+            font-size: 1.5rem;
         
+          
     }
-    a{
-        color: @nav-font;
-        text-decoration: none;
-        font-size: 1.5rem;
+    @media @phone {
+          width: 80%;     
+    }
+  
     }
 }

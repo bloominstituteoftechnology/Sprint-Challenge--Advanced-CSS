@@ -11,25 +11,28 @@
     p {
       padding:0 15px;
     }
+    .main-header-image {
+
+      img {
+          border-radius: 15px;
+          @media @phone{
+            max-width: 500px;
+            max-width: 100%;
+          } 
+  
+         
+      }
+
+
+     
   
   }
 
-  .main-header-image {
-
-    img {
-        border-radius: 15px;
-        @media @small{
-          max-width: 100%;
-        } 
-
-        
-        }
-        @media @small{
-          max-width: 500px;
-        } 
-       
-    }
-     
+  @media @phone {
+    .phone-flex(center, flex-start );
+    
+  }
+}   
      
     
     
@@ -45,8 +48,21 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+       width: 400px;
+        
+      }
+
     }
+    @media @phone {
+      .phone-flex(center, center);
+      .test();
   }
+  } //end space
+
+
+
+
 
   .visit-planets {
     padding: 15px;
@@ -58,7 +74,12 @@
     p {
       margin-top: 13px;
     }
-  }
+
+    @media @phone {
+      .phone-flex(center, flex-start);
+      .test();
+  } 
+  }//visit end
 
   .walk {
     margin-top: 60px;
@@ -79,12 +100,33 @@
       }
 
       .btn {
-        .bth-layout(@porcelain, @btn-bg-color)
+        .test();
+        .btn-layout(#F6F7F8,  #22283A);
         width: 25%;
         height: 5vh;
         border-radius: 5px;
         
+
+       @media @phone {
+         font-size: 1.5rem;
+         text-align: center;
+         width: 100%;
+         justify-content: center;
+        padding: 2%;
+         height: 8vh;
+       }
+
+
+
+
       }
+
+@media @phone {
+
+  width: 100%;
+}
+
+
     }
 
     .walk-img {
@@ -97,7 +139,29 @@
         height: auto;
         border-radius: 10px;
       }
+     
+      @media @phone {
+        width: 400px;
+        margin-left: 0%;
+      }
     
-    }
   }
+  @media @phone {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .test();
+    
+
+  }
+
+  @media @phone {
+   margin-top: 0px;
+    border-top: 1px solid @main-border-color;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  }//walk end
 }// home
