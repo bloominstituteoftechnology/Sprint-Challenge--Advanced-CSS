@@ -328,3 +328,31 @@ footer {
     width: 100;
   }
 }
+form input {
+  margin-left: 2%;
+}
+.signup h2 {
+  margin: 5% 0 0 2%;
+}
+.signup p {
+  margin: 5% 0 0 2%;
+}
+.form p {
+  margin-left: 2%;
+}
+.btn {
+  background-color: #22283A;
+  width: 30%;
+  font-size: 1.8rem;
+  margin-left: 1%;
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: white;
+  color: #22283A;
+}

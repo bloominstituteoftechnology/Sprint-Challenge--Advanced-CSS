@@ -47,7 +47,9 @@ Preprocessing is when a compiler is used to translate LESS (SASS, etc) into regu
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-My favorite concept is being able to organize and type a lot less to get the same thing to work. However, I found that the organization of having multiple CSS files was confusing at fist. I think it will take some time of working with LESS in order to understand the best way to organize my CSS files so that it will be easy to find a particular section of code for me and others who will be working on the same project.
+My favorite concept is being able to organize and type a lot less to get the same thing to work. I also love that all the CSS are separated into smaller organizational units that will make it a lot easier to find the styling you are wanting to view.
+
+I am really confortable with preprocessing as this is my 2nd go around with this unit. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
