@@ -32,17 +32,17 @@
       .imgMixin();
     }
     .sky{
-     @media(max-width: 500px){
+     @media @mobile{
        display:none;
      }
     }
     .launch{
-      @media(max-width: 500px){
+      @media @mobile{
         display:none;
       }
      }
      .blast{
-      @media(max-width: 500px){
+      @media @mobile{
       width:90%;
       }
      }
@@ -66,14 +66,14 @@
     display: flex;
     justify-content: center;
    
-    @media(max-width:500px){
+    @media @mobile{
       display:flex;
       flex-direction: column-reverse;
     }
 
     .walk-text {
       width: 50%;
-@media(max-width:500px){
+@media @mobile{
   width:90%;
 }
 
@@ -83,14 +83,14 @@
 
       p {
         margin-bottom: 26px;
-        @media(max-width:500px){
+        @media @mobile{
           width:100%;
           display:flex;
       
         }
         .walk-img{
          .img{
-          @media(max-width: 500px){
+          @media @mobile{
             width:100%;
           }
          }
@@ -99,15 +99,9 @@
 
       .btn {
         button{
-          background: black;
-          color:white;
-          border-radius: 5px;
-          padding:12px 30px;
-          &:hover{
-            background:#1c6f70;
-            color:#fcba03;
-          }
-
+          .btn-col(black,white);
+          .btn-mixin(5px,12px 30px);
+          
         }
       
       }
