@@ -1,12 +1,29 @@
 // Import your less files here:
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
 
 
 
 
+@media @phone {
+    .sky, .launch {
+        display: none;
+    }
+    .home {
+        max-width: @phone-width;
+        width: 100%;
+        img {
+            width: 500px;
+        }
+    }
 
-
-
-
-
-
-
+    .walk {
+        .display-flex(center, center);
+        flex-direction: column-reverse;
+    }
+}

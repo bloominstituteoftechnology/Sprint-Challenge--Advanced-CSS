@@ -1,1 +1,31 @@
 // Navigation code here
+.navigation-header {
+    .display-flex(center, center);
+    header {
+        .display-flex(center, center);
+        flex-direction: column;
+        align-self: center;
+        max-width: 800px;
+        width: 100%;
+        background-color: @nav-bg;
+        color: @nav-font;
+        font-size: 1.8rem;
+
+        .header-img {
+            border-radius: 10px;
+        }
+
+        h1 {
+            .display-flex(center, center);
+            font-size: 3.6rem;
+        }
+
+        nav {
+            .display-flex(space-evenly, center);
+            .margin-padding(1%, 2%);
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
