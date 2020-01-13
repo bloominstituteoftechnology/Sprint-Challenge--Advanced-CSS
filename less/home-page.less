@@ -26,6 +26,9 @@
       height: 100%;
     }
   }
+  .intro-pic {
+    border-radius: 4px;
+  }
 
   .visit-planets {
     padding: 15px;
@@ -58,6 +61,11 @@
       }
 
       .btn {
+        .btn-mix ();
+        &:hover, {
+          color: @btn-bg-color;
+          background-color: white;
+        }
       }
     }
 
@@ -73,3 +81,7 @@
     }
   }
 }// home
+
+@media @phone {
+  
+}
