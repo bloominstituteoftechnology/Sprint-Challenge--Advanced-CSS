@@ -1,46 +1,29 @@
 // Navigation code here
 
 .header {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    background-color: @nav-bg;
-    
-   
+  .displayFlex(center, center);
+  flex-direction: column;
+  background-color: @nav-bg;
+  border-bottom: 2px solid @sea-shell;
 
-    h1 {
-        font-size: 5rem;
-        .margin-bottom-small();
+  h1 {
+    font-size: 4rem;
+    margin-top: 12px;
+    .margin-bottom-small();
+  }
+  nav {
+    .displayFlex(space-between, center);
+    .margin-bottom-x-small();
+    width: 375px;
+    @media @mobile {
+      width: 400px;
+      justify-content: space-around;
     }
 
-    .links {
-        display: flex;
-        justify-content: center;
-      
-      
-       
-        
-
-        nav {
-            width: 800px;
-            display: flex;
-            justify-content: space-between;
-            .margin-bottom-small();
-
-            @media @mobile {
-                width:500px;
-                justify-content: space-around;
-
-            }
-          
-                
-        }
-
-        a {
-            text-decoration: none;
-            color:@nav-font; 
-            font-size: 2.3rem;
-        }
+    a {
+      font-size: 1.6rem;
+      color: @nav-font;
+      text-decoration: none;
     }
-
+  }
 }
