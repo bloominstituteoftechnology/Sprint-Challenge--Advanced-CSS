@@ -86,22 +86,16 @@
       }
 
       .btn {
-        width: 100px;
-        background-color: black;
-        text-align: center;
-        padding: 7px 0;
-        border-radius: 5px;
+        .signUp(black, white);
+
+        &:hover {
+          .signUp(white, black);
+        }
 
         @media(@phone) {
           width: 100%;
           padding: 20px 0;
           order: 3;
-        }
-
-        a {
-          font-size: 1.8rem;
-          text-decoration: none;
-          color: white;
         }
       }
     }
