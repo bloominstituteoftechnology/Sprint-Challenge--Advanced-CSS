@@ -1,5 +1,16 @@
 // Home Content
 
+body {
+  animation: pulse 60s infinite;
+@keyframes pulse {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+}
 .home {
 
   .intro {
@@ -43,22 +54,26 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center();
 
     .walk-text {
       width: 50%;
-
+      .btn {
+        .buttonstyles(30%, 7vh, 10px, 1.4rem);
+        .buttoncolor(white, @nav-font);
+        .center();
+        }
+      .btn:hover {
+          .buttoncolor(@nav-font, white);
+      
+      }
+      }
       h3 {
         margin-bottom: 10px;
       }
 
       p {
         margin-bottom: 26px;
-      }
-
-      .btn {
-      }
     }
 
     .walk-img {
