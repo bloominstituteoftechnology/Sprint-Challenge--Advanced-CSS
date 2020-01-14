@@ -1,19 +1,19 @@
 // Home Content
 
+@import "./variables";
+@import "./mixins.less";
+
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
+      font-family: "Russo One";
     }
-
     p {
-      padding:0 15px;
+      padding: 0 15px;
+      font-family: "Russo One";
     }
-  
   }
-
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -24,52 +24,117 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @hello {
+        width: 75%;
+        margin-left: 10%;
+      }
     }
   }
-
   .visit-planets {
     padding: 15px;
-
     h3 {
       margin-top: 11px;
+      font-family: "Russo One";
     }
-
     p {
       margin-top: 13px;
+      font-family: "Russo One";
     }
   }
-
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
+    font-family: "Russo One";
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 
+    @media @hello {
+      .flex();
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-left: 10%;
+      width: 90%;
+      padding: 1%;
+    }
     .walk-text {
       width: 50%;
-
+      @media @hello {
+        padding: 2%;
+      }
       h3 {
         margin-bottom: 10px;
       }
-
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
+    .myButton {
+      .btn-M();
+      box-shadow: 0px 0px 0px 2px #9fb4f2;
+      background: linear-gradient(to bottom, #7892c2 5%, #22283a 100%);
+      background-color: #22283a;
+      border-radius: 10px;
+      border: 1px solid #4e6096;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 19px;
+      @media (max-width: 500px) {
         width: 100%;
-        height: auto;
-        border-radius: 10px;
+        margin-top: 10%;
+        padding: 5%;
+        margin-bottom: 0%;
+      }
+
+      .myButton:hover {
+        background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        background-color: #22283a;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
       }
     }
   }
-}// home
+  .walk-img {
+    width: 46%;
+    margin-left: 4%;
+    @media (max-width: 500px) {
+      width: 75%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    @media (max-width: 500px) {
+      display: flex;
+      justify-items: flex-start;
+      flex-direction: column-reverse;
+
+      margin-right: 20%;
+    }
+  }
+
+  .header-I {
+    @media @hello {
+      width: 98vw;
+    }
+  }
+  .phone {
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+  .Iphone {
+    @media @hello {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+
+// home
