@@ -34,13 +34,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Answer: Adaptive website works in a fixed size window. If the window size is changed all the formats of the elements will changes such as images, fonts, menues, alignments and other items of that web page.
+Fully responsive website is the one that is readable in different windows and devices such as desktop, tablet, and cellphone.
+
+
+
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Answer: Mobile first is when the format is designed for mobile and then upgraded to desktop.
+Desktop first is that the format is designed for desktop the updated to mobile.
+
+
+
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Answer: 62.5% in the html tage is exactly 10 pixels. When we use rem it increases the font size to what ever size we want. 1 rem will increase the font size to 20 pixels
+
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Answer: Preprocessing organizes our css elements and it can reduce repeating the same elements.
+
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I like tha @media. what gives me trouble is less.
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
