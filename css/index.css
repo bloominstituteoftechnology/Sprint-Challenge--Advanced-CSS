@@ -2,7 +2,7 @@
   border-radius: 2%;
 }
 .nav-font {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -141,7 +141,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -149,7 +149,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -170,14 +170,14 @@ p {
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 .nav-bar {
-  display: flex;
-  justify-content: space-evenly;
+  text-align: center;
   padding: 1%;
-  background-color: #F1F1F1;
-  font-size: 1.3rem;
+  background-color: #f1f1f1;
+  font-size: 1.5rem;
+  word-spacing: 4px;
 }
 footer {
   color: #22283B;
@@ -245,4 +245,24 @@ footer {
 }
 html {
   font-size: 62.5%;
+}
+button {
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 8px;
+  background-color: black;
+}
+@media screen ("max-width: 500px") {
+  button {
+    width: 250px;
+  }
+}
+button:hover {
+  background-color: yellow;
+  color: skyblue;
+}
+@media "max-width: 500px" {
+  button:hover {
+    width: 100%;
+  }
 }
