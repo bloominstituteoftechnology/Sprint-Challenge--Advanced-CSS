@@ -8,6 +8,11 @@
   border-radius: 10px;
   color: #F6F7F8;
 }
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -197,6 +202,15 @@ header img {
   text-decoration: none;
   color: #5E6164;
 }
+@media (max-width: 500px) {
+  header img {
+    max-width: 100%;
+  }
+  .navbar ul {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -217,6 +231,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .space-images .blast {
+  margin: 20px 2.5%;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 95%;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -265,9 +293,52 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  margin: 20px 2.5%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 95%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .space-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .space-images .sky,
+  .space-images .launch {
+    display: none;
+  }
+  .space-images .blast {
+    width: 400px;
+    margin: 0, auto;
+  }
+  .walk {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .walk h3 {
+    margin-left: -50%;
+    margin-right: -50%;
+  }
+  .walk p {
+    margin-left: -50%;
+    margin-right: -50%;
+  }
+  .walk .btn {
+    background-color: rebeccapurple !important;
+  }
+  .walk .walk-img {
+    margin: 5%;
+    width: 100%;
+  }
 }
