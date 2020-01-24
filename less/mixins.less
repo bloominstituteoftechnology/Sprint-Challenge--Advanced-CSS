@@ -1,28 +1,20 @@
 // Mixins Here
 //sprint
-// .buttonstyle(@button-bg, @main-bg, @font-size: 16px){
-//     background-color: @button-bg;
-//     color: @main-bg;
-//     border-radius: 8px;
-//     padding: 10px 5px;
-//     text-align: center;
-//     font-size: 16px;
-// }
 
-// .btn {
-//     .buttonstyle(@button-bg, @main-bg);
-// }
+// width: 33%;
+@btn-size: 33%;
 
-.buttonstyle(@btn-bg-color){
+.buttonstyle(@btn-bg-color, @btn-size){
     background-color: @btn-bg-color;
     border-radius: 4px;
     padding: 5px 5px;
     text-align: center;
     font-size: 20px;
     color: white;
-    width: 33%
+    width: @btn-size;
+
 }
 
 .btn {
-    .buttonstyle(@btn-bg-color)
+    .buttonstyle(@btn-bg-color, @btn-size)
 }
