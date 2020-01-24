@@ -268,7 +268,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 20px 2.5%;
+    margin: 0;
   }
 }
 .home .visit-planets h3 {
