@@ -58,6 +58,7 @@
       }
 
       .btn {
+        .buttoncolors(black, lightgrey);
       }
     }
 
@@ -73,3 +74,36 @@
     }
   }
 }// home
+@media @mobile {
+ .visit-planets{
+   margin-bottom: 0px;
+ }
+  #gone {
+    width: 0%;
+    visibility: hidden;
+  }
+  #stay {
+    width: 100%;
+    margin-bottom: -5%;
+  }
+  .walk {
+    display:flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 0px!important;
+  }
+  .walk-img {
+    width: 100%!important;
+    margin-left: 0%;
+    
+  }
+  .walk-text {
+    width: 100%!important;
+    
+  }
+  #let{
+  padding-top: 6%;
+  }
+  .btn {
+    width:100%!important;
+  }
+}
