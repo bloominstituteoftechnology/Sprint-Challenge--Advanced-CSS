@@ -1,1 +1,21 @@
 // Mixins Here
+.displayFlex (@justify, @alignment){
+    display: flex;
+    justify-content: @justify;
+    align-items: @alignment;
+}
+.displayFlexColumn (@justify, @alignment){
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+    align-items: @alignment;
+}
+.signUpBtn(@width, @padding, @button-bg, @b-radius, @font-color, @font-size){
+    width: @width;
+    padding: @padding;
+    background-color: @button-bg;
+    border-radius: @b-radius;
+    color: @font-color;
+    text-align: center;
+    font-size: @font-size;
+}
