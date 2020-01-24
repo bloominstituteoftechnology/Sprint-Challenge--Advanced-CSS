@@ -18,11 +18,24 @@
   }
 
   .space-images {
+    @media @phone{
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  
 
     img {
+      @media @phone{
+        width:100%;
+        margin: 5%;
+      }
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
@@ -43,6 +56,12 @@
   }
 
   .walk {
+    @media @phone {
+      .displayFlex(space-around, center);
+      flex-direction: column-reverse;
+      margin: 0 5%;
+      padding: .5% 1%;
+    }
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -50,6 +69,9 @@
     justify-content: center;
 
     .walk-text {
+      @media @phone {
+        width: 100%;
+      }
       width: 50%;
 
       h3 {
@@ -61,6 +83,10 @@
       }
 
       .btn {
+        @media @phone{
+          .signUpBtn(100%, 6%, @btn-bg-color, .5rem, @porcelain, 1.8rem);
+          margin-bottom: 4%;
+        }
         .signUpBtn(40%, 3%, @btn-bg-color, 1rem, @porcelain, 1.8rem);
         &:hover {
           background-color: lighten(@btn-bg-color, 50%);
@@ -69,6 +95,10 @@
     }
 
     .walk-img {
+      @media @phone{
+        width: 100%;
+        margin: 3%;
+      }
       width: 46%;
       margin-left: 4%;
       
