@@ -75,10 +75,19 @@
       }
 
       .btn {
+        a{
+          text-decoration: none;
+          background-color: black;
+          color: white;
+        }
         .signUp(100px, 8px);
         &:hover{
           background-color: white;
           color: black;
+          a{
+            background-color: white;
+            color: black;
+          }
         }
 
       }
@@ -106,8 +115,7 @@
         margin: 0;
         .setWidth(95vw);
         img{
-          border: 1px orange solid;
-          .setWidth(100%);
+          .setWidth(90vw);
        }
       }//walk-img
 
@@ -115,8 +123,11 @@
         .setWidth(95vw);
       }
 
+      btn{
+        width: 95vw;
+      }
+
     }//mobileStyle
 
   }//walk
-
 }// home

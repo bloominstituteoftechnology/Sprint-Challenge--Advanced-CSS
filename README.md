@@ -1,17 +1,22 @@
-1. What is the difference between an adaptive website and a fully responsive website?
+______Questions____________________________________
 
+1. What is the difference between an adaptive website and a fully responsive website?
+An adaptive website has multiple different layouts, and requires more resources to load. A fully responsive website is when the layout changes depending on what device is viewing it.
 
 2. Describe what it means to be mobile first vs desktop first.
-
+Mobile first is the idea of designing the web view first, and then scaling it upwards for bigger screens. The desktop first approach is the opposite.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-
+It scales it correctly, since 62.5% of 16px is 10px.
 
 4. How would you describe preprocessing to someone new to CSS?
-
+It organizes CSS code to be easier to work with, and also allows functionality like varables and having similar styles saved in one area (mixins). Then it compiles all the files into one css file that the browser will read.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Nesting things helps organize my thoughts better, mixins are nice and everything allows a better workflow. I don't have any trouble using it over normal CSS.
  
+___________________________________________________
+
 
 ### Home Page - Desktop HTML & LESS
 
@@ -35,11 +40,11 @@
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -53,4 +58,4 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Create a fixed navigation and add some opacity to the background
 
-* [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+* [x] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
