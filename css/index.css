@@ -160,6 +160,33 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+header img {
+  padding: 1%;
+  border-radius: 2rem;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+.navbar h1 {
+  font-size: 4rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  width: 50%;
+  padding: 1%;
+  color: #5E6164;
+}
+.navbar ul a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #5E6164;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
