@@ -1,1 +1,19 @@
 // Mixins Here
+
+.buttonMain(@color:@buttonText, @backgroundColor:@buttonMain, @font-size:@buttonFontSize, @borderRadius:@buttonBorder, @btnDisplay: @buttonDisplay, @btnPadding:@buttonPadding, @btnBorder:@buttonBorderColor) {
+
+    color: @color;
+    background-color: @backgroundColor;
+    font-size: @font-size;
+    border-radius: @borderRadius;
+    display: @btnDisplay;
+    padding: @btnPadding;
+    border: @btnBorder
+
+}
+
+.buttonhover(@hoverBg:@hoverBackground, @hoverTextColor:@hoverColor,@hoverBorderStyle:@hoverBorder) {
+    background-color: @hoverBg;
+    color: @hoverTextColor;
+    border: @hoverBorderStyle;
+}
