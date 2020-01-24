@@ -1,1 +1,28 @@
 // Mixins Here
+
+.flexCenter(){
+	display: flex;
+	justify-content: center;
+}
+
+.setWidth(@percentage){
+	width: @percentage;
+}
+
+.signUp(@width, @borderRadius){
+	width: @width;
+    border-radius: @borderRadius;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    @media @phone{
+        width: 100%;
+        padding: 30px 0px;
+    }
+}
+
+.hide(){
+    display: none;
+}
