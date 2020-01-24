@@ -327,3 +327,70 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+HTML SCSSResult EDIT ON body {
+  -webkit-font-smoothing: antialiased;
+}
+.earth-demo {
+  background: #000;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.earth-demo:before {
+  background: url(https://cssanimation.rocks/images/random/space2.jpg) repeat center;
+  background-size: cover;
+  content: "";
+  opacity: 0.5;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.earth {
+  position: relative;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+.earth img {
+  height: 250px;
+  width: 250px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.moon-container {
+  position: absolute;
+  top: calc(30% - 25px);
+  left: calc(50% - 25px);
+}
+.moon {
+  animation: spin 10s linear infinite;
+  background: none;
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+  transform-origin: 25px;
+}
+.moon img {
+  transform: translateX(-160px) translateY(-160px);
+  width: 50px;
+}
+.moon .earth img,
+.moon .moon img {
+  border-radius: 50%;
+  box-shadow: 0 0 12em 1em rgba(110, 140, 200, 0.6);
+}
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+article.earth-demo {
+  border-radius: 2rem !important;
+  margin-bottom: 2rem;
+}
