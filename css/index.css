@@ -164,14 +164,16 @@ p {
   margin: 0 auto;
 }
 nav {
-  background-color: #F6F6F6;
+  position: fixed;
+  width: 100%;
+  background-color: #F6F6F685;
   padding: 1%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-bottom: 2px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F185;
 }
 nav h1 {
   width: 100%;
@@ -204,6 +206,7 @@ nav .links a {
 .center img {
   max-width: 100%;
   border-radius: 5px;
+  padding-top: 10%;
 }
 footer {
   color: #22283B;
