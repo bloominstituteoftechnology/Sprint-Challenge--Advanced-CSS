@@ -12,3 +12,17 @@
 // .btn {
 //     .buttonstyle(@button-bg, @main-bg);
 // }
+
+.buttonstyle(@btn-bg-color){
+    background-color: @btn-bg-color;
+    border-radius: 4px;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 33%
+}
+
+.btn {
+    .buttonstyle(@btn-bg-color)
+}
