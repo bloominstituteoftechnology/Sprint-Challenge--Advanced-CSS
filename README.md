@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website is one that uses a layout with specific media breakpoints (typically for 3 device sizes: desktop, tablet & phone), but may still uses hardcoded pixels throughout the rest of the layout.
+
+    A fully responsive layout, on the other hand, combines features of fixed, fluid and adaptive layouts (in particular, scalable units, media queries & hardcoded pixels when appropriate) to create a website that works and looks great on basically any device or screen size (not just the three specified breakpoints).
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first means you start by coding the styles for a mobile device and introduce min-width media breakpoints to scale your design up. When coding desktop first, you would start by creating the styles for a desktop site then scale down with max-width media breakpoints. It’s best practice to develop mobile first whenever possible.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    The default font size on the majority of browsers is 16px. Setting the font-size to 62.5%, therefore, sets the default font size to 10px. Because rem units are based on the root element, this makes it super easy to set specific font-sizes. For examples, 72px would be 7.2rem and 16px would be 1.6rem. And because the default font-size is set to a scalable/responsive unit (62.5%), it also won’t override a user’s choice of font size (since individual’s can update their browser’s default font size), which would make our site more accessible.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is made up of 3 components:
+    1. The syntax or language we write our code in (e.g., less)
+    2. The compiler that converts that language to an output our browser can understand (e.g., node)
+    3. The output from our compiler (regular CSS)
+
+    Preprocessing extends the ability of CSS and gives us many great features, like variables and mixins, that makes our code more intuitive, easier to understand and update, less repetitive and more organized.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+     I love both variables and mixins! In earlier projects, I found myself wishing for a way to update all instances of a specific color quickly and to repeat specific styles more easily, and variables and mixins answered my wishes.
+
+    Nothing really gives me trouble just yet, but if I had to choose something, I guess I’d choose functions because I have a harder time imagining instances where I’d want to use them at this point in time (other than the lighten and darken functions). 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
