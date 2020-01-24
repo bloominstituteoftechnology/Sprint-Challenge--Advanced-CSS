@@ -1,0 +1,56 @@
+.subscribe {
+    .displayFlex(center, center);
+    flex-direction: column;
+    border-top: 1px solid @main-border-color;
+    margin-bottom: 4%;
+
+    h2 {
+        padding: 4% 0;
+        text-align: center;
+    }
+
+    form {
+        width: 75%;
+
+        label {
+            font-family: @main-font;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: @main-font-color;
+            text-transform: uppercase;
+        }
+
+        input, select {
+            width: 100%;
+            font-size: 1.6rem;
+            padding: 1.5%;
+            margin: .5% 0 2%;
+            border-radius: 4px;
+           
+        }
+
+        ::placeholder {
+            font-family: @main-font;
+            color: @waterloo;
+        }
+
+        .btn {
+            .btn-main(200px, 45px, 2%, #fff, @btn-bg-color);
+            border: 2px solid @btn-bg-color;
+            transition: background-color .3s;
+            margin-top: 2% 0;
+
+            @media @phone {
+                .btn-main(100%, 50px, 15px, #fff, @btn-bg-color);
+                margin: 4% 0;
+            }
+
+            &:hover {
+                background-color: @btn-bg-color;
+                color: #fff;
+            }
+
+            
+        }
+    }
+}

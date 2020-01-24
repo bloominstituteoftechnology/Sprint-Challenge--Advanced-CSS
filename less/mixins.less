@@ -1,1 +1,18 @@
 // Mixins Here
+.displayFlex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn-main(@width, @height, @padding, @bg-color: @btn-bg-color, @color: @porcelain) {
+    width: @width;
+    height: @height;
+    padding: @padding;
+    border-radius: 8px;
+    background-color: @bg-color;
+    color: @color;
+    font-family: @main-font;
+    font-size: 1.8rem;
+    text-align: center;
+}
