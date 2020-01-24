@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid lavenderblush;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -171,6 +171,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 2px solid #F1F1F1;
 }
 nav h1 {
   width: 100%;
