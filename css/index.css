@@ -181,7 +181,13 @@ nav .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 80%;
+    padding: 3% 0 2%;
+  }
 }
 nav .links a {
   font-family: 'Ubuntu', sans-serif;
@@ -196,6 +202,7 @@ nav .links a {
   align-items: center;
 }
 .center img {
+  max-width: 100%;
   border-radius: 5px;
 }
 footer {

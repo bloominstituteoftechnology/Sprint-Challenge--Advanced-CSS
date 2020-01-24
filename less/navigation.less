@@ -14,7 +14,12 @@ nav {
 
     .links {
         .displayFlex(space-between, center);
-        width: 40%;
+        width: 50%;
+
+        @media @phone {
+            width: 80%;
+            padding: 3% 0 2%;
+        }
 
         a {
             font-family: @main-font;
@@ -30,6 +35,7 @@ nav {
     .displayFlex(center, center);
 
     img {
+        max-width: 100%;
         border-radius: 5px;
     } //End img
 } //End .center
