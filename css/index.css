@@ -206,7 +206,7 @@ nav .links a {
 .center img {
   max-width: 100%;
   border-radius: 5px;
-  padding-top: 10%;
+  padding-top: 90px;
 }
 footer {
   color: #22283B;
@@ -284,7 +284,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   width: 100px;
-  height: 45px;
+  height: 35px;
   padding: 2%;
   border-radius: 8px;
   background-color: #22283A;
