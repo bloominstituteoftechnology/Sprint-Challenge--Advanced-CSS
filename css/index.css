@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 1px solid lavenderblush;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: brown;
+  color: #5E6164;
 }
 h1,
 h2,
@@ -144,6 +144,9 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+}
+h1 {
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -159,6 +162,40 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  background-color: #F6F6F6;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+nav h1 {
+  width: 100%;
+  padding-bottom: 1%;
+}
+nav .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+nav .links a {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  color: #454A59;
+  text-decoration: none;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center img {
+  border-radius: 5px;
 }
 footer {
   color: #22283B;

@@ -1,1 +1,34 @@
 // Navigation code here
+nav {
+    background-color: @nav-bg;
+    padding: 1%;
+    text-align: center;
+    .displayFlex(center, center);
+    flex-direction: column;
+
+    h1 {
+        width: 100%;
+        padding-bottom: 1%;
+    } //End h1
+
+    .links {
+        .displayFlex(space-between, center);
+        width: 40%;
+
+        a {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 1.6rem;
+            color: @nav-font;
+            text-decoration: none;
+        } //End a
+    } //End links
+} //End nav
+
+.center {
+    width: 100%;
+    .displayFlex(center, center);
+
+    img {
+        border-radius: 5px;
+    } //End img
+} //End .center
