@@ -174,14 +174,31 @@ p {
   margin: 1%;
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .navBar .title {
+    margin-top: 3%;
+    font-size: 3rem;
+  }
+}
 .navBar .links {
   margin: 0.5% 1% 1% 1%;
   width: 41%;
+}
+@media (max-width: 500px) {
+  .navBar .links {
+    margin: 3%;
+    width: 100%;
+  }
 }
 .navBar .links nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navBar .links nav {
+    margin: 0 5%;
+  }
 }
 .navBar .links nav a {
   text-decoration-line: none;

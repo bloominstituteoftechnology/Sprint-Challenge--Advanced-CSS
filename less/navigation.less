@@ -5,14 +5,25 @@
     border-bottom: .2rem solid @nav-border;
     background-color: @wild-sand;
     .title {
+        @media @phone{
+            margin-top: 3%;
+            font-size: 3rem;
+        }
         align-self: center;
         margin: 1%;
         font-size: 4rem;
     }
     .links {
+        @media @phone{
+            margin: 3%;
+            width: 100%;
+        }
         margin: .5% 1% 1% 1%;
         width: 41%;
         nav {
+            @media @phone{
+                margin: 0 5%;
+            }
             .displayFlex(space-evenly, center);
             a{
                 text-decoration-line: none;
