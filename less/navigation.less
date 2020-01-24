@@ -1,1 +1,24 @@
 // Navigation code here
+.navBar {
+    .displayFlexColumn(space-evenly, center);
+    width:100%;
+    border-bottom: .2rem solid @nav-border;
+    background-color: @wild-sand;
+    .title {
+        align-self: center;
+        margin: 1%;
+        font-size: 4rem;
+    }
+    .links {
+        margin: .5% 1% 1% 1%;
+        width: 41%;
+        nav {
+            .displayFlex(space-evenly, center);
+            a{
+                text-decoration-line: none;
+                font-size: 1.7rem;
+                color: @river-bend;
+            }
+        }
+    }
+}

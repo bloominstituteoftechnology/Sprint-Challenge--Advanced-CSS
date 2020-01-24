@@ -160,6 +160,34 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  border-bottom: 0.2rem solid #F1F1F1;
+  background-color: #F6F6F6;
+}
+.navBar .title {
+  align-self: center;
+  margin: 1%;
+  font-size: 4rem;
+}
+.navBar .links {
+  margin: 0.5% 1% 1% 1%;
+  width: 41%;
+}
+.navBar .links nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navBar .links nav a {
+  text-decoration-line: none;
+  font-size: 1.7rem;
+  color: #454A59;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
