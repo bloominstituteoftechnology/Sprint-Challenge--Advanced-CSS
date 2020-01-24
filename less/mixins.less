@@ -3,7 +3,9 @@
 
 // width: 33%;
 @btn-size: 33%;
-
+@btn-phone-size: 100%;
+//@btn-padding: 20px 5px;
+@btn-phone-padding: 10px 10px;
 .buttonstyle(@btn-bg-color, @btn-size){
     background-color: @btn-bg-color;
     border-radius: 4px;
@@ -16,5 +18,12 @@
 }
 
 .btn {
-    .buttonstyle(@btn-bg-color, @btn-size)
+    .buttonstyle(@btn-bg-color, @btn-size);
+
+    @media @phone {
+        .buttonstyle(@btn-bg-color, @btn-phone-size); 
+        padding: 15px 5px;
+    }
+
 }
+
