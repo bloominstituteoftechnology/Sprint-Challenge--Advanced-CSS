@@ -27,8 +27,8 @@
   }//intro
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    
+    .display-style (row);
     width: 100%;
 
     @media @phone{
@@ -66,13 +66,14 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-   padding: 10px 10px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center;
 
     @media @phone {
-      display: flex;
-      flex-direction: column-reverse;
+      // display: flex;
+      // flex-direction: column-reverse;
+      .display-style( column-reverse );
       margin-top: 10px;
     }
 
@@ -96,7 +97,21 @@
         margin-bottom: 26px;
       }
 
-      
+      //added btn with mixins style
+      .btn {
+        .buttonstyle(33%, 5px);
+
+        .background-color-change(white, black);
+    
+        .hover-opacity(0.5);
+
+        @media @phone {
+            .buttonstyle(100%, 20px);
+            // .opacity(0.3);
+            
+        }
+    
+    }
     }
 
     .walk-img {
@@ -105,11 +120,7 @@
 
       @media @phone {
         width: 100%;
-        padding-right: 2%;
-        padding-left: 2%;
-        padding-bottom: 2%;
-        margin: 0;
-        height: auto;
+        margin: 0 auto;
 
       }//@media @phone
       
@@ -119,8 +130,7 @@
         border-radius: 10px;
 
         @media @phone {
-          width: 100%;
-          height: auto;
+          margin: 0 auto;
         }
         
       }
