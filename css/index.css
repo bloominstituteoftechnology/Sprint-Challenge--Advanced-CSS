@@ -290,6 +290,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 400px;
+    margin-left: -50%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -333,9 +339,6 @@ footer {
   .walk p {
     margin-left: -50%;
     margin-right: -50%;
-  }
-  .walk .btn {
-    background-color: rebeccapurple !important;
   }
   .walk .walk-img {
     margin: 5%;
