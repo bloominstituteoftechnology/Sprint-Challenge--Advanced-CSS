@@ -229,6 +229,9 @@ footer {
 .home .intro .main {
   border-radius: 8px;
 }
+.home .intro .main:hover {
+  opacity: 0.5;
+}
 @media (max-width: 500px) {
   .home .intro .main {
     width: 100%;
@@ -260,6 +263,9 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+.home .space-images img:hover {
+  opacity: 0.5;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -349,6 +355,9 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+.home .walk .walk-img:hover {
+  opacity: 0.5;
+}
 @media (max-width: 500px) {
   .home .walk .walk-img {
     width: 100%;
@@ -364,4 +373,52 @@ footer {
   .home .walk .walk-img img {
     margin: 0 auto;
   }
+}
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle .dream,
+.middle .development,
+.middle .explore,
+.middle .spaceX {
+  height: 200px;
+  width: 50%;
+  border-radius: 10px;
+}
+.middle .dream:hover,
+.middle .development:hover,
+.middle .explore:hover,
+.middle .spaceX:hover {
+  opacity: 0.5;
+}
+.middle-part {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.middle-part .text {
+  margin-left: 30px;
+}
+.middle-part .text h3 {
+  padding-bottom: 1rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 1rem auto;
+}
+footer nav a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #141010;
+}
+footer nav .ccopyright {
+  font-size: 16px;
 }

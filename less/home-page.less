@@ -8,6 +8,10 @@
     .main {
       border-radius: 8px;
 
+      &:hover {
+        opacity: 0.5;
+      }
+
       @media @phone  {
         width: 100%;
       }
@@ -43,6 +47,10 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    
+      &:hover {
+        opacity: 0.5;
+      }
 
       @media @phone {
         width: 100%;
@@ -123,6 +131,10 @@
       width: 46%;
       margin-left: 4%;
 
+      &:hover {
+        opacity: 0.5;
+      }
+
       @media @phone {
         width: 100%;
         margin: 0 auto;
@@ -145,3 +157,62 @@
     
   }//walk
 }// home
+
+
+//start coding for about-us.html
+// the title and navigation are same as index.html
+
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+
+ 
+.dream, .development, .explore, .spaceX  {
+  height: 200px;
+  width: 50%;
+  border-radius: 10px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}//dream, development, explore, spaceX
+  
+}//middle
+
+.middle-part {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+
+  .text {
+    margin-left: 30px;
+
+    h3 {
+      padding-bottom: 1rem;
+    }
+  }//text
+
+}//middle-part
+
+footer {
+  .display-style( column );
+
+  nav {
+    .display-style( row );
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 1rem auto;
+    
+    a {
+      font-size: 16px;
+      text-decoration: none;
+      color: rgb(20, 16, 16);
+    }
+
+    .ccopyright {
+      font-size: 16px;
+    }
+  }
+}
+
