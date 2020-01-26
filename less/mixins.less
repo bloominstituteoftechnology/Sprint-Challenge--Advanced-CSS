@@ -1,1 +1,48 @@
 // Mixins Here
+//sprint
+
+.display-style( @flex ) {
+    display: flex;
+    flex-direction: @flex;
+    
+}
+
+.buttonstyle(@btn-width, @btn-padding){
+    background-color: @btn-bg-color;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: @btn-width; 
+    padding: @btn-padding;
+
+}
+
+.background-color-change( @color1, @color2) {
+    color: @color1;
+    background-color: @color2;
+
+    &:hover {
+        color: @color2;
+        background-color: @color1;
+    }
+}
+
+.hover-opacity(@opacity) {
+    &:hover {
+        opacity: @opacity;
+    }
+}
+
+.hover-title() {
+    &:hover {
+    background-color: rgba(0, 0, 255, 0.308);
+    animation-duration: 0.2s;
+    }
+}
+
+
+
+
+
+
