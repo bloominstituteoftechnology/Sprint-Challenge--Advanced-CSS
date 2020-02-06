@@ -173,11 +173,29 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media ( max-width: 500px ) {
+  .navBar {
+    justify-content: center;
+    margin: 0;
+  }
+}
 .navBar a {
   color: #3f3f3f;
   display: inline;
   text-decoration: none;
   margin-left: 50px;
+}
+@media ( max-width: 500px ) {
+  .navBar a {
+    width: 100vw;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    border-radius: 0;
+    text-align: center;
+    padding: 15px;
+  }
 }
 footer {
   color: #22283B;
@@ -192,14 +210,43 @@ footer {
 .home .intro h2 {
   padding: 15px;
 }
+@media ( max-width: 500px ) {
+  .home .intro h2 {
+    font-size: 20px;
+  }
+}
 .home .intro p {
   padding: 0 15px;
+}
+@media ( max-width: 500px ) {
+  .home .intro p {
+    font-size: 10px;
+    line-height: 2.5;
+    margin-top: 5px;
+    display: flex;
+    margin: 0;
+    word-wrap: break-word;
+  }
 }
 .home h1 {
   font-size: 45px;
   display: flex;
   margin-left: 230px;
   margin-top: 20px;
+}
+@media ( max-width: 500px ) {
+  .home h1 {
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media ( max-width: 500px ) {
+  .home .head {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -212,14 +259,38 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media ( max-width: 500px ) {
+  .home .space-images img {
+    width: 28%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
 }
+@media ( max-width: 500px ) {
+  .home .visit-planets h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+  }
+}
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media ( max-width: 500px ) {
+  .home .visit-planets p {
+    font-size: 10px;
+    line-height: 2.5;
+    margin-top: 5px;
+    display: flex;
+    margin: 0;
+    word-wrap: break-word;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -234,8 +305,34 @@ footer {
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
+@media ( max-width: 500px ) {
+  .home .walk .walk-text h3 {
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+  }
+}
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+@media ( max-width: 500px ) {
+  .home .walk .walk-text p {
+    font-size: 8px;
+    line-height: 2.5;
+    margin-top: 5px;
+    display: flex;
+    margin: 0;
+    word-wrap: break-word;
+  }
+}
+.home .walk .btn a {
+  border: 5px solid blue;
+}
+@media ( max-width: 500px ) {
+  .home .walk .btn a {
+    padding-bottom: 20;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
