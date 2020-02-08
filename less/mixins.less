@@ -1,1 +1,21 @@
 // Mixins Here
+.display {
+    display: flex;
+}
+.margin {
+    margin: 0 auto;
+}
+.btn {
+    display: inline-block;
+    border-radius: .5rem;
+    font-size: @fontSize * 2;
+    color: @porcelain;
+  }
+  .button(@color, @size) {
+      background-color: @color;
+      padding: @size;
+  }
+  .hover (@bg-color, @txt-color) {
+      background-color: @bg-color;
+      color: @txt-color;
+  }
