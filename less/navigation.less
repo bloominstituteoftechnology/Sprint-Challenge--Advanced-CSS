@@ -1,1 +1,41 @@
 // Navigation code here
+.navigation {
+    max-width: 100%;
+
+    .nav-content{
+        .display;
+        flex-direction: column;
+        align-items: center;
+        .margin;
+        width: 100%;
+        border-bottom: @nav-border .2rem solid;
+        background-color: @nav-bg;
+
+        .title {
+            font-size: @fontSize * 4.5;
+            font-weight: @fontWeight;
+            .margin;
+            padding: 1rem;
+        }
+        .nav-items {
+            .display;
+            justify-content: space-between;
+           font-size: @fontSize * 2;
+           .margin;
+
+           .link {
+               padding: 1rem;
+               margin: 0 auto;
+               text-decoration: none;
+               color: @nav-font;
+
+               &:hover {
+                   font-size: @fontSize * 1.5;
+                   color: @hover;
+               }
+           }
+
+           
+        }
+    }
+}
