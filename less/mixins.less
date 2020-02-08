@@ -1,1 +1,28 @@
-// Mixins Here
+.flex-nav() {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .flex-nav2() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button(@height, @width) {
+    height: @height;
+    width: @width;
+    color: @river-bend;
+    font-size: 1.8rem;
+    background-color:lightblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &:hover {
+      background-color: @river-bend;
+      color: @shuttle-gray;
+    }
+  }
