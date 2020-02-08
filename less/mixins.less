@@ -1,1 +1,36 @@
 // Mixins Here
+
+
+.navigationator{
+    font-size: 15px;
+    font-family: @river-bend;
+}
+
+// Nav styling mixin
+
+
+.paragraphmix{
+    padding:15px;
+}
+
+.none{
+    display:none;
+}
+
+.mixin-btn(@btn-bg-color, @porcelain) {
+    background: @btn-bg-color;
+    color: @porcelain;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 30%;
+    text-align: center;
+
+    &:hover {
+        background: @porcelain;
+        color: @btn-bg-color;
+        border: 1px solid @btn-bg-color;
+
+    }
+}
