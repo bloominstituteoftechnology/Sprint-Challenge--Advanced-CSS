@@ -20,7 +20,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+    @media @mobile {
+      .sky{
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+      .blast{
+        width: 500px;
+      }
+    }
 
     img {
       width: 28%;
@@ -35,6 +45,7 @@
 
     h3 {
       margin-top: 11px;
+      font-size: 2rem;
     }
 
     p {
@@ -48,9 +59,27 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+
+    img{
+      border: 2px solid red;
+      width: 50rem;
+      height: auto;
+      
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+          width: 500px;
+      }
+
+      
 
       h3 {
         margin-bottom: 10px;
@@ -70,9 +99,17 @@
         background-color: #14183d;
         border-radius: .4rem;
         font-size: 1.5rem;
+        @media @mobile {
+          width: 30rem;
+          // margin-left: -9rem;
+          // height: 4rem;
+          // padding-top:1rem;
+          // margin-bottom: -2rem;
+        }
         
         
       }
+        
     }
 
     .walk-img {

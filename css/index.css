@@ -60,6 +60,17 @@ p {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .container .space-images .sky {
+    display: none;
+  }
+  .home .container .space-images .launch {
+    display: none;
+  }
+  .home .container .space-images .blast {
+    width: 500px;
+  }
+}
 .home .container .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -71,6 +82,7 @@ p {
 }
 .home .container .visit-planets h3 {
   margin-top: 11px;
+  font-size: 2rem;
 }
 .home .container .visit-planets p {
   margin-top: 13px;
@@ -82,8 +94,26 @@ p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .container .walk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.home .container .walk img {
+  border: 2px solid red;
+  width: 50rem;
+  height: auto;
+}
 .home .container .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .container .walk .walk-text {
+    width: 500px;
+  }
 }
 .home .container .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -103,6 +133,11 @@ p {
   border-radius: 0.4rem;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  .home .container .walk .walk-text .btn {
+    width: 30rem;
+  }
+}
 .home .container .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -114,13 +149,55 @@ p {
 }
 .nav {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   max-width: 800px;
-  widows: 100%;
+  width: 100%;
   margin: 0 auto;
   background-color: whitesmoke;
   padding-bottom: 1rem;
+}
+.nav h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.nav nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .nav nav {
+    width: 80%;
+  }
+}
+.nav a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .nav a {
+    font-size: 1.3rem;
+  }
+}
+.bannerimg .banner {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .bannerimg .banner {
+    width: 100vw;
+    height: auto;
+  }
+}
+.bannerimg .banner img {
+  width: 500px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
