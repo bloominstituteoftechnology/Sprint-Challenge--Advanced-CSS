@@ -34,13 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites have multiple pages coded for different screen sizes whereas responsive websites use things like media queries to manipulate a single page to work with multiple scren sizes. Plus responsive is way harder so it's cooler.
+
 2. Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+You start from a designated mobile screen size and use media queries to change the layout moving up in size. Basically it's small to big and desktop first is big to small. 
+
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? 
+
+If I understand the question, it's like you have something like 
+
+<!-- <p style="fontsize 62.5%"> -->
+If so, inline styling always takes precedence.  
+But if you were use rem units on the same tag set with a percentage, then it would calculate the value based on the inline styling. 
+My bad if I misunderstood.
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+"It lets you code everything super ugly and then compiles it all together and makes it not ugly" lol jkjk I would say it lets you break a project down into chunks so you don't get lost in the sea of code that a whole page takes to run. 
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really really like nesting. It makes things make so much more sense, to me. If native css were tons of paper documents in a cardboard box then preprocessing would be a filing cabinet. 
+But the thing that's giving me the most problems is nested@ rules. Like I totally understand the function and why they're great, but I can't figure out 100% how the specificity chain works. Like on this Sprint I spent a good hour trying to figure out why the banner used the @media width even when it was full screen again. I got it, but it was just trial and error; don't feel like I have it down. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

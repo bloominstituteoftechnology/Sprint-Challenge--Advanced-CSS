@@ -1,11 +1,29 @@
 // Home Content
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .home {
 
+  
   .intro {
 
     h2 {
       padding: 15px;
+      font-size: 2rem;
     }
 
     p {
@@ -13,11 +31,24 @@
     }
   
   }
+  .container {
+
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile {
+      .sky{
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+      .blast{
+        width: 500px;
+      }
+    }
 
     img {
       width: 28%;
@@ -32,10 +63,14 @@
 
     h3 {
       margin-top: 11px;
+      font-size: 2rem;
     }
 
     p {
       margin-top: 13px;
+    }
+    @media @mobile {
+      margin-bottom: -3rem;
     }
   }
 
@@ -45,12 +80,30 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+
+    img{
+      width: 50rem;
+      height: auto;
+      
+    }
 
     .walk-text {
       width: 50%;
+      @media @mobile {
+          width: 500px;
+      }
+
+      
 
       h3 {
         margin-bottom: 10px;
+        font-size: 2rem;
       }
 
       p {
@@ -58,18 +111,62 @@
       }
 
       .btn {
+        a {
+        .buttons(2.5rem, 9rem);
+        display: block;
+        border: .1rem solid grey;
+        text-align: center;
+        padding-top: .35rem;
+        color: white;
+        background-color: #14183d;
+        border-radius: .4rem;
+        font-size: 1.5rem;
+        text-decoration: none; 
+        // a{
+        //   text-decoration: none;
+        //   width: 2.5rem;
+        //   height: 6rem;
+        //   color: white;
+        @media @mobile {
+          width: 30rem;
+          height: 4rem;
+          // margin-left: -9rem;
+          // height: 4rem;
+          padding-top:1rem;
+          // margin-bottom: -2rem;
+        }
+        }
+        a:hover {
+          background-color: white;
+          color: pink;
+        }
+        
+        
+        
+        
       }
+        
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        max-width: 500px;
+        width: 470px;
+        margin-left: -.25rem;
+        height: auto;
+        margin-top: -2rem;
+        
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
   }
+}
 }// home
