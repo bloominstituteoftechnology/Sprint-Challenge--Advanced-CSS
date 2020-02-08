@@ -4,6 +4,12 @@
 .margin {
   margin: 0 auto;
 }
+.btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: #F6F7F8;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -251,6 +257,10 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .btn {
+  background-color: #22283A;
+  padding: 1rem 2rem 1rem 2rem;
 }
 .home .walk .walk-img {
   width: 46%;
