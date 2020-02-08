@@ -127,9 +127,10 @@ p {
 .home .container .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .container .walk .walk-text .btn {
+.home .container .walk .walk-text .btn a {
   height: 2.5rem;
-  width: 6rem;
+  width: 9rem;
+  display: block;
   border: 0.1rem solid grey;
   text-align: center;
   padding-top: 0.35rem;
@@ -137,13 +138,18 @@ p {
   background-color: #14183d;
   border-radius: 0.4rem;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
-  .home .container .walk .walk-text .btn {
+  .home .container .walk .walk-text .btn a {
     width: 30rem;
     height: 4rem;
     padding-top: 1rem;
   }
+}
+.home .container .walk .walk-text .btn a:hover {
+  background-color: white;
+  color: pink;
 }
 .home .container .walk .walk-img {
   width: 46%;

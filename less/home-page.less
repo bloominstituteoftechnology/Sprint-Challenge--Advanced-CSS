@@ -94,7 +94,9 @@
       }
 
       .btn {
-        .buttons(2.5rem, 6rem);
+        a {
+        .buttons(2.5rem, 9rem);
+        display: block;
         border: .1rem solid grey;
         text-align: center;
         padding-top: .35rem;
@@ -102,6 +104,12 @@
         background-color: #14183d;
         border-radius: .4rem;
         font-size: 1.5rem;
+        text-decoration: none; 
+        // a{
+        //   text-decoration: none;
+        //   width: 2.5rem;
+        //   height: 6rem;
+        //   color: white;
         @media @mobile {
           width: 30rem;
           height: 4rem;
@@ -110,6 +118,13 @@
           padding-top:1rem;
           // margin-bottom: -2rem;
         }
+        }
+        a:hover {
+          background-color: white;
+          color: pink;
+        }
+        
+        
         
         
       }
