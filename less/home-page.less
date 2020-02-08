@@ -1,8 +1,30 @@
 // Home Content
 
 .home {
+  @media @phone {
+    max-width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .intro {
+
+    @media @phone {
+      max-width: 100%;
+    }
+   
+    .header-image {
+      
+      img {
+        @media @phone {
+          width: 100%;
+        }
+      }
+      
+    }
+    
+    
+  
 
     h2 {
       padding: 15px;
@@ -18,12 +40,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
+
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
@@ -45,9 +80,25 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    
+    @media @phone {
+      flex-wrap: wrap-reverse;
+      width: 100%;
+    }
+
+    
+
+    .walk-img {
+      @media @phone {
+        width: 100%;
+      }
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +109,30 @@
       }
 
       .btn {
+        @media @phone {
+          width: 100%;
+        }
+
+        button {
+          @media @phone {
+            .rounded-button(10px, 90%);
+            
+          }
+          .rounded-button(10px, 30%);
+          &:hover {
+            background-color: white;
+            color: @btn-bg-color;
+          }
+       }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+      }
       
       img {
         width: 100%;
@@ -72,4 +141,10 @@
       }
     }
   }
+  footer {
+    @media @phone {
+      width: 100%;
+    }
+  }
+
 }// home
