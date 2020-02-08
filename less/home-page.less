@@ -16,6 +16,7 @@
   }
   .container {
 
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +52,9 @@
     p {
       margin-top: 13px;
     }
+    @media @mobile {
+      margin-bottom: -3rem;
+    }
   }
 
   .walk {
@@ -67,7 +71,6 @@
     }
 
     img{
-      border: 2px solid red;
       width: 50rem;
       height: auto;
       
@@ -101,9 +104,10 @@
         font-size: 1.5rem;
         @media @mobile {
           width: 30rem;
+          height: 4rem;
           // margin-left: -9rem;
           // height: 4rem;
-          // padding-top:1rem;
+          padding-top:1rem;
           // margin-bottom: -2rem;
         }
         
@@ -115,11 +119,20 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @mobile {
+        max-width: 500px;
+        width: 470px;
+        margin-left: -.25rem;
+        height: auto;
+        margin-top: -2rem;
+        
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
   }

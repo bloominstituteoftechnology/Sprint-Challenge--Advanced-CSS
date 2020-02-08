@@ -10,9 +10,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-p {
+footer p {
   align-self: center;
   padding-top: 1.5rem;
+  font-weight: bold;
 }
 * {
   box-sizing: border-box;
@@ -87,6 +88,11 @@ p {
 .home .container .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .container .visit-planets {
+    margin-bottom: -3rem;
+  }
+}
 .home .container .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -103,7 +109,6 @@ p {
   }
 }
 .home .container .walk img {
-  border: 2px solid red;
   width: 50rem;
   height: auto;
 }
@@ -136,11 +141,22 @@ p {
 @media (max-width: 500px) {
   .home .container .walk .walk-text .btn {
     width: 30rem;
+    height: 4rem;
+    padding-top: 1rem;
   }
 }
 .home .container .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .container .walk .walk-img {
+    max-width: 500px;
+    width: 470px;
+    margin-left: -0.25rem;
+    height: auto;
+    margin-top: -2rem;
+  }
 }
 .home .container .walk .walk-img img {
   width: 100%;
@@ -185,19 +201,19 @@ p {
     font-size: 1.3rem;
   }
 }
-.bannerimg .banner {
+.banner {
   max-width: 800px;
-  width: 100%;
   margin: 0 auto;
 }
+.banner img {
+  height: auto;
+}
 @media (max-width: 500px) {
-  .bannerimg .banner {
-    width: 100vw;
+  .banner img {
+    max-width: 500px;
+    margin: 0 auto;
     height: auto;
   }
-}
-.bannerimg .banner img {
-  width: 500px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
