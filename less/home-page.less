@@ -1,75 +1,139 @@
 // Home Content
+@import "variables";
+
 
 .home {
 
-  .intro {
 
-    h2 {
-      padding: 15px;
+
+    .intro {
+
+        h2 {
+            padding: 15px;
+        }
+
+        p {
+            padding: 0 15px;
+        }
+
     }
 
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        margin-bottom: 26px;
-      }
-
-      .btn {
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
+    .space-images {
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
+
+        img {
+
+            width: 28%;
+            margin: 20px 2.5%;
+            border-radius: 20px;
+            height: 100%;
+        }
     }
-  }
-}// home
+
+    .visit-planets {
+        padding: 15px;
+
+        h3 {
+            margin-top: 11px;
+        }
+
+        p {
+            margin-top: 13px;
+        }
+    }
+
+    .walk {
+        margin-top: 60px;
+        border-top: 1px solid @main-border-color;
+        padding: 50px 60px;
+        display: flex;
+        justify-content: center;
+
+        .walk-text {
+            width: 50%;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 26px;
+            }
+
+            .btn {
+                //parametric mixin
+                .signUp(white; darkslateblue);
+                
+                width: 30%;
+                height: 4rem;
+                border-radius: 10px;
+                text-align: center;
+                
+            }
+        }
+
+        .walk-img {
+            width: 46%;
+            margin-left: 4%;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+// home
+
+@media @phone {
+    .home {
+
+        .space-images {
+            .blast {
+                width: 100%;
+                /*margin: 20px 2.5%;*/
+                border-radius: 20px;
+                height: 100%;
+            }
+
+            .sky {
+                visibility: hidden;
+            }
+
+            .launch {
+                visibility: hidden;
+            }
+        }
+
+        .walk {
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .walk-text {
+                width: 100%;
+
+                button {
+                    .signUp(white; darkslateblue);
+                    width: 100%;
+                    height: 4rem;
+                    border-radius: 10px;
+                    text-align: center;
+                    
+                }
+
+                button:hover {
+                    .signUp(yellow; red);
+                }
+            }
+
+            .walk-img {
+                width: 100%;
+            }
+        }
+    }
+}

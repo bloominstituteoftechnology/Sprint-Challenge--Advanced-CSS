@@ -1,1 +1,17 @@
 // Mixins Here
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerTitlenav {
+    margin-left: 50%;
+    font-size: 3rem;
+}
+
+
+//parametric mixin
+.signUp(@color; @background-color;) {
+    color: @color;
+    background-color: @background-color;
+}
