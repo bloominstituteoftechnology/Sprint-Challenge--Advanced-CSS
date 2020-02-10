@@ -27,8 +27,19 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }//ENDS IMG
+    }//ENDS IMG    
   }//ENDS .SPACE-IMAGES
+  
+  @media @phone {
+    .space-images {
+      img {
+        width: auto;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+        display: none;
+      }     
+  }//ENDS @MEDIA
 
   .visit-planets {
     padding: 15px;
@@ -76,3 +87,4 @@
         border-radius: 10px;
       }//ENDS IMG
 }//HOME 
+}
