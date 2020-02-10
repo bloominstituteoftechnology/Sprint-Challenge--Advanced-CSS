@@ -1,12 +1,12 @@
 // Navigation code here
 .navigation {
-    background: @navbackground;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: @sea-shell;
-    height: 80%;
+
+    .nav-tags(red); /* parameter that you're passing in */
+
     h1 {
         font-size: 3.5rem;
         padding: 10px;
@@ -18,9 +18,8 @@
         a {
             text-decoration: none;
             padding: 10px;
-            color: gray;
+            color: black;
             font-size: 15px;
         }
     }
 }
-

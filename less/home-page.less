@@ -1,6 +1,8 @@
 // Home Content
 
 .home {
+    .center(block);
+
     .intro {
         .mainheaderpng {
             border-radius: 1px;
@@ -62,19 +64,16 @@
 
             .btn {
                 background-color: @btn-bg-color;
-                padding: 9px;
                 width: @lineheightandwidth;
-                height: 40px;
-                border-radius: 4px;
-                text-align: center;
-                vertical-align: middle;
                 line-height: @lineheightandwidth;
-                box-shadow: 4px 4px 4px #999;
+                .btnWalk();
+
                 p {
                     font-size: 1.5em;
                     font-weight: bold;
                     color: @buttonparacolor;
                 }
+
                 &:hover {
                     background: @buttonparacolor;
                     color: @btn-bg-color;
@@ -93,16 +92,27 @@
             }
         }
     }
-} // home
+}
 
-@media(max-width: 500px) {
+// home
+
+@media (max-width: 500px) {
+    .intro {
+        .mainheaderpng {
+            height: 150px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
     .space-images {
         display: block;
 
         img.sky {
-            display: none; 
-            margin: 0 auto; 
-       
+            display: none;
+            margin: 0 auto;
         }
     }
 }
