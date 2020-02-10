@@ -1,4 +1,6 @@
 // Home Content
+@import "variables";
+@import "mixins";
 
 .home {
 
@@ -25,6 +27,15 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @phone {
+      .launch, .sky {
+        display: none;
+      }
+      .blast {
+        width: 100%;
+      }
+    }
   }
 
   .visit-planets {
@@ -46,6 +57,10 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {  //my live server won't update, I can't tell if I should nest this somewhere else!
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,8 +73,22 @@
       }
 
       .btn {
+        .btn-styling(black, white, black);
+        font-size: 2rem;
+        width: 30%;
+        padding: 1.5% 0% 1.5% 0%;
+        text-align: center;
+        border-radius: 7%;
+
+        &:hover {   //not sure if this is working, live server seems to be having a delay
+          .btn-styling(white, black);
+        }
+
+        @media @phone {
+          
+        }
       }
-    }
+      
 
     .walk-img {
       width: 46%;
@@ -72,4 +101,5 @@
       }
     }
   }
-}// home
+  }
+} //home

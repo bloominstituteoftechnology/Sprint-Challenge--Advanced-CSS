@@ -1,1 +1,50 @@
 // Navigation code here
+
+.navbar {
+    background-color: #f4f4f4;
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    justify-content: center;
+
+    .nav-content {
+
+        .flex-custom();
+        max-width: 800px;
+        width: 100%;
+
+
+        @media @phone {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            /*max-width: 400px;*/
+            margin: 0px 200px 0px 200px;
+
+            @media @phone {
+                margin: 0px;
+            }
+
+            a {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                text-decoration: none;
+                color: black;
+                font-size: 1.8rem;
+
+               
+            }
+        }
+    } /*nav-content*/
+} /*navbar*/
