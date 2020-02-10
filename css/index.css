@@ -160,6 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.navigation h1 {
+  font-size: 3.2rem;
+  padding: 3%;
+  text-align: center;
+}
+.navigation nav {
+  text-align: center;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 3%;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +189,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
