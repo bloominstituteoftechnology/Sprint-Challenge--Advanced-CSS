@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    img{
+      .border-radius();
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +61,14 @@
       }
 
       .btn {
+        background-color: @btn-bg-color;
+        width: 100px;
+        height:  80px;
+        margin: 0 auto;
+  
+        a{
+          .anchors(@porcelain)
+        }
       }
     }
 

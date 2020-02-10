@@ -1,0 +1,19 @@
+.navcontainer {
+  width: 1000pX;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navcontainer h1 {
+  font-size: 4.4rem;
+}
+.navcontainer nav {
+  width: 650px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navcontainer nav a {
+  font-size: 2rem;
+  text-decoration: none;
+}
