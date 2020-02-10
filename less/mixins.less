@@ -1,15 +1,20 @@
 // Mixins Here
 .btn-style () {
+    width: 100px;
     background-color:@btn-bg-color;
     color: white;
-    font-size: 1.2rem;
-    padding: 10px 10%;
+    font-size: 1.6rem;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 5px 10px;
     border: 1px solid black;
-    border-radius: 10%; 
+    border-radius: 5px; 
 }
 
-.flexle() {
+.flex (@direction, @justify) {
     display: flex;
-    flex-direction: column;
+    flex-direction: @direction;
+    justify-content: @justify;
+    
 }
 
