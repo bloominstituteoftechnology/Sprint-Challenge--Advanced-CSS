@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      width: 100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -24,6 +28,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        display: none;
+      }
+    }
+
+    img:last-child {
+      @media @mobile {
+        display: block;
+        width: 100%;
+      }
     }
   }
 
