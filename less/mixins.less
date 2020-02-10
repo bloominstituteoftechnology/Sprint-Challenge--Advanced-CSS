@@ -1,10 +1,16 @@
 // Mixins Here
 .btn-style () {
     width: 2% 15%;
-    background-color: #22283A;
+    background-color:@btn-bg-color;
     color: white;
     font-size: 1.2rem;
     padding: 10px 10%;
     border: 1px solid black;
     border-radius: 10%; 
+}
+
+.flex (@direction, @justify) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
 }
