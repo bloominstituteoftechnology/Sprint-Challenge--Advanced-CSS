@@ -1,3 +1,10 @@
+.rounded-border {
+  border: none;
+  border-radius: 5px;
+}
+.flex-display {
+  display: flex;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -198,13 +205,36 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width:500px) {
+  .home .intro p {
+    text-align: justify;
+  }
+}
 .home .earth {
+  border: none;
   border-radius: 5px;
+}
+@media (max-width:500px) {
+  .home .earth {
+    max-width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width:500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+    align-items: center;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -221,12 +251,25 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width:500px) {
+  .home .visit-planets p {
+    text-align: justify;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
+}
+@media (max-width:500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
@@ -237,18 +280,44 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width:500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
 .home .walk .walk-text .btn {
   background-color: black;
   width: 30%;
   text-align: center;
   font-size: 1.8rem;
-  padding: 8px 0;
+  padding: 8px 0px;
   color: white;
+  border: none;
   border-radius: 5px;
+}
+.home .walk .walk-text .btn:hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;

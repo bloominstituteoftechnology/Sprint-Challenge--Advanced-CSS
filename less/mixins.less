@@ -1,1 +1,20 @@
 // Mixins Here
+
+.rounded-border {
+    border: none;
+    border-radius: 5px;
+}
+
+.flex-display {
+    display: flex;
+}
+
+.custom-btn(@width, @padding) {
+    background-color: black;
+    width: @width;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: @padding;
+    color: white;
+    .rounded-border();
+  }
