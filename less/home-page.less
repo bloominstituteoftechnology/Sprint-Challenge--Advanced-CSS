@@ -61,7 +61,7 @@
         margin-bottom: 26px;
       }//ENDS P
       .btn {
-        .btn-style();
+        .btn-style(75px, white);
       }//ENDS .BTN
     }//ENDS .WALK-TEXT 
 
@@ -77,19 +77,38 @@
     }//ENDS .WALK-IMG 
   }//ENDS .WALK 
   @media @phone {
-    
+    .main-header {
+      width: 100%;
+    }
     .space-images {
       img {
         width: 100%;        
-        }//ENDS @MEDIA IMG
-      
+        }//ENDS @MEDIA IMG      
         .sky {
           display: none; 
         }//ENDS @MEDIA .SKY
-
         .launch {
           display: none;
         }//ENDS @MEDIA .LAUNCH
     }//ENDS @MEDIA .SPACE-IMAGES
+
+    .walk {
+      margin: 3% 0;
+      padding: 10px;
+      border: none;
+      .flex(column-reverse, center);
+
+
+      .walk-text {
+        width: 100%;
+      }//ENDS @MEDIA .WALK-TEXT
+      .btn {
+        .btn-style(470px, white);
+      }//ENDS @MEDIA .BTN
+      .walk-img {
+        width: 100%;
+        margin: 10px 0;
+      }//ENDS @MEDIA .WALK-IMG
+    }//ENDS @MEDIA .WALK
   }//ENDS @MEDIA        
 }//HOME 

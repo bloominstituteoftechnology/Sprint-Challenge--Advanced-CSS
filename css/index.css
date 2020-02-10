@@ -236,14 +236,13 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 100px;
+  width: 75px;
   background-color: #22283A;
   color: white;
   font-size: 1.6rem;
   text-align: center;
   box-sizing: content-box;
   padding: 5px 10px;
-  border: 1px solid black;
   border-radius: 5px;
 }
 .home .walk .walk-img {
@@ -256,6 +255,9 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
+  .home .main-header {
+    width: 100%;
+  }
   .home .space-images img {
     width: 100%;
   }
@@ -264,5 +266,30 @@ footer {
   }
   .home .space-images .launch {
     display: none;
+  }
+  .home .walk {
+    margin: 3% 0;
+    padding: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .btn {
+    width: 470px;
+    background-color: #22283A;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 10px 0;
   }
 }
