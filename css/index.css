@@ -1,6 +1,10 @@
 .flex {
   display: flex;
 }
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -190,13 +194,13 @@ nav ul a {
   color: #454A59;
 }
 footer {
+  display: flex;
+  justify-content: center;
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 .home .intro img {
@@ -240,11 +244,11 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
+  display: flex;
+  justify-content: center;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
-  justify-content: center;
 }
 @media (max-width: 500px) {
   .home .walk {
