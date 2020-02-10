@@ -1,10 +1,16 @@
 // Home Content
 
 .home {
-
+ 
   .intro {
     img{
       .border-radius();
+      
+      @media (@phone){
+        max-width: 480px;
+        border-radius: 0;
+      }
+     
     }
 
     h2 {
@@ -21,6 +27,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media (@phone){
+      .hide();
+    }
 
     img {
       width: 28%;
@@ -60,16 +69,14 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-        background-color: @btn-bg-color;
-        width: 100px;
-        height:  80px;
-        margin: 0 auto;
-  
-        a{
-          .anchors(@porcelain)
-        }
+      
+      button{
+        background-color: black;
+        color: @porcelain;
+        font-size: 2rem;
+        font-family: inherit;
       }
+      
     }
 
     .walk-img {
@@ -84,3 +91,4 @@
     }
   }
 }// home
+

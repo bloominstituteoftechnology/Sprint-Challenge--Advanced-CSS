@@ -1,7 +1,10 @@
 // Mixins Here
 
-.border-radius() {
-    border-radius:7px ;
+.border-radius {
+    border-radius: 7px;
+    @media (@phone){
+        border-radius: none;
+    }
 }
 
 .opp{
@@ -9,6 +12,6 @@
 }
 .anchors(@color;){
     color: @color;
-    font-size: 3rem;
-    padding-left: 5%;
+    font-size: 1rem;
+    margin: 0 auto;
 }
