@@ -13,20 +13,20 @@
         }
 
         p {
-            padding: 0 15px;
+            font-size: @paragraph-font-size;
+            padding: 10px 15px;
         }
     }
 
     .space-images {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         width: 100%;
+        flex-basis: 30%;
 
         img {
-            width: 28%;
-            margin: 20px 2.5%;
-            border-radius: 20px;
-            height: 100%;
+            border-radius: 15px;
         }
     }
 
@@ -40,6 +40,7 @@
 
         p {
             margin-top: 13px;
+            font-size: @paragraph-font-size;
         }
     }
 
@@ -60,13 +61,15 @@
 
             p {
                 margin-bottom: 26px;
+                font-size: @paragraph-font-size;
             }
 
             .btn {
                 background-color: @btn-bg-color;
                 width: @lineheightandwidth;
-                line-height: @lineheightandwidth;
-                .btnWalk();
+                // line-height: @lineheightandwidth;
+                .btnWalk(#373738, #dedede);
+                .center();
 
                 p {
                     font-size: 1.5em;
@@ -76,7 +79,7 @@
 
                 &:hover {
                     background: @buttonparacolor;
-                    color: @btn-bg-color;
+                    color: red;
                 }
             }
         }
@@ -103,16 +106,67 @@
         }
 
         p {
-            font-size: 30px;
+            font-size: 50px;
         }
+    }
+
+    p {
+        font-size: @paragraph-font-mobile;
     }
 
     .space-images {
         display: block;
+        width: 500px;
 
-        img.sky {
-            display: none;
-            margin: 0 auto;
+        .spacediv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            img {
+                width: 400px;
+                height: 400px;
+            }
         }
+
+        .skydiv {
+            display: none;
+        }
+
+        .launchdiv {
+            display: none;
+        }
+    }
+
+    .walk {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 15px !important;
+
+        img {
+            width: 400px !important;
+            height: 400px !important;
+        }
+
+        .walk-text {
+            width: 400px !important;
+        }
+
+        .walk-img {
+            width: 500px;
+            height: 500px;
+        }
+
+        .btn {
+            width: 400px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dedede;
+            color: #373738;
+        }
+
     }
 }

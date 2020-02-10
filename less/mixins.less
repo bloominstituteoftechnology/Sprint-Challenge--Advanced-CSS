@@ -32,21 +32,33 @@
 /* fonts are good for parametric mixins and mixins */
 
 
-.btnWalk() {
-    padding: 9px;
-    height: 40px;
+.btnWalk(@dark, @light) {
+    // padding: 9px;
+    height: 60px;
+    width: 100px;
+    overflow: hidden;
     border-radius: 4px;
     text-align: center;
     vertical-align: middle;
-    box-shadow: 4px 4px 4px #999; 
-    background: red; 
+    box-shadow: 4px 4px 4px #999;
+    background: @dark;
+    color: @light;
 }
-/*variables are just plug-ins for properties */ 
-/* perimeters are symbols/plug-ins for properties */ 
-/*mixins- combining the CSS properties (padding,height) and selectors (p, img) */ 
 
-/* parametric mixin--- 
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+/*variables are just plug-ins for properties */
+/* perimeters are symbols/plug-ins for properties */
+/*mixins- combining the CSS properties (padding,height) and selectors (p, img) */
+
+/* parametric mixin--- */
+
+/*
 .nav-tags (mixin)
 
 (@mybackground (this is the parameter (so this is the part that makes it a parametric mixin)))
@@ -54,3 +66,4 @@
 { }  <--- all the stuff in here are properties 
 
 background: @mybackground--- the @mybackground part is connected to the parameter for the parametric mixin part thats in the parathesis which is connected to the .nav-tag (mixin). then when you go to where the less file is (in this case for the navigation part so navigation.less), you write the mixin as .nav-tags for example and then in paranthesis (make sure there's no space between mixin and parantheses), you write the actual property (in this case: red) and then the semi-colon. 
+*/
