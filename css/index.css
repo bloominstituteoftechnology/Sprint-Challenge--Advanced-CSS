@@ -144,6 +144,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
 h1,
 h2,
 h3,
@@ -192,6 +198,9 @@ nav ul a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #454A59;
+}
+nav ul a:hover {
+  text-decoration: underline;
 }
 footer {
   display: flex;
@@ -281,6 +290,13 @@ footer {
   padding: 10px;
   border-radius: 5px;
 }
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  color: #22283A;
+  border: 2px solid #22283A;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
     width: 100%;
@@ -301,4 +317,32 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.intro input {
+  width: 250px;
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.intro .formtext {
+  font-size: 1.3rem;
+}
+.intro button {
+  color: #FFF;
+  width: 200px;
+  font-size: 16px;
+  background-color: #22283A;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.intro button:hover {
+  background-color: #FFF;
+  color: #22283A;
+  border: 2px solid #22283A;
+  cursor: pointer;
+  margin-bottom: -4px;
 }
