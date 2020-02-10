@@ -41,7 +41,7 @@ Answer: Mobile first is the practice of designing the default page as mobile fir
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-Answer: Sets font-size to 10px;
+Answer: Sets font-size to 10px, making rem units easier to calculate. 
 
 4. How would you describe preprocessing to someone new to CSS?
 Answer: Preprocessing is 
