@@ -33,10 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+- Responsive is fluid and adapts to the size of the screen irrespective of the target devices. 
+
+Responsive uses CSS media queries to change styles based on the target device such as display type, width, height, etc, and only one of these is necessary for the site to adapt to different screens.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+- Mobile first vs desktop means, first the developers initially design a website for the smallest mobile devices possible and then scale upwards to adapt to desktop computers
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+- When sizing fonts, I've often done something like this. (as seen here: http://snook.ca/archives/html_and_css/font-size-with-rem)
+html {font-size:16px}
+
+body{font-size:62.5%}
+And then I can set all of type using REMs in increments of "1 REM=10px".
+
+But why don't people just do this
+html{font-size:10px;}
 
 4. How would you describe preprocessing to someone new to CSS?
 
