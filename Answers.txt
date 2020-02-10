@@ -1,0 +1,10 @@
+1. What is the difference between an adaptive website and a fully responsive website?
+	Adaptive only changes at the breakpoints whereas fullt responsive moves with the the page resizing.
+2. Describe what it means to be mobile first vs desktop first.
+	Mobile first is designing a webpage to be optimized in mobile view where your highest traffic would be.
+3. What does font-size: 62.5% in the html tag do for us when using rem units?
+	Changes from 16px to 10px.
+4. How would you describe preprocessing to someone new to CSS?
+	If using LESS, it will track all of your changes, tell you when there is an error, and helps import from other files into your index.css
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+	I like the compiler. I am still getting used to @media.
