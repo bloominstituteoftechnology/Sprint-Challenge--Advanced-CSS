@@ -316,13 +316,17 @@ footer {
   .home .walk .walk-text {
     width: 100%;
   }
-  .home .walk .walk-text .btn p {
+  .home .walk .walk-text button {
     color: white;
     width: 100%;
     height: 4rem;
     border-radius: 10px;
     text-align: center;
     background-color: darkslateblue;
+  }
+  .home .walk .walk-text button:hover {
+    color: yellow;
+    background-color: red;
   }
   .home .walk .walk-img {
     width: 100%;
