@@ -1,1 +1,28 @@
 // Navigation code here
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .nav-tags(@navbackground);
+    /* parameter that you're passing in */
+
+    h1 {
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 10px 0px 10px;
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            font-size: 15px;
+        }
+    }
+}

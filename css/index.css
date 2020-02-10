@@ -1,0 +1,364 @@
+/* my-hover-mixin()  {
+    &:hover {
+        background: @buttonparacolor;
+        color: @btn-bg-color; 
+    }
+    button () {
+        
+    }
+} */
+/* 
+.navigation(.nav-tags (), .center()) 
+
+.btn (.btn p(),) .center()) */
+/* fonts are good for parametric mixins and mixins */
+/*variables are just plug-ins for properties */
+/* perimeters are symbols/plug-ins for properties */
+/*mixins- combining the CSS properties (padding,height) and selectors (p, img) */
+/* parametric mixin--- */
+/*
+.nav-tags (mixin)
+
+(@mybackground (this is the parameter (so this is the part that makes it a parametric mixin)))
+
+{ }  <--- all the stuff in here are properties 
+
+background: @mybackground--- the @mybackground part is connected to the parameter for the parametric mixin part thats in the parathesis which is connected to the .nav-tag (mixin). then when you go to where the less file is (in this case for the navigation part so navigation.less), you write the mixin as .nav-tags for example and then in paranthesis (make sure there's no space between mixin and parantheses), you write the actual property (in this case: red) and then the semi-colon. 
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: black;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f5f5f5;
+  /* border: @seashell; */
+  height: 80%;
+  /* parameter that you're passing in */
+}
+.navigation h1 {
+  font-size: 3.5rem;
+  padding: 10px;
+}
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px 0px 10px;
+}
+.navigation nav a {
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 15px;
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  display: block;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home .intro .mainheaderpng {
+  border-radius: 1px;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  font-size: 1.6rem;
+  padding: 10px 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  flex-basis: 30%;
+}
+.home .space-images img {
+  border-radius: 15px;
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+  color: #22283a;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+  font-size: 1.6rem;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid grey;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+  color: #22283a;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+  font-size: 1.6rem;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283a;
+  height: 60px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 4px 4px 4px #999;
+  background: #373738;
+  color: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk .walk-text .btn p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #707070;
+}
+.home .walk .walk-text .btn:hover {
+  background: #707070;
+  color: red;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .intro .mainheaderpng {
+    height: 150px;
+  }
+  .intro p {
+    font-size: 50px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .space-images {
+    display: block;
+    width: 500px;
+  }
+  .space-images .spacediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .space-images .spacediv img {
+    width: 400px;
+    height: 400px;
+  }
+  .space-images .skydiv {
+    display: none;
+  }
+  .space-images .launchdiv {
+    display: none;
+  }
+  .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 15px !important;
+  }
+  .walk img {
+    width: 400px !important;
+    height: 400px !important;
+  }
+  .walk .walk-text {
+    width: 400px !important;
+  }
+  .walk .walk-img {
+    width: 500px;
+    height: 500px;
+  }
+  .walk .btn {
+    width: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+    color: #373738;
+  }
+}
