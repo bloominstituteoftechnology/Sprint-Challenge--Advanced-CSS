@@ -1,10 +1,16 @@
 .btn-class {
-  border: 1px solid black;
+  width: 110px;
   padding: 10px 40px;
   border-radius: 10px;
-  background-color: teal;
+  background-color: #22283A;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .btn-class {
+    width: 100%;
+    background: black;
+  }
 }
 .btn-class:hover {
   background-color: #006667;
@@ -230,15 +236,38 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  border: 1px solid black;
+  width: 110px;
   padding: 10px 40px;
   border-radius: 10px;
-  background-color: teal;
+  background-color: #22283A;
   color: white;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    background: black;
+  }
+}
 .home .walk .walk-text .btn:hover {
   background-color: #006667;
+}
+.home .walk .walk-text .bar {
+  width: 510px;
+  height: 100px;
+  background: red;
+}
+@media (max-width: 800px) {
+  .home .walk .walk-text .bar {
+    width: 100%;
+    background: red;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .bar {
+    width: 80%;
+    background: red;
+  }
 }
 .home .walk .walk-img {
   width: 46%;

@@ -1,15 +1,39 @@
 // Mixins Here
 
 .btn-class {
-  border: 1px solid black;
+  width:110px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    background: black;
+  }
     padding: 10px 40px;
     border-radius: 10px;
-    background-color: teal;
+    background-color: @btn-bg-color;
     color: white;
     cursor: pointer;
   
     &:hover {
       // The compiled color returned is #006667 
       background-color: darken(teal, 5%)
+    }
+  }
+
+  .some-class(@foo,@light) {
+    // Large screen styling
+    width: 500px+@foo;
+    height:100px;
+    background:@light;
+  
+    // Medium screen styling
+    @media (max-width: 800px) {
+      width: 100%;
+      background: @light;
+    }
+  
+    // Small screen styling
+    @media (max-width: 500px) {
+      width: 80%;
+      background:@light;
     }
   }
