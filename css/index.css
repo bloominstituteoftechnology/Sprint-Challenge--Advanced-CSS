@@ -1,3 +1,14 @@
+.btn-class {
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+.btn-class:hover {
+  background-color: #006667;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +171,12 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+#foo {
+  background: red;
+}
+#foo a {
+  font-size: 24px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -211,6 +228,17 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  border: 1px solid black;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #006667;
 }
 .home .walk .walk-img {
   width: 46%;
