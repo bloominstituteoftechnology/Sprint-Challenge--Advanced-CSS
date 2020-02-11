@@ -1,6 +1,6 @@
-@phone (max-width: 800px);
 .btn-class {
   width: 110px;
+  font-size: 18px;
   padding: 10px 40px;
   border-radius: 10px;
   background-color: #22283A;
@@ -179,8 +179,13 @@ p {
   margin: 0 auto;
 }
 header {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
+}
+@media (max-width: 800px) {
+  header {
+    width: 80%;
+  }
 }
 nav {
   text-align: center;
@@ -248,6 +253,7 @@ footer {
 }
 .home .walk .walk-text .btn {
   width: 110px;
+  font-size: 18px;
   padding: 10px 40px;
   border-radius: 10px;
   background-color: #22283A;
