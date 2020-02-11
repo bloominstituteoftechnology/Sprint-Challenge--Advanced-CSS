@@ -216,13 +216,17 @@ footer {
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img img {
+  .home .space-images img {
     width: 100%;
   }
-  .home .space-images img .sky {
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
     display: none;
   }
-  .home .space-images img .launch {
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
     display: none;
   }
 }
@@ -278,7 +282,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    width: 470px;
+    width: 95%;
     background-color: #22283A;
     color: white;
     font-size: 1.6rem;
@@ -289,8 +293,8 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  color: #22283A;
-  background-color: #5E6164;
+  color: #551a8b;
+  background-color: #81848E;
 }
 .home .walk .walk-img {
   width: 46%;
