@@ -18,7 +18,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
 
+      .blast {
+        width: 90%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display:none;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -26,6 +37,8 @@
       height: 100%;
     }
   }
+
+  
 
   .visit-planets {
     padding: 15px;

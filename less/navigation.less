@@ -4,13 +4,20 @@ header {
     max-width: 100%;
     text-align: center;
     @media @phone {
-       width: 80%;
+       
+       img {
+       width:100%;
+       }
     }
 }
 nav {
     a { display:inline-block;
         margin: 20px 20px;
         font-size:18px;
+        @media @phone {
+            font-size:12px;
+            
+        }
         text-decoration: none;
         color: @shuttle-gray;
         text-decoration: none;
@@ -19,5 +26,8 @@ nav {
     text-align: center;
     background: @nav-bg;
     padding: 15px;
+    @media @phone {
+        padding:5px;
+    }
 }
 

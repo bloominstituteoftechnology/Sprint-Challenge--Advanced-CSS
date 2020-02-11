@@ -183,8 +183,8 @@ header {
   text-align: center;
 }
 @media (max-width: 800px) {
-  header {
-    width: 80%;
+  header img {
+    width: 100%;
   }
 }
 nav {
@@ -198,6 +198,16 @@ nav a {
   font-size: 18px;
   color: #5E6164;
   text-decoration: none;
+}
+@media (max-width: 800px) {
+  nav a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    padding: 5px;
+  }
 }
 footer {
   color: #22283B;
@@ -219,6 +229,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 800px) {
+  .home .space-images .blast {
+    width: 90%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
