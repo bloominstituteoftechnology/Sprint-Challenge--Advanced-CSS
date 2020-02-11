@@ -4,8 +4,11 @@
 
   .intro {
     .main-header {
-      margin-top: 11px;
+      margin-top: 11px;      
     }//ENDS .MAIN-HEADER
+    @media @phone {
+        width: 100%;
+      }
 
     h2 {
       padding: 15px;
@@ -16,23 +19,32 @@
     }//ENDS P 
   }//ENDS .INTRO
 
-
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-
+    width: 100%;   
+   
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }//ENDS IMG     
-  }//ENDS .SPACE-IMAGES
-  
-  
 
-  .visit-planets {
+      @media @phone {
+        img {
+          width: 100%;        
+          }//ENDS @MEDIA IMG      
+          .sky {
+            display: none; 
+          }//ENDS @MEDIA .SKY
+          .launch {
+            display: none;
+          }//ENDS @MEDIA .LAUNCH
+        }//ENDS @MEDIA 
+    }//ENDS IMG  
+  }//ENDS .SPACE-IMAGES 
+  
+   .visit-planets {
     padding: 15px;
 
     h3 {
@@ -50,65 +62,56 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-      
+
+    @media @phone {
+      margin: 3% 0;
+      padding: 10px;
+      border: none;
+      .flex(column-reverse, center);
+    }//ENDS @MEDIA .WALK 
+
     .walk-text {
       width: 50%;
-         
+
+      @media @phone {
+        width: 100%;   
+      }//ENDS @MEDIA 
+
       h3 {
         margin-bottom: 10px;
       }//ENDS H3
       p {
         margin-bottom: 26px;
       }//ENDS P
+
       .btn {
         .btn-style(75px, white);
+        
+        @media @phone {         
+            .btn-style(470px, white);
+          }//ENDS @MEDIA .BTN
+       
+          &:hover {
+          color: @btn-bg-color;
+          background-color:@shuttle-gray;
+        }//ENDS HOVER        
       }//ENDS .BTN
     }//ENDS .WALK-TEXT 
 
-    .walk-img {
+     .walk-img {
       width: 46%;
       margin-left: 4%;
-    
+
+        @media @phone {
+          width: 100%;
+          margin: 10px 0;
+        }//ENDS @MEDIA .WALK-IMG
+   
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }//ENDS IMG 
     }//ENDS .WALK-IMG 
-  }//ENDS .WALK 
-  @media @phone {
-    .main-header {
-      width: 100%;
-    }
-    .space-images {
-      img {
-        width: 100%;        
-        }//ENDS @MEDIA IMG      
-        .sky {
-          display: none; 
-        }//ENDS @MEDIA .SKY
-        .launch {
-          display: none;
-        }//ENDS @MEDIA .LAUNCH
-    }//ENDS @MEDIA .SPACE-IMAGES
-
-    .walk {
-      margin: 3% 0;
-      padding: 10px;
-      border: none;
-      .flex(column-reverse, center);
-
-
-      .walk-text {
-        width: 100%;
-      }//ENDS @MEDIA .WALK-TEXT
-      .btn {
-        .btn-style(470px, white);
-      }//ENDS @MEDIA .BTN
-      .walk-img {
-        width: 100%;
-        margin: 10px 0;
-      }//ENDS @MEDIA .WALK-IMG
-    }//ENDS @MEDIA .WALK
-  }//ENDS @MEDIA        
+  }//ENDS .WALK
 }//HOME 
