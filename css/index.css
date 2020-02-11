@@ -177,11 +177,21 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-#foo {
-  background: red;
+header {
+  width: 100%;
+  text-align: center;
 }
-#foo a {
-  font-size: 24px;
+nav {
+  text-align: center;
+  background: #F6F6F6;
+  padding: 20px;
+}
+nav a {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #5E6164;
+  text-decoration: none;
 }
 footer {
   color: #22283B;
