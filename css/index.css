@@ -1,7 +1,8 @@
 .btn-class {
-  width: 110px;
+  width: 120px;
   font-size: 18px;
-  padding: 10px 40px;
+  text-align: center;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #22283A;
   color: #F6F6F6;
@@ -12,7 +13,6 @@
     width: 100%;
     height: 70px;
     background: #22283A;
-    text-align: center;
     padding-top: 25px;
   }
 }
@@ -223,16 +223,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  text-align: left;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
-}
-@media (max-width: 800px) {
-  .home .intro {
-    text-align: left;
-  }
 }
 .home .space-images {
   display: flex;
@@ -315,9 +313,10 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 110px;
+  width: 120px;
   font-size: 18px;
-  padding: 10px 40px;
+  text-align: center;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #22283A;
   color: #F6F6F6;
@@ -328,7 +327,6 @@ footer {
     width: 100%;
     height: 70px;
     background: #22283A;
-    text-align: center;
     padding-top: 25px;
   }
 }
