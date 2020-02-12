@@ -5,17 +5,21 @@
   font-size: 18px;
   @media @phone {
     width: 100%;
-    background: black;
+    height: 70px;
+    background: @btn-bg-color;
+    text-align: center;
+    padding-top: 25px;
   }
     padding: 10px 40px;
     border-radius: 10px;
     background-color: @btn-bg-color;
-    color: white;
+    color: @wild-sand;
     cursor: pointer;
   
     &:hover {
       // The compiled color returned is #006667 
-      background-color: darken(teal, 5%);
+      background-color: @wild-sand;
+      color: @btn-bg-color;
     }
   }
 
