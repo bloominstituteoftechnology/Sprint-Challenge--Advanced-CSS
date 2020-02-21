@@ -1,6 +1,14 @@
 // Home Content
 
 .home {
+  // This is where you go to check to see if your max-width is working properly. "once it hits
+  // 500px, change bkg to blue"
+  @media @phone{
+    // This changes the background color to blue when you git those 500px border and adds 
+    // padding to both sodes of 5%
+    // background-color: gray;
+    padding: 0 5%;
+}
 
   .intro {
 
@@ -8,7 +16,7 @@
       width: 100%;
       padding: 15px;
       justify-content: left;
-      background-color: blue;
+      // background-color: blue;
 
     }
 
@@ -62,7 +70,9 @@
       }
 
       .btn {
-
+        // This puts the mixin into action and tells it to apply it to the class .btn with a bgcolor of aqua, etc.
+        // Sorry for choosing terrible colors
+        .custom(red, 200px, brown);
       }
     }
 

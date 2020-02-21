@@ -11,23 +11,17 @@
     font-size: 2rem;
     border-radius: 10px;
     color:@color ;
-
+// Clearing hover requirement
     &:hover{
-        background-color: black;
+        background-color: green;
+        color: purple
     }
-}
-
-// This puts the mixin into action and tells it to apply it to the class .btn with a bgcolor of aqua, etc.
-.btn{
-    .custom(aqua, 200px, purple);
 }
 
 
 // // Mobile breaking variable?
-// @mobile: ~"(max-width: 500px)";
+@phone: ~"(max-width: 500px)";
 
-
-// // When it changes to 500px take an argument of the color, size, color
-// @media @mobile{
-// .custom(orange, 200px, purple);
-// }
+@media @phone{
+    background-color: mediumaquamarine;
+}
