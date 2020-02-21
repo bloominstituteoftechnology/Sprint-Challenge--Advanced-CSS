@@ -1,7 +1,11 @@
-.flexMe {
+.flexM2e {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.flexM2e .colorMe {
+  color: purple;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   background-color: mediumaquamarine;
@@ -189,9 +193,6 @@ header nav {
 }
 @media (max-width: 500px) {
   header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 80%;
   }
 }
@@ -236,9 +237,6 @@ footer {
 }
 @media (max-width: 500px) {
   .home .space-images img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
   }
 }
@@ -255,9 +253,11 @@ footer {
   width: 100%;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 2%;
   display: flex;
   justify-content: center;
+  border: 2px solid blue;
+  box-sizing: border-box;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -294,8 +294,7 @@ footer {
   color: purple;
 }
 .home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
+  width: 100%;
 }
 .home .walk .walk-img img {
   width: 100%;
