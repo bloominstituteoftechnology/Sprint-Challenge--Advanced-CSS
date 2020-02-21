@@ -3,8 +3,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.flexM2e .colorMe {
-  color: purple;
+.orangeYou {
+  color: orange;
+  font-size: 1.5rem;
+}
+.colorMe {
+  color: red;
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
@@ -180,6 +184,8 @@ header {
   align-items: center;
 }
 header h1 {
+  color: orange;
+  font-size: 1.5rem;
   font-size: 5rem;
   margin: 1%;
 }
@@ -197,9 +203,9 @@ header nav {
   }
 }
 header a {
+  color: red;
   text-decoration: none;
   font-size: 1.5rem;
-  color: black;
 }
 footer {
   color: #22283B;
