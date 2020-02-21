@@ -106,6 +106,8 @@ section {
 }
 body {
   line-height: 1;
+  max-width: 100%;
+  padding: 0 4%;
 }
 ol,
 ul {
@@ -125,6 +127,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+* {
+  max-width: 100%;
 }
 * {
   box-sizing: border-box;
@@ -195,6 +200,9 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  max-width: 100%;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -218,38 +226,32 @@ footer {
   .home .rocket {
     display: flex;
   }
-  .home .rocket .rocket {
-    width: 28%;
-    margin: 20px 2.5%;
-    border-radius: 20px;
-    height: 100%;
-  }
 }
-.home .visit-planets {
+.visit-planets {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.visit-planets h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.visit-planets p {
   margin-top: 13px;
 }
-.home .walk {
+.walk {
   margin-top: 60px;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-.home .walk .walk-text {
+.walk .walk-text {
   width: 50%;
 }
-.home .walk .walk-text h3 {
+.walk .walk-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
+.walk .walk-text .btn {
   background-color: black;
   color: white;
   padding: 8px 20px;
@@ -259,15 +261,15 @@ footer {
   font-size: 14px;
   border-radius: 8px;
 }
-.home .walk .walk-text .btn:hover {
+.walk .walk-text .btn:hover {
   background-color: purple;
   color: #ccb486;
 }
-.home .walk .walk-img {
+.walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
