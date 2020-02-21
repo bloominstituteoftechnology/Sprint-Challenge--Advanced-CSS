@@ -276,8 +276,8 @@ nav a {
   color: white;
   background-color: black;
   border-radius: 5px;
-  height: 10%;
-  margin-right: 70%;
+  height: 3rem;
+  width: 30%;
 }
 .home .walk .walk-text button:hover {
   color: black;
