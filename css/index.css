@@ -323,10 +323,12 @@ footer p {
   color: #F6F7F8;
   height: 5vh;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 }
 .home .walk .walk-text button:hover {
   background-color: #F6F7F8;
   color: #22283A;
+  transform: scale(1.25);
 }
 @media (max-width: 500px) {
   .home .walk .walk-text button {
@@ -338,10 +340,12 @@ footer p {
     color: #F6F7F8;
     height: 14vh;
     text-align: center;
+    transition: all 0.5s ease-in-out;
   }
   .home .walk .walk-text button:hover {
     background-color: #F6F7F8;
     color: #22283A;
+    transform: scale(1.25);
   }
 }
 .home .walk-img {
