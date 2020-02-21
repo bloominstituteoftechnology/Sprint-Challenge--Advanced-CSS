@@ -1,1 +1,21 @@
 // Mixins Here
+.flexbox() {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.custom-btn (@width:150px, @bg-color:black, @color:white) {
+    display:block;
+    background-color:@bg-color;
+    margin: 0 20px 0 0;
+    padding:10px 5px 5px 5px;
+    width:@width;
+    height:40px;
+    font-size:2em;
+    color:@color;
+    text-align: center;
+&:hover{
+    background-color:@color;
+    color:@bg-color;
+}
+}
