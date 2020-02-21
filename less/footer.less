@@ -1,11 +1,20 @@
 // Footer Styles
 footer {
   color: #22283B;
-  background: #f4f4f4;
+  background-color: @footer-background;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3vh 0px;
+
+    p{
+      color: @footer-font-color;
+
+      @media @mobile{
+        color: @footer-font-color-mobile;
+      }
+    }
 }

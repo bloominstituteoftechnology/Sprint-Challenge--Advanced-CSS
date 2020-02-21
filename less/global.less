@@ -5,11 +5,22 @@
 
 html {
   font-size: 62.5%;
+  width:1200px;
+  margin: 0 auto;
+
+  @media @mobile {
+    width: 450px;
+  }
 }
 
 html, body {
   font-family: 'Ubuntu', sans-serif;
   color: @main-font-color;
+
+  @media @mobile {
+    body {
+      width: 100%;
+    }
 }
 
 h1, h2, h3, h4, h5 {
@@ -34,5 +45,8 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+}
+
+
 }
 
