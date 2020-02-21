@@ -1,1 +1,20 @@
 // Mixins Here
+.buttonStyle{
+    padding: 5%;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 35%;
+    text-align: center;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.displayFlex(@direction,@justify,@align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
