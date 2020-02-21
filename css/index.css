@@ -181,6 +181,14 @@ p {
   color: black;
   font-size: 1.5em;
 }
+@media (max-width:500px) {
+  .SpaceNav {
+    justify-content: space-evenly;
+  }
+  .SpaceNav nav {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -258,9 +266,4 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-@media (max-width:500px) {
-  .body nav {
-    width: 75%;
-  }
 }

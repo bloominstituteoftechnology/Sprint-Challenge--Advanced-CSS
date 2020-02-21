@@ -1,15 +1,16 @@
 // Navigation code hereheader {
-   .SpaceNav{
-    display        : flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items    : center;
+.SpaceNav {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+    align-items     : center;
     background-color: @nav-bg;
-    padding        : 15px 120px;
+    padding         : 15px 120px;
 
-    h1{
+    h1 {
         font-size: 4rem;
     }
+
     nav {
         display        : flex;
         justify-content: space-evenly;
@@ -25,4 +26,13 @@
 
 }
 
-   
+@media @mobile {
+    .SpaceNav {
+        justify-content: space-evenly;
+
+        nav {
+            width: 500px;
+        }
+    }
+    
+}
