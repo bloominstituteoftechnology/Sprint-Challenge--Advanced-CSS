@@ -190,7 +190,7 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
-  background-color: green;
+  border-radius: green;
 }
 .home .intro p {
   padding: 0 15px;
@@ -231,7 +231,11 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text button:hover {
+.home .walk .walk-text .btn {
+  background-color: #fff;
+  color: #000;
+}
+.home .walk .walk-text .btn:hover {
   background: black;
   color: white;
 }
