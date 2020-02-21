@@ -1,8 +1,15 @@
 // Home Content
 
 .home {
+  
 
   .intro {
+
+    .headerimg{
+      @media @phone{
+        width: 100%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -10,6 +17,7 @@
 
     p {
       padding:0 15px;
+      
     }
   
   }
@@ -18,6 +26,22 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+      .blast{
+        width: 90%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+  }
 
     img {
       width: 28%;
@@ -45,9 +69,23 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: 0px 0px;
+      margin-top: 0px;
+  }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
       h3 {
         margin-bottom: 10px;
@@ -55,15 +93,36 @@
 
       p {
         margin-bottom: 26px;
+        
       }
 
       .btn {
+        @media @phone {
+          display: flex;
+          width: 100%;
+          height: 4vh;
+          align-items: center;
+          justify-content: center;
+        }
+        .button(@btn-bg-color, @wild-sand);
+
+        &:hover{
+          .button(@wild-sand, @btn-bg-color);
+        }
       }
+        
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 0%;
+    }
       
       img {
         width: 100%;

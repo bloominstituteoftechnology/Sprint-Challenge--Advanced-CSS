@@ -1,1 +1,34 @@
 // Navigation code here
+.navbar {
+    .flexcolumn();
+    align-items: center;
+    height: 10vh;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(230, 228, 228);
+    
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+        @media @phone {
+            flex-direction: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 0px 0px;
+            margin-top: 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+        }
+    }
+}
