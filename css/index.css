@@ -174,7 +174,7 @@ p {
 .SpaceNav nav {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 40%;
 }
 .SpaceNav nav .NavLink {
   text-decoration: none;
@@ -237,12 +237,30 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text button {
+  display: flex;
+  background-color: #22283A;
+  width: 40%;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  margin: auto;
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .body nav {
+    width: 75%;
+  }
 }

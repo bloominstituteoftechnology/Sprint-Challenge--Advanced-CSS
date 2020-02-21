@@ -64,8 +64,15 @@
 
 
     button {
-      .buttonStyle (@btn-bg-color, @100%, @porcelain)
+      .buttonStyle (@bg-color:#22283A, @width:40%, @color:#F6F7F8)
     }
+      .btn {
+        text-align: center;
+        margin    : auto;
+      }
+    
+
+
 
     .walk-img {
       width: 46%;
@@ -79,3 +86,11 @@
     }
   }
 }// home
+}
+@media @phone{
+  .body{
+  
+  nav{
+    width: 75%;
+  }
+}
