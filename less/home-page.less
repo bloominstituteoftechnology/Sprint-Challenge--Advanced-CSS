@@ -1,11 +1,17 @@
 // Home Content
-
+.title{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  font-size: 10vh;
+}
 .home {
 
   .intro {
 
     h2 {
       padding: 15px;
+      .uglyborder(green);
     }
 
     p {
@@ -58,6 +64,11 @@
       }
 
       .btn {
+        .btnstyle(#fff,#000);
+        &:hover {
+          background: black;
+          color: white;
+      }
       }
     }
 
