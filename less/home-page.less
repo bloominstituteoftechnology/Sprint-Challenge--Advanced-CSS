@@ -14,16 +14,29 @@
   
   }
 
+  .header {
+    margin-top: 1%;
+  }
+
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      display:none;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+   
+      @media @phone {
+      width:100%;
+      display: none;
+     }
     }
   }
 
@@ -57,10 +70,6 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
-
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -69,7 +78,21 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+    
+    @media @phone {
+      .flexbox();
+      flex-direction: column-reverse;
+    }
       }
     }
   }
-}// home
+.btn {
+  .custom-btn();
+  border-radius:10px;
+
+  @media @phone {
+  .custom-btn(100%,black,white);
+    } 
+   }
+  }
+}
