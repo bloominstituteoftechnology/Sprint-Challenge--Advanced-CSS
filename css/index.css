@@ -254,6 +254,10 @@ footer {
   border-radius: 10px;
   color: #F6F7F8;
 }
+.home .walk .walk-text button:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 .home .walk .walk-text .btn {
   text-align: center;
   margin: auto;
@@ -266,4 +270,30 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .walk {
+    flex-wrap: wrap-reverse;
+    margin-top: 10px;
+    padding: 25px 6px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .walk-img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }

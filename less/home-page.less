@@ -91,3 +91,42 @@
 
   // home
 }
+
+@media @mobile {
+  .home {
+    .space-images {
+
+      img {
+        width: 100%;
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+
+      .blast {
+        width: 100%;
+      }
+    }
+
+    .walk {
+      flex-wrap : wrap-reverse;
+      margin-top: 10px;
+      padding   : 25px 6px;
+
+      .walk-text {
+        width: 100%;
+
+        .walk-img {
+          .imageStyle(100%, 10px);
+
+        }
+      }
+
+    }
+  }
+}
