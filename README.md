@@ -1,31 +1,5 @@
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
-This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
-
-## Instructions
-
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
-
-This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
-
-You are not allowed to collaborate during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency in advanced css and your command of the concepts and techniques in responsive web design and preprocessing.
-
-You have three hours to complete this challenge. Plan your time accordingly.
-
-## Commits
-
-Commit your code regularly and meaningfully. This helps both you (in case you ever need to return to old code for any number of reasons) and your project manager.
-
-## Description
-
-The client for this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
-
-In meeting the minimum viable product (MVP) specifications listed below, your web page should look like the solution design files of the desktop and mobile views:
-
-[Click here to review the home design](design-files/home-desktop.png)
-
-[Click here to review the mobile design](design-files/home-mobile.png)
-
 ## Self-Study Questions
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions.
@@ -34,13 +8,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website uses fixed layout units, but applies media queries to it. This allows the styles to adapt based on the viewport.
+    A responsive website takes this one step further but also using responsive units such as %'s and max-width.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile-first means that you are designing and coding for a mobile device first. Afterwards you are expanding your code to accommodate for larger layouts (tablets, desktops, etc). Here you'd use min-width on your media queries.
+    Desktop-first is the opposite of mobile-first. You are desiging for a desktop layout and then expanding to accomodate for smaller layouts (tablets, mobiles, etc). Here you'd use max-width on your media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Using 62.5% as the base value in the `html` tag will convert `rem` units by the power of 10. This means that 1rem would equate to 10px thoughout the document.
+
+    A font-size of 62.5% would mean that it is taking 62.5% of that parent element as it is a relative length unit. It is based on the viewport/window width first. 
+    rem is also a relative length unit but unlike em, it is based on the root HTML element. This is why the 62.5% works great when placed in the `html` tag.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    CSS preprocessing allows us to extend the ability of CSS by adding abstractions (variables, mixins, parametric mixins, functions, escaping, nesting, etc). This makes CSS more robust, cleaner, and concise. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I like using variables, mixins, and imports. Going through the documentation, there are more things we can do with LESS, but overall it's a lovely tool. I would say that the hardest concept for me right now is it's specificity. I'm not always sure when nesting what will take specificity over a later element and I'm overriding it with IDs. I'll have to dig further into the LESS documentation to get a better understanding of any nuances and fully test any theories I may have.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
