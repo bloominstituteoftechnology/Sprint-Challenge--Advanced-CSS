@@ -1,1 +1,30 @@
 // Mixins Here
+.btn-layout(){
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:black;
+    border-radius: 5px;
+    height: 3rem;
+    width: 30%;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}
+
+.flex-row(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.flex-column(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
