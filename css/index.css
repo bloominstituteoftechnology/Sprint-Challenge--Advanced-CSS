@@ -89,7 +89,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -169,6 +168,10 @@ p {
   justify-content: center;
   justify-content: space-evenly;
   background-color: #e6e4e4;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 10%;
+  opacity: 0.8;
 }
 .navbar h1 {
   font-size: 5rem;
@@ -203,9 +206,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .headerimg {
+  margin-top: 13%;
+}
 @media (max-width: 500px) {
   .home .intro .headerimg {
     width: 100%;
+    margin-top: 21%;
   }
 }
 .home .intro h2 {
