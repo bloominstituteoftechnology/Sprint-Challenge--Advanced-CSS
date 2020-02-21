@@ -24,3 +24,12 @@
 @border-real: #dee2e6;
 
 // Mobile var
+.layout(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+@phone: ~"(max-width: 500px)";
+
+@smallphone: ~"(max-width:418px)";

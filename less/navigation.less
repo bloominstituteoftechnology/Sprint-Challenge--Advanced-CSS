@@ -1,1 +1,37 @@
 // Navigation code here
+
+.navb{
+   .layout(center,center);
+   flex-direction: column;
+   
+   
+   h1{
+       font-size: 4rem ;
+       padding-bottom: .4em;
+       @media @phone{
+        font-size: 3rem;
+
+    }
+          }
+
+   nav{
+       display: flex;
+       justify-content: space-evenly;
+       
+       a{
+         padding: 1em 2em;
+         font-size: 16px;
+         color:black;
+         text-decoration: none; 
+         @media @phone{
+             font-size: 12px;
+
+         }        
+        //  flex-wrap: nowrap;
+         
+       }//a
+   }//nav
+    
+
+    
+}//end navb
