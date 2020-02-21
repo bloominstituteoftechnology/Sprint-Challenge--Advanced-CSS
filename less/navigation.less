@@ -5,10 +5,10 @@
     align-content: center;
     font-size: 20px;
     justify-content: space-between;
-    margin-left:40%;
-    margin-right:40%;
     background-color: whitesmoke;
     padding-bottom:10px;
+    width:33%;
+    margin:0 auto;
 }
 .headi{
 font-size: 48px;
@@ -20,6 +20,40 @@ padding-top: 20px;
 }
 .uptop{
   background-color: whitesmoke;
-  margin:25px;
+  // margin:25px;
   margin-bottom: 0px;
+}
+@media screen and (max-width: 500px) {
+  .main_nav{
+      display:flex;
+      align-content: center;
+      justify-content:space-between;
+      justify-self: center;
+      width: 100%;
+        a{
+         width:16%;
+        }
+      }
+  body{
+      display:flex;
+      flex-direction:column;
+      }
+  .desktopcontent{
+    display:none;
+  }
+  .mobilecontent{
+    display:flex;
+    justify-content: stretch;
+    margin:0 auto;
+    width:100%;
+  }
+  .walk{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap-reverse;
+    width:100%;
+  }
+  .walk-img{
+    width:60%;
+  }
 }
