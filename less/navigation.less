@@ -5,7 +5,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100%; 
 
     .top-nav {
         width: 100%;
@@ -26,8 +26,14 @@ header {
 
     nav {
         display: flex;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         margin: 2vh 25%;
+
+        @media @mobile {
+            width: 100%;
+            margin: 0 auto;
+            margin: 3vh 0px 2vh 0px; 
+        }
 
             a {
                 font-size: 1.7rem;
@@ -35,6 +41,11 @@ header {
                 text-decoration: none;
                
             }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 5px;
     }
 
 

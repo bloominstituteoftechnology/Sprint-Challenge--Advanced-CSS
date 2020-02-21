@@ -5,14 +5,14 @@
     border: red 2px solid;
 }
 
-.bttn(@button-bg, @width, @font-color){
+.bttn(@button-bg, @width, @font-color, @height){
     display: block;
     background-color: @button-bg;
     width: @width;
-    height: 5vh;
     font-size: 2rem;
     border-radius: 8px;
     color: @font-color;
+    height: @height;
     text-align: center;
 
     &:hover{
