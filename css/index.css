@@ -1,3 +1,18 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  margin: 0 10px 20px;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: purple;
+}
+.btn:hover {
+  background-color: black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -107,6 +122,12 @@ section {
 body {
   line-height: 1;
 }
+@media (max-width: 500px) {
+  body {
+    padding: 0 5%;
+    background-color: blue;
+  }
+}
 ol,
 ul {
   list-style: none;
@@ -137,7 +158,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
-  background-color: lightskyblue;
+  background-color: green;
 }
 h1,
 h2,
@@ -183,7 +204,7 @@ header nav {
 header nav a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: gray;
+  color: black;
 }
 footer {
   color: #22283B;
@@ -196,7 +217,10 @@ footer {
   align-items: center;
 }
 .home .intro h2 {
+  width: 100%;
   padding: 15px;
+  justify-content: left;
+  background-color: blue;
 }
 .home .intro p {
   padding: 0 15px;

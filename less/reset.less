@@ -30,7 +30,15 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	// Turn this on to have your layout change when you go to mobile
+	// version, the background wil change orange to know this is active.
+	
+	@media (max-width:500px){
+	padding: 0 5%;
+	background-color: blue;
+	}
 }
+
 ol, ul {
 	list-style: none;
 }
