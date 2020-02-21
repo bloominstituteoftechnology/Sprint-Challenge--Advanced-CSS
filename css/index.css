@@ -206,6 +206,9 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .rocket {
+  display: none;
+}
 .home .visit-planets {
   padding: 15px;
 }
