@@ -1,1 +1,47 @@
 // Mixins Here
+.flexM2e{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.orangeYou{
+    color: orange;
+    font-size: 1.5rem;
+}
+
+
+.colorMe{
+    color: red;
+    font-size: 1.5rem;
+}
+
+// Creating button tweaks.
+.custom(@bgcolor, @width, @color){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bgcolor;
+    margin: 0 10px 20px;
+    width:@width ; 
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@color ;
+// Clearing hover requirement
+    &:hover{
+        background-color: green;
+        color: purple
+    }
+}
+
+
+// // Mobile breaking variable?
+@phone: ~"(max-width: 500px)";
+
+@media @phone{
+    background-color: mediumaquamarine;
+}
+

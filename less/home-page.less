@@ -1,11 +1,23 @@
 // Home Content
 
 .home {
+  // This is where you go to check to see if your max-width is working properly. "once it hits
+  // 500px, change bkg to blue"
+  @media @phone{
+    // This changes the background color to blue when you git those 500px border and adds 
+    // padding to both sodes of 5%
+    // background-color: gray;
+    padding: 0 5%;
+}
 
   .intro {
 
     h2 {
+      width: 100%;
       padding: 15px;
+      justify-content: left;
+      // background-color: blue;
+
     }
 
     p {
@@ -20,6 +32,11 @@
     width: 100%;
 
     img {
+      
+      @media @phone{
+        // .flexMe();
+        width: 100%;
+      }
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
@@ -40,30 +57,46 @@
   }
 
   .walk {
+    width: 100%;
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 2%;
     display: flex;
     justify-content: center;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
 
     .walk-text {
-      width: 50%;
+      
+      width: 100%;
+
 
       h3 {
         margin-bottom: 10px;
+        width: 100%;
       }
 
       p {
         margin-bottom: 26px;
+        width: 100%;
       }
 
       .btn {
+        // This puts the mixin into action and tells it to apply it to the class .btn with a bgcolor of aqua, etc.
+        // Sorry for choosing terrible colors
+        .custom(red, 200px, brown);
       }
     }
 
     .walk-img {
-      width: 46%;
-      margin-left: 4%;
+      
+      width: 100%;
+      // margin-left: 4%;
       
       img {
         width: 100%;
