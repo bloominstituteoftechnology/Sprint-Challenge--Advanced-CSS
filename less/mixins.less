@@ -1,1 +1,28 @@
 // Mixins Here
+
+.buttonStyle(@bg-color, @width, @color) {
+    display         : flex;
+    background-color: @bg-color;
+    width           : @width;
+    height          : 45px;
+    font-size       : 2rem;
+    border-radius   : 10px;
+    color           : @color;
+
+    &:hover{
+        background-color:@color;
+        color:@bg-color;
+      }
+
+}
+
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+.imageStyle(@width, @radius){
+    width: @width;
+    border-radius: @radius;
+}
