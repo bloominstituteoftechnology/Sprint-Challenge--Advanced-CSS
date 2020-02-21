@@ -1,1 +1,53 @@
 // Mixins Here
+.flex(@flow, @justify, @align, @items){
+    display:flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-content: @align;
+    align-items: @items;
+}
+
+.size(@height, @width){
+    height: @height;
+    width: @width;
+}
+
+.button(@color, @bg-color, @font-size, @padding){
+    font-size: @font-size;
+    background: @bg-color;
+    color: @color;
+    padding: @padding;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid @bg-color;
+
+    &:hover{
+        background: @color;
+        color: @bg-color;
+    }
+}
+
+.sparkle(@size, @opacity) {
+    50%{
+      transform: scale(@size);
+      opacity: @opacity;
+    }
+ }
+
+ .rotate(@deg){
+     25%{
+        transform:rotate(@deg);
+     }
+     50%{
+        transform:rotate(0deg);
+     }
+     75%{
+        transform:rotate(-@deg);
+     }
+ }
+
+ .lift-off(@transY){
+     100%{
+         transform: translateY(@transY);
+     }
+ }

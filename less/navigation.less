@@ -1,1 +1,37 @@
 // Navigation code here
+
+nav{
+    .flex(column, space-evenly, "", center);
+    .size(10em, 100%);
+    color: @nav-font;
+    bottom-border: @sea-shell;
+    position: fixed;
+    z-inded: 9999;
+    background: rgba(246,246,246,.95);
+
+    h1{
+        font-size: 5em;
+    }
+
+    .nav-links{
+        .flex("",space-between,"",center);
+        .size(auto, 80%);
+        max-width: 50em;
+
+        a{
+            font-size: 1.5em;
+            text-decoration: none;
+            color: @river-bend;
+        }
+    }
+
+    @media @phone{
+        h1{
+            font-size: 3em;
+        }
+
+        .nav-links{
+          .size(auto, 85%);
+        }
+    }
+}
