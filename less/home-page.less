@@ -13,7 +13,10 @@
     }
 
     img{
+      width:100%;
+      @media @phone{
       max-width: 100%;
+      }
     }
   
   }//intro end
@@ -35,15 +38,16 @@
     }
   }
   .rocket{
+    img{
     display: none;
     @media @phone{
-      display:flexbox;  
-      .layout(center,center);   
-      border: 2px dotted orange;
-      padding:0;
-      margin:0;
-      border-radius: 8px;
-      height:50vh;      
+      display:flex;  
+      .layout(center,center);     
+      width: 100%;
+      margin-left:0 4%;
+      padding-bottom: 1em; 
+      border-radius: 8px; 
+    }//img   
       
       }
     }

@@ -176,9 +176,9 @@ p {
 }
 .navb nav {
   display: flex;
+  justify-content: space-evenly;
 }
 .navb nav a {
-  padding: 0 3em;
   font-size: 1rem;
   color: black;
   text-decoration: none;
@@ -200,7 +200,12 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
-  max-width: 100%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    max-width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -218,20 +223,18 @@ footer {
     display: none;
   }
 }
-.home .rocket {
+.home .rocket img {
   display: none;
 }
 @media (max-width: 500px) {
-  .home .rocket {
-    display: flexbox;
+  .home .rocket img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dotted orange;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    margin-left: 0 4%;
+    padding-bottom: 1em;
     border-radius: 8px;
-    height: 50vh;
   }
 }
 .visit-planets {
