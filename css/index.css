@@ -224,7 +224,15 @@ footer {
 }
 @media (max-width: 500px) {
   .home .rocket {
+    display: flexbox;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted orange;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    height: 50vh;
   }
 }
 .visit-planets {
