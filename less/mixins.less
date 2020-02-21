@@ -1,1 +1,28 @@
 // Mixins Here
+.wrapit() {
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttoncolors(@button,@color, @background) {
+    border-radius: 10px;
+    background: @button;
+    padding: 5%; 
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+    &:hover {
+        color:@color ;
+        background: @background;
+    }
+  }
+  .roundedbutton(@round){
+    border-radius: @round;
+    background: black;
+    padding: 5%; 
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-size: 2.2em;
+  }
+  
