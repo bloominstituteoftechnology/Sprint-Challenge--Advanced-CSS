@@ -1,1 +1,23 @@
 // Mixins Here
+
+// lb stands for locate box
+.lb(){
+    border: red 2px solid;
+}
+
+.bttn(@button-bg, @width, @font-color){
+    display: block;
+    background-color: @button-bg;
+    width: @width;
+    height: 5vh;
+    font-size: 2rem;
+    border-radius: 8px;
+    color: @font-color;
+    text-align: center;
+
+    &:hover{
+        background-color: @font-color;
+        color: @button-bg;
+    }
+    
+}
