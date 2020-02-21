@@ -160,6 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navb h1 {
+  font-size: 4rem ;
+  padding-bottom: 0.4em;
+}
+.navb nav {
+  display: flex;
+}
+.navb nav a {
+  padding: 0 3em;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  padding-bottom: 1em;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
