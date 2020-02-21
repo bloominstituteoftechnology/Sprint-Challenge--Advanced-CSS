@@ -272,6 +272,10 @@ footer {
   border-radius: 10px;
 }
 @media (max-width:500px) {
+  .home {
+    width: 100%;
+    margin: 0 auto;
+  }
   .home .space-images img {
     width: 100%;
   }
@@ -292,8 +296,14 @@ footer {
   .home .walk .walk-text {
     width: 100%;
   }
-  .home .walk .walk-text .walk-img {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .home .walk img {
     width: 100%;
     border-radius: 10px;
+    margin: 0 auto;
   }
 }

@@ -93,7 +93,11 @@
 }
 
 @media @mobile {
+
   .home {
+    width : 100%;
+    margin: 0 auto;
+
     .space-images {
 
       img {
@@ -120,13 +124,21 @@
 
       .walk-text {
         width: 100%;
-
-        .walk-img {
-          .imageStyle(100%, 10px);
-
-        }
       }
 
+      .walk-img {
+        width        : 100%;
+        margin       : auto;
+        border-radius: 10px;
+      }
+      img{
+        .imageStyle(100%, 10px);
+        margin: 0 auto;
+      }
+
+
+
     }
+
   }
 }
