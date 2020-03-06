@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>SpaceWalkers</title>
+  <title>FoodTruckTrackR - Home</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Carter+One&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,68 +18,63 @@
 </head>
 
 <body>
+  
   <div class="navbar">
-    <h1>Space Walkers</h1>
+    <h1>FoodTruckTrackR</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="#">Team</a>
+      <a href="about.html#Contact">Contact</a>
       <a href="#">Sign In</a>
     </nav>
   </div>
- <!-- navigation code here -->
+
 
 
   <div class="container home">
-
-    <header class="intro">
-       <!-- image code here -->
-       <img src="img/main-header.png" class="headerimg" alt="epic space picture">
-
-      <h2>Lift Off</h2>
-    
-      <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
+   <header class="intro">
+      <div class="containertruck">
+        <form action="action_page.php">
+          <h3>Find Food Trucks Near You</h3>
+          <input type="text" id="zipc" name="zipcode" placeholder="Enter Zip Code">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+       
+      <div class='foodtext'>
+        <h2>Fulfill Your Inner Foodie</h2>
+        <p>Every true "foodie" worth their salt knows that some of the best food in any city can be found on food trucks - but knowing when and where those trucks will be can be next to impossible, and discovering new ones often relies on word-of-mouth that is long on tales of delicious, but short on actual details. FoodTruck TrackR was designed to make finding and eating at a food truck fast, easy and fun. </p>
+      </div>
     </header>
 
-    <section class="space-images">
-        <img src="img/blast.png" class="blast" alt="Rocket blasting off">
-        <img src="img/sky.png" class="sky" alt="Space sky image">
-        <img src="img/launch.png" class="launch" alt="Launching rocket">
+    <section class="food-images">
+        <img src="img/food3.jpg" class="food3" alt="Food stand at night">
+        <img src="img/food2.jpg" class="food2" alt="Food being served">
+        <img src="img/food1.jpg" class="food1" alt="Food platter">
     </section>
    
-    <section class="visit-planets">
-     
-      <h3>Can We Visit Planets?</h3>
-    
-      <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet.</p>
-    
-      <p>Which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it.</p>
+    <section class="find-food">
+      <h3>Find Your City's Best Food</h3>
+      <p>Quickly see all of our Operator partners' nearby food trucks that currently open, view their current real-time GPS location, know the scheduled arrival and departure times, view photos, read customer reviews and much more, all in our easy to use app. Try FoodTruck TrackR today, and enjoy the best food YOUR city has to offer.</p>
     </section>
     
-    <section class="walk">
-      <div class="walk-text">
-        <h3>Let's Go For A Walk</h3>
-
-        <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
-      
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
-      
-        <div class="btn">
-          Sign Up
-        </div>
+    <section class="app">
+      <div class="app-text">
+        <h3>Download Our App</h3>
+        <p>Arcu ac tortor dignissim convallis aenean et tortor. A arcu cursus vitae congue mauris rhoncus aenean vel. Euismod in pellentesque massa placerat duis ultricies lacus. Sem et tortor consequat id porta nibh venenatis cras sed. Ut morbi tincidunt augue interdum. Ipsum a arcu cursus vitae congue mauris. </p>
+        <div class="btn">Sign Up</div>
       </div>
-      
-      <div class="walk-img">
-          <img src="img/space-walk.png" alt="Space walking astronaut">
+      <div class="app-img">
+          <img src="img/cellPhoneShape.png" alt="Phone App Placeholder">
       </div>
-
     </section>
-
+  
     <footer>
-      <p>Copyright SpaceWalkers 2018</p>
+      <p>  Copyright FoodTruckFindR &copy; 2020</p>
     </footer>
 
   </div>
+</div>
 </body>
 </html>
