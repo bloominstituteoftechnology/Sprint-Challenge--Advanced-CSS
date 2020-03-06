@@ -1,1 +1,46 @@
 // Navigation code here
+.navbar {
+    display: Flex;
+    align-items: center;
+    height: 8vh;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: rgb(59, 136, 224);
+    }
+
+    nav {
+        display: flex;
+        width: 30%;
+        justify-content: space-evenly;
+        @media @phone {
+            flex-direction: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 0px 0px;
+            margin-top: 0px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            @media @phone {
+                padding: 10px;
+                text-justify: left;
+            }
+        }
+    }
+}
