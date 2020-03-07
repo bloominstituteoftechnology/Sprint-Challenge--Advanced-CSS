@@ -92,9 +92,26 @@
           width:90%;
         }
       }
+    //   animation-name: background-color;
+    //   animation-duration: 500ms;
+    //   /* Only change code below this line */
+    // animation-fill-mode: forwards;
+    //   /* Only change code above this line */
+    // }
+    // @keyframes background-color {
+    //   100% {
+    //     background-color: #4791d0;
+    //   }
       .btn:hover {
-        background-color: darkseagreen;
-        color: rgb(3, 31, 105);
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: both;
+      }
+      @keyframes background-color{
+        100% {
+          background-color: darkseagreen;
+          color: rgb(3, 31, 105);
+        }
       }
     }
 

@@ -319,8 +319,15 @@ footer {
   }
 }
 .home .walk .walk-text .btn:hover {
-  background-color: darkseagreen;
-  color: #031f69;
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+@keyframes background-color {
+  100% {
+    background-color: darkseagreen;
+    color: #031f69;
+  }
 }
 .home .walk .walk-img {
   width: 46%;
