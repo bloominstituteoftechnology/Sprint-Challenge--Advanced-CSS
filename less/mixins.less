@@ -1,1 +1,18 @@
 // Mixins Here
+
+/*.displayFlex(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}*/
+
+.container() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+// usage
+.container();
