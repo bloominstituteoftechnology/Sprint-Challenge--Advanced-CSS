@@ -5,6 +5,7 @@
     .intro {
 
         img{
+            width: 100%;
             border-radius: 5px;
         }
         h2 {
@@ -27,6 +28,15 @@
             margin: 20px 2.5%;
             border-radius: 20px;
             height: 100%;
+        }
+        @media @phone{
+            img{
+                display: none;
+                &:first-child{
+                    width: 100%;
+                    display: flex;
+                }
+            }
         }
     }
 
@@ -72,7 +82,12 @@
                     background-color: white;
                 }
             }
-        }
+            @media @phone{
+                .btn{
+                    width: 100%;
+                }
+            }
+        }//end walk text
 
         .walk-img {
             width: 46%;
@@ -82,6 +97,21 @@
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+            }
+        }
+        @media @phone{
+            width: 100%;
+            flex-direction: column-reverse;
+            padding: 15px 15px;
+            .walk-img{
+                width: 100%;
+                margin-left: 0;
+                img{
+                    width: 100%;
+                }
+            }
+            .walk-text{
+                width: 100%;
             }
         }
     }
