@@ -1,5 +1,22 @@
 // Home Content
+.navone{
+  background-color: @nav-bg;
+}
+.mainhead{
+  width: 80%;
+  
+  @media @phone {
+    width: 100%;
+  }
 
+}
+.imgalign{
+  margin-left: 15%;
+
+  @media @phone {
+    margin-left: 0%;
+  }
+}
 .home {
 
   .intro {
@@ -13,17 +30,36 @@
     }
   
   }
-
+  .launch{
+    @media @phone {
+      display: none;
+    }
+  }
+  .sky{
+    @media @phone {
+      display:none;
+    }
+    
+  }
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+  
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      opacity: .5;
+
+      &:hover{
+        opacity: 1;
+      }
+      @media @phone {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -45,9 +81,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 1rem;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +103,34 @@
       }
 
       .btn {
+        .bttn(@btn-bg-color, 5px);
+        color:white;
+        width: 30%;
+        padding: .8em;
+        font-size: 15px;
+        text-align: center;
+        @media @phone {
+          width: 100%;
+          
+        }
+
+        &:hover{
+          color: red;
+          background-color: rgb(178, 103, 248);
+          transform: scale(1.1);
+		transition: all ease 500ms;
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+        height: auto;
+      }
       
       img {
         width: 100%;
