@@ -8,7 +8,7 @@
   
         @media @mobile {
             margin: @h1MobileMargin;
-            font-size: 4rem;
+            font-size: 3.4rem;
         }
     }
 }
@@ -27,7 +27,7 @@
             align-items: center;
             
             width: @mobile-width;
-            margin: 0 20%;
+            margin: 0 10%;
         }
     }
  
@@ -42,15 +42,15 @@
     
         align-items: @item-alignment;
         font-size: @font-size;
-        font-weight: @font-weight;
-        padding: @Nav-Anchor-Padding;
+        // font-weight: @font-weight;
+        // padding: @Nav-Anchor-Padding;
 
         @media @mobile {
-            margin: 3%;
-            padding: @Nav-Anchor-Padding;
+           
             text-align: center;
             align-items: center;
             font-size: 1.4rem;
+            padding: 0 0;
         }
     }
 
@@ -60,6 +60,9 @@
     .header-img {
         max-width: @img-width;
         border-radius: @img-border-radius;
+        @media @mobile {
+            max-width: 100%;
+        }
     }
 }
 
@@ -77,4 +80,39 @@
         }
     }
    
+}
+
+
+.contentImgStyles() {
+    .blast {
+        min-width: 93%;
+        margin: 2;
+    }
+
+    .sky{
+        display: none;
+    }
+
+    .launch {
+        display: none;
+    }
+}
+
+.bottomContentStyles() {
+
+    @media @mobile {
+        .walk {
+            padding: 0px 0px;
+            flex-direction: column;
+            
+            .walk-img {
+                min-width: 100%;
+            }
+            .walk-text {
+                min-width: 100%;
+            }
+        }
+    }
+ 
+  
 }
