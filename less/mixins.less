@@ -1,1 +1,203 @@
 // Mixins Here
+.H1Styles() {
+ 
+    h1 {
+        margin: @h1Margins;
+        color: @header-font-color;
+        padding: @h1Padding;
+  
+        @media @phone {
+            margin: @h1MobileMargin;
+            font-size: 3.4rem;
+        }
+    }
+}
+
+.NavContainerStyles() {
+    .main-nav {
+        background-color: @nav-bg;
+    }
+    nav {
+        display: @display-type;
+        justify-content: @justify-nav-content;
+        margin-left: @left-margin;
+        width: @width;
+        @media @phone {
+            justify-content: @justify-nav-content-mobile;
+            align-items: center;
+            
+            width: @mobile-width;
+            margin: 0 10%;
+        }
+    }
+ 
+}
+.NavAnchorStyles() {
+    a {
+        text-decoration: @Nav-Anchor-Text-Decoration;
+        color: @Nav-Anchor-Color;
+        display: @display-type;
+        flex-direction: @direction;
+        justify-content: @justify-anchor-content;
+    
+        align-items: @item-alignment;
+        font-size: @font-size;
+        // font-weight: @font-weight;
+        // padding: @Nav-Anchor-Padding;
+
+        @media @phone {
+           
+            text-align: center;
+            align-items: center;
+            font-size: 1.4rem;
+            padding: 0 0;
+        }
+    }
+
+}
+
+.HeaderImgStyles() {
+    .header-img {
+        max-width: @img-width;
+        border-radius: @img-border-radius;
+        @media @phone {
+            max-width: 100%;
+        }
+    }
+}
+
+.ButtonStyles(@button-font-size, @button-border-radius) {
+    button {
+        color: @text-color;
+        background: @btn-bg;
+        padding: @button-padding;
+        font-weight: @button-font-weight;
+        font-size: @button-font-size;
+        border-radius: @button-border-radius;
+
+    
+        @media @phone {
+            width: 100%;
+        }
+    }
+   
+}
+
+
+.contentImgStyles() {
+    .blast {
+        min-width: 93%;
+        margin: 2;
+    }
+
+    .sky{
+        display: none;
+    }
+
+    .launch {
+        display: none;
+    }
+}
+
+
+// parametric mixin to define all the timings
+.fadeInAnimationTiming(
+  @opacity-0, @opacity-5,
+  @opacity-10, @opacity-15,
+  @opacity-20, @opacity-25, 
+  @opacity-30, @opacity-35, 
+  @opacity-40, @opacity-45, 
+  @opacity-50, @opacity-55, 
+  @opacity-60, @opacity-65, 
+  @opacity-70, @opacity-75, 
+  @opacity-80, @opacity-85, 
+  @opacity-90, @opacity-95,
+  @opacity-100) {
+    @keyframes fadeIn {
+    0% {
+       opacity: @opacity-0;
+    }
+    5%{
+      opacity: @opacity-5;
+    }
+    10%{
+      opacity: @opacity-10;
+    }
+    15%{
+      opacity: @opacity-15;
+    }
+    20% {
+      opacity: @opacity-20;
+    }
+    25%{
+      opacity: @opacity-25;
+    }
+    30% {
+      opacity: @opacity-30;
+    }
+    35%{
+      opacity: @opacity-35;
+    }
+    40% {
+      opacity: @opacity-40;
+    }
+    45%{
+      opacity: @opacity-45;
+    }
+    50% {
+      opacity: @opacity-50;
+    }
+    55%{
+      opacity: @opacity-55;
+    }
+    60% {
+      opacity: @opacity-60;
+    }
+    65%{
+      opacity: @opacity-65;
+    }
+    70% {
+      opacity: @opacity-70;
+    }
+    75%{
+      opacity: @opacity-75;
+    }
+    80% {
+      opacity: @opacity-80;
+    }
+    85%{
+      opacity: @opacity-85;
+    }
+    90% {
+      opacity: @opacity-90;
+    }
+    95%{
+      opacity: @opacity-95;
+    }
+    100% {
+      opacity: @opacity-100;
+      left: 0%;
+    }
+  }
+
+}
+
+/* a boilerplate mixin that i use for all my keyframes
+ refactored from vanilla CSS to LESS */
+.animationBoilerPlate() {
+  animation-name: @name;
+  animation-duration: @duration;
+  animation-fill-mode: @mode;
+}
+
+/* the main mixin that all the other mixins pass through
+this mixin is the only one used in the regular CSS*/
+.fadeIn() {
+  .animationBoilerPlate();
+  .fadeInAnimationTiming(0, 0.05,
+  0.1, 0.15, 0.20, 0.25,
+  0.30, 0.35, 0.40, 0.45,
+  0.5, 0.55, 0.6, 0.65,
+  0.7, 0.75, 0.8, 0.85,
+  0.9, 0.95, 1);
+}
