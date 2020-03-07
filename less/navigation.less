@@ -1,1 +1,18 @@
-// Navigation code here
+.navigation{
+    .flexLayout(center, center);
+    flex-direction: column;
+    background-color: @nav-bg;
+
+    h1{
+        margin: @defaultMargin;
+    }
+    nav{
+        margin: @defaultMargin;
+        width: 33%;
+        .flexLayout(space-between, center);
+        a{
+            .defaultA();
+            font-size: @anchorFontSize;
+        }
+    }
+}

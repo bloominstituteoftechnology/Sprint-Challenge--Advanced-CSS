@@ -1,1 +1,19 @@
-// Mixins Here
+.defaultA() {
+    text-decoration: none;
+    color: black;
+}
+
+.flexLayout(@jContent, @aItems) {
+    display: flex;
+    justify-content: @jContent;
+    align-items: @aItems;
+}
+
+//LESS Parametric Mixin: create a parametric mixin that is used to create the sign up button styles.
+.btnStyle(@btnWidth, @btnTxtColor, @btnColor, @btnBorderClr, @btnRadius) {
+    width: @btnWidth;
+    color: @btnTxtColor;
+    background-color: @btnColor;
+    border: 1px solid @btnBorderClr;
+    border-radius: @btnRadius;
+}
