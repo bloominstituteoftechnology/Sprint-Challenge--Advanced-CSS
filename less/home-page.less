@@ -1,5 +1,14 @@
 // Home Content
+.navone{
+  background-color: @nav-bg;
+}
+.mainhead{
+  width: 80%;
 
+}
+.imgalign{
+  margin-left: 15%;
+}
 .home {
 
   .intro {
@@ -58,6 +67,18 @@
       }
 
       .btn {
+        .bttn(@btn-bg-color, 5px);
+        color:white;
+        width: 30%;
+        padding: .8em;
+        font-size: 15px;
+        text-align: center;
+
+        &:hover{
+          color: red;
+          background-color: rgb(178, 103, 248);
+        }
+
       }
     }
 
