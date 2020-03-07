@@ -160,6 +160,24 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+nav a {
+  padding: 15px;
+  text-decoration: none;
+  color: #23233d;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#space-nav {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 10px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -175,6 +193,10 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .intro img {
+  border-radius: 7px;
+  width: 100%;
 }
 .home .space-images {
   display: flex;
@@ -212,12 +234,34 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .btn button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 5px 20px;
+  background-color: #23233d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .home .space-images img.blast {
+    width: 100%;
+    margin: 0;
+  }
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
 }

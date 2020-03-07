@@ -12,6 +12,12 @@
       padding:0 15px;
     }
   
+    img {
+      border-radius: 7px;
+      width: 100%;
+    }
+
+
   }
 
   .space-images {
@@ -48,7 +54,7 @@
 
     .walk-text {
       width: 50%;
-
+    
       h3 {
         margin-bottom: 10px;
       }
@@ -57,9 +63,16 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn button{
+        .custom-layout(flex-start, center);
+        margin: 0;
+        padding: 5px 20px;
+        background-color: @baseColor;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 2em;
       }
-    }
 
     .walk-img {
       width: 46%;
@@ -72,4 +85,22 @@
       }
     }
   }
-}// home
+}
+
+
+
+// home
+
+
+@media @phone {
+ 
+  .space-images img.blast {
+      width: 100%;
+      margin: 0;
+    }
+
+  .sky, .launch {
+    display: none;
+  }
+}
+}
