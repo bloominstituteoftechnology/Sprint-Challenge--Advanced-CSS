@@ -1,1 +1,80 @@
 // Mixins Here
+.H1Styles() {
+ 
+    h1 {
+        margin: @h1Margins;
+        color: @header-font-color;
+        padding: @h1Padding;
+  
+        @media @mobile {
+            margin: @h1MobileMargin;
+            font-size: 4rem;
+        }
+    }
+}
+
+.NavContainerStyles() {
+    .main-nav {
+        background-color: @nav-bg;
+    }
+    nav {
+        display: @display-type;
+        justify-content: @justify-nav-content;
+        margin-left: @left-margin;
+        width: @width;
+        @media @mobile {
+            justify-content: @justify-nav-content-mobile;
+            align-items: center;
+            
+            width: @mobile-width;
+            margin: 0 20%;
+        }
+    }
+ 
+}
+.NavAnchorStyles() {
+    a {
+        text-decoration: @Nav-Anchor-Text-Decoration;
+        color: @Nav-Anchor-Color;
+        display: @display-type;
+        flex-direction: @direction;
+        justify-content: @justify-anchor-content;
+    
+        align-items: @item-alignment;
+        font-size: @font-size;
+        font-weight: @font-weight;
+        padding: @Nav-Anchor-Padding;
+
+        @media @mobile {
+            margin: 3%;
+            padding: @Nav-Anchor-Padding;
+            text-align: center;
+            align-items: center;
+            font-size: 1.4rem;
+        }
+    }
+
+}
+
+.HeaderImgStyles() {
+    .header-img {
+        max-width: @img-width;
+        border-radius: @img-border-radius;
+    }
+}
+
+.ButtonStyles() {
+    button {
+        color: @text-color;
+        background: @btn-bg;
+        padding: @button-padding;
+        font-weight: @button-font-weight;
+        font-size: @button-font-size;
+        border-radius: @button-border-radius;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+   
+}
