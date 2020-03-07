@@ -1,1 +1,19 @@
 // Mixins Here
+.sizing(@border-radius; @height; @width){
+    border-radius: @border-radius;
+    height: @height;
+    width: @width;
+    }
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    background-color: teal;
+    .sizing(15px; 4rem; 20rem)
+  }
+  .mbl-img{
+    width: 80%;
+    height: 80%;
+  }

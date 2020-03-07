@@ -19,6 +19,28 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      display: flex;
+      justify-content: center;
+    }
+
+    .blast{
+
+      @media @phone {
+        display: @no;
+      }
+    }
+    .sky{
+      @media @phone {
+        display:@no;
+      }
+    }
+    .launch{
+      @media @phone {
+        .mbl-img();
+
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -46,8 +68,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      justify-content: start;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -56,14 +87,33 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
+      .btn{
+        @media @phone {
+          width:90%;
+        }
+      }
+      .btn:hover {
+        animation-name: background-color;
+        animation-duration: 500ms;
+        animation-fill-mode: both;
+      }
+      @keyframes background-color{
+        100% {
+          background-color: darkseagreen;
+          color: rgb(3, 31, 105);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        .mbl-img();
+        padding-bottom: 5%;
+       
+      }
       
       img {
         width: 100%;
