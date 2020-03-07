@@ -51,6 +51,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      opacity: .5;
+
+      &:hover{
+        opacity: 1;
+      }
       @media @phone {
         width: 100%;
         height: auto;
@@ -112,6 +117,8 @@
         &:hover{
           color: red;
           background-color: rgb(178, 103, 248);
+          transform: scale(1.1);
+		transition: all ease 500ms;
         }
 
       }

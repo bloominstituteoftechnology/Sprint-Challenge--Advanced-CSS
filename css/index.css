@@ -244,6 +244,10 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  opacity: 0.5;
+}
+.home .space-images img:hover {
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -305,6 +309,8 @@ footer {
 .home .walk .walk-text .btn:hover {
   color: red;
   background-color: #b267f8;
+  transform: scale(1.1);
+  transition: all ease 500ms;
 }
 .home .walk .walk-img {
   width: 46%;
