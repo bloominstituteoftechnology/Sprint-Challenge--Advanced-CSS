@@ -45,10 +45,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+      @media @phone {
+          flex-direction: column-reverse;
+          width: 100%;
+          padding: 5%;
+    }
+  }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,12 +65,33 @@
       }
 
       .btn {
+      background-color: #3d3a3a;
+      color: white;
+      border-radius: 4px;
+      width: 60px;
+      padding: 5px;
+      text-align: center;
+      @media @phone {
+        // border: 2px solid pink;
+        width: 100%;
+        padding: 10px;
+      }
+      }
+
+      .btn:hover {
+      background-color: gold;
+      color: black;
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+         width: 100%;
+         margin-left: 0%;
+         margin-bottom: 10px;
+      }
       
       img {
         width: 100%;
@@ -72,4 +100,15 @@
       }
     }
   }
-}// home
+
+  // home
+  @media @phone {
+    img#sky, img#launch {
+      display: none;
+    }
+    img#blast {
+      width: 100%;
+      // // border: 5px solid yellow;
+    }
+
+  }
