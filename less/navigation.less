@@ -1,1 +1,29 @@
 // Navigation code here
+.navBx {
+    background-color: @nav-bg;
+    .center();
+    border: @nav-border;
+    padding: 10px;
+
+    h1 {
+        color: @header-font-color;
+        font-size: 3.5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+
+        @media @phone {
+            width: 75%;
+            margin: auto;
+          }
+
+        a{
+            margin: 10px 20px 0px 0px;
+            color: @nav-font;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
+}
