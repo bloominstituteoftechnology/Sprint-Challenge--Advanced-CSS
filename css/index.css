@@ -256,12 +256,29 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 800px) {
-  .home .space-images img.blast {
-    width: 100%;
-    margin: 0;
+  .space-images {
+    align-items: center;
   }
-  .home .sky,
-  .home .launch {
+  .home .space-images img {
+    width: 100%;
+    padding: 0;
+  }
+  .home .space-images .launch,
+  .sky {
     display: none;
+  }
+}
+@media (max-width: 800px) {
+  .home .walk,
+  .walk-text,
+  .walk-img {
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 20px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
   }
 }
