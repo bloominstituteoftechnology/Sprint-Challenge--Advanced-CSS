@@ -45,10 +45,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+      @media @phone {
+          flex-direction: column-reverse;
+          width: 100%;
+          padding: 5%;
+    }
+  }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width: 100%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -64,6 +71,11 @@
       width: 60px;
       padding: 5px;
       text-align: center;
+      @media @phone {
+        // border: 2px solid pink;
+        width: 100%;
+        padding: 10px;
+      }
       }
 
       .btn:hover {
@@ -75,6 +87,11 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+         width: 100%;
+         margin-left: 0%;
+         margin-bottom: 10px;
+      }
       
       img {
         width: 100%;
@@ -84,20 +101,14 @@
     }
   }
 
-}// home
-  @media (max-width:500px) {
+  // home
+  @media @phone {
     img#sky, img#launch {
       display: none;
     }
     img#blast {
-      width: 400px;
-      border: 5px solid yellow;
-    }
-
-    .walk button {
-      border: 2px solid pink;
       width: 100%;
-      margin-left: 100px;
-
+      // // border: 5px solid yellow;
     }
+
   }
