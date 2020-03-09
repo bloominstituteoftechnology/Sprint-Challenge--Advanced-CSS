@@ -58,6 +58,17 @@
       }
 
       .btn {
+      background-color: #3d3a3a;
+      color: white;
+      border-radius: 4px;
+      width: 60px;
+      padding: 5px;
+      text-align: center;
+      }
+
+      .btn:hover {
+      background-color: gold;
+      color: black;
       }
     }
 
@@ -72,4 +83,21 @@
       }
     }
   }
+
 }// home
+  @media (max-width:500px) {
+    img#sky, img#launch {
+      display: none;
+    }
+    img#blast {
+      width: 400px;
+      border: 5px solid yellow;
+    }
+
+    .walk button {
+      border: 2px solid pink;
+      width: 100%;
+      margin-left: 100px;
+
+    }
+  }
