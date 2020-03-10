@@ -208,7 +208,18 @@ p {
 
 .page-head {
     background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    border: solid black 2px;
+    overflow: hidden;
+    width: 100%;
 }
+
+a:hover {
+    background-color: black;
+    color: #f4f4f4;
+}
+
 
 .nav-head {
     font-size: 30px;
@@ -218,22 +229,100 @@ p {
 }
 
 .nav-items {
+    text-align: center;
     text-decoration: none;
+    width: 100%;
     color: black;
     font-size: 1.6rem;
+    padding: 0.5%;
+}
+
+.body-main {
+    margin-top: 7.3%;
+}
+
+.text-contact {
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .nav-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
     padding: 0.5%;
 }
 
+
 .nav-box {
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
 }
+
+.form {
+    border: black solid 2px;
+    margin-top: 0.5%;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  label {
+    color: black;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: lightgray;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
 footer {
     color: #22283B;
@@ -264,7 +353,7 @@ footer {
     width: 28%;
     margin: 20px 2.5%;
     border-radius: 20px;
-    height: 100%;
+    height: %;
 }
 
 .home .intro-pic {
