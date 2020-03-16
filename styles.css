@@ -1,0 +1,490 @@
+/* Import your less files here:
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h1 {
+  margin-top: auto;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.space-nav {
+  text-align: center;
+  background-color: #f6f6f6;
+  height: 8rem;
+}
+.space-nav h1 {
+  padding-bottom: 1rem;
+}
+.space-nav a {
+  padding-right: 4rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+}
+@media (max-width: 500px) {
+  .space-nav a {
+    font-size: 1.5rem;
+    padding-right: 1.6rem;
+  }
+}
+footer {
+  color: #22283b;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .main-header {
+  border-radius: 1rem;
+  width: 100%;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 92%;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  /* The popup form - hidden by default */
+  /* Add styles to the form container */
+  /* Full-width input fields */
+  /* When the inputs get focus, do something */
+  /* Add some hover effects to buttons */
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    position: relative;
+    right: 1.1rem;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 124%;
+    padding-top: 2rem;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background: black;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+  width: 10rem;
+}
+.home .walk .walk-text .btn:hover {
+  background: red;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    background: black;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    width: 100%;
+    height: 6rem;
+  }
+  .home .walk .walk-text .btn:hover {
+    background: red;
+  }
+}
+.home .walk .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.home .walk .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.home .walk .form-container .btn {
+  /* Set a style for the submit/login button */
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+.home .walk .form-container .cancel {
+  /* Add a red background color to the cancel button */
+  background-color: red;
+}
+.home .walk .form-container input[type="text"],
+.home .walk .form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.home .walk .form-container input[type="text"]:focus,
+.home .walk .form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.home .walk .form-container .btn:hover,
+.home .walk .open-button:hover {
+  opacity: 1;
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 126%;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+.about .stars,
+.about .twinkling,
+.about .clouds {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.about .stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: 0;
+}
+.about .twinkling {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat
+    top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+.about .clouds {
+  background: transparent
+    url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top
+    center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+.about .clouds h1,
+.about .clouds h2,
+.about .clouds p {
+  color: #fdcd00;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.about .clouds p {
+  font-size: 3.6rem;
+  line-height: 1;
+}
+@media (max-width: 500px) {
+  .about .clouds p {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+}
