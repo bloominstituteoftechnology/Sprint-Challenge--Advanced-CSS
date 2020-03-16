@@ -1,9 +1,14 @@
 // General Styles
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 html {
@@ -12,7 +17,6 @@ html {
 
 html,
 body {
-  height: 100%;
   font-family: "Ubuntu", sans-serif;
   color: @main-font-color;
 }
@@ -39,11 +43,8 @@ p {
   line-height: 1.4;
 }
 
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 900px;
+.container {
+  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
