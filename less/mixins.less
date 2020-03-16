@@ -1,31 +1,33 @@
 // Mixins Here
 
-.main (@just, @align) {
+.layout(@justify, @align) {
   display: flex;
-  justify-content: @just;
+  justify-content: @justify;
   align-items: @align;
   max-width: 900px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
 
-  .button-creator(@width, @height, @btn-bg-color, @font-color, @font-size) {
-    .border-radius(5px);
-    width: @width;
-    height: @height;
-    background-color: @btn-bg-color;
-    color: @wild-sand;
-    cursor: pointer;
-    font-size: @font-size;
+  .signup(@justify, @align) {
+    .home .walk .walk-text .btn:hover {
+      background: red;
+    }
+
     display: flex;
-    justify-content: @just;
+    justify-content: @justify;
     align-items: @align;
 
-    &:hover {
-      color: @btn-bg-color;
-      background-color: @wild-sand;
-    }
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
   }
 }
 
-// usage
+//.layout(center, center); and .signup(flex-start, center);
