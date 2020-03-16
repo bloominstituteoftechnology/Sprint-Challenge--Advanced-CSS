@@ -39,11 +39,12 @@ p {
   line-height: 1.4;
 }
 
-#container {
+.main (@just, @align) {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: @just;
+  align-items: @align;
   max-width: 900px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }

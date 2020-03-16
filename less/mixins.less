@@ -1,19 +1,31 @@
 // Mixins Here
 
-/*.displayFlex(@justify, @align) {
+.main (@just, @align) {
   display: flex;
-  justify-content: @justify;
+  justify-content: @just;
   align-items: @align;
-}*/
-
-.container() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 900px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+
+  .button-creator(@width, @height, @btn-bg-color, @font-color, @font-size) {
+    .border-radius(5px);
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: @wild-sand;
+    cursor: pointer;
+    font-size: @font-size;
+    display: flex;
+    justify-content: @just;
+    align-items: @align;
+
+    &:hover {
+      color: @btn-bg-color;
+      background-color: @wild-sand;
+    }
+  }
 }
+
 // usage
-.container();
