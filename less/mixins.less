@@ -1,1 +1,26 @@
 // Mixins Here
+
+.nav-style{
+    border: @nav-border;
+    background: @sea-shell;
+}
+
+.nav-fonts{
+    font-family: @river-bend;
+    color: @ebony-clay;
+}
+
+.button-style(@colorb, @colorf){
+    background-color: @colorb;
+    color: @colorf;
+    border-radius: 10px;
+    line-height: 2;
+    text-align: center;
+    width: 40%;
+    font-size: 2rem;
+
+    &:hover{
+        background-color: @shuttle-gray;
+        color: @button-colorf;
+    }
+}
