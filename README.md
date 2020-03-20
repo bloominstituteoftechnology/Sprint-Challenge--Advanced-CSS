@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website has multiple HTML files stored on a server. The server then only serves one version of HTML based on the screen size and resolution of the user's device. A fully responsive website uses only one HTML file with media queries included. The media queries dynamically change how the HTML is rendered based on the user's screen size and resolution.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means designing the HTML/CSS to be optimized for mobile devices, and the CSS general styles are pointed at the phone. The developer then uses min-width media queries to adjust the HTML/CSS for larger screens to layer on complexity as the screen size grows to desktop views. Desktop first works in the opposite way. Desktop first websites are designed to be optimized for desktops, and the CSS general styles are pointed at the desktop. The developer then uses max-width media queries to adjust the HTML/CSS for smaller screens to layer on complexity as the screen size shrinks to mobile view.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+font-size: 62.5% in the HTML tag allows the developer to convert rem units by the power of 10 instead of 16. 
+0.625 * 16 = 10
+
 4. How would you describe preprocessing to someone new to CSS?
 
+It's a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS. Preprocessors can speed up productivity and reduce errors in CSS.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nested At-Rules and Bubbling are my favorite concepts in preprocessing because it substantially reduces the number of lines of code and leads to more DRY code. The syntax for Escaping gives me a little trouble as I'm not used to it, and it requires several unique characters in a specific order for it to work properly. Though, the concept itself makes sense to me.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
