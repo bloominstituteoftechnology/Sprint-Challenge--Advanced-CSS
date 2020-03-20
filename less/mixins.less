@@ -1,1 +1,25 @@
 // Mixins Here
+
+
+.m-style-h2 {
+    font-size: 2rem;
+}
+
+.m-style-p {
+    font-size: 1.2rem;
+}
+
+
+
+.b-style (@width, @height, @font-size, @padding) {
+    width: @width ;
+    height: @height;
+    font-size: @font-size;
+    padding: @padding;
+
+    text-align: center;
+    color: white;
+    background-color: @btn-bg-color ;
+    border-radius: 4px;
+}
+

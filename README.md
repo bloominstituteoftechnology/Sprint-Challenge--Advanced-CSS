@@ -33,14 +33,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+**In a nutshell responsive websites perform faster and don't take as much time to load as adaptive sites do. Because responsive sites just utalize one responsive website as oppossed to the many layouts that adaptive websites require for each screen sive.**
+
+
 
 2. Describe what it means to be mobile first vs desktop first.
+**Designing your websites content based on the screen sizes of mobile devices first before moving on to larger tablet, and desktop screen sizes **
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+**It sets your default font size to 10px= 16px X .625. Setting your default font size to 10px make it much easier to style a website. Remembering the fact that 1rem=10px, 1.5rem=15px, and so on**
 
 4. How would you describe preprocessing to someone new to CSS?
+**IT ORGANIZES YOUR CSS WORK FLOW. A framework that makes it much easier to work with CSS individuallty and with large teams. With preprocessing you can easliy break up protions of the website to work on in CSS in sperate .less files. Instead of having to try to cordinate working on various section on the same .css file**
+
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+**The syntax and methods are easy. It is the documentation that still confuses me. How does LESS actually manage the CSS? So my question would be how it actually works?**
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
