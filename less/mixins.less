@@ -5,3 +5,20 @@
     flex-direction: column;
     align-items: center;
 }
+
+.imgRadius() {
+    border-radius: 0.5rem;
+}
+
+.btn(@borderRad, @padding, @width, @text-align, @bgColor, @borderColor, @borderWidth, @borderStyle, @fontSize, @fontColor) {
+    border-radius: @borderRad;
+    padding: @padding;
+    width: @width;
+    text-align: @text-align;
+    background-color: @bgColor;
+    border-color: @borderColor;
+    border-width: @borderWidth;
+    border-style: @borderStyle;
+    font-size: @fontSize;
+    color: @fontColor;
+}

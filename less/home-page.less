@@ -5,7 +5,12 @@
   .intro {
 
     img {
-      border-radius: 0.5rem;
+      .imgRadius();
+
+      //Mobile version
+      @media @phone {
+        width: 100%;
+      }
     }
 
     h2 {
@@ -62,6 +67,12 @@
       }
 
       .btn {
+        .btn(0.5rem, 1rem, 29%, center, @btn-bg-color, @shuttle-gray, 1px, solid, 1.7rem, @wild-sand);
+
+        &:hover {
+          background-color: @wild-sand;
+          color: @btn-bg-color;
+        }
       }
     }
 
