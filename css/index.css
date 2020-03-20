@@ -171,9 +171,14 @@ p {
   font-size: 4rem;
   margin: 1.5rem 0 2rem 0;
 }
-.nav a {
+.nav nav {
+  margin-bottom: 1.2rem;
+}
+.nav nav a {
   text-decoration: none;
   color: #454A59;
+  font-size: 2rem;
+  padding: 1rem;
 }
 footer {
   color: #22283B;
@@ -184,6 +189,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  border-radius: 0.5rem;
 }
 .home .intro h2 {
   padding: 15px;
