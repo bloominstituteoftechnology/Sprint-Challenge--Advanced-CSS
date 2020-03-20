@@ -3,7 +3,12 @@
 .home {
 
   .intro {
-
+    @media @phone{
+      img{
+        width: 98%;
+        border-radius: 5%;
+      }
+    }
     h2 {
       padding: 15px;
     }
@@ -18,6 +23,20 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone{
+      .sky{
+        display: none;
+      } // this closes the sky image
+      .launch{
+        display: none;
+      } // this closes the launch image
+
+      .blast{
+        width: 90%;
+        margin: 5% auto;
+      }
+    } // this closes the media phone iamge
 
     img {
       width: 28%;
@@ -40,6 +59,20 @@
   }
 
   .walk {
+    &:hover{
+      -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    @media @phone{
+      width: 98%;
+      margin: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 5%;
+      margin-left: -2%;
+    }
+
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
@@ -48,6 +81,13 @@
 
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+        line-height: 2;
+        position: relative;
+        left: 4%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +98,24 @@
       }
 
       .btn {
+        .button-style(@ebony-clay, @porcelain);
+
+        @media @phone{
+          width: 100%;
+          line-height: 3;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+
+      @media @phone{
+        width: 100%;
+        border-radius: 5%;
+      }
       
       img {
         width: 100%;

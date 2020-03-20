@@ -1,1 +1,37 @@
-// Navigation code here
+// Navigation code 
+
+
+nav{
+    .nav-style();
+    h1{
+     font-size: 4rem;
+     .nav-fonts();
+     line-height: 2;
+     margin-left: 40%;
+
+     @media @phone{
+         position: relative;
+         right: 20%;
+     }
+    } // this closes the h1 in the nav
+ 
+    a{
+        text-decoration: none;
+        .nav-fonts();
+        font-size: 2.3rem;
+        line-height: 2;
+        margin: 1.5%;
+        position: relative;
+        left: 30%;
+
+        @media @phone{
+            position: relative;
+            left: 5%;
+            font-size: 1.8rem;
+            margin: 3%;
+        }
+    }
+ 
+ 
+ 
+ } // this closes the nav
