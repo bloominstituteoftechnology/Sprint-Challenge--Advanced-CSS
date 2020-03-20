@@ -265,6 +265,8 @@ footer {
   border-style: solid;
   font-size: 1.7rem;
   color: #F6F6F6;
+  opacity: 1;
+  transition: 0.5s;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #F6F6F6;
