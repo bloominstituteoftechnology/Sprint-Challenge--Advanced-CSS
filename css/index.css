@@ -316,6 +316,7 @@ footer {
   color: #dee2e6;
   font-size: 1.6rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #dee2e6;
@@ -359,6 +360,11 @@ footer {
 .sign-up-intro p {
   padding: 15px 0;
 }
+@media (max-width: 600px) {
+  .sign-up-intro {
+    height: 100rem;
+  }
+}
 .sign-up-form {
   display: flex;
   flex-direction: column;
@@ -369,33 +375,37 @@ footer {
 .sign-up-form .form-name,
 .sign-up-form .form-email {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.sign-up-form .form-name p,
-.sign-up-form .form-email p {
-  font-size: 2rem;
-}
-.sign-up-form input[type=text] {
+.sign-up-form input[type=text],
+.sign-up-form input[type=email],
+.sign-up-form input[type=radio] {
   width: 100%;
   padding: 12px;
   border: 1px solid #F1F1F1;
   border-radius: 5px;
+  font-size: 1.6rem;
+}
+.sign-up-form label {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 .sign-up-form .form-often {
-  font-size: 2rem;
-}
-.sign-up-form .form-often p {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .sign-up-form .form-often .radio-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
 }
 .sign-up-form .form-often .radio-buttons .radio {
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 .sign-up-form input[type=submit] {
   width: 50%;
@@ -409,6 +419,7 @@ footer {
   color: #dee2e6;
   font-size: 1.6rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 .sign-up-form input[type=submit]:hover {
   background-color: #dee2e6;

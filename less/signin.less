@@ -17,6 +17,10 @@
   .flex(column, space-around, center);
   height: 80rem;
 
+  @media @phone{
+    height: 100rem; 
+  }
+
 }
 
 .sign-up-form {
@@ -27,49 +31,46 @@
 
   .form-name,
   .form-email {
-    display  : flex;
-    flex-wrap: wrap;
-
-    p {
-      font-size: 2rem;
-    }
+   .flex(column, center, flex-start);
   }
 
-  input[type=text] {
+  input[type=text], input[type=email], input[type=radio] {
     width: 100%;
     padding: 12px;
     border: 1px solid @sea-shell;
     border-radius: 5px;
+    font-size: 1.6rem;
   
     // padding-left: 1rem;
     // height      : 4rem;
   }
 
+  label{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    margin-top: 2rem; 
+  }
 
   .form-often {
     //.flex(column, flex-start, center);
-    font-size     : 2rem;
-
-    p {
-      font-size: 2rem;
-    }
+    font-size     : 1.6rem;
 
     .radio-buttons {
-      .flex(row, space-between, center);
+      .flex(row, center, center);
       margin-bottom: 6rem;
 
       .radio {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        //.flex(row, center, center);
       }
     }
-    
   }
 
   input[type=submit] {
     .btn-mixin();
   }
 }
-
 
 
 .sign-up-walk-img {

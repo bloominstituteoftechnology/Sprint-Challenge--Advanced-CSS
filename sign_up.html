@@ -46,33 +46,30 @@
       </section>
       <!-- Image Code Ends  -->
 
-      <form class="sign-up-form">
-        <div class="form-name">
-          <p>What's your Name?</p>
-          <input type="text" name="first-name-last name" if="name" placeholder="Type Name">
-        </div>
-        <div class="form-email">
-          <p>Where should we send your newsletter? (Email)</p>
-          <input type="email" name="email" id="email" placeholder="Type Email">
-        </div>
-        <div class="form-often">
-          <p>How often would you like to receive it?</p>
-          <div class="radio-buttons">
-            <div class="weekly">
-              <input type="radio" name="often" value="Weekly" class="radio"> Every week
-            </div>
-            <div class="monthly">
-              <input type="radio" name="often" value="Monthly" class="radio"> Every Month
-            </div>
-            <div class="six-months">
-              <input type="radio" name="often" value="6 months" class="radio"> Once in 6 months
-            </div>
+      <div class="form-container">
+        <form class="sign-up-form">
+          
+          <div class="form-name">
+            <label for="name">What's your Name?</label>
+            <input type="text" name="first-name-last name" if="name" placeholder="Type Name here...">
           </div>
-        </div>
 
-        <input type="submit" value="Subscribe">
+          <div class="form-email">
+            <label for="email">Please enter your email.</label>
+            <input type="email" name="email" id="email" placeholder="Type Email here...">
+          </div>
 
-      </form>
+          <div class="form-often">
+            <label for="radio">How often would you like to receive it?</label>
+            <input type="radio" name="weekly" value="Weekly" class="radio"> Every week
+            <input type="radio" name="monthly" value="Monthly" class="radio"> Every Month
+            <input type="radio" name="six-months" value="6 months" class="radio"> Once in 6 months
+          </div>
+
+          <input type="submit" value="Subscribe">
+
+        </form>
+      </div>
     </section>
 
 
