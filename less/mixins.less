@@ -1,1 +1,26 @@
 // Mixins Here
+.flexbox() {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2% auto;
+}
+
+.standard-font() {
+    font-size: 1.5rem;
+}
+
+.button(@pad-vert, @pad-horiz) {
+    cursor: pointer;
+    .standard-font();
+    display: inline-block;
+    padding: @pad-vert @pad-horiz;
+    border-radius: 4px;
+    color: @porcelain;
+    background-color: @btn-bg-color;
+
+    &:hover {
+        color: @btn-bg-color;
+        background-color: @porcelain;
+    }
+
+}
