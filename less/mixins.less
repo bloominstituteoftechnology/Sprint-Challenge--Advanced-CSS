@@ -7,3 +7,21 @@
 	justify-content: @justify;
 	align-items: @align;
 }
+
+.button(@border, @background)
+{
+	border: @border;
+	background-color: @background;
+
+	font-size: 1.8rem;
+	padding: .8rem 1.5rem;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+
+	&:hover
+	{
+		background-color: white;
+		color: @background;
+	}
+}
