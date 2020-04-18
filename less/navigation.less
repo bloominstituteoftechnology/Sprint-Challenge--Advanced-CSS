@@ -1,1 +1,29 @@
 // Navigation code here
+
+nav
+{
+	background-color: @nav-bg;
+	.flex(column, center, center);
+	width: 95%;
+	margin: 0 auto;
+	font-style: @nav-font;
+	font-size: 2rem;
+
+	h1
+	{
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	ul
+	{
+		.flex(row, space-evenly, center);
+		margin-bottom: 1rem;
+		li
+		{
+			text-decoration: none;
+			margin: 0 1rem;
+		}
+		
+	}
+}
