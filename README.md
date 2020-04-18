@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-    **An adaptive website is one that changes based on specific break points (like _snapping_) while a responsive website is one that reflows and automagically adjusts it's contents based on the size of the screen (like _liquid_).**
+    **An adaptive website is one that changes based on specific break points (like _snapping_) while a fully responsive website is one that reflows and automagically adjusts its contents based on the size of the screen (like _liquid_).**
 
 2. Describe what it means to be mobile first vs desktop first.
 
@@ -47,11 +47,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
-    **Tricky one. I would tell them "Preprocessing is writing CSS in an easier format that is more understandable by you, a human. That format however, has to be rendered or converted in a way the computer and browser can understand. It's still the same CSS, it's just easier for us humans to write, plus there are nice functions in there we can take advantage of, that would be repetitive and difficult to write with regular CSS."**
+    **I would tell them "Preprocessing is writing CSS in an easier format that is more understandable by you, a human. However, that format has to be rendered in a way the computer and browser can understand. It's still the same CSS, it's just easier for us humans to write. Additionally, there are other functions and niceties in there we can take advantage of that would be repetitive and difficult to write with regular CSS."**
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-    **My favorite concept in preprocessing is variables and mixins. The concept that gives me the most trouble is parametric mixins and interpolation. Why is it necessary??**
+    **My favorite concept in preprocessing is declaring variables and mixins (I currently use a mixin for flexbox that makes my life a breeze haha). The concept that gives me the most trouble is interpolation. Why is it necessary??**
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

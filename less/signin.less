@@ -1,3 +1,6 @@
+//main: index.less
+
+@import "navigation.less";
 
 // Sign Up Page Styling
   
@@ -10,17 +13,14 @@
     p {
       padding: 15px 0;
     }
+  .flex(column, space-around, center);
+    height: 80rem;
   
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    justify-content: space-around;
-    align-items: center;
   }
   
   .sign-up-form {
-    display: flex;
-    flex-direction: column;
+    .flex(column, center, center);
+    margin: 3rem;
     
 
     .form-name, .form-email {
@@ -48,23 +48,22 @@
       }
       .radio {
         font-size: 2rem;
-        align-self: ;
       }
     }
   }
 
   .radio-buttons {
-      display: flex;
-      justify-content: space-between;
+      .flex(row, space-between, center);
+      margin-bottom: 6rem;
   }
 
   .sign-up-walk-img {
     @media @phone {
-      width: @full-width;
+      width: 100%;
       margin: 20% 10%;
     }
   
-    width: @full-width;
+    width: 100%;
     margin: 20% 10%;
   
     img {

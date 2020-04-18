@@ -1,3 +1,5 @@
+//main: index.less
+
 // Home Content
 
 .home {
@@ -19,10 +21,11 @@
 
     img {
       border-radius: 20px;
+      width: 100%;
       
       // flex: 1;
       @media @phone {
-        width: -webkit-fill-available;
+        width: 100%;
         border-radius: 5px;
       }
     }
@@ -32,9 +35,9 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
     @media @phone {
-      display: flex;
-      flex-direction: column;
+      .flex(column, center, center);
     }
 
     .hidden-on-mobile {
@@ -79,21 +82,23 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(row, flex-start, center);
 
     @media @phone {
-      flex-direction: column-reverse; 
+      .flex(column, center, center); 
       padding: 0; 
       margin: 0 3%;
     }
 
+
     .walk-text {
-      @media @phone {
-        width: 100%;
-      }
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        order: 2
+      }
+      
       h3 {
         margin-bottom: 10px;
       }
@@ -102,31 +107,36 @@
         margin-bottom: 26px;
       }
 
-
       //Button Styling - Parametric Mixin-----
       .btn {
+        
+        .btn-mixin(50%, 5rem, 5px);
+        
+        //padding: 0.5rem;
+
         @media @phone {
-          .btn-mixin(100%, 4rem, 5px);
+          .btn-mixin(100%, 6rem, 5px);
+          margin-bottom: 3rem;
           font-size: 2rem;
-          margin-bottom: 5%;
+         // margin-bottom: 5%;
           padding: 1rem;
         }
-        .btn-mixin(50%, 3rem, 5px);
-        padding: 0.5rem;
       }
 
     }
 
     .walk-img {
-      @media @phone {
-        width: 100%;
-        
-        margin: 10% auto;
-      }
 
       width: 46%;
       //height: 50%;
       margin-left: 4%;
+
+
+      @media @phone {
+        width: 100%;
+        margin: 10% auto;
+        order: 1;
+      }
 
       img {
         width: 100%;
