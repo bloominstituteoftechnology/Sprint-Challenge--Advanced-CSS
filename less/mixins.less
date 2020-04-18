@@ -1,1 +1,14 @@
-// Mixins Here
+// ----------global mixins--------//
+.galaxyGrey {
+  color: #5e6164;
+}
+.displayCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// ----------Button mixins--------//
+.galaxybtn(@color @background) {
+  color: @color;
+  background: @background;
+}
