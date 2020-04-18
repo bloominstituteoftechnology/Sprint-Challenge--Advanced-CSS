@@ -3,71 +3,86 @@
 @import "navigation.less";
 
 // Sign Up Page Styling
-  
-  .sign-up-intro {
-  
-    h2 {
-      padding: 15px 0;
-    }
-  
-    p {
-      padding: 15px 0;
-    }
-  .flex(column, space-around, center);
-    height: 80rem;
-  
-  }
-  
-  .sign-up-form {
-    .flex(column, center, center);
-    margin: 3rem;
-    
 
-    .form-name, .form-email {
-      display: flex;
-      flex-wrap: wrap;
-  
-      input {
-        flex: 1;
-        padding-left: 1rem;
-        align-self: center; 
-        height: 4rem;
-      }
-      p {
-        flex: 1;
-        font-size: 2rem;
-      }
-    }
-    .form-often {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
+.sign-up-intro {
+
+  h2 {
+    padding: 15px 0;
+  }
+
+  p {
+    padding: 15px 0;
+  }
+
+  .flex(column, space-around, center);
+  height: 80rem;
+
+}
+
+.sign-up-form {
+  .flex(column, center, center);
+  margin: 3rem;
+
+
+
+  .form-name,
+  .form-email {
+    display  : flex;
+    flex-wrap: wrap;
+
+    p {
       font-size: 2rem;
-      p {
-        font-size: 2rem;
-      }
+    }
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid @sea-shell;
+    border-radius: 5px;
+  
+    // padding-left: 1rem;
+    // height      : 4rem;
+  }
+
+
+  .form-often {
+    //.flex(column, flex-start, center);
+    font-size     : 2rem;
+
+    p {
+      font-size: 2rem;
+    }
+
+    .radio-buttons {
+      .flex(row, space-between, center);
+      margin-bottom: 6rem;
+
       .radio {
         font-size: 2rem;
       }
     }
+    
   }
 
-  .radio-buttons {
-      .flex(row, space-between, center);
-      margin-bottom: 6rem;
+  input[type=submit] {
+    .btn-mixin();
   }
+}
 
-  .sign-up-walk-img {
-    @media @phone {
-      width: 100%;
-      margin: 20% 10%;
-    }
-  
-    width: 100%;
+
+
+.sign-up-walk-img {
+  @media @phone {
+    width : 100%;
     margin: 20% 10%;
-  
-    img {
-      height: auto;
-      border-radius: 10px;
-    }
   }
+
+  width : 100%;
+  margin: 20% 10%;
+
+  img {
+    height       : auto;
+    border-radius: 10px;
+  }
+}

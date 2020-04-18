@@ -12,11 +12,11 @@
 }
 
 //Button Mixin:
-.btn-mixin (@width, @height, @border-radius) { 
+.btn-mixin(){ 
 
-    width: @width;
-    height: @height;
-    border-radius: @border-radius;
+    width: 50%;
+    height: 5rem;
+    border-radius: 5px;
 
     .flex(row, center, center);
 
@@ -25,15 +25,21 @@
    
     font-size: 1.6rem;
     font-weight: bold;
-  
-    // p {
-    //     text-align: center;
-    // }
 
     &:hover {
         background-color: @border-real;
         color: @btn-bg-color;
     }
+
+    @media @phone {
+        width: 100%;
+        height: 6rem;
+       
+        font-size: 2rem;
+        margin-bottom: 3rem;
+       // margin-bottom: 5%;
+        padding: 1rem;
+      }
 }
 
 //Webkit Fill Available Mixin
