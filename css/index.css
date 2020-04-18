@@ -188,7 +188,7 @@ nav div {
 }
 nav div a {
   font-size: 2rem;
-  color: black;
+  color: #23293b;
   text-decoration: none;
   font-weight: bold;
 }
@@ -251,8 +251,12 @@ footer {
   text-align: center;
   border-radius: 0.5rem;
   color: white;
-  background: black;
+  background: #23293b;
   padding: 1%;
+}
+.home .walk .walk-text .btn:hover {
+  color: #23293b;
+  background: white;
 }
 .home .walk .walk-img {
   width: 46%;
