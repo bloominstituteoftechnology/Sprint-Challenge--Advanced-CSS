@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+The biggest difference I conceive between an adaptive website and a fully responsive one is the use of media queries.  An adaptive version does not use the queries which makes it only partially responsive to screen sizing. It uses  the flexbox properties alone as it’s means to adapt to it’s environment.  A fully responsive website has full use of media quieries and responds almost perfectly to all screen sizing which makes the user much more likely to return to the site, share it, and purchase from it. Modern days see a much higher percentage of user satisfaction with sites that are mobile-friendly.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+With mobile first, the developer starts with the smallest screen-size design and works their way up to the largest using min-width.  With desktop first, the developer start with the largest screen-size design and works their way down to the smallest using max-width.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The font-size: 62.5% in the html tag is considered the magic number because it reduces the default font-size to only 10px which makes it much easier and efficient to do the mathematical side of sizing elements.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a more powerful syntax  (that allows the ability to combine css with JavaScript)  written inside of a preprocessor file or split up into several preprocessor files which are then automatically compiled into a single CSS file.
+Although it seems pointless at first to have multiple files, with practice, comes understanding of how it creates more efficiency, faster results, and much less code clashing between a team of developers working on a single project. 
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is that once it is understood fully, there are less errors and the project becomes less time consuming.  The concept that gives me the most trouble is learning to find the syntax error messages in the terminal.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

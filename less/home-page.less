@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -56,15 +53,24 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        display: inline-block;
+        width: 30%;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        .galaxybtn(white, @ebony-clay);
+        padding: 1%;
+        &:hover {
+          .galaxybtn(@ebony-clay, white);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +78,4 @@
       }
     }
   }
-}// home
+} // home
