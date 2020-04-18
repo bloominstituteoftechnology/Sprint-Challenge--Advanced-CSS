@@ -1,1 +1,35 @@
 // Mixins Here
+
+.font-paragraph {
+  color: black;
+}
+
+.font-paragraph-mobile {
+  font-size: 2em;
+}
+
+.width-phone {
+  width: 100%;
+}
+
+.custom-btn(@color, @bg-color) {
+  margin: 10px 0px;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+  height: 15%;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: @bg-color;
+  color: @color;
+
+  &:hover {
+    background-color: @color;
+    color: @bg-color;
+  }
+  @media @phone {
+    margin: 0;
+    .width-phone();
+  }
+}
