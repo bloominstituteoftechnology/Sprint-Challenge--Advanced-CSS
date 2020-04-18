@@ -1,1 +1,49 @@
 // Navigation code here
+
+.title-nav-parent {
+  display: flex;
+  flex-direction: column;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #f6f6f6;
+  opacity: 0.95;
+
+  @media @phone {
+    background-color: @nav-bg;
+  }
+
+  .child {
+    text-align: center;
+    padding: 2em;
+  }
+
+  h1 {
+    font-size: -webkit-xxx-large;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .title-nav-parent {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    max-width: 800px;
+  }
+}
