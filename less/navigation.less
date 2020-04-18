@@ -1,1 +1,35 @@
 // Navigation code here
+nav {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    @media @phone {
+        position: relative;
+        background-color: @nav-bg;
+    }
+
+    h1 {
+        .flexbox();
+        margin: 0 auto 1.5% auto;
+        padding: 2% 0 0 0;
+        font-size: 3.5rem;
+        color: @header-font-color;
+    }
+
+    .nav-a {
+        .flexbox();
+        .standard-font();
+        width: 45%;
+
+        @media @phone {
+            width: 80%;
+        }
+        
+        a{
+            text-decoration: none;
+            color: @nav-font;
+        }
+    }
+}
