@@ -46,9 +46,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Preprocessing is like prepping and chopping food before you can cook it. In CSS, large files can get repetitive, and when you need to change one color, you might have to do in 10 different places. Preprocessors were created to automate the process to save time and make coding CSS more efficient. For example, by using the variable @phone, the preprocessor knows it is a shorthand for ~"(max-width: 500px)", so wherever I placed that code, the preprocessor is going to convert it from shorthand to full codes for me. This preprocessor is a great tool to have. It is a compiler or translater. You donwload it, set it up in your VS code to watch for changes. When you save your work, it automatically adds all the changes that you made from your .less files into your .cess file.
+   Preprocessing is like prepping and chopping food before you can cook it. In CSS, large files can get repetitive, and when you need to change one color, you might have to do in 10 different places. Preprocessors were created to automate the process to save time and make coding CSS more efficient. For example, by using the variable @phone, the preprocessor knows it is a shorthand for ~"(max-width: 500px)", so wherever I placed that code, the preprocessor is going to convert it from shorthand to full codes for me. This preprocessor is a great tool to have. It is a compiler or translater. You donwload it, set it up in your VS code to watch for changes. When you save your work, it automatically adds all the changes that you made from your .less files into your .cess file.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+   I like preprocessors because they save me time. My favorite concept of LESS is the variable because it is the most simple one to use. I still have trouble with functions.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
