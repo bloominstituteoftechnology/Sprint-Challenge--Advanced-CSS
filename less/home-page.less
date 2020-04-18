@@ -2,6 +2,10 @@
 
 .home {
 
+  img.rounded-corners{
+    border-radius: 5px;
+  }
+
   .intro {
 
     h2 {
@@ -57,8 +61,40 @@
         margin-bottom: 26px;
       }
 
+      
+  .button-mixin(@bg-color: #23293B, @color:white){
+    background-color: @bg-color;
+    color: @color;
+  }
+
+  .inverse-color(@bg-color: white, @color: #23293B){
+    background-color: @bg-color;
+    color: @color;
+  }
+
+  .inverse-style(@font-family: 'Ubuntu', @border: none, @width:30%, @height:10%, @font-size: 2rem, @border-radius:5px){
+    font-family: @font-family;
+    border: @border;
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+    border-radius: @border-radius;
+}
+
       .btn {
+        font-family: 'Ubuntu', sans-serif;
+        border: none;
+        width: 30%;
+        height: 10%;
+        font-size: 2rem;
+        border-radius: 5px;
+        .button-mixin();
       }
+    }
+
+    .btn:hover{
+      .inverse-color();
+      .inverse-style();
     }
 
     .walk-img {

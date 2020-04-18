@@ -1,3 +1,14 @@
+.link-style {
+  color: black;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: strong;
+  padding: 1%;
+}
+.title {
+  font-size: 3.6rem;
+  padding-bottom: 2%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,6 +183,9 @@ p {
   flex-direction: column;
   text-align: center;
 }
+.nav .nav-links {
+  padding-bottom: 1%;
+}
 .nav .nav-links a {
   color: black;
   text-decoration: none;
@@ -181,7 +195,7 @@ p {
 }
 h1 {
   font-size: 3.6rem;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
 }
 footer {
   color: #22283B;
@@ -192,6 +206,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home img.rounded-corners {
+  border-radius: 5px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -234,6 +251,26 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  width: 30%;
+  height: 10%;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: #23293B;
+  color: white;
+}
+.home .walk .btn:hover {
+  background-color: white;
+  color: #23293B;
+  font-family: 'Ubuntu';
+  border: none;
+  width: 30%;
+  height: 10%;
+  font-size: 2rem;
+  border-radius: 5px;
 }
 .home .walk .walk-img {
   width: 46%;

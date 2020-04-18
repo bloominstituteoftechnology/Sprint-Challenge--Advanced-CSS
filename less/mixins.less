@@ -1,1 +1,32 @@
 // Mixins Here
+.link-style{
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: strong;
+    padding: 1%;
+  }
+
+  .title{
+      font-size: 3.6rem;
+      padding-bottom: 2%;
+  }
+
+  .button-mixin(@bg-color: #23293B, @color:white){
+    background-color: @bg-color;
+    color: @color;
+  }
+  
+  .inverse-color(@bg-color: white, @color: #23293B){
+    background-color: @bg-color;
+    color: @color;
+  }
+
+  .inverse-style(@font-family: 'Ubuntu', @border: none, @width:30%, @height:10%, @font-size: 2rem, @border-radius:5px){
+      font-family: @font-family;
+      border: @border;
+      width: @width;
+      height: @height;
+      font-size: @font-size;
+      border-radius: @border-radius;
+  }
