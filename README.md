@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    The difference between an adaptive website and a fully responsive website is that adaptive websites use hardcoded pixels in styling and really is only formatted for desktop, tablet, and phone. Fully responsive websites use responsive units like rems and are accessible on all types of devices.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Mobile first means that we are designing our css for mobile phone screen sizes first, then expanding on our css to accomodate larger sizes. Desktop first works in the opposite direction, designing for desktop sizes first then expanding to accomodate smaller screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    It allows a site to be more accessible by not overwriting a user's preferences like using hardcoded pixels will.
 
 4. How would you describe preprocessing to someone new to CSS?
+    Preprocessing is a syntax for CSS that compiles into normal CSS. When used, it increases productivity and decreases errors in coding.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    My favorite concept in preprocessing is variables because they save time in coding. Parametric mixins give me the most trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

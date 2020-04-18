@@ -60,8 +60,9 @@
       p {
         margin-bottom: 26px;
       }
-
-      
+    }
+  }   
+    
   .button-mixin(@bg-color: #23293B, @color:white){
     background-color: @bg-color;
     color: @color;
@@ -79,33 +80,74 @@
     height: @height;
     font-size: @font-size;
     border-radius: @border-radius;
-}
+  }
 
-      .btn {
-        font-family: 'Ubuntu', sans-serif;
-        border: none;
-        width: 30%;
-        height: 10%;
-        font-size: 2rem;
-        border-radius: 5px;
-        .button-mixin();
-      }
-    }
+  .btn {
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    width: 30%;
+    height: 10%;
+    font-size: 2rem;
+    border-radius: 5px;
+    .button-mixin();
+  }
 
-    .btn:hover{
-      .inverse-color();
-      .inverse-style();
-    }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
+  .btn:hover{
+    .inverse-color();
+    .inverse-style();
+  }
+
+  .walk-img {
+    width: 46%;
+    margin-left: 4%;
       
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 500px){
+    img.rounded-corners{
+      width: 95%;
+      margin-left: 10px;
+    }
+
+    .space-images .sky {
+      display: none;
+    }
+
+    .space-images .launch {
+      display: none;
+    }
+
+    .space-images .blast{
+      width: 90%;
+    }
+
+    .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 2%;
+      margin-top: 30px;
+    }
+
+    .walk .walk-text{
+      width: 100%;
+    }
+
+    .walk .walk-img{
+      width: 95%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    .walk button{
+      width: 100%;
+      height: 75px;
     }
   }
 }// home
