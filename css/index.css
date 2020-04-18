@@ -168,6 +168,30 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40vw;
+  height: 15vh;
+  margin: 1% auto;
+}
+nav h1 {
+  font-size: 4.8rem;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+nav div a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
