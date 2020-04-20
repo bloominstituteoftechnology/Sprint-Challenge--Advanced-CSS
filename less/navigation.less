@@ -1,1 +1,43 @@
 // Navigation code here
+.nav {
+    .displayFlex(row, center, center);
+    background-color: @nav-bg;
+    margin-top: 2%;
+    border-bottom: 2px solid @nav-border;
+
+    nav {
+        .displayFlex(column, center, center);
+        border: 1px solid green;
+        width: 42%;
+        .noBorder();
+
+        @media @tablet {
+            width: 60%;
+        }
+
+        @media @phone {
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .navLinks {
+            border: 1px solid black;
+            .displayFlex(row, space-between, center);
+            width: 100%;
+            padding: 7% 0 3%;
+            .noBorder();
+
+            a {
+                font-size: 1.8rem;
+                text-decoration: none;
+
+                &:visited {
+                    color: @nav-font;
+                }
+            }
+        }
+    }
+}
