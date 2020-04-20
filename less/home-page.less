@@ -18,6 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile{
+      .launch{
+        display:hidden;
+      }
+      .sky{
+        display:hidden;
+      }
+
+
+    
+    }
 
     img {
       width: 28%;
@@ -45,6 +56,9 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
@@ -57,8 +71,11 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .btn{
+        .button(@ebony-clay,@porcelain);
+        border-radius: 12px;
+
+
     }
 
     .walk-img {
@@ -73,3 +90,5 @@
     }
   }
 }// home
+
+ 

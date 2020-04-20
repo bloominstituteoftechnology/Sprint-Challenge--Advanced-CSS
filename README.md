@@ -46,6 +46,8 @@ Mobile first means that you build the layout for the mobile device first and the
 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+ 
+ 62.5% is equal to 1 rem
 
 
 
