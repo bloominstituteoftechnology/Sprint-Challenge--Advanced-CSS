@@ -62,9 +62,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media(@mobile){
+      flex-direction:column;
+      padding:15px;
+      margin-top: 30px;
+    }
 
     .walk-text {
       width: 50%;
+      @media(@mobile){
+        width:100%;
+        padding-top:3%;
+      }
 
 
       h3 {
@@ -76,13 +85,31 @@
       }
 
       .btn {
-        .buttonStyle(white)
+        height:35px;
+        width:100px;
+        border-radius:5px;
+        font-size:1.7rem;
+        text-align:center;
+        padding-top:2%;
+        @media(@mobile){
+          width:100%;
+          height:50px;
+          padding:3%;
+        }
+        
+        .buttonStyle(rgb(238, 231, 231);rgb(7, 7, 68))
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media(@mobile){
+        order:-1;
+        width:100%;
+        margin-left:0%;
+
+      }
       
       img {
         width: 100%;
