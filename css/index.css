@@ -163,7 +163,8 @@ p {
 .topHeader {
   width: 100%;
   margin: 0 auto;
-  background-color: #faf8f8;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
