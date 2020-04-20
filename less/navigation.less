@@ -4,6 +4,10 @@
     background-color: @nav-bg;
     margin-top: 2%;
     border-bottom: 2px solid @nav-border;
+    position: fixed;
+    opacity: 75%;
+    width: 100%;
+    margin-top: -.1%;
 
     nav {
         .displayFlex(column, center, center);
@@ -21,6 +25,8 @@
 
         h1 {
             font-size: 4rem;
+            color: @nav-font;
+            .animation(a1, 10s, infinite);
         }
 
         .navLinks {
@@ -31,8 +37,10 @@
             .noBorder();
 
             a {
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 text-decoration: none;
+                color: @nav-font;
+                .animation2(a2, 15s, infinite);
 
                 &:visited {
                     color: @nav-font;

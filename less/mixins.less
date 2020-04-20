@@ -18,3 +18,33 @@
     color: @color;
     border-radius: @border-radius;
 }
+
+.animation(@name, @duration, @iteration){
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-iteration-count: @iteration;
+
+    @keyframes @name {
+        0% {color: white;}
+        25% {color: blue;}
+        50% {color: red;}
+        75% {color: green;}
+        90% {color: goldenrod;}
+        100% {color: white;}
+    }
+}
+
+.animation2(@name, @duration, @iteration){
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-iteration-count: @iteration;
+
+    @keyframes @name {
+        0% {color: @nav-font;}
+        25% {color: blue;}
+        50% {color: red;}
+        75% {color: green;}
+        90% {color: black;}
+        100% {color: @nav-font;}
+    }
+}
