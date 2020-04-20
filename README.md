@@ -52,7 +52,7 @@ This can be good to use when you implement variables and mixins to your code, as
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-I love the nesting part of using preprocessors, such as LESS (which is what we have learned to use). It makes things organized and structured how the HTML was, and it is easier and funner to use, in my opinion.
+I love the nesting part of using preprocessors, such as LESS (which is what we have learned to use). It makes things more organized and is structured how the HTML was, and it is easier and funner to use, in my opinion.
 I also love how you can have multiple less files for different portions of your webpage, and you can just import all of the files into one LESS file that is to be converted into css. It makes things much more organized and, in my opinion, is just a funner way to use CSS.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
