@@ -1,11 +1,13 @@
 // Home Content
 
 .home {
+  
   //header img
   .intro {
     img{
       width: @width;
       border-radius: 10px;
+
     }
 
     h2 {
@@ -17,11 +19,12 @@
     }
   
   }
-
+  //3 images 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: @width;
+    justify-content: center;
 
     //make sure no show does what it should(delete)
     @media@phone{
@@ -34,8 +37,10 @@
       border-radius: 20px;
       height: 100%;
 
+      //brining the remaining pic to full size
       @media@phone{
         width: @mobile-img-size;
+        justify-content: center;
       }
     }
   }
@@ -63,6 +68,7 @@
       flex-direction: column;
       padding: 15px;
     }
+
     .walk-text {
       width: 50%;
 
@@ -95,7 +101,7 @@
       width: 46%;
       margin-left: 4%;
 
-      @media@phone{
+      @media@phone {
         width: @width;
         //order:1;
         order: -1;
@@ -103,7 +109,7 @@
       }
       
       img {
-        width: 100%;
+        width: @width;
         height: auto;
         border-radius: 10px;
 
