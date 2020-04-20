@@ -1,27 +1,32 @@
 // Navigation code here
-header{
-    max-width: 800px;
+.topHeader{
+    
     width: 100%;
     margin: 0 auto;  
-
-
-.mainTitle{
-    text-align:center;
-    font-size:4rem;
-    padding-top:2%;
-}
-nav{
+    background-color:rgb(250, 248, 248);
     display:flex;
-    padding: 4% 20% 2% 20%;
-    justify-content:space-between;
-    .fontStyle();
-    a{
-    text-decoration: none;
-    color:black;
-     }
-     @media(@mobile){
+    flex-direction:column;
+    justify-content:center;
+
+
+    .mainTitle{
+        text-align:center;
+        font-size:4rem;
+        padding-top:2%;
+}
+    nav{
+        display:flex;
+        padding: 4% 30% 2% 30%;
+        
         justify-content:space-around;
-         padding:4% 10% 4% 10%;
-     }
+        .fontStyle();
+            a{
+            text-decoration: none;
+            color:black;
+            }
+        @media(@mobile){
+            justify-content:space-around;
+            padding:4% 10% 4% 10%;
+        }
     }
 }

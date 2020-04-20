@@ -160,29 +160,32 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-header {
-  max-width: 800px;
+.topHeader {
   width: 100%;
   margin: 0 auto;
+  background-color: #faf8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-header .mainTitle {
+.topHeader .mainTitle {
   text-align: center;
   font-size: 4rem;
   padding-top: 2%;
 }
-header nav {
+.topHeader nav {
   display: flex;
-  padding: 4% 20% 2% 20%;
-  justify-content: space-between;
+  padding: 4% 30% 2% 30%;
+  justify-content: space-around;
   font-weight: 600;
   font-size: 1.5rem;
 }
-header nav a {
+.topHeader nav a {
   text-decoration: none;
   color: black;
 }
 @media (max-width:500px) {
-  header nav {
+  .topHeader nav {
     justify-content: space-around;
     padding: 4% 10% 4% 10%;
   }
