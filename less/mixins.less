@@ -1,1 +1,21 @@
-// Mixins Here
+.displayflex(@display,@justify,@align) {
+  display: @display;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.fontstyle(@family,@serif) {
+    font-family: @family, @serif;
+}
+
+.btnstyle(@color,@fontc,@hoverc,@topbottom,@rightleft) {
+    color: @fontc;
+    background: @color;
+    padding: @topbottom @rightleft;
+
+    &:hover {
+        background: @hoverc;
+        color: yellow;
+        cursor: pointer;
+    }
+}

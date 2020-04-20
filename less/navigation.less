@@ -1,1 +1,32 @@
 // Navigation code here
+nav {
+    background: @nav-bg;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid @nav-border;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    opacity: 85%;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        .displayflex(flex,center,center);
+
+        a {
+            .fontstyle(ubuntu,serif);
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            color: @nav-font;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
