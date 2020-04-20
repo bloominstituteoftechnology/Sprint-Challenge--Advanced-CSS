@@ -34,14 +34,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1.What is the difference between an adaptive website and a fully responsive website?
 
-While the two are very similiar, fully responsive websites are considered to be a step  above adaptive websites by using percentages
-where adaptive websites are hardcoded. this provides for a more seamless experience betwween devices and shrinking the idth of your screen.
+While the two are very similiar, fully responsive websites are considered to be a step  above adaptive websites by using percentages where adaptive websites are hardcoded. this provides for a more seamless experience between devices and shrinking the width of your screen.
 
 2.Describe what it means to be mobile first vs desktop first.
 
-to create a mobile first website means to design your website specifically for mobile first, all of your code is written with mobile in mind,
-then you start introducing media queries that allow your website to grow to desktop and tablet sizes. desktop first is 
-just the opposite, they are designed with desktop in mind then media queries are intoduced to shrink the website.
+To create a mobile first website means to design your website specifically for mobile first, all of your code is written with mobile in mind,
+then you start introducing media queries that allow your website to grow to desktop and tablet sizes. desktop first is just the opposite, they are designed with desktop in mind then media queries are intoduced to shrink the website.
 
 3.What does font-size: 62.5% in the html tag do for us when using rem units?
 
@@ -50,14 +48,11 @@ it will give us 62.5% of the default 16px for our font size, making it roughly 9
 4.How would you describe preprocessing to someone new to CSS?
 
 To someone new to css i would say it is basically allows for other versions of css that allow you to use more funtions in your code, because css
-can be rigid in how you write code and what your code can do, preprocessing allows you to write your code in a was that 
-more resembles the HTML, and well as things to make your code more DRY.
+can be rigid in how you write code and what your code can do, preprocessing allows you to write your code in a was that more resembles the HTML, and well as things to make your code more DRY.
 
 5.What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-my favorite thing in preprocessing so far is just the simple ability to nest your code in a way that is similiar to css.
-It truly makes it easier to follow. the thing that gives me the most trouble is keeping track of my curly braces when I am adding new things
-into my nested code.
+my favorite thing in preprocessing so far is just the simple ability to nest your code in a way that is similiar to css. It truly makes it easier to follow. the thing that gives me the most trouble is keeping track of my curly braces when I am adding new things into my nested code.
 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
