@@ -167,6 +167,24 @@ nav {
   justify-content: center;
   background-color: #F6F6F6;
 }
+nav .nav-mnu-link {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+@media (max-width:500px) {
+  nav .nav-mnu-link {
+    width: 100%;
+  }
+}
+nav .nav-mnu-link a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #454A59;
+}
+nav .mod-padding {
+  padding: 1em;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

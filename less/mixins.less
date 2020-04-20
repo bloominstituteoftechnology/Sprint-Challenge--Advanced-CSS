@@ -1,1 +1,43 @@
 // Mixins Here
+//for nav-mnu-link modifier def
+.nav-mnu-link-sh(){
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+//nav mnu actual a tag link txt
+.nav-act-link(){
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: @nav-font;
+}
+
+//don't display img
+.no-show(){
+  .sky{
+    display: none;
+  }
+  .launch{
+    display: none;
+  }
+}
+
+.sign-btn(@text-color, @bg-color){
+  width:30%;
+  border-radius: 12px;
+  text-align: center;
+  color:@text-color;
+  background-color: @bg-color;
+  font-size: 16px;
+  padding: 8px;
+  border:none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+&:hover {
+  background-color: @text-color;
+  color: @bg-color;
+  border: dashed 1px @hover-brd;
+}
