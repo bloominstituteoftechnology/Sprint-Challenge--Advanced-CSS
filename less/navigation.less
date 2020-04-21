@@ -7,17 +7,21 @@ nav {
   margin: 1% auto;
   @media @phone {
     width: 100%;
+    height: 10vh;
     border: 1px solid blue;
   }
   h1 {
     font-size: 4.8rem;
+    @media @phone {
+      font-size: 4rem;
+    }
   }
   div {
     display: flex;
     justify-content: space-between;
     width: 80%;
     @media @phone {
-      width: 100%;
+      width: 80%;
     }
     a {
       font-size: 2rem;
