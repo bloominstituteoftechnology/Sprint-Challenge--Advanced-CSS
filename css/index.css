@@ -162,6 +162,10 @@ p {
 }
 .nav-container {
   background-color: #F6F6F6;
+  transition: all 1s;
+}
+.nav-container:hover {
+  background-color: red;
 }
 h1 {
   font-size: 4rem;
@@ -174,6 +178,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .nav-container .nav-links {
   max-width: 100%;
@@ -209,6 +216,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 150px;
 }
 .home .intro h2 {
   padding: 15px;

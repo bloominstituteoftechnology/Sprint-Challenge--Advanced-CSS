@@ -3,6 +3,10 @@
 // Navigation code here
 .nav-container {
     background-color: @wild-sand;
+    transition: all 1s;
+    &:hover {
+        background-color: red;
+    }
 }
 
 h1 {
@@ -15,6 +19,11 @@ h1 {
 .nav-container {
     border: solid 1px @sea-shell;
     .flex(column, center, center);
+
+    //FIXED NAV
+    position: fixed;
+    top: 0;
+    width: 100%; 
     
     //Nav Links Styling
     .nav-links {
@@ -25,8 +34,7 @@ h1 {
 
         nav {
             .flex(row, space-around, center);
-            //flex-basis: 40%;
-
+            
             //Link-items Styling
 
             a {
