@@ -1,1 +1,45 @@
+//main: index.less
+
 // Mixins Here
+//Flexbox Mixin
+
+.flex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align; 
+}
+
+//Button Mixin:
+.btn-mixin(){ 
+
+    width: 50%;
+    height: 5rem;
+    border-radius: 5px;
+
+    .flex(row, center, center);
+
+    background-color: @btn-bg-color;
+    color: @border-real;
+   
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    &:hover {
+        background-color: @border-real;
+        color: @btn-bg-color;
+    }
+
+    @media @phone {
+        width: 100%;
+        height: 6rem;
+       
+        font-size: 2rem;
+        margin-bottom: 3rem;
+       // margin-bottom: 5%;
+        padding: 1rem;
+      }
+}
+
+//Webkit Fill Available Mixin
+//@full-width: ~"-webkit-fill-available";

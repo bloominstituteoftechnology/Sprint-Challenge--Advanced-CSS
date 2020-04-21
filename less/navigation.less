@@ -1,1 +1,64 @@
+//main: index.less
+
 // Navigation code here
+.nav-container {
+
+    //CSS Transition on the Nav Bar
+    background-color: @wild-sand;
+    transition: all 1s;
+    &:hover {
+        background-color: @waterloo;
+    }
+}
+
+h1 {
+    font-size : 4.0rem;
+    text-align: center;
+    // padding: 1rem;
+    margin    : 1rem;
+}
+
+.nav-container {
+    border: solid 1px @sea-shell;
+    .flex(column, center, center);
+
+    //FIXED NAV
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    
+    //Nav Links Styling
+    .nav-links {
+        
+        max-width:  100%;
+        padding: 1rem;
+        margin : 1rem;
+
+        nav {
+            .flex(row, space-around, center);
+            
+            //Link-items Styling
+
+            a {
+                text-decoration: none;
+                font-size      : 1.6rem;
+                color          : @river-bend;
+                padding        : 0 2rem 0;
+
+                @media @phone {
+                    padding: 0 1.6rem 0;
+                }
+
+                &:hover {
+                    color: @shuttle-gray;
+                }
+
+                //End of Link-items
+            }
+
+        }
+
+        // End of Nav Links 
+    }
+
+   }   ////End of Nav-Container

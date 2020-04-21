@@ -1,6 +1,9 @@
+//main: index.less
+
 // Home Content
 
 .home {
+  margin-top: 150px;  
 
   .intro {
 
@@ -9,9 +12,24 @@
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+  }
+
+  .header-image {
+    display: flex;
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      
+      // flex: 1;
+      @media @phone {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
   }
 
   .space-images {
@@ -19,13 +37,35 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      .flex(column, center, center);
+    }
+
+    .hidden-on-mobile {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+              width: 93%;
+              margin: 20px auto;
+            border-radius: 20px;
+            height: 100%;
+            //flex: 1;
+            }
+      }
+
     img {
       width: 28%;
-      margin: 20px 2.5%;
+      margin: 20px auto;
       border-radius: 20px;
       height: 100%;
+      
     }
   }
+
 
   .visit-planets {
     padding: 15px;
@@ -43,12 +83,23 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex(row, flex-start, center);
+
+    @media @phone {
+      .flex(column, center, center); 
+      padding: 0; 
+      margin: 0 3%;
+    }
+
 
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        order: 2
+      }
+      
       h3 {
         margin-bottom: 10px;
       }
@@ -57,14 +108,28 @@
         margin-bottom: 26px;
       }
 
+      //Button Styling - Parametric Mixin-----
       .btn {
+        
+        .btn-mixin();
+        
       }
+
     }
 
     .walk-img {
+
       width: 46%;
+      //height: 50%;
       margin-left: 4%;
-      
+
+
+      @media @phone {
+        width: 100%;
+        margin: 10% auto;
+        order: 1;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +137,4 @@
       }
     }
   }
-}// home
+}
