@@ -178,7 +178,7 @@ nav {
   height: 15vh;
   margin: 1% auto;
 }
-@media (max-width 500px) {
+@media (max-width: 500px) {
   nav {
     width: 100%;
     border: 1px solid blue;
@@ -191,6 +191,11 @@ nav div {
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+@media (max-width: 500px) {
+  nav div {
+    width: 100%;
+  }
 }
 nav div a {
   font-size: 2rem;
