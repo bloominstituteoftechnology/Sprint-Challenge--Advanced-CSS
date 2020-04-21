@@ -70,7 +70,6 @@
     @media @phone {
       .displayCenter();
       flex-direction: column-reverse;
-      border: 2px solid green;
     }
 
     .walk-text {
@@ -106,6 +105,9 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         width: 100%;
