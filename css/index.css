@@ -178,6 +178,12 @@ nav {
   height: 15vh;
   margin: 1% auto;
 }
+@media (max-width 500px) {
+  nav {
+    width: 100%;
+    border: 1px solid blue;
+  }
+}
 nav h1 {
   font-size: 4.8rem;
 }
