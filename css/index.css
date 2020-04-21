@@ -165,7 +165,7 @@ p {
   transition: all 1s;
 }
 .nav-container:hover {
-  background-color: red;
+  background-color: #81848E;
 }
 h1 {
   font-size: 4rem;
