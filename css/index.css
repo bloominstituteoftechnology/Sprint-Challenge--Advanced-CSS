@@ -167,6 +167,11 @@ p {
 .navbar {
   background-color: whitesmoke;
 }
+@media (max-width: 500px) {
+  .navbar {
+    max-width: 100%;
+  }
+}
 .navbar .nav_lo_container {
   display: flex;
   flex-flow: column;
@@ -181,6 +186,12 @@ p {
   color: black;
   line-height: 70px;
   padding-left: 50px;
+}
+@media (max-width: 500px) {
+  .navbar nav a {
+    width: 10%;
+    padding: 0;
+  }
 }
 .navbar .title-text {
   font-size: 60px;
