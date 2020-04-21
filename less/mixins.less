@@ -1,1 +1,32 @@
 // Mixins Here
+.flex{
+    display:flex;
+    justify-content: center;
+   
+ 
+    
+
+}
+
+.button-mix(@backgroundcolor,@textcolor){
+ @backgroundcolor:@river-bend;
+ @textcolor:white;
+ font-size: 16px;
+ height: 40px;
+ width:100px;
+ text-align: center;
+ border-radius: 10px;
+ padding: 10px;
+ &:hover{
+     background-color:@river-bend;
+     color:white;
+     border:1px black solid;
+ }
+ @media @phone{
+    width:100%;
+    background-color:@river-bend;
+    color:white;
+    border: 1px black solid; 
+  }
+
+}
