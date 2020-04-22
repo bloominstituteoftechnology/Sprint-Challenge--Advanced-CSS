@@ -160,6 +160,17 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-heading {
+  margin: 0 35%;
+  font-size: 40px;
+  padding-top: 3%;
+}
+@media (max-width: 500px ) {
+  .top-heading {
+    margin: 0 25%;
+    font-size: 30px;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -171,16 +182,6 @@ nav a {
   font-size: 20px;
   margin: 10px;
   padding: 2%;
-}
-.Top-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.Top-section h1 {
-  font-size: 40px;
-  margin-left: 480px;
-  padding-top: 3%;
 }
 footer {
   color: #22283B;
@@ -253,11 +254,18 @@ footer {
   border-radius: 5px;
   font-size: 16px;
 }
-.home .walk .walk-text .walk-img {
+@media (max-width: 500px ) {
+  .home .walk .walk-text .btn {
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    width: 400px;
+  }
+}
+.home .walk .walk-text .btn .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-text .walk-img img {
+.home .walk .walk-text .btn .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
