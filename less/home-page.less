@@ -18,6 +18,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @mobile{
+      .launch{
+        display: none;
+      }
+      .sky{
+        display: none;
+      }
+
+
+    
+    }
 
     img {
       width: 28%;
@@ -45,6 +56,9 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
 
     .walk-text {
       width: 50%;
@@ -57,10 +71,16 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
-    }
-
+      .btn{
+        .buttons(@btn-bg-color,@porcelain);
+        border-radius: 5px;
+        font-size: 16px;
+        @media @mobile{
+          font-size: 20px;
+          padding: 20px 40px 20px 40px;
+          width: 400px;
+        }
+      
     .walk-img {
       width: 46%;
       margin-left: 4%;
@@ -73,3 +93,5 @@
     }
   }
 }// home
+  }
+}
