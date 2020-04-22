@@ -182,11 +182,6 @@ nav a {
   margin-left: 480px;
   padding-top: 3%;
 }
-@media (max-width: 500px ) {
-  .Top-section h1 {
-    flex-direction: column;
-  }
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -207,6 +202,14 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media (max-width: 500px ) {
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -245,14 +248,16 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  background-color: blue;
-  color: white;
+  background-color: #22283A;
+  color: #F6F7F8;
+  border-radius: 5px;
+  font-size: 16px;
 }
-.home .walk .walk-img {
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
