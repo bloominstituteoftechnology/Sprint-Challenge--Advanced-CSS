@@ -1,1 +1,64 @@
-// Mixins Here
+// Mixins
+// Transition duration
+.transition(@duration) {
+    -webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    transition-duration: @duration;
+}
+
+// Border
+.border-radius(@tl: 0; @tr: @tl; @bl: 0; @br: @bl) {
+    border-radius: @tl @tr @bl @br;
+}
+
+// Buttons
+.btn(@btn-bg-color; @btn-color; @btn-width: 50%; @btn-border-radius: 0; @btn-font-size: 1.8rem) {
+    background-color: @btn-bg-color;
+    color: @btn-color;
+    border-radius: @btn-border-radius;
+    font-size: @btn-font-size;
+    font-weight: bolder;
+    text-align: center;
+    width: @btn-width;
+    min-width: 100px;
+    padding: 8px 0;
+    border: 0;
+    cursor: pointer;
+    &:hover{
+        color: @btn-bg-color;
+        background-color: @btn-color;
+        .transition(0.75s);
+    }
+    @media @phone {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+// Links
+.link(@link-fg-color; @link-bg-color; @link-bold: 600) {
+    color: @link-fg-color;
+    background-color: unset;
+    font-weight: @link-bold;
+    text-decoration: none;
+    &:hover{
+        color: @link-bg-color;
+        background-color: @link-fg-color;
+        font-weight: @link-bold;
+        .border-radius(10px; 10px; 0; 0);
+        .transition(0.75s);
+        @media @phone {
+            .border-radius(5px; 5px; 0; 0);
+        }
+        @media @phone-small {
+            .border-radius(0; 0; 0; 0);
+            letter-spacing: 0.75rem;
+        }
+    }
+}
+
+// Positioning
+.sticky-top(@top-pos) {
+    position: sticky;
+    top: @top-pos;
+}
