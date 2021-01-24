@@ -1,1 +1,25 @@
 // Mixins Here
+.position(@j-content: center;) {
+    display: flex;
+    justify-content: @j-content;
+}
+
+.space-imgs() {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+
+.button(@width, @height) {
+    background-color: #1F2433;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: @height;
+    width: @width;
+    font-size: 1.6rem;
+    border-radius: 5%;
+}
