@@ -18,7 +18,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 
 ## Description
 
-The client for this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
+The client for this challenge is _Spacewalkers Magazine_. Spacewalkers needs your help to build a small proof of concept website for their marketing team. They have provided designs for both desktop and phone views. In addition to designs and content, they have most of the home page coded for you. You just need to finish the navigation and header as well as the mobile styles.
 
 In meeting the minimum viable product (MVP) specifications listed below, your web page should look like the solution design files of the desktop and mobile views:
 
@@ -34,7 +34,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+2. Describe what it means to be mobile-first vs desktop-first.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
@@ -44,14 +44,14 @@ Edit this document to include your answers after each question. Make sure to lea
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
-## Project Set Up
+## Project Set-Up
 
 Follow these steps to set up your project:
 
 ### Git Set up
 
 - [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
+- [ ] Add your project manager as a collaborator on Github.
 - [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
