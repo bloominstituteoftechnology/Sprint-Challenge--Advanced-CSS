@@ -1,1 +1,23 @@
 // Navigation code here
+nav {
+    .style(@justify);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+    .links {
+        margin-top: 2%;
+        width: 50%;
+        .style(@justify: space-between);
+
+        @media @phone{
+            width: 80%;
+        }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: @river-bend;
+    }
+
+    }
+}

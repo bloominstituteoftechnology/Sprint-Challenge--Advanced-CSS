@@ -1,0 +1,15 @@
+What is the difference between an adaptive website and a fully responsive website?
+Adaptive website is when the design of a website stays stagnant while a responsive website can move and span while the page moves not causing a horizontal scroll bar allowing for easier transition from desktop to tablet to mobile designs.
+
+Describe what it means to be mobile first vs desktop first.
+mobile first is when desinging a page from bottom to top (min-width), and desktop is used when designing a top to bottom webpage when the resolution goes lower than specified the next design takes place.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+1 rem = 10 px 
+
+How would you describe preprocessing to someone new to CSS?
+Preprocessing is a more orgainzed way to style with better specificity allowing other coders that come and look at your html and css could its easily written and understood.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+Favortie concept in preprocessing are using  mixins, and paramatic mixins since mixins are usually defined when creating them allows me to create the styling earlier on to one element then easily apply it to another. 
+The concept that gives me the most trouble are using functions being that I can only see myself using it in animation events I have trouble trying to implement it in any to make my code even more readable.
