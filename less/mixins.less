@@ -1,1 +1,17 @@
 // Mixins Here
+
+.border-radius {
+    border-radius: 7px;
+    @media (@phone){
+        border-radius: none;
+    }
+}
+
+.opp{
+    padding: 5%;
+}
+.anchors(@color;){
+    color: @color;
+    font-size: 1rem;
+    margin: 0 auto;
+}

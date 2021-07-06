@@ -28,11 +28,20 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  @media screen {
+    padding:0;
+  }
 }
 
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+  @media (@phone){
+    margin: 0em;
+  }
 }
 
+@media(@phone){
+  margin: 1%;
+}
