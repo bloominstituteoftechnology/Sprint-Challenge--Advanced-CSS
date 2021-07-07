@@ -1,6 +1,6 @@
 // Home Content
 
-.home {
+.about {
 
   .intro {
       padding-top: 96px;
@@ -27,30 +27,30 @@
 
   }
 
-  .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    @media @phone {
-        .sky {
-            display: none;
-        }
-        .launch {
-            display: none;
-        }
-        .blast {
-            margin: 10px auto;
-            width: 90%;
-        }
-    }
+  .control-images {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      @media @phone {
+          .sky {
+              display: none;
+          }
+          .launch {
+              // display: none;
+          }
+          .blast {
+              margin: 10px auto;
+              width: 90%;
+          }
+      }
 
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
+      img {
+        width: 45%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 240px;;
 
-    }
+      }
 
     img:hover {
         transform: scale(1.1);
@@ -76,19 +76,22 @@
     }
   }
 
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+  .bigger {
+    margin-top: 0px;
+    width: 100;
     padding: 50px 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     @media @phone {
         flex-direction: column;
         padding: 15px;
     }
 
-    .walk-text {
-      width: 50%;
+    .bigger-text, .btn-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
       @media @phone {
           width: 100%;
       }
@@ -118,28 +121,31 @@
           border: 1px solid white;
           padding: 10px 20px;
           border-radius: 5px;
+          width: 100%;
+
           cursor: pointer;
           @media @phone {
               width: 100%;
-              padding: 20px 0;
+              padding: 20px;
           }
       }
     }
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
+    .bigger-img {
+      width: 100%;
       @media @phone {
           width: 95%;
           margin: auto;
-          order: -1;
           padding-bottom: 15px;
       }
 
       img {
-        width: 100%;
+        width: 75%;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
         height: auto;
-        border-radius: 10px;
+        border-radius: 15px;
         @media @phone {
             width: 100%;
         }
