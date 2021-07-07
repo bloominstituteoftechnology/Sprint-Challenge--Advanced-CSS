@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5 {
   color: @header-font-color;
 }
 
+h1{
+  font-size : 4rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -34,5 +37,14 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @phone{
+    width : 95%;
+}
 }
 
+nav a{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color : @nav-font;
+}
