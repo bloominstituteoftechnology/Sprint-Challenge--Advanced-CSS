@@ -1,1 +1,18 @@
 // Mixins Here
+
+.center(@justify,@align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.btn-style(@bg-color,@raduis,@f-size){
+    background-color:@bg-color;
+    border-radius: @raduis;
+    font-size:@f-size;
+}
+
+
+// escaping 
+@phone : ~"(max-width:500px)";

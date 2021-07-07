@@ -1,29 +1,45 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+    img {
+      border-radius: 1rem;
+      @media @phone {
+        width: 100%;
+      }
+    }
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      margin: 0;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 90%;
+        margin: 10px auto;
+      }
+    }
+    .sky,
+    .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -40,14 +56,24 @@
   }
 
   .walk {
-    margin-top: 60px;
+    margin: 60px auto;
     border-top: 1px solid @main-border-color;
+    border-bottom: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .center(center,center);
+    @media @phone {
+      flex-direction: column-reverse;
+      padding: 0;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 90%;
+        margin: 10px auto;
+        .center (flex-start, flex-start);
+        flex-direction: column;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,13 +84,32 @@
       }
 
       .btn {
+        .btn-style(@btn-bg-color,4px,1.6rem);
+        color: #fff;
+        padding: 10px 10px;
+        text-align: center;
+        width: 30%;
+        transition: 0.5s;
+        @media @phone {
+          width: 100%;
+          padding: 20px 0;
+        }
+
+        &:hover {
+          background-color:rgb(14, 12, 12);
+          cursor: pointer;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width: 90%;
+        margin: 10px auto;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +117,23 @@
       }
     }
   }
-}// home
+  form {
+    width: 100%;
+
+    .center(space-between,center);
+    flex-direction:column;
+    color:#000;
+    font-size:1.2rem;
+    label{
+      margin-top:15px;
+      input{
+        padding:5px 20px;
+      }
+    }
+    textarea{
+      margin-left:2%;
+      margin-top:20px;
+      height:100px;
+    }
+  }
+} // home
