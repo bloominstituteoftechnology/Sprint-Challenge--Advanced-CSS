@@ -1,11 +1,14 @@
 // Navigation code here
 
 nav {
+	position: sticky;
+	top: 0;
 	display: flex;
 	flex-direction: column;
 	background-color: @wild-sand;
 	width: 800px;
-	margin: 0 auto 1%;
+	padding: 0 0 1%;
+	margin: 0 auto; 
 
 	@media @mobile {
 		width: 100%;
@@ -16,6 +19,7 @@ nav {
 		font-size: 4em;
 		text-align: center;
 		margin: 3% 0 2%;
+		animation: siteName 6s ease infinite alternate;
 
 		@media @mobile {
 			font-size: 4em;
