@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    .headerimg{
+      border-radius: 1.5%;
+    }
 
     h2 {
       padding: 15px;
@@ -18,6 +21,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @mobile{
+      .blast{
+        width:100%;
+      }
+      .sky, .launch{
+        display:none;
+      }
+    }
+
+
 
     img {
       width: 28%;
@@ -46,6 +60,8 @@
     display: flex;
     justify-content: center;
 
+  
+
     .walk-text {
       width: 50%;
 
@@ -58,6 +74,7 @@
       }
 
       .btn {
+        .buttonstyles();
       }
     }
 
@@ -69,7 +86,32 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        
       }
     }
+
+    @media @mobile{
+        flex-wrap: wrap-reverse;
+        padding: 0; 
+        margin:4% 0; 
+
+        .walk-text{
+          width:100%;
+
+          .btn{
+            text-align: center;
+            width:100%;
+            padding:4%;
+            border-radius: 2%;
+          }
+        }
+        .walk-img{
+          margin:3% 0;
+          width:100%;
+        }
+        
+      }
+
+
   }
 }// home
