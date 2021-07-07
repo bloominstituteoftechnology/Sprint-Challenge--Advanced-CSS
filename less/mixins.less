@@ -1,1 +1,18 @@
 // Mixins Here
+.colors() {
+  background-color: #f4f4f4;
+  border: 1px double #e0e0e0;
+}
+
+.img() {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+// Parametric Mixin Here
+.btn(@bg-color; @color) {
+  background-color: @bg-color;
+  color: @color;
+}
