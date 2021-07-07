@@ -1,1 +1,19 @@
 // Mixins Here
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex(@align: center, @justify: center) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.border(@width; @style; @color){
+    border: @width @style @color;
+}

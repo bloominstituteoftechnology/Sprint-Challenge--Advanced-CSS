@@ -56,9 +56,6 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
@@ -73,3 +70,67 @@
     }
   }
 }// home
+
+.Sign-up{
+  .border(3px; solid;@header-font-color);
+  background-color: @header-font-color;
+  color: white;
+  border-radius: 7px;
+  padding:10px;
+
+  &:hover{
+    color:@header-font-color;
+    background-color:white;
+  }
+}
+
+
+
+//Mobile
+
+@media @phone{
+
+  .head{
+    width: 500px;
+  }
+  
+  .sky{
+    display: none;
+    width: 0px;
+  }
+  .launch{
+    display: none;
+    width:0px;
+  }
+  .space-images{
+      width: 200px;
+      height:100px;
+  }
+
+  .walk{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin: none;
+    padding: none;
+
+    .walk-text{
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 600px;
+      width: 50px;
+      
+      p{
+        justify-content: center;
+      }
+    }
+    .Sign-up{
+      width:300px;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

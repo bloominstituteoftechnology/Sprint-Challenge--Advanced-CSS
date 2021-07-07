@@ -42,6 +42,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
+//  ANSWERS 
+
+An adaptive website is a website with multiple pre-made templates for different devices whereas, a fully responsive website will shift its structure depending on media queries written in by the developers. 
+
+It means to code the website for the mobile view first then use media queries for the desktop view.
+
+When you set font size to 62.5% it will make it so that 2 REM = 20px or 3 REM = 30px.
+
+A preprocessor takes a bunch of code and makes it look and function and cleanly as possible. 
+
+My favorite preprocessing concept so far would have to be mix-ins. Mix-ins are also the part that gives me the biggest headache .
+
+
+
+
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set-Up
