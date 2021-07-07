@@ -32,15 +32,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website?  
+
+An adaptive website is an adaptive layout borrow from the spped of a fixed layout but accommodate differeent devices at specific breakpoints in design.  Responsive layouts combine features of fixed, adaptive, and fluid websites together into one seamless experience. 
 
 2. Describe what it means to be mobile-first vs desktop-first.
 
+When building desktop first you are styling to make things look nice in the desktop view.  Then styling in mobile view, you are chaning style elements to look good in the mobile version. Web developers pick whuch one they want to do first and change styles to respond to the other display.  
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+The 62.5% is 10px of 16px, which is the standard font size of a webpage.  It is a magical percentage that works with people changing their setting of their font size and it is responsive to that. If they want to have to x-large font. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing in CSS is breaking down the code from your normal .css page and putting it into littler files so that it's more organized.  Cleaner coding, and someone else can easily read and understand sections, etc.  Preprocessing has perks of making your own veraiables and mixins so that your code is DRY and you can change styles and informatin easier down the road. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorites are nesting: I can find something and change it faster, making my own variables for styling, because I love to be extra with font styling and color.  A concept that gives me trouble is parametric mixins, only because I haven't able to get one to work correctly. We will put that to the test today. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
