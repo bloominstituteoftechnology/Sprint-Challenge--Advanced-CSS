@@ -24,6 +24,11 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone{
+        width: 100%
+      }
+
+      }
     }
   }
 
@@ -45,9 +50,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+      @media @phone{
+        display: flex;
+        flex-direction: column-reverse;
+      }
 
     .walk-text {
       width: 50%;
+        @media @phone{
+          width: 100%;
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -57,19 +69,36 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btnc {
+        @media @phone{
+          background:rgba(25, 25, 51, 0.986);
+          .color(white);
+          width:100%;
+          font-size: 20px;
+          padding: 12px 175px;
+          display: flex;
+          justify-content: center;
+          white-space: nowrap;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+        @media @phone{
+          width: 100%;
+        }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
+      }
     }
-  }
-}// home
+  
+
+// home
+//finished 
+// gee
