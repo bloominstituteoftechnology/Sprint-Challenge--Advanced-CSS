@@ -1,1 +1,47 @@
 // Navigation code here
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: @river-bend;
+    border: @sea-shell;
+    
+    
+    a {
+        color: @wild-sand;
+        background: @btn-bg-color;
+        padding: 10px;
+        font-size: 1.3rem;   
+        text-decoration: none;
+        border-radius: 15px;
+        margin: 1%;
+        
+        @media @mobile {
+            font-size: 1.2rem; 
+            align-items: flex-end;
+            
+        }
+    }
+        a:hover {
+            color: @btn-bg-color;
+            background: @wild-sand;
+            font-weight: bold;
+        }
+}
+h1 { 
+      color: @ebony-clay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: pulse 1.2s infinite;
+    @keyframes pulse {
+        50% {
+          color: goldenrod;
+        }
+      }
+    
+}
