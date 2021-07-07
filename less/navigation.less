@@ -1,1 +1,27 @@
 // Navigation code here
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-left: 36%;
+    max-width: 30%;
+    padding: 1rem;
+    @media @phone {
+      max-width: 100%;
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+    }
+    a {text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      .hovereffect(@color1);
+    }
+  }
+  .graybg {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+  }
