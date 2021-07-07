@@ -33,14 +33,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    
+    Adaptive websites "snap" to the width of the browser at a specific break-points. An adaptive website detects the browser size and it adjusts the layout of the website accordingly until the size of the browser adjusts past a specific breakpoint Responsive websites smoothly adjust to the size of the browser at any given point. The site automatically adjust its layout with every width change to best fit the screen.
 
 2. Describe what it means to be mobile-first vs desktop-first.
 
+    Mobile-first is a design that is optimized for use primarly on mobile devices and their media queries use the min-width property. On the other hand, desktop-first sites are created first and primarily for the best use on dektop computers and use the max-width property. The tradeoff is that mobile-first sites may not look at well as polished on desktops and desktop-first sites may need to chnage the layout and scale back some functionality when dispayed on smaller screens.  
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    The default font-size of the browser is 16px. Setting the font-size to 100% will make 1rem = 16p which would chnage the layout dreatically when inreading the rem. Setting the font size to 62.5% would fix this. 62.5% of 16px is 10px. Which makes 1rem = 10px and allows for easier incremental adjustments.
+ 
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is system that allows us to write our code more efficently and reliable. Preprocessors allow us to write css by taking in short-hand code and translating it into functional CSS. THis allows us to automate some of the coding so we're able to get more done with fewer lines of code. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    
+    I like the ability to use math operations on variables because it still allows us to easily customize the code without creating more variables and thus saving time. Understanding the syntax for creating parametric mix-ins was a bit more tricky. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

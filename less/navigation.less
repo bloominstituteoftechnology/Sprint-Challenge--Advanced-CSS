@@ -1,1 +1,40 @@
 // Navigation code here
+
+.nav{
+    .displayFlex();
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        transform: rotate(90deg);
+        width: 0px;
+      }
+   
+    h1{
+        width: 100%;
+        font-size: 5.5rem;
+        text-align: center;
+        color: pink;
+    }
+
+    .nav-bar{
+        .displayFlex();
+        font-size: 2rem;
+        justify-content: space-evenly;
+        margin: 10px 0px;
+        padding: 0px 50px;
+    }
+
+    @media @phone{
+      max-width: 500px;
+      width: 100%;
+      justify-content: center;
+      margin: 20ox;
+    }
+}
+

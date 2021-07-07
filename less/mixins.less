@@ -1,1 +1,27 @@
-// Mixins Here
+// // Mixins Here
+
+.displayFlex {
+    display: flex;
+    width: 100%;
+}
+
+.footerstyling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonStyle(@radius, @width){
+    display: inline-block;
+    text-align: center;
+    border-radius: @radius;
+    width: @width;
+}
+
+.mobileButton(@mobileHeight, @mobileWidth){
+    height: @mobileHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: @mobileWidth; 
+}
