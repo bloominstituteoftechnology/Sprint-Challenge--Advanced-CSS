@@ -1,1 +1,25 @@
 // Mixins Here
+.justify {
+    display: flex;
+    justify-content: center;
+}
+
+.font-size {
+    font-size: 100%;
+}
+
+.width {
+    width: 100%;
+}
+
+
+.button (@ba, @bo, @pa, @co, @fo, @wi){
+    background-color: @ba;
+    font-family: inherit;
+    border-radius: @bo;
+    padding: @pa;
+    color: @co;
+    font-size: @fo;
+    width: @wi;
+    text-align: center;
+}
