@@ -1,15 +1,64 @@
 // Home Content
 
 .home {
-
+max-width: 65%;
+&:hover {
+  background-color: @sea-shell;
+  transition: 1s;
+  transform: scale(1.005);
+}
+@media @small {
+  max-width: 85%;
+@media @phone {
+  max-width: 100%;
+  &:hover {
+    background-color: @border-real;
+    transition: 1s;
+    transform: scale(1.0);
+  }
+}
+}
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
       padding:0 15px;
+    }
+    .bg-img {
+      width: 100%;
+      height: 18rem;
+      background-image: url("../img/main-header.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      &:hover {
+        p{
+          vertical-align: bottom;
+          transition: 1s;
+          display: block;
+        }
+        h2{
+          text-align: center;
+          transition: 1s;
+          display: block;
+        }
+      }
+      p {
+        display: none;
+        margin: 0;
+        padding: 1.5% 2.5% 2.5% 1.5%;
+        text-align: center;
+        color: white;
+        background: rgba(0,0,0, 0.25);
+        @media @small {
+          font-size: 0.8rem;
+        }
+      }
+      h2 {
+        display: none;
+      }
     }
   
   }
@@ -18,12 +67,43 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-content: flex-start;
+    @media @phone {
+      justify-content: center;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      &:hover {
+        box-shadow: 5px 10px @shuttle-gray;
+        opacity: 1.0;
+        transition: 1.5s;
+        transform: scale(1.075);
+      }
+    }
+
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+    .blast {
+      @media @phone {
+        border-radius: 20px;
+        padding-top: 5%;
+        order: -1;
+        width: 95%;
+        margin: 0;
+        &:hover {
+          box-shadow: 5px 10px @shuttle-gray;
+          opacity: 1.0;
+          transition: 1.5s;
+          transform: scale(1.01);
+        }
+      }
     }
   }
 
@@ -45,9 +125,23 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @small {
+      margin-top: 30px;
+      padding: 25px 30px;
+    }
+    @media @phone {
+      margin: 0 0 0 2.5%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      padding: 5px 5px;
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 95%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +152,102 @@
       }
 
       .btn {
+        .btn-style();
+        cursor: pointer;
+        &:hover {
+          transition: 1s;
+          transform: scale(1.1);
+          background-color: lightgray;
+          color: @header-font-color;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        @media @small {
+          width: 100%;
+          height: 4rem;
+          padding-left: 0;
+          font-size: 3rem;
+          // text-align: center;
+        }
+        @media @phone {
+          width: 100%;
+          height: 4rem;
+          padding-left: 0;
+          font-size: 2.5rem;
+          // text-align: center;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        margin: 0;
+        order: -1;
+        width: 100%;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        &:hover {
+          box-shadow: 5px 10px @shuttle-gray;
+          opacity: 1.0;
+          transition: 1.5s;
+          transform: scale(1.075);
+        @media @phone {
+          &:hover {
+            box-shadow: 5px 10px @shuttle-gray;
+            opacity: 1.0;
+            transition: 1.5s;
+            transform: scale(1.01);
+          }
+        }
+        }
+      }
+    }
+  }
+  .signup {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-left: 2.5rem;
+      width: 100%;
+      height: 40rem;
+      margin: 2.5% 0 2.5% 0;
+      .formlabel {
+        text-align: center;
+        height: 15%;
+        width: 100%;
+        .largetxt();
+        color: @sea-shell;
+      }
+      input {
+        .smalltxt();
+        font-size: 1.5rem;
+        text-align: center;
+        background: lightblue;
+        height: 15%;
+        width: 50%;
+      }
+      button {
+        margin-top: 2%;
+        background: @header-font-color;
+        color: lightblue;
+        font-size: 2rem;
+        font-family: 'Russo One';
+        width: 50%;
+        height: 15%;
       }
     }
   }
 }// home
+

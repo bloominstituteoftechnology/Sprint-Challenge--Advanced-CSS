@@ -1,1 +1,59 @@
 // Navigation code here
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+    &:hover {
+      .nav-el {
+        a {
+          color: @btn-bg-color;
+          transition: 1s;
+          transform: scale(1.025);
+        }
+      }
+      .logo {
+        transform: rotate(2deg);
+        color: @btn-bg-color;
+        transition: 1.0s;
+      }
+      background-color: @waterloo;
+      transition: 1.25s;
+    }
+    .logo {
+      .largetxt();
+      font-size: 3.5rem;
+      width: 100%;
+      text-align: center;
+      @media @phone {
+        padding-bottom: 5%;
+        font-size: 3.8rem;
+      }
+    }
+    .nav-el {
+      padding:0 0 2% 6%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @media @phone {
+        padding: 0 0 5% 0%;
+        text-align: center;
+      }
+      a {
+        .smalltxt();
+        cursor: pointer;
+        font-size: 1.35rem;
+        justify-content: flex-end;
+        text-decoration: none;
+        width: 15%;
+        @media @phone {
+          text-shadow: 1px 1px lightslategray;
+          font-size: 1.40rem;
+          width: 15%;
+        }
+      }
+    }
+  }

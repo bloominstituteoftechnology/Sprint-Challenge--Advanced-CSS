@@ -1,5 +1,6 @@
 // General Styles
 * {
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -12,7 +13,7 @@ html, body {
   color: @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, label {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
 }
@@ -31,8 +32,11 @@ p {
 }
 
 .container {
-  max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  @media @small {
+    max-width: 750
+    px;
+  }
 }
 

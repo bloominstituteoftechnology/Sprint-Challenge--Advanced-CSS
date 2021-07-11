@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -14,14 +15,33 @@
   <![endif]-->
 </head>
 
-<body>
+<body class="container">
 
  <!-- navigation code here -->
-
+  <header class="nav-bar">
+    <h1 class="logo">
+      SpaceWalkers
+    </h1>
+    <nav class="nav-el">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="signup.html">Sign in</a>
+    </nav>
+  </header>
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+      <div class="bg-img">
+        <h2>Welcome to Space Walkers!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Sunt architecto illo vel officia tempora qui maiores fuga, 
+          nulla quo placeat minus rerum voluptas. 
+          Ab quasi vel recusandae distinctio omnis modi!
+        </p>
+      </div>
 
       <h2>Lift Off</h2>
     
@@ -52,7 +72,9 @@
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
         <div class="btn">
-          Sign Up
+          <a href="signup.html">
+            Sign Up
+          </a>
         </div>
       </div>
       
@@ -61,11 +83,9 @@
       </div>
 
     </section>
-
     <footer>
       <p>Copyright SpaceWalkers 2018</p>
     </footer>
-
   </div>
 </body>
 </html>
